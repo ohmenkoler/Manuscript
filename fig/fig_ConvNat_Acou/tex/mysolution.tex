@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+    \def\width{.9*\textwidth};
+    \def\height{.5*\width};
+    \def\legx{.5cm};
+    \def\legy{\legx};
+    
+    \begin{axis}[width={\width},height={\height},
+    xlabel={Temps $t$ [\unit{\s}]},
+    ylabel={\'Ecart de température $T-T_i$ [\unit{\degreeCelsius}]},
+    xmin=0,xmax=100,%ymin=0,ymax=300,
+%    xtick={0,25,47,50,75,100},ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
+    domain=0:100,
+    legend style = {at={(.95,.95)},anchor = north east}
+    ]
+    	\addplot[very thick,MatlabBlue] {3*x};
+    	\addplot[very thick,MatlabBlue!50] {2*x};
+    	\addplot[very thick,MatlabOrange] {1*x};
+    	\addplot[very thick,MatlabOrange!50] {-1*x};
+    	\addplot[very thick,MatlabYellow] {-2*x};
+    	\addplot[very thick,MatlabYellow!50] {-3*x};
+        
+%        \legend{\\ \\};
+    \end{axis}
+\end{tikzpicture}

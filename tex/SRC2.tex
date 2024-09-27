@@ -1,0 +1,54 @@
+\chapter{Optimisation de la source acoustique secondaire}
+
+\section{Déphasage entre les sources}
+
+Le déphasage entre les sources acoustique est primordial pour assurer l'efficacité du réfrigérateur. Pour cela, des accéléromètres sont placés sur leur équipage mobile pour l'estimer au mieux.  
+
+\textcolor{red}{Ajouter définition des conventions et axes des $x$}
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_AcceleroDefinition}
+    %\externalremake
+    \input{../fig/fig_AcceleroDefinition/tex/fig_AcceleroDefinition}
+    \caption{Emplacement des accéléromètres (en \textcolor{PythonOrange}{orange}) sur les sources acoustiques (en \textcolor{PythonBlue}{bleu}). Les flèches en \textcolor{PythonRed}{rouge} dénotent le sens de l'excursion positive des sources acoustiques. \textcolor{red}{C'est clair ?}}
+    \label{../fig:AcceleroDefinition}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \external{fig_PhaseGBFOscPiston}
+%    \externalremake
+    \input{../fig/fig_PhaseGBFOscPiston/tex/fig_PhaseGBFOscilloPiston}
+    \caption{Déphasage entre les pistons des sources en fonction du déphasage réglé sur le générateur de signal.}
+    \label{fig:PhaseGBFOscPiston}
+\end{figure}
+
+\textcolor{red}{Présenter les déphasages réglés sur le GBF, puis des formes d'ondes de tension ET de déplacement (déphasage pas toujours le même)}
+
+\begin{figure}
+    \centering
+    \external{fig_GradT_PhaseHP}
+%    \externalremake
+    \input{../fig/fig_GradT_PhaseHP/tex/fig_GradT_PhaseHP}
+    \caption{Différences normalisées de température entre les thermocouples 5 et 11, et entre l'entrée et la sortie de l'échangeur ambiant \textcolor{red}{préciser}. Le déphasage est modifié toutes les \qty{120}{\second} selon l'ordre suivant : \qtylist{-60;-30;-10;0;10;30;60;-100;100;-180;180;-120;120}{\degree}. \textcolor{red}{Ajouter curseur de changement de phases ?}}
+    \label{fig:GradT_PhaseHP}
+\end{figure}
+
+\textcolor{green}{REFAIRE LES FICHIERS DE MESURES LES NUMEROS SONT DECALES DE 1}
+
+\section{Influence de la puissance d'alimentation de la source secondaire}
+
+
+
+\textcolor{red}{Profils entre avec et sans source secondaire (RIX à faible amplitude, à refaire à haute amplitude ?), $\Delta T_{TA}$ diminue beaucoup quand le HP est éteint : impact pas si nul que ça. Aussi, évolution temporelle quand on allume la source à 7 V et un déphasage de 0 rad GBF (Combien au niveau des pistons ?)}
+
+
+\begin{figure}
+    \centering
+    \external{fig_GradT_PuissHP}
+    %\externalremake
+    \input{../fig/fig_GradT_PuissHP/tex/fig_GradT_PuissHP}
+    \caption{Température aux points chaud et froid avant et après allumage de la source secondaire \textcolor{red}{Préciser les paramètres d'alim du HP | Tracer les autres points}}
+    \label{fig:GradT_PuissHP}
+\end{figure}

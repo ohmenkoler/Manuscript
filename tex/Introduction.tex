@@ -1,0 +1,422 @@
+\chapter{Introduction}\label{chap:Intro}%\addcontentsline{toc}{chapter}{\nameref{chap:Intro}}
+%\markboth{INTRODUCTION}{}
+%\minitoc
+\vfill
+\hrule \vspace{.5cm}
+{\hypersetup{linkcolor = black}
+\localtableofcontents
+}%
+\vspace{.5cm} \hrule
+\vfill
+
+\clearpage
+
+\section{Revue bibliographique}
+
+\begin{itemize}
+    \item Théorie linéaire de Rott : \cite{rott_damped_1969, rott_thermally_1973, rott_thermally_1975, rott_thermally_1976, zouzoulas_thermally_1976, rott_thermoacoustics_1980, muller_thermally_1983} 
+    \item $f_\nu$ et $f_\kappa$ : \cite{swift_thermoacoustics_2017,di_giulio_wire_2023}
+    \item Tortuosité et matériaux poreux : \cite{johnson_theory_1987}
+    \item Phase optimale : \cite{poignand_etude_2006}
+    \item Thermocouples dans noyau TA : \cite{duffourd_refrigerateur_2001, penelet_etude_2004}
+    \item Bilan de chaleur dans coeur TA : \cite{penelet_etude_2004}
+    \item Mélange de gaz : \cite{belcher_working_1999}
+    \item Géométrie coaxiale : \cite{poignand_analysis_2013, poignand_thermoacoustic_2011, tijani_study_2008, ramadan_design_2021}
+    \item Géométrie compacte : \cite{poignand_etude_2006}
+    \item Convection naturelle : \cite{ross_influence_2003, hireche_numerical_2019, pan_visualization_2012, bianchi_transferts_2004,babaei_investigation_2010}
+    \item Streaming : \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}
+    \item Analogies électroac en TA : \cite{wakeland_use_2000, backhaus_thermoacoustic-stirling_2000, poignand_analysis_2013}
+    \item Electroac générale : \cite{rossi_electroacoustique_1986, novak_measurement_2019}
+    \item Pertes latérales : \cite{penelet_etude_2004, guedra_etudes_2012}
+    \item Non uniformité de température sur la section : \cite{penelet_etude_2004}
+\end{itemize}
+
+\section{Bases de thermoacoustique}
+
+Les machines thermoacoustique utilisent les interactions visqueuses et thermiques entre un gaz et un matériau solide poreux ou d’un empilement de plaques (\textit{stack} en anglais) placé dedans lors d’un cycle de compression-détente de ce gaz. En particulier, les pression, volume et température, qui sont liées par les lois thermodynamiques, sont des grandeurs d’intérêt en thermoacoustique dont la théorie linéaire est en grande partie écrite par Rott et Swift au cours des années 1980 \cite{rott_damped_1969, rott_thermally_1973, rott_thermally_1975, rott_thermally_1976, zouzoulas_thermally_1976, rott_thermoacoustics_1980, muller_thermally_1983}
+
+Deux schémas de principe des machines thermoacoustiques sont présentés figure~\ref{fig:MoteurVSFrigoTA}. Le mode moteur (figure~\ref{fig:MoteurTA}) transforme l’énergie thermique en énergie acoustique, tandis que le mode pompe à chaleur et réfrigérateur (figure~\ref{fig:FrigoTA}) génère un flux de chaleur sous l'action d'une énergie acoustique. 
+
+Dans un moteur thermoacoustique, le chauffage d'un côté du matériau poreux apporte de l'énergie à une parcelle de gaz située à proximité de ce côté du stack. Son volume augmente alors et pousse les autres parcelles de gaz attenantes à l'intérieur du stack, en direction de l'autre extrémité plus froide. Elle cèdent de l'énergie au solide, leur volume diminue et elle retrouvent leur position initiale, où le cycle recommence. Finalement, c'est un travail acoustique qui est généré.
+
+La pompe à chaleur fonctionne en suivant le cycle thermodynamique inverse : l'onde acoustique fournit un travail au fluide et le compresse, ce qui fait augmenter sa température. À l'extrémité du matériau poreux dont la température initiale est inférieure à celle du fluide, une certaine quantité de chaleur est extraite du fluide. La parcelle de fluide se déplace alors dans le matériau poreux, se détend et refroidit, puis extrait à son tour une quantité de chaleur au solide. Au final, un flux de chaleur de la source à refroidir vers l'ambiant est provoqué de proche en proche.\smallskip
+
+\begin{figure}[!ht]
+	\centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_MoteurTA}
+%        \externalremake
+		\input{../fig/fig_PrincipeTA/tex/MoteurTA}
+		\caption{moteur}
+		\label{fig:MoteurTA}
+	\end{subfigure}
+	\hfill% \vline \hfill
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_FrigoTA}
+%        \externalremake
+		\input{../fig/fig_PrincipeTA/tex/PaCTA}
+		\caption{pompe à chaleur}
+		\label{fig:FrigoTA}
+	\end{subfigure}
+	\caption[Schémas de principe d'un moteur et d'une pompe à chaleur thermoacoustique]{Schémas de principe d'un moteur et d'une pompe à chaleur thermoacoustique. D'après \cite{swift_thermoacoustics_2017}.}
+	\label{fig:MoteurVSFrigoTA}
+\end{figure}
+
+Après avoir succintement défini le mode de fonctionnement d'une machine, il est nécessaire de présenter de type de propagation d'onde prenant place au sein de son noyau. Il existe deux comportements asymptotiques qui dépendent de la forme du résonateur de la machine : les ondes stationnaires d'une part et les ondes progressives d'autre part. Ces deux cas sont radicalement différents, car le déphasage entre la pression acoustique $p$ et la vitesse acoustique $v$ est de \ang{90} dans le premier cas, et \ang{0} dans le second.
+
+%\begin{figure}[!ht]
+%    \centering
+%    \begin{subfigure}{\textwidth}
+%    	\centering
+%    	\external{fig_OndesStatio}
+%%    	\externalremake
+%    	\input{../fig/fig_OndesStatio/tex/fig_OndesStatio}
+%    	\caption{}
+%    	\label{fig:OndesStatio}
+%    \end{subfigure}
+%%\end{figure}
+%%\\[10pt]
+%%\begin{figure}[!ht]
+%	\begin{subfigure}{\textwidth}
+%    	\centering
+%	    \external{fig_OndesProg}
+%%	    \externalremake
+%	    \input{../fig/fig_OndesProg/tex/fig_OndesProg}
+%	    \caption{}
+%	    \label{fig:OndesProg}
+%    \end{subfigure}
+%    \caption{\subref{fig:OndesStatio} ondes stationnaires et \subref{fig:OndesProg} ondes progressives dans un guide d'ondes.}
+%    \label{fig:Ondes}
+%\end{figure}
+
+Les cycles thermodynamiques évoqués plus tôt sont différents en fonction de chaque cas : un volume élémentaire de gaz dans un stack de machine à ondes stationnaires est soumis à un cycle de Brayton, tandis que dans un régénérateur de machine à ondes progressives le volume suit un cycle de Stirling. Ces cycles sont présentés respectivement dans les figures \ref{fig:CycleBrayton} et \ref{fig:CycleStirling}.
+
+\begin{figure}[!ht]
+	\centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_1_BraytonDepComp}
+%        \externalremake
+		\input{../fig/fig_CycleBrayton/tex/DepCompAdiab}
+		\caption{déplacement et compression adiabatique}
+		\label{fig:CycleBrayton_DepCompAdiab}
+	\end{subfigure}
+	%
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_2_BraytonQfluidePlaque}
+%        \externalremake
+		\input{../fig/fig_CycleBrayton/tex/QFluideToPlaque}
+		\caption{cession de chaleur du fluide à la plaque}
+		\label{fig:CycleBrayton_QFluidePlaque}
+	\end{subfigure}
+	%
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_3_BraytonDepDet}
+%        \externalremake
+		\input{../fig/fig_CycleBrayton/tex/DepDetAdiab}
+		\caption{déplacement et détente adiabatique}
+		\label{fig:CycleBrayton_DepDetAdiab}
+	\end{subfigure}
+	%
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_4_BraytonQPlaqueFluide}
+%        \externalremake
+		\input{../fig/fig_CycleBrayton/tex/QPlaqueToFluide}
+		\caption{cession de chaleur de la plaque au fluide}
+		\label{fig:CycleBrayton_QPlaqueToFluide}
+	\end{subfigure}	
+	\caption[Cycle de Brayton des machines à ondes stationnaires]{Cycle thermodynamique de Brayton en fonctionnement réfrigérateur/pompe à chaleur à ondes stationnaires. Les traits pleins dénotent l'état initial de l'étape, les traits pointillés, l'état final.}
+	\label{fig:CycleBrayton}
+\end{figure} % Brayton
+
+\begin{figure}[!ht]
+	\centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_1_StirlingComp}
+%        \externalremake
+		\input{../fig/fig_Cycle_Stirling/tex/CompIsoT}
+		\caption{compression isotherme}
+		\label{fig:CycleStirling_Comp}
+	\end{subfigure}
+	%
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_2_StirlingDep1}
+%        \externalremake
+		\input{../fig/fig_Cycle_Stirling/tex/DepAllerIsoV}
+		\caption{déplacement isochore (aller)}
+		\label{fig:CycleStirling_DépIsoch1}
+	\end{subfigure}
+	%
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_3_StirlingDet}
+%        \externalremake
+		\input{../fig/fig_Cycle_Stirling/tex/DetIsoT}
+		\caption{détente isotherme}
+		\label{fig:CycleStirling_Détente}
+	\end{subfigure}
+	%
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_4_StirlingDep2}
+%        \externalremake
+		\input{../fig/fig_Cycle_Stirling/tex/DepRetourIsoV}
+		\caption{déplacement isochore (retour)}
+		\label{fig:CycleStirling_DépIsoch2}
+	\end{subfigure}	
+	\caption[Cycle de Stirling des machines à ondes progressives]{Cycle thermodynamique de Stirling en fonctionnement réfrigérateur/pompe à chaleur à ondes progressives. Les traits pleins dénotent l'état initial de l'étape, les traits pointillés, l'état final.}
+	\label{fig:CycleStirling}
+\end{figure} % Stirling
+
+
+
+Aux abords d'une paroi se trouvent les couches limites thermiques et visqueuses, dans lesquelles les échanges d'énergie ont lieu. Elles sont respectivement définies par
+
+\begin{subequations}
+	\begin{align}
+		\delta_{\kappa} &= \sqrt{\frac{2 k}{\rho C_p \omega}} = \sqrt{\frac{2 \kappa}{\omega}}, \text{et}	\label{eq:CouchesLimites_Thermique}\\
+		\delta_{\nu} &= \sqrt{\frac{2 \mu}{\rho \omega}} = \sqrt{\frac{2 \nu}{\omega}},	\label{eq:CouchesLimites_Visqueuse}
+	\end{align}
+	\label{eq:CouchesLimites}%
+\end{subequations}
+avec $k$ (ou $\kappa$) la conductivité (ou diffusivité) thermique du fluide, $C_p$ sa capacité calorifique à pression constante, $\mu$ (ou $\nu$) sa viscosité dynamique (ou cinématique), $\rho$ sa masse volumique et $\omega = 2\pi f$ la pulsation à laquelle le fluide oscille.
+
+En outre, ces deux épaisseurs de couche limites sont également liées par le nombre de Prandtl $\mathrm{Pr}$, défini par
+
+\begin{subequations}
+	\begin{align}
+		\Prandtl &= \left(\frac{\delta_{\nu}}{\delta_{\kappa}}\right)^2 \text{, ou} \label{eq:Prandtl_delta}\\
+				&= \frac{\mu C_{p}}{k} = \frac{\nu}{\kappa}, \label{eq:Prandtl_MuK_NuKappa}
+	\end{align}
+	\label{eq:Prandtl}%
+\end{subequations}
+et qui décrit le rapport de force entre les effets visqueux et thermiques. Dans le cas des machines thermoacoustiques, le nombre de Prandtl doit être le plus faible possible, afin de favoriser les échanges de chaleurs sans perdre d'énergie à cause de la viscosité du fluide. Pour ce faire, il est possible de mélanger des gaz pour abaisser sa valeur \cite{belcher_working_1999} puisque dans le cas des gaz monoatomiques, le nombre de Prandtl ne dépend pas de la température et $\Prandtl~=~\frac{2}{3}$.
+
+\section{\'Etat de l'art}
+\subsection{De la recherche fondamentale...}
+Depuis les années 1970-1980 durant lesquelles les premières machines modernes ont été mises au point, beaucoup de chemin a été parcouru. Le premier moteur à ondes progressives a été construit par Ceperley en 1979 \cite{ceperley_pistonless_1979}, et la première pompe à chaleur par Hofler lors de son doctorat en 1983 
+
+\subsection{... à des applications industrielles}
+Les machines thermoacoustiques sont intéressantes pour l'industrie 
+
+\section{Outils électroacoustiques pour la thermoacoustique}
+\subsection{Transduction électrodynamique}
+Un transducteur est un système qui convertit une forme d'énergie en une autre. En électroacoustique, les haut-parleurs transforment l'énergie électrique en énergie acoustique, ou inversement pour les microphones. Pour réaliser cette transduction, plusieurs technologies existent : électrodynamique, électrostatique...
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_HautParleur}
+%    \externalremake
+    \input{../fig/fig_HautParleur/tex/fig_HautParleur}
+    \caption{Vue en coupe d'un haut parleur électrodynamique}
+    \label{fig:HautParleur}
+\end{figure}
+
+\subsection{Modèles aux constantes localisées et circuits électriques équivalents}
+
+\subsubsection{En général}
+
+Dans l'hypothèse des très basses fréquences, soit lorsque $ka \ll 1$, il est possible de réaliser certaines approximations. L'impédance d'un tube ne comprend que sa composante inertielle, ce qui le rend analogue à une masse mécanique et à une inductance électrique. À l'inverse, une cavité voit son impédance ramenée à un ressort mécanique et un condensateur électrique. Ainsi, les systèmes électro-mécano-acoustiques comme les haut-parleurs ou les guides d'ondes peuvent être modélisés au moyen d'un circuit électrique équivalent. Le circuit équivalent au haut-parleur électrodynamique est présenté figure~\ref{fig:HP_LEM}.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_HP_LEM}
+%    \externalremake
+    \input{../fig/fig_HP_LEM/tex/fig_HP_LEM}
+    \caption{Circuit électrique équivalent à un haut-parleur suivant un modèle aux constantes localisées (convention mécanique impédance)}
+    \label{fig:HP_LEM}
+\end{figure}
+
+\subsubsection{Circuit électrique équivalent à un noyau thermoacoustique}
+
+Comme les autres systèmes électro-mécano-acoustique présentés auparavant, le noyau thermoacoustique peut être représenté sur la figure~\ref{fig:CircEquivTAC} par un circuit électrique équivalent, sous réserve qu'il soit acoustiquement compact. Comme pour un tube creux, les termes des équations de conservation d'énergie et de masse se traduisent par des masse et compliance acoustiques équivalents, et sont respectivement modélisés par une inductance $L$ et une capacité $C$. Les effets visco-thermiques ajoutés au circuit sous la forme d'une résistance visqueuse $R_\nu$ et d'une conductance thermique $\frac{1}{R_\kappa}$.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_CircEquivTAC}
+%    \externalremake
+    \input{../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC}
+    \caption{Circuit équivalent à un noyau thermoacoustique. Extrait de \cite{swift_thermoacoustics_2017}}
+    \label{fig:CircEquivTAC}
+\end{figure}
+
+Il reste à introduire la quantité complexe $g$, défini par 
+
+\begin{equation}
+    g = \frac{f_\kappa - f_\nu}{(1-f_\nu)(1-\mathrm{Pr})}\frac{1}{T_m}\frac{\deriv T_m}{\deriv x},
+    \label{eq:GainNoyauTA_Swift}
+\end{equation}
+et qui représente le gain ou l'atténuation du débit acoustique \cite{swift_thermoacoustics_2017}. Sa dépendance au gradient de température est surtout le rend important pour les moteurs thermoacoustiques principalement, mais il est impossible de le négliger dans les réfrigérateurs même si la différence de température entre les extrémités est moindre.
+
+\subsection{Circuit équivalent à une machine complète}
+
+\subsection{Matrices de transfert}
+\subsubsection{En général}
+Pour un tube de section $S$ et de longueur $L$ et dans le cas d'une propagation acoustique unidimensionelle telle que représenté sur la figure~\ref{fig:WavesInDuctPiece}, la relation entre pressions acoustiques et débits à chaque extrémité du tube s'obtient avec une matrice de transfert d'un quadripôle équivalent définie par  
+
+%\textcolor{red}{Retire l'eq \eqref{eq:TMatrixABCD}?}
+%\begin{equation}
+%    \begin{pmatrix}
+%        p_s\\
+%        u_s
+%    \end{pmatrix}=\begin{bmatrix}
+%        A & B\\
+%        C & D
+%    \end{bmatrix}\begin{pmatrix}
+%        p_e\\
+%        u_e
+%    \end{pmatrix}
+%    \label{eq:TMatrixABCD}
+%\end{equation}
+
+%\begin{equation}
+%    \begin{pmatrix}
+%        p_s\\
+%        u_s
+%    \end{pmatrix}=\begin{bmatrix}
+%        \cos(kL) & - i Z_c \sin(kL)\\
+%        - i \dfrac{\sin(kL)}{Z_c} & \cos(kL)
+%    \end{bmatrix}\begin{pmatrix}
+%        p_e\\
+%        u_e
+%    \end{pmatrix}\quad,
+%    \label{eq:TMatrixCosSin}
+%\end{equation}
+
+\begin{equation}
+    \begin{pmatrix}
+        p_s\\
+        u_s
+    \end{pmatrix}=\begin{bmatrix}
+        T_{pp} & T_{pu} \\
+        T_{up} & T_{uu}
+    \end{bmatrix}\begin{pmatrix}
+        p_e\\
+        u_e
+    \end{pmatrix},
+    \label{eq:TMatrix_TppTuu}
+\end{equation}
+où $T_{pp}=T_{uu}=\cos(k_x L)$, $T_{pu}=-i Z_c \sin(k_x L)$ et $T_{up}=-\frac{i}{Z_c}\sin(k_x L)$ en adoptant la convention temporelle $e^{+i\omega t}$ et une orientation anti-symétrique du quadripôle. Ici, $k_x = \frac{2\pi}{\lambda_x}$ est le nombre d'onde sans pertes suivant la direction $\mathbf e_x$, et $Z_c = \frac{\rho_0 c_0}{S}$ l'impédance caractéristique du milieu de propagation. 
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_WavesInDuctPiece}
+%    \externalremake
+    \input{../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece}
+    \caption{Représentations des ondes allers et retours dans une portion de tube.}%. \textbf{(a)} transfert, \textbf{(b)} diffusion.}
+    \label{fig:WavesInDuctPiece}
+\end{figure}
+
+
+
+%Si l'on s'intéresse à un domaine à l'intérieur du tube telle que la zone grisée sur la figure~\ref{fig:WavesInDuctPiece} (une portion de tube, un stack, etc.), il peut être judicieux d'exprimer les ondes qui sortent de ce domaine en fonction de celles qui y entrent. La relation obtenue peut se mettre sous la forme d'une matrice de diffusion qui s'écrit
+%
+%\begin{equation}
+%    \begin{pmatrix}
+%        p_2^+\\
+%        p_1^-
+%    \end{pmatrix}=\begin{bmatrix}
+%        \mathcal T^+ & \mathcal R^-\\
+%        \mathcal R^+ & \mathcal T^-
+%    \end{bmatrix}\begin{pmatrix}
+%        p_1^+\\
+%        p_2^-
+%    \end{pmatrix},
+%    \label{eq:SMatrixRT}
+%\end{equation}
+%où $p_1^-$ et $p_2^+$ sont les ondes de pression sortantes du domaine, et $p_1^+$ et $p_2^-$ sont les ondes entrantes. Les coefficients de la matrice de diffusion sont définis par
+%
+%\begin{subequations}
+%    \begin{align}
+%        \mathcal T^+ &= \frac{2(T_{pp}T_{uu}-T_{pu}T_{up})}{T_{pp}+T_{uu}-(T_{pu}/Z_c+T_{up}Z_c)},\label{eq:SMatrixT+}\\\vspace{1em}
+%        \mathcal R^- &= \frac{T_{up}Z_c-T_{pu}/Z_c+T_{pp}-T_{uu}}{T_{pp}+T_{uu}-(T_{pu}/Z_c+T_{up}Z_c)},\label{eq:SMatrixR-}\\\vspace{.5em}
+%        \mathcal R^+ &= \frac{T_{up}Z_c-T_{pu}/Z_c-T_{pp}+T_{uu}}{T_{pp}+T_{uu}-(T_{pu}/Z_c+T_{up}Z_c)}, \text{et}\label{eq:SMatrixR+}\\
+%        \mathcal T^- &= \frac{2}{T_{pp}+T_{uu}-(T_{pu}/Z_c+T_{up}Z_c)}.\label{eq:SMatrixT-}
+%    \end{align}
+%    \label{eq:SMatrixCoeff}%
+%\end{subequations}
+
+\subsubsection{Matrice de transfert d'un noyau thermoacoustique}
+
+Comme déjà expliqué plus haut, le processus thermoacoustique se produit dans un matériau poreux placé dans le guide d'ondes des machines thermoacoustiques. La définition des termes constituant la matrice de transfert change alors légèremement pour prendre en compte sa porosité $\Phi$ selon l'équation
+
+\begin{equation}
+\begin{pmatrix}
+p_s\\
+u_s
+\end{pmatrix} = \begin{bmatrix}
+\cos(k_x L) & -i\frac{\rho_0 c_0}{\Phi S}\sin(k_x L)\\
+-i\frac{\Phi S}{\rho_0 c_0}\sin(k_x L) & \cos(k_x L)
+\end{bmatrix}
+\begin{pmatrix}
+p_e\\
+u_e
+\end{pmatrix}.\label{eq:Tmatrix_poreux}
+\end{equation}
+
+
+La représentation du circuit sur la figure~\ref{fig:CircEquivTAC} se traduit au moyen de matrice de transfert à l'ordre 1 par 
+
+
+\begin{equation}
+	\begin{pmatrix}
+		p + \deriv p\\
+		u + \deriv u
+	\end{pmatrix} = \begin{bmatrix}
+	1 & -(i\omega L + R_\nu)~\deriv x  \\
+	-(\frac{1}{R_\kappa} + i \omega C)~\deriv x & g~\deriv x \end{bmatrix} \begin{pmatrix}
+	p \\
+	u
+	\end{pmatrix}, \label{eq:TMatrix_NoyauTA}
+\end{equation}
+ou bien même en simplifiant encore plus les choses par
+
+\begin{equation}
+    \begin{pmatrix}
+        p + \deriv p \\
+        u + \deriv u
+    \end{pmatrix} = \begin{bmatrix}
+    1 & -R_\nu \\
+    0 & 1
+    \end{bmatrix}\begin{pmatrix}
+        p \\
+        u
+    \end{pmatrix}
+    \label{eq:Tmatrix_NoyauTA_simplifie}
+\end{equation}
+
+Enfin, si le matériau poreux est long, il est possible de le représenter par une succession de $N$ portions élémentaires du poreux et donc un produit de matrices de transfert
+
+\begin{equation}
+\begin{pmatrix}
+p_s\\
+u_s
+\end{pmatrix} = \prod_{n=0}^{N-1} \begin{bmatrix}
+T_{pp}^{(n)} & T_{pu}^{(n)}\\
+T_{up}^{(n)} & T_{uu}^{(n)}
+\end{bmatrix}\begin{pmatrix}
+p_e\\
+u_e
+\end{pmatrix}.
+\label{eq:TMatrix_prod_TppTuu}
+\end{equation}
+
+\section{Limites des modèles}
+
+%\begin{itemize}
+%    \item Streaming
+%    \item Convection naturelle
+%    \item Hypothèse 1D invalide
+%    \item Génération d'harmoniques par les sources ? vérifier si superposition d'effet à 47 Hz avec 2x47 Hz etc.
+%\end{itemize}
+
+Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations dédiés tels que \textsc{DeltaEC}, soit suffisante pour prédire le comportement des machines thermoacoustiques de même que leurs performances, de nombreux effets sont négligés. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible et que les températures le long des dimensions transverses du noyau peuvent être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faible que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.
+
+

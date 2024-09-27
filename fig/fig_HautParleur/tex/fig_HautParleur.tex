@@ -1,0 +1,37 @@
+\begin{tikzpicture}[scale=.9]
+    \def\polelong{6};
+    \def\polethick{.5};
+    \def\magx{2};
+    \def\magy{2};
+    \def\depth{3};
+    \def\dustcap{\depth/10};
+    \def\diam{10};
+    \def\VCdiam{1.5*\polethick};
+    \def\VClen{3};
+    \def\VCwire{.15};
+    \def\Nwire{20};
+    \def\LineThick{.1};
+
+    \input{../fig/fig_HautParleur/tex/subfig_HautParleur}
+    
+    %%%%%%%%%%%%%% Mirror
+    \begin{scope}[xscale=-1,yscale=1]
+        \input{../fig/fig_HautParleur/tex/subfig_HautParleur}    
+    \end{scope}
+    
+    %\draw[dash dot,PythonGreen] (0,-\polethick) -- ++(0,{3*\polethick+\magy+\VClen+\depth});
+    
+    \draw[->,MatlabOrange] (-1.5*\polelong,{4*\polethick+\magy+1}) node[below right]{Surround} to[out=0,in=-60] (-.5*\polelong-.5*\diam,{3*\polethick+\VClen+\depth});
+    
+    \draw[->,MatlabOrange] (-1.5*\polelong,{4*\polethick+\magy-.5}) node[above right]{Spider} to[out=0,in=-120] (-.5*\polelong,{2*\polethick+\VClen});
+    
+    \draw[->,PythonBlue] (-1.5*\polelong,{4*\polethick+\magy-2}) node[above right]{Bobine} to[out=0,in=-120] (-\VCdiam,{2*\polethick});
+    
+    \draw[->,MatlabYellow] (0,{2*\polethick+\VClen+.7*\depth}) node[above]{Membrane} to[out=-90,in=120] ++(-45:1.9);
+    
+    \draw[->,black] (1.5*\polelong,{4*\polethick+\magy+1}) node[above left]{Panier} to[out=180, in=-60] ({.5*\diam},{2*\polethick+\VClen+.3*\depth});
+    
+    \draw[->,black!50] (1.5*\polelong,{4*\polethick+\magy-.5}) node[above left]{Aimant} to[out=180, in=0] (.65*\polelong,{\polethick+.85*\magy});
+    
+    \draw[->,black!30] (1.5*\polelong,{4*\polethick+\magy-2}) node[above left]{Pièce polaire} to[out=180, in=0] (.55*\polelong,{.5*\polethick});
+\end{tikzpicture}

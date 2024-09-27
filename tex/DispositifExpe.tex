@@ -1,0 +1,460 @@
+\chapter{Protocole expérimental général}
+%\minitoc
+\vfill
+\hrule \vspace{.5cm}
+{\hypersetup{linkcolor = black}
+\localtableofcontents
+}%
+\vspace{.5cm} \hrule
+\vfill
+\clearpage
+
+Après avoir brièvement rappelé les bases de fonctionnement des machines thermoacoustiques, il est important de décrire le réfrigérateur support de cette thèse. Le choix de la géométrie, les paramètres hydrauliques du régénérateur utilisé, et enfin la chaîne d'excitation/acquisition sont présentés.
+
+Les conditions expérimentales ainsi que les simulations théoriques réalisées sont présentées de manière globale pour pouvoir s'y référer dans les différents chapitres suivants.
+
+\section{Présentation du réfrigérateur actuel}
+\subsection{Géométrie}
+
+\subsubsection{Cavité thermoacoustique}
+
+La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (Thermo-Acoustic Cooler for Onroad Transportation), qui porte sur l'utilisation d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont la \textcolor{red}{principale} est la compacité. Contrairement aux autres systèmes thermoacoustiques existant \textcolor{red}{citer SETAC et Ben and Jerrys et le cryocooler de 11 m}, les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroÏdale utilisée par Swift en suivant les travaux de Poignand et al. \cite{poignand_thermoacoustic_2011,poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique.% \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.
+
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_SchemaGeneralTACOT}
+%    \externalremake
+    \input{../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex}
+    \caption[Schéma général du réfrigérateur \textsc{Tacot} et mise en évidence des zones d'intérêt pour cette thèse]{Schéma général du réfrigérateur \textsc{Tacot}. Les \colorbox{MatlabYellow}{cavité d'adapatation d'impédance} et \colorbox{MatlabOrange}{noyau thermoacoustique}, zones d'intérêt, sont mises en évidence.}
+    \label{fig:SchemaGeneralTACOT}
+\end{figure}
+
+
+
+\subsubsection{Noyau thermoacoustique}
+
+Le régénérateur utilisé dans le noyau thermoacoustique de coordonnée axiale $x \mathbf e_x$ et radiale $r \mathbf e_r$ est composé de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$. Les paramètres du régénérateur sont notés dans le tableau \ref{tab:ParamHydrauTAC} et sont calculés d'après les formules 
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_dKdV}
+%    \externalremake
+    \input{../fig/fig_dKdV/tex/fig_dKdV}
+    \caption{\'Evolution des épaisseurs de couches limites thermique et visqueuse en fonction de la fréquence, définies équations~\eqref{eq:CouchesLimites}.}
+    \label{fig:dKdV}
+\end{figure}
+
+\begin{align}
+\phi &= \frac{V_{\sf gaz}}{V_{\sf total}} \label{eq:DefPorosity_Volume}%\\
+%	&= \frac{V_{\sf total}-V_{\sf metal}}{V_{\sf total}} \nonumber\\
+%	&= 1 - \frac{m_{\sf metal}}{m_{\sf total}} \label{eq:DefPorosity_Masse}
+\end{align}
+pour la porosité, et
+
+\begin{equation}
+r_h = \frac{d_w}{4}\frac{\phi}{1-\phi}
+\label{eq:DefRayonHydrauGantois}
+\end{equation}
+pour le rayon hydraulique. Dans ces équations, $V_{\sf gaz}$ est le volume occupé par le gaz dans le régénérateur et $V_{\sf total}$ son volume total, et $d_w$ est le diamètre de fils des tissus métalliques.
+
+
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{l l}
+    	\hline
+    	\textbf{Paramètre} & \textbf{Valeur} \\\hline\hline
+    	Diamètre du noyau $D_{\sf reg}$ & \qty{148e-3}{\m} \\
+    	Longueur du régénérateur $L_{\sf reg}$  & \qty{39e-3}{\m} \\
+    	Diamètre du fil $d_w$ & \qty{53e-6}{\m} \\
+        Rayon hydraulique $r_h$ & \qty{2.81e-5}{\m} \\
+        Porosité du noyau $\Phi$ & \qty{68}{\percent}\\
+        Couche limite thermique $\delta_\kappa$ & \qty{1.4452e-4}{\m} \\
+        Couche limite visqueuse $\delta_\nu$ & \qty{9.1120e-5}{\m}\\
+        \hline
+    \end{tabular}
+    \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement $f=\qty{47}{\Hz}$}
+    \label{tab:ParamHydrauTAC}
+\end{table}
+
+\subsection{Chaîne d'acquisition}
+L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments. Les quinze thermocouples du noyau  ainsi que sont connectés sur la carte d'acquisition \textcolor{red}{modèle} 
+
+Un générateur basse fréquence génère les signaux d'alimentation des sources acoustiques. Il dispose de deux sorties, chacune connectée à un amplificateur avant d'être reliée aux transducteurs. Dans le cas de la source principale (RIX Industries, 1S241M), l'amplificateur est un QSC PLD4.5 tandis que pour la source secondaire (Peerless, GBS135F) il s'agit d'un Yamaha P3500S.
+
+Les signaux de tensions aux bornes des sources acoustiques sont acquis par une carte d'acquisition (National Instruments, (\textcolor{red}{modèle}), après connexion à une sonde de tension (\textcolor{red}{modèle}). Deux accéléromètres (\textcolor{red}{modèle}) sont collés sur les sources pour mesurer leur déplacement. Pour connaître la pression acoustique dans la cavité thermoacoustique, quatre sondes (\textcolor{red}{modèle}) sont placées respectivement à l'arrière de la source principale, à l'arrière de la source secondaire 
+
+
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_ChaineAcqui}
+%    %\externalremake
+%    \input{../fig/fig_ChaineAcqui/tex/fig_ChaineAcqui.tex}
+%    \caption{Carte de la chaine d'acquisition et d'alimentation du réfrigérateur TACOT}
+%    \label{fig:ChaineAcqui}
+%\end{figure}
+
+\begin{itemize}
+    \item GBF
+    \item Amplis
+    \begin{itemize}
+        \item QSC
+        \item Yamaha
+    \end{itemize}
+    \item Sondes de tension
+    \item Cartes NI
+    \begin{itemize}
+        \item Pression statique
+        \item Pression dynamique
+        \item Thermocouples
+        \item PT100
+        \item Accéléromètres
+    \end{itemize}
+    \item LabVIEW d'acquisition
+\end{itemize}
+
+Pour étudier la distribution de température le long de l'axe du noyau, ainsi que dans les dimensions transverses, Seize thermocouples sont placés sur un plan et représentés par les symboles~`\textcolor{cyan}{\textbullet}' sur la figure~\ref{fig:TCdansNoyau}. Neuf sont placés au c\oe{}ur du noyau, dans le régénérateur. Trois sont fixés à l'extérieur du noyau, hors de l'échangeur ambiant, et trois autres sur l'extérieur de l'échangeur froid. Enfin, un dernier thermocouple est positionné au voisinage de la source acoustique principale, en vis-à-vis de l'échangeur froid.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_TCdansNoyau}
+    %\externalremake
+    \input{../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau}
+    \caption{Emplacement des thermocouples autour du noyau thermoacoustique}
+    \label{fig:TCdansNoyau}
+\end{figure}
+
+%\subsection{Emplacement des capteurs}
+%
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_ThermocouplesDefinition}
+%    %\externalremake
+%    \input{../fig/fig_ThermocouplesDefinition/tex/fig_ThermocouplesDefinition}
+%    \caption{Emplacements des thermocouples dans le noyau thermoacoustique}
+%    \label{fig:ThermocouplesDefinition}
+%\end{figure}
+
+\section{Protocole expérimental}
+Le réfrigérateur doit pouvoir être orienté dans toutes les orientations utiles pour l'étude de l'influence de la gravité sur la distribution de température. La figure~\ref{fig:TACOTSuspendu_Frigo} présente le réfrigérateur accroché à ses extrémités, et la figure~\ref{fig:TACOTSuspendu_Palans} les trois palans qui le soutiennent. Les deux palans de couleur grise, initialement présents pour régler l'inclinaison de la pompe à chaleur par rapport à l'axe horizontal, et le troisième de couleur bleue pour ajouter une direction de rotation autour de l'axe de symétrie. Celui-ci permet en outre de plus aisément passer d'une orientation à l'autre. 
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg}
+		\caption{}
+		\label{fig:TACOTSuspendu_Frigo}
+	\end{subfigure}		%
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../fig/fig_SystemeAccroche/Palans.jpg}
+		\caption{}
+		\label{fig:TACOTSuspendu_Palans}
+	\end{subfigure}	    
+    \caption{Photographies \subref{fig:TACOTSuspendu_Frigo} du refrigérateur accroché et \subref{fig:TACOTSuspendu_Palans} des palans formant le système de suspension.}
+    \label{fig:TACOTSuspendu}
+\end{figure}
+
+\subsection{Définition des orientations}
+
+Les orientations choisies au moyen des palans sont décrites par deux angles $\theta_v$ et $\theta_h$. Le premier désigne l'angle entre l'axe horizontal et l'axe de symétrie du réfrigérateur, tandis que le second, la rotation autour de cet axe de symétrie. Les orientations utilisées dans les différentes parties de ce manuscript sont présentées sur la figure~\ref{fig:OrientationCore}. Cette figure, dans laquelle la gravité est toujours dirigée vers le bas de la page, présente également les emplacements des thermocouples utilisés. 
+
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_OrientationCore}
+%%    \externalremake
+%    \input{../fig/fig_OrientationCore/tex/fig_OrientationCore}
+%    \caption{Différentes orientations du c\oe{}ur thermoacoustique avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas. Les orientations correspondent aux angles {\bf (a)} $\theta_v=\ang{0}$ et $\theta_h=\ang{0}$ pour l'orientation `\texttt{H1}', {\bf (b)} $\theta_v=\ang{0}$ et $\theta_h=\ang{+90}$ pour l'orientation `\texttt{H2}', {\bf (c)} $\theta_v=\ang{-90}$ pour l'orientation `\texttt{V1}', et {\bf (d)} $\theta_v=\ang{+90}$ pour l'orientation `\texttt{V2}'.\textcolor{red}{CHX et AHX OK ou éch. froid et éch. chaud ? + $\theta_i$ dans la caption ou la figure ?}}
+%    \label{fig:OrientationCore}
+%\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex}
+		\caption{`\texttt{H1}'}
+		\label{fig:OrientationCore_H1}
+	\end{subfigure}		%
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex}
+		\caption{`\texttt{H2}'}
+		\label{fig:OrientationCore_H2}
+	\end{subfigure} \\ \vspace{1cm}
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1.tex}
+		\caption{`\texttt{V1}'}
+		\label{fig:OrientationCore_V1}
+	\end{subfigure} %
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex}
+		\caption{`\texttt{V2}'}
+		\label{fig:OrientationCore_V2}
+	\end{subfigure}   
+    \caption{Différentes orientations du c\oe{}ur thermoacoustique avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas. Les orientations correspondent aux angles \subref{fig:OrientationCore_H1} $\theta_v=\ang{0}$ et $\theta_h=\ang{0}$ pour l'orientation `\texttt{H1}', \subref{fig:OrientationCore_H2} $\theta_v=\ang{0}$ et $\theta_h=\ang{+90}$ pour l'orientation `\texttt{H2}', \subref{fig:OrientationCore_V1} $\theta_v=\ang{-90}$ pour l'orientation `\texttt{V1}', et \subref{fig:OrientationCore_V2} $\theta_v=\ang{+90}$ pour l'orientation `\texttt{V2}'.\textcolor{red}{CHX et AHX OK ou éch. froid et éch. chaud ? + $\theta_i$ dans la caption ou la figure ?}}
+    \label{fig:OrientationCore} %
+\end{figure}
+
+\medskip
+
+La première orientation, nommée `\texttt{H1}' et représentée sur la figure~\ref{fig:OrientationCore_H1}, est la même que dans l'article dédié à la conception du réfrigérateur \cite{ramadan_design_2021}. Dans cette configuration, le \textsc{Tacot} est placé à l'horizontale comme sur la figure~\ref{fig:TACOTSuspendu_Frigo}, et les thermocouples sont placés sur un plan vertical coplanaire à la gravité. Cette orientation fait office de référence des orientations, soit $\theta_v=\theta_h=\qty{0}{\degree}$.
+
+Ensuite, la deuxième orientation est représentée sur la figure~\ref{fig:OrientationCore_H2}. Dans ce cas, référérencé en tant que `\texttt{H2}', le réfrigérateur est toujours à l'horizontale ($\theta_v=\qty{0}{\degree}$), mais pivoté autour de son axe pour placer les thermocouples sur un plan horizontal auquel la gravité est orthogonale ($\theta_h=\qty{90}{\degree}$).
+\smallskip
+
+L'orientation `\texttt{V1}' est affichée sur la figure~\ref{fig:OrientationCore_V1}. Cette configuration est radicalement différentes des deux précédentes : l'axe de symétrie du réfrigérateur est vertical, avec l'échangeur froid sous l'échangeur ambiant ($\theta_v=\qty{-90}{\degree}$).
+
+Enfin, l'orientation `\texttt{V2}' affichée sur la figure~\ref{fig:OrientationCore_V2} est l'orientation inverse de la précédente. L'axe de symétrie du réfrigérateur est encore vertical, mais la source acoustique principale est cette fois au dessus du noyau thermoacoustique et $\theta_v=\qty{+90}{\degree}$.
+
+\subsection{Acquisitions}
+\subsubsection{Procédures d'acquisition}
+Les acquisitions sont réalisées en plusieurs temps. Tout d'abord, à chaque début de journée de campagne, l'état initial de toutes les grandeurs est acquis sur une minute et sauvegardé sous un label `\texttt{init}'. Cela permet de garder en mémoire toutes les conditions expérimentales initiales dont les valeurs peuvent potentiellement influer sur le comportement du réfrigérateur, comme par exemple la température ambiante ou la pression statique. 
+
+\paragraph{Mesures sans acoustique}
+Pour les mesures sans acoustique labellisées `\texttt{heat\_{}only}', le protocole est plus simple. Après l'acquisition initiale `\texttt{init}', la charge thermique est appliquée au noyau sans alimenter les sources acoustiques. Cette charge thermique peut prendre trois formes : un écoulement d'eau dans l'échangeur ambiant, un chauffage par les résistances chauffantes, ou les deux à la fois. Ces mesures permettent d'étudier la distribution de température en l'absence d'écoulement oscillant, ainsi que de calculer les valeurs de conductivité thermique $[k_x;k_r]^T$ qui sont présentées équation~\eqref{eq:FluxCond_Lotton}.
+
+Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante \fg{} sont conservés pour des raisons de clarté, mais l'eau circulant dans l'échangeur ambiant et les cartouches chauffantes se trouvant dans l'échangeur froid, la direction du gradient de température dans le noyau thermoacoustique est inversée par rapport aux expériences avec acoustique. %Toutefois, les ordres de grandeur des différences de température sont les mêmes que pour les expériences avec acoustique, c'est-à-dire 
+
+Pour garder un moyen de comparaison avec les mesures avec acoustique, le mélange de gaz est le même.
+
+\paragraph{Mesures avec acoustique}\label{chap:MesureAvecAcou} Pour les expériences \underline{avec acoustique}, le protocole est plus complexe. En prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'échangeur ambiant (voir l'annexe~\ref{chap:AHX}), l'eau est préalablement mise en circulation dans cet échangeur après avoir démarré une acquisition des 30 capteurs jusqu'à stabilisation de la distribution de température dans le noyau. L'acquisition est ensuite interrompue et enregistrée avec un label `\texttt{Water}' \textcolor{red}{\og \texttt{Water} \fg{} ?}.
+
+L'étape suivante concerne le régime transitoire après allumage des sources acoustiques. Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, cela sonne la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial. 
+
+Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\frac{p}{P_0}=\qty{.7}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible. Ainsi, l'hypothèse concernant la linéarité acoustique est mieux vérifiée et peut plus aisément être comparé à la théorie linéaire. À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{1.7}{\percent}$. 
+
+En revanche, certains des paramètres d'excitation reste constant pour toutes les expériences : la fréquence est toujours de \qty{47}{\hertz}, pour laquelle la prédiction des performances annonce les meilleurs résultats. C'est également la première fréquence de résonance de la source principale, et son facteur de qualité très élevé (\textcolor{red}{$Q_{ts}=$}) ainsi que la faible valeur de résistance de la bobine ($R_e=\qty{.7}{\ohm}$) empêchent l'amplificateur QSC de fonctionner à une autre fréquence sans l'endommager, l'impédance minimale supportée étant de \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60}, ce que le modèle \textsc{DeltaEC} indique comme déphasage optimale et que des expériences préliminaires confirment. Enfin, le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, et le tout est pressurisé à \qty{40e5}{\pascal}.
+
+
+
+\subsubsection{Paramètres d'acquisition}
+
+Les cartes d'acquisition, connectées sur une baie d'instrumentation, contraignent la fréquence d'échantillonage utilisée. Celles concernant les mesures de quantité oscillantes (pression acoustique, accélération \textcolor{red}{à vérifier}) imposent que la fréquence d'échantillonage $f_s$ soit au moins égale à \qty{1651}{\Hz}\footnote{Les acquisitions des \num{30} capteurs durent \qty{1}{\hour}, et les données sont encodées sur \qty{32}{\bit} flottants. Au total, chaque acquisition pèse \qty{713}{\mega\byte}, taille à laquelle il faut ajouter quelques \unit{\mega\byte} pour le protocole \texttt{tdms} et l'entête contenant les informations de mesure.}.
+
+\section{Ensemble des simulations réalisées}
+\subsection{Estimation théorique du flux de chaleur de convection naturelle}
+Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Pour les orientations où le réfrigérateur est à l'horizontale ($\theta_v=\qty{0}{\degree}$), il est très difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre de cette cavité de forme conique pour laquelle il n'existe pas de littérature à notre connaissance \textcolor{red}{à vérifier}. Avant la moindre tentative d'explication de cette distributions de température, des études hydrodynamiques sont menées pour aider à l'interprétation des mesures de température. 
+
+Tout d'abord, une étude très simplifiée d'une cavité 2D où les parois droite et gauches sont respectivement à une température chaude $T_c$ et froide $T_f$. Cette étude doit permettre l'obtention d'ordres de grandeurs des quantité d'intérêt, en particulier le flux de chaleur $Q_{conv}$ qui agit comme une charge thermique sur le côté froid du noyau thermoacoustique. Ensuite, une simulation par éléments finis de cette cavité sur le logiciel Comsol Multiphysics doit permettre d'estimer les lignes de courants dans la cellule et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid.
+
+\subsubsection{\'Etude simplifiée}
+\paragraph{Sans acoustique}
+Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, une étude très simplifiée dans une cavité rectangulaire en 2D et représentée sur les figures~\ref{fig:SimuConvNat2D}\textbf{(a)} et \textbf{(b)} est menée. 
+
+Dans la première sous-figure, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore}\textbf{(a)} et \textbf{(b)}.
+
+Dans la seconde sous-figure, ce sont cette fois les sol et plafond qui sont fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos pour lesquels la température est $T_\infty$. Dans cette configuration de type \og Rayleigh-Bénard \fg{} , il peut s'établir une ou plusieurs cellules de convection naturelle si le nombre de Rayleigh $\Rayleigh$ est supérieur à un nombre de Rayleigh critique $\Rayleigh_c$ \textcolor{red}{valeur 1700 ? + citation}, où le gaz s'élève de la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_SimuConvNat2D}
+%    \externalremake
+    \input{../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D}
+    \caption{Cellule de convection naturelle dans une cavité rectangulaire 2D \textbf{(a)} pour un gradient de température normal à la direction de la gravité, et \textbf{(b)} pour un gradient de température colinéaire à la direction de la gravité. Cela dit, la distance caractéristique est \textcolor{red}{choisie} dans les deux cas suivant la même direction que la gravité.}
+    \label{fig:SimuConvNat2D}
+\end{figure}
+
+
+
+Pour un tel système, il est possible de modéliser l'écoulement en utilisant les équations de Navier-Stokes, réécrites dans le système d'équations~\eqref{eq:NavierStokes_Boussinesq} avec l'approximation de Boussinesq tel que
+
+\begin{subequations}
+	\begin{align}
+		\partial_t \delta\rho + (\mathbf v \cdot \nabla)\mathbf{\delta\rho} + \delta\rho \nabla \cdot \mathbf{v} &= 0, \label{eq:NavierStokes_Boussinesq_Conti}\\
+		\delta\rho [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \delta\rho \mathbf g, \text{et}\label{eq:NavierStokes_Boussinesq_QtMvt}\\
+		\partial_t T + (\mathbf v \cdot \nabla) T - \kappa\nabla^2T &= 0. \label{eq:NavierStokes_Boussinesq_NRJinterne}
+	\end{align}
+	\label{eq:NavierStokes_Boussinesq}%
+\end{subequations}
+La dédimensionalisation de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} qui concerne la conservation de la quantité de mouvement s'écrit
+
+\begin{equation}
+	\frac{1}{\mathrm{Pr}}(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\mathbf{v}) = -\nabla p + \mathrm{Ra} T \mathbf e_z + \nabla^2 \cdot \mathbf{v},
+	\label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}
+\end{equation}
+et fait apparaître le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl}, ainsi que le nombre de Rayleigh noté $\mathrm{Ra}$, et dont la définition est donnée par 
+\begin{equation}
+	\mathrm{Ra} = \frac{g \beta L_c^3}{\nu \kappa} (T_c-T_f),
+	\label{eq:NbrRayleigh}
+\end{equation}
+où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de la zone considérée, et $L_c$ est la dimension caractéristique de la cavité suivant la direction verticale. Ce nombre est primordial car il correspond au rapport des effets gravifiques qui mettent le fluide en mouvement aux effets qui le limitent, soit la diffusion thermique qui limite la différence de température et la viscosité qui ralentit l'écoulement du fluide. Sa valeur indique également le régime de l'écoulement causé par la convection car des vitesses de référence verticales et horizontales, notées $v_{ref}^{// \mathbf g}$ et $v_{ref}^{\perp \mathbf g}$, peuvent d'ailleurs être calculées en fonction de ce nombre de Rayleigh suivant les définitions
+
+\begin{subequations}
+	\begin{align}
+		v_{\sf ref}^{// \mathbf g} &\sim \frac{\kappa}{L_c}\sqrt{\Rayleigh} \text{ et}	\label{eq:VitesseReferenceV_Rayleigh}\\
+		v_{\sf ref}^{\perp \mathbf g} &\sim \frac{\kappa}{L_c}\sqrt[4]{\Rayleigh},	\label{eq:VitesseReferenceH_Rayleigh}
+	\end{align}
+	\label{eq:VitesseReference_Rayleigh}%
+\end{subequations}
+d'après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud et dans le cas où le gradient de température est lui-même horizontal \cite{belleoud_etude_2016}. \textcolor{red}{gradient vertical et Rayleigh critique pour apparition/stabilité de la cellule de Rayleigh-Bénard.}
+
+Dans un matériau poreux, il peut également exister des écoulements liés à la convection naturelle. Dans ce cas, le nombre de Rayleigh est toujours une notion utile pour prédire le mouvement du fluide à l'intérieur, à condition toutefois de le modifier pour prendre en compte la perméabilité $K_p$ ainsi que la diffusivité thermique $\kappa_p$ de ce milieu. Il vient alors l'expression du nombre de Rayleigh-Darcy noté $\mathrm{Ra}_p$, et dont la définition est donnée par Nield et Bejan \cite{nield_convection_2013} par
+
+\begin{equation}
+	\mathrm{Ra}_p = \frac{g \beta L_c K_p}{\nu \kappa_p} (T_c-T_f),
+	\label{eq:NbrRayleigh_poreux}
+\end{equation}
+ainsi que la vitesse verticale de référence correspondante, 
+
+\begin{equation}
+	v_{\textsf{ref},p}^{// \mathbf g} = \frac{\kappa_p}{L_c} \Rayleigh_p.
+	\label{eq:VitesseReference_Rayleigh_poreux}
+\end{equation}
+
+
+Lorsque la convection naturelle provoque un écoulement circulant à une vitesse de référence $v_{\sf ref}$, il est possible de quantifier la contribution des échanges thermiques ainsi \textcolor{red}{provoqués/favorisés} et des pertes visqueuses en définissant le nombre de Grashof par
+
+\begin{equation}
+	\Grashof = \left( \frac{v_{\sf ref} L_c}{\nu} \right)^2,
+	\label{eq:NbrGrashof}
+\end{equation}
+et est relié au nombre de Rayleigh par la formule
+
+\begin{equation}
+	\Grashof = \frac{\Rayleigh}{\Prandtl}.
+	\label{eq:NbrGrashof_RayleighSurPrandtl}
+\end{equation}
+
+
+\paragraph{Avec acoustique}
+Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse n'a pas de sens dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causé par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
+
+\begin{equation}
+	\Peclet = \frac{v L_c}{\kappa}.
+	\label{eq:NbrPeclet}
+\end{equation}
+
+Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluide causé par un échange thermique, le nombre de Péclet quantifie les échanges de chaleur réalisés par un fluide qui se déplace. Cependant, il reste nécessaire de proposer une hypothèse quant à l'utilisation de ce nombre : la vitesse d'entraînement du fluide est ici la vitesse acoustique $v$, contrairement aux cas classiques de son utilisation dans la littérature où un écoulement continu est considéré. De même que le nombre de Rayleigh, le nombre de Péclet est lié aux nombres de Grashof et Prandtl suivant une relation différente de l'équation~\eqref{eq:NbrGrashof_RayleighSurPrandtl}, qui s'écrit
+
+\begin{equation}
+	\Peclet \equiv \sqrt{\Grashof}~\Prandtl.
+	\label{eq:NbrPeclet_GrashofFoisPrandtl}
+\end{equation}
+
+
+\subsubsection{\'Elements finis}
+Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavité est en réalité un cône. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis Comsol Multiphysics. Avec ce logiciel, il est également possible de coupler une simulation acoustique en plus de la simulation de transferts thermiques, ce que le modèle 2D simplifié ne permet pas aisément. 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=.5\textwidth]{../fig/fig_ConvNatComsol/Geometry.png}
+    \caption{Géométrie de la cavité d'adaptation d'impédance entre la source acoustique principale et le noyau thermoacoustique}
+    \label{fig:CaviteConvNat_ComsolGeometrie}
+\end{figure}
+
+\subsection{Régime transitoire sans convection naturelle}
+Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton et al. pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du \textit{stack} en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volumes éléméntaires $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques.
+
+Les flux thermiques sont pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis de l'équation \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton}. 
+
+\begin{enumerate}[label=\textbf{(\roman*)}]
+\item Tout d'abord, le flux thermoacoustique 1D est calculé avec
+
+\begin{equation}
+Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } pu^* \right] }_{r(x)} + \underbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |u|^2 }_{q(x)}\partial_x \tau(r,x;t),
+\label{eq:FluxTA_Lotton_Regen}
+\end{equation}
+où $\tau(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale à la température initiale. Pour la suite du document, cet écart de température sera simplement écrit $\tau$, sans la dépendance spatio-temporelle. 
+
+\item Ensuite, la conduction dans le régénérateur est prise en compte dans toutes les directions du régénérateur avec l'équation
+
+\begin{equation}
+	Q_{\sf cond} = -\begin{pmatrix}
+	k_x\\
+%	k_\alpha\\
+	k_r
+	\end{pmatrix} \cdot \nabla \tau,
+	\label{eq:FluxCond_Lotton}
+\end{equation}
+avec les indices $x$ et $r$ dénotant respectivement les directions axiale et radiale.
+
+%\begin{equation}
+%Q_{\sf cond}^{(x)} = -k_x\partial_x\tau~\mathrm{\mathbf e_x},
+%\label{eq:FluxCondx_Lotton}
+%\end{equation}
+%avec... 
+%
+%\begin{equation}
+%Q_{\sf cond}^{(r)} = -k_r\partial_r\tau~\mathrm{\mathbf e_r},
+%\label{eq:FluxCondr_Lotton}
+%\end{equation}
+%
+%\begin{equation}
+%Q_{\sf cond}^{(\alpha)} = -k_\alpha\partial_\alpha\tau~\mathrm{\mathbf e_\alpha},
+%\label{eq:FluxCondalpha_Lotton}
+%\end{equation}
+%\textcolor{red}{Rassembler $Q_{cond}$ en 1 seul terme} avec ...
+
+\item Les pertes visqueuses sont estimées avec l'équation
+
+\begin{equation}
+Q_{\sf visq} = \frac{1}{R_{\sf reg}^2} \int_0^{R_{\sf reg}} \frac{1}{\textcolor{red}{T_0}} \int_0^{\textcolor{red}{T_0}} \mu (\partial_r u)^2\ r \deriv r \deriv t,
+\label{eq:FluxVisq_Lotton}
+\end{equation}
+résolue par une méthode numérique.
+
+\item Enfin, les pertes latérales sur la circonférence et aux extrémités du régénérateur sont prises en compte par
+
+\begin{equation}
+Q_{\sf lat} = \begin{pmatrix}h_x\\h_r\end{pmatrix} \tau,
+\label{eq:FluxLat_Lotton}
+\end{equation}
+où $h_r$ et $h_x$ sont respectivement le coefficient d'échanges avec les parois à $r = R_{\sf reg}$ et les coefficients d'échanges avec les extrémités à $x=0$ et $x=L_{\sf reg}$. Ils sont déterminés de façon empirique dans l'article.
+
+%Alternativement, il est possible de prendre en compte les échanges de chaleur au bord et dans l'axe du noyau par un terme qui représente le flux de chaleur induit par les oscillations acoustiques noté $\psi_{ac}$ dans la thèse de Guédra \cite{guedra_etudes_2012} et défini par
+%
+%\begin{equation}
+%	\psi_{ac}=\frac12 \rho_0 T_0 \RE[s v^*],
+%	\label{eq:FluxChaleurAcou_Guedra}
+%\end{equation}
+%dont la moyenne sur la section s'écrit
+%
+%\begin{align}
+%	\langle\psi_{ac}\rangle &= \RE[g]\mathcal I \IM[g]\mathcal J - k_{ac}\deriv_x T_0,	\label{eq:FluxChaleurAcou_Guedra_Moy}\\
+%										&= \langle\psi_{ac,0}\rangle
+%\end{align}
+
+\end{enumerate} 
+
+Ces flux de chaleurs sont reportés dans l'équation modifiée du bilan de chaleur qui s'écrit
+
+\begin{equation}
+[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \tau = - \nabla \cdot (Q_{TA} + Q_{\sf cond}) + Q_{\sf visq} + \frac{S_{\sf reg}}{L_{\sf reg}}Q_{\sf lat},
+\end{equation}
+où le premier membre désigne la variation d'énergie interne suite à la variation de température. Dans le second membre, les flux sont exprimés pour chaque volume élémentaire. D'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux et les pertes latérales se produisent dans chaque volume, il sont donc source (ou réservoir suivant le signe) de chaleur et doivent être pris en compte tels quels. Ceci dit, le régénérateur est supposé axisymétrique, ce qui permet de considérer les composantes azimuthales $\nabla_\alpha \cdot Q_{TA}$ et $\nabla_\alpha \cdot Q_{\sf cond}$ comme nulles.
+
+
+Les flux chaleur apportés par l'échangeur froid $Q_f$ et extrait par l'échangeur ambiant $Q_a$ sont introduits comme des conditions aux frontières à l'entrée et à la sortie du régénérateur, de même que le flux $Q_{\sf vort}$. Ces conditions aux frontières s'écrivent au moyen du système d'équations
+
+\begin{subequations}
+	\begin{align}
+		k_x \partial_x \tau - h_{x}|_{x=0}\tau &= Q_{TA}|_{x=0} - Q_{\sf vort}|_{x=0} + Q_f, \label{eq:CondFront_x_0Froid}\\
+		k_x \partial_x \tau + h_{x}|_{x=L_{\sf reg}}\tau &= Q_{TA}|_{x=L_{\sf reg}}  + Q_{\sf vort}|_{x=L_{\sf reg}} - Q_a, \text{et} \label{eq:CondFront_x_LregAmb}\\
+		k_r \partial_r \tau + h_{r}|_{r=r_a} &= 0. \label{eq:CondFront_r_ra}
+	\end{align}
+	\label{eq:CondFront}%
+\end{subequations}
+
+
+
+Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique est également différent dans le cas du \textsc{Tacot}. Sans être complètement \og à ondes progressives \fg{} ni \og à ondes stationnaires \fg{}, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
+
+\begin{subequations}
+	\begin{align}
+		T_{pp}^{(n)} &= 1, \label{eq:TMatrix_Tpp_regen}\\
+		T_{pu}^{(n)} &= -\frac{i \omega \rho}{\Phi S (1-f_\nu)}\deriv x, \label{eq:TMatrix_Tpu_regen}\\
+		T_{up}^{(n)} &= -\frac{i \omega \Phi S}{\gamma P_0} \deriv x, \text{et} \label{eq:TMatrix_Tup_regen}\\
+		T_{uu}^{(n)} &= 1. \label{eq:TMatrix_Tuu_regen}
+	\end{align}
+	\label{eq:TMatrix_regen}
+\end{subequations}
+
+
+
+
+
+

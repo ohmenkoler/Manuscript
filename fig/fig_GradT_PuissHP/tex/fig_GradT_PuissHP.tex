@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+    \def\width{.7\textwidth};
+    \def\height{7cm};
+    
+    \begin{axis}[name=tT_WHP,height=\height,width=\width,no marks,
+    %xtick={-180,0,180},xticklabels={$-\pi$,$0$,$\pi$},
+    %ytick={-360,-180,0,180},yticklabels={$-2\pi$,$-\pi$,$0$,$\pi$},
+    xlabel={$t$ [\unit{\second}]},
+    ylabel={$T$ [\unit{\degreeCelsius}]},
+    legend style={at={(1,1.05)},anchor=south east},
+    line width=1pt,
+    grid=both,
+    grid style={line width=.1pt, draw=gray!10},
+    major grid style={line width=.2pt,draw=gray!50},
+    ]
+    \foreach \i [evaluate=\i as \c using \i*5] in {5,11}{
+    %\def\colorlist{MatlabBlue,MatlabOrange,MatlabYellow,MatlabPurple,MatlabGreen,MatlabCyan,MatlabBrown};
+    \addplot file {../fig/fig_GradT_PuissHP/data/data_tT\i.txt};
+    %\draw (0.1,\i/10) node[]{\i};
+    }
+    \end{axis}    
+\end{tikzpicture}

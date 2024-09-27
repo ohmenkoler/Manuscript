@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+    \def\width{.7\textwidth};
+    \def\height{7cm};
+    \def\xcursor{306};
+    
+    \begin{axis}[name=tT_WHP,height=\height,width=\width,no marks,
+    xmin=0,
+    xlabel={$t$ [\unit{\second}]},
+    ylabel={$\dfrac{\Delta T}{\max(\Delta T)}$},
+    legend style={at={(.05,.05)},anchor=south west},
+    line width=1pt,
+    grid=both,
+    grid style={line width=.1pt, draw=gray!10},
+    major grid style={line width=.2pt,draw=gray!50},
+    ]
+    % \foreach \i [evaluate=\i as \c using \i*5] in {5,11}{
+    % %\def\colorlist{MatlabBlue,MatlabOrange,MatlabYellow,MatlabPurple,MatlabGreen,MatlabCyan,MatlabBrown};
+    % \addplot file {../fig/fig_GradT_PhaseHP/data/data_tT\i.txt};
+    % %\draw (0.1,\i/10) node[]{\i};
+    % }
+    
+    \addplot[MatlabBlue] file {../fig/fig_GradT_PhaseHP/data/data_tDT_TA_norm.txt};
+    \addplot[MatlabOrange] file {../fig/fig_GradT_PhaseHP/data/data_tDT_water_norm.txt};
+    \draw[dashed,black!50] ({axis cs:\xcursor,0}|-{rel axis cs:0,0}) -- ({axis cs:\xcursor,0}|-{rel axis cs:0,1}) node[pos=.5,right,color=black]{\shortstack{$t=\qty{\xcursor}{\second}$\\$\phi^{\sf GBF}_{\sf RIX-HP}=\ang{-10}$}};
+    \legend{Thermoacoustique \\ Eau dans l'AHX \\};
+    \end{axis}    
+\end{tikzpicture}

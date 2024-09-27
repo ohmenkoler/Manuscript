@@ -1,0 +1,10 @@
+\draw[line width=.5mm] (-2.5*\LX,0) to[out=90,in=-180] (-\LX,\LY) -- ++(2*\LX,0) -- ++(.5*\LX,-2*\LY/3) -- ++(.2*\LX,0) -- ++(0,2*\LY/3);
+\draw[line width=.5mm] (\LX,\LY) -- ++(\LX,0) to[out=0,in=90] (3.5*\LX,0);
+
+\fill[left color=red,right color=blue] ({-\LX+.4*\CoreX},0) rectangle ({-\LX+.9*\CoreX},\CoreY);
+\draw[line width=.5mm] (-\LX,\CoreY) -- ++(\CoreX,0);
+\draw[fill=PythonBlue] (-.9*\LX,0) -- ++(0,\CoreY) to[out=-80,in=90] (-.7*\LX,0);
+\draw ({-\LX+.4*\CoreX},0) -- ++(0,\CoreY);
+\draw ({-\LX+.9*\CoreX},0) -- ++(0,\CoreY);
+
+\draw[fill=PythonBlue] (1.6*\LX,0) |- ++(.3*\LX,.9*\LY/3) |- ++(\LX,.2*\LY) arc (90:0:.05) -- ++(0,-.5*\LY);

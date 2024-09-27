@@ -1,0 +1,155 @@
+\chapter{Convection naturelle dans et proche du noyau thermoacoustique}
+
+Lors des expériences réalisées lors de la caractérisation du réfrigérateur TACOT, il a été montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau \textcolor{red}{figure ?}\cite{ramadan_design_2021}. Cet écart au comportement attendu , c'est-à-dire un gradient linéaire entre températures froides et ambiant et une température uniforme sur la section du noyau thermoacoustique, implique la présence d'un écoulement moyen non nul dans le régénérateur. Parmi les hypothèses formulées, 
+
+\section{Dispositif expérimental}
+
+Pour étudier l'influence de la convection naturelle sur la distribution de température au sein du noyau thermoacoustique, le dispositif expérimental créé à l'origine du projet est modifié. Entre les deux palans visibles sur la figure~\ref{fig:TACOTSuspendu_Palans} (en gris), initialement présents pour régler l'inclinaison de la pompe à chaleur par rapport à l'axe horizontal, est placé un troisième (en bleu) pour ajouter une direction de rotation autour de l'axe de symétrie. Celui-ci
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg}
+		\caption{}
+		\label{fig:TACOTSuspendu_Frigo}
+	\end{subfigure}		
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../fig/fig_SystemeAccroche/Palans.jpg}
+		\caption{}
+		\label{fig:TACOTSuspendu_Palans}
+	\end{subfigure}	    
+    \caption{Photographies \subref{fig:TACOTSuspendu_Frigo} du refrigérateur accroché et \subref{fig:TACOTSuspendu_Palans} des palans formant le système de suspension.}
+    \label{fig:TACOTSuspendu}
+\end{figure}
+
+\subsection{Définition des orientations}
+
+Les orientations choisies au moyen des palans sont décrites par deux angles. Le premier, noté $\theta_v$, désigne l'inclinaison par rapport à l'horizontal et le second, noté $\theta_h$, la rotation autour de l'axe de symétrie du réfrigérateur. Les configurations d'intérêt sont présentées sur la figure~\ref{fig:OrientationCore}, et correspondent à des \textcolor{red}{cas d'études}.
+
+\begin{figure}[!ht]
+    \centering
+    \external{OrientationCore}
+%    \externalremake
+    \input{../fig/fig_OrientationCore/tex/fig_OrientationCore}
+    \caption{Différentes orientations du c\oe{}ur thermoacoustique avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas.\textcolor{red}{Faire le lien avec $\theta_v$ et $\theta_h$ ?}}
+    \label{fig:OrientationCore}
+\end{figure}
+
+
+\subsection{Adimensionnement des données de température}
+
+Pour comparer les données de température relatives les unes aux autres, il est judicieux d'exprimer $T(x,r)$ dans l'intervalle $[0,1]$ en définissant la température adimensionnée $\tau(x,r)$ telle que
+
+\begin{equation}
+    \tau(x,r) = \frac{T(x,r)-T_c}{T_a - T_c}\quad,
+    \label{eq:TemperatureAdimension}
+\end{equation}
+où $T_a$ et $T_c$ sont les températures ambiante et froide mesurées sur l'axe du noyau thermoacoustique.
+
+
+\section{Protocole expérimental}
+
+Le protocole de mesure suivi pour l'acquisition des données expérimentale comporte plusieurs parties. Tout d'abord, l'eau est mise en circulation dans l'échangeur ambiant à un débit de \qty{7}{\l\per\minute},
+
+Les conditions expérimentales sont présentées Tab~\ref{tab:RecapCondExpe}.
+
+\begin{table}[!ht]
+\centering
+	\begin{tabular}{ccccccccc}
+		\hline
+		$\xi_1$ [\unit{\mm}] & $\xi_2$ [\unit{\mm}] & $\varphi_{2-1}$ [\unit{\degree}] & $DR$ [\unit{\percent}] & $T_a$ [\unit{\degreeCelsius}] & $\dot Q_a$ [\unit{\W}] & $T_c$ [\unit{\degreeCelsius}] & $\dot Q_c$ [\unit{\W}] & Orientation \\\hline\hline
+		\num{0} & \num{0} & -- & \num{0} & & & & & V1 \\
+		\num{0} & \num{0} & -- & \num{0} & & & & & V2\\%\hline
+		\num{1} & \num{.28} & \num{-60} & \num{.4} & \textbf{\num{15.1}} | \textit{\num{15.1}} & \num{1.29} & \textbf{\num{10.9}} | \textit{\num{13}} & \num{0} & V1 \\
+		\num{1.1} & \num{.30} & \num{-60} & \num{.4} & \textbf{\num{15.3}} | \textit{\num{14.2}}& \num{.11} & \textbf{\num{12.3}} | \textit{\num{13.4}} & \num{0} & V2 \\
+		\num{1} & \num{.28} & \num{-60} & \num{.4} & \textbf{\num{16.7}} | \textit{\num{16}}& \num{-.40} & \textbf{\num{16.2}} | \textit{\num{17}} & \num{10} & V1 \\
+		\num{1.1} & \num{.32} & \num{-60} & \num{.4} &\textbf{ \num{16}} | \textit{\num{14.6}} & \num{4.47} & \textbf{\num{15.9}} | \textit{\num{16.9}} & \num{6.43} & V2 \\%\hline
+		\num{4} & \num{.89} & \num{-60} & \num{1.7} & \textbf{\num{10.6}} | \textit{\num{17.3}} & \num{33.8} & \textbf{\num{-8.82}} | \textit{\num{-1.92}} & \num{0} & V1 \\
+		\num{5} & \num{1.14} & \num{-60} & \num{1.7} & \textbf{\num{18.65}} | \textit{\num{16.5}} & \num{75} & \textbf{\num{-14.24}} | \textit{\num{-9.85}} & \num{0} & V2 \\
+		\num{4} & \num{.87} & \num{-60} & \num{1.7} & \textbf{\num{28}} | \textit{\num{27.6}} & \num{67.54} & \textbf{\num{27.83}} | \textit{\num{30.12}}& \num{135} & V1 \\
+		\num{5} & \num{1.1} & \num{-60} & \num{1.7} & \textbf{\num{31.59}} | \textit{\num{24.06}} & \num{143.94} & \textbf{\num{31.7}} | \textit{\num{36.1}} & \num{219} & V2 \\%\hline
+		\num{8.3} & \num{1.63} & \num{-60} & \num{3.5} & \textbf{\num{30.12}} | \textit{\num{30.98}} & \num{175.03} & \textbf{\num{-20.47}} | \textit{\num{-14.53}} & \num{0} & V1 \\
+		\num{8.4} & \num{1.68} & \num{-60} & \num{3.5} & \textbf{\num{22.33}} | \textit{\num{18.85}} & \num{217.72} & \textbf{\num{-24.53}} | \textit{\num{-16.81}} & \num{0} & V2 \\
+		\num{8.3} & \num{1.56} & \num{-60} & \num{3.5} & \textbf{\num{32.58}} | \textit{\num{35.02}} & \num{240.56} &\textbf{\num{-6.03}} | \textit{\num{2.8}}  & \num{112} & V1 \\
+		\num{8.3} & \num{1.66} & \num{-60} & \num{3.5} & \textbf{\num{27.28}} | \textit{\num{22.24}} & \num{254.95} & \textbf{\num{-6.6}} | \textit{\num{-1.22}} & \num{112} & V2 \\
+		\num{8.4} & \num{1.56} & \num{-60} & \num{3.5} & \textbf{\num{33.51}} | \textit{\num{36.85}} & \num{264.78} & \textbf{\num{2.08}} | \textit{\num{11.77}} & \num{219} & V1 \\
+		\num{8.3} & \num{1.63} & \num{-60} & \num{3.5} & \textbf{\num{30.71}} | \textit{\num{24.89}} & \num{290.28} & \textbf{\num{3.87}} | \textit{\num{11.64}} & \num{219} & V2 \\
+		\num{8.3} & \num{1.54} & \num{-60} & \num{3.5} & \textbf{\num{38.5}} | \textit{\num{40.92}} & \num{303.34} & \textbf{\num{16.36}} | \textit{\num{25.87}} & \num{330} & V1 \\
+		\num{8.3} & \num{1.62} & \num{-60} & \num{3.5} & \textbf{\num{36.35}} | \textit{\num{28.01}} & \num{304.32} & \textbf{\num{16.77}} | \textit{\num{24.67}} & \num{330} & V2 \\
+		\num{8.3} & \num{1.54} & \num{-60} & \num{3.5} & \textbf{\num{40.59}} | \textit{\num{42.37}} & \num{298.5} & \textbf{\num{28.57}} | \textit{\num{37.68}} & \num{446} & V1 \\
+		\num{8.4} & \num{1.6} & \num{-60} & \num{3.5} & \textbf{\num{35.55}} | \textit{\num{29.27}} & \num{333.64} & \textbf{\num{29.52}} | \textit{\num{39.74}} & \num{446} & V2 \\%\hline
+%%		\num{0} & \num{0} & - & \num{0} & & & & & H1 \\
+%%		\num{0} & \num{0} & - & \num{0} & & & & & H2 \\%\hline
+%		\num{8.5} & \num{} & \num{-60} & \num{3.5} & \textbf{\num{}} | \textit{\num{}} & \num{} & \textbf{\num{}} | \textit{\num{}} & \num{0} & H1 \\
+%		\num{8.5} &\num{}  & \num{-60} & \num{3.5} & \textbf{\num{}} | \textit{\num{}} & \num{} & \textbf{\num{}} | \textit{\num{}} & \num{0} & H2 \\
+%		\num{8.5} & \num{} & \num{-60} & \num{3.5} & \textbf{\num{}} | \textit{\num{}} & \num{} & \textbf{\num{}} | \textit{\num{}} & \num{1212} & H1 \\
+%		\num{8.5} & \num{} & \num{-60} & \num{3.5} & \textbf{\num{}} | \textit{\num{}} & \num{} & \textbf{\num{}} | \textit{\num{}} & \num{1212} & H2 \\
+\hline
+	\end{tabular} %\textbf{\num{}} | \textit{\num{}}
+	\caption{Tableau récapitulatif des conditions expérimentales.\textcolor{red}{Pression ac  ?} Les déplacements $\xi$ sont exprimés en valeur ``crête'', les températures en \textbf{gras} sont mesurées au centre du noyau, celles en \textit{italique} sont le résultat d'une moyenne sur la section.}
+	\label{tab:RecapCondExpe}
+\end{table}
+
+
+\section{Cellule de convection naturelle entre la source principale et le noyau thermoacoustique}
+
+\section{Résultats}
+
+\subsection{\'Etude des données temporelles de température}
+
+En première approche, les données de température en fonction du temps sont tracées pour être analysées. Elles comportent des informations sur le régime transitoire, et sont assez longues pour mesurer les températures atteintes en régime établi. Leur durée permet également de vérifier la présence ou l'absence de phénomènes d'instabilités observés lors de mesures préliminaires.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_Vert2_LowRix_Acou}
+    %\externalremake
+    \input{../fig/fig_TransientTemperature/Acou/tex/LowRix.tex}
+    \caption{Température transitoire à l'allumage des sources acoustiques}
+    \label{fig:Vert2_LowRix_Acou}
+\end{figure}
+
+\subsection{\'Etude des profils de température}
+
+\subsubsection{Expériences sans acoustique}
+
+Dans l'idée de séparer les phénomènes physiques en jeu lors du fonctionnement du réfrigérateur à son point de fonctionnement\footnote{$x_{\text{RIX}}=\qty{8.5}{\mm}$ \textcolor{red}{$W_e^{\sf RIX}=\qty{200}{\watt}$}, $W_e^{\sf HP}=\qty{12}{\watt}$}, les sources acoustiques sont désactivées pour un temps. En revanche, les charges thermiques sont utilisés, un peu comme dans le cas d'une expérience à $f=\qty{0}{\hertz}$. 
+
+\begin{figure}[ht!]
+    \centering
+    \external{fig_ProfilsHeatOnly}
+    %\externalremake
+    \input{../fig/fig_ProfilsHeatOnly/tex/fig_ProfilsHeatOnly}
+    \caption{Comparaison entre les profils de température dans le noyau thermoacoustique pour deux orientations \textcolor{red}{Ajouter détail}}
+    \label{fig:ProfilsHeatOnly}
+\end{figure}
+
+\subsubsection{Expériences avec acoustique}
+
+\textcolor{red}{Ajouter figures avec \begin{itemize}
+    \item Atteinte du régime stationnaire (temporel transitoire)
+    \item Signaux de température pendant stationnaire
+    \item En extraire l'écart-type pour barres d'erreur
+    \item Indiquer les puissances $\dot Q_a$ et $\dot Q_c$
+\end{itemize}}
+
+\ref{fig:FrigoToupie_Profils_H12_WaterAcou} et \ref{fig:FrigoToupie_Profils_V12_WaterAcou}
+
+\begin{figure}[ht!]
+    \centering
+    \external{fig_FrigoToupie_Profils_H12_WaterAcou}
+    %\externalremake
+    \input{../fig/fig_FrigoToupie_Profils/tex/fig_FrigoToupie_Profils_H12_WaterAcou}
+    \caption{\textcolor{red}{Ajouter num de capteurs et changer les noms "top", "mid", et "bot"} Profils de température $\tau$ dans différentes zones du noyau thermoacoustique. {\bf (a)}~: échangeur ambiant, {\bf (b)}~: $r=+r_{\sf ref}$, {\bf (c)}~: $r=0$, {\bf (d)}~: $r=-r_{\sf ref}$, {\bf (e)}~: échangeur froid. Les températures sont adimensionnées suivant la relation \eqref{eq:TemperatureAdimension}.}
+    \label{fig:FrigoToupie_Profils_H12_WaterAcou}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \external{fig_FrigoToupie_Profils_V12_WaterAcou}
+    %\externalremake
+    \input{../fig/fig_FrigoToupie_Profils/tex/fig_FrigoToupie_Profils_V12_WaterAcou}
+    \caption{\textcolor{red}{Ajouter num de capteurs et changer les noms "top", "mid", et "bot"} Profils de température $\tau$ dans différentes zones du noyau thermoacoustique. {\bf (a)}~: échangeur ambiant, {\bf (b)}~: \textcolor{red}{top}, {\bf (c)}~: \textcolor{red}{mid}, {\bf (d)}~: \textcolor{red}{bot}, {\bf (e)}~: échangeur froid. Les températures sont adimensionnées suivant la relation \eqref{eq:TemperatureAdimension}.}
+    \label{fig:FrigoToupie_Profils_V12_WaterAcou}
+\end{figure}

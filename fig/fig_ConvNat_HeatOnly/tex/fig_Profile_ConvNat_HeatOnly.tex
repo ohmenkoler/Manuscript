@@ -1,0 +1,105 @@
+\begin{tikzpicture}
+    \def\height{15cm};
+    \def\width{.29\textwidth};
+    \def\spx{2cm};
+    \def\spy{2cm};
+    \def\lab{.5cm};
+    \def\marksize{1mm};    
+    \def\linewidth{.5mm};
+    
+    %%%%%%%%%%%%%%%%%%%%%%%% AHX
+    \begin{axis}[width=\width,height=\height,name=AHX,
+    ytick={-7.4,0,7.4},%yticklabels={$-r_{\sf reg}$,$0$,$r_{\sf reg}$},
+    xlabel={$T$ [\unit{\degreeCelsius}]},ylabel={Rayon du noyau TA $r_{\sf reg}$},
+    grid=both
+    ]
+        \addplot[ultra thick,MatlabBlue,dashed,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H1_TC10-11-12.txt}; \label{plot:H1in_HeatOnly}
+        \addplot[ultra thick,MatlabOrange,dashed,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H1_TC13-14-15.txt}; \label{plot:H1out_HeatOnly}
+%%%%%%%%%
+    	\addplot[ultra thick,MatlabBlue,dotted,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H2_TC10-11-12.txt}; \label{plot:H2in_HeatOnly}
+        \addplot[ultra thick,MatlabOrange,dotted,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H2_TC13-14-15.txt}; \label{plot:H2out_HeatOnly}
+    \end{axis}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%% TOP
+    \begin{axis}[width=\width,height={\height/3},name=TOP,
+    at={($(AHX.north east)+(\spx,0)$)},anchor=north west,
+    xticklabel=\empty,
+    ylabel={$T [\unit{\degreeCelsius}]$},
+    grid=both
+    ]
+		\addplot[ultra thick,MatlabBlue,dashed,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H1_TC4-7-10.txt};
+%%%%%%%%%
+		\addplot[ultra thick,MatlabBlue,dotted,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H2_TC4-7-10.txt};
+    \end{axis}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%% MID
+    \begin{axis}[width=\width,height={\height/3},name=MID,
+    at={($(AHX.east)+(\spx,0)$)},anchor=west,
+    xticklabel=\empty,
+    ylabel={$T [\unit{\degreeCelsius}]$},
+    grid=both
+    ]
+		\addplot[ultra thick,MatlabBlue,dashed,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H1_TC5-8-11.txt};
+%%%%%%%%%
+  		\addplot[ultra thick,MatlabBlue,dotted,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H2_TC5-8-11.txt};
+    \end{axis}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%% BOT
+    \begin{axis}[width=\width,height={\height/3},name=BOT,
+    at={($(AHX.south east)+(\spx,0)$)},anchor=south west,
+    xtick={-3.9/2,0,3.9/2},%xticklabels={$x_a$,$0$,$x_c$},
+    xlabel={Longueur du régénérateur $L_{\sf reg}$},ylabel={$T [\unit{\degreeCelsius}]$},
+    grid=both
+    ]
+		\addplot[ultra thick,MatlabBlue,dashed,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H1_TC6-9-12.txt};
+%%%%%%%%%
+  		\addplot[ultra thick,MatlabBlue,dotted,
+    mark=+,,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H2_TC6-9-12.txt};
+    
+    \coordinate (legend) at (axis description cs:0.5,-.5);
+    \end{axis}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%% CHX
+    \begin{axis}[width=\width,height=\height,name=CHX,
+    at={($(BOT.south east)+(\spx,0)$)},anchor=south west,
+    ylabel near ticks, yticklabel pos=right,
+    ytick={-7.4,0,7.4},%yticklabels={$-r_{\sf reg}$,$0$,$r_{\sf reg}$},   
+    xlabel={$T$ [\unit{\degreeCelsius}]},
+    grid=both
+    ]
+        \addplot[ultra thick,MatlabBlue,dashed,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H1_TC4-5-6.txt};
+        \addplot[ultra thick,MatlabOrange,dashed,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H1_TC1-2-3.txt};
+%%%%%%%%%
+    	\addplot[ultra thick,MatlabBlue,dotted,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H2_TC4-5-6.txt};
+        \addplot[ultra thick,MatlabOrange,dotted,
+    mark=+,mark size=\marksize] file{../fig/fig_ConvNat_HeatOnly/data/H1H2/data_ConvNat_HeatOnly_Tprofil_H2_TC1-2-3.txt};
+    \end{axis}
+    
+    \draw ($(AHX.north west)+(\lab,\lab)$) node[]{\bf (a)};
+    \draw ($(TOP.north west)+(\lab,\lab)$) node[]{\bf (b)};
+    \draw ($(MID.north west)+(\lab,\lab)$) node[]{\bf (c)};
+    \draw ($(BOT.north west)+(\lab,\lab)$) node[]{\bf (d)};
+    \draw ($(CHX.north west)+(\lab,\lab)$) node[]{\bf (e)};
+
+\draw (legend) circle (3pt);    
+    
+    
+%     \matrix [draw, matrix of nodes, anchor=north] at (legend) {
+%            \textbf{Légende :}  & 	                  								&       	    					\\
+%            									& Orientation H1							& Orientation H2		\\
+%            Intérieur					& \ref{plot:H1in_HeatOnly} 		& \ref{plot:H2in_HeatOnly}   	\\
+%            Extérieur 					& \ref{plot:H1out_HeatOnly}	& \ref{plot:H2out_HeatOnly} 	\\
+%        };
+\end{tikzpicture}

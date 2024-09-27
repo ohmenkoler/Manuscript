@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+    \def\height{5cm};
+    \def\width{.45\textwidth};
+    \def\spx{1.1cm};
+    \def\spy{.5cm};
+    \def\legx{.5cm};
+    \def\legy{.25cm};
+    \def\Vamp{.6};
+    
+    \begin{axis}[name=pv,height=\height,width=\width,
+    domain=0:3.14,xmin=0,xmax=3.14,no markers,
+    xtick={0,{3.14/2},3.14},xticklabels={$0$,$\frac{L}{2}$,$L$},
+    ytick={0,\Vamp,1},yticklabels={$0$,$+\tilde V$,$+\tilde P$},legend entries={$\tilde p$,$\tilde v$},
+    at={(-\width,0)},anchor=south west,
+    ylabel near ticks, yticklabel pos=right,
+    legend pos=south west
+    ]
+    \addplot[PythonBlue,line width=3pt] {cos(deg(x))}; 
+    \addplot[dashed,PythonOrange,line width=3pt] {\Vamp*sin(deg(x))};
+    \end{axis}
+    
+    \draw (pv.north west) -- ($(pv.west)+(-2*\legx,0)$) -- (pv.south west) -- cycle;
+    \fill[black!40] ($(pv.west)+(-2.01*\legx,-.5*\height/3)$) rectangle ++(\legx,\height/3);  
+\end{tikzpicture}

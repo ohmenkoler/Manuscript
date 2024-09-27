@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+    \def\width{.9*\textwidth};
+    \def\height{.5*\width};
+    \def\legx{.5cm};
+    \def\legy{\legx};
+    
+    \begin{axis}[width={\width},height={\height},
+    xlabel={Temps $t$ [\unit{\s}]},
+    ylabel={\'Ecart de température $T-T_i$ [\unit{\degreeCelsius}]},
+    xmin=0,xmax=3500,
+	 ymin=-10,ymax=2,
+    xtick={0,600,1200,1800,2400,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
+    domain=0:100,
+    legend style = {at={(.95,.05)},anchor = south east},legend columns=2
+    ]
+%    	\addplot[very thick,Red1] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC13_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{TC 13 (V1)}
+%    	\addplot[very thick,Red4] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC13_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{TC 13 (V2)}
+%    	\addplot[very thick,Red2] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC14_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{TC 14}
+%    	\addplot[very thick,Red5] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC14_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{TC 14}
+%    	\addplot[very thick,Red3] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC15_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{TC 15}
+%    	\addplot[very thick,Red6] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC15_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{TC 15}
+
+		\addplot[very thick,MatlabBlue] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC13_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{TC 13 (V1)}
+    	\addplot[very thick,MatlabBlue!50] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC13_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{TC 13 (V2)}
+    	\addplot[very thick,MatlabOrange] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC14_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{TC 14}
+    	\addplot[very thick,MatlabOrange!50] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC14_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{TC 14}
+    	\addplot[very thick,MatlabYellow] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC15_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{TC 15}
+    	\addplot[very thick,MatlabYellow!50] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC15_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{TC 15}
+        
+%        \legend{\\ \\};
+    \end{axis}
+\end{tikzpicture}

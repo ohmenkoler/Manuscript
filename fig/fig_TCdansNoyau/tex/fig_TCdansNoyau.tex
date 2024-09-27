@@ -1,0 +1,37 @@
+\begin{tikzpicture}[scale=.2]
+	\def\rCHX{14cm};
+	\def\lCHX{.7cm};
+	\def\rREG{14.8cm};
+	\def\lREG{3.9cm};
+	\def\rAHX{11cm};
+	\def\lAHX{2.3cm};
+	
+	
+	\fill[pattern=horizontal lines,pattern color=MatlabOrange,draw=black] (0,-\rAHX) rectangle ++(\lAHX,2*\rAHX);
+	\draw[MatlabOrange] (0,-\rAHX) node[below left]{\'Echangeur ambiant};
+	\foreach \r in {-.9,0,.9}{
+		\draw[cyan] (-.1*\lREG,\r*\rAHX) node{\textbullet};
+	}
+	
+	\begin{scope}[xshift=\lAHX] % Reg
+		\fill[pattern=crosshatch,pattern color=gray,draw=black] (0,-\rREG) rectangle ++(\lREG,2*\rREG);
+		\draw[black] (\lREG/2,\rREG) node[above]{Régénérateur};		
+		\foreach \x in {.1,.5,.9}{
+			\foreach \r in {-.9,0,.9}{
+				\draw[cyan] (\x*\lREG,\r*\rREG) node{\textbullet};
+		}}
+	\end{scope}
+	
+	\begin{scope}[xshift=\lAHX+\lREG] % CHX
+		\fill[pattern=horizontal lines,pattern color=MatlabBlue,draw=black] (0,-\rCHX) rectangle ++(\lCHX,2*\rCHX);
+		\draw[MatlabBlue] (\lCHX,-\rCHX) node[below right]{\'Echangeur froid};
+		\foreach \r in {-.9,0,.9}{
+		\draw[cyan] (\lCHX+.1*\lREG,\r*\rCHX) node{\textbullet};
+	}
+	\end{scope}
+	
+	\draw[green!50!black] (0,0) node[left]{\begin{tabular}{rl}Source & \\ acoustique & $\leftarrow$ \\ secondaire &\end{tabular}};
+	\draw[green!50!black] ({\lCHX+\lREG+\lAHX},0) node[right]{\begin{tabular}{rl}	
+	 & Source \\ $\rightarrow$ \textcolor{cyan}{\textbullet} & acoustique \\ & principale\end{tabular}};
+	
+\end{tikzpicture}

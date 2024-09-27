@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+    \draw[rounded corners,dashed,very thick,draw=black,fill=black!5!white] (-3.5,-3) rectangle ++(7,6.5) node[below left]{Objet de cette thèse};
+
+	\draw[MatlabOrange](-3,2.5) -- ++(6,0) node[near end,below]{$T_c$};
+	\draw[MatlabBlue](-3,-2.5) -- ++(6,0) node[near end,above]{$T_f$};
+	
+	\fill[gray!50,rounded corners](-1.5,-1) rectangle (1.5,1) node[midway,align=center]{\textcolor{black}{\shortstack{Pompe\\à chaleur}}};
+			
+	\draw[->,very thick,MatlabBlue](0,-2.4) -- (0,-1.1) node[midway,left]{$Q_f$};
+	\draw[->,very thick,MatlabOrange](0,1.1) -- (0,2.4) node[midway,left]{$Q_c$};
+	\draw[->,very thick](-1.6-2.4+1.1,0) -- ++(2.4-1.1,0) node[midway,above]{$W_{ac}$};
+\end{tikzpicture}

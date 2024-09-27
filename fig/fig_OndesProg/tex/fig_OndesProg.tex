@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    \def\allong{1};
+    \def\height{5cm};
+    \def\width{.3\textwidth};
+    
+    \begin{axis}[name=pv,height=\height,width=\width,
+    domain=0:7,xmin=0,xmax=7,no markers,
+    xtick={0,{3.14/2},3.14},xticklabels=\empty,
+    ytick={-1,-.7,0,.7,1},yticklabels={$-\tilde P$,$-\tilde V$,$0$,$+\tilde V$,$+\tilde P$},
+    hide axis,
+    legend entries={$\tilde p$,$\tilde v$},
+    legend pos=south west
+    ]
+    \addplot[smooth,PythonBlue,line width=3pt] {cos(deg(.5*x+18))}; 
+    \addplot[smooth,dashed,PythonOrange,line width=3pt] {.7*cos(deg(.5*x+18))};
+    \end{axis}
+    
+    
+    \draw[dashed, very thick] (pv.north west) -- ($(pv.north west)+(\allong,0)$);
+    \draw[very thick] ($(pv.north west)+(\allong,0)$) -- ($(pv.north east)+(-\allong,0)$);
+    \draw[dashed, very thick] ($(pv.north east)+(-\allong,0)$) -- (pv.north east);
+    
+    \draw[dashed, very thick] (pv.south west) -- ($(pv.south west)+(\allong,0)$);
+    \draw[very thick] ($(pv.south west)+(\allong,0)$) -- ($(pv.south east)+(-\allong,0)$);
+    \draw[dashed, very thick] ($(pv.south east)+(-\allong,0)$) -- (pv.south east);
+    
+    
+\end{tikzpicture}

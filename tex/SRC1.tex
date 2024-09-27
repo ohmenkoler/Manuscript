@@ -1,0 +1,25 @@
+\chapter{Remplacement de la source acoustique principale}
+
+\section{Source acoustique actuelle}
+
+La source acoustique principale installée dans le réfrigérateur est un moteur linéaire dont le fonctionnement est similaire à celui d'un haut-parleur électrodynamique. Il est donc possible de décrire son comportement linéaire avec un modèle aux constantes localisées et les paramètres de Thiele et Small notés dans le tableau~\ref{tab:TS_RIXvsCIARE}.
+
+
+\section{Modifications possibles}
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{r | l l}
+        T\&S                                    & \textbf{RIX 1S241M}   & Ciare CSW7012EVO  \\\hline
+        $R_e~[\unit{\ohm}]$                     & \num{.7}              & \num{4}           \\
+        $L_e~[\unit{\henry}]$                   & \num{3.17e-2}         & \num{3.2e-3}      \\
+        $Bl~[\unit{\tesla\meter}]$              & \num{58.7}            & \num{30.5}        \\
+        $M_m~[\unit{\kilo\gram}]$               & \num{4.232}           & \num{2.8e-1}      \\
+        $K_m~[\unit{\newton\per\meter}]$        & \num{1.3114e5}        & \num{2.458e4}     \\
+        $R_m~[\unit{\newton\second\per\meter}]$ & \num{33.370}          & \num{8.8}         \\
+        $S_d~[\unit{\meter\squared}]$           & \num{9.15e-3}         & \num{5.11e-2}     \\
+        $f_s~[\unit{\hertz}]$                   & \num{47}              & \num{47}
+    \end{tabular}
+    \caption{Paramètres de Thiele et Small des sources acoustiques principales du réfrigérateur. En \textbf{gras}, la source initiale du projet TACOT.}
+    \label{tab:TS_RIXvsCIARE}
+\end{table}

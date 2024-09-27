@@ -1,0 +1,39 @@
+\begin{tikzpicture}
+    \def\LX{1};
+    \def\LY{2};
+    \def\CoreX{1.5};
+    \def\CoreY{.9*\LY};
+    
+    \input{../fig/fig_ThermocouplesDefinition/tex/subfig_ThermocouplesDefinition}
+    
+    \begin{scope}[xscale=1,yscale=-1]
+        \input{../fig/fig_ThermocouplesDefinition/tex/subfig_ThermocouplesDefinition}
+    \end{scope}
+    
+    
+    \draw[dashed,rounded corners,PythonRed] (.55,.95*\LY) rectangle ++(-.75*\CoreX,-1.9*\LY) node[midway]{\rotatebox{90}{Noyau TA}};
+    
+    \begin{scope}[xshift=5cm,xscale=2.5,yscale=2]
+        \draw (0,0) |- ++(2,1.5) -- ++(0,-1.5);
+        \draw (.5,0) -- ++(0,1.5);
+        \draw (1.5,0) -- ++(0,1.5);
+        \draw[line width=1mm] (-.2,1.5) -- ++(2.4,0);
+    
+        \begin{scope}[xscale=1,yscale=-1]
+            \draw (0,0) |- ++(2,1.5) -- ++(0,-1.5);
+            \draw (.5,0) -- ++(0,1.5);
+            \draw (1.5,0) -- ++(0,1.5);
+            \draw[line width=1mm] (-.2,1.5) -- ++(2.4,0);
+        \end{scope}
+        % \foreach \x [evaluate=\x] in {0,...,4}{
+        %     \foreach \y [evaluate=\y] in {1,...,3}{
+        %     \draw (\x,\y) node[]{$t$};}}
+    \end{scope}
+    
+    %\draw[line width=1mm] (5*\LX,.5*\LY) -- ++(6*\LX,0);
+    %\draw[line width=1mm] (5*\LX,-.5*\LY) -- ++(6*\LX,0);
+    %
+    %\draw (-2.5*\LX,\LY) node[above]{\bf (a)};
+    %\draw (5*\LX,\LY) node[above]{\bf (b)};
+    
+\end{tikzpicture}

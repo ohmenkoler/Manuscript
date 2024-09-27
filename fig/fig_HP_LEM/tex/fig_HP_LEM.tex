@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+    \def\spx{1};
+    
+    \draw (0,0) node[gyrator](A){};
+    \draw (A.base) node{$Bl$};
+    \draw (6,0) node[transformer](B){};%, scale=1.1538
+    \draw (B.base) node{$S_d$};
+    
+    \draw (A.A2) node [tground]{};
+    \draw (A.B2) node [tground]{};
+    \draw (B.A2) node [tground]{};
+    
+    \draw (A.A1) to[L,l_=$L_{e}$,mirror,label distance=4pt] ++(-2,0) to[R,l_=$R_{e}$,label distance=4pt] ++(-2,0) to[sV,l_=$u_{g}$] ($(A.A2)+(-4,0)$) node(ug)[tground]{};
+    \draw (A.B1) to[C=$C_{m}$,label distance=4pt] ++(1,0) to[R=$R_{m}$,label distance=4pt] ++(2,0) to[L=$M_{m}$,label distance=4pt] (B.A1);
+    \draw (B.B1) to[european resistor=$Z_{rad}^{\textsf{avant}}$,label distance=4pt] ++(2,0) to[short] ($(B.B2)+(2,0)$) node(ac)[]{} to[european resistor=$Z_{rad}^{\textsf{arrière}}$] (B.B2); 
+    \draw (B-L2.midtap) -| ++(1,-.25) node[tground]{};
+    
+    \draw[MatlabBlue] ($(ug)+(0,-\spx)$) to[out=-10,in=-170] node[pos=.5,below]{\'Electrique} ($(A.A2)+(0,-\spx)$);
+    \draw[MatlabOrange] ($(A.B2)+(0,-\spx)$) to[out=-10,in=-170] node[pos=.5,below]{Mécanique} ($(B.A2)+(0,-\spx)$);
+    \draw[MatlabYellow] ($(B.B2)+(0,-\spx)$) to[out=-10,in=-170] node[pos=.5,below]{Acoustique} ($(ac)+(0,-\spx)$);
+\end{tikzpicture}

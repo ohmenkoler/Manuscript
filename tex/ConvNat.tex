@@ -1,0 +1,132 @@
+\chapter{Convection naturelle}
+
+Lors des expériences réalisées lors de la caractérisation du réfrigérateur TACOT, il a été montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau \textcolor{red}{figure ?}\cite{ramadan_design_2021}. Cet écart au comportement attendu , c'est-à-dire un gradient linéaire entre températures froides et ambiant et une température uniforme sur la section du noyau thermoacoustique, implique la présence d'un écoulement moyen non nul et d'effets non-linéaires dans le réfrigérateur. Parmi les hypothèses formulées quant à la cause de ces disparités avec la théorie linéaire de Rott, plusieurs hypothèses sont envisagées : vent acoustique, turbulence, génération de tourbillons, génération d'harmoniques supérieures, et convection naturelle. Parmi ces effets, peu d'études portent sur cette dernière, bien qu'il ait déjà été montré que le déclenchement de moteurs ou encore l'uniformité de température sur la section y étaient très sensibles \cite{ross_influence_2003,ramadan_experimental_2018,hireche_numerical_2019,zhang_novel_2011}
+
+\section{Protocole de mesure}
+
+\subsection{Dispositif expérimental}
+
+Le réfrigérateur doit pouvoir être orienté dans toutes les orientations utiles pour l'étude de l'influence de la gravité sur la distribution de température. La figure~\ref{fig:TACOTSuspendu_Frigo} présente le réfrigérateur accroché à ses extrémités, et la figure~\ref{fig:TACOTSuspendu_Palans} les trois palans qui le soutiennent. Les deux palans de couleur grise, initialement présents pour régler l'inclinaison de la pompe à chaleur par rapport à l'axe horizontal, et le troisième de couleur bleue pour ajouter une direction de rotation autour de l'axe de symétrie. Celui-ci permet en outre de plus aisément passer d'une orientation à l'autre. 
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg}
+		\caption{}
+		\label{fig:TACOTSuspendu_Frigo}
+	\end{subfigure}		
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../fig/fig_SystemeAccroche/Palans.jpg}
+		\caption{}
+		\label{fig:TACOTSuspendu_Palans}
+	\end{subfigure}	    
+    \caption{Photographies \subref{fig:TACOTSuspendu_Frigo} du refrigérateur accroché et \subref{fig:TACOTSuspendu_Palans} des palans formant le système de suspension.}
+    \label{fig:TACOTSuspendu}
+\end{figure}
+
+\subsection{Définition des orientations}
+
+Les orientations choisies au moyen des palans sont décrites par deux angles $\theta_v$ et $\theta_h$. Le premier désigne l'angle entre l'axe horizontal et l'axe de symétrie du réfrigérateur, tandis que le second, la rotation autour de cet axe de symétrie. Les configurations d'intérêt sont présentées sur la figure~\ref{fig:OrientationCore}, et correspondent à des \textcolor{red}{cas d'études}.
+
+\begin{figure}[!ht]
+    \centering
+    \external{OrientationCore}
+%    \externalremake
+    \input{../fig/fig_OrientationCore/tex/fig_OrientationCore}
+    \caption{Différentes orientations du c\oe{}ur thermoacoustique avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas.\textcolor{red}{Faire le lien avec $\theta_v$ et $\theta_h$ ?}}
+    \label{fig:OrientationCore}
+\end{figure}
+
+
+
+
+\subsection{Réalisation des acquisitions}
+
+Le protocole de mesure suivi pour l'acquisition des données expérimentale comporte plusieurs parties. Tout d'abord, l'eau est mise en circulation dans l'échangeur ambiant à un débit de \qty{7}{\l\per\minute} ()
+
+
+
+
+
+\section{Résultats}
+
+\subsection{Modèle \textsc{DeltaEC}}
+
+\textcolor{red}{À ajouter + extraire vitesse et Rayleigh}
+
+\subsection{Expériences sans acoustique}
+
+Dans l'idée de séparer les phénomènes physiques en jeu lors du fonctionnement du réfrigérateur pendant son fonctionnement, les sources acoustiques sont désactivées pour un temps. En revanche, les charges thermiques sont utilisés, un peu comme dans le cas d'une expérience à $f=\qty{0}{\hertz}$. 
+
+\begin{figure}[ht!]
+    \centering
+    \external{fig_ConvNat_HeatOnly}
+    %\externalremake
+    \input{../fig/fig_ConvNat_HeatOnly/tex/fig_ConvNat_HeatOnly.tex}
+    \caption{Comparaison entre les profils de température dans le noyau thermoacoustique pour les deux orientations horizontales, à différents emplacements : \textbf{(a)} de part et d'autre de l'échangeur ambiant (thermocouples \numlist{10;11;12} en bleu et \numlist{13;14;15} en orange), \textbf{(b)} \numlist{10;7;4}, \textbf{(c)} \numlist{11;8;5}, \textbf{(d)} \numlist{12;9;6}, et \textbf{(e)} de part et d'autre de l'échangeur froid (\numlist{4;5;6} en bleu et \numlist{1;2;3} en orange).}
+    \label{fig:ConvNat_HeatOnly}
+\end{figure}
+
+La première observation à faire 
+
+
+\subsection{Expériences avec acoustique}
+
+\subsubsection{Réfrigérateur en positions horizontales}
+
+\subsubsection{Réfrigérateur en positions verticales}
+
+
+En première approche, les données de température en fonction du temps sont tracées pour être analysées. Elles comportent des informations sur le régime transitoire, et sont assez longues pour mesurer les températures atteintes en régime établi. Leur durée permet également de vérifier la présence ou l'absence de phénomènes d'instabilités observés lors de mesures préliminaires.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_Vert2_LowRix_Acou}
+    %\externalremake
+    \input{../fig/fig_TransientTemperature/Acou/tex/LowRix.tex}
+    \caption{Température transitoire à l'allumage des sources acoustiques}
+    \label{fig:Vert2_LowRix_Acou}
+\end{figure}
+
+
+
+
+
+\textcolor{red}{Ajouter figures avec \begin{itemize}
+    \item Atteinte du régime stationnaire (temporel transitoire)
+    \item Signaux de température pendant stationnaire
+    \item En extraire l'écart-type pour barres d'erreur
+    \item Indiquer les puissances $\dot Q_a$ et $\dot Q_c$
+\end{itemize}}
+
+\ref{fig:FrigoToupie_Profils_H12_WaterAcou} et \ref{fig:FrigoToupie_Profils_V12_WaterAcou}
+
+\begin{figure}[ht!]
+    \centering
+    \external{fig_FrigoToupie_Profils_H12_WaterAcou}
+    %\externalremake
+    \input{../fig/fig_FrigoToupie_Profils/tex/fig_FrigoToupie_Profils_H12_WaterAcou}
+    \caption{\textcolor{red}{Ajouter num de capteurs et changer les noms "top", "mid", et "bot"} Profils de température $\tau$ dans différentes zones du noyau thermoacoustique. {\bf (a)}~: échangeur ambiant, {\bf (b)}~: $r=+r_{\sf ref}$, {\bf (c)}~: $r=0$, {\bf (d)}~: $r=-r_{\sf ref}$, {\bf (e)}~: échangeur froid.}% Les températures sont adimensionnées suivant la relation \eqref{eq:TemperatureAdimension}.}
+    \label{fig:FrigoToupie_Profils_H12_WaterAcou}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \external{fig_FrigoToupie_Profils_V12_WaterAcou}
+    %\externalremake
+    \input{../fig/fig_FrigoToupie_Profils/tex/fig_FrigoToupie_Profils_V12_WaterAcou}
+    \caption{\textcolor{red}{Ajouter num de capteurs et changer les noms "top", "mid", et "bot"} Profils de température $\tau$ dans différentes zones du noyau thermoacoustique. {\bf (a)}~: échangeur ambiant, {\bf (b)}~: \textcolor{red}{top}, {\bf (c)}~: \textcolor{red}{mid}, {\bf (d)}~: \textcolor{red}{bot}, {\bf (e)}~: échangeur froid.}% Les températures sont adimensionnées suivant la relation \eqref{eq:TemperatureAdimension}.}
+    \label{fig:FrigoToupie_Profils_V12_WaterAcou}
+\end{figure}
+
+\section{Comparaison avec des modèles avancés}
+
+\subsection{Régime transitoire}
+
+\cite{lotton_transient_2009}
+
+\subsection{\textsc{Sunfluidh}}
+
+\cite{fraigneau_numerical_2023}

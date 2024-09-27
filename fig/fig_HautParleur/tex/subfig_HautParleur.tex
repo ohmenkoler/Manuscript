@@ -1,0 +1,25 @@
+%\def\theta{atan(.5*\diam/\depth)};
+    
+%\draw (0,0) node[]{O};
+
+%%%%%%%%%%%%%% Pole piece
+\fill[black!15] (0,0) rectangle ++(-.5*\polelong,\polethick);
+\fill[black!15] (-\polethick,\polethick) rectangle ++(\polethick,\magy+\polethick);
+\fill[black!15] (-.5*\polelong,\magy+\polethick) rectangle ++(.3*\polelong,\polethick);
+    
+%%%%%%%%%%%%%% Magnet
+\fill[black!30] (-.6*\polelong,\polethick) rectangle ++(\magx,\magy);
+    
+%%%%%%%%%%%%%% Voice coil
+\draw[MatlabBlue] ({-\VCdiam},{1.5*\polethick+\magy-.5*\VClen}) -- ++(0,\VClen) node (VCtop){};
+\foreach[parse=true] \y in {1,...,{\Nwire-1}}{
+    \draw[MatlabBlue] ({-\VCdiam-.5*\VCwire},{\y*\VClen/\Nwire+1.5*\polethick+\magy-.5*\VClen}) circle (.5*\VCwire);
+    }
+    
+%%%%%%%%%%%%%% Basket
+\draw[line width={\LineThick/0.0352777778}] ({-.6*\polelong+\magx},{2*\polethick+\magy+.5*\LineThick}) -| ($(VCtop.center)+(1.5*\polethick-.6*\polelong,0)$) node(Bbot){} -- ++(-.5*\diam,\depth) -- ++(-.5,0) node(Btop){} -- ++(0,.5);
+    
+%%%%%%%%%%%%%% Suspension and membrane
+\draw[MatlabOrange,line width={\LineThick/0.0352777778}] ($(Btop.center)+(.5*\LineThick,\LineThick)$) -- ++(.75,0) arc (180:0:.5) coordinate(susp);
+\draw[MatlabYellow,line width={\LineThick/0.0352777778}] (susp) -- (VCtop.center) arc (180:90:{\VCdiam} and {\dustcap});
+\draw[MatlabOrange,decorate,decoration=snake,line width={.5*\LineThick/0.0352777778}] (Bbot.center) -- (VCtop.center);

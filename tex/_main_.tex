@@ -1,0 +1,360 @@
+%---------------------------------------------------------------------%
+\documentclass[a4paper,12pt]{book} 
+%\documentclass[a4paper,12pt]{report}
+%---------------------------------------------------------------------%
+% MODIFY TEXT APPEARANCE
+%---------------------------------------------------------------------%
+% \usepackage[default]{comicneue}
+
+%\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+%\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[light,math]{iwona}
+\makeatletter
+	\renewcommand{\sldefault}{it} % In headers, automatically replace \textsl (which doesn't exist for iwona) by \textit
+\makeatother
+
+\newcommand{\deriv}{\mathrm{d}}
+\newcommand{\Deriv}{\mathrm{D}}
+\newcommand{\Rayleigh}{\mathrm{Ra}}
+\newcommand{\Prandtl}{\mathrm{Pr}}
+\newcommand{\Nusselt}{\mathrm{Nu}}
+\newcommand{\Reynolds}{\mathrm{Re}}
+\newcommand{\Grashof}{\mathrm{Gr}}
+\newcommand{\Peclet}{\mathrm{Pe}}
+
+\newcommand{\RE}{\mathfrak{Re}}
+\newcommand{\IM}{\mathfrak{Im}}
+%\newcommand{\RE}{\mathrm{Re}}
+%\newcommand{\IM}{\mathrm{Im}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\emergencystretch=1em
+%\let\epsilon\varepsilon
+%\let\phi\varphi
+
+\usepackage{layout}
+\renewcommand{\theparagraph}{\thesubsubsection.\alph{paragraph}}
+
+%---------------------------------------------------------------------%
+% PACKAGES
+%---------------------------------------------------------------------%
+
+\usepackage[french]{babel}
+\usepackage{csquotes}
+\usepackage{wrapfig}
+\usepackage{float}
+% -----------------------------------------------------
+\usepackage[dvipsnames]{xcolor}
+	\definecolor{PythonBlue}{HTML}{1f77b4}
+	\definecolor{PythonOrange}{HTML}{ff7f0e}
+	\definecolor{PythonGreen}{HTML}{2ca02c}
+	\definecolor{PythonRed}{HTML}{d62728}
+	\definecolor{PythonPurple}{HTML}{9467bd}
+	\definecolor{PythonBrown}{HTML}{8c564b}
+	\definecolor{PythonPink}{HTML}{e377c2}
+	\definecolor{PythonGray}{HTML}{7f7f7f}
+	\definecolor{PythonOlive}{HTML}{bcbd22}
+	\definecolor{PythonCyan}{HTML}{17becf}
+	%----------------------------------
+	\definecolor{MatlabBlue}{rgb}{0, 0.4470, 0.7410}
+	\definecolor{MatlabDeepBlue}{HTML}{00375c}
+	\definecolor{MatlabOrange}{rgb}{0.8500, 0.3250, 0.0980}
+	\definecolor{MatlabDeepOrange}{HTML}{69280c}
+	\definecolor{MatlabYellow}{rgb}{0.9290, 0.6940, 0.1250}
+	\definecolor{MatlabDeepYellow}{HTML}{7a5a0b}
+	\definecolor{MatlabPurple}{rgb}{0.4940, 0.1840, 0.5560}
+	\definecolor{MatlabGreen}{rgb}{0.4660 ,0.6740 ,0.1880}
+	\definecolor{MatlabCyan}{rgb}{0.3010, 0.7450, 0.9330}
+	\definecolor{MatlabBrown}{rgb}{0.6350, 0.0780, 0.1840}
+	% %----------------------------------
+	\definecolor{Blue1}{HTML}{330099}%{030164} %
+	\definecolor{Blue2}{HTML}{000099}%{050296}
+	\definecolor{Blue3}{HTML}{003399}%{0603c8}
+	\definecolor{Blue4}{HTML}{6600ff}%{0804fa}
+	\definecolor{Blue5}{HTML}{0000ff}%{3936fb}
+	\definecolor{Blue6}{HTML}{0066ff}%{6b68fc}
+
+	\definecolor{Cyan1}{HTML}{0099cc}%{004a66} %
+	\definecolor{Cyan2}{HTML}{009999}%{006f99}
+	\definecolor{Cyan3}{HTML}{339999}%{0094cc}
+	\definecolor{Cyan4}{HTML}{00ddff}%{00b9ff}
+	\definecolor{Cyan5}{HTML}{00dddd}%{33c7ff}
+	\definecolor{Cyan6}{HTML}{66dddd}%{66d5ff}
+
+	\definecolor{Green1}{HTML}{009966}%{006600} %
+	\definecolor{Green2}{HTML}{009900}%{009900}
+	\definecolor{Green3}{HTML}{669900}%{00cc00}
+	\definecolor{Green4}{HTML}{00ffcc}%{00ff00}
+	\definecolor{Green5}{HTML}{00ff00}%{33ff33}
+	\definecolor{Green6}{HTML}{ccff00}%{66ff66}
+
+	\definecolor{Yellow1}{HTML}{b56727}%{656600} %
+	\definecolor{Yellow2}{HTML}{be5504}%{999900}
+	\definecolor{Yellow3}{HTML}{fc6a03}%{cbcc00}
+	\definecolor{Yellow4}{HTML}{e5c000}%{feff00}
+	\definecolor{Yellow5}{HTML}{ffe600}%{feff33}
+	\definecolor{Yellow6}{HTML}{f6e683}%{feff66}
+	
+	\definecolor{Red1}{HTML}{990033}%{660000} %
+	\definecolor{Red2}{HTML}{990000}%{990000}
+	\definecolor{Red3}{HTML}{993300}%{cc0000}
+	\definecolor{Red4}{HTML}{ff0066}%{ff0000}
+	\definecolor{Red5}{HTML}{ff0000}%{ff3333}
+	\definecolor{Red6}{HTML}{ff6600}%{ff6666}
+	%----------------------------------
+	\definecolor{ju0}{HTML}{000000}
+	\definecolor{ju1}{HTML}{2d0377}
+	\definecolor{ju2}{HTML}{7e03a8}
+	\definecolor{ju3}{HTML}{b52f8c}
+	\definecolor{ju4}{HTML}{de5f65}
+	\definecolor{ju5}{HTML}{f89540}
+	\definecolor{ju6}{HTML}{fbd524}
+	\definecolor{ju7}{HTML}{f0f921}
+	%----------------------------------
+	\definecolor{PlasmaBlue}{HTML}{0C0786}
+	\definecolor{PlasmaViolet}{RGB}{168,34,150}
+	\definecolor{PlasmaPink}{HTML}{CA4678}
+	\definecolor{PlasmaOrange}{RGB}{247,147,65}
+	\definecolor{PlasmaYellow}{HTML}{EFF821}
+% -----------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{makeidx}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{graphicx}% Include figure files
+\usepackage{subcaption}
+	\renewcommand\thesubfigure{(\alph{subfigure})}
+	\captionsetup[subfigure]{labelformat=simple}
+	\captionsetup{labelfont=bf}
+\usepackage{dcolumn}% Align table columns on decimal point
+
+\usepackage[
+%	left=2cm,right=2cm,					% Pour un fichier numérique (marges égales à droite et gauche)
+	inner=3cm,textwidth=17cm,		% Pour imprimer (plus de marge au centre côté reliure)
+	top=2cm,bottom=2cm]{geometry}
+
+\usepackage{hyperref}
+	\hypersetup{pdfborder = {0 0 0},%borderless hyperlinks
+    	colorlinks = true,
+    	citecolor=PythonGreen,
+    	urlcolor = MatlabBlue,
+    	linkcolor = MatlabOrange}
+\pagenumbering{arabic}
+\usepackage{fancyhdr}
+\usepackage{siunitx}
+	\sisetup{locale = FR,
+	    detect-all,
+	    exponent-product = \cdot,
+    	group-separator = \text{\,}}
+\usepackage{multirow}
+%\usepackage{minitoc}
+\usepackage{etoc}
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\usepackage[
+	style=numeric-comp,
+	sorting=none,
+	backend=biber,
+	maxcitenames=1,
+	url=false,
+	eprint=false]{biblatex} %Imports biblatex package
+\addbibresource{../bib/phd_bib.bib}
+%---------------------------------------------------------------------%
+% TIKZ PACKAGES
+%---------------------------------------------------------------------%
+\usepackage{tikz}
+	\usetikzlibrary{patterns,patterns.meta}
+	\usetikzlibrary{shapes}
+	\usetikzlibrary{arrows.meta}
+	\usetikzlibrary{calc,shadows,matrix}
+	\usetikzlibrary{decorations.pathreplacing}
+	\usetikzlibrary{automata,positioning}
+	\usetikzlibrary{math}
+	\usetikzlibrary{fadings}
+	\tikzset{>=stealth}
+
+\usepackage[european,
+	american inductors,
+	american resistors,
+	straight voltages]{circuitikz}
+	\usetikzlibrary{babel,patterns,
+	arrows,
+	decorations.pathmorphing,
+	backgrounds,
+	positioning,
+	fit,
+	matrix}
+	\ctikzset{quadpoles/transformer/inner=1,
+		quadpoles/transformer/width=0.6,
+		quadpoles/gyrator/inner=1,
+		quadpoles/gyrator/width=0.75,
+		quadpoles style=inline,
+		inductors/width=.6,
+		inductors/coils=4,
+		resistors/scale=.75}
+	
+%---------------------------------------------------------------------%
+%---------------------------------------------------------------------%
+% PGFPLOTS PACKAGES
+%---------------------------------------------------------------------%
+\usepackage{pgfplots}
+	\usepgfplotslibrary{patchplots}
+	\usepgfplotslibrary{fillbetween}
+	\usepgfplotslibrary{polar} 
+	\usetikzlibrary{pgfplots.polar}
+	\pgfplotsset{every axis ticks/.append style={font=\sffamily\footnotesize},
+	compat=1.18}%1.18
+	\pgfkeys{/pgf/number format/.cd,int detect,1000 sep={\,},min exponent for 1000 sep=4}
+	\pgfplotsset{
+    	legend image with text/.style={
+        legend image code/.code={%
+        \node[anchor=center] at (0.3cm,0cm) {#1};
+        }
+    },
+}
+
+%---------------------------------------------%
+% EXTERNAL
+%---------------------------------------------%
+\usepgfplotslibrary{external} 
+	\tikzexternalize[optimize=false]
+	\tikzsetexternalprefix{external/}
+	\newcommand{\external}[1]{\tikzsetfigurename{#1}}
+	\newcommand{\externalremake}{\tikzset{external/remake next}}
+
+
+%-----------------------------------------------------------------%
+% TITLE PAGE
+%-----------------------------------------------------------------%
+\title{
+    %{ \includegraphics[height=3cm]{{logo/Institut_P'_logo.png}}} \hfill \includegraphics[height=3cm]{{logo/CNRS_logo.pdf}} \hfill { \includegraphics[height=3.7cm]{{logo/laum-logo.png}}}
+%    \includegraphics[height=2cm]{{/run/media/ohmenkoler/Samsung_T5/Docs/Université/Templates_LaTex/Logos/lemans-universite-large.jpg}}\hfill\includegraphics[height=2cm]{{/run/media/ohmenkoler/Samsung_T5/Docs/Université/Templates_LaTex/Logos/ufr.PNG}}
+    %\vfill
+    %\includegraphics[width=.4\textwidth]{{logo/Université_de_Poitiers_(logo_2012).png}}
+%    \includegraphics[height=4cm]{{/run/media/ohmenkoler/Samsung_T5/Docs/Université/Templates_LaTex/Logos/imdea.JPG}}
+    \vfill
+   	\textsc{Université de Poitiers \\ Institut Pprime}
+    \vfill
+        \hrule\leavevmode\\[0.3cm]
+        \huge\textbf{Optimisation d'un réfrigérateur thermoacoustique compact} \\[0.65cm]
+        \hrule
+    \vfill
+}%vertically center text
+\author{\begin{tabular}{rl}
+Auteur : & Martin Fontbonne\\
+Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
+	& Jean-Christophe Valière, \textit{Université de Poitiers}\\
+	& Gaëlle Poignand, \textit{Le Mans Université}
+\end{tabular}}
+\date{Janvier 2025}
+
+%\dominitoc
+%---------------------------------------------------------------------%
+\begin{document}
+%---------------------------------------------------------------------%
+\renewcommand{\thepage}{\roman{page}}
+\maketitle
+\cleardoublepage
+
+%\input{Citations}
+
+\input{Remerciements}
+%\newpage
+
+{\hypersetup{linkcolor = black}
+\tableofcontents\label{chap:tableofcontents}\addcontentsline{toc}{chapter}{\nameref{chap:tableofcontents}}%\mtcaddchapter
+%\newpage
+
+\listoffigures\label{chap:listoffigures}\addcontentsline{toc}{chapter}{\nameref{chap:listoffigures}}
+%\newpage
+
+\listoftables\label{chap:listoftables}\addcontentsline{toc}{chapter}{\nameref{chap:listoftables}}
+%\newpage
+}
+\cleardoublepage
+\setcounter{page}{1}
+\renewcommand{\thepage}{\arabic{page}}
+\renewcommand{\thesection}{\arabic{section}}
+%---------------------------------------------------------------------%
+% BODY
+%---------------------------------------------------------------------%
+\input{Introduction}
+%\setcounter{page}{1}
+%\renewcommand{\thepage}{\arabic{page}}
+%\renewcommand{\thesection}{\arabic{section}}
+
+%\part{\'Etude des transferts thermiques}
+
+%\input{BilanThermique}
+
+\input{DispositifExpe}
+
+\input{EtudeExperimentale}
+
+%\input{InstabiliteCentreNoyau}
+
+\input{EtudeTheoriqueSimus}
+
+
+
+
+%\part{Influence des sources électroacoustiques}
+%
+%\input{SRC1}
+%
+%\input{SRC2}
+
+
+\input{Conclusion}
+
+\input{Perspectives}
+
+%---------------------------------------------------------------------%
+% APPENDICES
+%---------------------------------------------------------------------%
+\newpage
+\setcounter{page}{1}
+\renewcommand{\thepage}{\alph{page}}
+\appendix
+
+
+\input{IndexNotations}
+
+\input{AHX}
+
+\input{RecapCondExpe}
+
+%\input{CircuitFerme}
+
+%\input{ChangeTraversees}
+
+
+%---------------------------------------------------------------------%
+% BIBLIOGRAPHY
+%---------------------------------------------------------------------%
+
+
+\cleardoublepage
+\setcounter{page}{1}
+\renewcommand{\thepage}{\Roman{page}}
+\addcontentsline{toc}{chapter}{Bibliographie}
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+\printbibliography
+
+
+%---------------------------------------------------------------------%
+\end{document}
+%---------------------------------------------------------------------%

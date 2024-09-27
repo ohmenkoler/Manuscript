@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+    \def\Long{.45\textwidth};
+    \def\larg{.5cm};
+    \def\Rad{1cm};
+    \def\rad{.75cm};
+    \def\distX{.5\textwidth};
+    \def\distY{1cm};
+    \def\depl{.75\textwidth};
+    
+    \foreach \x in {0,1}{
+%        \foreach \y in {0,1}{
+%            \fill[left color=MatlabOrange,right color=MatlabBlue] (\x*\distX-.5*\long,\y*\distY-.5*\larg) rectangle (\x*\distX+.5*\long,\y*\distY+.5*\larg) node[midway,text=white]{Plaque};				
+	        \draw[dotted,thick] (\x*\distX-\depl,-\larg) -- ++(0,3) node[above,right]{$-\xi_{0}$};
+	        \draw[dotted,thick] (\x*\distX-\depl,-\larg) -- ++(0,3) node[above,right]{$+\xi_{0}$};
+%        }
+    }
+\end{tikzpicture}

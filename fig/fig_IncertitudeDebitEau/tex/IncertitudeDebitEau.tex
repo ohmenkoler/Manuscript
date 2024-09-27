@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+    \def\height{.9*\textwidth};
+    \def\width{\height};
+    \def\spx{.5cm};
+    \def\spy{.5cm};
+    \def\legx{.5cm};
+    \def\legy{\legx};
+    \def\prop{.45};
+    
+    \begin{axis}[name=TurbineUltrason,width={\width},height={\height},
+    xlabel={$\dot q_{\textsf{us}}$ [\unit{\liter\per\minute}]},
+    ylabel={$\dot q_{\textsf{tb}}$ [\unit{\liter\per\minute}]},
+    xmin=0,xmax=10,ymin=0,ymax=10,
+    domain=0:9.5,
+    legend style = {at={(.97,.03)},anchor = south east}
+    ]
+        \addplot[solid,ultra thick,draw=MatlabBlue] file {../fig/fig_IncertitudeDebitEau/data/data_calibTurbineVSUltrason.txt};
+        \addplot[dashed,ultra thick,draw=MatlabBlue] {1.002*x - .3847};
+        
+        \legend{Exp. \\ Approx. linéaire, $\dot q_{\sf tb}=\dot q_{\sf us}-0.3847$ \\};
+    \end{axis}
+    
+    \begin{axis}[name=EcartRelat,width={\prop*\width},height={\prop*\height},
+    xlabel={$\dot q$ [\unit{\liter\per\minute}]},
+    ylabel={\'Ecart relatif $\epsilon$ [\unit{\percent}]},
+    xmin=0,xmax=10,ymin=0,ymax=100,
+    at={($(TurbineUltrason.north)+(\spx,-\spy)$)},anchor= north east
+    ]
+        \addplot[solid,ultra thick,draw=MatlabOrange] file {../fig/fig_IncertitudeDebitEau/data/data_RelativeDiff.txt};
+    \end{axis}
+    
+    \draw ($(TurbineUltrason.north east)+(-\legx,-\legy)$) node[]{\bf (a)};
+    \draw ($(EcartRelat.north east)+(-\legx,-\legy)$) node[]{\bf (b)};
+    
+\end{tikzpicture}

@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=.8]
+	\fill[left color=PythonRed,right color=PythonBlue](-3,-2) rectangle (3,-3) node[midway,text=white]{Plaque};
+	\draw[dotted,thick] (-2,-3.2) -- (-2,1.2) node[above,right]{$-\xi_{0}$};
+	\draw[dotted,thick] (2,-3.2) -- (2,1.2) node[above,right]{$+\xi_{0}$};
+		
+	\draw(-2,0) circle (.5);
+	\draw[dashed](2,0) circle (.5);
+			
+	\draw[<-,dashed,PythonGreen](0,2.5) node[right]{$\delta_{\kappa,\nu}$} -- (0,1.5) ;
+	\draw[->,PythonGreen](0,1.5) -- (0,-1.9);
+\end{tikzpicture}

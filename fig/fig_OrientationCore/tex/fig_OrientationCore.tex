@@ -1,0 +1,145 @@
+\begin{tikzpicture}
+%    \def\lenreg{2};
+%    \def\diam{3};
+    \def\spy{2};
+    \def\xdist{8cm};
+    \def\ydist{-7cm};
+%    \def\persp{20};
+%    
+%    \def\LX{1};
+%    \def\LY{2};
+%    \def\CoreX{1.5};
+%    \def\CoreY{.9*\LY};
+%    
+
+	\def\L{2};
+	\def\R{6};
+	\def\HX{.25};
+	\def\decalage{\R/2-\L/2};
+    
+%	Islam's idea
+	\begin{scope}
+%		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1}
+		\fill[right color=blue!25,left color=red!25, draw=black] (\decalage,0) rectangle ++(\L,\R);
+		\draw[fill=red!25] (\decalage,0) rectangle ++(-\HX,\R);
+		\draw[fill=blue!25] (\decalage+\L,0) rectangle ++(\HX,\R);
+
+		\foreach \z [evaluate=\z] in {0,...,4}{
+			\foreach \r [evaluate=\r as \num using int(\r+1 + 3*\z)] in {0,...,2}{
+				\draw ({\decalage+.5+\L-\z*(1+\L)/4},{-(\R-.4)/2*\r+\R-.2}) node(n\z\r){\num};
+}}
+
+		\draw (n01.east) node [right]{$\rightarrow$ \begin{tabular}{l}Source\\acoustique\\principale\end{tabular}};
+		\draw (n30.north west) node [above]{AHX};
+		\draw (n10.north east) node [above]{CHX};
+
+		\draw (0,\R+\spy) node [anchor=west]{\textbf{(a)} \texttt{H1}};
+
+	\end{scope}
+	
+	
+	
+	\begin{scope}[xshift=\xdist-1cm,yshift=2cm]
+		\begin{scope}[xslant=1,yscale=.5]
+%		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2}
+		\fill[right color=blue!25,left color=red!25, draw=black] (\decalage,0) rectangle ++(\L,\R);
+		\draw[fill=red!25] (\decalage,0) rectangle ++(-\HX,\R);
+		\draw[fill=blue!25] (\decalage+\L,0) rectangle ++(\HX,\R);
+
+		\foreach \z [evaluate=\z] in {0,...,4}{
+			\foreach \r [evaluate=\r as \num using int(\r+1 + 3*\z)] in {0,...,2}{
+				\draw ({\decalage+.5+\L-\z*(1+\L)/4},{-(\R-.4)/2*\r+\R-.2}) node(n\z\r){\num};
+}}
+
+		\draw (n01.east) node [right]{$\rightarrow$ \begin{tabular}{l}Source\\acoustique\\principale\end{tabular}};
+		\draw (n30.north west) node [above]{AHX};
+		\draw (n10.north east) node [above]{CHX};
+		\end{scope}
+
+		\draw (1cm,\R+\spy-2cm) node [anchor=west]{\textbf{(b)} \texttt{H2}};
+	\end{scope}  
+	
+	
+	  
+	\begin{scope}[yshift=\ydist]
+%		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1}		
+
+		\fill[top color=red!25, bottom color=blue!25, draw=black] (0,0) rectangle ++(\R,\L);
+		\draw[fill=blue!25] (0,0) rectangle ++(\R,-\HX);
+		\draw[fill=red!25] (0,\L) rectangle ++(\R,\HX);
+
+		\foreach \z [evaluate=\z] in {0,...,4}{
+			\foreach \r [evaluate=\r as \num using int(\r+1 + 3*\z)] in {0,...,2}{
+				\draw ({-(\R-.4)/2*\r+\R-.2},{\z*(1+\L)/4-.5}) node(n\z\r){\num};
+}}
+
+		\draw (n40.south east) node [right]{AHX};
+		\draw (n00.north east) node[right]{CHX};
+		\draw (n01.south) node [below]{\shortstack{ $\downarrow$ \\Source acoustique principale}};
+
+		\draw (0,\L+2*\HX+\spy) node [anchor=west]{\textbf{(c)} \texttt{V1}};
+	\end{scope} 
+	
+	
+	
+	   
+	\begin{scope}[xshift=\xdist,yshift=\ydist]
+%		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2}	
+		\fill[top color=blue!25, bottom color=red!25, draw=black] (0,0) rectangle ++(\R,\L);
+		\draw[fill=red!25] (0,0) rectangle ++(\R,-\HX);
+		\draw[fill=blue!25] (0,\L) rectangle ++(\R,\HX);
+
+		\foreach \z [evaluate=\z] in {0,...,4}{
+			\foreach \r [evaluate=\r as \num using int(\r+1 + 3*\z)] in {0,...,2}{
+				\draw ({(\R-.4)/2*\r+.2},{-\z*(1+\L)/4+\L+.5}) node(n\z\r){\num};
+}}
+
+		\draw (n01.north) node [above]{\shortstack{Source acoustique principale\\ $\uparrow$}};
+		\draw (n42.north east) node [right]{AHX};
+		\draw (n02.south east) node [right]{CHX};
+
+		\draw (0,\L+2*\HX+\spy) node [anchor=west]{\textbf{(d)} \texttt{V2}};	
+	\end{scope}    
+    
+%	 Alternate version    
+%    \draw[->] (5.5,-.5) -- ++(1,0);\draw(6,-1) node[]{Vertical 2};
+%    \draw[->] (6.5,.5) -- ++(-1,0);\draw(6,1) node[]{Vertical 1};
+%    \draw[->] (9,.5) -- ++(0,-1);\draw(9,1) node[]{Horizontal 1};
+%    \draw (12,0) node[circle,draw]{.};\draw (12,1) node[]{Horizontal 2};
+%    
+%    
+%    \input{../fig/fig_OrientationCore/tex/subfig_OrientationCore}
+%    \begin{scope}[yscale=-1]
+%        \input{../fig/fig_OrientationCore/tex/subfig_OrientationCore}
+%    \end{scope}
+    
+    % Old version
+    % %%%%%%%%%%%%%%%%%%%% V1
+    % \fill[bottom color=PythonBlue, top color=PythonRed,draw=black] (-\xdist,{\ydist+\lenreg}) -- ++(0,{-\lenreg}) arc (0:-180:{\diam} and {\diam/\persp}) -- ++(0,{\lenreg}) arc (-180:0:{\diam} and {\diam/\persp}) --cycle;
+    
+    % \draw[fill=PythonRed] ({-\xdist-\diam},\ydist+\lenreg) ellipse ({\diam} and {\diam/\persp});
+    
+    % \draw ({-\xdist-\diam},\ydist-\spy) node []{\textbf{(a)} V1};
+    
+    
+    % %%%%%%%%%%%%%%%%%%%% V2
+    % \fill[bottom color=PythonRed, top color=PythonBlue,draw=black] (\xdist,{\ydist+\lenreg}) -- ++(0,{-\lenreg}) arc (-180:0:{\diam} and {\diam/\persp}) -- ++(0,{\lenreg}) arc (0:-180:{\diam} and {\diam/\persp}) --cycle;
+    
+    % \draw[fill=PythonBlue] ({\xdist+\diam},\ydist+\lenreg) ellipse ({\diam} and {\diam/\persp});
+    
+    % \draw ({\xdist+\diam},\ydist-\spy) node []{\textbf{(b)} V2};
+    
+    
+    % %%%%%%%%%%%%%%%%%%%% H1
+    % \draw ({-\xdist-\diam},-\ydist) circle (\diam);
+    % \draw[dashed,very thick] ({-\xdist-\diam},{-\ydist+\diam}) -- ++(0,-2*\diam);
+    
+    % \draw ({-\xdist-\diam},-\ydist-\diam-\spy) node []{\textbf{(c)} H1};
+    
+    
+    % %%%%%%%%%%%%%%%%%%%% H2
+    % \draw ({\xdist+\diam},-\ydist) circle (\diam);
+    % \draw[dashed,very thick] ({\xdist},{-\ydist}) -- ++(2*\diam,0);
+    
+    % \draw ({\xdist+\diam},-\ydist-\diam-\spy) node []{\textbf{(d)} H2};
+\end{tikzpicture}

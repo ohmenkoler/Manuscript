@@ -1,0 +1,44 @@
+\begin{tikzpicture}
+    \def\width{.7\textwidth};
+    \def\height{\width};
+    \def\spx{3cm};
+    \def\lab{.5cm};
+    
+    % \begin{axis}[name=GBFOsc,height=\height,width=\width,
+    % domain=-180:180, 
+    % xtick={-180,0,180},xticklabels={$-\pi$,$0$,$\pi$},
+    % ytick={-360,-180,0,180},yticklabels={$-2\pi$,$-\pi$,$0$,$\pi$},
+    % xlabel={$\phi_{\sf gbf}$},ylabel={$\phi_{osc}$},
+    % legend style={at={(1,1.05)},anchor=south east},
+    % ]
+    % \addplot[only marks,draw=PythonBlue] file {../fig/fig_PhaseGBFOscPiston/data/data_PhaseGBFOsc.txt};
+    % \addplot[dashed,draw=PythonBlue] {-x-180};
+    % \legend{Exp.\\ $\phi_{\sf osc}=-\phi_{\sf gbf}-180$\\};
+    % \end{axis}
+    
+    % \begin{axis}[name=OscPiston,height=\height,width=\width,
+    % domain=-180:180, xtick={-180,0,180},xticklabels={$-\pi$,$0$,$\pi$},
+    % ytick={-180,0,180},yticklabels={$-\pi$,$0$,$\pi$},
+    % xlabel={$\phi_{\sf osc}$},ylabel={$\phi_{pist}$},
+    % at={($(GBFOsc.east)+(\spx,0)$)},anchor=west,
+    % ]
+    % \addplot[only marks,draw=PythonBlue] file{../fig/fig_PhaseGBFOscPiston/data/data_PhaseOscPiston.txt};
+    % \addplot[dashed,draw=PythonBlue] {-x};
+    % \end{axis}
+    
+    % \draw ($(GBFOsc.north west)+(\lab,\lab)$) node[]{\bf (a)};
+    % \draw ($(OscPiston.north west)+(\lab,\lab)$) node[]{\bf (b)};
+    
+    \begin{axis}[name=GBFOsc,height=\height,width=\width,
+    domain=-180:180, 
+    xtick={-180,0,180},xticklabels={$-\pi$,$0$,$\pi$},
+    ytick={-360,-180,0,180},yticklabels={$-2\pi$,$-\pi$,$0$,$\pi$},
+    xlabel={$\phi^{\sf gbf}_{\sf RIX-HP}$ [\unit{\radian}]},ylabel={$\phi_{\sf RIX-HP}^{\sf pist}$ [\unit{\radian}]},
+    legend style={at={(.05,.95)},anchor=north west},
+    ]
+    \addplot[only marks,draw=PythonBlue] file {../fig/fig_PhaseGBFOscPiston/data/data_PhaseGBFPiston.txt};
+    \addplot[dashed,draw=PythonBlue] {.6418*x+104.49};
+    \legend{Exp.\\ $\phi_{\sf RIX-HP}^{\sf pist}=0.6\phi_{\sf RIX-HP}^{\sf gbf}+104.5$\\};
+    \end{axis}
+    
+\end{tikzpicture}

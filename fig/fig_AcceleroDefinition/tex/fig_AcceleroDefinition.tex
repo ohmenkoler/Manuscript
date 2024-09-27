@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+    \def\LX{1};
+    \def\LY{2};
+    \def\CoreX{1.5};
+    \def\CoreY{.9*\LY};
+    
+    \input{../fig/fig_AcceleroDefinition/tex/subfig_AcceleroDefinition}
+    
+    \begin{scope}[xscale=1,yscale=-1]
+        \input{../fig/fig_AcceleroDefinition/tex/subfig_AcceleroDefinition}
+    \end{scope}
+    
+    \draw[->,green] ({-.7*\LX},.1*\LY) -- ++(.5,0) node[pos=1,above right]{$\xi_2$};
+    \draw[->,green] (1.6*\LX,0) -- ++(-.5,0)node[pos=1,below]{$\xi_1$};
+    
+    \foreach \a in {1,2}{
+    \draw[->,PythonOrange,thick] (6*\LX,-1) node[above]{Accéléromètres} to[out=-120,in=-45] (a\a.south east);
+    \draw[->,PythonBlue,thick] (6*\LX,.5) node[below]{sources acoustiques} to[out=120,in=45] ($(a\a.north east)+(0,.5)$);
+    }
+    
+    
+    %\draw[line width=1mm] (5*\LX,.5*\LY) -- ++(6*\LX,0);
+    %\draw[line width=1mm] (5*\LX,-.5*\LY) -- ++(6*\LX,0);
+    %
+    %\draw (-2.5*\LX,\LY) node[above]{\bf (a)};
+    %\draw (5*\LX,\LY) node[above]{\bf (b)};
+    
+\end{tikzpicture}

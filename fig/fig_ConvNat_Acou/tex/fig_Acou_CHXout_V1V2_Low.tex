@@ -1,0 +1,61 @@
+\begin{tikzpicture}
+    \def\width{.9*\textwidth};
+    \def\height{.5*\width};
+    \def\legx{.5cm};
+    \def\legy{\legx};
+    
+    \begin{axis}[width={\width},height={\height},grid=both,minor tick num=4,
+    grid style={line width=.1pt, draw=gray!10},
+    major grid style={line width=.2pt,draw=gray!50},
+    xlabel={Temps $t$ [\unit{\s}]},
+    ylabel={\'Ecart de température $\tau$ [\unit{\degreeCelsius}]},
+    xmin=0,xmax=3500,
+	 ymin=-5,ymax=4,
+    xtick={0,600,1200,1800,2400,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
+    domain=0:100,
+    legend style = {at={(1.01,1.05)},anchor = north east},legend columns=3,
+%    legend cell align={right},
+    ]
+%		\addplot[very thick,black] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC0_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{TC src. ac. 1 (V1)}
+%		\addplot[very thick,black!50] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC0_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{TC src. ac. 1 (V2)}
+%    	\addplot[very thick,Blue1] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC1_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{TC 1}
+%    	\addplot[very thick,Blue4] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC1_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{TC 1}
+%    	\addplot[very thick,Blue2] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC2_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{TC 2}
+%    	\addplot[very thick,Blue5] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC2_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{TC 2}
+%    	\addplot[very thick,Blue3] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC3_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{TC 3}    	
+%    	\addplot[very thick,Blue6] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC3_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{TC 3}
+    	
+		\addlegendimage{legend image with text=}
+		\addlegendentry{}
+		\addlegendimage{legend image with text=V1}
+		\addlegendentry{}
+		\addlegendimage{legend image with text=V2} 
+		\addlegendentry{}       	
+    	
+    	\addlegendimage{legend image with text=Source acoustique principale}
+    	\addlegendentry{}
+    	
+    	\addplot[ultra thick,black] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC0_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
+		\addplot[ultra thick,black,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC0_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
+		
+		\addlegendimage{legend image with text=TC 1}
+		\addlegendentry{}
+		
+    	\addplot[ultra thick,MatlabBlue] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC1_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,MatlabBlue,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC1_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
+    	
+    	\addlegendimage{legend image with text=TC 2}
+		\addlegendentry{}
+		
+    	\addplot[ultra thick,MatlabOrange] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC2_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,MatlabOrange,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC2_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
+    	
+    	\addlegendimage{legend image with text=TC 3}
+		\addlegendentry{}
+		
+    	\addplot[ultra thick,MatlabYellow] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC3_0beg_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}    	
+    	\addplot[ultra thick,MatlabYellow,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC3_0beg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
+        
+%        \legend{\\ \\};
+    \end{axis}
+\end{tikzpicture}

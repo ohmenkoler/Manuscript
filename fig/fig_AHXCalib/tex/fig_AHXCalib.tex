@@ -1,0 +1,49 @@
+\begin{tikzpicture}
+    \def\height{5cm};
+    \def\width{.65\textwidth};
+    \def\spx{1.2};
+    \def\spy{.5cm};
+    \def\legx{.5cm};
+    \def\legy{.3cm};
+
+    \begin{axis}[name=DTqdot,height=\height,width=\width, 
+    x tick label style={
+        /pgf/number format/1000 sep=},  
+    %xlabel=$\dot q$ (\unit{\l\per\minute}),
+    ylabel=$\Delta T^w$ (\unit{\degreeCelsius}),
+    xmajorticks=false,
+    ybar,enlarge x limits=.15,
+    legend pos=outer north east]
+    
+    \addplot[solid,ultra thick,fill=MatlabBlue!25,draw=MatlabBlue] file {../fig/fig_AHXCalib/data/data_qdotDT0Water.txt};
+    \addplot[solid,ultra thick,fill=MatlabOrange!25,draw=MatlabOrange,
+    postaction={
+        pattern=north east lines,pattern color=MatlabOrange
+    }] file {../fig/fig_AHXCalib/data/data_qdotDT1WaterAcou.txt};
+    \addplot[solid,ultra thick,fill=MatlabOrange!25,draw=MatlabOrange] file {../fig/fig_AHXCalib/data/data_qdotDT10Acou.txt};
+    \addplot[solid,ultra thick,fill=MatlabYellow!25,draw=MatlabYellow,
+     postaction={
+        pattern=north east lines,pattern color=MatlabYellow
+    }] file {../fig/fig_AHXCalib/data/data_qdotDT2WaterAcouQc.txt};
+    \addplot[solid,ultra thick,fill=MatlabYellow!25,draw=MatlabYellow] file {../fig/fig_AHXCalib/data/data_qdotDT20AcouQc.txt};
+    \legend{$\Delta T_0^w$ \\ $\Delta T_1^w$ \\ $\Delta T_1^w-\Delta T_0^w$ \\ $\Delta T_2^w$ \\ $\Delta T_2^w-\Delta T_0^w$ \\};
+\end{axis}
+
+\begin{axis}[name=Qdotqdot,height=\height,width=\width, 
+    x tick label style={
+        /pgf/number format/1000 sep=},  
+    xlabel=$\dot q$ (\unit{\l\per\minute}),
+    ylabel=$\dot Q_a$ (\unit{\watt}),
+    xtick={4.5,7,9.5},
+    ybar,enlarge x limits=.15,
+    at={($(DTqdot.south)+(0,-\spy)$)},anchor=north,
+    legend pos=outer north east]
+    
+    \addplot[solid,ultra thick,fill=MatlabOrange!25,draw=MatlabOrange] file{../fig/fig_AHXCalib/data/data_qdotQa1dotNoHeat.txt};
+    \addplot[solid,ultra thick,fill=MatlabYellow!25,draw=MatlabYellow] file{../fig/fig_AHXCalib/data/data_qdotQa2dotHeat.txt};
+    \legend{$\dot Q_f=0$ \\ $\dot Q_f \neq 0$ \\};
+    \end{axis}
+    
+    \draw ($(DTqdot.north west)+(\legx,-\legy)$) node[]{\bf(a)};
+    \draw ($(Qdotqdot.north west)+(\legx,-\legy)$) node[]{\textbf{(b)}};
+\end{tikzpicture}

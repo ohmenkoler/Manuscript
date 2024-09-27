@@ -1,0 +1,132 @@
+\begin{tikzpicture}
+    \def\height{15cm};
+    \def\width{.29\textwidth};
+    \def\spx{2cm};
+    \def\spy{2cm};
+    \def\lab{.5cm};
+    \def\marksize{1mm};
+    \def\Tmax{1.25};
+    \def\Tmin{-.25};
+    
+    %%%%%%%%%%%%%%%%%%%%%%%% AHX
+    \begin{axis}[width=\width,height=\height,name=AHX,
+    ytick={-8,0,8},yticklabels={$-r_{\sf reg}$,$0$,$r_{\sf reg}$},
+    xlabel={$\tau$},ylabel={Rayon $r$},
+    xmin=\Tmin,xmax=\Tmax,xtick={0,1},xticklabels={$T_c$,$T_a$}
+    ]
+        %%%%%%%%%%%%%%%%%% H1
+        \addplot[PythonBlue,dotted,mark=triangle*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H1/WaterAcou/data_Tprofile_H1_WaterAcou_AHXIN_adim.txt}; \label{plot:H1in}
+        \addplot[PythonOrange,dotted,mark=triangle*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H1/WaterAcou/data_Tprofile_H1_WaterAcou_AHXOUT_adim.txt}; \label{plot:H1out}
+        
+        %%%%%%%%%%%%%%%%%% H2
+        \addplot[PythonBlue,dotted,mark=square*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H2/WaterAcou/data_Tprofile_H2_WaterAcou_AHXIN_adim.txt}; \label{plot:H2in}
+        \addplot[PythonOrange,dotted,mark=square*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H2/WaterAcou/data_Tprofile_H2_WaterAcou_AHXOUT_adim.txt}; \label{plot:H2out}
+        
+        % %%%%%%%%%%%%%%%%%% V1
+        % \addplot[PythonBlue,dotted,mark=*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V1/WaterAcou/data_Tprofile_V1_WaterAcou_AHXIN_adim.txt}; \label{plot:V1in}
+        % \addplot[PythonOrange,dotted,mark=*,mark size=\marksize] file{../fig/fig_FrigoToupie/data/V1/WaterAcou/data_Tprofile_V1_WaterAcou_AHXOUT_adim.txt}; \label{plot:V1out}
+        
+        % %%%%%%%%%%%%%%%%%% V2
+        % \addplot[PythonBlue,dotted,mark=diamond*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V2/WaterAcou/data_Tprofile_V2_WaterAcou_AHXIN_adim.txt}; \label{plot:V2in}
+        % \addplot[PythonOrange,dotted,mark=diamond*,mark size=\marksize] file{../fig/fig_FrigoToupie/data/V2/WaterAcou/data_Tprofile_V2_WaterAcou_AHXOUT_adim.txt}; \label{plot:V2out}
+    \end{axis}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%% TOP
+    \begin{axis}[width=\width,height={\height/3},name=TOP,
+    at={($(AHX.north east)+(\spx,0)$)},anchor=north west,
+    xticklabel=\empty,
+    ymin=\Tmin,ymax=\Tmax,ytick={0,1},yticklabels={$T_c$,$T_a$},
+    ylabel={$\tau$}
+    ]
+        %%%%%%%%%%%%%%%%% H1
+        \addplot[PythonBlue,dotted,mark=triangle*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H1/WaterAcou/data_Tprofile_H1_WaterAcou_TOP_adim.txt};
+        
+        %%%%%%%%%%%%%%%%%% H2
+        \addplot[PythonBlue,dotted,mark=square*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H2/WaterAcou/data_Tprofile_H2_WaterAcou_TOP_adim.txt};
+        
+        % %%%%%%%%%%%%%%%%%% V1
+        % \addplot[PythonBlue,dotted,mark=*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V1/WaterAcou/data_Tprofile_V1_WaterAcou_TOP_adim.txt};
+        
+        % %%%%%%%%%%%%%%%%%% V2
+        % \addplot[PythonBlue,dotted,mark=diamond*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V2/WaterAcou/data_Tprofile_V2_WaterAcou_TOP_adim.txt};
+    \end{axis}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%% MID
+    \begin{axis}[width=\width,height={\height/3},name=MID,
+    at={($(AHX.east)+(\spx,0)$)},anchor=west,
+    xticklabel=\empty,
+    ymin=\Tmin,ymax=\Tmax,ytick={0,1},yticklabels={$T_c$,$T_a$},
+    ylabel={$\tau$}
+    ]
+        %%%%%%%%%%%%%%%%%% H1
+        \addplot[PythonBlue,dotted,mark=triangle*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H1/WaterAcou/data_Tprofile_H1_WaterAcou_MID_adim.txt};
+
+        %%%%%%%%%%%%%%%%%% H2
+        \addplot[PythonBlue,dotted,mark=square*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H2/WaterAcou/data_Tprofile_H2_WaterAcou_MID_adim.txt};
+
+        % %%%%%%%%%%%%%%%%%% V1
+        % \addplot[PythonBlue,dotted,mark=*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V1/WaterAcou/data_Tprofile_V1_WaterAcou_MID_adim.txt};
+
+        % %%%%%%%%%%%%%%%%%% V2
+        % \addplot[PythonBlue,dotted,mark=diamond*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V2/WaterAcou/data_Tprofile_V2_WaterAcou_MID_adim.txt};
+    \end{axis}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%% BOT
+    \begin{axis}[width=\width,height={\height/3},name=BOT,
+    at={($(AHX.south east)+(\spx,0)$)},anchor=south west,
+    xtick={-2,0,2},xticklabels={$x_a$,$0$,$x_c$},
+    ymin=\Tmin,ymax=\Tmax,ytick={0,1},yticklabels={$T_c$,$T_a$},
+    xlabel={Longueur $L$},ylabel={$\tau$}
+    ]
+        %%%%%%%%%%%%%%%%%% H1
+        \addplot[PythonBlue,dotted, mark=triangle*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H1/WaterAcou/data_Tprofile_H1_WaterAcou_BOT_adim.txt};
+        
+        %%%%%%%%%%%%%%%%%% H2
+        \addplot[PythonBlue,dotted, mark=square*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H2/WaterAcou/data_Tprofile_H2_WaterAcou_BOT_adim.txt};
+        
+        % %%%%%%%%%%%%%%%%%% V1
+        % \addplot[PythonBlue,dotted, mark=*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V1/WaterAcou/data_Tprofile_V1_WaterAcou_BOT_adim.txt};
+        
+        % %%%%%%%%%%%%%%%%%% V2
+        % \addplot[PythonBlue,dotted, mark=diamond*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V2/WaterAcou/data_Tprofile_V2_WaterAcou_BOT_adim.txt};
+        
+        \coordinate (legend) at (axis description cs:0.5,-.5);
+    \end{axis}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%% CHX
+    \begin{axis}[width=\width,height=\height,name=CHX,
+    at={($(BOT.south east)+(\spx,0)$)},anchor=south west,
+    ylabel near ticks, yticklabel pos=right,
+    ytick={-8,0,8},yticklabels={$-r_{\sf reg}$,$0$,$r_{\sf reg}$},   
+    xlabel={$\tau$},
+    xmin=\Tmin,xmax=\Tmax,xtick={0,1},xticklabels={$T_c$,$T_a$}
+    ]
+        %%%%%%%%%%%%%%%%%% H1
+        \addplot[PythonBlue,dotted,mark=triangle*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H1/WaterAcou/data_Tprofile_H1_WaterAcou_CHXIN_adim.txt};
+        \addplot[PythonOrange,dotted,mark=triangle*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H1/WaterAcou/data_Tprofile_H1_WaterAcou_CHXOUT_adim.txt};
+        
+        %%%%%%%%%%%%%%%%%% H2
+        \addplot[PythonBlue,dotted,mark=square*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H2/WaterAcou/data_Tprofile_H2_WaterAcou_CHXIN_adim.txt};
+        \addplot[PythonOrange,dotted,mark=square*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/H2/WaterAcou/data_Tprofile_H2_WaterAcou_CHXOUT_adim.txt};
+        
+        % %%%%%%%%%%%%%%%%%% V1
+        % \addplot[PythonBlue,dotted,mark=*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V1/WaterAcou/data_Tprofile_V1_WaterAcou_CHXIN_adim.txt};
+        % \addplot[PythonOrange,dotted,mark=*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V1/WaterAcou/data_Tprofile_V1_WaterAcou_CHXOUT_adim.txt};
+        
+        % %%%%%%%%%%%%%%%%%% V2
+        % \addplot[PythonBlue,dotted,mark=diamond*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V2/WaterAcou/data_Tprofile_V2_WaterAcou_CHXIN_adim.txt};
+        % \addplot[PythonOrange,dotted,mark=diamond*,mark size=\marksize] file{../fig/fig_FrigoToupie_Profils/data/V2/WaterAcou/data_Tprofile_V2_WaterAcou_CHXOUT_adim.txt};
+    \end{axis}
+    
+    \draw ($(AHX.north west)+(\lab,\lab)$) node[]{\bf (a)};
+    \draw ($(TOP.north west)+(\lab,\lab)$) node[]{\bf (b)};
+    \draw ($(MID.north west)+(\lab,\lab)$) node[]{\bf (c)};
+    \draw ($(BOT.north west)+(\lab,\lab)$) node[]{\bf (d)};
+    \draw ($(CHX.north west)+(\lab,\lab)$) node[]{\bf (e)};
+    \matrix [draw, matrix of nodes, anchor=north] at (legend) {
+            \textbf{Légende :}  &                   &           \\
+            Horizontal 1        & Horizontal 2      &           \\
+            \ref{plot:H1in}     & \ref{plot:H2in}   & Intérieur \\
+            \ref{plot:H1out}    & \ref{plot:H2out}  & Extérieur \\
+        };
+\end{tikzpicture}

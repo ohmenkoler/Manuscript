@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  26 SEP 2024 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  1 OCT 2024 17:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2021,6 +2021,10 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Warning: Citation 'ramadan_design_2021' on page 11 undefined on input lin
 e 82.
 
+
+LaTeX Warning: Reference `fig:TCdansNoyau' on page 12 undefined on input line 1
+17.
+
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 \openout5 = `external/fig_TCdansNoyau0.dpth'.
 
@@ -2141,79 +2145,79 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 12 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 13 undefined on
  input line 199.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 12 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 13 undefined on i
 nput line 199.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 12 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 13 undefined on
  input line 199.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 12 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 13 undefined on i
 nput line 199.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 12 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 13 undefined on
  input line 199.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 12 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 13 undefined on i
 nput line 199.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 12 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 13 undefined on
  input line 199.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 12 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 13 undefined on i
 nput line 199.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 12 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 13 undefined on
  input line 199.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 12 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 13 undefined on i
 nput line 199.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 12 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 13 undefined on
  input line 199.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 12 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 13 undefined on i
 nput line 199.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 12 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 13 undefined on
  input line 199.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 12 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 13 undefined on i
 nput line 199.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 12 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 13 undefined on
  input line 199.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 12 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 13 undefined on i
 nput line 199.
 
 
-LaTeX Warning: Reference `fig:OrientationCore_H1' on page 12 undefined on input
+LaTeX Warning: Reference `fig:OrientationCore_H1' on page 13 undefined on input
  line 205.
 
 
-LaTeX Warning: Citation 'ramadan_design_2021' on page 12 undefined on input lin
+LaTeX Warning: Citation 'ramadan_design_2021' on page 13 undefined on input lin
 e 205.
 
 
-LaTeX Warning: Reference `fig:TACOTSuspendu_Frigo' on page 12 undefined on inpu
+LaTeX Warning: Reference `fig:TACOTSuspendu_Frigo' on page 13 undefined on inpu
 t line 205.
 
 
@@ -2234,6 +2238,9 @@ e 219.
 
 
 LaTeX Warning: Reference `chap:AHX' on page 14 undefined on input line 225.
+
+
+Underfull \vbox (badness 3407) has occurred while \output is active []
 
 
 LaTeX Warning: Citation 'ramadan_design_2021' on page 15 undefined on input lin
@@ -2265,7 +2272,10 @@ LaTeX Warning: Reference `eq:NavierStokes_Boussinesq' on page 16 undefined on i
 nput line 264.
 
 
-LaTeX Warning: Reference `eq:NavierStokes_Boussinesq_QtMvt' on page 16 undefine
+Underfull \vbox (badness 2165) has occurred while \output is active []
+
+
+LaTeX Warning: Reference `eq:NavierStokes_Boussinesq_QtMvt' on page 17 undefine
 d on input line 274.
 
 
@@ -2294,11 +2304,11 @@ LaTeX Warning: Citation 'lotton_transient_2009' on page 18 undefined on input l
 ine 350.
 
 
-LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 19 undefined on input
+LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 18 undefined on input
  line 352.
 
 
-LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 19 undefined on input line
+LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 18 undefined on input line
  352.
 
 LaTeX Font Info:    Trying to load font information for U+euf on input line 358
@@ -3316,16 +3326,16 @@ Package logreq Info: Writing requests to 'external/fig_TCdansNoyau0.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 74150 strings out of 474435
- 1887633 string characters out of 5751739
- 3746078 words of memory out of 5000000
- 95032 multiletter control sequences out of 15000+600000
+ 74159 strings out of 474435
+ 1884818 string characters out of 5751739
+ 3747083 words of memory out of 5000000
+ 95041 multiletter control sequences out of 15000+600000
  678293 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,21n,93p,4583b,2682s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb>
-Output written on external/fig_TCdansNoyau0.pdf (1 page, 54858 bytes).
+Output written on external/fig_TCdansNoyau0.pdf (1 page, 55106 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)

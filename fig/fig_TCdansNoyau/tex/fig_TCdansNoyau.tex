@@ -8,10 +8,14 @@
 	
 	
 	\fill[pattern=horizontal lines,pattern color=MatlabOrange,draw=black] (0,-\rAHX) rectangle ++(\lAHX,2*\rAHX);
-	\draw[MatlabOrange] (0,-\rAHX) node[below left]{\'Echangeur ambiant};
+	\draw[MatlabOrange] (0,-\rAHX) node(AHX)[below left]{\'Echangeur ambiant};
 	\foreach \r in {-.9,0,.9}{
 		\draw[cyan] (-.1*\lREG,\r*\rAHX) node{\textbullet};
 	}
+	\filldraw[draw=black,fill=gray!50!white] (0,\rAHX) rectangle (\lAHX,\rREG);		% côtés où l'eau circule
+	\filldraw[draw=black,fill=gray!50!white] (0,-\rAHX) rectangle (\lAHX,-\rREG);	%
+	
+	\draw[MatlabOrange,->] (AHX.north) to[out=90,in=180] (-.1*\lCHX,-.5*\rAHX);
 	
 	\begin{scope}[xshift=\lAHX] % Reg
 		\fill[pattern=crosshatch,pattern color=gray,draw=black] (0,-\rREG) rectangle ++(\lREG,2*\rREG);
@@ -24,10 +28,14 @@
 	
 	\begin{scope}[xshift=\lAHX+\lREG] % CHX
 		\fill[pattern=horizontal lines,pattern color=MatlabBlue,draw=black] (0,-\rCHX) rectangle ++(\lCHX,2*\rCHX);
-		\draw[MatlabBlue] (\lCHX,-\rCHX) node[below right]{\'Echangeur froid};
+		\draw[MatlabBlue] (\lCHX,-\rCHX) node(CHX)[below right]{\'Echangeur froid};
 		\foreach \r in {-.9,0,.9}{
 		\draw[cyan] (\lCHX+.1*\lREG,\r*\rCHX) node{\textbullet};
 	}
+	\filldraw[draw=black,fill=gray!50!white] (0,\rREG) rectangle (\lCHX,\rCHX);		% côtés où l'eau circule
+	\filldraw[draw=black,fill=gray!50!white] (0,-\rREG) rectangle (\lCHX,-\rCHX);	%
+	
+	\draw[MatlabBlue,->] (CHX.north) to[out=90,in=0] (1.1*\lCHX,-.5*\rCHX);
 	\end{scope}
 	
 	\draw[green!50!black] (0,0) node[left]{\begin{tabular}{rl}Source & \\ acoustique & $\leftarrow$ \\ secondaire &\end{tabular}};

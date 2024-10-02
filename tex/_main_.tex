@@ -37,6 +37,9 @@
 
 \usepackage{layout}
 \renewcommand{\theparagraph}{\thesubsubsection.\alph{paragraph}}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\thechapter.\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 
 %---------------------------------------------------------------------%
 % PACKAGES
@@ -161,7 +164,7 @@
 \usepackage{titlesec}
 
 \setcounter{secnumdepth}{5}
-\setcounter{tocdepth}{5}
+\setcounter{tocdepth}{4}
 
 \usepackage[
 	style=numeric-comp,
@@ -286,7 +289,6 @@ Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
 \cleardoublepage
 \setcounter{page}{1}
 \renewcommand{\thepage}{\arabic{page}}
-\renewcommand{\thesection}{\arabic{section}}
 %---------------------------------------------------------------------%
 % BODY
 %---------------------------------------------------------------------%

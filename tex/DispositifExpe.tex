@@ -349,7 +349,7 @@ Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavit
 \subsection{Régime transitoire sans convection naturelle}
 Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton et al. pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du \textit{stack} en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volumes éléméntaires $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques.
 
-Les flux thermiques sont pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis de l'équation \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton}. 
+Les flux thermiques sont pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis de l'équation \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton}. \textcolor{red}{Schéma des flux dans le noyau cf Gaëlle}
 
 \begin{enumerate}[label=\textbf{(\roman*)}]
 \item Tout d'abord, le flux thermoacoustique 1D est calculé avec
@@ -424,13 +424,14 @@ Ces flux de chaleurs sont reportés dans l'équation modifiée du bilan de chale
 
 \begin{equation}
 [\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \tau = - \nabla \cdot (Q_{TA} + Q_{\sf cond}) + Q_{\sf visq} + \frac{S_{\sf reg}}{L_{\sf reg}}Q_{\sf lat},
+\label{eq:BilanChaleur_LottonPoignand}
 \end{equation}
 où le premier membre désigne la variation d'énergie interne suite à la variation de température. Dans le second membre, les flux sont exprimés pour chaque volume élémentaire. D'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux et les pertes latérales se produisent dans chaque volume, il sont donc source (ou réservoir suivant le signe) de chaleur et doivent être pris en compte tels quels. Ceci dit, le régénérateur est supposé axisymétrique, ce qui permet de considérer les composantes azimuthales $\nabla_\alpha \cdot Q_{TA}$ et $\nabla_\alpha \cdot Q_{\sf cond}$ comme nulles.
 
 
 Les flux chaleur apportés par l'échangeur froid $Q_f$ et extrait par l'échangeur ambiant $Q_a$ sont introduits comme des conditions aux frontières à l'entrée et à la sortie du régénérateur, de même que le flux $Q_{\sf vort}$. Ces conditions aux frontières s'écrivent au moyen du système d'équations
 
-\begin{subequations}
+\begin{subequations} \color{red}
 	\begin{align}
 		k_x \partial_x \tau - h_{x}|_{x=0}\tau &= Q_{TA}|_{x=0} - Q_{\sf vort}|_{x=0} + Q_f, \label{eq:CondFront_x_0Froid}\\
 		k_x \partial_x \tau + h_{x}|_{x=L_{\sf reg}}\tau &= Q_{TA}|_{x=L_{\sf reg}}  + Q_{\sf vort}|_{x=L_{\sf reg}} - Q_a, \text{et} \label{eq:CondFront_x_LregAmb}\\
@@ -452,6 +453,24 @@ Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique es
 	\end{align}
 	\label{eq:TMatrix_regen}
 \end{subequations}
+
+Pour résoudre l'équation~\eqref{eq:BilanChaleur_LottonPoignand} qui comporte des termes sources, il est nécessaire de la réécrire sous la forme d'un système d'équations inhomogènes tel que
+
+\begin{subequations}
+	\begin{align}
+		\textcolor{red}{Systeme\ ici},\label{eq:1_LottonPoignand}\\
+		\textcolor{red}{Systeme\ ici},\label{eq:2_LottonPoignand}
+	\end{align}
+	\label{eq:SystemeEq_LottonPoignand}
+\end{subequations}
+avec les changements de variables suivants
+
+\begin{itemize} \color{red}
+	\item 1
+	\item 2.
+\end{itemize}
+
+Cette réécriture des équations du système permet de reprendre le formalisme de Green et de résoudre ce problème inhomogène grâce à une transformation intégrale issue dans le chapitre~13 du livre \cite{ozisik_heat_1993, ozisik_integraltransform_heat_1993}
 
 
 

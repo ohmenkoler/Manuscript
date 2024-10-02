@@ -10,7 +10,7 @@
 	\fill[pattern=horizontal lines,pattern color=MatlabOrange,draw=black] (0,-\rAHX) rectangle ++(\lAHX,2*\rAHX);
 	\draw[MatlabOrange] (0,-\rAHX) node(AHX)[below left]{\'Echangeur ambiant};
 	\foreach \r in {-.9,0,.9}{
-		\draw[cyan] (-.1*\lREG,\r*\rAHX) node{\textbullet};
+		\draw[cyan] (-.15*\lREG,\r*\rAHX) node{\textbullet};
 	}
 	\filldraw[draw=black,fill=gray!50!white] (0,\rAHX) rectangle (\lAHX,\rREG);		% côtés où l'eau circule
 	\filldraw[draw=black,fill=gray!50!white] (0,-\rAHX) rectangle (\lAHX,-\rREG);	%
@@ -20,7 +20,7 @@
 	\begin{scope}[xshift=\lAHX] % Reg
 		\fill[pattern=crosshatch,pattern color=gray,draw=black] (0,-\rREG) rectangle ++(\lREG,2*\rREG);
 		\draw[black] (\lREG/2,\rREG) node[above]{Régénérateur};		
-		\foreach \x in {.1,.5,.9}{
+		\foreach \x in {.15,.5,.85}{
 			\foreach \r in {-.9,0,.9}{
 				\draw[cyan] (\x*\lREG,\r*\rREG) node{\textbullet};
 		}}
@@ -30,7 +30,7 @@
 		\fill[pattern=horizontal lines,pattern color=MatlabBlue,draw=black] (0,-\rCHX) rectangle ++(\lCHX,2*\rCHX);
 		\draw[MatlabBlue] (\lCHX,-\rCHX) node(CHX)[below right]{\'Echangeur froid};
 		\foreach \r in {-.9,0,.9}{
-		\draw[cyan] (\lCHX+.1*\lREG,\r*\rCHX) node{\textbullet};
+		\draw[cyan] (\lCHX+.15*\lREG,\r*\rCHX) node{\textbullet};
 	}
 	\filldraw[draw=black,fill=gray!50!white] (0,\rREG) rectangle (\lCHX,\rCHX);		% côtés où l'eau circule
 	\filldraw[draw=black,fill=gray!50!white] (0,-\rREG) rectangle (\lCHX,-\rCHX);	%

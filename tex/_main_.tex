@@ -11,9 +11,7 @@
 %\renewcommand{\familydefault}{\sfdefault}
 
 \usepackage[light,math]{iwona}
-\makeatletter
-	\renewcommand{\sldefault}{it} % In headers, automatically replace \textsl (which doesn't exist for iwona) by \textit
-\makeatother
+\renewcommand{\sldefault}{it} % In headers, automatically replace \textsl (which doesn't exist for iwona) by \textit
 
 \newcommand{\deriv}{\mathrm{d}}
 \newcommand{\Deriv}{\mathrm{D}}
@@ -43,7 +41,17 @@
 
 %---------------------------------------------------------------------%
 % PACKAGES
-%---------------------------------------------------------------------%
+%---------------------------------------------------------------------
+\newcommand{\mylocaltoc}{
+	\vfill
+	\hrule \vspace{.5cm}
+	{\hypersetup{linkcolor = black}
+	\localtableofcontents
+	}%
+	\vspace{.5cm} \hrule
+	\vfill
+	\clearpage
+}
 
 \usepackage[french]{babel}
 \usepackage{csquotes}

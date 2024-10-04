@@ -2,15 +2,14 @@
 \mylocaltoc
 
 
+Après avoir brièvement rappelé les bases de fonctionnement des machines thermoacoustiques, il est temps de décrire le réfrigérateur support de cette thèse. Le choix de la géométrie, les paramètres hydrauliques du régénérateur utilisé, et enfin la chaîne d'excitation et d'acquisition sont présentés dans la section~\ref{chap:PresentationTacot} (\nameref{chap:PresentationTacot}).
 
-\section{Présentation du réfrigérateur actuel}
-Après avoir brièvement rappelé les bases de fonctionnement des machines thermoacoustiques, il est important de décrire le réfrigérateur support de cette thèse. Le choix de la géométrie, les paramètres hydrauliques du régénérateur utilisé, et enfin la chaîne d'excitation/acquisition sont présentés.
+La deuxième partie présentes les conditions expérimentales ainsi que les simulations théoriques réalisées sont présentées de manière globale pour pouvoir s'y référer dans les différents chapitres suivants, respectivement en section~\ref{chap:ProtocolExpe} (\nameref{chap:ProtocolExpe}) et \ref{chap:SimusRealisees} (\nameref{chap:SimusRealisees}).
 
-Les conditions expérimentales ainsi que les simulations théoriques réalisées sont présentées de manière globale pour pouvoir s'y référer dans les différents chapitres suivants.
-
-\subsection{Géométrie}
+\section{Présentation du dispositif expérimental actuel}\label{chap:PresentationTacot}
+\subsection{Géométrie du réfrigérateur \textsc{Tacot}}
 \subsubsection{Cavité thermoacoustique}
-La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (Thermo-Acoustic Cooler for Onroad Transportation), qui porte sur l'utilisation d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont la \textcolor{red}{principale} est la compacité. Contrairement aux autres systèmes thermoacoustiques existant \textcolor{red}{citer SETAC et Ben and Jerrys et le cryocooler de 11 m}, les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroÏdale utilisée par Swift en suivant les travaux de Poignand et al. \cite{poignand_thermoacoustic_2011,poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique.% \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.
+La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'utilisation d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont la \textcolor{red}{principale} est la compacité. Contrairement aux autres systèmes thermoacoustiques existant \textcolor{red}{citer SETAC et Ben and Jerrys et le cryocooler de 11 m}, les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroÏdale utilisée par Swift en suivant les travaux de Poignand et al. \cite{poignand_thermoacoustic_2011,poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique.% \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.
 
 
 \begin{figure}[!ht]
@@ -128,7 +127,7 @@ Pour étudier la distribution de température le long de l'axe du noyau, ainsi q
 %    \label{fig:ThermocouplesDefinition}
 %\end{figure}
 
-\section{Protocole expérimental}
+\section{Protocole expérimental}\label{chap:ProtocolExpe}
 Le réfrigérateur doit pouvoir être orienté dans toutes les orientations utiles pour l'étude de l'influence de la gravité sur la distribution de température. La figure~\ref{fig:TACOTSuspendu_Frigo} présente le réfrigérateur accroché à ses extrémités, et la figure~\ref{fig:TACOTSuspendu_Palans} les trois palans qui le soutiennent. Les deux palans de couleur grise, initialement présents pour régler l'inclinaison de la pompe à chaleur par rapport à l'axe horizontal, et le troisième de couleur bleue pour ajouter une direction de rotation autour de l'axe de symétrie. Celui-ci permet en outre de plus aisément passer d'une orientation à l'autre. 
 
 \begin{figure}[!ht]
@@ -228,7 +227,7 @@ En revanche, certains des paramètres d'excitation reste constant pour toutes le
 
 Les cartes d'acquisition, connectées sur une baie d'instrumentation, contraignent la fréquence d'échantillonage utilisée. Celles concernant les mesures de quantité oscillantes (pression acoustique, accélération \textcolor{red}{à vérifier}) imposent que la fréquence d'échantillonage $f_s$ soit au moins égale à \qty{1651}{\Hz}\footnote{Les acquisitions des \num{30} capteurs durent \qty{1}{\hour}, et les données sont encodées sur \qty{32}{\bit} flottants. Au total, chaque acquisition pèse \qty{713}{\mega\byte}, taille à laquelle il faut ajouter quelques \unit{\mega\byte} pour le protocole \texttt{tdms} et l'entête contenant les informations de mesure.}.
 
-\section{Ensemble des simulations réalisées}
+\section{Ensemble des simulations réalisées}\label{chap:SimusRealisees}
 \subsection{Estimation théorique du flux de chaleur de convection naturelle}
 Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Pour les orientations où le réfrigérateur est à l'horizontale ($\psi_v=\qty{0}{\degree}$), il est très difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre de cette cavité de forme conique pour laquelle il n'existe pas de littérature à notre connaissance \textcolor{red}{à vérifier}. Avant la moindre tentative d'explication de cette distributions de température, des études hydrodynamiques sont menées pour aider à l'interprétation des mesures de température. 
 

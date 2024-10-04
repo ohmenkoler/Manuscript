@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  3 OCT 2024 14:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  4 OCT 2024 11:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1855,7 +1855,7 @@ Chapitre II.
 ===== Image 'external/fig_SchemaGeneralTACOT0' is up-to-date. ======
 )
 LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
-e 29.
+e 28.
  (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
 File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
 ) [10
@@ -1863,6 +1863,9 @@ File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
  <./external/fig_SchemaGeneralTACOT0.pdf>] (../fig/fig_dKdV/tex/fig_dKdV.tex
 ===== Image 'external/fig_dKdV0' is up-to-date. ======
 )
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 59.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 60.
@@ -1874,37 +1877,34 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 62.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 63.
+            Default family used instead on input line 64.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 65.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 66.
  [11{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./exte
 rnal/fig_dKdV0.pdf>] (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
 )
-<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1281, 126.42508
+<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1288, 126.42508
 pt x 94.84251pt>
 File: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg Graphic file (
 type jpg)
 <use ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped
-.jpg  used on input line 138.
+.jpg  used on input line 137.
 (pdftex.def)             Requested size: 227.3381pt x 170.54994pt.
-<../fig/fig_SystemeAccroche/Palans.jpg, id=1282, 4047.12pt x 3035.34pt>
+<../fig/fig_SystemeAccroche/Palans.jpg, id=1289, 4047.12pt x 3035.34pt>
 File: ../fig/fig_SystemeAccroche/Palans.jpg Graphic file (type jpg)
 <use ../fig/fig_SystemeAccroche/Palans.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Palans.jpg  used on input l
-ine 144.
+ine 143.
 (pdftex.def)             Requested size: 227.3381pt x 170.48735pt.
  [12] (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 ===== Image 'external/_main_-figure0' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
 ===== Image 'external/_main_-figure1' is up-to-date. ======
 )
-Overfull \hbox (3.54448pt too wide) in paragraph at lines 19--176
+Overfull \hbox (3.54448pt too wide) in paragraph at lines 19--175
  [][] 
  []
 
@@ -1918,27 +1918,27 @@ _main_-figure0.pdf> <./external/_main_-figure1.pdf> <./external/_main_-figure2.
 pdf> <./external/_main_-figure3.pdf>]
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 223.
+            Default family used instead on input line 222.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 223.
+            Default family used instead on input line 222.
  [15]
 (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
 ===== Image 'external/fig_SimuConvNat2D0' is up-to-date. ======
 ) [16]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
-97.
+96.
  (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [17 <./external/fig_SimuConvNat2D0.pdf>]
-<../fig/fig_ConvNatComsol/Geometry.png, id=1455, 363.60844pt x 478.03593pt>
+<../fig/fig_ConvNatComsol/Geometry.png, id=1462, 363.60844pt x 478.03593pt>
 File: ../fig/fig_ConvNatComsol/Geometry.png Graphic file (type png)
 <use ../fig/fig_ConvNatComsol/Geometry.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Geometry.png  used on input l
-ine 336.
+ine 335.
 (pdftex.def)             Requested size: 241.84842pt x 317.96284pt.
  [18]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 350
+LaTeX Font Info:    Trying to load font information for U+euf on input line 349
 .
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
@@ -2094,13 +2094,13 @@ Chapitre VI.
 [45
 
 ]
-<../fig/fig_ActiveControl/ADAU1701.png, id=2354, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=2361, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 37.
 (pdftex.def)             Requested size: 179.849pt x 170.71652pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=2355, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=2362, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
@@ -2214,18 +2214,28 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 5C4D2A3EB783F63781D2912CC36620A9;15881.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `_main_.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `_main_.out':
+(rerunfilecheck)             Before: 5C4D2A3EB783F63781D2912CC36620A9;15881
+(rerunfilecheck)             After:  B763179CA0E7320F5AF78D193E2CE344;16061.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 71885 strings out of 474435
- 1806800 string characters out of 5751739
- 2931722 words of memory out of 5000000
- 92736 multiletter control sequences out of 15000+600000
- 678293 words of font info for 143 fonts, out of 8000000 for 9000
+ 71889 strings out of 474435
+ 1806883 string characters out of 5751739
+ 2931907 words of memory out of 5000000
+ 92740 multiletter control sequences out of 15000+600000
+ 680937 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,90p,4549b,3220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
@@ -2238,9 +2248,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-sup
 er/sftt1200.pfb>
-Output written on _main_.pdf (67 pages, 6647482 bytes).
+Output written on _main_.pdf (67 pages, 6649227 bytes).
 PDF statistics:
- 2686 PDF objects out of 2984 (max. 8388607)
+ 2693 PDF objects out of 2984 (max. 8388607)
  294 named destinations out of 1000 (max. 500000)
  1005 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,22 @@
+\begin{tikzpicture}%[yscale=3]
+	\def\Lreg{4cm};
+	\def\Ryreg{3cm};
+	\def\Rxreg{1cm};%{\Ryreg/3};
+	\def\CHXnorth{0,\Ryreg};
+	\def\CHXsouth{0,-\Ryreg};
+	\def\AHXnorth{\Lreg,\Ryreg};
+	\def\AHXsouth{\Lreg,-\Ryreg};
+	
+% ---------------------------------------------------
+	\fill[MatlabBlue!50] (\CHXnorth) rectangle (\AHXsouth);
+	\filldraw[fill=MatlabBlue!50,draw=black] (0,0) ellipse ({\Rxreg} and {\Ryreg});
+	\fill[MatlabBlue!50] (\Lreg,0) ellipse ({\Rxreg} and {\Ryreg});
+
+%	\draw (\CHXnorth) -- (\AHXnorth) arc (90:-90:\Rxreg) -- (\CHXsouth);
+%	\draw[dashed,color=black!50!MatlabBlue] (\AHXsouth) arc (-90:-270:\Rxreg);
+	\draw (\CHXnorth) -- (\AHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- (\CHXsouth);
+	\draw[dashed, color=black!50!MatlabBlue] (\AHXsouth) arc [start angle=-90, end angle=-270, x radius=\Rxreg, y radius=\Ryreg];
+% ---------------------------------------------------
+	
+% ---------------------------------------------------
+\end{tikzpicture}

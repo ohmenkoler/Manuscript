@@ -329,7 +329,7 @@ Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluid
 
 
 \subsubsection{\'Elements finis}
-Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavité est en réalité un cône. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis Comsol Multiphysics. Avec ce logiciel, il est également possible de coupler une simulation acoustique en plus de la simulation de transferts thermiques, ce que le modèle 2D simplifié ne permet pas aisément. 
+Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavité est en réalité un cône. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis Comsol Multiphysics grâce à une géométrie présenté sur la figure~\ref{fig:CaviteConvNat_ComsolGeometrie}. Avec ce logiciel, il est également possible de coupler une simulation acoustique en plus de la simulation de transferts thermiques, ce que le modèle 2D simplifié ne permet pas aisément.
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=.5\textwidth]{../fig/fig_ConvNatComsol/Geometry.png}
@@ -338,17 +338,27 @@ Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavit
 \end{figure}
 
 \subsection{Modèle du régime transitoire sans convection naturelle} \label{chap:ModeleTransoitoire_SansConvNat}
-Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton et al. pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du \textit{stack} en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volumes éléméntaires $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques.
+Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du \textit{stack} en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volumes éléméntaires $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques.
 
 Les flux thermiques sont pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis de l'équation \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton}. \textcolor{red}{Schéma des flux dans le noyau cf Gaëlle}
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_Schema_FluxThermiquesNoyau_Gaelle}
+    %\externalremake
+    \input{../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoyau_Gaelle}
+    \caption{Représentation schématique des flux thermiques considérés par le modèle transitoire}
+    \label{fig:Schema_FluxThermiquesNoyau_Gaelle}
+\end{figure}
 
 \begin{enumerate}[label=\textbf{(\roman*)}]
 \item Tout d'abord, le flux thermoacoustique 1D est calculé avec
 
-\begin{equation}
-Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } pu^* \right] }_{r(x)} + \underbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |u|^2 }_{q(x)}\partial_x \theta(r,x;t),
+\begin{multline}
+	Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } pu^* \right] }_{r(x)} \\ 
+	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |u|^2 }^{q(x)}\partial_x \theta(r,x;t),
 \label{eq:FluxTA_Lotton_Regen}
-\end{equation}
+\end{multline}
 où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale à la température initiale. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans la dépendance spatio-temporelle. 
 
 \item Ensuite, la conduction dans le régénérateur est prise en compte dans toutes les directions du régénérateur avec l'équation

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  4 OCT 2024 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  7 OCT 2024 17:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1388,7 +1388,13 @@ ryfpu.code.tex
 \tikz@math@dimen=\dimen339
 \tikz@math@toks=\toks48
 )
-(C:\Program Files\MiKTeX\tex/latex/circuitikz\circuitikz.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshadings.code.tex
+File: tikzlibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryshadings.code.tex
+File: pgflibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Program Files\MiKTeX\tex/latex/circuitikz\circuitikz.sty
 Package: circuitikz 2024/02/09{} The CircuiTikz circuit drawing package version
  1.6.7
 
@@ -1770,29 +1776,29 @@ nts/enc/dvips/iwona/ec-iwona.enc}] [2
 
 ] [4
 
-] [5] [6] (_main_.lof
+] [5] [6] [7] [8
+
+] (_main_.lof
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 5.
 
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [7
-
-{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Program Files/M
-iKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvi
-ps/iwona/sy-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-supe
-r-t1.enc}])
+) [9{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Program Fil
+es/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc
+/dvips/iwona/sy-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-
+super-t1.enc}])
 \tf@lof=\write7
 \openout7 = `_main_.lof'.
 
- [8]
+ [10]
 (_main_.lot)
 \tf@lot=\write8
 \openout8 = `_main_.lot'.
 
- [9
+ [11
 
-] [10
+] [12
 
 ] (Introduction.tex
 Chapitre I.
@@ -1809,7 +1815,7 @@ e 58.
 File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
 ) [2
 
-{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ts1-iwona.enc}]
+]
 (../fig/fig_CycleBrayton/tex/DepCompAdiab.tex
 ===== Image 'external/fig_1_BraytonDepComp0' is up-to-date. ======
 ) (../fig/fig_CycleBrayton/tex/QFluideToPlaque.tex
@@ -1826,25 +1832,19 @@ File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
 ===== Image 'external/fig_3_StirlingDet0' is up-to-date. ======
 ) (../fig/fig_Cycle_Stirling/tex/DepRetourIsoV.tex
 ===== Image 'external/fig_4_StirlingDep20' is up-to-date. ======
-)
-Underfull \vbox (badness 6380) has occurred while \output is active []
-
- [3 <./external/fig_MoteurTA0.pdf> <./external/fig_FrigoTA0.pdf> <./external/fi
-g_1_BraytonDepComp0.pdf> <./external/fig_2_BraytonQfluidePlaque0.pdf> <./extern
-al/fig_3_BraytonDepDet0.pdf> <./external/fig_4_BraytonQPlaqueFluide0.pdf>] [4{C
-:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ex-iwona.enc} <./external/fig_1_St
-irlingComp0.pdf> <./external/fig_2_StirlingDep10.pdf> <./external/fig_3_Stirlin
-gDet0.pdf> <./external/fig_4_StirlingDep20.pdf>]
-(../fig/fig_HautParleur/tex/fig_HautParleur.tex
+) [3{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ts1-iwona.enc} <./external/f
+ig_MoteurTA0.pdf> <./external/fig_FrigoTA0.pdf> <./external/fig_1_BraytonDepCom
+p0.pdf> <./external/fig_2_BraytonQfluidePlaque0.pdf> <./external/fig_3_BraytonD
+epDet0.pdf> <./external/fig_4_BraytonQPlaqueFluide0.pdf>] [4{C:/Program Files/M
+iKTeX/fonts/enc/dvips/iwona/ex-iwona.enc} <./external/fig_1_StirlingComp0.pdf> 
+<./external/fig_2_StirlingDep10.pdf> <./external/fig_3_StirlingDet0.pdf> <./ext
+ernal/fig_4_StirlingDep20.pdf>] (../fig/fig_HautParleur/tex/fig_HautParleur.tex
 ===== Image 'external/fig_HautParleur0' is up-to-date. ======
 ) [5 <./external/fig_HautParleur0.pdf>] (../fig/fig_HP_LEM/tex/fig_HP_LEM.tex
 ===== Image 'external/fig_HP_LEM0' is up-to-date. ======
 ) (../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex
 ===== Image 'external/fig_CircEquivTAC0' is up-to-date. ======
-)
-Underfull \vbox (badness 2556) has occurred while \output is active []
-
- [6 <./external/fig_HP_LEM0.pdf> <./external/fig_CircEquivTAC0.pdf>]
+) [6 <./external/fig_HP_LEM0.pdf> <./external/fig_CircEquivTAC0.pdf>]
 (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 ===== Image 'external/fig_WavesInDuctPiece0' is up-to-date. ======
 ) [7 <./external/fig_WavesInDuctPiece0.pdf>]) (DispositifExpe.tex [8]
@@ -1885,7 +1885,7 @@ LaTeX Info: Symbol \textminus not provided by
 rnal/fig_dKdV0.pdf>] (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
 )
-<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1290, 126.42508
+<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1276, 126.42508
 pt x 94.84251pt>
 File: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg Graphic file (
 type jpg)
@@ -1893,7 +1893,7 @@ type jpg)
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped
 .jpg  used on input line 137.
 (pdftex.def)             Requested size: 227.3381pt x 170.54994pt.
-<../fig/fig_SystemeAccroche/Palans.jpg, id=1291, 4047.12pt x 3035.34pt>
+<../fig/fig_SystemeAccroche/Palans.jpg, id=1277, 4047.12pt x 3035.34pt>
 File: ../fig/fig_SystemeAccroche/Palans.jpg Graphic file (type jpg)
 <use ../fig/fig_SystemeAccroche/Palans.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Palans.jpg  used on input l
@@ -1931,7 +1931,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
  (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [17 <./external/fig_SimuConvNat2D0.pdf>]
-<../fig/fig_ConvNatComsol/Geometry.png, id=1465, 363.60844pt x 478.03593pt>
+<../fig/fig_ConvNatComsol/Geometry.png, id=1451, 363.60844pt x 478.03593pt>
 File: ../fig/fig_ConvNatComsol/Geometry.png Graphic file (type png)
 <use ../fig/fig_ConvNatComsol/Geometry.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Geometry.png  used on input l
@@ -2098,13 +2098,13 @@ Chapitre VI.
 [45
 
 ]
-<../fig/fig_ActiveControl/ADAU1701.png, id=2369, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=2355, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 37.
 (pdftex.def)             Requested size: 179.849pt x 170.71652pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=2370, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=2356, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
@@ -2218,17 +2218,21 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: ACB886C42AE545553FF808D75F881A9E;16061.
+(rerunfilecheck)             Checksum: A470DFC9ABA26A2082A37E030E436B23;16610.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 71912 strings out of 474435
- 1808060 string characters out of 5751739
- 2932076 words of memory out of 5000000
- 92756 multiletter control sequences out of 15000+600000
+ 71994 strings out of 474435
+ 1810552 string characters out of 5751739
+ 2936447 words of memory out of 5000000
+ 92824 multiletter control sequences out of 15000+600000
  680937 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,90p,4549b,3220s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2242,9 +2246,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-sup
 er/sftt1200.pfb>
-Output written on _main_.pdf (67 pages, 6652527 bytes).
+Output written on _main_.pdf (69 pages, 6658179 bytes).
 PDF statistics:
- 2702 PDF objects out of 2984 (max. 8388607)
- 295 named destinations out of 1000 (max. 500000)
- 1010 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2689 PDF objects out of 2984 (max. 8388607)
+ 303 named destinations out of 1000 (max. 500000)
+ 1026 words of extra memory for PDF output out of 10000 (max. 10000000)
 

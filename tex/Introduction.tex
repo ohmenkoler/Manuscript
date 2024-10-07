@@ -23,7 +23,7 @@
 \end{itemize}
 
 \section{Bases de thermoacoustique}
-
+\subsection{Concepts généraux}
 Les machines thermoacoustique utilisent les interactions visqueuses et thermiques entre un gaz et un matériau solide poreux ou d’un empilement de plaques (\textit{stack} en anglais) placé dedans lors d’un cycle de compression-détente de ce gaz. En particulier, les pression, volume et température, qui sont liées par les lois thermodynamiques, sont des grandeurs d’intérêt en thermoacoustique dont la théorie linéaire est en grande partie écrite par Rott et Swift au cours des années 1980 \cite{rott_damped_1969, rott_thermally_1973, rott_thermally_1975, rott_thermally_1976, zouzoulas_thermally_1976, rott_thermoacoustics_1980, muller_thermally_1983}
 
 Deux schémas de principe des machines thermoacoustiques sont présentés figure~\ref{fig:MoteurVSFrigoTA}. Le mode moteur (figure~\ref{fig:MoteurTA}) transforme l’énergie thermique en énergie acoustique, tandis que le mode pompe à chaleur et réfrigérateur (figure~\ref{fig:FrigoTA}) génère un flux de chaleur sous l'action d'une énergie acoustique. 
@@ -189,6 +189,16 @@ En outre, ces deux épaisseurs de couche limites sont également liées par le n
 	\label{eq:Prandtl}%
 \end{subequations}
 et qui décrit le rapport de force entre les effets visqueux et thermiques. Dans le cas des machines thermoacoustiques, le nombre de Prandtl doit être le plus faible possible, afin de favoriser les échanges de chaleurs sans perdre d'énergie à cause de la viscosité du fluide. Pour ce faire, il est possible de mélanger des gaz pour abaisser sa valeur \cite{belcher_working_1999} puisque dans le cas des gaz monoatomiques, le nombre de Prandtl ne dépend pas de la température et $\Prandtl~=~\frac{2}{3}$.
+
+\subsection{\'Equations fondamentales de l'acoustique en fluides dissipatifs}
+
+\begin{subequations}
+	\begin{align}
+		\partial_t \rho + \nabla \cdot (\rho \mathbf v) &= 0, \label{eq:ConservMass}\\
+		\rho \deriv_t \mathbf v &= -\nabla p + \mu\left( \nabla^2 \mathbf v +\left(\frac13+\frac{\mu_v}{\mu} \right)\nabla\left(\nabla \cdot \mathbf v\right)\right), \label{eq:NavierStokes_QteMvt_base}\\
+		\rho T\deriv_t S &= \nabla\cdot (k \nabla T) + \overline{\overline{\sigma}}\cdot \textcolor{red}{\nabla \mathbf v}. \label{eq:ConservEnergie}
+	\end{align}
+\end{subequations}
 
 \section{\'Etat de l'art}
 \subsection{De la recherche fondamentale...}

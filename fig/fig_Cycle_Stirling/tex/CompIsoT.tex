@@ -1,4 +1,15 @@
 \begin{tikzpicture}[scale=.8]
+
+	\fill[left color=white, right color=PythonGreen!25!white] (-3,-2) rectangle (-2,0); 
+	\fill[PythonGreen!25!white] (-2,0) rectangle (2,-2); 
+	\fill[left color=PythonGreen!25!white, right color=white] (2,0) rectangle (3,-2); 
+	\shade[upper left=white,upper right=white,
+         lower left=white,lower right=PythonGreen!25!white] (-3,0) rectangle (-2,2.5);
+	\fill[top color=white, bottom color=PythonGreen!25!white] (-2,2.5) rectangle (2,0);
+	\shade[upper left=white,upper right=white,
+         lower left=PythonGreen!25!white,lower right=white] (2,0) rectangle (3,2.5);
+	
+
 	\fill[left color=PythonRed,right color=PythonBlue](-3,-2) rectangle (3,-3) node[midway,text=white]{Plaque};				
 	\draw[dotted,thick] (-2,-3.2) -- (-2,1.2) node[above,right]{$-\xi_{0}$};
 	\draw[dotted,thick] (2,-3.2) -- (2,1.2) node[above,right]{$+\xi_{0}$};	
@@ -8,6 +19,6 @@
 			
 	\draw[dashed,->,very thick,MatlabOrange](-2,-.6) -- (-2,-1.9) node[midway,right]{$\deriv q$};
 			
-	\draw[<-,dashed,PythonGreen](0,2.5) node[right]{$\delta_{\kappa,\nu}$} -- (0,1.5) ;
+	\draw[<-,dashed,PythonGreen](0,2.4) node[below,right]{$\delta_{\kappa,\nu}$} -- (0,1.5) ;
 	\draw[->,PythonGreen](0,1.5) -- (0,-1.9);
 \end{tikzpicture}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  4 OCT 2024 17:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  8 OCT 2024 13:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1261,7 +1261,13 @@ ryfpu.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu
 \tikz@math@for@depth=\count530
 \tikz@math@dimen=\dimen339
 \tikz@math@toks=\toks48
-) (C:\Program Files\MiKTeX\tex/latex/circuitikz\circuitikz.sty
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshadings.code.tex
+File: tikzlibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryshadings.code.tex
+File: pgflibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Program Files\MiKTeX\tex/latex/circuitikz\circuitikz.sty
 Package: circuitikz 2024/02/09{} The CircuiTikz circuit drawing package version
  1.6.7
 
@@ -1842,7 +1848,7 @@ LaTeX Warning: Text page 4 contains only floats.
 
 
 LaTeX Warning: Citation 'ceperley_pistonless_1979' on page 5 undefined on input
- line 195.
+ line 205.
 
 (../fig/fig_HautParleur/tex/fig_HautParleur.tex
 Missing character: There is no ; in font nullfont!
@@ -1860,7 +1866,7 @@ Missing character: There is no ; in font nullfont!
 (../fig/fig_HautParleur/tex/subfig_HautParleur.tex) (../fig/fig_HautParleur/tex
 /subfig_HautParleur.tex))
 
-LaTeX Warning: Reference `fig:HP_LEM' on page 5 undefined on input line 217.
+LaTeX Warning: Reference `fig:HP_LEM' on page 5 undefined on input line 227.
 
 (../fig/fig_HP_LEM/tex/fig_HP_LEM.tex
 Missing character: There is no ; in font nullfont!
@@ -1870,31 +1876,31 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ))
 
-LaTeX Warning: Reference `fig:CircEquivTAC' on page 6 undefined on input line 2
-30.
+LaTeX Warning: Reference `fig:CircEquivTAC' on page 5 undefined on input line 2
+40.
 
 (../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex)
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 237.
-
-
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 237.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
-[]\T1/iwonal/b/sc/12 Figure I.6 \T1/iwonal/b/n/12 ^^U |\T1/iwonal/m/n/12 Cir-cu
-it équi-valent à un noyau ther-moa-cous-tique. Ex-trait de
- []
+ut line 247.
 
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
 ut line 247.
 
 
-LaTeX Warning: Reference `fig:WavesInDuctPiece' on page 7 undefined on input li
-ne 253.
+Underfull \hbox (badness 10000) in paragraph at lines 247--247
+[]\T1/iwonal/b/sc/12 Figure I.6 \T1/iwonal/b/n/12 ^^U |\T1/iwonal/m/n/12 Cir-cu
+it équi-valent à un noyau ther-moa-cous-tique. Ex-trait de
+ []
+
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
+ut line 257.
+
+
+LaTeX Warning: Reference `fig:WavesInDuctPiece' on page 6 undefined on input li
+ne 263.
 
 (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 Missing character: There is no ; in font nullfont!
@@ -1906,39 +1912,39 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Reference `fig:CircEquivTAC' on page 7 undefined on input line 3
-56.
+66.
 
 
-LaTeX Warning: Citation 'so_internal_2006' on page 8 undefined on input line 41
+LaTeX Warning: Citation 'so_internal_2006' on page 8 undefined on input line 42
 1.
 
 
 LaTeX Warning: Citation 'bailliet_acoustic_2001' on page 8 undefined on input l
-ine 411.
+ine 421.
 
 
 LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
-t line 411.
+t line 421.
 
 
 LaTeX Warning: Citation 'ross_influence_2003' on page 8 undefined on input line
- 411.
+ 421.
 
 
 LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
-t line 411.
+t line 421.
 
 
 LaTeX Warning: Citation 'hireche_numerical_2019' on page 8 undefined on input l
-ine 411.
+ine 421.
 
 
-LaTeX Warning: Citation 'zhang_novel_2011' on page 8 undefined on input line 41
+LaTeX Warning: Citation 'zhang_novel_2011' on page 8 undefined on input line 42
 1.
 
 
 LaTeX Warning: Citation 'babaei_investigation_2010' on page 8 undefined on inpu
-t line 411.
+t line 421.
 
 ) (DispositifExpe.tex
 Chapitre II.
@@ -1979,7 +1985,7 @@ LaTeX Warning: Citation 'poignand_analysis_2013' on page 10 undefined on input
 line 12.
 
 (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
-<../fig/fig_TACOTSchematics/TACOT.png, id=32, 1304.875pt x 776.9025pt>
+<../fig/fig_TACOTSchematics/TACOT.png, id=40, 1304.875pt x 776.9025pt>
 File: ../fig/fig_TACOTSchematics/TACOT.png Graphic file (type png)
 <use ../fig/fig_TACOTSchematics/TACOT.png>
 Package pdftex.def Info: ../fig/fig_TACOTSchematics/TACOT.png  used on input li
@@ -2066,7 +2072,7 @@ t line 131.
 LaTeX Warning: Reference `fig:TACOTSuspendu_Palans' on page 12 undefined on inp
 ut line 131.
 
-<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=36, 126.42508pt
+<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=44, 126.42508pt
  x 94.84251pt>
 File: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg Graphic file (
 type jpg)
@@ -2074,7 +2080,7 @@ type jpg)
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped
 .jpg  used on input line 137.
 (pdftex.def)             Requested size: 227.3381pt x 170.54994pt.
-<../fig/fig_SystemeAccroche/Palans.jpg, id=37, 4047.12pt x 3035.34pt>
+<../fig/fig_SystemeAccroche/Palans.jpg, id=45, 4047.12pt x 3035.34pt>
 File: ../fig/fig_SystemeAccroche/Palans.jpg Graphic file (type jpg)
 <use ../fig/fig_SystemeAccroche/Palans.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Palans.jpg  used on input l
@@ -2309,7 +2315,7 @@ d on input line 323.
 LaTeX Warning: Reference `fig:CaviteConvNat_ComsolGeometrie' on page 18 undefin
 ed on input line 332.
 
-<../fig/fig_ConvNatComsol/Geometry.png, id=44, 363.60844pt x 478.03593pt>
+<../fig/fig_ConvNatComsol/Geometry.png, id=52, 363.60844pt x 478.03593pt>
 File: ../fig/fig_ConvNatComsol/Geometry.png Graphic file (type png)
 <use ../fig/fig_ConvNatComsol/Geometry.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Geometry.png  used on input l
@@ -2328,6 +2334,10 @@ LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 19 undefined on input line
  343.
 
 
+LaTeX Warning: Reference `fig:Schema_FluxThermiquesNoyau_Gaelle' on page 19 und
+efined on input line 343.
+
+
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 \openout5 = `external/fig_Schema_FluxThermiquesNoyau_Gaelle0.dpth'.
@@ -2344,27 +2354,30 @@ Missing character: There is no ; in font nullfont!
 \@writefile{toc}{\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble
  \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setloc
 altop \@gobble }{}}
-])
-LaTeX Font Info:    Trying to load font information for U+euf on input line 358
+{C:/Users/mfontbon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program
+ Files/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts
+/enc/dvips/iwona/mi-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ec
+-iwona.enc}])
+LaTeX Font Info:    Trying to load font information for U+euf on input line 361
 .
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 
 LaTeX Warning: Reference `eq:TMatrix_prod_TppTuu' on page 20 undefined on input
- line 445.
+ line 446.
 
 
 LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand' on page 21 undefined 
-on input line 457.
+on input line 458.
 
 
 LaTeX Warning: Citation 'ozisik_heat_1993' on page 21 undefined on input line 4
-73.
+74.
 
 
 LaTeX Warning: Citation 'ozisik_integraltransform_heat_1993' on page 21 undefin
-ed on input line 473.
+ed on input line 474.
 
 ) (EtudeExperimentale.tex
 Chapitre III.
@@ -3151,13 +3164,13 @@ nput line 29.
 LaTeX Warning: Reference `fig:ActiveControl_Teensy41' on page 46 undefined on i
 nput line 29.
 
-<../fig/fig_ActiveControl/ADAU1701.png, id=50, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=62, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 37.
 (pdftex.def)             Requested size: 179.849pt x 170.71652pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=51, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=63, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
@@ -3224,7 +3237,7 @@ LaTeX Warning: Citation 'ramadan_design_2021' on page 3 undefined on input line
  2.
 
 (../fig/fig_AHXSchema/fig_AHXSchema.tex
-<../fig/fig_AHXfromATE/AHXfromATE.png, id=52, 515.67656pt x 535.2497pt>
+<../fig/fig_AHXfromATE/AHXfromATE.png, id=64, 515.67656pt x 535.2497pt>
 File: ../fig/fig_AHXfromATE/AHXfromATE.png Graphic file (type png)
 <use ../fig/fig_AHXfromATE/AHXfromATE.png>
 Package pdftex.def Info: ../fig/fig_AHXfromATE/AHXfromATE.png  used on input li
@@ -3377,18 +3390,20 @@ au_Gaelle0.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 74190 strings out of 474435
- 1886601 string characters out of 5751739
- 3747473 words of memory out of 5000000
- 95071 multiletter control sequences out of 15000+600000
+ 74255 strings out of 474435
+ 1889072 string characters out of 5751739
+ 3752661 words of memory out of 5000000
+ 95126 multiletter control sequences out of 15000+600000
  680937 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,21n,93p,4583b,2682s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
+<C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Fil
+es/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/
+type1/nowacki/iwona/iwonam.pfb>
 Output written on external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf (1 page, 
-12500 bytes).
+68542 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

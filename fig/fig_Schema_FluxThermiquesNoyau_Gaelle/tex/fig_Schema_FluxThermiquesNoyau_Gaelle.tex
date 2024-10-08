@@ -1,6 +1,6 @@
 \begin{tikzpicture}%[yscale=3]
-	\def\Lreg{4cm};
-	\def\Ryreg{3cm};
+	\def\Lreg{6cm};
+	\def\Ryreg{5cm};
 	\def\Rxreg{1cm};%{\Ryreg/3};
 	\def\CHXnorth{0,\Ryreg};
 	\def\CHXsouth{0,-\Ryreg};
@@ -8,15 +8,24 @@
 	\def\AHXsouth{\Lreg,-\Ryreg};
 	
 % ---------------------------------------------------
-	\fill[MatlabBlue!50] (\CHXnorth) rectangle (\AHXsouth);
-	\filldraw[fill=MatlabBlue!50,draw=black] (0,0) ellipse ({\Rxreg} and {\Ryreg});
-	\fill[MatlabBlue!50] (\Lreg,0) ellipse ({\Rxreg} and {\Ryreg});
+\fill[MatlabBlue,opacity=.5] (\CHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg] -- cycle;
+\draw[dotted, ->, very thick] ({-1.5*\Rxreg},0) -- ({\Lreg+1.5*\Rxreg},0) node [above] {$\mathbf e_x$};
+\fill[MatlabBlue,opacity=.5] (\CHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- cycle;
+\draw[dotted, ->, very thick] ($(\CHXsouth)+(0,-.3*\Ryreg)$) -- ($(\CHXnorth)+(0,.3*\Ryreg)$) node [right] {$\mathbf e_r$};
 
-%	\draw (\CHXnorth) -- (\AHXnorth) arc (90:-90:\Rxreg) -- (\CHXsouth);
-%	\draw[dashed,color=black!50!MatlabBlue] (\AHXsouth) arc (-90:-270:\Rxreg);
-	\draw (\CHXnorth) -- (\AHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- (\CHXsouth);
-	\draw[dashed, color=black!50!MatlabBlue] (\AHXsouth) arc [start angle=-90, end angle=-270, x radius=\Rxreg, y radius=\Ryreg];
+\draw[dashed, very thick] (\AHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg];
+\filldraw[fill=MatlabBlue, fill opacity=.5, draw=black,very thick] (\CHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- (\AHXsouth) arc [start angle=-90, end angle=90, x radius=\Rxreg, y radius=\Ryreg] --cycle;
+\draw[very thick] (\CHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg];
+	
 % ---------------------------------------------------
+\draw (\CHXnorth) node [above left] {\'Echangeur froid};
+\draw (\AHXnorth) node [above right] {\'Echangeur ambiant};
+
+\draw (0,0) node[below left] {0};
+\draw (\Lreg,0) node{|} node[below] {$L_{\sf reg}$};
+\draw (\CHXnorth) -- ++(-.5cm,0) node[left] {$R_{\sf reg}$};
+
+
 	
 % ---------------------------------------------------
 \end{tikzpicture}

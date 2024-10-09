@@ -345,9 +345,9 @@ Les flux thermiques sont pour la plupart différents dans le cas d'un réfrigér
 \begin{figure}[!ht]
     \centering
     \external{fig_Schema_FluxThermiquesNoyau_Gaelle}
-    %\externalremake
+%    \externalremake
     \input{../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoyau_Gaelle}
-    \caption{Représentation schématique des flux thermiques considérés par le modèle transitoire}
+    \caption{Représentation schématique des flux thermiques considérés dans le modèle transitoire du régénérateur.}
     \label{fig:Schema_FluxThermiquesNoyau_Gaelle}
 \end{figure}
 
@@ -452,7 +452,6 @@ Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique es
 		T_{pp}^{(n)} &= 1, \label{eq:TMatrix_Tpp_regen}\\
 		T_{pu}^{(n)} &= -\frac{i \omega \rho}{\Phi S (1-f_\nu)}\deriv x, \label{eq:TMatrix_Tpu_regen}
 		\end{align}
-		&&\\
 		\begin{align}
 		T_{up}^{(n)} &= -\frac{i \omega \Phi S}{\gamma P_0} \deriv x, \text{et} \label{eq:TMatrix_Tup_regen}\\
 		T_{uu}^{(n)} &= 1. \label{eq:TMatrix_Tuu_regen}

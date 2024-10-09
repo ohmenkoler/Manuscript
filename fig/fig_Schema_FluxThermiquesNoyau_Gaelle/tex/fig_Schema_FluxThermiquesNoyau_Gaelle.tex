@@ -27,17 +27,18 @@
 
 % --------------------------------------------------- Flux thermiques
 %%% Q_TA
-\draw[arw,->,draw=MatlabBlue] ({.2*\Lreg},0) -- ++(.33*\Lreg,0) node[right] {$Q_{TA}$};
+\draw[arw,->,draw=MatlabBlue] ({.25*\Lreg},0) -- ++(.33*\Lreg,0) node[right] {$Q_{TA}$} node(MidQTA)[midway]{};
 
 %%% Q_cond
-\draw[arw,<-,draw=MatlabOrange] ({.4*\Lreg},.15*\Ryreg) node[left] {$Q_{\sf cond}^{(x)}$} -- ++(.33*\Lreg,0);
-\draw[arw,<-,draw=MatlabOrange] ({.4*\Lreg},-.15*\Ryreg) node[left] {$Q_{\sf cond}^{(x)}$} -- ++(.33*\Lreg,0);
+\draw[arw,->,draw=MatlabOrange] ({.75*\Lreg},.15*\Ryreg)  -- ++(-.33*\Lreg,0) node[left] {$Q_{\sf cond}^{(x)}$} node(MidCondx1)[midway]{};
+\draw[arw,->,draw=MatlabOrange] ({.75*\Lreg},-.15*\Ryreg)  -- ++(-.33*\Lreg,0) node(MidCondx2)[midway]{} node[left] {$Q_{\sf cond}^{(x)}$};
 
-\draw[arw,->,draw=MatlabYellow] ({.5*\Lreg},.3*\Ryreg)  -- (.5*\Lreg,.8*\Ryreg) node[above] {$Q_{\sf cond}^{(r)}$};
-\draw[arw,->,draw=MatlabYellow] ({.5*\Lreg},-.3*\Ryreg)  -- (.5*\Lreg,-.8*\Ryreg) node[below] {$Q_{\sf cond}^{(r)}$};
+\draw[arw,->,draw=MatlabYellow] ({.25*\Lreg},.3*\Ryreg)  -- ++(0,.33*\Lreg) node[above] {$Q_{\sf cond}^{(r)}$} node(MidCondr1)[midway]{};
+\draw[arw,->,draw=MatlabYellow] ({.75*\Lreg},-.3*\Ryreg)  -- ++(0,-.33*\Lreg) node[below] {$Q_{\sf cond}^{(r)}$} node(MidCondr2)[midway]{};
 
 %%% Q_visq
-
+\draw[arw,<->,draw=PythonGreen] ($(MidCondr1 -| MidCondx1)+(-.33*\Lreg/2,0)$)  -- ++(.33*\Lreg,0) node[midway,above]{$Q_{\sf visq}$};
+\draw[arw,<->,draw=PythonGreen] ($(MidCondr2 -| MidQTA)+(-.33*\Lreg/2,0)$)  -- ++(.33*\Lreg,0) node[midway,below]{$Q_{\sf visq}$};
 
 %%% Q_vort
 

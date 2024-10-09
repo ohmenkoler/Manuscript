@@ -446,12 +446,18 @@ Les flux chaleur apportés par l'échangeur froid $Q_f$ et extrait par l'échang
 Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique est également différent dans le cas du \textsc{Tacot}. Sans être complètement \og à ondes progressives \fg{} ni \og à ondes stationnaires \fg{}, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
 
 \begin{subequations}
+	\begin{multicols}{2}
+	\noindent
 	\begin{align}
 		T_{pp}^{(n)} &= 1, \label{eq:TMatrix_Tpp_regen}\\
-		T_{pu}^{(n)} &= -\frac{i \omega \rho}{\Phi S (1-f_\nu)}\deriv x, \label{eq:TMatrix_Tpu_regen}\\
+		T_{pu}^{(n)} &= -\frac{i \omega \rho}{\Phi S (1-f_\nu)}\deriv x, \label{eq:TMatrix_Tpu_regen}
+		\end{align}
+		&&\\
+		\begin{align}
 		T_{up}^{(n)} &= -\frac{i \omega \Phi S}{\gamma P_0} \deriv x, \text{et} \label{eq:TMatrix_Tup_regen}\\
 		T_{uu}^{(n)} &= 1. \label{eq:TMatrix_Tuu_regen}
 	\end{align}
+	\end{multicols}
 	\label{eq:TMatrix_regen}
 \end{subequations}
 

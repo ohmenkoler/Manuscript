@@ -7,25 +7,41 @@
 	\def\AHXnorth{\Lreg,\Ryreg};
 	\def\AHXsouth{\Lreg,-\Ryreg};
 	
-% --------------------------------------------------- Fond de schéma
+
+	
+
+
+% --------------------------------------------------- Flux thermiques
 \fill[MatlabBlue,opacity=.5] (\CHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg] -- cycle;
-\draw[dotted, ->, very thick] ({-1.5*\Rxreg},0) -- ({\Lreg+1.5*\Rxreg},0) node [above] {$\mathbf e_x$};
+
+%%% Q_vort
+\foreach \y in {-.5,0,.5}{
+\draw[arw,->,draw=MatlabPurple,line width=1mm] (-.1*\Rxreg,{(\y+.02)*\Ryreg}) -- ++(-\Rxreg,0) arc (-90:-360:.35);
+\draw[arw,->,draw=MatlabPurple,line width=1mm] (-.1*\Rxreg,{(\y-.02)*\Ryreg}) -- ++(-\Rxreg,0) arc (90:360:.35);
+\draw[arw,->,draw=MatlabPurple,line width=1mm] (\Lreg+.1*\Rxreg,{(\y+.02)*\Ryreg}) -- ++(\Rxreg,0) arc (-90:180:.35);
+\draw[arw,->,draw=MatlabPurple,line width=1mm] (\Lreg+.1*\Rxreg,{(\y-.02)*\Ryreg}) -- ++(\Rxreg,0) arc (90:-180:.35);}
+
+\draw (-1.2*\Rxreg,-.5*\Ryreg) node[left]{$Q_{\sf vort}(0)$};
+\draw (\Lreg+1.2*\Rxreg,.5*\Ryreg) node[right]{$Q_{\sf vort}(L_{\sf reg})$};
+
+% --------------------------------------------------- Fond de schéma
+
+\draw[dotted, ->, very thick] ({-3.5*\Rxreg},0) -- ({\Lreg+3.5*\Rxreg},0) node [above] {$\mathbf e_x$};
 \fill[MatlabBlue,opacity=.5] (\CHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- cycle;
 \draw[dotted, ->, very thick] ($(\CHXsouth)+(0,-.3*\Ryreg)$) -- ($(\CHXnorth)+(0,.3*\Ryreg)$) node [left] {$\mathbf e_r$};
 
 \draw[dashed, very thick] (\AHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg];
 \filldraw[fill=MatlabBlue, fill opacity=.5, draw=black,very thick] (\CHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- (\AHXsouth) arc [start angle=-90, end angle=90, x radius=\Rxreg, y radius=\Ryreg] --cycle;
 \draw[very thick] (\CHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg];
-	
+
 % --------------------------------------------------- Dimensions
 \draw (\CHXnorth) node [above right] {\begin{tabular}{ll}\'Echangeur \\  froid\end{tabular}};
 \draw (\AHXnorth) node [above left] {\begin{tabular}{rr}\'Echangeur \\ ambiant \end{tabular}  };
 
-\draw (0,0) node[below left] {0};
+\draw (0,0) node[above right] {0};
 \draw (\Lreg,0) node{|} node[below] {$L_{\sf reg}$};
 \draw (\CHXnorth) -- ++(-.5cm,0) node[left] {$R_{\sf reg}$};
 
-% --------------------------------------------------- Flux thermiques
 %%% Q_TA
 \draw[arw,->,draw=MatlabBlue] ({.25*\Lreg},0) -- ++(.33*\Lreg,0) node[right] {$Q_{TA}$} node(MidQTA)[midway]{};
 
@@ -40,7 +56,13 @@
 \draw[arw,<->,draw=PythonGreen] ($(MidCondr1 -| MidCondx1)+(-.33*\Lreg/2,0)$)  -- ++(.33*\Lreg,0) node[midway,above]{$Q_{\sf visq}$};
 \draw[arw,<->,draw=PythonGreen] ($(MidCondr2 -| MidQTA)+(-.33*\Lreg/2,0)$)  -- ++(.33*\Lreg,0) node[midway,below]{$Q_{\sf visq}$};
 
-%%% Q_vort
+
+%%% Q_lat
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,1.1*\Ryreg) -- ++(0,1cm) node [right] {$h_r(R_{\sf reg})$};
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,-1.1*\Ryreg) -- ++(0,-1cm) node [right] {$h_r(R_{\sf reg})$};
+
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (-2*\Rxreg,0) -- ++(-1cm,0) node [midway, above] {$h_x(0)$};
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (\Lreg+2*\Rxreg,0) -- ++(1cm,0) node [midway, above] {$h_x(L_{\sf reg})$};
 
 
 

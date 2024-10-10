@@ -379,17 +379,17 @@ Ensuite, les flux thermiques sont également pour la plupart différents dans le
 \end{multline}
 où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale à la température initiale. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans la dépendance spatio-temporelle. 
 
-\item Ensuite, la conduction dans le régénérateur est prise en compte dans toutes les directions du régénérateur avec l'équation
+\item Ensuite, la conduction dans le régénérateur est prise en compte dans toutes les directions du régénérateur avec l'équation exprimée en coordonées cylindriques par
 
 \begin{equation}
 	Q_{\sf cond} = -\begin{pmatrix}
 	k_x\\
-	k_\alpha\\
-	k_r
+	k_r\\
+	k_\alpha
 	\end{pmatrix} \cdot \nabla \theta,
 	\label{eq:FluxCond_Lotton}
 \end{equation}
-avec les indices $x$, $\alpha$ et $r$ dénotant respectivement les directions axiale, azimuthale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique apparente et $k_i=\Phi_i k_{g} + (1-\Phi_i)k_{s}$. \textcolor{red}{En première aproximation, il est possible de considérer les valeurs de conductivité comme égales les unes aux autres. Cependant, c'est inexact car le long de l'axe $\mathbf e_x$ le milieu est constitué de l'empillement de tissus métalliques tandis que dans la direction $\mathbf e_r$ le flux de chaleur parcourt les fils qui forment le tissus en lui-même.}
+avec les indices $x$, $r$ et $\alpha$ dénotant respectivement les directions axiale, radiale et azimuthale où circulent les flux de conduction. La porosité influe sur la conductivité thermique apparente et $k_i=\Phi_i k_{g} + (1-\Phi_i)k_{s}$. \textcolor{red}{En première aproximation, il est possible de considérer les valeurs de conductivité comme égales les unes aux autres. Cependant, c'est inexact car le long de l'axe $\mathbf e_x$ le milieu est constitué de l'empillement de tissus métalliques tandis que dans la direction $\mathbf e_r$ le flux de chaleur parcourt les fils qui forment le tissus en lui-même.}
 
 %\begin{equation}
 %Q_{\sf cond}^{(x)} = -k_x\partial_x\theta~\mathrm{\mathbf e_x},
@@ -444,26 +444,42 @@ où $h_r$ et $h_x$ sont respectivement le coefficient d'échanges avec les paroi
 Ces flux de chaleurs sont reportés dans l'équation modifiée du bilan de chaleur qui s'écrit
 
 \begin{equation}
-[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \theta = - \nabla \cdot (Q_{TA} + Q_{\sf cond}) + Q_{\sf visq} + \frac{S_{\sf reg}}{L_{\sf reg}}Q_{\sf lat},
+[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \theta = - \nabla \cdot (Q_{TA} + Q_{\sf cond}) + Q_{\sf visq},
 \label{eq:BilanChaleur_LottonPoignand}
 \end{equation}
-où le premier membre désigne la variation d'énergie interne suite à la variation de température. Dans le second membre, les flux sont exprimés pour chaque volume élémentaire. D'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux et les pertes latérales se produisent dans chaque volume, il sont donc source (ou réservoir suivant le signe) de chaleur et doivent être pris en compte tels quels. Ceci dit, le régénérateur est supposé axisymétrique, ce qui permet de considérer les composantes azimuthales $\nabla_\alpha \cdot Q_{TA}$ et $\nabla_\alpha \cdot Q_{\sf cond}$ comme nulles.
+où le premier membre désigne la variation d'énergie interne suite à la variation de température. Dans le second membre, les flux sont exprimés pour chaque volume élémentaire. D'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux se produisent dans chaque volume, il sont donc source de chaleur et doivent être pris en compte tels quels. Ceci dit, le régénérateur est supposé axisymétrique, ce qui permet de considérer les composantes azimuthales $\nabla_\alpha \cdot Q_{TA}$ et $\nabla_\alpha \cdot Q_{\sf cond}$ comme nulles.
 
+Le problème décrit par l'équation~\ref{eq:BilanChaleur_LottonPoignand} est conditionné aux frontières en $x=0$, $x=L_{\sf reg}$ et $r=R_{\sf reg}$ pour respecter la conservation d'énergie. Ces conditions se traduisent par le système d'équations
 
-Les flux chaleur apportés par l'échangeur froid $Q_f$ et extrait par l'échangeur ambiant $Q_a$ sont introduits comme des conditions aux frontières à l'entrée et à la sortie du régénérateur, de même que le flux $Q_{\sf vort}$. Ces conditions aux frontières s'écrivent au moyen du système d'équations
-
-\begin{subequations} \color{red}
+\begin{subequations}
 	\begin{align}
-		k_x \partial_x \theta - h_{x}|_{x=0}\theta &= Q_{TA}|_{x=0} - Q_{\sf vort}|_{x=0} + Q_f, \label{eq:CondFront_x_0Froid}\\
-		k_x \partial_x \theta + h_{x}|_{x=L_{\sf reg}}\theta &= Q_{TA}|_{x=L_{\sf reg}}  + Q_{\sf vort}|_{x=L_{\sf reg}} - Q_a, \text{et} \label{eq:CondFront_x_LregAmb}\\
-		k_r \partial_r \theta + h_{r}|_{r=r_a} &= 0. \label{eq:CondFront_r_ra}
-	\end{align}
+		Q_{\sf cond}^{(x)} + Q_f + Q_{\sf vort}(0) &= Q_{TA}(0) + h_x(0)\theta,\quad &x=0,\ r \in [0,R_{\sf reg}], t>0 \label{eq:CondFront_x_0Froid}\\%
+		Q_{TA}(L_{reg}) + Q_{\sf vort}(L_{reg})  &= Q_{\sf cond}^{(x)} + Q_a + h_x(L_{\sf reg})\theta, \quad &x=L_{\sf reg},\ r \in [0,R_{\sf reg}], t>0 \label{eq:CondFront_x_LregAmb}\\%
+		Q_{\sf cond}^{(r)} &= h_r(R_{\sf reg})\theta, \quad &r=R_{\sf reg},\ x \in [0,L_{\sf reg}], t>0 \label{eq:CondFront_r_ra}
+	\end{align}%
 	\label{eq:CondFront}%
 \end{subequations}
+où $Q_f$ et $Q_a$ sont les flux de chaleur retirés à l'échangeur froid d'une part et apporté à l'échangeur ambiant d'autre part. Ce système signifie que pour chaque frontière, la somme des flux entrant dans l'interface et des sources thermiques est égale aux flux qui en sortent. Il reste à introduire la distribution de température à $t=0$ notée $\theta_0(x,r)$ comme condition initiale, qui se présent comme
+
+\begin{equation}
+	\theta(x,r,t=0) = \theta_0(x,r).
+	\label{eq:CondInit}
+\end{equation}
+
+%Les flux chaleur apportés par l'échangeur froid $Q_f$ et extrait par l'échangeur ambiant $Q_a$ sont introduits comme des conditions aux frontières à l'entrée et à la sortie du régénérateur, de même que le flux $Q_{\sf vort}$. Ces conditions aux frontières s'écrivent au moyen du système d'équations
+%
+%\begin{subequations} \color{red}
+%	\begin{align}
+%		k_x \partial_x \theta - h_{x}|_{x=0}\theta &= Q_{TA}|_{x=0} - Q_{\sf vort}|_{x=0} + Q_f, \label{eq:CondFront_x_0Froid}\\
+%		k_x \partial_x \theta + h_{x}|_{x=L_{\sf reg}}\theta &= Q_{TA}|_{x=L_{\sf reg}}  + Q_{\sf vort}|_{x=L_{\sf reg}} - Q_a, \text{et} \label{eq:CondFront_x_LregAmb}\\
+%		k_r \partial_r \theta + h_{r}|_{r=r_a} &= 0. \label{eq:CondFront_r_ra}
+%	\end{align}
+%	\label{eq:CondFront}%
+%\end{subequations}
 
 
 
-Pour résoudre l'équation~\eqref{eq:BilanChaleur_LottonPoignand} qui comporte des termes sources, il est nécessaire de la réécrire sous la forme d'un système d'équations inhomogènes tel que
+La résolution de l'équation~\eqref{eq:BilanChaleur_LottonPoignand} qui comporte des termes sources requiert l'usage de la méthode des transformations intégrales
 
 \begin{subequations}
 	\begin{align}

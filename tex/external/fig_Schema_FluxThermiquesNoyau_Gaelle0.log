@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  10 OCT 2024 15:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  10 OCT 2024 17:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2325,16 +2325,20 @@ LaTeX Warning: Citation 'lotton_transient_2009' on page 18 undefined on input l
 ine 341.
 
 
+LaTeX Warning: Reference `eq:TMatrix_prod_TppTuu' on page 19 undefined on input
+ line 344.
+
+
 LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 19 undefined on input
- line 343.
+ line 361.
 
 
 LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 19 undefined on input line
- 343.
+ 361.
 
 
 LaTeX Warning: Reference `fig:Schema_FluxThermiquesNoyau_Gaelle' on page 19 und
-efined on input line 343.
+efined on input line 361.
 
 
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
@@ -2357,26 +2361,26 @@ altop \@gobble }{}}
  Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Program Files/MiKTeX/fonts
 /enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ec
 -iwona.enc}])
-LaTeX Font Info:    Trying to load font information for U+euf on input line 361
+LaTeX Font Info:    Trying to load font information for U+euf on input line 379
 .
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 
-LaTeX Warning: Reference `eq:TMatrix_prod_TppTuu' on page 20 undefined on input
- line 446.
+LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand' on page 21 undefined 
+on input line 452.
 
 
 LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand' on page 21 undefined 
-on input line 463.
+on input line 482.
 
 
 LaTeX Warning: Citation 'ozisik_heat_1993' on page 21 undefined on input line 4
-79.
+98.
 
 
 LaTeX Warning: Citation 'ozisik_integraltransform_heat_1993' on page 21 undefin
-ed on input line 479.
+ed on input line 498.
 
 ) (EtudeExperimentale.tex
 Chapitre III.
@@ -3389,10 +3393,10 @@ au_Gaelle0.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 74328 strings out of 474435
- 1890649 string characters out of 5751739
- 3752741 words of memory out of 5000000
- 95199 multiletter control sequences out of 15000+600000
+ 74331 strings out of 474435
+ 1890705 string characters out of 5751739
+ 3752740 words of memory out of 5000000
+ 95202 multiletter control sequences out of 15000+600000
  680937 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,21n,93p,4583b,2682s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3400,7 +3404,7 @@ Here is how much of TeX's memory you used:
 es/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/
 type1/nowacki/iwona/iwonam.pfb>
 Output written on external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf (1 page, 
-75648 bytes).
+76310 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)

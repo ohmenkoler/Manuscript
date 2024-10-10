@@ -26,9 +26,9 @@
 
 % --------------------------------------------------- Fond de schéma
 
-\draw[dotted, ->, very thick] ({-3.5*\Rxreg},0) -- ({\Lreg+3.5*\Rxreg},0) node [above] {$\mathbf e_x$};
+\draw[dotted, ->, very thick] ({-3.5*\Rxreg},0) -- ({\Lreg+3.5*\Rxreg},0) node [right] {$\mathbf e_x$};
 \fill[MatlabBlue,opacity=.5] (\CHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- cycle;
-\draw[dotted, ->, very thick] ($(\CHXsouth)+(0,-.3*\Ryreg)$) -- ($(\CHXnorth)+(0,.3*\Ryreg)$) node [left] {$\mathbf e_r$};
+\draw[dotted, ->, very thick] ($(\CHXsouth)+(0,-.3*\Ryreg)$) -- ($(\CHXnorth)+(0,.3*\Ryreg)$) node [above] {$\mathbf e_r$};
 
 \draw[dashed, very thick] (\AHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg];
 \filldraw[fill=MatlabBlue, fill opacity=.5, draw=black,very thick] (\CHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- (\AHXsouth) arc [start angle=-90, end angle=90, x radius=\Rxreg, y radius=\Ryreg] --cycle;
@@ -44,9 +44,9 @@
 
 %%% Q_TA
 \draw[arw,->,draw=MatlabBlue] ({.25*\Lreg},0) -- ++(.33*\Lreg,0) node[right] {$Q_{TA}$} node(MidQTA)[midway]{};
-
-\draw[arw,->,draw=MatlabBlue] ($(\CHXsouth)+(0,-.33*\Lreg)$) -- ($(\CHXsouth)+(0,-1mm)$) node[pos=.25, left]{$Q_{TA}(0)$};
-\draw[arw,<-,draw=MatlabBlue] ($(\AHXsouth)+(0,-.33*\Lreg)$) -- ($(\AHXsouth)+(0,-1mm)$) node[pos=.75, right]{$Q_{TA}(L_{\sf reg})$};
+%
+%\draw[arw,<-,draw=MatlabBlue] ($(\CHXsouth)+(-1mm,-1mm)$) -- ++(-120:.33*\Lreg)node[pos=.75, left]{$Q_{TA}(0)$};
+%\draw[arw,->,draw=MatlabBlue] ($(\AHXsouth)+(1mm,-1mm)$) -- ++(-60:.33*\Lreg)node[pos=.25, right]{$Q_{TA}(L_{\sf reg})$};
 
 %%% Q_cond
 \draw[arw,->,draw=MatlabOrange] ({.75*\Lreg},.15*\Ryreg)  -- ++(-.33*\Lreg,0) node[left] {$Q_{\sf cond}^{(x)}$} node(MidCondx1)[midway]{};
@@ -61,12 +61,16 @@
 
 
 %%% Q_lat
-\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,1.1*\Ryreg) -- ++(0,1cm) node [right] {$h_r(R_{\sf reg})$};
-\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,-1.1*\Ryreg) -- ++(0,-1cm) node [right] {$h_r(R_{\sf reg})$};
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,1.1*\Ryreg) -- ++(0,1cm) node [above] {$h_r(R_{\sf reg})\theta$};
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,-1.1*\Ryreg) -- ++(0,-1cm) node [below] {$h_r(R_{\sf reg})\theta$};
 
-\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (-2*\Rxreg,0) -- ++(-1cm,0) node [midway, above] {$h_x(0)$};
-\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (\Lreg+2*\Rxreg,0) -- ++(1cm,0) node [midway, above] {$h_x(L_{\sf reg})$};
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (-2*\Rxreg,0) -- ++(-1cm,0) node [midway, above] {$h_x(0)\theta$};
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (\Lreg+2*\Rxreg,0) -- ++(1cm,0) node [midway, above] {$h_x(L_{\sf reg})\theta$};
 
-
+%%% Q_HX
+%\draw[arw,<-,draw=gray] ($(\CHXsouth)+(1mm,-1mm)$) -- ++(-60:.33*\Lreg)node[pos=.75, right]{$Q_f$};
+%\draw[arw,->,draw=gray!50!black] ($(\AHXsouth)+(-1mm,-1mm)$) -- ++(-120:.33*\Lreg)node[pos=.25, left]{$Q_a$};
+\draw[arw,<-,draw=gray] ($(\CHXsouth)+(0,-1mm)$) -- ++(-90:.33*\Lreg)node[pos=.75, right]{$Q_f$};
+\draw[arw,->,draw=gray!50!black] ($(\AHXsouth)+(0,-1mm)$) -- ++(-90:.33*\Lreg)node[pos=.25, left]{$Q_a$};
 
 \end{tikzpicture}

@@ -45,6 +45,9 @@
 %%% Q_TA
 \draw[arw,->,draw=MatlabBlue] ({.25*\Lreg},0) -- ++(.33*\Lreg,0) node[right] {$Q_{TA}$} node(MidQTA)[midway]{};
 
+\draw[arw,->,draw=MatlabBlue] ($(\CHXsouth)+(0,-.33*\Lreg)$) -- ($(\CHXsouth)+(0,-1mm)$) node[pos=.25, left]{$Q_{TA}(0)$};
+\draw[arw,<-,draw=MatlabBlue] ($(\AHXsouth)+(0,-.33*\Lreg)$) -- ($(\AHXsouth)+(0,-1mm)$) node[pos=.75, right]{$Q_{TA}(L_{\sf reg})$};
+
 %%% Q_cond
 \draw[arw,->,draw=MatlabOrange] ({.75*\Lreg},.15*\Ryreg)  -- ++(-.33*\Lreg,0) node[left] {$Q_{\sf cond}^{(x)}$} node(MidCondx1)[midway]{};
 \draw[arw,->,draw=MatlabOrange] ({.75*\Lreg},-.15*\Ryreg)  -- ++(-.33*\Lreg,0) node(MidCondx2)[midway]{} node[left] {$Q_{\sf cond}^{(x)}$};

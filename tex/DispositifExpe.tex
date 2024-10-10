@@ -340,7 +340,25 @@ Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavit
 \subsection{Modèle du régime transitoire sans convection naturelle} \label{chap:ModeleTransoitoire_SansConvNat}
 Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du \textit{stack} en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volumes éléméntaires $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques.
 
-Les flux thermiques sont pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer en situation.
+
+Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique est différent dans le cas du \textsc{Tacot} de l'hypothèse formulée dans le modèle existant. Sans être complètement \og à ondes progressives \fg{} ni \og à ondes stationnaires \fg{}, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
+
+\begin{subequations}
+	\begin{multicols}{2}
+	\noindent
+	\begin{align}
+		T_{pp}^{(n)} &= 1, \label{eq:TMatrix_Tpp_regen}\\
+		T_{pu}^{(n)} &= -\frac{i \omega \rho}{\Phi S (1-f_\nu)}\deriv x, \label{eq:TMatrix_Tpu_regen}
+		\end{align}
+		\begin{align}
+		T_{up}^{(n)} &= -\frac{i \omega \Phi S}{\gamma P_0} \deriv x, \text{et} \label{eq:TMatrix_Tup_regen}\\
+		T_{uu}^{(n)} &= 1. \label{eq:TMatrix_Tuu_regen}
+	\end{align}
+	\end{multicols}
+	\label{eq:TMatrix_regen}
+\end{subequations}
+
+Ensuite, les flux thermiques sont également pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer en situation.
 
 \begin{figure}[!ht]
     \centering
@@ -355,8 +373,8 @@ Les flux thermiques sont pour la plupart différents dans le cas d'un réfrigér
 \item Tout d'abord, le flux thermoacoustique 1D est calculé avec
 
 \begin{multline}
-	Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } pu^* \right] }_{r(x)} \\ 
-	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |u|^2 }^{q(x)}\partial_x \theta(r,x;t),
+	Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } pu^* \right] }_{r_{TA}(x)} \\ 
+	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |u|^2 }^{q_{TA}(x)}\partial_x \theta(r,x;t),
 \label{eq:FluxTA_Lotton_Regen}
 \end{multline}
 où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale à la température initiale. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans la dépendance spatio-temporelle. 
@@ -364,14 +382,14 @@ où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale
 \item Ensuite, la conduction dans le régénérateur est prise en compte dans toutes les directions du régénérateur avec l'équation
 
 \begin{equation}
-	Q_{\sf cond} = -\mathbf A \begin{pmatrix}
+	Q_{\sf cond} = -\begin{pmatrix}
 	k_x\\
-%	k_\alpha\\
+	k_\alpha\\
 	k_r
 	\end{pmatrix} \cdot \nabla \theta,
 	\label{eq:FluxCond_Lotton}
 \end{equation}
-avec les indices $x$ et $r$ dénotant respectivement les directions axiale et radiale, et $\mathbf A$ une section équivalente dans chaque direction de l'espace et où circule le flux de conduction.
+avec les indices $x$, $\alpha$ et $r$ dénotant respectivement les directions axiale, azimuthale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique apparente et $k_i=\Phi_i k_{g} + (1-\Phi_i)k_{s}$. \textcolor{red}{En première aproximation, il est possible de considérer les valeurs de conductivité comme égales les unes aux autres. Cependant, c'est inexact car le long de l'axe $\mathbf e_x$ le milieu est constitué de l'empillement de tissus métalliques tandis que dans la direction $\mathbf e_r$ le flux de chaleur parcourt les fils qui forment le tissus en lui-même.}
 
 %\begin{equation}
 %Q_{\sf cond}^{(x)} = -k_x\partial_x\theta~\mathrm{\mathbf e_x},
@@ -393,10 +411,12 @@ avec les indices $x$ et $r$ dénotant respectivement les directions axiale et ra
 \item Les pertes visqueuses sont estimées avec l'équation
 
 \begin{equation}
-Q_{\sf visq} = \frac{1}{R_{\sf reg}^2} \int_{-R_{\sf reg}}^{R_{\sf reg}} \frac{1}{\tau_0} \int_0^{\tau_0} \mu (\partial_r u)^2\ r \deriv r \deriv t,
+Q_{\sf visq} = \frac{1}{R_{\sf reg}^2} \int_{0}^{R_{\sf reg}} \frac{1}{\tau_0} \int_0^{\tau_0} \mu (\partial_r u)^2\ r \deriv r \deriv t,
 \label{eq:FluxVisq_Lotton}
 \end{equation}
 dont les intégrales sur la section de rayon $R_{\sf reg}$ et la période $\tau_0$ sont résolues par une méthode numérique.
+
+\item Les effets de bords tels que les pertes de charges ou la vorticité sont pris en compte aux frontières du domaine grâce à des flux de chaleur $Q_{\sf vort}$ estimés empiriquement à $x=0$ et $x=L_{\sf reg}$.
 
 \item Enfin, les pertes latérales sur la circonférence et aux extrémités du régénérateur sont prises en compte par
 
@@ -442,23 +462,6 @@ Les flux chaleur apportés par l'échangeur froid $Q_f$ et extrait par l'échang
 \end{subequations}
 
 
-
-Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique est également différent dans le cas du \textsc{Tacot}. Sans être complètement \og à ondes progressives \fg{} ni \og à ondes stationnaires \fg{}, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
-
-\begin{subequations}
-	\begin{multicols}{2}
-	\noindent
-	\begin{align}
-		T_{pp}^{(n)} &= 1, \label{eq:TMatrix_Tpp_regen}\\
-		T_{pu}^{(n)} &= -\frac{i \omega \rho}{\Phi S (1-f_\nu)}\deriv x, \label{eq:TMatrix_Tpu_regen}
-		\end{align}
-		\begin{align}
-		T_{up}^{(n)} &= -\frac{i \omega \Phi S}{\gamma P_0} \deriv x, \text{et} \label{eq:TMatrix_Tup_regen}\\
-		T_{uu}^{(n)} &= 1. \label{eq:TMatrix_Tuu_regen}
-	\end{align}
-	\end{multicols}
-	\label{eq:TMatrix_regen}
-\end{subequations}
 
 Pour résoudre l'équation~\eqref{eq:BilanChaleur_LottonPoignand} qui comporte des termes sources, il est nécessaire de la réécrire sous la forme d'un système d'équations inhomogènes tel que
 

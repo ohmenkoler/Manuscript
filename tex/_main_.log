@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  11 OCT 2024 11:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  11 OCT 2024 16:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1884,7 +1884,7 @@ LaTeX Info: Symbol \textminus not provided by
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
 )
-<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1301, 126.42508
+<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1303, 126.42508
 pt x 94.84251pt>
 File: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg Graphic file (
 type jpg)
@@ -1892,7 +1892,7 @@ type jpg)
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped
 .jpg  used on input line 136.
 (pdftex.def)             Requested size: 227.3381pt x 170.54994pt.
-<../fig/fig_SystemeAccroche/Palans.jpg, id=1302, 4047.12pt x 3035.34pt>
+<../fig/fig_SystemeAccroche/Palans.jpg, id=1304, 4047.12pt x 3035.34pt>
 File: ../fig/fig_SystemeAccroche/Palans.jpg Graphic file (type jpg)
 <use ../fig/fig_SystemeAccroche/Palans.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Palans.jpg  used on input l
@@ -1932,7 +1932,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<../fig/fig_ConvNatComsol/Geometry.png, id=1474, 363.60844pt x 478.03593pt>
+<../fig/fig_ConvNatComsol/Geometry.png, id=1476, 363.60844pt x 478.03593pt>
 File: ../fig/fig_ConvNatComsol/Geometry.png Graphic file (type png)
 <use ../fig/fig_ConvNatComsol/Geometry.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Geometry.png  used on input l
@@ -2102,13 +2102,13 @@ Chapitre VI.
 [45
 
 ]
-<../fig/fig_ActiveControl/ADAU1701.png, id=2398, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=2400, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 37.
 (pdftex.def)             Requested size: 179.849pt x 170.71652pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=2399, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=2401, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
@@ -2164,9 +2164,6 @@ LaTeX Info: Symbol \textminus not provided by
 Annexe C.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 10.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
             Default family used instead on input line 11.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -2213,6 +2210,9 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 26.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 27.
 ) (FabricNoyauTA.tex [7] [8
 
 ]
@@ -2238,7 +2238,7 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 4B911819D9B121C2E1BB8D668C6D18CA;17140.
+(rerunfilecheck)             Checksum: 830FCB99D2EF23373B02183476A6F757;17376.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                _main_
@@ -2249,10 +2249,10 @@ Package logreq Info: Writing requests to '_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72020 strings out of 474435
- 1811047 string characters out of 5751739
- 2938161 words of memory out of 5000000
- 92837 multiletter control sequences out of 15000+600000
+ 72022 strings out of 474435
+ 1811071 string characters out of 5751739
+ 2936992 words of memory out of 5000000
+ 92838 multiletter control sequences out of 15000+600000
  680937 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,90p,4549b,3220s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2266,9 +2266,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-sup
 er/sftt1200.pfb>
-Output written on _main_.pdf (73 pages, 6683440 bytes).
+Output written on _main_.pdf (73 pages, 6683101 bytes).
 PDF statistics:
- 2749 PDF objects out of 2984 (max. 8388607)
- 313 named destinations out of 1000 (max. 500000)
- 1050 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2751 PDF objects out of 2984 (max. 8388607)
+ 314 named destinations out of 1000 (max. 500000)
+ 1058 words of extra memory for PDF output out of 10000 (max. 10000000)
 

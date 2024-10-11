@@ -14,10 +14,12 @@
     domain=0:9.5,
     legend style = {at={(.97,.03)},anchor = south east}
     ]
-        \addplot[solid,ultra thick,draw=MatlabBlue] file {../fig/fig_IncertitudeDebitEau/data/data_calibTurbineVSUltrason.txt};
-        \addplot[dashed,ultra thick,draw=MatlabBlue] {1.002*x - .3847};
+        \addplot[solid,ultra thick,draw=MatlabBlue] file {../fig/fig_IncertitudeDebitEau/data/data_calibTurbineVSUltrason.txt} ;\addlegendentry{Exp.}
+        \addplot[dashed,ultra thick,draw=MatlabBlue] {1.002*x - .3847}; \addlegendentry{Approx. linéaire,}
+        \addlegendimage{empty legend}
+        \addlegendentry{$\dot q_{\sf tb}=\dot q_{\sf us}-0.3847$}
         
-        \legend{Exp. \\ Approx. linéaire, $\dot q_{\sf tb}=\dot q_{\sf us}-0.3847$ \\};
+%        \legend{Exp. \\ \begin{tabular}{l}Approx. linéaire\\$\dot q_{\sf tb}=\dot q_{\sf us}-0.3847$\end{tabular} \\};
     \end{axis}
     
     \begin{axis}[name=EcartRelat,width={\prop*\width},height={\prop*\height},

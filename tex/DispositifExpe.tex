@@ -27,6 +27,20 @@ La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet 
 
 Le régénérateur utilisé dans le noyau thermoacoustique de coordonnée axiale $x \mathbf e_x$ et radiale $r \mathbf e_r$ est composé de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$. Les paramètres du régénérateur sont notés dans le tableau \ref{tab:ParamHydrauTAC} et sont calculés d'après les formules 
 
+\begin{align}
+	\phi &= \frac{V_{\sf gaz}}{V_{\sf tot}}, \label{eq:Porosite_Volume}%\\
+%	&= \frac{V_{\sf tot}-V_{\sf metal}}{V_{\sf tot}} \nonumber\\
+%	&= 1 - \frac{m_{\sf metal}}{m_{\sf tot}} \label{eq:Porosite_Masse}
+\end{align}
+pour la porosité, et qui correspondent à un matériau équivalent à pores cylindriques de rayon hydraulique
+
+\begin{equation}
+	r_h = \frac{d_w}{4}\frac{\phi}{1-\phi}.
+	\label{eq:DefRayonHydrauGantois}
+\end{equation}
+
+Dans ces équations, $V_{\sf gaz}$ est le volume occupé par le gaz dans le régénérateur et $V_{\sf tot}$ son volume total, et $d_w$ est le diamètre de fils des tissus métalliques. Cette machine nécessite le respect de la condition $\delta_{\kappa,\nu} \gg r_h$, de sorte à avoir un excellent contact thermique entre le fluide et le solide poreux. Pour le fluide considéré, les épaisseurs de couches limites sont tracées en fonction de la fréquence et comparé au rayon hydraulique sur la figure~\ref{fig:dKdV}.
+
 \begin{figure}[!ht]
     \centering
     \external{fig_dKdV}
@@ -35,21 +49,6 @@ Le régénérateur utilisé dans le noyau thermoacoustique de coordonnée axiale
     \caption{\'Evolution des épaisseurs de couches limites thermique et visqueuse en fonction de la fréquence, définies équations~\eqref{eq:CouchesLimites}.}
     \label{fig:dKdV}
 \end{figure}
-
-\begin{align}
-\phi &= \frac{V_{\sf gaz}}{V_{\sf total}} \label{eq:DefPorosity_Volume}%\\
-%	&= \frac{V_{\sf total}-V_{\sf metal}}{V_{\sf total}} \nonumber\\
-%	&= 1 - \frac{m_{\sf metal}}{m_{\sf total}} \label{eq:DefPorosity_Masse}
-\end{align}
-pour la porosité, et
-
-\begin{equation}
-r_h = \frac{d_w}{4}\frac{\phi}{1-\phi}
-\label{eq:DefRayonHydrauGantois}
-\end{equation}
-pour le rayon hydraulique. Dans ces équations, $V_{\sf gaz}$ est le volume occupé par le gaz dans le régénérateur et $V_{\sf total}$ son volume total, et $d_w$ est le diamètre de fils des tissus métalliques.
-
-
 
 \begin{table}[!ht]
     \centering
@@ -459,27 +458,14 @@ Le problème décrit par l'équation~\ref{eq:BilanChaleur_LottonPoignand} est co
 	\end{align}%
 	\label{eq:CondFront}%
 \end{subequations}
-où $Q_f$ et $Q_a$ sont les flux de chaleur retirés à l'échangeur froid d'une part et apporté à l'échangeur ambiant d'autre part. Ce système signifie que pour chaque frontière, la somme des flux entrant dans l'interface et des sources thermiques est égale aux flux qui en sortent. Il reste à introduire la distribution de température à $t=0$ notée $\theta_0(x,r)$ comme condition initiale, qui se présent comme
+où $Q_f$ et $Q_a$ sont les flux de chaleur retirés à l'échangeur froid d'une part et apporté à l'échangeur ambiant d'autre part. Ce système signifie que pour chaque frontière, la somme des flux entrant dans l'interface et des sources thermiques est égale aux flux qui en sortent. Il reste à introduire la distribution de température à $t=0$ notée $\theta_0(x,r)$ comme condition initiale, qui se présente comme
 
 \begin{equation}
 	\theta(x,r,t=0) = \theta_0(x,r).
 	\label{eq:CondInit}
 \end{equation}
 
-%Les flux chaleur apportés par l'échangeur froid $Q_f$ et extrait par l'échangeur ambiant $Q_a$ sont introduits comme des conditions aux frontières à l'entrée et à la sortie du régénérateur, de même que le flux $Q_{\sf vort}$. Ces conditions aux frontières s'écrivent au moyen du système d'équations
-%
-%\begin{subequations} \color{red}
-%	\begin{align}
-%		k_x \partial_x \theta - h_{x}|_{x=0}\theta &= Q_{TA}|_{x=0} - Q_{\sf vort}|_{x=0} + Q_f, \label{eq:CondFront_x_0Froid}\\
-%		k_x \partial_x \theta + h_{x}|_{x=L_{\sf reg}}\theta &= Q_{TA}|_{x=L_{\sf reg}}  + Q_{\sf vort}|_{x=L_{\sf reg}} - Q_a, \text{et} \label{eq:CondFront_x_LregAmb}\\
-%		k_r \partial_r \theta + h_{r}|_{r=r_a} &= 0. \label{eq:CondFront_r_ra}
-%	\end{align}
-%	\label{eq:CondFront}%
-%\end{subequations}
-
-
-
-La résolution de l'équation~\eqref{eq:BilanChaleur_LottonPoignand} qui comporte des termes sources requiert l'usage de la méthode des transformations intégrales
+La résolution de l'équation~\eqref{eq:BilanChaleur_LottonPoignand} qui comporte des termes sources requiert l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{ozisik_integraltransform_heat_1993}. Les équations s'écrivent alors
 
 \begin{subequations}
 	\begin{align}
@@ -495,7 +481,6 @@ avec les changements de variables suivants
 	\item 2.
 \end{itemize}
 
-Cette réécriture des équations du système permet de reprendre le formalisme de Green et de résoudre ce problème inhomogène grâce à une transformation intégrale issue dans le chapitre~13 du livre \cite{ozisik_heat_1993, ozisik_integraltransform_heat_1993}
 
 
 

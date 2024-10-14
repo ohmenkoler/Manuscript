@@ -350,14 +350,14 @@ Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique es
 		T_{pu}^{(n)} &= -\frac{i \omega \rho}{\Phi S (1-f_\nu)}\deriv x, \label{eq:TMatrix_Tpu_regen}
 		\end{align}
 		\begin{align}
-		T_{up}^{(n)} &= -\frac{i \omega \Phi S}{\gamma P_0} \deriv x, \text{et} \label{eq:TMatrix_Tup_regen}\\
+		T_{up}^{(n)} &= -\frac{i \omega \Phi S}{\gamma P_0} \deriv x, \label{eq:TMatrix_Tup_regen}\\
 		T_{uu}^{(n)} &= 1. \label{eq:TMatrix_Tuu_regen}
 	\end{align}
 	\end{multicols}
 	\label{eq:TMatrix_regen}
 \end{subequations}
 
-Ensuite, les flux thermiques sont également pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer en situation.
+Ensuite, les flux thermiques sont également pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer au sein du régénérateur.
 
 \begin{figure}[!ht]
     \centering
@@ -369,14 +369,14 @@ Ensuite, les flux thermiques sont également pour la plupart différents dans le
 \end{figure}
 
 \begin{enumerate}[label=\textbf{(\roman*)}]
-\item Tout d'abord, le flux thermoacoustique 1D est calculé avec
+\item Tout d'abord, le flux thermoacoustique 1D est calculé avec l'équation~\eqref{eq:FluxTA_swift} développée par Swift \cite{swift_thermoacoustics_2017}
 
 \begin{multline}
-	Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } pu^* \right] }_{r_{TA}(x)} \\ 
-	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |u|^2 }^{q_{TA}(x)}\partial_x \theta(r,x;t),
+	Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } pu^* \right] }_{q_{TA}(x)} \\ 
+	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |u|^2 }^{k_{TA}(x)}\partial_x \theta(r,x;t),
 \label{eq:FluxTA_Lotton_Regen}
 \end{multline}
-où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale à la température initiale. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans la dépendance spatio-temporelle. 
+où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale à la température initiale. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans la dépendance spatio-temporelle. Il est important de remarquer la partie réelle de ce flux thermique, notée $q_{TA}$, qui ne dépend que du champ acoustique, et la partie imaginaire $k_{TA}$ qui dépend du gradient de température le long du stack et qui peut être vu comme un terme de conduction induite par l'effet thermoacoustique.
 
 \item Ensuite, la conduction dans le régénérateur est prise en compte dans toutes les directions du régénérateur avec l'équation exprimée en coordonées cylindriques par
 
@@ -446,6 +446,12 @@ Ces flux de chaleurs sont reportés dans l'équation modifiée du bilan de chale
 [\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \theta = - \nabla \cdot (Q_{TA} + Q_{\sf cond}) + Q_{\sf visq},
 \label{eq:BilanChaleur_LottonPoignand}
 \end{equation}
+ce qui donne après développement de l'opérateur divergence en coordonnées cylindrique,
+
+\begin{equation}
+[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \theta = - \partial_x Q_{TA} - \partial_x Q_{\sf cond}^{(x)} - \frac{1}{r}\partial_r[r Q_{\sf cond}^{(r)}] + Q_{\sf visq},
+\label{eq:BilanChaleur_LottonPoignand_ApDvptCylin}
+\end{equation}
 où le premier membre désigne la variation d'énergie interne suite à la variation de température. Dans le second membre, les flux sont exprimés pour chaque volume élémentaire. D'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux se produisent dans chaque volume, il sont donc source de chaleur et doivent être pris en compte tels quels. Ceci dit, le régénérateur est supposé axisymétrique, ce qui permet de considérer les composantes azimuthales $\nabla_\alpha \cdot Q_{TA}$ et $\nabla_\alpha \cdot Q_{\sf cond}$ comme nulles.
 
 Le problème décrit par l'équation~\ref{eq:BilanChaleur_LottonPoignand} est conditionné aux frontières en $x=0$, $x=L_{\sf reg}$ et $r=R_{\sf reg}$ pour respecter la conservation d'énergie. Ces conditions se traduisent par le système d'équations
@@ -463,6 +469,13 @@ où $Q_f$ et $Q_a$ sont les flux de chaleur retirés à l'échangeur froid d'une
 \begin{equation}
 	\theta(x,r,t=0) = \theta_0(x,r).
 	\label{eq:CondInit}
+\end{equation}
+
+Le report des flux de chaleurs des équations~\eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton} dans l'équation du problème~\eqref{eq:BilanChaleur_LottonPoignand_ApDvptCylin}, dans les conditions aux frontières~\eqref{eq:CondFront} et dans la condition initiale~\eqref{eq:CondInit} permet de poser le problème tel que
+
+\begin{equation}
+	toto
+	\label{eq:ProbTransitoire_ApDvpt}
 \end{equation}
 
 La résolution de l'équation~\eqref{eq:BilanChaleur_LottonPoignand} qui comporte des termes sources requiert l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{ozisik_integraltransform_heat_1993}. Les équations s'écrivent alors

@@ -200,6 +200,13 @@ et qui décrit le rapport de force entre les effets visqueux et thermiques. Dans
 	\end{align}
 \end{subequations}
 
+Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacoustics_2017} par
+\begin{equation}
+	Q_{TA} = \underbrace{\frac{1}{2} \RE\left[pu^* \left( 1 - \frac{f_\kappa - f_\nu^*}{(1 - \Prandtl)(1 - f_\nu^*)} \right) \right]}_{q_{TA}} + \underbrace{\frac{\rho_0 C_p }{\Phi S \omega } \frac{1}{2} \IM \left[ \frac{f_\kappa + \Prandtl f_\nu^*}{(1-\Prandtl)|1-f_\nu|^2} |u|^2\right]}_{k_{TA}} \deriv_x T
+	\label{eq:FluxTA_swift}
+\end{equation}
+
+
 \section{\'Etat de l'art}
 \subsection{De la recherche fondamentale...}
 Depuis les années 1970-1980 durant lesquelles les premières machines modernes ont été mises au point, beaucoup de chemin a été parcouru. Le premier moteur à ondes progressives a été construit par Ceperley en 1979 \cite{ceperley_pistonless_1979}, et la première pompe à chaleur par Hofler lors de son doctorat en 1983 

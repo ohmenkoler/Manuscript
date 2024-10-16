@@ -190,7 +190,11 @@ En outre, ces deux épaisseurs de couche limites sont également liées par le n
 \end{subequations}
 et qui décrit le rapport de force entre les effets visqueux et thermiques. Dans le cas des machines thermoacoustiques, le nombre de Prandtl doit être le plus faible possible, afin de favoriser les échanges de chaleurs sans perdre d'énergie à cause de la viscosité du fluide. Pour ce faire, il est possible de mélanger des gaz pour abaisser sa valeur \cite{belcher_working_1999} puisque dans le cas des gaz monoatomiques, le nombre de Prandtl ne dépend pas de la température et $\Prandtl~=~\frac{2}{3}$.
 
+Ces effets visco-thermiques ajoutent des termes dans les équations de l'acoustique, et sont présentés dans les parties qui suivent.
+
 \subsection{\'Equations fondamentales de l'acoustique en fluides dissipatifs}
+
+Un volume de fluide obéit aux lois de conservations de masse, d'énergies et d'état, qui s'écrivent respectivement suivant le système d'équations
 
 \begin{subequations}
 	\begin{align}
@@ -199,6 +203,33 @@ et qui décrit le rapport de force entre les effets visqueux et thermiques. Dans
 		\rho T\deriv_t S &= \nabla\cdot (k \nabla T) + \overline{\overline{\sigma}}\cdot \textcolor{red}{\nabla \mathbf v}. \label{eq:ConservEnergie}
 	\end{align}
 \end{subequations}
+
+Les variables d'intérêt dans l'étude d'un problème thermoacoustique sont respectivement la pression, le débit, la vitesse, la masse volumique, la température et l'entropie, et sont écrites selon le formalisme de Rott avec
+
+\begin{subequations}
+	\begin{multicols}{2}
+	\noindent
+		\begin{align}
+			p(x,t) &= p_0 + \RE \left[p_1(x) e^{i\omega t}\right],\label{eq:pression_rott}\\
+			u(x,t) &= \RE \left[u_1(x) e^{i\omega t}\right],\label{eq:debit_rott}\\
+			v(x,t) &= \RE \left[v_1(x) e^{i\omega t}\right],\label{eq:vitesse_rott}
+	\end{align}
+	\begin{align}
+			\rho(x,r,t) &= \rho_0(x) + \RE \left[\rho_1(x,r) e^{i\omega t}\right],\label{eq:massVol_rott}\\
+			T(x,r,t) &= T_0(x) + \RE \left[T_1(x,r) e^{i\omega t}\right],\label{eq:temperature_rott}\\
+			S(x,r,t) &= s_0(x) + \RE \left[s_1(x,r) e^{i\omega t}\right],\label{eq:entropie_rott}
+		\end{align}
+		\label{eq:variables_rott}
+	\end{multicols}
+\end{subequations}
+
+Ici, les indices indiquent l'ordre de grandeur, avec en particulier l'indice \num{0} qui dénote une valeur constante à l'ordre \num{0}, et l'indice \num{1} qui signifie l'oscillation à l'ordre \num{1} de la quantité. Pour respecter l'hypothèse de linéarité du système, il est nécessaire que pour chaque quantité la condition des petites variations soit respectée, soit 
+
+\begin{equation}
+	\bullet_1 \ll \bullet_0,
+	\label{eq:ConditionLinearite}
+\end{equation}
+où $\bullet$ représente indifféremment la pression, la masse volumique, etc.
 
 Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacoustics_2017} par
 \begin{equation}

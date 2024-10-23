@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  18 OCT 2024 18:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  23 OCT 2024 14:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1924,14 +1924,17 @@ Overfull \hbox (3.54448pt too wide) in paragraph at lines 19--174
 izBetter_cropped.jpg> <../fig/fig_SystemeAccroche/Palans.jpg>] [14 <./external/
 _main_-figure0.pdf> <./external/_main_-figure1.pdf> <./external/_main_-figure2.
 pdf> <./external/_main_-figure3.pdf>]
+
+LaTeX Warning: Reference `eq:FluxCond_Lotton' on page 15 undefined on input lin
+e 209.
+
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 221.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 221.
- [15]
-(../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
+[15] (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
 ===== Image 'external/fig_SimuConvNat2D0' is up-to-date. ======
 ) [16] [17 <./external/fig_SimuConvNat2D0.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
@@ -1940,7 +1943,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<../fig/fig_ConvNatComsol/Geometry.png, id=1487, 363.60844pt x 478.03593pt>
+<../fig/fig_ConvNatComsol/Geometry.png, id=1485, 363.60844pt x 478.03593pt>
 File: ../fig/fig_ConvNatComsol/Geometry.png Graphic file (type png)
 <use ../fig/fig_ConvNatComsol/Geometry.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Geometry.png  used on input l
@@ -2057,20 +2060,7 @@ LaTeX Info: Symbol \textminus not provided by
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High.tex
 ===== Image 'external/fig_Acou_Regmid_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_High.tex
-\openout4 = `external/fig_Acou_AHXin_H1H2_High0.md5'.
-
-\openout4 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_Acou_AHXin_H1H2_High0" "\
-def\tikzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_Acou_AHXin_H1H2_High0" "\def\tikzexternalrealjob{_main_}\input{_
-main_}")...executed.
-
-\openout4 = `_main_.auxlock'.
-
+===== Image 'external/fig_Acou_AHXin_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_Low0' is up-to-date. ======
 ) [33 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf>]
@@ -2079,95 +2069,17 @@ main_}")...executed.
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Low.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
-\openout4 = `external/fig_Acou_CHXin_V1V2_Mid0.md5'.
-
-\openout4 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_Acou_CHXin_V1V2_Mid0" "\d
-ef\tikzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_Acou_CHXin_V1V2_Mid0" "\def\tikzexternalrealjob{_main_}\input{_m
-ain_}")...executed.
-
-\openout4 = `_main_.auxlock'.
-
+===== Image 'external/fig_Acou_CHXin_V1V2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Mid.tex
-\openout4 = `external/fig_Acou_Regmid_V1V2_Mid0.md5'.
-
-\openout4 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_Acou_Regmid_V1V2_Mid0" "\
-def\tikzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_Acou_Regmid_V1V2_Mid0" "\def\tikzexternalrealjob{_main_}\input{_
-main_}")...executed.
-
-\openout4 = `_main_.auxlock'.
-
+===== Image 'external/fig_Acou_Regmid_V1V2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Mid.tex
-\openout4 = `external/fig_Acou_AHXin_V1V2_Mid0.md5'.
-
-\openout4 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_Acou_AHXin_V1V2_Mid0" "\d
-ef\tikzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_Acou_AHXin_V1V2_Mid0" "\def\tikzexternalrealjob{_main_}\input{_m
-ain_}")...executed.
-
-\openout4 = `_main_.auxlock'.
-
+===== Image 'external/fig_Acou_AHXin_V1V2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
-\openout4 = `external/fig_Acou_CHXin_V1V2_High0.md5'.
-
-\openout4 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_Acou_CHXin_V1V2_High0" "\
-def\tikzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_Acou_CHXin_V1V2_High0" "\def\tikzexternalrealjob{_main_}\input{_
-main_}")...executed.
-
-\openout4 = `_main_.auxlock'.
-
+===== Image 'external/fig_Acou_CHXin_V1V2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_High.tex
-\openout4 = `external/fig_Acou_Regmid_V1V2_High0.md5'.
-
-\openout4 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_Acou_Regmid_V1V2_High0" "
-\def\tikzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_Acou_Regmid_V1V2_High0" "\def\tikzexternalrealjob{_main_}\input{
-_main_}")...executed.
-
-\openout4 = `_main_.auxlock'.
-
+===== Image 'external/fig_Acou_Regmid_V1V2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_High.tex
-\openout4 = `external/fig_Acou_AHXin_V1V2_High0.md5'.
-
-\openout4 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_Acou_AHXin_V1V2_High0" "\
-def\tikzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_Acou_AHXin_V1V2_High0" "\def\tikzexternalrealjob{_main_}\input{_
-main_}")...executed.
-
-\openout4 = `_main_.auxlock'.
-
+===== Image 'external/fig_Acou_AHXin_V1V2_High0' is up-to-date. ======
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2197,13 +2109,13 @@ Chapitre VI.
 [45
 
 ]
-<../fig/fig_ActiveControl/ADAU1701.png, id=2517, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=2516, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 37.
 (pdftex.def)             Requested size: 179.849pt x 170.71652pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=2518, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=2517, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
@@ -2344,10 +2256,10 @@ Package logreq Info: Writing requests to '_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72044 strings out of 474435
- 1811472 string characters out of 5751739
- 2938028 words of memory out of 5000000
- 92849 multiletter control sequences out of 15000+600000
+ 72046 strings out of 474435
+ 1811530 string characters out of 5751739
+ 2937938 words of memory out of 5000000
+ 92851 multiletter control sequences out of 15000+600000
  680937 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,90p,4555b,3220s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2361,9 +2273,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-sup
 er/sftt1200.pfb>
-Output written on _main_.pdf (73 pages, 6754992 bytes).
+Output written on _main_.pdf (73 pages, 6754729 bytes).
 PDF statistics:
- 2870 PDF objects out of 2984 (max. 8388607)
+ 2869 PDF objects out of 2984 (max. 8388607)
  325 named destinations out of 1000 (max. 500000)
  1058 words of extra memory for PDF output out of 10000 (max. 10000000)
 

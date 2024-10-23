@@ -380,15 +380,22 @@ où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale
 
 \item Ensuite, la conduction dans le régénérateur est prise en compte dans toutes les directions du régénérateur avec l'équation exprimée en coordonées cylindriques par
 
+%\begin{equation}
+%	Q_{\sf cond} = -\begin{pmatrix}
+%	k_x\\
+%	k_r\\
+%	k_\alpha
+%	\end{pmatrix} \cdot \nabla \theta,
+%	\label{eq:FluxCond_Lotton}
+%\end{equation}
+
 \begin{equation}
-	Q_{\sf cond} = -\begin{pmatrix}
-	k_x\\
-	k_r\\
-	k_\alpha
-	\end{pmatrix} \cdot \nabla \theta,
-	\label{eq:FluxCond_Lotton}
+	\left\{ \begin{aligned}
+		Q_{\sf cond}^{(x)} &= -k_x \partial_x T\\
+		Q_{\sf cond}^{(r)} &= -k_r \partial_r T 
+	\end{aligned}\right.
 \end{equation}
-avec les indices $x$, $r$ et $\alpha$ dénotant respectivement les directions axiale, radiale et azimuthale où circulent les flux de conduction. La porosité influe sur la conductivité thermique apparente et $k_i=\Phi_i k_{g} + (1-\Phi_i)k_{s}$. \textcolor{red}{En première aproximation, il est possible de considérer les valeurs de conductivité comme égales les unes aux autres. Cependant, c'est inexact car le long de l'axe $\mathbf e_x$ le milieu est constitué de l'empillement de tissus métalliques tandis que dans la direction $\mathbf e_r$ le flux de chaleur parcourt les fils qui forment le tissus en lui-même.}
+avec les indices $x$ et $r$ dénotant respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique apparente et $k_i~=~\Phi_i k_{g} + (1-\Phi_i)k_{s}$ ($i=x,r$). \textcolor{red}{En première aproximation, il est possible de considérer les valeurs de conductivité comme égales les unes aux autres. Cependant, c'est inexact car le long de l'axe $\mathbf e_x$ le milieu est constitué de l'empillement de tissus métalliques tandis que dans la direction $\mathbf e_r$ le flux de chaleur parcourt les fils qui forment le tissus en lui-même.}
 
 %\begin{equation}
 %Q_{\sf cond}^{(x)} = -k_x\partial_x\theta~\mathrm{\mathbf e_x},

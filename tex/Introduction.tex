@@ -217,13 +217,13 @@ Les variables d'intérêt dans l'étude d'un problème thermoacoustique sont res
 	\begin{align}
 			\rho(x,r,t) &= \rho_0(x) + \RE \left[\rho_1(x,r) e^{i\omega t}\right],\label{eq:massVol_rott}\\
 			T(x,r,t) &= T_0(x) + \RE \left[T_1(x,r) e^{i\omega t}\right],\label{eq:temperature_rott}\\
-			S(x,r,t) &= s_0(x) + \RE \left[s_1(x,r) e^{i\omega t}\right],\label{eq:entropie_rott}
+			S(x,r,t) &= s_0(x) + \RE \left[s_1(x,r) e^{i\omega t}\right].\label{eq:entropie_rott}
 		\end{align}
 		\label{eq:variables_rott}
 	\end{multicols}
 \end{subequations}
 
-Ici, les indices indiquent l'ordre de grandeur, avec en particulier l'indice \num{0} qui dénote une valeur constante à l'ordre \num{0}, et l'indice \num{1} qui signifie l'oscillation à l'ordre \num{1} de la quantité. Pour respecter l'hypothèse de linéarité du système, il est nécessaire que pour chaque quantité la condition des petites variations soit respectée, soit 
+Ici, les indices indiquent l'ordre de grandeur, avec en particulier l'indice \num{0} qui dénote une valeur constante à l'ordre \num{0}, et l'indice \num{1} qui signifie l'oscillation à l'ordre \num{1} de la quantité. Il est supposé que le système opère dans un régime linéaire, ce qui se traduit par
 
 \begin{equation}
 	\bullet_1 \ll \bullet_0,
@@ -240,6 +240,8 @@ Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacous
 
 \section{\'Etat de l'art}
 \subsection{De la recherche fondamentale...}
+L'effet thermoacoustique est un phénomène observé depuis les environs du I\ier{} siècle avant notre ère
+
 Depuis les années 1970-1980 durant lesquelles les premières machines modernes ont été mises au point, beaucoup de chemin a été parcouru. Le premier moteur à ondes progressives a été construit par Ceperley en 1979 \cite{ceperley_pistonless_1979}, et la première pompe à chaleur par Hofler lors de son doctorat en 1983 
 
 \subsection{... à des applications industrielles}
@@ -427,7 +429,7 @@ ou bien même en simplifiant encore plus les choses par
     \end{bmatrix}\begin{pmatrix}
         p \\
         u
-    \end{pmatrix}
+    \end{pmatrix}.
     \label{eq:Tmatrix_NoyauTA_simplifie}
 \end{equation}
 

@@ -428,10 +428,13 @@ dont les intégrales sur la section de rayon $R_{\sf reg}$ et la période $\tau_
 \item Enfin, les pertes latérales sur la circonférence et aux extrémités du régénérateur sont prises en compte par
 
 \begin{equation}
-Q_{\sf lat} = \begin{pmatrix}h_x\\h_r\end{pmatrix} \theta,
+	\left\{ \begin{aligned}
+		Q_{\sf lat}^{(x)} &= h_x \theta,\\
+		Q_{\sf lat}^{(x)} &= h_x \theta,
+	\end{aligned}\right.
 \label{eq:FluxLat_Lotton}
 \end{equation}
-où $h_r$ et $h_x$ sont respectivement le coefficient d'échanges avec les parois à $r = R_{\sf reg}$ et les coefficients d'échanges avec les extrémités à $x=0$ et $x=L_{\sf reg}$. Ils sont déterminés de façon empirique dans l'article.
+où $h_x$ et $h_r$ sont respectivement les coefficients d'échanges avec les extrémités à $x=0$ et $x=L_{\sf reg}$, et avec la paroi à $r = R_{\sf reg}$. Ils sont déterminés de façon empirique dans l'article.
 
 %Alternativement, il est possible de prendre en compte les échanges de chaleur au bord et dans l'axe du noyau par un terme qui représente le flux de chaleur induit par les oscillations acoustiques noté $\psi_{ac}$ dans la thèse de Guédra \cite{guedra_etudes_2012} et défini par
 %
@@ -450,19 +453,20 @@ où $h_r$ et $h_x$ sont respectivement le coefficient d'échanges avec les paroi
 
 Ces flux de chaleurs sont reportés dans l'équation modifiée du bilan de chaleur qui s'écrit
 
-\begin{equation}
-[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \theta = - \nabla \cdot (Q_{TA} + Q_{\sf cond}) + Q_{\sf visq},
-\label{eq:BilanChaleur_LottonPoignand}
-\end{equation}
-ce qui donne après développement de l'opérateur divergence en coordonnées cylindrique,
+%\begin{equation}
+%[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \theta = - \nabla \cdot (Q_{TA} + Q_{\sf cond}) + Q_{\sf visq},
+%\label{eq:BilanChaleur_LottonPoignand}
+%\end{equation}
+%ce qui donne après développement de l'opérateur divergence en coordonnées cylindrique,
 
 \begin{equation}
-[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \theta = - \partial_x Q_{TA} - \partial_x Q_{\sf cond}^{(x)} - \frac{1}{r}\partial_r[r Q_{\sf cond}^{(r)}] + Q_{\sf visq},
+[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\ \partial_t \theta = - \partial_x Q_{TA} - \partial_x Q_{\sf cond}^{(x)} - \frac{1}{r}\partial_r[r Q_{\sf cond}^{(r)}] + Q_{\sf visq}.
 \label{eq:BilanChaleur_LottonPoignand_ApDvptCylin}
 \end{equation}
-où le premier membre désigne la variation d'énergie interne suite à la variation de température. Dans le second membre, les flux sont exprimés pour chaque volume élémentaire. D'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux se produisent dans chaque volume, il sont donc source de chaleur et doivent être pris en compte tels quels. Ceci dit, le régénérateur est supposé axisymétrique, ce qui permet de considérer les composantes azimuthales $\nabla_\alpha \cdot Q_{TA}$ et $\nabla_\alpha \cdot Q_{\sf cond}$ comme nulles.
 
-Le problème décrit par l'équation~\ref{eq:BilanChaleur_LottonPoignand} est conditionné aux frontières en $x=0$, $x=L_{\sf reg}$ et $r=R_{\sf reg}$ pour respecter la conservation d'énergie. Ces conditions se traduisent par le système d'équations
+Le premier membre désigne la variation d'énergie interne suite à la variation de température, et le second membre, l'expression des flux thermiques dans chaque volume élémentaire. D'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux se produisent dans chaque volume, il sont donc source de chaleur et doivent être pris en compte tels quels. Ceci dit, le régénérateur est supposé axisymétrique, ce qui permet de considérer les composantes azimuthales $\nabla_\alpha \cdot Q_{TA}$ et $\nabla_\alpha \cdot Q_{\sf cond}$ comme nulles.
+
+Le problème décrit par l'équation~\ref{eq:BilanChaleur_LottonPoignand_ApDvptCylin} est conditionné aux frontières en $x=0$, $x=L_{\sf reg}$ et $r=R_{\sf reg}$ pour respecter la conservation d'énergie. Ces conditions se traduisent par le système d'équations
 
 \begin{subequations}
 	\begin{align}
@@ -486,7 +490,7 @@ Le report des flux de chaleurs des équations~\eqref{eq:FluxTA_Lotton_Regen} à 
 	\label{eq:ProbTransitoire_ApDvpt}
 \end{equation}
 
-La résolution de l'équation~\eqref{eq:BilanChaleur_LottonPoignand} qui comporte des termes sources requiert l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{ozisik_integraltransform_heat_1993}. Les équations s'écrivent alors
+La résolution de l'équation~\eqref{eq:BilanChaleur_LottonPoignand_ApDvptCylin} qui comporte des termes sources requiert l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{ozisik_integraltransform_heat_1993}. Les équations s'écrivent alors
 
 \begin{subequations}
 	\begin{align}

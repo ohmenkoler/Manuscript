@@ -13,7 +13,7 @@
 	ymin=-3,ymax=2,
     xtick={0,600,1200,1800,2400,3000,3500},%ytick={},
     domain=0:100,
-    legend style = {at={(1.01,1.05)},anchor = north east,cells={align=right}},legend columns=3,
+    legend style = {at={(1.01,1.05)},anchor = north east,cells={align=right},rounded corners},legend columns=3,
 %    legend cell align=right
     ]
     
@@ -24,7 +24,7 @@
 		\addlegendimage{legend image with text=`\texttt{H2}'} 
 		\addlegendentry{}   
     
-    	\addlegendimage{legend image with text=Source acoustique principale}
+    	\addlegendimage{legend image with text=TC 0}
     	\addlegendentry{}
     	
     	\addplot[ultra thick,black] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC0_0beg_RixLow_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};\addlegendentry{}%\addlegendentry{TC src. ac. 1 (H1)}

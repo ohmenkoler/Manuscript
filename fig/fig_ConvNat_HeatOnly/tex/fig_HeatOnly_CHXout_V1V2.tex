@@ -10,10 +10,10 @@
     xlabel={Temps $t$ [\unit{\s}]},
     ylabel={\'Ecart de température $T-T_i$ [\unit{\degreeCelsius}]},
     xmin=0,xmax=3500,
-%	ymin=-6,ymax=4,
-    xtick={0,600,...,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
+	ymin=-5,ymax=50,
+    xtick={0,600,...,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
     domain=0:100,
-    legend style = {at={(1.01,1.05)},anchor = north east,cells={align=right}},legend columns=3,
+    legend style = {at={(.01,1.05)},anchor = north west,cells={align=right},rounded corners},legend columns=3,
     ]
     	
     	
@@ -24,7 +24,7 @@
 		\addlegendimage{legend image with text=`\texttt{V2}'} 
 		\addlegendentry{}   
     
-    	\addlegendimage{legend image with text=Source acoustique principale}
+    	\addlegendimage{legend image with text=TC 0}
     	\addlegendentry{}
     	
     	\addplot[ultra thick,black] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC0_0beg_RixOff_PhaseRIXHP-60°_OrientationV1_Qc40W_Serie1.txt}};\addlegendentry{}

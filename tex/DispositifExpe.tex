@@ -39,6 +39,25 @@ pour la porosité, et qui correspondent à un matériau équivalent à pores cyl
 	\label{eq:DefRayonHydrauGantois}
 \end{equation}
 
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{l@{\hspace{1cm}}l}
+    	\hline
+    	\textbf{Paramètre} & \textbf{Valeur} \\\hline\hline
+    	Diamètre du noyau $D_{\sf reg}$ & \qty{148e-3}{\m} \\
+    	Longueur du régénérateur $L_{\sf reg}$  & \qty{39e-3}{\m} \\
+    	Diamètre du fil $d_w$ & \qty{53e-6}{\m} \\
+        Rayon hydraulique $r_h$ & \qty{2.81e-5}{\m} \\
+        Porosité du noyau $\Phi$ & \qty{68}{\percent}\\
+        Couche limite thermique $\delta_\kappa$ & \qty{1.4452e-4}{\m} \\
+        Couche limite visqueuse $\delta_\nu$ & \qty{9.1120e-5}{\m}\\
+        \textcolor{red}{Perméabilité} & \\
+        \hline
+    \end{tabular}
+    \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement, \linebreak $f=\qty{47}{\Hz}$}
+    \label{tab:ParamHydrauTAC}
+\end{table}
+
 Dans ces équations, $V_{\sf gaz}$ est le volume occupé par le gaz dans le régénérateur et $V_{\sf tot}$ son volume total, et $d_w$ est le diamètre de fils des tissus métalliques. Cette machine nécessite le respect de la condition $\delta_{\kappa,\nu} \gg r_h$, de sorte à avoir un excellent contact thermique entre le fluide et le solide poreux. Pour le fluide considéré, les épaisseurs de couches limites sont tracées en fonction de la fréquence et comparé au rayon hydraulique sur la figure~\ref{fig:dKdV}.
 
 \begin{figure}[!ht]
@@ -50,23 +69,7 @@ Dans ces équations, $V_{\sf gaz}$ est le volume occupé par le gaz dans le rég
     \label{fig:dKdV}
 \end{figure}
 
-\begin{table}[!ht]
-    \centering
-    \begin{tabular}{l l}
-    	\hline
-    	\textbf{Paramètre} & \textbf{Valeur} \\\hline\hline
-    	Diamètre du noyau $D_{\sf reg}$ & \qty{148e-3}{\m} \\
-    	Longueur du régénérateur $L_{\sf reg}$  & \qty{39e-3}{\m} \\
-    	Diamètre du fil $d_w$ & \qty{53e-6}{\m} \\
-        Rayon hydraulique $r_h$ & \qty{2.81e-5}{\m} \\
-        Porosité du noyau $\Phi$ & \qty{68}{\percent}\\
-        Couche limite thermique $\delta_\kappa$ & \qty{1.4452e-4}{\m} \\
-        Couche limite visqueuse $\delta_\nu$ & \qty{9.1120e-5}{\m}\\
-        \hline
-    \end{tabular}
-    \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement $f=\qty{47}{\Hz}$}
-    \label{tab:ParamHydrauTAC}
-\end{table}
+
 
 \subsection{Chaîne d'acquisition}
 L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments. Les quinze thermocouples du noyau  ainsi que sont connectés sur la carte d'acquisition \textcolor{red}{modèle} 
@@ -162,25 +165,25 @@ Les orientations choisies au moyen des palans sont décrites par deux angles $\p
 
 \begin{figure}[!ht]
     \centering
-	\begin{subfigure}{.47\textwidth}
+	\begin{subfigure}[c]{.47\textwidth}
 		\centering
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex}
 		\caption{`\texttt{H1}'}
 		\label{fig:OrientationCore_H1}
 	\end{subfigure}		%
-	\begin{subfigure}{.47\textwidth}
+	\begin{subfigure}[c]{.47\textwidth}
 		\centering
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex}
 		\caption{`\texttt{H2}'}
 		\label{fig:OrientationCore_H2}
 	\end{subfigure} \\ \vspace{1cm}
-	\begin{subfigure}{.47\textwidth}
+	\begin{subfigure}[c]{.47\textwidth}
 		\centering
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1.tex}
 		\caption{`\texttt{V1}'}
 		\label{fig:OrientationCore_V1}
 	\end{subfigure} %
-	\begin{subfigure}{.47\textwidth}
+	\begin{subfigure}[c]{.47\textwidth}
 		\centering
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex}
 		\caption{`\texttt{V2}'}

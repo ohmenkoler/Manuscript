@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  7 NOV 2024 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  8 NOV 2024 15:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -261,13 +261,23 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \colbreak@box=\box97
 \mc@col@check@num=\count322
 )
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen162
+\ar@mcellbox=\box98
+\extrarowheight=\dimen163
+\NC@list=\toks23
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box99
+)
 (C:\Program Files\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count323
-\float@exts=\toks23
-\float@box=\box98
-\@float@everytoks=\toks24
-\@floatcapt=\box99
+\float@exts=\toks24
+\float@box=\box100
+\@float@everytoks=\toks25
+\@floatcapt=\box101
 )
 (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
@@ -296,7 +306,7 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip52
+\@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -304,12 +314,12 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks25
-\ex@=\dimen162
+\@emptytoks=\toks26
+\ex@=\dimen164
 ))
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen163
+\pmbraise@=\dimen165
 )
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
@@ -325,13 +335,13 @@ LaTeX Info: Redefining \colon on input line 410.
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box100
-\strutbox@=\box101
+\Mathstrutbox@=\box102
+\strutbox@=\box103
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen164
+\big@size=\dimen166
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count329
@@ -344,21 +354,21 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \dotsspace@=\muskip16
 \c@parentequation=\count331
 \dspbrk@lvl=\count332
-\tag@help=\toks26
+\tag@help=\toks27
 \row@=\count333
 \column@=\count334
 \maxfields@=\count335
-\andhelp@=\toks27
-\eqnshift@=\dimen165
-\alignsep@=\dimen166
-\tagshift@=\dimen167
-\tagwidth@=\dimen168
-\totwidth@=\dimen169
-\lineht@=\dimen170
-\@envbody=\toks28
-\multlinegap=\skip53
-\multlinetaggap=\skip54
-\mathdisplay@stack=\toks29
+\andhelp@=\toks28
+\eqnshift@=\dimen167
+\alignsep@=\dimen168
+\tagshift@=\dimen169
+\tagwidth@=\dimen170
+\totwidth@=\dimen171
+\lineht@=\dimen172
+\@envbody=\toks29
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
@@ -382,26 +392,15 @@ Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
 (C:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip55
-\enit@outerparindent=\dimen171
-\enit@toks=\toks30
-\enit@inbox=\box102
+\labelindent=\skip57
+\enit@outerparindent=\dimen173
+\enit@toks=\toks31
+\enit@inbox=\box104
 \enit@count@id=\count336
 \enitdp@description=\count337
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
-
-(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
-Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen172
-\ar@mcellbox=\box103
-\extrarowheight=\dimen173
-\NC@list=\toks31
-\extratabsurround=\skip56
-\backup@length=\skip57
-\ar@cellbox=\box104
-)
 \TX@col@width=\dimen174
 \TX@old@table=\dimen175
 \TX@old@col=\dimen176
@@ -663,7 +662,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip62
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 162.
+Package hyperref Info: Option `colorlinks' set `true' on input line 164.
 
 (C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
@@ -1596,32 +1595,32 @@ Package csquotes Info: Redefining alias 'default' -> 'french'.
  (_main_.aux)
 \openout1 = `_main_.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Info: Redefining \degres on input line 278.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Info: Redefining \degres on input line 280.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 278.
+(french.ldf)             reported on input line 280.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 278.
-LaTeX Info: Redefining \up on input line 278.
+(french.ldf)             reported on input line 280.
+LaTeX Info: Redefining \up on input line 280.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1682,7 +1681,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 278.
+Package hyperref Info: Link coloring ON on input line 280.
 (_main_.out) (_main_.out)
 \@outlinefile=\write5
 \openout5 = `_main_.out'.
@@ -1694,7 +1693,7 @@ File: translations-basic-dictionary-french.trsl (french translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `french'. on input line 278.
+or `french'. on input line 280.
 \Etoc@tf=\read5
 Package biblatex Info: Trying to load language 'french'...
 Package biblatex Info: ... file 'french.lbx' found.
@@ -1710,55 +1709,55 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '_main_.bbl' found.
 
 (_main_.bbl)
-Package biblatex Info: Reference section=0 on input line 278.
-Package biblatex Info: Reference segment=0 on input line 278.
+Package biblatex Info: Reference section=0 on input line 280.
+Package biblatex Info: Reference segment=0 on input line 280.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 LaTeX Font Info:    Trying to load font information for OT1+iwonalm on input li
-ne 282.
+ne 284.
 (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonalm.fd
 File: ot1iwonalm.fd 2005/10/05 v1.2 font definition file for OT1/iwonalm (MW)
 )
 LaTeX Font Info:    Trying to load font information for OML+iwonal on input lin
-e 282.
+e 284.
 
 (C:\Program Files\MiKTeX\tex/latex/iwona\omliwonal.fd
 File: omliwonal.fd 2008/07/22 v0.995 font definition file for OML/iwonal (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMS+iwonal on input lin
-e 282.
+e 284.
 
 (C:\Program Files\MiKTeX\tex/latex/iwona\omsiwonal.fd
 File: omsiwonal.fd 2008/07/22 v0.995 font definition file for OMS/iwonal (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMX+iwonal on input lin
-e 282.
+e 284.
 
 (C:\Program Files\MiKTeX\tex/latex/iwona\omxiwonal.fd
 File: omxiwonal.fd 2008/07/22 v0.995 font definition file for OMX/iwonal (MW)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 282
+LaTeX Font Info:    Trying to load font information for U+msa on input line 284
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 282
+LaTeX Font Info:    Trying to load font information for U+msb on input line 284
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 28
-2.
+4.
 
 (C:\Program Files\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
-82.
+84.
 
 (C:\Program Files\MiKTeX\tex/latex/stmaryrd\ustmry.fd) [1
 
@@ -1854,59 +1853,59 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 ===== Image 'external/fig_WavesInDuctPiece0' is up-to-date. ======
 ) [7 <./external/fig_HP_LEM0.pdf> <./external/fig_CircEquivTAC0.pdf>])
-(DispositifExpe.tex [8 <./external/fig_WavesInDuctPiece0.pdf>]
-Chapitre II.
-[9
+(DispositifExpe.tex [8 <./external/fig_WavesInDuctPiece0.pdf>] [9] [10
 
-] (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
+]
+Chapitre II.
+[11] (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
 ===== Image 'external/fig_SchemaGeneralTACOT0' is up-to-date. ======
 )
 LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
 e 28.
  (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
 File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
-) [10
+) [12
 
- <./external/fig_SchemaGeneralTACOT0.pdf>] (../fig/fig_dKdV/tex/fig_dKdV.tex
+ <./external/fig_SchemaGeneralTACOT0.pdf>]
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 47.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 48.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 49.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 50.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 52.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 53.
+ (../fig/fig_dKdV/tex/fig_dKdV.tex
 ===== Image 'external/fig_dKdV0' is up-to-date. ======
-)
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 58.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 59.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 60.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 61.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 63.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 64.
- [11 <./external/fig_dKdV0.pdf>]
+) [13{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
 )
-<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1309, 126.42508
+<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1290, 126.42508
 pt x 94.84251pt>
 File: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg Graphic file (
 type jpg)
 <use ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped
-.jpg  used on input line 136.
+.jpg  used on input line 139.
 (pdftex.def)             Requested size: 227.3381pt x 170.54994pt.
-<../fig/fig_SystemeAccroche/Palans.jpg, id=1310, 4047.12pt x 3035.34pt>
+<../fig/fig_SystemeAccroche/Palans.jpg, id=1291, 4047.12pt x 3035.34pt>
 File: ../fig/fig_SystemeAccroche/Palans.jpg Graphic file (type jpg)
 <use ../fig/fig_SystemeAccroche/Palans.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Palans.jpg  used on input l
-ine 142.
+ine 145.
 (pdftex.def)             Requested size: 227.3381pt x 170.48735pt.
- [12{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+ [14 <./external/fig_dKdV0.pdf>]
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 ===== Image 'external/_main_-figure0' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
@@ -1915,50 +1914,46 @@ ine 142.
 ===== Image 'external/_main_-figure2' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex
 ===== Image 'external/_main_-figure3' is up-to-date. ======
-) [13 <./external/fig_TCdansNoyau0.pdf> <../fig/fig_SystemeAccroche/Machine_hor
-izBetter_cropped.jpg> <../fig/fig_SystemeAccroche/Palans.jpg>] [14 <./external/
+) [15 <./external/fig_TCdansNoyau0.pdf> <../fig/fig_SystemeAccroche/Machine_hor
+izBetter_cropped.jpg> <../fig/fig_SystemeAccroche/Palans.jpg>] [16 <./external/
 _main_-figure0.pdf> <./external/_main_-figure1.pdf> <./external/_main_-figure2.
 pdf> <./external/_main_-figure3.pdf>]
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 221.
+            Default family used instead on input line 224.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 221.
- [15]
+            Default family used instead on input line 224.
+ [17]
 (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
 ===== Image 'external/fig_SimuConvNat2D0' is up-to-date. ======
-) [16] [17 <./external/fig_SimuConvNat2D0.pdf>]
+) [18]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
-95.
-
-(C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
+98.
+ (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-<../fig/fig_ConvNatComsol/Geometry.png, id=1474, 363.60844pt x 478.03593pt>
+) [19 <./external/fig_SimuConvNat2D0.pdf>]
+<../fig/fig_ConvNatComsol/Geometry.png, id=1495, 363.60844pt x 478.03593pt>
 File: ../fig/fig_ConvNatComsol/Geometry.png Graphic file (type png)
 <use ../fig/fig_ConvNatComsol/Geometry.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Geometry.png  used on input l
-ine 334.
+ine 337.
 (pdftex.def)             Requested size: 241.84842pt x 317.96284pt.
- [18]
+ [20]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
 ====
-)
-Underfull \vbox (badness 4713) has occurred while \output is active []
-
- [19 <../fig/fig_ConvNatComsol/Geometry.png>] [20 <./external/fig_Schema_FluxTh
-ermiquesNoyau_Gaelle0.pdf>] [21]) (EtudeExperimentale.tex [22]
+) [21 <../fig/fig_ConvNatComsol/Geometry.png>] [22 <./external/fig_Schema_FluxT
+hermiquesNoyau_Gaelle0.pdf>] [23]) (EtudeExperimentale.tex [24]
 Chapitre III.
-[23
+[25
 
-] [24
+] [26
 
 ] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_H1H20' is up-to-date. ======
-) [25 <./external/fig_HeatOnly_CHXout_H1H20.pdf>]
+) [27 <./external/fig_HeatOnly_CHXout_H1H20.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_H1H2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Mid.tex
@@ -1967,22 +1962,22 @@ Chapitre III.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 84.
- [26 <./external/fig_Acou_CHXout_H1H2_Low0.pdf>]
+ [28 <./external/fig_Acou_CHXout_H1H2_Low0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_High.tex
 ===== Image 'external/fig_Acou_CHXout_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_V1V20' is up-to-date. ======
-) [27 <./external/fig_Acou_CHXout_H1H2_Mid0.pdf>]
+) [29 <./external/fig_Acou_CHXout_H1H2_Mid0.pdf>]
 Underfull \vbox (badness 3108) has occurred while \output is active []
 
- [28 <./external/fig_Acou_CHXout_H1H2_High0.pdf> <./external/fig_HeatOnly_CHXou
+ [30 <./external/fig_Acou_CHXout_H1H2_High0.pdf> <./external/fig_HeatOnly_CHXou
 t_V1V20.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_High.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_High0' is up-to-date. ======
-) [29 <./external/fig_Acou_CHXout_V1V2_Low0.pdf>]
+) [31 <./external/fig_Acou_CHXout_V1V2_Low0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 152.
@@ -2001,7 +1996,7 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 152.
- [30 <./external/fig_Acou_CHXout_V1V2_Mid0.pdf> <./external/fig_Acou_CHXout_V1V
+ [32 <./external/fig_Acou_CHXout_V1V2_Mid0.pdf> <./external/fig_Acou_CHXout_V1V
 2_High0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Low0' is up-to-date. ======
@@ -2032,7 +2027,7 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 189.
- [31 <./external/fig_Acou_CHXin_H1H2_Low0.pdf>]
+ [33 <./external/fig_Acou_CHXin_H1H2_Low0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Mid0' is up-to-date. ======
 )
@@ -2045,7 +2040,7 @@ LaTeX Info: Symbol \textminus not provided by
 
 Underfull \vbox (badness 1360) has occurred while \output is active []
 
- [32 <./external/fig_Acou_Regmid_H1H2_Low0.pdf> <./external/fig_Acou_AHXin_H1H2
+ [34 <./external/fig_Acou_Regmid_H1H2_Low0.pdf> <./external/fig_Acou_AHXin_H1H2
 _Low0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid.tex
 ===== Image 'external/fig_Acou_Regmid_H1H2_Mid0' is up-to-date. ======
@@ -2053,7 +2048,7 @@ _Low0.pdf>]
 ===== Image 'external/fig_Acou_AHXin_H1H2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_High0' is up-to-date. ======
-) [33 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H
+) [35 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H
 2_Mid0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High.tex
 ===== Image 'external/fig_Acou_Regmid_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_High.tex
@@ -2076,37 +2071,37 @@ _Low0.pdf>]
 ===== Image 'external/fig_Acou_Regmid_V1V2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_High.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_High0' is up-to-date. ======
-) [34 <./external/fig_Acou_AHXin_H1H2_Mid0.pdf> <./external/fig_Acou_CHXin_H1H2
-_High0.pdf>] [35 <./external/fig_Acou_Regmid_H1H2_High0.pdf> <./external/fig_Ac
-ou_AHXin_H1H2_High0.pdf>]) (EtudeTheoriqueSimus.tex [36 <./external/fig_Acou_CH
-Xin_V1V2_Low0.pdf> <./external/fig_Acou_Regmid_V1V2_Low0.pdf>] [37 <./external/
+) [36 <./external/fig_Acou_AHXin_H1H2_Mid0.pdf> <./external/fig_Acou_CHXin_H1H2
+_High0.pdf>] [37 <./external/fig_Acou_Regmid_H1H2_High0.pdf> <./external/fig_Ac
+ou_AHXin_H1H2_High0.pdf>]) (EtudeTheoriqueSimus.tex [38 <./external/fig_Acou_CH
+Xin_V1V2_Low0.pdf> <./external/fig_Acou_Regmid_V1V2_Low0.pdf>] [39 <./external/
 fig_Acou_AHXin_V1V2_Low0.pdf> <./external/fig_Acou_CHXin_V1V2_Mid0.pdf>]
-[38 <./external/fig_Acou_Regmid_V1V2_Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_
-Mid0.pdf>] [39 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_
-Regmid_V1V2_High0.pdf>] [40 <./external/fig_Acou_AHXin_V1V2_High0.pdf>]
+[40 <./external/fig_Acou_Regmid_V1V2_Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_
+Mid0.pdf>] [41 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_
+Regmid_V1V2_High0.pdf>] [42 <./external/fig_Acou_AHXin_V1V2_High0.pdf>]
 Chapitre IV.
-[41
+[43
 
-]) (Conclusion.tex [42
+]) (Conclusion.tex [44
 
 ]
 Chapitre V.
-[43
+[45
 
-]) (Perspectives.tex [44
+]) (Perspectives.tex [46
 
 ]
 Chapitre VI.
-[45
+[47
 
 ]
-<../fig/fig_ActiveControl/ADAU1701.png, id=2509, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=2526, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 42.
 (pdftex.def)             Requested size: 179.849pt x 170.71652pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=2510, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=2527, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
@@ -2120,28 +2115,27 @@ Overfull \hbox (6.60042pt too wide) in paragraph at lines 48--49
 LaTeX Info: Symbol \textmu not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 56.
-) [46
+) [48
 
  <../fig/fig_ActiveControl/ADAU1701.png> <../fig/fig_ActiveControl/Teensy41.png
 >] (IndexNotations.tex
 Annexe A.
-[1
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 ]
-Overfull \hbox (8.80663pt too wide) in paragraph at lines 43--63
- [] 
- []
+[2]) (AHX.tex [3] [4
 
-) (AHX.tex [2]
+]
 Annexe B.
 (../fig/fig_AHXSchema/fig_AHXSchema.tex
 ===== Image 'external/fig_AHXSchema0' is up-to-date. ======
 )
 Underfull \vbox (badness 2181) has occurred while \output is active []
 
- [3
-
- <./external/fig_AHXSchema0.pdf>]
+ [5 <./external/fig_AHXSchema0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 33.
@@ -2153,10 +2147,10 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 33.
  (../fig/fig_AHXCalib/tex/fig_AHXCalib.tex
 ===== Image 'external/fig_AHXCalib0' is up-to-date. ======
-) [4 <./external/fig_AHXCalib0.pdf>]
+) [6 <./external/fig_AHXCalib0.pdf>]
 (../fig/fig_IncertitudeDebitEau/tex/IncertitudeDebitEau.tex
 ===== Image 'external/fig_IncertitudeDebitEau0' is up-to-date. ======
-)) (RecapCondExpe.tex [5 <./external/fig_IncertitudeDebitEau0.pdf>] [6
+)) (RecapCondExpe.tex [7 <./external/fig_IncertitudeDebitEau0.pdf>] [8
 
 ]
 Annexe C.
@@ -2211,17 +2205,17 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 27.
-) (FabricNoyauTA.tex [7] [8
-
-]
-Annexe D.
-
+) (FabricNoyauTA.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2 \mylocaltoc
-                [9]) [10
+l.1 \chapter
+            {Fabrication d'un noyau thermoacoustique} [9] [10
+
+]
+Annexe D.
+[11]) [12
 
 ] [1
 
@@ -2238,9 +2232,9 @@ Package logreq Info: Writing requests to '_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72044 strings out of 474435
- 1811500 string characters out of 5751739
- 2938061 words of memory out of 5000000
+ 72048 strings out of 474435
+ 1811526 string characters out of 5751739
+ 2938064 words of memory out of 5000000
  92851 multiletter control sequences out of 15000+600000
  680937 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2255,9 +2249,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-sup
 er/sftt1200.pfb>
-Output written on _main_.pdf (71 pages, 6775523 bytes).
+Output written on _main_.pdf (75 pages, 6784165 bytes).
 PDF statistics:
- 2858 PDF objects out of 2984 (max. 8388607)
- 323 named destinations out of 1000 (max. 500000)
+ 2887 PDF objects out of 2984 (max. 8388607)
+ 327 named destinations out of 1000 (max. 500000)
  1066 words of extra memory for PDF output out of 10000 (max. 10000000)
 

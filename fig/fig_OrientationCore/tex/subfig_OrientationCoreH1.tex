@@ -13,8 +13,8 @@
 %    \def\CoreY{.9*\LY};
 %    
 
-	\def\L{2};
-	\def\R{6};
+	\def\L{1.5};
+	\def\R{5};
 	\def\HX{.25};
 	\def\decalage{\R/2-\L/2};
 	
@@ -28,7 +28,11 @@
 }}
 
 %		\draw (n01.east) node [right]{0 $\rightarrow$ \begin{tabular}{l}Source\\acoustique\\principale\end{tabular}};
-		\draw ($(n01)+(1,0)$) node {0};
-		\draw (n30.north west) node [above]{AHX};
-		\draw (n10.north east) node [above]{CHX};
+		\draw ($(n01)+(1,0)$) node(RIX) {0} node[anchor=west]{\begin{tabular}{rl}
+		& Source\\
+		$\rightarrow$ & acoustique\\
+		& principale
+		\end{tabular}};
+		\draw (n30.north west) node [above]{Ambiant};
+		\draw (n10.north east) node [above]{Froid};
 \end{tikzpicture}

@@ -59,6 +59,18 @@
 \usepackage{multicol}
 \usepackage{array}
 	\setlength{\extrarowheight}{5pt}
+	\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	
+%\newcommand{\mycite}[4]{
+%	\begin{flushright}
+%	\begin{tabular}{R{#4}L{#4}}
+%		\multicolumn{2}{r}{#1}\\
+%		\textit{-- #2} & \textbf{#3}
+%	\end{tabular}
+%\end{flushright}
+%}
 \usepackage{float}
 % -----------------------------------------------------
 \usepackage[dvipsnames]{xcolor}
@@ -286,7 +298,7 @@ Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
 \maketitle
 \cleardoublepage
 
-%\input{Citations}
+\input{Citations}
 
 \input{Remerciements}
 %\newpage
@@ -301,12 +313,13 @@ Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
 \listoftables\label{chap:listoftables}\addcontentsline{toc}{chapter}{\nameref{chap:listoftables}}
 %\newpage
 }
+
+%---------------------------------------------------------------------%
+% BODY
+%-----------------------------------------------------------------
 \cleardoublepage
 \setcounter{page}{1}
 \renewcommand{\thepage}{\arabic{page}}
-%---------------------------------------------------------------------%
-% BODY
-%---------------------------------------------------------------------%
 \input{Introduction}
 %\setcounter{page}{1}
 %\renewcommand{\thepage}{\arabic{page}}

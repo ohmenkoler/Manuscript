@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  13 NOV 2024 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  15 NOV 2024 11:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1861,15 +1861,10 @@ Chapitre II.
 ===== Image 'external/fig_SchemaGeneralTACOT0' is up-to-date. ======
 )
 LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
-e 28.
+e 29.
  (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
 File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
-) [12
-
- <./external/fig_SchemaGeneralTACOT0.pdf>]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 47.
+)
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 48.
@@ -1881,31 +1876,38 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 50.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 52.
+            Default family used instead on input line 51.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 53.
- (../fig/fig_dKdV/tex/fig_dKdV.tex
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 54.
+
+(../fig/fig_dKdV/tex/fig_dKdV.tex
 ===== Image 'external/fig_dKdV0' is up-to-date. ======
-) [13{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+) [12
+
+] [13{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./ext
+ernal/fig_SchemaGeneralTACOT0.pdf>]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
-)
-<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1297, 126.42508
+) [14 <./external/fig_dKdV0.pdf>]
+<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1337, 126.42508
 pt x 94.84251pt>
 File: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg Graphic file (
 type jpg)
 <use ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped
-.jpg  used on input line 139.
+.jpg  used on input line 140.
 (pdftex.def)             Requested size: 227.3381pt x 170.54994pt.
-<../fig/fig_SystemeAccroche/Palans.jpg, id=1298, 4047.12pt x 3035.34pt>
+<../fig/fig_SystemeAccroche/Palans.jpg, id=1338, 4047.12pt x 3035.34pt>
 File: ../fig/fig_SystemeAccroche/Palans.jpg Graphic file (type jpg)
 <use ../fig/fig_SystemeAccroche/Palans.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Palans.jpg  used on input l
-ine 145.
+ine 146.
 (pdftex.def)             Requested size: 227.3381pt x 170.48735pt.
- [14 <./external/fig_dKdV0.pdf>]
+
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 ===== Image 'external/_main_-figure0' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
@@ -1927,25 +1929,26 @@ LaTeX Info: Symbol \textminus not provided by
  [17]
 (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
 ===== Image 'external/fig_SimuConvNat2D0' is up-to-date. ======
-) [18]
+) [18] [19 <./external/fig_SimuConvNat2D0.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
-02.
- (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
+03.
+
+(C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [19 <./external/fig_SimuConvNat2D0.pdf>]
-<../fig/fig_ConvNatComsol/Geometry.png, id=1504, 363.60844pt x 478.03593pt>
+) [20]
+<../fig/fig_ConvNatComsol/Geometry.png, id=1519, 363.60844pt x 478.03593pt>
 File: ../fig/fig_ConvNatComsol/Geometry.png Graphic file (type png)
 <use ../fig/fig_ConvNatComsol/Geometry.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Geometry.png  used on input l
-ine 349.
+ine 350.
 (pdftex.def)             Requested size: 241.84842pt x 317.96284pt.
- [20]
+ [21 <../fig/fig_ConvNatComsol/Geometry.png>]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
 ====
-) [21 <../fig/fig_ConvNatComsol/Geometry.png>] [22 <./external/fig_Schema_FluxT
-hermiquesNoyau_Gaelle0.pdf>] [23]) (EtudeExperimentale.tex [24]
+) [22 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>] [23])
+(EtudeExperimentale.tex [24]
 Chapitre III.
 [25
 
@@ -2089,13 +2092,13 @@ Chapitre VI.
 [47
 
 ]
-<../fig/fig_ActiveControl/ADAU1701.png, id=2536, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=2542, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 42.
 (pdftex.def)             Requested size: 149.87643pt x 142.26378pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=2537, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=2543, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
@@ -2208,16 +2211,16 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 8751475C571EF03F16E73D91736441AC;17570.
+(rerunfilecheck)             Checksum: DBBB3F62CB6164AEE4B4F94328ECC2AA;17685.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72070 strings out of 474435
- 1811945 string characters out of 5751739
- 2938105 words of memory out of 5000000
- 92867 multiletter control sequences out of 15000+600000
+ 72073 strings out of 474435
+ 1811990 string characters out of 5751739
+ 2938194 words of memory out of 5000000
+ 92869 multiletter control sequences out of 15000+600000
  687197 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,90p,4556b,3220s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2231,9 +2234,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-sup
 er/sftt1200.pfb>
-Output written on _main_.pdf (77 pages, 6786004 bytes).
+Output written on _main_.pdf (77 pages, 6787081 bytes).
 PDF statistics:
- 2896 PDF objects out of 2984 (max. 8388607)
- 330 named destinations out of 1000 (max. 500000)
- 1066 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2903 PDF objects out of 2984 (max. 8388607)
+ 331 named destinations out of 1000 (max. 500000)
+ 1074 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -39,6 +39,8 @@
 \renewcommand{\thesection}{\thechapter.\arabic{section}}
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 
+
+\newcommand{\echaf}[1]{\textcolor{red}{#1}}
 %---------------------------------------------------------------------%
 % PACKAGES
 %---------------------------------------------------------------------
@@ -58,10 +60,14 @@
 \usepackage{wrapfig}
 \usepackage{multicol}
 \usepackage{array}
-	\setlength{\extrarowheight}{5pt}
 	\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 	\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 	\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	\setlength{\extrarowheight}{5pt}
+\usepackage{arydshln}
+	\setlength\dashlinedash{1pt}
+	\setlength\dashlinegap{1.5pt}
+%	\setlength\arrayrulewidth{1cm}
 	
 %\newcommand{\mycite}[4]{
 %	\begin{flushright}
@@ -363,6 +369,8 @@ Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
 \input{IndexNotations}
 
 \input{AHX}
+
+\input{ParamGaz}
 
 \input{RecapCondExpe}
 

@@ -36,13 +36,13 @@
 %		\draw[ultra thick] (0,0) -- ++(0,\l);
 %		
 %		
+		% ----------- Gravity direction
+		\draw[->,green!50!black] (0,2*\l/3) -- ++(0,-\l/3) node[midway,fill=white]{$\mathbf g$};
+	
 		% ----------- Flow direction
-		\foreach \xi in {1,2,3}{
-		\node (bottom\xi) at ({\xi*\L/3-\L/6-\L/2},\l/8){};
-		\node (top\xi) at ({\xi*\L/3-\L/6-\L/2},{7*\l/8}){};
-		\draw[->,dashed,gray,very thick] (bottom\xi.north west) to[out=110,in=-110] (top\xi.south west);
-		\draw[->,dashed,gray,very thick] (top\xi.south east) to[out=-70,in=70] (bottom\xi.north east);
-		}
+		\node (B) at (0,\l/8){};
+		\draw[->,dashed,gray,very thick] (B.north west) -- ++(0,3*\l/8) arc (0:110:\L/5);
+		\draw[->,dashed,gray,very thick] (B.north east) -- ++(0,3*\l/8) arc (180:70:\L/5);
 		
 		% ----------- Cavity
 		\fill[pattern=north east lines,pattern color=MatlabOrange] (-\L/2,0) rectangle ++(\L,-\e) node[right,color=MatlabOrange]{$T_{c}$};
@@ -50,9 +50,7 @@
 		\draw[ultra thick] (-\L/2,0) rectangle ++(\L,\l);% node(O2)[below left]{$T_{\infty}$};
 		\draw (\L/2,3*\l/4) node[left]{$T_{\infty}$};
 		
-		% ----------- Gravity direction
-		\draw[->,green!50!black] (0,2*\l/3) -- ++(0,-\l/3) node[midway,fill=white]{$\mathbf g$};
-	
+		
 %		\draw[<->] (-\L/2-.2,0) -- ++(0,\l) node[midway,left]{$L_c^{(2)}$};	
 
 		\draw (0,\ylab) node[]{\textbf{(b)}};

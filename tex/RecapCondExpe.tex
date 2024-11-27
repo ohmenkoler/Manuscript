@@ -4,27 +4,31 @@ Les conditions expérimentales du chapitre~\ref{chap:EtudeExpe_ConvNat} sont ré
 
 \begin{table}[!ht]
 \centering
-	\begin{tabular}{ llll llll llll ll}
+	\begin{tabular}{ llll llll llll lc}
 	\hline
-	$\xi_1$ & $\xi_2$ & $\varphi_{2-1}$  & $DR$ & $p$ & $|Z_{ac}^{(1)}|$ & $|Z_{ac}^{(2)}|$& $\angle Z_{ac}^{(1)}$  & $\angle Z_{ac}^{(2)}$ & $T_a$  & $T_c$ & $\dot Q_a$ & $\dot Q_c$  & \multirow{2}{*}{Orientation} \\%
+	$\xi_1$ & $\xi_2$  & $DR$ & $p$ & $|Z_{ac}^{(1)}|$ & $|Z_{ac}^{(2)}|$& $\angle Z_{ac}^{(1)}$  & $\angle Z_{ac}^{(2)}$ & $T_a$  & $T_c$ & $\dot Q_a$ & $\dot Q_c$  & \multirow{2}{*}{Orientation} \\%
 	
-	\multicolumn{2}{c}{[\unit{\milli\meter}]} & [\unit{\degree}] & [\unit{\percent}] & [\unit{\pascal}] & \multicolumn{2}{c}{[\unit{\pascal\second\per\meter}]} & \multicolumn{2}{c}{[\unit{\degree}]}  & \multicolumn{2}{c}{[\unit{\degreeCelsius}]} &\multicolumn{2}{c}{[\unit{\watt}]} &  \\\hline\hline
-	 &  & \num{-60} & \num{0} & && & & &  & \num{} & & & \multirow{4}{*}{`\texttt{H1}'} \\
-	 &  & \num{-60} & \num{.4} & && & & &  & \num{} & & &  \\
-	 &  & \num{-60} & \num{2} & & &&&  &  & \num{} & & & \\
-	 &  & \num{-60} & \num{3.4} & & & &&&  & \num{} & & &  \\	 
-	 &  & \num{-60} & \num{0} & && & & &  & \num{} & & & \multirow{4}{*}{`\texttt{H2}'} \\
-	 &  & \num{-60} & \num{.4} & & & &&& & \num{} & & & \\
-	 &  & \num{-60} & \num{2} & & &&& & & \num{} & & & \\
-	 &  & \num{-60} & \num{3.4} & & & &&& & \num{} & & & \\
-	 &  & \num{-60} & \num{0} & && & & &  & \num{} & & & \multirow{4}{*}{`\texttt{V1}'} \\
-	 &  & \num{-60} & \num{.4} & & & & &&& \num{} & & & \\
-	 &  & \num{-60} & \num{2} &  & & &&& & \num{} & & & \\
-	 &  & \num{-60} & \num{3.5} &  & & &&& & \num{} & & & \\
-	 &  & \num{-60} & \num{0} & && & & &  & \num{} & & & \multirow{4}{*}{`\texttt{V2}'} \\
-	 &  & \num{-60} & \num{.4} & & && & && \num{} & & & \\
-	 &  & \num{-60} & \num{2} & & & &&& & \num{} & & & \\
-	 &  & \num{-60} & \num{3.5} &  & & & & \num{} & & & \\
+	\multicolumn{2}{c}{[\unit{\milli\meter}]} & [\unit{\percent}] & [\unit{\pascal}] & \multicolumn{2}{c}{[\unit{\pascal\second\per\meter}]} & \multicolumn{2}{c}{[\unit{\degree}]}  & \multicolumn{2}{c}{[\unit{\degreeCelsius}]} &\multicolumn{2}{c}{[\unit{\watt}]} &  \\\hline\hline
+	
+	0 & 0  &  \num{0} & 0 & -- & -- & -- & -- & \echaf{?} & \echaf{?} & \echaf{?} & 40 & \multirow{4}{*}{`\texttt{H1}'} \\
+	\echaf{?} & \echaf{?} &  \num{.4} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & 0 &  \\
+	\echaf{?} & \echaf{?} &  \num{2} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & 0 & \\
+	\echaf{?} & \echaf{?} &  \num{3.4} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & \echaf{?} & 0 &  \\
+	 \hdashline
+	0 & 0 &  \num{0} & 0 & -- & -- & -- & -- &  &  &  & 40 & \multirow{4}{*}{`\texttt{H2}'} \\
+	 &  &  \num{.4} & & & &&& & \num{} & & 0 & \\
+	 &  &  \num{2} & & &&& & & \num{} & & 0 & \\
+	 &  &  \num{3.4} & & & &&& & \num{} & & 0 & \\
+	 \hdashline
+	0 & 0 &  \num{0} & 0 & -- & -- & -- & -- &  &  &  & 40 & \multirow{4}{*}{`\texttt{V1}'} \\
+	 &  &  \num{.4} & & & & &&& \num{} & & 0 & \\
+	 &  &  \num{2} &  & & &&& & \num{} & & 0 & \\
+	 &  &  \num{3.5} &  & & &&& & \num{} & & 0 & \\
+	 \hdashline
+	0 & 0 &  \num{0} & 0 & -- & -- & -- & -- &  &  &  & 40 & \multirow{4}{*}{`\texttt{V2}'} \\
+	 &  &  \num{.4} & & && & && \num{} & & 0 & \\
+	 &  &  \num{2} & & & &&& & \num{} & & 0 & \\
+	 &  &  \num{3.5} &  & & & & \num{} & & & & 0 & \\
 	 \hline
 	
 	\end{tabular}

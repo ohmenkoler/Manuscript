@@ -1678,6 +1678,68 @@
       \endverb
       \keyw{Engine,Thermoacoustics}
     \endentry
+    \entry{Electroac_Grains}{online}{}
+      \name{author}{8}{}{%
+        {{hash=8ebb393a0892b583492fa0aff9d50c7e}{%
+           family={Bavu},
+           familyi={B\bibinitperiod},
+           given={Éric},
+           giveni={É\bibinitperiod}}}%
+        {{hash=ebb7b8fbf202e7899f6dd37ef63a8428}{%
+           family={Lissek},
+           familyi={L\bibinitperiod},
+           given={Hervé},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ef81d5281756dbf0df103abc79a91b4b}{%
+           family={Melon},
+           familyi={M\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=556b71ea9085d3c8ee14052aa45a732e}{%
+           family={Lotton},
+           familyi={L\bibinitperiod},
+           given={Pierrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=20e0e30be9fad4fc4d6d60d24453e1a0}{%
+           family={Gazengel},
+           familyi={G\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=38bdc59b55d514de8d9130cb67e702d4}{%
+           family={Durand},
+           familyi={D\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod}}}%
+        {{hash=11afda95f22b50863357bca6029faa0b}{%
+           family={Herzog},
+           familyi={H\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f9850c71f3219b8c5cece876acf3b56d}{%
+           family={Penelet},
+           familyi={P\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb335f5d98dd6d2d87fd2b21a08339f6}
+      \strng{fullhash}{bd2788f1ef4adefb43197215ffe3ac15}
+      \strng{bibnamehash}{bb335f5d98dd6d2d87fd2b21a08339f6}
+      \strng{authorbibnamehash}{bb335f5d98dd6d2d87fd2b21a08339f6}
+      \strng{authornamehash}{bb335f5d98dd6d2d87fd2b21a08339f6}
+      \strng{authorfullhash}{bd2788f1ef4adefb43197215ffe3ac15}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Électroacoustique}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://electroacoustique.univ-lemans.fr/
+      \endverb
+      \verb{url}
+      \verb https://electroacoustique.univ-lemans.fr/
+      \endverb
+    \endentry
     \entry{zhang_novel_2011}{article}{}
       \name{author}{4}{}{%
         {{hash=848fa0113dff92ede4a4b46860341d44}{%
@@ -1707,8 +1769,8 @@
       \strng{authorbibnamehash}{ce6e1184923d6b93180a2a7a421dbcf0}
       \strng{authornamehash}{ce6e1184923d6b93180a2a7a421dbcf0}
       \strng{authorfullhash}{ac41307915589953900e075dac00a736}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Due to natural convection, the cooling performance of the pulse tube cooler ({PTC}) greatly degrades if the pulse tube cold-head is placed upward. In our previous study, it was found that the natural convection in the pulse tube can be well suppressed by inserting a certain number of circular screens. In this paper, a further detailed investigation into this suppression method are made, including the effect of number and material of screens, input acoustic power, and some other factors on suppressing natural convection at different inclination angles h in the range of 0–180°. In our experiment of a single stage inline type {PTC} driven by a linear compressor, the orientation-dependence is considerably weakened with 6-layer copper screens in the pulse tube, in the cold temperature range of 40–80 K. Moreover, the cooling performance deterioration at h = 0° induced by the inserted screens can be kept in an acceptable range. This novel suppression of natural convection greatly improves adaptability of pulse tube cryocoolers’ application.}
@@ -1742,8 +1804,8 @@
       \endverb
     \endentry
     \entry{ANR_thermo-acoustic_2019}{online}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{abstract}{The goal of the project {TACOT} is to demonstrate the applicability of thermoacoustics for refrigeration in the automotive field. It brings together Groupe {PSA} and four {CNRS} research laboratories (Institut P’, {LAUM}, {LIMSI}, {LMFA}), and is organized into three challenges. The first challenge consists in designing, manufacturing and assessing the performance of a compact thermoacoustic device with one thermoacoustic core. The originality of the device comes from the use of two acoustic sources that yields its compactness. The device will be designed using available simulation tools that are based on the linear uni-dimensional theory of thermoacoustics and that can predict a steady state behavior of the device for one set of entry conditions. Due to the limiting hypotheses of these tools, it is expected that the performance of the prototype will be lower than the ones calculated by the model. It is therefore necessary to limit this discrepancy by assessing the performance of the device in order to better quantify the complexity of flow movement and heat transfer encountered in such a compact device. Simultaneous fundamental studies are proposed in a second challenge to improve the understanding and description of the phenomena that limit the efficiency of the device. Both experimental and numerical studies will be led to investigate about - acoustical characteristics of thermoacoustic core (regenerator plus heat exchangers) of complex shape, especially at high acoustic levels and with temperature gradient, - end effects and matching conditions between the different elements of the device: Source and cavity, regenerator and heat exchangers, heat exchangers and cavity ; these effects will be investigated experimentally both from a fluid dynamics and from a heat transfer point a view, - phenomenological analysis and numerical simulation of complex flows that can appear as consequences of high amplitudes, complex geometries and thermoacoustic heat pumping in each element of the compact device. In the third challenge the evolution towards a performant compact dual thermoacoustic core heat-pump device will be investigated. The aim of this last challenge is to bring thermoacoustic compact devices to a competitive positioning as compared to in-use technologies. For this purpose, the results of challenges 1 and 2 will be used to propose an evolution of the thermoacoustic core towards higher performance. Also studies on a new architecture of acoustic source will be initiated. This new source architecture should allow to use two thermoacoustic cores, thus increasing the heat pumped from the cold source. These three challenges should lead to the proposal of a complete dual core refrigerator that could be a viable substitute for traditional air conditioning systems in the automotive industry both in terms of size and performance.}
       \field{langid}{english}
@@ -1763,6 +1825,83 @@
       \verb https://anr.fr/Project-ANR-17-CE06-0007
       \endverb
       \keyw{Refrigerator,Two sources,Agence nationale de la recherche,Presentation,Project definition}
+    \endentry
+    \entry{swift_thermoacoustics_2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=39f0fe6516b7ebb5067eaf52601323bc}{%
+           family={Swift},
+           familyi={S\bibinitperiod},
+           given={Gregory\bibnamedelima W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=798426fee458f30e7b93d09af907d678}{%
+           family={Wollan},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{38e432234fd475b72d947e5e2ab383ef}
+      \strng{fullhash}{b40f290275e15a9a2cdd596d6af55d91}
+      \strng{bibnamehash}{b40f290275e15a9a2cdd596d6af55d91}
+      \strng{authorbibnamehash}{b40f290275e15a9a2cdd596d6af55d91}
+      \strng{authornamehash}{38e432234fd475b72d947e5e2ab383ef}
+      \strng{authorfullhash}{b40f290275e15a9a2cdd596d6af55d91}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GW Swift and JJ Wollan, GasTIPS}
+      \field{number}{4}
+      \field{title}{Thermoacoustics for liquefaction of natural gas}
+      \field{volume}{8}
+      \field{year}{2002}
+      \field{pages}{21\bibrangedash 26}
+      \range{pages}{6}
+    \endentry
+    \entry{wollan_development_2002}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=798426fee458f30e7b93d09af907d678}{%
+           family={Wollan},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=39f0fe6516b7ebb5067eaf52601323bc}{%
+           family={Swift},
+           familyi={S\bibinitperiod},
+           given={Gregory\bibnamedelima W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=3155fd673e2672d37891ca73163882be}{%
+           family={Backhaus},
+           familyi={B\bibinitperiod},
+           given={Scott\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=62a2e0ffcecf3fd64af438b35e4066f6}{%
+           family={Gardner},
+           familyi={G\bibinitperiod},
+           given={David\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New Orleans, LA}%
+      }
+      \strng{namehash}{73559064f148bee8defea33d6af27ecf}
+      \strng{fullhash}{11c2245e432a907cd85b59f75ff4617a}
+      \strng{bibnamehash}{73559064f148bee8defea33d6af27ecf}
+      \strng{authorbibnamehash}{73559064f148bee8defea33d6af27ecf}
+      \strng{authornamehash}{73559064f148bee8defea33d6af27ecf}
+      \strng{authorfullhash}{11c2245e432a907cd85b59f75ff4617a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eventtitle}{AIChE New Orleans Meeting}
+      \field{title}{Development of a thermoacoustic natural gas liquefier.}
+      \field{year}{2002}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:109674106
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:109674106
+      \endverb
     \endentry
     \entry{belleoud_etude_2016}{thesis}{}
       \name{author}{1}{}{%
@@ -1923,72 +2062,6 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931009003135
       \endverb
       \keyw{Thermoacoustics,Refrigerator}
-    \endentry
-    \entry{ozisik_heat_1993}{book}{}
-      \name{author}{1}{}{%
-        {{hash=ad2133249adb0f8cb16160f77553836f}{%
-           family={Özısık},
-           familyi={Ö\bibinitperiod},
-           given={M.\bibnamedelimi Necati},
-           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York}%
-      }
-      \list{publisher}{1}{%
-        {J. Wiley \& Sons, Inc}%
-      }
-      \strng{namehash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{fullhash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{bibnamehash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{authorbibnamehash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{authornamehash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{authorfullhash}{ad2133249adb0f8cb16160f77553836f}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2nd ed}
-      \field{isbn}{978-0-471-53256-9}
-      \field{title}{Heat conduction}
-      \field{year}{1993}
-      \field{dateera}{ce}
-      \verb{file}
-      \verb Özısik - 1993 - Heat conduction.pdf:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\EYT83H6K\\Özıs̜ık - 1993 - Heat conduction.pdf:application/pdf
-      \endverb
-    \endentry
-    \entry{ozisik_integraltransform_heat_1993}{inbook}{}
-      \name{author}{1}{}{%
-        {{hash=9e98f4f142d6a590b8aa0c5dfab74afd}{%
-           family={Özisik},
-           familyi={Ö\bibinitperiod},
-           given={M.\bibnamedelimi Necati},
-           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {New York}%
-      }
-      \list{publisher}{1}{%
-        {J. Wiley \& Sons, Inc}%
-      }
-      \strng{namehash}{9e98f4f142d6a590b8aa0c5dfab74afd}
-      \strng{fullhash}{9e98f4f142d6a590b8aa0c5dfab74afd}
-      \strng{bibnamehash}{9e98f4f142d6a590b8aa0c5dfab74afd}
-      \strng{authorbibnamehash}{9e98f4f142d6a590b8aa0c5dfab74afd}
-      \strng{authornamehash}{9e98f4f142d6a590b8aa0c5dfab74afd}
-      \strng{authorfullhash}{9e98f4f142d6a590b8aa0c5dfab74afd}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Heat conduction}
-      \field{chapter}{13}
-      \field{isbn}{978-0-471-53256-9}
-      \field{title}{Integral-transform technique}
-      \field{year}{1993}
     \endentry
   \enddatalist
 \endrefsection

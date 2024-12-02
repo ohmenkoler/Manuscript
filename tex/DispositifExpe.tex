@@ -10,7 +10,7 @@ La deuxième partie présentes les conditions expérimentales ainsi que les simu
 \section{Présentation du dispositif expérimental actuel}\label{chap:PresentationTacot}
 \subsection{Géométrie du réfrigérateur \textsc{Tacot}}
 \subsubsection{Cavité thermoacoustique}
-La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'utilisation d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont la \textcolor{red}{principale} est la compacité. Contrairement aux autres systèmes thermoacoustiques existant \textcolor{red}{citer SETAC et Ben and Jerrys et le cryocooler de 11 m}, les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroÏdale utilisée par Swift en suivant les travaux de Poignand et al. \cite{poignand_thermoacoustic_2011,poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique.% \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.
+La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'utilisation d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont l'une des principales est la compacité. Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux (tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002} \echaf{citer SETAC? et Ben and Jerrys}, les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale utilisée par Swift en suivant les travaux de Poignand et al. \cite{poignand_thermoacoustic_2011,poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique.% \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.
 
 
 \begin{figure}[!ht]
@@ -18,7 +18,7 @@ La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet 
     \external{fig_SchemaGeneralTACOT}
 %    \externalremake
     \input{../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex}
-    \caption[Schéma général du réfrigérateur \textsc{Tacot} et mise en évidence des zones d'intérêt pour cette thèse]{Schéma général du réfrigérateur \textsc{Tacot}. Les \colorbox{MatlabYellow}{cavité d'adapatation d'impédance} et \colorbox{MatlabOrange}{noyau thermoacoustique}, zones d'intérêt, sont mises en évidence.}
+    \caption[Schéma général du réfrigérateur \textsc{Tacot} et mise en évidence des zones d'intérêt pour cette thèse]{Schéma général du réfrigérateur \textsc{Tacot}. Les \colorbox{MatlabYellow}{volume d'adapatation d'impédance} et \colorbox{MatlabOrange}{noyau thermoacoustique}, zones d'intérêt, sont mises en évidence.}
     \label{fig:SchemaGeneralTACOT}
 \end{figure}
 
@@ -33,10 +33,10 @@ Le régénérateur utilisé dans le noyau thermoacoustique de coordonnée axiale
 %	&= \frac{V_{\sf tot}-V_{\sf metal}}{V_{\sf tot}} \nonumber\\
 %	&= 1 - \frac{m_{\sf metal}}{m_{\sf tot}} \label{eq:Porosite_Masse}
 \end{align}
-pour la porosité, et qui correspondent à un matériau équivalent à pores cylindriques de rayon hydraulique
+pour la porosité d'un matériau poreux tortueux dont le rayon hydraulique vaut \echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
 
 \begin{equation}
-	r_h = \frac{d_w}{4}\frac{\phi}{1-\phi}.
+	r_h = d_w\frac{\phi}{4(1-\phi)}.
 	\label{eq:DefRayonHydrauGantois}
 \end{equation}
 
@@ -44,15 +44,15 @@ pour la porosité, et qui correspondent à un matériau équivalent à pores cyl
     \centering
     \begin{tabular}{l@{\hspace{1cm}}l}
     	\hline
-    	\textbf{Paramètre} & \textbf{Valeur} \\\hline\hline
-    	Diamètre du noyau $D_{\sf reg}$ & \qty{148e-3}{\m} \\
-    	Longueur du régénérateur $L_{\sf reg}$  & \qty{39e-3}{\m} \\
-    	Diamètre du fil $d_w$ & \qty{53e-6}{\m} \\
-        Rayon hydraulique $r_h$ & \qty{2.81e-5}{\m} \\
-        Porosité du noyau $\Phi$ & \qty{68}{\percent}\\
-        Couche limite thermique $\delta_\kappa$ & \qty{1.4452e-4}{\m} \\
-        Couche limite visqueuse $\delta_\nu$ & \qty{9.1120e-5}{\m}\\
-        \textcolor{red}{Perméabilité} & \\
+    	\textbf{Paramètre [unité]} & \textbf{Valeur} \\\hline\hline
+    	Diamètre du noyau $D_{\sf reg}$ [\unit{\meter}] & \num{148e-3} \\
+    	Longueur du régénérateur $L_{\sf reg}$ [\unit{\meter}] & \num{39e-3} \\
+    	Diamètre du fil $d_w$ [\unit{\meter}] & \num{53e-6} \\
+        Rayon hydraulique $r_h$ [\unit{\meter}] & \num{2.81e-5} \\
+        Porosité du noyau $\Phi$ [\unit{\percent}] & \num{68}\\
+        Couche limite thermique $\delta_\kappa$ [\unit{\meter}] & \num{1.4452e-4} \\
+        Couche limite visqueuse $\delta_\nu$ [\unit{\meter}] & \num{9.1120e-5} \\
+        \echaf{Perméabilité} [\unit{\meter\squared}] & \\
         \hline
     \end{tabular}
     \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement, \linebreak $f=\qty{47}{\Hz}$}
@@ -72,12 +72,37 @@ Dans ces équations, $V_{\sf gaz}$ est le volume occupé par le gaz dans le rég
 
 
 
-\subsection{Chaîne d'acquisition}
-L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments. Les quinze thermocouples du noyau  ainsi que sont connectés sur la carte d'acquisition \textcolor{red}{modèle} 
+\subsection{Chaîne d'excitation et d'acquisition}
+L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments.
 
-Un générateur basse fréquence génère les signaux d'alimentation des sources acoustiques. Il dispose de deux sorties, chacune connectée à un amplificateur avant d'être reliée aux transducteurs. Dans le cas de la source principale (RIX Industries, 1S241M), l'amplificateur est un QSC PLD4.5 tandis que pour la source secondaire (Peerless, GBS135F) il s'agit d'un Yamaha P3500S.
+Premièrement, la chaîne d'excitation est présentée. Elle est assez simple, et se compose d'un générateur de fonction à deux canaux (TekTronix AFG3022). Chaque canal est ensuite connecté à un amplificateur pour chaque source acoustique. La source principale (RIX Industries, 1S241M) est alimentée par un amplificateur QSC PLD4.5, et la source secondaire (Peerless, GBS135F) par un amplificateur Yamaha P3500S.\medskip
 
-Les signaux de tensions aux bornes des sources acoustiques sont acquis par une carte d'acquisition (National Instruments, (\textcolor{red}{modèle}), après connexion à une sonde de tension (\textcolor{red}{modèle}). Deux accéléromètres (\textcolor{red}{modèle}) sont collés sur les sources pour mesurer leur déplacement. Pour connaître la pression acoustique dans la cavité thermoacoustique, quatre sondes (\textcolor{red}{modèle}) sont placées respectivement à l'arrière de la source principale, à l'arrière de la source secondaire 
+%Un générateur basse fréquence génère les signaux d'alimentation des sources acoustiques. Il dispose de deux sorties, chacune connectée à un amplificateur avant d'être reliée aux transducteurs. Dans le cas de la source principale (RIX Industries, 1S241M), l'amplificateur est un QSC PLD4.5 tandis que pour la source secondaire (Peerless, GBS135F) il s'agit d'un Yamaha P3500S.
+
+Ensuite, la chaîne d'acquisition se compose de plus de trente capteurs. Tous ne sont pas utilisés, mais peuvent servir de contrôle durant une expérience, pour s'assurer du bon déroulement de celle-ci.
+
+\paragraph*{Alimentation électrique des sources}
+
+\paragraph*{Température} Dix-neuf thermocouples Type K de \qty{.5}{\milli\meter} de diamètre sont placés de la manière suivante : quinze thermocouples mesurent la température en différentes positions du noyau, un devant la source acoustique principale, deux derrière celle-ci, et un derrière la source acoustique secondaire. La carte d'acquisition utilisée (National Instruments, NI9213) ne comporte que seize entrées, et pour toutes les mesures ce sont les thermocouples du noyau et de devant la source acoustique principale qui y sont connectés. Le placement de ces thermocouples d'intérêt est représenté sur la figure~\ref{fig:TCdansNoyau} par les symboles `\textcolor{cyan}{\textbullet}'.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_TCdansNoyau}
+    %\externalremake
+    \input{../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau}
+    \caption{Emplacement des thermocouples dans le noyau thermoacoustique}
+    \label{fig:TCdansNoyau}
+\end{figure}
+
+\paragraph*{Pression dynamique} Quatre sondes \echaf{modèle} piézoélectriques captent les oscillations de pression dans la pompe à chaleur. Deux sont placées dans les cavités arrières de  chacune des sources acoustiques, et les deux autres dans le canal de rétroaction de la cavité thermoacoustique. Ces sondes doivent supporter la pression statique élevée à l'intérieur de la machine, ainsi que l'amplitude acoustique nécessaire au processus thermoacoustique. De plus, ces sondes doivent être affleurantes aux parois auxquelles elles sont montées, ce qui empêche leur installation au sein du noyau. Toutefois, la longueur d'onde \echaf{valeur} est suffisamment grande pour garantir une amplitude de pression constante dans toute la machine.
+
+\paragraph*{Pression statique} Deux capteurs \echaf{modèle} sont connectés sur les deux tuyaux d'alimentation en gaz de la pompe  à chaleur. Ces derniers se trouvent de part et d'autre de la source acoustique principale et on pour but d'éviter une surpression sur sa face avant ou arrière.
+
+\paragraph*{Puissance extraite par l'échangeur ambiant} Le fonctionnement de cet échangeur est détaillé dans l'annexe~\ref{chap:AHX}. Pour déterminer la quantité de chaleur extraite du côté ambiant du noyau, la différence de température entre l'entrée d'eau de l'échangeur et sa sortie d'eau est mesurée grâce à deux sondes de platine PT100.
+
+\paragraph*{Déplacement des sources} Le piston de chaque source acoustique est équipé d'un accéléromètre. Ces capteurs sont choisis de sorte à ne pas trop varier la masse de l'équipage mobile, en particulier pour la source secondaire où la masse du piston et celle de l'ensemble accéléromètre et câble sont du même ordre de grandeur.
+
+%Les signaux de tensions aux bornes des sources acoustiques sont acquis par une carte d'acquisition (National Instruments, (\echaf{modèle}), après connexion à une sonde de tension (\echaf{modèle}). Deux accéléromètres (\echaf{modèle}) sont collés sur les sources pour mesurer leur déplacement. Pour connaître la pression acoustique dans la cavité thermoacoustique, quatre sondes (\echaf{modèle}) sont placées respectivement à l'arrière de la source principale, à l'arrière de la source secondaire 
 
 
 %\begin{figure}[!ht]
@@ -89,35 +114,28 @@ Les signaux de tensions aux bornes des sources acoustiques sont acquis par une c
 %    \label{fig:ChaineAcqui}
 %\end{figure}
 
-\begin{itemize}
-    \item GBF
-    \item Amplis
-    \begin{itemize}
-        \item QSC
-        \item Yamaha
-    \end{itemize}
-    \item Sondes de tension
-    \item Cartes NI
-    \begin{itemize}
-        \item Pression statique
-        \item Pression dynamique
-        \item Thermocouples
-        \item PT100
-        \item Accéléromètres
-    \end{itemize}
-    \item LabVIEW d'acquisition
-\end{itemize}
+%\begin{itemize}
+%    \item GBF
+%    \item Amplis
+%    \begin{itemize}
+%        \item QSC
+%        \item Yamaha
+%    \end{itemize}
+%    \item Sondes de tension
+%    \item Cartes NI
+%    \begin{itemize}
+%        \item Pression statique
+%        \item Pression dynamique
+%        \item Thermocouples
+%        \item PT100
+%        \item Accéléromètres
+%    \end{itemize}
+%    \item LabVIEW d'acquisition
+%\end{itemize}
 
-Pour étudier la distribution de température le long de l'axe du noyau, ainsi que dans les dimensions transverses, Seize thermocouples sont placés sur un plan et représentés par les symboles~`\textcolor{cyan}{\textbullet}' sur la figure~\ref{fig:TCdansNoyau}. Neuf sont placés au c\oe{}ur du noyau, dans le régénérateur. Trois sont fixés à l'extérieur du noyau, hors de l'échangeur ambiant, et trois autres sur l'extérieur de l'échangeur froid. Enfin, un dernier thermocouple est positionné au voisinage de la source acoustique principale, en vis-à-vis de l'échangeur froid.
+%Pour étudier la distribution de température le long de l'axe du noyau, ainsi que dans les dimensions transverses, Seize thermocouples sont placés sur un plan et représentés par les symboles~`\textcolor{cyan}{\textbullet}' sur la figure~\ref{fig:TCdansNoyau}. Neuf sont placés au c\oe{}ur du noyau, dans le régénérateur. Trois sont fixés à l'extérieur du noyau, hors de l'échangeur ambiant, et trois autres sur l'extérieur de l'échangeur froid. Enfin, un dernier thermocouple est positionné au voisinage de la source acoustique principale, en vis-à-vis de l'échangeur froid.
 
-\begin{figure}[!ht]
-    \centering
-    \external{fig_TCdansNoyau}
-    %\externalremake
-    \input{../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau}
-    \caption{Emplacement des thermocouples dans le noyau thermoacoustique}
-    \label{fig:TCdansNoyau}
-\end{figure}
+
 
 %\subsection{Emplacement des capteurs}
 %
@@ -210,19 +228,19 @@ Les acquisitions sont réalisées en plusieurs temps. Tout d'abord et pour toute
 
 Ensuite, en prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'échangeur ambiant (voir l'annexe~\ref{chap:AHX}), l'eau est préalablement mise en circulation dans cet échangeur après avoir démarré une acquisition des 30 capteurs jusqu'à stabilisation de la distribution de température dans le noyau. L'acquisition est ensuite interrompue et enregistrée avec un label `\texttt{Water}'. \bigskip
 
-L'étape suivante dépend du type d'expérience menée : les mesures peuvent être sans ou avec acoustique, et ce, pour  différentes amplitudes de pression oscillante. En revanche, certains des paramètres d'excitation reste constant pour toutes les expériences :  le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, et le tout est pressurisé à \qty{4e6}{\pascal}. Dans le cas des expériences à \textit{drive ratio} non nul, la fréquence est toujours de \qty{47}{\hertz}, car la prédiction des performances annonce les meilleurs résultats. C'est également la première fréquence de résonance de la source principale, et son facteur de qualité très élevé (\textcolor{red}{$Q_{ts}=$}) ainsi que la faible valeur de résistance de la bobine ($R_e=\qty{.7}{\ohm}$) empêchent l'amplificateur QSC de fonctionner à une autre fréquence sans l'endommager, l'impédance minimale supportée étant de \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60}, ce que le modèle \textsc{DeltaEC} indique comme déphasage optimale et que des expériences préliminaires confirment.
+L'étape suivante dépend du type d'expérience menée : les mesures peuvent être sans ou avec acoustique, et ce, pour  différentes amplitudes de pression oscillante. En revanche, certains des paramètres d'excitation reste constant pour toutes les expériences :  le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, et le tout est pressurisé à \qty{4e6}{\pascal}. Dans le cas des expériences à \textit{drive ratio} non nul, la fréquence est toujours de \qty{47}{\hertz}, car la prédiction des performances annonce les meilleurs résultats. C'est également la première fréquence de résonance de la source principale, et son facteur de qualité très élevé (\echaf{$Q_{ts}=$}) ainsi que la faible valeur de résistance de la bobine ($R_e=\qty{.7}{\ohm}$) empêchent l'amplificateur QSC de fonctionner à une autre fréquence sans l'endommager, l'impédance minimale supportée étant de \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60}, ce que le modèle \textsc{DeltaEC} indique comme déphasage optimale et que des expériences préliminaires confirment.
 
 \paragraph{Mesures sans acoustique}\label{chap:MesureSansAcou}
-Pour ces mesures de type `\texttt{heat\_{}only}', la charge thermique est appliquée au noyau sans alimenter les sources acoustiques. Cette charge thermique consiste en l'alimentation des cartouches chauffantes contenues dans l'échangeur froid par une puissance électrique connue. 
+Pour ces mesures de type `\texttt{heat\_{}only}', la charge thermique est appliquée au noyau sans alimenter les sources acoustiques. Cette charge thermique consiste en l'alimentation des cartouches chauffantes contenues dans l'échangeur froid par une puissance électrique connue, tandis qu'un débit d'eau de \qty{7}{\litre\per\minute} s'écoule dans l'échangeur ambiant qui se trouve de l'autre côté du noyau. 
 
-Ces mesures permettent d'étudier la distribution de température en l'absence d'écoulement oscillant, ainsi que de calculer les valeurs de conductivité thermique $k_x$ et $k_r$ dans l'équation~\eqref{eq:FluxCond_Lotton}ou les coefficients de pertes latérales $h_x$ et $h_r$ dans l'équation~\eqref{eq:FluxLat_Lotton}.\medskip
+Ces mesures \echaf{doivent} permettre d'étudier la distribution de température en l'absence d'écoulement oscillant, ainsi que de calculer les valeurs de conductivité thermique $k_x$ et $k_r$ ou les coefficients de pertes latérales $h_x$ et $h_r$.\medskip
 
 Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante \fg{} sont conservés pour des raisons de clarté, mais l'eau circulant dans l'échangeur ambiant et les cartouches chauffantes se trouvant dans l'échangeur froid, la direction du gradient de température dans le noyau thermoacoustique est inversée par rapport aux expériences avec acoustique. %Toutefois, les ordres de grandeur des différences de température sont les mêmes que pour les expériences avec acoustique, c'est-à-dire 
 
 Pour garder un moyen de comparaison avec les mesures avec acoustique, le mélange de gaz est le même.
 
 \paragraph{Mesures avec acoustique}\label{chap:MesureAvecAcou} 
-Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, cela sonne la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial. \textcolor{red}{08/11/2024}
+Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, c'est la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial.
 
 Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\frac{p}{P_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible. Ainsi, l'hypothèse concernant la linéarité acoustique est mieux vérifiée et peut \textit{a priori} être plus aisément comparé à la théorie linéaire. À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$. 
 
@@ -230,11 +248,11 @@ Au cours de cette étude, trois amplitudes acoustiques sont choisies. La premiè
 
 
 \subsubsection{Paramètres d'acquisition}
-Comme dit précédemment, la fréquence de fonctionnement du \textsc{Tacot} est de \qty{47}{\hertz}, ce qui implique une fréquence d'échantillonnage au moins deux fois supérieure. Cependant, les cartes d'acquisition sont rassemblées sur une baie d'instrumentation, contraignent la fréquence d'échantillonage utilisée. Celles concernant les mesures de quantité oscillantes (pression acoustique, accélération \textcolor{red}{à vérifier}) imposent que la fréquence d'échantillonage $f_s$ soit au moins égale à \qty{1651}{\Hz}\footnote{Les acquisitions des \num{30} capteurs durent \qty{1}{\hour}, et les données sont encodées sur \qty{32}{\bit} flottants. Au total, chaque acquisition pèse \qty{713}{\mega\byte}, taille à laquelle il faut ajouter quelques \unit{\mega\byte} pour le protocole \texttt{tdms} et l'entête contenant les informations de mesure.}.
+Comme dit précédemment, la fréquence de fonctionnement du \textsc{Tacot} est de \qty{47}{\hertz}, ce qui implique une fréquence d'échantillonnage au moins deux fois supérieure. Cependant, les cartes d'acquisition sont rassemblées sur une baie d'instrumentation, contraignent la fréquence d'échantillonage utilisée. Celles concernant les mesures de quantité oscillantes (pression acoustique, accélération \echaf{à vérifier}) imposent que la fréquence d'échantillonage $f_s$ soit au moins égale à \qty{1651}{\Hz}\footnote{Les acquisitions des \num{30} capteurs durent \qty{1}{\hour}, et les données sont encodées sur \qty{32}{\bit} flottants. Au total, chaque acquisition pèse \qty{713}{\mega\byte}, taille à laquelle il faut ajouter quelques \unit{\mega\byte} pour le protocole \texttt{tdms} et l'entête contenant les informations de mesure.}.
 
 \section{Ensemble des simulations réalisées}\label{chap:SimusRealisees}
 \subsection{Estimation théorique du flux de chaleur de convection naturelle}
-Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- cavité d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géometries, du type de convection naturelle rencontré, de la porosité, etc. Des études hydrodynamiques sont menées pour aider à l'interprétation des mesures de température. \medskip
+Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- Volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géometries, du type de convection naturelle rencontré, de la porosité, etc. Des études hydrodynamiques sont menées pour aider à l'interprétation des mesures de température. \medskip
 
 Tout d'abord, deux étude très simplifiées sont réalisées pour une cavité 2D différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Cette étude doit permettre l'obtention d'ordres de grandeurs des quantité d'intérêt, en particulier le flux de chaleur $Q_{conv}$ qui agit comme une charge thermique sur le côté froid du noyau thermoacoustique. \smallskip
 
@@ -244,16 +262,16 @@ Ensuite, une simulation par éléments finis de cette cavité sur le logiciel Co
 \paragraph{Sans acoustique}
 Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, une étude très simplifiée dans une cavité rectangulaire en 2D et représentée sur les figures~\ref{fig:SimuConvNat2D}\textbf{(a)} et \textbf{(b)} est menée. 
 
-Dans la première sous-figure, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore}\textbf{(a)} et \textbf{(b)}.
+Dans la première sous-figure~\ref{fig:SimuConvNat2D}\textbf{(a)}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.
 
-Dans la seconde sous-figure, ce sont cette fois les sol et plafond qui sont fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos pour lesquels la température est $T_\infty$. Dans cette configuration de type \og Rayleigh-Bénard \fg{} , il peut s'établir une ou plusieurs cellules de convection naturelle si le nombre de Rayleigh $\Rayleigh$ est supérieur à un nombre de Rayleigh critique $\Rayleigh_c$ \textcolor{red}{valeur 1700 ? + citation}, où le gaz s'élève de la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ.
+Dans la seconde sous-figure~\ref{fig:SimuConvNat2D}\textbf{(b)}, ce sont cette fois les sol et plafond qui sont fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos pour lesquels la température est $T_\infty$. Dans cette configuration, favorable a priori à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il peut s'établir une ou plusieurs cellules de convection naturelle si le nombre de Rayleigh $\Rayleigh$ est supérieur à un nombre de Rayleigh critique $\Rayleigh_c$ \echaf{valeur 1700 ? + citation}. Le gaz s'élève de la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:SimuConvNat2D}\textbf{(b)} qui ne représente qu'une illustration grossière du mouvement du fluide. Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
 
 \begin{figure}[!ht]
     \centering
     \external{fig_SimuConvNat2D}
 %    \externalremake
     \input{../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D}
-    \caption{Cellule de convection naturelle dans une cavité rectangulaire 2D \textbf{(a)} pour un gradient de température normal à la direction de la gravité, et \textbf{(b)} pour un gradient de température colinéaire à la direction de la gravité. Cela dit, la distance caractéristique est \textcolor{red}{choisie} dans les deux cas suivant la même direction que la gravité.}
+    \caption{Cellule de convection naturelle dans une cavité rectangulaire 2D \textbf{(a)} pour un gradient de température normal à la direction de la gravité, et \textbf{(b)} pour un gradient de température colinéaire à la direction de la gravité. Cela dit, la distance caractéristique est \echaf{choisie} dans les deux cas suivant la même direction que la gravité.}
     \label{fig:SimuConvNat2D}
 \end{figure}
 
@@ -289,7 +307,7 @@ où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de
 	\end{align}
 	\label{eq:VitesseReference_Rayleigh}%
 \end{subequations}
-d'après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud et dans le cas où le gradient de température est lui-même horizontal \cite{belleoud_etude_2016}. \textcolor{red}{gradient vertical et Rayleigh critique pour apparition/stabilité de la cellule de Rayleigh-Bénard.}
+d'après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud et dans le cas où le gradient de température est lui-même horizontal \cite{belleoud_etude_2016}. \echaf{gradient vertical et Rayleigh critique pour apparition/stabilité de la cellule de Rayleigh-Bénard.}
 
 Dans un matériau poreux, il peut également exister des écoulements liés à la convection naturelle. Dans ce cas, le nombre de Rayleigh est toujours une notion utile pour prédire le mouvement du fluide à l'intérieur, à condition toutefois de le modifier pour prendre en compte la perméabilité $K_p$ ainsi que la diffusivité thermique $\kappa_p$ de ce milieu. Il vient alors l'expression du nombre de Rayleigh-Darcy noté $\mathrm{Ra}_p$, et dont la définition est donnée par Nield et Bejan \cite{nield_convection_2013} par
 
@@ -305,13 +323,13 @@ ainsi que la vitesse verticale de référence correspondante,
 \end{equation}
 
 
-Lorsque la convection naturelle provoque un écoulement circulant à une vitesse de référence $v_{\sf ref}$, il est possible de quantifier la contribution des échanges thermiques ainsi \textcolor{red}{provoqués/favorisés} et des pertes visqueuses en définissant le nombre de Grashof par
+Lorsque la convection naturelle provoque un écoulement circulant à une vitesse de référence $v_{\sf ref}$, il est possible de quantifier la contribution des échanges thermiques ainsi \echaf{provoqués/favorisés} et des pertes visqueuses en définissant le nombre de Grashof par
 
 \begin{equation}
 	\Grashof = \left( \frac{v_{\sf ref} L_c}{\nu} \right)^2,
 	\label{eq:NbrGrashof}
 \end{equation}
-et est relié au nombre de Rayleigh par la formule
+et qui est relié au nombre de Rayleigh par la formule
 
 \begin{equation}
 	\Grashof = \frac{\Rayleigh}{\Prandtl}.
@@ -327,35 +345,42 @@ Les termes précédents sont issus de la littérature en l'absence d'écoulement
 	\label{eq:NbrPeclet}
 \end{equation}
 
-Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluide causé par un échange thermique, le nombre de Péclet quantifie les échanges de chaleur réalisés par un fluide qui se déplace. Cependant, il reste nécessaire de proposer une hypothèse quant à l'utilisation de ce nombre : la vitesse d'entraînement du fluide est ici la vitesse acoustique $v$, contrairement aux cas classiques de son utilisation dans la littérature où un écoulement continu est considéré. De même que le nombre de Rayleigh, le nombre de Péclet est lié aux nombres de Grashof et Prandtl suivant une relation différente de l'équation~\eqref{eq:NbrGrashof_RayleighSurPrandtl}, qui s'écrit
+Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluide causé par un échange thermique, le nombre de Péclet quantifie les échanges de chaleur réalisés par un fluide qui se déplace. Cependant, il reste nécessaire de proposer une hypothèse quant à l'utilisation de ce nombre : la vitesse d'entraînement du fluide est ici la vitesse acoustique $v$, contrairement aux cas classiques de son utilisation dans la littérature où un écoulement continu est considéré. De même que le nombre de Rayleigh, le nombre de Péclet est lié aux nombres de Grashof et Prandtl suivant la relation 
 
 \begin{equation}
-	\Peclet \equiv \sqrt{\Grashof}~\Prandtl.
+	\Peclet \equiv \sqrt{\Grashof}~\Prandtl,
 	\label{eq:NbrPeclet_GrashofFoisPrandtl}
 \end{equation}
+différente de l'équation~\eqref{eq:NbrGrashof_RayleighSurPrandtl}.
 
 Ces échanges thermiques par convection sont à comparer aux transferts de chaleur par conduction. La prépondérance de chaque effet est donnée par le calcul du nombre de Nusselt, dont la définition est
 
 \begin{equation}
 	\Nusselt = \frac{h L_c}{k},
 \end{equation}
-avec $h$ le coefficient d'échange convectif.
+avec $h$ le coefficient d'échange convectif.\bigskip
 
+Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois.
 
 \subsubsection{\'Elements finis}
+\paragraph{Volume d'adaptation d'impédance}
 Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavité est en réalité un cône. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis Comsol Multiphysics grâce à une géométrie présenté sur la figure~\ref{fig:CaviteConvNat_ComsolGeometrie}. Avec ce logiciel, il est également possible de coupler une simulation acoustique en plus de la simulation de transferts thermiques, ce que le modèle 2D simplifié ne permet pas aisément.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=.5\textwidth]{../fig/fig_ConvNatComsol/Geometry.png}
-    \caption{Géométrie de la cavité d'adaptation d'impédance entre la source acoustique principale et le noyau thermoacoustique}
+    \caption{Géométrie du volume d'adaptation d'impédance entre la source acoustique principale et le noyau thermoacoustique}
     \label{fig:CaviteConvNat_ComsolGeometrie}
 \end{figure}
+
+\paragraph{Régénérateur}
 
 \subsection{Modèle du régime transitoire sans convection naturelle} \label{chap:ModeleTransoitoire_SansConvNat}
 Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du \textit{stack} en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volumes éléméntaires $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques.
 
+\echaf{La suite est presque rédigée mais amenée à changer, cette partie sera écrite après le 08/12}
 
+\begin{comment}
 Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique est différent dans le cas du \textsc{Tacot} de l'hypothèse formulée dans le modèle existant. Sans être complètement \og à ondes progressives \fg{} ni \og à ondes stationnaires \fg{}, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
 
 \begin{subequations}
@@ -408,11 +433,11 @@ où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale
 \begin{equation}
 	\left\{ \begin{aligned}
 		Q_{\sf cond}^{(x)} &= -k_x \partial_x T\\
-		Q_{\sf cond}^{(r)} &= -k_r \partial_r T \textcolor{red}{\text{ corriger expression avec gradient radial}}
+		Q_{\sf cond}^{(r)} &= -k_r \partial_r T \echaf{\text{ corriger expression avec gradient radial}}
 	\end{aligned}\right.
 	\label{eq:FluxCond_Lotton}
 \end{equation}
-avec les indices $x$ et $r$ dénotant respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique apparente et $k_i~=~\Phi_i k_{g} + (1-\Phi_i)k_{s}$ ($i=x,r$). \textcolor{red}{En première aproximation, il est possible de considérer les valeurs de conductivité comme égales les unes aux autres. Cependant, c'est inexact car le long de l'axe $\mathbf e_x$ le milieu est constitué de l'empillement de tissus métalliques tandis que dans la direction $\mathbf e_r$ le flux de chaleur parcourt les fils qui forment le tissus en lui-même.}
+avec les indices $x$ et $r$ dénotant respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique apparente et $k_i~=~\Phi_i k_{g} + (1-\Phi_i)k_{s}$ ($i=x,r$). \echaf{En première aproximation, il est possible de considérer les valeurs de conductivité comme égales les unes aux autres. Cependant, c'est inexact car le long de l'axe $\mathbf e_x$ le milieu est constitué de l'empillement de tissus métalliques tandis que dans la direction $\mathbf e_r$ le flux de chaleur parcourt les fils qui forment le tissus en lui-même.}
 
 %\begin{equation}
 %Q_{\sf cond}^{(x)} = -k_x\partial_x\theta~\mathrm{\mathbf e_x},
@@ -510,8 +535,8 @@ La résolution de l'équation~\eqref{eq:BilanChaleur_LottonPoignand_ApDvptCylin}
 
 \begin{subequations}
 	\begin{align}
-		\textcolor{red}{Systeme\ ici},\label{eq:1_LottonPoignand}\\
-		\textcolor{red}{Systeme\ ici},\label{eq:2_LottonPoignand}
+		\echaf{Systeme\ ici},\label{eq:1_LottonPoignand}\\
+		\echaf{Systeme\ ici},\label{eq:2_LottonPoignand}
 	\end{align}
 	\label{eq:SystemeEq_LottonPoignand}
 \end{subequations}
@@ -521,6 +546,8 @@ avec les changements de variables suivants
 	\item 1
 	\item 2.
 \end{itemize}
+
+\end{comment}
 
 
 

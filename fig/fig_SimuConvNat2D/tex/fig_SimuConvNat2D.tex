@@ -40,9 +40,9 @@
 		\draw[->,green!50!black] (0,2*\l/3) -- ++(0,-\l/3) node[midway,fill=white]{$\mathbf g$};
 	
 		% ----------- Flow direction
-		\node (B) at (0,\l/8){};
-		\draw[->,dashed,gray,very thick] (B.north west) -- ++(0,3*\l/8) arc (0:110:\L/5);
-		\draw[->,dashed,gray,very thick] (B.north east) -- ++(0,3*\l/8) arc (180:70:\L/5);
+		\node (B) at (0,\l/3){};
+		\draw[->,dashed,gray,very thick] (B.north west) -- ++(0,\l/3) arc (0:180:\l/4) -- ++(0,-\l/3) arc (180:270:\l/4);
+		\draw[->,dashed,gray,very thick] (B.north east) -- ++(0,\l/3) arc (180:0:\l/4) -- ++(0,-\l/3) arc (0:-90:\l/4);
 		
 		% ----------- Cavity
 		\fill[pattern=north east lines,pattern color=MatlabOrange] (-\L/2,0) rectangle ++(\L,-\e) node[right,color=MatlabOrange]{$T_{c}$};

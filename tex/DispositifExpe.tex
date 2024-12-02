@@ -3,14 +3,16 @@
 
 
 \section{Introduction du chapitre}\label{chap:IntroProtocExp}
-Après avoir brièvement rappelé les bases de fonctionnement des machines thermoacoustiques, il est temps de décrire le réfrigérateur support de cette thèse. Le choix de la géométrie, les paramètres hydrauliques du régénérateur utilisé, et enfin la chaîne d'excitation et d'acquisition sont présentés dans la section~\ref{chap:PresentationTacot} (\nameref{chap:PresentationTacot}).
+Après avoir brièvement rappelé les bases de fonctionnement des machines thermoacoustiques, il est temps de décrire le réfrigérateur support de cette thèse. 
 
-La deuxième partie présentes les conditions expérimentales ainsi que les simulations théoriques réalisées sont présentées de manière globale pour pouvoir s'y référer dans les différents chapitres suivants, respectivement en section~\ref{chap:ProtocolExpe} (\nameref{chap:ProtocolExpe}) et \ref{chap:SimusRealisees} (\nameref{chap:SimusRealisees}).
+Le choix de la géométrie, les paramètres hydrauliques du régénérateur utilisé, et enfin la chaîne d'excitation et d'acquisition sont présentés dans la section~\ref{chap:PresentationTacot} (\nameref{chap:PresentationTacot}). La deuxième partie présente les conditions expérimentales choisies ainsi que le protocole suivi pour chaque mesure dans la section~\ref{chap:ProtocolExpe} (\nameref{chap:ProtocolExpe}). Les simulations théoriques réalisées sont ensuite expliquées en troisième partie, dans la section~\ref{chap:SimusRealisees} (\nameref{chap:SimusRealisees}).
+
+Ces parties visent à créer une vue d'ensemble de ce qui est fait durant cette thèse et le présenter de manière globale pour pouvoir s'y référer dans les différents chapitres suivants.
 
 \section{Présentation du dispositif expérimental actuel}\label{chap:PresentationTacot}
 \subsection{Géométrie du réfrigérateur \textsc{Tacot}}
 \subsubsection{Cavité thermoacoustique}
-La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'utilisation d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont l'une des principales est la compacité. Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux (tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002} \echaf{citer SETAC? et Ben and Jerrys}, les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale utilisée par Swift en suivant les travaux de Poignand et al. \cite{poignand_thermoacoustic_2011,poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique.% \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.
+La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'utilisation d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont l'une des principales est la compacité. Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux (tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}), les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale usuellement utilisée en suivant les travaux de Poignand et al. \cite{poignand_thermoacoustic_2011,poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique.% \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.
 
 
 \begin{figure}[!ht]
@@ -26,14 +28,14 @@ La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet 
 
 \subsubsection{Noyau thermoacoustique}
 
-Le régénérateur utilisé dans le noyau thermoacoustique de coordonnée axiale $x \mathbf e_x$ et radiale $r \mathbf e_r$ est composé de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$. Les paramètres du régénérateur sont notés dans le tableau \ref{tab:ParamHydrauTAC} et sont calculés d'après les formules 
+Le régénérateur utilisé dans le noyau thermoacoustique adopte une géométrie cylindrique de coordonnée axiale $x \mathbf e_x$ et radiale $r \mathbf e_r$. Il est composé de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$. Les paramètres du régénérateur sont notés dans le tableau \ref{tab:ParamHydrauTAC} et sont calculés d'après les formules 
 
 \begin{align}
 	\phi &= \frac{V_{\sf gaz}}{V_{\sf tot}}, \label{eq:Porosite_Volume}%\\
 %	&= \frac{V_{\sf tot}-V_{\sf metal}}{V_{\sf tot}} \nonumber\\
 %	&= 1 - \frac{m_{\sf metal}}{m_{\sf tot}} \label{eq:Porosite_Masse}
 \end{align}
-pour la porosité d'un matériau poreux tortueux dont le rayon hydraulique vaut \echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
+pour la porosité d'un matériau poreux tortueux dont le rayon hydraulique vaut %\echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
 
 \begin{equation}
 	r_h = d_w\frac{\phi}{4(1-\phi)}.
@@ -90,7 +92,7 @@ Ensuite, la chaîne d'acquisition se compose de plus de trente capteurs. Tous ne
     \external{fig_TCdansNoyau}
     %\externalremake
     \input{../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau}
-    \caption{Emplacement des thermocouples dans le noyau thermoacoustique}
+    \caption{Emplacement des thermocouples dans le noyau thermoacoustique. Zoom sur l'encadré orange de la figure~\ref{fig:SchemaGeneralTACOT}.}
     \label{fig:TCdansNoyau}
 \end{figure}
 

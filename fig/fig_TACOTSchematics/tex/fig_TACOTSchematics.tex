@@ -23,12 +23,12 @@
 		\node (RIX) at (.77,.4) {};
 		\node (HP) at (.19,.4) {};
 		
-		\draw[<-,very thick,MatlabOrange] (AHX.center) to[out=90,in=180] ($(AHX)+(-.15,.7)$) node[right]{\'Echangeur de chaleur ambiant};		
-		\draw[<-,very thick] (Reg.center) to[out=90,in=180] ($(Reg)+(0,.6)$) node[right]{Régénérateur};
-		\draw[<-,very thick,MatlabBlue] (CHX.center) to[out=90,in=180] ($(CHX)+(.15,.5)$) node[right]{\'Echangeur de chaleur froid};
+		\draw[<-,very thick,MatlabOrange] (AHX.center) to[out=90,in=0] ($(AHX)+(-.15,.4)$) node[left]{\'Echangeur de chaleur ambiant};		
+		\draw[<-,very thick] (Reg.center) to ($(Reg)+(0,.4)$) node[above]{Régénérateur};
+		\draw[<-,very thick,MatlabBlue] (CHX.center) to[out=90,in=180] ($(CHX)+(.15,.4)$) node[right]{\'Echangeur de chaleur froid};
 		
-		\draw[->,very thick,green!50!black] ($(RIX)+(0,-.5)$) -- (RIX.center) node[pos=0,anchor=north]{Source acoustique principale};
-		\draw[->,very thick,green!50!black] ($(HP)+(0,-.5)$) -- (HP.center) node[pos=0,anchor=north]{Source acoustique secondaire};
+		\draw[->,very thick,green!50!black] ($(RIX)+(0,-.4)$) -- (RIX.center) node[pos=0,anchor=north]{Source acoustique principale};
+		\draw[->,very thick,green!50!black] ($(HP)+(0,-.4)$) -- (HP.center) node[pos=0,anchor=north]{Source acoustique secondaire};
 		
 %		\draw [white] (.455,.5) node{+};
 %		\draw [white] (.41,.65) node{+};

@@ -12,7 +12,7 @@ Ces parties visent à créer une vue d'ensemble de ce qui est fait durant cette 
 \section{Présentation du dispositif expérimental actuel}\label{chap:PresentationTacot}
 \subsection{Géométrie du réfrigérateur \textsc{Tacot}}
 \subsubsection{Cavité thermoacoustique}
-La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'utilisation d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont l'une des principales est la compacité. Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux (tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}), les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale usuellement utilisée en suivant les travaux de Poignand et al. \cite{poignand_thermoacoustic_2011,poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique.% \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.
+La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont l'une des principales est la compacité. Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux (tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}, ou encore), les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale usuellement utilisée en suivant les travaux de Poignand et al. \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension, tel que réalisé dans les travaux de Poese et al. \cite{poese_thermoacoustic_2004}. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique. Un schéma général présente la géométrie de la pompe à chaleur sur la figure~\ref{fig:SchemaGeneralTACOT}, adapté de Ramadan et al. \cite{ramadan_design_2021}.
 
 
 \begin{figure}[!ht]
@@ -27,20 +27,22 @@ La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet 
 
 
 \subsubsection{Noyau thermoacoustique}
+Tout comme la machine qui le contient, le noyau adopte une géométrie cylindrique et est composé d'un régénérateur encadré par deux échangeurs de chaleur. Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement définis dans les direction axiale et radiale du noyau, avec pour direction positive choisie dans le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second.\medskip
 
-Le régénérateur utilisé dans le noyau thermoacoustique adopte une géométrie cylindrique de coordonnée axiale $x \mathbf e_x$ et radiale $r \mathbf e_r$. Il est composé de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$. Les paramètres du régénérateur sont notés dans le tableau \ref{tab:ParamHydrauTAC} et sont calculés d'après les formules 
+Le régénérateur est composé de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre une porosité $\phi$ souhaitée et définie par 
 
 \begin{align}
 	\phi &= \frac{V_{\sf gaz}}{V_{\sf tot}}, \label{eq:Porosite_Volume}%\\
 %	&= \frac{V_{\sf tot}-V_{\sf metal}}{V_{\sf tot}} \nonumber\\
 %	&= 1 - \frac{m_{\sf metal}}{m_{\sf tot}} \label{eq:Porosite_Masse}
 \end{align}
-pour la porosité d'un matériau poreux tortueux dont le rayon hydraulique vaut %\echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
+où $V_{\sf gaz}$ représente le volume occupé par le gaz dans le régénérateur, et $V_{\sf tot}$ le volume total du régénérateur. Le matériau est poreux et tortueux, et le rayon hydraulique est alors défini par \cite{swift_thermoacoustics_2017} %\echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
 
 \begin{equation}
-	r_h = d_w\frac{\phi}{4(1-\phi)}.
+	r_h = d_w\frac{\phi}{4(1-\phi)},
 	\label{eq:DefRayonHydrauGantois}
 \end{equation}
+avec $d_w$ le diamètre du fil. Les dimensions et paramètres du régénérateur sont résumés dans le tableau \ref{tab:ParamHydrauTAC}.
 
 \begin{table}[!ht]
     \centering
@@ -61,14 +63,14 @@ pour la porosité d'un matériau poreux tortueux dont le rayon hydraulique vaut 
     \label{tab:ParamHydrauTAC}
 \end{table}
 
-Dans ces équations, $V_{\sf gaz}$ est le volume occupé par le gaz dans le régénérateur et $V_{\sf tot}$ son volume total, et $d_w$ est le diamètre de fils des tissus métalliques. Cette machine nécessite le respect de la condition $\delta_{\kappa,\nu} \gg r_h$, de sorte à avoir un excellent contact thermique entre le fluide et le solide poreux. Pour le fluide considéré, les épaisseurs de couches limites sont tracées en fonction de la fréquence et comparé au rayon hydraulique sur la figure~\ref{fig:dKdV}.
+Cette machine nécessite entre autres choses le respect de la condition $\delta_{\kappa,\nu} \gg r_h$, de sorte à avoir un excellent contact thermique entre le fluide et le solide poreux. Pour le fluide considéré, les épaisseurs de couches limites sont tracées en fonction de la fréquence et comparé au rayon hydraulique sur la figure~\ref{fig:dKdV}.
 
 \begin{figure}[!ht]
     \centering
     \external{fig_dKdV}
 %    \externalremake
     \input{../fig/fig_dKdV/tex/fig_dKdV}
-    \caption{\'Evolution des épaisseurs de couches limites thermique et visqueuse en fonction de la fréquence, définies équations~\eqref{eq:CouchesLimites}.}
+    \caption{\'Evolution des épaisseurs de couches limites thermique et visqueuse en fonction de la fréquence, définies par le système d'équations~\eqref{eq:CouchesLimites}.}
     \label{fig:dKdV}
 \end{figure}
 
@@ -83,7 +85,7 @@ Premièrement, la chaîne d'excitation est présentée. Elle est assez simple, e
 
 Ensuite, la chaîne d'acquisition se compose de plus de trente capteurs. Tous ne sont pas utilisés, mais peuvent servir de contrôle durant une expérience, pour s'assurer du bon déroulement de celle-ci.
 
-\paragraph*{Alimentation électrique des sources}
+\paragraph*{Alimentation électrique des sources} L'alimentation électrique de la source acoustique principale est mesurée au moyen d'une sonde différentielle \echaf{et le courant ?}
 
 \paragraph*{Température} Dix-neuf thermocouples Type K de \qty{.5}{\milli\meter} de diamètre sont placés de la manière suivante : quinze thermocouples mesurent la température en différentes positions du noyau, un devant la source acoustique principale, deux derrière celle-ci, et un derrière la source acoustique secondaire. La carte d'acquisition utilisée (National Instruments, NI9213) ne comporte que seize entrées, et pour toutes les mesures ce sont les thermocouples du noyau et de devant la source acoustique principale qui y sont connectés. Le placement de ces thermocouples d'intérêt est représenté sur la figure~\ref{fig:TCdansNoyau} par les symboles `\textcolor{cyan}{\textbullet}'.
 

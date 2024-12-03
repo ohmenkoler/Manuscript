@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  2 DEC 2024 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  3 DEC 2024 11:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2058,6 +2058,18 @@ input line 15.
 LaTeX Warning: Citation 'poignand_analysis_2013' on page 10 undefined on input 
 line 15.
 
+
+LaTeX Warning: Citation 'poese_thermoacoustic_2004' on page 10 undefined on inp
+ut line 15.
+
+
+LaTeX Warning: Reference `fig:SchemaGeneralTACOT' on page 10 undefined on input
+ line 15.
+
+
+LaTeX Warning: Citation 'ramadan_design_2021' on page 10 undefined on input lin
+e 15.
+
 (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
 \openout6 = `external/fig_SchemaGeneralTACOT0.dpth'.
 
@@ -2076,17 +2088,14 @@ altop \@gobble }{}}
  Files/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc} <../fig/fig_TACOTSchematics/T
 ACOT.png>])
 LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
-e 31.
+e 32.
 (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
 File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
 )
 
 LaTeX Warning: Reference `tab:ParamHydrauTAC' on page 10 undefined on input lin
-e 31.
+e 32.
 
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 50.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 51.
@@ -2098,12 +2107,15 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 53.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 55.
+            Default family used instead on input line 54.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 56.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 57.
 
-LaTeX Warning: Reference `fig:dKdV' on page 11 undefined on input line 64.
+LaTeX Warning: Reference `fig:dKdV' on page 11 undefined on input line 65.
 
 (../fig/fig_dKdV/tex/fig_dKdV.tex
 Missing character: There is no ; in font nullfont!
@@ -2128,19 +2140,19 @@ LaTeX Info: Symbol \textminus not provided by
 )
 
 LaTeX Warning: Reference `eq:CouchesLimites' on page 11 undefined on input line
- 71.
+ 72.
 
 
 LaTeX Warning: Reference `eq:CouchesLimites' on page 11 undefined on input line
- 71.
+ 72.
 
 
 LaTeX Warning: Citation 'ramadan_design_2021' on page 11 undefined on input lin
-e 78.
+e 79.
 
 
-LaTeX Warning: Reference `fig:TCdansNoyau' on page 12 undefined on input line 8
-8.
+LaTeX Warning: Reference `fig:TCdansNoyau' on page 11 undefined on input line 8
+9.
 
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 Missing character: There is no ; in font nullfont!
@@ -2152,22 +2164,22 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Reference `fig:SchemaGeneralTACOT' on page 12 undefined on input
- line 95.
+ line 96.
 
 
 LaTeX Warning: Reference `fig:SchemaGeneralTACOT' on page 12 undefined on input
- line 95.
+ line 96.
 
 
-LaTeX Warning: Reference `chap:AHX' on page 13 undefined on input line 103.
+LaTeX Warning: Reference `chap:AHX' on page 13 undefined on input line 104.
 
 
 LaTeX Warning: Reference `fig:TACOTSuspendu_Frigo' on page 13 undefined on inpu
-t line 154.
+t line 155.
 
 
 LaTeX Warning: Reference `fig:TACOTSuspendu_Palans' on page 13 undefined on inp
-ut line 154.
+ut line 155.
 
 <../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=52, 126.42508pt
  x 94.84251pt>
@@ -2175,49 +2187,49 @@ File: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg Graphic file (
 type jpg)
 <use ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped
-.jpg  used on input line 160.
+.jpg  used on input line 161.
 (pdftex.def)             Requested size: 227.3381pt x 170.54994pt.
 <../fig/fig_SystemeAccroche/Palans.jpg, id=53, 4047.12pt x 3035.34pt>
 File: ../fig/fig_SystemeAccroche/Palans.jpg Graphic file (type jpg)
 <use ../fig/fig_SystemeAccroche/Palans.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Palans.jpg  used on input l
-ine 166.
+ine 167.
 (pdftex.def)             Requested size: 227.3381pt x 170.48735pt.
 
 LaTeX Warning: Hyper reference `fig:TACOTSuspendu_Frigo' on page 13 undefined o
-n input line 170.
+n input line 171.
 
 
 LaTeX Warning: Reference `sub@fig:TACOTSuspendu_Frigo' on page 13 undefined on 
-input line 170.
+input line 171.
 
 
 LaTeX Warning: Hyper reference `fig:TACOTSuspendu_Palans' on page 13 undefined 
-on input line 170.
+on input line 171.
 
 
 LaTeX Warning: Reference `sub@fig:TACOTSuspendu_Palans' on page 13 undefined on
- input line 170.
+ input line 171.
 
 
 LaTeX Warning: Hyper reference `fig:TACOTSuspendu_Frigo' on page 13 undefined o
-n input line 170.
+n input line 171.
 
 
 LaTeX Warning: Reference `sub@fig:TACOTSuspendu_Frigo' on page 13 undefined on 
-input line 170.
+input line 171.
 
 
 LaTeX Warning: Hyper reference `fig:TACOTSuspendu_Palans' on page 13 undefined 
-on input line 170.
+on input line 171.
 
 
 LaTeX Warning: Reference `sub@fig:TACOTSuspendu_Palans' on page 13 undefined on
- input line 170.
+ input line 171.
 
 
 LaTeX Warning: Reference `fig:OrientationCore' on page 13 undefined on input li
-ne 176.
+ne 177.
 
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 Missing character: There is no ; in font nullfont!
@@ -2229,7 +2241,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-92.
+93.
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
@@ -2258,148 +2270,148 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 13 undefined on
- input line 213.
+LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 14 undefined on
+ input line 214.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 13 undefined on i
-nput line 213.
+LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 14 undefined on i
+nput line 214.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 13 undefined on
- input line 213.
+LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 14 undefined on
+ input line 214.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 13 undefined on i
-nput line 213.
+LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 14 undefined on i
+nput line 214.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 13 undefined on
- input line 213.
+LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 14 undefined on
+ input line 214.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 13 undefined on i
-nput line 213.
+LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 14 undefined on i
+nput line 214.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 13 undefined on
- input line 213.
+LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 14 undefined on
+ input line 214.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 13 undefined on i
-nput line 213.
+LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 14 undefined on i
+nput line 214.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 13 undefined on
- input line 213.
+LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 14 undefined on
+ input line 214.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 13 undefined on i
-nput line 213.
+LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 14 undefined on i
+nput line 214.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 13 undefined on
- input line 213.
+LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 14 undefined on
+ input line 214.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 13 undefined on i
-nput line 213.
+LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 14 undefined on i
+nput line 214.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 13 undefined on
- input line 213.
+LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 14 undefined on
+ input line 214.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 13 undefined on i
-nput line 213.
+LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 14 undefined on i
+nput line 214.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 13 undefined on
- input line 213.
+LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 14 undefined on
+ input line 214.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 13 undefined on i
-nput line 213.
+LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 14 undefined on i
+nput line 214.
 
 
-LaTeX Warning: Reference `fig:OrientationCore_H1' on page 13 undefined on input
- line 219.
+LaTeX Warning: Reference `fig:OrientationCore_H1' on page 14 undefined on input
+ line 220.
 
 
-LaTeX Warning: Citation 'ramadan_design_2021' on page 13 undefined on input lin
-e 219.
+LaTeX Warning: Citation 'ramadan_design_2021' on page 14 undefined on input lin
+e 220.
 
 
-LaTeX Warning: Reference `fig:TACOTSuspendu_Frigo' on page 13 undefined on inpu
-t line 219.
+LaTeX Warning: Reference `fig:TACOTSuspendu_Frigo' on page 14 undefined on inpu
+t line 220.
 
 
 LaTeX Warning: Reference `fig:OrientationCore_H2' on page 14 undefined on input
- line 221.
+ line 222.
 
 
 LaTeX Warning: Reference `fig:OrientationCore_V1' on page 14 undefined on input
- line 223.
+ line 224.
 
 
-LaTeX Warning: Reference `fig:OrientationCore_V2' on page 14 undefined on input
- line 225.
+LaTeX Warning: Reference `fig:OrientationCore_V2' on page 15 undefined on input
+ line 226.
 
 
-LaTeX Warning: Reference `chap:AHX' on page 15 undefined on input line 231.
+LaTeX Warning: Reference `chap:AHX' on page 15 undefined on input line 232.
 
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 233.
+            Default family used instead on input line 234.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 233.
+            Default family used instead on input line 234.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 236.
+            Default family used instead on input line 237.
 
-LaTeX Warning: Citation 'ramadan_design_2021' on page 15 undefined on input lin
-e 247.
+LaTeX Warning: Citation 'ramadan_design_2021' on page 16 undefined on input lin
+e 248.
 
 
 LaTeX Warning: Reference `fig:SimuConvNat2D' on page 16 undefined on input line
- 265.
+ 266.
 
 
 LaTeX Warning: Reference `fig:SimuConvNat2D' on page 16 undefined on input line
- 267.
+ 268.
 
 
 LaTeX Warning: Reference `fig:OrientationCore_H1' on page 16 undefined on input
- line 267.
+ line 268.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 16 undefined on
- input line 267.
+ input line 268.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 16 undefined on i
-nput line 267.
+nput line 268.
 
 
-LaTeX Warning: Reference `fig:SimuConvNat2D' on page 16 undefined on input line
- 269.
+LaTeX Warning: Reference `fig:SimuConvNat2D' on page 17 undefined on input line
+ 270.
 
 
-LaTeX Warning: Reference `fig:SimuConvNat2D' on page 16 undefined on input line
- 269.
+LaTeX Warning: Reference `fig:SimuConvNat2D' on page 17 undefined on input line
+ 270.
 
 
-LaTeX Warning: Reference `fig:OrientationCore_V1' on page 16 undefined on input
- line 269.
+LaTeX Warning: Reference `fig:OrientationCore_V1' on page 17 undefined on input
+ line 270.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 16 undefined on
- input line 269.
+LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 17 undefined on
+ input line 270.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 16 undefined on i
-nput line 269.
+LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 17 undefined on i
+nput line 270.
 
 (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
 Missing character: There is no ; in font nullfont!
@@ -2410,45 +2422,45 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Reference `eq:NavierStokes_Boussinesq' on page 17 undefined on i
-nput line 282.
+nput line 283.
 
 
 LaTeX Warning: Reference `eq:NavierStokes_Boussinesq_QtMvt' on page 17 undefine
-d on input line 292.
+d on input line 293.
 
 
-LaTeX Warning: Reference `eq:Prandtl' on page 17 undefined on input line 298.
+LaTeX Warning: Reference `eq:Prandtl' on page 17 undefined on input line 299.
 
 
 LaTeX Warning: Citation 'belleoud_etude_2016' on page 18 undefined on input lin
-e 312.
+e 313.
 
 
 LaTeX Warning: Citation 'nield_convection_2013' on page 18 undefined on input l
-ine 314.
+ine 315.
 
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
-23.
+24.
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 
-LaTeX Warning: Reference `eq:NbrGrashof_RayleighSurPrandtl' on page 18 undefine
-d on input line 356.
+LaTeX Warning: Reference `eq:NbrGrashof_RayleighSurPrandtl' on page 19 undefine
+d on input line 357.
 
 
 LaTeX Warning: Reference `fig:CaviteConvNat_ComsolGeometrie' on page 19 undefin
-ed on input line 369.
+ed on input line 370.
 
 <../fig/fig_ConvNatComsol/Geometry.png, id=60, 363.60844pt x 478.03593pt>
 File: ../fig/fig_ConvNatComsol/Geometry.png Graphic file (type png)
 <use ../fig/fig_ConvNatComsol/Geometry.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Geometry.png  used on input l
-ine 373.
+ine 374.
 (pdftex.def)             Requested size: 241.84842pt x 317.96284pt.
 
 LaTeX Warning: Citation 'lotton_transient_2009' on page 19 undefined on input l
-ine 381.
+ine 382.
 
 Excluding 'comment' comment.) (EtudeExperimentale.tex
 Chapitre III.
@@ -3422,16 +3434,16 @@ xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 74085 strings out of 474435
- 1879489 string characters out of 5751739
- 3762285 words of memory out of 5000000
- 94930 multiletter control sequences out of 15000+600000
+ 74082 strings out of 474435
+ 1879397 string characters out of 5751739
+ 3760362 words of memory out of 5000000
+ 94927 multiletter control sequences out of 15000+600000
  687197 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,21n,93p,4581b,2472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/nowacki/iwona/iwonam.pfb>
-Output written on external/fig_SchemaGeneralTACOT0.pdf (1 page, 193120 bytes).
+Output written on external/fig_SchemaGeneralTACOT0.pdf (1 page, 193037 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)

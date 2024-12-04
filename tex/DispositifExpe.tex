@@ -12,7 +12,7 @@ Ces parties visent à créer une vue d'ensemble de ce qui est fait durant cette 
 \section{Présentation du dispositif expérimental actuel}\label{chap:PresentationTacot}
 \subsection{Géométrie du réfrigérateur \textsc{Tacot}}
 \subsubsection{Cavité thermoacoustique}
-La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont l'une des principales est la compacité. Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux (tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}, ou encore), les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale usuellement utilisée en suivant les travaux de Poignand et al. \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension, tel que réalisé dans les travaux de Poese et al. \cite{poese_thermoacoustic_2004}. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique. Un schéma général présente la géométrie de la pompe à chaleur sur la figure~\ref{fig:SchemaGeneralTACOT}, adapté de Ramadan et al. \cite{ramadan_design_2021}.
+La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont l'une des principales est la compacité. Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux (tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}, ou encore), les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale usuellement utilisée en suivant les travaux de Poignand \textit{et al.} \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension, tel que réalisé dans les travaux de Poese \textit{et al.} \cite{poese_thermoacoustic_2004}. De plus, la présence de cette source assure le déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique. Un schéma général présente la géométrie de la pompe à chaleur sur la figure~\ref{fig:SchemaGeneralTACOT}, adapté de Ramadan \textit{et al.} \cite{ramadan_design_2021}.
 
 
 \begin{figure}[!ht]
@@ -29,20 +29,34 @@ La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet 
 \subsubsection{Noyau thermoacoustique}
 Tout comme la machine qui le contient, le noyau adopte une géométrie cylindrique et est composé d'un régénérateur encadré par deux échangeurs de chaleur. Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement définis dans les direction axiale et radiale du noyau, avec pour direction positive choisie dans le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second.\medskip
 
-Le régénérateur est composé de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre une porosité $\phi$ souhaitée et définie par 
+Le régénérateur est composé de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre une porosité $\Phi$ souhaitée et définie par 
 
 \begin{align}
-	\phi &= \frac{V_{\sf gaz}}{V_{\sf tot}}, \label{eq:Porosite_Volume}%\\
+	\Phi &= \frac{V_{\sf gaz}}{V_{\sf tot}}, \label{eq:Porosite_Volume}%\\
 %	&= \frac{V_{\sf tot}-V_{\sf metal}}{V_{\sf tot}} \nonumber\\
 %	&= 1 - \frac{m_{\sf metal}}{m_{\sf tot}} \label{eq:Porosite_Masse}
 \end{align}
 où $V_{\sf gaz}$ représente le volume occupé par le gaz dans le régénérateur, et $V_{\sf tot}$ le volume total du régénérateur. Le matériau est poreux et tortueux, et le rayon hydraulique est alors défini par \cite{swift_thermoacoustics_2017} %\echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
 
 \begin{equation}
-	r_h = d_w\frac{\phi}{4(1-\phi)},
+	r_h = d_w\frac{\Phi}{4(1-\Phi)},
 	\label{eq:DefRayonHydrauGantois}
 \end{equation}
-avec $d_w$ le diamètre du fil. Les dimensions et paramètres du régénérateur sont résumés dans le tableau \ref{tab:ParamHydrauTAC}.
+avec $d_w$ le diamètre du fil. Ce matériau poreux dispose d'une certaine capacité à laisser passer un écoulement. Cette perméabilité est notée $K_p$ et est définie par 
+
+\begin{equation}
+	K_p = \echaf{\frac{4 r_h^2 \Phi}{8}},
+	\label{eq:DefPermeabilite_LISN}
+\end{equation}
+\echaf{d'après le excel du LISN}, ou
+
+\begin{equation}
+	K_p = \echaf{\frac{u\nu}{\rho \mathbf g}},
+	\label{eq:DefPermeabilite_Wikipedia}
+\end{equation}
+\echaf{d'après la formulation générale.}
+
+Les dimensions et paramètres du régénérateur sont résumés dans le tableau \ref{tab:ParamHydrauTAC}.
 
 \begin{table}[!ht]
     \centering
@@ -56,7 +70,7 @@ avec $d_w$ le diamètre du fil. Les dimensions et paramètres du régénérateur
         Porosité du noyau $\Phi$ [\unit{\percent}] & \num{68}\\
         Couche limite thermique $\delta_\kappa$ [\unit{\meter}] & \num{1.4452e-4} \\
         Couche limite visqueuse $\delta_\nu$ [\unit{\meter}] & \num{9.1120e-5} \\
-        \echaf{Perméabilité} [\unit{\meter\squared}] & \\
+        \echaf{Perméabilité} [\unit{\meter\squared}] & \num{2.68e-10} \\
         \hline
     \end{tabular}
     \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement, \linebreak $f=\qty{47}{\Hz}$}
@@ -225,12 +239,12 @@ Les acquisitions sont réalisées en plusieurs temps. Tout d'abord et pour toute
 
 Ensuite, en prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'échangeur ambiant (voir l'annexe~\ref{chap:AHX}), l'eau est préalablement mise en circulation dans cet échangeur après avoir démarré une acquisition des 30 capteurs jusqu'à stabilisation de la distribution de température dans le noyau. L'acquisition est ensuite interrompue et enregistrée avec un label `\texttt{Water}'. \bigskip
 
-L'étape suivante dépend du type d'expérience menée : les mesures peuvent être sans ou avec acoustique, et ce, pour  différentes amplitudes de pression oscillante. En revanche, certains des paramètres d'excitation reste constant pour toutes les expériences :  le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, et le tout est pressurisé à \qty{40}{\bar}. Dans le cas des expériences à \textit{drive ratio} non nul, la fréquence est toujours de \qty{47}{\hertz}, car la prédiction des performances annonce les meilleurs résultats. C'est également la première fréquence de résonance de la source principale, et son facteur de qualité très élevé (\echaf{$Q_{ts}=$}) ainsi que la faible valeur de résistance de la bobine ($R_e=\qty{.7}{\ohm}$) empêchent l'amplificateur QSC de fonctionner à une autre fréquence sans l'endommager, l'impédance minimale supportée étant de \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60}, ce que le modèle \textsc{DeltaEC} indique comme déphasage optimale et que des expériences préliminaires confirment.
+L'étape suivante dépend du type d'expérience menée : les mesures peuvent être sans ou avec acoustique, et ce, pour  différentes amplitudes de pression oscillante. En revanche, certains des paramètres d'excitation reste constant pour toutes les expériences :  le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, car dans ces proportions le nombre de Prandtl est minimum ; le mélange est pressurisé à \qty{40}{\bar}. Dans le cas des expériences à \textit{drive ratio} non nul, la fréquence est toujours de \qty{47}{\hertz}, car la prédiction des performances annonce les meilleurs résultats. Comme c'est également la fréquence de résonance du système, c'est le seul point de fonctionnement ou l'impédance électrique est supérieure à la limite basse admise par l'amplificateur, soit \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60}, ce que le modèle \textsc{DeltaEC} indique comme déphasage optimale et que des expériences préliminaires confirment.
 
 \paragraph{Mesures sans acoustique}\label{chap:MesureSansAcou}
 Pour ces mesures de type `\texttt{heat\_{}only}', la charge thermique est appliquée au noyau sans alimenter les sources acoustiques. Cette charge thermique consiste en l'alimentation des cartouches chauffantes contenues dans l'échangeur froid par une puissance électrique connue, tandis qu'un débit d'eau de \qty{7}{\litre\per\minute} s'écoule dans l'échangeur ambiant qui se trouve de l'autre côté du noyau. 
 
-Ces mesures \echaf{doivent} permettre d'étudier la distribution de température en l'absence d'écoulement oscillant, ainsi que de calculer les valeurs de conductivité thermique $k_x$ et $k_r$ ou les coefficients de pertes latérales $h_x$ et $h_r$.\medskip
+Ces mesures doivent permettre d'étudier la distribution de température en l'absence d'écoulement oscillant, ainsi que de calculer les valeurs de conductivité thermique $k_x$ et $k_r$ ou les coefficients de pertes latérales $h_x$ et $h_r$.\medskip
 
 Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante \fg{} sont conservés pour des raisons de clarté, mais l'eau circulant dans l'échangeur ambiant et les cartouches chauffantes se trouvant dans l'échangeur froid, la direction du gradient de température dans le noyau thermoacoustique est inversée par rapport aux expériences avec acoustique. %Toutefois, les ordres de grandeur des différences de température sont les mêmes que pour les expériences avec acoustique, c'est-à-dire 
 
@@ -320,7 +334,7 @@ ainsi que la vitesse verticale de référence correspondante,
 \end{equation}
 
 
-Lorsque la convection naturelle provoque un écoulement circulant à une vitesse de référence $v_{\sf ref}$, il est possible de quantifier la contribution des échanges thermiques ainsi \echaf{provoqués/favorisés} et des pertes visqueuses en définissant le nombre de Grashof par
+Lorsque la convection naturelle provoque un écoulement circulant à une vitesse de référence $v_{\sf ref}$, il est possible de quantifier la contribution des échanges thermiques ainsi provoqués et des pertes visqueuses en définissant le nombre de Grashof par
 
 \begin{equation}
 	\Grashof = \left( \frac{v_{\sf ref} L_c}{\nu} \right)^2,
@@ -335,14 +349,14 @@ et qui est relié au nombre de Rayleigh par la formule
 
 
 \paragraph{Avec acoustique}
-Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse n'a pas de sens dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causé par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
+Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse ne peut pas être respectée dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causé par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
 
 \begin{equation}
 	\Peclet = \frac{v L_c}{\kappa}.
 	\label{eq:NbrPeclet}
 \end{equation}
 
-Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluide causé par un échange thermique, le nombre de Péclet quantifie les échanges de chaleur réalisés par un fluide qui se déplace. Cependant, il reste nécessaire de proposer une hypothèse quant à l'utilisation de ce nombre : la vitesse d'entraînement du fluide est ici la vitesse acoustique $v$, contrairement aux cas classiques de son utilisation dans la littérature où un écoulement continu est considéré. De même que le nombre de Rayleigh, le nombre de Péclet est lié aux nombres de Grashof et Prandtl suivant la relation 
+Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluide causé par un échange thermique, le nombre de Péclet quantifie les échanges de chaleur réalisés par un fluide déjà en mouvement. Cependant, il reste nécessaire de proposer une hypothèse quant à l'utilisation de ce nombre : la vitesse d'entraînement du fluide est ici la vitesse acoustique $v$, contrairement aux cas classiques de son utilisation dans la littérature où un écoulement continu est considéré. De même que le nombre de Rayleigh, le nombre de Péclet est lié aux nombres de Grashof et Prandtl suivant la relation 
 
 \begin{equation}
 	\Peclet \equiv \sqrt{\Grashof}~\Prandtl,
@@ -350,14 +364,14 @@ Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluid
 \end{equation}
 différente de l'équation~\eqref{eq:NbrGrashof_RayleighSurPrandtl}.
 
-Ces échanges thermiques par convection sont à comparer aux transferts de chaleur par conduction. La prépondérance de chaque effet est donnée par le calcul du nombre de Nusselt, dont la définition est
+Ces échanges thermiques par convection sont à comparer aux transferts de chaleur par conduction, car il est tout à fait possible que les parois des cavités ou encore le matériau poreux lui-même offrent un chemin pour la diffusion thermique. La prépondérance de chaque effet est donnée par le calcul du nombre de Nusselt, dont la définition est
 
 \begin{equation}
 	\Nusselt = \frac{h L_c}{k},
 \end{equation}
-avec $h$ le coefficient d'échange convectif.\bigskip
+avec $h$ le coefficient d'échange convectif à déterminer.\bigskip
 
-Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois.
+Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTransoitoire_SansConvNat} doivent également être évalués par ces équations.
 
 \subsubsection{\'Elements finis}
 \paragraph{Volume d'adaptation d'impédance}

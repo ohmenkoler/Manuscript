@@ -51,7 +51,7 @@ avec $d_w$ le diamètre du fil. Ce matériau poreux dispose d'une certaine capac
 \echaf{d'après le excel du LISN}, ou
 
 \begin{equation}
-	K_p = \echaf{\frac{u\nu}{\rho \mathbf g}},
+	K_p = \echaf{v_{\sf ref}\frac{\nu \Delta x}{\Delta P}},
 	\label{eq:DefPermeabilite_Wikipedia}
 \end{equation}
 \echaf{d'après la formulation générale.}
@@ -239,7 +239,7 @@ Les acquisitions sont réalisées en plusieurs temps. Tout d'abord et pour toute
 
 Ensuite, en prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'échangeur ambiant (voir l'annexe~\ref{chap:AHX}), l'eau est préalablement mise en circulation dans cet échangeur après avoir démarré une acquisition des 30 capteurs jusqu'à stabilisation de la distribution de température dans le noyau. L'acquisition est ensuite interrompue et enregistrée avec un label `\texttt{Water}'. \bigskip
 
-L'étape suivante dépend du type d'expérience menée : les mesures peuvent être sans ou avec acoustique, et ce, pour  différentes amplitudes de pression oscillante. En revanche, certains des paramètres d'excitation restent constants pour toutes les expériences :  le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, car dans ces proportions le nombre de Prandtl est minimum \cite{belcher_working_1999} ; ce mélange est ensuite pressurisé à \qty{40}{\bar}. Dans le cas des expériences à \textit{drive ratio} non nul, le modèle \textsc{DeltaEC} prédit les meilleurs performances à la fréquence $f=\qty{47}{\hertz}$, c'est-à-dire la fréquence de résonance du système. C'est par ailleurs le seul point de fonctionnement où l'impédance électrique est supérieure à la limite basse admise par l'amplificateur, soit \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60} pour toutes les expériences, également indiqué comme déphasage optimale par les simulations et que des expériences préliminaires confirment.
+L'étape suivante dépend du type d'expérience menée : les mesures peuvent être sans ou avec acoustique, et ce, pour  différentes amplitudes de pression oscillante. En revanche, certains des paramètres d'excitation restent constants pour toutes les expériences :  le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, car dans ces proportions le nombre de Prandtl est minimum \cite{belcher_working_1999} ; ce mélange est ensuite pressurisé à \qty{40}{\bar}. Dans le cas des expériences avec acoustique, le modèle \textsc{DeltaEC} prédit les meilleurs performances à la fréquence $f=\qty{47}{\hertz}$, c'est-à-dire la fréquence de résonance du système. C'est par ailleurs le seul point de fonctionnement où l'impédance électrique est supérieure à la limite basse admise par l'amplificateur, soit \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60} pour toutes les expériences, également indiqué comme déphasage optimale par les simulations et que des expériences préliminaires confirment.
 
 \paragraph{Mesures sans acoustique}\label{chap:MesureSansAcou}
 Pour ces mesures de type `\texttt{heat\_{}only}', la charge thermique est appliquée au noyau sans alimenter les sources acoustiques. Cette charge thermique consiste en l'alimentation électrique de cartouches chauffantes contenues dans l'échangeur froid par une puissance connue, tandis qu'un débit d'eau de \qty{7}{\litre\per\minute} s'écoule dans l'échangeur ambiant qui se trouve de l'autre côté du noyau. 
@@ -257,17 +257,18 @@ Au cours de cette étude, trois amplitudes acoustiques sont choisies. La premiè
 
 
 
-
+\begin{comment}
 \subsubsection{Paramètres d'acquisition}
 Comme dit précédemment, la fréquence de fonctionnement du \textsc{Tacot} est de \qty{47}{\hertz}, ce qui implique une fréquence d'échantillonnage au moins deux fois supérieure. Cependant, les cartes d'acquisition sont rassemblées sur une baie d'instrumentation, contraignent la fréquence d'échantillonage utilisée. Celles concernant les mesures de quantité oscillantes (pression acoustique, accélération \echaf{à vérifier}) imposent que la fréquence d'échantillonage $f_s$ soit au moins égale à \qty{1651}{\Hz}\footnote{Les acquisitions des \num{30} capteurs durent \qty{1}{\hour}, et les données sont encodées sur \qty{32}{\bit} flottants. Au total, chaque acquisition pèse \qty{713}{\mega\byte}, taille à laquelle il faut ajouter quelques \unit{\mega\byte} pour le protocole \texttt{tdms} et l'entête contenant les informations de mesure.}.
+\end{comment}
 
 \section{Ensemble des simulations réalisées}\label{chap:SimusRealisees}
 \subsection{Estimation théorique du flux de chaleur de convection naturelle}
-Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- Volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géometries, du type de convection naturelle rencontré, de la porosité, etc. Des études hydrodynamiques sont menées pour aider à l'interprétation des mesures de température. \medskip
+Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géometries, du type de convection naturelle rencontré, de la porosité, etc. Des études hydrodynamiques sont menées pour aider à l'interprétation des mesures de température. \medskip
 
 Tout d'abord, deux étude très simplifiées sont réalisées pour une cavité 2D différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Cette étude doit permettre l'obtention d'ordres de grandeurs des quantité d'intérêt, en particulier le flux de chaleur $Q_{conv}$ qui agit comme une charge thermique sur le côté froid du noyau thermoacoustique. \smallskip
 
-Ensuite, une simulation par éléments finis de cette cavité sur le logiciel Comsol Multiphysics doit permettre d'estimer les lignes de courants dans la cellule et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid.
+Ensuite, des simulations par éléments finis de cette cavité et sur le régénérateur sur le logiciel Comsol Multiphysics permettent d'estimer les lignes de courants dans la cellule et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid, en plus de déterminer des paramètres clés pour la compréhension des phénomènes thermiques en jeu.
 
 \subsubsection{\'Etude simplifiée}
 \paragraph{Sans acoustique}
@@ -275,20 +276,20 @@ Pour introduire des concepts utiles à la compréhension des phénomènes de con
 
 Dans la première sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(a)}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.
 
-Dans la seconde sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(b)}, ce sont cette fois les sol et plafond qui sont fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos pour lesquels la température est $T_\infty$. Dans cette configuration, favorable a priori à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il peut s'établir une ou plusieurs cellules de convection naturelle si le nombre de Rayleigh $\Rayleigh$ est supérieur à un nombre de Rayleigh critique $\Rayleigh_c$ \echaf{valeur 1700 ? + citation}. Le gaz s'élève de la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(b)} qui ne représente qu'une illustration grossière du mouvement du fluide. Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
+Dans la seconde sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(b)}, ce sont cette fois les sol et plafond qui sont fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos pour lesquels la température est $T_\infty$. Dans cette configuration, favorable a priori à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il peut s'établir des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre 650 et 1700 pour des parois à température fixe \cite{getling_rayleigh-benard_1998}. Le gaz s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(b)} qui ne représente qu'une illustration grossière du mouvement du fluide. Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
 
 \begin{figure}[!ht]
     \centering
     \external{fig_SimuConvNat2D}
 %    \externalremake
     \input{../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D}
-    \caption{Cellule de convection naturelle dans une cavité rectangulaire 2D \textbf{(a)} pour un gradient de température normal à la direction de la gravité, et \textbf{(b)} pour un gradient de température colinéaire à la direction de la gravité. Cela dit, la distance caractéristique est \echaf{choisie} dans les deux cas suivant la même direction que la gravité.}
+    \caption{Cellule de convection naturelle dans une cavité rectangulaire 2D \textbf{(a)} pour un gradient de température normal à la direction de la gravité, et \textbf{(b)} pour un gradient de température colinéaire à la direction de la gravité. Quelque soit la configuration, la distance caractéristique est mesurée dans la direction verticale.}
     \label{fig:SimuConvNat2D}
 \end{figure}
 
 
 
-Pour un tel système, il est possible de modéliser l'écoulement en utilisant les équations de Navier-Stokes, réécrites dans le système d'équations~\eqref{eq:NavierStokes_Boussinesq} avec l'approximation de Boussinesq tel que
+Il est possible de modéliser l'écoulement dans ce volume en utilisant les équations de Navier-Stokes avec l'approximation de Boussinesq qui s'écrivent
 
 \begin{subequations}
 	\begin{align}
@@ -298,7 +299,7 @@ Pour un tel système, il est possible de modéliser l'écoulement en utilisant l
 	\end{align}
 	\label{eq:NavierStokes_Boussinesq}%
 \end{subequations}
-La dédimensionalisation de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} qui concerne la conservation de la quantité de mouvement s'écrit
+La dédimensionalisation de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} qui concerne la conservation de la quantité de mouvement donne
 
 \begin{equation}
 	\frac{1}{\mathrm{Pr}}(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\mathbf{v}) = -\nabla p + \mathrm{Ra} T \mathbf e_z + \nabla^2 \cdot \mathbf{v},
@@ -318,7 +319,7 @@ où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de
 	\end{align}
 	\label{eq:VitesseReference_Rayleigh}%
 \end{subequations}
-d'après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud et dans le cas où le gradient de température est lui-même horizontal \cite{belleoud_etude_2016}. \echaf{gradient vertical et Rayleigh critique pour apparition/stabilité de la cellule de Rayleigh-Bénard.}
+d'après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud et dans le cas où le gradient de température est lui-même horizontal \cite{belleoud_etude_2016}.\medskip
 
 Dans un matériau poreux, il peut également exister des écoulements liés à la convection naturelle. Dans ce cas, le nombre de Rayleigh est toujours une notion utile pour prédire le mouvement du fluide à l'intérieur, à condition toutefois de le modifier pour prendre en compte la perméabilité $K_p$ ainsi que la diffusivité thermique $\kappa_p$ de ce milieu. Il vient alors l'expression du nombre de Rayleigh-Darcy noté $\mathrm{Ra}_p$, et dont la définition est donnée par Nield et Bejan \cite{nield_convection_2013} par
 
@@ -356,13 +357,13 @@ Les termes précédents sont issus de la littérature en l'absence d'écoulement
 	\label{eq:NbrPeclet}
 \end{equation}
 
-Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluide causé par un échange thermique, le nombre de Péclet quantifie les échanges de chaleur réalisés par un fluide déjà en mouvement. Cependant, il reste nécessaire de proposer une hypothèse quant à l'utilisation de ce nombre : la vitesse d'entraînement du fluide est ici la vitesse acoustique $v$, contrairement aux cas classiques de son utilisation dans la littérature où un écoulement continu est considéré. De même que le nombre de Rayleigh, le nombre de Péclet est lié aux nombres de Grashof et Prandtl suivant la relation 
+Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluide causé par un échange thermique, le nombre de Péclet quantifie les échanges de chaleur réalisés par un fluide déjà en mouvement. Cependant, il reste nécessaire de proposer une hypothèse quant à l'utilisation de ce nombre : la vitesse d'entraînement du fluide est ici la vitesse acoustique efficace $v_{\sf RMS}$, contrairement aux cas classiques de son utilisation dans la littérature où un écoulement continu est considéré. De même que le nombre de Rayleigh, le nombre de Péclet est lié aux nombres de Grashof et Prandtl suivant la relation 
 
 \begin{equation}
 	\Peclet \equiv \sqrt{\Grashof}~\Prandtl,
 	\label{eq:NbrPeclet_GrashofFoisPrandtl}
 \end{equation}
-différente de l'équation~\eqref{eq:NbrGrashof_RayleighSurPrandtl}.
+différente de l'équation~\eqref{eq:NbrGrashof_RayleighSurPrandtl}.\medskip
 
 Ces échanges thermiques par convection sont à comparer aux transferts de chaleur par conduction, car il est tout à fait possible que les parois des cavités ou encore le matériau poreux lui-même offrent un chemin pour la diffusion thermique. La prépondérance de chaque effet est donnée par le calcul du nombre de Nusselt, dont la définition est
 
@@ -385,9 +386,10 @@ Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavit
 \end{figure}
 
 \paragraph{Régénérateur}
+Le nombre de Rayleigh dans un matériau poreux dépend de sa perméabilité. Il est assez difficile de la calculer car il faut connaître la vitesse d'écoulement et la différence de pression de part et d'autre du domaine étudié. Le régénérateur est modélisé dans Comsol pour extraire ses paramètres hydrauliques et calculer les nombres adimensionnels déjà présentés.
 
 \subsection{Modèle du régime transitoire sans convection naturelle} \label{chap:ModeleTransoitoire_SansConvNat}
-Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du \textit{stack} en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volumes éléméntaires $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques.
+Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volumes éléméntaires $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques.
 
 \echaf{La suite est presque rédigée mais amenée à changer, cette partie sera écrite après le 08/12}
 

@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '_main_.blg'
-[212] biber-MSWIN64:340> INFO - === 
-[279] Biber.pm:419> INFO - Reading '_main_.bcf'
-[511] Biber.pm:979> INFO - Found 43 citekeys in bib section 0
-[545] Biber.pm:4419> INFO - Processing section 0
-[568] Biber.pm:4610> INFO - Looking for bibtex file '../bib/phd_bib.bib' for section 0
-[646] bibtex.pm:1713> INFO - LaTeX decoding ...
-[993] bibtex.pm:1519> INFO - Found BibTeX data source '../bib/phd_bib.bib'
-[1583] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1583] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1583] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'fr-FR'
-[1583] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
-[1650] bbl.pm:660> INFO - Writing '_main_.bbl' with encoding 'UTF-8'
-[1698] bbl.pm:763> INFO - Output to _main_.bbl
+[225] biber-MSWIN64:340> INFO - === 
+[293] Biber.pm:419> INFO - Reading '_main_.bcf'
+[520] Biber.pm:979> INFO - Found 44 citekeys in bib section 0
+[557] Biber.pm:4419> INFO - Processing section 0
+[581] Biber.pm:4610> INFO - Looking for bibtex file '../bib/phd_bib.bib' for section 0
+[673] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1078] bibtex.pm:1519> INFO - Found BibTeX data source '../bib/phd_bib.bib'
+[1880] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1880] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1881] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'fr-FR'
+[1881] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
+[1946] bbl.pm:660> INFO - Writing '_main_.bbl' with encoding 'UTF-8'
+[1993] bbl.pm:763> INFO - Output to _main_.bbl

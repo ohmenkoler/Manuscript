@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  5 DEC 2024 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  6 DEC 2024 17:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1654,7 +1654,8 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
 09.
-(C:\Program Files\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
+(C:\Program Files\MiKTeX\tex/latex/stmaryrd\ustmry.fd) (Citations.tex) (Remerci
+ements.tex)
 No file external/_main_-figure1.lof.
 No file external/_main_-figure1.lot.
 (Introduction.tex
@@ -1926,35 +1927,35 @@ Overfull \hbox (24.50075pt too wide) in paragraph at lines 248--249
  []
 
 
-LaTeX Warning: Citation 'Electroac_Grains' on page 6 undefined on input line 28
-0.
+LaTeX Warning: Citation 'Electroac_Grains' on page 6 undefined on input line 27
+1.
 
 
-LaTeX Warning: Reference `fig:CircEquivTAC' on page 6 undefined on input line 2
-86.
+LaTeX Warning: Reference `fig:CircEquivTAC' on page 6 undefined on input line 3
+05.
 
 (../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex)
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 293.
+ut line 312.
 
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 293.
+ut line 312.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
 []\T1/iwonal/b/sc/10 Figure I.4 \T1/iwonal/b/n/10 ^^U |\T1/iwonal/m/n/10 Cir-cu
 it équi-valent à un noyau ther-moa-cous-tique. Ex-trait de
  []
 
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 303.
+ut line 322.
 
 
-LaTeX Warning: Reference `fig:WavesInDuctPiece' on page 6 undefined on input li
-ne 309.
+LaTeX Warning: Reference `fig:WavesInDuctPiece' on page 7 undefined on input li
+ne 328.
 
 (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 Missing character: There is no ; in font nullfont!
@@ -1965,40 +1966,40 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-LaTeX Warning: Reference `fig:CircEquivTAC' on page 7 undefined on input line 4
-12.
+LaTeX Warning: Reference `fig:CircEquivTAC' on page 8 undefined on input line 4
+31.
 
 
-LaTeX Warning: Citation 'so_internal_2006' on page 8 undefined on input line 46
-7.
+LaTeX Warning: Citation 'so_internal_2006' on page 8 undefined on input line 48
+6.
 
 
 LaTeX Warning: Citation 'bailliet_acoustic_2001' on page 8 undefined on input l
-ine 467.
+ine 486.
 
 
 LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
-t line 467.
+t line 486.
 
 
 LaTeX Warning: Citation 'ross_influence_2003' on page 8 undefined on input line
- 467.
+ 486.
 
 
 LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
-t line 467.
+t line 486.
 
 
 LaTeX Warning: Citation 'hireche_numerical_2019' on page 8 undefined on input l
-ine 467.
+ine 486.
 
 
-LaTeX Warning: Citation 'zhang_novel_2011' on page 8 undefined on input line 46
-7.
+LaTeX Warning: Citation 'zhang_novel_2011' on page 8 undefined on input line 48
+6.
 
 
 LaTeX Warning: Citation 'babaei_investigation_2010' on page 8 undefined on inpu
-t line 467.
+t line 486.
 
 ) (DispositifExpe.tex
 Chapitre II.
@@ -2226,19 +2227,6 @@ LaTeX Warning: Reference `fig:OrientationCore' on page 14 undefined on input li
 ne 194.
 
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-01.
-(C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
 \openout6 = `external/_main_-figure1.dpth'.
 
 Missing character: There is no ; in font nullfont!
@@ -2255,8 +2243,20 @@ Missing character: There is no ; in font nullfont!
 altop \@gobble }{}}
 {C:/Users/mfontbon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program
  Files/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}{C:/Program Files/MiKTeX/fonts
-/enc/dvips/iwona/sy-iwona.enc}]) (../fig/fig_OrientationCore/tex/subfig_Orienta
-tionCoreV1.tex
+/enc/dvips/iwona/sy-iwona.enc}])
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+01.
+(C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2354,7 +2354,7 @@ LaTeX Warning: Reference `fig:OrientationCore_H2' on page 14 undefined on input
  line 230.
 
 
-LaTeX Warning: Reference `fig:OrientationCore_V1' on page 14 undefined on input
+LaTeX Warning: Reference `fig:OrientationCore_V1' on page 15 undefined on input
  line 232.
 
 
@@ -2365,7 +2365,7 @@ LaTeX Warning: Reference `fig:OrientationCore_V2' on page 15 undefined on input
 LaTeX Warning: Reference `chap:AHX' on page 15 undefined on input line 240.
 
 
-LaTeX Warning: Citation 'belcher_working_1999' on page 16 undefined on input li
+LaTeX Warning: Citation 'belcher_working_1999' on page 15 undefined on input li
 ne 242.
 
 LaTeX Info: Symbol \textohm not provided by
@@ -3446,16 +3446,16 @@ Package logreq Info: Writing requests to 'external/_main_-figure1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 74108 strings out of 474435
- 1879586 string characters out of 5751739
- 3763046 words of memory out of 5000000
- 94948 multiletter control sequences out of 15000+600000
+ 74128 strings out of 474435
+ 1880143 string characters out of 5751739
+ 3763139 words of memory out of 5000000
+ 94962 multiletter control sequences out of 15000+600000
  705563 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,21n,93p,4581b,2472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb>
-Output written on external/_main_-figure1.pdf (1 page, 44800 bytes).
+Output written on external/_main_-figure1.pdf (1 page, 45042 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)

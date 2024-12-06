@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  6 DEC 2024 17:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  6 DEC 2024 16:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1507,7 +1507,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
-No file external/_main_-figure3.aux.
+No file external/_main_-figure4.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 305.
 LaTeX Font Info:    ... okay on input line 305.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 305.
@@ -1600,7 +1600,7 @@ lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `french'. on input line 305.
-No file external/_main_-figure3.toc.
+No file external/_main_-figure4.toc.
 Package biblatex Info: Trying to load language 'french'...
 Package biblatex Info: ... file 'french.lbx' found.
 (C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\french.lbx
@@ -1610,8 +1610,8 @@ Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'external/_main_-figure3.bbl' not found.
-No file external/_main_-figure3.bbl.
+Package biblatex Info: ... file 'external/_main_-figure4.bbl' not found.
+No file external/_main_-figure4.bbl.
 Package biblatex Info: Reference section=0 on input line 305.
 Package biblatex Info: Reference segment=0 on input line 305.
 Package pgfplots notification 'compat/show suggested version=true': document ha
@@ -1656,8 +1656,8 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
 09.
 (C:\Program Files\MiKTeX\tex/latex/stmaryrd\ustmry.fd) (Citations.tex) (Remerci
 ements.tex)
-No file external/_main_-figure3.lof.
-No file external/_main_-figure3.lot.
+No file external/_main_-figure4.lof.
+No file external/_main_-figure4.lot.
 (Introduction.tex
 Chapitre I.
 
@@ -2248,7 +2248,15 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1.tex
-\openout6 = `external/_main_-figure3.dpth'.
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex
+\openout6 = `external/_main_-figure4.dpth'.
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2264,16 +2272,7 @@ Missing character: There is no ; in font nullfont!
 altop \@gobble }{}}
 {C:/Users/mfontbon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program
  Files/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}{C:/Program Files/MiKTeX/fonts
-/enc/dvips/iwona/sy-iwona.enc}]) (../fig/fig_OrientationCore/tex/subfig_Orienta
-tionCoreV2.tex
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
+/enc/dvips/iwona/sy-iwona.enc}])
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 14 undefined on
  input line 222.
@@ -3439,24 +3438,24 @@ LaTeX Warning: There were undefined references.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                external/_main_-figure3
+(biblatex)                external/_main_-figure4
 (biblatex)                and rerun LaTeX afterwards.
 
-Package logreq Info: Writing requests to 'external/_main_-figure3.run.xml'.
-\openout1 = `external/_main_-figure3.run.xml'.
+Package logreq Info: Writing requests to 'external/_main_-figure4.run.xml'.
+\openout1 = `external/_main_-figure4.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  74128 strings out of 474435
  1880143 string characters out of 5751739
- 3764138 words of memory out of 5000000
+ 3763139 words of memory out of 5000000
  94962 multiletter control sequences out of 15000+600000
  705563 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,21n,93p,4581b,2472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb>
-Output written on external/_main_-figure3.pdf (1 page, 45078 bytes).
+Output written on external/_main_-figure4.pdf (1 page, 45052 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)

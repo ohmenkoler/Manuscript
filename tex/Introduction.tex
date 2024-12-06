@@ -264,7 +264,11 @@ Les machines thermoacoustiques sont intéressantes pour l'industrie \echaf{conti
 
 \subsubsection{En général}
 
-Dans l'hypothèse des très basses fréquences, soit lorsque $ka \ll 1$, il est possible de réaliser certaines approximations. L'impédance d'un tube ne comprend que sa composante inertielle, ce qui le rend analogue à une masse mécanique et à une inductance électrique. À l'inverse, une cavité voit son impédance ramenée à un ressort mécanique et un condensateur électrique. Ainsi, les systèmes électro-mécano-acoustiques comme les haut-parleurs ou les guides d'ondes peuvent être modélisés au moyen d'un circuit électrique équivalent. 
+Lorsque la longueur d'onde $\lambda$ est très grande devant une dimension caractéristique $a$ du système, soit lorsque $2\pi a/\lambda \ll 1$, il est possible de réaliser certaines approximations pour modéliser ce système. Ces approximations simplificatrices sont supports d'analogies électro-mécano-acoustiques. 
+
+Sous ces hypothèses, un tube se comporte que sa composante inertielle, ce qui le rend analogue à une masse mécanique et à une inductance électrique. À l'inverse, une cavité voit son impédance ramenée à un ressort mécanique et un condensateur électrique. Enfin, les pertes d'énergie se représentent par une résistance dans les trois domaines.
+
+Ainsi, les systèmes électro-mécano-acoustiques comme les haut-parleurs ou les guides d'ondes peuvent être modélisés au moyen d'un circuit électrique équivalent \cite{Electroac_Grains}. 
 %Le circuit équivalent au haut-parleur électrodynamique est présenté figure~\ref{fig:HP_LEM}.
 %
 %\begin{figure}[!ht]
@@ -277,9 +281,24 @@ Dans l'hypothèse des très basses fréquences, soit lorsque $ka \ll 1$, il est 
 %\end{figure}
 
 \paragraph{Analogies électro-mécaniques}
-\echaf{ajouter schémas du grain 24} \cite{Electroac_Grains}
+
 
 \paragraph{Analogies acousto-mécaniques}
+
+\paragraph{Résumé des analogies}
+
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{| C{.25\textwidth} | C{.25\textwidth} | C{.25\textwidth} |}
+	\hline
+	\multicolumn{3}{|c|}{Domaines} \\\hline
+	Acoustique & Mécanique & \'Electrique \\
+	\tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} &  &  \\
+	\hline
+	
+	\end{tabular}
+	\caption{Analogies électro-mécano-acoustiques}
+\end{table}
 
 \subsubsection{Circuit électrique équivalent à un noyau thermoacoustique}
 

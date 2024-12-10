@@ -59,6 +59,8 @@ avec $d_w$ le diamètre du fil. Ce matériau poreux dispose d'une certaine capac
 Les dimensions et paramètres du régénérateur sont résumés dans le tableau \ref{tab:ParamHydrauTAC}.
 
 \begin{table}[!ht]
+    \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement, \linebreak $f=\qty{47}{\Hz}$}
+    \label{tab:ParamHydrauTAC}
     \centering
     \begin{tabular}{l@{\hspace{1cm}}l}
     	\hline
@@ -73,8 +75,6 @@ Les dimensions et paramètres du régénérateur sont résumés dans le tableau 
         \echaf{Perméabilité} [\unit{\meter\squared}] & \num{2.68e-10} \\
         \hline
     \end{tabular}
-    \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement, \linebreak $f=\qty{47}{\Hz}$}
-    \label{tab:ParamHydrauTAC}
 \end{table}
 
 Cette machine nécessite entre autres choses le respect de la condition $\delta_{\kappa,\nu} \gg r_h$, de sorte à avoir un excellent contact thermique entre le fluide et le solide poreux. Pour le fluide considéré, les épaisseurs de couches limites sont tracées en fonction de la fréquence et comparé au rayon hydraulique sur la figure~\ref{fig:dKdV}.
@@ -393,7 +393,7 @@ Un modèle temporel du régime transitoire de la distribution axiale de tempéra
 
 \echaf{La suite est presque rédigée mais amenée à changer, cette partie sera écrite après le 08/12}
 
-\begin{comment}
+%\begin{comment}
 Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique est différent dans le cas du \textsc{Tacot} de l'hypothèse formulée dans le modèle existant. Sans être complètement \og à ondes progressives \fg{} ni \og à ondes stationnaires \fg{}, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
 
 \begin{subequations}
@@ -560,7 +560,7 @@ avec les changements de variables suivants
 	\item 2.
 \end{itemize}
 
-\end{comment}
+%\end{comment}
 
 
 

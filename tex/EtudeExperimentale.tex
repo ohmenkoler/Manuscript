@@ -2,9 +2,13 @@
 \mylocaltoc
 
 \section{Convection naturelle}\label{chap:EtudeExpe_ConvNat}
-Lors des expériences réalisées lors de la caractérisation du réfrigérateur \textsc{Tacot}, il a été montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau \echaf{figure ?}\cite{ramadan_design_2021}. Cet écart au comportement attendu, c'est-à-dire un gradient linéaire entre les côtés froid et ambiant du noyau thermoacoustique, ainsi qu'une température radiale uniforme sur la section du noyau thermoacoustique, implique la présence d'un écoulement moyen non nul et d'effets non-linéaires dans le réfrigérateur. Parmi les hypothèses formulées quant à la cause de ces disparités avec la théorie linéaire de Rott, plusieurs hypothèses peuvent être envisagées : vent acoustique, turbulence, formation de tourbillons, génération d'harmoniques supérieures, et convection naturelle. Parmi ces effets, peu d'études portent sur cette dernière, bien qu'il ait déjà été montré que le déclenchement de moteurs ou encore l'uniformité de température sur la section y étaient très sensibles \cite{ross_influence_2003,  hireche_numerical_2019, ramadan_experimental_2018,  zhang_novel_2011}.
+Lors des expériences réalisées lors de la caractérisation du réfrigérateur \textsc{Tacot}, il a été montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau \echaf{figure ?}\cite{ramadan_design_2021}. Cet écart au comportement attendu, c'est-à-dire un gradient linéaire entre les côtés froid et ambiant du noyau thermoacoustique, ainsi qu'une température radiale uniforme sur la section du noyau thermoacoustique, implique la présence d'un écoulement moyen non nul et d'effets non-linéaires dans le réfrigérateur. Parmi les hypothèses formulées quant à la cause de ces disparités avec la théorie linéaire de Rott, plusieurs hypothèses peuvent être envisagées : vent acoustique, turbulence, formation de tourbillons, génération d'harmoniques supérieures, et convection naturelle. Parmi ces effets, peu d'études portent sur cette dernière, bien qu'il ait déjà été montré que le déclenchement de moteurs ou encore l'uniformité de température sur la section y étaient très sensibles \cite{ross_influence_2003,  hireche_numerical_2019, ramadan_experimental_2018,  zhang_novel_2011}. Plusieurs paramètres sont étudiés pour quantifier la dépendance du comportement de la machine à la direction de la gravité. 
 
-\subsection{Dans la cavité conique entre la source acoustique principale et le noyau thermoacoustique}
+\subsection{\'Etude des performances}
+Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=Q_f/W_e$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = T_f/(T_c-T_f)$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section.
+
+\subsection{Distribution des températures}
+\subsubsection{Dans la cavité conique entre la source acoustique principale et le noyau thermoacoustique}
 
 Pour faciliter l'analyse de la distribution de température dans le noyau thermoacoustique et ses alentours, celui-ci est découpé en cinq zones réparties le long de l'axe $\mathbf{e}_x$.
 La première étude concerne la distribution de température entre la source acoustique principale et l'échangeur froid, c'est-à-dire dans le cône d'adaptation d'impédance acoustique matérialisé en orange sur la figure~\ref{fig:SchemaGeneralTACOT}. Il est en effet initialement suspecté que la nature du gaz, les dimensions du volume dans lequel il se trouve et les conditions thermiques aux frontières permettent la mise en mouvement du fluide. Cette hypothèse est de plus appuyée par le calcul du nombre de Rayleigh $\mathrm{Ra}$ grâce à l'équation~\eqref{eq:NbrRayleigh}, et dont la valeur suffisament élevée \echaf{citation ?} est
@@ -30,7 +34,7 @@ dans le cas d'une différence de température de \qty{1}{\degreeCelsius}, soit u
 
 Les quatre orientations présentées sur la figure~\ref{fig:OrientationCore} sont regroupées par deux, avec d'une part les orientations horizontales du \textsc{Tacot} `\texttt{H1}' et `\texttt{H2}' où $\psi_v=\ang{0}$ (sous-figures~\subref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}), et d'autre part les orientations verticales `\texttt{V1}' et `\texttt{V2}' pour lesquelles $\psi_v=\pm\ang{90}$ (sous-figures~\subref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}). Pour chacun de ces groupes, les résultats des expériences réalisées aux trois amplitudes décrites dans le paragraphe~§\ref{chap:MesureAvecAcou} sont présentés sur les figures~\ref{fig:HeatOnly_CHXout_H1H2} -- \ref{fig:Acou_CHXout_H1H2_High} et \ref{fig:HeatOnly_CHXout_V1V2} -- \ref{fig:Acou_CHXout_V1V2_High}, respectivement pour les orientations horizontales et verticales. Pour rappel, la temperature initiale de chaque thermocouple est soustraite dans toutes les mesures qui suivent. De plus, les mesures sont rognées de \qtyrange{0}{3500}{\second} pour que la définition du régime stationnaire soit la même pour tous les résultats (sauf dans le cas du \textsc{Tacot} horizontal à moyenne amplitude acoustique, où un problème d'acquisition contraint le découpage de \qtyrange{0}{2700}{\second}). Un rééchantillonnage à \qty{.1}{\hertz} est également appliqué aux mesures de températures pour limiter la dimension des fichiers de données.
 
-\subsubsection{Réfrigérateur horizontal}
+\paragraph{Réfrigérateur horizontal}
 Pour rappel, le réfrigérateur est placé à l'horizontal dans ces expériences. Les notations suivantes sont introduites pour cette partie concernant les expériences `\texttt{H1}' et `\texttt{H2}' :
 
 \begin{itemize}
@@ -42,7 +46,7 @@ Pour rappel, le réfrigérateur est placé à l'horizontal dans ces expériences
 	\end{itemize}
 \end{itemize}
 
-\paragraph{Sans acoustique}
+\paragraph*{Sans acoustique}
 Pour séparer les phénomènes physiques et les transferts thermiques mis en jeu à l'intérieur de la pompe à chaleur, des expériences sans acoustiques sont menées préalablement aux mesures pour lesquelles les sources acoustiques sont alimentées. Un gradient de température le long du noyau thermoacoustique est maintenu en appliquant un chauffage par les cartouches contenues dans l'échangeur de chaleur froid, et un écoulement d'eau à température ambiante dans l'échangeur de chaleur ambiant. Ainsi, dans la cavité considérée ici, l'échangeur froid agit comme une source de chaleur et la source acoustique reste à température ambiante, et la situation est en quelque sorte l'opposée des expériences avec acoustique. Les résultats du régime transitoire sont présentés sur la figure~\ref{fig:HeatOnly_CHXout_H1H2}. Il est possible de remarquer
 
 \begin{figure}[!ht]
@@ -54,7 +58,7 @@ Pour séparer les phénomènes physiques et les transferts thermiques mis en jeu
     \label{fig:HeatOnly_CHXout_H1H2}
 \end{figure}
 
-\paragraph{Avec acoustique}\label{chap:Acou_CHXout_H1H2_low}
+\paragraph*{Avec acoustique}\label{chap:Acou_CHXout_H1H2_low}
 Les premiers résultats sont obtenus pour les expériences horizontales `\texttt{H1}' et `\texttt{H2}' présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}, à faible amplitude acoustique avec un \textit{drive ratio} $DR=\qty{.4}{\percent}$, et la température $\theta$ est tracée en fonction du temps $t$ sur la figure~\ref{fig:Acou_CHXout_H1H2_Low}. Pour les deux séries de mesures, c'est-à-dire les plans de thermocouples placés la verticale et l'horizontale et représentées respectivement en trait plein et trait tireté, la différence de température de \qty{2}{\degreeCelsius} entre le centre de l'échangeur froid et la source acoustique plus chaude apparaît après le démarrage de la pompe à chaleur à $t=\qty{100}{\second}$. Sur l'expérience réalisée dans l'orientation `\texttt{H2}', tous les thermocouples sont à la même altitude, et l'égalité des thermocouples~1~et~3 en bleu et en jaune permet notamment de visualiser une symétrie par rapport à un plan vertical passant par l'axe de symétrie du réfrigérateur. En revanche, cette symétrie n'est pas visible sur les courbes en traits pleins qui tracent les résultats de l'expérience menée en plaçant le réfrigérateur dans l'orientation `\texttt{H1}', puisqu'une dépendance de $\theta$ en fonction de $r$ est observable. En particulier, la courbe jaune correspondant au thermocouple~3 est la plus basse, en altitude comme en température, tandis que la courbe bleue qui représente le thermocouple~1 est la plus élevée des température mesurées sur l'échangeur froid, tout en y étant placée au plus haut. Toutefois, ce gradient de température n'est pas linéaire car la température au centre de l'échangeur froid mesurée par le thermocouple~2 n'est séparée que de \qty{.3}{\degreeCelsius} de la température mesurée par le thermocouple~3, tandis que cet écart est de \qty{2.5}{\degreeCelsius} avec le thermocouple~1. Cet dissymétrie est \textit{a priori} inattendue avec les résultats déjà obtenus dans les expériences sans acoustique.
 \smallskip
 
@@ -93,8 +97,8 @@ L'évolution de température $\theta$ au cours de l'expérience à l'amplitude a
 \end{figure}
 
 
-\subsubsection{Réfrigérateur vertical}
-\paragraph{Sans acoustique}
+\paragraph{Réfrigérateur vertical}
+\paragraph*{Sans acoustique}
 \echaf{ICI les manips heat only}
 
 \begin{figure}[!ht]
@@ -106,7 +110,7 @@ L'évolution de température $\theta$ au cours de l'expérience à l'amplitude a
     \label{fig:HeatOnly_CHXout_V1V2}
 \end{figure}
 
-\paragraph{Avec acoustique}
+\paragraph*{Avec acoustique}
 La figure~\ref{fig:Acou_CHXout_V1V2_Low} trace les températures mesurées dans la cavité d'adaptation d'impédance pour des expériences où le réfrigérateur est placé dans les orientations verticales présentées figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}, pour une amplitude \og faible \fg{} soit un \textit{drive ratio} $DR=\qty{.4}{\percent}$. Contrairement aux expériences horizontales où les effets de convection naturelle sont toujours présents mais pas toujours visibles, dans les expériences verticales il existe une configuration favorable à la mise en place d'une instabilité de convection naturelle de type Rayleigh-Bénard, et l'autre, inverse, qui est stable. La première configuration est l'orientation `\texttt{V1}', car la source acoustique y est en dessous du noyau thermoacoustique, car le sens du gradient de température est opposé à la gravité, tandis que la seconde est l'orientation `\texttt{V2}' où la source acoustique est au-dessus du noyau. Dans cette dernière orientation, le gradient de température est dans le même sens que la gravité, et il n'y a pas de flux de chaleur qui apparaît de manière spontanée. La première remarque concerne la différence d'aspect de l'évolution des températures entre une orientation et l'autre, malgré une axi-symétrie visible dans les deux cas et attendue au vu de la colinéarité de la dimensions axiale $\mathbf e_x$ et de la gravité $\mathbf g$. En observant les tracés en lignes tiretées, qui tracent l'évolution de la température $\theta$ au cours de l'expérience dans l'orientation `\texttt{V2}', une différence de température de \qty{3.2}{\degreeCelsius} entre l'échangeur froid du noyau et la source acoustique principale plus chaude apparaît et se maintient durant toute la durée de l'expérience. C'est d'ailleurs le plus grand écart de température relevé dans cette zone. Plus précisément, la température mesurée devant la source acoustique principale baisse \qty{.8}{\degreeCelsius} même après démarrage de celle-ci, ce qui est assez faible pour être en accord avec l'hypothèse de stabilité des températures en l'absence de flux massique causé par la convection naturelle. Dans l'orientation inverse `\texttt{V1}' représentée par les tracés en traits pleins, la différence de température apparaît également après le démarrage des sources acoustiques. Toutefois, après \qty{1800}{\second} les thermocouples sur l'axe de symétrie et en vis à vis l'un de l'autre, autrement dit devant la source acoustique principale et le thermocouple~2, affichent la même température. De manière plus générale, tous les thermocouple de cette zone d'adaptation d'impédance sont à des températures plus homogènes, puisque l'écart maximum de températures est dans ce cas de \qty{.8}{\degreeCelsius}. Un effet très remarquable pour cette orientation est l'évolution de température en deux étapes : la première, pendant laquelle la température sur l'échangeur froid diminue et qui s'étend du démarrage des sources à \qty{1100}{\second}, et la seconde, de cet instant jusqu'à la fin de l'acquisition et où un réchauffement des thermocouples sur l'échangeur froid apparaît. Il semblerait qu'il s'agisse là de la manifestations de deux effets aux constantes de temps différentes, l'effet thermoacoustique qui agit dès l'allumage des sources acoustiques et la convection naturelle, plus lente. Il est supposé que lors de la première étape, la différence de température augmente peu à peu et le nombre de Rayleigh avec elle, et ce, jusqu'au dépassement de la valeur critique de $\Rayleigh_c$. Au delà de cette valeur \echaf{que l'on peut estimer expérimentalement avec l'équation~\eqref{eq:NbrRayleigh} appliquée à la différence de température $\Delta \theta|_{t=\qty{1100}{\second}}$ ou bien quand $\partial^2_{tt}\theta=\num{0}$}, une cellule de convection de type Rayleigh-Bénard se met en place, et déplace avec le fluide en mouvement une certaine quantité de chaleur $Q_{\sf conv}$ de la source acoustique vers l'échangeur froid. Le gradient de température entre la source acoustique principale et l'échangeur froid n'étant pas fixé, les deux extrémités de la cavité d'adaptation d'impédance voient leur température converger vers un point d'équilibre, à la valeur moyenne des températures mesurées au mêmes emplacements dans l'orientation `\texttt{V2}'.
 \smallskip
  
@@ -144,9 +148,9 @@ En revanche, la figure~\ref{fig:Acou_CHXout_V1V2_High} qui présente les résult
 
 
 
-\subsection{À l'intérieur du régénérateur}
-\subsubsection{Réfrigérateur horizontal}
-\paragraph{Faible amplitude acoustique}
+\subsubsection{À l'intérieur du régénérateur}
+\paragraph{Réfrigérateur horizontal}
+\paragraph*{Faible amplitude acoustique}
 Les figures~\ref{fig:Acou_CHXin_H1H2_Low} à \ref{fig:Acou_AHXin_H1H2_Low} montrent les résultats à faible amplitude acoustique, pour les trois positions axiales le long du régénérateur. Dans cette configuration, le nombre de Rayleigh $\Rayleigh_p$ est de \echaf{Valeur}. 
 
 Tout d'abord, du côté de l'échangeur froid dont les résultats d'expériences sont affichés sur la figure~\ref{fig:Acou_CHXin_H1H2_Low}, une tendance similaire à ce qui a été montré dans la cavité d'adaptation d'impédance sur la figure~\ref{fig:Acou_CHXout_H1H2_Low} est visible. Notamment, la température mesurée par le thermocouple~5 placé au centre du régénérateur est la même dans les deux orientations, avec une diminution de \qty{5.2}{\degreeCelsius} par rapport à la température initiale pour l'orientation `\texttt{H1}', et de \qty{4.8}{\degreeCelsius} pour l'orientation `\texttt{H2}'. La périphérie du régénérateur, dont les températures sont acquises par les thermocouples~4~et~6, voient à l'inverse leur température varier en fonction de l'orientation. Dans l'orientation `\texttt{H1}', les températures données par les thermocouples~5~et~6 sont respectivement égales à \qty{-5.2}{\degreeCelsius} et \qty{-4.8}{\degreeCelsius}, et le thermocouple~4 indique une température de \qty{-2.9}{\degreeCelsius}. En revanche, dans l'orientation `\texttt{H2}' ce sont cette fois les thermocouples~4~et~6 qui sont proches car égaux à \qty{-3}{\degreeCelsius} et \qty{-3.2}{\degreeCelsius}, et le thermocouple~5 qui relève \qty{-4.8}{\degreeCelsius}. La symétrie par rapport au plan vertical passant par le centre du régénérateur est ainsi maintenue du côté froid intérieur du régénérateur, de même que ce que l'étude dans la cavité d'adapatation d'impédance montre le paragraphe~§\ref{chap:Acou_CHXout_H1H2_low}.
@@ -182,7 +186,7 @@ La température du côté de l'échangeur ambiant est tracée sur la figure~\ref
     \label{fig:Acou_AHXin_H1H2_Low}
 \end{figure}
 
-\paragraph{Moyenne amplitude acoustique}
+\paragraph*{Moyenne amplitude acoustique}
 Les figures~\ref{fig:Acou_CHXin_H1H2_Mid}, \ref{fig:Acou_Regmid_H1H2_Mid} et \ref{fig:Acou_AHXin_H1H2_Mid} tracent respectivement les températures relevées par les thermocouples \numlist{4;5;6} du côté froid du régénérateur, \numlist{7;8;9} placés au milieu de celui-ci, et \numlist{10;11;12} du côté ambiant.
 
 Pour le côté froid, des observations similaires au cas à faible amplitude acoustique peuvent être faites sur la figure~\ref{fig:Acou_CHXin_H1H2_Mid}, c'est-à-dire que ce qui se passe dans la cavité d'adaptation d'impédance se retrouve de l'autre côté de l'échangeur. En particulier, une symétrie est visible dans l'orientation `\texttt{H2}' où les thermocouples périphériques 4~et~6 sont le symétrique l'un de l'autre par rapport au plan vertical et égaux à \qty{-26.1}{\degreeCelsius}. Dans l'orientation `\texttt{H1}' en revanche, cette axisymétrie disparaît et le gradient vertical de température est visible. Toujours non linéaire, les deux thermocouples~5~et~6 situés au dessous du thermocouple~4 voient leur température à moins de \qty{2}{\degreeCelsius} d'écart, à \qty{-29.9}{\degreeCelsius} et \qty{-31.9}{\degreeCelsius}, tandis que ce dernier est \qty{9.9}{\degreeCelsius} au dessus, à \qty{-20}{\degreeCelsius}.
@@ -220,7 +224,7 @@ Du côté ambiant du régénérateur, les températures tracées sur la figure~\
 \end{figure}
 
 
-\paragraph{Haute amplitude acoustique}
+\paragraph*{Haute amplitude acoustique}
 Les figures~\ref{fig:Acou_CHXin_H1H2_High}, \ref{fig:Acou_Regmid_H1H2_High} et \ref{fig:Acou_AHXin_H1H2_High}
 
 \begin{figure}[!ht]
@@ -250,8 +254,8 @@ Les figures~\ref{fig:Acou_CHXin_H1H2_High}, \ref{fig:Acou_Regmid_H1H2_High} et \
     \label{fig:Acou_AHXin_H1H2_High}
 \end{figure}
 
-\subsubsection{Réfrigérateur vertical}
-\paragraph{Faible amplitude acoustique} Figures~\ref{fig:Acou_CHXin_V1V2_Low}, \ref{fig:Acou_Regmid_V1V2_Low} et \ref{fig:Acou_AHXin_V1V2_Low}
+\paragraph{Réfrigérateur vertical}
+\paragraph*{Faible amplitude acoustique} Figures~\ref{fig:Acou_CHXin_V1V2_Low}, \ref{fig:Acou_Regmid_V1V2_Low} et \ref{fig:Acou_AHXin_V1V2_Low}
 \begin{figure}[!ht] %V1V2 low CHX in
     \centering
     \external{fig_Acou_CHXin_V1V2_Low}
@@ -280,7 +284,7 @@ Les figures~\ref{fig:Acou_CHXin_H1H2_High}, \ref{fig:Acou_Regmid_H1H2_High} et \
 \end{figure}
 
 
-\paragraph{Moyenne amplitude acoustique} Figures~\ref{fig:Acou_CHXin_V1V2_Mid}, \ref{fig:Acou_Regmid_V1V2_Mid} et \ref{fig:Acou_AHXin_V1V2_Mid}
+\paragraph*{Moyenne amplitude acoustique} Figures~\ref{fig:Acou_CHXin_V1V2_Mid}, \ref{fig:Acou_Regmid_V1V2_Mid} et \ref{fig:Acou_AHXin_V1V2_Mid}
 \begin{figure}[!ht] %V1V2 mid CHX in
     \centering
     \external{fig_Acou_CHXin_V1V2_Mid}
@@ -308,7 +312,7 @@ Les figures~\ref{fig:Acou_CHXin_H1H2_High}, \ref{fig:Acou_Regmid_H1H2_High} et \
     \label{fig:Acou_AHXin_V1V2_Mid}
 \end{figure}
 
-\paragraph{Haute amplitude acoustique} Figures~\ref{fig:Acou_CHXin_V1V2_High}, \ref{fig:Acou_Regmid_V1V2_High} et \ref{fig:Acou_AHXin_V1V2_High}
+\paragraph*{Haute amplitude acoustique} Figures~\ref{fig:Acou_CHXin_V1V2_High}, \ref{fig:Acou_Regmid_V1V2_High} et \ref{fig:Acou_AHXin_V1V2_High}
 \begin{figure}[!ht] %V1V2 high CHX in
     \centering
     \external{fig_Acou_CHXin_V1V2_High}
@@ -340,7 +344,7 @@ Les figures~\ref{fig:Acou_CHXin_H1H2_High}, \ref{fig:Acou_Regmid_H1H2_High} et \
 
 
 
-\subsection{Dans la cavité entre la source acoustique secondaire et le noyau thermoacoustique}
+\subsubsection{Dans la cavité entre la source acoustique secondaire et le noyau thermoacoustique}
 
 %\begin{figure}[!ht] % V1V2 low AHX out
 %    \centering

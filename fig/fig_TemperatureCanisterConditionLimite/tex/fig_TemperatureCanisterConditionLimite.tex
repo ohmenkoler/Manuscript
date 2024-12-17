@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+	\def\lREG{3.9cm};
+	\def\eCAN{5mm};
+	\def\eWALL{13pt};
+	\def\eFB{6mm};
+	
+	\fill[gray] (0,0) node(O){} rectangle (\lREG,-\eCAN);
+	\fill[top color=gray,bottom color=white](0,-\eCAN) node(eCAN){} rectangle (\lREG,-2*\eCAN);
+	
+	\fill[right color=black!25,left color=white] ($(O)+(0,\eWALL)$) node(eWALL){} rectangle (-\lREG/4,0);
+	\fill[black!25] (O) rectangle (\lREG,\eWALL) node[midway]{$k_{\sf acier}$};
+	\fill[right color=white,left color=black!25] ($(O)+(\lREG,0)$) rectangle ++(\lREG/4,\eWALL);
+	
+	\fill[blue!25!white] ($(O)+(0,\eWALL+\eFB)$) node(eFB){} rectangle ++(\lREG,-\eFB);
+	\fill[right color=blue!25!white,left color=white] (eFB) rectangle ++(-\lREG/4,-\eFB);
+	\fill[right color=white,left color=blue!25!white] ($(eFB)+(\lREG,0)$) rectangle ++(\lREG/4,-\eFB);
+	\fill[top color=white,bottom color=blue!25!white] (eFB) rectangle ++(\lREG,.5*\eFB);
+	\shade[upper left=white,upper right=white,
+         lower left=white,lower right=blue!25!white] (eFB) rectangle ++(-\lREG/4,.5*\eFB);
+	\shade[upper left=white,upper right=white,
+         lower left=blue!25!white,lower right=white] ($(eFB)+(\lREG,0)$) rectangle ++(\lREG/4,.5*\eFB);
+	\draw[->,line width=.5mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},blue!75!white] ($(eWALL)+(\lREG/2,0)$) -- ++(0,\eFB) node[midway,right,blue!75!white]{$h_{\sf conv}$};
+	
+	
+	
+	\draw[->] ($(eFB)+(0,\eFB)$) -- ($(eCAN)+(0,-2.1*\eCAN)$) node[left]{$-\mathbf{e}_r$};
+	\draw[->] (-\lREG/3,0) node(lab){} -- (4*\lREG/3,0) node[above]{$\mathbf{e}_x$};
+	
+	\draw ($(lab) + (0,\eWALL+\eFB/2)$) node[left]{Canal de rétroaction};
+	\draw ($(lab) + (0,\eWALL/2)$) node[left]{Tube contenant le noyau};
+	\draw (eWALL) node[left]{$e_{\sf wall}$};
+	\draw (O) node[left]{0};
+	\draw[line width=1mm,dashed] (eCAN.base) node[left]{$e_{\sf can}$} -- ++(\lREG,0);
+\end{tikzpicture}

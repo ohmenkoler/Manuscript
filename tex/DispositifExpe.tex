@@ -374,7 +374,7 @@ Ces échanges thermiques par convection sont à comparer aux transferts de chale
 \end{equation}
 avec $h$ le coefficient d'échange convectif à déterminer.\bigskip
 
-Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTransoitoire_SansConvNat} doivent également être évalués par ces équations.
+Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTemporel} doivent également être évalués par ces équations.
 
 \subsubsection{\'Elements finis}
 \paragraph{Volume d'adaptation d'impédance}
@@ -390,13 +390,13 @@ Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavit
 \paragraph{Régénérateur}
 Le nombre de Rayleigh dans un matériau poreux dépend de sa perméabilité. Il est assez difficile de la calculer car il faut connaître la vitesse d'écoulement et la différence de pression de part et d'autre du domaine étudié. Le régénérateur est modélisé dans Comsol pour extraire ses paramètres hydrauliques et calculer les nombres adimensionnels déjà présentés.
 
-\subsection{Modèle du régime transitoire sans convection naturelle} \label{chap:ModeleTransoitoire_SansConvNat}
-Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volumes éléméntaires $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques.
+\subsection{Modèle temporel} \label{chap:ModeleTemporel}
+Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volume élémentaire $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques. Ce modèle 2D prend en compte les conditions au limites suivantes : 
 
-\echaf{La suite est presque rédigée mais amenée à changer, cette partie sera écrite après le 08/12}
+
 
 %\begin{comment}
-Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique est différent dans le cas du \textsc{Tacot} de l'hypothèse formulée dans le modèle existant. Sans être complètement \og à ondes progressives \fg{} ni \og à ondes stationnaires \fg{}, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
+Le modèle a pour but de calculer les transferts thermiques dans le régénérateur pour n'importe quel champ acoustique. Aussi, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
 
 \begin{subequations}
 	\begin{multicols}{2}
@@ -413,6 +413,7 @@ Le champ acoustique nécessaire au calcul du flux de chaleur thermoacoustique es
 	\label{eq:TMatrix_regen}
 \end{subequations}
 
+\subsubsection{Flux thermiques}
 Ensuite, les flux thermiques sont également pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer au sein du régénérateur.
 
 \begin{figure}[!ht]
@@ -506,6 +507,19 @@ où $h_x$ et $h_r$ sont respectivement les coefficients d'échanges avec les ext
 %\end{align}
 
 \end{enumerate} 
+
+\subsubsection{Conditions aux limites}
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_TemperatureCanisterConditionLimite}
+    %\externalremake
+    \input{../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterConditionLimite}
+    \caption{Géométrie équivalente pour établir la condition de température à la frontière $r=R_{\sf reg}$.}
+    \label{fig:TemperatureCanisterConditionLimite}
+\end{figure}
+
+\subsubsection{Bilan thermique}
 
 Ces flux de chaleurs sont reportés dans l'équation modifiée du bilan de chaleur qui s'écrit
 

@@ -253,7 +253,7 @@ Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante
 \paragraph{Mesures avec acoustique}\label{chap:MesureAvecAcou} 
 Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, c'est la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial.
 
-Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\frac{p}{P_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible. Ainsi, l'hypothèse concernant la linéarité acoustique est mieux vérifiée et peut \textit{a priori} être plus aisément comparé à la théorie linéaire. À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$. 
+Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\frac{p}{P_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible -- soit un gradient de température de l'ordre de \qty{5}{\degreeCelsius}. Ainsi, l'hypothèse concernant la linéarité acoustique est mieux vérifiée et peut \textit{a priori} être plus aisément comparé à la théorie linéaire. À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$. 
 
 Ensuite, une charge thermique peut être appliquée au noyau, \echaf{à continuer...}
 
@@ -390,6 +390,8 @@ Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavit
 \paragraph{Régénérateur}
 Le nombre de Rayleigh dans un matériau poreux dépend de sa perméabilité. Il est assez difficile de la calculer car il faut connaître la vitesse d'écoulement et la différence de pression de part et d'autre du domaine étudié. Le régénérateur est modélisé dans Comsol pour extraire ses paramètres hydrauliques et calculer les nombres adimensionnels déjà présentés.
 
+De plus, cette simulation vise à vérifier l'hypothèse de superposition des effets thermiques. En effet, la distribution de température du côté de l'échangeur froid dans le cas de l'orientation `\texttt{H1}' laisse à penser que la température froide et constante sur la section provoqué par l'effet thermoacoustique, la conduction thermique dans le noyau qui provoque une différence de température entre le centre du noyau et sa périphérie, et la convection naturelle qui apporte un gradient de température selon la direction verticale se combinent.
+
 \subsection{Modèle temporel} \label{chap:ModeleTemporel}
 Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volume élémentaire $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques. Ce modèle 2D prend en compte les conditions au limites suivantes : 
 
@@ -475,10 +477,24 @@ avec les indices $x$ et $r$ dénotant respectivement les directions axiale et ra
 \item Les pertes visqueuses sont estimées avec l'équation
 
 \begin{equation}
-Q_{\sf visq} = \frac{1}{R_{\sf reg}^2} \int_{0}^{R_{\sf reg}} \frac{1}{\tau_0} \int_0^{\tau_0} \mu (\partial_r u)^2\ r \deriv r \deriv t,
+Q_{\sf visq} = \frac{1}{R_{\sf reg}^2} \int_{0}^{R_{\sf reg}} \frac{1}{\tau_0} \int_0^{\tau_0} \mu (\partial_r u)^2\ r \deriv r \deriv t.
 \label{eq:FluxVisq_Lotton}
 \end{equation}
-dont les intégrales sur la section de rayon $R_{\sf reg}$ et la période $\tau_0$ sont résolues par une méthode numérique.
+
+En utilisant l'identité
+
+\begin{equation*}
+\frac{1}{T}\int_{0}^{\tau_0}\mu(\partial_r u)^2\deriv t = \frac12|\partial_r u|^2,
+\end{equation*}
+l'équation \eqref{eq:FluxVisq_Lotton} est réécrite comme
+
+\begin{equation}
+	Q_{\sf visq} = \frac{1}{2R_{\sf reg}^2} \int_{0}^{R_{\sf reg}} \mu |\partial_r u|^2\ r \deriv r
+	\label{eq:FluxVisq_Lotton_IntegralTSimplifie}
+\end{equation}
+
+\echaf{poursuivre après simu}
+dont l'intégrale sur la section de rayon $R_{\sf reg}$ est résolue par une méthode numérique.
 
 \item Les effets de bords tels que les pertes de charges ou la vorticité sont pris en compte aux frontières du domaine grâce à des flux de chaleur $Q_{\sf vort}$ estimés empiriquement à $x=0$ et $x=L_{\sf reg}$.
 
@@ -509,6 +525,9 @@ où $h_x$ et $h_r$ sont respectivement les coefficients d'échanges avec les ext
 \end{enumerate} 
 
 \subsubsection{Conditions aux limites}
+\begin{enumerate}[label=\textbf{(\roman*)}]
+\item \echaf{Condition de température sur le canister}
+
 
 \begin{figure}[!ht]
     \centering
@@ -518,6 +537,16 @@ où $h_x$ et $h_r$ sont respectivement les coefficients d'échanges avec les ext
     \caption{Géométrie équivalente pour établir la condition de température à la frontière $r=R_{\sf reg}$.}
     \label{fig:TemperatureCanisterConditionLimite}
 \end{figure}
+
+\item \echaf{Flux de chaleur apportés ou retirés par les échangeurs}
+
+$Q=\epsilon Q_i$ avec 
+\begin{equation}
+	\epsilon = \frac{k_s k_{sfrac} (1-\Phi)S_{\sf reg}}{k_s k_{sfrac} (1-\Phi)S_{\sf reg} + k_{\sf can} S_{\sf can}}
+\end{equation}
+et $k_{sfrac}$ le facteur de dégradation de conductivité \cite{lewis_measurement_1998}
+
+\end{enumerate}
 
 \subsubsection{Bilan thermique}
 

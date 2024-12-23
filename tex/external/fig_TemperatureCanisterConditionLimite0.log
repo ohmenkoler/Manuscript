@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  17 DEC 2024 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  23 DEC 2024 11:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2521,35 +2521,39 @@ altop \@gobble }{}}
 /enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/sy
 -iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}])
 
+LaTeX Warning: Citation 'lewis_measurement_1998' on page 23 undefined on input 
+line 531.
+
+
 LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 2
-3 undefined on input line 539.
+3 undefined on input line 552.
 
 
 LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 23 undefined on input
- line 556.
+ line 569.
 
 
 LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 23 undefined on input line
- 556.
+ 569.
 
 
 LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 2
-3 undefined on input line 556.
+3 undefined on input line 569.
 
 
-LaTeX Warning: Reference `eq:CondFront' on page 23 undefined on input line 556.
+LaTeX Warning: Reference `eq:CondFront' on page 23 undefined on input line 569.
 
 
 
-LaTeX Warning: Reference `eq:CondInit' on page 23 undefined on input line 556.
+LaTeX Warning: Reference `eq:CondInit' on page 23 undefined on input line 569.
 
 
 LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 2
-3 undefined on input line 563.
+3 undefined on input line 576.
 
 
 LaTeX Warning: Citation 'ozisik_heat_1993' on page 23 undefined on input line 5
-63.
+76.
 
 ) (EtudeExperimentale.tex
 Chapitre III.
@@ -3519,13 +3523,31 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 28.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
+            Default family used instead on input line 29.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 30.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
             Default family used instead on input line 34.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 35.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
+            Default family used instead on input line 36.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 37.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
             Default family used instead on input line 38.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 39.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 40.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 44.
@@ -3614,10 +3636,10 @@ tionLimite0.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 74325 strings out of 474435
- 1886393 string characters out of 5751739
- 3825769 words of memory out of 5000000
- 95147 multiletter control sequences out of 15000+600000
+ 74326 strings out of 474435
+ 1886410 string characters out of 5751739
+ 3827838 words of memory out of 5000000
+ 95148 multiletter control sequences out of 15000+600000
  705563 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,21n,93p,4581b,2472s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3625,7 +3647,7 @@ Here is how much of TeX's memory you used:
 es/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/
 type1/nowacki/iwona/iwonam.pfb>
 Output written on external/fig_TemperatureCanisterConditionLimite0.pdf (1 page,
- 79592 bytes).
+ 79597 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)

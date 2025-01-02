@@ -24,11 +24,11 @@
 	
 	
 	\draw[->] ($(eFB)+(0,\eFB)$) -- ($(eCAN)+(0,-2.1*\eCAN)$) node[left]{$-\mathbf{e}_r$};
-	\draw[->] (-\lREG/3,0) node(lab){} -- (4*\lREG/3,0) node[above]{$\mathbf{e}_x$};
+	\draw[->] (-1mm,0) node(lab){} -- (4*\lREG/3,0) node[above]{$\mathbf{e}_x$};
 	
-	\draw ($(lab) + (0,\eWALL+1.5*\eFB/2)$) node[left]{Canal de rétroaction};
-	\draw ($(lab) + (0,\eWALL/2)$) node[left]{Tube contenant le noyau};
+	\draw ($(eWALL) + (-\lREG/4,1.5*\eFB/2)$) node[left]{Canal de rétroaction};
+	\draw ($(O) + (-\lREG/4,\eWALL/2)$) node[left]{Tube contenant le noyau};
 	\draw (eWALL) node[left]{$e_{\sf wall}$};
 	\draw (O) node[left]{0};
-	\draw[line width=1mm,dashed] (eCAN.base) node[left]{$e_{\sf can}$} -- ++(\lREG,0);
+	\draw[line width=.5mm,dashed] (eCAN.base) node[left]{$e_{\sf can}$} -- ++(\lREG,0);
 \end{tikzpicture}

@@ -234,14 +234,13 @@ L'orientation `\texttt{V1}' est affichée sur la figure~\ref{fig:OrientationCore
 Enfin, l'orientation `\texttt{V2}' affichée sur la figure~\ref{fig:OrientationCore_V2} est l'orientation inverse de la précédente. L'axe de symétrie du réfrigérateur est encore vertical, mais la source acoustique principale est cette fois au dessus du noyau thermoacoustique et $\psi_v=\qty{+90}{\degree}$.
 
 \subsection{Acquisitions}
-\subsubsection{Procédures d'acquisition}
 Les acquisitions sont réalisées en plusieurs temps. Tout d'abord et pour toutes les expériences,  l'état initial de toutes les grandeurs est acquis sur une minute et sauvegardé sous un label `\texttt{init}' à chaque début de journée de campagne. Cela permet de garder en mémoire toutes les conditions expérimentales initiales dont les valeurs peuvent potentiellement influer sur le comportement du réfrigérateur, comme par exemple la température ambiante ou la pression statique. \medskip
 
 Ensuite, en prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'échangeur ambiant (voir l'annexe~\ref{chap:AHX}), l'eau est préalablement mise en circulation dans cet échangeur après avoir démarré une acquisition des 30 capteurs jusqu'à stabilisation de la distribution de température dans le noyau. L'acquisition est ensuite interrompue et enregistrée avec un label `\texttt{Water}'. \bigskip
 
 L'étape suivante dépend du type d'expérience menée : les mesures peuvent être sans ou avec acoustique, et ce, pour  différentes amplitudes de pression oscillante. En revanche, certains des paramètres d'excitation restent constants pour toutes les expériences :  le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, car dans ces proportions le nombre de Prandtl est minimum \cite{belcher_working_1999} ; ce mélange est ensuite pressurisé à \qty{40}{\bar}. Dans le cas des expériences avec acoustique, le modèle \textsc{DeltaEC} prédit les meilleurs performances à la fréquence $f=\qty{47}{\hertz}$, c'est-à-dire la fréquence de résonance du système. C'est par ailleurs le seul point de fonctionnement où l'impédance électrique est supérieure à la limite basse admise par l'amplificateur, soit \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60} pour toutes les expériences, également indiqué comme déphasage optimale par les simulations et que des expériences préliminaires confirment.
 
-\paragraph{Mesures sans acoustique}\label{chap:MesureSansAcou}
+\subsubsection{Mesures sans acoustique}\label{chap:MesureSansAcou}
 Pour ces mesures de type `\texttt{heat\_{}only}', la charge thermique est appliquée au noyau sans alimenter les sources acoustiques. Cette charge thermique consiste en l'alimentation électrique de cartouches chauffantes contenues dans l'échangeur froid par une puissance connue, tandis qu'un débit d'eau de \qty{7}{\litre\per\minute} s'écoule dans l'échangeur ambiant qui se trouve de l'autre côté du noyau. 
 
 Ces mesures doivent permettre d'étudier la distribution de température en l'absence d'écoulement oscillant, ainsi que de calculer les valeurs de conductivité thermique $k_x$ et $k_r$ ou les coefficients de pertes latérales $h_x$ et $h_r$.\medskip
@@ -250,12 +249,18 @@ Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante
 
 %Pour garder un moyen de comparaison avec les mesures avec acoustique, le mélange de gaz est le même.
 
-\paragraph{Mesures avec acoustique}\label{chap:MesureAvecAcou} 
+\subsection{Mesures avec acoustique}\label{chap:MesureAvecAcou} 
 Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, c'est la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial.
 
 Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\frac{p}{P_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible -- soit un gradient de température de l'ordre de \qty{5}{\degreeCelsius}. Ainsi, l'hypothèse concernant la linéarité acoustique est mieux vérifiée et peut \textit{a priori} être plus aisément comparé à la théorie linéaire. À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$. 
 
-Ensuite, une charge thermique peut être appliquée au noyau, \echaf{à continuer...}
+Ensuite, une charge thermique peut être appliquée au noyau, par le biais de l'échangeur froid. Il contient six cartouches chauffantes connectées en parallel et alimentées électriquement par un transformateur. Pour une expérience donnée, une puissance thermique est choisie selon la relation
+
+\begin{equation}
+	Q_f = \frac{E^2}{R},
+	\label{eq:Qf_définitionEsurR}
+\end{equation}
+où $E$ est la tension appliquée aux cartouches et $R=\qty{22.4}{\ohm}$ la résistance des cartouches en parallel. \echaf{à continuer}
 
 
 

@@ -159,34 +159,64 @@ Tout d'abord, du côté de l'échangeur froid dont les résultats d'expériences
 
 \begin{figure}[!ht]
     \centering
-    \external{fig_Acou_CHXin_H1H2_Low}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low}
-    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
-    \label{fig:Acou_CHXin_H1H2_Low}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_CHXin_H1H2_Low}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low}
+		\caption{}
+		\label{fig:Acou_CHXin_H1H2_Low}
+	\end{subfigure}		
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_Regmid_H1H2_Low}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Low}
+		\caption{}
+		\label{fig:Acou_Regmid_H1H2_Low}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_AHXin_H1H2_Low}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Low}
+		\caption{}
+		\label{fig:Acou_AHXin_H1H2_Low}
+	\end{subfigure}	
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$. \subref{fig:Acou_CHXin_H1H2_Low} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_Low} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_Low} côté ambiant (TC \numlist{10;11;12}).} 
+    \label{fig:Acou_H1H2_Low}
 \end{figure}
 
-La figure~\ref{fig:Acou_Regmid_H1H2_Low} présente la distribution de température au milieu du régénérateur. Dans ce graphique, il est possible de voir que même à partir du moment où les sources sont mises en marche, la température dans cette zone évolue peu par rapport aux autres positions, et sont comprises entre \qtylist{-.4;.2}{\degreeCelsius} pour n'importe laquelle des orientations. Par ailleurs, à l'instant $t=\qty{300}{\second}$, il est possible de remarquer que les températures qui décroissent se mettent à augmenter, et inversement. Au final, une distribution se dessine pour les températures au milieu du régénérateur,  indépendamment de l'orientation : le thermocouple~9 mesure la température la plus basse, le thermocouple~8 sur l'axe, la plus chaude, et le thermocouple~7, une évolution nulle de la température. 
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_Acou_CHXin_H1H2_Low}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low}
+%    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
+%    \label{fig:Acou_CHXin_H1H2_Low}
+%\end{figure}
 
-\begin{figure}[!ht]
-    \centering
-    \external{fig_Acou_Regmid_H1H2_Low}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Low}
-    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
-    \label{fig:Acou_Regmid_H1H2_Low}
-\end{figure}
+La figure~\ref{fig:Acou_Regmid_H1H2_Low} présente la distribution de température au milieu du régénérateur. Dans ce graphique, il est possible de voir que même à partir du moment où les sources sont mises en marche, la température dans cette zone évolue peu par rapport aux autres positions, et sont comprises entre \qtylist{-.4;.2}{\degreeCelsius} pour n'importe laquelle des orientations. Par ailleurs, à l'instant $t=\qty{300}{\second}$, il est possible de remarquer que les températures qui décroissent se mettent à augmenter, et inversement. Au final, une distribution se dessine pour les températures au milieu du régénérateur,  indépendamment de l'orientation : le thermocouple~9 mesure la température la plus basse, le thermocouple~8 sur l'axe, la plus chaude, et le thermocouple~7, une évolution nulle de la température. \echaf{ancienne figure}
 
-La température du côté de l'échangeur ambiant est tracée sur la figure~\ref{fig:Acou_AHXin_H1H2_Low}. Cette position est très proche de l'échangeur ambiant, qui est la seule contrainte thermique dans le noyau. Pour cela, la dépendance à l'orientation est supposée être plus faible, ce qui se voit sur les courbes des deux orientations. En `\texttt{H1}', les thermocouples périphériques 10 et 12 mesurent une augmentation de \qty{1}{\degreeCelsius}, et le thermocouple central, de \qty{3.6}{\degreeCelsius}. L'orientation `\texttt{H2}', elle, voit toutes les températures mesurées sur cette section se stabiliser à \qty{1}{\degreeCelsius}.
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_Acou_Regmid_H1H2_Low}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Low}
+%    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
+%    \label{fig:Acou_Regmid_H1H2_Low}
+%\end{figure}
 
-\begin{figure}[!ht]
-    \centering
-    \external{fig_Acou_AHXin_H1H2_Low}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Low}
-    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
-    \label{fig:Acou_AHXin_H1H2_Low}
-\end{figure}
+La température du côté de l'échangeur ambiant est tracée sur la figure~\ref{fig:Acou_AHXin_H1H2_Low}. Cette position est très proche de l'échangeur ambiant, qui est la seule contrainte thermique dans le noyau. Pour cela, la dépendance à l'orientation est supposée être plus faible, ce qui se voit sur les courbes des deux orientations. En `\texttt{H1}', les thermocouples périphériques 10 et 12 mesurent une augmentation de \qty{1}{\degreeCelsius}, et le thermocouple central, de \qty{3.6}{\degreeCelsius}. L'orientation `\texttt{H2}', elle, voit toutes les températures mesurées sur cette section se stabiliser à \qty{1}{\degreeCelsius}. \echaf{ancienne figure}
+
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_Acou_AHXin_H1H2_Low}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Low}
+%    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
+%    \label{fig:Acou_AHXin_H1H2_Low}
+%\end{figure}
 
 \paragraph*{Moyenne amplitude acoustique}
 Les figures~\ref{fig:Acou_CHXin_H1H2_Mid}, \ref{fig:Acou_Regmid_H1H2_Mid} et \ref{fig:Acou_AHXin_H1H2_Mid} tracent respectivement les températures relevées par les thermocouples \numlist{4;5;6} du côté froid du régénérateur, \numlist{7;8;9} placés au milieu de celui-ci, et \numlist{10;11;12} du côté ambiant.
@@ -194,36 +224,66 @@ Les figures~\ref{fig:Acou_CHXin_H1H2_Mid}, \ref{fig:Acou_Regmid_H1H2_Mid} et \re
 Pour le côté froid, des observations similaires au cas à faible amplitude acoustique peuvent être faites sur la figure~\ref{fig:Acou_CHXin_H1H2_Mid}, c'est-à-dire que ce qui se passe dans la cavité d'adaptation d'impédance se retrouve de l'autre côté de l'échangeur. En particulier, une symétrie est visible dans l'orientation `\texttt{H2}' où les thermocouples périphériques 4~et~6 sont le symétrique l'un de l'autre par rapport au plan vertical et égaux à \qty{-26.1}{\degreeCelsius}. Dans l'orientation `\texttt{H1}' en revanche, cette axisymétrie disparaît et le gradient vertical de température est visible. Toujours non linéaire, les deux thermocouples~5~et~6 situés au dessous du thermocouple~4 voient leur température à moins de \qty{2}{\degreeCelsius} d'écart, à \qty{-29.9}{\degreeCelsius} et \qty{-31.9}{\degreeCelsius}, tandis que ce dernier est \qty{9.9}{\degreeCelsius} au dessus, à \qty{-20}{\degreeCelsius}.
 De plus, sur l'axe du régénérateur la température ne dépend pas de l'orientation, contrairement à ce que montre la distribution de température dans la cavité d'adaptation d'impédance figure~\ref{fig:Acou_CHXout_H1H2_Mid}. Le thermocouple~5 qui y est placé indique en effet \qty{-29,9}{\degreeCelsius} en `\texttt{H1}' et \qty{-31.9}{\degreeCelsius} en `\texttt{H2}', soit un écart de \qty{2}{\degreeCelsius} considéré négligeable devant l'amplitude de température atteinte. Cette indépendance de l'orientation sur la température au centre du régénérateur est attendue, \echaf{puisque la forme de l'échangeur froid limite la vitesse verticale $v_{\sf ref}^{// \mathbf g}$.}
 
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_Acou_CHXin_H1H2_Mid}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid}
+%    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
+%    \label{fig:Acou_CHXin_H1H2_Mid}
+%\end{figure}
+
 \begin{figure}[!ht]
     \centering
-    \external{fig_Acou_CHXin_H1H2_Mid}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid}
-    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
-    \label{fig:Acou_CHXin_H1H2_Mid}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_CHXin_H1H2_Mid}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid}
+		\caption{}
+		\label{fig:Acou_CHXin_H1H2_Mid}
+	\end{subfigure}		
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_Regmid_H1H2_Mid}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid}
+		\caption{}
+		\label{fig:Acou_Regmid_H1H2_Mid}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_AHXin_H1H2_Mid}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Mid}
+		\caption{}
+		\label{fig:Acou_AHXin_H1H2_Mid}
+	\end{subfigure}	
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à  \textit{drive ratio} moyen $DR=\qty{2}{\percent}$. \subref{fig:Acou_CHXin_H1H2_Mid} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_Mid} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_Mid} côté ambiant (TC \numlist{10;11;12}).} 
+    \label{fig:Acou_H1H2_Mid}
 \end{figure}
 
 Les températures mesurées au milieu du régénérateur sont tracés sur la figure~\ref{fig:Acou_Regmid_H1H2_Mid}. Il est possible d'y voir, à nouveau, les mêmes phénomènes que dans l'expérience à faible amplitude acoustique. Les deux orientations provoquent les mêmes évolutions de températures au niveau des thermocouples~\numlist{7;8;9}, avec encore une fois le thermocouple~9 au plus bas avec \qty{-10}{\degreeCelsius}, le thermcouple~8 au plus haut à \qty{0}{\degreeCelsius} en `\texttt{H1}' et \qty{4}{\degreeCelsius} en `\texttt{H2}', et le thermcouple~7 à \qty{-2}{\degreeCelsius} et \qty{.5}{\degreeCelsius} pour ces mêmes orientations. Un autre effet à remarquer est le réchauffement puis refroidissement qui se produit à l'emplacement du thermocouple~7, et dont le changement de sens se fait à $t=\qty{150}{\second}$, soit \qty{50}{\second} après le démarrage des sources acoustiques. À faible amplitude, cette tendance d'évolution est également visible, bien qu'étant plus faiblement marquée \echaf{à voir ce qu'on peut dire de ça à part que c'est un effet autre que la convection puisqu'indépendant de $\Delta T_{TA}$... }. 
 
-\begin{figure}[!ht]
-    \centering
-    \external{fig_Acou_Regmid_H1H2_Mid}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid}
-    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
-    \label{fig:Acou_Regmid_H1H2_Mid}
-\end{figure}
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_Acou_Regmid_H1H2_Mid}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid}
+%    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
+%    \label{fig:Acou_Regmid_H1H2_Mid}
+%\end{figure}
 
 Du côté ambiant du régénérateur, les températures tracées sur la figure~\ref{fig:Acou_AHXin_H1H2_Mid} s'élèvent après la mise en marche des sources acoustiques à des valeurs différentes, c'est-à-dire \qty{6}{\degreeCelsius} pour les thermocouples~10 et 11 dans l'orientation `\texttt{H2}' et le thermocouple~11 dans l'orientation `\texttt{H1}', \qty{4}{\degreeCelsius} pour le thermocouple~12 dans l'orientation `\texttt{H1}', et \qty{2}{\degreeCelsius} pour le reste des thermocouples. Toutefois, la distribution de température ne varie pas en fonction de l'orientation. Après \qty{50}{\second} d'augmentation, les températures s'abaissent de \qty{2}{\degreeCelsius} pour chaque thermocouple jusqu'à atteindre la température d'équilibre du système.
 
-\begin{figure}[!ht]
-    \centering
-    \external{fig_Acou_AHXin_H1H2_Mid}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Mid}
-    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
-    \label{fig:Acou_AHXin_H1H2_Mid}
-\end{figure}
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_Acou_AHXin_H1H2_Mid}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Mid}
+%    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
+%    \label{fig:Acou_AHXin_H1H2_Mid}
+%\end{figure}
 
 
 \paragraph*{Haute amplitude acoustique}
@@ -231,120 +291,237 @@ Les figures~\ref{fig:Acou_CHXin_H1H2_High}, \ref{fig:Acou_Regmid_H1H2_High} et \
 
 \begin{figure}[!ht]
     \centering
-    \external{fig_Acou_CHXin_H1H2_High}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High}
-    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$.}
-    \label{fig:Acou_CHXin_H1H2_High}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_CHXin_H1H2_High}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High}
+		\caption{}
+		\label{fig:Acou_CHXin_H1H2_High}
+	\end{subfigure}		
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_Regmid_H1H2_High}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High}
+		\caption{}
+		\label{fig:Acou_Regmid_H1H2_High}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_AHXin_H1H2_High}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_High}
+		\caption{}
+		\label{fig:Acou_AHXin_H1H2_High}
+	\end{subfigure}	
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$. \subref{fig:Acou_CHXin_H1H2_High} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_High} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_High} côté ambiant (TC \numlist{10;11;12}).} 
+    \label{fig:Acou_H1H2_High}
 \end{figure}
 
-\begin{figure}[!ht]
-    \centering
-    \external{fig_Acou_Regmid_H1H2_High}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High}
-    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$.}
-    \label{fig:Acou_Regmid_H1H2_High}
-\end{figure}
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_Acou_CHXin_H1H2_High}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High}
+%    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$.}
+%    \label{fig:Acou_CHXin_H1H2_High}
+%\end{figure}
 
-\begin{figure}[!ht]
-    \centering
-    \external{fig_Acou_AHXin_H1H2_High}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_High}
-    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$.}
-    \label{fig:Acou_AHXin_H1H2_High}
-\end{figure}
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_Acou_Regmid_H1H2_High}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High}
+%    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$.}
+%    \label{fig:Acou_Regmid_H1H2_High}
+%\end{figure}
+
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_Acou_AHXin_H1H2_High}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_High}
+%    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$.}
+%    \label{fig:Acou_AHXin_H1H2_High}
+%\end{figure}
 
 \paragraph{Réfrigérateur vertical}
 \paragraph*{Faible amplitude acoustique} Figures~\ref{fig:Acou_CHXin_V1V2_Low}, \ref{fig:Acou_Regmid_V1V2_Low} et \ref{fig:Acou_AHXin_V1V2_Low}
-\begin{figure}[!ht] %V1V2 low CHX in
-    \centering
-    \external{fig_Acou_CHXin_V1V2_Low}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low}
-    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
-    \label{fig:Acou_CHXin_V1V2_Low}
-\end{figure}
 
-\begin{figure}[!ht] % V1V2 low RegMid 
-    \centering
-    \external{fig_Acou_Regmid_V1V2_Low}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Low}
-    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
-    \label{fig:Acou_Regmid_V1V2_Low}
-\end{figure}
+%\begin{figure}[!ht] %V1V2 low CHX in
+%    \centering
+%    \external{fig_Acou_CHXin_V1V2_Low}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low}
+%    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
+%    \label{fig:Acou_CHXin_V1V2_Low}
+%\end{figure}
 
-\begin{figure}[!ht] % V1V2 low AHX in
-    \centering
-    \external{fig_Acou_AHXin_V1V2_Low}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Low}
-    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
-    \label{fig:Acou_AHXin_V1V2_Low}
-\end{figure}
+%\begin{figure}[!ht] % V1V2 low RegMid 
+%    \centering
+%    \external{fig_Acou_Regmid_V1V2_Low}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Low}
+%    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
+%    \label{fig:Acou_Regmid_V1V2_Low}
+%\end{figure}
 
+%\begin{figure}[!ht] % V1V2 low AHX in
+%    \centering
+%    \external{fig_Acou_AHXin_V1V2_Low}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Low}
+%    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$.}
+%    \label{fig:Acou_AHXin_V1V2_Low}
+%\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_CHXin_V1V2_Low}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low}
+		\caption{}
+		\label{fig:Acou_CHXin_V1V2_Low}
+	\end{subfigure}		
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_Regmid_V1V2_Low}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Low}
+		\caption{}
+		\label{fig:Acou_Regmid_V1V2_Low}
+	\end{subfigure}		
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_AHXin_V1V2_Low}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Low}
+		\caption{}
+		\label{fig:Acou_AHXin_V1V2_Low}
+	\end{subfigure}		
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$. \subref{fig:Acou_CHXin_V1V2_Low} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_V1V2_Low} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_V1V2_Low} côté ambiant (TC \numlist{10;11;12}).}
+    \label{fig:Acou_V1V2_Low}
+\end{figure}
 
 \paragraph*{Moyenne amplitude acoustique} Figures~\ref{fig:Acou_CHXin_V1V2_Mid}, \ref{fig:Acou_Regmid_V1V2_Mid} et \ref{fig:Acou_AHXin_V1V2_Mid}
-\begin{figure}[!ht] %V1V2 mid CHX in
-    \centering
-    \external{fig_Acou_CHXin_V1V2_Mid}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid}
-    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
-    \label{fig:Acou_CHXin_V1V2_Mid}
-\end{figure}
+%\begin{figure}[!ht] %V1V2 mid CHX in
+%    \centering
+%    \external{fig_Acou_CHXin_V1V2_Mid}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid}
+%    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
+%    \label{fig:Acou_CHXin_V1V2_Mid}
+%\end{figure}
 
-\begin{figure}[!ht] % V1V2 mid RegMid 
-    \centering
-    \external{fig_Acou_Regmid_V1V2_Mid}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Mid}
-    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
-    \label{fig:Acou_Regmid_V1V2_Mid}
-\end{figure}
+%\begin{figure}[!ht] % V1V2 mid RegMid 
+%    \centering
+%    \external{fig_Acou_Regmid_V1V2_Mid}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Mid}
+%    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
+%    \label{fig:Acou_Regmid_V1V2_Mid}
+%\end{figure}
 
-\begin{figure}[!ht] % V1V2 mid AHX in
+%\begin{figure}[!ht] % V1V2 mid AHX in
+%    \centering
+%    \external{fig_Acou_AHXin_V1V2_Mid}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Mid}
+%    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
+%    \label{fig:Acou_AHXin_V1V2_Mid}
+%\end{figure}
+
+\begin{figure}[!ht]
     \centering
-    \external{fig_Acou_AHXin_V1V2_Mid}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Mid}
-    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} intermédiaire $DR=\qty{2}{\percent}$.}
-    \label{fig:Acou_AHXin_V1V2_Mid}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_CHXin_V1V2_Mid}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid}
+		\caption{}
+		\label{fig:Acou_CHXin_V1V2_Mid}
+	\end{subfigure}		
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_Regmid_V1V2_Mid}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Mid}
+		\caption{}
+		\label{fig:Acou_Regmid_V1V2_Mid}
+	\end{subfigure}		
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_AHXin_V1V2_Mid}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Mid}
+		\caption{}
+		\label{fig:Acou_AHXin_V1V2_Mid}
+	\end{subfigure}		
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} moyen $DR=\qty{2}{\percent}$. \subref{fig:Acou_CHXin_V1V2_Mid} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_V1V2_Mid} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_V1V2_Mid} côté ambiant (TC \numlist{10;11;12}).}
+    \label{fig:Acou_V1V2_Mid}
 \end{figure}
 
 \paragraph*{Haute amplitude acoustique} Figures~\ref{fig:Acou_CHXin_V1V2_High}, \ref{fig:Acou_Regmid_V1V2_High} et \ref{fig:Acou_AHXin_V1V2_High}
-\begin{figure}[!ht] %V1V2 high CHX in
+
+%\begin{figure}[!ht] %V1V2 high CHX in
+%    \centering
+%    \external{fig_Acou_CHXin_V1V2_High}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High}
+%    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à haut \textit{drive ratio} $DR=\qty{3.5}{\percent}$.}
+%    \label{fig:Acou_CHXin_V1V2_High}
+%\end{figure}
+
+%\begin{figure}[!ht] % V1V2 high RegMid 
+%    \centering
+%    \external{fig_Acou_Regmid_V1V2_High}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_High}
+%    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à haut \textit{drive ratio} $DR=\qty{3.5}{\percent}$.}
+%    \label{fig:Acou_Regmid_V1V2_High}
+%\end{figure}
+
+%\begin{figure}[!ht] % V1V2 high AHX in
+%    \centering
+%    \external{fig_Acou_AHXin_V1V2_High}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_High}
+%    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à haut \textit{drive ratio} $DR=\qty{3.5}{\percent}$.}
+%    \label{fig:Acou_AHXin_V1V2_High}
+%\end{figure}
+
+\begin{figure}[!ht]
     \centering
-    \external{fig_Acou_CHXin_V1V2_High}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High}
-    \caption{\'Evolution temporelle des températures au côté froid du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à haut \textit{drive ratio} $DR=\qty{3.5}{\percent}$.}
-    \label{fig:Acou_CHXin_V1V2_High}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_CHXin_V1V2_High}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High}
+		\caption{}
+		\label{fig:Acou_CHXin_V1V2_High}
+	\end{subfigure}		
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_Regmid_V1V2_High}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_High}
+		\caption{}
+		\label{fig:Acou_Regmid_V1V2_High}
+	\end{subfigure}		
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_AHXin_V1V2_High}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_High}
+		\caption{}
+		\label{fig:Acou_AHXin_V1V2_High}
+	\end{subfigure}		
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à haut \textit{drive ratio} $DR=\qty{3.5}{\percent}$. \subref{fig:Acou_CHXin_V1V2_High} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_V1V2_High} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_V1V2_High} côté ambiant (TC \numlist{10;11;12}).}
+    \label{fig:Acou_V1V2_High}
 \end{figure}
-
-\begin{figure}[!ht] % V1V2 high RegMid 
-    \centering
-    \external{fig_Acou_Regmid_V1V2_High}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_High}
-    \caption{\'Evolution temporelle des températures au milieu du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à haut \textit{drive ratio} $DR=\qty{3.5}{\percent}$.}
-    \label{fig:Acou_Regmid_V1V2_High}
-\end{figure}
-
-\begin{figure}[!ht] % V1V2 high AHX in
-    \centering
-    \external{fig_Acou_AHXin_V1V2_High}
-%    \externalremake
-    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_High}
-    \caption{\'Evolution temporelle des températures au côté ambiant du régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à haut \textit{drive ratio} $DR=\qty{3.5}{\percent}$.}
-    \label{fig:Acou_AHXin_V1V2_High}
-\end{figure}
-
-
-
-
 
 \subsubsection{Dans la cavité entre la source acoustique secondaire et le noyau thermoacoustique}
 

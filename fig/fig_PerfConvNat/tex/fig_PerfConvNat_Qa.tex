@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\def\width{\textwidth};
+	\def\height{1*\width};
+	
+	\begin{axis}[width=\width,height=\height,
+		grid style={line width=.1pt, draw=gray!10},
+	    major grid style={line width=.2pt,draw=gray!50},
+		xlabel={\textit{Drive ratio} $DR$ [\unit{\percent}]},
+		ylabel={Chaleur extraite $\dot Q_a$ [\unit{\watt}]},
+		legend style = {at={(.05,.95)}, anchor=north west, rounded corners, legend columns=2}
+	]
+	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Qa_DR_Qc0.txt};\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=o,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_Qa_DR_Qc0.txt};\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_Qa_DR_Qc0.txt};\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=o,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_Qa_DR_Qc0.txt};\addlegendentry{`\texttt{H2}'};
+	\end{axis}
+\end{tikzpicture}

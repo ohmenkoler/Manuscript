@@ -7,7 +7,42 @@ Lors des expériences réalisées lors de la caractérisation du réfrigérateur
 \subsection{\'Etude des performances}
 Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=Q_f/W_e$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = T_f/(T_c-T_f)$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section. 
 
-Dans cette étude, les quatre orientations définies sur la figure~\ref{fig:OrientationCore} sont tour à tour mises en place, et deux charges thermiques sont appliquées à l'échangeur froid pour chacune d'entre elles. En suivant le protocole 
+Dans cette étude, les quatre orientations définies sur la figure~\ref{fig:OrientationCore} sont tour à tour mises en place, et deux charges thermiques sont appliquées à l'échangeur froid pour chacune d'entre elles. En suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}, des charges thermiques $\dot Q_f$ de \qtylist{50;100}{\watt} sont réglées. Les résultats des expériences sont reportées dans le tableau~\ref{tab:RecapResultExpe}.\medskip
+
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}[b]{.3\textwidth}
+		\centering
+		\external{fig_PerfConvNat_Tf}
+        %\externalremake
+        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf}
+		\caption{}
+		\label{fig:PerfConvNat_Tf}
+	\end{subfigure}		
+	\begin{subfigure}[b]{.3\textwidth}
+		\centering
+		\external{fig_PerfConvNat_Ta}
+        %\externalremake
+        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Ta}
+		\caption{}
+		\label{fig:PerfConvNat_Ta}
+	\end{subfigure}
+	\begin{subfigure}[b]{.3\textwidth}
+		\centering
+		\external{fig_PerfConvNat_Qa}
+        %\externalremake
+        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa}
+		\caption{}
+		\label{fig:PerfConvNat_Qa}
+	\end{subfigure}	      
+    \caption{Influence de la convection naturelle sur les performances sur différents indicateurs, en l'absence de charge thermique. \subref{fig:PerfConvNat_Tf} température froide $T_f$, \subref{fig:PerfConvNat_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$. \echaf{ajouter valeurs DeltaEC}}
+    \label{fig:PerfConvNat}
+\end{figure}
+
+La première observation concerne les températures atteintes aux deux extrémités du noyau, représentées sur les figures \ref{fig:PerfConvNat_Tf} et \subref{fig:PerfConvNat_Ta}. La température froide $T_f$, de manière générale, est plus basse quand le \textit{drive ratio} augmente. La température du côté ambiant est, quant à elle, relativement constante quel que soit le \textit{drive ratio} avec un écart de l'ordre de \qty{10}{\degreeCelsius}. Cette constance est expliqué par les échanges thermiques avec l'échangeur voisin.\smallskip
+
+L'échangeur ambiant extrait la chaleur des volumes élémentaires de gaz qui oscillent à son voisinage. Il est donc attendu de voir la chaleur extraite par cet échangeur augmenter avec le \textit{drive ratio}.
 
 \subsection{Distribution des températures}
 \subsubsection{Dans la cavité conique entre la source acoustique principale et le noyau thermoacoustique}
@@ -560,6 +595,4 @@ Ces expériences, issues d'une autre série de mesure interrompue justement à c
 
 Dans cette
 
-\section{Conduction par les parois du régénérateur}
-La conduction par les parois du noyau thermoacoustique est un facteur très important à prendre en compte. En effet, lorsque le réfrigérateur fonctionne et qu'un gradient de température s'établit le long du régénérateur, un flux de chaleur \og retour \fg{} de conduction apparaît dans le sens opposé au flux de chaleur thermoacoustique. Cependant, contrairement au matériau poreux qui compose le régénérateur, il n'est pas nécessaire que les parois soit conductrice de chaleur. Dans cette section, la \echaf{canette/carter/boîte/enceinte} qui contient les disques de tissu métallique et qui est initialement usinée dans un cylindre d'acier inoxydable est remplacée par une pièce similaire imprimée en plastique. L'ABS est choisi pour la fabrication de ce nouveau contenant plutôt que le PLA, car ce dernier peut se ramollir sous l'action des températures atteintes dans certaines expériences, c'est-à-dire autour de \num{50} à \qty{60}{\degreeCelsius}. Dans le cas de l'ABS, cette température limite d'utilisation est élevée à \qty{100}{\degreeCelsius}.
 

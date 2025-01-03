@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\def\width{\textwidth};
+	\def\height{1*\width};
+	
+	\begin{axis}[width=\width,height=\height,
+		grid style={line width=.1pt, draw=gray!10},
+	    major grid style={line width=.2pt,draw=gray!50},
+		xlabel={\textit{Drive ratio} $DR$ [\unit{\percent}]},
+		ylabel={Température ambiante $T_a$ [\unit{\kelvin}]},
+		legend style = {at={(.5,.95)}, anchor=north, rounded corners, legend columns=2}
+	]
+	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Ta_DR_Qc0.txt};\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=o,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_Ta_DR_Qc0.txt};\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_Ta_DR_Qc0.txt};\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=o,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_Ta_DR_Qc0.txt};\addlegendentry{`\texttt{H2}'};
+	\end{axis}
+\end{tikzpicture}

@@ -8,15 +8,14 @@
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
     xlabel={Temps $t$ [\unit{\s}]},
-    ylabel={\'Ecart de température $T-T|_{t=0}$ [\unit{\degreeCelsius}]},
-    xmin=0,xmax=600,
-	ymin=-1,ymax=30,
-    xtick={0,600,1200,1800,2400,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
+    ylabel={\'Ecart de température $T-T_i$ [\unit{\degreeCelsius}]},
+    xmin=0,xmax=3500,
+	ymin=-5,ymax=50,
+    xtick={0,600,...,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
     domain=0:100,
-    legend style = {at={(1.01,1.05)},anchor = north east,cells={align=right},rounded corners},legend columns=3,
+    legend style = {at={(1.01,1.05)},anchor = north east, cells={align=right},rounded corners},legend columns=3,
     ]
     	
-		
     	
     	\addlegendimage{legend image with text=}
 		\addlegendentry{}
@@ -28,29 +27,29 @@
     	\addlegendimage{legend image with text=TC 0}
     	\addlegendentry{}
     	
-    	\addplot[ultra thick,black] file {{../fig/fig_ConvNat_HeatOnly/data/TargetTemperatures/H1H2/data_TC0_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc61W_Serie1.txt}};\addlegendentry{}
-		\addplot[ultra thick,black,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/TargetTemperatures/H1H2/data_TC0_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc61W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,black] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC0_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc40W_Serie1.txt}};\addlegendentry{}
+		\addplot[ultra thick,black,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC0_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}};\addlegendentry{}
 		
 		\addlegendimage{legend image with text=TC 1}
 		\addlegendentry{}
 		
-    	\addplot[ultra thick,MatlabBlue] file {{../fig/fig_ConvNat_HeatOnly/data/TargetTemperatures/H1H2/data_TC1_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc61W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,MatlabBlue,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/TargetTemperatures/H1H2/data_TC1_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc61W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,MatlabBlue] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC1_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc40W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,MatlabBlue,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC1_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}};\addlegendentry{}
     	
     	\addlegendimage{legend image with text=TC 2}
 		\addlegendentry{}
 		
-    	\addplot[ultra thick,MatlabOrange] file {{../fig/fig_ConvNat_HeatOnly/data/TargetTemperatures/H1H2/data_TC2_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc61W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,MatlabOrange,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/TargetTemperatures/H1H2/data_TC2_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc61W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,MatlabOrange] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC2_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc40W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,MatlabOrange,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC2_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}};\addlegendentry{}
     	
 		\addlegendimage{legend image with text=TC 3}
 		\addlegendentry{}
 		
-    	\addplot[ultra thick,MatlabYellow] file {{../fig/fig_ConvNat_HeatOnly/data/TargetTemperatures/H1H2/data_TC3_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc61W_Serie1.txt}};\addlegendentry{}    	
-    	\addplot[ultra thick,MatlabYellow,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/TargetTemperatures/H1H2/data_TC3_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc61W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,MatlabYellow] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC3_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc40W_Serie1.txt}};\addlegendentry{}    	
+    	\addplot[ultra thick,MatlabYellow,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC3_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}};\addlegendentry{}
+		
         
 %        \legend{\\ \\};
     \end{axis}
-    
 %    \draw (plot.center) node[rotate=30]{\color{red}AFFICHER LES DONNEES};
 \end{tikzpicture}

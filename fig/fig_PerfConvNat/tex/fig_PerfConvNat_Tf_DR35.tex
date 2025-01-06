@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\def\width{.9*\textwidth};
+	\def\height{1*\width};
+	
+	\begin{axis}[width=\width,height=\height,
+		grid=both,minor tick num=4, 
+		grid style={line width=.1pt, draw=gray!10},
+	    major grid style={line width=.2pt,draw=gray!50},
+	    xtick={0,50,100},
+		xlabel={$Q_f$ [\unit{\watt}]},
+		ylabel={$T_f$ [\unit{\kelvin}]},
+		legend style = {at={(.05,.95)}, anchor=north, rounded corners, legend columns=2}
+	]
+	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Tf_Qc_DR35.txt};\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=o,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_Tf_Qc_DR35.txt};\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_Tf_Qc_DR35.txt};\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=o,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_Tf_Qc_DR35.txt};\addlegendentry{`\texttt{H2}'};
+	\end{axis}
+\end{tikzpicture}

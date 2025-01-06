@@ -5,8 +5,8 @@
 	\begin{axis}[width=\width,height=\height,
 		grid style={line width=.1pt, draw=gray!10},
 	    major grid style={line width=.2pt,draw=gray!50},
-		xlabel={\textit{Drive ratio} $DR$ [\unit{\percent}]},
-		ylabel={Chaleur extraite $\dot Q_a$ [\unit{\watt}]},
+		xlabel={$DR$ [\unit{\percent}]},
+		ylabel={$\dot Q_a$ [\unit{\watt}]},
 		legend style = {at={(.05,.95)}, anchor=north west, rounded corners, legend columns=2}
 	]
 	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Qa_DR_Qc0.txt};\addlegendentry{`\texttt{V1}'};

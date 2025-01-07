@@ -2,47 +2,55 @@
 \mylocaltoc
 
 \section{Convection naturelle}\label{chap:EtudeExpe_ConvNat}
-Lors des expériences réalisées lors de la caractérisation du réfrigérateur \textsc{Tacot}, il a été montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau \echaf{figure ?}\cite{ramadan_design_2021}. Cet écart au comportement attendu, c'est-à-dire un gradient linéaire entre les côtés froid et ambiant du noyau thermoacoustique, ainsi qu'une température radiale uniforme sur la section du noyau thermoacoustique, implique la présence d'un écoulement moyen non nul et d'effets non-linéaires dans le réfrigérateur. Parmi les hypothèses formulées quant à la cause de ces disparités avec la théorie linéaire de Rott, plusieurs hypothèses peuvent être envisagées : vent acoustique, turbulence, formation de tourbillons, génération d'harmoniques supérieures, et convection naturelle. Parmi ces effets, peu d'études portent sur cette dernière, bien qu'il ait déjà été montré que le déclenchement de moteurs ou encore l'uniformité de température sur la section y étaient très sensibles \cite{ross_influence_2003,  hireche_numerical_2019, ramadan_experimental_2018,  zhang_novel_2011}. Plusieurs paramètres sont étudiés pour quantifier la dépendance du comportement de la machine à la direction de la gravité. 
+Lors des expériences réalisées lors de la caractérisation du réfrigérateur \textsc{Tacot}, il a été montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau \echaf{figure ?}\cite{ramadan_design_2021}. Cet écart au comportement attendu, c'est-à-dire un gradient linéaire entre les côtés froid et ambiant du noyau thermoacoustique, ainsi qu'une température radiale uniforme sur la section du noyau thermoacoustique, implique la présence d'un écoulement moyen non nul et d'effets non-linéaires dans le réfrigérateur. Parmi les hypothèses formulées quant à la cause de ces disparités avec la théorie linéaire de Rott, plusieurs hypothèses peuvent être envisagées : vent acoustique, turbulence, formation de tourbillons, génération d'harmoniques supérieures, et convection naturelle. Parmi ces effets, peu d'études portent sur cette dernière, bien qu'il ait déjà été montré que le déclenchement de moteurs ou encore l'uniformité de température sur la section y étaient sensibles \cite{ross_influence_2003,  hireche_numerical_2019, ramadan_experimental_2018,  zhang_novel_2011}. Plusieurs paramètres sont étudiés pour quantifier la dépendance du comportement de la machine à la direction de la gravité. 
 
 \subsection{\'Etude des performances}
 Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=Q_f/W_e$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = T_f/(T_c-T_f)$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section. 
 
-Dans cette étude, les quatre orientations définies sur la figure~\ref{fig:OrientationCore} sont tour à tour mises en place, et deux charges thermiques sont appliquées à l'échangeur froid pour chacune d'entre elles. En suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}, des charges thermiques $\dot Q_f$ de \qtylist{0;50;100}{\watt} sont réglées. Les résultats des expériences sont reportées dans le tableau~\ref{tab:RecapResultExpe}.\medskip
+Dans cette étude, les quatre orientations définies sur la figure~\ref{fig:OrientationCore} sont tour à tour mises en place, et deux charges thermiques sont appliquées à l'échangeur froid pour chacune d'entre elles. En suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}, des charges thermiques $\dot Q_f$ de \qtylist{0;50;100}{\watt} sont réglées. Les résultats des expériences tracés sur les figures~\ref{fig:PerfConvNat} à \ref{fig:PerfConvNat_DR35} proviennent du tableau~\ref{tab:RecapResultExpe}.\medskip
 
 
 \begin{figure}[!ht]
     \centering
-	\begin{subfigure}[b]{.3\textwidth}
+	\begin{subfigure}[b]{.48\textwidth}
 		\centering
-		\external{fig_PerfConvNat_Tf_noheat}
-        %\externalremake
-        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf_noheat}
+		\external{fig_PerfConvNat_Tf}
+        \externalremake
+        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf}
 		\caption{}
-		\label{fig:PerfConvNat_Tf_noheat}
+		\label{fig:PerfConvNat_Tf}
 	\end{subfigure}		
-	\begin{subfigure}[b]{.3\textwidth}
+	\begin{subfigure}[b]{.48\textwidth}
 		\centering
-		\external{fig_PerfConvNat_Ta_noheat}
-        %\externalremake
-        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Ta_noheat}
+		\external{fig_PerfConvNat_Ta}
+        \externalremake
+        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Ta}
 		\caption{}
-		\label{fig:PerfConvNat_Ta_noheat}
+		\label{fig:PerfConvNat_Ta}
 	\end{subfigure}
-	\begin{subfigure}[b]{.3\textwidth}
+	\begin{subfigure}[b]{.48\textwidth}
 		\centering
-		\external{fig_PerfConvNat_Qa_noheat}
-        %\externalremake
-        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa_noheat}
+		\external{fig_PerfConvNat_Qa}
+        \externalremake
+        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa}
 		\caption{}
-		\label{fig:PerfConvNat_Qa_noheat}
-	\end{subfigure}	      
-    \caption{Influence de la convection naturelle sur les performances sur différents indicateurs, en l'absence de charge thermique. \subref{fig:PerfConvNat_Tf_noheat} température froide $T_f$, \subref{fig:PerfConvNat_Ta_noheat} température ambiante~$T_a$, \subref{fig:PerfConvNat_Qa_noheat} quantité de chaleur extraite du côté ambiant $\dot Q_a$. \echaf{ajouter valeurs DeltaEC}}
-    \label{fig:PerfConvNat_noheat}
+		\label{fig:PerfConvNat_Qa}
+	\end{subfigure}	 
+	\begin{subfigure}[b]{.48\textwidth}
+		\centering
+		\external{fig_PerfConvNat_COP}
+        \externalremake
+        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP}
+		\caption{}
+		\label{fig:PerfConvNat_COP}
+	\end{subfigure}	     
+    \caption{Influence de la convection naturelle sur les performances sur différents indicateurs, en l'absence de charge thermique. \subref{fig:PerfConvNat_Tf} température froide $T_f$, \subref{fig:PerfConvNat_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$, et \subref{fig:PerfConvNat_COP} le coefficient de performance rapporté à Carnot. \echaf{ajouter valeurs DeltaEC}}
+    \label{fig:PerfConvNat}
 \end{figure}
 
-La première observation concerne les températures atteintes aux deux extrémités du noyau, représentées sur les figures \ref{fig:PerfConvNat_Tf_noheat} et \subref{fig:PerfConvNat_Ta_noheat}. La température froide $T_f$, de manière générale, est plus basse quand le \textit{drive ratio} augmente. La température du côté ambiant est, quant à elle, relativement constante quel que soit le \textit{drive ratio} avec un écart de l'ordre de \qty{10}{\degreeCelsius}. Cette constance est expliqué par les échanges thermiques avec l'échangeur voisin.\smallskip
+La première observation concerne les températures atteintes aux deux extrémités du noyau, représentées sur les figures \ref{fig:PerfConvNat_Tf} et \subref{fig:PerfConvNat_Ta}. La température froide $T_f$, de manière générale, est plus basse quand le \textit{drive ratio} augmente. La température du côté ambiant est, quant à elle, relativement constante quel que soit le \textit{drive ratio} avec un écart de l'ordre de \qty{10}{\degreeCelsius}. Cette constance est expliqué par les échanges thermiques avec l'échangeur voisin.\smallskip
 
-L'échangeur ambiant extrait la chaleur des volumes élémentaires de gaz qui oscillent à son voisinage. Il est donc attendu de voir la chaleur extraite par cet échangeur augmenter avec le \textit{drive ratio}. Comme attendu la tendance montrée sur la figure~\ref{fig:PerfConvNat_Qa_noheat} le montre. \echaf{finir}
+L'échangeur ambiant extrait la chaleur des volumes élémentaires de gaz qui oscillent à son voisinage. Il est donc attendu de voir la chaleur extraite par cet échangeur augmenter avec le \textit{drive ratio}. Comme attendu la tendance montrée sur la figure~\ref{fig:PerfConvNat_Qa} le montre. \echaf{finir}
 
 
 \begin{figure}[!ht]

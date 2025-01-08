@@ -1,0 +1,88 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\nameref {chap:Remerciements}}{v}{chapter*.1}%
+\contentsline {chapter}{\nameref {chap:listoffigures}}{xii}{chapter*.3}%
+\contentsline {chapter}{\nameref {chap:listoftables}}{xiii}{chapter*.4}%
+\contentsline {chapter}{\numberline {I}Introduction}{1}{chapter.1}%
+\etoc@startlocaltoc {2}
+\contentsline {section}{\numberline {I.1}Revue bibliographique}{2}{section.1.1}%
+\contentsline {section}{\numberline {I.2}Bases de thermoacoustique}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {I.2.1}Concepts généraux}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {I.2.2}\'Equations fondamentales de l'acoustique en fluides dissipatifs}{5}{subsection.1.2.2}%
+\contentsline {section}{\numberline {I.3}\'Etat de l'art}{5}{section.1.3}%
+\contentsline {subsection}{\numberline {I.3.1}De la recherche fondamentale...}{5}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {I.3.2}... à des applications industrielles}{5}{subsection.1.3.2}%
+\contentsline {section}{\numberline {I.4}Outils électroacoustiques pour la thermoacoustique}{6}{section.1.4}%
+\contentsline {subsection}{\numberline {I.4.1}Modèles aux constantes localisées et circuits électriques équivalents}{6}{subsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {I.4.1.1}En général}{6}{subsubsection.1.4.1.1}%
+\contentsline {paragraph}{\numberline {I.4.1.1.a}Analogies électro-mécaniques}{6}{paragraph.1.4.1.1.1}%
+\contentsline {paragraph}{\numberline {I.4.1.1.b}Analogies acousto-mécaniques}{6}{paragraph.1.4.1.1.2}%
+\contentsline {paragraph}{\numberline {I.4.1.1.c}Résumé des analogies}{6}{paragraph.1.4.1.1.3}%
+\contentsline {subsubsection}{\numberline {I.4.1.2}Circuit électrique équivalent à un noyau thermoacoustique}{6}{subsubsection.1.4.1.2}%
+\contentsline {subsection}{\numberline {I.4.2}Circuit équivalent à une machine complète}{7}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {I.4.3}Matrices de transfert}{7}{subsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {I.4.3.1}En général}{7}{subsubsection.1.4.3.1}%
+\contentsline {subsubsection}{\numberline {I.4.3.2}Matrice de transfert d'un noyau thermoacoustique}{7}{subsubsection.1.4.3.2}%
+\contentsline {section}{\numberline {I.5}Limites des modèles}{8}{section.1.5}%
+\contentsline {chapter}{\numberline {II}Protocole expérimental général}{9}{chapter.2}%
+\etoc@startlocaltoc {3}
+\contentsline {section}{\numberline {II.1}Introduction du chapitre}{10}{section.2.1}%
+\contentsline {section}{\numberline {II.2}Présentation du dispositif expérimental actuel}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {II.2.1}Géométrie du réfrigérateur \textsc {Tacot}}{10}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {II.2.1.1}Cavité thermoacoustique}{10}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {II.2.1.2}Noyau thermoacoustique}{10}{subsubsection.2.2.1.2}%
+\contentsline {subsection}{\numberline {II.2.2}Chaîne d'excitation et d'acquisition}{12}{subsection.2.2.2}%
+\contentsline {section}{\numberline {II.3}Protocole expérimental}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {II.3.1}Définition des orientations}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {II.3.2}Acquisitions}{15}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {II.3.2.1}Mesures sans acoustique}{16}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {II.3.2.2}Mesures avec acoustique}{16}{subsubsection.2.3.2.2}%
+\contentsline {section}{\numberline {II.4}Ensemble des simulations réalisées}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {II.4.1}Estimation théorique du flux de chaleur de convection naturelle}{17}{subsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {II.4.1.1}\'Etudes simplifiées}{17}{subsubsection.2.4.1.1}%
+\contentsline {paragraph}{\numberline {II.4.1.1.a}Sans acoustique}{17}{paragraph.2.4.1.1.1}%
+\contentsline {paragraph}{\numberline {II.4.1.1.b}Avec acoustique}{19}{paragraph.2.4.1.1.2}%
+\contentsline {subsubsection}{\numberline {II.4.1.2}\'Elements finis}{20}{subsubsection.2.4.1.2}%
+\contentsline {paragraph}{\numberline {II.4.1.2.a}Volume d'adaptation d'impédance}{20}{paragraph.2.4.1.2.1}%
+\contentsline {paragraph}{\numberline {II.4.1.2.b}Régénérateur}{20}{paragraph.2.4.1.2.2}%
+\contentsline {subsection}{\numberline {II.4.2}Modèle temporel}{20}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {II.4.2.1}Flux thermiques}{21}{subsubsection.2.4.2.1}%
+\contentsline {subsubsection}{\numberline {II.4.2.2}Conditions aux limites}{23}{subsubsection.2.4.2.2}%
+\contentsline {subsubsection}{\numberline {II.4.2.3}Bilan thermique}{23}{subsubsection.2.4.2.3}%
+\contentsline {chapter}{\numberline {III}\'Etude experimentale}{25}{chapter.3}%
+\etoc@startlocaltoc {4}
+\contentsline {section}{\numberline {III.1}Convection naturelle}{26}{section.3.1}%
+\contentsline {subsection}{\numberline {III.1.1}\'Etude des performances}{26}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {III.1.2}Distribution des températures}{26}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {III.1.2.1}Dans la cavité conique entre la source acoustique principale et le noyau thermoacoustique}{26}{subsubsection.3.1.2.1}%
+\contentsline {paragraph}{\numberline {III.1.2.1.a}Réfrigérateur horizontal}{29}{paragraph.3.1.2.1.1}%
+\contentsline {paragraph}{\numberline {III.1.2.1.b}Réfrigérateur vertical}{32}{paragraph.3.1.2.1.2}%
+\contentsline {subsubsection}{\numberline {III.1.2.2}À l'intérieur du régénérateur}{35}{subsubsection.3.1.2.2}%
+\contentsline {paragraph}{\numberline {III.1.2.2.a}Réfrigérateur horizontal}{35}{paragraph.3.1.2.2.1}%
+\contentsline {paragraph}{\numberline {III.1.2.2.b}Réfrigérateur vertical}{37}{paragraph.3.1.2.2.2}%
+\contentsline {subsubsection}{\numberline {III.1.2.3}Dans la cavité entre la source acoustique secondaire et le noyau thermoacoustique}{39}{subsubsection.3.1.2.3}%
+\contentsline {section}{\numberline {III.2}Limite de répétabilité}{39}{section.3.2}%
+\contentsline {chapter}{\numberline {IV}Conclusion}{45}{chapter.4}%
+\etoc@startlocaltoc {5}
+\contentsline {section}{\numberline {IV.1}Section}{46}{section.4.1}%
+\contentsline {chapter}{\numberline {V}Perspectives}{47}{chapter.5}%
+\etoc@startlocaltoc {6}
+\contentsline {section}{\numberline {V.1}Expérimentations supplémentaires}{48}{section.5.1}%
+\contentsline {subsection}{\numberline {V.1.1}\'Etude de la conduction par les parois du noyau thermoacoustique}{48}{subsection.5.1.1}%
+\contentsline {section}{\numberline {V.2}\'Electroacoustique}{48}{section.5.2}%
+\contentsline {subsection}{\numberline {V.2.1}Contrôle actif}{48}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {V.2.2}Remplacement des sources}{49}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {A}Index des notations}{a}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Caractérisation de l'échangeur ambiant}{e}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Détermination de la chaleur pompée}{f}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Incertitudes de mesures}{g}{section.B.2}%
+\contentsline {subsection}{\numberline {B.2.1}Température}{g}{subsection.B.2.1}%
+\contentsline {subsection}{\numberline {B.2.2}Débit d'eau}{g}{subsection.B.2.2}%
+\contentsline {chapter}{\numberline {C}Paramètres du mélange de gaz choisi pour les expériences et simulations}{i}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Récapitulatif des conditions expérimentales}{k}{appendix.D}%
+\contentsline {section}{\numberline {D.1}\'Etude sur la convection naturelle}{k}{section.D.1}%
+\contentsline {chapter}{\numberline {E}Fabrication d'un noyau thermoacoustique}{o}{appendix.E}%
+\etoc@startlocaltoc {7}
+\contentsline {section}{\numberline {E.1}Quantité de tissus}{p}{section.E.1}%
+\contentsline {section}{\numberline {E.2}Instrumentation}{p}{section.E.2}%
+\contentsline {chapter}{Bibliographie}{I}{section.E.2}%

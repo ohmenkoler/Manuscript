@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  7 JAN 2025 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  8 JAN 2025 16:32
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1990,18 +1990,20 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [19]
-<../fig/fig_ConvNatComsol/Geometry.png, id=1498, 363.60844pt x 478.03593pt>
-File: ../fig/fig_ConvNatComsol/Geometry.png Graphic file (type png)
-<use ../fig/fig_ConvNatComsol/Geometry.png>
-Package pdftex.def Info: ../fig/fig_ConvNatComsol/Geometry.png  used on input l
-ine 390.
-(pdftex.def)             Requested size: 241.84842pt x 317.96284pt.
- [20 <../fig/fig_ConvNatComsol/Geometry.png>]
+<../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png, id=1498, 270.28
+98pt x 241.8636pt>
+File: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png Graphic fil
+e (type png)
+<use ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png>
+Package pdftex.def Info: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geomet
+ry5.png  used on input line 390.
+(pdftex.def)             Requested size: 270.28914pt x 241.863pt.
+ [20 <../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png>]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
 ====
-) [21] [22 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
+) [21 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>] [22]
 (../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterCondi
 tionLimite.tex
 ===== Image 'external/fig_TemperatureCanisterConditionLimite0' is up-to-date. =
@@ -2027,52 +2029,71 @@ runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
 \openout5 = `_main_.auxlock'.
 
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Ta.tex
-\openout5 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_PerfConvNat_Ta0" "\def\ti
-kzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_PerfConvNat_Ta0" "\def\tikzexternalrealjob{_main_}\input{_main_}
-")...executed.
-
-\openout5 = `_main_.auxlock'.
-
+===== Image 'external/fig_PerfConvNat_Ta0' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa.tex
-\openout5 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_PerfConvNat_Qa0" "\def\ti
-kzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_PerfConvNat_Qa0" "\def\tikzexternalrealjob{_main_}\input{_main_}
-")...executed.
-
-\openout5 = `_main_.auxlock'.
-
+===== Image 'external/fig_PerfConvNat_Qa0' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP.tex
+===== Image 'external/fig_PerfConvNat_COP0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf_DR2.tex
+\openout5 = `external/fig_PerfConvNat_Tf_DR20.md5'.
+
 \openout5 = `_main_.auxlock'.
 
 
 ===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_PerfConvNat_COP0" "\def\t
-ikzexternalrealjob{_main_}\input{_main_}"' ========
+n-error -interaction=batchmode -jobname "external/fig_PerfConvNat_Tf_DR20" "\de
+f\tikzexternalrealjob{_main_}\input{_main_}"' ========
 runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_PerfConvNat_COP0" "\def\tikzexternalrealjob{_main_}\input{_main_
-}")...executed.
+ "external/fig_PerfConvNat_Tf_DR20" "\def\tikzexternalrealjob{_main_}\input{_ma
+in_}")...executed.
 
 \openout5 = `_main_.auxlock'.
 
-) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf_DR2.tex
-===== Image 'external/fig_PerfConvNat_Tf_DR20' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Ta_DR2.tex
-===== Image 'external/fig_PerfConvNat_Ta_DR20' is up-to-date. ======
+\openout5 = `external/fig_PerfConvNat_Ta_DR20.md5'.
+
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_PerfConvNat_Ta_DR20" "\de
+f\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_PerfConvNat_Ta_DR20" "\def\tikzexternalrealjob{_main_}\input{_ma
+in_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa_DR2.tex
-===== Image 'external/fig_PerfConvNat_Qa_DR20' is up-to-date. ======
+\openout5 = `external/fig_PerfConvNat_Qa_DR20.md5'.
+
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_PerfConvNat_Qa_DR20" "\de
+f\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_PerfConvNat_Qa_DR20" "\def\tikzexternalrealjob{_main_}\input{_ma
+in_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR2.tex
-===== Image 'external/fig_PerfConvNat_COP_DR20' is up-to-date. ======
+\openout5 = `external/fig_PerfConvNat_COP_DR20.md5'.
+
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_PerfConvNat_COP_DR20" "\d
+ef\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_PerfConvNat_COP_DR20" "\def\tikzexternalrealjob{_main_}\input{_m
+ain_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf_DR35.tex
 ===== Image 'external/fig_PerfConvNat_Tf_DR350' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Ta_DR35.tex
@@ -2398,8 +2419,8 @@ Package logreq Info: Writing requests to '_main_.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  72775 strings out of 474435
- 1829613 string characters out of 5751739
- 2987131 words of memory out of 5000000
+ 1829784 string characters out of 5751739
+ 2987112 words of memory out of 5000000
  93490 multiletter control sequences out of 15000+600000
  699304 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2414,7 +2435,7 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
 /fonts/type1/public/cm-super/sftt0800.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-sup
 er/sftt1200.pfb>
-Output written on _main_.pdf (83 pages, 7036673 bytes).
+Output written on _main_.pdf (83 pages, 7078568 bytes).
 PDF statistics:
  3298 PDF objects out of 3580 (max. 8388607)
  343 named destinations out of 1000 (max. 500000)

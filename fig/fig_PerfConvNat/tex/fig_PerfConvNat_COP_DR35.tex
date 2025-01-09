@@ -1,4 +1,4 @@
-\begin{tikzpicture}
+\begin{tikzpicture}[every mark/.append style={mark size=5pt, line width=2pt}]
 	\def\width{.9*\textwidth};
 	\def\height{1*\width};
 	
@@ -11,9 +11,9 @@
 		ylabel={$\COP$ [\unit{\percent}]},
 		legend style = {at={(.5,.05)}, anchor=south, rounded corners, legend columns=2}
 	]
-	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_COP_Qc_DR35.txt};\addlegendentry{`\texttt{V1}'};
-	\addplot[only marks, mark=o,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_COP_Qc_DR35.txt};\addlegendentry{`\texttt{V2}'};
-	\addplot[only marks, mark=*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_COP_Qc_DR35.txt};\addlegendentry{`\texttt{H1}'};
-	\addplot[only marks, mark=o,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_COP_Qc_DR35.txt};\addlegendentry{`\texttt{H2}'};
+	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_COP_Qc_DR35.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=o,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_COP_Qc_DR35.txt};%\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_COP_Qc_DR35.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=o,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_COP_Qc_DR35.txt};%\addlegendentry{`\texttt{H2}'};
 	\end{axis}
 \end{tikzpicture}

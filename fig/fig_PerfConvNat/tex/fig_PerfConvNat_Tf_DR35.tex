@@ -1,4 +1,4 @@
-\begin{tikzpicture}
+\begin{tikzpicture}[every mark/.append style={mark size=5pt, line width=2pt}]
 	\def\width{.9*\textwidth};
 	\def\height{1*\width};
 	
@@ -9,10 +9,15 @@
 	    xtick={0,50,100},
 		xlabel={$Q_f$ [\unit{\watt}]},
 		ylabel={$T_f$ [\unit{\kelvin}]},
-		legend style = {at={(.05,.95)}, anchor=north, rounded corners, legend columns=2}
+		legend style = {at={(.02,1.02)}, anchor=north west, rounded corners, legend columns=3}
 	]
 	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Tf_Qc_DR35.txt};\addlegendentry{`\texttt{V1}'};
 	\addplot[only marks, mark=o,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_Tf_Qc_DR35.txt};\addlegendentry{`\texttt{V2}'};
+	
+	\addlegendimage{only marks, mark=*, color=MatlabYellow}
+	\addlegendentry{\textsc{DeltaEC}}
+	
+	
 	\addplot[only marks, mark=*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_Tf_Qc_DR35.txt};\addlegendentry{`\texttt{H1}'};
 	\addplot[only marks, mark=o,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_Tf_Qc_DR35.txt};\addlegendentry{`\texttt{H2}'};
 	\end{axis}

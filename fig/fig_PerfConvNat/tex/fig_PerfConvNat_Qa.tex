@@ -1,4 +1,4 @@
-\begin{tikzpicture}[every mark/.append style={mark size=5pt}]
+\begin{tikzpicture}[every mark/.append style={mark size=5pt, line width=2pt}]
 	\def\width{.9*\textwidth};
 	\def\height{\width};
 	
@@ -11,19 +11,19 @@
 		ylabel={$\dot Q_a$ [\unit{\watt}]},
 		legend style = {at={(.05,.95)}, anchor=north west, rounded corners, legend columns=2}
 	]
-	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{V1}'};
-	\addplot[only marks, mark=o,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{V2}'};
-	\addplot[only marks, mark=*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{H1}'};
-	\addplot[only marks, mark=o,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{H2}'};
+	\addplot[only marks, mark=triangle*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=triangle,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=triangle*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=triangle,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{H2}'};
 	
 	\addplot[only marks, mark=diamond*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Qa_DR_Qc50.txt};%\addlegendentry{`\texttt{V1}'};
 	\addplot[only marks, mark=diamond,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_Qa_DR_Qc50.txt};%\addlegendentry{`\texttt{V2}'};
 	\addplot[only marks, mark=diamond*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_Qa_DR_Qc50.txt};%\addlegendentry{`\texttt{H1}'};
 	\addplot[only marks, mark=diamond,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_Qa_DR_Qc50.txt};%\addlegendentry{`\texttt{H2}'};
 	
-	\addplot[only marks, mark=triangle*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Qa_DR_Qc100.txt};%\addlegendentry{`\texttt{V1}'};
-	\addplot[only marks, mark=triangle,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_Qa_DR_Qc100.txt};%\addlegendentry{`\texttt{V2}'};
-	\addplot[only marks, mark=triangle*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_Qa_DR_Qc100.txt};%\addlegendentry{`\texttt{H1}'};
-	\addplot[only marks, mark=triangle,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_Qa_DR_Qc100.txt};%\addlegendentry{`\texttt{H2}'};
+	\addplot[only marks, mark=pentagon*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Qa_DR_Qc100.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=pentagon,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_Qa_DR_Qc100.txt};%\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=pentagon*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_Qa_DR_Qc100.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=pentagon,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_Qa_DR_Qc100.txt};%\addlegendentry{`\texttt{H2}'};
 	\end{axis}
 \end{tikzpicture}

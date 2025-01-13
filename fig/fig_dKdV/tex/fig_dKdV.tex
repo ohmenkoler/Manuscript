@@ -21,6 +21,7 @@
     ytick={0,2.81/100000,9.1120/100000,1.4452/10000,
     	2.5/10000,5/10000,1/1000},
     domain=0:100,
+    legend cell align={left},
     legend style = {at={(.95,.95)},anchor = north east,rounded corners}
     ]
         \addplot[solid,ultra thick,draw=MatlabBlue] file {../fig/fig_dKdV/data/data_dK.txt};
@@ -33,6 +34,6 @@
 %         \draw[dashed,black!50] ({axis cs:\xcursor,0}|-{rel axis cs:0,0}) -- ({axis cs:\xcursor,0}|-{rel axis cs:0,\ycursorK});
        \addplot[loosely dashed,draw=black] {2.81/100000};
         
-        \legend{Thermique $\delta_\kappa$ \\ Visqueuse $\delta_\nu$ \\ $r_h$ \\};
+        \legend{$\delta_\kappa$ \\ $\delta_\nu$ \\ $r_h$ \\};
     \end{axis}
 \end{tikzpicture}

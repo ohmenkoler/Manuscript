@@ -32,18 +32,18 @@ Dans la seconde sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(b)}, ce
 
 Il est possible de modéliser l'écoulement dans ce volume en utilisant les équations de Navier-Stokes avec l'approximation de Boussinesq qui s'écrivent
 
-\begin{subequations}
+\begin{subequations} % page wikipédia RayleighBénard
 	\begin{align}
-		\partial_t \delta\rho + (\mathbf v \cdot \nabla)\mathbf{\delta\rho} + \delta\rho \nabla \cdot \mathbf{v} &= 0, \label{eq:NavierStokes_Boussinesq_Conti}\\
-		\delta\rho [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \delta\rho \mathbf g, \text{et}\label{eq:NavierStokes_Boussinesq_QtMvt}\\
+		\partial_t \rho_0 + (\mathbf v \cdot \nabla)\rho_0 + \rho_0 \nabla \cdot \mathbf{v} &= 0, \label{eq:NavierStokes_Boussinesq_Conti}\\
+		\rho_0 [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \rho_0\beta g(T_c-T_f) \mathbf e_{z,0}, \text{et}\label{eq:NavierStokes_Boussinesq_QtMvt}\\
 		\partial_t T + (\mathbf v \cdot \nabla) T - \kappa\nabla^2T &= 0. \label{eq:NavierStokes_Boussinesq_NRJinterne}
 	\end{align}
 	\label{eq:NavierStokes_Boussinesq}%
 \end{subequations}
-La dédimensionalisation de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} qui concerne la conservation de la quantité de mouvement donne
+L'adimensionalisation de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} qui concerne la conservation de la quantité de mouvement donne
 
 \begin{equation}
-	\frac{1}{\mathrm{Pr}}(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\mathbf{v}) = -\nabla p + \mathrm{Ra} T \mathbf e_z + \nabla^2 \cdot \mathbf{v},
+	\frac{1}{\mathrm{Pr}}(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\mathbf{v}) = -\nabla p + \mathrm{Ra} T \mathbf e_{z,0} + \nabla^2 \cdot \mathbf{v},
 	\label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}
 \end{equation}
 et fait apparaître le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl}, ainsi que le nombre de Rayleigh noté $\mathrm{Ra}$, et dont la définition est donnée par 

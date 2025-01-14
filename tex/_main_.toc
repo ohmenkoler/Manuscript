@@ -1,8 +1,8 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
 \babel@toc {french}{}\relax 
 \contentsline {chapter}{\nameref {chap:Remerciements}}{v}{chapter*.1}%
-\contentsline {chapter}{\nameref {chap:listoffigures}}{xii}{chapter*.3}%
-\contentsline {chapter}{\nameref {chap:listoftables}}{xiii}{chapter*.4}%
+\contentsline {chapter}{\nameref {chap:listoffigures}}{xiii}{chapter*.3}%
+\contentsline {chapter}{\nameref {chap:listoftables}}{xv}{chapter*.4}%
 \contentsline {chapter}{\numberline {I}Introduction}{1}{chapter.1}%
 \etoc@startlocaltoc {2}
 \contentsline {section}{\numberline {I.1}Revue bibliographique}{2}{section.1.1}%
@@ -41,18 +41,16 @@
 \contentsline {chapter}{\numberline {III}Ensemble des simulations réalisées}{19}{chapter.3}%
 \etoc@startlocaltoc {4}
 \contentsline {section}{\numberline {III.1}Introduction}{20}{section.3.1}%
-\contentsline {section}{\numberline {III.2}Modèle simplifié et nombres adimensionnels}{20}{section.3.2}%
-\contentsline {subsection}{\numberline {III.2.1}\'Etudes simplifiées}{20}{subsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {III.2.1.1}Sans acoustique}{20}{subsubsection.3.2.1.1}%
-\contentsline {subsubsection}{\numberline {III.2.1.2}Avec acoustique}{22}{subsubsection.3.2.1.2}%
+\contentsline {section}{\numberline {III.2}\'Etude simplifiée et nombres adimensionnels}{20}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}Sans acoustique}{20}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Avec acoustique}{22}{subsection.3.2.2}%
 \contentsline {section}{\numberline {III.3}\'Elements finis}{23}{section.3.3}%
 \contentsline {subsection}{\numberline {III.3.1}Volume d'adaptation d'impédance}{23}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {III.3.2}Régénérateur}{23}{subsection.3.3.2}%
 \contentsline {section}{\numberline {III.4}Modèle temporel}{24}{section.3.4}%
-\contentsline {subsection}{\numberline {III.4.1}Flux thermiques}{24}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {III.4.2}Conditions aux limites}{26}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {III.4.3}Bilan thermique}{26}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {III.4.4}Méthode des transformations intégrales}{27}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {III.4.1}Mécanismes pris en compte dans le modèle}{24}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {III.4.2}Bilan thermique}{27}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {III.4.3}Méthode des transformations intégrales}{27}{subsection.3.4.3}%
 \contentsline {chapter}{\numberline {IV}\'Etude experimentale}{29}{chapter.4}%
 \etoc@startlocaltoc {5}
 \contentsline {section}{\numberline {IV.1}Convection naturelle}{30}{section.4.1}%

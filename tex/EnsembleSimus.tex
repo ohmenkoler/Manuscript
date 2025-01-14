@@ -4,15 +4,15 @@
 \section{Introduction}
 Dans ce chapitre, différents moyens de comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage sont expliqués. Tout d'abord, une analyse globale est réalisées dans la section~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim}. Les nombres adimensionnels utilisés dans la littérature pour évaluer la présence de convection naturelle y sont présentés et calculés. Ensuite, un modèle par éléments finis du régime stationnaire est développé dans la section~\ref{chap:FEM} - \nameref{chap:FEM} pour prendre en compte plus de paramètres d'étude. Enfin, un modèle analytique temporel du régime transitoire est présenté dans la section~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}.
 
-\section{Modèle simplifié et nombres adimensionnels}\label{chap:NbrAdim}
+\section{\'Etude simplifiée et nombres adimensionnels}\label{chap:NbrAdim}
 Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géométries, du type de convection naturelle rencontré, de la porosité, etc. Des études hydrodynamiques sont menées pour aider à l'interprétation des mesures de température. \medskip
 
 Tout d'abord, deux étude très simplifiées sont réalisées pour une cavité 2D différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Ces études doivent permettre l'obtention d'ordres de grandeurs des quantité d'intérêt, en particulier le flux de chaleur $Q_{conv}$ qui agit comme une charge thermique sur le côté froid du noyau thermoacoustique. \smallskip
 
 Ensuite, des simulations par éléments finis de cette cavité et sur le régénérateur sur le logiciel Comsol Multiphysics permettent d'estimer les lignes de courants dans la cellule et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid, en plus de déterminer des paramètres clés pour la compréhension des phénomènes thermiques en jeu.
 
-\subsection{\'Etudes simplifiées}
-\subsubsection{Sans acoustique}
+%\subsection{\'Etudes simplifiées}
+\subsection{Sans acoustique}
 Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, une étude très simplifiée dans une cavité rectangulaire en 2D et représentée sur les figures~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(a)} et {\color{MatlabOrange}(b)} est menée. 
 
 Dans la première sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(a)}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.
@@ -90,7 +90,7 @@ et qui est relié au nombre de Rayleigh par la formule
 \end{equation}
 
 
-\subsubsection{Avec acoustique}
+\subsection{Avec acoustique}
 Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse ne peut pas être respectée dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causé par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
 
 \begin{equation}
@@ -116,7 +116,7 @@ avec $h$ le coefficient d'échange convectif à déterminer.\bigskip
 Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTemporel} doivent également être évalués par ces équations.
 
 \section{\'Elements finis}\label{chap:FEM}
-Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavité est en réalité un cône. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis Comsol Multiphysics grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}. Avec ce logiciel, il est également possible de coupler une simulation acoustique en plus de la simulation de transferts thermiques, ce que le modèle 2D simplifié ne permet pas aisément.
+Le modèle 2D simplifié d'une cavité différentiellement chauffée ne prend pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis Comsol Multiphysics grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}. Avec ce logiciel, il est également possible de coupler une simulation acoustique en plus de la simulation de transferts thermiques, ce que le modèle 2D simplifié ne permet pas aisément. 
 
 \begin{figure}[!ht]
     \centering
@@ -133,6 +133,8 @@ Le modèle 2D simplifié ne prend pas en compte plusieurs paramètres : la cavit
 Le nombre de Rayleigh dans un matériau poreux dépend de sa perméabilité. Il est assez difficile de la calculer car il faut connaître la vitesse d'écoulement et la différence de pression de part et d'autre du domaine étudié. Le régénérateur est modélisé dans Comsol pour extraire ses paramètres hydrauliques et calculer les nombres adimensionnels déjà présentés.
 
 De plus, cette simulation vise à vérifier l'hypothèse de superposition des effets thermiques. En effet, la distribution de température du côté de l'échangeur froid dans le cas de l'orientation `\texttt{H1}' laisse à penser que la température froide et constante sur la section provoqué par l'effet thermoacoustique, la conduction thermique dans le noyau qui provoque une différence de température entre le centre du noyau et sa périphérie, et la convection naturelle qui apporte un gradient de température selon la direction verticale se combinent.
+
+Dans cette simulation, le régénérateur est modélisé en premier lieu comme un solide non poreux. Ainsi, il est possible de répondre à une question sur la présence ou non d'un flux moyen non nul de convection naturelle significatif à l'intérieur du noyau.
 
 \section{Modèle temporel} \label{chap:ModeleTemporel}
 Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volume élémentaire $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques. Ce modèle 2D prend en compte les conditions au limites suivantes : 
@@ -157,7 +159,7 @@ Le modèle a pour but de calculer les transferts thermiques dans le régénérat
 	\label{eq:TMatrix_regen}
 \end{subequations}
 
-\subsection{Flux thermiques}
+\subsection{Mécanismes pris en compte dans le modèle}
 Ensuite, les flux thermiques sont également pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer au sein du régénérateur.
 
 \begin{figure}[!ht]
@@ -240,16 +242,13 @@ dont l'intégrale sur la section de rayon $R_{\sf reg}$ est résolue par une mé
 
 \item Les effets de bords tels que les pertes de charges ou la vorticité sont pris en compte aux frontières du domaine grâce à des flux de chaleur $Q_{\sf vort}$ estimés empiriquement à $x=0$ et $x=L_{\sf reg}$.
 
-\item Enfin, les pertes latérales sur la circonférence et aux extrémités du régénérateur sont prises en compte par
+\item Les pertes latérales aux extrémités en $x=0$ et $x=L_{\sf reg}$ du régénérateur sont prises en compte par
 
 \begin{equation}
-	\left\{ \begin{aligned}
-		Q_{\sf lat}^{(x)} &= h_x \theta,\\
-		Q_{\sf lat}^{(x)} &= h_x \theta,
-	\end{aligned}\right.
-\label{eq:FluxLat_Lotton}
+	Q_{\sf lat}^{(x)} = h_x \theta,
+	\label{eq:FluxLat_Lotton}
 \end{equation}
-où $h_x$ et $h_r$ sont respectivement les coefficients d'échanges avec les extrémités à $x=0$ et $x=L_{\sf reg}$, et avec la paroi à $r = R_{\sf reg}$. Ils sont déterminés de façon empirique dans l'article.
+où $h_x$ est le coefficient d'échanges thermique entre les extrémités du noyau et le fluide à température ambiante. Ils sont déterminés de façon empirique.
 
 %Alternativement, il est possible de prendre en compte les échanges de chaleur au bord et dans l'axe du noyau par un terme qui représente le flux de chaleur induit par les oscillations acoustiques noté $\psi_{ac}$ dans la thèse de Guédra \cite{guedra_etudes_2012} et défini par
 %
@@ -264,11 +263,10 @@ où $h_x$ et $h_r$ sont respectivement les coefficients d'échanges avec les ext
 %										&= \langle\psi_{ac,0}\rangle
 %\end{align}
 
-\end{enumerate} 
 
-\subsection{Conditions aux limites}
-\begin{enumerate}[label=\textbf{(\roman*)}]
-\item \echaf{Condition de température sur le canister}
+\item Les pertes latérales sur la périphérie à $r=R_{\sf reg}$ sont prises en comptes en considérant une température variant dans le temps et le long du régénérateur, déterminée par la méthode des transformations intégrales. Ce calcul, expliqué dans la section~\ref{chap:TransfoIntegrales}, est appliqué à un système présenté sur la figure~\ref{fig:TemperatureCanisterConditionLimite}, qui contient le \echaf{canister} dont l'épaisseur est considérée infinie pour le calcul numérique, insérée dans le tube en acier inoxydable qui contient le noyau, suivi du gaz contenu dans le canal de rétroaction.\echaf{continuer}
+
+La séparation du calcul de la température de la paroi du reste de la simulation permet de résoudre analytiquement le problème, ce qui est impossible si le couplage entre ces systèmes est considéré. L'hypothèse de la longueur infinie du \echaf{canister} repose sur le fait que l'influence du \echaf{canister} sur le régénérateur prédomine \echaf{sur l'impact inverse}.
 
 
 \begin{figure}[!ht]
@@ -276,7 +274,7 @@ où $h_x$ et $h_r$ sont respectivement les coefficients d'échanges avec les ext
     \external{fig_TemperatureCanisterConditionLimite}
     %\externalremake
     \input{../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterConditionLimite}
-    \caption{Géométrie équivalente pour établir la condition de température à la frontière $r=R_{\sf reg}$.}
+    \caption{Géométrie équivalente pour établir la condition de température à la frontière $r=R_{\sf reg}$. \echaf{ajouter conductivité}}
     \label{fig:TemperatureCanisterConditionLimite}
 \end{figure}
 
@@ -331,8 +329,7 @@ Le report des flux de chaleurs des équations~\eqref{eq:FluxTA_Lotton_Regen} à 
 	\label{eq:ProbTransitoire_ApDvpt}
 \end{equation}
 
-\subsection{Méthode des transformations intégrales}
-
+\subsection{Méthode des transformations intégrales}\label{chap:TransfoIntegrales}
 La résolution de l'équation~\eqref{eq:BilanChaleur_LottonPoignand_ApDvptCylin} qui comporte des termes sources requiert l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{ozisik_heat_1993}. Les équations s'écrivent alors
 
 \begin{subequations}

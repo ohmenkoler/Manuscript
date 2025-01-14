@@ -62,8 +62,13 @@
 
 
 %%% Q_lat
-\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,1.1*\Ryreg) -- ++(0,1cm) node [above] {$h_r(R_{\sf reg})\theta$};
-\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,-1.1*\Ryreg) -- ++(0,-1cm) node [below] {$h_r(R_{\sf reg})\theta$};
+%\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,1.1*\Ryreg) -- ++(0,1cm) node [above] {$h_r(R_{\sf reg})\theta$};
+%\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,-1.1*\Ryreg) -- ++(0,-1cm) node [below] {$h_r(R_{\sf reg})\theta$};
+
+\draw[red] (.5*\Lreg,1.1*\Ryreg) node{$T_{paroi}$}; 
+\draw[red, very thick] (\CHXnorth) -- (\AHXnorth);
+\draw[red] (.5*\Lreg,-1.1*\Ryreg) node{$T_{paroi}$};
+\draw[red, very thick] (\CHXsouth) -- (\AHXsouth);
 
 \draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (-2*\Rxreg,0) -- ++(-1cm,0) node [midway, above] {$h_x(0)\theta$};
 \draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (\Lreg+2*\Rxreg,0) -- ++(1cm,0) node [midway, above] {$h_x(L_{\sf reg})\theta$};

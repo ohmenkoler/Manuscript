@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  14 JAN 2025 09:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  14 JAN 2025 19:14
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1843,18 +1843,18 @@ File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
 ) [11{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Program Fi
 les/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/en
 c/dvips/iwona/sy-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm
--super-t1.enc}])
+-super-t1.enc}] [12])
 \tf@lof=\write8
 \openout8 = `_main_.lof'.
 
- [12]
-(_main_.lot)
+
+[13] [14
+
+] (_main_.lot)
 \tf@lot=\write9
 \openout9 = `_main_.lot'.
 
- [13
-
-] [14
+ [15] [16
 
 ] (Introduction.tex
 Chapitre I.
@@ -1964,7 +1964,7 @@ LaTeX Info: Symbol \textminus not provided by
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
 ) [13 <./external/fig_dKdV0.pdf>]
-<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1342, 126.42508
+<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=1341, 126.42508
 pt x 94.84251pt>
 File: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg Graphic file (
 type jpg)
@@ -1972,7 +1972,7 @@ type jpg)
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped
 .jpg  used on input line 206.
 (pdftex.def)             Requested size: 227.3381pt x 170.54994pt.
-<../fig/fig_SystemeAccroche/Palans.jpg, id=1343, 4047.12pt x 3035.34pt>
+<../fig/fig_SystemeAccroche/Palans.jpg, id=1342, 4047.12pt x 3035.34pt>
 File: ../fig/fig_SystemeAccroche/Palans.jpg Graphic file (type jpg)
 <use ../fig/fig_SystemeAccroche/Palans.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Palans.jpg  used on input l
@@ -2017,7 +2017,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 7
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [22]
-<../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png, id=1560, 270.28
+<../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png, id=1557, 270.28
 98pt x 241.8636pt>
 File: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png Graphic fil
 e (type png)
@@ -2035,12 +2035,12 @@ u_Gaelle.tex
 tionLimite.tex
 ===== Image 'external/fig_TemperatureCanisterConditionLimite0' is up-to-date. =
 =====
-) [26 <./external/fig_TemperatureCanisterConditionLimite0.pdf>])
-(EtudeExperimentale.tex [27] [28
-
-]
+) [26] [27 <./external/fig_TemperatureCanisterConditionLimite0.pdf>])
+(EtudeExperimentale.tex [28]
 Chapitre IV.
-[29] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf.tex
+[29
+
+] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf.tex
 ===== Image 'external/fig_PerfConvNat_Tf0' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Ta.tex
 ===== Image 'external/fig_PerfConvNat_Ta0' is up-to-date. ======
@@ -2374,16 +2374,16 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 85E9BC0D6754CF77AE6904CF6ED1E4DC;17038.
+(rerunfilecheck)             Checksum: 484B18CDC1B50CBEF77A7062AF72B25E;16825.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72846 strings out of 474435
- 1832068 string characters out of 5751739
- 2989077 words of memory out of 5000000
- 93547 multiletter control sequences out of 15000+600000
+ 72845 strings out of 474435
+ 1832019 string characters out of 5751739
+ 2989181 words of memory out of 5000000
+ 93546 multiletter control sequences out of 15000+600000
  699304 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,90p,4547b,3220s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2397,9 +2397,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
 /fonts/type1/public/cm-super/sftt0800.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-sup
 er/sftt1200.pfb>
-Output written on _main_.pdf (87 pages, 21713049 bytes).
+Output written on _main_.pdf (89 pages, 21713633 bytes).
 PDF statistics:
- 3353 PDF objects out of 3580 (max. 8388607)
+ 3352 PDF objects out of 3580 (max. 8388607)
  354 named destinations out of 1000 (max. 500000)
- 1138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

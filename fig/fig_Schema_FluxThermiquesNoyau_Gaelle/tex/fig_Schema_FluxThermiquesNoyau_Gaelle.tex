@@ -12,8 +12,10 @@
 
 
 % --------------------------------------------------- Flux thermiques
-\fill[MatlabBlue,opacity=.5] (\CHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg] -- cycle; % Face gauche (fond)
-\draw[very thick] (\CHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg]; % Face gauche (contour)
+%\fill[MatlabBlue,opacity=.5] (\CHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg] -- cycle; % Face gauche (fond)
+%\draw[very thick] (\CHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg]; % Face gauche (contour)
+
+\filldraw[fill=MatlabBlue, fill opacity=.5, draw=black,very thick] (\CHXnorth) rectangle (\AHXsouth);
 
 %%% Q_vort
 \foreach \y in {-.5,0,.5}{
@@ -27,21 +29,21 @@
 
 % --------------------------------------------------- Fond de schéma
 
-\draw[dotted, ->, very thick] ({-3.5*\Rxreg},0) -- ({\Lreg+3.5*\Rxreg},0) node [right] {$\mathbf e_x$}; % axe x
-\fill[MatlabBlue,opacity=.5] (\CHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- cycle; % bord gauche (moitié droite pour que l'axe x rentre "dans le noyau")
+\draw[dotted, ->, very thick] ({-3.5*\Rxreg},-\Ryreg) -- ({\Lreg+3.5*\Rxreg},-\Ryreg) node [right] {$\mathbf e_x$}; % axe x
+%\fill[MatlabBlue,opacity=.5] (\CHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- cycle; % bord gauche (moitié droite pour que l'axe x rentre "dans le noyau")
 \draw[dotted, ->, very thick] ($(\CHXsouth)+(0,-.3*\Ryreg)$) -- ($(\CHXnorth)+(0,.3*\Ryreg)$) node [above] {$\mathbf e_r$}; % axe r
 
-\draw[dashed, very thick] (\AHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg]; % paroi gauche arrière pointillée
-\filldraw[fill=MatlabBlue, fill opacity=.5, draw=black,very thick] (\CHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- (\AHXsouth) arc [start angle=-90, end angle=90, x radius=\Rxreg, y radius=\Ryreg] --cycle; % Paroi du cylindre
+%\draw[dashed, very thick] (\AHXnorth) arc [start angle=90, end angle=270, x radius=\Rxreg, y radius=\Ryreg]; % paroi gauche arrière pointillée
+%\filldraw[fill=MatlabBlue, fill opacity=.5, draw=black,very thick] (\CHXnorth) arc [start angle=90, end angle=-90, x radius=\Rxreg, y radius=\Ryreg] -- (\AHXsouth) arc [start angle=-90, end angle=90, x radius=\Rxreg, y radius=\Ryreg] --cycle; % Paroi du cylindre
 
 
 % --------------------------------------------------- Dimensions
 \draw (\CHXnorth) node [above right] {\begin{tabular}{ll}\'Echangeur \\  froid\end{tabular}};
 \draw (\AHXnorth) node [above left] {\begin{tabular}{rr}\'Echangeur \\ ambiant \end{tabular}  };
 
-\draw (0,0) node[above right] {0};
-\draw (\Lreg,0) node{|} node[below] {$L_{\sf reg}$};
-\draw (\CHXnorth) -- ++(-.5cm,0) node[left] {$R_{\sf reg}$};
+\draw (0,-\Ryreg) node[below left] {0};
+\draw (\Lreg,-\Ryreg) node{|} node[below left] {$L_{\sf reg}$};
+\draw (\CHXnorth) -- ++(-.5cm,0) node[left] {$2 R_{\sf reg}$};
 
 %%% Q_TA
 \draw[arw,->,draw=MatlabBlue] ({.25*\Lreg},0) -- ++(.33*\Lreg,0) node[right] {$Q_{TA}$} node(MidQTA)[midway]{};
@@ -66,9 +68,9 @@
 %\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,-1.1*\Ryreg) -- ++(0,-1cm) node [below] {$h_r(R_{\sf reg})\theta$};
 
 \draw[red] (.5*\Lreg,1.1*\Ryreg) node{$T_{paroi}$}; 
-\draw[red, very thick] (\CHXnorth) -- (\AHXnorth);
+\draw[red, line width=1mm] ($(\CHXnorth)+(0,0)$) -- ($(\AHXnorth)+(0,0)$);
 \draw[red] (.5*\Lreg,-1.1*\Ryreg) node{$T_{paroi}$};
-\draw[red, very thick] (\CHXsouth) -- (\AHXsouth);
+\draw[red, line width=1mm] ($(\CHXsouth)+(0,0)$) -- ($(\AHXsouth)+(0,0)$);
 
 \draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (-2*\Rxreg,0) -- ++(-1cm,0) node [midway, above] {$h_x(0)\theta$};
 \draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (\Lreg+2*\Rxreg,0) -- ++(1cm,0) node [midway, above] {$h_x(L_{\sf reg})\theta$};
@@ -76,7 +78,7 @@
 %%% Q_HX
 %\draw[arw,<-,draw=gray] ($(\CHXsouth)+(1mm,-1mm)$) -- ++(-60:.33*\Lreg)node[pos=.75, right]{$Q_f$};
 %\draw[arw,->,draw=gray!50!black] ($(\AHXsouth)+(-1mm,-1mm)$) -- ++(-120:.33*\Lreg)node[pos=.25, left]{$Q_a$};
-\draw[arw,<-,draw=gray] ($(\CHXsouth)+(0,-1mm)$) -- ++(-90:.33*\Lreg)node[pos=.75, right]{$Q_f$};
-\draw[arw,->,draw=gray!50!black] ($(\AHXsouth)+(0,-1mm)$) -- ++(-90:.33*\Lreg)node[pos=.25, left]{$Q_a$};
+\draw[arw,<-,draw=gray] ($(\CHXsouth)+(0,-5mm)$) -- ++(0,-.33*\Lreg)node[pos=.75, right]{$Q_f$};
+\draw[arw,->,draw=gray!50!black] ($(\AHXsouth)+(0,-5mm)$) -- ++(0,-.33*\Lreg)node[pos=.25, left]{$Q_a$};
 
 \end{tikzpicture}

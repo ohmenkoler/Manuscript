@@ -41,18 +41,20 @@ Le champ acoustique doit être contrôlé avec précision, en particulier l'imp�
     \centering
 	\begin{subfigure}{.47\textwidth}
 		\centering
-		\includegraphics[height=5cm]{../fig/fig_ActiveControl/ADAU1701}
+		\external{fig_ActiveControl_ADAU1701}
+		\tikz{\draw(0,0) node{\includegraphics[height=5cm]{../fig/fig_ActiveControl/ADAU1701}};}
 		\caption{}
 		\label{fig:ActiveControl_ADAU1701}
 	\end{subfigure}		
 	\begin{subfigure}{.47\textwidth}
 		\centering
-		\includegraphics[height=5cm]{../fig/fig_ActiveControl/Teensy41}
+		\external{fig_ActiveControl_Teensy41}
+		\tikz{\draw(0,0) node{\includegraphics[height=5cm]{../fig/fig_ActiveControl/Teensy41}};}
 		\caption{}
 		\label{fig:ActiveControl_Teensy41}
 	\end{subfigure}	    
     \caption{Dispositif de traitement du signal numérique en temps réel. \subref{fig:ActiveControl_ADAU1701} SigmaDSP ADAU1701 et \subref{fig:ActiveControl_Teensy41} Teensy 4.1}
-    \label{fig:•}
+    \label{fig:ActiveControl}
 \end{figure}
 
 Ces cartes sont toutefois sources de retards : les différents calculs réalisés par le processeur, les filtres, les conversions analogique-numérique et numérique-analogique prennent du temps, mais il est possible d'atteindre des retards faibles de l'ordre de \qty{80}{\micro\second}, ce qui correspond à un déphasage de \ang{1.35} à la fréquence de fonctionnement du \textsc{Tacot}, \qty{47}{\hertz}.

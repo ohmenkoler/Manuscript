@@ -11,7 +11,9 @@ Après avoir brièvement rappelé les bases de fonctionnement des machines therm
 \section{Présentation du dispositif expérimental actuel}\label{chap:PresentationTacot}
 
 \subsection{Résultats déjà obtenus}\label{chap:PresTacot_ResultatsATE}
-\echaf{Quelques résultats. À mettre dans l'intro I ?} Au démarrage de cette thèse, le réfrigérateur existe déjà et sa caractérisation est publiée \cite{ramadan_design_2021}, et fait également l'objet d'études expérimentales~\cite{ramadan_experimental_2018, ramadan_experimental_2021} et  numériques~\cite{hireche_numerical_2019, hireche_experimental_2020,}. Dans cet article, il est montré que la fréquence de fonctionnement offrant les meilleures performances est $f=\qty{47}{\hertz}$, soit la première fréquence de résonance du système, et avec un déphasage inter-sources $\phi_{2-1}=\qty{-60}{\degree}$. À ce point de fonctionnement et à une puissance d'alimentation des sources $\dot W_e=\qty{193}{\watt}$ soit un \textit{drive ratio} $DR=\qty{3.6}{\percent}$, une quantité de chaleur de $\dot Q_f=\qty{290}{\watt}$ est extraite à la source froide dont la température est $T_a=\qty{15}{\degreeCelsius}$. Le coefficient de performance est $\COP=\num{1.5}$, soit \qty{15}{\percent} du coefficient de performance de Carnot. \echaf{ajouter figures des écarts mesures-modèle DeltaEC}
+\echaf{Quelques résultats. À mettre dans l'intro I ?} Au démarrage de cette thèse, le réfrigérateur existe déjà et sa caractérisation est publiée \cite{ramadan_design_2021}, et fait également l'objet d'études expérimentales~\cite{ramadan_experimental_2018, ramadan_experimental_2021} et  numériques~\cite{hireche_numerical_2019, hireche_experimental_2020,}. Dans cet article, il est montré que la fréquence de fonctionnement offrant les meilleures performances est $f=\qty{47}{\hertz}$, soit la première fréquence de résonance du système, et avec un déphasage inter-sources $\phi_{2-1}=\qty{-60}{\degree}$. À ce point de fonctionnement et à une puissance d'alimentation des sources $\dot W_e=\qty{193}{\watt}$ soit un \textit{drive ratio} $DR=\qty{3.6}{\percent}$, une quantité de chaleur de $\dot Q_f=\qty{290}{\watt}$ est extraite à la source froide dont la température est $T_a=\qty{15}{\degreeCelsius}$. Le coefficient de performance est $\COP=\num{1.5}$, soit \qty{15}{\percent} du coefficient de performance de Carnot.\smallskip
+
+Cependant, les résultats obtenus avant le démarrage de cette thèse montrent des écarts avec les prédictions de la théorie linéaire.\echaf{ajouter figures des écarts mesures-modèle DeltaEC}
 
 \subsection{Géométrie du réfrigérateur \textsc{Tacot}}
 \subsubsection{Cavité thermoacoustique}
@@ -31,21 +33,24 @@ Tout comme la machine qui le contient, le noyau adopte une géométrie cylindriq
 
 \begin{figure}[!ht]
     \centering
-	\begin{subfigure}{.32\textwidth}
+	\begin{subfigure}{.3\textwidth}
 		\centering
-\includegraphics[width=\textwidth]{../fig/fig_TacotPhotos/AHX_dansCarter.JPG}
+		\external{fig_TacotPhotos_AHX_dansCarter}
+		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_TacotPhotos/AHX_dansCarter.JPG}};}
 		\caption{}
 		\label{fig:TacotPhotos_AHX}
 	\end{subfigure}		
-	\begin{subfigure}{.32\textwidth}
+	\begin{subfigure}{.3\textwidth}
 		\centering
-\includegraphics[width=\textwidth]{../fig/fig_TacotPhotos/Regenerateur.JPG}
+		\external{fig_TacotPhotos_Regenerateur}
+		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_TacotPhotos/Regenerateur.JPG}};}
 		\caption{}
 		\label{fig:TacotPhotos_Regen}
 	\end{subfigure}	
-	\begin{subfigure}{.32\textwidth}
+	\begin{subfigure}{.3\textwidth}
 		\centering
-\includegraphics[width=\textwidth]{../fig/fig_TacotPhotos/CHX_dansCarter.JPG}
+		\external{fig_TacotPhotos_CHX_dansCarter}
+		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_TacotPhotos/CHX_dansCarter.JPG}};}
 		\caption{}
 		\label{fig:TacotPhotos_CHX}
 	\end{subfigure}	    
@@ -135,7 +140,7 @@ La chaîne d'acquisition se compose de plus de trente capteurs. Tous ne sont pas
     \external{fig_TCdansNoyau}
     %\externalremake
     \input{../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau}
-    \caption{Emplacement des thermocouples dans le noyau thermoacoustique. Zoom sur l'encadré orange de la figure~\ref{fig:SchemaGeneralTACOT}.}
+    \caption{Emplacement des thermocouples dans le noyau thermoacoustique. Zoom sur l'encadré violet de la figure~\ref{fig:SchemaGeneralTACOT}.}
     \label{fig:TCdansNoyau}
 \end{figure}
 
@@ -201,15 +206,17 @@ Pour l'étude de l'influence de la gravité sur la distribution de température 
 
 \begin{figure}[!ht]
     \centering
-	\begin{subfigure}{.47\textwidth}
+	\begin{subfigure}{.45\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg}
+		\external{fig_SystemeAccroche_Machine}
+		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg}};}
 		\caption{}
 		\label{fig:TACOTSuspendu_Frigo}
 	\end{subfigure}		%
-	\begin{subfigure}{.47\textwidth}
+	\begin{subfigure}{.45\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{../fig/fig_SystemeAccroche/Palans.jpg}
+		\external{fig_SystemeAccroche_Palan}
+		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_SystemeAccroche/Palans.jpg}};}
 		\caption{}
 		\label{fig:TACOTSuspendu_Palans}
 	\end{subfigure}	    
@@ -261,7 +268,7 @@ Les orientations choisies au moyen des palans sont décrites par deux angles $\p
 
 
 
-La première orientation, nommée `\texttt{H1}' et représentée sur la figure~\ref{fig:OrientationCore_H1}, est la même que dans l'article dédié à la conception du réfrigérateur \cite{ramadan_design_2021}. Dans cette configuration, le \textsc{Tacot} est placé à l'horizontale comme sur la figure~\ref{fig:TACOTSuspendu_Frigo}, et les thermocouples sont placés sur un plan vertical coplanaire à la gravité. Cette orientation fait office de référence des orientations, soit $\psi_v=\psi_h=\qty{0}{\degree}$.\smallskip
+La première orientation, nommée `\texttt{H1}' et représentée sur la figure~\ref{fig:OrientationCore_H1}, est la même que dans l'article dédié à la conception du réfrigérateur \cite{ramadan_design_2021}. Dans cette configuration, le \textsc{Tacot} est placé à l'horizontale comme sur la figure~\ref{fig:TACOTSuspendu_Frigo}, et les thermocouples sont placés sur un plan vertical coplanaire à la gravité. Cette orientation est celle avec laquelle tous les résultats ont été obtenus avant le démarrage de la thèse et fait donc office de référence des orientations, soit $\psi_v=\psi_h=\qty{0}{\degree}$.\smallskip
 
 Ensuite, la deuxième orientation est représentée sur la figure~\ref{fig:OrientationCore_H2}. Dans ce cas, référérencé en tant que `\texttt{H2}', le réfrigérateur est toujours à l'horizontale ($\psi_v=\qty{0}{\degree}$), mais pivoté autour de son axe pour placer les thermocouples sur un plan horizontal auquel la gravité est orthogonale ($\psi_h=\qty{90}{\degree}$).\smallskip
 
@@ -296,7 +303,7 @@ Ensuite, une charge thermique peut être appliquée au noyau, par le biais de l'
 	Q_f = \frac{E^2}{R},
 	\label{eq:Qf_définitionEsurR}
 \end{equation}
-où $E$ est la tension appliquée aux cartouches et $R=\qty{22.4}{\ohm}$ la résistance des cartouches en parallel. \echaf{à continuer}
+où $E$ est la tension appliquée aux cartouches et $R=\qty{22.4}{\ohm}$ la résistance des cartouches en parallèle. \echaf{à continuer}
 
 
 

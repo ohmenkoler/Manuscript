@@ -1,8 +1,8 @@
-\chapter{Disposiif expérimental}
+\chapter{Dispositif expérimental}
 \mylocaltoc
 
 
-\section{Introduction du chapitre}\label{chap:IntroProtocExp}
+\section{Introduction}\label{chap:IntroProtocExp}
 Après avoir brièvement rappelé les bases de fonctionnement des machines thermoacoustiques, il est temps de décrire le réfrigérateur support de cette thèse. Le choix de la géométrie, les paramètres hydrauliques du régénérateur utilisé, et enfin la chaîne d'excitation et d'acquisition sont présentés dans la section~\ref{chap:PresentationTacot} - \nameref{chap:PresentationTacot}. La deuxième partie présente les conditions expérimentales choisies ainsi que le protocole suivi pour chaque mesure dans la section~\ref{chap:ProtocolExpe} - \nameref{chap:ProtocolExpe}.
 %Les simulations théoriques réalisées sont ensuite expliquées en troisième partie, dans la section~\ref{chap:SimusRealisees} (\nameref{chap:SimusRealisees}).
 
@@ -68,25 +68,40 @@ Le régénérateur est composé de \echaf{combien} disques de tissus métallique
 %	&= \frac{V_{\sf tot}-V_{\sf metal}}{V_{\sf tot}} \nonumber\\
 %	&= 1 - \frac{m_{\sf metal}}{m_{\sf tot}} \label{eq:Porosite_Masse}
 \end{align}
-où $V_{\sf gaz}$ représente le volume occupé par le gaz dans le régénérateur, et $V_{\sf tot}$ le volume total du régénérateur. Le milieu ainsi constitué est poreux et tortueux car l'orientation des disques de tissus est aléatoire, et le rayon hydraulique est défini par \cite{swift_thermoacoustics_2017} %\echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
+où $V_{\sf gaz}$ représente le volume occupé par le gaz dans le régénérateur, et $V_{\sf tot}$ le volume total du régénérateur. Le milieu ainsi constitué est poreux et tortueux car l'orientation des disques de tissus est aléatoire, et le rayon hydraulique est défini par  %\echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
 
 \begin{equation}
 	r_h = d_w\frac{\Phi}{4(1-\Phi)},
 	\label{eq:DefRayonHydrauGantois}
 \end{equation}
-avec $d_w$ le diamètre du fil. Ce milieu poreux dispose d'une certaine capacité à laisser passer un écoulement. C'est la perméabilité notée $K_p$, qui est définie par 
-
-\begin{equation}
-	K_p = \echaf{\frac{4 r_h^2 \Phi}{8}},
-	\label{eq:DefPermeabilite_LISN}
-\end{equation}
-\echaf{d'après le excel du LISN} \cite{hireche_experimental_2020}, ou
+avec $d_w$ le diamètre du fil \cite{swift_thermoacoustics_2017}. Ce milieu poreux dispose d'une certaine capacité à laisser passer un écoulement. C'est la perméabilité notée $K_p$, qui est généralement définie par 
 
 \begin{equation}
 	K_p = \echaf{v_{\sf ref}\frac{\nu \Delta x}{\Delta P}},
 	\label{eq:DefPermeabilite_Wikipedia}
 \end{equation}
-\echaf{d'après la formulation générale} \cite{nield_convection_2013}.
+où $v_{\sf ref}$ est la vitesse d'écoulement d'un fluide de viscosité cinématique $\nu$ dans le milieu, causé par un gradient de pression $\frac{\Delta P}{\Delta x}$ \cite{nield_convection_2013}. Cependant, il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne du milieu poreux. La formulation retenue s'écrit
+
+\begin{equation}
+	K_p = \echaf{\frac{4 r_h^2 \Phi}{8}},
+	\label{eq:DefPermeabilite_LISN}
+\end{equation}
+et donne des résultats satisfaisants pour le developpement des modèles \cite{dullien_porous_1992, hireche_experimental_2020}.\bigskip
+
+
+
+
+
+Cette machine nécessite entre autres choses le respect de la condition $\delta_{\kappa,\nu} \gg r_h$, de sorte à avoir un excellent contact thermique entre le fluide et le solide poreux. Pour le fluide considéré, les épaisseurs de couches limites sont tracées en fonction de la fréquence et comparé au rayon hydraulique sur la figure~\ref{fig:dKdV}.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_dKdV}
+%    \externalremake
+    \input{../fig/fig_dKdV/tex/fig_dKdV}
+    \caption{\'Evolution des épaisseurs de couches limites thermique $\delta_\kappa$ et visqueuse $\delta_\nu$ en fonction de la fréquence, définies par le système d'équations~\eqref{eq:CouchesLimites}. Elles sont comparées au rayon hydraulique $r_h$.}
+    \label{fig:dKdV}
+\end{figure}
 
 Les dimensions et paramètres du régénérateur sont résumés dans le tableau \ref{tab:ParamHydrauTAC}.
 
@@ -108,19 +123,6 @@ Les dimensions et paramètres du régénérateur sont résumés dans le tableau 
         \hline
     \end{tabular}
 \end{table}
-
-Cette machine nécessite entre autres choses le respect de la condition $\delta_{\kappa,\nu} \gg r_h$, de sorte à avoir un excellent contact thermique entre le fluide et le solide poreux. Pour le fluide considéré, les épaisseurs de couches limites sont tracées en fonction de la fréquence et comparé au rayon hydraulique sur la figure~\ref{fig:dKdV}.
-
-\begin{figure}[!ht]
-    \centering
-    \external{fig_dKdV}
-%    \externalremake
-    \input{../fig/fig_dKdV/tex/fig_dKdV}
-    \caption{\'Evolution des épaisseurs de couches limites thermique $\delta_\kappa$ et visqueuse $\delta_\nu$ en fonction de la fréquence, définies par le système d'équations~\eqref{eq:CouchesLimites}. Elles sont comparées au rayon hydraulique $r_h$.}
-    \label{fig:dKdV}
-\end{figure}
-
-
 
 \subsection{Chaîne d'excitation et d'acquisition}
 L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments.\bigskip

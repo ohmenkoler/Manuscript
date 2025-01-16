@@ -5,44 +5,46 @@
 Lors des expériences réalisées lors de la caractérisation du réfrigérateur \textsc{Tacot}, il a été montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau \echaf{figure ?}\cite{ramadan_design_2021}. Cet écart au comportement attendu, c'est-à-dire un gradient linéaire entre les côtés froid et ambiant du noyau thermoacoustique, ainsi qu'une température radiale uniforme sur la section du noyau thermoacoustique, implique la présence d'un écoulement moyen non nul et d'effets non-linéaires dans le réfrigérateur. Parmi les hypothèses formulées quant à la cause de ces disparités avec la théorie linéaire de Rott, plusieurs hypothèses peuvent être envisagées : vent acoustique, turbulence, formation de tourbillons, génération d'harmoniques supérieures, et convection naturelle. Parmi ces effets, peu d'études portent sur cette dernière, bien qu'il ait déjà été montré que le déclenchement de moteurs ou encore l'uniformité de température sur la section y étaient sensibles \cite{ross_influence_2003,  hireche_numerical_2019, ramadan_experimental_2018,  zhang_novel_2011}. Plusieurs paramètres sont étudiés pour quantifier la dépendance du comportement de la machine à la direction de la gravité. 
 
 \subsection{\'Etude des performances}
-Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=Q_f/W_e$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = T_f/(T_c-T_f)$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section. 
+Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=Q_f/W_e$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = T_f/(T_a-T_f)$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section. 
 
-Dans cette étude, les quatre orientations définies sur la figure~\ref{fig:OrientationCore} sont tour à tour mises en place, et deux charges thermiques sont appliquées à l'échangeur froid pour chacune d'entre elles. En suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}, des charges thermiques $\dot Q_f$ de \qtylist{0;50;100}{\watt} sont réglées. Les résultats des expériences tracés sur les figures~\ref{fig:PerfConvNat} à \ref{fig:PerfConvNat_DR35} proviennent du tableau~\ref{tab:RecapResultExpe}.\medskip
+Dans cette étude, les quatre orientations définies sur la figure~\ref{fig:OrientationCore} sont tour à tour mises en place. Pour chacune, des expériences sont réalisées en suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}, cette fois en réglant les charges thermiques $\dot Q_f$ de \qtylist{50;100}{\watt}. Les résultats des expériences tracés sur les figures~\ref{fig:PerfConvNat} à \ref{fig:PerfConvNat_DR35} proviennent du tableau~\ref{tab:RecapResultExpe}.\medskip
 
 
 \begin{figure}[!ht]
     \centering
-	\begin{subfigure}[b]{.48\textwidth}
+	\begin{subfigure}{.48\textwidth}
 		\centering
 		\external{fig_PerfConvNat_Tf}
 %        \externalremake
         \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf}
-		\caption{}
+		\phantomcaption
 		\label{fig:PerfConvNat_Tf}
 	\end{subfigure}%
-	\begin{subfigure}[b]{.48\textwidth}
+	\begin{subfigure}{.48\textwidth}
 		\centering
 		\external{fig_PerfConvNat_Ta}
 %        \externalremake
         \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Ta}
-		\caption{}
+		\phantomcaption
 		\label{fig:PerfConvNat_Ta}
-	\end{subfigure}\vspace{1cm}
+	\end{subfigure}
 	
-	\begin{subfigure}[b]{.48\textwidth}
+	\vspace{1cm}
+	
+	\begin{subfigure}{.48\textwidth}
 		\centering
 		\external{fig_PerfConvNat_Qa}
 %        \externalremake
         \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa}
-		\caption{}
+		\phantomcaption
 		\label{fig:PerfConvNat_Qa}
-	\end{subfigure}% 
-	\begin{subfigure}[b]{.48\textwidth}
+	\end{subfigure}%
+	\begin{subfigure}{.48\textwidth}
 		\centering
 		\external{fig_PerfConvNat_COP}
 %        \externalremake
         \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP}
-		\caption{}
+		\phantomcaption
 		\label{fig:PerfConvNat_COP}
 	\end{subfigure}	     
     \caption{Influence de la convection naturelle sur les performances sur différents indicateurs, en l'absence de charge thermique. \subref{fig:PerfConvNat_Tf} température froide $T_f$, \subref{fig:PerfConvNat_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$, et \subref{fig:PerfConvNat_COP} le coefficient de performance rapporté à Carnot. \echaf{ajouter valeurs DeltaEC}}

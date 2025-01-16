@@ -1255,6 +1255,59 @@
       \verb https://doi.org/10.1115/FEDSM-ICNMM2010-30798
       \endverb
     \endentry
+    \entry{gardner_cascade_2003}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9a10a23b87990cf43047a414fe48004c}{%
+           family={Gardner},
+           familyi={G\bibinitperiod},
+           given={D.\bibnamedelimi L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=52937719af970c9a64a91af3eeb87bce}{%
+           family={Swift},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{2da3931cc724888f0fd334e6d0bd72f1}
+      \strng{fullhash}{e20536a7d412de793e03cb3342ef824e}
+      \strng{bibnamehash}{e20536a7d412de793e03cb3342ef824e}
+      \strng{authorbibnamehash}{e20536a7d412de793e03cb3342ef824e}
+      \strng{authornamehash}{2da3931cc724888f0fd334e6d0bd72f1}
+      \strng{authorfullhash}{e20536a7d412de793e03cb3342ef824e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A cascade thermoacoustic engine is described, consisting of one standing-wave stage plus two traveling-wave stages in series. Most of the acoustic power is produced in the efficient traveling-wave stages. The straight-line series configuration is easy to build and allows no Gedeon streaming. The engine delivers up to 2 {kW} of acoustic power, with an efficiency (the ratio of acoustic power to heater power) of up to 20\%. An understanding of the pressure and volumevelocity waves is very good. The agreement between measured and calculated powers and temperatures is reasonable. Some of the measured thermal power that cannot be accounted for by calculation can be attributed to Rayleigh streaming in the two thermal buffer tubes with the largest aspect ratios. A straightforward extension of this work should yield cascade thermoacoustic engines with efficiencies of around 35–40\% of the Carnot efficiency.}
+      \field{day}{1}
+      \field{issn}{0001-4966, 1520-8524}
+      \field{journaltitle}{The Journal of the Acoustical Society of America}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{A cascade thermoacoustic engine}
+      \field{urlday}{16}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{114}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1905\bibrangedash 1919}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1121/1.1612483
+      \endverb
+      \verb{file}
+      \verb Gardner and Swift - 2003 - A cascade thermoacoustic engine.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\HVM524VP\\Gardner and Swift - 2003 - A cascade thermoacoustic engine.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/jasa/article/114/4/1905/547407/A-cascade-thermoacoustic-engine
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/jasa/article/114/4/1905/547407/A-cascade-thermoacoustic-engine
+      \endverb
+    \endentry
     \entry{so_internal_2006}{article}{}
       \name{author}{3}{}{%
         {{hash=c8537b2b9efb3f13e5949c59b5511688}{%
@@ -2231,6 +2284,42 @@
       \verb https://link.springer.com/10.1007/978-1-4614-5541-7
       \endverb
       \keyw{Convection}
+    \endentry
+    \entry{dullien_porous_1992}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6c79ee43677ebb85e9ac68ace4205ec6}{%
+           family={Dullien},
+           familyi={D\bibinitperiod},
+           given={F.\bibnamedelimi A.\bibnamedelimi L.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Diego}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{6c79ee43677ebb85e9ac68ace4205ec6}
+      \strng{fullhash}{6c79ee43677ebb85e9ac68ace4205ec6}
+      \strng{bibnamehash}{6c79ee43677ebb85e9ac68ace4205ec6}
+      \strng{authorbibnamehash}{6c79ee43677ebb85e9ac68ace4205ec6}
+      \strng{authornamehash}{6c79ee43677ebb85e9ac68ace4205ec6}
+      \strng{authorfullhash}{6c79ee43677ebb85e9ac68ace4205ec6}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{2nd ed}
+      \field{isbn}{978-0-12-223651-8}
+      \field{pagetotal}{574}
+      \field{shorttitle}{Porous media}
+      \field{title}{Porous media: fluid transport and pore structure}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Dullien - 1992 - Porous media fluid transport and pore structure.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\5P3TH4LT\\Dullien - 1992 - Porous media fluid transport and pore structure.pdf:application/pdf
+      \endverb
+      \keyw{Porous materials,Transport theory}
     \endentry
     \entry{getling_rayleigh-benard_1998}{book}{}
       \name{author}{1}{}{%

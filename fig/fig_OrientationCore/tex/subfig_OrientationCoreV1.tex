@@ -13,7 +13,7 @@
 %
 %\draw (0,\L+2*\HX+\spy) node [anchor=west]{\textbf{(c)} \texttt{V1}};
 
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=2/3]
 
 %    \def\lenreg{2};
 %    \def\diam{3};
@@ -28,10 +28,12 @@
 %    \def\CoreY{.9*\LY};
 %    
 
-	\def\L{1.5};
+	\def\L{2.1};
 	\def\R{5};
 	\def\HX{.25};
 	\def\decalage{\R/2-\L/2};
+
+		\draw(\R/2,-3) node[rotate=-90]{\includegraphics[height=.8\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};
 
 		\fill[top color=red!25, bottom color=blue!25, draw=black] (0,0) rectangle ++(\R,\L);
 		\draw[fill=blue!25] (0,0) rectangle ++(\R,-\HX);

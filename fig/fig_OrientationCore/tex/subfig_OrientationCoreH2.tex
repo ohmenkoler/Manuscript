@@ -16,7 +16,7 @@
 
 %\draw (\L*1.5,\R*.7) -- ++(\L,0) -- ++(-3*\L,-1.4*\R) -- ++(-\L,0) -- cycle;
 
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=2/3]
 
 %    \def\lenreg{2};
 %    \def\diam{3};
@@ -31,7 +31,7 @@
 %    \def\CoreY{.9*\LY};
 %    
 
-	\def\L{1.5};
+	\def\L{2.1};
 	\def\R{5};
 	\def\HX{.25};
 	\def\decalage{\R/2-\L/2};
@@ -39,6 +39,8 @@
 %	\draw[opacity=0] (\decalage,0) rectangle ++(-\HX,\R); %%% Pour l'alignement vertical
 	
 	\begin{scope}[xslant=1,yscale=.5]
+		\draw(6.5,\R/2) node{\includegraphics[width=.8\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};	
+	
 		\fill[right color=blue!25,left color=red!25, draw=black] (\decalage,0) rectangle ++(\L,\R);
 		\draw[fill=red!25] (\decalage,0) rectangle ++(-\HX,\R);
 		\draw[fill=blue!25] (\decalage+\L,0) rectangle ++(\HX,\R);
@@ -49,11 +51,11 @@
 }}
 
 %		\draw (n01.east) node [right]{$\rightarrow$ \begin{tabular}{l}Source\\acoustique\\principale\end{tabular}};
-		\draw ($(n01)+(1,0)$) node[minimum size=10pt,draw,circle,fill=white,opacity=.7,text opacity=1]{} node {\scriptsize 0} node[anchor=west]{\begin{tabular}{rl}
-		& Src\\
-		$\rightarrow$ & ac\\
-		& princ
-		\end{tabular}};
+		\draw ($(n01)+(1,0)$) node[minimum size=10pt,draw,circle,fill=white,opacity=.7,text opacity=1]{} node {\scriptsize 0};% node[anchor=west]{\begin{tabular}{rl}
+%		& Src\\
+%		$\rightarrow$ & ac\\
+%		& princ
+%		\end{tabular}};
 		\draw (n30.north west) node [above]{Ambiant};
 		\draw (n10.north east) node [above]{Froid};
 	\end{scope}

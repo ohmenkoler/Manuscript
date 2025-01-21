@@ -241,47 +241,84 @@ Pour l'étude de l'influence de la gravité sur la distribution de température 
 
 \subsection{Définition des orientations}
 
-Les orientations choisies au moyen des palans sont décrites par deux angles $\psi_v$ et $\psi_h$. Le premier désigne l'angle entre l'axe horizontal et l'axe de symétrie du réfrigérateur, tandis que le second, la rotation autour de cet axe de symétrie. Les orientations utilisées dans les différentes parties de ce manuscript sont présentées sur la figure~\ref{fig:OrientationCore}. Cette figure, dans laquelle la gravité est toujours dirigée vers le bas de la page, présente également les emplacements et les numéros d'identification des thermocouples utilisés.\medskip
+Les orientations choisies au moyen des palans sont décrites par deux angles $\psi_v$ et $\psi_h$. Le premier désigne l'angle entre l'axe horizontal et l'axe de symétrie du réfrigérateur, tandis que le second, la rotation autour de cet axe de symétrie. Les orientations utilisées dans les différentes parties de ce manuscript sont présentées sur les figures~\ref{fig:OrientationCore_H} et \ref{fig:OrientationCore_V}. Cette figure, dans laquelle la gravité est toujours dirigée vers le bas de la page, présente également les emplacements et les numéros d'identification des thermocouples utilisés.\medskip
 
-\begin{figure}[!ht]
+\begin{figure}[!tb]
     \centering
 	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_H1}
 %    	\externalremake
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex}
-		\caption{`\texttt{H1}'}
+		\caption{}
 		\label{fig:OrientationCore_H1}
 	\end{subfigure}
+	\begin{subfigure}[c]{.4\textwidth}
+		\centering
+		\external{fig_OrientationCore_H1_Schema}
+%    	\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};}
+		\caption{}
+		\label{fig:OrientationCore_H1_Schema}
+	\end{subfigure} \vspace{1cm}
 	
 	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_H2}
 %    	\externalremake
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex}
-		\caption{`\texttt{H2}'}
+		\caption{}
 		\label{fig:OrientationCore_H2}
-	\end{subfigure} \vspace{1cm}
-	
+	\end{subfigure} %\vspace{1cm}
+	\begin{subfigure}[c]{.4\textwidth}
+		\centering
+		\external{fig_OrientationCore_H2_Schema}
+%    	\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};}
+		\caption{}
+		\label{fig:OrientationCore_H2_Schema}
+	\end{subfigure} 
+	\caption{Orientations horizontales du réfrigérateur thermoacoustique avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas. Les orientations correspondent aux angles \subref{fig:OrientationCore_H1}~$\psi_v=\ang{0}$ et $\psi_h=\ang{0}$ pour l'orientation `\texttt{H1}' et \subref{fig:OrientationCore_H2}~$\psi_v=\ang{0}$ et $\psi_h=\ang{+90}$ pour l'orientation `\texttt{H2}'}
+	 \label{fig:OrientationCore_H}
+\end{figure}
+
+\begin{figure}[!tb]
+	\centering	
 	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_V1}
 %    	\externalremake
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1.tex}
-		\caption{`\texttt{V1}'}
+		\caption{}
 		\label{fig:OrientationCore_V1}
 	\end{subfigure} 
-	
 	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_V2}
 %    	\externalremake
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex}
-		\caption{`\texttt{V2}'}
+		\caption{}
 		\label{fig:OrientationCore_V2}
-	\end{subfigure}   
-    \caption{Différentes orientations du c\oe{}ur thermoacoustique avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas. Les orientations correspondent aux angles \subref{fig:OrientationCore_H1}~$\psi_v=\ang{0}$ et $\psi_h=\ang{0}$ pour l'orientation `\texttt{H1}', \subref{fig:OrientationCore_H2}~$\psi_v=\ang{0}$ et $\psi_h=\ang{+90}$ pour l'orientation `\texttt{H2}', \subref{fig:OrientationCore_V1}~$\psi_v=\ang{-90}$ pour l'orientation `\texttt{V1}', et \subref{fig:OrientationCore_V2}~$\psi_v=\ang{+90}$ pour l'orientation `\texttt{V2}'.}%\textcolor{red}{CHX et AHX OK ou éch. froid et éch. chaud ? + $\psi_i$ dans la caption ou la figure ?}}
-    \label{fig:OrientationCore} %
+	\end{subfigure}  \vspace{1cm}
+
+	\begin{subfigure}[c]{.4\textwidth}
+		\centering
+		\external{fig_OrientationCore_V1_Schema}
+%    	\externalremake
+		\tikz{\draw(0,0) node[rotate=-90]{\includegraphics[width=.9\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};}
+		\caption{}
+		\label{fig:OrientationCore_V1_Schema}
+	\end{subfigure} 
+	\begin{subfigure}[c]{.4\textwidth}
+		\centering
+		\external{fig_OrientationCore_V2_Schema}
+%    	\externalremake
+		\tikz{\draw(0,0) node[rotate=90]{\includegraphics[width=.9\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};}
+		\caption{}
+		\label{fig:OrientationCore_V2_Schema}
+	\end{subfigure} 	
+ 	\caption{Orientations verticales du réfrigérateur thermoacoustique avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas. Les orientations correspondent aux angles \subref{fig:OrientationCore_V1}~$\psi_v=\ang{-90}$ pour l'orientation `\texttt{V1}' et \subref{fig:OrientationCore_V2}~$\psi_v=\ang{+90}$ pour l'orientation `\texttt{V2}'.}%\textcolor{red}{CHX et AHX OK ou éch. froid et éch. chaud ? + $\psi_i$ dans la caption ou la figure ?}}
+    \label{fig:OrientationCore_V} %
 \end{figure}
 
 

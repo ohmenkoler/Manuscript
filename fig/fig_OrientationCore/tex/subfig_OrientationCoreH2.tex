@@ -1,22 +1,4 @@
-%\draw[very thick, red, path fading=east, postaction={draw, blue, path fading=west}] (\decalage-\HX,3) -- ++(\L+2*\HX,0);
-%
-%\foreach \z [evaluate=\z] in {0,...,4}{
-%	\foreach \r [evaluate=\r as \num using int(\r+1 + 3*\z)] in {0,...,2}{
-%		\draw ({\decalage+.5+\L-\z*(1+\L)/4},\R/2) node(n\z){x};
-%		\draw ({\decalage+.5+\L-\z*(1+\L)/4},{\R/2-(\r+1)*.4}) node(n\z\r){\num};
-%}}
-%
-%%\draw (n0.east) node [right]{CHX $\rightarrow$ RIX};
-%%\draw (n4.west) node [left]{AHX};
-%\draw (n0.east) node [right]{$\rightarrow$  \begin{tabular}{l}Source\\acoustique\\principale\end{tabular}};
-%\draw (n3.north west) node [above]{AHX};
-%\draw (n1.north east) node [above]{CHX};
-%
-%\draw (0,\R+\spy) node [anchor=west]{\textbf{(b)} \texttt{H2}};
-
-%\draw (\L*1.5,\R*.7) -- ++(\L,0) -- ++(-3*\L,-1.4*\R) -- ++(-\L,0) -- cycle;
-
-\begin{tikzpicture}[scale=2/3]
+\begin{tikzpicture}[scale=1/2]
 
 %    \def\lenreg{2};
 %    \def\diam{3};
@@ -39,11 +21,11 @@
 %	\draw[opacity=0] (\decalage,0) rectangle ++(-\HX,\R); %%% Pour l'alignement vertical
 	
 	\begin{scope}[xslant=1,yscale=.5]
-		\draw(6.5,\R/2) node{\includegraphics[width=.8\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};	
+		\draw(6.5,\R/2) node{\includegraphics[width=.9\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};	
 	
-		\fill[right color=blue!25,left color=red!25, draw=black] (\decalage,0) rectangle ++(\L,\R);
-		\draw[fill=red!25] (\decalage,0) rectangle ++(-\HX,\R);
-		\draw[fill=blue!25] (\decalage+\L,0) rectangle ++(\HX,\R);
+		\fill[shading=axis,right color=MatlabBlue,left color=MatlabOrange, shading angle=45, draw=black] (\decalage,0) rectangle ++(\L,\R);
+		\draw[fill=MatlabOrange] (\decalage,0) rectangle ++(-\HX,\R);
+		\draw[fill=MatlabBlue] (\decalage+\L,0) rectangle ++(\HX,\R);
 
 		\foreach \z [evaluate=\z] in {0,...,4}{
 			\foreach \r [evaluate=\r as \num using int(\r+1 + 3*\z)] in {0,...,2}{
@@ -51,13 +33,13 @@
 }}
 
 %		\draw (n01.east) node [right]{$\rightarrow$ \begin{tabular}{l}Source\\acoustique\\principale\end{tabular}};
-		\draw ($(n01)+(1,0)$) node[minimum size=10pt,draw,circle,fill=white,opacity=.7,text opacity=1]{} node {\scriptsize 0};% node[anchor=west]{\begin{tabular}{rl}
+		\draw ($(n01)+(1.5,0)$) node[minimum size=10pt,draw,circle,fill=white,opacity=.7,text opacity=1]{} node {\scriptsize 0};% node[anchor=west]{\begin{tabular}{rl}
 %		& Src\\
 %		$\rightarrow$ & ac\\
 %		& princ
 %		\end{tabular}};
-		\draw (n30.north west) node [above]{Ambiant};
-		\draw (n10.north east) node [above]{Froid};
+		\draw (n30.north west) node [above, fill=white, fill opacity=.7, text opacity=1]{\textcolor{MatlabOrange}{\textbf{Ambiant}}};
+		\draw (n10.north east) node [above, fill=white, fill opacity=.7, text opacity=1]{\textcolor{MatlabBlue}{\textbf{Froid}}};
 	\end{scope}
 	
 	

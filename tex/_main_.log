@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  20 JAN 2025 15:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  21 JAN 2025 01:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1929,57 +1929,65 @@ acotPhotos_CHX_dansCarter0.pdf>] (../fig/fig_dKdV/tex/fig_dKdV.tex
 )
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 115.
+            Default family used instead on input line 123.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 116.
+            Default family used instead on input line 124.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 117.
+            Default family used instead on input line 125.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 118.
+            Default family used instead on input line 126.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 120.
+            Default family used instead on input line 128.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 121.
+            Default family used instead on input line 129.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 122.
- [12 <./external/fig_dKdV0.pdf>]
-(../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
+            Default family used instead on input line 130.
+ [12] [13{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <.
+/external/fig_dKdV0.pdf>] (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
-) [13{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+) [14 <./external/fig_TCdansNoyau0.pdf>]
 ===== Image 'external/fig_SystemeAccroche_Machine0' is up-to-date. ======
 ===== Image 'external/fig_SystemeAccroche_Palan0' is up-to-date. ======
-[14 <./external/fig_TCdansNoyau0.pdf>]
-(../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
+[15 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroc
+he_Palan0.pdf>] (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 ===== Image 'external/fig_OrientationCore_H10' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
 ===== Image 'external/fig_OrientationCore_H20' is up-to-date. ======
-) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1.tex
+)
+Overfull \hbox (0.93555pt too wide) in paragraph at lines 1--262
+ [][] 
+ []
+
+(../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1.tex
 ===== Image 'external/fig_OrientationCore_V10' is up-to-date. ======
-) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex
+)
+Overfull \hbox (40.30563pt too wide) in paragraph at lines 16--271
+ [][] 
+ []
+
+(../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex
 ===== Image 'external/fig_OrientationCore_V20' is up-to-date. ======
 )
 
-LaTeX Warning: Float too large for page by 662.68582pt on input line 272.
+LaTeX Warning: Float too large for page by 190.24448pt on input line 285.
 
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 289.
+            Default family used instead on input line 302.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 289.
-[15 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroc
-he_Palan0.pdf>]
+            Default family used instead on input line 302.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 292.
- Excluding 'comment' comment.) (EnsembleSimus.tex [16] [17 <./external/fig_Orie
-ntationCore_H10.pdf> <./external/fig_OrientationCore_H20.pdf
+            Default family used instead on input line 305.
+[16] Excluding 'comment' comment.) (EnsembleSimus.tex [17] [18 <./external/fig_
+OrientationCore_H10.pdf> <./external/fig_OrientationCore_H20.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_H20.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
@@ -1987,11 +1995,11 @@ lusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_V10.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
-> <./external/fig_OrientationCore_V20.pdf>] [18
-
-]
+> <./external/fig_OrientationCore_V20.pdf>]
 Chapitre III.
-[19] [20
+[19
+
+] [20
 
 ] (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
 ===== Image 'external/fig_SimuConvNat2D0' is up-to-date. ======
@@ -2347,16 +2355,16 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 5342232ACDB792C280D554A7B126CD63;17791.
+(rerunfilecheck)             Checksum: D7C3390CEF7F2B610C1162FD2F354497;18130.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72818 strings out of 474435
- 1830112 string characters out of 5751739
- 2989913 words of memory out of 5000000
- 93503 multiletter control sequences out of 15000+600000
+ 72830 strings out of 474435
+ 1830321 string characters out of 5751739
+ 2990105 words of memory out of 5000000
+ 93509 multiletter control sequences out of 15000+600000
  699304 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,90p,4547b,3220s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2370,9 +2378,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
 /fonts/type1/public/cm-super/sftt0800.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-sup
 er/sftt1200.pfb>
-Output written on _main_.pdf (89 pages, 22125033 bytes).
+Output written on _main_.pdf (89 pages, 22136844 bytes).
 PDF statistics:
- 3432 PDF objects out of 3580 (max. 8388607)
- 360 named destinations out of 1000 (max. 500000)
- 1164 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3466 PDF objects out of 3580 (max. 8388607)
+ 366 named destinations out of 1000 (max. 500000)
+ 1188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

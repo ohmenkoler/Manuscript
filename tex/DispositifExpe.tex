@@ -61,7 +61,7 @@ Tout comme la machine qui le contient, le noyau adopte une géométrie cylindriq
 
 Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, \echaf{J'arrive pas à relire} avec pour sens positive choisie dans le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second.\medskip
 
-Le régénérateur est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre la porosité $\Phi~=~\qty{68}{\percent}$. Un noyau de cette porosité doit être comparé avec le noyau support des expériences dont les résultats sont publiés par Ramadan \textit{et al.} et dont la porosité vaut \qty{75}{\percent} \cite{ramadan_design_2021}. La quantité de tissus à utiliser pour atteindre la porosité souhaitée s'obtient en utilisant la relation
+\paragraph*{Régénérateur} Le régénérateur est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre la porosité $\Phi~=~\qty{68}{\percent}$. Un noyau de cette porosité doit être comparé avec le noyau support des expériences dont les résultats sont publiés par Ramadan \textit{et al.} et dont la porosité vaut \qty{75}{\percent} \cite{ramadan_design_2021}. La quantité de tissus à utiliser pour atteindre la porosité souhaitée s'obtient en utilisant la relation
 
 \begin{align}
 	\Phi &= \frac{V_{\sf gaz}}{V_{\sf tot}}, \label{eq:Porosite_Volume}%\\
@@ -80,17 +80,25 @@ avec $d_w$ le diamètre du fil \cite{swift_thermoacoustics_2017}. Ce milieu pore
 	K_p = \echaf{v_{\sf ref}\frac{\nu \Delta x}{\Delta P}},
 	\label{eq:DefPermeabilite_Wikipedia}
 \end{equation}
-où $v_{\sf ref}$ est la vitesse d'écoulement d'un fluide de viscosité cinématique $\nu$ dans le milieu, causé par un gradient de pression $\frac{\Delta P}{\Delta x}$ \cite{nield_convection_2013}. Cependant, il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne du milieu poreux. La formulation retenue s'écrit
+où $v_{\sf ref}$ est la vitesse d'écoulement d'un fluide de viscosité cinématique $\nu$ causé par un gradient de pression $\frac{\Delta P}{\Delta x}$ de part et d'autre du milieu poreux \cite{nield_convection_2013}. Cependant, il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne du milieu poreux~\cite{dullien_porous_1992}. La formulation retenue s'écrit
 
 \begin{equation}
 	K_p = \echaf{\frac{4 r_h^2 \Phi}{8}},
 	\label{eq:DefPermeabilite_LISN}
 \end{equation}
-et donne des résultats satisfaisants pour le developpement des modèles \cite{dullien_porous_1992, hireche_experimental_2020}.\bigskip
+et donne des résultats satisfaisants pour le developpement des modèles \cite{hireche_experimental_2020}.\bigskip
 
+\echaf{Continuer expl sur travaux de Gaëlle + redériver pour régénérateur}Dans la réalité, les ondes acoustiques en jeu dans les machines thermoacoustiques ne sont ni totalement \og à ondes stationnaires \fg{} (voir le cycle thermodynamique sur la figure~\ref{fig:CycleBrayton}) ni tout à fait \og à ondes progressives \fg{} (dont le cycle est présenté sur la figure~\ref{fig:CycleStirling}). Il a d'ailleurs été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimale pour une pression acoustique donnée~\cite{poignand_etude_2006}. Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque la vitesse acoustique atteint une amplitude donnée par
 
-
-
+\begin{subequations}
+	\begin{align}
+		|u|_{\sf opt} &= \sqrt{\frac{4\omega\left(\echaf{kh+k_se_s}\right)\left(1-\Prandtl^2\right)\left(\echaf{1-\frac{\delta_\nu}{h}+\frac{\delta_\nu^2}{2h^2}}\right)}{\delta_\kappa \rho_0 C_p \left(1-\Prandtl\sqrt{\Prandtl}\right)}},	\label{eq:u_mag_opt_Gaelle}\\
+		\intertext{et un déphasage écrit}
+		\angle u_{\sf opt} &= \arctan\left[-\frac{1+\sqrt{\Prandtl}-\frac{\delta_\nu}{h}}{1-\sqrt{\Prandtl}+\frac{\delta_\nu}{h}\sqrt{\Prandtl}}\right].	\label{eq:u_arg_opt_Gaelle}
+	\end{align}
+	\label{eq:u_opt_Gaelle}
+\end{subequations}
+\echaf{Remplacer $kh+k_s e_s$ par $\Phi k + (1-\Phi)k_s$ ?}
 
 Cette machine nécessite entre autres choses le respect de la condition $\delta_{\kappa,\nu} \gg r_h$, de sorte à avoir un excellent contact thermique entre le fluide et le solide poreux. Pour le fluide considéré, les épaisseurs de couches limites sont tracées en fonction de la fréquence et comparé au rayon hydraulique sur la figure~\ref{fig:dKdV}.
 
@@ -124,13 +132,18 @@ Les dimensions et paramètres du régénérateur sont résumés dans le tableau 
     \end{tabular}
 \end{table}
 
-\subsection{Chaîne d'excitation et d'acquisition}
+\paragraph*{\'Echangeurs de chaleur}
+Le pompage de chaleur par effet thermoacoustique doit être exploité. En effet, dans l'application du \textsc{Tacot}, \echaf{blablabla}
+
+\subsection{Instrumentation}
 L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments.\bigskip
 
+
+\subsubsection{Chaîne d'excitation}
 Premièrement, la chaîne d'excitation est présentée. Elle est assez simple, et se compose d'un générateur de fonction à deux canaux (TekTronix AFG3022). Chaque canal est ensuite connecté à un amplificateur pour chaque source acoustique. La source principale (RIX Industries, 1S241M) est alimentée par un amplificateur QSC PLD4.5, et la source secondaire (Peerless, GBS135F) par un amplificateur Yamaha P3500S.\medskip
 
-%Un générateur basse fréquence génère les signaux d'alimentation des sources acoustiques. Il dispose de deux sorties, chacune connectée à un amplificateur avant d'être reliée aux transducteurs. Dans le cas de la source principale (RIX Industries, 1S241M), l'amplificateur est un QSC PLD4.5 tandis que pour la source secondaire (Peerless, GBS135F) il s'agit d'un Yamaha P3500S.
 
+\subsubsection{Chaîne d'acquisition}
 La chaîne d'acquisition se compose de plus de trente capteurs. Tous ne sont pas utilisés, mais peuvent servir de contrôle durant une expérience, pour s'assurer du bon déroulement de celle-ci.
 
 \paragraph*{Alimentation électrique des sources} L'alimentation électrique de la source acoustique principale est mesurée au moyen d'une sonde différentielle pour la tension \echaf{et le courant ?}. Pour la source acoustique secondaire, un multimètre et une pince de courant se chargent de mesurer sa consommation électrique. En parallèle, les tensions aux bornes des deux sources sont affichées sur un oscilloscope pour s'assurer de leur déphasage.
@@ -232,7 +245,7 @@ Les orientations choisies au moyen des palans sont décrites par deux angles $\p
 
 \begin{figure}[!ht]
     \centering
-	\begin{subfigure}[c]{.98\textwidth}
+	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_H1}
 %    	\externalremake
@@ -241,7 +254,7 @@ Les orientations choisies au moyen des palans sont décrites par deux angles $\p
 		\label{fig:OrientationCore_H1}
 	\end{subfigure}
 	
-	\begin{subfigure}[c]{.98\textwidth}
+	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_H2}
 %    	\externalremake
@@ -250,7 +263,7 @@ Les orientations choisies au moyen des palans sont décrites par deux angles $\p
 		\label{fig:OrientationCore_H2}
 	\end{subfigure} \vspace{1cm}
 	
-	\begin{subfigure}[c]{.98\textwidth}
+	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_V1}
 %    	\externalremake
@@ -259,7 +272,7 @@ Les orientations choisies au moyen des palans sont décrites par deux angles $\p
 		\label{fig:OrientationCore_V1}
 	\end{subfigure} 
 	
-	\begin{subfigure}[c]{.98\textwidth}
+	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_V2}
 %    	\externalremake
@@ -318,7 +331,14 @@ Comme dit précédemment, la fréquence de fonctionnement du \textsc{Tacot} est 
 \end{comment}
 
 
+\section{Conclusion}
+Ce chapitre présente le réfrigérateur existant déjà au début de ce travail de thèse. L'utilisation d'une géométrie coaxiale et de deux sources est rappelée, justifiée par la nécessité de compacité de la machine.
 
+Quelques résultats obtenus dans la littérature sont présentés, en gardant à l'esprit les écarts avec le modèle \textsc{DeltaEC}. De tous les phénomènes qui prennent place dans un tel système, la convection naturelle est l'effet qui est étudié ici. Pour cela, le système doit pouvoir être orienté dans toutes les orientations, parmi lesquelles quatre sont choisies pour leur caractère académique.
+
+L'instrumentation modifiée pour permettre l'excitation et l'observation du réfrigérateur est décrite, en notant toutefois les limites du dispositif causées par la compacité du prototype.
+
+Le protocole de mesure est également présenté. Il est dépendant des résultats à extraire, et est le résultat d'un grand nombre de campagnes d'expériences. Ce protocole permet d'obtenir des résultats comparables entre les différentes configurations.
 
 
 

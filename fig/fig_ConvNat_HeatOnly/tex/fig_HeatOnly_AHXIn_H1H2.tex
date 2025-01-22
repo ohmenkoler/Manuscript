@@ -1,22 +1,44 @@
 \begin{tikzpicture}
     \def\width{.9*\textwidth};
-    \def\height{.5*\width};
+    \def\height{.25*\textheight};
     \def\legx{.5cm};
     \def\legy{\legx};
     
-    \begin{axis}[width={\width},height={\height},grid=both,minor tick num=4,
+    \begin{axis}[name=plot, width={\width}, height={\height}, grid=both, minor tick num=4,
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
     xlabel={Temps $t$ [\unit{\s}]},
-    ylabel={\'Ecart de température $T-T_i$ [\unit{\degreeCelsius}]},
+    ylabel={\'Ecart de température $\tau$ [\unit{\degreeCelsius}]},
     xmin=0,xmax=3500,
-	ymin=-6,ymax=4,
-    xtick={0,600,1200,1800,2400,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
+	ymin=-5,ymax=20,
+    xtick={0,600,...,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
     domain=0:100,
-    legend style = {at={(.95,.05)},anchor = south east},legend columns=2
+    legend style = {at={(.01,1.05)},anchor = north west,cells={align=right},rounded corners},legend columns=3,
     ]
-    	
+    	\addlegendimage{legend image with text=}
+		\addlegendentry{}
+		\addlegendimage{legend image with text={`\texttt{H1}'}}
+		\addlegendentry{}
+		\addlegendimage{legend image with text=`\texttt{H2}'} 
+		\addlegendentry{}   
+    
+		\addlegendimage{legend image with text={TC 10}}
+		\addlegendentry{}
 		
+    	\addplot[ultra thick,color=MatlabBlue] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC10_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc40W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,color=MatlabBlue,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC10_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}};\addlegendentry{}
+    	
+    	\addlegendimage{legend image with text=TC 11}
+		\addlegendentry{}
+		
+    	\addplot[ultra thick,MatlabOrange] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC11_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc40W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,MatlabOrange,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC11_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}};\addlegendentry{}
+    	
+		\addlegendimage{legend image with text=TC 12}
+		\addlegendentry{}
+		
+    	\addplot[ultra thick,MatlabYellow] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC12_0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc40W_Serie1.txt}};\addlegendentry{}    	
+    	\addplot[ultra thick,MatlabYellow,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC12_0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}};\addlegendentry{}		
         
 %        \legend{\\ \\};
     \end{axis}

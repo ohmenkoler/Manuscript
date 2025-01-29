@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  22 JAN 2025 17:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  29 JAN 2025 17:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1829,31 +1829,6 @@ nts/enc/dvips/iwona/ec-iwona.enc}] [2
 ] [7]
 [8] [9] [10
 
-] (_main_.lof
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-4.
- (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
-e 20.
-
-(C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
-File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
-) [11{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Program Fi
-les/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Program Files/MiKTeX/fo
-nts/enc/dvips/iwona/rm-iwona.enc}] [12])
-\tf@lof=\write8
-\openout8 = `_main_.lof'.
-
- [13] [14
-
-] (_main_.lot)
-\tf@lot=\write9
-\openout9 = `_main_.lot'.
-
- [15] [16
-
 ] (Introduction.tex
 Chapitre I.
 [1
@@ -1869,7 +1844,7 @@ e 58.
 File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
 ) [2
 
-]
+{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}]
 (../fig/fig_CycleBrayton/tex/DepCompAdiab.tex
 ===== Image 'external/fig_1_BraytonDepComp0' is up-to-date. ======
 ) (../fig/fig_CycleBrayton/tex/QFluideToPlaque.tex
@@ -1890,23 +1865,32 @@ File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
 ig_MoteurTA0.pdf> <./external/fig_FrigoTA0.pdf> <./external/fig_1_BraytonDepCom
 p0.pdf> <./external/fig_2_BraytonQfluidePlaque0.pdf> <./external/fig_3_BraytonD
 epDet0.pdf> <./external/fig_4_BraytonQPlaqueFluide0.pdf>] [4{C:/Program Files/M
-iKTeX/fonts/enc/dvips/iwona/ex-iwona.enc} <./external/fig_1_StirlingComp0.pdf> 
-<./external/fig_2_StirlingDep10.pdf> <./external/fig_3_StirlingDet0.pdf> <./ext
-ernal/fig_4_StirlingDep20.pdf>]
+iKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvi
+ps/iwona/ex-iwona.enc} <./external/fig_1_StirlingComp0.pdf> <./external/fig_2_S
+tirlingDep10.pdf> <./external/fig_3_StirlingDet0.pdf> <./external/fig_4_Stirlin
+gDep20.pdf>]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 216
 .
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\ueuf.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [5{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc}]
 ===== Image 'external/fig_AnalogiesElectroac0' is up-to-date. ======
 ===== Image 'external/fig_AnalogiesElectroac1' is up-to-date. ======
 ===== Image 'external/fig_AnalogiesElectroac2' is up-to-date. ======
+===== Image 'external/fig_AnalogiesElectroac3' is up-to-date. ======
+===== Image 'external/fig_AnalogiesElectroac4' is up-to-date. ======
+===== Image 'external/fig_AnalogiesElectroac5' is up-to-date. ======
+===== Image 'external/fig_AnalogiesElectroac6' is up-to-date. ======
+===== Image 'external/fig_AnalogiesElectroac7' is up-to-date. ======
+===== Image 'external/fig_AnalogiesElectroac8' is up-to-date. ======
 (../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex
 ===== Image 'external/fig_CircEquivTAC0' is up-to-date. ======
 ) [6 <./external/fig_AnalogiesElectroac0.pdf> <./external/fig_AnalogiesElectroa
-c1.pdf> <./external/fig_AnalogiesElectroac2.pdf> <./external/fig_CircEquivTAC0.
-pdf>] (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
+c1.pdf> <./external/fig_AnalogiesElectroac2.pdf> <./external/fig_AnalogiesElect
+roac3.pdf> <./external/fig_AnalogiesElectroac4.pdf> <./external/fig_AnalogiesEl
+ectroac5.pdf> <./external/fig_AnalogiesElectroac6.pdf> <./external/fig_Analogie
+sElectroac7.pdf> <./external/fig_AnalogiesElectroac8.pdf> <./external/fig_CircE
+quivTAC0.pdf>] (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 ===== Image 'external/fig_WavesInDuctPiece0' is up-to-date. ======
 ) [7 <./external/fig_WavesInDuctPiece0.pdf>]) (DispositifExpe.tex [8]
 Chapitre II.
@@ -1920,9 +1904,13 @@ Chapitre II.
 ===== Image 'external/fig_TacotPhotos_AHX_dansCarter0' is up-to-date. ======
 ===== Image 'external/fig_TacotPhotos_Regenerateur0' is up-to-date. ======
 ===== Image 'external/fig_TacotPhotos_CHX_dansCarter0' is up-to-date. ======
-[11 <./external/fig_SchemaGeneralTACOT0.pdf> <./external/fig_TacotPhotos_AHX_da
-nsCarter0.pdf> <./external/fig_TacotPhotos_Regenerateur0.pdf> <./external/fig_T
-acotPhotos_CHX_dansCarter0.pdf>] (../fig/fig_dKdV/tex/fig_dKdV.tex
+LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
+e 64.
+(C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
+File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
+) [11 <./external/fig_SchemaGeneralTACOT0.pdf> <./external/fig_TacotPhotos_AHX_
+dansCarter0.pdf> <./external/fig_TacotPhotos_Regenerateur0.pdf> <./external/fig
+_TacotPhotos_CHX_dansCarter0.pdf>] (../fig/fig_dKdV/tex/fig_dKdV.tex
 ===== Image 'external/fig_dKdV0' is up-to-date. ======
 )
 LaTeX Info: Symbol \textminus not provided by
@@ -1961,6 +1949,11 @@ he_Palan0.pdf>] (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 ===== Image 'external/fig_OrientationCore_H20' is up-to-date. ======
 )
 ===== Image 'external/fig_OrientationCore_H2_Schema0' is up-to-date. ======
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+81.
+(C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1.tex
 ===== Image 'external/fig_OrientationCore_V10' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex
@@ -1968,9 +1961,10 @@ he_Palan0.pdf>] (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 )
 ===== Image 'external/fig_OrientationCore_V1_Schema0' is up-to-date. ======
 ===== Image 'external/fig_OrientationCore_V2_Schema0' is up-to-date. ======
-[16 <./external/fig_OrientationCore_H10.pdf> <./external/fig_OrientationCore_H1
-_Schema0.pdf> <./external/fig_OrientationCore_H20.pdf> <./external/fig_Orientat
-ionCore_H2_Schema0.pdf
+[16{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./extern
+al/fig_OrientationCore_H10.pdf> <./external/fig_OrientationCore_H1_Schema0.pdf>
+ <./external/fig_OrientationCore_H20.pdf> <./external/fig_OrientationCore_H2_Sc
+hema0.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_H2_Schema0.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
@@ -2000,24 +1994,24 @@ Chapitre III.
 ===== Image 'external/fig_SimuConvNat2D0' is up-to-date. ======
 ) [21 <./external/fig_SimuConvNat2D0.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 7
-4.
+6.
 
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [22]
 ===== Image 'external/fig_Comsol_ModeleSimplifie_Geometrie0' is up-to-date. ===
 ===
-[23 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>]
+[23 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>] [24]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
 ====
-) [24] [25 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
+) [25] [26 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
 (../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterCondi
 tionLimite.tex
 ===== Image 'external/fig_TemperatureCanisterConditionLimite0' is up-to-date. =
 =====
-) [26] [27 <./external/fig_TemperatureCanisterConditionLimite0.pdf>])
+) [27 <./external/fig_TemperatureCanisterConditionLimite0.pdf>])
 (EtudeExperimentale.tex [28]
 Chapitre IV.
 [29
@@ -2157,20 +2151,7 @@ LaTeX Info: Symbol \textminus not provided by
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_High.tex
 ===== Image 'external/fig_Acou_AHXin_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_V1V2.tex
-\openout5 = `external/fig_HeatOnly_CHXin_V1V20.md5'.
-
-\openout5 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_HeatOnly_CHXin_V1V20" "\d
-ef\tikzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_HeatOnly_CHXin_V1V20" "\def\tikzexternalrealjob{_main_}\input{_m
-ain_}")...executed.
-
-\openout5 = `_main_.auxlock'.
-
+===== Image 'external/fig_HeatOnly_CHXin_V1V20' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_Regmid_V1V2.tex
 ===== Image 'external/fig_HeatOnly_Regmid_V1V20' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_AHXin_V1V2.tex
@@ -2383,19 +2364,19 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 4A15B5407D21CB9E56C1AF32E11AB60C;19142.
+(rerunfilecheck)             Checksum: 497FD7D5BF2750B5348B88D61EA36069;19431.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72953 strings out of 474435
- 1835438 string characters out of 5751739
- 2991789 words of memory out of 5000000
- 93586 multiletter control sequences out of 15000+600000
+ 72939 strings out of 474435
+ 1835262 string characters out of 5751739
+ 2986944 words of memory out of 5000000
+ 93577 multiletter control sequences out of 15000+600000
  698991 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,90p,4547b,3220s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,16n,90p,4547b,2772s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
 gram Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Files/MiKTeX
 /fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/type1/now
@@ -2405,9 +2386,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (93 pages, 26267641 bytes).
+Output written on _main_.pdf (87 pages, 26265052 bytes).
 PDF statistics:
- 3720 PDF objects out of 4296 (max. 8388607)
- 381 named destinations out of 1000 (max. 500000)
- 1299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3588 PDF objects out of 4296 (max. 8388607)
+ 376 named destinations out of 1000 (max. 500000)
+ 1337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

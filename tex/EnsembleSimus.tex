@@ -35,7 +35,8 @@ Il est possible de modéliser l'écoulement dans ce volume en utilisant les équ
 \begin{subequations} % page wikipédia RayleighBénard
 	\begin{align}
 		\partial_t \rho_0 + (\mathbf v \cdot \nabla)\rho_0 + \rho_0 \nabla \cdot \mathbf{v} &= 0, \label{eq:NavierStokes_Boussinesq_Conti}\\
-		\rho_0 [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \rho_0\beta g(T_c-T_f) \mathbf e_{z,0}, \text{et}\label{eq:NavierStokes_Boussinesq_QtMvt}\\
+		\rho_0 [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \rho_0\beta g(T_c-T_f) \mathbf e_{z,0}, \label{eq:NavierStokes_Boussinesq_QtMvt}\\
+		\intertext{et}
 		\partial_t T + (\mathbf v \cdot \nabla) T - \kappa\nabla^2T &= 0. \label{eq:NavierStokes_Boussinesq_NRJinterne}
 	\end{align}
 	\label{eq:NavierStokes_Boussinesq}%
@@ -55,12 +56,13 @@ où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de
 
 \begin{subequations}
 	\begin{align}
-		v_{\sf ref}^{// \mathbf g} &\sim \frac{\kappa}{L_c}\sqrt{\Rayleigh} \text{ et}	\label{eq:VitesseReferenceV_Rayleigh}\\
+		v_{\sf ref}^{// \mathbf g} &\sim \frac{\kappa}{L_c}\sqrt{\Rayleigh} \label{eq:VitesseReferenceV_Rayleigh}\\
+		\intertext{pour la vitesse verticale, et}
 		v_{\sf ref}^{\perp \mathbf g} &\sim \frac{\kappa}{L_c}\sqrt[4]{\Rayleigh},	\label{eq:VitesseReferenceH_Rayleigh}
 	\end{align}
 	\label{eq:VitesseReference_Rayleigh}%
 \end{subequations}
-d'après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal.\medskip
+pour la vitesse horizontale d'après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\echaf{III.1}).\medskip
 
 Dans un matériau poreux, il peut également exister des écoulements liés à la convection naturelle. Dans ce cas, le nombre de Rayleigh est toujours une notion utile pour prédire le mouvement du fluide à l'intérieur, à condition toutefois de le modifier pour prendre en compte la perméabilité $K_p$ ainsi que la diffusivité thermique $\kappa_p$ de ce milieu. Il vient alors l'expression du nombre de Rayleigh-Darcy noté $\mathrm{Ra}_p$, et dont la définition est donnée par Nield et Bejan \cite{nield_convection_2013} par
 
@@ -121,16 +123,26 @@ Le modèle 2D simplifié d'une cavité différentiellement chauffée ne prend pa
 \begin{figure}[!ht]
     \centering
     \external{fig_Comsol_ModeleSimplifie_Geometrie}
-    \tikz{\draw(0,0) node{\includegraphics{../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png}};}
+    \tikz{\draw(0,0) node{\includegraphics{../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png}};}
     \caption{Géométrie du modèle simplifié du régénérateur et de la cavité d'adaptation d'impédance.}
     \label{fig:Comsol_ModeleSimplifie_Geometrie}
 \end{figure}
 
-\subsection{Volume d'adaptation d'impédance}
+Le modèle Comsol simule 4 phénomènes. Premièrement, un flux de chaleur est retiré à la paroi en $x=0$, afin de représenter le refroidissement homogène sur la paroi par effet thermoacoustique. Ensuite, la conduction dans le métal pour $x>0$ est modélisée en utilisant deux valeur de conductivité thermique, pour l'enceinte d'une part et pour le régénérateur d'autre part. Il est à noter que dans ce modèle qui reste assez grossier, le matériau qui compose le régénérateur est supposé non poreux, afin de répondre à une hypothèse portant sur la présence ou l'absence de convection naturelle à l'intérieur de celui-ci. Pour ce faire, deux valeurs de conductivité thermiques sont considérées pour l'ensemble empilement de tissus métalliques et enceinte. 
 
 
+\subsection{Modèles physiques utilisés}
+\echaf{horizontal} La géométrie présentée dans la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie} est incluse dans la physique \texttt{Heat transfer in Solids and Fluids}. Les domaines correspondant au régénérateur et à son enceinte sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cette physique permet un couplage entre les trois domaines, en particulier entre les domaines fluides et solides. Cependant, la gravité et la convection naturelle ne sont pas pris en compte dans le modèle fluide, et il est nécessaire d'ajouter deux modèles à ce domaine concerné. Les physiques \texttt{laminar flow} et \texttt{Heat transfer in fluids}, couplé par la multiphysique \texttt{Nonisothermal flow} permettent cette modélisation plus avancée.
 
-\subsection{Régénérateur}
+\echaf{vertical Rayleigh Bénard requiert de virer la multiphysique, et d'ajouter une source volumique -> utiliser nombre de rayleigh + cf ppt sur le site de comsol}
+
+\subsection{Conditions aux frontières}
+Toutes les parois sont considérées adiabatiques. Toutes ? Non, il reste encore des parois dont les conditions thermiques diffèrent. 
+
+\subsection{Zones d'intérêt}
+\subsubsection{Volume d'adaptation d'impédance}
+
+\subsubsection{Régénérateur}
 Le nombre de Rayleigh dans un matériau poreux dépend de sa perméabilité. Il est assez difficile de la calculer car il faut connaître la vitesse d'écoulement et la différence de pression de part et d'autre du domaine étudié. Le régénérateur est modélisé dans Comsol pour extraire ses paramètres hydrauliques et calculer les nombres adimensionnels déjà présentés.
 
 De plus, cette simulation vise à vérifier l'hypothèse de superposition des effets thermiques. En effet, la distribution de température du côté de l'échangeur froid dans le cas de l'orientation `\texttt{H1}' laisse à penser que la température froide et constante sur la section provoqué par l'effet thermoacoustique, la conduction thermique dans le noyau qui provoque une différence de température entre le centre du noyau et sa périphérie, et la convection naturelle qui apporte un gradient de température selon la direction verticale se combinent.
@@ -276,7 +288,7 @@ La séparation du calcul de la température de la paroi du reste de la simulatio
     \external{fig_TemperatureCanisterConditionLimite}
     %\externalremake
     \input{../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterConditionLimite}
-    \caption{Géométrie équivalente pour établir la condition de température à la frontière $r=R_{\sf reg}$. \echaf{ajouter conductivité}}
+    \caption{Géométrie équivalente pour établir la condition de température à l'interface en $r=-e_{\sf enc}$ entre le régénérateur et l'enceinte qui le contient, soit $r=R_{\sf reg}$. \echaf{ajouter conductivité}}
     \label{fig:TemperatureCanisterConditionLimite}
 \end{figure}
 

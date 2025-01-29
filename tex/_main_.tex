@@ -298,7 +298,7 @@ Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
 	& Jean-Christophe Valière, \textit{Université de Poitiers}\\
 	& Gaëlle Poignand, \textit{Le Mans Université}
 \end{tabular}}
-\date{Janvier 2025}
+\date{\echaf{??} 2025}
 
 %\dominitoc
 \raggedbottom
@@ -318,10 +318,10 @@ Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
 \tableofcontents%\label{chap:tableofcontents}\addcontentsline{toc}{chapter}{\nameref{chap:tableofcontents}}%\mtcaddchapter
 %\newpage
 
-\listoffigures\label{chap:listoffigures}\addcontentsline{toc}{chapter}{\nameref{chap:listoffigures}}
-%\newpage
-
-\listoftables\label{chap:listoftables}\addcontentsline{toc}{chapter}{\nameref{chap:listoftables}}
+%\listoffigures\label{chap:listoffigures}\addcontentsline{toc}{chapter}{\nameref{chap:listoffigures}}
+%%\newpage
+%
+%\listoftables\label{chap:listoftables}\addcontentsline{toc}{chapter}{\nameref{chap:listoftables}}
 %\newpage
 }
 
@@ -401,11 +401,13 @@ Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
 
 \renewcommand{\thepage}{\Roman{page}}
 
+%\addcontentsline{toc}{chapter}{Bibliographie}
+
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburlucpenalty}{8000}
-\printbibliography
+\printbibliography[title={Bibliographie},heading=bibintoc]
 
-\addcontentsline{toc}{chapter}{Bibliographie}
+
 
 
 %---------------------------------------------------------------------%

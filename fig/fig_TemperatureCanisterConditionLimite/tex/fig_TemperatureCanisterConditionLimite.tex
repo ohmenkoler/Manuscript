@@ -8,7 +8,7 @@
 	\fill[top color=gray,bottom color=white](0,-\eCAN) node(eCAN){} rectangle (\lREG,-2*\eCAN);
 	
 	\fill[right color=black!25,left color=white] ($(O)+(0,\eWALL)$) node(eWALL){} rectangle (-\lREG/4,0);
-	\fill[black!25] (O) rectangle (\lREG,\eWALL) node[midway]{$k_{\sf acier}$};
+	\fill[black!25] (O) rectangle (\lREG,\eWALL) node[midway, color=black]{$k_{\sf acier}$};
 	\fill[right color=white,left color=black!25] ($(O)+(\lREG,0)$) rectangle ++(\lREG/4,\eWALL);
 	
 	\fill[blue!25!white] ($(O)+(0,\eWALL+\eFB)$) node(eFB){} rectangle ++(\lREG,-\eFB);
@@ -23,12 +23,12 @@
 	
 	
 	
-	\draw[->] ($(eFB)+(0,\eFB)$) -- ($(eCAN)+(0,-2.1*\eCAN)$) node[left]{$-\mathbf{e}_r$};
+	\draw[<-] ($(eFB)+(0,\eFB)$) -- ($(eCAN)+(0,-1.1*\eCAN)$) node[pos=0, left]{$\mathbf{e}_r$};
 	\draw[->] (-1mm,0) node(lab){} -- (4*\lREG/3,0) node[above]{$\mathbf{e}_x$};
 	
 	\draw ($(eWALL) + (-\lREG/4,1.5*\eFB/2)$) node[left]{Canal de rétroaction};
 	\draw ($(O) + (-\lREG/4,\eWALL/2)$) node[left]{Tube contenant le noyau};
-	\draw (eWALL) node[left]{$e_{\sf wall}$};
+	\draw (eWALL) node[left]{$e_{\sf env}$};
 	\draw (O) node[left]{0};
-	\draw[line width=.5mm,dashed] (eCAN.base) node[left]{$e_{\sf can}$} -- ++(\lREG,0);
+	\draw[line width=.5mm, dashed, draw=MatlabOrange] (eCAN.base) node[left]{$-e_{\sf enc}$} -- ++(\lREG,0);
 \end{tikzpicture}

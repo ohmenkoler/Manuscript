@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  22 JAN 2025 17:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  30 JAN 2025 21:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1656,10 +1656,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
 10.
 (C:\Program Files\MiKTeX\tex/latex/stmaryrd\ustmry.fd) (Citations.tex) (Remerci
-ements.tex)
-No file external/fig_HeatOnly_CHXin_V1V20.lof.
-No file external/fig_HeatOnly_CHXin_V1V20.lot.
-(Introduction.tex
+ements.tex) (Introduction.tex
 Chapitre I.
 
 LaTeX Warning: Citation 'rott_damped_1969' on page 2 undefined on input line 8.
@@ -1937,30 +1934,30 @@ LaTeX Warning: Citation 'Electroac_Grains' on page 6 undefined on input line 27
 
 
 LaTeX Warning: Reference `fig:CircEquivTAC' on page 6 undefined on input line 3
-11.
+13.
 
 (../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex)
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 318.
+ut line 320.
 
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 318.
+ut line 320.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
 []\T1/iwonal/b/sc/10 Figure I.4 \T1/iwonal/b/n/10 ^^U |\T1/iwonal/m/n/10 Cir-cu
 it équi-valent à un noyau ther-moa-cous-tique. Ex-trait de
  []
 
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 328.
+ut line 330.
 
 
 LaTeX Warning: Reference `fig:WavesInDuctPiece' on page 7 undefined on input li
-ne 334.
+ne 336.
 
 (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 Missing character: There is no ; in font nullfont!
@@ -1972,39 +1969,39 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Reference `fig:CircEquivTAC' on page 8 undefined on input line 4
-37.
+39.
 
 
 LaTeX Warning: Citation 'so_internal_2006' on page 8 undefined on input line 49
-2.
+4.
 
 
 LaTeX Warning: Citation 'bailliet_acoustic_2001' on page 8 undefined on input l
-ine 492.
+ine 494.
 
 
 LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
-t line 492.
+t line 494.
 
 
 LaTeX Warning: Citation 'ross_influence_2003' on page 8 undefined on input line
- 492.
+ 494.
 
 
 LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
-t line 492.
+t line 494.
 
 
 LaTeX Warning: Citation 'hireche_numerical_2019' on page 8 undefined on input l
-ine 492.
+ine 494.
 
 
 LaTeX Warning: Citation 'zhang_novel_2011' on page 8 undefined on input line 49
-2.
+4.
 
 
 LaTeX Warning: Citation 'babaei_investigation_2010' on page 8 undefined on inpu
-t line 492.
+t line 494.
 
 ) (DispositifExpe.tex
 Chapitre II.
@@ -2667,63 +2664,67 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Reference `eq:NavierStokes_Boussinesq_QtMvt' on page 23 undefine
-d on input line 43.
+d on input line 44.
 
 
-LaTeX Warning: Reference `eq:Prandtl' on page 23 undefined on input line 49.
+LaTeX Warning: Reference `eq:Prandtl' on page 23 undefined on input line 50.
 
 
-LaTeX Warning: Citation 'belleoud_etude_2016' on page 23 undefined on input lin
-e 63.
+LaTeX Warning: Citation 'belleoud_etude_2016' on page 24 undefined on input lin
+e 65.
 
 
 LaTeX Warning: Citation 'nield_convection_2013' on page 24 undefined on input l
-ine 65.
+ine 67.
 
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 7
-4.
+6.
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 
 LaTeX Warning: Reference `eq:NbrGrashof_RayleighSurPrandtl' on page 24 undefine
-d on input line 107.
+d on input line 109.
 
 
 LaTeX Warning: Reference `chap:ModeleTemporel' on page 25 undefined on input li
-ne 116.
+ne 118.
 
 
 LaTeX Warning: Reference `fig:Comsol_ModeleSimplifie_Geometrie' on page 25 unde
-fined on input line 119.
+fined on input line 121.
 
-<../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png, id=55, 270.2898
-pt x 241.8636pt>
-File: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png Graphic fil
-e (type png)
-<use ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png>
+<../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png, id=55, 338.705
+4pt x 301.6068pt>
+File: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png Graphic fi
+le (type png)
+<use ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geomet
-ry5.png  used on input line 124.
-(pdftex.def)             Requested size: 270.28914pt x 241.863pt.
+ry62.png  used on input line 126.
+(pdftex.def)             Requested size: 338.70457pt x 301.60605pt.
+
+LaTeX Warning: Reference `fig:Comsol_ModeleSimplifie_Geometrie' on page 26 unde
+fined on input line 136.
+
 
 LaTeX Warning: Citation 'lotton_transient_2009' on page 26 undefined on input l
-ine 142.
+ine 156.
 
 
-LaTeX Warning: Reference `eq:TMatrix_prod_TppTuu' on page 26 undefined on input
- line 147.
+LaTeX Warning: Reference `eq:TMatrix_prod_TppTuu' on page 27 undefined on input
+ line 161.
 
 
-LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 26 undefined on input
- line 165.
+LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 27 undefined on input
+ line 179.
 
 
-LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 26 undefined on input line
- 165.
+LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 27 undefined on input line
+ 179.
 
 
-LaTeX Warning: Reference `fig:Schema_FluxThermiquesNoyau_Gaelle' on page 26 und
-efined on input line 165.
+LaTeX Warning: Reference `fig:Schema_FluxThermiquesNoyau_Gaelle' on page 27 und
+efined on input line 179.
 
 
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
@@ -2737,24 +2738,24 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-LaTeX Warning: Reference `eq:FluxTA_swift' on page 26 undefined on input line 1
-77.
+LaTeX Warning: Reference `eq:FluxTA_swift' on page 27 undefined on input line 1
+91.
 
 
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 26 undefined on in
-put line 177.
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 27 undefined on in
+put line 191.
 
 
 LaTeX Warning: Reference `eq:FluxVisq_Lotton' on page 28 undefined on input lin
-e 235.
+e 249.
 
 
-LaTeX Warning: Reference `chap:TransfoIntegrales' on page 28 undefined on input
- line 269.
+LaTeX Warning: Reference `chap:TransfoIntegrales' on page 29 undefined on input
+ line 283.
 
 
-LaTeX Warning: Reference `fig:TemperatureCanisterConditionLimite' on page 28 un
-defined on input line 269.
+LaTeX Warning: Reference `fig:TemperatureCanisterConditionLimite' on page 29 un
+defined on input line 283.
 
 
 (../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterCondi
@@ -2765,39 +2766,39 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-LaTeX Warning: Citation 'lewis_measurement_1998' on page 28 undefined on input 
-line 289.
+LaTeX Warning: Citation 'lewis_measurement_1998' on page 29 undefined on input 
+line 303.
 
 
-LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 2
-9 undefined on input line 310.
+LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 3
+0 undefined on input line 324.
 
 
-LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 29 undefined on input
- line 327.
+LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 30 undefined on input
+ line 341.
 
 
-LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 29 undefined on input line
- 327.
+LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 30 undefined on input line
+ 341.
 
 
-LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 2
-9 undefined on input line 327.
+LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 3
+0 undefined on input line 341.
 
 
-LaTeX Warning: Reference `eq:CondFront' on page 29 undefined on input line 327.
+LaTeX Warning: Reference `eq:CondFront' on page 30 undefined on input line 341.
 
 
 
-LaTeX Warning: Reference `eq:CondInit' on page 29 undefined on input line 327.
+LaTeX Warning: Reference `eq:CondInit' on page 30 undefined on input line 341.
 
 
-LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 2
-9 undefined on input line 335.
+LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 3
+0 undefined on input line 349.
 
 
-LaTeX Warning: Citation 'ozisik_heat_1993' on page 29 undefined on input line 3
-35.
+LaTeX Warning: Citation 'ozisik_heat_1993' on page 30 undefined on input line 3
+49.
 
 ) (EtudeExperimentale.tex
 Chapitre IV.
@@ -3989,10 +3990,11 @@ beg_RixOff_PhaseRIXHP-60Â°_OrientationV2_Qc40W_Serie1.txt}}
 altop \@gobble }{}}
 {C:/Users/mfontbon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program
  Files/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts
-/enc/dvips/iwona/ec-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi
--iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ts1-iwona.enc}{C:/Pro
-gram Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}]) (../fig/fig_ConvN
-at_HeatOnly/tex/fig_HeatOnly_Regmid_V1V2.tex
+/enc/dvips/iwona/sy-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ec
+-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Prog
+ram Files/MiKTeX/fonts/enc/dvips/iwona/ts1-iwona.enc}{C:/Program Files/MiKTeX/f
+onts/enc/dvips/cm-super/cm-super-t1.enc}]) (../fig/fig_ConvNat_HeatOnly/tex/fig
+_HeatOnly_Regmid_V1V2.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -4392,13 +4394,13 @@ nput line 36.
 LaTeX Warning: Reference `fig:ActiveControl_Teensy41' on page 56 undefined on i
 nput line 36.
 
-<../fig/fig_ActiveControl/ADAU1701.png, id=80, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=81, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 45.
 (pdftex.def)             Requested size: 149.87643pt x 142.26378pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=81, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=82, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
@@ -4455,7 +4457,7 @@ LaTeX Warning: Citation 'ramadan_design_2021' on page 5 undefined on input line
  2.
 
 (../fig/fig_AHXSchema/fig_AHXSchema.tex
-<../fig/fig_AHXfromATE/AHXfromATE.png, id=82, 515.67656pt x 535.2497pt>
+<../fig/fig_AHXfromATE/AHXfromATE.png, id=83, 515.67656pt x 535.2497pt>
 File: ../fig/fig_AHXfromATE/AHXfromATE.png Graphic file (type png)
 <use ../fig/fig_AHXfromATE/AHXfromATE.png>
 Package pdftex.def Info: ../fig/fig_AHXfromATE/AHXfromATE.png  used on input li
@@ -4523,7 +4525,7 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 32.
 )) (InstrumHP.tex
 Annexe C.
-<../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png, id=83, 667.0521pt x 557.2
+<../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png, id=84, 667.0521pt x 557.2
 017pt>
 File: ../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png Graphic file (type pn
 g)
@@ -4664,7 +4666,7 @@ LaTeX Warning: Reference `eq:Porosite_Volume' on page r undefined on input line
 
 )
 
-LaTeX Warning: Empty bibliography on input line 406.
+LaTeX Warning: Empty bibliography on input line 408.
 
 
 Package longtable Warning: Table widths have changed. Rerun LaTeX.
@@ -4688,18 +4690,19 @@ Package logreq Info: Writing requests to 'external/fig_HeatOnly_CHXin_V1V20.run
  ) 
 Here is how much of TeX's memory you used:
  74981 strings out of 474435
- 1913849 string characters out of 5751739
- 4062401 words of memory out of 5000000
- 95573 multiletter control sequences out of 15000+600000
+ 1913832 string characters out of 5751739
+ 4061902 words of memory out of 5000000
+ 95572 multiletter control sequences out of 15000+600000
  705250 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,23n,93p,4581b,2823s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/
 type1/public/cm-super/sftt1200.pfb>
-Output written on external/fig_HeatOnly_CHXin_V1V20.pdf (1 page, 93402 bytes).
+Output written on external/fig_HeatOnly_CHXin_V1V20.pdf (1 page, 100834 bytes).
+
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
  281 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,30 @@
+\begin{tikzpicture}[mindmap,concept color=MatlabBlue, text=black,
+%%	every concept/.append style={ellipse},
+	level 1 concept/.append style={font=\small}]
+	\node [concept] {Plan du chapitre} %[clockwise from=-60]
+    	child[grow=-45,concept color=MatlabOrange] {node[concept] {Présentation du dispositif} [clockwise from=0]
+    		child[concept color=MatlabOrange!75] {node[concept](Res) {Résultats déjà obtenus}}
+    		child[concept color=MatlabOrange!75] {node[concept] {Géométrie du \textsc{Tacot}} [clockwise from=-45]
+    			child[concept color=MatlabOrange!50] {node[concept] {Cavité}}
+    			child[concept color=MatlabOrange!50] {node[concept] {Noyau}}}
+    		child[concept color=MatlabOrange!75] {node[concept] {Instrumen\-tation}
+    			[clockwise from=-75] 
+    			child[concept color=MatlabOrange!50] {node[concept] {Exci\-tation}}
+    			child[concept color=MatlabOrange!50] {node[concept] {Acqui\-sition}}}}
+    	child[grow=-135,concept color=MatlabYellow] {node[concept] {Protocole expérimental}
+    		[clockwise from=-60]
+    		child[concept color=MatlabYellow!75] {node[concept] {Orien\-tations}
+    			[clockwise from=-45]
+    			child[concept color=MatlabYellow!50] {node[concept] (H1) {`\texttt{H1}'}}
+    			child[concept color=MatlabYellow!50] {node[concept] {`\texttt{H2}'}}
+    			child[concept color=MatlabYellow!50] {node[concept] {`\texttt{V1}'}}
+    			child[concept color=MatlabYellow!50] {node[concept] {`\texttt{V2}'}}
+    			} 
+    		child[concept color=MatlabYellow!75] {node[concept] {Acqui\-sitions}
+    			[clockwise from=-105]
+    			child[concept color=MatlabYellow!50] {node[concept] {Avec acoustique}}
+    			child[concept color=MatlabYellow!50] {node[concept] {Sans acoustique}}}};
+\begin{pgfonlayer}{background}
+    \draw [concept connection]  (H1) edge (Res);
+  \end{pgfonlayer}
+\end{tikzpicture}		

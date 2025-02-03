@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  22 JAN 2025 16:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  3 FEB 2025 08:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1316,6 +1316,14 @@ ryshadings.code.tex
 File: tikzlibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryshadings.code.tex
 File: pgflibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rymindmap.code.tex
+File: tikzlibrarymindmap.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rytrees.code.tex
+File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Program Files\MiKTeX\tex/latex/circuitikz\circuitikz.sty
 Package: circuitikz 2024/02/09{} The CircuiTikz circuit drawing package version
  1.6.7
@@ -1508,32 +1516,32 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
 No file external/fig_HeatOnly_CHXin_H1H20.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 306.
-LaTeX Font Info:    ... okay on input line 306.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 306.
-LaTeX Font Info:    ... okay on input line 306.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 306.
-LaTeX Font Info:    ... okay on input line 306.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 306.
-LaTeX Font Info:    ... okay on input line 306.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 306.
-LaTeX Font Info:    ... okay on input line 306.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 306.
-LaTeX Font Info:    ... okay on input line 306.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 306.
-LaTeX Font Info:    ... okay on input line 306.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 306.
-LaTeX Font Info:    ... okay on input line 306.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 306.
-LaTeX Font Info:    ... okay on input line 306.
-LaTeX Info: Redefining \degres on input line 306.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Info: Redefining \degres on input line 307.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 306.
+(french.ldf)             reported on input line 307.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 306.
-LaTeX Info: Redefining \up on input line 306.
+(french.ldf)             reported on input line 307.
+LaTeX Info: Redefining \up on input line 307.
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count557
@@ -1591,7 +1599,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \providecommand\hyper@newdestlabel[2]{}
-Package hyperref Info: Link coloring ON on input line 306.
+Package hyperref Info: Link coloring ON on input line 307.
 
 (C:\Program Files\MiKTeX\tex/latex/translations/dicts\translations-basic-dictio
 nary-french.trsl
@@ -1599,7 +1607,7 @@ File: translations-basic-dictionary-french.trsl (french translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `french'. on input line 306.
+or `french'. on input line 307.
 No file external/fig_HeatOnly_CHXin_H1H20.toc.
 Package biblatex Info: Trying to load language 'french'...
 Package biblatex Info: ... file 'french.lbx' found.
@@ -1613,53 +1621,50 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'external/fig_HeatOnly_CHXin_H1H20.bbl' not fou
 nd.
 No file external/fig_HeatOnly_CHXin_H1H20.bbl.
-Package biblatex Info: Reference section=0 on input line 306.
-Package biblatex Info: Reference segment=0 on input line 306.
+Package biblatex Info: Reference section=0 on input line 307.
+Package biblatex Info: Reference segment=0 on input line 307.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 LaTeX Font Info:    Trying to load font information for OT1+iwonalm on input li
-ne 310.
+ne 311.
 (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonalm.fd
 File: ot1iwonalm.fd 2005/10/05 v1.2 font definition file for OT1/iwonalm (MW)
 )
 LaTeX Font Info:    Trying to load font information for OML+iwonal on input lin
-e 310.
+e 311.
 (C:\Program Files\MiKTeX\tex/latex/iwona\omliwonal.fd
 File: omliwonal.fd 2008/07/22 v0.995 font definition file for OML/iwonal (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMS+iwonal on input lin
-e 310.
+e 311.
 (C:\Program Files\MiKTeX\tex/latex/iwona\omsiwonal.fd
 File: omsiwonal.fd 2008/07/22 v0.995 font definition file for OMS/iwonal (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMX+iwonal on input lin
-e 310.
+e 311.
 (C:\Program Files\MiKTeX\tex/latex/iwona\omxiwonal.fd
 File: omxiwonal.fd 2008/07/22 v0.995 font definition file for OMX/iwonal (MW)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 310
+LaTeX Font Info:    Trying to load font information for U+msa on input line 311
 .
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 310
+LaTeX Font Info:    Trying to load font information for U+msb on input line 311
 .
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 31
-0.
+1.
 (C:\Program Files\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
-10.
+11.
 (C:\Program Files\MiKTeX\tex/latex/stmaryrd\ustmry.fd) (Citations.tex) (Remerci
-ements.tex)
-No file external/fig_HeatOnly_CHXin_H1H20.lof.
-No file external/fig_HeatOnly_CHXin_H1H20.lot.
-(Introduction.tex
+ements.tex) (Introduction.tex
 Chapitre I.
 
 LaTeX Warning: Citation 'rott_damped_1969' on page 2 undefined on input line 8.
@@ -1937,30 +1942,30 @@ LaTeX Warning: Citation 'Electroac_Grains' on page 6 undefined on input line 27
 
 
 LaTeX Warning: Reference `fig:CircEquivTAC' on page 6 undefined on input line 3
-11.
+13.
 
 (../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex)
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 318.
+ut line 320.
 
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 318.
+ut line 320.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
 []\T1/iwonal/b/sc/10 Figure I.4 \T1/iwonal/b/n/10 ^^U |\T1/iwonal/m/n/10 Cir-cu
 it �qui-valent � un noyau ther-moa-cous-tique. Ex-trait de
  []
 
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
-ut line 328.
+ut line 330.
 
 
 LaTeX Warning: Reference `fig:WavesInDuctPiece' on page 7 undefined on input li
-ne 334.
+ne 336.
 
 (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 Missing character: There is no ; in font nullfont!
@@ -1972,120 +1977,137 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Reference `fig:CircEquivTAC' on page 8 undefined on input line 4
-37.
+39.
 
 
 LaTeX Warning: Citation 'so_internal_2006' on page 8 undefined on input line 49
-2.
+4.
 
 
 LaTeX Warning: Citation 'bailliet_acoustic_2001' on page 8 undefined on input l
-ine 492.
+ine 494.
 
 
 LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
-t line 492.
+t line 494.
 
 
 LaTeX Warning: Citation 'ross_influence_2003' on page 8 undefined on input line
- 492.
+ 494.
 
 
 LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
-t line 492.
+t line 494.
 
 
 LaTeX Warning: Citation 'hireche_numerical_2019' on page 8 undefined on input l
-ine 492.
+ine 494.
 
 
 LaTeX Warning: Citation 'zhang_novel_2011' on page 8 undefined on input line 49
-2.
+4.
 
 
 LaTeX Warning: Citation 'babaei_investigation_2010' on page 8 undefined on inpu
-t line 492.
+t line 494.
 
 ) (DispositifExpe.tex
 Chapitre II.
+(../fig/TOC/TOC_DispositifExpe.tex
+Overfull \hbox (1.08083pt too wide) in paragraph at lines 26--26
+ [][][]\T1/iwonal/m/n/10 Instrumen- 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+.
+(C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+))
 
 LaTeX Warning: Reference `chap:PresentationTacot' on page 10 undefined on input
- line 6.
+ line 26.
 
 
 LaTeX Warning: Reference `chap:PresentationTacot' on page 10 undefined on input
- line 6.
+ line 26.
 
 
 LaTeX Warning: Reference `chap:ProtocolExpe' on page 10 undefined on input line
- 6.
+ 26.
 
 
 LaTeX Warning: Reference `chap:ProtocolExpe' on page 10 undefined on input line
- 6.
+ 26.
 
 
 LaTeX Warning: Citation 'ramadan_design_2021' on page 10 undefined on input lin
-e 14.
+e 34.
 
 
 LaTeX Warning: Citation 'ramadan_experimental_2018' on page 10 undefined on inp
-ut line 14.
+ut line 34.
 
 
 LaTeX Warning: Citation 'ramadan_experimental_2021' on page 10 undefined on inp
-ut line 14.
+ut line 34.
 
 
 LaTeX Warning: Citation 'hireche_numerical_2019' on page 10 undefined on input 
-line 14.
+line 34.
 
 
 LaTeX Warning: Citation 'hireche_experimental_2020' on page 10 undefined on inp
-ut line 14.
+ut line 34.
 
+
+LaTeX Warning: Citation 'belcher_working_1999' on page 10 undefined on input li
+ne 36.
+
+LaTeX Info: Symbol \textohm not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 36.
 
 LaTeX Warning: Citation 'ANR_thermo-acoustic_2019' on page 10 undefined on inpu
-t line 20.
+t line 44.
 
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2002' on page 10 undefined on in
-put line 20.
+put line 44.
 
 
 LaTeX Warning: Citation 'wollan_development_2002' on page 10 undefined on input
- line 20.
+ line 44.
 
 
 LaTeX Warning: Citation 'adeff_measurement_1991' on page 10 undefined on input 
-line 20.
+line 44.
 
 
 LaTeX Warning: Citation 'garrett_thermoacoustic_1993' on page 10 undefined on i
-nput line 20.
+nput line 44.
 
 
 LaTeX Warning: Citation 'poignand_thermoacoustic_2011' on page 10 undefined on 
-input line 20.
+input line 44.
 
 
 LaTeX Warning: Citation 'poignand_analysis_2013' on page 10 undefined on input 
-line 20.
+line 44.
 
 
 LaTeX Warning: Citation 'poese_thermoacoustic_2004' on page 10 undefined on inp
-ut line 20.
+ut line 44.
 
 
 LaTeX Warning: Reference `fig:SchemaGeneralTACOT' on page 10 undefined on input
- line 20.
+ line 44.
 
 
 LaTeX Warning: Citation 'ramadan_design_2021' on page 10 undefined on input lin
-e 20.
+e 44.
 
 (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
-<../fig/fig_TACOTSchematics/TACOT.png, id=40, 1304.875pt x 776.9025pt>
+<../fig/fig_TACOTSchematics/TACOT.png, id=52, 1304.875pt x 776.9025pt>
 File: ../fig/fig_TACOTSchematics/TACOT.png Graphic file (type png)
 <use ../fig/fig_TACOTSchematics/TACOT.png>
 Package pdftex.def Info: ../fig/fig_TACOTSchematics/TACOT.png  used on input li
@@ -2093,128 +2115,128 @@ ne 2.
 (pdftex.def)             Requested size: 1304.87183pt x 776.90059pt.
 )
 
-LaTeX Warning: Reference `fig:TacotPhotos_Regen' on page 10 undefined on input 
-line 32.
+LaTeX Warning: Reference `fig:TacotPhotos_Regen' on page 11 undefined on input 
+line 56.
 
 
-LaTeX Warning: Reference `fig:TacotPhotos_AHX' on page 10 undefined on input li
-ne 32.
+LaTeX Warning: Reference `fig:TacotPhotos_AHX' on page 11 undefined on input li
+ne 56.
 
 
-LaTeX Warning: Reference `fig:TacotPhotos_CHX' on page 10 undefined on input li
-ne 32.
+LaTeX Warning: Reference `fig:TacotPhotos_CHX' on page 11 undefined on input li
+ne 56.
 
-<../fig/fig_TacotPhotos/AHX_dansCarter.JPG, id=42, 1606.0pt x 1204.5pt>
+<../fig/fig_TacotPhotos/AHX_dansCarter.JPG, id=54, 1606.0pt x 1204.5pt>
 File: ../fig/fig_TacotPhotos/AHX_dansCarter.JPG Graphic file (type jpg)
 <use ../fig/fig_TacotPhotos/AHX_dansCarter.JPG>
 Package pdftex.def Info: ../fig/fig_TacotPhotos/AHX_dansCarter.JPG  used on inp
-ut line 39.
+ut line 63.
 (pdftex.def)             Requested size: 130.59857pt x 97.94257pt.
-<../fig/fig_TacotPhotos/Regenerateur.JPG, id=43, 1606.0pt x 1204.5pt>
+<../fig/fig_TacotPhotos/Regenerateur.JPG, id=55, 1606.0pt x 1204.5pt>
 File: ../fig/fig_TacotPhotos/Regenerateur.JPG Graphic file (type jpg)
 <use ../fig/fig_TacotPhotos/Regenerateur.JPG>
 Package pdftex.def Info: ../fig/fig_TacotPhotos/Regenerateur.JPG  used on input
- line 46.
+ line 70.
 (pdftex.def)             Requested size: 130.59857pt x 97.94257pt.
-<../fig/fig_TacotPhotos/CHX_dansCarter.JPG, id=44, 1606.0pt x 1204.5pt>
+<../fig/fig_TacotPhotos/CHX_dansCarter.JPG, id=56, 1606.0pt x 1204.5pt>
 File: ../fig/fig_TacotPhotos/CHX_dansCarter.JPG Graphic file (type jpg)
 <use ../fig/fig_TacotPhotos/CHX_dansCarter.JPG>
 Package pdftex.def Info: ../fig/fig_TacotPhotos/CHX_dansCarter.JPG  used on inp
-ut line 53.
+ut line 77.
 (pdftex.def)             Requested size: 130.59857pt x 97.94257pt.
 
 LaTeX Warning: Hyper reference `fig:TacotPhotos_AHX' on page 11 undefined on in
-put line 57.
+put line 81.
 
 
 LaTeX Warning: Reference `sub@fig:TacotPhotos_AHX' on page 11 undefined on inpu
-t line 57.
+t line 81.
 
 
 LaTeX Warning: Hyper reference `fig:TacotPhotos_Regen' on page 11 undefined on 
-input line 57.
+input line 81.
 
 
 LaTeX Warning: Reference `sub@fig:TacotPhotos_Regen' on page 11 undefined on in
-put line 57.
+put line 81.
 
 
 LaTeX Warning: Hyper reference `fig:TacotPhotos_CHX' on page 11 undefined on in
-put line 57.
+put line 81.
 
 
 LaTeX Warning: Reference `sub@fig:TacotPhotos_CHX' on page 11 undefined on inpu
-t line 57.
+t line 81.
 
 
 LaTeX Warning: Hyper reference `fig:TacotPhotos_AHX' on page 11 undefined on in
-put line 57.
+put line 81.
 
 
 LaTeX Warning: Reference `sub@fig:TacotPhotos_AHX' on page 11 undefined on inpu
-t line 57.
+t line 81.
 
 
 LaTeX Warning: Hyper reference `fig:TacotPhotos_Regen' on page 11 undefined on 
-input line 57.
+input line 81.
 
 
 LaTeX Warning: Reference `sub@fig:TacotPhotos_Regen' on page 11 undefined on in
-put line 57.
+put line 81.
 
 
 LaTeX Warning: Hyper reference `fig:TacotPhotos_CHX' on page 11 undefined on in
-put line 57.
+put line 81.
 
 
 LaTeX Warning: Reference `sub@fig:TacotPhotos_CHX' on page 11 undefined on inpu
-t line 57.
+t line 81.
 
 LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
-e 64.
+e 88.
 (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
 File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
 )
 
 LaTeX Warning: Citation 'ramadan_design_2021' on page 11 undefined on input lin
-e 64.
+e 88.
 
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 12 undefined on in
-put line 77.
+put line 101.
 
 
 LaTeX Warning: Citation 'nield_convection_2013' on page 12 undefined on input l
-ine 83.
+ine 107.
 
 
 LaTeX Warning: Citation 'dullien_porous_1992' on page 12 undefined on input lin
-e 83.
+e 107.
 
 
 LaTeX Warning: Citation 'hireche_experimental_2020' on page 12 undefined on inp
-ut line 89.
+ut line 113.
 
 
-Overfull \hbox (7.40266pt too wide) in paragraph at lines 88--90
+Overfull \hbox (7.40266pt too wide) in paragraph at lines 112--114
 \T1/iwonal/m/n/12 et donne des r�-sul-tats sa-tis-fai-sants pour le de-ve-lop-p
 e-ment des mo-d�les [[]]. 
  []
 
 
 LaTeX Warning: Reference `fig:CycleBrayton' on page 12 undefined on input line 
-91.
+115.
 
 
 LaTeX Warning: Reference `fig:CycleStirling' on page 12 undefined on input line
- 91.
+ 115.
 
 
 LaTeX Warning: Citation 'poignand_etude_2006' on page 12 undefined on input lin
-e 91.
+e 115.
 
 
-LaTeX Warning: Reference `fig:dKdV' on page 12 undefined on input line 103.
+LaTeX Warning: Reference `fig:dKdV' on page 12 undefined on input line 127.
 
 (../fig/fig_dKdV/tex/fig_dKdV.tex
 Missing character: There is no ; in font nullfont!
@@ -2239,44 +2261,44 @@ LaTeX Info: Symbol \textminus not provided by
 )
 
 LaTeX Warning: Reference `eq:CouchesLimites' on page 12 undefined on input line
- 110.
+ 134.
 
 
 LaTeX Warning: Reference `eq:CouchesLimites' on page 12 undefined on input line
- 110.
+ 134.
 
 
-LaTeX Warning: Reference `tab:ParamHydrauTAC' on page 12 undefined on input lin
-e 114.
+LaTeX Warning: Reference `tab:ParamHydrauTAC' on page 13 undefined on input lin
+e 138.
 
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 123.
+            Default family used instead on input line 147.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 124.
+            Default family used instead on input line 148.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 125.
+            Default family used instead on input line 149.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 126.
+            Default family used instead on input line 150.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 128.
+            Default family used instead on input line 152.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 129.
+            Default family used instead on input line 153.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 130.
+            Default family used instead on input line 154.
 
-LaTeX Warning: Citation 'ramadan_design_2021' on page 12 undefined on input lin
-e 139.
+LaTeX Warning: Citation 'ramadan_design_2021' on page 13 undefined on input lin
+e 163.
 
 
 LaTeX Warning: Reference `fig:TCdansNoyau' on page 14 undefined on input line 1
-51.
+75.
 
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 Missing character: There is no ; in font nullfont!
@@ -2288,76 +2310,76 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Reference `fig:SchemaGeneralTACOT' on page 14 undefined on input
- line 158.
+ line 182.
 
 
 LaTeX Warning: Reference `fig:SchemaGeneralTACOT' on page 14 undefined on input
- line 158.
+ line 182.
 
 
-LaTeX Warning: Reference `chap:AHX' on page 15 undefined on input line 167.
+LaTeX Warning: Reference `chap:AHX' on page 15 undefined on input line 191.
 
 
 LaTeX Warning: Reference `fig:TACOTSuspendu_Frigo' on page 15 undefined on inpu
-t line 220.
+t line 244.
 
 
 LaTeX Warning: Reference `fig:TACOTSuspendu_Palans' on page 15 undefined on inp
-ut line 220.
+ut line 244.
 
-<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=47, 126.42508pt
+<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=59, 126.42508pt
  x 94.84251pt>
 File: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg Graphic file (
 type jpg)
 <use ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped
-.jpg  used on input line 227.
+.jpg  used on input line 251.
 (pdftex.def)             Requested size: 195.89455pt x 146.96094pt.
-<../fig/fig_SystemeAccroche/Palans.jpg, id=48, 4047.12pt x 3035.34pt>
+<../fig/fig_SystemeAccroche/Palans.jpg, id=60, 4047.12pt x 3035.34pt>
 File: ../fig/fig_SystemeAccroche/Palans.jpg Graphic file (type jpg)
 <use ../fig/fig_SystemeAccroche/Palans.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Palans.jpg  used on input l
-ine 234.
+ine 258.
 (pdftex.def)             Requested size: 195.89455pt x 146.91277pt.
 
 LaTeX Warning: Hyper reference `fig:TACOTSuspendu_Frigo' on page 15 undefined o
-n input line 238.
+n input line 262.
 
 
 LaTeX Warning: Reference `sub@fig:TACOTSuspendu_Frigo' on page 15 undefined on 
-input line 238.
+input line 262.
 
 
 LaTeX Warning: Hyper reference `fig:TACOTSuspendu_Palans' on page 15 undefined 
-on input line 238.
+on input line 262.
 
 
 LaTeX Warning: Reference `sub@fig:TACOTSuspendu_Palans' on page 15 undefined on
- input line 238.
+ input line 262.
 
 
 LaTeX Warning: Hyper reference `fig:TACOTSuspendu_Frigo' on page 15 undefined o
-n input line 238.
+n input line 262.
 
 
 LaTeX Warning: Reference `sub@fig:TACOTSuspendu_Frigo' on page 15 undefined on 
-input line 238.
+input line 262.
 
 
 LaTeX Warning: Hyper reference `fig:TACOTSuspendu_Palans' on page 15 undefined 
-on input line 238.
+on input line 262.
 
 
 LaTeX Warning: Reference `sub@fig:TACOTSuspendu_Palans' on page 15 undefined on
- input line 238.
+ input line 262.
 
 
 LaTeX Warning: Reference `fig:OrientationCore_H' on page 15 undefined on input 
-line 244.
+line 268.
 
 
 LaTeX Warning: Reference `fig:OrientationCore_V' on page 15 undefined on input 
-line 244.
+line 268.
 
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 Missing character: There is no ; in font nullfont!
@@ -2368,11 +2390,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
-<../fig/fig_OrientationCore/tex/TACOT.png, id=51, 1304.875pt x 776.9025pt>
+<../fig/fig_OrientationCore/tex/TACOT.png, id=63, 1304.875pt x 776.9025pt>
 File: ../fig/fig_OrientationCore/tex/TACOT.png Graphic file (type png)
 <use ../fig/fig_OrientationCore/tex/TACOT.png>
 Package pdftex.def Info: ../fig/fig_OrientationCore/tex/TACOT.png  used on inpu
-t line 260.
+t line 284.
 (pdftex.def)             Requested size: 174.127pt x 103.66814pt.
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
 Missing character: There is no ; in font nullfont!
@@ -2386,76 +2408,71 @@ Missing character: There is no ; in font nullfont!
 File: ../fig/fig_OrientationCore/tex/TACOT.png Graphic file (type png)
 <use ../fig/fig_OrientationCore/tex/TACOT.png>
 Package pdftex.def Info: ../fig/fig_OrientationCore/tex/TACOT.png  used on inpu
-t line 277.
+t line 301.
 (pdftex.def)             Requested size: 174.127pt x 103.66814pt.
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 15 undefined on
- input line 281.
+ input line 305.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 15 undefined on i
-nput line 281.
+nput line 305.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_H1_Schema' on page 15 undef
-ined on input line 281.
+ined on input line 305.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_H1_Schema' on page 15 undefin
-ed on input line 281.
+ed on input line 305.
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-81.
-(C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 15 undefined on
- input line 281.
+ input line 305.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 15 undefined on i
-nput line 281.
+nput line 305.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_H2_Schema' on page 15 undef
-ined on input line 281.
+ined on input line 305.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_H2_Schema' on page 15 undefin
-ed on input line 281.
+ed on input line 305.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 15 undefined on
- input line 281.
+ input line 305.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 15 undefined on i
-nput line 281.
+nput line 305.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_H1_Schema' on page 15 undef
-ined on input line 281.
+ined on input line 305.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_H1_Schema' on page 15 undefin
-ed on input line 281.
+ed on input line 305.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 15 undefined on
- input line 281.
+ input line 305.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 15 undefined on i
-nput line 281.
+nput line 305.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_H2_Schema' on page 15 undef
-ined on input line 281.
+ined on input line 305.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_H2_Schema' on page 15 undefin
-ed on input line 281.
+ed on input line 305.
 
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1.tex
 Missing character: There is no ; in font nullfont!
@@ -2477,120 +2494,120 @@ Missing character: There is no ; in font nullfont!
 File: ../fig/fig_OrientationCore/tex/TACOT.png Graphic file (type png)
 <use ../fig/fig_OrientationCore/tex/TACOT.png>
 Package pdftex.def Info: ../fig/fig_OrientationCore/tex/TACOT.png  used on inpu
-t line 308.
+t line 332.
 (pdftex.def)             Requested size: 174.127pt x 103.66814pt.
 File: ../fig/fig_OrientationCore/tex/TACOT.png Graphic file (type png)
 <use ../fig/fig_OrientationCore/tex/TACOT.png>
 Package pdftex.def Info: ../fig/fig_OrientationCore/tex/TACOT.png  used on inpu
-t line 316.
+t line 340.
 (pdftex.def)             Requested size: 174.127pt x 103.66814pt.
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 15 undefined on
- input line 320.
+ input line 344.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 15 undefined on i
-nput line 320.
+nput line 344.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_V1_Schema' on page 15 undef
-ined on input line 320.
+ined on input line 344.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_V1_Schema' on page 15 undefin
-ed on input line 320.
+ed on input line 344.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 15 undefined on
- input line 320.
+ input line 344.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 15 undefined on i
-nput line 320.
+nput line 344.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_V2_Schema' on page 15 undef
-ined on input line 320.
+ined on input line 344.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_V2_Schema' on page 15 undefin
-ed on input line 320.
+ed on input line 344.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 15 undefined on
- input line 320.
+ input line 344.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 15 undefined on i
-nput line 320.
+nput line 344.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_V1_Schema' on page 15 undef
-ined on input line 320.
+ined on input line 344.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_V1_Schema' on page 15 undefin
-ed on input line 320.
+ed on input line 344.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 15 undefined on
- input line 320.
+ input line 344.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 15 undefined on i
-nput line 320.
+nput line 344.
 
 
 LaTeX Warning: Hyper reference `fig:OrientationCore_V2_Schema' on page 15 undef
-ined on input line 320.
+ined on input line 344.
 
 
 LaTeX Warning: Reference `sub@fig:OrientationCore_V2_Schema' on page 15 undefin
-ed on input line 320.
+ed on input line 344.
 
 
 LaTeX Warning: Reference `fig:OrientationCore_H1' on page 15 undefined on input
- line 326.
+ line 350.
 
 
 LaTeX Warning: Citation 'ramadan_design_2021' on page 15 undefined on input lin
-e 326.
+e 350.
 
 
 LaTeX Warning: Reference `fig:TACOTSuspendu_Frigo' on page 15 undefined on inpu
-t line 326.
+t line 350.
 
 
 LaTeX Warning: Reference `fig:OrientationCore_H2' on page 16 undefined on input
- line 328.
+ line 352.
 
 
 LaTeX Warning: Reference `fig:OrientationCore_V1' on page 16 undefined on input
- line 330.
+ line 354.
 
 
 LaTeX Warning: Reference `fig:OrientationCore_V2' on page 16 undefined on input
- line 332.
+ line 356.
 
 
-LaTeX Warning: Reference `chap:AHX' on page 17 undefined on input line 337.
+LaTeX Warning: Reference `chap:AHX' on page 17 undefined on input line 361.
 
 
 LaTeX Warning: Citation 'belcher_working_1999' on page 17 undefined on input li
-ne 339.
+ne 363.
 
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 339.
+            Default family used instead on input line 363.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 339.
+            Default family used instead on input line 363.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 342.
+            Default family used instead on input line 366.
 
 LaTeX Warning: Citation 'ramadan_design_2021' on page 18 undefined on input lin
-e 353.
+e 377.
 
 Excluding 'comment' comment.) (EnsembleSimus.tex
 Chapitre III.
@@ -2667,63 +2684,116 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Reference `eq:NavierStokes_Boussinesq_QtMvt' on page 23 undefine
-d on input line 43.
+d on input line 45.
 
 
-LaTeX Warning: Reference `eq:Prandtl' on page 23 undefined on input line 49.
+LaTeX Warning: Reference `eq:Prandtl' on page 23 undefined on input line 51.
 
 
-LaTeX Warning: Citation 'belleoud_etude_2016' on page 23 undefined on input lin
-e 63.
+LaTeX Warning: Citation 'belleoud_etude_2016' on page 24 undefined on input lin
+e 66.
 
 
 LaTeX Warning: Citation 'nield_convection_2013' on page 24 undefined on input l
-ine 65.
+ine 68.
 
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 7
-4.
+7.
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 
 LaTeX Warning: Reference `eq:NbrGrashof_RayleighSurPrandtl' on page 24 undefine
-d on input line 107.
+d on input line 110.
 
 
 LaTeX Warning: Reference `chap:ModeleTemporel' on page 25 undefined on input li
-ne 116.
+ne 119.
+
+
+LaTeX Warning: Reference `fig:SimuConvNat2D' on page 25 undefined on input line
+ 122.
 
 
 LaTeX Warning: Reference `fig:Comsol_ModeleSimplifie_Geometrie' on page 25 unde
-fined on input line 119.
+fined on input line 122.
 
-<../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png, id=55, 270.2898
-pt x 241.8636pt>
-File: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png Graphic fil
-e (type png)
-<use ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry5.png>
+<../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png, id=67, 338.705
+4pt x 301.6068pt>
+File: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png Graphic fi
+le (type png)
+<use ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geomet
-ry5.png  used on input line 124.
-(pdftex.def)             Requested size: 270.28914pt x 241.863pt.
+ry62.png  used on input line 129.
+(pdftex.def)             Requested size: 338.70457pt x 301.60605pt.
 
-LaTeX Warning: Citation 'lotton_transient_2009' on page 26 undefined on input l
-ine 142.
-
-
-LaTeX Warning: Reference `eq:TMatrix_prod_TppTuu' on page 26 undefined on input
- line 147.
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 25 undefined on in
+put line 138.
 
 
-LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 26 undefined on input
- line 165.
+LaTeX Warning: Reference `fig:SuperpositionComsol' on page 25 undefined on inpu
+t line 142.
 
 
-LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 26 undefined on input line
- 165.
+LaTeX Warning: Citation 'ramadan_design_2021' on page 25 undefined on input lin
+e 142.
+
+(../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex)
+
+LaTeX Warning: Reference `fig:OrientationCore_H1' on page 25 undefined on input
+ line 150.
 
 
-LaTeX Warning: Reference `fig:Schema_FluxThermiquesNoyau_Gaelle' on page 26 und
-efined on input line 165.
+LaTeX Warning: Hyper reference `fig:OrientationCore_H1_Schema' on page 25 undef
+ined on input line 150.
+
+
+LaTeX Warning: Reference `sub@fig:OrientationCore_H1_Schema' on page 25 undefin
+ed on input line 150.
+
+
+LaTeX Warning: Citation 'ramadan_design_2021' on page 25 undefined on input lin
+e 150.
+
+
+LaTeX Warning: Reference `fig:OrientationCore_H1' on page 25 undefined on input
+ line 150.
+
+
+LaTeX Warning: Hyper reference `fig:OrientationCore_H1_Schema' on page 25 undef
+ined on input line 150.
+
+
+LaTeX Warning: Reference `sub@fig:OrientationCore_H1_Schema' on page 25 undefin
+ed on input line 150.
+
+
+LaTeX Warning: Citation 'ramadan_design_2021' on page 25 undefined on input lin
+e 150.
+
+
+LaTeX Warning: Reference `fig:Comsol_ModeleSimplifie_Geometrie' on page 25 unde
+fined on input line 156.
+
+
+LaTeX Warning: Citation 'lotton_transient_2009' on page 27 undefined on input l
+ine 176.
+
+
+LaTeX Warning: Reference `eq:TMatrix_prod_TppTuu' on page 27 undefined on input
+ line 181.
+
+
+LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 28 undefined on input
+ line 199.
+
+
+LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 28 undefined on input line
+ 199.
+
+
+LaTeX Warning: Reference `fig:Schema_FluxThermiquesNoyau_Gaelle' on page 28 und
+efined on input line 199.
 
 
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
@@ -2737,24 +2807,24 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-LaTeX Warning: Reference `eq:FluxTA_swift' on page 26 undefined on input line 1
-77.
+LaTeX Warning: Reference `eq:FluxTA_swift' on page 28 undefined on input line 2
+11.
 
 
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 26 undefined on in
-put line 177.
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 28 undefined on in
+put line 211.
 
 
-LaTeX Warning: Reference `eq:FluxVisq_Lotton' on page 28 undefined on input lin
-e 235.
+LaTeX Warning: Reference `eq:FluxVisq_Lotton' on page 29 undefined on input lin
+e 269.
 
 
-LaTeX Warning: Reference `chap:TransfoIntegrales' on page 28 undefined on input
- line 269.
+LaTeX Warning: Reference `chap:TransfoIntegrales' on page 29 undefined on input
+ line 303.
 
 
-LaTeX Warning: Reference `fig:TemperatureCanisterConditionLimite' on page 28 un
-defined on input line 269.
+LaTeX Warning: Reference `fig:TemperatureCanisterConditionLimite' on page 29 un
+defined on input line 303.
 
 
 (../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterCondi
@@ -2765,84 +2835,84 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-LaTeX Warning: Citation 'lewis_measurement_1998' on page 28 undefined on input 
-line 289.
+LaTeX Warning: Citation 'lewis_measurement_1998' on page 30 undefined on input 
+line 323.
 
 
-LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 2
-9 undefined on input line 310.
+LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 3
+0 undefined on input line 344.
 
 
-LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 29 undefined on input
- line 327.
+LaTeX Warning: Reference `eq:FluxTA_Lotton_Regen' on page 31 undefined on input
+ line 361.
 
 
-LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 29 undefined on input line
- 327.
+LaTeX Warning: Reference `eq:FluxLat_Lotton' on page 31 undefined on input line
+ 361.
 
 
-LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 2
-9 undefined on input line 327.
+LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 3
+1 undefined on input line 361.
 
 
-LaTeX Warning: Reference `eq:CondFront' on page 29 undefined on input line 327.
+LaTeX Warning: Reference `eq:CondFront' on page 31 undefined on input line 361.
 
 
 
-LaTeX Warning: Reference `eq:CondInit' on page 29 undefined on input line 327.
+LaTeX Warning: Reference `eq:CondInit' on page 31 undefined on input line 361.
 
 
-LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 2
-9 undefined on input line 335.
+LaTeX Warning: Reference `eq:BilanChaleur_LottonPoignand_ApDvptCylin' on page 3
+1 undefined on input line 369.
 
 
-LaTeX Warning: Citation 'ozisik_heat_1993' on page 29 undefined on input line 3
-35.
+LaTeX Warning: Citation 'ozisik_heat_1993' on page 31 undefined on input line 3
+69.
 
 ) (EtudeExperimentale.tex
 Chapitre IV.
 
-LaTeX Warning: Citation 'ramadan_design_2021' on page 32 undefined on input lin
+LaTeX Warning: Citation 'ramadan_design_2021' on page 34 undefined on input lin
 e 5.
 
 
-LaTeX Warning: Citation 'ross_influence_2003' on page 32 undefined on input lin
+LaTeX Warning: Citation 'ross_influence_2003' on page 34 undefined on input lin
 e 5.
 
 
-LaTeX Warning: Citation 'hireche_numerical_2019' on page 32 undefined on input 
+LaTeX Warning: Citation 'hireche_numerical_2019' on page 34 undefined on input 
 line 5.
 
 
-LaTeX Warning: Citation 'ramadan_experimental_2018' on page 32 undefined on inp
+LaTeX Warning: Citation 'ramadan_experimental_2018' on page 34 undefined on inp
 ut line 5.
 
 
-LaTeX Warning: Citation 'zhang_novel_2011' on page 32 undefined on input line 5
+LaTeX Warning: Citation 'zhang_novel_2011' on page 34 undefined on input line 5
 .
 
 
-LaTeX Warning: Reference `fig:OrientationCore_H' on page 32 undefined on input 
+LaTeX Warning: Reference `fig:OrientationCore_H' on page 34 undefined on input 
 line 10.
 
 
-LaTeX Warning: Reference `fig:OrientationCore_V' on page 32 undefined on input 
+LaTeX Warning: Reference `fig:OrientationCore_V' on page 34 undefined on input 
 line 10.
 
 
-LaTeX Warning: Reference `chap:MesureAvecAcou' on page 32 undefined on input li
+LaTeX Warning: Reference `chap:MesureAvecAcou' on page 34 undefined on input li
 ne 10.
 
 
-LaTeX Warning: Reference `fig:PerfConvNat' on page 32 undefined on input line 1
+LaTeX Warning: Reference `fig:PerfConvNat' on page 34 undefined on input line 1
 0.
 
 
-LaTeX Warning: Reference `fig:PerfConvNat_DR35' on page 32 undefined on input l
+LaTeX Warning: Reference `fig:PerfConvNat_DR35' on page 34 undefined on input l
 ine 10.
 
 
-LaTeX Warning: Reference `tab:RecapResultExpe' on page 32 undefined on input li
+LaTeX Warning: Reference `tab:RecapResultExpe' on page 34 undefined on input li
 ne 10.
 
 (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf.tex
@@ -2907,83 +2977,83 @@ PGFPlots: reading {../fig/fig_PerfConvNat/data/H1_COP_DR_Qc100.txt}
 PGFPlots: reading {../fig/fig_PerfConvNat/data/H2_COP_DR_Qc100.txt}
 )
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf' on page 32 undefined on inp
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf' on page 34 undefined on inp
 ut line 50.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf' on page 32 undefined on input
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf' on page 34 undefined on input
  line 50.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta' on page 32 undefined on inp
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta' on page 34 undefined on inp
 ut line 50.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta' on page 32 undefined on input
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta' on page 34 undefined on input
  line 50.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa' on page 32 undefined on inp
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa' on page 34 undefined on inp
 ut line 50.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa' on page 32 undefined on input
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa' on page 34 undefined on input
  line 50.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_COP' on page 32 undefined on in
+LaTeX Warning: Hyper reference `fig:PerfConvNat_COP' on page 34 undefined on in
 put line 50.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_COP' on page 32 undefined on inpu
+LaTeX Warning: Reference `sub@fig:PerfConvNat_COP' on page 34 undefined on inpu
 t line 50.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf' on page 32 undefined on inp
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf' on page 34 undefined on inp
 ut line 50.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf' on page 32 undefined on input
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf' on page 34 undefined on input
  line 50.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta' on page 32 undefined on inp
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta' on page 34 undefined on inp
 ut line 50.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta' on page 32 undefined on input
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta' on page 34 undefined on input
  line 50.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa' on page 32 undefined on inp
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa' on page 34 undefined on inp
 ut line 50.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa' on page 32 undefined on input
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa' on page 34 undefined on input
  line 50.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_COP' on page 32 undefined on in
+LaTeX Warning: Hyper reference `fig:PerfConvNat_COP' on page 34 undefined on in
 put line 50.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_COP' on page 32 undefined on inpu
+LaTeX Warning: Reference `sub@fig:PerfConvNat_COP' on page 34 undefined on inpu
 t line 50.
 
 
-LaTeX Warning: Reference `fig:PerfConvNat_Tf' on page 32 undefined on input lin
+LaTeX Warning: Reference `fig:PerfConvNat_Tf' on page 34 undefined on input lin
 e 54.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta' on page 32 undefined on inp
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta' on page 34 undefined on inp
 ut line 54.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta' on page 32 undefined on input
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta' on page 34 undefined on input
  line 54.
 
 
-LaTeX Warning: Reference `fig:PerfConvNat_Qa' on page 32 undefined on input lin
+LaTeX Warning: Reference `fig:PerfConvNat_Qa' on page 34 undefined on input lin
 e 56.
 
 (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf_DR2.tex
@@ -3020,67 +3090,67 @@ PGFPlots: reading {../fig/fig_PerfConvNat/data/H1_COP_Qc_DR2.txt}
 PGFPlots: reading {../fig/fig_PerfConvNat/data/H2_COP_Qc_DR2.txt}
 )
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf_DR2' on page 32 undefined on
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf_DR2' on page 34 undefined on
  input line 94.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf_DR2' on page 32 undefined on i
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf_DR2' on page 34 undefined on i
 nput line 94.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta_DR2' on page 32 undefined on
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta_DR2' on page 34 undefined on
  input line 94.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta_DR2' on page 32 undefined on i
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta_DR2' on page 34 undefined on i
 nput line 94.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR2' on page 32 undefined on
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR2' on page 34 undefined on
  input line 94.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR2' on page 32 undefined on i
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR2' on page 34 undefined on i
 nput line 94.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR2' on page 32 undefined o
+LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR2' on page 34 undefined o
 n input line 94.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR2' on page 32 undefined on 
+LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR2' on page 34 undefined on 
 input line 94.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf_DR2' on page 32 undefined on
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf_DR2' on page 34 undefined on
  input line 94.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf_DR2' on page 32 undefined on i
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf_DR2' on page 34 undefined on i
 nput line 94.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta_DR2' on page 32 undefined on
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta_DR2' on page 34 undefined on
  input line 94.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta_DR2' on page 32 undefined on i
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta_DR2' on page 34 undefined on i
 nput line 94.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR2' on page 32 undefined on
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR2' on page 34 undefined on
  input line 94.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR2' on page 32 undefined on i
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR2' on page 34 undefined on i
 nput line 94.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR2' on page 32 undefined o
+LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR2' on page 34 undefined o
 n input line 94.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR2' on page 32 undefined on 
+LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR2' on page 34 undefined on 
 input line 94.
 
 (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf_DR35.tex
@@ -3117,83 +3187,83 @@ PGFPlots: reading {../fig/fig_PerfConvNat/data/H1_COP_Qc_DR35.txt}
 PGFPlots: reading {../fig/fig_PerfConvNat/data/H2_COP_Qc_DR35.txt}
 )
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf_DR35' on page 32 undefined o
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf_DR35' on page 34 undefined o
 n input line 132.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf_DR35' on page 32 undefined on 
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf_DR35' on page 34 undefined on 
 input line 132.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta_DR35' on page 32 undefined o
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta_DR35' on page 34 undefined o
 n input line 132.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta_DR35' on page 32 undefined on 
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta_DR35' on page 34 undefined on 
 input line 132.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR35' on page 32 undefined o
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR35' on page 34 undefined o
 n input line 132.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR35' on page 32 undefined on 
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR35' on page 34 undefined on 
 input line 132.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR35' on page 32 undefined 
+LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR35' on page 34 undefined 
 on input line 132.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR35' on page 32 undefined on
+LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR35' on page 34 undefined on
  input line 132.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf_DR35' on page 32 undefined o
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Tf_DR35' on page 34 undefined o
 n input line 132.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf_DR35' on page 32 undefined on 
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Tf_DR35' on page 34 undefined on 
 input line 132.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta_DR35' on page 32 undefined o
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Ta_DR35' on page 34 undefined o
 n input line 132.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta_DR35' on page 32 undefined on 
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Ta_DR35' on page 34 undefined on 
 input line 132.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR35' on page 32 undefined o
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR35' on page 34 undefined o
 n input line 132.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR35' on page 32 undefined on 
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR35' on page 34 undefined on 
 input line 132.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR35' on page 32 undefined 
+LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR35' on page 34 undefined 
 on input line 132.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR35' on page 32 undefined on
+LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR35' on page 34 undefined on
  input line 132.
 
 
-LaTeX Warning: Reference `fig:SchemaGeneralTACOT' on page 32 undefined on input
+LaTeX Warning: Reference `fig:SchemaGeneralTACOT' on page 34 undefined on input
  line 140.
 
 
-LaTeX Warning: Reference `eq:NbrRayleigh' on page 32 undefined on input line 14
+LaTeX Warning: Reference `eq:NbrRayleigh' on page 34 undefined on input line 14
 0.
 
 
-LaTeX Warning: Citation 'getling_rayleigh-benard_1998' on page 33 undefined on 
+LaTeX Warning: Citation 'getling_rayleigh-benard_1998' on page 35 undefined on 
 input line 148.
 
 
-LaTeX Warning: Reference `eq:VitesseReference_Rayleigh' on page 33 undefined on
+LaTeX Warning: Reference `eq:VitesseReference_Rayleigh' on page 35 undefined on
  input line 148.
 
 
@@ -3203,67 +3273,67 @@ Overfull \hbox (84.01062pt too wide) in paragraph at lines 147--149
  []
 
 
-LaTeX Warning: Reference `fig:OrientationCore_H' on page 34 undefined on input 
+LaTeX Warning: Reference `fig:OrientationCore_H' on page 36 undefined on input 
 line 161.
 
 
-LaTeX Warning: Reference `fig:OrientationCore_V' on page 34 undefined on input 
+LaTeX Warning: Reference `fig:OrientationCore_V' on page 36 undefined on input 
 line 161.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 34 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_H1' on page 36 undefined on
  input line 161.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 34 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_H1' on page 36 undefined on i
 nput line 161.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 34 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 36 undefined on
  input line 161.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 34 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 36 undefined on i
 nput line 161.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 34 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_V1' on page 36 undefined on
  input line 161.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 34 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_V1' on page 36 undefined on i
 nput line 161.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 34 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 36 undefined on
  input line 161.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 34 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 36 undefined on i
 nput line 161.
 
 
-LaTeX Warning: Reference `chap:MesureAvecAcou' on page 34 undefined on input li
+LaTeX Warning: Reference `chap:MesureAvecAcou' on page 36 undefined on input li
 ne 161.
 
 
-LaTeX Warning: Reference `fig:HeatOnly_CHXout_H1H2' on page 34 undefined on inp
-ut line 161.
-
-
-LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_High' on page 34 undefined on in
-put line 161.
-
-
-LaTeX Warning: Reference `fig:HeatOnly_CHXout_V1V2' on page 34 undefined on inp
-ut line 161.
-
-
-LaTeX Warning: Reference `fig:Acou_CHXout_V1V2_High' on page 34 undefined on in
-put line 161.
-
-
 LaTeX Warning: Reference `fig:HeatOnly_CHXout_H1H2' on page 36 undefined on inp
+ut line 161.
+
+
+LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_High' on page 36 undefined on in
+put line 161.
+
+
+LaTeX Warning: Reference `fig:HeatOnly_CHXout_V1V2' on page 36 undefined on inp
+ut line 161.
+
+
+LaTeX Warning: Reference `fig:Acou_CHXout_V1V2_High' on page 36 undefined on in
+put line 161.
+
+
+LaTeX Warning: Reference `fig:HeatOnly_CHXout_H1H2' on page 38 undefined on inp
 ut line 176.
 
 (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
@@ -3289,19 +3359,19 @@ PGFPlots: reading {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC3_0
 beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}}
 )
 
-LaTeX Warning: Reference `fig:OrientationCore_H1' on page 36 undefined on input
+LaTeX Warning: Reference `fig:OrientationCore_H1' on page 38 undefined on input
  line 188.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 36 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_H2' on page 38 undefined on
  input line 188.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 36 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_H2' on page 38 undefined on i
 nput line 188.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_Low' on page 36 undefined on inp
+LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_Low' on page 38 undefined on inp
 ut line 188.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Low.tex
@@ -3327,7 +3397,7 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC3_0be
 g_RixLow_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_Mid' on page 37 undefined on inp
+LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_Mid' on page 39 undefined on inp
 ut line 202.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Mid.tex
@@ -3353,7 +3423,7 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC3_0be
 g_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_High' on page 37 undefined on in
+LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_High' on page 39 undefined on in
 put line 214.
 
 LaTeX Info: Symbol \textminus not provided by
@@ -3403,23 +3473,23 @@ PGFPlots: reading {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC3_0
 beg_RixOff_PhaseRIXHP-60°_OrientationV2_Qc40W_Serie1.txt}}
 )
 
-LaTeX Warning: Reference `fig:Acou_CHXout_V1V2_Low' on page 38 undefined on inp
+LaTeX Warning: Reference `fig:Acou_CHXout_V1V2_Low' on page 40 undefined on inp
 ut line 240.
 
 
-LaTeX Warning: Reference `fig:OrientationCore_V1' on page 38 undefined on input
+LaTeX Warning: Reference `fig:OrientationCore_V1' on page 40 undefined on input
  line 240.
 
 
-LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 38 undefined on
+LaTeX Warning: Hyper reference `fig:OrientationCore_V2' on page 40 undefined on
  input line 240.
 
 
-LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 38 undefined on i
+LaTeX Warning: Reference `sub@fig:OrientationCore_V2' on page 40 undefined on i
 nput line 240.
 
 
-LaTeX Warning: Reference `eq:NbrRayleigh' on page 38 undefined on input line 24
+LaTeX Warning: Reference `eq:NbrRayleigh' on page 40 undefined on input line 24
 0.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Low.tex
@@ -3445,7 +3515,7 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC3_0be
 g_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Reference `fig:Acou_CHXout_V1V2_Mid' on page 40 undefined on inp
+LaTeX Warning: Reference `fig:Acou_CHXout_V1V2_Mid' on page 42 undefined on inp
 ut line 252.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
@@ -3471,7 +3541,7 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Mid/data_TC3_0be
 g_RixMid_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Reference `fig:Acou_CHXout_V1V2_High' on page 40 undefined on in
+LaTeX Warning: Reference `fig:Acou_CHXout_V1V2_High' on page 42 undefined on in
 put line 264.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_High.tex
@@ -3517,7 +3587,7 @@ PGFPlots: reading {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC6_0
 beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc40W_Serie1.txt}}
 PGFPlots: reading {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC6_0
 beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}}
-[40
+[42
 
 \@writefile{toc}{\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble
  \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setloc
@@ -3563,19 +3633,19 @@ PGFPlots: reading {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC12_
 0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}}
 )
 
-LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Low' on page 40 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Low' on page 42 undefined on inpu
 t line 313.
 
 
-LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Low' on page 40 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Low' on page 42 undefined on inpu
 t line 313.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Low' on page 40 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Low' on page 42 undefined on inpu
 t line 315.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_Low' on page 40 undefined on inp
+LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_Low' on page 42 undefined on inp
 ut line 315.
 
 LaTeX Info: Symbol \textminus not provided by
@@ -3597,7 +3667,7 @@ LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 315.
 
-LaTeX Warning: Reference `chap:Acou_CHXout_H1H2_low' on page 40 undefined on in
+LaTeX Warning: Reference `chap:Acou_CHXout_H1H2_low' on page 42 undefined on in
 put line 315.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
@@ -3653,78 +3723,78 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC12_0b
 eg_RixLow_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Low' on page 41 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Low' on page 43 undefined o
 n input line 343.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Low' on page 41 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Low' on page 43 undefined on 
 input line 343.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Low' on page 41 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Low' on page 43 undefined 
 on input line 343.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Low' on page 41 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Low' on page 43 undefined on
  input line 343.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Low' on page 41 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Low' on page 43 undefined o
 n input line 343.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Low' on page 41 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Low' on page 43 undefined on 
 input line 343.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Low' on page 41 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Low' on page 43 undefined o
 n input line 343.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Low' on page 41 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Low' on page 43 undefined on 
 input line 343.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Low' on page 41 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Low' on page 43 undefined 
 on input line 343.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Low' on page 41 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Low' on page 43 undefined on
  input line 343.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Low' on page 41 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Low' on page 43 undefined o
 n input line 343.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Low' on page 41 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Low' on page 43 undefined on 
 input line 343.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Low' on page 42 undefined on inp
+LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Low' on page 44 undefined on inp
 ut line 356.
 
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 356.
 
-LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Low' on page 42 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Low' on page 44 undefined on inpu
 t line 367.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Mid' on page 42 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Mid' on page 44 undefined on inpu
 t line 379.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Mid' on page 42 undefined on inp
+LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Mid' on page 44 undefined on inp
 ut line 379.
 
 
-LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Mid' on page 42 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Mid' on page 44 undefined on inpu
 t line 379.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Mid' on page 43 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Mid' on page 45 undefined on inpu
 t line 381.
 
 LaTeX Info: Symbol \textminus not provided by
@@ -3740,7 +3810,7 @@ LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 381.
 
-LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_Mid' on page 43 undefined on inp
+LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_Mid' on page 45 undefined on inp
 ut line 382.
 
 LaTeX Info: Symbol \textminus not provided by
@@ -3802,55 +3872,55 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC12_0b
 eg_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 46 undefined o
 n input line 419.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 46 undefined on 
 input line 419.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 46 undefined 
 on input line 419.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 46 undefined on
  input line 419.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 46 undefined o
 n input line 419.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 46 undefined on 
 input line 419.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 46 undefined o
 n input line 419.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 46 undefined on 
 input line 419.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 46 undefined 
 on input line 419.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 46 undefined on
  input line 419.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 46 undefined o
 n input line 419.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 46 undefined on 
 input line 419.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Mid' on page 44 undefined on inp
+LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Mid' on page 46 undefined on inp
 ut line 423.
 
 LaTeX Info: Symbol \textminus not provided by
@@ -3860,19 +3930,19 @@ LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 423.
 
-LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Mid' on page 44 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Mid' on page 46 undefined on inpu
 t line 434.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_High' on page 44 undefined on inp
+LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_High' on page 46 undefined on inp
 ut line 447.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_High' on page 44 undefined on in
+LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_High' on page 46 undefined on in
 put line 447.
 
 
-LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_High' on page 44 undefined on inp
+LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_High' on page 46 undefined on inp
 ut line 447.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
@@ -3928,51 +3998,51 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2High/data_TC12_0
 beg_RixHigh_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 46 undefined 
 on input line 475.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 46 undefined on
  input line 475.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 44 undefined
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 46 undefined
  on input line 475.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 44 undefined o
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 46 undefined o
 n input line 475.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 46 undefined 
 on input line 475.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 46 undefined on
  input line 475.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 46 undefined 
 on input line 475.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 46 undefined on
  input line 475.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 44 undefined
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 46 undefined
  on input line 475.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 44 undefined o
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 46 undefined o
 n input line 475.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 46 undefined 
 on input line 475.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 46 undefined on
  input line 475.
 
 (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_V1V2.tex
@@ -4028,15 +4098,15 @@ PGFPlots: reading {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC12_
 0beg_RixOff_PhaseRIXHP-60°_OrientationV2_Qc40W_Serie1.txt}}
 )
 
-LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_Low' on page 44 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_Low' on page 46 undefined on inpu
 t line 539.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_Low' on page 44 undefined on inp
+LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_Low' on page 46 undefined on inp
 ut line 539.
 
 
-LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_Low' on page 44 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_Low' on page 46 undefined on inpu
 t line 539.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low.tex
@@ -4092,63 +4162,63 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC12_0b
 eg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Low' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Low' on page 46 undefined o
 n input line 594.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Low' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Low' on page 46 undefined on 
 input line 594.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Low' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Low' on page 46 undefined 
 on input line 594.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Low' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Low' on page 46 undefined on
  input line 594.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Low' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Low' on page 46 undefined o
 n input line 594.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Low' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Low' on page 46 undefined on 
 input line 594.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Low' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Low' on page 46 undefined o
 n input line 594.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Low' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Low' on page 46 undefined on 
 input line 594.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Low' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Low' on page 46 undefined 
 on input line 594.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Low' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Low' on page 46 undefined on
  input line 594.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Low' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Low' on page 46 undefined o
 n input line 594.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Low' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Low' on page 46 undefined on 
 input line 594.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_Mid' on page 44 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_Mid' on page 46 undefined on inpu
 t line 598.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_Mid' on page 44 undefined on inp
+LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_Mid' on page 46 undefined on inp
 ut line 598.
 
 
-LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_Mid' on page 44 undefined on inpu
+LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_Mid' on page 46 undefined on inpu
 t line 598.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
@@ -4204,63 +4274,63 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Mid/data_TC12_0b
 eg_RixMid_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Mid' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Mid' on page 46 undefined o
 n input line 652.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Mid' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Mid' on page 46 undefined on 
 input line 652.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Mid' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Mid' on page 46 undefined 
 on input line 652.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Mid' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Mid' on page 46 undefined on
  input line 652.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Mid' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Mid' on page 46 undefined o
 n input line 652.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Mid' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Mid' on page 46 undefined on 
 input line 652.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Mid' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Mid' on page 46 undefined o
 n input line 652.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Mid' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Mid' on page 46 undefined on 
 input line 652.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Mid' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Mid' on page 46 undefined 
 on input line 652.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Mid' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Mid' on page 46 undefined on
  input line 652.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Mid' on page 44 undefined o
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Mid' on page 46 undefined o
 n input line 652.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Mid' on page 44 undefined on 
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Mid' on page 46 undefined on 
 input line 652.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_High' on page 44 undefined on inp
+LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_High' on page 46 undefined on inp
 ut line 656.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_High' on page 44 undefined on in
+LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_High' on page 46 undefined on in
 put line 656.
 
 
-LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_High' on page 44 undefined on inp
+LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_High' on page 46 undefined on inp
 ut line 656.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
@@ -4316,55 +4386,55 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC12_0
 beg_RixHigh_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 46 undefined 
 on input line 711.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 46 undefined on
  input line 711.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 44 undefined
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 46 undefined
  on input line 711.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 44 undefined o
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 46 undefined o
 n input line 711.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 46 undefined 
 on input line 711.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 46 undefined on
  input line 711.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 46 undefined 
 on input line 711.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 46 undefined on
  input line 711.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 44 undefined
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 46 undefined
  on input line 711.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 44 undefined o
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 46 undefined o
 n input line 711.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 44 undefined 
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 46 undefined 
 on input line 711.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 44 undefined on
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 46 undefined on
  input line 711.
 
 
-LaTeX Warning: Reference `fig:Repetabilite_V1' on page 45 undefined on input li
+LaTeX Warning: Reference `fig:Repetabilite_V1' on page 47 undefined on input li
 ne 739.
 
 (../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1.tex
@@ -4385,55 +4455,55 @@ Chapitre V.
 ) (Perspectives.tex
 Chapitre VI.
 
-LaTeX Warning: Reference `fig:ActiveControl_ADAU1701' on page 56 undefined on i
+LaTeX Warning: Reference `fig:ActiveControl_ADAU1701' on page 58 undefined on i
 nput line 36.
 
 
-LaTeX Warning: Reference `fig:ActiveControl_Teensy41' on page 56 undefined on i
+LaTeX Warning: Reference `fig:ActiveControl_Teensy41' on page 58 undefined on i
 nput line 36.
 
-<../fig/fig_ActiveControl/ADAU1701.png, id=80, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=92, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 45.
 (pdftex.def)             Requested size: 149.87643pt x 142.26378pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=81, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=93, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
 ine 52.
 (pdftex.def)             Requested size: 194.95288pt x 142.26378pt.
 
-LaTeX Warning: Hyper reference `fig:ActiveControl_ADAU1701' on page 56 undefine
+LaTeX Warning: Hyper reference `fig:ActiveControl_ADAU1701' on page 58 undefine
 d on input line 56.
 
 
-LaTeX Warning: Reference `sub@fig:ActiveControl_ADAU1701' on page 56 undefined 
+LaTeX Warning: Reference `sub@fig:ActiveControl_ADAU1701' on page 58 undefined 
 on input line 56.
 
 
-LaTeX Warning: Hyper reference `fig:ActiveControl_Teensy41' on page 56 undefine
+LaTeX Warning: Hyper reference `fig:ActiveControl_Teensy41' on page 58 undefine
 d on input line 56.
 
 
-LaTeX Warning: Reference `sub@fig:ActiveControl_Teensy41' on page 56 undefined 
+LaTeX Warning: Reference `sub@fig:ActiveControl_Teensy41' on page 58 undefined 
 on input line 56.
 
 
-LaTeX Warning: Hyper reference `fig:ActiveControl_ADAU1701' on page 56 undefine
+LaTeX Warning: Hyper reference `fig:ActiveControl_ADAU1701' on page 58 undefine
 d on input line 56.
 
 
-LaTeX Warning: Reference `sub@fig:ActiveControl_ADAU1701' on page 56 undefined 
+LaTeX Warning: Reference `sub@fig:ActiveControl_ADAU1701' on page 58 undefined 
 on input line 56.
 
 
-LaTeX Warning: Hyper reference `fig:ActiveControl_Teensy41' on page 56 undefine
+LaTeX Warning: Hyper reference `fig:ActiveControl_Teensy41' on page 58 undefine
 d on input line 56.
 
 
-LaTeX Warning: Reference `sub@fig:ActiveControl_Teensy41' on page 56 undefined 
+LaTeX Warning: Reference `sub@fig:ActiveControl_Teensy41' on page 58 undefined 
 on input line 56.
 
 LaTeX Info: Symbol \textmu not provided by
@@ -4441,6 +4511,24 @@ LaTeX Info: Symbol \textmu not provided by
             Default family used instead on input line 60.
 ) (IndexNotations.tex
 Annexe A.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 14.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 15.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 16.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 17.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 21.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 24.
 ) (AHX.tex
 Annexe B.
 
@@ -4455,7 +4543,7 @@ LaTeX Warning: Citation 'ramadan_design_2021' on page 5 undefined on input line
  2.
 
 (../fig/fig_AHXSchema/fig_AHXSchema.tex
-<../fig/fig_AHXfromATE/AHXfromATE.png, id=82, 515.67656pt x 535.2497pt>
+<../fig/fig_AHXfromATE/AHXfromATE.png, id=94, 515.67656pt x 535.2497pt>
 File: ../fig/fig_AHXfromATE/AHXfromATE.png Graphic file (type png)
 <use ../fig/fig_AHXfromATE/AHXfromATE.png>
 Package pdftex.def Info: ../fig/fig_AHXfromATE/AHXfromATE.png  used on input li
@@ -4523,13 +4611,17 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 32.
 )) (InstrumHP.tex
 Annexe C.
-<../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png, id=83, 667.0521pt x 557.2
+
+LaTeX Warning: Reference `fig:HPPeerless_WithAcc' on page i undefined on input 
+line 12.
+
+<../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png, id=95, 667.0521pt x 557.2
 017pt>
 File: ../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png Graphic file (type pn
 g)
 <use ../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png>
 Package pdftex.def Info: ../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png  u
-sed on input line 13.
+sed on input line 18.
 (pdftex.def)             Requested size: 338.5863pt x 282.83426pt.
 ) (ParamGaz.tex
 Annexe D.
@@ -4664,7 +4756,7 @@ LaTeX Warning: Reference `eq:Porosite_Volume' on page r undefined on input line
 
 )
 
-LaTeX Warning: Empty bibliography on input line 406.
+LaTeX Warning: Empty bibliography on input line 409.
 
 
 Package longtable Warning: Table widths have changed. Rerun LaTeX.
@@ -4687,19 +4779,19 @@ Package logreq Info: Writing requests to 'external/fig_HeatOnly_CHXin_H1H20.run
 
  ) 
 Here is how much of TeX's memory you used:
- 74981 strings out of 474435
- 1913849 string characters out of 5751739
- 4126411 words of memory out of 5000000
- 95573 multiletter control sequences out of 15000+600000
- 705250 words of font info for 163 fonts, out of 8000000 for 9000
+ 75385 strings out of 474435
+ 1925164 string characters out of 5751739
+ 4138002 words of memory out of 5000000
+ 95960 multiletter control sequences out of 15000+600000
+ 705563 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,23n,93p,4581b,2823s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/
 type1/public/cm-super/sftt1200.pfb>
-Output written on external/fig_HeatOnly_CHXin_H1H20.pdf (1 page, 93339 bytes).
+Output written on external/fig_HeatOnly_CHXin_H1H20.pdf (1 page, 96494 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 

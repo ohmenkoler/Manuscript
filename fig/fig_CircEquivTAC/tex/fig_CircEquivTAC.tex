@@ -1,5 +1,5 @@
 \begin{tikzpicture}
-    \draw (0,2) node(In)[]{} to[short,i=$u$] ++(1,0) to[R=$R_\nu\ \deriv x$] ++(2,0) to[L=$L\ \deriv x$] ++(2,0) to[C,l_=$C\ \deriv x$] ++(0,-2) node[tground]{} to[open] ++(0,2) to[short] ++(2,0) to[R,l_=$\cfrac{R_\kappa}{\deriv x}$] ++(0,-2) node[tground]{} to[open] ++(0,2) to[short] ++(2,0) to[open] ++(0,-2) node[tground]{} to[isource=$gu\ \deriv x$] ++(0,2) to[short,i=$u + \deriv u$] ++(2,0) node(Out)[]{};
+    \draw (0,2) node(In)[]{} to[short,i=$u$] ++(1,0) to[R=$R_\nu\ \deriv x$] ++(2,0) to[L=$L\ \deriv x$] ++(2,0) to[C,l_=$C\ \deriv x$] ++(0,-2) node[tground]{} to[open] ++(0,2) to[short] ++(2,0) to[R,l_=$\cfrac{R_\kappa}{\deriv x}$] ++(0,-2) node[tground]{} to[open] ++(0,2) to[short] ++(2,0) to[open] ++(0,-2) node[tground]{} to[isource=$G u\ \deriv x$] ++(0,2) to[short,i=$u + \deriv u$] ++(2,0) node(Out)[]{};
     
     
     \draw[thick,-stealth] ($(In)+(0,-2)$) node(InTail)[]{} to[out=100,in=-100] node[pos=.5,left]{\shortstack{$T_0$\\$p$}} ++(0,1.9);

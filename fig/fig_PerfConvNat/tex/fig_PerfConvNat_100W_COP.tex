@@ -1,0 +1,33 @@
+\begin{tikzpicture}[every mark/.append style={mark size=5pt, line width=2pt}]
+	\def\width{.9*\textwidth};
+	\def\height{\width};
+	
+	\begin{axis}[width=\width,height=\height,
+		grid=both,minor tick num=4, 
+		grid style={line width=.1pt, draw=gray!10},
+	    major grid style={line width=.2pt,draw=gray!50},
+	    xmin=.1, xmax=3.8,
+	    ymin=2.5, ymax=6.5,
+		xlabel={$DR$ [\unit{\percent}]},
+		ylabel={$\COP$ [\unit{\percent}]},
+		legend style = {at={(.01,.99)}, anchor=north west, rounded corners, legend columns=2},
+%		legend entries={`\texttt{V1}', `\texttt{V2}', `\texttt{H1}', `\texttt{H2}', \qty{0}{\watt}, \qty{50}{\watt}, \qty{100}{\watt}, \textsc{DeltaEC}}
+	]
+	
+%	\addlegendimage{only marks, mark=square*,color=MatlabBlue}
+%	\addlegendimage{only marks, mark=square,color=MatlabBlue}
+%	\addlegendimage{only marks, mark=square*,color=MatlabOrange}
+%	\addlegendimage{only marks, mark=square,color=MatlabOrange}
+%	\addlegendimage{only marks, mark=o}
+%	\addlegendimage{only marks, mark=diamond}
+%	\addlegendimage{only marks, mark=triangle}
+%	\addlegendimage{only marks, mark=oplus}
+	
+
+	
+	\addplot[only marks, mark=diamond*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_COP_DR_Qc100.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=diamond*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/V2_COP_DR_Qc100.txt};%\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=diamond*,color=MatlabYellow] file {../fig/fig_PerfConvNat/data/H1_COP_DR_Qc100.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=diamond*,color=MatlabPurple] file {../fig/fig_PerfConvNat/data/H2_COP_DR_Qc100.txt};%\addlegendentry{`\texttt{H2}'};
+	\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,21 @@
+\begin{tikzpicture}[every mark/.append style={mark size=5pt, line width=2pt}]
+	\def\width{.9*\textwidth};
+	\def\height{\width};
+	
+	\begin{axis}[width=\width,height=\height,
+		grid=both,minor tick num=4, 
+		grid style={line width=.1pt, draw=gray!10},
+	    major grid style={line width=.2pt,draw=gray!50},
+	    xmin=.1,xmax=3.8,
+		xlabel={$DR$ [\unit{\percent}]},
+		ylabel={$T_a$ [\unit{\kelvin}]},
+		legend style = {at={(.5,1.05)}, anchor=south, rounded corners, legend columns=2}
+	]
+
+	
+	\addplot[only marks, mark=diamond*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Ta_DR_Qc100.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=diamond*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/V2_Ta_DR_Qc100.txt};%\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=diamond*,color=MatlabYellow] file {../fig/fig_PerfConvNat/data/H1_Ta_DR_Qc100.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=diamond*,color=MatlabPurple] file {../fig/fig_PerfConvNat/data/H2_Ta_DR_Qc100.txt};%\addlegendentry{`\texttt{H2}'};
+	\end{axis}
+\end{tikzpicture}

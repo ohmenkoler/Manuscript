@@ -1,0 +1,41 @@
+\begin{tikzpicture}[every mark/.append style={mark size=5pt, line width=2pt}]
+	\def\width{.9*\textwidth};
+	\def\height{\width};
+	
+	\begin{axis}[width=\width,height=\height,
+		grid=both,minor tick num=4, 
+		grid style={line width=.1pt, draw=gray!10},
+	    major grid style={line width=.2pt,draw=gray!50},
+	    xmin=.1,xmax=3.8,
+		xlabel={$DR$ [\unit{\percent}]},
+		ylabel={$T_f$ [\unit{\kelvin}]},
+		legend style = {at={(0,1.02)}, anchor=south west, rounded corners, legend columns=4,},
+		legend cell align={left},
+		legend entries={`\texttt{V1}', `\texttt{V2}',
+		`\texttt{H1}', `\texttt{H2}',
+		{Expé.}, {Simu.}
+		}
+	]
+	
+	\addlegendimage{only marks, mark=*, color=MatlabBlue}
+	\addlegendimage{only marks, mark=*, color=MatlabOrange}
+	
+	\addlegendimage{only marks, mark=*, color=MatlabYellow}
+	\addlegendimage{only marks, mark=*, color=MatlabPurple}
+	
+	\addlegendimage{only marks, mark=square*}
+	\addlegendimage{only marks, mark=square}
+
+%	\addlegendimage{only marks, mark=o}	
+%	\addlegendimage{only marks, mark=triangle}
+%	\addlegendimage{only marks, mark=diamond}
+
+	
+	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Tf_DR_Qc0.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/V2_Tf_DR_Qc0.txt};%\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=*,color=MatlabYellow] file {../fig/fig_PerfConvNat/data/H1_Tf_DR_Qc0.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=*,color=MatlabPurple] file {../fig/fig_PerfConvNat/data/H2_Tf_DR_Qc0.txt};%\addlegendentry{`\texttt{H2}'};
+	
+
+	\end{axis}
+\end{tikzpicture}

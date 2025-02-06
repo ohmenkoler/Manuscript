@@ -1,38 +1,54 @@
 \begin{tikzpicture}
     \def\width{.9*\textwidth};
-    \def\height{.5*\width};
+    \def\height{.45*\width};
     \def\spx{.25cm};
     \def\spy{1.25cm};
     \def\legx{.5cm};
     \def\legy{\legx};
     \def\prop{.45};
     \def\xcursor{47};
-    \def\ycursorV{9.112/100000};
-    \def\ycursorK{1.4452/10000};
+    \def\ycursorV{9.112e-5};
+    \def\ycursorK{1.4452e-4};
+    \def\rh{2.81e-5};
     
     \begin{axis}[name=dKdV,width={\width},height={\height},
-    grid=both,minor tick num=4, 
+    grid=both, minor tick num=10, 
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
     xlabel={Fréquence $f$ [\unit{\Hz}]},
     ylabel={\'Epaisseurs de couches limites $\delta_{\kappa,\nu}$ [\unit{\m}]},
     xmin=0,xmax=75,ymin=0,ymax=.5/1000,
-    xtick={0,25,47,50,75,100},
-    ytick={0,2.81/100000,9.1120/100000,1.4452/10000,
-    	2.5/10000,5/10000,1/1000},
+    xtick={0,25,50,75,100},
+    extra x ticks={47},
+    extra x tick style={
+        grid=major,
+        xticklabel={\num{47}},
+        xticklabel style={yshift=0, anchor=north}
+        },
+    extra y ticks={\rh},
+    extra y tick style={
+        grid=major,
+        yticklabel={$r_h$},
+        yticklabel style={yshift=1mm, anchor=east}
+        },
+    ytick={0,1e-4,...,10e-4},
+%    ytick={0,2.81/100000,9.1120/100000,1.4452/10000,
+%    	2.5/10000,5/10000,1/1000},
+    scaled y ticks = false,
     domain=0:100,
     legend cell align={left},
-    legend style = {at={(.95,.95)},anchor = north east,rounded corners}
+    legend style = {at={(.98,.98)},anchor = north east,rounded corners}
     ]
         \addplot[solid,ultra thick,draw=MatlabBlue] file {../fig/fig_dKdV/data/data_dK.txt};
         \addplot[solid,ultra thick,draw=MatlabOrange] file {../fig/fig_dKdV/data/data_dV.txt};
-        \filldraw[MatlabBlue] (\xcursor,\ycursorK) circle (2pt);
-        \filldraw[MatlabOrange] (\xcursor,\ycursorV) circle (2pt);
-        \draw[dashed,black!50] (\xcursor,0) -- (\xcursor,\ycursorK);
-        \draw[dashed,MatlabBlue] (\xcursor,\ycursorK) -- (0,\ycursorK) node[left]{\num{1.4452e-4}};
-        \draw[dashed,MatlabOrange] (\xcursor,\ycursorV) -- (0,\ycursorV) node[left]{\num{9.1120e-5}};
+        \filldraw[MatlabBlue] (\xcursor,\ycursorK) circle (2pt) node[above right]{$\delta_\kappa=\qty{\ycursorK}{\meter}$};
+        \filldraw[MatlabOrange] (\xcursor,\ycursorV) circle (2pt) node[below left]{$\delta_\nu=\qty{\ycursorV}{\meter}$};
+%        \draw[dashed,black!50] (\xcursor,0) -- (\xcursor,\ycursorK);
+%        \draw[dashed,MatlabBlue] (\xcursor,\ycursorK) -- (0,\ycursorK) node[left]{\num{1.4452e-4}};
+%        \draw[dashed,MatlabOrange] (\xcursor,\ycursorV) -- (0,\ycursorV) node[left]{\num{9.1120e-5}};
 %         \draw[dashed,black!50] ({axis cs:\xcursor,0}|-{rel axis cs:0,0}) -- ({axis cs:\xcursor,0}|-{rel axis cs:0,\ycursorK});
-       \addplot[loosely dashed,draw=black] {2.81/100000};
+       \addplot[loosely dashed,draw=black, ultra thick] {\rh};
+       \draw(0,\rh) node[above right]{\qty{\rh}{\meter}};
         
         \legend{$\delta_\kappa$ \\ $\delta_\nu$ \\ $r_h$ \\};
     \end{axis}

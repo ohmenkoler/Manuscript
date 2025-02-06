@@ -48,7 +48,7 @@ La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet 
     \external{fig_SchemaGeneralTACOT}
 %    \externalremake
     \input{../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex}
-    \caption{Schéma général du réfrigérateur \textsc{Tacot}.}
+    \caption{Schéma général du réfrigérateur \textsc{Tacot}. Le noyau thermoacoustique et le cône d'adaptation d'impédance sont mis en évidence}
     \label{fig:SchemaGeneralTACOT}
 \end{figure}
 
@@ -57,42 +57,54 @@ Tout comme la machine qui le contient, le noyau adopte une géométrie cylindriq
 
 \begin{figure}[!ht]
     \centering
-	\begin{subfigure}{.3\textwidth}
+	\begin{subfigure}{.32\textwidth}
 		\centering
 		\external{fig_TacotPhotos_AHX_dansCarter}
-		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_TacotPhotos/AHX_dansCarter.JPG}};}
+%		\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_TacotPhotos/AHX_dansCarter.JPG}};}
 		\caption{}
 		\label{fig:TacotPhotos_AHX}
 	\end{subfigure}		
-	\begin{subfigure}{.3\textwidth}
+	\begin{subfigure}{.32\textwidth}
 		\centering
 		\external{fig_TacotPhotos_Regenerateur}
-		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_TacotPhotos/Regenerateur.JPG}};}
+%		\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_TacotPhotos/Regenerateur.JPG}};}
 		\caption{}
 		\label{fig:TacotPhotos_Regen}
 	\end{subfigure}	
-	\begin{subfigure}{.3\textwidth}
+	\begin{subfigure}{.32\textwidth}
 		\centering
 		\external{fig_TacotPhotos_CHX_dansCarter}
-		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_TacotPhotos/CHX_dansCarter.JPG}};}
+%		\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_TacotPhotos/CHX_dansCarter.JPG}};}
 		\caption{}
 		\label{fig:TacotPhotos_CHX}
 	\end{subfigure}	    
-    \caption{Composition du noyau thermoacoustique. \subref{fig:TacotPhotos_AHX} \'Echangeur ambiant, \subref{fig:TacotPhotos_Regen} régénérateur, et \subref{fig:TacotPhotos_CHX} échangeur froid.}
+    \caption{Composition du noyau thermoacoustique : \subref{fig:TacotPhotos_AHX} \'Echangeur ambiant, \subref{fig:TacotPhotos_Regen} régénérateur, et \subref{fig:TacotPhotos_CHX} échangeur froid.}
     \label{fig:TacotPhotos}
 \end{figure}
 
 
 Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, \echaf{J'arrive pas à relire} avec pour sens positive choisie dans le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second.\medskip
 
-\paragraph*{Régénérateur} Le régénérateur est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre la porosité $\Phi~=~\qty{68}{\percent}$. Un noyau de cette porosité doit être comparé avec le noyau support des expériences dont les résultats sont publiés par Ramadan \textit{et al.} et dont la porosité vaut \qty{75}{\percent} \cite{ramadan_design_2021}. La quantité de tissus à utiliser pour atteindre la porosité souhaitée s'obtient en utilisant la relation
+\paragraph*{Régénérateur} Le régénérateur est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre la porosité $\Phi=\qty{68}{\percent}$. Un noyau de cette porosité doit être comparé avec le noyau support des expériences dont les résultats sont publiés par Ramadan \textit{et al.} et dont la porosité vaut $\Phi=\qty{75}{\percent}$ \cite{ramadan_design_2021}. La porosité est définie par la relation
 
 \begin{align}
 	\Phi &= \frac{V_{\sf gaz}}{V_{\sf tot}}, \label{eq:Porosite_Volume}%\\
-%	&= \frac{V_{\sf tot}-V_{\sf metal}}{V_{\sf tot}} \nonumber\\
-%	&= 1 - \frac{m_{\sf metal}}{m_{\sf tot}} \label{eq:Porosite_Masse}
+%		 &= \frac{V_{\sf tot}-V_{\sf metal}}{V_{\sf tot}} \nonumber\\
+%		 &= 1 - \frac{m_{\sf metal}}{m_{\sf tot}} \label{eq:Porosite_Masse}
 \end{align}
-où $V_{\sf gaz}$ représente le volume occupé par le gaz dans le régénérateur, et $V_{\sf tot}$ le volume total du régénérateur. Le milieu ainsi constitué est poreux et tortueux car l'orientation des disques de tissus est aléatoire, et le rayon hydraulique est défini par  %\echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
+où $V_{\sf gaz}$ représente le volume occupé par le gaz dans le régénérateur, et $V_{\sf tot}$ le volume total du régénérateur. La masse de tissus $m_{\sf tissus}$ à utiliser pour atteindre la porosité souhaitée est déduite de cette relation et s'écrit 
+
+\begin{align}
+%		 &= \frac{V_{\sf tot}-V_{\sf tissus}}{V_{\sf tot}} \nonumber\\
+%	\Phi &= 1 - \frac{m_{\sf tissus}}{m_{\sf tot}}. \label{eq:Porosite_Masse} \\
+	m_{\sf tissus} &= (1-\Phi) m_{\sf tot},
+\end{align}
+où $m_{\sf tot}$ représente la masse d'un cylindre de mêmes dimensions que le régénérateur, intégralement constitué du même acier inoxydable que les tissus, soit de l'acier 316L.
+
+Le milieu ainsi constitué est poreux et tortueux car l'orientation des disques de tissus est aléatoire, et le rayon hydraulique est défini par  %\echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
 
 \begin{equation}
 	r_h = d_w\frac{\Phi}{4(1-\Phi)},

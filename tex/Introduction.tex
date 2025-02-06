@@ -322,10 +322,10 @@ Comme les autres systèmes électro-mécano-acoustique présentés auparavant, l
     \label{fig:CircEquivTAC}
 \end{figure}
 
-Il reste à introduire la quantité complexe $g$, défini par 
+Il reste à introduire la quantité complexe $G$, défini par 
 
 \begin{equation}
-    g = \frac{f_\kappa - f_\nu}{(1-f_\nu)(1-\mathrm{Pr})}\frac{1}{T_m}\frac{\deriv T_m}{\deriv x},
+    G = \frac{f_\kappa - f_\nu}{(1-f_\nu)(1-\mathrm{Pr})}\frac{1}{T_m}\frac{\deriv T_m}{\deriv x},
     \label{eq:GainNoyauTA_Swift}
 \end{equation}
 et qui représente le gain ou l'atténuation du débit acoustique \cite{swift_thermoacoustics_2017}. Sa dépendance au gradient de température est surtout le rend important pour les moteurs thermoacoustiques principalement, mais il est impossible de le négliger dans les réfrigérateurs même si la différence de température entre les extrémités est moindre.
@@ -334,36 +334,9 @@ et qui représente le gain ou l'atténuation du débit acoustique \cite{swift_th
 
 \subsection{Matrices de transfert}
 \subsubsection{En général}
-Pour un tube de section $S$ et de longueur $L$ et dans le cas d'une propagation acoustique unidimensionelle telle que représenté sur la figure~\ref{fig:WavesInDuctPiece}, la relation entre pressions acoustiques et débits à chaque extrémité du tube s'obtient avec une matrice de transfert d'un quadripôle équivalent définie par  
+Malgré la possibilité de modéliser le circuit acoustique au sein d'une machine thermoacoustique avec des circuits électriques équivalents, la propagation dans le noyau nécessite l'usage d'un modèle un peu plus avancé. En effet, le comportement des machines thermoacoustiques peut assez simplement être prédit en faisant usage de la théorie linéaire \cite{rott_thermoacoustics_1980, swift_thermoacoustics_2017}. Une des  hypothèses de ces modèles concerne la propagation d'ondes unidimensionnelles au c\oe{}ur de celles-ci, et donc la possibilité de représenter le noyau par un ensemble de matrices de transfert.
 
-%\textcolor{red}{Retire l'eq \eqref{eq:TMatrixABCD}?}
-%\begin{equation}
-%    \begin{pmatrix}
-%        p_s\\
-%        u_s
-%    \end{pmatrix}=\begin{bmatrix}
-%        A & B\\
-%        C & D
-%    \end{bmatrix}\begin{pmatrix}
-%        p_e\\
-%        u_e
-%    \end{pmatrix}
-%    \label{eq:TMatrixABCD}
-%\end{equation}
-
-%\begin{equation}
-%    \begin{pmatrix}
-%        p_s\\
-%        u_s
-%    \end{pmatrix}=\begin{bmatrix}
-%        \cos(kL) & - i Z_c \sin(kL)\\
-%        - i \dfrac{\sin(kL)}{Z_c} & \cos(kL)
-%    \end{bmatrix}\begin{pmatrix}
-%        p_e\\
-%        u_e
-%    \end{pmatrix}\quad,
-%    \label{eq:TMatrixCosSin}
-%\end{equation}
+Ces matrices de transfert relient les pression et débit acoustiques de part et d'autre d'un organe d'un circuit acoustique assimilé à un quadripôle équivalent, et se présente sous la forme
 
 \begin{equation}
     \begin{pmatrix}
@@ -375,10 +348,26 @@ Pour un tube de section $S$ et de longueur $L$ et dans le cas d'une propagation 
     \end{bmatrix}\begin{pmatrix}
         p_e\\
         u_e
-    \end{pmatrix},
+    \end{pmatrix}.
     \label{eq:TMatrix_TppTuu}
 \end{equation}
-où $T_{pp}=T_{uu}=\cos(k_x L)$, $T_{pu}=-i Z_c \sin(k_x L)$ et $T_{up}=-\frac{i}{Z_c}\sin(k_x L)$ en adoptant la convention temporelle $e^{+i\omega t}$ et une orientation anti-symétrique du quadripôle. Ici, $k_x = \frac{2\pi}{\lambda_x}$ est le nombre d'onde sans pertes suivant la direction $\mathbf e_x$, et $Z_c = \frac{\rho_0 c_0}{S}$ l'impédance caractéristique du milieu de propagation. 
+
+Les coefficients dépendent de l'organe en question : par exemple, dans le cas d'une portion de tube de section $S$ tel que représenté sur la figure~\ref{fig:WavesInDuctPiece}, l'équation~\eqref{eq:TMatrix_TppTuu} se réecrit entre les points en $x=x_1$ et $x=x_2$ comme
+
+\begin{equation}
+    \begin{pmatrix}
+        p_s\\
+        u_s
+    \end{pmatrix}=\begin{bmatrix}
+        \cos\big(k(x_2-x_1)\big) & - i Z_c \sin\big(k(x_2-x_1)\big)\\
+        - i \dfrac{1}{Z_c} \sin\big(k(x_2-x_1)\big) & \cos\big(k(x_2-x_1)\big)
+    \end{bmatrix}\begin{pmatrix}
+        p_e\\
+        u_e
+    \end{pmatrix},
+    \label{eq:TMatrixCosSin}
+\end{equation}
+en adoptant la convention temporelle $e^{+i\omega t}$ et une orientation anti-symétrique du quadripôle. Ici, $k_x = \frac{2\pi}{\lambda_x}$ est le nombre d'onde sans pertes suivant la direction $\mathbf e_x$, et $Z_c = \frac{\rho_0 c_0}{S}$ l'impédance caractéristique du milieu de propagation. 
 
 \begin{figure}[!ht]
     \centering

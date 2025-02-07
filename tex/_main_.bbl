@@ -2268,6 +2268,64 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931019338827
       \endverb
     \endentry
+    \entry{baltean_gravity_2025}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1bbdddda6ebdb236ef7fbd41444e8168}{%
+           family={Baltean-Carlès},
+           familyi={B\bibinithyphendelim C\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6d7d8f91b45a2ed26d7346ec4424b560}{%
+           family={Fraigneau},
+           familyi={F\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2cf4287e8d5efc5d68b99dc937387c9c}{%
+           family={Weisman},
+           familyi={W\bibinitperiod},
+           given={Catherine},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{223036f06b1e460496e698bc929f89b0}
+      \strng{fullhash}{51e2606dcd972d29b413863308a30dc9}
+      \strng{bibnamehash}{51e2606dcd972d29b413863308a30dc9}
+      \strng{authorbibnamehash}{51e2606dcd972d29b413863308a30dc9}
+      \strng{authornamehash}{223036f06b1e460496e698bc929f89b0}
+      \strng{authorfullhash}{51e2606dcd972d29b413863308a30dc9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A numerical study of the thermoacoustic heat pumping effect inside a stack of parallel solid plates placed in a compact cavity is undertaken, for the purpose of determining how gravity modifies the temperature and flow fields and therefore the performance of the thermoacoustic energy conversion. To address the gravity effects, a configuration with at least two dimensions is required, thus enlarging the one-dimensional models commonly used in the field of thermoacoustics. The numerical model is based on the low Mach-number approximation of compressible Navier-Stokes equations coupled with flow rate inlets in order to account for the acoustic sources. The influence of gravity is highlighted and identified as a buoyancy effect driven by horizontal temperature gradients inside the stack and more generally inside the cavity. Gravity effects on thermoacoustic heat pumping are quantified when inclining the device and increasing the input acoustic power. These effects induce a decrease in the coefficient of performance, which is more noticeable when the drive ratio is smaller and when the gravity force is perpendicular to the plates.}
+      \field{day}{1}
+      \field{issn}{0001-4966, 1520-8524}
+      \field{journaltitle}{The Journal of the Acoustical Society of America}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Gravity effects in a compact thermoacoustic cavity}
+      \field{urlday}{7}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{volume}{157}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{833\bibrangedash 844}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1121/10.0035581
+      \endverb
+      \verb{file}
+      \verb Baltean-Carlès et al. - 2025 - Gravity effects in a compact thermoacoustic cavity.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\U8HZJPEQ\\Baltean-Carlès et al. - 2025 - Gravity effects in a compact thermoacoustic cavity.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/jasa/article/157/2/833/3334199/Gravity-effects-in-a-compact-thermoacoustic-cavity
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/jasa/article/157/2/833/3334199/Gravity-effects-in-a-compact-thermoacoustic-cavity
+      \endverb
+    \endentry
     \entry{ANR_thermo-acoustic_2019}{online}{}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
@@ -2541,8 +2599,8 @@
       \strng{authorbibnamehash}{66407743e38be8f6dc9647f4acd49a1f}
       \strng{authornamehash}{66407743e38be8f6dc9647f4acd49a1f}
       \strng{authorfullhash}{0504800c132fd5e9fa13a79e89acd379}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The linear theory used to calculate the thermal quantities inside the stack in the classical thermoacoustic refrigerators always overestimates those measured. The causes of these discrepancies have to be found in the complex processes of thermal exchanges. The analytical study of the transient response should provide an interpretation of these complex processes. This present paper provides such analytical modelling. This modelling remains within the framework of the classical linear theory. It includes the effects of the thermoacoustic heat ﬂux carried along the stack, the conductive heat ﬂux returning in the solid walls of the stack and through the ﬂuid inside the stack, the transverse heat conduction in the stack and the heat leakages through the duct walls, the heat generated by viscous losses in the stack, the heat generated by vorticity at the ends of the stack, and the heat transfer through both ends of the stack. A modal analytical solution for the temperature proﬁle is proposed, assuming the usual approximations in such thermal problems to avoid intricate calculations and expressions. The theoretical transient response of a thermoacoustic refrigerator is compared with experimental data. A good qualitative agreement is obtained between analytical and experimental results after ﬁtting empirical coefﬁcients.}

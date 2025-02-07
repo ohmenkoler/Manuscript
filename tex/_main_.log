@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  6 FEB 2025 22:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  7 FEB 2025 14:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1888,17 +1888,13 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ===== Image 'external/fig_AnalogiesElectroac3' is up-to-date. ======
 ===== Image 'external/fig_AnalogiesElectroac4' is up-to-date. ======
 ===== Image 'external/fig_AnalogiesElectroac5' is up-to-date. ======
-===== Image 'external/fig_AnalogiesElectroac6' is up-to-date. ======
-===== Image 'external/fig_AnalogiesElectroac7' is up-to-date. ======
-===== Image 'external/fig_AnalogiesElectroac8' is up-to-date. ======
 (../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex
 ===== Image 'external/fig_CircEquivTAC0' is up-to-date. ======
 ) [6 <./external/fig_AnalogiesElectroac0.pdf> <./external/fig_AnalogiesElectroa
 c1.pdf> <./external/fig_AnalogiesElectroac2.pdf> <./external/fig_AnalogiesElect
 roac3.pdf> <./external/fig_AnalogiesElectroac4.pdf> <./external/fig_AnalogiesEl
-ectroac5.pdf> <./external/fig_AnalogiesElectroac6.pdf> <./external/fig_Analogie
-sElectroac7.pdf> <./external/fig_AnalogiesElectroac8.pdf> <./external/fig_CircE
-quivTAC0.pdf>] (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
+ectroac5.pdf> <./external/fig_CircEquivTAC0.pdf>]
+(../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 ===== Image 'external/fig_WavesInDuctPiece0' is up-to-date. ======
 ) [7 <./external/fig_WavesInDuctPiece0.pdf>]) (DispositifExpe.tex [8]
 Chapitre II.
@@ -2222,14 +2218,14 @@ Chapitre VI.
 LaTeX Info: Symbol \textmu not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 60.
-) [58
+[58
 
  <./external/fig_ActiveControl_ADAU17010.pdf> <./external/fig_ActiveControl_Tee
 nsy410.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_ActiveControl_Teensy410.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->] [59] (IndexNotations.tex
+>]) [59] (IndexNotations.tex
 Annexe A.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -2573,25 +2569,27 @@ Annexe F.
 ] [1
 
 
-] [2] [3] [4] (_main_.aux)
+] [2] [3] [4] (Abstract.tex) [5
+
+] (_main_.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 5C53D77D5B2D1E8132953085CE1A8976;19952.
+(rerunfilecheck)             Checksum: D30AED2681C8C9DE88AB402C95474B7B;20336.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 73086 strings out of 474435
- 1840323 string characters out of 5751739
- 2998209 words of memory out of 5000000
- 93705 multiletter control sequences out of 15000+600000
+ 73379 strings out of 474435
+ 1849288 string characters out of 5751739
+ 2998470 words of memory out of 5000000
+ 93994 multiletter control sequences out of 15000+600000
  698991 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,90p,4547b,2772s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,19n,90p,4547b,2809s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
 gram Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Files/MiKTeX
 /fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/type1/now
@@ -2601,9 +2599,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (91 pages, 26224699 bytes).
+Output written on _main_.pdf (92 pages, 26223363 bytes).
 PDF statistics:
- 3526 PDF objects out of 3580 (max. 8388607)
- 387 named destinations out of 1000 (max. 500000)
- 1353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3531 PDF objects out of 3580 (max. 8388607)
+ 391 named destinations out of 1000 (max. 500000)
+ 1354 words of extra memory for PDF output out of 10000 (max. 10000000)
 

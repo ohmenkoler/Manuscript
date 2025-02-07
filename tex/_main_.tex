@@ -246,7 +246,7 @@
 		inductors/width=.6,
 		inductors/coils=4,
 		resistors/scale=.75}
-	
+	\newcommand{\myctikz}[1]{\begin{circuitikz}#1\end{circuitikz}}
 %---------------------------------------------------------------------%
 %---------------------------------------------------------------------%
 % PGFPLOTS PACKAGES
@@ -409,8 +409,10 @@ Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
 \setcounter{biburlucpenalty}{8000}
 \printbibliography[title={Bibliographie},heading=bibintoc]
 
+\clearpage
+\leavevmode
 
-
+\input{Abstract}
 
 %---------------------------------------------------------------------%
 \end{document}

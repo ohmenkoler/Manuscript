@@ -119,6 +119,7 @@ avec $h$ le coefficient d'échange convectif à déterminer.\bigskip
 Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTemporel} doivent également être évalués par ces équations.
 
 \section{\'Elements finis}\label{chap:FEM}
+\subsection{Géométrie}
 Le modèle 2D simplifié d'une cavité différentiellement chauffée présentée sur la figure~\ref{fig:SimuConvNat2D} ne prend pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis Comsol Multiphysics grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.
 
 
@@ -137,11 +138,23 @@ Premièrement, un flux de chaleur est retiré à la paroi en $x=0$, afin de repr
 
 Ensuite, la conduction dans l'acier inoxydable composant l'empilement de tissus métalliques et l'enceinte qui les contient, pour $x>0$ est modélisée en utilisant deux valeur de conductivité thermique, pour chacun de ces domaines. La conductivité du domaine représentant le régénérateur est considérée dix fois plus faible que celle du même matériau plein \cite{swift_thermoacoustics_2017} \echaf{prendre 79\% sinon ?}. Cette conduction transverse d'une part et meilleure dans l'enceinte du régénérateur d'autre part, doit causer des écarts axisymétrique de température selon la direction transverse du noyau $\mathbf e_r$, entre son centre et sa périphérie.\smallskip
 
-Enfin, la convection est modélisée dans la cavité d'adaptation d'impédance. À titre d'exemple, dans le cas de l'orientation `\texttt{H1}', l'axisymétrie de la distribution de température doit empêchée par ce phénomène.\medskip
+Enfin, la convection est modélisée dans la cavité d'adaptation d'impédance. À titre d'exemple, dans le cas de l'orientation `\texttt{H1}', l'axisymétrie de la distribution de température doit empêchée par ce phénomène \echaf{hein ?}.\medskip
 
 Ces effets sont supposés se superposer selon le schéma~\ref{fig:SuperpositionComsol}, d'après les observations faites par Ramadan \textit{et al.} \cite{ramadan_design_2021}. Dans ce cas, le \textsc{Tacot} est positionné dans l'orientation `\texttt{H1}'. Les autres orientations doivent présenter d'autres résultats, car la convection naturelle ne se manifeste pas de la même manière dans le cas d'une configuration de Rayleigh-Bénard ou \echaf{une autre}
 
+\medskip
+La géométrie présentée dans la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie} est simplifiée pour alléger les calculs. En effet, les effets considérés ici permettent de dire que le système est symétrique par rapport au plan vertical pour les orientations `\texttt{H1}' et `\texttt{H2}', et axisymétrique dans les configurations `\texttt{V1}' et `\texttt{V2}'. 
 
+Ainsi, la géométrie considérée est toujours en trois dimensions pour les orientations horizontales, mais réduite à un quart du total. L'usage de conditions aux frontières symétriques sur les parois \echaf{correspondantes/appropriées} permettent cette simplification. Dans le cas des orientations verticales, la géométrie conservée est une version en deux dimensions, en utilisant une condition d'axisymétrie sur les frontières au centre du noyau.
+
+\bigskip \echaf{ajouter 2 figures pour les géométries}
+
+\subsection{Matériaux composant les domaines}
+Les trois domaines formant la géométrie sont modélisé par des matériaux similaires aux conditions expérimentales. 
+
+Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et le cône d'adaptation d'impédance en hélium.
+
+\subsection{Modèles physiques utilisés}
 \begin{figure}[!ht]
     \centering
     \external{fig_SuperpositionComsol}
@@ -151,17 +164,16 @@ Ces effets sont supposés se superposer selon le schéma~\ref{fig:SuperpositionC
     \label{fig:SuperpositionComsol}
 \end{figure}
 
-\subsection{Modèles physiques utilisés}
-\subsubsection{Orientations horizontales}
-La géométrie présentée dans la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie} est incluse dans la physique \texttt{Heat transfer in Solids and Fluids}. Les domaines correspondant au régénérateur et à son enceinte sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cette physique permet un couplage entre les trois domaines, en particulier entre les domaines fluides et solides. Cependant, la gravité et la convection naturelle ne sont pas pris en compte dans le modèle fluide, et il est nécessaire d'ajouter deux modèles à ce domaine concerné. Les physiques \texttt{laminar flow} et \texttt{Heat transfer in fluids}, couplé par la multiphysique \texttt{Nonisothermal flow} permettent cette modélisation plus avancée.
+\subsubsection{\'Etape 1 : absence de matériau poreux}
+En premier lieu, les phénomènes physiques considérés sont choisis de sorte à conserver un modèle simple. Pour cette raison, seuls des volumes  de solides pleins et de gaz sont considérés dans le modèle complet. Ces domaines sont couplés, et l'interface physique \texttt{Heat transfer in Solids and Fluids (ht)} est appliqué à tous les volumes. Les domaines correspondant au régénérateur et à son enceinte et sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cependant, ce modèle ne prend pas en compte de simulation de mécanique des fluides, et pour prendre la gravité et le mouvement du fluide causé par la convection naturelle en compte dans le modèle fluide, et il est nécessaire d'ajouter un modèle d'écoulement \texttt{laminar flow (spf)}. Couplé par la multiphysique \texttt{Nonisothermal flow (intf)} au modèle thermique, le modèle des transferts thermiques dans le noyau est possible.   
 
-\subsubsection{Orientations verticales}
+\subsubsection{\'Etape 2 : ajout d'un modèle de matériau poreux}
 \echaf{vertical Rayleigh Bénard requiert de virer la multiphysique, et d'ajouter une source volumique -> utiliser nombre de rayleigh + cf ppt sur le site de comsol}
 
 \subsection{Conditions aux frontières}
 Toutes les parois sont considérées adiabatiques. Toutes ? Non, il reste encore des parois dont les conditions thermiques diffèrent. 
 
-\subsection{Zones d'intérêt}
+\subsection{Résultats dans les zones d'intérêt}
 \subsubsection{Volume d'adaptation d'impédance}
 
 \subsubsection{Régénérateur}

@@ -39,6 +39,28 @@ Dans cet article, il est montré qu'à ces fréquence et déphasage inter-source
 
 Cependant, les résultats obtenus avant le démarrage de cette thèse montrent des écarts avec les prédictions de la théorie linéaire.\echaf{ajouter figures des écarts mesures-modèle DeltaEC}
 
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_ATE_ProfilsAX_5mm}
+%		\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_Litterature/ATE_ProfilsAX_5mm.png}};}
+		\caption{}
+		\label{fig:ATE_ProfilsAX_5mm}
+	\end{subfigure}		
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_ATE_ProfilsCHX_5mm}
+%		\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_Litterature/ATE_ProfilsCHX_5mm.png}};}
+		\caption{}
+		\label{fig:ATE_ProfilsCHX_5mm}
+	\end{subfigure}	    
+    \caption{\'Ecarts entre les prédictions de la théorie linéaire de la thermoacoustique et les résultats obtenus avec le réfrigérateur \textsc{Tacot} \cite{ramadan_design_2021}.}
+    \label{fig:ATE_Profils_5mm}
+\end{figure}
+
 \subsection{Géométrie du réfrigérateur \textsc{Tacot}}
 \subsubsection{Cavité thermoacoustique}
 La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont l'une des principales est la compacité. Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux (tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}), les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale usuellement utilisée en suivant les travaux de Poignand \textit{et al.} \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension, tel que réalisé dans les travaux de Poese \textit{et al.} \cite{poese_thermoacoustic_2004}. En plus de permettre une diminution du volume de la machine, utiliser une source secondaire offre plus de flexibilité qu'un résonateur sur la relation entre pression acoustique et vitesse particulaire, et facilite en particulier le ciblage du déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique. Un schéma général présente la géométrie de la pompe à chaleur sur la figure~\ref{fig:SchemaGeneralTACOT}, adapté de Ramadan \textit{et al.} \cite{ramadan_design_2021}. 
@@ -86,7 +108,7 @@ Tout comme la machine qui le contient, le noyau adopte une géométrie cylindriq
 \end{figure}
 
 
-Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, \echaf{J'arrive pas à relire} avec pour sens positive choisie dans le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second.\medskip
+Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, \echaf{J'arrive pas à relire} avec pour sens positif choisi le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second.\medskip
 
 \paragraph*{Régénérateur} Le régénérateur est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre la porosité $\Phi=\qty{68}{\percent}$. Un noyau de cette porosité doit être comparé avec le noyau support des expériences dont les résultats sont publiés par Ramadan \textit{et al.} et dont la porosité vaut $\Phi=\qty{75}{\percent}$ \cite{ramadan_design_2021}. La porosité est définie par la relation
 

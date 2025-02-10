@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  9 FEB 2025 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  10 FEB 2025 16:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1904,49 +1904,82 @@ Chapitre II.
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 36.
- [10
+\openout5 = `external/fig_ATE_ProfilsAX_5mm0.md5'.
 
-{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-(../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_ATE_ProfilsAX_5mm0" "\def
+\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_ATE_ProfilsAX_5mm0" "\def\tikzexternalrealjob{_main_}\input{_mai
+n_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
+\openout5 = `external/fig_ATE_ProfilsCHX_5mm0.md5'.
+
+\openout5 = `_main_.auxlock'.
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_ATE_ProfilsCHX_5mm0" "\de
+f\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_ATE_ProfilsCHX_5mm0" "\def\tikzexternalrealjob{_main_}\input{_ma
+in_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
+[10
+
+{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./external
+/fig_ATE_ProfilsAX_5mm0.pdf> <./external/fig_ATE_ProfilsCHX_5mm0.pdf
+
+pdfTeX warning: pdflatex (file ./external/fig_ATE_ProfilsCHX_5mm0.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+>] (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
 ===== Image 'external/fig_SchemaGeneralTACOT0' is up-to-date. ======
 )
 ===== Image 'external/fig_TacotPhotos_AHX_dansCarter0' is up-to-date. ======
 ===== Image 'external/fig_TacotPhotos_Regenerateur0' is up-to-date. ======
 ===== Image 'external/fig_TacotPhotos_CHX_dansCarter0' is up-to-date. ======
+[11 <./external/fig_SchemaGeneralTACOT0.pdf>]
 LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
-e 91.
+e 113.
+
 (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
 File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
-) [11 <./external/fig_SchemaGeneralTACOT0.pdf> <./external/fig_TacotPhotos_AHX_
-dansCarter0.pdf> <./external/fig_TacotPhotos_Regenerateur0.pdf> <./external/fig
-_TacotPhotos_CHX_dansCarter0.pdf>] [12] (../fig/fig_dKdV/tex/fig_dKdV.tex
+) [12 <./external/fig_TacotPhotos_AHX_dansCarter0.pdf> <./external/fig_TacotPho
+tos_Regenerateur0.pdf> <./external/fig_TacotPhotos_CHX_dansCarter0.pdf>]
+(../fig/fig_dKdV/tex/fig_dKdV.tex
 ===== Image 'external/fig_dKdV0' is up-to-date. ======
 )
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 159.
+            Default family used instead on input line 181.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 160.
+            Default family used instead on input line 182.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 161.
+            Default family used instead on input line 183.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 162.
+            Default family used instead on input line 184.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 164.
+            Default family used instead on input line 186.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 165.
+            Default family used instead on input line 187.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 166.
+            Default family used instead on input line 188.
  [13 <./external/fig_dKdV0.pdf>]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
-) [14]
+) [14] [15 <./external/fig_TCdansNoyau0.pdf>]
 ===== Image 'external/fig_SystemeAccroche_Machine0' is up-to-date. ======
 ===== Image 'external/fig_SystemeAccroche_Palan0' is up-to-date. ======
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
@@ -1958,7 +1991,7 @@ LaTeX Info: Symbol \textminus not provided by
 )
 ===== Image 'external/fig_OrientationCore_H2_Schema0' is up-to-date. ======
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-17.
+39.
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -1969,32 +2002,31 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 ===== Image 'external/fig_OrientationCore_V1_Schema0' is up-to-date. ======
 ===== Image 'external/fig_OrientationCore_V2_Schema0' is up-to-date. ======
-[15 <./external/fig_TCdansNoyau0.pdf>] [16{C:/Program Files/MiKTeX/fonts/enc/dv
-ips/cm-super/cm-super-t1.enc} <./external/fig_SystemeAccroche_Machine0.pdf> <./
-external/fig_SystemeAccroche_Palan0.pdf> <./external/fig_OrientationCore_H10.pd
-f> <./external/fig_OrientationCore_H1_Schema0.pdf> <./external/fig_OrientationC
-ore_H20.pdf> <./external/fig_OrientationCore_H2_Schema0.pdf
-
-pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_H2_Schema0.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
+[16{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./extern
+al/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroche_Palan0.pdf
 >]
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 375.
+            Default family used instead on input line 397.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 375.
- [17 <./external/fig_OrientationCore_V10.pdf> <./external/fig_OrientationCore_V
-20.pdf> <./external/fig_OrientationCore_V1_Schema0.pdf> <./external/fig_Orienta
-tionCore_V2_Schema0.pdf
+            Default family used instead on input line 397.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 400.
+ [17 <./external/fig_OrientationCore_H10.pdf> <./external/fig_OrientationCore_H
+1_Schema0.pdf> <./external/fig_OrientationCore_H20.pdf> <./external/fig_Orienta
+tionCore_H2_Schema0.pdf
+
+pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_H2_Schema0.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] [18 <./external/fig_OrientationCore_V10.pdf> <./external/fig_OrientationCore
+_V20.pdf> <./external/fig_OrientationCore_V1_Schema0.pdf> <./external/fig_Orien
+tationCore_V2_Schema0.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_V2_Schema0.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
->]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 378.
- Excluding 'comment' comment. [18]) (EnsembleSimus.tex [19] [20
+>] Excluding 'comment' comment.) (EnsembleSimus.tex [19] [20
 
 ]
 Chapitre III.
@@ -2011,25 +2043,34 @@ File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [24]
 ===== Image 'external/fig_Comsol_ModeleSimplifie_Geometrie0' is up-to-date. ===
 ===
-[25] (../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex
+[25]
+===== Image 'external/fig_Comsol_DemiGeometrie_Horizontal0' is up-to-date. ====
+==
+===== Image 'external/Comsol_AxiGeometrie_Vertical0' is up-to-date. ======
+(../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex
 ===== Image 'external/fig_SuperpositionComsol0' is up-to-date. ======
 ) [26 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>] [27 <./external/f
-ig_SuperpositionComsol0.pdf>]
+ig_Comsol_DemiGeometrie_Horizontal0.pdf> <./external/Comsol_AxiGeometrie_Vertic
+al0.pdf
+
+pdfTeX warning: pdflatex (file ./external/Comsol_AxiGeometrie_Vertical0.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+> <./external/fig_SuperpositionComsol0.pdf>] [28]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
 ====
-) [28] [29 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
+) [29 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>] [30]
 (../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterCondi
 tionLimite.tex
 ===== Image 'external/fig_TemperatureCanisterConditionLimite0' is up-to-date. =
 =====
-) [30 <./external/fig_TemperatureCanisterConditionLimite0.pdf>])
-(EtudeExperimentale.tex [31] [32
-
-]
+) [31 <./external/fig_TemperatureCanisterConditionLimite0.pdf>])
+(EtudeExperimentale.tex [32]
 Chapitre IV.
-[33] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_Tf.tex
+[33
+
+] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_Tf.tex
 ===== Image 'external/fig_PerfConvNat_Tf_0W0' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_Ta.tex
 ===== Image 'external/fig_PerfConvNat_0W_Ta0' is up-to-date. ======
@@ -2577,16 +2618,16 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: A5A99C853C5774A0A86090295E1E3B15;21013.
+(rerunfilecheck)             Checksum: 86DC4BFD6F06C79FE06283760EEE4BAB;21013.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 73383 strings out of 474435
- 1849356 string characters out of 5751739
- 2998667 words of memory out of 5000000
- 93996 multiletter control sequences out of 15000+600000
+ 73403 strings out of 474435
+ 1849953 string characters out of 5751739
+ 2999408 words of memory out of 5000000
+ 94010 multiletter control sequences out of 15000+600000
  698991 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,19n,90p,4547b,2809s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2599,9 +2640,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (92 pages, 26228170 bytes).
+Output written on _main_.pdf (92 pages, 26430343 bytes).
 PDF statistics:
- 3543 PDF objects out of 3580 (max. 8388607)
- 393 named destinations out of 1000 (max. 500000)
- 1370 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3585 PDF objects out of 4296 (max. 8388607)
+ 395 named destinations out of 1000 (max. 500000)
+ 1390 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -122,8 +122,6 @@ Les calculs des nombres précédent peuvent guider l'intuition quant aux prédom
 \subsection{Géométrie}
 Le modèle 2D simplifié d'une cavité différentiellement chauffée présentée sur la figure~\ref{fig:SimuConvNat2D} ne prend pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis Comsol Multiphysics grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.
 
-
-
 \begin{figure}[!ht]
     \centering
     \external{fig_Comsol_ModeleSimplifie_Geometrie}
@@ -132,7 +130,7 @@ Le modèle 2D simplifié d'une cavité différentiellement chauffée présentée
     \label{fig:Comsol_ModeleSimplifie_Geometrie}
 \end{figure}
 
-Cependant, pour cette première itération du modèle par élément finis, la propagation acoustique ainsi que la porosité du régénérateur ne sont pas considérés, et le modèle Comsol prend 3 phénomènes en compte.\medskip
+Cependant, pour cette première itération du modèle par élément finis, la propagation acoustique ainsi que la porosité du régénérateur ne sont pas considérés, et le modèle Comsol prend 3 phénomènes en compte, \echaf{déplacer cette partie}.\medskip
 
 Premièrement, un flux de chaleur est retiré à la paroi en $x=0$, afin de représenter le refroidissement homogène sur la paroi par effet thermoacoustique. Les hypothèses avancées par la théorie linéaire prédisent une température homogène sur la section, ici à une température froide $T_c$.\smallskip
 
@@ -145,16 +143,39 @@ Ces effets sont supposés se superposer selon le schéma~\ref{fig:SuperpositionC
 \medskip
 La géométrie présentée dans la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie} est simplifiée pour alléger les calculs. En effet, les effets considérés ici permettent de dire que le système est symétrique par rapport au plan vertical pour les orientations `\texttt{H1}' et `\texttt{H2}', et axisymétrique dans les configurations `\texttt{V1}' et `\texttt{V2}'. 
 
-Ainsi, la géométrie considérée est toujours en trois dimensions pour les orientations horizontales, mais réduite à un quart du total. L'usage de conditions aux frontières symétriques sur les parois \echaf{correspondantes/appropriées} permettent cette simplification. Dans le cas des orientations verticales, la géométrie conservée est une version en deux dimensions, en utilisant une condition d'axisymétrie sur les frontières au centre du noyau.
+Ainsi, la géométrie considérée est toujours en trois dimensions pour les orientations horizontales, mais réduite de moitié. L'usage de conditions aux frontières symétriques sur les parois verticales permettent cette simplification, et la géométrie retenue est présentée sur la figure~\ref{fig:Comsol_DemiGeometrie_Horizontal}. Dans le cas des orientations verticales, la géométrie conservée est une version en deux dimensions, en utilisant une condition d'axisymétrie sur les frontières au centre du noyau, comme le montre la figure~\ref{fig:Comsol_AxiGeometrie_Vertical}.
 
-\bigskip \echaf{ajouter 2 figures pour les géométries}
+\bigskip 
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_Comsol_DemiGeometrie_Horizontal}
+%		\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[scale=.9]{../fig/fig_ConvNatComsol/DemiGeometrie_Horizontal}};}
+		\caption{}
+		\label{fig:Comsol_DemiGeometrie_Horizontal}
+	\end{subfigure}		
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{Comsol_AxiGeometrie_Vertical}
+%		\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[scale=.9]{../fig/fig_ConvNatComsol/AxiGeometrie_Vertical}};}
+		\caption{}
+		\label{fig:Comsol_AxiGeometrie_Vertical}
+	\end{subfigure}	    
+    \caption{Géométries utilisées pour les problèmes \subref{fig:Comsol_DemiGeometrie_Horizontal} horizontaux et \subref{fig:Comsol_AxiGeometrie_Vertical} verticaux en faisant usage des symétries (représentées en bleu sur les figures).}
+    \label{fig:Comsol_Geometrie}
+\end{figure}
 
 \subsection{Matériaux composant les domaines}
-Les trois domaines formant la géométrie sont modélisé par des matériaux similaires aux conditions expérimentales. 
+Les trois domaines formant la géométrie, c'est-à-dire le cône d'adaptation d'impédance, le régénérateur, et l'enceinte qui le contient sont modélisé par des matériaux similaires aux conditions expérimentales. 
 
 Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et le cône d'adaptation d'impédance en hélium.
 
 \subsection{Modèles physiques utilisés}
+\subsubsection{\'Etape 1 : absence de matériau poreux}
 \begin{figure}[!ht]
     \centering
     \external{fig_SuperpositionComsol}
@@ -164,17 +185,19 @@ Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et
     \label{fig:SuperpositionComsol}
 \end{figure}
 
-\subsubsection{\'Etape 1 : absence de matériau poreux}
 En premier lieu, les phénomènes physiques considérés sont choisis de sorte à conserver un modèle simple. Pour cette raison, seuls des volumes  de solides pleins et de gaz sont considérés dans le modèle complet. Ces domaines sont couplés, et l'interface physique \texttt{Heat transfer in Solids and Fluids (ht)} est appliqué à tous les volumes. Les domaines correspondant au régénérateur et à son enceinte et sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cependant, ce modèle ne prend pas en compte de simulation de mécanique des fluides, et pour prendre la gravité et le mouvement du fluide causé par la convection naturelle en compte dans le modèle fluide, et il est nécessaire d'ajouter un modèle d'écoulement \texttt{laminar flow (spf)}. Couplé par la multiphysique \texttt{Nonisothermal flow (intf)} au modèle thermique, le modèle des transferts thermiques dans le noyau est possible.   
 
 \subsubsection{\'Etape 2 : ajout d'un modèle de matériau poreux}
-\echaf{vertical Rayleigh Bénard requiert de virer la multiphysique, et d'ajouter une source volumique -> utiliser nombre de rayleigh + cf ppt sur le site de comsol}
+
 
 \subsection{Conditions aux frontières}
 Toutes les parois sont considérées adiabatiques. Toutes ? Non, il reste encore des parois dont les conditions thermiques diffèrent. 
 
+Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixé à une température homogène sur la section, car justement c'est le gradient sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
+
 \subsection{Résultats dans les zones d'intérêt}
 \subsubsection{Volume d'adaptation d'impédance}
+\echaf{figure avec velocity arrow surface}
 
 \subsubsection{Régénérateur}
 Le nombre de Rayleigh dans un matériau poreux dépend de sa perméabilité. Il est assez difficile de la calculer car il faut connaître la vitesse d'écoulement et la différence de pression de part et d'autre du domaine étudié. Le régénérateur est modélisé dans Comsol pour extraire ses paramètres hydrauliques et calculer les nombres adimensionnels déjà présentés.

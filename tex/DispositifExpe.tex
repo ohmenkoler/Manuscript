@@ -1,4 +1,4 @@
-\chapter{Dispositif expérimental}
+\chapter{Dispositif expérimental}\label{chap:DispositifExpe}
 \mylocaltoc
 
 %\vfill
@@ -75,7 +75,7 @@ La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet 
 \end{figure}
 
 \subsubsection{Noyau thermoacoustique}
-Tout comme la machine qui le contient, le noyau adopte une géométrie cylindrique et est composé d'un régénérateur représenté sur la figure~\ref{fig:TacotPhotos_Regen} encadré par deux échangeurs de chaleur. Le premier est l'échangeur ambiant et a pour rôle d'extraire la chaleur qui s'accumule de ce côté du noyau, afin d'éviter l'échauffement global de la machine. Le second est l'échangeur froid, et sa fonction et de simuler une charge thermique à refroidir. Ces échangeurs sont représentés respectivement sur les figures~\ref{fig:TacotPhotos_AHX} et \ref{fig:TacotPhotos_CHX}. Ces trois éléments sont ensuite montés dans une enceinte cylindrique qui se fixe sur le bâti de la machine pour maintenir l'espace nécessaire à la boucle de rétroaction.
+Tout comme la machine qui le contient, le noyau adopte une géométrie cylindrique et est composé d'un régénérateur représenté sur la figure~\ref{fig:TacotPhotos_Regen} encadré par deux échangeurs de chaleur. Le premier est l'échangeur ambiant et a pour rôle d'extraire la chaleur qui s'accumule de ce côté du noyau, afin d'éviter l'échauffement global de la machine. Le second est l'échangeur froid, et sa fonction et de simuler une charge thermique à refroidir. Ces échangeurs sont représentés respectivement sur les figures~\ref{fig:TacotPhotos_AHX} et \ref{fig:TacotPhotos_CHX}. Ces trois éléments sont ensuite insérés dans un tube cylindrique qui se fixe sur le bâti de la machine pour maintenir l'espace nécessaire à la boucle de rétroaction.
 
 \begin{figure}[!ht]
     \centering
@@ -110,21 +110,21 @@ Tout comme la machine qui le contient, le noyau adopte une géométrie cylindriq
 
 Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, \echaf{J'arrive pas à relire} avec pour sens positif choisi le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second.\medskip
 
-\paragraph*{Régénérateur} Le régénérateur est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre la porosité $\Phi=\qty{68}{\percent}$. Un noyau de cette porosité doit être comparé avec le noyau support des expériences dont les résultats sont publiés par Ramadan \textit{et al.} et dont la porosité vaut $\Phi=\qty{75}{\percent}$ \cite{ramadan_design_2021}. La porosité est définie par la relation
+\paragraph*{Régénérateur} Le régénérateur utilisé dans le \textsc{Tacot} est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre une porosité $\Phi=\qty{68}{\percent}$. Cette porosité est définie par la relation
 
 \begin{align}
 	\Phi &= \frac{V_{\sf gaz}}{V_{\sf tot}}, \label{eq:Porosite_Volume}%\\
 %		 &= \frac{V_{\sf tot}-V_{\sf metal}}{V_{\sf tot}} \nonumber\\
 %		 &= 1 - \frac{m_{\sf metal}}{m_{\sf tot}} \label{eq:Porosite_Masse}
 \end{align}
-où $V_{\sf gaz}$ représente le volume occupé par le gaz dans le régénérateur, et $V_{\sf tot}$ le volume total du régénérateur. La masse de tissus $m_{\sf tissus}$ à utiliser pour atteindre la porosité souhaitée est déduite de cette relation et s'écrit 
+où $V_{\sf gaz}$ représente le volume occupé par le gaz dans le régénérateur, et $V_{\sf tot}$ le volume total du régénérateur. Cette porosité est choisie pour être comparé avec le noyau utilisé précédement et qui est support des expériences dont les résultats sont publiés par Ramadan \textit{et al.}, avec une porosité qui vaut $\Phi=\qty{75}{\percent}$ \cite{ramadan_design_2021}. La masse de tissus $m_{\sf tissus}$ à utiliser pour atteindre la porosité souhaitée est déduite de cette relation et s'écrit 
 
 \begin{align}
 %		 &= \frac{V_{\sf tot}-V_{\sf tissus}}{V_{\sf tot}} \nonumber\\
 %	\Phi &= 1 - \frac{m_{\sf tissus}}{m_{\sf tot}}. \label{eq:Porosite_Masse} \\
 	m_{\sf tissus} &= (1-\Phi) m_{\sf tot},
 \end{align}
-où $m_{\sf tot}$ représente la masse d'un cylindre de mêmes dimensions que le régénérateur, intégralement constitué du même acier inoxydable que les tissus, soit de l'acier 316L.
+où $m_{\sf tot}$ représente la masse d'un cylindre de mêmes dimensions que le régénérateur, intégralement constitué du même acier inoxydable que les tissus, soit de l'acier inoxydable 316L.
 
 Le milieu ainsi constitué est poreux et tortueux car l'orientation des disques de tissus est aléatoire, et le rayon hydraulique est défini par  %\echaf{ajouter source pour justifier que les matériaux type "mousse" se comporte comme du cylindrique : UPDATE dans Swift TA unifying... chapitre 7 (tortuous porous media)}
 
@@ -408,7 +408,7 @@ Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante
 \subsubsection{Mesures avec acoustique}\label{chap:MesureAvecAcou} 
 Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, c'est la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial.
 
-Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\frac{p}{P_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible -- soit un gradient de température de l'ordre de \qty{5}{\degreeCelsius}. Ainsi, l'hypothèse concernant la linéarité acoustique est mieux vérifiée et peut \textit{a priori} être plus aisément comparé à la théorie linéaire. À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$. 
+Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\frac{p_1}{p_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible -- soit une différence de température de l'ordre de \qty{5}{\kelvin}. Ainsi, l'hypothèse concernant la linéarité acoustique est mieux vérifiée et peut \textit{a priori} être plus aisément comparé à la théorie linéaire. À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$. 
 
 Ensuite, une charge thermique peut être appliquée au noyau, par le biais de l'échangeur froid. Il contient six cartouches chauffantes connectées en parallel et alimentées électriquement par un transformateur. Pour une expérience donnée, une puissance thermique est choisie selon la relation
 

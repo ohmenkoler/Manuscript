@@ -23,6 +23,8 @@
     \item Conduction dans les stack et meshgrids : \cite{hsu_effective_1996, li_effective_2006}
 \end{itemize}
 
+\section{Contexte du travail}
+
 \section{Bases de thermoacoustique}
 \subsection{Concepts généraux}
 Les machines thermoacoustique utilisent les interactions visqueuses et thermiques entre un gaz et un matériau solide poreux ou d’un empilement de plaques (\textit{stack} en anglais) placé dedans lors d’un cycle de compression-détente de ce gaz. En particulier, les pression, volume et température, qui sont liées par les lois thermodynamiques, sont des grandeurs d’intérêt en thermoacoustique dont la théorie linéaire est en grande partie écrite par Rott et Swift au cours des années 1980 \cite{rott_damped_1969, rott_thermally_1973, rott_thermally_1975, rott_thermally_1976, zouzoulas_thermally_1976, rott_thermoacoustics_1980, muller_thermally_1983}
@@ -201,11 +203,10 @@ Un volume de fluide obéit aux lois de conservations de masse, d'énergies et d'
 	\begin{align}
 		\partial_t \rho + \nabla \cdot (\rho \mathbf v) &= 0, \label{eq:ConservMass}\\
 		\rho \deriv_t \mathbf v &= -\nabla p + \mu\left( \nabla^2 \mathbf v +\left(\frac13+\frac{\mu_v}{\mu} \right)\nabla\left(\nabla \cdot \mathbf v\right)\right), \label{eq:NavierStokes_QteMvt_base}\\
-		\rho T\deriv_t S &= \nabla\cdot (k \nabla T) + \overline{\overline{\sigma}}\cdot \textcolor{red}{\nabla \mathbf v}. \label{eq:ConservEnergie}
+		\rho T\deriv_t s &= \nabla\cdot (k \nabla T) + \overline{\overline{\sigma}}\cdot \textcolor{red}{\nabla \mathbf v}. \label{eq:ConservEnergie}
 	\end{align}
 \end{subequations}
-
-Les variables d'intérêt dans l'étude d'un problème thermoacoustique sont respectivement la pression, le débit, la vitesse, la masse volumique, la température et l'entropie, et sont écrites selon le formalisme de Rott avec
+en utilisant les variables d'intérêt suivante : la pression $p$, le débit $u$, la vitesse $v$, la masse volumique $\rho$, la température $T$ et l'entropie $s$. Elles sont écrites selon le formalisme de Rott avec les équations
 
 \begin{subequations}
 	\begin{multicols}{2}
@@ -218,14 +219,12 @@ Les variables d'intérêt dans l'étude d'un problème thermoacoustique sont res
 	\begin{align}
 			\rho(x,r,t) &= \rho_0(x) + \RE \left[\rho_1(x,r) e^{i\omega t}\right],\label{eq:massVol_rott}\\
 			T(x,r,t) &= T_0(x) + \RE \left[T_1(x,r) e^{i\omega t}\right],\label{eq:temperature_rott}\\
-			S(x,r,t) &= s_0(x) + \RE \left[s_1(x,r) e^{i\omega t}\right].\label{eq:entropie_rott}
+			s(x,r,t) &= s_0(x) + \RE \left[s_1(x,r) e^{i\omega t}\right].\label{eq:entropie_rott}
 		\end{align}
 		\label{eq:variables_rott}
 	\end{multicols}
 \end{subequations}
-
 Ici, les indices indiquent l'ordre de grandeur, avec en particulier l'indice \num{0} qui dénote une valeur constante à l'ordre \num{0}, et l'indice \num{1} qui signifie l'oscillation à l'ordre \num{1} de la quantité. Il est supposé que le système opère dans un régime linéaire, ce qui se traduit par
-
 \begin{equation}
 	\bullet_1 \ll \bullet_0,
 	\label{eq:ConditionLinearite}
@@ -435,8 +434,8 @@ La représentation du circuit sur la figure~\ref{fig:CircEquivTAC} se traduit au
 		p + \deriv p\\
 		u + \deriv u
 	\end{pmatrix} = \begin{bmatrix}
-	1 & -(i\omega L + R_\nu)~\deriv x  \\
-	-(\frac{1}{R_\kappa} + i \omega C)~\deriv x & g~\deriv x \end{bmatrix} \begin{pmatrix}
+	1 & -\left(i\omega L + R_\nu\right)~\deriv x  \\
+	-\left(\frac{1}{R_\kappa} + i \omega C\right)~\deriv x & g~\deriv x \end{bmatrix} \begin{pmatrix}
 	p \\
 	u
 	\end{pmatrix}, \label{eq:TMatrix_NoyauTA}
@@ -456,6 +455,7 @@ ou bien même en simplifiant encore plus les choses par
     \end{pmatrix}.
     \label{eq:Tmatrix_NoyauTA_simplifie}
 \end{equation}
+
 
 Enfin, si le matériau poreux est long, il est possible de le représenter par une succession de $N$ portions élémentaires du poreux et donc un produit de matrices de transfert
 
@@ -483,5 +483,18 @@ u_e
 %\end{itemize}
 
 Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations dédiés tels que \textsc{DeltaEC}, soit suffisante pour prédire le comportement des machines thermoacoustiques de même que leurs performances, de nombreux effets sont négligés. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible et que les températures le long des dimensions transverses du noyau peuvent être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faible que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.
+
+\section{Plan du manuscrit}
+Après avoir présenté les éléments de base du travail sur ce réfrigérateur thermoacoustique \textsc{Tacot}, le contexte autour de cette thèse, et l'axe sur lequel elle se concentre, un plan est proposé.\medskip
+
+Dans le chapitre~\ref{chap:DispositifExpe}, le  \nameref{chap:DispositifExpe} est présenté. Cela inclut une présentation de la géométrie du refrigérateur, l'instrumentation utilisée pour les acquisitions, le déroulé d'une expérience, et les conditions de chacune d'entre elle. L'accent est porté sur l'étude de la convection naturelle, et les orientations du réfrigérateur choisies pour répondre aux hypothèses auxquelles il faut apporter des réponses sont définies.\smallskip
+
+Le chapitre~\ref{chap:SimusRealisees} introduit l'\nameref{chap:SimusRealisees} dans le but de comprendre le fonctionnement du réfrigérateur au-delà de ce que prédit la théorie linéaire en prenant en compte plus de phénomènes. La première simulation est  plus un prétexte à l'introduction des quantité adimensionnelles couramment utilisées en mécanique des fluides. En particulier, l'étude du nombre de Rayleigh permet d'anticiper la présence ou l'absence d'un courant de convection naturelle dans différentes zones du réfrigérateur. Suite à cela, un modèle numérique du régime stationnaire par éléments finis et réalisé avec le logiciel \texttt{Comsol Multiphysics} est présenté. Ce modèle, pour rester simple tout en représentant plus de phénomènes, simule le comportement d'un système purement thermique équivalent. Enfin, un modèle analytique du régime transitoire est proposé, en prenant en compte les mêmes phénomènes que dans la simulation numérique.\smallskip
+
+Le chapitre~\ref{chap:EtudeExpe} est dédié aux \nameref{chap:EtudeExpe}. \smallskip
+
+Chap~\ref{chap:Conc} - \nameref{chap:Conc}.\smallskip
+
+\ref{chap:Persp} - \nameref{chap:Persp}.
 
 

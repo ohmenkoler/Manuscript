@@ -24,8 +24,8 @@
 \draw[arw,->,draw=MatlabPurple,line width=1mm] (\Lreg+.1*\Rxreg,{(\y+.02)*\Ryreg}) -- ++(\Rxreg,0) arc (-90:180:.35);
 \draw[arw,->,draw=MatlabPurple,line width=1mm] (\Lreg+.1*\Rxreg,{(\y-.02)*\Ryreg}) -- ++(\Rxreg,0) arc (90:-180:.35);}
 
-\draw (-1.2*\Rxreg,-.5*\Ryreg) node[left]{$Q_{\sf vort}(0)$};
-\draw (\Lreg+1.2*\Rxreg,.5*\Ryreg) node[right]{$Q_{\sf vort}(L_{\sf reg})$};
+\draw (-1.2*\Rxreg,-.5*\Ryreg) node[left]{$\left.Q_{\sf vort}\right|_{x=0}$};
+\draw (\Lreg+1.2*\Rxreg,.5*\Ryreg) node[right]{$\left.Q_{\sf vort}\right|_{x=L_{\sf reg}}$};
 
 % --------------------------------------------------- Fond de schéma
 
@@ -64,16 +64,16 @@
 
 
 %%% Q_lat
-%\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,1.1*\Ryreg) -- ++(0,1cm) node [above] {$h_r(R_{\sf reg})\theta$};
-%\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,-1.1*\Ryreg) -- ++(0,-1cm) node [below] {$h_r(R_{\sf reg})\theta$};
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,1.1*\Ryreg) -- ++(0,1cm) node [above] {$\left.h_r\right|_{r=2R_{\sf reg}}\theta$};
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (.5*\Lreg,-1.1*\Ryreg) -- ++(0,-1cm) node [below] {$\left.h_r\right|_{r=0}\theta$};
 
-\draw[red] (.5*\Lreg,1.1*\Ryreg) node{$T_{paroi}$}; 
-\draw[red, line width=1mm] ($(\CHXnorth)+(0,0)$) -- ($(\AHXnorth)+(0,0)$);
-\draw[red] (.5*\Lreg,-1.1*\Ryreg) node{$T_{paroi}$};
-\draw[red, line width=1mm] ($(\CHXsouth)+(0,0)$) -- ($(\AHXsouth)+(0,0)$);
+%\draw[red] (.5*\Lreg,1.1*\Ryreg) node{$T_{paroi}$}; 
+%\draw[red, line width=1mm] ($(\CHXnorth)+(0,0)$) -- ($(\AHXnorth)+(0,0)$);
+%\draw[red] (.5*\Lreg,-1.1*\Ryreg) node{$T_{paroi}$};
+%\draw[red, line width=1mm] ($(\CHXsouth)+(0,0)$) -- ($(\AHXsouth)+(0,0)$);
 
-\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (-2*\Rxreg,0) -- ++(-1cm,0) node [midway, above] {$h_x(0)\theta$};
-\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (\Lreg+2*\Rxreg,0) -- ++(1cm,0) node [midway, above] {$h_x(L_{\sf reg})\theta$};
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (-2*\Rxreg,0) -- ++(-1cm,0) node [midway, above] {$\left.h_x\right|_{x=0}\theta$};
+\draw[->,line width=1mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},red] (\Lreg+2*\Rxreg,0) -- ++(1cm,0) node [midway, above] {$\left.h_x\right|_{x=L_{\sf reg}}\theta$};
 
 %%% Q_HX
 %\draw[arw,<-,draw=gray] ($(\CHXsouth)+(1mm,-1mm)$) -- ++(-60:.33*\Lreg)node[pos=.75, right]{$Q_f$};

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  12 FEB 2025 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  13 FEB 2025 07:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2035,8 +2035,20 @@ DF inclusion: multiple pdfs with page group included in a single page
 > <./external/fig_SuperpositionComsol0.pdf>] [30]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
-===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
-====
+\openout5 = `external/fig_Schema_FluxThermiquesNoyau_Gaelle0.md5'.
+
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_Schema_FluxThermiquesNoya
+u_Gaelle0" "\def\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_Schema_FluxThermiquesNoyau_Gaelle0" "\def\tikzexternalrealjob{_m
+ain_}\input{_main_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
 ) [31 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>] [32]
 (../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterCondi
 tionLimite.tex
@@ -2595,19 +2607,19 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: A9EE4C0ABBE1B55FBE430E0327D919F8;21317.
+(rerunfilecheck)             Checksum: 8EF954F460BD33887CA7A305F4E5D1CD;21522.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 73410 strings out of 474435
- 1850036 string characters out of 5751739
- 2999562 words of memory out of 5000000
- 94013 multiletter control sequences out of 15000+600000
+ 73403 strings out of 474435
+ 1849900 string characters out of 5751739
+ 2999332 words of memory out of 5000000
+ 94009 multiletter control sequences out of 15000+600000
  698991 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,19n,90p,4547b,2756s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,19n,90p,4547b,2772s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
 gram Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Files/MiKTeX
 /fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/type1/now
@@ -2617,9 +2629,9 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX
 /fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (94 pages, 26437329 bytes).
+Output written on _main_.pdf (94 pages, 26440409 bytes).
 PDF statistics:
- 3617 PDF objects out of 4296 (max. 8388607)
- 399 named destinations out of 1000 (max. 500000)
- 1406 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3621 PDF objects out of 4296 (max. 8388607)
+ 396 named destinations out of 1000 (max. 500000)
+ 1414 words of extra memory for PDF output out of 10000 (max. 10000000)
 

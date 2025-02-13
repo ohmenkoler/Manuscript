@@ -208,27 +208,39 @@ Dans cette simulation, le régénérateur est modélisé en premier lieu comme u
 
 \section{Modèle temporel} \label{chap:ModeleTemporel}
 \subsection{Présentation du modèle}
-Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volume élémentaire $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques. Ce modèle 2D prend en compte les conditions au limites suivantes : 
+Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volume élémentaire $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques. 
 
-
-
+\subsection{Champ acoustique considéré}
 %\begin{comment}
 Le modèle a pour but de calculer les transferts thermiques dans le régénérateur pour n'importe quel champ acoustique. Aussi, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
 
-\begin{subequations}
-	\begin{multicols}{2}
-	\noindent
-	\begin{align}
-		T_{pp}^{(n)} &= 1, \label{eq:TMatrix_Tpp_regen}\\
-		T_{pu}^{(n)} &= -\frac{i \omega \rho}{\Phi S (1-f_\nu)}\deriv x, \label{eq:TMatrix_Tpu_regen}
-		\end{align}
-		\begin{align}
-		T_{up}^{(n)} &= -\frac{i \omega \Phi S}{\gamma P_0} \deriv x, \label{eq:TMatrix_Tup_regen}\\
-		T_{uu}^{(n)} &= 1. \label{eq:TMatrix_Tuu_regen}
-	\end{align}
-	\end{multicols}
-	\label{eq:TMatrix_regen}
-\end{subequations}
+%\begin{subequations}
+%	\begin{multicols}{2}
+%	\noindent
+%	\begin{align}
+%		T_{pp}^{(n)} &= 1, \label{eq:TMatrix_Tpp_regen}\\
+%		T_{pu}^{(n)} &= -\frac{i \omega \rho}{\Phi S (1-f_\nu)}\deriv x, \label{eq:TMatrix_Tpu_regen}
+%		\end{align}
+%		\begin{align}
+%		T_{up}^{(n)} &= -\frac{i \omega \Phi S}{\gamma P_0} \deriv x, \label{eq:TMatrix_Tup_regen}\\
+%		T_{uu}^{(n)} &= 1. \label{eq:TMatrix_Tuu_regen}
+%	\end{align}
+%	\end{multicols}
+%	\label{eq:TMatrix_regen}
+%\end{subequations}
+
+\begin{equation}
+	\begin{pmatrix}
+	p_1^{(n+1)}\\
+	u_1^{(n+1)}
+	\end{pmatrix}=\begin{bmatrix}
+	1 & -\frac{i\omega\rho}{\Phi S(1-f_\nu)}\deriv x\\
+	-\frac{i\omega\Phi S \left(1 + (\gamma-1)f_\kappa\right)}{\gamma p_0}\deriv x & 1
+	\end{bmatrix}\begin{pmatrix}
+	p_1^{(n)}\\
+	u_1^{(n)}
+	\end{pmatrix}
+\end{equation}
 
 \subsubsection{Mécanismes pris en compte dans le modèle}
 Ensuite, les flux thermiques sont également pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer au sein du régénérateur.

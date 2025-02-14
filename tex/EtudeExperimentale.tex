@@ -1,10 +1,10 @@
-\chapter{Résultats expérimentaux et comparaison aux simulations}\label{chap:EtudeExpe}
+\chapter{Résultats et discussion}\label{chap:EtudeExpe}
 \mylocaltoc
 
-\section{Convection naturelle}\label{chap:EtudeExpe_ConvNat}
+\section{Introduction}\label{chap:EtudeExpe_Intro}
 Lors des expériences réalisées lors de la caractérisation du réfrigérateur \textsc{Tacot}, il a été montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau \echaf{figure ?}\cite{ramadan_design_2021}. Cet écart au comportement attendu, c'est-à-dire un gradient linéaire entre les côtés froid et ambiant du noyau thermoacoustique, ainsi qu'une température radiale uniforme sur la section du noyau thermoacoustique, implique la présence d'un écoulement moyen non nul et d'effets non-linéaires dans le réfrigérateur. Parmi les hypothèses formulées quant à la cause de ces disparités avec la théorie linéaire de Rott, plusieurs hypothèses peuvent être envisagées : vent acoustique, turbulence, formation de tourbillons, génération d'harmoniques supérieures, et convection naturelle. Parmi ces effets, peu d'études portent sur cette dernière, bien qu'il ait déjà été montré que le déclenchement de moteurs ou encore l'uniformité de température sur la section y étaient sensibles \cite{ross_influence_2003,  hireche_numerical_2019, ramadan_experimental_2018,  zhang_novel_2011}. Plusieurs paramètres sont étudiés pour quantifier la dépendance du comportement de la machine à la direction de la gravité. 
 
-\subsection{\'Etude des performances}
+\section{\'Etude des performances}
 Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=Q_f/W_e$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = T_f/(T_a-T_f)$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section. 
 
 Dans cette étude, les quatre orientations définies sur les figures~\ref{fig:OrientationCore_H} et \ref{fig:OrientationCore_V} sont tour à tour mises en place. Pour chacune, des expériences sont réalisées en suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}, cette fois en réglant les charges thermiques $\dot Q_f$ de \qtylist{50;100}{\watt}. Les résultats des expériences tracés sur les figures~\ref{fig:PerfConvNat_0W} à \ref{fig:PerfConvNat_100W} proviennent du tableau~\ref{tab:RecapResultExpe}.\medskip
@@ -256,8 +256,8 @@ L'échangeur ambiant extrait la chaleur des volumes élémentaires de gaz qui os
 %    \label{fig:PerfConvNat_DR35}
 %\end{figure}
 
-\subsection{Distribution des températures}
-\subsubsection{Dans la cavité conique entre la source acoustique principale et le noyau thermoacoustique}
+\section{Distribution des températures}
+\subsection{Dans la cavité conique entre la source acoustique principale et le noyau thermoacoustique}
 
 Pour faciliter l'analyse de la distribution de température dans le noyau thermoacoustique et ses alentours, celui-ci est découpé en cinq zones réparties le long de l'axe $\mathbf{e}_x$.
 La première étude concerne la distribution de température entre la source acoustique principale et l'échangeur froid, c'est-à-dire dans le cône d'adaptation d'impédance acoustique matérialisé en orange sur la figure~\ref{fig:SchemaGeneralTACOT}. Il est en effet initialement suspecté que la nature du gaz, les dimensions du volume dans lequel il se trouve et les conditions thermiques aux frontières permettent la mise en mouvement du fluide. Cette hypothèse est de plus appuyée par le calcul du nombre de Rayleigh $\mathrm{Ra}$ grâce à l'équation~\eqref{eq:NbrRayleigh}, et dont la valeur est
@@ -283,7 +283,7 @@ dans le cas d'une différence de température de \qty{1}{\degreeCelsius}, soit u
 
 Les quatre orientations présentées sur la figure~\ref{fig:OrientationCore_H} et \ref{fig:OrientationCore_V} sont regroupées par deux, avec d'une part les orientations horizontales du \textsc{Tacot} `\texttt{H1}' et `\texttt{H2}' où $\psi_v=\ang{0}$ (sous-figures~\subref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}), et d'autre part les orientations verticales `\texttt{V1}' et `\texttt{V2}' pour lesquelles $\psi_v=\pm\ang{90}$ (sous-figures~\subref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}). Pour chacun de ces groupes, les résultats des expériences réalisées aux trois amplitudes décrites dans le paragraphe~§\ref{chap:MesureAvecAcou} sont présentés sur les figures~\ref{fig:HeatOnly_CHXout_H1H2} -- \ref{fig:Acou_CHXout_H1H2_High} et \ref{fig:HeatOnly_CHXout_V1V2} -- \ref{fig:Acou_CHXout_V1V2_High}, respectivement pour les orientations horizontales et verticales. Pour rappel, la temperature initiale de chaque thermocouple est soustraite dans toutes les mesures qui suivent. De plus, les mesures sont rognées de \qtyrange{0}{3500}{\second} pour que la définition du régime stationnaire soit la même pour tous les résultats (sauf dans le cas du \textsc{Tacot} horizontal à moyenne amplitude acoustique, où un problème d'acquisition contraint le découpage de \qtyrange{0}{2700}{\second}). Un rééchantillonnage à \qty{.1}{\hertz} est également appliqué aux mesures de températures pour limiter la dimension des fichiers de données.
 
-\paragraph{Réfrigérateur horizontal}
+\subsubsection{Réfrigérateur horizontal}
 Pour rappel, le réfrigérateur est placé à l'horizontal dans ces expériences. Les notations suivantes sont introduites pour cette partie concernant les expériences `\texttt{H1}' et `\texttt{H2}' :
 
 \begin{itemize}
@@ -346,7 +346,7 @@ L'évolution de température $\theta$ au cours de l'expérience à l'amplitude a
 \end{figure}
 
 
-\paragraph{Réfrigérateur vertical}
+\subsubsection{Réfrigérateur vertical}
 \paragraph*{Sans acoustique}
 \echaf{ICI les manips heat only}
 
@@ -397,8 +397,8 @@ En revanche, la figure~\ref{fig:Acou_CHXout_V1V2_High} qui présente les résult
 
 
 
-\subsubsection{À l'intérieur du régénérateur}
-\paragraph{Réfrigérateur horizontal}
+\subsection{À l'intérieur du régénérateur}
+\subsubsection{Réfrigérateur horizontal}
 \paragraph*{Amplitude acoustique nulle}
 
 \begin{figure}[!ht]
@@ -634,7 +634,7 @@ Les figures~\ref{fig:Acou_CHXin_H1H2_High}, \ref{fig:Acou_Regmid_H1H2_High} et \
 %    \label{fig:Acou_AHXin_H1H2_High}
 %\end{figure}
 
-\paragraph{Réfrigérateur vertical}
+\subsubsection{Réfrigérateur vertical}
 
 \paragraph*{Amplitude acoustique nulle}
 \begin{figure}[!ht]
@@ -851,7 +851,9 @@ Les figures~\ref{fig:Acou_CHXin_H1H2_High}, \ref{fig:Acou_Regmid_H1H2_High} et \
     \label{fig:Acou_V1V2_High}
 \end{figure}
 
-\subsubsection{Dans la cavité entre la source acoustique secondaire et le noyau thermoacoustique}
+\subsection{Dans la cavité entre la source acoustique secondaire et le noyau thermoacoustique}
+
+\echaf{à enlever ?}
 
 %\begin{figure}[!ht] % V1V2 low AHX out
 %    \centering
@@ -871,6 +873,8 @@ Les figures~\ref{fig:Acou_CHXin_H1H2_High}, \ref{fig:Acou_Regmid_H1H2_High} et \
 %    \label{fig:Acou_AHXout_H1H2_Low}
 %\end{figure}
 
+%\clearpage
+
 \section{Limite de répétabilité}
 
 De nombreux phénomènes se produisent dans le noyau sans qu'il ne soit pour l'heure possible des les expliquer. L'un d'eux a pour répercussion une difficulté à répondre à la question de la reproductibilité de la distribution de température dans le noyau, car la température présente plusieurs points de stabilité. Une expérience réalisée dans l'orientation `\texttt{V1}', à haute amplitude acoustique et sans charge thermique est reproduite à deux reprises pour vérifier la répétabilité des mesures. À l'opposé du résultat anticipé, la distribution est complètement différente \echaf{à continuer}  
@@ -889,3 +893,4 @@ Ces expériences, issues d'une autre série de mesure interrompue justement à c
 Dans cette
 
 
+\section{Conclusion}

@@ -106,6 +106,8 @@ Les cycles thermodynamiques évoqués plus tôt sont différents en fonction de 
 		\caption{cession de chaleur du fluide à la plaque}
 		\label{fig:CycleBrayton_QFluidePlaque}
 	\end{subfigure}
+	
+	\vspace{5mm}
 	%
 	\begin{subfigure}{.47\textwidth}
 		\centering
@@ -147,6 +149,8 @@ Les cycles thermodynamiques évoqués plus tôt sont différents en fonction de 
 		\caption{déplacement isochore (aller)}
 		\label{fig:CycleStirling_DepIsoch1}
 	\end{subfigure}
+	
+	\vspace{5mm}
 	%
 	\begin{subfigure}{.47\textwidth}
 		\centering
@@ -175,7 +179,8 @@ Aux abords d'une paroi se trouvent les couches limites thermiques et visqueuses,
 
 \begin{subequations}
 	\begin{align}
-		\delta_{\kappa} &= \sqrt{\frac{2 k}{\rho C_p \omega}} = \sqrt{\frac{2 \kappa}{\omega}}, \text{et}	\label{eq:CouchesLimites_Thermique}\\
+		\delta_{\kappa} &= \sqrt{\frac{2 k}{\rho C_p \omega}} = \sqrt{\frac{2 \kappa}{\omega}}	\label{eq:CouchesLimites_Thermique}\\
+		\intertext{et}
 		\delta_{\nu} &= \sqrt{\frac{2 \mu}{\rho \omega}} = \sqrt{\frac{2 \nu}{\omega}},	\label{eq:CouchesLimites_Visqueuse}
 	\end{align}
 	\label{eq:CouchesLimites}%
@@ -236,7 +241,6 @@ Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacous
 	Q_{TA} = \underbrace{\frac{1}{2} \RE\left[pu^* \left( 1 - \frac{f_\kappa - f_\nu^*}{(1 - \Prandtl)(1 - f_\nu^*)} \right) \right]}_{q_{TA}} + \underbrace{\frac{\rho_0 C_p }{\Phi S \omega } \frac{1}{2} \IM \left[ \frac{f_\kappa + \Prandtl f_\nu^*}{(1-\Prandtl)|1-f_\nu|^2} |u|^2\right]}_{k_{TA}} \deriv_x T
 	\label{eq:FluxTA_swift}
 \end{equation}
-
 
 \section{\'Etat de l'art}
 \subsection{De la recherche fondamentale...}
@@ -489,7 +493,7 @@ Après avoir présenté les éléments de base du travail sur ce réfrigérateur
 
 Dans le chapitre~\ref{chap:DispositifExpe}, le  \nameref{chap:DispositifExpe} est présenté. Cela inclut une présentation de la géométrie du refrigérateur, l'instrumentation utilisée pour les acquisitions, le déroulé d'une expérience, et les conditions de chacune d'entre elle. L'accent est porté sur l'étude de la convection naturelle, et les orientations du réfrigérateur choisies pour répondre aux hypothèses auxquelles il faut apporter des réponses sont définies.\smallskip
 
-Le chapitre~\ref{chap:SimusRealisees} introduit l'\nameref{chap:SimusRealisees} dans le but de comprendre le fonctionnement du réfrigérateur au-delà de ce que prédit la théorie linéaire en prenant en compte plus de phénomènes. La première simulation est  plus un prétexte à l'introduction des quantité adimensionnelles couramment utilisées en mécanique des fluides. En particulier, l'étude du nombre de Rayleigh permet d'anticiper la présence ou l'absence d'un courant de convection naturelle dans différentes zones du réfrigérateur. Suite à cela, un modèle numérique du régime stationnaire par éléments finis et réalisé avec le logiciel \texttt{Comsol Multiphysics} est présenté. Ce modèle, pour rester simple tout en représentant plus de phénomènes, simule le comportement d'un système purement thermique équivalent. Enfin, un modèle analytique du régime transitoire est proposé, en prenant en compte les mêmes phénomènes que dans la simulation numérique.\smallskip
+Le chapitre~\ref{chap:SimusRealisees} introduit l'\nameref{chap:SimusRealisees} dans le but de comprendre le fonctionnement du réfrigérateur au-delà de ce que prédit la théorie linéaire en prenant en compte plus de phénomènes. La première simulation est  plus un prétexte à l'introduction des quantité adimensionnelles couramment utilisées en mécanique des fluides. En particulier, l'étude du nombre de Rayleigh permet d'anticiper la présence ou l'absence d'un courant de convection naturelle dans différentes zones du réfrigérateur. Suite à cela, un modèle numérique du régime stationnaire par éléments finis et réalisé avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered est présenté. Ce modèle, pour rester simple tout en représentant plus de phénomènes, simule le comportement purement thermique d'un système équivalent. Enfin, un modèle analytique du régime transitoire est proposé, en prenant en compte les mêmes phénomènes que dans la simulation numérique.\smallskip
 
 Le chapitre~\ref{chap:EtudeExpe} est dédié aux \nameref{chap:EtudeExpe}. \smallskip
 

@@ -9,7 +9,7 @@ Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité d
 
 Tout d'abord, deux étude très simplifiées sont réalisées pour une cavité 2D différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Ces études doivent permettre l'obtention d'ordres de grandeurs des quantité d'intérêt, en particulier le flux de chaleur $Q_{conv}$ qui agit comme une charge thermique sur le côté froid du noyau thermoacoustique. \smallskip
 
-Ensuite, des simulations par éléments finis de cette cavité et sur le régénérateur sur le logiciel Comsol Multiphysics permettent d'estimer les lignes de courants dans la cellule et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid, en plus de déterminer des paramètres clés pour la compréhension des phénomènes thermiques en jeu.
+Ensuite, des simulations par éléments finis de cette cavité et sur le régénérateur sur le logiciel \textsc{Comsol} Multiphysics\textss\textregistered permettent d'estimer les lignes de courants dans la cellule et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid, en plus de déterminer des paramètres clés pour la compréhension des phénomènes thermiques en jeu.
 
 %\subsection{\'Etudes simplifiées}
 \subsection{Sans acoustique}
@@ -45,7 +45,7 @@ Il est possible de modéliser l'écoulement dans ce volume en utilisant les équ
 pour la conservation de l'énergie interne. L'adimensionnement de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
 
 \begin{equation}
-	\frac{1}{\mathrm{Pr}}(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\mathbf{v}) = -\nabla p + \mathrm{Ra} T \mathbf e_{z,0} + \nabla^2 \cdot \mathbf{v},
+	\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) = -\nabla p + \mathrm{Ra} T \mathbf e_{z,0} + \nabla^2 \cdot \mathbf{v},
 	\label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}
 \end{equation}
 et fait apparaître le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl}, ainsi que le nombre de Rayleigh noté $\mathrm{Ra}$, et dont la définition est donnée par 
@@ -120,7 +120,7 @@ Les calculs des nombres précédent peuvent guider l'intuition quant aux prédom
 
 \section{\'Elements finis}\label{chap:FEM}
 \subsection{Géométrie}
-Le modèle 2D simplifié d'une cavité différentiellement chauffée présentée sur la figure~\ref{fig:SimuConvNat2D} ne prend pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis Comsol Multiphysics grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.
+Le modèle 2D simplifié d'une cavité différentiellement chauffée présentée sur la figure~\ref{fig:SimuConvNat2D} ne prend pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis \textsc{Comsol} Multiphysics\textss\textregistered grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.
 
 \begin{figure}[!ht]
     \centering
@@ -130,7 +130,7 @@ Le modèle 2D simplifié d'une cavité différentiellement chauffée présentée
     \label{fig:Comsol_ModeleSimplifie_Geometrie}
 \end{figure}
 
-Cependant, pour cette première itération du modèle par élément finis, la propagation acoustique ainsi que la porosité du régénérateur ne sont pas considérés, et le modèle Comsol prend 3 phénomènes en compte, \echaf{déplacer cette partie}.\medskip
+Cependant, pour cette première itération du modèle par élément finis, la propagation acoustique ainsi que la porosité du régénérateur ne sont pas considérés, et le modèle \textsc{Comsol} Multiphysics\textss\textregistered prend 3 phénomènes en compte dans un modèle purement thermique équivalent. \echaf{déplacer cette partie}.\medskip
 
 Premièrement, un flux de chaleur est retiré à la paroi en $x=0$, afin de représenter le refroidissement homogène sur la paroi par effet thermoacoustique. Les hypothèses avancées par la théorie linéaire prédisent une température homogène sur la section, ici à une température froide $T_c$.\smallskip
 
@@ -181,7 +181,7 @@ Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et
     \external{fig_SuperpositionComsol}
     %\externalremake
     \input{../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol}
-    \caption{Phénomènes thermiques pris en compte dans le modèle Comsol équivalent, dans le cas de l'orientation `\texttt{H1}' présentée sur la figure~\ref{fig:OrientationCore_H1}--\subref{fig:OrientationCore_H1_Schema}. (a) tendance du gradient transverse de température tel qu'observé dans \cite{ramadan_design_2021}, (b) température froide atteinte par effet thermoacoustique, (c) conduction thermique transverse dans le milieu poreux et par les parois de l'enceinte, (d) gradient de température transverse causé par la convection naturelle.}
+    \caption{Phénomènes thermiques pris en compte dans le modèle \textsc{Comsol} Multi\-physics\textss\textregistered équivalent, dans le cas de l'orientation `\texttt{H1}' présentée sur la figure~\ref{fig:OrientationCore_H1}--\subref{fig:OrientationCore_H1_Schema}. (a) tendance du gradient transverse de température tel qu'observé dans \cite{ramadan_design_2021}, (b) température froide atteinte par effet thermoacoustique, (c) conduction thermique transverse dans le milieu poreux et par les parois de l'enceinte, (d) gradient de température transverse causé par la convection naturelle.}
     \label{fig:SuperpositionComsol}
 \end{figure}
 
@@ -193,14 +193,14 @@ En premier lieu, les phénomènes physiques considérés sont choisis de sorte �
 \subsection{Conditions aux frontières}
 Toutes les parois sont considérées adiabatiques. Toutes ? Non, il reste encore des parois dont les conditions thermiques diffèrent. 
 
-Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixé à une température homogène sur la section, car justement c'est le gradient sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
+Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixée à une température homogène sur la section, car c'est justement le gradient sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
 
 \subsection{Résultats dans les zones d'intérêt}
 \subsubsection{Volume d'adaptation d'impédance}
 \echaf{figure avec velocity arrow surface}
 
 \subsubsection{Régénérateur}
-Le nombre de Rayleigh dans un matériau poreux dépend de sa perméabilité. Il est assez difficile de la calculer car il faut connaître la vitesse d'écoulement et la différence de pression de part et d'autre du domaine étudié. Le régénérateur est modélisé dans Comsol pour extraire ses paramètres hydrauliques et calculer les nombres adimensionnels déjà présentés.
+Le nombre de Rayleigh dans un matériau poreux dépend de sa perméabilité. Il est assez difficile de la calculer car il faut connaître la vitesse d'écoulement et la différence de pression de part et d'autre du domaine étudié. Le régénérateur est modélisé dans \textsc{Comsol} Multiphysics\textss\textregistered pour extraire ses paramètres hydrauliques et calculer les nombres adimensionnels déjà présentés.
 
 De plus, cette simulation vise à vérifier l'hypothèse de superposition des effets thermiques. En effet, la distribution de température du côté de l'échangeur froid dans le cas de l'orientation `\texttt{H1}' laisse à penser que la température froide et constante sur la section provoqué par l'effet thermoacoustique, la conduction thermique dans le noyau qui provoque une différence de température entre le centre du noyau et sa périphérie, et la convection naturelle qui apporte un gradient de température selon la direction verticale se combinent.
 
@@ -210,7 +210,7 @@ Dans cette simulation, le régénérateur est modélisé en premier lieu comme u
 \subsection{Présentation du modèle}
 Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volume élémentaire $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques. 
 
-\subsection{Champ acoustique considéré}
+\subsubsection{Champ acoustique considéré}
 %\begin{comment}
 Le modèle a pour but de calculer les transferts thermiques dans le régénérateur pour n'importe quel champ acoustique. Aussi, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
 
@@ -234,16 +234,17 @@ Le modèle a pour but de calculer les transferts thermiques dans le régénérat
 	p_1^{(n+1)}\\
 	u_1^{(n+1)}
 	\end{pmatrix}=\begin{bmatrix}
-	1 & -\frac{i\omega\rho}{\Phi S(1-f_\nu)}\deriv x\\
-	-\frac{i\omega\Phi S \left(1 + (\gamma-1)f_\kappa\right)}{\gamma p_0}\deriv x & 1
+	1 & -i\omega\frac{\rho}{\Phi S(1-f_\nu^{(n)})}\,\deriv x\\
+	-i\omega\frac{\Phi S \left(1 + (\gamma-1)f_\kappa^{(n)}\right)}{\gamma p_0}\ \deriv x & 1
 	\end{bmatrix}\begin{pmatrix}
 	p_1^{(n)}\\
 	u_1^{(n)}
-	\end{pmatrix}
+	\end{pmatrix}.
 \end{equation}
 
+
 \subsubsection{Mécanismes pris en compte dans le modèle}
-Ensuite, les flux thermiques sont également pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer au sein du régénérateur.
+Ensuite, les flux thermiques sont également pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Transitoire_Regen} à \eqref{eq:FluxLat_Transitoire} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer au sein du régénérateur.
 
 \begin{figure}[!ht]
     \centering
@@ -260,7 +261,7 @@ Ensuite, les flux thermiques sont également pour la plupart différents dans le
 \begin{multline}
 	Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } pu^* \right] }_{q_{TA}(x)} \\ 
 	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |u|^2 }^{k_{TA}(x)}\partial_x \theta(r,x;t),
-\label{eq:FluxTA_Lotton_Regen}
+\label{eq:FluxTA_Transitoire_Regen}
 \end{multline}
 où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale à la température initiale. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans la dépendance spatio-temporelle. Il est important de remarquer la partie réelle de ce flux thermique, notée $q_{TA}$, qui ne dépend que du champ acoustique, et la partie imaginaire $k_{TA}$ qui dépend du gradient de température le long du stack et qui peut être vu comme un terme de conduction induite par l'effet thermoacoustique.
 
@@ -272,52 +273,58 @@ où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale
 %	k_r\\
 %	k_\alpha
 %	\end{pmatrix} \cdot \nabla \theta,
-%	\label{eq:FluxCond_Lotton}
+%	\label{eq:FluxCond_Transitoire}
 %\end{equation}
 
-\begin{equation}
-	\left\{ \begin{aligned}
-		Q_{\sf cond}^{(x)} &= -k_x \partial_x T\\
-		Q_{\sf cond}^{(r)} &= -k_r \partial_r T \echaf{\text{ corriger expression avec gradient radial}}
-	\end{aligned}\right.
-	\label{eq:FluxCond_Lotton}
-\end{equation}
-avec les indices $x$ et $r$ dénotant respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique apparente et $k_i~=~\Phi_i k_{g} + (1-\Phi_i)k_{s}$ ($i=x,r$). \echaf{En première aproximation, il est possible de considérer les valeurs de conductivité comme égales les unes aux autres. Cependant, c'est inexact car le long de l'axe $\mathbf e_x$ le milieu est constitué de l'empillement de tissus métalliques tandis que dans la direction $\mathbf e_r$ le flux de chaleur parcourt les fils qui forment le tissus en lui-même.}
+\begin{subequations}
+	\begin{multicols}{2}
+	\noindent
+	\begin{equation}
+		Q_{\sf cond}^{(x)} = -k_x \partial_x \theta,
+	\end{equation}
+	\begin{equation}
+		Q_{\sf cond}^{(r)} = -k_r \partial_r \theta,
+	\end{equation}
+	\end{multicols}
+\end{subequations}
+avec les indices $x$ et $r$ dénotant respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique longitudinale apparente et $k_x~=~\Phi k_{g} + (1-\Phi)k_{s}k_{s_{frac}}$ \echaf{verifier}. Il existe dans la littérature des mesures de la conductivité transversale dans un milieu poreux constitué d'un empilement de tissus \cite{hsu_effective_1996}. 
+
+ \echaf{En première aproximation, il est possible de considérer les valeurs de conductivité comme égales les unes aux autres. Cependant, c'est inexact car le long de l'axe $\mathbf e_x$ le milieu est constitué de l'empillement de tissus métalliques tandis que dans la direction $\mathbf e_r$ le flux de chaleur parcourt les fils qui forment le tissus en lui-même.}
 
 %\begin{equation}
 %Q_{\sf cond}^{(x)} = -k_x\partial_x\theta~\mathrm{\mathbf e_x},
-%\label{eq:FluxCondx_Lotton}
+%\label{eq:FluxCondx_Transitoire}
 %\end{equation}
 %avec... 
 %
 %\begin{equation}
 %Q_{\sf cond}^{(r)} = -k_r\partial_r\theta~\mathrm{\mathbf e_r},
-%\label{eq:FluxCondr_Lotton}
+%\label{eq:FluxCondr_Transitoire}
 %\end{equation}
 %
 %\begin{equation}
 %Q_{\sf cond}^{(\alpha)} = -k_\alpha\partial_\alpha\theta~\mathrm{\mathbf e_\alpha},
-%\label{eq:FluxCondalpha_Lotton}
+%\label{eq:FluxCondalpha_Transitoire}
 %\end{equation}
 %\textcolor{red}{Rassembler $Q_{cond}$ en 1 seul terme} avec ...
 
 \item Les pertes visqueuses sont estimées avec l'équation
 
 \begin{equation}
-Q_{\sf visq} = \frac{1}{R_{\sf reg}^2} \int_{0}^{R_{\sf reg}} \frac{1}{\tau_0} \int_0^{\tau_0} \mu (\partial_r u)^2\ r \deriv r \deriv t.
-\label{eq:FluxVisq_Lotton}
+Q_{\sf visq} = \frac{1}{R_{\sf reg}^2} \int_{0}^{R_{\sf reg}} \frac{1}{t_0} \int_0^{t_0} \mu (\partial_r u)^2\ r \deriv r \deriv t.
+\label{eq:FluxVisq_Transitoire}
 \end{equation}
 
 En utilisant l'identité
 
 \begin{equation*}
-\frac{1}{T}\int_{0}^{\tau_0}\mu(\partial_r u)^2\deriv t = \frac12|\partial_r u|^2,
+\frac{1}{t_0}\int_{0}^{t_0}\mu(\partial_r u)^2\deriv t = \frac12|\partial_r u|^2,
 \end{equation*}
-l'équation \eqref{eq:FluxVisq_Lotton} est réécrite comme
+l'équation \eqref{eq:FluxVisq_Transitoire} est réécrite comme
 
 \begin{equation}
 	Q_{\sf visq} = \frac{1}{2R_{\sf reg}^2} \int_{0}^{R_{\sf reg}} \mu |\partial_r u|^2\ r \deriv r
-	\label{eq:FluxVisq_Lotton_IntegralTSimplifie}
+	\label{eq:FluxVisq_Transitoire_IntegralTSimplifie}
 \end{equation}
 
 \echaf{poursuivre après simu}
@@ -329,7 +336,7 @@ dont l'intégrale sur la section de rayon $R_{\sf reg}$ est résolue par une mé
 
 \begin{equation}
 	Q_{\sf lat}^{(x)} = h_x \theta,
-	\label{eq:FluxLat_Lotton}
+	\label{eq:FluxLat_Transitoire}
 \end{equation}
 où $h_x$ est le coefficient d'échanges thermique entre les extrémités du noyau et le fluide à température ambiante. Ils sont déterminés de façon empirique.
 
@@ -347,27 +354,15 @@ où $h_x$ est le coefficient d'échanges thermique entre les extrémités du noy
 %\end{align}
 
 
-\item Les pertes latérales sur la périphérie à $r=R_{\sf reg}$ sont prises en comptes en considérant une température variant dans le temps et le long du régénérateur, déterminée par la méthode des transformations intégrales. Ce calcul, expliqué dans la section~\ref{chap:TransfoIntegrales}, est appliqué à un système présenté sur la figure~\ref{fig:TemperatureCanisterConditionLimite}, qui contient le \echaf{canister} dont l'épaisseur est considérée infinie pour le calcul numérique, insérée dans le tube en acier inoxydable qui contient le noyau, suivi du gaz contenu dans le canal de rétroaction.\echaf{continuer}
-
-La séparation du calcul de la température de la paroi du reste de la simulation permet de résoudre analytiquement le problème, ce qui est impossible si le couplage entre ces systèmes est considéré. L'hypothèse de la longueur infinie du \echaf{canister} repose sur le fait que l'influence du \echaf{canister} sur le régénérateur prédomine \echaf{sur l'impact inverse}.
-
-
-\begin{figure}[!ht]
-    \centering
-    \external{fig_TemperatureCanisterConditionLimite}
-    %\externalremake
-    \input{../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterConditionLimite}
-    \caption{Géométrie équivalente pour établir la condition de température à l'interface en $r=-e_{\sf enc}$ entre le régénérateur et l'enceinte qui le contient, soit $r=R_{\sf reg}$. \echaf{ajouter conductivité}}
-    \label{fig:TemperatureCanisterConditionLimite}
-\end{figure}
+\item Les pertes latérales sur la périphérie à $r=R_{\sf reg}$ sont prises en comptes en considérant le coefficient d'échange convectif $\left.h_r\right|_{r=i}$ pour $i=0,R_{\sf reg}$.
 
 \item \echaf{Flux de chaleur apportés ou retirés par les échangeurs}
 
 $Q=\epsilon Q_i$ avec 
 \begin{equation}
-	\epsilon = \frac{k_s k_{sfrac} (1-\Phi)S_{\sf reg}}{k_s k_{sfrac} (1-\Phi)S_{\sf reg} + k_{\sf can} S_{\sf can}}
+	\epsilon = \frac{k_s k_{s_{frac}} (1-\Phi)S_{\sf reg}}{k_s k_{s_{frac}} (1-\Phi)S_{\sf reg} + k_{\sf can} S_{\sf can}}
 \end{equation}
-et $k_{sfrac}$ le facteur de dégradation de conductivité \cite{lewis_measurement_1998}
+et $k_{s_{frac}}=\num{.1}$ le facteur de dégradation de conductivité qui quantifie la diminution de conductivité d'un matériau fait de tissus métalliques \cite{lewis_measurement_1998}.
 
 \end{enumerate}
 
@@ -377,18 +372,18 @@ Ces flux de chaleurs sont reportés dans l'équation modifiée du bilan de chale
 
 %\begin{equation}
 %[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \theta = - \nabla \cdot (Q_{TA} + Q_{\sf cond}) + Q_{\sf visq},
-%\label{eq:BilanChaleur_LottonPoignand}
+%\label{eq:BilanChaleur_Transitoire}
 %\end{equation}
 %ce qui donne après développement de l'opérateur divergence en coordonnées cylindrique,
 
 \begin{equation}
 [\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\ \partial_t \theta = - \partial_x Q_{TA} - \partial_x Q_{\sf cond}^{(x)} - \frac{1}{r}\partial_r[r Q_{\sf cond}^{(r)}] + Q_{\sf visq}.
-\label{eq:BilanChaleur_LottonPoignand_ApDvptCylin}
+\label{eq:BilanChaleur_Transitoire_ApDvptCylin}
 \end{equation}
 
 Le premier membre désigne la variation d'énergie interne suite à la variation de température, et le second membre, l'expression des flux thermiques dans chaque volume élémentaire. D'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux se produisent dans chaque volume, il sont donc source de chaleur et doivent être pris en compte tels quels. Ceci dit, le régénérateur est supposé axisymétrique, ce qui permet de considérer les composantes azimuthales $\nabla_\alpha \cdot Q_{TA}$ et $\nabla_\alpha \cdot Q_{\sf cond}$ comme nulles.
 
-Le problème décrit par l'équation~\ref{eq:BilanChaleur_LottonPoignand_ApDvptCylin} est conditionné aux frontières en $x=0$, $x=L_{\sf reg}$ et $r=R_{\sf reg}$ pour respecter la conservation d'énergie. Ces conditions se traduisent par le système d'équations
+Le problème décrit par l'équation~\ref{eq:BilanChaleur_Transitoire_ApDvptCylin} est conditionné aux frontières en $x=0$, $x=L_{\sf reg}$ et $r=R_{\sf reg}$ pour respecter la conservation d'énergie. Ces conditions se traduisent par le système d'équations
 
 \begin{subequations}
 	\begin{align}
@@ -405,7 +400,7 @@ où $Q_f$ et $Q_a$ sont les flux de chaleur retirés à l'échangeur froid d'une
 	\label{eq:CondInit}
 \end{equation}
 
-Le report des flux de chaleurs des équations~\eqref{eq:FluxTA_Lotton_Regen} à \eqref{eq:FluxLat_Lotton} dans l'équation du problème~\eqref{eq:BilanChaleur_LottonPoignand_ApDvptCylin}, dans les conditions aux frontières~\eqref{eq:CondFront} et dans la condition initiale~\eqref{eq:CondInit} permet de poser le problème tel que
+Le report des flux de chaleurs des équations~\eqref{eq:FluxTA_Transitoire_Regen} à \eqref{eq:FluxLat_Transitoire} dans l'équation du problème~\eqref{eq:BilanChaleur_Transitoire_ApDvptCylin}, dans les conditions aux frontières~\eqref{eq:CondFront} et dans la condition initiale~\eqref{eq:CondInit} permet de poser le problème tel que
 
 \begin{equation}
 	toto
@@ -413,14 +408,14 @@ Le report des flux de chaleurs des équations~\eqref{eq:FluxTA_Lotton_Regen} à 
 \end{equation}
 
 \subsubsection{Méthode des transformations intégrales}\label{chap:TransfoIntegrales}
-La résolution de l'équation~\eqref{eq:BilanChaleur_LottonPoignand_ApDvptCylin} qui comporte des termes sources requiert l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{ozisik_heat_1993}. Les équations s'écrivent alors
+La résolution de l'équation~\eqref{eq:BilanChaleur_Transitoire_ApDvptCylin} qui comporte des termes sources requiert l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{ozisik_heat_1993}. Les équations s'écrivent alors
 
 \begin{subequations}
 	\begin{align}
-		\echaf{Systeme\ ici},\label{eq:1_LottonPoignand}\\
-		\echaf{Systeme\ ici},\label{eq:2_LottonPoignand}
+		\echaf{Systeme\ ici},\label{eq:1_Transitoire}\\
+		\echaf{Systeme\ ici},\label{eq:2_Transitoire}
 	\end{align}
-	\label{eq:SystemeEq_LottonPoignand}
+	\label{eq:SystemeEq_Transitoire}
 \end{subequations}
 avec les changements de variables suivants
 
@@ -431,6 +426,11 @@ avec les changements de variables suivants
 
 %\end{comment}
 \subsection{Détermination des paramètres empiriques}
+Parce que le modèle contient un certain nombre de paramètres empiriques à ajuster pour retrouver les mêmes tendances que sur les résultats expérimentaux, il convient de procéder par étape.
+
 \subsubsection{Coefficient d'échange aux extrémités du noyau}
+Tout d'abord, pour éliminer la vorticité, les expériences sans acoustiques sont exploitées, ce qui permet de déterminer les valeurs des coefficients d'échanges convectifs $h_x(x)$ en $x=0,\ L_{\sf reg}$, et $h_r(r)$ en $r=0,\ R_{\sf reg}$. Ces coefficients sont trouvés grâce à la minimisation d'une fonction de coût dans \textsc{Matlab}\textss\textregistered. En particulier, les fonctions \texttt{fminsearch} \echaf{et autres} sont appliquées pour réduire l'écart entre les températures mesurées, à la fois pour \echaf{toutes} les positions de thermocouples, et pour certains instants $t$.
 
 \subsubsection{Flux thermique de vorticité}
+
+\section{Conclusion}

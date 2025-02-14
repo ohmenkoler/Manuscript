@@ -33,6 +33,7 @@
 \emergencystretch=1em
 %\let\epsilon\varepsilon
 %\let\phi\varphi
+\let\textss\textsuperscript
 
 \usepackage{layout}
 \renewcommand{\theparagraph}{\thesubsubsection.\alph{paragraph}}
@@ -176,7 +177,7 @@
 \usepackage[
 %	left=2cm,right=2cm,					% Pour un fichier numérique (marges égales à droite et gauche)
 	inner=3cm,textwidth=17cm,		% Pour imprimer (plus de marge au centre côté reliure)
-	top=2cm,bottom=2cm]{geometry}
+	top=2cm,bottom=1.75cm]{geometry}
 
 \usepackage{hyperref}
 	\hypersetup{pdfborder = {0 0 0},%borderless hyperlinks
@@ -310,6 +311,8 @@ Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
 \renewcommand{\thepage}{\roman{page}}
 \maketitle
 \cleardoublepage
+
+%\layout*
 
 \input{Citations}
 

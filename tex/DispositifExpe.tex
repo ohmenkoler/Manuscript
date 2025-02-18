@@ -33,9 +33,9 @@ Après avoir brièvement rappelé les bases de fonctionnement des machines therm
 \subsection{Résultats déjà obtenus}\label{chap:PresTacot_ResultatsATE}
 \echaf{Quelques résultats. À mettre dans l'intro I ?} Au démarrage de cette thèse, le réfrigérateur existe déjà et sa caractérisation est publiée \cite{ramadan_design_2021}, et fait également l'objet d'études expérimentales~\cite{ramadan_experimental_2018, ramadan_experimental_2021} et  numériques~\cite{hireche_numerical_2019, hireche_experimental_2020, baltean_gravity_2025}. 
 
-Les expériences réalisées avant le début de cette thèse sont faite en utilisant un gaz pressurisé à \qty{40}{\bar} et composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, car dans ces proportions le nombre de Prandtl est minimum \cite{belcher_working_1999}. Le modèle linéaire 1D réalisé avec le logiciel \echaf{dédié} \textsc{DeltaEC} prédit les meilleurs performances à la fréquence de résonance du système $f=\qty{47}{\hertz}$. C'est par ailleurs le seul point de fonctionnement où l'impédance électrique est supérieure à la limite basse admise par l'amplificateur, soit \qty{2}{\ohm}. Le déphasage inter-source est fixé à $\varphi_{2-1}=\ang{-60}$ pour toutes les expériences, car il s'agit de la valeur optimale d'après les simulations et ce qui est confirmé par des expériences préliminaires.
+Les expériences réalisées avant le début de cette thèse sont faite en utilisant un noyau dont la porosité est $\Phi=\qty{75}{\percent}$. Il est immergé dans un mélange de gaz pressurisé à \qty{40}{\bar} et composé de \qty{70}{\percent} d'hélium et de \qty{30}{\percent} d'argon, car dans ces proportions le nombre de Prandtl du mélange est minimum \cite{belcher_working_1999}. Le modèle linéaire 1D réalisé avec le logiciel \echaf{dédié} \textsc{DeltaEC} prédit les meilleurs performances à la fréquence de résonance du système $f=\qty{47}{\hertz}$, pour laquelle la longueur d'onde vaut $\lambda=\qty{11.7}{\meter}$, validant une des hypothèse de compacité acoustique du modèle de Swift. C'est par ailleurs le seul point de fonctionnement où l'impédance électrique est supérieure à la limite basse admise par l'amplificateur, soit \qty{2}{\ohm}. Le déphasage inter-source est fixé à $\varphi_{2-1}=\ang{-60}$ pour toutes les expériences, car il s'agit de la valeur optimale d'après les simulations et ce qui est confirmé par des expériences préliminaires.
 
-Dans cet article, il est montré qu'à ces fréquence et déphasage inter-sources, et à une amplitude $DR=\frac{p_1}{p_0}=\qty{3.6}{\percent}$, une puissance d'alimentation des sources $\dot W_e=\qty{193}{\watt}$ et consommée, une quantité de chaleur de $\dot Q_f=\qty{290}{\watt}$ est extraite à la source froide et la température $T_a=\qty{15}{\degreeCelsius}$ est atteinte. Le coefficient de performance à ce point de fonctionnement est $\COP=\frac{\dot Q_f}{\dot W_e}=\num{1.5}$, soit \qty{15}{\percent} du coefficient de performance de Carnot.\smallskip
+Dans cet article, il est montré qu'à ces fréquence et déphasage inter-sources, et à une amplitude $DR=\nicefrac{p_1}{p_0}=\qty{3.6}{\percent}$, une puissance d'alimentation des sources $\dot W_e=\qty{193}{\watt}$ et consommée, une quantité de chaleur de $\dot Q_f=\qty{290}{\watt}$ est extraite à la source froide et la température $T_a=\qty{15}{\degreeCelsius}$ est atteinte. Le coefficient de performance à ce point de fonctionnement est $\COP=\nicefrac{\dot Q_f}{\dot W_e}=\num{1.5}$, soit \qty{15}{\percent} du coefficient de performance de Carnot.\smallskip
 
 Cependant, les résultats obtenus avant le démarrage de cette thèse montrent des écarts avec les prédictions de la théorie linéaire.\echaf{ajouter figures des écarts mesures-modèle DeltaEC}
 
@@ -138,7 +138,7 @@ avec $d_w$ le diamètre du fil \cite{swift_thermoacoustics_2017}. Ce milieu pore
 	K_p = \echaf{v_{\sf ref}\frac{\nu \Delta x}{\Delta P}},
 	\label{eq:DefPermeabilite_Wikipedia}
 \end{equation}
-où $v_{\sf ref}$ est la vitesse d'écoulement d'un fluide de viscosité cinématique $\nu$ causé par un gradient de pression $\frac{\Delta P}{\Delta x}$ de part et d'autre du milieu poreux \cite{nield_convection_2013}. Cependant, il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne du milieu poreux~\cite{dullien_porous_1992}. La formulation retenue s'écrit
+où $v_{\sf ref}$ est la vitesse d'écoulement d'un fluide de viscosité cinématique $\nu$ causé par un gradient de pression $\nicefrac{\Delta P}{\Delta x}$ de part et d'autre du milieu poreux \cite{nield_convection_2013}. Cependant, il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne du milieu poreux~\cite{dullien_porous_1992}. La formulation retenue s'écrit
 
 \begin{equation}
 	K_p = \echaf{\frac{4 r_h^2 \Phi}{8}},
@@ -191,11 +191,23 @@ Les dimensions et paramètres du régénérateur sont résumés dans le tableau 
 \end{table}
 
 \paragraph*{\'Echangeurs de chaleur}
-Le pompage de chaleur par effet thermoacoustique doit être exploité. En effet, dans l'application du \textsc{Tacot}, \echaf{blablabla}
+Le pompage de chaleur par effet thermoacoustique doit être exploité. En effet, dans l'application du \textsc{Tacot}, il est nécessaire d'empêcher l'échauffement global de la machine, puisque le pompage de chaleur continue tant que de l'énergie mécanique est apportée au système par les sources acoustiques. De plus, une pompe à chaleur retire par principe de la chaleur à une source à refroidir, dite \og source froide \fg{}. Toutefois, cet échangeur remplit une autre fonction dans le cadre de ce projet. La caractérisation des performances de la pompe à chaleur requiert la connaissance du flux de chaleur retiré à la source froide.
+
+\medskip
+
+
+\noindent \textbf{L'échangeur ambiant} est fabriqué en 
+\medskip
+
+\noindent \textbf{L'échangeur froid}
 
 \subsection{Instrumentation}
-L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments.\bigskip
+L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments.
 
+%\bigskip
+
+\subsubsection{Banc de mesure ?}
+\echaf{photo du banc}
 
 \subsubsection{Chaîne d'excitation}
 Premièrement, la chaîne d'excitation est présentée. Elle est assez simple, et se compose d'un générateur de fonction à deux canaux (TekTronix AFG3022). Chaque canal est ensuite connecté à un amplificateur pour chaque source acoustique. La source principale (RIX Industries, 1S241M) est alimentée par un amplificateur QSC PLD4.5, et la source secondaire (Peerless, GBS135F) par un amplificateur Yamaha P3500S.\medskip
@@ -206,7 +218,7 @@ La chaîne d'acquisition se compose de plus de trente capteurs. Tous ne sont pas
 
 \paragraph*{Alimentation électrique des sources} L'alimentation électrique de la source acoustique principale est mesurée au moyen d'une sonde différentielle pour la tension \echaf{et le courant ?}. Pour la source acoustique secondaire, un multimètre et une pince de courant se chargent de mesurer sa consommation électrique. En parallèle, les tensions aux bornes des deux sources sont affichées sur un oscilloscope pour s'assurer de leur déphasage.
 
-\paragraph*{Température} Dix-neuf thermocouples Type K de \qty{.5}{\milli\meter} de diamètre sont placés de la manière suivante : quinze thermocouples mesurent la température en différentes positions du noyau, un devant la source acoustique principale, deux derrière celle-ci, et un derrière la source acoustique secondaire. Cependant, la carte d'acquisition utilisée (National Instruments, NI9213) ne comporte que seize entrées, il \echaf{convient} donc suivant les informations recherchée dans une expérimentation de sélectionner les trois thermocouples dont les signaux ne sont pas enregistrés. Dans tous les résultats de mesures discutés dans la suite, les thermocouples du noyau et de devant la source acoustique principale sont connectés. Le placement de ces thermocouples d'intérêt est représenté sur la figure~\ref{fig:TCdansNoyau} par les symboles `\textcolor{cyan}{\textbullet}'.
+\paragraph*{Température} Dix-neuf thermocouples Type K de \qty{.5}{\milli\meter} de diamètre sont placés de la manière suivante : quinze thermocouples mesurent la température en différentes positions du noyau, un devant la source acoustique principale, deux derrière celle-ci, et un derrière la source acoustique secondaire. Cependant, la carte d'acquisition utilisée (National Instruments, NI9213) ne comporte que seize entrées, il \echaf{convient} donc, suivant les informations recherchées dans une expérimentation donnée, de sélectionner les trois thermocouples dont les signaux sont mis de côté. Dans tous les résultats de mesures discutés dans la suite, les thermocouples du noyau et de devant la source acoustique principale sont connectés. Le placement de ces thermocouples d'intérêt est représenté sur la figure~\ref{fig:TCdansNoyau} par les symboles `\textcolor{cyan}{\textbullet}'.
 
 \begin{figure}[!ht]
     \centering
@@ -408,9 +420,9 @@ Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante
 \subsubsection{Mesures avec acoustique}\label{chap:MesureAvecAcou} 
 Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, c'est la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial.
 
-Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\frac{p_1}{p_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible -- soit une différence de température de l'ordre de \qty{5}{\kelvin}. Ainsi, l'hypothèse concernant la linéarité acoustique est mieux vérifiée et peut \textit{a priori} être plus aisément comparé à la théorie linéaire. À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$. 
+Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\frac{p_1}{p_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible -- soit une différence de température de l'ordre de \qty{5}{\kelvin}. Ainsi, l'hypothèse concernant la linéarité acoustique est mieux vérifiée et peut \textit{a priori} être plus aisément comparé à la théorie linéaire. À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$. \medskip
 
-Ensuite, une charge thermique peut être appliquée au noyau, par le biais de l'échangeur froid. Il contient six cartouches chauffantes connectées en parallel et alimentées électriquement par un transformateur. Pour une expérience donnée, une puissance thermique est choisie selon la relation
+Ensuite, une charge thermique peut être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc\_x\_W}' où \texttt{x} représente la puissance injectée. Ce type d'expérience se fait en alimentant avec un transformateur les six cartouches chauffantes connectées en parallèle et contenues dans l'échangeur froid (voir la figure~\echaf{fig noyau}. Pour une expérience donnée, une puissance thermique est choisie selon la relation
 
 \begin{equation}
 	Q_f = \frac{E^2}{R},
@@ -419,22 +431,23 @@ Ensuite, une charge thermique peut être appliquée au noyau, par le biais de l'
 où $E$ est la tension appliquée aux cartouches et $R=\qty{22.4}{\ohm}$ la résistance des cartouches en parallèle. \echaf{à continuer}
 
 \section{Post-traitement des données}
-Les données sont post-traitées en utilisant un code \textsc{Matlab}\textss\textregistered maison, disponible sur \url{https://github.com/ohmenkoler/tacotpostprocessing}.
+À la fin des acquisitions, les données sont post-traitées en utilisant un code \textsc{Matlab}\textss\textregistered maison, disponible sur \url{https://github.com/ohmenkoler/tacotpostprocessing}.
 
 \subsection{Allègement des fichiers}
-Pendant chaque campagne de mesure réalisée suivant le protocole \echaf{section}, des fichiers bruts de mesures sont générés. Ils présentent deux inconvénients majeurs : leur format est \texttt{.tdms}, celui de NI LabVIEW, et ils sont très lourds. La première étape de traitement des données est d'extraire uniquement les informations nécessaires pour les préparer à d'autres actions en utilisant un script \textsc{Matlab}\textss\textregistered, et à les sauvegarder dans un fichier \texttt{.mat}.\medskip
+Pendant chaque campagne de mesure réalisée suivant le protocole \echaf{section}, des fichiers bruts de mesures sont générés. Ils présentent deux inconvénients majeurs : leur format est \texttt{*.tdms}, celui de NI LabVIEW, et ils sont très lourds. La première étape de traitement des données est d'extraire uniquement les informations nécessaires pour les préparer à d'autres actions en utilisant un script \textsc{Matlab}\textss\textregistered, et à les sauvegarder dans un fichier \texttt{*.mat}.\medskip
 
-Pour ce faire, un fichier \texttt{tdms} à traiter est tout d'abord chargé. Il peut alors être tronqué à un temps $t_{fin}$ souhaité pour garantir des fichiers temporels de même longueur\footnote{Sauf si un problème d'acquisition coupe l'enregistrement tout seul\dots}. Un fichier de configuration est créé, comprenant notamment l'amplitude acoustique, la tension appliquée aux cartouches de l'échangeur froid, ou l'orientation, pour ne pas perdre ces informations après ce pré-traitement des données.\smallskip
+Pour ce faire, un fichier \texttt{*.tdms} à traiter est tout d'abord chargé. Il peut alors être tronqué à un temps $t_{fin}$ souhaité pour garantir des fichiers temporels de même longueur\footnote{Sauf si un problème d'acquisition coupe l'enregistrement tout seul\dots}. Un fichier de configuration est créé, comprenant notamment l'amplitude acoustique, la tension appliquée aux cartouches de l'échangeur froid, ou l'orientation, pour ne pas perdre ces informations après ce pré-traitement des données.\smallskip
 
 Ensuite, la valeur initiales est retirée de chaque signal temporel de thermocouple. Cette valeur initiale est calculé sur les \qty{10}{\second} au début des signaux temporels, soit un nombre de points égal à $10 \times f_{e}$ où $f_{e}$ est la fréquence d'échantillonage qui vaut \qty{1651}{\hertz}.\smallskip
 
-Cette fréquence est imposée par les cartes d'acquisition de pression dynamique à tout le \texttt{vi} LabVIEW. C'est bien trop élevé, aussi bien pour les quantités non oscillantes comme la température, que les données oscillant à la fréquence $f_1=\qty{47}{\hertz}$ comme la pression dynamique ou l'accélération. Il est donc nécessaire d'alléger les données, et les températures sont ré-échantillonées à une fréquence $f_{re}=\qty{.1}{\hertz}$. De leur côté, les autres données oscillantes sont coupées pour ne conserver que les \num{20} dernières périodes, soit un nombre de points donné par $20 \times \frac{f_e}{f_1}$.\smallskip
+Cette fréquence est imposée par les cartes d'acquisition de pression dynamique à tout le \texttt{vi} LabVIEW. C'est bien trop élevé, aussi bien pour les quantités non oscillantes comme la température, que les données oscillant à la fréquence $f_1=\qty{47}{\hertz}$ comme la pression dynamique ou l'accélération. Il est donc nécessaire d'alléger les données, et les températures sont ré-échantillonées à une fréquence $f_{re}=\qty{.1}{\hertz}$. De leur côté, les autres données oscillantes sont coupées pour ne conserver que les \num{20} dernières périodes entières des signaux, soit un nombre de points donné par $20 \times \nicefrac{f_e}{f_1}$.\smallskip
 
-Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est alors traité : pour les expériences en deux étapes ou plus (\texttt{water\_only} et \texttt{acou} par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue. Une première valeur de $\dot Q_a^{(wo)}$ est donc calculée et enregistrée dans un fichier \texttt{.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée.\smallskip
+Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est alors traité : pour les expériences en deux étapes ou plus (une expérience de type `\texttt{water\_only}' suivie d'une autre de type `\texttt{acou}' par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue. Une première valeur de $\dot Q_a^{(wo)}$ est donc calculée et enregistrée dans un fichier \texttt{*.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée.\smallskip
 
-Les amplitudes et phases des pressions dynamiques et accélérations sont calculées en utilisant le principe de la détection synchrone. 
+Les amplitudes et phases des pressions dynamiques et accélérations sont calculées en utilisant le principe de la détection synchrone. Cette méthode est appliquée pour les quatre capteurs de pression dynamique et les deux accéléromètres, et en considérant cinq harmoniques.
 
-\echaf{insérer détection synchrone ici ?}
+%\echaf{nécessaire ?} Cette méthode repose sur l'orthogonalité des fonctions trigonométriques : le signal dont l'amplitude à une fréquence donnée $f_{osc}$ est recherchée est multiplié par un oscillateur à la même fréquence $f_{osc}$, puis moyenné sur une période $t_{osc}=\nicefrac{1}{f_{osc}}$ avec un filtre intégrateur. Le résultat de cette moyenne est différent de zéro dans le seul cas où la fréquence du signal $f_1$ est égale à celle de l'oscillateur $f_{osc}$.
+
 
 
 

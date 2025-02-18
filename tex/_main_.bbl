@@ -2141,6 +2141,47 @@
       \verb https://electroacoustique.univ-lemans.fr/
       \endverb
     \endentry
+    \entry{DeltaEC}{software}{}
+      \name{author}{3}{}{%
+        {{hash=6ff96c43a738e49b9b639401ec517d79}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Bill},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6493512f6789dce2fa170564c213ed95}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cd52d9fbbbcfcdb166f40cd909407097}{%
+           family={Swift},
+           familyi={S\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{01f3dcc5988d9051c9e0348f836aba5e}
+      \strng{fullhash}{713e6cc9197aab6faac7f7b9953a7b19}
+      \strng{bibnamehash}{713e6cc9197aab6faac7f7b9953a7b19}
+      \strng{authorbibnamehash}{713e6cc9197aab6faac7f7b9953a7b19}
+      \strng{authornamehash}{01f3dcc5988d9051c9e0348f836aba5e}
+      \strng{authorfullhash}{713e6cc9197aab6faac7f7b9953a7b19}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{month}{2}
+      \field{title}{{Design Environment for Low-amplitude Thermoacoustic Energy Conversion}}
+      \field{version}{6.4b2.9}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.losalamosthermoacoustics.org/deltaec.html
+      \endverb
+      \verb{url}
+      \verb https://www.losalamosthermoacoustics.org/deltaec.html
+      \endverb
+    \endentry
     \entry{zhang_novel_2011}{article}{}
       \name{author}{4}{}{%
         {{hash=848fa0113dff92ede4a4b46860341d44}{%
@@ -2397,8 +2438,8 @@
       \endverb
     \endentry
     \entry{ANR_thermo-acoustic_2019}{online}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{abstract}{The goal of the project {TACOT} is to demonstrate the applicability of thermoacoustics for refrigeration in the automotive field. It brings together Groupe {PSA} and four {CNRS} research laboratories (Institut P’, {LAUM}, {LIMSI}, {LMFA}), and is organized into three challenges. The first challenge consists in designing, manufacturing and assessing the performance of a compact thermoacoustic device with one thermoacoustic core. The originality of the device comes from the use of two acoustic sources that yields its compactness. The device will be designed using available simulation tools that are based on the linear uni-dimensional theory of thermoacoustics and that can predict a steady state behavior of the device for one set of entry conditions. Due to the limiting hypotheses of these tools, it is expected that the performance of the prototype will be lower than the ones calculated by the model. It is therefore necessary to limit this discrepancy by assessing the performance of the device in order to better quantify the complexity of flow movement and heat transfer encountered in such a compact device. Simultaneous fundamental studies are proposed in a second challenge to improve the understanding and description of the phenomena that limit the efficiency of the device. Both experimental and numerical studies will be led to investigate about - acoustical characteristics of thermoacoustic core (regenerator plus heat exchangers) of complex shape, especially at high acoustic levels and with temperature gradient, - end effects and matching conditions between the different elements of the device: Source and cavity, regenerator and heat exchangers, heat exchangers and cavity ; these effects will be investigated experimentally both from a fluid dynamics and from a heat transfer point a view, - phenomenological analysis and numerical simulation of complex flows that can appear as consequences of high amplitudes, complex geometries and thermoacoustic heat pumping in each element of the compact device. In the third challenge the evolution towards a performant compact dual thermoacoustic core heat-pump device will be investigated. The aim of this last challenge is to bring thermoacoustic compact devices to a competitive positioning as compared to in-use technologies. For this purpose, the results of challenges 1 and 2 will be used to propose an evolution of the thermoacoustic core towards higher performance. Also studies on a new architecture of acoustic source will be initiated. This new source architecture should allow to use two thermoacoustic cores, thus increasing the heat pumped from the cold source. These three challenges should lead to the proposal of a complete dual core refrigerator that could be a viable substitute for traditional air conditioning systems in the automotive industry both in terms of size and performance.}
       \field{langid}{english}

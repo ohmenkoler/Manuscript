@@ -300,16 +300,26 @@ Ainsi, les systèmes électro-mécano-acoustiques comme les haut-parleurs ou les
 	\caption{Analogies électro-mécano-acoustiques}
 	\label{tab:AnalogElectroMecanoAcoust}
 	\centering
-	\begin{tabular}{ C{.25\textwidth}  C{.25\textwidth}  C{.25\textwidth} }
-	\hline
+%	\begin{tabular}{ m{.25\textwidth}  m{.25\textwidth}  m{.25\textwidth} }
+%	\hline
+%%	\multicolumn{3}{|c|}{Domaines} \\\hline
+%	Acoustique & Mécanique & \'Electrique \\ \hline\hline
+%	\tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[L] ++(2,0);} \\
+%	\tikz{\draw(0,0) -- ++(1,0) -- ++(0,.5) -- ++(-1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[C] ++(2,0);} \\
+%	\tikz{\fill[pattern={horizontal lines}](0,0) rectangle ++(1,.5);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[R] ++(2,0);} \\
+%	\hline
+%	
+%	\end{tabular}
+
+	\begin{tblr}{ rows = {1cm}, row{1} = {15pt, font=\bf}, columns = {.25\textwidth, c} }
+		\hline
 %	\multicolumn{3}{|c|}{Domaines} \\\hline
-	Acoustique & Mécanique & \'Electrique \\ \hline\hline
-	\tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[L] ++(2,0);} \\
-	\tikz{\draw(0,0) -- ++(1,0) -- ++(0,.5) -- ++(-1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[C] ++(2,0);} \\
-	\tikz{\fill[pattern={horizontal lines}](0,0) rectangle ++(1,.5);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[R] ++(2,0);} \\
-	\hline
-	
-	\end{tabular}
+		Acoustique & Mécanique & \'Electrique \\ \hline\hline
+		\tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[L] ++(2,0);} \\
+		\tikz{\draw(0,0) -- ++(1,0) -- ++(0,.5) -- ++(-1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[C] ++(2,0);} \\
+		\tikz{\fill[pattern={horizontal lines}](0,0) rectangle ++(1,.5);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[R] ++(2,0);} \\
+		\hline
+	\end{tblr}
 \end{table}
 }
 
@@ -486,7 +496,7 @@ u_e
 %    \item Génération d'harmoniques par les sources ? vérifier si superposition d'effet à 47 Hz avec 2x47 Hz etc.
 %\end{itemize}
 
-Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations dédiés tels que \textsc{DeltaEC}, soit suffisante pour prédire le comportement des machines thermoacoustiques de même que leurs performances, de nombreux effets sont négligés. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible et que les températures le long des dimensions transverses du noyau peuvent être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faible que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.
+Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations dédiés tels que \textsc{DeltaEC}, soit suffisante pour prédire le comportement des machines thermoacoustiques de même que leurs performances, de nombreux effets sont négligés~\cite{DeltaEC}. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible et que les températures le long des dimensions transverses du noyau peuvent être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faible que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.
 
 \section{Plan du manuscrit}
 Après avoir présenté les éléments de base du travail sur ce réfrigérateur thermoacoustique \textsc{Tacot}, le contexte autour de cette thèse, et l'axe sur lequel elle se concentre, un plan est proposé.\medskip

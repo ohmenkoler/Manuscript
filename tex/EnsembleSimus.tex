@@ -263,9 +263,9 @@ Ensuite, les flux thermiques sont également pour la plupart différents dans le
 	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |u|^2 }^{k_{TA}(x)}\partial_x \theta(r,x;t),
 \label{eq:FluxTA_Transitoire_Regen}
 \end{multline}
-où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale à la température initiale. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans la dépendance spatio-temporelle. Il est important de remarquer la partie réelle de ce flux thermique, notée $q_{TA}$, qui ne dépend que du champ acoustique, et la partie imaginaire $k_{TA}$ qui dépend du gradient de température le long du stack et qui peut être vu comme un terme de conduction induite par l'effet thermoacoustique.
+où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale à la température initiale. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans les dépendances spatio-temporelle. Il est important de remarquer la partie réelle de ce flux thermique, notée $q_{TA}$, qui ne dépend que du champ acoustique, et la partie imaginaire $k_{TA}$ qui dépend du gradient de température le long de l'empilement, et qui correspond à un terme de conduction induite par l'effet thermoacoustique.
 
-\item Ensuite, la conduction dans le régénérateur est prise en compte dans les directions $\textbf e_x$ et $\textbf{e}_r$ du régénérateur avec l'équation exprimée en coordonnées cylindriques par
+\item Ensuite, la conduction dans le régénérateur est prise en compte dans les directions axiale $\textbf e_x$ et transversale $\textbf{e}_r$ du régénérateur avec les équations
 
 %\begin{equation}
 %	Q_{\sf cond} = -\begin{pmatrix}
@@ -287,29 +287,10 @@ où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale
 	\end{equation}
 	\end{multicols}
 \end{subequations}
-avec les indices $x$ et $r$ dénotant respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique longitudinale apparente et $k_x~=~\Phi k_{g} + (1-\Phi)k_{s}k_{s_{frac}}$ \echaf{verifier}. Il existe dans la littérature des mesures de la conductivité transversale dans un milieu poreux constitué d'un empilement de tissus \cite{hsu_effective_1996}. 
+où $x$ et $r$ dénotent respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique longitudinale apparente et $k_x~=~\Phi k_{g} + (1-\Phi)k_{s}k_{s_{frac}}$ \echaf{verifier}. Il existe dans la littérature des mesures de la conductivité transversale dans un milieu poreux constitué d'un empilement de tissus \cite{hsu_effective_1996}. 
 
- \echaf{En première aproximation, il est possible de considérer les valeurs de conductivité comme égales les unes aux autres. Cependant, c'est inexact car le long de l'axe $\mathbf e_x$ le milieu est constitué de l'empillement de tissus métalliques tandis que dans la direction $\mathbf e_r$ le flux de chaleur parcourt les fils qui forment le tissus en lui-même.}
-
-%\begin{equation}
-%Q_{\sf cond}^{(x)} = -k_x\partial_x\theta~\mathrm{\mathbf e_x},
-%\label{eq:FluxCondx_Transitoire}
-%\end{equation}
-%avec... 
-%
-%\begin{equation}
-%Q_{\sf cond}^{(r)} = -k_r\partial_r\theta~\mathrm{\mathbf e_r},
-%\label{eq:FluxCondr_Transitoire}
-%\end{equation}
-%
-%\begin{equation}
-%Q_{\sf cond}^{(\alpha)} = -k_\alpha\partial_\alpha\theta~\mathrm{\mathbf e_\alpha},
-%\label{eq:FluxCondalpha_Transitoire}
-%\end{equation}
-%\textcolor{red}{Rassembler $Q_{cond}$ en 1 seul terme} avec ...
 
 \item Les pertes visqueuses sont estimées avec l'équation
-
 \begin{equation}
 Q_{\sf visq} = \frac{1}{R_{\sf reg}^2} \int_{0}^{R_{\sf reg}} \frac{1}{t_0} \int_0^{t_0} \mu (\partial_r u)^2\ r \deriv r \deriv t.
 \label{eq:FluxVisq_Transitoire}

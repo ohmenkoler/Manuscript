@@ -418,7 +418,27 @@ Ensuite, une charge thermique peut être appliquée au noyau, par le biais de l'
 \end{equation}
 où $E$ est la tension appliquée aux cartouches et $R=\qty{22.4}{\ohm}$ la résistance des cartouches en parallèle. \echaf{à continuer}
 
+\section{Post-traitement des données}
+Les données sont post-traitées en utilisant un code \textsc{Matlab}\textss\textregistered maison, disponible sur \url{https://github.com/ohmenkoler/tacotpostprocessing}.
 
+\subsection{Allègement des fichiers}
+Pendant chaque campagne de mesure réalisée suivant le protocole \echaf{section}, des fichiers bruts de mesures sont générés. Ils présentent deux inconvénients majeurs : leur format est \texttt{.tdms}, celui de NI LabVIEW, et ils sont très lourds. La première étape de traitement des données est d'extraire uniquement les informations nécessaires pour les préparer à d'autres actions en utilisant un script \textsc{Matlab}\textss\textregistered, et à les sauvegarder dans un fichier \texttt{.mat}.\medskip
+
+Pour ce faire, un fichier \texttt{tdms} à traiter est tout d'abord chargé. Il peut alors être tronqué à un temps $t_{fin}$ souhaité pour garantir des fichiers temporels de même longueur\footnote{Sauf si un problème d'acquisition coupe l'enregistrement tout seul\dots}. Un fichier de configuration est créé, comprenant notamment l'amplitude acoustique, la tension appliquée aux cartouches de l'échangeur froid, ou l'orientation, pour ne pas perdre ces informations après ce pré-traitement des données.\smallskip
+
+Ensuite, la valeur initiales est retirée de chaque signal temporel de thermocouple. Cette valeur initiale est calculé sur les \qty{10}{\second} au début des signaux temporels, soit un nombre de points égal à $10 \times f_{e}$ où $f_{e}$ est la fréquence d'échantillonage qui vaut \qty{1651}{\hertz}.\smallskip
+
+Cette fréquence est imposée par les cartes d'acquisition de pression dynamique à tout le \texttt{vi} LabVIEW. C'est bien trop élevé, aussi bien pour les quantités non oscillantes comme la température, que les données oscillant à la fréquence $f_1=\qty{47}{\hertz}$ comme la pression dynamique ou l'accélération. Il est donc nécessaire d'alléger les données, et les températures sont ré-échantillonées à une fréquence $f_{re}=\qty{.1}{\hertz}$. De leur côté, les autres données oscillantes sont coupées pour ne conserver que les \num{20} dernières périodes, soit un nombre de points donné par $20 \times \frac{f_e}{f_1}$.\smallskip
+
+Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est alors traité : pour les expériences en deux étapes ou plus (\texttt{water\_only} et \texttt{acou} par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue. Une première valeur de $\dot Q_a^{(wo)}$ est donc calculée et enregistrée dans un fichier \texttt{.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée.\smallskip
+
+Les amplitudes et phases des pressions dynamiques et accélérations sont calculées en utilisant le principe de la détection synchrone. 
+
+\echaf{insérer détection synchrone ici ?}
+
+
+
+\subsection{Tracé de figures pour analyse}
 
 \begin{comment}
 \subsubsection{Paramètres d'acquisition}

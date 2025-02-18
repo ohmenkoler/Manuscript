@@ -1,225 +1,442 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  18 FEB 2025 15:26
-entering extended mode
- \write18 enabled.
- %&-line parsing enabled.
-**./_main_.tex
-(_main_.tex
+This is LuaHBTeX, Version 1.18.0 (MiKTeX 24.3) (format=lualatex 2024.7.17)  18 FEB 2025 16:50
+ restricted system commands enabled.
+**_main_.tex
+(./_main_.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
-(C:\Program Files\MiKTeX\tex/latex/base\book.cls
+Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "C:/Users/mfontbon/AppData/Local/MiK
+TeX/luatex-cache/generic/names".
+luaotfload | init : No match for requested fontloader "fontloader-2023-08-19.lua
+".
+luaotfload | init : Defaulting to predefined fontloader "reference".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.133
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/mfontbon/AppData/Local/MiK
+TeX/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. ("C:/Program Files/MiKT
+eX/tex/latex/base/book.cls"
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Program Files\MiKTeX\tex/latex/base\bk12.clo
+("C:/Program Files/MiKTeX/tex/latex/base/bk12.clo"
 File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
-)
-\c@part=\count188
-\c@chapter=\count189
-\c@section=\count190
-\c@subsection=\count191
-\c@subsubsection=\count192
-\c@paragraph=\count193
-\c@subparagraph=\count194
-\c@figure=\count195
-\c@table=\count196
+luaotfload | db : Font names database loaded from C:/Users/mfontbon/AppData/Loca
+l/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count186
+\c@chapter=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
-\bibindent=\dimen140
+\bibindent=\dimen139
 )
-(C:\Program Files\MiKTeX\tex/latex/iwona\iwona.sty
-Package: iwona 2005/10/03 v.1.2 Iwona package (MW)
-\c@mv@iwona=\count197
-\c@mv@iwonabold=\count198
-LaTeX Font Info:    Overwriting symbol font `operators' in version `iwona'
-(Font)                  OT1/cmr/m/n --> OT1/iwonalm/m/n on input line 58.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `iwona'
-(Font)                  OML/cmm/m/it --> OML/iwonal/m/it on input line 59.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `iwona'
-(Font)                  OMS/cmsy/m/n --> OMS/iwonal/m/n on input line 60.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `iwona'
-(Font)                  OMX/cmex/m/n --> OMX/iwonal/m/n on input line 61.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `iwonabold'
-(Font)                  OT1/cmr/m/n --> OT1/iwonalm/b/n on input line 62.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `iwonabold'
-(Font)                  OML/cmm/m/it --> OML/iwonal/b/it on input line 63.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `iwonabold'
-(Font)                  OMS/cmsy/m/n --> OMS/iwonal/b/n on input line 64.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `iwonabol
-d'
-(Font)                  OMX/cmex/m/n --> OMX/iwonal/b/n on input line 65.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `iwona'
-(Font)                  OT1/cmr/bx/n --> OT1/iwonal/bx/n on input line 67.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `iwona'
-(Font)                  OT1/cmss/m/n --> OT1/iwonal/m/n on input line 68.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `iwona'
-(Font)                  OT1/cmr/m/it --> OT1/iwonal/m/it on input line 69.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `iwona'
-(Font)                  OT1/cmtt/m/n --> OT1/iwonal/m/n on input line 70.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `iwonabold'
-(Font)                  OT1/cmss/m/n --> OT1/iwonal/bx/n on input line 71.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `iwonabold'
-(Font)                  OT1/cmr/m/it --> OT1/iwonal/bx/it on input line 72.
-)
-(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
-)
-(C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+iwonal on input line
- 112.
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/iwonamath.sty"
+Package: iwonamath 2023-08-31 v1.0 Scaled Iwona math fonts
+\symsymbols2=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `symbols2' in version `bold'
+(Font)                  OMS/iwonamathcmsy/m/n --> OMS/cmsy/b/n on input line 71
+.
+LaTeX Font Info:    Redeclaring math version `normal' on input line 144.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/iwonamathm/m/n on input line 144.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/iwonamath/m/it on input line 144.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/iwonamath/m/n on input line 144.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/iwonamath/m/n on input line 144.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/iwonamath/bx/n on input line 144.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/iwonamath/m/n on input line 144.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/iwonamath/m/it on input line 144.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/iwonamath/m/n on input line 144.
+LaTeX Font Info:    Overwriting symbol font `symbols2' in version `normal'
+(Font)                  OMS/iwonamathcmsy/m/n --> OMS/iwonamathcmsy/m/n on inpu
+t line 144.
+LaTeX Font Info:    Redeclaring math version `bold' on input line 144.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/iwonamathm/b/n on input line 144.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/m/it --> OML/iwonamath/b/it on input line 144.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/m/n --> OMS/iwonamath/b/n on input line 144.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/iwonamath/b/n on input line 144.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/iwonamath/bx/n on input line 144.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/m/it --> OT1/iwonamath/bx/it on input line 144.
 
-(C:\Program Files\MiKTeX\tex/latex/iwona\t1iwonal.fd
-File: t1iwonal.fd 2008/07/22 v0.995 font definition file for T1/iwonal (MW)
-))
-(C:\Program Files\MiKTeX\tex/latex/tools\layout.sty
-Package: layout 2023-08-20 v1.2e Show layout parameters
-\oneinch=\count199
-\cnt@paperwidth=\count266
-\cnt@paperheight=\count267
-\cnt@hoffset=\count268
-\cnt@voffset=\count269
-\cnt@textheight=\count270
-\cnt@textwidth=\count271
-\cnt@topmargin=\count272
-\cnt@oddsidemargin=\count273
-\cnt@evensidemargin=\count274
-\cnt@headheight=\count275
-\cnt@headsep=\count276
-\cnt@marginparsep=\count277
-\cnt@marginparwidth=\count278
-\cnt@marginparpush=\count279
-\cnt@footskip=\count280
-\fheight=\count281
-\ref@top=\count282
-\ref@hoffset=\count283
-\ref@voffset=\count284
-\ref@head=\count285
-\ref@body=\count286
-\ref@foot=\count287
-\ref@margin=\count288
-\ref@marginwidth=\count289
-\ref@marginpar=\count290
-\Interval=\count291
-\ExtraYPos=\count292
-\PositionX=\count293
-\PositionY=\count294
-\ArrowLength=\count295
+LaTeX Font Info:    Overwriting symbol font `symbols2' in version `bold'
+(Font)                  OMS/iwonamathcmsy/m/n --> OMS/iwonamathcmsy/b/n on inpu
+t line 144.
 )
-(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+\c@mv@iwonalight=\count195
+LaTeX Font Info:    Overwriting symbol font `operators' in version `iwonalight'
+
+(Font)                  OT1/cmr/m/n --> OT1/iwonamathlm/m/n on input line 15.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `iwonalight'
+(Font)                  OML/cmm/m/it --> OML/iwonamathl/m/it on input line 15.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `iwonalight'
+(Font)                  OMS/cmsy/m/n --> OMS/iwonamathl/m/n on input line 15.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `iwonalig
+ht'
+(Font)                  OMX/cmex/m/n --> OMX/iwonamathl/m/n on input line 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `iwonalight'
+
+(Font)                  OT1/cmr/bx/n --> OT1/iwonamathl/bx/n on input line 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `iwonalight'
+
+(Font)                  OT1/cmss/m/n --> OT1/iwonamathl/m/n on input line 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `iwonalight'
+
+(Font)                  OT1/cmr/m/it --> OT1/iwonamathl/m/it on input line 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `iwonalight'
+
+(Font)                  OT1/cmtt/m/n --> OT1/iwonamathl/m/n on input line 15.
+LaTeX Font Info:    Overwriting symbol font `symbols2' in version `iwonalight'
+(Font)                  OMS/iwonamathcmsy/m/n --> OMS/iwonamathcmsy/m/n on inpu
+t line 15.
+
+("C:/Program Files/MiKTeX/tex/latex/fontspec/fontspec.sty"
+("C:/Program Files/MiKTeX/tex/latex/l3packages/xparse/xparse.sty"
+("C:/Program Files/MiKTeX/tex/latex/l3kernel/expl3.sty"
+Package: expl3 2024-01-04 L3 programming layer (loader) 
+
+("C:/Program Files/MiKTeX/tex/latex/l3backend/l3backend-luatex.def"
+File: l3backend-luatex.def 2024-01-04 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count196
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box51
+))
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX
+("C:/Program Files/MiKTeX/tex/latex/fontspec/fontspec-luatex.sty"
+Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count197
+\l__fontspec_language_int=\count198
+\l__fontspec_strnum_int=\count199
+\l__fontspec_tmp_int=\count266
+\l__fontspec_tmpa_int=\count267
+\l__fontspec_tmpb_int=\count268
+\l__fontspec_tmpc_int=\count269
+\l__fontspec_em_int=\count270
+\l__fontspec_emdef_int=\count271
+\l__fontspec_strong_int=\count272
+\l__fontspec_strongdef_int=\count273
+\l__fontspec_tmpa_dim=\dimen140
+\l__fontspec_tmpb_dim=\dimen141
+\l__fontspec_tmpc_dim=\dimen142
+
+("C:/Program Files/MiKTeX/tex/latex/base/fontenc.sty"
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+("C:/Program Files/MiKTeX/tex/latex/fontspec/fontspec.cfg")))
+luaotfload | cache : Lookup cache loaded from C:/Users/mfontbon/AppData/Local/Mi
+KTeX/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+
+Package fontspec Info: Could not resolve font "iwonalight/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "iwonalight/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'iwonalight(0)' created for font 'iwona
+(fontspec)             light' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"iwonalight:mode=node;script=latn;language=dflt;+tlig
+;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"iwonalight:mode=node;script=latn;language=dflt;+tlig
+;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"iwonalight/I:mode=node;script=latn;language=dflt;+tl
+ig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"iwonalight/I:mode=node;script=latn;language=dflt;+tl
+ig;+smcp;"
+
+
+("C:/Program Files/MiKTeX/tex/latex/tools/layout.sty"
+Package: layout 2023-08-20 v1.2e Show layout parameters
+\oneinch=\count274
+\cnt@paperwidth=\count275
+\cnt@paperheight=\count276
+\cnt@hoffset=\count277
+\cnt@voffset=\count278
+\cnt@textheight=\count279
+\cnt@textwidth=\count280
+\cnt@topmargin=\count281
+\cnt@oddsidemargin=\count282
+\cnt@evensidemargin=\count283
+\cnt@headheight=\count284
+\cnt@headsep=\count285
+\cnt@marginparsep=\count286
+\cnt@marginparwidth=\count287
+\cnt@marginparpush=\count288
+\cnt@footskip=\count289
+\fheight=\count290
+\ref@top=\count291
+\ref@hoffset=\count292
+\ref@voffset=\count293
+\ref@head=\count294
+\ref@body=\count295
+\ref@foot=\count296
+\ref@margin=\count297
+\ref@marginwidth=\count298
+\ref@marginpar=\count299
+\Interval=\count300
+\ExtraYPos=\count301
+\PositionX=\count302
+\PositionY=\count303
+\ArrowLength=\count304
+)
+("C:/Program Files/MiKTeX/tex/generic/babel/babel.sty"
 Package: babel 2024/01/07 v24.1 The Babel package
-\babel@savecnt=\count296
-\U@D=\dimen141
+
+("C:/Program Files/MiKTeX/tex/generic/babel/luababel.def"
+\bbl@readstream=\read2
+\l@afrikaans=\language2
+Package babel Info: Non-standard hyphenation setup on input line 118.
+\l@ancientgreek=\language3
+\l@armenian=\language4
+\l@assamese=\language5
+\l@basque=\language6
+\l@belarusian=\language7
+\l@bengali=\language8
+\l@bokmal=\language9
+\l@bulgarian=\language10
+\l@catalan=\language11
+\l@churchslavonic=\language12
+\l@classiclatin=\language13
+\l@coptic=\language14
+\l@croatian=\language15
+\l@czech=\language16
+\l@danish=\language17
+\l@dutch=\language18
+\l@esperanto=\language19
+\l@estonian=\language20
+\l@ethiopic=\language21
+\l@finnish=\language22
+\l@french=\language23
+\l@friulan=\language24
+\l@galician=\language25
+\l@georgian=\language26
+\l@german=\language27
+\l@greek=\language28
+\l@gujarati=\language29
+\l@hindi=\language30
+\l@hungarian=\language31
+\l@icelandic=\language32
+\l@indonesian=\language33
+\l@interlingua=\language34
+\l@irish=\language35
+\l@italian=\language36
+\l@kannada=\language37
+\l@kurmanji=\language38
+\l@latin=\language39
+\l@latvian=\language40
+\l@lithuanian=\language41
+\l@liturgicallatin=\language42
+\l@macedonian=\language43
+\l@malayalam=\language44
+\l@marathi=\language45
+\l@mongolian=\language46
+\l@mongolianlmc=\language47
+\l@monogreek=\language48
+\l@ngerman=\language49
+\l@nynorsk=\language50
+\l@occitan=\language51
+\l@oriya=\language52
+\l@pali=\language53
+\l@panjabi=\language54
+\l@piedmontese=\language55
+\l@polish=\language56
+\l@portuguese=\language57
+\l@romanian=\language58
+\l@romansh=\language59
+\l@russian=\language60
+\l@sanskrit=\language61
+\l@serbian=\language62
+\l@serbianc=\language63
+\l@slovak=\language64
+\l@slovenian=\language65
+\l@spanish=\language66
+\l@swedish=\language67
+\l@swissgerman=\language68
+\l@tamil=\language69
+\l@telugu=\language70
+\l@thai=\language71
+\l@turkish=\language72
+\l@turkmen=\language73
+\l@ukenglish=\language74
+\l@ukrainian=\language75
+\l@uppersorbian=\language76
+\l@usenglishmax=\language77
+\l@welsh=\language78
+\babelcatcodetablenum=\catcodetable14
+\bbl@pattcodes=\catcodetable15
+)
+\babel@savecnt=\count305
+\U@D=\dimen143
 \l@unhyphenated=\language79
 
-(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
-\bbl@readstream=\read2
-\bbl@dirlevel=\count297
-
+("C:/Program Files/MiKTeX/tex/generic/babel/luababel.def"
+\bbl@attr@locale=\attribute4
+)
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
+("C:/Program Files/MiKTeX/tex/latex/arabi/bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Program Files\MiKTeX\tex/generic/babel-french\french.ldf
+("C:/Program Files/MiKTeX/tex/generic/babel-french/french.ldf"
 Language: french 2024-02-29 v3.5s French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language22). Reported on input line 91.
+(babel)             (\language23). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language22). Reported on input line 92.
-\FB@stdchar=\count298
-Package babel Info: Making : an active character on input line 420.
-Package babel Info: Making ; an active character on input line 421.
-Package babel Info: Making ! an active character on input line 422.
-Package babel Info: Making ? an active character on input line 423.
-\FBguill@level=\count299
-\FBold@everypar=\toks19
-\FB@Mht=\dimen142
-\mc@charclass=\count300
-\mc@charfam=\count301
-\mc@charslot=\count302
-\std@mcc=\count303
-\dec@mcc=\count304
-\FB@parskip=\dimen143
-\listindentFB=\dimen144
-\descindentFB=\dimen145
-\labelindentFB=\dimen146
-\labelwidthFB=\dimen147
-\leftmarginFB=\dimen148
-\parindentFFN=\dimen149
-\FBfnindent=\dimen150
-))
-(C:\Program Files\MiKTeX\tex/generic/babel/locale/fr\babel-french.tex
+(babel)             (\language23). Reported on input line 92.
+\FB@stdchar=\count306
+\FB@spacing=\attribute5
+\FB@addDPspace=\attribute6
+\FB@addGUILspace=\attribute7
+\FB@ucsNBSP=\attribute8
+\FB@dialect=\attribute9
+Package french.ldf Info: No need for active punctuation characters
+(french.ldf)             with this version of LuaTeX!
+(french.ldf)             reported on input line 250.
+\FBguill@level=\count307
+\FBold@everypar=\toks17
+\FB@Mht=\dimen144
+\mc@charclass=\count308
+\mc@charfam=\count309
+\mc@charslot=\count310
+\std@mcc=\count311
+\dec@mcc=\count312
+Inserting `frenchb.french_punctuation' in `kerning'.
+\FB@parskip=\dimen145
+\listindentFB=\dimen146
+\descindentFB=\dimen147
+\labelindentFB=\dimen148
+\labelwidthFB=\dimen149
+\leftmarginFB=\dimen150
+\parindentFFN=\dimen151
+\FBfnindent=\dimen152
+
+("C:/Program Files/MiKTeX/tex/generic/hyph-utf8/loadhyph/loadhyph-fr.tex"
+UTF-8 French hyphenation patterns
+("C:/Program Files/MiKTeX/tex/generic/hyph-utf8/patterns/tex/hyph-fr.tex")
+("C:/Program Files/MiKTeX/tex/generic/hyph-utf8/patterns/quote/hyph-quote-fr.te
+x")))) ("C:/Program Files/MiKTeX/tex/generic/babel/locale/fr/babel-french.tex"
 Package babel Info: Importing font and identification data for french
 (babel)             from babel-fr.ini. Reported on input line 11.
-)
-(C:\Program Files\MiKTeX\tex/latex/carlisle\scalefnt.sty)
-(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+) ("C:/Program Files/MiKTeX/tex/latex/carlisle/scalefnt.sty")
+("C:/Program Files/MiKTeX/tex/latex/graphics/keyval.sty"
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks20
+\KV@toks@=\toks18
 )
-(C:\Program Files\MiKTeX\tex/latex/csquotes\csquotes.sty
+("C:/Program Files/MiKTeX/tex/latex/csquotes/csquotes.sty"
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
 
-(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+("C:/Program Files/MiKTeX/tex/latex/etoolbox/etoolbox.sty"
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count305
+\etb@tempcnta=\count313
 )
-\csq@reset=\count306
-\csq@gtype=\count307
-\csq@glevel=\count308
-\csq@qlevel=\count309
-\csq@maxlvl=\count310
-\csq@tshold=\count311
-\csq@ltx@everypar=\toks21
+\csq@reset=\count314
+\csq@gtype=\count315
+\csq@glevel=\count316
+\csq@qlevel=\count317
+\csq@maxlvl=\count318
+\csq@tshold=\count319
+\csq@ltx@everypar=\toks19
 
-(C:\Program Files\MiKTeX\tex/latex/csquotes\csquotes.def
+("C:/Program Files/MiKTeX/tex/latex/csquotes/csquotes.def"
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(C:\Program Files\MiKTeX\tex/latex/csquotes\csquotes.cfg
+("C:/Program Files/MiKTeX/tex/latex/csquotes/csquotes.cfg"
 File: csquotes.cfg 
 ))
-(C:\Program Files\MiKTeX\tex/latex/wrapfig\wrapfig.sty
-\wrapoverhang=\dimen151
-\WF@size=\dimen152
-\c@WF@wrappedlines=\count312
-\WF@box=\box51
-\WF@everypar=\toks22
+("C:/Program Files/MiKTeX/tex/latex/wrapfig/wrapfig.sty"
+\wrapoverhang=\dimen153
+\WF@size=\dimen154
+\c@WF@wrappedlines=\count320
+\WF@box=\box52
+\WF@everypar=\toks20
 Package: wrapfig 2003/01/31  v 3.6
 )
-(C:\Program Files\MiKTeX\tex/latex/comment\comment.sty
+("C:/Program Files/MiKTeX/tex/latex/comment/comment.sty"
 \CommentStream=\write3
 
 Excluding comment 'comment')
-(C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty
+("C:/Program Files/MiKTeX/tex/latex/tools/multicol.sty"
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count313
-\mult@box=\box52
-\multicol@leftmargin=\dimen153
-\c@unbalance=\count314
-\c@collectmore=\count315
-\doublecol@number=\count316
-\multicoltolerance=\count317
-\multicolpretolerance=\count318
-\full@width=\dimen154
-\page@free=\dimen155
-\premulticols=\dimen156
-\postmulticols=\dimen157
+\c@tracingmulticols=\count321
+\mult@box=\box53
+\multicol@leftmargin=\dimen155
+\c@unbalance=\count322
+\c@collectmore=\count323
+\doublecol@number=\count324
+\multicoltolerance=\count325
+\multicolpretolerance=\count326
+\full@width=\dimen156
+\page@free=\dimen157
+\premulticols=\dimen158
+\postmulticols=\dimen159
 \multicolsep=\skip50
 \multicolbaselineskip=\skip51
-\partial@page=\box53
-\last@line=\box54
-\mc@boxedresult=\box55
-\maxbalancingoverflow=\dimen158
-\mult@rightbox=\box56
-\mult@grightbox=\box57
-\mult@firstbox=\box58
-\mult@gfirstbox=\box59
-\@tempa=\box60
+\partial@page=\box54
+\last@line=\box55
+\mc@boxedresult=\box56
+\maxbalancingoverflow=\dimen160
+\mult@rightbox=\box57
+\mult@grightbox=\box58
+\mult@firstbox=\box59
+\mult@gfirstbox=\box60
 \@tempa=\box61
 \@tempa=\box62
 \@tempa=\box63
@@ -255,188 +472,181 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box93
 \@tempa=\box94
 \@tempa=\box95
-\c@minrows=\count319
-\c@columnbadness=\count320
-\c@finalcolumnbadness=\count321
-\last@try=\dimen159
-\multicolovershoot=\dimen160
-\multicolundershoot=\dimen161
-\mult@nat@firstbox=\box96
-\colbreak@box=\box97
-\mc@col@check@num=\count322
+\@tempa=\box96
+\c@minrows=\count327
+\c@columnbadness=\count328
+\c@finalcolumnbadness=\count329
+\last@try=\dimen161
+\multicolovershoot=\dimen162
+\multicolundershoot=\dimen163
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count330
 )
-(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
+("C:/Program Files/MiKTeX/tex/latex/tools/array.sty"
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen162
-\ar@mcellbox=\box98
-\extrarowheight=\dimen163
-\NC@list=\toks23
+\col@sep=\dimen164
+\ar@mcellbox=\box99
+\extrarowheight=\dimen165
+\NC@list=\toks21
 \extratabsurround=\skip52
 \backup@length=\skip53
-\ar@cellbox=\box99
+\ar@cellbox=\box100
 )
-(C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
+("C:/Program Files/MiKTeX/tex/latex/tools/longtable.sty"
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
 \LTleft=\skip54
 \LTright=\skip55
 \LTpre=\skip56
 \LTpost=\skip57
-\LTchunksize=\count323
-\LTcapwidth=\dimen164
-\LT@head=\box100
-\LT@firsthead=\box101
-\LT@foot=\box102
-\LT@lastfoot=\box103
-\LT@gbox=\box104
-\LT@cols=\count324
-\LT@rows=\count325
-\c@LT@tables=\count326
-\c@LT@chunks=\count327
-\LT@p@ftn=\toks24
+\LTchunksize=\count331
+\LTcapwidth=\dimen166
+\LT@head=\box101
+\LT@firsthead=\box102
+\LT@foot=\box103
+\LT@lastfoot=\box104
+\LT@gbox=\box105
+\LT@cols=\count332
+\LT@rows=\count333
+\c@LT@tables=\count334
+\c@LT@chunks=\count335
+\LT@p@ftn=\toks22
 )
-(C:\Program Files\MiKTeX\tex/latex/arydshln\arydshln.sty
+("C:/Program Files/MiKTeX/tex/latex/arydshln/arydshln.sty"
 Package: arydshln 2019/02/21 v1.76 
-\dashlinedash=\dimen165
-\dashlinegap=\dimen166
-\adl@box=\box105
-\adl@height=\dimen167
-\adl@heightsave=\dimen168
-\adl@depth=\dimen169
-\adl@depthsave=\dimen170
-\adl@finaldepth=\dimen171
-\adl@columns=\count328
-\adl@ncol=\count329
-\adl@currentcolumn=\count330
-\adl@currentcolumnsave=\count331
-\adl@totalheight=\count332
-\adl@totalheightsave=\count333
-\adl@dash=\count334
-\adl@gap=\count335
-\adl@cla=\count336
-\adl@clb=\count337
-\adl@everyvbox=\toks25
-\adl@LTpagetotal=\dimen172
+\dashlinedash=\dimen167
+\dashlinegap=\dimen168
+\adl@box=\box106
+\adl@height=\dimen169
+\adl@heightsave=\dimen170
+\adl@depth=\dimen171
+\adl@depthsave=\dimen172
+\adl@finaldepth=\dimen173
+\adl@columns=\count336
+\adl@ncol=\count337
+\adl@currentcolumn=\count338
+\adl@currentcolumnsave=\count339
+\adl@totalheight=\count340
+\adl@totalheightsave=\count341
+\adl@dash=\count342
+\adl@gap=\count343
+\adl@cla=\count344
+\adl@clb=\count345
+\adl@everyvbox=\toks23
+\adl@LTpagetotal=\dimen174
 )
-(C:\Program Files\MiKTeX\tex/latex/tabularray\tabularray.sty
-(C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2024-01-04 L3 programming layer (loader) 
-
-(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count338
-\l__pdf_internal_box=\box106
-))
+("C:/Program Files/MiKTeX/tex/latex/tabularray/tabularray.sty"
 Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
-\l__tblr_a_int=\count339
-\l__tblr_c_int=\count340
-\l__tblr_r_int=\count341
-\l__tblr_d_dim=\dimen173
-\l__tblr_h_dim=\dimen174
-\l__tblr_o_dim=\dimen175
-\l__tblr_p_dim=\dimen176
-\l__tblr_q_dim=\dimen177
-\l__tblr_r_dim=\dimen178
-\l__tblr_s_dim=\dimen179
-\l__tblr_t_dim=\dimen180
-\l__tblr_v_dim=\dimen181
-\l__tblr_w_dim=\dimen182
+\l__tblr_a_int=\count346
+\l__tblr_c_int=\count347
+\l__tblr_r_int=\count348
+\l__tblr_d_dim=\dimen175
+\l__tblr_h_dim=\dimen176
+\l__tblr_o_dim=\dimen177
+\l__tblr_p_dim=\dimen178
+\l__tblr_q_dim=\dimen179
+\l__tblr_r_dim=\dimen180
+\l__tblr_s_dim=\dimen181
+\l__tblr_t_dim=\dimen182
+\l__tblr_v_dim=\dimen183
+\l__tblr_w_dim=\dimen184
 \l__tblr_a_box=\box107
 \l__tblr_b_box=\box108
 \l__tblr_c_box=\box109
 \l__tblr_d_box=\box110
-\g__tblr_table_count_int=\count342
-\c@rownum=\count343
-\c@colnum=\count344
-\c@rowcount=\count345
-\c@colcount=\count346
-\abovesep=\dimen183
-\belowsep=\dimen184
-\leftsep=\dimen185
-\rightsep=\dimen186
-\g_tblr_level_int=\count347
-\g__tblr_data_row_key_count_int=\count348
-\g__tblr_data_column_key_count_int=\count349
-\g__tblr_data_cell_key_count_int=\count350
-\g__tblr_array_int=\count351
-\l__tblr_key_count_int=\count352
-\l__tblr_key_quotient_int=\count353
-\l__tblr_key_quotient_two_int=\count354
-\l__tblr_key_remainder_int=\count355
-\g__tblr_data_str_value_count_int=\count356
-\rulewidth=\dimen187
-\l__tblr_strut_dp_dim=\dimen188
-\l__tblr_strut_ht_dim=\dimen189
-\g__tblr_cell_wd_dim=\dimen190
-\g__tblr_cell_ht_dim=\dimen191
-\g__tblr_cell_head_dim=\dimen192
-\g__tblr_cell_foot_dim=\dimen193
-\l__column_target_dim=\dimen194
+\g__tblr_table_count_int=\count349
+\c@rownum=\count350
+\c@colnum=\count351
+\c@rowcount=\count352
+\c@colcount=\count353
+\abovesep=\dimen185
+\belowsep=\dimen186
+\leftsep=\dimen187
+\rightsep=\dimen188
+\g_tblr_level_int=\count354
+\g__tblr_data_row_key_count_int=\count355
+\g__tblr_data_column_key_count_int=\count356
+\g__tblr_data_cell_key_count_int=\count357
+\g__tblr_array_int=\count358
+\l__tblr_key_count_int=\count359
+\l__tblr_key_quotient_int=\count360
+\l__tblr_key_quotient_two_int=\count361
+\l__tblr_key_remainder_int=\count362
+\g__tblr_data_str_value_count_int=\count363
+\rulewidth=\dimen189
+\l__tblr_strut_dp_dim=\dimen190
+\l__tblr_strut_ht_dim=\dimen191
+\g__tblr_cell_wd_dim=\dimen192
+\g__tblr_cell_ht_dim=\dimen193
+\g__tblr_cell_head_dim=\dimen194
+\g__tblr_cell_foot_dim=\dimen195
+\l__column_target_dim=\dimen196
 \l__tblr_caption_box=\box111
 \l__tblr_caption_left_box=\box112
 \l__tblr_row_head_box=\box113
 \l__tblr_row_foot_box=\box114
-\l__tblr_row_head_foot_dim=\dimen195
-\tablewidth=\dimen196
+\l__tblr_row_head_foot_dim=\dimen197
+\tablewidth=\dimen198
 \l__tblr_table_firsthead_box=\box115
 \l__tblr_table_middlehead_box=\box116
 \l__tblr_table_lasthead_box=\box117
 \l__tblr_table_firstfoot_box=\box118
 \l__tblr_table_middlefoot_box=\box119
 \l__tblr_table_lastfoot_box=\box120
-\l__tblr_remain_height_dim=\dimen197
-\l__tblr_long_from_int=\count357
-\l__tblr_long_to_int=\count358
-\l__tblr_curr_i_int=\count359
-\l__tblr_prev_i_int=\count360
-\l__tblr_table_page_int=\count361
+\l__tblr_remain_height_dim=\dimen199
+\l__tblr_long_from_int=\count364
+\l__tblr_long_to_int=\count365
+\l__tblr_curr_i_int=\count366
+\l__tblr_prev_i_int=\count367
+\l__tblr_table_page_int=\count368
 \l__tblr_table_head_box=\box121
 \l__tblr_table_foot_box=\box122
-\l__tblr_table_head_foot_dim=\dimen198
-\l__tblr_table_head_body_foot_dim=\dimen199
+\l__tblr_table_head_foot_dim=\dimen256
+\l__tblr_table_head_body_foot_dim=\dimen257
 \l__tblr_table_box=\box123
 \l__tblr_table_hlines_box=\box124
 \l__tblr_hline_box=\box125
 \l__tblr_row_box=\box126
-\l__tblr_col_o_wd_dim=\dimen256
-\l__tblr_col_b_wd_dim=\dimen257
-\l__tblr_hline_leftskip_dim=\dimen258
-\l__tblr_hline_rightskip_dim=\dimen259
-\l__tblr_row_ht_dim=\dimen260
-\l__tblr_row_dp_dim=\dimen261
-\l__tblr_row_abovesep_dim=\dimen262
-\l__tblr_row_belowsep_dim=\dimen263
+\l__tblr_col_o_wd_dim=\dimen258
+\l__tblr_col_b_wd_dim=\dimen259
+\l__tblr_hline_leftskip_dim=\dimen260
+\l__tblr_hline_rightskip_dim=\dimen261
+\l__tblr_row_ht_dim=\dimen262
+\l__tblr_row_dp_dim=\dimen263
+\l__tblr_row_abovesep_dim=\dimen264
+\l__tblr_row_belowsep_dim=\dimen265
 \l__tblr_row_vlines_box=\box127
 \l__tblr_vline_box=\box128
 \l__tblr_cell_box=\box129
-\l__row_upper_dim=\dimen264
-\l__row_lower_dim=\dimen265
-\l__row_vpace_dim=\dimen266
-\l__tblr_vline_aboveskip_dim=\dimen267
-\l__tblr_vline_belowskip_dim=\dimen268
-\l__tblr_cell_wd_dim=\dimen269
-\l__tblr_cell_ht_dim=\dimen270
+\l__row_upper_dim=\dimen266
+\l__row_lower_dim=\dimen267
+\l__row_vpace_dim=\dimen268
+\l__tblr_vline_aboveskip_dim=\dimen269
+\l__tblr_vline_belowskip_dim=\dimen270
+\l__tblr_cell_wd_dim=\dimen271
+\l__tblr_cell_ht_dim=\dimen272
 \l__tblr_diag_box=\box130
 )
-(C:\Program Files\MiKTeX\tex/latex/float\float.sty
+("C:/Program Files/MiKTeX/tex/latex/float/float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count362
-\float@exts=\toks26
+\c@float@type=\count369
+\float@exts=\toks24
 \float@box=\box131
-\@float@everytoks=\toks27
+\@float@everytoks=\toks25
 \@floatcapt=\box132
 )
-(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+("C:/Program Files/MiKTeX/tex/latex/xcolor/xcolor.sty"
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+("C:/Program Files/MiKTeX/tex/latex/graphics-cfg/color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 274.
+Package xcolor Info: Driver file: luatex.def on input line 274.
 
-(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+("C:/Program Files/MiKTeX/tex/latex/graphics-def/luatex.def"
+File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+("C:/Program Files/MiKTeX/tex/latex/graphics/mathcolor.ltx")
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
@@ -447,37 +657,37 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics\dvipsnam.def
+("C:/Program Files/MiKTeX/tex/latex/graphics/dvipsnam.def"
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+("C:/Program Files/MiKTeX/tex/latex/amsmath/amsmath.sty"
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+("C:/Program Files/MiKTeX/tex/latex/amsmath/amstext.sty"
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
+("C:/Program Files/MiKTeX/tex/latex/amsmath/amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks28
-\ex@=\dimen271
+\@emptytoks=\toks26
+\ex@=\dimen273
 ))
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
+("C:/Program Files/MiKTeX/tex/latex/amsmath/amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen272
+\pmbraise@=\dimen274
 )
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
+("C:/Program Files/MiKTeX/tex/latex/amsmath/amsopn.sty"
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count363
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count364
-\leftroot@=\count365
+\inf@bad=\count370
+LaTeX Info: Redefining \frac on input line 236.
+\uproot@=\count371
+\leftroot@=\count372
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count366
-\DOTSCASE@=\count367
+\classnum@=\count373
+\DOTSCASE@=\count374
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -487,274 +697,271 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen273
+\big@size=\dimen275
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count368
+\macc@depth=\count375
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count369
+\c@MaxMatrixCols=\count376
 \dotsspace@=\muskip16
-\c@parentequation=\count370
-\dspbrk@lvl=\count371
-\tag@help=\toks29
-\row@=\count372
-\column@=\count373
-\maxfields@=\count374
-\andhelp@=\toks30
-\eqnshift@=\dimen274
-\alignsep@=\dimen275
-\tagshift@=\dimen276
-\tagwidth@=\dimen277
-\totwidth@=\dimen278
-\lineht@=\dimen279
-\@envbody=\toks31
+\c@parentequation=\count377
+\dspbrk@lvl=\count378
+\tag@help=\toks27
+\row@=\count379
+\column@=\count380
+\maxfields@=\count381
+\andhelp@=\toks28
+\eqnshift@=\dimen276
+\alignsep@=\dimen277
+\tagshift@=\dimen278
+\tagwidth@=\dimen279
+\totwidth@=\dimen280
+\lineht@=\dimen281
+\@envbody=\toks29
 \multlinegap=\skip59
 \multlinetaggap=\skip60
-\mathdisplay@stack=\toks32
+\mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+("C:/Program Files/MiKTeX/tex/latex/amsfonts/amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+("C:/Program Files/MiKTeX/tex/latex/amsfonts/amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Program Files\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+("C:/Program Files/MiKTeX/tex/latex/jknappen/mathrsfs.sty"
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup6
+\symrsfs=\mathgroup7
 )
-(C:\Program Files\MiKTeX\tex/latex/base\makeidx.sty
+("C:/Program Files/MiKTeX/tex/latex/base/makeidx.sty"
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
-(C:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty
+("C:/Program Files/MiKTeX/tex/latex/enumitem/enumitem.sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip61
-\enit@outerparindent=\dimen280
-\enit@toks=\toks33
+\enit@outerparindent=\dimen282
+\enit@toks=\toks31
 \enit@inbox=\box135
-\enit@count@id=\count375
-\enitdp@description=\count376
+\enit@count@id=\count382
+\enitdp@description=\count383
 )
-(C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
+("C:/Program Files/MiKTeX/tex/latex/tools/tabularx.sty"
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen281
-\TX@old@table=\dimen282
-\TX@old@col=\dimen283
-\TX@target=\dimen284
-\TX@delta=\dimen285
-\TX@cols=\count377
-\TX@ftn=\toks34
+\TX@col@width=\dimen283
+\TX@old@table=\dimen284
+\TX@old@col=\dimen285
+\TX@target=\dimen286
+\TX@delta=\dimen287
+\TX@cols=\count384
+\TX@ftn=\toks32
 )
-(C:\Program Files\MiKTeX\tex/latex/stmaryrd\stmaryrd.sty
+("C:/Program Files/MiKTeX/tex/latex/stmaryrd/stmaryrd.sty"
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
-\symstmry=\mathgroup7
+\symstmry=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
 )
-(C:\Program Files\MiKTeX\tex/latex/mathtools\mathtools.sty
+("C:/Program Files/MiKTeX/tex/latex/mathtools/mathtools.sty"
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
 
-(C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
+("C:/Program Files/MiKTeX/tex/latex/tools/calc.sty"
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count378
-\calc@Bcount=\count379
-\calc@Adimen=\dimen286
-\calc@Bdimen=\dimen287
+\calc@Acount=\count385
+\calc@Bcount=\count386
+\calc@Adimen=\dimen288
+\calc@Bdimen=\dimen289
 \calc@Askip=\skip62
 \calc@Bskip=\skip63
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count380
+\calc@Ccount=\count387
 \calc@Cskip=\skip64
 )
-(C:\Program Files\MiKTeX\tex/latex/mathtools\mhsetup.sty
+("C:/Program Files/MiKTeX/tex/latex/mathtools/mhsetup.sty"
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count381
-\l_MT_multwidth_dim=\dimen288
+\g_MT_multlinerow_int=\count388
+\l_MT_multwidth_dim=\dimen290
 \origjot=\skip65
-\l_MT_shortvdotswithinadjustabove_dim=\dimen289
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen290
-\l_MT_above_intertext_sep=\dimen291
-\l_MT_below_intertext_sep=\dimen292
-\l_MT_above_shortintertext_sep=\dimen293
-\l_MT_below_shortintertext_sep=\dimen294
+\l_MT_shortvdotswithinadjustabove_dim=\dimen291
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen292
+\l_MT_above_intertext_sep=\dimen293
+\l_MT_below_intertext_sep=\dimen294
+\l_MT_above_shortintertext_sep=\dimen295
+\l_MT_below_shortintertext_sep=\dimen296
 \xmathstrut@box=\box136
-\xmathstrut@dim=\dimen295
+\xmathstrut@dim=\dimen297
 )
-(C:\Program Files\MiKTeX\tex/latex/units\nicefrac.sty
+("C:/Program Files/MiKTeX/tex/latex/units/nicefrac.sty"
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseDisplaystyle=\skip66
 \L@UnitsRaiseTextstyle=\skip67
 \L@UnitsRaiseScriptstyle=\skip68
 
-(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+("C:/Program Files/MiKTeX/tex/latex/base/ifthen.sty"
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ))
-(C:\Program Files\MiKTeX\tex/latex/tools\bm.sty
+("C:/Program Files/MiKTeX/tex/latex/tools/bm.sty"
 Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup8
-\symboldletters=\mathgroup9
-\symboldsymbols=\mathgroup10
-\symboldlargesymbols=\mathgroup11
+\symboldoperators=\mathgroup9
+\symboldletters=\mathgroup10
+\symboldsymbols=\mathgroup11
+\symboldlargesymbols=\mathgroup12
 Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 Package bm Info: No bold for \U/rsfs/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+("C:/Program Files/MiKTeX/tex/latex/graphics/graphicx.sty"
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+("C:/Program Files/MiKTeX/tex/latex/graphics/graphics.sty"
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+("C:/Program Files/MiKTeX/tex/latex/graphics/trig.sty"
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+("C:/Program Files/MiKTeX/tex/latex/graphics-cfg/graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: luatex.def on input line 107.
 )
-\Gin@req@height=\dimen296
-\Gin@req@width=\dimen297
+\Gin@req@height=\dimen298
+\Gin@req@width=\dimen299
 )
-(C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
+("C:/Program Files/MiKTeX/tex/latex/caption/subcaption.sty"
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 
-(C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
+("C:/Program Files/MiKTeX/tex/latex/caption/caption.sty"
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-(C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
+("C:/Program Files/MiKTeX/tex/latex/caption/caption3.sty"
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen298
-\captionmargin=\dimen299
-\caption@leftmargin=\dimen300
-\caption@rightmargin=\dimen301
-\caption@width=\dimen302
-\caption@indent=\dimen303
-\caption@parindent=\dimen304
-\caption@hangindent=\dimen305
+\caption@tempdima=\dimen300
+\captionmargin=\dimen301
+\caption@leftmargin=\dimen302
+\caption@rightmargin=\dimen303
+\caption@width=\dimen304
+\caption@indent=\dimen305
+\caption@parindent=\dimen306
+\caption@hangindent=\dimen307
 Package caption Info: Standard document class detected.
 Package caption Info: french babel package is loaded.
 )
-\c@caption@flags=\count382
-\c@continuedfloat=\count383
+\c@caption@flags=\count389
+\c@continuedfloat=\count390
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 
-(C:\Program Files\MiKTeX\tex/latex/caption\ltcaption.sty
+("C:/Program Files/MiKTeX/tex/latex/caption/ltcaption.sty"
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: wrapfig package is loaded.
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count384
+\c@subfigure=\count391
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count385
+\c@subtable=\count392
 )
-(C:\Program Files\MiKTeX\tex/latex/tools\dcolumn.sty
+("C:/Program Files/MiKTeX/tex/latex/tools/dcolumn.sty"
 Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
 )
-(C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
+("C:/Program Files/MiKTeX/tex/latex/geometry/geometry.sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+("C:/Program Files/MiKTeX/tex/generic/iftex/ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+("C:/Program Files/MiKTeX/tex/generic/iftex/iftex.sty"
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count386
-\Gm@cntv=\count387
-\c@Gm@tempcnt=\count388
-\Gm@bindingoffset=\dimen306
-\Gm@wd@mp=\dimen307
-\Gm@odd@mp=\dimen308
-\Gm@even@mp=\dimen309
-\Gm@layoutwidth=\dimen310
-\Gm@layoutheight=\dimen311
-\Gm@layouthoffset=\dimen312
-\Gm@layoutvoffset=\dimen313
-\Gm@dimlist=\toks35
+\Gm@cnth=\count393
+\Gm@cntv=\count394
+\c@Gm@tempcnt=\count395
+\Gm@bindingoffset=\dimen308
+\Gm@wd@mp=\dimen309
+\Gm@odd@mp=\dimen310
+\Gm@even@mp=\dimen311
+\Gm@layoutwidth=\dimen312
+\Gm@layoutheight=\dimen313
+\Gm@layouthoffset=\dimen314
+\Gm@layoutvoffset=\dimen315
+\Gm@dimlist=\toks33
 
-(C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+("C:/Program Files/MiKTeX/tex/latex/geometry/geometry.cfg"))
+("C:/Program Files/MiKTeX/tex/latex/hyperref/hyperref.sty"
 Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
 
-(C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+("C:/Program Files/MiKTeX/tex/generic/infwarerr/infwarerr.sty"
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(C:\Program Files\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+("C:/Program Files/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty"
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+("C:/Program Files/MiKTeX/tex/generic/kvdefinekeys/kvdefinekeys.sty"
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+("C:/Program Files/MiKTeX/tex/generic/pdfescape/pdfescape.sty"
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+("C:/Program Files/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty"
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+("C:/Program Files/MiKTeX/tex/generic/pdftexcmds/pdftexcmds.sty"
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks34
 ))
-(C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty
+("C:/Program Files/MiKTeX/tex/latex/hycolor/hycolor.sty"
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Program Files\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+("C:/Program Files/MiKTeX/tex/latex/letltxmacro/letltxmacro.sty"
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Program Files\MiKTeX\tex/latex/auxhook\auxhook.sty
+("C:/Program Files/MiKTeX/tex/latex/auxhook/auxhook.sty"
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+("C:/Program Files/MiKTeX/tex/latex/hyperref/nameref.sty"
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
-(C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty
+("C:/Program Files/MiKTeX/tex/latex/refcount/refcount.sty"
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+("C:/Program Files/MiKTeX/tex/generic/gettitlestring/gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 
-(C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+("C:/Program Files/MiKTeX/tex/latex/kvoptions/kvoptions.sty"
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count389
+\c@section@level=\count396
 )
-\@linkdim=\dimen314
-\Hy@linkcounter=\count390
-\Hy@pagecounter=\count391
+\@linkdim=\dimen316
+\Hy@linkcounter=\count397
+\Hy@pagecounter=\count398
 
-(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
+("C:/Program Files/MiKTeX/tex/latex/hyperref/pd1enc.def"
 File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty
+("C:/Program Files/MiKTeX/tex/generic/intcalc/intcalc.sty"
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count392
+\Hy@SavedSpaceFactor=\count399
 
-(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
+("C:/Program Files/MiKTeX/tex/latex/hyperref/puenc.def"
 File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
 )
 Package hyperref Info: Hyper figures OFF on input line 4181.
 Package hyperref Info: Link nesting OFF on input line 4186.
@@ -763,25 +970,25 @@ Package hyperref Info: Plain pages OFF on input line 4196.
 Package hyperref Info: Backreferencing OFF on input line 4201.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4448.
-\c@Hy@tempcnt=\count393
+\c@Hy@tempcnt=\count400
 
-(C:\Program Files\MiKTeX\tex/latex/url\url.sty
+("C:/Program Files/MiKTeX/tex/latex/url/url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4786.
-\XeTeXLinkMargin=\dimen315
+\XeTeXLinkMargin=\dimen317
 
-(C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty
+("C:/Program Files/MiKTeX/tex/generic/bitset/bitset.sty"
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+("C:/Program Files/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty"
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count394
-\Field@Width=\dimen316
-\Fld@charsize=\dimen317
+\Fld@menulength=\count401
+\Field@Width=\dimen318
+\Fld@charsize=\dimen319
 Package hyperref Info: Hyper figures OFF on input line 6065.
 Package hyperref Info: Link nesting OFF on input line 6070.
 Package hyperref Info: Hyper index ON on input line 6073.
@@ -790,31 +997,35 @@ Package hyperref Info: Link coloring OFF on input line 6085.
 Package hyperref Info: Link coloring with OCG OFF on input line 6090.
 Package hyperref Info: PDF/A mode OFF on input line 6095.
 
-(C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+("C:/Program Files/MiKTeX/tex/latex/base/atbegshi-ltx.sty"
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count395
-\c@Item=\count396
-\c@Hfootnote=\count397
+\Hy@abspage=\count402
+\c@Item=\count403
+\c@Hfootnote=\count404
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver (autodetected): hluatex.
 
-(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
+("C:/Program Files/MiKTeX/tex/latex/hyperref/hluatex.def"
+File: hluatex.def 2023-11-26 v7.01g Hyperref driver for luaTeX
 
-(C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty
+("C:/Program Files/MiKTeX/tex/generic/stringenc/stringenc.sty"
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+("C:/Program Files/MiKTeX/tex/latex/base/atveryend-ltx.sty"
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count398
-\c@bookmark@seq@number=\count399
+\Fld@listcount=\count405
+\c@bookmark@seq@number=\count406
 
-(C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+("C:/Program Files/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty"
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(C:\Program Files\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+("C:/Program Files/MiKTeX/tex/generic/uniquecounter/uniquecounter.sty"
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -822,9 +1033,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 189.
+Package hyperref Info: Option `colorlinks' set `true' on input line 194.
 
-(C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+("C:/Program Files/MiKTeX/tex/latex/fancyhdr/fancyhdr.sty"
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
 \f@nch@headwidth=\skip70
@@ -837,40 +1048,40 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@olf=\skip77
 \f@nch@O@orf=\skip78
 )
-(C:\Program Files\MiKTeX\tex/latex/siunitx\siunitx.sty
+("C:/Program Files/MiKTeX/tex/latex/siunitx/siunitx.sty"
 Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count400
-\l__siunitx_number_exponent_fixed_int=\count401
-\l__siunitx_number_min_decimal_int=\count402
-\l__siunitx_number_min_integer_int=\count403
-\l__siunitx_number_round_precision_int=\count404
-\l__siunitx_number_lower_threshold_int=\count405
-\l__siunitx_number_upper_threshold_int=\count406
-\l__siunitx_number_group_first_int=\count407
-\l__siunitx_number_group_size_int=\count408
-\l__siunitx_number_group_minimum_int=\count409
-\l__siunitx_angle_tmp_dim=\dimen318
+\l__siunitx_number_uncert_offset_int=\count407
+\l__siunitx_number_exponent_fixed_int=\count408
+\l__siunitx_number_min_decimal_int=\count409
+\l__siunitx_number_min_integer_int=\count410
+\l__siunitx_number_round_precision_int=\count411
+\l__siunitx_number_lower_threshold_int=\count412
+\l__siunitx_number_upper_threshold_int=\count413
+\l__siunitx_number_group_first_int=\count414
+\l__siunitx_number_group_size_int=\count415
+\l__siunitx_number_group_minimum_int=\count416
+\l__siunitx_angle_tmp_dim=\dimen320
 \l__siunitx_angle_marker_box=\box137
 \l__siunitx_angle_unit_box=\box138
-\l__siunitx_compound_count_int=\count410
+\l__siunitx_compound_count_int=\count417
 
-(C:\Program Files\MiKTeX\tex/latex/translations\translations.sty
+("C:/Program Files/MiKTeX/tex/latex/translations/translations.sty"
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
 )
 \l__siunitx_table_tmp_box=\box139
-\l__siunitx_table_tmp_dim=\dimen319
-\l__siunitx_table_column_width_dim=\dimen320
+\l__siunitx_table_tmp_dim=\dimen321
+\l__siunitx_table_column_width_dim=\dimen322
 \l__siunitx_table_integer_box=\box140
 \l__siunitx_table_decimal_box=\box141
 \l__siunitx_table_uncert_box=\box142
 \l__siunitx_table_before_box=\box143
 \l__siunitx_table_after_box=\box144
-\l__siunitx_table_before_dim=\dimen321
-\l__siunitx_table_carry_dim=\dimen322
-\l__siunitx_unit_tmp_int=\count411
-\l__siunitx_unit_position_int=\count412
-\l__siunitx_unit_total_int=\count413
+\l__siunitx_table_before_dim=\dimen323
+\l__siunitx_table_carry_dim=\dimen324
+\l__siunitx_unit_tmp_int=\count418
+\l__siunitx_unit_position_int=\count419
+\l__siunitx_unit_total_int=\count420
 )
 
 Package siunitx Info: Option "detect-all" has been deprecated in this release.
@@ -882,85 +1093,85 @@ Package siunitx Info: Option "detect-all" has been deprecated in this release.
 (siunitx)             as a replacement.
 
 
-(C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty
+("C:/Program Files/MiKTeX/tex/latex/multirow/multirow.sty"
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip79
-\multirow@cntb=\count414
+\multirow@cntb=\count421
 \multirow@dima=\skip80
-\bigstrutjot=\dimen323
+\bigstrutjot=\dimen325
 )
-(C:\Program Files\MiKTeX\tex/latex/etoc\etoc.sty
+("C:/Program Files/MiKTeX/tex/latex/etoc/etoc.sty"
 Package: etoc 2023/10/29 v1.2d Completely customisable TOCs (JFB)
-\Etoc@toctoks=\toks36
-\c@etoc@tocid=\count415
+\Etoc@toctoks=\toks35
+\c@etoc@tocid=\count422
 \etoc@framed@titlebox=\box145
 \etoc@framed@contentsbox=\box146
 )
-(C:\Program Files\MiKTeX\tex/latex/titlesec\titlesec.sty
+("C:/Program Files/MiKTeX/tex/latex/titlesec/titlesec.sty"
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box147
 \beforetitleunit=\skip81
 \aftertitleunit=\skip82
-\ttl@plus=\dimen324
-\ttl@minus=\dimen325
-\ttl@toksa=\toks37
-\titlewidth=\dimen326
-\titlewidthlast=\dimen327
-\titlewidthfirst=\dimen328
+\ttl@plus=\dimen326
+\ttl@minus=\dimen327
+\ttl@toksa=\toks36
+\titlewidth=\dimen328
+\titlewidthlast=\dimen329
+\titlewidthfirst=\dimen330
 )
-(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty
+("C:/Program Files/MiKTeX/tex/latex/biblatex/biblatex.sty"
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
-(C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty
+("C:/Program Files/MiKTeX/tex/latex/logreq/logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count416
+\lrq@indent=\count423
 
-(C:\Program Files\MiKTeX\tex/latex/logreq\logreq.def
+("C:/Program Files/MiKTeX/tex/latex/logreq/logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count417
-\c@listtotal=\count418
-\c@listcount=\count419
-\c@liststart=\count420
-\c@liststop=\count421
-\c@citecount=\count422
-\c@citetotal=\count423
-\c@multicitecount=\count424
-\c@multicitetotal=\count425
-\c@instcount=\count426
-\c@maxnames=\count427
-\c@minnames=\count428
-\c@maxitems=\count429
-\c@minitems=\count430
-\c@citecounter=\count431
-\c@maxcitecounter=\count432
-\c@savedcitecounter=\count433
-\c@uniquelist=\count434
-\c@uniquename=\count435
-\c@refsection=\count436
-\c@refsegment=\count437
-\c@maxextratitle=\count438
-\c@maxextratitleyear=\count439
-\c@maxextraname=\count440
-\c@maxextradate=\count441
-\c@maxextraalpha=\count442
-\c@abbrvpenalty=\count443
-\c@highnamepenalty=\count444
-\c@lownamepenalty=\count445
-\c@maxparens=\count446
-\c@parenlevel=\count447
-\blx@tempcnta=\count448
-\blx@tempcntb=\count449
-\blx@tempcntc=\count450
-\c@blx@maxsection=\count451
-\blx@maxsegment@0=\count452
-\blx@notetype=\count453
-\blx@parenlevel@text=\count454
-\blx@parenlevel@foot=\count455
-\blx@sectionciteorder@0=\count456
-\blx@sectionciteorderinternal@0=\count457
-\blx@entrysetcounter=\count458
-\blx@biblioinstance=\count459
+\c@tabx@nest=\count424
+\c@listtotal=\count425
+\c@listcount=\count426
+\c@liststart=\count427
+\c@liststop=\count428
+\c@citecount=\count429
+\c@citetotal=\count430
+\c@multicitecount=\count431
+\c@multicitetotal=\count432
+\c@instcount=\count433
+\c@maxnames=\count434
+\c@minnames=\count435
+\c@maxitems=\count436
+\c@minitems=\count437
+\c@citecounter=\count438
+\c@maxcitecounter=\count439
+\c@savedcitecounter=\count440
+\c@uniquelist=\count441
+\c@uniquename=\count442
+\c@refsection=\count443
+\c@refsegment=\count444
+\c@maxextratitle=\count445
+\c@maxextratitleyear=\count446
+\c@maxextraname=\count447
+\c@maxextradate=\count448
+\c@maxextraalpha=\count449
+\c@abbrvpenalty=\count450
+\c@highnamepenalty=\count451
+\c@lownamepenalty=\count452
+\c@maxparens=\count453
+\c@parenlevel=\count454
+\blx@tempcnta=\count455
+\blx@tempcntb=\count456
+\blx@tempcntc=\count457
+\c@blx@maxsection=\count458
+\blx@maxsegment@0=\count459
+\blx@notetype=\count460
+\blx@parenlevel@text=\count461
+\blx@parenlevel@foot=\count462
+\blx@sectionciteorder@0=\count463
+\blx@sectionciteorderinternal@0=\count464
+\blx@entrysetcounter=\count465
+\blx@biblioinstance=\count466
 \labelnumberwidth=\skip83
 \labelalphawidth=\skip84
 \biblabelsep=\skip85
@@ -972,87 +1183,87 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read3
 \blx@bcfout=\write4
 \blx@langwohyphens=\language80
-\c@mincomprange=\count460
-\c@maxcomprange=\count461
-\c@mincompwidth=\count462
+\c@mincomprange=\count467
+\c@maxcomprange=\count468
+\c@mincompwidth=\count469
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-dm.def
+("C:/Program Files/MiKTeX/tex/latex/biblatex/blx-dm.def"
 File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count463
-\c@savedafterword=\count464
-\c@annotator=\count465
-\c@savedannotator=\count466
-\c@author=\count467
-\c@savedauthor=\count468
-\c@bookauthor=\count469
-\c@savedbookauthor=\count470
-\c@commentator=\count471
-\c@savedcommentator=\count472
-\c@editor=\count473
-\c@savededitor=\count474
-\c@editora=\count475
-\c@savededitora=\count476
-\c@editorb=\count477
-\c@savededitorb=\count478
-\c@editorc=\count479
-\c@savededitorc=\count480
-\c@foreword=\count481
-\c@savedforeword=\count482
-\c@holder=\count483
-\c@savedholder=\count484
-\c@introduction=\count485
-\c@savedintroduction=\count486
-\c@namea=\count487
-\c@savednamea=\count488
-\c@nameb=\count489
-\c@savednameb=\count490
-\c@namec=\count491
-\c@savednamec=\count492
-\c@translator=\count493
-\c@savedtranslator=\count494
-\c@shortauthor=\count495
-\c@savedshortauthor=\count496
-\c@shorteditor=\count497
-\c@savedshorteditor=\count498
-\c@labelname=\count499
-\c@savedlabelname=\count500
-\c@institution=\count501
-\c@savedinstitution=\count502
-\c@lista=\count503
-\c@savedlista=\count504
-\c@listb=\count505
-\c@savedlistb=\count506
-\c@listc=\count507
-\c@savedlistc=\count508
-\c@listd=\count509
-\c@savedlistd=\count510
-\c@liste=\count511
-\c@savedliste=\count512
-\c@listf=\count513
-\c@savedlistf=\count514
-\c@location=\count515
-\c@savedlocation=\count516
-\c@organization=\count517
-\c@savedorganization=\count518
-\c@origlocation=\count519
-\c@savedoriglocation=\count520
-\c@origpublisher=\count521
-\c@savedorigpublisher=\count522
-\c@publisher=\count523
-\c@savedpublisher=\count524
-\c@language=\count525
-\c@savedlanguage=\count526
-\c@origlanguage=\count527
-\c@savedoriglanguage=\count528
-\c@pageref=\count529
-\c@savedpageref=\count530
+\c@afterword=\count470
+\c@savedafterword=\count471
+\c@annotator=\count472
+\c@savedannotator=\count473
+\c@author=\count474
+\c@savedauthor=\count475
+\c@bookauthor=\count476
+\c@savedbookauthor=\count477
+\c@commentator=\count478
+\c@savedcommentator=\count479
+\c@editor=\count480
+\c@savededitor=\count481
+\c@editora=\count482
+\c@savededitora=\count483
+\c@editorb=\count484
+\c@savededitorb=\count485
+\c@editorc=\count486
+\c@savededitorc=\count487
+\c@foreword=\count488
+\c@savedforeword=\count489
+\c@holder=\count490
+\c@savedholder=\count491
+\c@introduction=\count492
+\c@savedintroduction=\count493
+\c@namea=\count494
+\c@savednamea=\count495
+\c@nameb=\count496
+\c@savednameb=\count497
+\c@namec=\count498
+\c@savednamec=\count499
+\c@translator=\count500
+\c@savedtranslator=\count501
+\c@shortauthor=\count502
+\c@savedshortauthor=\count503
+\c@shorteditor=\count504
+\c@savedshorteditor=\count505
+\c@labelname=\count506
+\c@savedlabelname=\count507
+\c@institution=\count508
+\c@savedinstitution=\count509
+\c@lista=\count510
+\c@savedlista=\count511
+\c@listb=\count512
+\c@savedlistb=\count513
+\c@listc=\count514
+\c@savedlistc=\count515
+\c@listd=\count516
+\c@savedlistd=\count517
+\c@liste=\count518
+\c@savedliste=\count519
+\c@listf=\count520
+\c@savedlistf=\count521
+\c@location=\count522
+\c@savedlocation=\count523
+\c@organization=\count524
+\c@savedorganization=\count525
+\c@origlocation=\count526
+\c@savedoriglocation=\count527
+\c@origpublisher=\count528
+\c@savedorigpublisher=\count529
+\c@publisher=\count530
+\c@savedpublisher=\count531
+\c@language=\count532
+\c@savedlanguage=\count533
+\c@origlanguage=\count534
+\c@savedoriglanguage=\count535
+\c@pageref=\count536
+\c@savedpageref=\count537
 \shorthandwidth=\skip91
 \shortjournalwidth=\skip92
 \shortserieswidth=\skip93
@@ -1067,58 +1278,62 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorttitlewidth=\skip102
 \localshortauthorwidth=\skip103
 \localshorteditorwidth=\skip104
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+("C:/Program Files/MiKTeX/tex/latex/biblatex/blx-unicode.def")
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-compat.def
+("C:/Program Files/MiKTeX/tex/latex/biblatex/blx-compat.def"
 File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def
+("C:/Program Files/MiKTeX/tex/latex/biblatex/biblatex.def"
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count531
-\c@textcitetotal=\count532
-\c@textcitemaxnames=\count533
-\c@biburlbigbreakpenalty=\count534
-\c@biburlbreakpenalty=\count535
-\c@biburlnumpenalty=\count536
-\c@biburlucpenalty=\count537
-\c@biburllcpenalty=\count538
+\c@textcitecount=\count538
+\c@textcitetotal=\count539
+\c@textcitemaxnames=\count540
+\c@biburlbigbreakpenalty=\count541
+\c@biburlbreakpenalty=\count542
+\c@biburlnumpenalty=\count543
+\c@biburlucpenalty=\count544
+\c@biburllcpenalty=\count545
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count539
+\c@smartand=\count546
 )
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
-(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\numeric-comp.bbx
+("C:/Program Files/MiKTeX/tex/latex/biblatex/bbx/numeric-comp.bbx"
 File: numeric-comp.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
-(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+("C:/Program Files/MiKTeX/tex/latex/biblatex/bbx/numeric.bbx"
 File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+("C:/Program Files/MiKTeX/tex/latex/biblatex/bbx/standard.bbx"
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count540
-\c@bbx:relatedtotal=\count541
+\c@bbx:relatedcount=\count547
+\c@bbx:relatedtotal=\count548
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
-(C:\Program Files\MiKTeX\tex/latex/biblatex/cbx\numeric-comp.cbx
+("C:/Program Files/MiKTeX/tex/latex/biblatex/cbx/numeric-comp.cbx"
 File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count542
-\c@cbx@tempcntb=\count543
-\c@cbx@tempcntc=\count544
-\c@cbx@tempcntd=\count545
+\c@cbx@tempcnta=\count549
+\c@cbx@tempcntb=\count550
+\c@cbx@tempcntc=\count551
+\c@cbx@tempcntd=\count552
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1134,322 +1349,324 @@ Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.cfg
+("C:/Program Files/MiKTeX/tex/latex/biblatex/biblatex.cfg"
 File: biblatex.cfg 
 )
-Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
 (biblatex)             2024-01-04 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
-(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
-(C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
-Package: xparse 2023-10-10 L3 Experimental document command parser
-)
+("C:/Program Files/MiKTeX/tex/latex/biblatex/blx-case-expl3.sty"
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-(C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty
-(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks38
-\pgfutil@tempdima=\dimen329
-\pgfutil@tempdimb=\dimen330
+("C:/Program Files/MiKTeX/tex/latex/pgf/frontendlayer/tikz.sty"
+("C:/Program Files/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty"
+("C:/Program Files/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty"
+("C:/Program Files/MiKTeX/tex/generic/pgf/utilities/pgfutil-common.tex"
+\pgfutil@everybye=\toks37
+\pgfutil@tempdima=\dimen331
+\pgfutil@tempdimb=\dimen332
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+("C:/Program Files/MiKTeX/tex/generic/pgf/utilities/pgfutil-latex.def"
 \pgfutil@abb=\box148
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+("C:/Program Files/MiKTeX/tex/generic/pgf/utilities/pgfrcs.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/pgf.revision.tex")
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty
-(C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+("C:/Program Files/MiKTeX/tex/latex/pgf/basiclayer/pgfcore.sty"
+("C:/Program Files/MiKTeX/tex/latex/pgf/systemlayer/pgfsys.sty"
+("C:/Program Files/MiKTeX/tex/generic/pgf/systemlayer/pgfsys.code.tex"
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks39
-\pgfkeys@temptoks=\toks40
+("C:/Program Files/MiKTeX/tex/generic/pgf/utilities/pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.
-tex
-\pgfkeys@tmptoks=\toks41
+("C:/Program Files/MiKTeX/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code
+.tex"
+\pgfkeys@tmptoks=\toks40
 ))
-\pgf@x=\dimen331
-\pgf@y=\dimen332
-\pgf@xa=\dimen333
-\pgf@ya=\dimen334
-\pgf@xb=\dimen335
-\pgf@yb=\dimen336
-\pgf@xc=\dimen337
-\pgf@yc=\dimen338
-\pgf@xd=\dimen339
-\pgf@yd=\dimen340
+\pgf@x=\dimen333
+\pgf@y=\dimen334
+\pgf@xa=\dimen335
+\pgf@ya=\dimen336
+\pgf@xb=\dimen337
+\pgf@yb=\dimen338
+\pgf@xc=\dimen339
+\pgf@yc=\dimen340
+\pgf@xd=\dimen341
+\pgf@yd=\dimen342
 \w@pgf@writea=\write5
 \r@pgf@reada=\read4
-\c@pgf@counta=\count546
-\c@pgf@countb=\count547
-\c@pgf@countc=\count548
-\c@pgf@countd=\count549
-\t@pgf@toka=\toks42
-\t@pgf@tokb=\toks43
-\t@pgf@tokc=\toks44
-\pgf@sys@id@count=\count550
- (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+\c@pgf@counta=\count553
+\c@pgf@countb=\count554
+\c@pgf@countc=\count555
+\c@pgf@countd=\count556
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+\pgf@sys@id@count=\count557
+ ("C:/Program Files/MiKTeX/tex/generic/pgf/systemlayer/pgf.cfg"
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-luatex.def
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+("C:/Program Files/MiKTeX/tex/generic/pgf/systemlayer/pgfsys-luatex.def"
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+("C:/Program Files/MiKTeX/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+))) ("C:/Program Files/MiKTeX/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.t
+ex"
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count551
-\pgfsyssoftpath@bigbuffer@items=\count552
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+\pgfsyssoftpath@smallbuffer@items=\count558
+\pgfsyssoftpath@bigbuffer@items=\count559
+) ("C:/Program Files/MiKTeX/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+"
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+)) ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcore.code.tex"
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen341
-\pgfmath@count=\count553
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmath.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathutil.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen343
+\pgfmath@count=\count560
 \pgfmath@box=\box149
-\pgfmath@toks=\toks45
-\pgfmath@stack@operand=\toks46
-\pgfmath@stack@operation=\toks47
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.co
-de.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
-
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.
-tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmeti
-cs.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
-) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count554
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfunctions.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex"
+)
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfunctions.trigonometric.c
+ode.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+")
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfunctions.comparison.code
+.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfunctions.base.code.tex") ("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfunctions.round.code.tex") ("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfunctions.integerarithmet
+ics.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathcalc.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count561
 ))
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfint.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen342
-\pgf@picmaxx=\dimen343
-\pgf@picminy=\dimen344
-\pgf@picmaxy=\dimen345
-\pgf@pathminx=\dimen346
-\pgf@pathmaxx=\dimen347
-\pgf@pathminy=\dimen348
-\pgf@pathmaxy=\dimen349
-\pgf@xx=\dimen350
-\pgf@xy=\dimen351
-\pgf@yx=\dimen352
-\pgf@yy=\dimen353
-\pgf@zx=\dimen354
-\pgf@zy=\dimen355
+\pgf@picminx=\dimen344
+\pgf@picmaxx=\dimen345
+\pgf@picminy=\dimen346
+\pgf@picmaxy=\dimen347
+\pgf@pathminx=\dimen348
+\pgf@pathmaxx=\dimen349
+\pgf@pathminy=\dimen350
+\pgf@pathmaxy=\dimen351
+\pgf@xx=\dimen352
+\pgf@xy=\dimen353
+\pgf@yx=\dimen354
+\pgf@yy=\dimen355
+\pgf@zx=\dimen356
+\pgf@zy=\dimen357
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.t
-ex
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.
+tex"
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen356
-\pgf@path@lasty=\dimen357
+\pgf@path@lastx=\dimen358
+\pgf@path@lasty=\dimen359
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen358
-\pgf@shorten@start@additional=\dimen359
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+\pgf@shorten@end@additional=\dimen360
+\pgf@shorten@start@additional=\dimen361
+) ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box150
 \pgf@hbox=\box151
 \pgf@layerbox@main=\box152
-\pgf@picture@serial@count=\count555
+\pgf@picture@serial@count=\count562
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.te
-x
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.t
+ex"
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen360
+\pgflinewidth=\dimen362
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code
-.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoretransformations.cod
+e.tex"
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen361
-\pgf@pt@y=\dimen362
-\pgf@pt@temp=\dimen363
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+\pgf@pt@x=\dimen363
+\pgf@pt@y=\dimen364
+\pgf@pt@temp=\dimen365
+)
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+)
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.
-tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code
+.tex"
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen364
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen365
-\pgf@sys@shading@range@num=\count556
-\pgf@shadingcount=\count557
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen366
+)
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen367
+\pgf@sys@shading@range@num=\count563
+\pgf@shadingcount=\count564
+)
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box153
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+) ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.te
-x
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcoretransparency.code.t
+ex"
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+)
+("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+) ("C:/Program Files/MiKTeX/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex"
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/modules/pgfmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box154
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/modules/pgfmoduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+("C:/Program Files/MiKTeX/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen366
-\pgf@nodesepend=\dimen367
-)
-(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+\pgf@nodesepstart=\dimen368
+\pgf@nodesepend=\dimen369
+) ("C:/Program Files/MiKTeX/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y"
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
-(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex))
-(C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+)) ("C:/Program Files/MiKTeX/tex/latex/pgf/utilities/pgffor.sty"
+("C:/Program Files/MiKTeX/tex/latex/pgf/utilities/pgfkeys.sty"
+("C:/Program Files/MiKTeX/tex/generic/pgf/utilities/pgfkeys.code.tex"))
+("C:/Program Files/MiKTeX/tex/latex/pgf/math/pgfmath.sty"
+("C:/Program Files/MiKTeX/tex/generic/pgf/math/pgfmath.code.tex"))
+("C:/Program Files/MiKTeX/tex/generic/pgf/utilities/pgffor.code.tex"
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen368
-\pgffor@skip=\dimen369
-\pgffor@stack=\toks48
-\pgffor@toks=\toks49
+\pgffor@iter=\dimen370
+\pgffor@skip=\dimen371
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 ))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex"
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.
-tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryplothandlers.code
+.tex"
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count558
-\pgfplotmarksize=\dimen370
+\pgf@plot@mark@count=\count565
+\pgfplotmarksize=\dimen372
 )
-\tikz@lastx=\dimen371
-\tikz@lasty=\dimen372
-\tikz@lastxsaved=\dimen373
-\tikz@lastysaved=\dimen374
-\tikz@lastmovetox=\dimen375
-\tikz@lastmovetoy=\dimen376
-\tikzleveldistance=\dimen377
-\tikzsiblingdistance=\dimen378
+\tikz@lastx=\dimen373
+\tikz@lasty=\dimen374
+\tikz@lastxsaved=\dimen375
+\tikz@lastysaved=\dimen376
+\tikz@lastmovetox=\dimen377
+\tikz@lastmovetoy=\dimen378
+\tikzleveldistance=\dimen379
+\tikzsiblingdistance=\dimen380
 \tikz@figbox=\box155
 \tikz@figbox@bg=\box156
 \tikz@tempbox=\box157
 \tikz@tempbox@bg=\box158
-\tikztreelevel=\count559
-\tikznumberofchildren=\count560
-\tikznumberofcurrentchild=\count561
-\tikz@fig@count=\count562
- (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count563
-\pgfmatrixcurrentcolumn=\count564
-\pgf@matrix@numberofcolumns=\count565
-)
-\tikz@expandcount=\count566
+\tikztreelevel=\count566
+\tikznumberofchildren=\count567
+\tikznumberofcurrentchild=\count568
+\tikz@fig@count=\count569
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rytopaths.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/modules/pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count570
+\pgfmatrixcurrentcolumn=\count571
+\pgf@matrix@numberofcolumns=\count572
+)
+\tikz@expandcount=\count573
+
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rypatterns.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arypatterns.code.tex"
 File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+"
 File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rypatterns.meta.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.meta.code
-.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryshapes.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arypatterns.meta.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibrarypatterns.meta.cod
+e.tex"))
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryshapes.code.tex"
 File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryshapes.geometric.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryshapes.geometric.code.tex"
 File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geom
-etric.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geo
+metric.code.tex"
 File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryshapes.misc.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryshapes.misc.code.tex"
 File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc
-.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/shapes/pgflibraryshapes.mis
+c.code.tex"
 File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryshapes.symbols.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryshapes.symbols.code.tex"
 File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symb
-ols.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/shapes/pgflibraryshapes.sym
+bols.code.tex"
 File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryshapes.arrows.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryshapes.arrows.code.tex"
 File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arro
-ws.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arr
+ows.code.tex"
 File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryshapes.callouts.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.call
-outs.code.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryshapes.multipart.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryshapes.callouts.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/shapes/pgflibraryshapes.cal
+louts.code.tex"))
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryshapes.multipart.code.tex"
 File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.mult
-ipart.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/shapes/pgflibraryshapes.mul
+tipart.code.tex"
 File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodepartlowerbox=\box159
 \pgfnodeparttwobox=\box160
@@ -1472,335 +1689,355 @@ File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodepartsixbox=\box177
 \pgfnodepartfivebox=\box178
 )))
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.t
-ex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.
+tex"
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen379
-\pgfarrowlength=\dimen380
-\pgfarrowwidth=\dimen381
-\pgfarrowlinewidth=\dimen382
+\pgfarrowinset=\dimen381
+\pgfarrowlength=\dimen382
+\pgfarrowwidth=\dimen383
+\pgfarrowlinewidth=\dimen384
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rycalc.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arycalc.code.tex"
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryshadows.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryshadows.code.tex"
 File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryfadings.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryfadings.code.tex"
 File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryfadings.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryfadings.code.tex"
 File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rymatrix.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arymatrix.code.tex"
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rydecorations.pathreplacing.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rydecorations.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen383
-\pgfdecoratedremainingdistance=\dimen384
-\pgfdecoratedinputsegmentcompleteddistance=\dimen385
-\pgfdecoratedinputsegmentremainingdistance=\dimen386
-\pgf@decorate@distancetomove=\dimen387
-\pgf@decorate@repeatstate=\count567
-\pgfdecorationsegmentamplitude=\dimen388
-\pgfdecorationsegmentlength=\dimen389
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arydecorations.pathreplacing.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arydecorations.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+"
+\pgfdecoratedcompleteddistance=\dimen385
+\pgfdecoratedremainingdistance=\dimen386
+\pgfdecoratedinputsegmentcompleteddistance=\dimen387
+\pgfdecoratedinputsegmentremainingdistance=\dimen388
+\pgf@decorate@distancetomove=\dimen389
+\pgf@decorate@repeatstate=\count574
+\pgfdecorationsegmentamplitude=\dimen390
+\pgfdecorationsegmentlength=\dimen391
 )
 \tikz@lib@dec@box=\box179
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecora
-tions.pathreplacing.code.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryautomata.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/decorations/pgflibrarydecor
+ations.pathreplacing.code.tex"))
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryautomata.code.tex"
 File: tikzlibraryautomata.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rypositioning.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rymath.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryfpu.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex))
-\tikz@math@for@depth=\count568
-\tikz@math@dimen=\dimen390
-\tikz@math@toks=\toks50
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arymath.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryfpu.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryfpu.code.tex"))
+\tikz@math@for@depth=\count575
+\tikz@math@dimen=\dimen392
+\tikz@math@toks=\toks49
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryfit.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryfit.code.tex"
 File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryshadings.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryshadings.code.tex"
 File: tikzlibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryshadings.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryshadings.code.tex
+"
 File: pgflibraryshadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rymindmap.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arymindmap.code.tex"
 File: tikzlibrarymindmap.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rytrees.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arytrees.code.tex"
 File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Program Files\MiKTeX\tex/latex/circuitikz\circuitikz.sty
+))
+("C:/Program Files/MiKTeX/tex/latex/circuitikz/circuitikz.sty"
 Package: circuitikz 2024/02/09{} The CircuiTikz circuit drawing package version
  1.6.7
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rybending.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arybending.code.tex"
 File: tikzlibrarybending.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulebending.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/modules/pgfmodulebending.code.tex"
 File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulenonlineartransformati
-ons.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/modules/pgfmodulenonlineartransformat
+ions.code.tex"
 File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgftransformnonlinearflatness=\dimen391
+\pgftransformnonlinearflatness=\dimen393
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibrarycurvilinear.code.t
-ex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.
+tex"
 File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@curvilinear@time@a=\dimen392
-\pgf@curvilinear@length@a=\dimen393
-\pgf@curvilinear@length@b=\dimen394
-\pgf@curvilinear@length@c=\dimen395
-\pgf@curvilinear@length@d=\dimen396
+\pgf@curvilinear@time@a=\dimen394
+\pgf@curvilinear@length@a=\dimen395
+\pgf@curvilinear@length@b=\dimen396
+\pgf@curvilinear@length@c=\dimen397
+\pgf@curvilinear@length@d=\dimen398
 )
-\pgf@arrows@the@rigidity=\dimen397
-)) (C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcirc.defines.tex
-\pgf@circ@count@a=\count569
-\pgf@circ@count@b=\count570
-\pgf@circ@count@c=\count571
-\pgf@circ@res@up=\dimen398
-\pgf@circ@res@down=\dimen399
-\pgf@circ@res@zero=\dimen400
-\pgf@circ@res@left=\dimen401
-\pgf@circ@res@right=\dimen402
-\pgf@circ@res@other=\dimen403
-\pgf@circ@res@step=\dimen404
-\pgf@circ@res@temp=\dimen405
-\pgf@circ@Rlen=\dimen406
-\pgf@circ@scaled@Rlen=\dimen407
-\pgfstartlinewidth=\dimen408
+\pgf@arrows@the@rigidity=\dimen399
+)) ("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcirc.defines.tex"
+\pgf@circ@count@a=\count576
+\pgf@circ@count@b=\count577
+\pgf@circ@count@c=\count578
+\pgf@circ@res@up=\dimen400
+\pgf@circ@res@down=\dimen401
+\pgf@circ@res@zero=\dimen402
+\pgf@circ@res@left=\dimen403
+\pgf@circ@res@right=\dimen404
+\pgf@circ@res@other=\dimen405
+\pgf@circ@res@step=\dimen406
+\pgf@circ@res@temp=\dimen407
+\pgf@circ@Rlen=\dimen408
+\pgf@circ@scaled@Rlen=\dimen409
+\pgfstartlinewidth=\dimen410
 )
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcircutils.tex
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircutils.tex"
 \ctikz@scratchbox=\box180
 )
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcircpath.tex)
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcircshapes.tex)
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcircmonopoles.tex)
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcircbipoles.tex)
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcirctripoles.tex
-\pgf@circ@res@count=\count572
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircpath.tex")
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircshapes.tex")
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircmonopoles.tex")
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircbipoles.tex")
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcirctripoles.tex"
+\pgf@circ@res@count=\count579
 )
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcircquadpoles.tex)
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcircmultipoles.tex)
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcirclabel.tex)
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcircvoltage.tex
-\pgfcirc@labelshift=\dimen409
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircquadpoles.tex")
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircmultipoles.tex")
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcirclabel.tex")
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircvoltage.tex"
+\pgfcirc@labelshift=\dimen411
 )
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcirccurrent.tex)
-(C:\Program Files\MiKTeX\tex/generic/circuitikz\pgfcircflow.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rybabel.code.tex
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcirccurrent.tex")
+("C:/Program Files/MiKTeX/tex/generic/circuitikz/pgfcircflow.tex"))
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arybabel.code.tex"
 File: tikzlibrarybabel.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryarrows.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryarrows.code.tex"
 File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryarrows.code.tex"
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen410
+\arrowsize=\dimen412
 ))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rydecorations.pathmorphing.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecora
-tions.pathmorphing.code.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rybackgrounds.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arydecorations.pathmorphing.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/decorations/pgflibrarydecor
+ations.pathmorphing.code.tex"))
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+arybackgrounds.code.tex"
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@layerbox@background=\box181
 \pgf@layerboxsaved@background=\box182
 )
-(C:\Program Files\MiKTeX\tex/latex/pgfplots\pgfplots.sty
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+("C:/Program Files/MiKTeX/tex/latex/pgfplots/pgfplots.sty"
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplots.revision.tex")
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
-\t@pgfplots@toka=\toks51
-\t@pgfplots@tokb=\toks52
-\t@pgfplots@tokc=\toks53
-\pgfplots@tmpa=\dimen411
-\c@pgfplots@coordindex=\count573
-\c@pgfplots@scanlineindex=\count574
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplots.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplotscore.code.tex"
+Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
+\pgfplots@luabackend@table=\catcodetable16
+\t@pgfplots@toka=\toks50
+\t@pgfplots@tokb=\toks51
+\t@pgfplots@tokc=\toks52
+\pgfplots@tmpa=\dimen413
+\c@pgfplots@coordindex=\count580
+\c@pgfplots@scanlineindex=\count581
 
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp
-_loader.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex"
+)) ("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex
+")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsup
+p_loader.code.tex"
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks54
-\t@pgf@tokb=\toks55
-\t@pgf@tokc=\toks56
+\t@pgf@toka=\toks53
+\t@pgf@tokb=\toks54
+\t@pgf@tokc=\toks55
 
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp
-_pgfutil-common-lists.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructu
-re.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructu
-reext.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.
-tex
-\c@pgfplotsarray@tmp=\count575
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsup
+p_pgfutil-common-lists.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/luamath/pgflibraryluamath.c
+ode.tex")
+Package pgfplots info on input line 290: luamath library shipped with pgf 3.1.1
+0 is up-to-date
 )
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code
-.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code
-.tex
-\c@pgfplotstable@counta=\count576
-\t@pgfplotstable@a=\toks57
-)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.
-tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/util/pgfplotsutil.code.tex"
+Package pgfplots info on input line 82: Found new luatex: initializing lua comm
+ands instead of write18 (shell-escape)
 
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex
-))
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshadi
-ng.code.tex
-\c@pgfplotslibrarysurf@no=\count577
-
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshadin
-g.pgfsys-pdftex.def)))
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex)))
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourl
-ua.code.tex)
-\pgfplots@numplots=\count578
-\pgfplots@xmin@reg=\dimen412
-\pgfplots@xmax@reg=\dimen413
-\pgfplots@ymin@reg=\dimen414
-\pgfplots@ymax@reg=\dimen415
-\pgfplots@zmin@reg=\dimen416
-\pgfplots@zmax@reg=\dimen417
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsliststruct
+ure.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsliststruct
+ureext.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsarray.code
+.tex"
+\c@pgfplotsarray@tmp=\count582
 )
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryplotmarks.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsmatrix.cod
+e.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/numtable/pgfplotstableshared.cod
+e.tex"
+\c@pgfplotstable@counta=\count583
+\t@pgfplotstable@a=\toks56
+)
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsdeque.code
+.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/util/pgfplotsbinary.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/util/pgfplotsbinary.data.code.te
+x"))
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex"
+)
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshad
+ing.code.tex"
+\c@pgfplotslibrarysurf@no=\count584
+
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshadi
+ng.pgfsys-luatex.def")))
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/util/pgfplotscolormap.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/util/pgfplotscolor.code.tex"))
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplotsstackedplots.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplotsplothandlers.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex
+" ("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex
+"))) ("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplots.scaling.code.tex") ("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex") ("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplots.errorbars.code.tex") ("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplots.markers.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplotsticks.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfplots.paths.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contour
+lua.code.tex")
+\pgfplots@numplots=\count585
+\pgfplots@xmin@reg=\dimen414
+\pgfplots@xmax@reg=\dimen415
+\pgfplots@ymin@reg=\dimen416
+\pgfplots@ymax@reg=\dimen417
+\pgfplots@zmin@reg=\dimen418
+\pgfplots@zmax@reg=\dimen419
+)
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryplotmarks.code.tex"
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryplotmarks.code.te
+x"
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.patchplo
-ts.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.fillbetw
-een.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/pgfcontrib\tikzlibraryfillbetween
-.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryintersections.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.code
-.tex
-\pgf@intersect@solutions=\count579
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/tikzlibrarypgfplots.patchpl
+ots.code.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbet
+ween.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetwee
+n.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibr
+aryintersections.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/libraries/pgflibraryintersections.cod
+e.tex"
+\pgf@intersect@solutions=\count586
 ))
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/pgfcontrib\tikzlibrarydecorations
-.softclip.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/pgfcontrib\pgflibraryfillbetween.
-code.tex)))
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.decorati
-ons.softclip.code.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.polar.co
-de.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.polar.co
-de.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.external
-.code.tex
-(C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer/libraries\tikzlibraryexter
-nal.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzexter
-nalshared.code.tex)))
-\openout5 = `_main_.auxlock'.
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecoration
+s.softclip.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween
+.code.tex")))
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorat
+ions.softclip.code.tex"))
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/tikzlibrarypgfplots.polar.c
+ode.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/tikzlibrarypgfplots.polar.c
+ode.tex")
+("C:/Program Files/MiKTeX/tex/generic/pgfplots/libs/tikzlibrarypgfplots.externa
+l.code.tex"
+("C:/Program Files/MiKTeX/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexte
+rnal.code.tex"
+("C:/Program Files/MiKTeX/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexte
+rnalshared.code.tex")))
+\openout5 = _main_.auxlock
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
- (_main_.aux)
-\openout1 = `_main_.aux'.
+ (./_main_.aux)
+\openout1 = _main_.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 311.
-LaTeX Font Info:    ... okay on input line 311.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 311.
-LaTeX Font Info:    ... okay on input line 311.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 311.
-LaTeX Font Info:    ... okay on input line 311.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 311.
-LaTeX Font Info:    ... okay on input line 311.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 311.
-LaTeX Font Info:    ... okay on input line 311.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 311.
-LaTeX Font Info:    ... okay on input line 311.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 311.
-LaTeX Font Info:    ... okay on input line 311.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 311.
-LaTeX Font Info:    ... okay on input line 311.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 311.
-LaTeX Font Info:    ... okay on input line 311.
-LaTeX Info: Redefining \degres on input line 311.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 316.
+LaTeX Font Info:    ... okay on input line 316.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 316.
+LaTeX Font Info:    ... okay on input line 316.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 316.
+LaTeX Font Info:    ... okay on input line 316.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 316.
+LaTeX Font Info:    ... okay on input line 316.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 316.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+16.
+
+("C:/Program Files/MiKTeX/tex/latex/base/ts1cmr.fd"
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 316.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 316.
+LaTeX Font Info:    ... okay on input line 316.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 316.
+LaTeX Font Info:    ... okay on input line 316.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 316.
+LaTeX Font Info:    ... okay on input line 316.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 316.
+LaTeX Font Info:    ... okay on input line 316.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 316.
+LaTeX Font Info:    ... okay on input line 316.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 311.
+(french.ldf)             reported on input line 316.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 311.
-LaTeX Info: Redefining \up on input line 311.
+(french.ldf)             reported on input line 316.
+LaTeX Info: Redefining \up on input line 316.
 
-(C:\Program Files\MiKTeX\tex/latex/ninecolors\ninecolors.sty
+("C:/Program Files/MiKTeX/tex/latex/ninecolors/ninecolors.sty"
 Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 )
-(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+("C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count580
-\scratchdimen=\dimen418
+\scratchcounter=\count587
+\scratchdimen=\dimen420
 \scratchbox=\box183
-\nofMPsegments=\count581
-\nofMParguments=\count582
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count583
-\MPscratchDim=\dimen419
-\MPnumerator=\count584
-\makeMPintoPDFobject=\count585
-\everyMPtoPDFconversion=\toks59
-) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+\nofMPsegments=\count588
+\nofMParguments=\count589
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count590
+\MPscratchDim=\dimen421
+\MPnumerator=\count591
+\makeMPintoPDFobject=\count592
+\everyMPtoPDFconversion=\toks58
+) ("C:/Program Files/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+("C:/Program Files/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg"
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
@@ -1808,9 +2045,9 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: luatex
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -1841,103 +2078,350 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 311.
-(_main_.out) (_main_.out)
+Package hyperref Info: Link coloring ON on input line 316.
+(./_main_.out) (./_main_.out)
 \@outlinefile=\write6
-\openout6 = `_main_.out'.
 
+\openout6 = _main_.out
 
-(C:\Program Files\MiKTeX\tex/latex/translations/dicts\translations-basic-dictio
-nary-french.trsl
+("C:/Program Files/MiKTeX/tex/latex/translations/dicts/translations-basic-dicti
+onary-french.trsl"
 File: translations-basic-dictionary-french.trsl (french translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `french'. on input line 311.
+or `french'. on input line 316.
 \Etoc@tf=\read5
 Package biblatex Info: Trying to load language 'french'...
 Package biblatex Info: ... file 'french.lbx' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\french.lbx
+ ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/french.lbx"
 File: french.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
-Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `_main_.bcf'.
 
+\openout4 = _main_.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '_main_.bbl' found.
-
-(_main_.bbl)
-Package biblatex Info: Reference section=0 on input line 311.
-Package biblatex Info: Reference segment=0 on input line 311.
+ (./_main_.bbl)
+Package biblatex Info: Reference section=0 on input line 316.
+Package biblatex Info: Reference segment=0 on input line 316.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Font Info:    Trying to load font information for OT1+iwonalm on input li
-ne 315.
-(C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonalm.fd
-File: ot1iwonalm.fd 2005/10/05 v1.2 font definition file for OT1/iwonalm (MW)
-)
-LaTeX Font Info:    Trying to load font information for OML+iwonal on input lin
-e 315.
 
-(C:\Program Files\MiKTeX\tex/latex/iwona\omliwonal.fd
-File: omliwonal.fd 2008/07/22 v0.995 font definition file for OML/iwonal (MW)
-)
-LaTeX Font Info:    Trying to load font information for OMS+iwonal on input lin
-e 315.
+LaTeX Font Warning: Font shape `TU/iwonalight(0)/b/n' undefined
+(Font)              using `TU/iwonalight(0)/m/n' instead on input line 320.
 
-(C:\Program Files\MiKTeX\tex/latex/iwona\omsiwonal.fd
-File: omsiwonal.fd 2008/07/22 v0.995 font definition file for OMS/iwonal (MW)
+LaTeX Font Info:    Trying to load font information for OT1+iwonamathlm on inpu
+t line 320.
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/ot1iwonamathlm.fd"
+File: ot1iwonamathlm.fd 2023-08-31 v1.0 ScaledIwonamathfonts
 )
-LaTeX Font Info:    Trying to load font information for OMX+iwonal on input lin
-e 315.
 
-(C:\Program Files\MiKTeX\tex/latex/iwona\omxiwonal.fd
-File: omxiwonal.fd 2008/07/22 v0.995 font definition file for OMX/iwonal (MW)
+LaTeX Font Warning: Font shape `OT1/iwonamathlm/m/n' will be
+(Font)              scaled to size 14.4pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathlm/m/n' will be
+(Font)              scaled to size 10.0pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathlm/m/n' will be
+(Font)              scaled to size 7.0pt on input line 320.
+
+LaTeX Font Info:    Trying to load font information for OML+iwonamathl on input
+ line 320.
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/omliwonamathl.fd"
+File: omliwonamathl.fd 2023-08-31 v1.0 ScaledIwonamathfonts
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 315
+
+LaTeX Font Warning: Font shape `OML/iwonamathl/m/it' will be
+(Font)              scaled to size 14.4pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamathl/m/it' will be
+(Font)              scaled to size 10.0pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamathl/m/it' will be
+(Font)              scaled to size 7.0pt on input line 320.
+
+LaTeX Font Info:    Trying to load font information for OMS+iwonamathl on input
+ line 320.
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/omsiwonamathl.fd"
+File: omsiwonamathl.fd 2023-08-31 v1.0 ScaledIwonamathfonts
+)
+
+LaTeX Font Warning: Font shape `OMS/iwonamathl/m/n' will be
+(Font)              scaled to size 14.4pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathl/m/n' will be
+(Font)              scaled to size 10.0pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathl/m/n' will be
+(Font)              scaled to size 7.0pt on input line 320.
+
+LaTeX Font Info:    Trying to load font information for OMX+iwonamathl on input
+ line 320.
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/omxiwonamathl.fd"
+File: omxiwonamathl.fd 2023-08-31 v1.0 ScaledIwonamathfonts
+)
+
+LaTeX Font Warning: Font shape `OMX/iwonamathl/m/n' will be
+(Font)              scaled to size 14.4pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamathl/m/n' will be
+(Font)              scaled to size 10.0pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamathl/m/n' will be
+(Font)              scaled to size 7.0pt on input line 320.
+
+LaTeX Font Info:    Trying to load font information for OMS+iwonamathcmsy on in
+put line 320.
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/omsiwonamathcmsy.fd"
+File: omsiwonamathcmsy.fd 2023-08-31 v1.0 ScaledIwonamathfonts
+)
+
+LaTeX Font Warning: Font shape `OMS/iwonamathcmsy/m/n' will be
+(Font)              scaled to size 14.4pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathcmsy/m/n' will be
+(Font)              scaled to size 10.0pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathcmsy/m/n' will be
+(Font)              scaled to size 7.0pt on input line 320.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 320
 .
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+("C:/Program Files/MiKTeX/tex/latex/amsfonts/umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 315
+LaTeX Font Info:    Trying to load font information for U+msb on input line 320
 .
 
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+("C:/Program Files/MiKTeX/tex/latex/amsfonts/umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 31
-5.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 32
+0.
 
-(C:\Program Files\MiKTeX\tex/latex/jknappen\ursfs.fd
+("C:/Program Files/MiKTeX/tex/latex/jknappen/ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
-15.
+20.
 
-(C:\Program Files\MiKTeX\tex/latex/stmaryrd\ustmry.fd) [1
+("C:/Program Files/MiKTeX/tex/latex/stmaryrd/ustmry.fd")
+LaTeX Font Info:    Trying to load font information for OT1+iwonamathm on input
+ line 320.
+
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/ot1iwonamathm.fd"
+File: ot1iwonamathm.fd 2023-08-31 v1.0 ScaledIwonamathfonts
+)
+
+LaTeX Font Warning: Font shape `OT1/iwonamathm/b/n' will be
+(Font)              scaled to size 14.4pt on input line 320.
 
 
-{C:/Users/mfontbon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program
- Files/MiKTeX/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{C:/Program Files/MiKTeX/fo
-nts/enc/dvips/iwona/ec-iwona.enc}] [2
+LaTeX Font Warning: Font shape `OT1/iwonamathm/b/n' will be
+(Font)              scaled to size 10.0pt on input line 320.
 
-] (Citations.tex) (Remerciements.tex [3] [4
+
+LaTeX Font Warning: Font shape `OT1/iwonamathm/b/n' will be
+(Font)              scaled to size 7.0pt on input line 320.
+
+LaTeX Font Info:    Trying to load font information for OML+iwonamath on input 
+line 320.
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/omliwonamath.fd"
+File: omliwonamath.fd 2023-08-31 v1.0 ScaledIwonamathfonts
+)
+
+LaTeX Font Warning: Font shape `OML/iwonamath/b/it' will be
+(Font)              scaled to size 14.4pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamath/b/it' will be
+(Font)              scaled to size 10.0pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamath/b/it' will be
+(Font)              scaled to size 7.0pt on input line 320.
+
+LaTeX Font Info:    Trying to load font information for OMS+iwonamath on input 
+line 320.
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/omsiwonamath.fd"
+File: omsiwonamath.fd 2023-08-31 v1.0 ScaledIwonamathfonts
+)
+
+LaTeX Font Warning: Font shape `OMS/iwonamath/b/n' will be
+(Font)              scaled to size 14.4pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamath/b/n' will be
+(Font)              scaled to size 10.0pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamath/b/n' will be
+(Font)              scaled to size 7.0pt on input line 320.
+
+LaTeX Font Info:    Trying to load font information for OMX+iwonamath on input 
+line 320.
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/omxiwonamath.fd"
+File: omxiwonamath.fd 2023-08-31 v1.0 ScaledIwonamathfonts
+)
+
+LaTeX Font Warning: Font shape `OMX/iwonamath/b/n' will be
+(Font)              scaled to size 14.4pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamath/b/n' will be
+(Font)              scaled to size 10.0pt on input line 320.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamath/b/n' will be
+(Font)              scaled to size 7.0pt on input line 320.
+
+[1
+
+
+{C:/Users/mfontbon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    Font shape `TU/iwonalight(0)/m/sl' in size <12> not availab
+le
+(Font)              Font shape `TU/iwonalight(0)/m/it' tried instead on input l
+ine 320.
+
+[2
+
+] (./Citations.tex) (./Remerciements.tex [3] [4
 
 ]) [5]
 \tf@toc=\write7
-\openout7 = `_main_.toc'.
 
+\openout7 = _main_.toc
  [6
 
-] [7]
-[8] [9] [10
+]
 
-] (Introduction.tex
+LaTeX Font Warning: Font shape `OT1/iwonamathlm/m/n' will be
+(Font)              scaled to size 12.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathlm/m/n' will be
+(Font)              scaled to size 8.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathlm/m/n' will be
+(Font)              scaled to size 6.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamathl/m/it' will be
+(Font)              scaled to size 12.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamathl/m/it' will be
+(Font)              scaled to size 8.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamathl/m/it' will be
+(Font)              scaled to size 6.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathl/m/n' will be
+(Font)              scaled to size 12.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathl/m/n' will be
+(Font)              scaled to size 8.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathl/m/n' will be
+(Font)              scaled to size 6.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamathl/m/n' will be
+(Font)              scaled to size 12.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamathl/m/n' will be
+(Font)              scaled to size 8.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamathl/m/n' will be
+(Font)              scaled to size 6.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathcmsy/m/n' will be
+(Font)              scaled to size 12.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathcmsy/m/n' will be
+(Font)              scaled to size 8.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathcmsy/m/n' will be
+(Font)              scaled to size 6.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathm/b/n' will be
+(Font)              scaled to size 12.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathm/b/n' will be
+(Font)              scaled to size 8.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathm/b/n' will be
+(Font)              scaled to size 6.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamath/b/it' will be
+(Font)              scaled to size 12.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamath/b/it' will be
+(Font)              scaled to size 8.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamath/b/it' will be
+(Font)              scaled to size 6.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamath/b/n' will be
+(Font)              scaled to size 12.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamath/b/n' will be
+(Font)              scaled to size 8.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamath/b/n' will be
+(Font)              scaled to size 6.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamath/b/n' will be
+(Font)              scaled to size 12.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamath/b/n' will be
+(Font)              scaled to size 8.0pt on input line 332.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamath/b/n' will be
+(Font)              scaled to size 6.0pt on input line 332.
+
+[7] [8] [9] [10
+
+] (./Introduction.tex
 Chapitre I.
 [1
 
@@ -1946,14 +2430,13 @@ Chapitre I.
 ) (../fig/fig_PrincipeTA/tex/PaCTA.tex
 ===== Image 'external/fig_FrigoTA0' is up-to-date. ======
 )
-LaTeX Font Info:    Trying to load font information for TS1+iwonal on input lin
-e 61.
- (C:\Program Files\MiKTeX\tex/latex/iwona\ts1iwonal.fd
-File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
-) [2
 
-{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}]
-(../fig/fig_CycleBrayton/tex/DepCompAdiab.tex
+LaTeX Font Warning: Font shape `TU/iwonalight(0)/b/sc' undefined
+(Font)              using `TU/iwonalight(0)/b/n' instead on input line 57.
+
+[2
+
+] (../fig/fig_CycleBrayton/tex/DepCompAdiab.tex
 ===== Image 'external/fig_1_BraytonDepComp0' is up-to-date. ======
 ) (../fig/fig_CycleBrayton/tex/QFluideToPlaque.tex
 ===== Image 'external/fig_2_BraytonQfluidePlaque0' is up-to-date. ======
@@ -1969,19 +2452,17 @@ File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
 ===== Image 'external/fig_3_StirlingDet0' is up-to-date. ======
 ) (../fig/fig_Cycle_Stirling/tex/DepRetourIsoV.tex
 ===== Image 'external/fig_4_StirlingDep20' is up-to-date. ======
-) [3{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ts1-iwona.enc} <./external/f
-ig_MoteurTA0.pdf> <./external/fig_FrigoTA0.pdf> <./external/fig_1_BraytonDepCom
-p0.pdf> <./external/fig_2_BraytonQfluidePlaque0.pdf> <./external/fig_3_BraytonD
-epDet0.pdf> <./external/fig_4_BraytonQPlaqueFluide0.pdf>] [4{C:/Program Files/M
-iKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvi
-ps/iwona/ex-iwona.enc} <./external/fig_1_StirlingComp0.pdf> <./external/fig_2_S
-tirlingDep10.pdf> <./external/fig_3_StirlingDet0.pdf> <./external/fig_4_Stirlin
-gDep20.pdf>]
+) [3<./external/fig_MoteurTA0.pdf><./external/fig_FrigoTA0.pdf><./external/fig_1
+_BraytonDepComp0.pdf><./external/fig_2_BraytonQfluidePlaque0.pdf><./external/fig
+_3_BraytonDepDet0.pdf><./external/fig_4_BraytonQPlaqueFluide0.pdf>] [4<./externa
+l/fig_1_StirlingComp0.pdf><./external/fig_2_StirlingDep10.pdf><./external/fig_3_
+StirlingDet0.pdf><./external/fig_4_StirlingDep20.pdf>]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 223
 .
- (C:\Program Files\MiKTeX\tex/latex/amsfonts\ueuf.fd
+
+("C:/Program Files/MiKTeX/tex/latex/amsfonts/ueuf.fd"
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [5{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc}]
+) [5]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2005,72 +2486,103 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ===== Image 'external/fig_AnalogiesElectroac11' is up-to-date. ======
 (../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex
 ===== Image 'external/fig_CircEquivTAC0' is up-to-date. ======
-) [6 <./external/fig_AnalogiesElectroac6.pdf> <./external/fig_AnalogiesElectroa
-c7.pdf> <./external/fig_AnalogiesElectroac8.pdf> <./external/fig_AnalogiesElect
-roac9.pdf> <./external/fig_AnalogiesElectroac10.pdf> <./external/fig_AnalogiesE
-lectroac11.pdf>] (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
+) [6<./external/fig_AnalogiesElectroac6.pdf><./external/fig_AnalogiesElectroac7.
+pdf><./external/fig_AnalogiesElectroac8.pdf><./external/fig_AnalogiesElectroac9.
+pdf><./external/fig_AnalogiesElectroac10.pdf><./external/fig_AnalogiesElectroac1
+1.pdf>] (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 ===== Image 'external/fig_WavesInDuctPiece0' is up-to-date. ======
-) [7 <./external/fig_CircEquivTAC0.pdf>] [8 <./external/fig_WavesInDuctPiece0.p
-df>]) (DispositifExpe.tex [9] [10
+) [7<./external/fig_CircEquivTAC0.pdf>] [8<./external/fig_WavesInDuctPiece0.pdf>
+]) (./DispositifExpe.tex [9] [10
 
 ]
 Chapitre II.
 [11]
-LaTeX Info: Symbol \textohm not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 36.
-
 ===== Image 'external/fig_ATE_ProfilsAX_5mm0' is up-to-date. ======
 ===== Image 'external/fig_ATE_ProfilsCHX_5mm0' is up-to-date. ======
 [12
 
-{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./external
-/fig_ATE_ProfilsAX_5mm0.pdf> <./external/fig_ATE_ProfilsCHX_5mm0.pdf
-
-pdfTeX warning: pdflatex (file ./external/fig_ATE_ProfilsCHX_5mm0.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
->] (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
+<./external/fig_ATE_ProfilsAX_5mm0.pdf><./external/fig_ATE_ProfilsCHX_5mm0.pdf>] (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
 ===== Image 'external/fig_SchemaGeneralTACOT0' is up-to-date. ======
 )
 ===== Image 'external/fig_TacotPhotos_AHX_dansCarter0' is up-to-date. ======
 ===== Image 'external/fig_TacotPhotos_Regenerateur0' is up-to-date. ======
 ===== Image 'external/fig_TacotPhotos_CHX_dansCarter0' is up-to-date. ======
-[13 <./external/fig_SchemaGeneralTACOT0.pdf>]
-LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
-e 113.
+[13<./external/fig_SchemaGeneralTACOT0.pdf>]
+LaTeX Font Info:    Trying to load font information for OT1+iwonamathl on input
+ line 113.
 
-(C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
-File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
-) [14 <./external/fig_TacotPhotos_AHX_dansCarter0.pdf> <./external/fig_TacotPho
-tos_Regenerateur0.pdf> <./external/fig_TacotPhotos_CHX_dansCarter0.pdf>]
+("C:/Program Files/MiKTeX/tex/latex/iwonamath/ot1iwonamathl.fd"
+File: ot1iwonamathl.fd 2023-08-31 v1.0 ScaledIwonamathfonts
+)
+
+LaTeX Font Warning: Font shape `OT1/iwonamathl/m/n' will be
+(Font)              scaled to size 12.0pt on input line 113.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathl/m/n' will be
+(Font)              scaled to size 8.0pt on input line 113.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathl/m/n' will be
+(Font)              scaled to size 6.0pt on input line 113.
+
+[14<./external/fig_TacotPhotos_AHX_dansCarter0.pdf><./external/fig_TacotPhotos_R
+egenerateur0.pdf><./external/fig_TacotPhotos_CHX_dansCarter0.pdf>]
 (../fig/fig_dKdV/tex/fig_dKdV.tex
 ===== Image 'external/fig_dKdV0' is up-to-date. ======
 )
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 181.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 182.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 183.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 184.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 186.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 187.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 188.
- [15 <./external/fig_dKdV0.pdf>] [16]
+
+LaTeX Font Warning: Font shape `OT1/iwonamathlm/m/n' will be
+(Font)              scaled to size 5.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamathl/m/it' will be
+(Font)              scaled to size 5.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathl/m/n' will be
+(Font)              scaled to size 5.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamathl/m/n' will be
+(Font)              scaled to size 5.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamathcmsy/m/n' will be
+(Font)              scaled to size 5.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathl/m/n' will be
+(Font)              scaled to size 10.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathl/m/n' will be
+(Font)              scaled to size 7.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathl/m/n' will be
+(Font)              scaled to size 5.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OT1/iwonamathm/b/n' will be
+(Font)              scaled to size 5.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OML/iwonamath/b/it' will be
+(Font)              scaled to size 5.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OMS/iwonamath/b/n' will be
+(Font)              scaled to size 5.0pt on input line 168.
+
+
+LaTeX Font Warning: Font shape `OMX/iwonamath/b/n' will be
+(Font)              scaled to size 5.0pt on input line 168.
+
+[15<./external/fig_dKdV0.pdf>] [16]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
-) [17 <./external/fig_TCdansNoyau0.pdf>]
+) [17<./external/fig_TCdansNoyau0.pdf>]
 ===== Image 'external/fig_SystemeAccroche_Machine0' is up-to-date. ======
 ===== Image 'external/fig_SystemeAccroche_Palan0' is up-to-date. ======
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
@@ -2081,11 +2593,6 @@ LaTeX Info: Symbol \textminus not provided by
 ===== Image 'external/fig_OrientationCore_H20' is up-to-date. ======
 )
 ===== Image 'external/fig_OrientationCore_H2_Schema0' is up-to-date. ======
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-51.
-(C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV1.tex
 ===== Image 'external/fig_OrientationCore_V10' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex
@@ -2093,34 +2600,13 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 ===== Image 'external/fig_OrientationCore_V1_Schema0' is up-to-date. ======
 ===== Image 'external/fig_OrientationCore_V2_Schema0' is up-to-date. ======
-[18{C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./extern
-al/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroche_Palan0.pdf
->] [19 <./external/fig_OrientationCore_H10.pdf> <./external/fig_OrientationCore
-_H1_Schema0.pdf> <./external/fig_OrientationCore_H20.pdf> <./external/fig_Orien
-tationCore_H2_Schema0.pdf
-
-pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_H2_Schema0.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./external/fig_OrientationCore_V10.pdf> <./external/fig_OrientationCore_V20.
-pdf> <./external/fig_OrientationCore_V1_Schema0.pdf
-
-pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_V1_Schema0.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./external/fig_OrientationCore_V2_Schema0.pdf
-
-pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_V2_Schema0.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->]
-LaTeX Info: Symbol \textohm not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 409.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 409.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 412.
- [20] [21] Excluding 'comment' comment.) (EnsembleSimus.tex [22]
+[18<./external/fig_SystemeAccroche_Machine0.pdf><./external/fig_SystemeAccroche_
+Palan0.pdf>] [19<./external/fig_OrientationCore_H10.pdf><./external/fig_Orientat
+ionCore_H1_Schema0.pdf><./external/fig_OrientationCore_H20.pdf><./external/fig_O
+rientationCore_H2_Schema0.pdf><./external/fig_OrientationCore_V10.pdf><./externa
+l/fig_OrientationCore_V20.pdf><./external/fig_OrientationCore_V1_Schema0.pdf><./
+external/fig_OrientationCore_V2_Schema0.pdf>] [20] [21]
+Excluding 'comment' comment.) (./EnsembleSimus.tex [22]
 Chapitre III.
 [23
 
@@ -2128,13 +2614,7 @@ Chapitre III.
 
 ] (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
 ===== Image 'external/fig_SimuConvNat2D0' is up-to-date. ======
-) [25 <./external/fig_SimuConvNat2D0.pdf>]
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 7
-7.
-
-(C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
-File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [26]
+) [25<./external/fig_SimuConvNat2D0.pdf>] [26]
 ===== Image 'external/fig_Comsol_ModeleSimplifie_Geometrie0' is up-to-date. ===
 ===
 [27]
@@ -2142,20 +2622,24 @@ File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ==
 ===== Image 'external/Comsol_AxiGeometrie_Vertical0' is up-to-date. ======
 (../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex
-===== Image 'external/fig_SuperpositionComsol0' is up-to-date. ======
-) [28 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>] [29 <./external/f
-ig_Comsol_DemiGeometrie_Horizontal0.pdf> <./external/Comsol_AxiGeometrie_Vertic
-al0.pdf
+\openout5 = external/fig_SuperpositionComsol0.md5
 
-pdfTeX warning: pdflatex (file ./external/Comsol_AxiGeometrie_Vertical0.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
-> <./external/fig_SuperpositionComsol0.pdf>] [30]
+\openout5 = _main_.auxlock
+
+===== 'mode=convert with system call': Invoking 'lualatex -halt-on-error -inter
+action=batchmode -jobname "external/fig_SuperpositionComsol0" "\def\tikzexterna
+lrealjob{_main_}\input{_main_}"' ========
+
+\openout5 = _main_.auxlock
+) [28<./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>] [29<./external/fig_
+Comsol_DemiGeometrie_Horizontal0.pdf><./external/Comsol_AxiGeometrie_Vertical0.p
+df><./external/fig_SuperpositionComsol0.pdf>] [30]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
 ====
-) [31 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>] [32] [33])
-(EtudeExperimentale.tex [34]
+) [31<./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>] [32] [33])
+(./EtudeExperimentale.tex [34]
 Chapitre IV.
 [35
 
@@ -2183,30 +2667,26 @@ Chapitre IV.
 ===== Image 'external/fig_PerfConvNat_50W_COP1' is up-to-date. ======
 ) [36
 
-] [37 <./external/fig_PerfConvNat_Tf_0W0.pdf> <./external/fig_PerfConvNat_0W_Ta
-0.pdf> <./external/fig_PerfConvNat_0W_Qa0.pdf>] [38 <./external/fig_PerfConvNat
-_50W_Tf0.pdf> <./external/fig_PerfConvNat_50W_Ta0.pdf> <./external/fig_PerfConv
-Nat_50W_Qa0.pdf> <./external/fig_PerfConvNat_50W_COP0.pdf>] [39 <./external/fig
-_PerfConvNat_100W_Tf0.pdf> <./external/fig_PerfConvNat_100W_Ta0.pdf> <./externa
-l/fig_PerfConvNat_100W_Qa0.pdf> <./external/fig_PerfConvNat_50W_COP1.pdf>] (../
-fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
+] [37<./external/fig_PerfConvNat_Tf_0W0.pdf><./external/fig_PerfConvNat_0W_Ta0.p
+df><./external/fig_PerfConvNat_0W_Qa0.pdf>] [38<./external/fig_PerfConvNat_50W_T
+f0.pdf><./external/fig_PerfConvNat_50W_Ta0.pdf><./external/fig_PerfConvNat_50W_Q
+a0.pdf><./external/fig_PerfConvNat_50W_COP0.pdf>] [39<./external/fig_PerfConvNat
+_100W_Tf0.pdf><./external/fig_PerfConvNat_100W_Ta0.pdf><./external/fig_PerfConvN
+at_100W_Qa0.pdf><./external/fig_PerfConvNat_50W_COP1.pdf>]
+(../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_H1H20' is up-to-date. ======
-) [40 <./external/fig_HeatOnly_CHXout_H1H20.pdf>]
+) [40<./external/fig_HeatOnly_CHXout_H1H20.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_H1H2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Mid.tex
 ===== Image 'external/fig_Acou_CHXout_H1H2_Mid0' is up-to-date. ======
-)
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 337.
- [41 <./external/fig_Acou_CHXout_H1H2_Low0.pdf>]
+) [41<./external/fig_Acou_CHXout_H1H2_Low0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_High.tex
 ===== Image 'external/fig_Acou_CHXout_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_V1V20' is up-to-date. ======
-) [42 <./external/fig_Acou_CHXout_H1H2_Mid0.pdf> <./external/fig_Acou_CHXout_H1
-H2_High0.pdf>] [43 <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
+) [42<./external/fig_Acou_CHXout_H1H2_Mid0.pdf><./external/fig_Acou_CHXout_H1H2_
+High0.pdf>] [43<./external/fig_HeatOnly_CHXout_V1V20.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
@@ -2219,74 +2699,24 @@ H2_High0.pdf>] [43 <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
 ===== Image 'external/fig_HeatOnly_Regmid_H1H20' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_AHXin_H1H2.tex
 ===== Image 'external/fig_HeatOnly_AHXin_H1H20' is up-to-date. ======
-) [44 <./external/fig_Acou_CHXout_V1V2_Low0.pdf>]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 440.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 440.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 440.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 440.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 440.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 440.
- [45 <./external/fig_Acou_CHXout_V1V2_Mid0.pdf> <./external/fig_Acou_CHXout_V1V
-2_High0.pdf>]
+) [44<./external/fig_Acou_CHXout_V1V2_Low0.pdf>] [45<./external/fig_Acou_CHXout_
+V1V2_Mid0.pdf><./external/fig_Acou_CHXout_V1V2_High0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Low.tex
 ===== Image 'external/fig_Acou_Regmid_H1H2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Low.tex
 ===== Image 'external/fig_Acou_AHXin_H1H2_Low0' is up-to-date. ======
-)
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 483.
- [46 <./external/fig_HeatOnly_CHXin_H1H20.pdf> <./external/fig_HeatOnly_Regmid_
-H1H20.pdf> <./external/fig_HeatOnly_AHXin_H1H20.pdf>] [47 <./external/fig_Acou_
-CHXin_H1H2_Low0.pdf> <./external/fig_Acou_Regmid_H1H2_Low0.pdf> <./external/fig
-_Acou_AHXin_H1H2_Low0.pdf>]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 508.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 508.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 508.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 508.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 509.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 509.
-
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid.tex
+) [46<./external/fig_HeatOnly_CHXin_H1H20.pdf><./external/fig_HeatOnly_Regmid_H1
+H20.pdf><./external/fig_HeatOnly_AHXin_H1H20.pdf>] [47<./external/fig_Acou_CHXin
+_H1H2_Low0.pdf><./external/fig_Acou_Regmid_H1H2_Low0.pdf><./external/fig_Acou_AH
+Xin_H1H2_Low0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid.tex
 ===== Image 'external/fig_Acou_Regmid_H1H2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Mid.tex
 ===== Image 'external/fig_Acou_AHXin_H1H2_Mid0' is up-to-date. ======
-)
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 552.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 552.
- (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High.tex
 ===== Image 'external/fig_Acou_Regmid_H1H2_High0' is up-to-date. ======
@@ -2304,8 +2734,8 @@ LaTeX Info: Symbol \textminus not provided by
 ===== Image 'external/fig_Acou_Regmid_V1V2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Low.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_Low0' is up-to-date. ======
-) [49 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H
-2_Mid0.pdf> <./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
+) [49<./external/fig_Acou_CHXin_H1H2_Mid0.pdf><./external/fig_Acou_Regmid_H1H2_M
+id0.pdf><./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Mid.tex
@@ -2318,22 +2748,21 @@ LaTeX Info: Symbol \textminus not provided by
 ===== Image 'external/fig_Acou_Regmid_V1V2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_High.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_High0' is up-to-date. ======
-) [50 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1
-H2_High0.pdf> <./external/fig_Acou_AHXin_H1H2_High0.pdf>] [51 <./external/fig_H
-eatOnly_CHXin_V1V20.pdf> <./external/fig_HeatOnly_Regmid_V1V20.pdf> <./external
-/fig_HeatOnly_AHXin_V1V20.pdf>] [52 <./external/fig_Acou_CHXin_V1V2_Low0.pdf> <
-./external/fig_Acou_Regmid_V1V2_Low0.pdf> <./external/fig_Acou_AHXin_V1V2_Low0.
-pdf>] [53 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid
-_V1V2_Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_Mid0.pdf>] [54 <./external/fig_
-Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_Regmid_V1V2_High0.pdf> <./exter
-nal/fig_Acou_AHXin_V1V2_High0.pdf>]
-(../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1.tex
+) [50<./external/fig_Acou_CHXin_H1H2_High0.pdf><./external/fig_Acou_Regmid_H1H2_
+High0.pdf><./external/fig_Acou_AHXin_H1H2_High0.pdf>] [51<./external/fig_HeatOnl
+y_CHXin_V1V20.pdf><./external/fig_HeatOnly_Regmid_V1V20.pdf><./external/fig_Heat
+Only_AHXin_V1V20.pdf>] [52<./external/fig_Acou_CHXin_V1V2_Low0.pdf><./external/f
+ig_Acou_Regmid_V1V2_Low0.pdf><./external/fig_Acou_AHXin_V1V2_Low0.pdf>]
+[53<./external/fig_Acou_CHXin_V1V2_Mid0.pdf><./external/fig_Acou_Regmid_V1V2_Mid
+0.pdf><./external/fig_Acou_AHXin_V1V2_Mid0.pdf>] [54<./external/fig_Acou_CHXin_V
+1V2_High0.pdf><./external/fig_Acou_Regmid_V1V2_High0.pdf><./external/fig_Acou_AH
+Xin_V1V2_High0.pdf>] (../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1.tex
 ===== Image 'external/fig_Repetabilite_V10' is up-to-date. ======
-)) (Conclusion.tex [55 <./external/fig_Repetabilite_V10.pdf>] [56
+)) (./Conclusion.tex [55<./external/fig_Repetabilite_V10.pdf>] [56
 
 ]
 Chapitre V.
-[57]) (Perspectives.tex [58
+[57]) (./Perspectives.tex [58
 
 ]
 Chapitre VI.
@@ -2342,352 +2771,40 @@ Chapitre VI.
 ]
 ===== Image 'external/fig_ActiveControl_ADAU17010' is up-to-date. ======
 ===== Image 'external/fig_ActiveControl_Teensy410' is up-to-date. ======
-LaTeX Info: Symbol \textmu not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 60.
 [60
 
- <./external/fig_ActiveControl_ADAU17010.pdf> <./external/fig_ActiveControl_Tee
-nsy410.pdf
-
-pdfTeX warning: pdflatex (file ./external/fig_ActiveControl_Teensy410.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
->]) [61] (IndexNotations.tex
+<./external/fig_ActiveControl_ADAU17010.pdf><./external/fig_ActiveControl_Teensy
+410.pdf>]) [61] (./IndexNotations.tex
 Annexe A.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 14.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 15.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 16.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 17.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 22.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 25.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 26.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 26.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 42.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 43.
 [1
 
-]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 61.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 62.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 66.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 67.
- [2]) (AHX.tex [3] [4
+] [2]) (./AHX.tex [3] [4
 
 ]
 Annexe B.
 (../fig/fig_AHXSchema/fig_AHXSchema.tex
 ===== Image 'external/fig_AHXSchema0' is up-to-date. ======
-) [5 <./external/fig_AHXSchema0.pdf>]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 33.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 33.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 33.
- (../fig/fig_AHXCalib/tex/fig_AHXCalib.tex
+) [5<./external/fig_AHXSchema0.pdf>] (../fig/fig_AHXCalib/tex/fig_AHXCalib.tex
 ===== Image 'external/fig_AHXCalib0' is up-to-date. ======
-) [6 <./external/fig_AHXCalib0.pdf>]
+) [6<./external/fig_AHXCalib0.pdf>]
 (../fig/fig_IncertitudeDebitEau/tex/IncertitudeDebitEau.tex
 ===== Image 'external/fig_IncertitudeDebitEau0' is up-to-date. ======
-)) (InstrumHP.tex [7 <./external/fig_IncertitudeDebitEau0.pdf>] [8
+)) (./InstrumHP.tex [7<./external/fig_IncertitudeDebitEau0.pdf>] [8
 
 ]
 Annexe C.
 ===== Image 'external/fig_HPPeerless_WithAcc0' is up-to-date. ======
-) (ParamGaz.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Paramètres du mélange de gaz choisi pour les expériences et ...
-[9] [10 <./external/fig_HPPeerless_WithAcc0.pdf>]
+) (./ParamGaz.tex
+warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
+[9] [10<./external/fig_HPPeerless_WithAcc0.pdf>]
 Annexe D.
-) (RecapCondExpe.tex [11
+) (./RecapCondExpe.tex [11
 
 ] [12
 
 ]
 Annexe E.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 14.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 19.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 26.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 27.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 28.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 29.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 30.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 31.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 32.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 36.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 37.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 38.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 39.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 40.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 41.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 42.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 46.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 47.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 48.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 49.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 50.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 51.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 52.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 56.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 57.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 58.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 59.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 60.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 61.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 62.
-[13]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 143.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 143.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 144.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 144.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 145.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 145.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 146.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 147.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 147.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 148.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 148.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 149.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 149.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 153.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 153.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 153.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 154.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 154.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 155.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 155.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 156.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 157.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 157.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 158.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 158.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 159.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 159.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 163.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 163.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 164.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 164.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 165.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 165.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 167.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 167.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 168.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 168.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 169.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 169.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 173.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 173.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 174.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 174.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 175.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 175.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 176.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 177.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 177.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 178.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 178.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 179.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 179.
- [14]) (FabricNoyauTA.tex [15] [16]
+[13] [14]) (./FabricNoyauTA.tex [15] [16]
 Annexe F.
 [17
 
@@ -2696,39 +2813,51 @@ Annexe F.
 ] [1
 
 
-] [2] [3] [4] (Abstract.tex) [5
+] [2] [3] [4] (./Abstract.tex) [5
 
-] (_main_.aux)
+] (./_main_.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `_main_.out' has not changed.
 (rerunfilecheck)             Checksum: 09C4C58CDEDDAAB668AAFE4660F935DF;22179.
 Package logreq Info: Writing requests to '_main_.run.xml'.
-\openout1 = `_main_.run.xml'.
 
- ) 
-Here is how much of TeX's memory you used:
- 75796 strings out of 474435
- 1910146 string characters out of 5751739
- 3067047 words of memory out of 5000000
- 96382 multiletter control sequences out of 15000+600000
- 703902 words of font info for 167 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 84i,16n,112p,4547b,2772s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
-gram Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Files/MiKTeX
-/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/type1/now
-acki/iwona/iwonam.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symb
-ols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pf
-b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
- Files/MiKTeX/fonts/type1/public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX
-/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
-public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (94 pages, 26433508 bytes).
-PDF statistics:
- 3632 PDF objects out of 4296 (max. 8388607)
- 406 named destinations out of 1000 (max. 500000)
- 1487 words of extra memory for PDF output out of 10000 (max. 10000000)
+\openout1 = _main_.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 80253 strings out of 476447
+ 195577,3417909 words of node,token memory allocated
+ 10827 words of node memory still in use:
+   24 hlist, 2 vlist, 10 rule, 483 glue, 4 kern, 1 penalty, 5 sub_mlist, 2 glyph
+, 2792 attribute, 82 glue_spec, 407 attribute_list, 2 write, 16 pdf_literal, 13 
+pdf_action, 16 pdf_colorstack nodes
+   avail lists: 1:5,2:20307,3:841,4:359,5:554,6:255,7:10445,8:85,9:3016,10:31,11
+:897
+ 98631 multiletter control sequences out of 65536+600000
+ 140 fonts using 12151415 bytes
+ 84i,17n,112p,4547b,2647s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/program files/miktex/fonts/opentype/public/lm/lmsans8-regular.otf><c:/progra
+m files/miktex/fonts/opentype/public/lm/lmmono10-regular.otf><c:/program files/m
+iktex/fonts/opentype/public/lm/lmmono12-regular.otf>{C:/Program Files/MiKTeX/fon
+ts/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/s
+y-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ex-iwona.enc}{C:/Prog
+ram Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}<C:/Program Files/MiKTeX/fon
+ts/opentype/nowacki/iwona/iwonalight-italic.otf><C:/Program Files/MiKTeX/fonts/o
+pentype/nowacki/iwona/iwonalight-regular.otf><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX/fonts/type1/nowacki/
+iwona/iwonab.pfb><C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><
+C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on _main_.pdf (94 pages, 29297736 bytes).
+
+PDF statistics: 4125 PDF objects out of 4296 (max. 8388607)
+ 406 named destinations out of 1000 (max. 131072)
+ 1064 words of extra memory for PDF output out of 10000 (max. 100000000)
 

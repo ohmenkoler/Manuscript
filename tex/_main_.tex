@@ -9,9 +9,12 @@
 %\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
 %\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 %\renewcommand{\familydefault}{\sfdefault}
-
-\usepackage[light,math]{iwona}
-\renewcommand{\sldefault}{it} % In headers, automatically replace \textsl (which doesn't exist for iwona) by \textit
+%
+%\usepackage[math]{iwonalight}
+\usepackage{iwonamath}
+	\DefineIwonaMathVersion{name=iwonalight, light}
+	\mathversion{iwonalight}
+%\renewcommand{\sldefault}{it} % In headers, automatically replace \textsl (which doesn't exist for iwona) by \textit
 
 \newcommand{\deriv}{\mathrm{d}}
 \newcommand{\Deriv}{\mathrm{D}}
@@ -28,8 +31,10 @@
 %\newcommand{\RE}{\mathrm{Re}}
 %\newcommand{\IM}{\mathrm{Im}}
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage[no-math]{fontspec}
+	\setmainfont{iwona light}
 \emergencystretch=1em
 %\let\epsilon\varepsilon
 %\let\phi\varphi

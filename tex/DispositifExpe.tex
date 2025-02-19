@@ -75,49 +75,60 @@ La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet 
 \end{figure}
 
 \subsubsection{Noyau thermoacoustique}
-Tout comme la machine qui le contient, le noyau adopte une géométrie cylindrique et est composé d'un régénérateur représenté sur la figure~\ref{fig:TacotPhotos_Regen} encadré par deux échangeurs de chaleur. Le premier est l'échangeur ambiant et a pour rôle d'extraire la chaleur qui s'accumule de ce côté du noyau, afin d'éviter l'échauffement global de la machine. Le second est l'échangeur froid, et sa fonction et de simuler une charge thermique à refroidir. Ces échangeurs sont représentés respectivement sur les figures~\ref{fig:TacotPhotos_AHX} et \ref{fig:TacotPhotos_CHX}. Ces trois éléments sont ensuite insérés dans un tube cylindrique qui se fixe sur le bâti de la machine pour maintenir l'espace nécessaire à la boucle de rétroaction.
+Tout comme la machine qui le contient, le noyau adopte une géométrie cylindrique. Il est composé d'un régénérateur représenté sur la figure~\ref{fig:TacotPhotosNoyau_Regen} encadré par deux échangeurs de chaleur représentés sur les figures~\ref{fig:TacotPhotosNoyau_AHX} et \subref{fig:TacotPhotosNoyau_CHX}. Le premier est l'échangeur ambiant et a pour rôle d'extraire la chaleur qui s'accumule de ce côté du noyau, afin d'éviter l'échauffement global de la machine. Le second est l'échangeur froid, et sa fonction et de simuler une charge thermique à refroidir. 
 
 \begin{figure}[!ht]
     \centering
 	\begin{subfigure}{.32\textwidth}
 		\centering
-		\external{fig_TacotPhotos_AHX_dansCarter}
+		\external{fig_TacotPhotosNoyau_AHX}
 %		\externalremake
-		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_TacotPhotos/AHX_dansCarter.JPG}};}
+		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_TacotPhotos/AHX.JPG}};}
 		\caption{}
-		\label{fig:TacotPhotos_AHX}
+		\label{fig:TacotPhotosNoyau_AHX}
 	\end{subfigure}		
 	\begin{subfigure}{.32\textwidth}
 		\centering
-		\external{fig_TacotPhotos_Regenerateur}
+		\external{fig_TacotPhotosNoyau_Regenerateur}
 %		\externalremake
 		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_TacotPhotos/Regenerateur.JPG}};}
 		\caption{}
-		\label{fig:TacotPhotos_Regen}
+		\label{fig:TacotPhotosNoyau_Regen}
 	\end{subfigure}	
 	\begin{subfigure}{.32\textwidth}
 		\centering
-		\external{fig_TacotPhotos_CHX_dansCarter}
+		\external{fig_TacotPhotosNoyau_CHX}
 %		\externalremake
-		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_TacotPhotos/CHX_dansCarter.JPG}};}
+		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_TacotPhotos/CHX.JPG}};}
 		\caption{}
-		\label{fig:TacotPhotos_CHX}
+		\label{fig:TacotPhotosNoyau_CHX}
 	\end{subfigure}	    
-    \caption{Composition du noyau thermoacoustique : \subref{fig:TacotPhotos_AHX} \'Echangeur ambiant, \subref{fig:TacotPhotos_Regen} régénérateur, et \subref{fig:TacotPhotos_CHX} échangeur froid.}
-    \label{fig:TacotPhotos}
+    \caption{Composition du noyau thermoacoustique : \subref{fig:TacotPhotosNoyau_AHX} \'Echangeur ambiant, \subref{fig:TacotPhotosNoyau_Regen} régénérateur, et \subref{fig:TacotPhotosNoyau_CHX} échangeur froid.}
+    \label{fig:TacotPhotosNoyau}
+\end{figure}
+
+Ces trois éléments sont ensuite insérés dans un tube cylindrique qui se fixe sur le bâti de la machine pour maintenir l'espace nécessaire à la boucle de rétroaction, ce que montre la figure~\ref{fig:TacotPhotosNoyau_Assemble}.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_TacotPhotosNoyau_Assemble}
+%	\externalremake
+    \tikz{\draw(0,0) node{\includegraphics[width=.5\textwidth]{../fig/fig_TacotPhotos/NoyauMonte.JPG}};}
+    \caption{Noyau assemblé}
+    \label{fig:TacotPhotosNoyau_Assemble}
 \end{figure}
 
 
-Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, \echaf{J'arrive pas à relire} avec pour sens positif choisi le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second.\medskip
+Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, \echaf{J'arrive pas à relire} avec pour sens positif choisi le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second. Un repère est également défini pour évaluer l'orientation du réfrigérateur dans la suite de ce manuscrit.\echaf{figure + définition}\medskip
 
-\paragraph*{Régénérateur} Le régénérateur utilisé dans le \textsc{Tacot} est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre une porosité $\Phi=\qty{68}{\percent}$. Cette porosité est définie par la relation
+\paragraph{Régénérateur} Le régénérateur utilisé dans le \textsc{Tacot} est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre une porosité $\Phi=\qty{68}{\percent}$. Cette porosité est définie par la relation
 
 \begin{align}
 	\Phi &= \frac{V_{\sf gaz}}{V_{\sf tot}}, \label{eq:Porosite_Volume}%\\
 %		 &= \frac{V_{\sf tot}-V_{\sf metal}}{V_{\sf tot}} \nonumber\\
 %		 &= 1 - \frac{m_{\sf metal}}{m_{\sf tot}} \label{eq:Porosite_Masse}
 \end{align}
-où $V_{\sf gaz}$ représente le volume occupé par le gaz dans le régénérateur, et $V_{\sf tot}$ le volume total du régénérateur. Ce régénérateur est différent de celui utilisé dans l'article de Ramadan \textit{et al.}~\cite{ramadan_design_2021} pour comparer les performances et le comportement du réfrigérateur si son noyau est changé\echaf{phrase à retravailler}. La masse de tissus $m_{\sf tissus}$ à utiliser pour atteindre la porosité souhaitée est déduite de cette relation et s'écrit 
+où $V_{\sf gaz}$ représente le volume occupé par le gaz dans le régénérateur, et $V_{\sf tot}$ le volume total du régénérateur. Ce régénérateur est différent de celui utilisé dans l'article de Ramadan \textit{et al.}~\cite{ramadan_design_2021} pour comparer les performances et le comportement du réfrigérateur si son noyau est changé \echaf{phrase à retravailler}. La masse de tissus $m_{\sf tissus}$ à utiliser pour atteindre la porosité souhaitée est déduite de cette relation et s'écrit 
 
 \begin{align}
 %		 &= \frac{V_{\sf tot}-V_{\sf tissus}}{V_{\sf tot}} \nonumber\\
@@ -190,16 +201,19 @@ Les dimensions et paramètres du régénérateur sont résumés dans le tableau 
     \end{tabular}
 \end{table}
 
-\paragraph*{\'Echangeurs de chaleur}
-Le pompage de chaleur par effet thermoacoustique doit être exploité. En effet, dans l'application du \textsc{Tacot}, il est nécessaire d'empêcher l'échauffement global de la machine, puisque le pompage de chaleur continue tant que de l'énergie mécanique est apportée au système par les sources acoustiques. De plus, une pompe à chaleur retire par principe de la chaleur à une source à refroidir, dite \og source froide \fg{}. Toutefois, cet échangeur remplit une autre fonction dans le cadre de ce projet. La caractérisation des performances de la pompe à chaleur requiert la connaissance du flux de chaleur retiré à la source froide.
+\paragraph{\'Echangeurs de chaleur}
+Le pompage de chaleur par effet thermoacoustique est exploité par des échangeurs, conçus avec le reste du dispositif expérimental en utilisant le logiciel \textsc{DeltaEC}.  Leur longueur est choisie 
 
-\medskip
+%\medskip
 
 
-\noindent \textbf{L'échangeur ambiant} est fabriqué en 
-\medskip
+\subparagraph{L'échangeur ambiant} est fabriqué en 
 
-\noindent \textbf{L'échangeur froid}
+En effet, dans l'application du \textsc{Tacot}, il est nécessaire d'empêcher l'échauffement global de la machine, puisque le pompage de chaleur continue tant que de l'énergie mécanique est apportée au système par les sources acoustiques. 
+%\medskip
+
+\subparagraph{L'échangeur froid}
+De plus, une pompe à chaleur retire par principe de la chaleur à une source à refroidir, dite \og source froide \fg{}. Toutefois, cet échangeur remplit une autre fonction dans le cadre de ce projet. La caractérisation des performances de la pompe à chaleur requiert la connaissance du flux de chaleur retiré à la source froide.
 
 \subsection{Instrumentation}
 L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments.
@@ -210,15 +224,15 @@ L'instrumentation utilisée est basée sur celle conçue au début du projet \ci
 \echaf{photo du banc}
 
 \subsubsection{Chaîne d'excitation}
-Premièrement, la chaîne d'excitation est présentée. Elle est assez simple, et se compose d'un générateur de fonction à deux canaux (TekTronix AFG3022). Chaque canal est ensuite connecté à un amplificateur pour chaque source acoustique. La source principale (RIX Industries, 1S241M) est alimentée par un amplificateur QSC PLD4.5, et la source secondaire (Peerless, GBS135F) par un amplificateur Yamaha P3500S.\medskip
+La chaîne d'excitation est présentée. Elle est assez simple, et se compose d'un générateur de fonction à deux canaux (TekTronix AFG3022). Chaque canal est ensuite connecté à un amplificateur pour chaque source acoustique. La source principale (RIX Industries, 1S241M) est alimentée par un amplificateur QSC PLD4.5, et la source secondaire (Peerless, GBS135F) par un amplificateur Yamaha P3500S.\medskip
 
 
 \subsubsection{Chaîne d'acquisition}
 La chaîne d'acquisition se compose de plus de trente capteurs. Tous ne sont pas utilisés, mais peuvent servir de contrôle durant une expérience, pour s'assurer du bon déroulement de celle-ci.
 
-\paragraph*{Alimentation électrique des sources} L'alimentation électrique de la source acoustique principale est mesurée au moyen d'une sonde différentielle pour la tension \echaf{et le courant ?}. Pour la source acoustique secondaire, un multimètre et une pince de courant se chargent de mesurer sa consommation électrique. En parallèle, les tensions aux bornes des deux sources sont affichées sur un oscilloscope pour s'assurer de leur déphasage.
+\paragraph{Alimentation électrique des sources} L'alimentation électrique de la source acoustique principale est mesurée au moyen d'une sonde différentielle pour la tension \echaf{et le courant ?}. Pour la source acoustique secondaire, un multimètre et une pince de courant se chargent de mesurer sa consommation électrique. En parallèle, les tensions aux bornes des deux sources sont affichées sur un oscilloscope pour s'assurer de leur déphasage.
 
-\paragraph*{Température} Dix-neuf thermocouples Type K de \qty{.5}{\milli\meter} de diamètre sont placés de la manière suivante : quinze thermocouples mesurent la température en différentes positions du noyau, un devant la source acoustique principale, deux derrière celle-ci, et un derrière la source acoustique secondaire. Cependant, la carte d'acquisition utilisée (National Instruments, NI9213) ne comporte que seize entrées, il \echaf{convient} donc, suivant les informations recherchées dans une expérimentation donnée, de sélectionner les trois thermocouples dont les signaux sont mis de côté. Dans tous les résultats de mesures discutés dans la suite, les thermocouples du noyau et de devant la source acoustique principale sont connectés. Le placement de ces thermocouples d'intérêt est représenté sur la figure~\ref{fig:TCdansNoyau} par les symboles `\textcolor{cyan}{\textbullet}'.
+\paragraph{Température} Dix-neuf thermocouples Type K de \qty{.5}{\milli\meter} de diamètre sont placés de la manière suivante : quinze thermocouples mesurent la température en différentes positions du noyau, un devant la source acoustique principale, deux derrière celle-ci, et un derrière la source acoustique secondaire. Cependant, la carte d'acquisition utilisée (National Instruments, NI9213) ne comporte que seize entrées, il \echaf{convient} donc, suivant les informations recherchées dans une expérimentation donnée, de sélectionner les trois thermocouples dont les signaux sont mis de côté. Dans tous les résultats de mesures discutés dans la suite, les thermocouples du noyau et de devant la source acoustique principale sont connectés. Le placement de ces thermocouples d'intérêt est représenté sur la figure~\ref{fig:TCdansNoyau} par les symboles `\textcolor{cyan}{\textbullet}'.
 
 \begin{figure}[!ht]
     \centering
@@ -229,14 +243,14 @@ La chaîne d'acquisition se compose de plus de trente capteurs. Tous ne sont pas
     \label{fig:TCdansNoyau}
 \end{figure}
 
-\paragraph*{Pression dynamique} Quatre sondes piézoélectriques (PCB Piezotronics, 113B28) captent les oscillations de pression dans la pompe à chaleur. Deux sont placées à l'arrière de chacune des sources acoustiques, et les deux autres dans le canal de rétroaction de la cavité thermoacoustique. Les capteurs sont ensuite connectés à une carte d'acquisition (National Instruments, NI9234). 
+\paragraph{Pression dynamique} Quatre sondes piézoélectriques (PCB Piezotronics, 113B28) captent les oscillations de pression dans la pompe à chaleur. Deux sont placées à l'arrière de chacune des sources acoustiques, et les deux autres dans le canal de rétroaction de la cavité thermoacoustique. Les capteurs sont ensuite connectés à une carte d'acquisition (National Instruments, NI9234). 
 %Toutefois, la longueur d'onde dans le mélange de gaz vaut $\lambda=\qty{11.7}{\meter}$ à la fréquence de fonctionnement $f=\qty{47}{\hertz}$ et est suffisamment grande pour garantir une amplitude de pression constante dans toute la machine.
 
-\paragraph*{Pression statique} Deux capteurs (Endress, Cerabar PMP21) sont connectés sur les deux tuyaux d'alimentation en gaz de la pompe  à chaleur d'un côté, et sur une carte d'acquisition (National Instruments, NI9234) de l'autre. Les arrivées de gaz se trouvent de part et d'autre de la source acoustique principale et ont pour but d'éviter une surpression sur sa face avant ou arrière et son endommagement.
+\paragraph{Pression statique} Deux capteurs (Endress, Cerabar PMP21) sont connectés sur les deux tuyaux d'alimentation en gaz de la pompe  à chaleur d'un côté, et sur une carte d'acquisition (National Instruments, NI9234) de l'autre. Les arrivées de gaz se trouvent de part et d'autre de la source acoustique principale et ont pour but d'éviter une surpression sur sa face avant ou arrière et son endommagement.
 
-\paragraph*{Puissance extraite par l'échangeur ambiant} Le fonctionnement de cet échangeur est détaillé dans l'annexe~\ref{chap:AHX}. Pour déterminer la quantité de chaleur extraite du côté ambiant du noyau, la différence de température entre l'entrée d'eau de l'échangeur et sa sortie d'eau est mesurée grâce à deux sondes de platine PT100 connectées sur une carte d'acquisition (National Instruments, NI9217).
+\paragraph{Puissance extraite par l'échangeur ambiant} Le fonctionnement de cet échangeur est détaillé dans l'annexe~\ref{chap:AHX}. Pour déterminer la quantité de chaleur extraite du côté ambiant du noyau, la différence de température entre l'entrée d'eau de l'échangeur et sa sortie d'eau est mesurée grâce à deux sondes de platine PT100 connectées sur une carte d'acquisition (National Instruments, NI9217).
 
-\paragraph*{Déplacement des sources} Le piston de chaque source acoustique est équipé d'un accéléromètre. Pour la source acoustique principale, l'accéléromètre (MMF, KS91C) est collé sur la face arrière, tandis que pour la source secondaire, le capteur (PCB Piezotronics, 352C23) est collé sur la face avant. Ces capteurs sont choisis de sorte à ne pas trop varier la masse de l'équipage mobile, en particulier pour la source secondaire où la masse du piston et celle de l'ensemble accéléromètre et câble sont du même ordre de grandeur.\bigskip
+\paragraph{Déplacement des sources} Le piston de chaque source acoustique est équipé d'un accéléromètre. Pour la source acoustique principale, l'accéléromètre (MMF, KS91C) est collé sur la face arrière, tandis que pour la source secondaire, le capteur (PCB Piezotronics, 352C23) est collé sur la face avant. Ces capteurs sont choisis de sorte à ne pas trop varier la masse de l'équipage mobile, en particulier pour la source secondaire où la masse du piston et celle de l'ensemble accéléromètre et câble sont du même ordre de grandeur.\bigskip
 
 Toutes les connexions entre l'intérieur de la machine sous haute pression statique et l'extérieur se font via des traversées étanches. Pour les capteurs, il s'agit de HF2-8CU+16K de Spectite, dimensionnées pour \qty{550}{\bar}. Pour les sources acoustiques, une traversée FA17613 de Solid Sealing Technology est choisie, et pour la source acoustique secondaire, le modèle FA36735 du même fabricant est retenu.
 

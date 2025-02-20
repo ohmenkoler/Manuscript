@@ -1,7 +1,7 @@
 \chapter{Index des notations}\label{chap:IndexNotations}%\addcontentsline{toc}{chapter}{\nameref{chap:IndexNotations}}
 
 \begin{center}
-    \begin{longtable}{p{.1\textwidth} p{.1\textwidth} p{.7\textwidth}}
+    \begin{longtable}{p{.1\textwidth} @{} p{.1\textwidth} @{} p{.7\textwidth}}
 %    	\hline
         \multicolumn{3}{c}{Lettres latines}  \\\hline
         \textbf{Symbole} & \textbf{Unité} & \textbf{Définition} \\\hline\hline \endfirsthead
@@ -22,7 +22,7 @@
         $\mathbf{g}$ & \unit{\meter\per\square\second} & Accélération terrestre, $\mathbf{g}=-g \mathbf e_{z,0}$ avec $g=\qty{9.81}{\meter\per\second\squared}$ \\
         $G$ & \echaf{?/m} & Gain thermoacoustique unitaire \\
         $\Grashof$ & --- & Nombre de Grashof \\
-        $k_0$ & \unit{\radian\per\meter} & Nombre d'onde sans perte \\
+        $k_0$ & \unit{\radian\per\meter} & Nombre d'onde sans perte \echaf{trouver autre chose} \\
         $k$ & \unit{\joule\per\meter\per\kelvin} & Conductivité thermique \\
         $K_p$ & \unit{\meter\squared} & Perméabilité hydraulique d'un matériau poreux \\
         $L_{\sf reg}$ & \unit{\milli\meter} & Longueur du régénérateur, $L_{\sf reg}=\qty{39}{\milli\meter}$ \\
@@ -50,7 +50,7 @@
 
 \bigskip
 
-    \begin{longtable}{p{.1\textwidth} p{.1\textwidth} p{.7\textwidth}}
+    \begin{longtable}{p{.1\textwidth} @{} p{.1\textwidth} @{} p{.7\textwidth}}
 %    	\hline
         \multicolumn{3}{c}{Lettres grecques \textcolor{red}{ordre alphabétique ?}}  \\\hline
         \textbf{Symbole} & \textbf{Unité} & \textbf{Définition} \\\hline\hline
@@ -61,7 +61,7 @@
         $\rho_0$ & \unit{\kilo\gram\per\cubic\meter} & Masse volumique moyenne du gaz \\
         $\rho_{s}$ & \unit{\kilo\gram\per\cubic\meter} & Masse volumique du solide poreux\\
         $\delta_{\kappa,\nu}$ & \unit{\meter} & Couche limites thermique/visqueuse \\
-        $\theta$ & \unit{\kelvin} & Différence entre les températures locale dans le réfrigérateur et initiale, $\theta=T_0-T_\infty$\\
+        $\theta$ & \unit{\kelvin} & Différence entre les températures locale $T_0$ dans le réfrigérateur et initiale $T_\infty$, ${\theta=T_0-T_\infty}$\\
         $\mu$ & \unit{\pascal\second} & Viscosité dynamique \\
         $\nu$ & \unit{\square\meter\per\second} & Viscosité cinématique \\
         $\kappa$ & \unit{\square\meter\per\second} & Diffusivité thermique \\
@@ -73,7 +73,7 @@
 
 \bigskip
 
-    \begin{longtable}{p{.1\textwidth} p{.8\textwidth}}
+    \begin{longtable}{p{.1\textwidth} @{} p{.8\textwidth}}
 %		\hline
         \multicolumn{2}{c}{Indices et exposants}  \\\hline
         \textbf{Symbole} & \textbf{Définition} \\\hline\hline \endfirsthead
@@ -83,6 +83,8 @@
 		\hline
 		\multicolumn{2}{r}{Continué sur la page suivante...} \endfoot
         \hline \endlastfoot
+        $\square_0$	& Valeur moyenne de la variable \\
+        $\square_1$ & Valeur oscillante à l'ordre 1 de la variable \\
 		$\square_c$ & Caractéristique critique\\
 		$\square^{\perp \mathbf g}$ & Perpendiculaire à la gravité $\mathbf g$ \\
 		$\square^{//\mathbf g}$ & Parallèle à la gravité $\mathbf g$ \\

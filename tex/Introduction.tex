@@ -7,7 +7,7 @@
 \begin{itemize}
     \item Théorie linéaire de Rott : \cite{rott_damped_1969, rott_thermally_1973, rott_thermally_1975, rott_thermally_1976, zouzoulas_thermally_1976, rott_thermoacoustics_1980, muller_thermally_1983} 
     \item $f_\nu$ et $f_\kappa$ : \cite{swift_thermoacoustics_2017,di_giulio_wire_2023}
-    \item Tortuosité et matériaux poreux : \cite{johnson_theory_1987}
+    \item Tortuosité et matériaux poreux : \cite{johnson_theory_1987, drummond_laminar_1984}
     \item Phase optimale : \cite{poignand_etude_2006}
     \item Thermocouples dans noyau TA : \cite{duffourd_refrigerateur_2001, penelet_etude_2004}
     \item Bilan de chaleur dans coeur TA : \cite{penelet_etude_2004}
@@ -15,6 +15,7 @@
     \item Géométrie coaxiale : \cite{poignand_analysis_2013, poignand_thermoacoustic_2011, tijani_study_2008, ramadan_design_2021}
     \item Géométrie compacte : \cite{poignand_etude_2006}
     \item Convection naturelle : \cite{ross_influence_2003, hireche_numerical_2019, pan_visualization_2012, bianchi_transferts_2004, babaei_investigation_2010, gardner_cascade_2003}
+    \item Convection naturelle dans les poreux : \cite{shiina_critical_2010, kvernvold_nonlinear_1979, richard_critere_1981, horton_convection_1945}
     \item Streaming : \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}
     \item Analogies électroac en TA : \cite{wakeland_use_2000, backhaus_thermoacoustic-stirling_2000, poignand_analysis_2013}
     \item Electroac générale : \cite{rossi_electroacoustique_1986, novak_measurement_2019}
@@ -87,7 +88,7 @@ Après avoir succintement défini le mode de fonctionnement d'une machine, il es
 
 Les cycles thermodynamiques évoqués plus tôt sont différents en fonction de chaque cas : un volume élémentaire de gaz dans un stack de machine à ondes stationnaires est soumis à un cycle de Brayton, tandis que dans un régénérateur de machine à ondes progressives le volume suit un cycle de Stirling. Ces cycles sont présentés respectivement dans les figures \ref{fig:CycleBrayton} et \ref{fig:CycleStirling}.
 
-\begin{figure}[!ht]
+\begin{figure}[!htp]
 	\centering
 	\begin{subfigure}{.47\textwidth}
 		\centering
@@ -130,7 +131,7 @@ Les cycles thermodynamiques évoqués plus tôt sont différents en fonction de 
 	\label{fig:CycleBrayton}
 \end{figure} % Brayton
 
-\begin{figure}[!ht]
+\begin{figure}[!htp]
 	\centering
 	\begin{subfigure}{.47\textwidth}
 		\centering
@@ -196,7 +197,7 @@ En outre, ces deux épaisseurs de couche limites sont également liées par le n
 	\end{align}
 	\label{eq:Prandtl}%
 \end{subequations}
-et qui décrit le rapport de force entre les effets visqueux et thermiques. Dans le cas des machines thermoacoustiques, le nombre de Prandtl doit être le plus faible possible, afin de favoriser les échanges de chaleurs sans perdre d'énergie à cause de la viscosité du fluide. Pour ce faire, il est possible de mélanger des gaz pour abaisser sa valeur \cite{belcher_working_1999} puisque dans le cas des gaz monoatomiques, le nombre de Prandtl ne dépend pas de la température et $\Prandtl~=~\frac{2}{3}$.
+et qui décrit le rapport de force entre les effets visqueux et thermiques. Dans le cas des machines thermoacoustiques, le nombre de Prandtl doit être le plus faible possible, afin de favoriser les échanges de chaleurs sans perdre d'énergie à cause de la viscosité du fluide. Pour ce faire, il est possible de mélanger des gaz pour abaisser sa valeur \cite{belcher_working_1999} puisque dans le cas des gaz monoatomiques, le nombre de Prandtl ne dépend pas de la température et $\Prandtl=\nicefrac{2}{3}$.
 
 Ces effets visco-thermiques ajoutent des termes dans les équations de l'acoustique, et sont présentés dans les parties qui suivent.
 
@@ -496,14 +497,14 @@ u_e
 %    \item Génération d'harmoniques par les sources ? vérifier si superposition d'effet à 47 Hz avec 2x47 Hz etc.
 %\end{itemize}
 
-Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations dédiés tels que \textsc{DeltaEC}, soit suffisante pour prédire le comportement des machines thermoacoustiques de même que leurs performances, de nombreux effets sont négligés~\cite{DeltaEC}. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible et que les températures le long des dimensions transverses du noyau peuvent être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faible que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.
+Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations spécialisés tels que \textsc{DeltaEC}, soit suffisante pour prédire le comportement des machines thermoacoustiques de même que leurs performances, de nombreux effets sont négligés~\cite{DeltaEC}. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible et que les températures le long des dimensions transverses du noyau peuvent être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faible que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.\echaf{à suivre}
 
 \section{Plan du manuscrit}
 Après avoir présenté les éléments de base du travail sur ce réfrigérateur thermoacoustique \textsc{Tacot}, le contexte autour de cette thèse, et l'axe sur lequel elle se concentre, un plan est proposé.\medskip
 
 Dans le chapitre~\ref{chap:DispositifExpe}, le  \nameref{chap:DispositifExpe} est présenté. Cela inclut une présentation de la géométrie du refrigérateur, l'instrumentation utilisée pour les acquisitions, le déroulé d'une expérience, et les conditions de chacune d'entre elle. L'accent est porté sur l'étude de la convection naturelle, et les orientations du réfrigérateur choisies pour répondre aux hypothèses auxquelles il faut apporter des réponses sont définies.\smallskip
 
-Le chapitre~\ref{chap:SimusRealisees} introduit l'\nameref{chap:SimusRealisees} dans le but de comprendre le fonctionnement du réfrigérateur au-delà de ce que prédit la théorie linéaire en prenant en compte plus de phénomènes. La première simulation est  plus un prétexte à l'introduction des quantité adimensionnelles couramment utilisées en mécanique des fluides. En particulier, l'étude du nombre de Rayleigh permet d'anticiper la présence ou l'absence d'un courant de convection naturelle dans différentes zones du réfrigérateur. Suite à cela, un modèle numérique du régime stationnaire par éléments finis et réalisé avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered est présenté. Ce modèle, pour rester simple tout en représentant plus de phénomènes, simule le comportement purement thermique d'un système équivalent. Enfin, un modèle analytique du régime transitoire est proposé, en prenant en compte les mêmes phénomènes que dans la simulation numérique.\smallskip
+Le chapitre~\ref{chap:SimusRealisees} introduit les \nameref{chap:SimusRealisees} dans le but de comprendre le fonctionnement du réfrigérateur au-delà de ce que prédit la théorie linéaire en prenant en compte plus de phénomènes. La première simulation est  plus un prétexte à l'introduction des quantité adimensionnelles couramment utilisées en mécanique des fluides. En particulier, l'étude du nombre de Rayleigh permet d'anticiper la présence ou l'absence d'un courant de convection naturelle dans différentes zones du réfrigérateur. Suite à cela, un modèle numérique du régime stationnaire par éléments finis et réalisé avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered est présenté. Ce modèle, pour rester simple tout en représentant plus de phénomènes, simule le comportement purement thermique d'un système équivalent. Enfin, un modèle analytique du régime transitoire est proposé, en prenant en compte les mêmes phénomènes que dans la simulation numérique.\smallskip
 
 Le chapitre~\ref{chap:EtudeExpe} est dédié aux \nameref{chap:EtudeExpe}. \smallskip
 

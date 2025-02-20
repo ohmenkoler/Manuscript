@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  19 FEB 2025 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  21 FEB 2025 00:09
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (C:\Program Files\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Program Files\MiKTeX\tex/latex/base\bk12.clo
-File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(C:\Program Files\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count188
 \c@chapter=\count189
@@ -1823,15 +1823,15 @@ Package caption Info: End \AtBeginDocument code.
 * \textheight=738.34903pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=-43.81721pt
-* \topmargin=-47.23828pt
+* \topmargin=-45.43198pt
 * \headheight=12.0pt
-* \headsep=19.8738pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=88.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=115.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1875,6 +1875,14 @@ Package biblatex Info: Reference segment=0 on input line 381.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
 LaTeX Font Info:    Trying to load font information for OT1+iwonalm on input li
 ne 385.
 (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonalm.fd
@@ -1947,12 +1955,10 @@ Chapitre I.
 ===== Image 'external/fig_FrigoTA0' is up-to-date. ======
 )
 LaTeX Font Info:    Trying to load font information for TS1+iwonal on input lin
-e 61.
+e 62.
  (C:\Program Files\MiKTeX\tex/latex/iwona\ts1iwonal.fd
 File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
-) [2
-
-{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}]
+)
 (../fig/fig_CycleBrayton/tex/DepCompAdiab.tex
 ===== Image 'external/fig_1_BraytonDepComp0' is up-to-date. ======
 ) (../fig/fig_CycleBrayton/tex/QFluideToPlaque.tex
@@ -1969,19 +1975,21 @@ File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
 ===== Image 'external/fig_3_StirlingDet0' is up-to-date. ======
 ) (../fig/fig_Cycle_Stirling/tex/DepRetourIsoV.tex
 ===== Image 'external/fig_4_StirlingDep20' is up-to-date. ======
-) [3{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ts1-iwona.enc} <./external/f
-ig_MoteurTA0.pdf> <./external/fig_FrigoTA0.pdf> <./external/fig_1_BraytonDepCom
-p0.pdf> <./external/fig_2_BraytonQfluidePlaque0.pdf> <./external/fig_3_BraytonD
-epDet0.pdf> <./external/fig_4_BraytonQPlaqueFluide0.pdf>] [4{C:/Program Files/M
-iKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvi
-ps/iwona/ex-iwona.enc} <./external/fig_1_StirlingComp0.pdf> <./external/fig_2_S
-tirlingDep10.pdf> <./external/fig_3_StirlingDet0.pdf> <./external/fig_4_Stirlin
-gDep20.pdf>]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 223
+) [2
+
+{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Program Files/M
+iKTeX/fonts/enc/dvips/iwona/ts1-iwona.enc}] [3{C:/Program Files/MiKTeX/fonts/en
+c/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ex-iw
+ona.enc} <./external/fig_MoteurTA0.pdf> <./external/fig_FrigoTA0.pdf> <./extern
+al/fig_1_BraytonDepComp0.pdf> <./external/fig_2_BraytonQfluidePlaque0.pdf> <./e
+xternal/fig_3_BraytonDepDet0.pdf> <./external/fig_4_BraytonQPlaqueFluide0.pdf>]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 224
 .
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [5{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc}]
+) [4{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc} <./external/fi
+g_1_StirlingComp0.pdf> <./external/fig_2_StirlingDep10.pdf> <./external/fig_3_S
+tirlingDet0.pdf> <./external/fig_4_StirlingDep20.pdf>]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2003,19 +2011,19 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ===== Image 'external/fig_AnalogiesElectroac9' is up-to-date. ======
 ===== Image 'external/fig_AnalogiesElectroac10' is up-to-date. ======
 ===== Image 'external/fig_AnalogiesElectroac11' is up-to-date. ======
-(../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex
+[5 <./external/fig_AnalogiesElectroac6.pdf> <./external/fig_AnalogiesElectroac7
+.pdf> <./external/fig_AnalogiesElectroac8.pdf> <./external/fig_AnalogiesElectro
+ac9.pdf> <./external/fig_AnalogiesElectroac10.pdf> <./external/fig_AnalogiesEle
+ctroac11.pdf>] (../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex
 ===== Image 'external/fig_CircEquivTAC0' is up-to-date. ======
-) [6 <./external/fig_AnalogiesElectroac6.pdf> <./external/fig_AnalogiesElectroa
-c7.pdf> <./external/fig_AnalogiesElectroac8.pdf> <./external/fig_AnalogiesElect
-roac9.pdf> <./external/fig_AnalogiesElectroac10.pdf> <./external/fig_AnalogiesE
-lectroac11.pdf>] (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
+) (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 ===== Image 'external/fig_WavesInDuctPiece0' is up-to-date. ======
-) [7 <./external/fig_CircEquivTAC0.pdf>] [8 <./external/fig_WavesInDuctPiece0.p
-df>]) (DispositifExpe.tex [9] [10
+) [6 <./external/fig_CircEquivTAC0.pdf>] [7 <./external/fig_WavesInDuctPiece0.p
+df>]) (DispositifExpe.tex [8]
+Chapitre II.
+[9
 
 ]
-Chapitre II.
-[11]
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 36.
@@ -2026,42 +2034,33 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 ===== Image 'external/fig_ATE_ProfilsAX_5mm0' is up-to-date. ======
 ===== Image 'external/fig_ATE_ProfilsCHX_5mm0' is up-to-date. ======
-[12
+[10
 
 {C:/Program Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Program 
-Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-(../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
-===== Image 'external/fig_SchemaGeneralTACOT0' is up-to-date. ======
-) [13 <./external/fig_ATE_ProfilsAX_5mm0.pdf> <./external/fig_ATE_ProfilsCHX_5m
-m0.pdf
+Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./external/fig_ATE_Prof
+ilsAX_5mm0.pdf> <./external/fig_ATE_ProfilsCHX_5mm0.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_ATE_ProfilsCHX_5mm0.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
-> <./external/fig_SchemaGeneralTACOT0.pdf
-
-pdfTeX warning: pdflatex (file ./external/fig_SchemaGeneralTACOT0.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
->]
+>] (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
+===== Image 'external/fig_SchemaGeneralTACOT0' is up-to-date. ======
+)
 ===== Image 'external/fig_TacotPhotosNoyau_AHX0' is up-to-date. ======
 ===== Image 'external/fig_TacotPhotosNoyau_Regenerateur0' is up-to-date. ======
 
 ===== Image 'external/fig_TacotPhotosNoyau_CHX0' is up-to-date. ======
 ===== Image 'external/fig_TacotPhotosNoyau_Assemble0' is up-to-date. ======
+[11 <./external/fig_SchemaGeneralTACOT0.pdf> <./external/fig_TacotPhotosNoyau_A
+HX0.pdf> <./external/fig_TacotPhotosNoyau_Regenerateur0.pdf> <./external/fig_Ta
+cotPhotosNoyau_CHX0.pdf>]
 LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
 e 126.
-(C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
+ (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
 File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
-) [14 <./external/fig_TacotPhotosNoyau_AHX0.pdf> <./external/fig_TacotPhotosNoy
-au_Regenerateur0.pdf> <./external/fig_TacotPhotosNoyau_CHX0.pdf> <./external/fi
-g_TacotPhotosNoyau_Assemble0.pdf>] (../fig/fig_dKdV/tex/fig_dKdV.tex
+) [12 <./external/fig_TacotPhotosNoyau_Assemble0.pdf>]
+(../fig/fig_dKdV/tex/fig_dKdV.tex
 ===== Image 'external/fig_dKdV0' is up-to-date. ======
 )
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 194.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 195.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 196.
@@ -2070,17 +2069,23 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 197.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
+            Default family used instead on input line 198.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
             Default family used instead on input line 199.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 200.
+            Default family used instead on input line 201.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 201.
- [15] [16 <./external/fig_dKdV0.pdf>]
+            Default family used instead on input line 202.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 203.
+ [13 <./external/fig_dKdV0.pdf>]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
-) [17] [18 <./external/fig_TCdansNoyau0.pdf>]
+) [14]
 ===== Image 'external/fig_SystemeAccroche_Machine0' is up-to-date. ======
 ===== Image 'external/fig_SystemeAccroche_Palan0' is up-to-date. ======
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
@@ -2098,64 +2103,60 @@ LaTeX Info: Symbol \textminus not provided by
 )
 ===== Image 'external/fig_OrientationCore_V1_Schema0' is up-to-date. ======
 ===== Image 'external/fig_OrientationCore_V2_Schema0' is up-to-date. ======
-[19 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroc
-he_Palan0.pdf>] [20 <./external/fig_OrientationCore_H10.pdf> <./external/fig_Or
-ientationCore_H1_Schema0.pdf> <./external/fig_OrientationCore_H20.pdf> <./exter
-nal/fig_OrientationCore_H2_Schema0.pdf
+[15 <./external/fig_TCdansNoyau0.pdf>] [16 <./external/fig_SystemeAccroche_Mach
+ine0.pdf> <./external/fig_SystemeAccroche_Palan0.pdf> <./external/fig_Orientati
+onCore_H10.pdf> <./external/fig_OrientationCore_H1_Schema0.pdf> <./external/fig
+_OrientationCore_H20.pdf> <./external/fig_OrientationCore_H2_Schema0.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_H2_Schema0.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
-> <./external/fig_OrientationCore_V10.pdf> <./external/fig_OrientationCore_V20.
-pdf> <./external/fig_OrientationCore_V1_Schema0.pdf
-
-pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_V1_Schema0.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./external/fig_OrientationCore_V2_Schema0.pdf
+>] [17 <./external/fig_OrientationCore_V10.pdf> <./external/fig_OrientationCore
+_V20.pdf> <./external/fig_OrientationCore_V1_Schema0.pdf> <./external/fig_Orien
+tationCore_V2_Schema0.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_OrientationCore_V2_Schema0.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
 >]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 430.
- [21] Excluding 'comment' comment. [22]) (EnsembleSimus.tex [23] [24
+            Default family used instead on input line 443.
+ [18] Excluding 'comment' comment.) (EnsembleSimus.tex [19] [20
 
 ]
 Chapitre III.
-[25] [26
-
-] (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
+[21] (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
 ===== Image 'external/fig_SimuConvNat2D0' is up-to-date. ======
-) [27 <./external/fig_SimuConvNat2D0.pdf>]
+) [22
+
+]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 7
 7.
-
-(C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
+ (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [28]
+) [23 <./external/fig_SimuConvNat2D0.pdf>]
 ===== Image 'external/fig_Comsol_ModeleSimplifie_Geometrie0' is up-to-date. ===
 ===
-[29]
+[24]
 ===== Image 'external/fig_Comsol_DemiGeometrie_Horizontal0' is up-to-date. ====
 ==
 ===== Image 'external/Comsol_AxiGeometrie_Vertical0' is up-to-date. ======
 (../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex
 ===== Image 'external/fig_SuperpositionComsol0' is up-to-date. ======
-) [30 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>] [31 <./external/f
+) [25 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>] [26 <./external/f
 ig_Comsol_DemiGeometrie_Horizontal0.pdf> <./external/Comsol_AxiGeometrie_Vertic
 al0.pdf
 
 pdfTeX warning: pdflatex (file ./external/Comsol_AxiGeometrie_Vertical0.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
-> <./external/fig_SuperpositionComsol0.pdf>] [32]
+> <./external/fig_SuperpositionComsol0.pdf>]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
 ====
-) [33 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>] [34] [35])
-(EtudeExperimentale.tex [36]
+) [27] [28 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>] [29])
+(EtudeExperimentale.tex [30]
 Chapitre IV.
-[37
+[31
 
 ] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_Tf.tex
 ===== Image 'external/fig_PerfConvNat_Tf_0W0' is up-to-date. ======
@@ -2179,17 +2180,17 @@ Chapitre IV.
 ===== Image 'external/fig_PerfConvNat_100W_Qa0' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_100W_COP.tex
 ===== Image 'external/fig_PerfConvNat_50W_COP1' is up-to-date. ======
-) [38
+) [32
 
-] [39 <./external/fig_PerfConvNat_Tf_0W0.pdf> <./external/fig_PerfConvNat_0W_Ta
-0.pdf> <./external/fig_PerfConvNat_0W_Qa0.pdf>] [40 <./external/fig_PerfConvNat
-_50W_Tf0.pdf> <./external/fig_PerfConvNat_50W_Ta0.pdf> <./external/fig_PerfConv
-Nat_50W_Qa0.pdf> <./external/fig_PerfConvNat_50W_COP0.pdf>] [41 <./external/fig
-_PerfConvNat_100W_Tf0.pdf> <./external/fig_PerfConvNat_100W_Ta0.pdf> <./externa
-l/fig_PerfConvNat_100W_Qa0.pdf> <./external/fig_PerfConvNat_50W_COP1.pdf>] (../
-fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
+] [33 <./external/fig_PerfConvNat_Tf_0W0.pdf> <./external/fig_PerfConvNat_0W_Ta
+0.pdf> <./external/fig_PerfConvNat_0W_Qa0.pdf>]
+(../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_H1H20' is up-to-date. ======
-) [42 <./external/fig_HeatOnly_CHXout_H1H20.pdf>]
+) [34 <./external/fig_PerfConvNat_50W_Tf0.pdf> <./external/fig_PerfConvNat_50W_
+Ta0.pdf> <./external/fig_PerfConvNat_50W_Qa0.pdf> <./external/fig_PerfConvNat_5
+0W_COP0.pdf>] [35 <./external/fig_PerfConvNat_100W_Tf0.pdf> <./external/fig_Per
+fConvNat_100W_Ta0.pdf> <./external/fig_PerfConvNat_100W_Qa0.pdf> <./external/fi
+g_PerfConvNat_50W_COP1.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_H1H2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Mid.tex
@@ -2198,16 +2199,16 @@ fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 337.
- [43 <./external/fig_Acou_CHXout_H1H2_Low0.pdf>]
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_High.tex
+ [36 <./external/fig_HeatOnly_CHXout_H1H20.pdf> <./external/fig_Acou_CHXout_H1H
+2_Low0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_High.tex
 ===== Image 'external/fig_Acou_CHXout_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_V1V20' is up-to-date. ======
-) [44 <./external/fig_Acou_CHXout_H1H2_Mid0.pdf> <./external/fig_Acou_CHXout_H1
-H2_High0.pdf>] [45 <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Low.tex
+) [37 <./external/fig_Acou_CHXout_H1H2_Mid0.pdf> <./external/fig_Acou_CHXout_H1
+H2_High0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_Low0' is up-to-date. ======
-) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
+) [38 <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
+(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_High.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_High0' is up-to-date. ======
@@ -2217,7 +2218,8 @@ H2_High0.pdf>] [45 <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
 ===== Image 'external/fig_HeatOnly_Regmid_H1H20' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_AHXin_H1H2.tex
 ===== Image 'external/fig_HeatOnly_AHXin_H1H20' is up-to-date. ======
-) [46 <./external/fig_Acou_CHXout_V1V2_Low0.pdf>]
+) [39 <./external/fig_Acou_CHXout_V1V2_Low0.pdf> <./external/fig_Acou_CHXout_V1
+V2_Mid0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 440.
@@ -2236,9 +2238,7 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 440.
- [47 <./external/fig_Acou_CHXout_V1V2_Mid0.pdf> <./external/fig_Acou_CHXout_V1V
-2_High0.pdf>]
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
+ (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Low.tex
 ===== Image 'external/fig_Acou_Regmid_H1H2_Low0' is up-to-date. ======
@@ -2248,10 +2248,6 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 483.
- [48 <./external/fig_HeatOnly_CHXin_H1H20.pdf> <./external/fig_HeatOnly_Regmid_
-H1H20.pdf> <./external/fig_HeatOnly_AHXin_H1H20.pdf>] [49 <./external/fig_Acou_
-CHXin_H1H2_Low0.pdf> <./external/fig_Acou_Regmid_H1H2_Low0.pdf> <./external/fig
-_Acou_AHXin_H1H2_Low0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 508.
@@ -2270,7 +2266,7 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 509.
-
+ [40 <./external/fig_Acou_CHXout_V1V2_High0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid.tex
@@ -2284,58 +2280,62 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 552.
- (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
+ [41 <./external/fig_HeatOnly_CHXin_H1H20.pdf> <./external/fig_HeatOnly_Regmid_
+H1H20.pdf> <./external/fig_HeatOnly_AHXin_H1H20.pdf>] [42 <./external/fig_Acou_
+CHXin_H1H2_Low0.pdf> <./external/fig_Acou_Regmid_H1H2_Low0.pdf> <./external/fig
+_Acou_AHXin_H1H2_Low0.pdf>]
+(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High.tex
 ===== Image 'external/fig_Acou_Regmid_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_High.tex
 ===== Image 'external/fig_Acou_AHXin_H1H2_High0' is up-to-date. ======
-) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_V1V2.tex
+) [43 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H
+2_Mid0.pdf> <./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
+(../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_V1V2.tex
 ===== Image 'external/fig_HeatOnly_CHXin_V1V20' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_Regmid_V1V2.tex
 ===== Image 'external/fig_HeatOnly_Regmid_V1V20' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_AHXin_V1V2.tex
 ===== Image 'external/fig_HeatOnly_AHXin_V1V20' is up-to-date. ======
-) [50] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low.tex
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Low.tex
 ===== Image 'external/fig_Acou_Regmid_V1V2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Low.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_Low0' is up-to-date. ======
-) [51 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H
-2_Mid0.pdf> <./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_Regmid_V1V2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_Mid0' is up-to-date. ======
-) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
+) [44 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1
+H2_High0.pdf> <./external/fig_Acou_AHXin_H1H2_High0.pdf>]
+(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_High.tex
 ===== Image 'external/fig_Acou_Regmid_V1V2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_High.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_High0' is up-to-date. ======
-) [52 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1
-H2_High0.pdf> <./external/fig_Acou_AHXin_H1H2_High0.pdf>] [53 <./external/fig_H
-eatOnly_CHXin_V1V20.pdf> <./external/fig_HeatOnly_Regmid_V1V20.pdf> <./external
-/fig_HeatOnly_AHXin_V1V20.pdf>] [54 <./external/fig_Acou_CHXin_V1V2_Low0.pdf> <
-./external/fig_Acou_Regmid_V1V2_Low0.pdf> <./external/fig_Acou_AHXin_V1V2_Low0.
-pdf>] [55 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid
-_V1V2_Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_Mid0.pdf>] [56 <./external/fig_
-Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_Regmid_V1V2_High0.pdf> <./exter
-nal/fig_Acou_AHXin_V1V2_High0.pdf>]
-(../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1.tex
+) [45 <./external/fig_HeatOnly_CHXin_V1V20.pdf> <./external/fig_HeatOnly_Regmid
+_V1V20.pdf> <./external/fig_HeatOnly_AHXin_V1V20.pdf>] [46 <./external/fig_Acou
+_CHXin_V1V2_Low0.pdf> <./external/fig_Acou_Regmid_V1V2_Low0.pdf> <./external/fi
+g_Acou_AHXin_V1V2_Low0.pdf>] [47 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./e
+xternal/fig_Acou_Regmid_V1V2_Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_Mid0.pdf
+>] (../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1.tex
 ===== Image 'external/fig_Repetabilite_V10' is up-to-date. ======
-)) (Conclusion.tex [57 <./external/fig_Repetabilite_V10.pdf>] [58
+)) (Conclusion.tex [48 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/f
+ig_Acou_Regmid_V1V2_High0.pdf> <./external/fig_Acou_AHXin_V1V2_High0.pdf>]
+[49 <./external/fig_Repetabilite_V10.pdf>] [50
 
 ]
 Chapitre V.
-[59]) (Perspectives.tex [60
+[51]) (Perspectives.tex [52
 
 ]
 Chapitre VI.
-[61
+[53
 
 ]
 ===== Image 'external/fig_ActiveControl_ADAU17010' is up-to-date. ======
@@ -2343,14 +2343,14 @@ Chapitre VI.
 LaTeX Info: Symbol \textmu not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 60.
-[62
+) [54
 
  <./external/fig_ActiveControl_ADAU17010.pdf> <./external/fig_ActiveControl_Tee
 nsy410.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_ActiveControl_Teensy410.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->]) [63] (IndexNotations.tex
+>] (IndexNotations.tex
 Annexe A.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -2397,13 +2397,13 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 67.
- [2]) (AHX.tex [3] [4
-
-]
+) (AHX.tex [2]
 Annexe B.
 (../fig/fig_AHXSchema/fig_AHXSchema.tex
 ===== Image 'external/fig_AHXSchema0' is up-to-date. ======
-) [5 <./external/fig_AHXSchema0.pdf>]
+) [3
+
+ <./external/fig_AHXSchema0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 33.
@@ -2415,26 +2415,25 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 33.
  (../fig/fig_AHXCalib/tex/fig_AHXCalib.tex
 ===== Image 'external/fig_AHXCalib0' is up-to-date. ======
-) [6 <./external/fig_AHXCalib0.pdf>]
-(../fig/fig_IncertitudeDebitEau/tex/IncertitudeDebitEau.tex
+) (../fig/fig_IncertitudeDebitEau/tex/IncertitudeDebitEau.tex
 ===== Image 'external/fig_IncertitudeDebitEau0' is up-to-date. ======
-)) (InstrumHP.tex [7 <./external/fig_IncertitudeDebitEau0.pdf>] [8
+)) (InstrumHP.tex [4 <./external/fig_AHXCalib0.pdf>] [5 <./external/fig_Incerti
+tudeDebitEau0.pdf>] [6
 
 ]
 Annexe C.
 ===== Image 'external/fig_HPPeerless_WithAcc0' is up-to-date. ======
-) (ParamGaz.tex
+) (ParamGaz.tex [7] [8 <./external/fig_HPPeerless_WithAcc0.pdf>]
+Annexe D.
+) (RecapCondExpe.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {Paramètres du mélange de gaz choisi pour les expériences et ...
-[9] [10 <./external/fig_HPPeerless_WithAcc0.pdf>]
-Annexe D.
-) (RecapCondExpe.tex [11
+            {Récapitulatif des conditions expérimentales} [9
 
-] [12
+] [10
 
 ]
 Annexe E.
@@ -2528,7 +2527,7 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 62.
-[13]
+[11]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 143.
@@ -2685,16 +2684,16 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 179.
- [14]) (FabricNoyauTA.tex [15] [16]
-Annexe F.
-[17
+ [12]) (FabricNoyauTA.tex [13] [14
 
-]) [18
+]
+Annexe F.
+[15]) [16
 
 ] [1
 
 
-] [2] [3] [4] (Abstract.tex) [5
+] [2] [3] (Abstract.tex) [4
 
 ] (_main_.aux)
  ***********
@@ -2702,31 +2701,33 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 04E65C6033048979785D9C9939F710BF;23745.
+(rerunfilecheck)             Checksum: 8463FCE4E310B0C37734B34341EA5A0B;23768.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 75826 strings out of 474435
- 1910761 string characters out of 5751739
- 3068730 words of memory out of 5000000
- 96397 multiletter control sequences out of 15000+600000
- 704390 words of font info for 167 fonts, out of 8000000 for 9000
+ 75831 strings out of 474435
+ 1911597 string characters out of 5751739
+ 3071233 words of memory out of 5000000
+ 96408 multiletter control sequences out of 15000+600000
+ 701970 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,112p,4547b,2772s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
 gram Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Files/MiKTeX
 /fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/type1/now
 acki/iwona/iwonam.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symb
-ols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pf
-b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
- Files/MiKTeX/fonts/type1/public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX
-/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/
-public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (96 pages, 27923459 bytes).
+ols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pf
+b><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/cm-super/sftt0800.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-sup
+er/sftt1000.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1200.p
+fb>
+Output written on _main_.pdf (84 pages, 27943572 bytes).
 PDF statistics:
- 3709 PDF objects out of 4296 (max. 8388607)
- 420 named destinations out of 1000 (max. 500000)
- 1556 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3686 PDF objects out of 4296 (max. 8388607)
+ 414 named destinations out of 1000 (max. 500000)
+ 1564 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -175,7 +175,7 @@ Les trois domaines formant la géométrie, c'est-à-dire le cône d'adaptation d
 Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et le cône d'adaptation d'impédance en hélium.
 
 \subsection{Modèles physiques utilisés}
-\subsubsection{\'Etape 1 : absence de matériau poreux}
+\subsubsection{Sans matériau poreux}
 \begin{figure}[!ht]
     \centering
     \external{fig_SuperpositionComsol}
@@ -187,13 +187,13 @@ Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et
 
 En premier lieu, les phénomènes physiques considérés sont choisis de sorte à conserver un modèle simple. Pour cette raison, seuls des volumes  de solides pleins et de gaz sont considérés dans le modèle complet. Ces domaines sont couplés, et l'interface physique \texttt{Heat transfer in Solids and Fluids (ht)} est appliqué à tous les volumes. Les domaines correspondant au régénérateur et à son enceinte et sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cependant, ce modèle ne prend pas en compte de simulation de mécanique des fluides, et pour prendre la gravité et le mouvement du fluide causé par la convection naturelle en compte dans le modèle fluide, et il est nécessaire d'ajouter un modèle d'écoulement \texttt{laminar flow (spf)}. Couplé par la multiphysique \texttt{Nonisothermal flow (intf)} au modèle thermique, le modèle des transferts thermiques dans le noyau est possible.   
 
-\subsubsection{\'Etape 2 : ajout d'un modèle de matériau poreux}
+\subsubsection{Ajout d'un modèle de matériau poreux}
 
 
 \subsection{Conditions aux frontières}
 Toutes les parois sont considérées adiabatiques. Toutes ? Non, il reste encore des parois dont les conditions thermiques diffèrent. 
 
-Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixée à une température homogène sur la section, car c'est justement le gradient sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
+Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixée à une température homogène sur la section, car c'est justement le gradient de température sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
 
 \subsection{Résultats dans les zones d'intérêt}
 \subsubsection{Volume d'adaptation d'impédance}

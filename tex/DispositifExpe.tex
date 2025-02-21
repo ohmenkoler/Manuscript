@@ -147,19 +147,20 @@ Le milieu ainsi constitué est poreux et tortueux car l'orientation des disques 
 	r_h = d_w\frac{\Phi}{4(1-\Phi)},
 	\label{eq:DefRayonHydrauGantois}
 \end{equation}
-avec $d_w$ le diamètre du fil \cite{swift_thermoacoustics_2017}. Ce milieu poreux dispose d'une certaine capacité à laisser passer un écoulement. C'est la perméabilité notée $K_p$, qui est généralement définie par 
+avec $d_w$ le diamètre du fil \cite{swift_thermoacoustics_2017}. Ce milieu poreux dispose d'une certaine capacité à laisser passer un écoulement. C'est la perméabilité notée $\mathbf K_p$, qui intervient dans la loi de Darcy
 
 \begin{equation}
-	K_p = \echaf{v_{\sf ref}\frac{\nu \Delta x}{\Delta P}},
+%	\mathbf K_p = \echaf{v_{\sf ref}\frac{\nu \Delta x}{\Delta P}},
+	\echaf{\mathbf q ou \mathbf u}_{\sf ref} = -\frac{\mathbf K_p}{\echaf{\mu\,ou\,\nu}} (\nabla p - \rho_0 \mathbf g),
 	\label{eq:DefPermeabilite_Wikipedia}
 \end{equation}
-où $v_{\sf ref}$ est la vitesse d'écoulement d'un fluide de viscosité cinématique $\nu$ causé par un gradient de pression $\nicefrac{\Delta P}{\Delta x}$ de part et d'autre du milieu poreux \cite{nield_convection_2013}. Cependant, il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne du milieu poreux~\cite{dullien_porous_1992}. La formulation retenue s'écrit
+où $\mathbf q_{\sf ref}$ est le débit d'écoulement \echaf{ordre de grandeur, moyen, de référence} d'un fluide qui s'écoule dans le milieu poreux et causé par un gradient de pression $\nicefrac{\Delta P}{\Delta x}$ \cite{nield_convection_2013}. La perméabilité ne dépend par ailleurs que du milieu, et il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne \cite{dullien_porous_1992}. La formulation retenue s'écrit
 
 \begin{equation}
 	K_p = \echaf{\frac{4 r_h^2 \Phi}{8}},
 	\label{eq:DefPermeabilite_LISN}
 \end{equation}
-et donne des résultats satisfaisants pour le developpement des modèles \cite{hireche_experimental_2020}.\bigskip
+et donne des résultats satisfaisants pour le developpement des modèles \cite{hireche_experimental_2020, baltean_gravity_2025}.\bigskip
 
 \echaf{Continuer expl sur travaux de Gaëlle + redériver pour régénérateur}Dans la réalité, les ondes acoustiques en jeu dans les machines thermoacoustiques ne sont ni totalement \og à ondes stationnaires \fg{} (voir le cycle thermodynamique sur la figure~\ref{fig:CycleBrayton}) ni tout à fait \og à ondes progressives \fg{} (dont le cycle est présenté sur la figure~\ref{fig:CycleStirling}). Il a d'ailleurs été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimale pour une pression acoustique donnée~\cite{poignand_etude_2006}. Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque la vitesse acoustique atteint une amplitude donnée par
 
@@ -431,11 +432,37 @@ Quelques questions sont formulées, auxquelles les orientations choisies doivent
 %\echaf{rajouter ce que j'ai dit au début : quelle orientation est favorable à la conv nat ? qu'est-ce qu'on s'attend à voir ?}
 
 \subsection{Acquisitions}
-\echaf{Me faire mousser car je suis "expérimentateur hors pair" ! faire voir le fait qu'il y a peu de résultats mais qu'ils sont le fruit de beaucoup d'essais pour avoir un protocole aux petits oignons et qu'on peut avoir confiance dedans} Les acquisitions sont réalisées en plusieurs temps, afin de garantir des résultats exploitables et propres. Le protocole ci-après constitue la dernière itération d'une longue série d'acquisitions, dans laquelle chaque campagne comporte quelque chose rendant la mesure inexploitable.
+%\echaf{Me faire mousser car je suis "expérimentateur hors pair" ! faire voir le fait qu'il y a peu de résultats mais qu'ils sont le fruit de beaucoup d'essais pour avoir un protocole aux petits oignons et qu'on peut avoir confiance dedans} 
+Les acquisitions sont réalisées en plusieurs temps, afin de garantir des résultats exploitables et propres. Le protocole ci-après constitue la dernière itération d'une longue série d'acquisitions, dans laquelle chaque campagne comporte quelque chose rendant la mesure inexploitable.
 
 Tout d'abord et pour toutes les expériences,  l'état initial de toutes les grandeurs est acquis sur une minute et sauvegardé sous un label `\texttt{init}' à chaque début de journée de campagne. Cela permet de garder en mémoire toutes les conditions expérimentales initiales dont les valeurs peuvent potentiellement influer sur le comportement du réfrigérateur, comme par exemple la température ambiante ou la pression statique. \smallskip
 
-Ensuite, en prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'échangeur ambiant (voir l'annexe~\ref{chap:AHX}), l'eau est préalablement mise en circulation dans cet échangeur après avoir démarré une acquisition des 30 capteurs jusqu'à stabilisation de la distribution de température dans le noyau. L'acquisition est ensuite interrompue et enregistrée avec un label `\texttt{Water}'. \echaf{ajouter figure Water pour donner une idée de la durée : température des TC et surtout écart de température des PT}\medskip
+Ensuite, en prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'échangeur ambiant (voir l'annexe~\ref{chap:AHX}), l'eau est préalablement mise en circulation dans cet échangeur après avoir démarré une acquisition des 30 capteurs jusqu'à stabilisation de l'écart de température entre l'entrée et la sortie de la circulation d'eau dans l'échangeur ambiant et la distribution de température dans le noyau. L'acquisition, qui dure entre \qtylist{30;60}{\minute}, est ensuite interrompue et enregistrée avec un label `\texttt{Water}'. Un exemple d'acquisition de ce type est représenté sur la figure~\ref{fig:WaterOnly}\medskip
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_WaterOnly_TC}
+%		\externalremake
+		\input{../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_TC}
+		\caption{}
+		\label{fig:WaterOnly_TC}
+	\end{subfigure}
+		
+	\vspace{1em}
+	
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_WaterOnly_PT}
+%		\externalremake
+		\input{../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_PT}
+		\caption{}
+		\label{fig:WaterOnly_PT}
+	\end{subfigure}	    
+    \caption{Exemple de mesure `\texttt{water}', dans le cas de l'orientation `\texttt{H1}'. \subref{fig:WaterOnly_TC} thermocouples sur le centre du noyau, c'est-à-dire les TC \numlist{2;5;8;11;14}, et \subref{fig:WaterOnly_PT} la différence de température entre la sortie et l'entrée de l'échangeur. Cet exemple est extrait de la campagne `\texttt{heat\_only}' pour l'orientation `\texttt{V1}'.}
+    \label{fig:WaterOnly}
+\end{figure}
 
 L'étape suivante dépend du type d'expérience menée : les mesures peuvent être sans ou avec acoustique, et ce, pour  différentes amplitudes de pression oscillante. %\echaf{la suite part en intro sur ce qui existe déjà} En revanche, certains des paramètres d'excitation restent constants pour toutes les expériences :  le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, car dans ces proportions le nombre de Prandtl est minimum \cite{belcher_working_1999} ; ce mélange est ensuite pressurisé à \qty{40}{\bar}. Dans le cas des expériences avec acoustique, le modèle \textsc{DeltaEC} prédit les meilleurs performances à la fréquence $f=\qty{47}{\hertz}$, c'est-à-dire la fréquence de résonance du système. C'est par ailleurs le seul point de fonctionnement où l'impédance électrique est supérieure à la limite basse admise par l'amplificateur, soit \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60} pour toutes les expériences, également indiqué comme déphasage optimale par les simulations et que des expériences préliminaires confirment.
 
@@ -451,9 +478,13 @@ Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante
 \subsubsection{Mesures avec acoustique}\label{chap:MesureAvecAcou} 
 Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, c'est la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial.
 
-Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\nicefrac{p_1}{p_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible -- soit une différence de température de l'ordre de \qty{5}{\kelvin}. Ainsi, l'hypothèse concernant la linéarité acoustique est mieux vérifiée et peut \textit{a priori} être plus aisément comparé à la théorie linéaire \echaf{bof bof. Moins d'effets qui se superposent ? Prépondérance des effets ? }. À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$.\echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \medskip
+Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\nicefrac{p_1}{p_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible -- soit une différence de température de l'ordre de \qty{5}{\kelvin}. À cette amplitude, il y a moins d'effets non-linéaires liés à l'acoustique à fort niveau comme le vent acoustique ou de tourbillons. Aussi, la distribution de température dans le noyau dépend de moins de phénomènes.
 
-Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée. Ce type d'expérience se fait en alimentant avec un transformateur les six cartouches chauffantes connectées en parallèle et contenues dans l'échangeur froid (voir la figure~\echaf{fig noyau}. Pour une expérience donnée, une puissance thermique est choisie selon la relation
+À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. 
+
+La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$.\echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \medskip
+
+Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée. Ce type d'expérience se fait en alimentant avec un transformateur les six cartouches chauffantes connectées en parallèle et contenues dans l'échangeur froid (voir la figure~\ref{fig:TacotPhotosNoyau_CHX}). Pour une expérience donnée, une puissance thermique est choisie selon la relation
 
 \begin{equation}
 	Q_f = \frac{E^2}{R},

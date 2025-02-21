@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+    \def\width{.9*\textwidth};
+    \def\height{.25*\textheight};
+    \def\legx{.5cm};
+    \def\legy{\legx};
+    
+    \begin{axis}[name=plot,width={\width},height={\height},grid=both,minor tick num=4,
+    grid style={line width=.1pt, draw=gray!10},
+    major grid style={line width=.2pt,draw=gray!50},
+    xlabel={Temps $t$ [\unit{\s}]},
+    ylabel={\'Ecart de température $\theta$ [\unit{\kelvin}]},
+    xmin=0,xmax=3500,
+%	ymin=-5,ymax=50,
+    xtick={0,600,...,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
+    domain=0:100,
+    legend style = {at={(1.01,1.05)},anchor = north east, cells={align=right},rounded corners},legend columns=5,
+    ]
+    	
+    	\addplot[ultra thick,MatlabBlue] file {{../fig/fig_WaterOnlyExample/data/Water_TC2.txt}};\addlegendentry{TC 2}
+    	
+    	\addplot[ultra thick,MatlabOrange] file {{../fig/fig_WaterOnlyExample/data/Water_TC5.txt}};\addlegendentry{TC 5}
+    	
+    	\addplot[ultra thick,MatlabYellow] file {{../fig/fig_WaterOnlyExample/data/Water_TC8.txt}};\addlegendentry{TC 8}
+    	
+    	\addplot[ultra thick,MatlabPurple] file {{../fig/fig_WaterOnlyExample/data/Water_TC11.txt}};\addlegendentry{TC 11}
+    	
+    	\addplot[ultra thick,MatlabGreen] file {{../fig/fig_WaterOnlyExample/data/Water_TC14.txt}};\addlegendentry{TC 14}
+    	  
+    \end{axis}
+%    \draw (plot.center) node[rotate=30]{\color{red}AFFICHER LES DONNEES};
+\end{tikzpicture}

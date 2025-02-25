@@ -39,13 +39,13 @@
     legend cell align={left},
     legend style = {at={(.98,.98)},anchor = north east,rounded corners}
     ]
-        \addplot[solid,ultra thick,draw=MatlabBlue] file {../fig/fig_dKdV/data/data_dK.txt};
-        \addplot[solid,ultra thick,draw=MatlabOrange] file {../fig/fig_dKdV/data/data_dV.txt};
-        \filldraw[MatlabBlue] (\xcursor,\ycursorK) circle (2pt) node[above right]{$\delta_\kappa=\qty{\ycursorK}{\meter}$};
-        \filldraw[MatlabOrange] (\xcursor,\ycursorV) circle (2pt) node[below left]{$\delta_\nu=\qty{\ycursorV}{\meter}$};
+        \addplot[solid,ultra thick,draw=Plasma33] file {../fig/fig_dKdV/data/data_dK.txt};
+        \addplot[solid,ultra thick,draw=Plasma66] file {../fig/fig_dKdV/data/data_dV.txt};
+        \filldraw[Plasma33] (\xcursor,\ycursorK) circle (2pt) node[above right]{$\delta_\kappa=\qty{\ycursorK}{\meter}$};
+        \filldraw[Plasma66] (\xcursor,\ycursorV) circle (2pt) node[below left]{$\delta_\nu=\qty{\ycursorV}{\meter}$};
 %        \draw[dashed,black!50] (\xcursor,0) -- (\xcursor,\ycursorK);
-%        \draw[dashed,MatlabBlue] (\xcursor,\ycursorK) -- (0,\ycursorK) node[left]{\num{1.4452e-4}};
-%        \draw[dashed,MatlabOrange] (\xcursor,\ycursorV) -- (0,\ycursorV) node[left]{\num{9.1120e-5}};
+%        \draw[dashed,Plasma33] (\xcursor,\ycursorK) -- (0,\ycursorK) node[left]{\num{1.4452e-4}};
+%        \draw[dashed,Plasma66] (\xcursor,\ycursorV) -- (0,\ycursorV) node[left]{\num{9.1120e-5}};
 %         \draw[dashed,black!50] ({axis cs:\xcursor,0}|-{rel axis cs:0,0}) -- ({axis cs:\xcursor,0}|-{rel axis cs:0,\ycursorK});
        \addplot[loosely dashed,draw=black, ultra thick] {\rh};
        \draw(0,\rh) node[above right]{\qty{\rh}{\meter}};

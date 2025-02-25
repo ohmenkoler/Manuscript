@@ -44,8 +44,8 @@
 		\draw (n10.north east) node [above right, fill=white, fill opacity=0, text opacity=1]{\textcolor{MatlabBlue}{\textbf{Froid}}};		
 	\end{scope}
 	\begin{pgfonlayer}{background}
-		\draw[->, very thick] (NewO.center) -- ++(22.5:1.2*\R);
-		\draw[->, very thick] (NewO.center) -- ++(90:1.2*\R);
-		\draw[->, very thick] (NewO.center) -- ++(-45:1.2*\R);
+		\draw[->, very thick] (NewO.center) -- ++(22.5:1.2*\R) node [above] {$\mathbf e_{y,0}$};
+		\draw[->, very thick] (NewO.center) -- ++(90:1.2*\R) node [left] {$\mathbf e_{z,0}$};
+		\draw[->, very thick] (NewO.center) -- ++(-45:1.2*\R) node [right] {$\mathbf e_{x,0}$};
   	\end{pgfonlayer}
 \end{tikzpicture}

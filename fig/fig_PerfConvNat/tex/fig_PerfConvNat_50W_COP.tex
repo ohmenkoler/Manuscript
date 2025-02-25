@@ -1,4 +1,4 @@
-\begin{tikzpicture}[every mark/.append style={mark size=5pt, line width=2pt}]
+\begin{tikzpicture}[every mark/.append style={line width=2pt}]
 	\def\width{.9*\textwidth};
 	\def\height{\width};
 	
@@ -13,21 +13,12 @@
 		legend style = {at={(.01,.99)}, anchor=north west, rounded corners, legend columns=2},
 %		legend entries={`\texttt{V1}', `\texttt{V2}', `\texttt{H1}', `\texttt{H2}', \qty{0}{\watt}, \qty{50}{\watt}, \qty{100}{\watt}, \textsc{DeltaEC}}
 	]
+
 	
-%	\addlegendimage{only marks, mark=square*,color=MatlabBlue}
-%	\addlegendimage{only marks, mark=square,color=MatlabBlue}
-%	\addlegendimage{only marks, mark=square*,color=MatlabOrange}
-%	\addlegendimage{only marks, mark=square,color=MatlabOrange}
-%	\addlegendimage{only marks, mark=o}
-%	\addlegendimage{only marks, mark=diamond}
-%	\addlegendimage{only marks, mark=triangle}
-%	\addlegendimage{only marks, mark=oplus}
-	
-	
-	\addplot[only marks, mark=triangle*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_COP_DR_Qc50.txt};%\addlegendentry{`\texttt{V1}'};
-	\addplot[only marks, mark=triangle*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/V2_COP_DR_Qc50.txt};%\addlegendentry{`\texttt{V2}'};
-	\addplot[only marks, mark=triangle*,color=MatlabYellow] file {../fig/fig_PerfConvNat/data/H1_COP_DR_Qc50.txt};%\addlegendentry{`\texttt{H1}'};
-	\addplot[only marks, mark=triangle*,color=MatlabPurple] file {../fig/fig_PerfConvNat/data/H2_COP_DR_Qc50.txt};%\addlegendentry{`\texttt{H2}'};
+	\addplot[only marks, mark=triangle*,color=Plasma1, mark size=5pt] file {../fig/fig_PerfConvNat/data/V1_COP_DR_Qc50.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=triangle*,color=Plasma28, mark size=4pt] file {../fig/fig_PerfConvNat/data/V2_COP_DR_Qc50.txt};%\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=triangle*,color=Plasma57, mark size=3pt] file {../fig/fig_PerfConvNat/data/H1_COP_DR_Qc50.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=triangle*,color=Plasma85, mark size=2pt] file {../fig/fig_PerfConvNat/data/H2_COP_DR_Qc50.txt};%\addlegendentry{`\texttt{H2}'};
 	
 	\end{axis}
 \end{tikzpicture}

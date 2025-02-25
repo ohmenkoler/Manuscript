@@ -63,7 +63,7 @@ où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de
 	\end{align}
 	\label{eq:VitesseReference_Rayleigh}%
 \end{subequations}
-pour la vitesse horizontale d'après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\echaf{III.1}).\medskip
+pour la vitesse horizontale d'après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:SimuConvNat2D}(a)).\medskip
 
 Dans un matériau poreux, il peut également exister des écoulements liés à la convection naturelle. Dans ce cas, le nombre de Rayleigh est toujours une notion utile pour prédire le mouvement du fluide à l'intérieur, à condition toutefois de le modifier pour prendre en compte la perméabilité $K_p$ ainsi que la diffusivité thermique $\kappa_p$ de ce milieu. Il vient alors l'expression du nombre de Rayleigh-Darcy noté $\mathrm{Ra}_p$, et dont la définition est donnée par Nield et Bejan \cite{nield_convection_2013} par
 
@@ -170,9 +170,7 @@ Ainsi, la géométrie considérée est toujours en trois dimensions pour les ori
 \end{figure}
 
 \subsection{Matériaux composant les domaines}
-Les trois domaines formant la géométrie, c'est-à-dire le cône d'adaptation d'impédance, le régénérateur, et l'enceinte qui le contient sont modélisé par des matériaux similaires aux conditions expérimentales. 
-
-Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et le cône d'adaptation d'impédance en hélium.
+Les trois domaines formant la géométrie, c'est-à-dire le cône d'adaptation d'impédance, le régénérateur, et l'enceinte qui le contient sont modélisé par des matériaux similaires aux conditions expérimentales. Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et le cône d'adaptation d'impédance est supposé être rempli d'hélium.
 
 \subsection{Modèles physiques utilisés}
 \subsubsection{Sans matériau poreux}
@@ -181,7 +179,7 @@ Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et
     \external{fig_SuperpositionComsol}
     %\externalremake
     \input{../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol}
-    \caption{Phénomènes thermiques pris en compte dans le modèle \textsc{Comsol} Multi\-physics\textss\textregistered équivalent, dans le cas de l'orientation `\texttt{H1}' présentée sur la figure~\ref{fig:OrientationCore_H1}--\subref{fig:OrientationCore_H1_Schema}. (a) tendance du gradient transverse de température tel qu'observé dans \cite{ramadan_design_2021}, (b) température froide atteinte par effet thermoacoustique, (c) conduction thermique transverse dans le milieu poreux et par les parois de l'enceinte, (d) gradient de température transverse causé par la convection naturelle.}
+    \caption{Phénomènes thermiques pris en compte dans le modèle \textsc{Comsol} Multi\-physics\textss\textregistered thermique équivalent, dans le cas de l'orientation `\texttt{H1}' présentée sur la figure~\ref{fig:OrientationCore_H1}. (a) tendance du gradient transverse de température tel qu'observé au niveau de l'échangeur froid dans \cite{ramadan_design_2021}, (b) température froide atteinte par effet thermoacoustique, (c) conduction thermique transverse dans le milieu poreux et par les parois de l'enceinte, (d) gradient de température transverse causé par la convection naturelle.}
     \label{fig:SuperpositionComsol}
 \end{figure}
 

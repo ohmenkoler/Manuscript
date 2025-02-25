@@ -1,0 +1,197 @@
+\chapter{Récapitulatif des conditions expérimentales}
+\section{\'Etude sur la convection naturelle}
+Les conditions expérimentales du chapitre~\ref{chap:EtudeExpe} sont résumées de façon détaillée dans le tableau~\ref{tab:RecapCondExpe}. Les déplacements des sources $\xi_1$ et $\xi_2$, la pression acoustique dans la cavité thermoacoustique $p$, les impédances acoustiques vues par les sources $Z_{ac}^{(1)}$ et $Z_{ac}^{(2)}$ y sont rapportées.
+
+Les résultats de ces expériences tels que les températures atteintes du côté froid $T_f$, du côté ambiant $T_a$ ou devant la source acoustique principale $T_{sa1}$, les puissances thermiques échangées côté ambiant $Q_a$ et froid $Q_f$, et le coefficient de performance $\COP$ sont notés dans le tableau~\ref{tab:RecapResultExpe}. Pour simplifier les résultats, les températures froide et ambiante y dénotent les valeurs moyennées sur les sections correspondantes, c'est-à-dire respectivement les thermocouples \numlist{4;5;6}, et \numlist{10;11;12}. Le coefficient de performances est rapporté à celui de Carnot, car dans le protocole d'étude des performances les charges thermiques sont fixées et les températures libres de varier.
+
+\begin{longtable}{llll llll l}
+	\caption{Récapitulatif des conditions expérimentales.}
+	\label{tab:RecapCondExpe}\\%
+	
+	\hline
+	$\xi_1$ & $\xi_2$ & $DR$ & $p$ & $|Z_{ac}^{(1)}|$ & $|Z_{ac}^{(2)}|$ & $\angle Z_{ac}^{(1)}$ & $\angle Z_{ac}^{(2)}$ & \multirow{2}{*}{Orientation} \\%
+	
+	\multicolumn{2}{c}{[\unit{\milli\meter}]} & [\unit{\percent}] & [\unit{\pascal}] & \multicolumn{2}{c}{[\unit{\pascal\second\per\meter}]} & \multicolumn{2}{c}{[\unit{\degree}]} & \\\hline\hline \endfirsthead
+	
+	\multicolumn{9}{l}{...suite du tableau \ref{tab:RecapCondExpe}}\\\hline
+	$\xi_1$ & $\xi_2$ & $DR$ & $p$ & $|Z_{ac}^{(1)}|$ & $|Z_{ac}^{(2)}|$ & $\angle Z_{ac}^{(1)}$ & $\angle Z_{ac}^{(2)}$ & \multirow{2}{*}{Orientation} \\%
+	
+	\multicolumn{2}{c}{[\unit{\milli\meter}]} & [\unit{\percent}] & [\unit{\pascal}] & \multicolumn{2}{c}{[\unit{\pascal\second\per\meter}]} & \multicolumn{2}{c}{[\unit{\degree}]} & \\\hline\hline \endhead
+	
+	\hline
+	\multicolumn{9}{r}{Continué sur la page suivante...} \endfoot
+    \hline \endlastfoot
+	
+	\num{0} & \num{0}  &  \num{0} & \num{0} & --- & --- & --- & --- & \multirow{8}{*}{`\texttt{H1}'} \\*
+	\num{1} & \num{.3} &  \num{.4} & \num{1.6e4} & \num{5.5e4} & \num{2.5e5} & \num{93} & \num{-152} &  \\*
+	\num{5} & \num{1.1} &  \num{2} & \num{8.1e4} & \num{5.5e4} & \num{2.7e5} & \num{94} & \num{-157} & \\*
+	\num{5} & \num{1.1} &  \num{2} & \num{8.1e4} & \num{5.4e4} & \num{2.7e5} & \num{94} & \num{-155} & \\*
+	\num{5.1} & \num{1.1} &  \num{2} & \num{8e4} & \num{5.4e4} & \num{2.7e5} & \num{93} & \num{-156} & \\*
+	\num{8.5} & \num{1.8} &  \num{3.4} & \num{1.4e5} & \num{5.6e4} & \num{3e5} & \num{94} & \num{-156} & \\*
+	\num{8.5} & \num{1.7} &  \num{3.5} & \num{1.4e5} & \num{5.7e4} & \num{3.2e5} & \num{94} & \num{-152} & \\*
+	\num{8.5} & \num{1.8} &  \num{3.5} & \num{1.4e5} & \num{5.7e4} & \num{3.3e5} & \num{94} & \num{-151} & \\
+	
+	 \hdashline
+	\num{0} & \num{0} &  \num{0} & \num{0} & --- & --- & --- & --- & \multirow{8}{*}{`\texttt{H2}'} \\*
+	\num{1} & \num{.4} & \num{.4} & \num{1.5e4} & \num{5.4e4} & \num{2.3e5} & \num{93} & \num{-151} & \\*
+	\num{5} & \num{1.2} & \num{2} & \num{8.1e4} & \num{5.5e4} & \num{2.7e5} & \num{94} & \num{-154} & \\*
+	\num{4.9} & \num{1.1} &  \num{2} & \num{8.2e4} & \num{5.7e4} & \num{2.9e5} & \num{93} & \num{-150} & \\*
+	\num{5} & \num{1.1} &  \num{2} & \num{8.1e4} & \num{5.6e4} & \num{2.9e5} & \num{93} & \num{-150} & \\*
+	\num{8.5} & \num{1.7} & \num{3.4} & \num{1.4e5} & \num{5.5e4} & \num{3e5} & \num{94} & \num{-156} & \\*
+	\num{8.4} & \num{1.8} &  \num{3.5} & \num{1.4e5} & \num{5.7e4} & \num{3.3e5} & \num{94} & \num{-154} & \\*
+	\num{8.4} & \num{1.7} &  \num{3.5} & \num{1.4e5} & \num{5.7e4} & \num{3.3e5} & \num{94} & \num{-152} & \\
+	
+	 \hdashline
+	\num{0} & \num{0} & \num{0} & \num{0} & --- & --- & --- & --- &  \multirow{8}{*}{`\texttt{V1}'} \\*
+	\num{1} & \num{.4} & \num{.4} & \num{1.6e4} & \num{5.6e4} & \num{2.3e5} & \num{93} & \num{-142} & \\*
+	\num{5} & \num{1.1} & \num{2} & \num{8.2e4} & \num{5.7e4} & \num{2.8e5} & \num{94} & \num{-154} & \\*
+	\num{5} & \num{1.1} & \num{2} & \num{8.2e4} & \num{5.6e4} & \num{2.7e5} & \num{94} & \num{-156} & \\*
+	\num{5} & \num{1.1} & \num{2} & \num{8.1e4} & \num{5.6e4} &  \num{2.7e5} & \num{93} & \num{-156} & \\*
+	\num{8.4} & \num{1.6} & \num{3.5} & \num{1.4e5} & \num{5.8e4} & \num{3.3e5} & \num{94} & \num{-153} & \\*
+	\num{8.3} & \num{1.7} & \num{3.4} & \num{1.4e5} & \num{5.7e4} & \num{3.1e5} & \num{94} & \num{-160} & \\*
+	\num{8.3} & \num{1.7} & \num{3.4} & \num{1.4e5} & \num{5.7e4} & \num{3.1e5} & \num{94} & \num{-160} & \\
+	
+	 \hdashline 
+	\num{0} & \num{0} & \num{0} & \num{0} & --- & --- & --- & --- & \multirow{8}{*}{`\texttt{V2}'} \\*
+	\num{1} & \num{.7} & \num{.4} & \num{1.6e4} & \num{5.6e4} & \num{9.8e4} & \num{93} & \num{-148} & \\*
+	\num{5} & \num{1.7} & \num{2} & \num{8.3e4} & \num{5.6e4} & \num{2.5e5} & \num{93} & \num{-152} & \\*
+	\num{5.1} & \num{1.6} & \num{2} & \num{8.1e4} & \num{5.5e4} & \num{2.5e5} & \num{93} & \num{-151} & \\*
+	\num{5.1} & \num{1.3} & \num{2} & \num{8.1e4} & \num{5.5e4} & \num{2.6e5} & \num{93} & \num{-149} & \\*
+	\num{8.6} & \num{2.24} & \num{3.5} & \num{1.4e5} & \num{5.6e4} & \num{2.9e5} & \num{94} & \num{-151} & \\*
+	\num{8.4} & \num{2.24} & \num{3.4} & \num{1.3e5} & \num{5.5e4} & \num{2.8e5} & \num{94} & \num{-151} & \\*
+	\num{8.4} & \num{2} & \num{3.4} & \num{1.3e5} & \num{5.5e4} & \num{2.8e5} & \num{93} & \num{-151} & \\*
+\end{longtable}
+
+
+%\begin{longtable}{llll llll lll}
+%	\caption{Récapitulatif des résultats expérimentaux.}
+%	\label{tab:RecapResultExpe}\\%
+%	
+%	\hline
+%	$\xi_1$ & $\xi_2$ & $DR$ & $T_a$  & $T_f$ & $T_{SA1}$ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Orientation} \\%
+%	
+%	\multicolumn{2}{c}{[\unit{\milli\meter}]} & [\unit{\percent}] & \multicolumn{3}{c}{[\unit{\kelvin}]} &\multicolumn{2}{c}{[\unit{\watt}]} & [\unit{\percent}] & \\\hline\hline \endfirsthead
+%	
+%	\multicolumn{11}{l}{...suite du tableau \ref{tab:RecapResultExpe}}\\\hline
+%	$\xi_1$ & $\xi_2$  & $DR$ & $T_a$  & $T_f$ & $T_{SA1} $ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Orientation} \\%
+%	
+%	\multicolumn{2}{c}{[\unit{\milli\meter}]} & [\unit{\percent}] &  \multicolumn{3}{c}{[\unit{\kelvin}]} &\multicolumn{2}{c}{[\unit{\watt}]} & [\unit{\percent}] & \\\hline\hline \endhead
+%	
+%	\hline
+%	\multicolumn{11}{r}{Continué sur la page suivante...} \endfoot
+%    \hline \endlastfoot
+%	
+%	\num{0} & \num{0}  &  \num{0} & \num{296} & \num{303} & \num{296} & \num{10} & \num{40} & --- & \multirow{8}{*}{`\texttt{H1}'} \\*
+%	\num{1} & \num{.3} &  \num{.4} & \num{292} & \num{287} & \num{291} & \num{.8} & \num{0} & \num{0} &  \\*
+%	\num{5} & \num{1.1} &  \num{2} & \num{294} & \num{264} & \num{287} & \num{72} & \num{0} & \num{0} & \\*
+%	\num{5} & \num{1.1} &  \num{2} & \num{292} & \num{272} & \num{287} & \num{84} & \num{50} & \num{4.5} & \\*
+%	\num{5.1} & \num{1.1} &  \num{2} & \num{295} & \num{289} & \num{291} & \num{117} & \num{100} & \num{2.7} & \\*
+%	\num{8.5} & \num{1.8} & \num{3.4} & \num{296} & \num{256} & \num{283} & \num{194} & \num{0} & \num{0} & \\*
+%	\num{8.5} & \num{1.7} &  \num{3.5} & \num{292} & \num{260} & \num{284} & \num{216} & \num{50} & \num{2.9} & \\*
+%	\num{8.5} & \num{1.8} &  \num{3.5} & \num{293} & \num{267} & \num{287} & \num{240} & \num{100} & \num{4.9} & \\
+%	
+%	 \hdashline
+%	\num{0} & \num{0} &  \num{0} & \num{293} & \num{304} & \num{296} & \num{12} & 40 & --- & \multirow{8}{*}{`\texttt{H2}'} \\*
+%	\num{1} & \num{.4} & \num{.4} & \num{291} & \num{287} & \num{291} & \echaf{\num{-.9}} & \num{0} & \num{0} & \\*
+%	\num{5} & \num{1.2} & \num{2} & \num{293} & \num{263} & \num{287} & \num{74} & \num{0} & \num{0} & \\*
+%	\num{4.9} & \num{1.1} &  \num{2} & \num{294} & \num{275} & \num{290} & \num{119} & \num{50} & \num{5} & \\*
+%	\num{5} & \num{1.1} &  \num{2} & \num{298} & \num{287} & \num{293} & \num{139} & \num{100} & \num{6} & \\*
+%	\num{8.5} & \num{1.7} & \num{3.4} & \num{299} & \num{257} & \num{284} & \num{158} & \num{0} & \num{0} & \\*
+%	\num{8.4} & \num{1.8} &  \num{3.5} & \num{299} & \num{267} & \num{287} & \num{202} & \num{50} & \num{2.9} & \\*
+%	\num{8.4} & \num{1.8} &  \num{3.5} & \num{302} & \num{275} & \num{290} & \num{226} & \num{100} & \num{5.1} & \\
+%	
+%	 \hdashline
+%	\num{0} & \num{0} & \num{0} & \num{296} & \num{335} & \num{293} & \num{11} & \num{40} & --- & \multirow{8}{*}{`\texttt{V1}'} \\*
+%	\num{1} & \num{.4} & \num{.4} & \num{294} & \num{290} & \num{293} & \num{2} & \num{0} & \num{0} & \\*
+%	\num{5} & \num{1.1} & \num{2} & \num{299} & \num{270} & \num{285} & \num{53} & \num{0} & \num{0} & \\*
+%	\num{5} & \num{1.1} & \num{2} & \num{298} & \num{280} & \num{290} & \num{86} & \num{50} & \num{4.6} & \\*
+%	\num{5} & \num{1.1} & \num{2} & \num{302} & \num{292} & \num{295} & \num{105} & \num{100} & \num{5.4} & \\*
+%	\num{8.4} & \num{1.6} & \num{3.5} & \num{311} & \num{267} & \num{289} & \num{167} & \num{0} & \num{0} & \\*
+%	\num{8.3} & \num{1.7} & \num{3.4} & \num{310} & \num{270} & \num{288} & \num{192} & \num{50} & \num{3.5} & \\*
+%	\num{8.3} & \num{1.7} & \num{3.4} & \num{310} & \num{275} & \num{291} & \num{218} & \num{100} & \num{5.4} & \\
+%	
+%	 \hdashline 
+%	\num{0} & \num{0} & \num{0} & \num{293} & \num{307} & \num{312} & \num{.7} & \num{40} & --- & \multirow{8}{*}{`\texttt{V2}'} \\*
+%	\num{1} & \num{.7} & \num{.4} & \num{290} & \num{284} & \num{290} & \num{5} & \num{0} & \num{0} & \\*
+%	\num{5} & \num{1.7} & \num{2} & \num{293} & \num{264} & \num{286} & \num{61} & \num{0} & \num{0} & \\*
+%	\num{5.1} & \num{1.6} & \num{2} & \num{292} & \num{274} & \num{287} & \num{86} & \num{50} & \num{4.2} & \\*
+%	\num{5.1} & \num{1.3} & \num{2} & \num{294} & \num{287} & \num{292} & \num{107} & \num{100} & \num{3.4} & \\*
+%	\num{8.6} & \num{2.24} & \num{3.5} & \num{294} & \num{257} & \num{282} & \num{176} & \num{0} & \num{0} & \\*
+%	\num{8.4} & \num{2.24} & \num{3.4} & \num{293} & \num{261} & \num{283} & \num{189} & \num{50} & \num{3.1} & \\*
+%	\num{8.4} & \num{2} & \num{3.4} & \num{295} & \num{263} & \num{286} & \num{210} & \num{100} & \num{5.2} & \\*
+%\end{longtable}
+
+\begin{longtable}{llll llll lll}
+	\caption{Récapitulatif des résultats expérimentaux. Les températures $T_a$, $T_f$ et $T_{SA1}$ indiquées représentent l'évolution par rapport aux températures initiales \echaf{dire mieux}}
+	\label{tab:RecapResultExpe}\\%
+	
+	\hline
+	$\xi_1$ & $\xi_2$ & $DR$ & $T_a$  & $T_f$ & $T_{SA1}$ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Orientation} \\%
+	
+	\multicolumn{2}{c}{[\unit{\milli\meter}]} & [\unit{\percent}] & \multicolumn{3}{c}{[\unit{\kelvin}]} &\multicolumn{2}{c}{[\unit{\watt}]} & [\unit{\percent}] & \\\hline\hline \endfirsthead
+	
+	\multicolumn{11}{l}{...suite du tableau \ref{tab:RecapResultExpe}}\\\hline
+	$\xi_1$ & $\xi_2$  & $DR$ & $T_a$  & $T_f$ & $T_{SA1} $ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Orientation} \\%
+	
+	\multicolumn{2}{c}{[\unit{\milli\meter}]} & [\unit{\percent}] &  \multicolumn{3}{c}{[\unit{\kelvin}]} &\multicolumn{2}{c}{[\unit{\watt}]} & [\unit{\percent}] & \\\hline\hline \endhead
+	
+	\hline
+	\multicolumn{11}{r}{Continué sur la page suivante...} \endfoot
+    \hline \endlastfoot
+	
+	\num{0} & \num{0}  &  \num{0} & \num{5.1} & \num{11.7} & \num{4.5} & \num{10} & \num{40} & --- & \multirow{8}{*}{`\texttt{H1}'} \\*
+	\num{1} & \num{.3} &  \num{.4} & \num{1.8} & \num{-4.3} & \num{-.7} & \num{.8} & \num{0} & \num{0} &  \\*
+	\num{5} & \num{1.1} &  \num{2} & \num{3.3} & \num{-27} & \num{-4.6} & \num{72} & \num{0} & \num{0} & \\*
+	\num{5} & \num{1.1} &  \num{2} & \num{3.6} & \num{-17.2} & \num{-2.4} & \num{84} & \num{50} & \num{4.5} & \\*
+	\num{5.1} & \num{1.1} &  \num{2} & \num{6.5} & \num{-.6} & \num{1.3} & \num{117} & \num{100} & \num{2.7} & \\*
+	\num{8.5} & \num{1.8} & \num{3.4} & \num{5.4} & \num{-34.6} & \num{-8.2} & \num{195} & \num{0} & \num{0} & \\*
+	\num{8.5} & \num{1.7} &  \num{3.5} & \num{2.9} & \num{-29.7} & \num{-6.5} & \num{216} & \num{50} & \num{2.9} & \\*
+	\num{8.5} & \num{1.8} &  \num{3.5} & \num{4.7} & \num{-22.8} & \num{-4} & \num{241} & \num{100} & \num{4.9} & \\
+	
+	 \hdashline
+	\num{0} & \num{0} &  \num{0} & \num{2.4} & \num{12.8} & \num{4.3} & \num{12} & 40 & --- & \multirow{8}{*}{`\texttt{H2}'} \\*
+	\num{1} & \num{.4} & \num{.4} & \num{1} & \num{-3.7} & \num{-.3} & \echaf{\num{-.9}} & \num{0} & \num{0} & \\*
+	\num{5} & \num{1.2} & \num{2} & \num{2.5} & \num{-28} & \num{-5.1} & \num{74} & \num{0} & \num{0} & \\*
+	\num{4.9} & \num{1.1} &  \num{2} & \num{4.6} & \num{-17.3} & \num{-3.7} & \num{119} & \num{50} & \num{5} & \\*
+	\num{5} & \num{1.1} &  \num{2} & \num{8.1} & \num{4.6} & \num{-.3} & \num{139} & \num{100} & \num{6} & \\*
+	\num{8.5} & \num{1.7} & \num{3.4} & \num{8.1} & \num{-34.2} & \num{-8.5} & \num{159} & \num{0} & \num{0} & \\*
+	\num{8.4} & \num{1.8} &  \num{3.5} & \num{10.3} & \num{-23.4} & \num{-5.6} & \num{202} & \num{50} & \num{2.9} & \\*
+	\num{8.4} & \num{1.8} &  \num{3.5} & \num{12.8} & \num{-16.8} & \num{-2.8} & \num{226} & \num{100} & \num{5.1} & \\
+	
+	 \hdashline
+	\num{0} & \num{0} & \num{0} & \num{6.3} & \num{44.6} & \num{2.9} & \num{11} & \num{40} & --- & \multirow{8}{*}{`\texttt{V1}'} \\*
+	\num{1} & \num{.4} & \num{.4} & \num{1.3} & \num{-3.4} & \num{-2.3} & \num{2} & \num{0} & \num{0} & \\*
+	\num{5} & \num{1.1} & \num{2} & \num{8.9} & \num{-20.1} & \num{-5} & \num{53} & \num{0} & \num{0} & \\*
+	\num{5} & \num{1.1} & \num{2} & \num{8.8} & \num{-10.8} & \num{-2.1} & \num{86} & \num{50} & \num{4.6} & \\*
+	\num{5} & \num{1.1} & \num{2} & \num{12.5} & \num{.5} & \num{2.4} & \num{105} & \num{100} & \num{5.4} & \\*
+	\num{8.4} & \num{1.6} & \num{3.5} & \num{18.2} & \num{-25.3} & \num{-5.4} & \num{167} & \num{0} & \num{0} & \\*
+	\num{8.3} & \num{1.7} & \num{3.4} & \num{20.3} & \num{-21.5} & \num{-4} & \num{192} & \num{50} & \num{3.5} & \\*
+	\num{8.3} & \num{1.7} & \num{3.4} & \num{20.2} & \num{-15.5} & \num{-.8} & \num{218} & \num{100} & \num{5.4} & \\
+	
+	 \hdashline 
+	\num{0} & \num{0} & \num{0} & \num{1.7} & \num{13.4} & \num{16.7} & \num{.7} & \num{40} & --- & \multirow{8}{*}{`\texttt{V2}'} \\*
+	\num{1} & \num{.7} & \num{.4} & \num{.2} & \num{-6} & \num{-.7} & \num{5} & \num{0} & \num{0} & \\*
+	\num{5} & \num{1.7} & \num{2} & \num{3.2} & \num{-25.7} & \num{-5.4} & \num{61} & \num{0} & \num{0} & \\*
+	\num{5.1} & \num{1.6} & \num{2} & \num{3.4} & \num{-15.1} & \num{-2.3} & \num{86} & \num{50} & \num{4.2} & \\*
+	\num{5.1} & \num{1.3} & \num{2} & \num{6} & \num{-1.9} & \num{2.1} & \num{108} & \num{100} & \num{3.4} & \\*
+	\num{8.6} & \num{2.24} & \num{3.5} & \num{4} & \num{-32.8} & \num{-8.8} & \num{176} & \num{0} & \num{0} & \\*
+	\num{8.4} & \num{2.24} & \num{3.4} & \num{5.3} & \num{-28} & \num{-6.9} & \num{189} & \num{50} & \num{3.1} & \\*
+	\num{8.4} & \num{2} & \num{3.4} & \num{7.3} & \num{-20.5} & \num{-3.5} & \num{210} & \num{100} & \num{5.2} & \\*
+\end{longtable}
+	
+
+\begin{table}[!ht]
+	\caption{Récapitulatif des nombres adimensionnés.}
+	\label{tab:RecapNbrAdim}
+	\centering
+	\begin{tabular}{>{$}l<{$} llll @{\hspace{25pt}} llll @{\hspace{25pt}} llll @{\hspace{25pt}} llll}\hline
+	\multirow{2}{*}{\textbf{Nombre}} & \multicolumn{4}{c}{`\texttt{H1}'} & \multicolumn{4}{c}{`\texttt{H2}'} & \multicolumn{4}{c}{`\texttt{V1}'} & \multicolumn{4}{c}{`\texttt{V2}'}\\
+	 & \num{0} & \num{.4} & \num{2} & \num{3.5} & \num{0} & \num{.4} & \num{2} & \num{3.5} & \num{0} & \num{.4} & \num{2} & \num{3.5} & \num{0} & \num{.4} & \num{2} & \num{3.5} \\ \hline\hline
+	\Rayleigh &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+	\Peclet &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+	\Prandtl &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+	\Grashof &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+	\Nusselt &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+	\end{tabular}
+
+\end{table}

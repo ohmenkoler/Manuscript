@@ -121,7 +121,7 @@ Ces trois éléments sont ensuite insérés dans un tube cylindrique qui se fixe
 \end{figure}
 
 
-Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, \echaf{J'arrive pas à relire} avec pour sens positif choisi le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second. Un repère est également défini pour évaluer l'orientation du réfrigérateur dans la suite de ce manuscrit.\echaf{figure + définition}\medskip
+Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, respectivement avec pour sens positif choisi le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second. Un repère est également défini pour évaluer l'orientation du réfrigérateur dans la suite de ce manuscrit.\echaf{figure + définition}\medskip
 
 \paragraph{Régénérateur} Le régénérateur utilisé dans le \textsc{Tacot} est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre une porosité $\Phi=\qty{68}{\percent}$. Cette porosité est définie par la relation
 
@@ -188,20 +188,20 @@ Cette machine nécessite entre autres choses le respect de la condition $\delta_
 Les dimensions et paramètres du régénérateur sont résumés dans le tableau \ref{tab:ParamHydrauTAC}.
 
 \begin{table}[!ht]
-    \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement, \linebreak $f=\qty{47}{\Hz}$}
+    \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement, $f=\qty{47}{\Hz}$}
     \label{tab:ParamHydrauTAC}
     \centering
-    \begin{tabular}{l@{\hspace{1cm}}l}
+    \begin{tabular}{l@{\hspace{1cm}}ll}
     	\hline
-    	\textbf{Paramètre [unité]} & \textbf{Valeur} \\\hline\hline
-    	Diamètre du noyau $D_{\sf reg}$ [\unit{\meter}] & \num{148e-3} \\
-    	Longueur du régénérateur $L_{\sf reg}$ [\unit{\meter}] & \num{39e-3} \\
-    	Diamètre du fil $d_w$ [\unit{\meter}] & \num{53e-6} \\
-        Rayon hydraulique $r_h$ [\unit{\meter}] & \num{2.81e-5} \\
-        Porosité du noyau $\Phi$ [\unit{\percent}] & \num{68}\\
-        Couche limite thermique $\delta_\kappa$ [\unit{\meter}] & \num{1.4452e-4} \\
-        Couche limite visqueuse $\delta_\nu$ [\unit{\meter}] & \num{9.1120e-5} \\
-        \echaf{Perméabilité} [\unit{\meter\squared}] & \num{2.68e-10} \\
+    	\textbf{Paramètre} & \textbf{Valeur} \\\hline\hline
+    	Diamètre du noyau $D_{\sf reg}$ & \qty{148e-3}{\meter} \\
+    	Longueur du régénérateur $L_{\sf reg}$ & \qty{39e-3}{\meter} \\
+    	Diamètre du fil $d_w$ & \qty{53e-6}{\meter} \\
+        Rayon hydraulique $r_h$ & \qty{2.81e-5}{\meter}\\
+        Porosité du noyau $\Phi$ & \qty{68}{\percent} \\
+        Couche limite thermique $\delta_\kappa$ & \qty{1.4452e-4}{\meter} \\
+        Couche limite visqueuse $\delta_\nu$ & \qty{9.1120e-5}{\meter} \\
+        Perméabilité & \qty{2.68e-10}{\meter\squared} \\
         \hline
     \end{tabular}
 \end{table}
@@ -227,7 +227,16 @@ L'instrumentation utilisée est basée sur celle conçue au début du projet \ci
 
 \subsubsection{Banc de mesure ?}
 \echaf{photo du banc}
-
+\begin{figure}[!ht]
+	\centering
+%	\external{•}
+%%	\externalremake
+%	\input{../fig/•}
+%	\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/•}};}
+\includegraphics[width=.7\textwidth]{example-image-a}
+	\caption{Photographie du banc de mesure complet}
+	\label{fig:BancMesureComplet}
+\end{figure}
 \subsubsection{Chaîne d'excitation}
 La chaîne d'excitation est présentée. Elle n'est pas modifiée durant cette thèse, et se compose d'un générateur de fonction à deux canaux (TekTronix, AFG3022). Chaque canal est ensuite connecté à un amplificateur pour chaque source acoustique. La source principale (RIX Industries, 1S241M) est alimentée par un amplificateur QSC PLD4.5, et la source secondaire (Peerless, GBS135F) par un amplificateur Yamaha P3500S.\medskip
 
@@ -237,14 +246,14 @@ La chaîne d'acquisition se compose de plus de trente capteurs. Tous ne sont pas
 
 \paragraph{Alimentation électrique des sources} L'alimentation électrique de la source acoustique principale est mesurée au moyen d'une sonde différentielle pour la tension \echaf{et le courant ?}. Pour la source acoustique secondaire, un multimètre  et une pince de courant \echaf{modèle} se chargent de mesurer sa consommation électrique. En parallèle, les tensions aux bornes des deux sources sont affichées sur un oscilloscope pour s'assurer de leur déphasage.
 
-\paragraph{Température} Dix-neuf thermocouples Type K de \qty{.5}{\milli\meter} de diamètre sont placés de la manière suivante : quinze thermocouples mesurent la température en différentes positions du noyau, un devant la source acoustique principale, deux derrière celle-ci, et un derrière la source acoustique secondaire. Cependant, la carte d'acquisition utilisée (National Instruments, NI9213) ne comporte que seize entrées, il \echaf{convient} donc, suivant les informations recherchées dans une expérimentation donnée, de sélectionner les trois thermocouples dont les signaux sont mis de côté. Dans tous les résultats de mesures discutés dans la suite, les thermocouples du noyau et de devant la source acoustique principale sont connectés. Le placement de ces thermocouples d'intérêt est représenté sur la figure~\ref{fig:TCdansNoyau} par les symboles `\textcolor{cyan}{\textbullet}'.
+\paragraph{Température} Dix-neuf thermocouples Type K de \qty{.5}{\milli\meter} de diamètre sont placés de la manière suivante : quinze thermocouples mesurent la température en différentes positions du noyau, un devant la source acoustique principale, deux derrière celle-ci, et un derrière la source acoustique secondaire. Cependant, la carte d'acquisition utilisée (National Instruments, NI9213) ne comporte que seize entrées, il faut donc sélectionner les trois thermocouples dont les signaux sont mis de côté, suivant les informations recherchées dans une expérimentation donnée. Dans tous les résultats de mesures discutés dans la suite, les thermocouples du noyau et de devant la source acoustique principale sont connectés. Le placement de ces thermocouples d'intérêt est représenté sur la figure~\ref{fig:TCdansNoyau} par les symboles `\textcolor{cyan}{\textbullet}'.
 
 \begin{figure}[!ht]
     \centering
     \external{fig_TCdansNoyau}
     %\externalremake
     \input{../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau}
-    \caption{Emplacement des thermocouples dans le noyau thermoacoustique. Zoom sur l'encadré violet de la figure~\ref{fig:SchemaGeneralTACOT}.}
+    \caption{Emplacement des thermocouples choisis pour l'étude thermique dans et autour du noyau thermoacoustique. Zoom sur les encadrés violet et jaune de la figure~\ref{fig:SchemaGeneralTACOT}. \echaf{ajouter cadre violet ?}}
     \label{fig:TCdansNoyau}
 \end{figure}
 
@@ -329,10 +338,16 @@ Pour l'étude de l'influence de la gravité sur la distribution de température 
 \end{figure}
 
 \subsection{Définition des orientations}
-Les orientations utilisées dans les différentes parties de ce manuscrit sont présentées sur les figures~\ref{fig:OrientationCore_H} et \ref{fig:OrientationCore_V}. Ces figures, dans lesquelles la gravité est toujours dirigée vers le bas de la page, présentent également les emplacements et les numéros d'identification des thermocouples utilisés.\medskip
+Quelques questions sont formulées, auxquelles il faut répondre en choisissant judicieusement des configurations expérimentales adaptées. 
+
+L'étude expérimentale menées ici doit permettre de comprendre comment se manifeste une cellule de convection naturelle, et si l'hypothèse d'axisymétrie posée lors de la conception de la machine reste valide en cas de présence de convection naturelle. Il faut ensuite évaluer si une configuration est plus favorable à la mise en place d'une ou plusieurs cellules de convection naturelle dans le \textsc{Tacot}, et si les performances sont affectées par elles. L'existence de volumes poreux ou non interroge également sur la possibilité d'un écoulement de fluide dans le régénérateur, ce qui requiert une étude avancée \echaf{reformuler}.\medskip 
+
+Les orientations retenues pour le travail présenté dans ce manuscrit sont judicieusement choisies pour leur caractère académique \echaf{il manque un truc mais je vois pas là}, et sont présentées sur la figure~\ref{fig:OrientationCore}.
+
+Ces figures, dans lesquelles la gravité est toujours dirigée vers le bas de la page, détaillent également les numéros d'identification des thermocouples utilisés et dont l'emplacement est noté sur la figure~\ref{fig:TCdansNoyau}.\medskip
 
 \begin{figure}[!htp]
-    \centering
+	\centering		
 	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_H1}
@@ -340,16 +355,7 @@ Les orientations utilisées dans les différentes parties de ce manuscrit sont p
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex}
 		\caption{}
 		\label{fig:OrientationCore_H1}
-	\end{subfigure}
-	\begin{subfigure}[c]{.4\textwidth}
-		\centering
-		\external{fig_OrientationCore_H1_Schema}
-%    	\externalremake
-		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};}
-		\caption{}
-		\label{fig:OrientationCore_H1_Schema}
-	\end{subfigure} \vspace{1cm}
-	
+	\end{subfigure} 
 	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_H2}
@@ -357,21 +363,10 @@ Les orientations utilisées dans les différentes parties de ce manuscrit sont p
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex}
 		\caption{}
 		\label{fig:OrientationCore_H2}
-	\end{subfigure} %\vspace{1cm}
-	\begin{subfigure}[c]{.4\textwidth}
-		\centering
-		\external{fig_OrientationCore_H2_Schema}
-%    	\externalremake
-		\tikz{\draw(0,0) node{\includegraphics[width=.9\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};}
-		\caption{}
-		\label{fig:OrientationCore_H2_Schema}
 	\end{subfigure} 
-	\caption{Orientations horizontales du réfrigérateur thermoacoustique avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas de la page. \subref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H1_Schema} orientation `\texttt{H1}' ; \subref{fig:OrientationCore_H2} et \subref{fig:OrientationCore_H2_Schema} orientation `\texttt{H2}'}
-	 \label{fig:OrientationCore_H}
-\end{figure}
 
-\begin{figure}[!htp]
-	\centering	
+	\vspace{1cm}
+	
 	\begin{subfigure}[c]{.4\textwidth}
 		\centering
 		\external{fig_OrientationCore_V1}
@@ -387,47 +382,25 @@ Les orientations utilisées dans les différentes parties de ce manuscrit sont p
 		\input{../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex}
 		\caption{}
 		\label{fig:OrientationCore_V2}
-	\end{subfigure}  \vspace{1cm}
-
-	\begin{subfigure}[c]{.4\textwidth}
-		\centering
-		\external{fig_OrientationCore_V1_Schema}
-%    	\externalremake
-		\tikz{\draw(0,0) node[rotate=-90]{\includegraphics[width=.9\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};}
-		\caption{}
-		\label{fig:OrientationCore_V1_Schema}
-	\end{subfigure} 
-	\begin{subfigure}[c]{.4\textwidth}
-		\centering
-		\external{fig_OrientationCore_V2_Schema}
-%    	\externalremake
-		\tikz{\draw(0,0) node[rotate=90]{\includegraphics[width=.9\textwidth]{../fig/fig_OrientationCore/tex/TACOT.png}};}
-		\caption{}
-		\label{fig:OrientationCore_V2_Schema}
-	\end{subfigure} 	
- 	\caption{Orientations verticales du réfrigérateur thermoacoustique avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas de la page. \subref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V1_Schema} orientation `\texttt{V1}' ; \subref{fig:OrientationCore_V2} et \subref{fig:OrientationCore_V2_Schema} orientation  `\texttt{V2}'.}%\textcolor{red}{CHX et AHX OK ou éch. froid et éch. chaud ? + $\psi_i$ dans la caption ou la figure ?}}
-    \label{fig:OrientationCore_V} %
+	\end{subfigure}  	
+ 	\caption{Orientations choisies pour les expériences avec le réfrigérateur thermoacoustique, avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas de la page, soit $\mathbf g=-g\mathbf e_{z,0}$. Les orientations sont \subref{fig:OrientationCore_H1}  `\texttt{H1}', \subref{fig:OrientationCore_H2} `\texttt{H2}',  \subref{fig:OrientationCore_V1} `\texttt{V1}', et  \subref{fig:OrientationCore_V2} `\texttt{V2}'.}%\textcolor{red}{CHX et AHX OK ou éch. froid et éch. chaud ? + $\psi_i$ dans la caption ou la figure ?}}
+    \label{fig:OrientationCore} %
 \end{figure}
 
 
-La première orientation, nommée `\texttt{H1}' et représentée sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H1_Schema}, est la même que dans l'article dédié à la conception du réfrigérateur \cite{ramadan_design_2021}. Dans cette configuration, le \textsc{Tacot} est placé à l'horizontale comme sur la figure~\ref{fig:TACOTSuspendu_Frigo}, et les thermocouples sont placés sur un plan vertical coplanaire à la gravité. Cette orientation est celle avec laquelle tous les résultats ont été obtenus avant le démarrage de la thèse et fait donc office de référence des orientations.\smallskip
+La première orientation, nommée `\texttt{H1}' et représentée sur la figure~\ref{fig:OrientationCore_H1}, est la même que dans l'article dédié à la conception du réfrigérateur \cite{ramadan_design_2021}. Dans cette configuration, le \textsc{Tacot} est placé à l'horizontale comme sur la figure~\ref{fig:TACOTSuspendu_Frigo}, et les thermocouples sont placés sur un plan vertical coplanaire à la gravité. Cette orientation est celle avec laquelle tous les résultats ont été obtenus avant le démarrage de la thèse et fait donc office de référence des orientations.\smallskip
 
-Ensuite, la deuxième orientation est représentée sur les figures~\ref{fig:OrientationCore_H2} \subref{fig:OrientationCore_H2_Schema}. Dans ce cas, référencée en tant que `\texttt{H2}', le réfrigérateur est toujours à l'horizontale, mais pivoté autour de son axe pour placer les thermocouples sur un plan horizontal auquel la gravité est orthogonale.\smallskip
+Ensuite, la deuxième orientation est représentée sur la figure~\ref{fig:OrientationCore_H2}. Dans ce cas, référencée en tant que `\texttt{H2}', le réfrigérateur est toujours à l'horizontale, mais pivoté autour de son axe pour placer les thermocouples sur un plan horizontal auquel la gravité est orthogonale.\smallskip
 
-L'orientation `\texttt{V1}' est affichée sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V1_Schema}. Cette configuration est radicalement différentes des deux précédentes : l'axe de symétrie du réfrigérateur est vertical, avec l'échangeur froid sous l'échangeur ambiant.\smallskip
+L'orientation `\texttt{V1}' est affichée sur la figure~\ref{fig:OrientationCore_V1}. Cette configuration est radicalement différentes des deux précédentes : l'axe de symétrie du réfrigérateur est vertical, avec l'échangeur froid sous l'échangeur ambiant.\smallskip
 
-Enfin, l'orientation `\texttt{V2}' affichée sur les figures~\ref{fig:OrientationCore_V2} et \subref{fig:OrientationCore_V2_Schema} est l'orientation inverse de la précédente. L'axe de symétrie du réfrigérateur est encore vertical, mais la source acoustique principale est cette fois au dessus du noyau thermoacoustique.\medskip
+Enfin, l'orientation `\texttt{V2}' affichée sur la figure~\ref{fig:OrientationCore_V2} est l'orientation inverse de la précédente. L'axe de symétrie du réfrigérateur est encore vertical, mais la source acoustique principale est cette fois au dessus du noyau thermoacoustique.\medskip
 
-Ces orientations correspondent à des configurations asymptotiques de convection naturelle, classiques dans la littérature concernée. Il est important de noter que les orientations `\texttt{H1}' et `\texttt{H2}' sont dans le principe une même orientation, pour laquelle le double d'information thermique peut être extrait.
+Ces orientations correspondent à des configurations asymptotiques de convection naturelle, classiques dans la littérature concernée : les orientations horizontales `\texttt{H1}' et `\texttt{H2}' s'approchent du cas d'une cavité différentiellement chauffée, où le gradient de température est horizontal, tandis que les orientations verticales `\texttt{V1}' et `\texttt{V2}' constituent une configuration de Rayleigh-Bénard. Dans le cadre de cette thèse, les orientations intermédiaires ne sont pas testées. Cependant, une étude numérique du réfrigérateur modèle l'impact de la convection naturelle pour d'autres orientation, notamment dans le cas où le noyau est incliné de \ang{45} \cite{baltean_gravity_2025}.\bigskip
 
-Quelques questions sont formulées, auxquelles les orientations choisies doivent permettre de répondre. 
+Il est important de noter que dans le cas de ce système qui est axisymérique, les orientations horizontales `\texttt{H1}' et `\texttt{H2}' sont dans le principe une même orientation et pour laquelle le double d'information thermique peut \textit{a priori} être extrait.\medskip
 
-\begin{itemize}
-\item Comment se manifeste une cellule de convection naturelle ?
-\item Y a-t-il une configuration plus favorable à la mise en place d'une cellule de convection naturelle ?
-\item Peut-il y avoir un écoulement dû à la convection naturelle dans le régénérateur ?
-\item Les performances changent-elles avec la présence de convection naturelle ?
-\end{itemize}
+
 
 %\echaf{rajouter ce que j'ai dit au début : quelle orientation est favorable à la conv nat ? qu'est-ce qu'on s'attend à voir ?}
 
@@ -437,7 +410,7 @@ Les acquisitions sont réalisées en plusieurs temps, afin de garantir des résu
 
 Tout d'abord et pour toutes les expériences,  l'état initial de toutes les grandeurs est acquis sur une minute et sauvegardé sous un label `\texttt{init}' à chaque début de journée de campagne. Cela permet de garder en mémoire toutes les conditions expérimentales initiales dont les valeurs peuvent potentiellement influer sur le comportement du réfrigérateur, comme par exemple la température ambiante ou la pression statique. \smallskip
 
-Ensuite, en prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'échangeur ambiant (voir l'annexe~\ref{chap:AHX}), l'eau est préalablement mise en circulation dans cet échangeur après avoir démarré une acquisition des 30 capteurs jusqu'à stabilisation de l'écart de température entre l'entrée et la sortie de la circulation d'eau dans l'échangeur ambiant et la distribution de température dans le noyau. L'acquisition, qui dure entre \qtylist{30;60}{\minute}, est ensuite interrompue et enregistrée avec un label `\texttt{Water}'. Un exemple d'acquisition de ce type est représenté sur la figure~\ref{fig:WaterOnly}\medskip
+Ensuite, en prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'échangeur ambiant (voir l'annexe~\ref{chap:AHX}), l'eau est préalablement mise en circulation dans cet échangeur après avoir démarré une acquisition des 30 capteurs jusqu'à stabilisation de l'écart de température entre l'entrée et la sortie de la circulation d'eau dans l'échangeur ambiant et la distribution de température dans le noyau. L'acquisition, qui dure entre \qtylist{30;60}{\minute}, est ensuite interrompue et enregistrée avec un label `\texttt{Water}'. Un exemple d'acquisition de ce type est représenté sur la figure~\ref{fig:WaterOnly}, ce qui permet d'apprécier l'ordre de grandeur du temps nécessaire pour réaliser cette étape préliminaire. Il est également notable que la distribution de température  n'est pas encore stabilisée au bout d'\qty{1}{\hour}, tandis que l'écart de température d'eau devient constant au bout de \qty{20}{\minute}. Toutefois, les variations temporelles des températures mesurées dans le noyau sont suffisamment faible pour considérer qu'un état d'équilibre est atteint et que les conditions initiales avant démarrage des sources sont les mêmes d'une expérience à l'autre.\medskip
 
 \begin{figure}[!ht]
     \centering
@@ -482,7 +455,9 @@ Au cours de cette étude, trois amplitudes acoustiques sont choisies. La premiè
 
 À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. 
 
-La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$.\echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \medskip
+La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$, qui correspond à l'amplitude dite \og faible \fg{} dans les travaux de caractérisation du \textsc{Tacot} \cite{ramadan_design_2021}.
+
+\echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \medskip
 
 Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée. Ce type d'expérience se fait en alimentant avec un transformateur les six cartouches chauffantes connectées en parallèle et contenues dans l'échangeur froid (voir la figure~\ref{fig:TacotPhotosNoyau_CHX}). Pour une expérience donnée, une puissance thermique est choisie selon la relation
 
@@ -504,7 +479,7 @@ Ensuite, la valeur initiales est retirée de chaque signal temporel de thermocou
 
 Cette fréquence est imposée par les cartes d'acquisition de pression dynamique à tout le \texttt{vi} LabVIEW. C'est bien trop élevé, aussi bien pour les quantités non oscillantes comme la température, que les données oscillant à la fréquence $f_1=\qty{47}{\hertz}$ comme la pression dynamique ou l'accélération. Il est donc nécessaire d'alléger les données, et les températures sont ré-échantillonées à une fréquence $f_{re}=\qty{.1}{\hertz}$. De leur côté, les autres données oscillantes sont coupées pour ne conserver que les \num{20} dernières périodes entières des signaux, soit un nombre de points donné par $20 \times \nicefrac{f_e}{f_1}$.\smallskip
 
-Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est alors traité : pour les expériences en deux étapes ou plus (une expérience de type `\texttt{water}' suivie d'une autre de type `\texttt{acou}' par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue. Une première valeur de $\dot Q_a^{(wo)}$ est donc calculée et enregistrée dans un fichier \texttt{*.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée.\smallskip
+Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est alors traité : pour les expériences en deux étapes ou plus (une expérience de type `\texttt{water}' suivie d'une autre de type `\texttt{acou}' par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue. Une première valeur de $\dot Q_a^{(wo)}$ est donc calculée et enregistrée dans un fichier \texttt{*.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée \echaf{changer notation dans l'annexe AHX}.\smallskip
 
 Les amplitudes et phases des pressions dynamiques et accélérations sont calculées en utilisant le principe de la détection synchrone. Cette méthode est appliquée pour les quatre capteurs de pression dynamique et les deux accéléromètres, et en considérant cinq harmoniques.
 
@@ -514,6 +489,7 @@ Les amplitudes et phases des pressions dynamiques et accélérations sont calcul
 
 
 \subsection{Tracé de figures pour analyse}
+\echaf{utile ?}
 
 \begin{comment}
 \subsubsection{Paramètres d'acquisition}

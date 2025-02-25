@@ -1,4 +1,4 @@
-\begin{tikzpicture}[every mark/.append style={mark size=5pt, line width=2pt}]
+\begin{tikzpicture}[every mark/.append style={line width=2pt}]
 	\def\width{.9*\textwidth};
 	\def\height{\width};
 	
@@ -11,10 +11,10 @@
 		ylabel={$\dot Q_a$ [\unit{\watt}]},
 		legend style = {at={(.05,.95)}, anchor=north west, rounded corners, legend columns=2}
 	]
-	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{V1}'};
-	\addplot[only marks, mark=*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/V2_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{V2}'};
-	\addplot[only marks, mark=*,color=MatlabYellow] file {../fig/fig_PerfConvNat/data/H1_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{H1}'};
-	\addplot[only marks, mark=*,color=MatlabPurple] file {../fig/fig_PerfConvNat/data/H2_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{H2}'};
+	\addplot[only marks, mark=*,color=Plasma1, mark size=5pt] file {../fig/fig_PerfConvNat/data/V1_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=*,color=Plasma25, mark size=4pt] file {../fig/fig_PerfConvNat/data/V2_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=*,color=Plasma50, mark size=3pt] file {../fig/fig_PerfConvNat/data/H1_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=*,color=Plasma75, mark size=2pt] file {../fig/fig_PerfConvNat/data/H2_Qa_DR_Qc0.txt};%\addlegendentry{`\texttt{H2}'};
 	
 	
 	\end{axis}

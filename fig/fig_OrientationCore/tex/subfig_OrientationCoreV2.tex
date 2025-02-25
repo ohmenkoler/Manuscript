@@ -28,12 +28,16 @@
 %    \def\CoreY{.9*\LY};
 %    
 
-	\def\L{2.1};
+	\def\L{2};
 	\def\R{5};
-	\def\HX{.25};
+	\def\HX{.35};
 	\def\decalage{\R/2-\L/2};
+	
+	\begin{scope}[yslant=tan(22.5)]
+	
+		\node at (0,-\HX) (NewO) {};
 
-		\fill[top color=MatlabBlue, bottom color=MatlabOrange, draw=black] (0,0) rectangle ++(\R,\L);
+		\fill[shading=axis,right color=MatlabOrange,left color=MatlabBlue, shading angle=22.5, draw=black] (0,0) rectangle ++(\R,\L);
 		\draw[fill=MatlabOrange] (0,0) rectangle ++(\R,-\HX);
 		\draw[fill=MatlabBlue] (0,\L) rectangle ++(\R,\HX);
 
@@ -46,8 +50,13 @@
 %		Source acoustique principale\\
 %		$\uparrow$
 %		\end{tabular}};
-		\draw (n42.north east) node [right, fill=white, fill opacity=.7, text opacity=1]{\textcolor{MatlabOrange}{\textbf{Ambiant}}};
-		\draw (n02.south east) node [right, fill=white, fill opacity=.7, text opacity=1]{\textcolor{MatlabBlue}{\textbf{Froid}}};
+%		\draw (n42.north east) node [right, fill=white, fill opacity=.7, text opacity=1]{\textcolor{MatlabOrange}{\textbf{Ambiant}}};
+%		\draw (n02.south east) node [right, fill=white, fill opacity=.7, text opacity=1]{\textcolor{MatlabBlue}{\textbf{Froid}}};
 %		\draw (n41.south) node [below]{\textcolor{white}{\shortstack{Source acoustique principale\\ $\uparrow$}}};
-		
+	\end{scope}
+	\begin{pgfonlayer}{background}
+		\draw[->, very thick] (NewO.center) -- ++(22.5:1.2*\R) node [above] {$\mathbf e_{y,0}$};
+		\draw[->, very thick] (NewO.center) -- ++(90:1.2*\R) node [left] {$\mathbf e_{z,0}$};
+		\draw[->, very thick] (NewO.center) -- ++(-45:1.2*\R) node [right] {$\mathbf e_{x,0}$};
+  	\end{pgfonlayer}
 \end{tikzpicture}

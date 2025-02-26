@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  25 FEB 2025 11:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  26 FEB 2025 11:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2088,52 +2088,55 @@ lusion: multiple pdfs with page group included in a single page
 ===== Image 'external/fig_TacotPhotosNoyau_Regenerateur0' is up-to-date. ======
 
 ===== Image 'external/fig_TacotPhotosNoyau_CHX0' is up-to-date. ======
-===== Image 'external/fig_TacotPhotosNoyau_Assemble0' is up-to-date. ======
-[13 <./external/fig_SchemaGeneralTACOT0.pdf>]
+===== Image 'external/fig_PhotoNoyau0' is up-to-date. ======
+(../fig/fig_SchemaNoyau/tex/fig_SchemaNoyau.tex
+===== Image 'external/fig_SchemaNoyau0' is up-to-date. ======
+) [13 <./external/fig_SchemaGeneralTACOT0.pdf>]
 LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
-e 126.
+e 139.
 
 (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
 File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
 ) [14 <./external/fig_TacotPhotosNoyau_AHX0.pdf> <./external/fig_TacotPhotosNoy
 au_Regenerateur0.pdf> <./external/fig_TacotPhotosNoyau_CHX0.pdf> <./external/fi
-g_TacotPhotosNoyau_Assemble0.pdf>] (../fig/fig_dKdV/tex/fig_dKdV.tex
+g_PhotoNoyau0.pdf> <./external/fig_SchemaNoyau0.pdf>] (../fig/fig_dKdV/tex/fig_
+dKdV.tex
 ===== Image 'external/fig_dKdV0' is up-to-date. ======
 )
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 197.
+            Default family used instead on input line 210.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 198.
+            Default family used instead on input line 211.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 199.
+            Default family used instead on input line 212.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 200.
+            Default family used instead on input line 213.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 202.
+            Default family used instead on input line 215.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 203.
+            Default family used instead on input line 216.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 204.
+            Default family used instead on input line 217.
  [15]
-<example-image-a.pdf, id=1446, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=1476, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 236.
+Package pdftex.def Info: example-image-a.pdf  used on input line 250.
 (pdftex.def)             Requested size: 338.5863pt x 253.9486pt.
  [16 <./external/fig_dKdV0.pdf>]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
-) [17 <C:/Program Files/MiKTeX/tex/latex/mwe/example-image-a.pdf>]
+) [17 <C:/Program Files/MiKTeX/tex/latex/mwe/example-image-a.pdf>] [18 <./exter
+nal/fig_TCdansNoyau0.pdf>]
 ===== Image 'external/fig_SystemeAccroche_Machine0' is up-to-date. ======
 ===== Image 'external/fig_SystemeAccroche_Palan0' is up-to-date. ======
-[18 <./external/fig_TCdansNoyau0.pdf>]
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 ===== Image 'external/fig_OrientationCore_H10' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
@@ -2150,16 +2153,16 @@ ig_OrientationCore_V20.pdf>]
 ===== Image 'external/fig_WaterOnly_TC0' is up-to-date. ======
 ) (../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_PT.tex
 ===== Image 'external/fig_WaterOnly_PT0' is up-to-date. ======
-) [21 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf>]
+)
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 443.
-
-[22] Excluding 'comment' comment.) (EnsembleSimus.tex [23] [24
-
-]
+            Default family used instead on input line 457.
+ [21] [22 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf>
+] Excluding 'comment' comment. [23]) (EnsembleSimus.tex [24]
 Chapitre III.
-[25] (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
+[25
+
+] (../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D.tex
 ===== Image 'external/fig_SimuConvNat2D0' is up-to-date. ======
 ) [26
 
@@ -2441,13 +2444,13 @@ Annexe B.
 ) [5 <./external/fig_AHXSchema0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 33.
+            Default family used instead on input line 35.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 33.
+            Default family used instead on input line 35.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 33.
+            Default family used instead on input line 35.
  (../fig/fig_AHXCalib/tex/fig_AHXCalib.tex
 ===== Image 'external/fig_AHXCalib0' is up-to-date. ======
 ) [6 <./external/fig_AHXCalib0.pdf>]
@@ -2737,33 +2740,33 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 310EE99CCCBD2CD0D6BB3786878CEFC5;23768.
+(rerunfilecheck)             Checksum: E4D54A7C7328E72E3F01679299CFAC7A;24100.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 76703 strings out of 474435
- 1929990 string characters out of 5751739
- 3194011 words of memory out of 5000000
- 97236 multiletter control sequences out of 15000+600000
- 699148 words of font info for 158 fonts, out of 8000000 for 9000
+ 76727 strings out of 474435
+ 1930907 string characters out of 5751739
+ 3193545 words of memory out of 5000000
+ 97251 multiletter control sequences out of 15000+600000
+ 702330 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,112p,4691b,2823s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
 gram Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Files/MiKTeX
 /fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/type1/now
-acki/iwona/iwonam.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmss17.pfb
-><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Pr
-ogram Files/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program Files/M
-iKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX/fonts/t
-ype1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/c
-m-super/sfss0800.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt0
-900.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/P
-rogram Files/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (94 pages, 27518588 bytes).
+acki/iwona/iwonam.pfb><C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonam
+i.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Program Fil
+es/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-s
+uper/sfss0800.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt0900
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Prog
+ram Files/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on _main_.pdf (94 pages, 27548148 bytes).
 PDF statistics:
- 3785 PDF objects out of 4296 (max. 8388607)
- 425 named destinations out of 1000 (max. 500000)
- 1559 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3821 PDF objects out of 4296 (max. 8388607)
+ 427 named destinations out of 1000 (max. 500000)
+ 1572 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,55 @@
+\begin{tikzpicture}[scale=.2]
+	\def\rCHX{14cm};
+	\def\lCHX{.7cm};
+	\def\rREG{14.8cm};
+	\def\lREG{3.9cm};
+	\def\rAHX{11cm};
+	\def\lAHX{2.3cm};
+	\def\rRIX{10.8cm};
+	\def\rCONE{16.4cm};
+	
+	
+	\fill[pattern=horizontal lines,pattern color=MatlabOrange,draw=black] (0,-\rAHX) rectangle ++(\lAHX,2*\rAHX);
+	\draw[MatlabOrange] (\lAHX/2,-\rCHX) node(AHX)[below=1cm, anchor=north east]{\'Echangeur ambiant};
+
+	\filldraw[draw=black,fill=gray!50!white] (0,\rAHX) rectangle (\lAHX,\rREG);		% côtés où l'eau circule
+	\filldraw[draw=black,fill=gray!50!white] (0,-\rAHX) rectangle (\lAHX,-\rREG);	%
+	
+	\draw[MatlabOrange,->] (AHX.north east) to[out=90,in=-90] (\lAHX/2,-\rAHX);
+	
+	\begin{scope}[xshift=\lAHX] % Reg
+		\fill[pattern=crosshatch,pattern color=gray,draw=black] (0,-\rREG) rectangle ++(\lREG,2*\rREG);
+		\draw[black] (\lREG/2,0) node[anchor=center, rounded corners, rotate=90, fill=white, fill opacity=.5, text opacity=1]{Régénerateur};
+	\end{scope}
+	
+	\begin{scope}[xshift=\lAHX+\lREG] % CHX
+		\fill[pattern=horizontal lines,pattern color=MatlabBlue,draw=black] (0,-\rCHX) rectangle ++(\lCHX,2*\rCHX);
+		\draw[MatlabBlue] (\lCHX/2,-\rCHX) node(CHX)[below=1cm,anchor=north west]{\'Echangeur froid};
+
+				
+	\filldraw[draw=black,fill=gray!50!white] (0,\rREG) rectangle (\lCHX,\rCHX);		% côtés où l'eau circule
+	\filldraw[draw=black,fill=gray!50!white] (0,-\rREG) rectangle (\lCHX,-\rCHX);	%
+	
+	\draw[MatlabYellow,rounded corners,very thick] (\lCHX,-\rCONE) -- ++(\lAHX,0) -- ++(2*\lAHX,{\rCONE-\rRIX}) -- ++(0,2*\rRIX) node(Cone){} -- ++(-2*\lAHX,{\rCONE-\rRIX})  -- ++(-\lAHX,0) -- cycle;
+	
+	\draw[MatlabBlue,->] (CHX.north west) to[out=90,in=-90] (\lCHX/2,-\rCHX);
+%	\draw[MatlabYellow,->] ($(Cone.center)+(3*\lAHX,3*\lAHX)$) node[anchor=south]{Cone d'adaptation d'impédance} to[out=-90,in=0] (Cone);
+	\end{scope}
+	
+	\draw[MatlabPurple,rounded corners,very thick] (0,-\rCONE) rectangle ++({\lAHX+\lREG+\lCHX},2*\rCONE);
+	
+%	\draw[green!50!black] (0,0) node[left]{\begin{tabular}{r}Source \\ acoustique \\ secondaire \end{tabular}};
+%	\draw[green!50!black] ({\lCHX+\lREG+4*\lAHX},0) node[right]{\begin{tabular}{l} Source \\ acoustique \\ principale\end{tabular}};
+	 
+	  \draw[<-, dashed] ({-(\lAHX+\lREG+\lCHX)/2},{\rCONE+\lAHX}) node[left]{$\mathbf e_x$} -- ({(\lAHX+\lREG+\lCHX)*1.5},{\rCONE+\lAHX});
+	  \draw[|-] (0,{\rCONE+\lAHX}) -- ++(\lAHX,0) node[midway,above=1pt, text=MatlabOrange]{\num{2.3}};
+	  \draw[|-] (\lAHX,{\rCONE+\lAHX}) -- ++(\lREG,0) node[midway,above=8pt]{\num{3.9}};
+	  \draw[|-|] ({\lAHX+\lREG},{\rCONE+\lAHX}) -- ++(\lCHX,0) node[midway,above=1pt, text=MatlabBlue]{\num{.7}};
+	  
+	  \draw[->, dashed] (-\lAHX,-1.1*\rCONE) -- ++(0,{2.2*\rCONE+\lAHX}) node[above]{$\mathbf e_r$};
+	  \draw[|-|] (-\lAHX,0) node[left]{\num{0}} -- (-\lAHX,\rAHX) node[left, text=MatlabOrange]{\num{5.5}};
+	  \draw[-|] (-\lAHX,0) -- (-\lAHX,\rREG) node[left]{\num{7.4}};
+	  \draw[-|] (-\lAHX,0) -- (-\lAHX,\rCHX) node[below left, text=MatlabBlue]{\num{7}};
+	  
+	
+\end{tikzpicture}

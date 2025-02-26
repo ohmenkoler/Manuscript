@@ -17,11 +17,11 @@
 	\filldraw[draw=black,fill=gray!50!white] (0,\rAHX) rectangle (\lAHX,\rREG);		% côtés où l'eau circule
 	\filldraw[draw=black,fill=gray!50!white] (0,-\rAHX) rectangle (\lAHX,-\rREG);	%
 	
-	\draw[MatlabOrange,->] (AHX.north east) to[out=0,in=-90] (\lAHX/2,-\rAHX);
+	\draw[MatlabOrange,->] (AHX.east) to[out=0,in=-90] (\lAHX/2,-\rAHX);
 	
 	\begin{scope}[xshift=\lAHX] % Reg
 		\fill[pattern=crosshatch,pattern color=gray,draw=black] (0,-\rREG) rectangle ++(\lREG,2*\rREG);
-		\draw[black] (\lREG/2,.5*\rREG) node[anchor=center, rounded corners, rotate=90, fill=white]{Régén.};		
+		\draw[black] (\lREG/2,.5*\rREG) node[anchor=center, rounded corners, rotate=90, fill=white, fill opacity=.5, text opacity=1]{Régén.};		
 		\foreach \x in {.15,.5,.85}{
 			\foreach \r in {-.9,0,.9}{
 				\draw[cyan] (\x*\lREG,\r*\rREG) node{\textbullet};
@@ -41,8 +41,8 @@
 	
 	\draw[MatlabYellow,rounded corners,very thick] (\lCHX,-\rCONE) -- ++(\lAHX,0) -- ++(2*\lAHX,{\rCONE-\rRIX}) -- ++(0,2*\rRIX) node(Cone){} -- ++(-2*\lAHX,{\rCONE-\rRIX})  -- ++(-\lAHX,0) -- cycle;
 	
-	\draw[MatlabBlue,->] (CHX.north west) to[out=180,in=-90] (\lCHX/2,-\rCHX);
-	\draw[MatlabYellow,->] ($(Cone.center)+(3*\lAHX,3*\lAHX)$) node[anchor=south]{Cone d'adaptation d'impédance} to[out=-90,in=0] (Cone);
+	\draw[MatlabBlue,->] (CHX.west) to[out=180,in=-90] (\lCHX/2,-\rCHX);
+%	\draw[MatlabYellow,->] ($(Cone.center)+(3*\lAHX,3*\lAHX)$) node[anchor=south]{Cone d'adaptation d'impédance} to[out=-90,in=0] (Cone);
 	\end{scope}
 	
 	\draw[MatlabPurple,rounded corners,very thick] (0,-\rCONE) rectangle ++({\lAHX+\lREG+\lCHX},2*\rCONE);
@@ -50,6 +50,8 @@
 	\draw[green!50!black] (0,0) node[left]{\begin{tabular}{rl}Source & \\ acoustique & $\leftarrow$ \\ secondaire &\end{tabular}};
 	\draw[green!50!black] ({\lCHX+\lREG+4*\lAHX},0) node[right]{\begin{tabular}{rl}	
 	 & Source \\ $\rightarrow$ & acoustique \\ & principale\end{tabular}};
+	 
+	
 	 
 	
 \end{tikzpicture}

@@ -37,12 +37,12 @@
     scaled y ticks = false,
     domain=0:100,
     legend cell align={left},
-    legend style = {at={(.98,.98)},anchor = north east,rounded corners}
+    legend style = {at={($(1,1)+(-2mm,-2mm)$)},anchor = north east,rounded corners}
     ]
-        \addplot[solid,ultra thick,draw=Plasma33] file {../fig/fig_dKdV/data/data_dK.txt};
-        \addplot[solid,ultra thick,draw=Plasma66] file {../fig/fig_dKdV/data/data_dV.txt};
-        \filldraw[Plasma33] (\xcursor,\ycursorK) circle (2pt) node[above right]{$\delta_\kappa=\qty{\ycursorK}{\meter}$};
-        \filldraw[Plasma66] (\xcursor,\ycursorV) circle (2pt) node[below left]{$\delta_\nu=\qty{\ycursorV}{\meter}$};
+        \addplot[solid,ultra thick,draw=Plasma1] file {../fig/fig_dKdV/data/data_dK.txt};
+        \addplot[solid,ultra thick,draw=Plasma64] file {../fig/fig_dKdV/data/data_dV.txt};
+        \filldraw[Plasma1] (\xcursor,\ycursorK) circle (2pt) node[above right]{$\delta_\kappa=\qty{\ycursorK}{\meter}$};
+        \filldraw[Plasma64] (\xcursor,\ycursorV) circle (2pt) node[below left]{$\delta_\nu=\qty{\ycursorV}{\meter}$};
 %        \draw[dashed,black!50] (\xcursor,0) -- (\xcursor,\ycursorK);
 %        \draw[dashed,Plasma33] (\xcursor,\ycursorK) -- (0,\ycursorK) node[left]{\num{1.4452e-4}};
 %        \draw[dashed,Plasma66] (\xcursor,\ycursorV) -- (0,\ycursorV) node[left]{\num{9.1120e-5}};

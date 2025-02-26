@@ -72,7 +72,7 @@ Par ailleurs, le mélange de gaz contient de l'hélium très volatile, et qui pl
     \external{fig_SchemaGeneralTACOT}
 %    \externalremake
     \input{../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex}
-    \caption{Schéma général du réfrigérateur \textsc{Tacot}. Le noyau thermoacoustique et le cône d'adaptation d'impédance sont mis en évidence}
+    \caption{Schéma général du réfrigérateur \textsc{Tacot}. Le noyau thermoacoustique et le cône d'adaptation d'impédance sont mis en évidence.}
     \label{fig:SchemaGeneralTACOT}
 \end{figure}
 
@@ -109,19 +109,32 @@ Tout comme la machine qui le contient, le noyau adopte une géométrie cylindriq
     \label{fig:TacotPhotosNoyau}
 \end{figure}
 
-Ces trois éléments sont ensuite insérés dans un tube cylindrique qui se fixe sur le bâti de la machine pour maintenir l'espace nécessaire à la boucle de rétroaction, ce que montre la figure~\ref{fig:TacotPhotosNoyau_Assemble}.
+Ces trois éléments sont ensuite insérés dans un tube cylindrique qui se fixe sur le bâti de la machine pour maintenir l'espace nécessaire à la boucle de rétroaction, ce que montre la figure~\ref{fig:PhotoNoyau}.
 
 \begin{figure}[!ht]
     \centering
-    \external{fig_TacotPhotosNoyau_Assemble}
-%	\externalremake
-    \tikz{\draw(0,0) node{\includegraphics[width=.5\textwidth]{../fig/fig_TacotPhotos/NoyauMonte.JPG}};}
-    \caption{Noyau assemblé}
-    \label{fig:TacotPhotosNoyau_Assemble}
+	\begin{subfigure}[c]{.49\textwidth}
+		\centering
+		\external{fig_PhotoNoyau}
+%		\externalremake
+    \tikz{\draw(0,0) node{\includegraphics[width=.97\textwidth]{../fig/fig_TacotPhotos/NoyauMonte.JPG}};}
+		\caption{}
+		\label{fig:PhotoNoyau}
+	\end{subfigure}		
+	\begin{subfigure}[c]{.49\textwidth}
+		\centering
+		\external{fig_SchemaNoyau}
+%		\externalremake
+		\input{../fig/fig_SchemaNoyau/tex/fig_SchemaNoyau}
+		\caption{}
+		\label{fig:SchemaNoyau}
+	\end{subfigure}	    
+    \caption{Noyau thermoacoustique assemblé. \subref{fig:PhotoNoyau} photographie de l'assemblage, \subref{fig:SchemaNoyau} schéma des zones violette et jaune de la figure~\ref{fig:SchemaGeneralTACOT}. Les dimensions sont données en \unit{\centi\meter}.}
+    \label{fig:PhotoSchemaNoyau}
 \end{figure}
 
 
-Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, respectivement avec pour sens positif choisi le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second. Un repère est également défini pour évaluer l'orientation du réfrigérateur dans la suite de ce manuscrit.\echaf{figure + définition}\medskip
+Les axes $\mathbf e_x$ et $\mathbf e_r$ sont alors respectivement associés aux directions axiale et radiale du noyau, respectivement avec pour sens positif choisi le sens de l'échangeur froid vers l'échangeur ambiant pour le premier, et du centre du noyau vers l'extérieur pour le second. Un repère $(O;\mathbf e_{x,0},\mathbf e_{y,0},\mathbf e_{z,0})$ est également défini sur la figure~\ref{fig:BancMesureComplet} pour évaluer l'orientation du réfrigérateur dans la suite de ce manuscrit.\medskip
 
 \paragraph{Régénérateur} Le régénérateur utilisé dans le \textsc{Tacot} est composé de \echaf{combien} disques de tissus métalliques (Gantois, modèle : 102045) empilés dans une enceinte cylindrique de diamètre intérieur $D_{\sf reg}=\qty{148}{\mm}$ et de longueur $L_{\sf reg}=\qty{39}{\mm}$ pour atteindre une porosité $\Phi=\qty{68}{\percent}$. Cette porosité est définie par la relation
 
@@ -168,7 +181,7 @@ et donne des résultats satisfaisants pour le developpement des modèles \cite{h
 	\begin{align}
 		|u|_{\sf opt} &= \sqrt{\frac{4\omega\left(\echaf{kh+k_se_s}\right)\left(1-\Prandtl^2\right)\left(\echaf{1-\frac{\delta_\nu}{h}+\frac{\delta_\nu^2}{2h^2}}\right)}{\delta_\kappa \rho_0 C_p \left(1-\Prandtl\sqrt{\Prandtl}\right)}},	\label{eq:u_mag_opt_Gaelle}\\
 		\intertext{et un déphasage écrit}
-		\angle u_{\sf opt} &= \arctan\left[-\frac{1+\sqrt{\Prandtl}-\frac{\delta_\nu}{h}}{1-\sqrt{\Prandtl}+\frac{\delta_\nu}{h}\sqrt{\Prandtl}}\right].	\label{eq:u_arg_opt_Gaelle}
+		\angle u_{\sf opt} &= \arctan\left[-\frac{1+\sqrt{\Prandtl}-\echaf{\frac{\delta_\nu}{h}}}{1-\sqrt{\Prandtl}+\echaf{\frac{\delta_\nu}{h}}\sqrt{\Prandtl}}\right].	\label{eq:u_arg_opt_Gaelle}
 	\end{align}
 	\label{eq:u_opt_Gaelle}
 \end{subequations}
@@ -207,7 +220,8 @@ Les dimensions et paramètres du régénérateur sont résumés dans le tableau 
 \end{table}
 
 \paragraph{\'Echangeurs de chaleur}
-Le pompage de chaleur par effet thermoacoustique est exploité par des échangeurs, conçus avec le reste du dispositif expérimental en utilisant le logiciel \textsc{DeltaEC}.  Leur longueur est choisie 
+Le pompage de chaleur par effet thermoacoustique est exploité par des échangeurs conçus en même temps que le reste du dispositif expérimental, en utilisant le logiciel \textsc{DeltaEC} pour déterminer les caractéristiques comme la longueur axiale, la surface, ou la porosité. Concernant cette dernière, il faut faire en sorte de laisser s'écouler librement le fluide sans causer de pertes de charges trop importantes, tout en conservant une grande surface de contact. Par ailleurs, leurs longueurs sont au moins deux fois supérieures à l'excursion particulaire crête à crête, qui est de l'ordre de \qty{1}{\centi\meter} dans les conditions d'opération de la machine.\smallskip
+
 
 %\medskip
 
@@ -444,20 +458,18 @@ Pour ces mesures de type `\texttt{heat\_{}only}', la charge thermique est appliq
 
 Ces mesures doivent permettre d'étudier la distribution de température en l'absence d'écoulement oscillant, ainsi que de calculer les valeurs de conductivité thermique $k_x$ et $k_r$ ou les coefficients de pertes latérales $h_x$ et $h_r$.\smallskip
 
-Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante \fg{} sont conservés pour des raisons de cohérence avec les schémas présentés auparavant, mais l'eau circulant dans l'échangeur ambiant et les cartouches chauffantes se trouvant dans l'échangeur froid, la direction du gradient de température dans le noyau thermoacoustique est inversée par rapport aux expériences avec acoustique. %Toutefois, les ordres de grandeur des différences de température sont les mêmes que pour les expériences avec acoustique, c'est-à-dire 
+\textbf{\textit{N.B. :}} Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante \fg{} sont conservés pour des raisons de cohérence avec les schémas présentés auparavant, mais l'eau circulant dans l'échangeur ambiant et les cartouches chauffantes se trouvant dans l'échangeur froid, la direction du gradient de température dans le noyau thermoacoustique est inversée par rapport aux expériences avec acoustique. %Toutefois, les ordres de grandeur des différences de température sont les mêmes que pour les expériences avec acoustique, c'est-à-dire 
 
 %Pour garder un moyen de comparaison avec les mesures avec acoustique, le mélange de gaz est le même.
 
 \subsubsection{Mesures avec acoustique}\label{chap:MesureAvecAcou} 
-Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, c'est la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial.
+Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, c'est la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial.\smallskip
 
 Au cours de cette étude, trois amplitudes acoustiques sont choisies. La première correspond à un \textit{drive ratio} $DR=\nicefrac{p_1}{p_0}=\qty{.4}{\percent}$, soit une amplitude très faible où l'effet thermoacoustique est à peine visible -- soit une différence de température de l'ordre de \qty{5}{\kelvin}. À cette amplitude, il y a moins d'effets non-linéaires liés à l'acoustique à fort niveau comme le vent acoustique ou de tourbillons. Aussi, la distribution de température dans le noyau dépend de moins de phénomènes.
 
 À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. 
 
-La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$, qui correspond à l'amplitude dite \og faible \fg{} dans les travaux de caractérisation du \textsc{Tacot} \cite{ramadan_design_2021}.
-
-\echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \medskip
+La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$, qui correspond à l'amplitude dite \og faible \fg{} dans les travaux de caractérisation du \textsc{Tacot} \cite{ramadan_design_2021}. \echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \smallskip
 
 Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée. Ce type d'expérience se fait en alimentant avec un transformateur les six cartouches chauffantes connectées en parallèle et contenues dans l'échangeur froid (voir la figure~\ref{fig:TacotPhotosNoyau_CHX}). Pour une expérience donnée, une puissance thermique est choisie selon la relation
 
@@ -468,7 +480,7 @@ Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans
 où $E$ est la tension appliquée aux cartouches et $R=\qty{22.4}{\ohm}$ la résistance équivalente des cartouches en parallèle. \echaf{à continuer}
 
 \section{Post-traitement des données}
-À la fin des acquisitions, les données sont post-traitées en utilisant un code \textsc{Matlab}\textss\textregistered développé au laboratoire, disponible sur \url{https://github.com/ohmenkoler/tacotpostprocessing}.
+À la fin des acquisitions, les données sont post-traitées en utilisant un code \textsc{Matlab}\textss\textregistered développé au laboratoire, disponible en ligne \cite{fontbonne_postprocessing_2025}.
 
 \subsection{Allègement des fichiers}
 Pendant chaque campagne de mesure réalisée suivant le protocole \echaf{section}, des fichiers bruts de mesures sont générés. Ils présentent deux inconvénients majeurs : leur format est \texttt{*.tdms}, celui de NI LabVIEW, et ils sont très lourds. La première étape de traitement des données est d'extraire uniquement les informations nécessaires pour les préparer à d'autres actions en utilisant un script \textsc{Matlab}\textss\textregistered, et à les sauvegarder dans un fichier \texttt{*.mat}.\medskip
@@ -477,11 +489,11 @@ Pour ce faire, un fichier \texttt{*.tdms} à traiter est tout d'abord chargé. I
 
 Ensuite, la valeur initiales est retirée de chaque signal temporel de thermocouple. Cette valeur initiale est calculé sur les \qty{10}{\second} au début des signaux temporels, soit un nombre de points égal à $10 \times f_{e}$ où $f_{e}=\qty{1651}{\hertz}$ est la fréquence d'échantillonage.\smallskip
 
-Cette fréquence est imposée par les cartes d'acquisition de pression dynamique à tout le \texttt{vi} LabVIEW. C'est bien trop élevé, aussi bien pour les quantités non oscillantes comme la température, que les données oscillant à la fréquence $f_1=\qty{47}{\hertz}$ comme la pression dynamique ou l'accélération. Il est donc nécessaire d'alléger les données, et les températures sont ré-échantillonées à une fréquence $f_{re}=\qty{.1}{\hertz}$. De leur côté, les autres données oscillantes sont coupées pour ne conserver que les \num{20} dernières périodes entières des signaux, soit un nombre de points donné par $20 \times \nicefrac{f_e}{f_1}$.\smallskip
+Cette fréquence est imposée par les cartes d'acquisition de pression dynamique à tout le \texttt{vi} LabVIEW. C'est bien trop élevé, aussi bien pour les quantités non oscillantes comme la température, que les données oscillant à la fréquence $f_1=\qty{47}{\hertz}$ comme la pression dynamique ou l'accélération. Il est donc nécessaire d'alléger les données, et les températures sont ré-échantillonées à une fréquence $f_{re}=\qty{.1}{\hertz}$. De leur côté, les autres données oscillantes ne sont pas ré-échantillonnées mais sont coupées pour ne conserver que les \num{20} dernières périodes entières des signaux, soit un nombre de points donné par $20 \times \nicefrac{f_e}{f_1}$.\smallskip
 
-Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est alors traité : pour les expériences en deux étapes ou plus (une expérience de type `\texttt{water}' suivie d'une autre de type `\texttt{acou}' par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue. Une première valeur de $\dot Q_a^{(wo)}$ est donc calculée et enregistrée dans un fichier \texttt{*.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée \echaf{changer notation dans l'annexe AHX}.\smallskip
+Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est ensuite traité : pour les expériences en deux étapes ou plus (une expérience de type `\texttt{water}' suivie d'une autre de type `\texttt{acou}' par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue. Une première valeur de $\dot Q_a^{(wo)}$ est donc calculée et enregistrée dans un fichier \texttt{*.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée \echaf{changer notation dans l'annexe AHX}.\smallskip
 
-Les amplitudes et phases des pressions dynamiques et accélérations sont calculées en utilisant le principe de la détection synchrone. Cette méthode est appliquée pour les quatre capteurs de pression dynamique et les deux accéléromètres, et en considérant cinq harmoniques.
+Les amplitudes et phases des pressions dynamiques et accélérations sont calculées en utilisant le principe de la détection synchrone. Cette méthode est appliquée pour les quatre capteurs de pression dynamique et les deux accéléromètres, et en considérant cinq harmoniques. Le drive ratio est calculé en divisant l'amplitude de pression du microphone situé dans la boucle de rétroaction du guide d'onde à la fréquence fondamentale par la pression statique
 
 %\echaf{nécessaire ?} Cette méthode repose sur l'orthogonalité des fonctions trigonométriques : le signal dont l'amplitude à une fréquence donnée $f_{osc}$ est recherchée est multiplié par un oscillateur à la même fréquence $f_{osc}$, puis moyenné sur une période $t_{osc}=\nicefrac{1}{f_{osc}}$ avec un filtre intégrateur. Le résultat de cette moyenne est différent de zéro dans le seul cas où la fréquence du signal $f_1$ est égale à celle de l'oscillateur $f_{osc}$.
 
@@ -490,6 +502,9 @@ Les amplitudes et phases des pressions dynamiques et accélérations sont calcul
 
 \subsection{Tracé de figures pour analyse}
 \echaf{utile ?}
+
+\subsection{Extraction des données les plus importantes}
+\echaf{utile ? + titre naze}
 
 \begin{comment}
 \subsubsection{Paramètres d'acquisition}

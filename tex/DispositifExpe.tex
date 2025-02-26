@@ -164,18 +164,18 @@ avec $d_w$ le diamètre du fil \cite{swift_thermoacoustics_2017}. Ce milieu pore
 
 \begin{equation}
 %	\mathbf K_p = \echaf{v_{\sf ref}\frac{\nu \Delta x}{\Delta P}},
-	\echaf{\mathbf q ou \mathbf u}_{\sf ref} = -\frac{\mathbf K_p}{\echaf{\mu\,ou\,\nu}} (\nabla p - \rho_0 \mathbf g),
+	\mathbf u_{\sf ref} = -\frac{\mathbf K_p}{\echaf{\mu\,ou\,\nu}} (\nabla p - \rho_0 \mathbf g),
 	\label{eq:DefPermeabilite_Wikipedia}
 \end{equation}
-où $\mathbf q_{\sf ref}$ est le débit d'écoulement \echaf{ordre de grandeur, moyen, de référence} d'un fluide qui s'écoule dans le milieu poreux et causé par un gradient de pression $\nicefrac{\Delta P}{\Delta x}$ \cite{nield_convection_2013}. La perméabilité ne dépend par ailleurs que du milieu, et il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne \cite{dullien_porous_1992}. La formulation retenue s'écrit
+où $\mathbf u_{\sf ref}$ est le débit de référence d'un fluide qui s'écoule dans le milieu poreux et causé par un gradient de pression $\nicefrac{\Delta P}{\Delta x}$ \cite{nield_convection_2013}. La perméabilité ne dépend par ailleurs que du milieu, et il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne \cite{dullien_porous_1992}. En faisant l'hypothèse d'\echaf{un matériau isotrope}, la formulation retenue s'écrit
 
 \begin{equation}
 	K_p = \echaf{\frac{4 r_h^2 \Phi}{8}},
 	\label{eq:DefPermeabilite_LISN}
 \end{equation}
-et donne des résultats satisfaisants pour le developpement des modèles \cite{hireche_experimental_2020, baltean_gravity_2025}.\bigskip
+et donne des résultats satisfaisants pour le développement de modèles \cite{hireche_experimental_2020, baltean_gravity_2025}.\bigskip
 
-\echaf{Continuer expl sur travaux de Gaëlle + redériver pour régénérateur}Dans la réalité, les ondes acoustiques en jeu dans les machines thermoacoustiques ne sont ni totalement \og à ondes stationnaires \fg{} (voir le cycle thermodynamique sur la figure~\ref{fig:CycleBrayton}) ni tout à fait \og à ondes progressives \fg{} (dont le cycle est présenté sur la figure~\ref{fig:CycleStirling}). Il a d'ailleurs été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimale pour une pression acoustique donnée~\cite{poignand_etude_2006}. Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque la vitesse acoustique atteint une amplitude donnée par
+Dans la réalité, les ondes acoustiques en jeu dans les machines thermoacoustiques ne sont ni totalement \og à ondes stationnaires \fg{} (voir le cycle thermodynamique sur la figure~\ref{fig:CycleBrayton}) ni tout à fait \og à ondes progressives \fg{} (dont le cycle est présenté sur la figure~\ref{fig:CycleStirling}). Il a d'ailleurs été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimale pour une pression acoustique donnée~\cite{poignand_etude_2006, poignand_thermoacoustic_2011}. Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque le débit acoustique atteint une amplitude donnée par
 
 \begin{subequations}
 	\begin{align}
@@ -214,7 +214,9 @@ Les dimensions et paramètres du régénérateur sont résumés dans le tableau 
         Porosité du noyau $\Phi$ & \qty{68}{\percent} \\
         Couche limite thermique $\delta_\kappa$ & \qty{1.4452e-4}{\meter} \\
         Couche limite visqueuse $\delta_\nu$ & \qty{9.1120e-5}{\meter} \\
-        Perméabilité & \qty{2.68e-10}{\meter\squared} \\
+        Perméabilité $K_p$ & \qty{2.68e-10}{\meter\squared} \\
+       	Amplitude du débit acoustique optimal $|u|_{\sf opt}$ & \echaf{valeur} \\
+		Phase du débit acoustique optimal $\angle u_{\sf opt}$ & \echaf{valeur} \\
         \hline
     \end{tabular}
 \end{table}
@@ -245,13 +247,15 @@ Le pompage de chaleur par effet thermoacoustique est exploité par des échangeu
 \end{figure}
 
 \subparagraph{\'Echangeur ambiant} 
-Le flux de chaleur apporté au côté ambiant par effet thermoacoustique doit être extrait pour empêcher l'échauffement de la machine, puisque de l'énergie mécanique est continuellement ajoutée au système par les sources acoustiques. Pour ce faire, la solution retenue pour garder une température ambiante de ce côté du régénérateur est de faire circuler de l'eau dans un circuit hydraulique à l'intérieur de l'échangeur fabriqué en cuivre. L'architecture proposée est représentée sur la figure~\ref{fig:AHXschema}, et comporte cinq canaux centraux entourés d'ailettes, qui divisent le flux d'eau apporté et évacué par deux conduits périphériques. 
+De l'énergie mécanique est continuellement apportée au système par les sources acoustiques, ce qui s'accompagne du pompage thermoacoustique de l'extrémité froide à l'extrémité chaude du noyau. Pour fixer la température de ce côté à une température ambiante, l'échangeur extrait de la chaleur au fluide chaud pour la céder à de l'eau froide qui circule à l'intérieur. L'échauffement global de la machine peut ainsi être évité.
 
-Le modèle \textsc{DeltaEC} ne donne pas les paramètres tels que l'épaisseur des ailettes et la distance entre elle, où les dimensions des tubes où circule l'eau. Une analyse basée sur la différence moyenne de température logarithmique quasi-statique est réalisée au moment de la conception de l'échangeur pour obtenir ces paramètres, ainsi que pour contrebalancer le manque de littérature sur les échangeurs de chaleurs immergés dans les fluides oscillants \cite{ramadan_design_2021}. \echaf{mettre les paramètre ATE}
+Pour dimensionner l'échangeur, une méthode combinant un modèle \textsc{DeltaEC} et une analyse basée sur la différence de température logarithmique moyenne est utilisée pour déterminer la longueur, le diamètre et la porosité de l'échangeur, de même que l'architecture nécessaire au bon échange de chaleur, comme par exemple le nombre d'ailettes, leur épaisseur et leur espacement, et les diamètres des conduits d'eau \cite{ramadan_design_2021}.
 
+L'architecture proposée pour l'échangeur est représentée sur la figure~\ref{fig:AHXschema}. Elle comporte cinq canaux centraux qui divisent le flux d'eau total pour le faire circuler sur toute la section de l'échangeur. L'apport et l'évacuation de l'eau se font par deux conduits périphériques, connectés de sorte à faire suivre le chemin tracé en pointillées jaunes sur la figure. Les canaux centraux sont entourés de \num{190} ailettes dont l'épaisseur vaut \qty{1}{\milli\meter}, et qui sont séparées l'une de l'autre par \qty{1.5}{\milli\metre}. La porosité ainsi obtenue est donc de \echaf{valeur}
+
+\echaf{ajouter figure avec TC 13 14 et 15 pour montrer que peut importe ce qui se passe dans noyau l'ext reste à Ta}
 
 \subparagraph{\'Echangeur froid}
-De plus, une pompe à chaleur retire par principe de la chaleur à une source à refroidir, dite \og source froide \fg{}. Toutefois, cet échangeur remplit une autre fonction dans le cadre de ce projet. La caractérisation des performances de la pompe à chaleur requiert la connaissance du flux de chaleur retiré à la source froide.
 
 \subsection{Instrumentation}
 L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments.

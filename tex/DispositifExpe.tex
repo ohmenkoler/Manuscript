@@ -201,7 +201,7 @@ Cette machine nécessite entre autres choses le respect de la condition $\delta_
 Les dimensions et paramètres du régénérateur sont résumés dans le tableau \ref{tab:ParamHydrauTAC}.
 
 \begin{table}[!ht]
-    \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement, $f=\qty{47}{\Hz}$}
+    \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement du réfrigérateur $f=\qty{47}{\Hz}$.}
     \label{tab:ParamHydrauTAC}
     \centering
     \begin{tabular}{l@{\hspace{1cm}}ll}
@@ -220,18 +220,37 @@ Les dimensions et paramètres du régénérateur sont résumés dans le tableau 
 \end{table}
 
 \paragraph{\'Echangeurs de chaleur}
-Le pompage de chaleur par effet thermoacoustique est exploité par des échangeurs conçus en même temps que le reste du dispositif expérimental, en utilisant le logiciel \textsc{DeltaEC} pour déterminer les caractéristiques comme la longueur axiale, la surface, ou la porosité. Concernant cette dernière, il faut faire en sorte de laisser s'écouler librement le fluide sans causer de pertes de charges trop importantes, tout en conservant une grande surface de contact. Par ailleurs, leurs longueurs sont au moins deux fois supérieures à l'excursion particulaire crête à crête, qui est de l'ordre de \qty{1}{\centi\meter} dans les conditions d'opération de la machine.\smallskip
+Le pompage de chaleur par effet thermoacoustique est exploité par des échangeurs conçus en même temps que le reste du dispositif expérimental, en utilisant le logiciel \textsc{DeltaEC} pour déterminer les caractéristiques comme la longueur axiale, la surface, ou la porosité. Concernant cette dernière, il faut faire en sorte de laisser s'écouler librement le fluide sans causer de pertes de charges trop importantes, tout en conservant une grande surface de contact. Par ailleurs, leurs longueurs sont au moins deux fois supérieures à l'excursion particulaire crête à crête, qui est de l'ordre de \qty{1}{\centi\meter} dans les conditions d'opération de la machine. Cependant, les paramètres calculés avec \textsc{DeltaEC} ne sont pas suffisant pour concevoir un échangeur fonctionnel, et le fonctionnement de chacun de ces échangeur étant radicalement différent l'un de l'autre, quelques détails de conception propres à chacun sont à présenter.
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}[c]{.47\textwidth}
+		\centering
+		\external{fig_AHXSchema}
+%    	\externalremake
+	    \tikz{\draw (0,0) node {\includegraphics[width=.95\textwidth]{../fig/fig_AHXfromATE/AHXfromATE.png}};}
+		\caption{}
+		\label{fig:AHXschema}
+	\end{subfigure}		
+	\begin{subfigure}[c]{.47\textwidth}
+		\centering
+		\external{fig_CHXSchema}
+%		\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_CHXfromATE/SchemaCHX.png}};}
+		\caption{}
+		\label{fig:CHXschema}
+	\end{subfigure}	    
+    \caption{Schémas des échangeurs. \subref{fig:AHXschema} échangeur ambiant, où les trait pointillés jaune montrent le circuit d'eau, et \subref{fig:CHXschema} échangeur froid sur lequel l'emplacement des cartouches chauffantes est indiqué par les rectangles. \echaf{mettre version vierge du CHX}}
+    \label{fig:HXschema}
+\end{figure}
+
+\subparagraph{\'Echangeur ambiant} 
+Le flux de chaleur apporté au côté ambiant par effet thermoacoustique doit être extrait pour empêcher l'échauffement de la machine, puisque de l'énergie mécanique est continuellement ajoutée au système par les sources acoustiques. Pour ce faire, la solution retenue pour garder une température ambiante de ce côté du régénérateur est de faire circuler de l'eau dans un circuit hydraulique à l'intérieur de l'échangeur fabriqué en cuivre. L'architecture proposée est représentée sur la figure~\ref{fig:AHXschema}, et comporte cinq canaux centraux entourés d'ailettes, qui divisent le flux d'eau apporté et évacué par deux conduits périphériques. 
+
+Le modèle \textsc{DeltaEC} ne donne pas les paramètres tels que l'épaisseur des ailettes et la distance entre elle, où les dimensions des tubes où circule l'eau. Une analyse basée sur la différence moyenne de température logarithmique quasi-statique est réalisée au moment de la conception de l'échangeur pour obtenir ces paramètres, ainsi que pour contrebalancer le manque de littérature sur les échangeurs de chaleurs immergés dans les fluides oscillants \cite{ramadan_design_2021}. \echaf{mettre les paramètre ATE}
 
 
-%\medskip
-
-
-\subparagraph{L'échangeur ambiant} est fabriqué en 
-
-En effet, dans l'application du \textsc{Tacot}, il est nécessaire d'empêcher l'échauffement global de la machine, puisque le pompage de chaleur continue tant que de l'énergie mécanique est apportée au système par les sources acoustiques. 
-%\medskip
-
-\subparagraph{L'échangeur froid}
+\subparagraph{\'Echangeur froid}
 De plus, une pompe à chaleur retire par principe de la chaleur à une source à refroidir, dite \og source froide \fg{}. Toutefois, cet échangeur remplit une autre fonction dans le cadre de ce projet. La caractérisation des performances de la pompe à chaleur requiert la connaissance du flux de chaleur retiré à la source froide.
 
 \subsection{Instrumentation}
@@ -239,7 +258,7 @@ L'instrumentation utilisée est basée sur celle conçue au début du projet \ci
 
 %\bigskip
 
-\subsubsection{Banc de mesure ?}
+\subsubsection{Banc de mesure}
 \echaf{photo du banc}
 \begin{figure}[!ht]
 	\centering
@@ -397,7 +416,7 @@ Ces figures, dans lesquelles la gravité est toujours dirigée vers le bas de la
 		\caption{}
 		\label{fig:OrientationCore_V2}
 	\end{subfigure}  	
- 	\caption{Orientations choisies pour les expériences avec le réfrigérateur thermoacoustique, avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas de la page, soit $\mathbf g=-g\mathbf e_{z,0}$. Les orientations sont \subref{fig:OrientationCore_H1}  `\texttt{H1}', \subref{fig:OrientationCore_H2} `\texttt{H2}',  \subref{fig:OrientationCore_V1} `\texttt{V1}', et  \subref{fig:OrientationCore_V2} `\texttt{V2}'.}%\textcolor{red}{CHX et AHX OK ou éch. froid et éch. chaud ? + $\psi_i$ dans la caption ou la figure ?}}
+ 	\caption{Orientations choisies pour les expériences avec le réfrigérateur thermoacoustique, avec les positions des thermocouples et leurs numéro. Pour chaque cas, la gravité est orientée vers le bas de la page, soit $\mathbf g=-g\mathbf e_{z,0}$ suivant le repère défini sur la figure~\ref{fig:BancMesureComplet}. Les orientations sont \subref{fig:OrientationCore_H1}  `\texttt{H1}', \subref{fig:OrientationCore_H2} `\texttt{H2}',  \subref{fig:OrientationCore_V1} `\texttt{V1}', et  \subref{fig:OrientationCore_V2} `\texttt{V2}'.}%\textcolor{red}{CHX et AHX OK ou éch. froid et éch. chaud ? + $\psi_i$ dans la caption ou la figure ?}}
     \label{fig:OrientationCore} %
 \end{figure}
 
@@ -454,13 +473,17 @@ Ensuite, en prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'
 L'étape suivante dépend du type d'expérience menée : les mesures peuvent être sans ou avec acoustique, et ce, pour  différentes amplitudes de pression oscillante. %\echaf{la suite part en intro sur ce qui existe déjà} En revanche, certains des paramètres d'excitation restent constants pour toutes les expériences :  le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, car dans ces proportions le nombre de Prandtl est minimum \cite{belcher_working_1999} ; ce mélange est ensuite pressurisé à \qty{40}{\bar}. Dans le cas des expériences avec acoustique, le modèle \textsc{DeltaEC} prédit les meilleurs performances à la fréquence $f=\qty{47}{\hertz}$, c'est-à-dire la fréquence de résonance du système. C'est par ailleurs le seul point de fonctionnement où l'impédance électrique est supérieure à la limite basse admise par l'amplificateur, soit \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60} pour toutes les expériences, également indiqué comme déphasage optimale par les simulations et que des expériences préliminaires confirment.
 
 \subsubsection{Mesures sans acoustique}\label{chap:MesureSansAcou}
-Pour ces mesures de type `\texttt{heat\_{}only}', la charge thermique est appliquée au noyau sans alimenter les sources acoustiques. Cette charge thermique consiste en l'alimentation électrique de cartouches chauffantes contenues dans l'échangeur froid par une puissance connue, tandis qu'un débit d'eau de \qty{7}{\litre\per\minute} s'écoule dans l'échangeur ambiant qui se trouve de l'autre côté du noyau.
+Pour ces mesures de type `\texttt{heat\_{}only}', la charge thermique du côté froid est appliquée au noyau sans alimenter les sources acoustiques, à la fin de l'acquisition `\texttt{water}'. Cette charge thermique consiste en l'alimentation électrique des cartouches chauffantes contenues dans l'échangeur par une puissance connue et donnée par
+
+\begin{equation}
+	Q_f = \frac{E^2}{R},
+	\label{eq:Qf_définitionEsurR}
+\end{equation}
+où $E$ est la tension appliquée aux cartouches et $R=\qty{22.4}{\ohm}$ la résistance équivalente des cartouches en parallèle.
 
 Ces mesures doivent permettre d'étudier la distribution de température en l'absence d'écoulement oscillant, ainsi que de calculer les valeurs de conductivité thermique $k_x$ et $k_r$ ou les coefficients de pertes latérales $h_x$ et $h_r$.\smallskip
 
-\textbf{\textit{N.B. :}} Dans ce type d'expériences, les noms des zones \og froide \fg{} et \og ambiante \fg{} sont conservés pour des raisons de cohérence avec les schémas présentés auparavant, mais l'eau circulant dans l'échangeur ambiant et les cartouches chauffantes se trouvant dans l'échangeur froid, la direction du gradient de température dans le noyau thermoacoustique est inversée par rapport aux expériences avec acoustique. %Toutefois, les ordres de grandeur des différences de température sont les mêmes que pour les expériences avec acoustique, c'est-à-dire 
-
-%Pour garder un moyen de comparaison avec les mesures avec acoustique, le mélange de gaz est le même.
+\textbf{\textit{N.B. :}} Dans ce type d'expériences, l'eau qui circule dans l'échangeur ambiant et les cartouches placées dans l'échangeur froid inversent la direction du gradient de température le long du noyau thermoacoustique. Toutefois, les noms des zones \og froide \fg{} et \og ambiante \fg{} sont conservés pour des raisons de cohérence avec le reste de l'étude.
 
 \subsubsection{Mesures avec acoustique}\label{chap:MesureAvecAcou} 
 Une acquisition étiquetée `\texttt{Acou}' est démarrée, puis les sources sont alimentées jusqu'à l'amplitude souhaitée. Au bout d'une heure, l'acquisition est arrêtée et sauvegardée. En l'absence d'expérience avec charge thermique, c'est la fin de l'expérience : toutes les sources acoustiques et circulations d'eau sont progressivement arrêtées et le réfrigérateur est laissé pour un retour à l'état initial.\smallskip
@@ -471,13 +494,7 @@ Au cours de cette étude, trois amplitudes acoustiques sont choisies. La premiè
 
 La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$, qui correspond à l'amplitude dite \og faible \fg{} dans les travaux de caractérisation du \textsc{Tacot} \cite{ramadan_design_2021}. \echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \smallskip
 
-Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée. Ce type d'expérience se fait en alimentant avec un transformateur les six cartouches chauffantes connectées en parallèle et contenues dans l'échangeur froid (voir la figure~\ref{fig:TacotPhotosNoyau_CHX}). Pour une expérience donnée, une puissance thermique est choisie selon la relation
-
-\begin{equation}
-	Q_f = \frac{E^2}{R},
-	\label{eq:Qf_définitionEsurR}
-\end{equation}
-où $E$ est la tension appliquée aux cartouches et $R=\qty{22.4}{\ohm}$ la résistance équivalente des cartouches en parallèle. \echaf{à continuer}
+Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée. 
 
 \section{Post-traitement des données}
 À la fin des acquisitions, les données sont post-traitées en utilisant un code \textsc{Matlab}\textss\textregistered développé au laboratoire, disponible en ligne \cite{fontbonne_postprocessing_2025}.
@@ -489,9 +506,9 @@ Pour ce faire, un fichier \texttt{*.tdms} à traiter est tout d'abord chargé. I
 
 Ensuite, la valeur initiales est retirée de chaque signal temporel de thermocouple. Cette valeur initiale est calculé sur les \qty{10}{\second} au début des signaux temporels, soit un nombre de points égal à $10 \times f_{e}$ où $f_{e}=\qty{1651}{\hertz}$ est la fréquence d'échantillonage.\smallskip
 
-Cette fréquence est imposée par les cartes d'acquisition de pression dynamique à tout le \texttt{vi} LabVIEW. C'est bien trop élevé, aussi bien pour les quantités non oscillantes comme la température, que les données oscillant à la fréquence $f_1=\qty{47}{\hertz}$ comme la pression dynamique ou l'accélération. Il est donc nécessaire d'alléger les données, et les températures sont ré-échantillonées à une fréquence $f_{re}=\qty{.1}{\hertz}$. De leur côté, les autres données oscillantes ne sont pas ré-échantillonnées mais sont coupées pour ne conserver que les \num{20} dernières périodes entières des signaux, soit un nombre de points donné par $20 \times \nicefrac{f_e}{f_1}$.\smallskip
+L'échantillonnage est imposé par les cartes d'acquisition de pression dynamique à tout le \texttt{vi} LabVIEW. C'est bien trop élevé, aussi bien pour les quantités non oscillantes comme la température, que les données oscillant à la fréquence $f_1=\qty{47}{\hertz}$ comme la pression dynamique ou l'accélération. Il est donc nécessaire d'alléger les données, et les températures sont ré-échantillonées à une fréquence $f_{re}=\qty{.1}{\hertz}$. De leur côté, les autres données oscillantes ne sont pas ré-échantillonnées mais sont coupées pour ne conserver que les \num{20} dernières périodes entières des signaux, soit un nombre de points donné par $20 \times \nicefrac{f_e}{f_1}$.\smallskip
 
-Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est ensuite traité : pour les expériences en deux étapes ou plus (une expérience de type `\texttt{water}' suivie d'une autre de type `\texttt{acou}' par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue. Une première valeur de $\dot Q_a^{(wo)}$ est donc calculée et enregistrée dans un fichier \texttt{*.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée \echaf{changer notation dans l'annexe AHX}.\smallskip
+Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est ensuite traité : pour les expériences en deux étapes ou plus (une expérience de type `\texttt{water}' suivie d'une autre de type `\texttt{acou}' par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue, comme le montre la figure~\ref{fig:WaterOnly_PT}. Une première valeur de $\dot Q_a^{(w)}$ est donc calculée et enregistrée dans un fichier \texttt{*.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée \echaf{changer notation dans l'annexe AHX}.\smallskip
 
 Les amplitudes et phases des pressions dynamiques et accélérations sont calculées en utilisant le principe de la détection synchrone. Cette méthode est appliquée pour les quatre capteurs de pression dynamique et les deux accéléromètres, et en considérant cinq harmoniques. Le drive ratio est calculé en divisant l'amplitude de pression du microphone situé dans la boucle de rétroaction du guide d'onde à la fréquence fondamentale par la pression statique
 

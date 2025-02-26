@@ -3,15 +3,6 @@
 
 Cette partie concerne la mesure de la chaleur extraite par l'échangeur ambiant $\dot Q_a$. Cet échangeur en cuivre conçu durant le projet \textsc{Tacot} et représenté sur la figure~\ref{fig:AHXschema} contient un circuit de canaux dans lequel circule de l'eau dont le débit peut être contrôlé \cite{ANR_thermo-acoustic_2019, ramadan_design_2021}. Son rôle est de maintenir l'extrémité chaude du régénérateur à température ambiante pour éviter l'échauffement globale du réfrigérateur. 
 
-\begin{figure}[!ht]
-    \centering
-    \external{fig_AHXSchema}
-    %\externalremake
-    \input{../fig/fig_AHXSchema/fig_AHXSchema}
-    \caption{Schéma de l'échangeur ambiant, issu de \cite{ramadan_design_2021}\echaf{ajouter TC \numlist{13;14;15} et le point de vue / axe $\mathbf e_x$}}
-    \label{fig:AHXschema}
-\end{figure}
-
 Le but de cette étude est multiple : d'une part, l'alimentation en eau de l'échangeur se fait par un robinet puis est rejetée dans un évier, ce qui engendre un grand gaspillage. Son remplacement par un circuit fermé est prévu, mais il est nécessaire de connaître au préalable le débit nécessaire à un bon échange thermique. D'autre part, l'échange de chaleur dépend du débit d'eau $\dot q$ ainsi que de la différence de température de l'eau $\Delta T^w$ entre la sortie et l'entrée de l'échangeur. Cette dernière dépend également du débit, et le problème est donc de choisir le débit tel que la différence de température de l'eau soit la plus grande possible, tout en garantissant une extraction optimale de la chaleur par l'échangeur.
 
 \section{Détermination de la chaleur pompée}

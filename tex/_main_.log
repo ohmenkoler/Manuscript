@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  26 FEB 2025 11:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  26 FEB 2025 16:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2124,17 +2124,23 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 217.
- [15]
-<example-image-a.pdf, id=1476, 321.2pt x 240.9pt>
+
+===== Image 'external/fig_AHXSchema0' is up-to-date. ======
+===== Image 'external/fig_CHXSchema0' is up-to-date. ======
+[15] [16 <./external/fig_dKdV0.pdf>]
+<example-image-a.pdf, id=1521, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 250.
+Package pdftex.def Info: example-image-a.pdf  used on input line 269.
 (pdftex.def)             Requested size: 338.5863pt x 253.9486pt.
- [16 <./external/fig_dKdV0.pdf>]
+ [17 <./external/fig_AHXSchema0.pdf> <./external/fig_CHXSchema0.pdf
+
+pdfTeX warning: pdflatex (file ./external/fig_CHXSchema0.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <C:/Program Files/MiKTeX/tex/latex/mwe/example-image-a.pdf>]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
-) [17 <C:/Program Files/MiKTeX/tex/latex/mwe/example-image-a.pdf>] [18 <./exter
-nal/fig_TCdansNoyau0.pdf>]
+) [18 <./external/fig_TCdansNoyau0.pdf>]
 ===== Image 'external/fig_SystemeAccroche_Machine0' is up-to-date. ======
 ===== Image 'external/fig_SystemeAccroche_Palan0' is up-to-date. ======
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
@@ -2145,20 +2151,16 @@ nal/fig_TCdansNoyau0.pdf>]
 ===== Image 'external/fig_OrientationCore_V10' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex
 ===== Image 'external/fig_OrientationCore_V20' is up-to-date. ======
-) [19 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccr
-oche_Palan0.pdf>] [20 <./external/fig_OrientationCore_H10.pdf> <./external/fig_
-OrientationCore_H20.pdf> <./external/fig_OrientationCore_V10.pdf> <./external/f
-ig_OrientationCore_V20.pdf>]
+) [19] [20 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_System
+eAccroche_Palan0.pdf>] [21 <./external/fig_OrientationCore_H10.pdf> <./external
+/fig_OrientationCore_H20.pdf> <./external/fig_OrientationCore_V10.pdf> <./exter
+nal/fig_OrientationCore_V20.pdf>]
 (../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_TC.tex
 ===== Image 'external/fig_WaterOnly_TC0' is up-to-date. ======
 ) (../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_PT.tex
 ===== Image 'external/fig_WaterOnly_PT0' is up-to-date. ======
-)
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 457.
- [21] [22 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf>
-] Excluding 'comment' comment. [23]) (EnsembleSimus.tex [24]
+) [22 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf>]
+[23] Excluding 'comment' comment.) (EnsembleSimus.tex [24]
 Chapitre III.
 [25
 
@@ -2439,24 +2441,21 @@ LaTeX Info: Symbol \textminus not provided by
 
 ]
 Annexe B.
-(../fig/fig_AHXSchema/fig_AHXSchema.tex
-===== Image 'external/fig_AHXSchema0' is up-to-date. ======
-) [5 <./external/fig_AHXSchema0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 35.
+            Default family used instead on input line 26.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 35.
+            Default family used instead on input line 26.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 35.
- (../fig/fig_AHXCalib/tex/fig_AHXCalib.tex
+            Default family used instead on input line 26.
+(../fig/fig_AHXCalib/tex/fig_AHXCalib.tex
 ===== Image 'external/fig_AHXCalib0' is up-to-date. ======
-) [6 <./external/fig_AHXCalib0.pdf>]
-(../fig/fig_IncertitudeDebitEau/tex/IncertitudeDebitEau.tex
+) [5] (../fig/fig_IncertitudeDebitEau/tex/IncertitudeDebitEau.tex
 ===== Image 'external/fig_IncertitudeDebitEau0' is up-to-date. ======
-)) (InstrumHP.tex [7 <./external/fig_IncertitudeDebitEau0.pdf>] [8
+)) (InstrumHP.tex [6 <./external/fig_AHXCalib0.pdf>] [7 <./external/fig_Incerti
+tudeDebitEau0.pdf>] [8
 
 ]
 Annexe C.
@@ -2740,15 +2739,15 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: E4D54A7C7328E72E3F01679299CFAC7A;24100.
+(rerunfilecheck)             Checksum: 72ACCFD44B626474C2610E739CAB9C22;24087.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 76727 strings out of 474435
- 1930907 string characters out of 5751739
- 3193545 words of memory out of 5000000
+ 76723 strings out of 474435
+ 1930531 string characters out of 5751739
+ 3193933 words of memory out of 5000000
  97251 multiletter control sequences out of 15000+600000
  702330 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2764,9 +2763,9 @@ eX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX/fonts/type
 uper/sfss0800.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt0900
 .pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Prog
 ram Files/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (94 pages, 27548148 bytes).
+Output written on _main_.pdf (94 pages, 28430788 bytes).
 PDF statistics:
- 3821 PDF objects out of 4296 (max. 8388607)
+ 3822 PDF objects out of 4296 (max. 8388607)
  427 named destinations out of 1000 (max. 500000)
- 1572 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1577 words of extra memory for PDF output out of 10000 (max. 10000000)
 

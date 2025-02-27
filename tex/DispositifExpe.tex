@@ -164,28 +164,30 @@ avec $d_w$ le diamètre du fil \cite{swift_thermoacoustics_2017}. Ce milieu pore
 
 \begin{equation}
 %	\mathbf K_p = \echaf{v_{\sf ref}\frac{\nu \Delta x}{\Delta P}},
-	\mathbf u_{\sf ref} = -\frac{\mathbf K_p}{\echaf{\mu\,ou\,\nu}} (\nabla p - \rho_0 \mathbf g),
+	\mathbf u_{\sf ref} = -\frac{\mathbf K_p}{\mu} (\nabla p - \rho_0 \mathbf g),
 	\label{eq:DefPermeabilite_Wikipedia}
 \end{equation}
-où $\mathbf u_{\sf ref}$ est le débit de référence d'un fluide qui s'écoule dans le milieu poreux et causé par un gradient de pression $\nicefrac{\Delta P}{\Delta x}$ \cite{nield_convection_2013}. La perméabilité ne dépend par ailleurs que du milieu, et il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne \cite{dullien_porous_1992}. En faisant l'hypothèse d'\echaf{un matériau isotrope}, la formulation retenue s'écrit
+où $\mathbf u_{\sf ref}$ est le débit de filtration d'un fluide qui s'écoule dans le milieu poreux et causé par un gradient de pression $\nicefrac{\Delta P}{\Delta x}$ \cite{nield_convection_2013, dullien_porous_1992}. La perméabilité ne dépend par ailleurs que du milieu, et il existe dans la littérature des formulations de la perméabilité ne prenant en compte que la géométrie interne \cite{dullien_porous_1992}. En faisant l'hypothèse d'un milieu constitué d'un matériau isotrope, la formulation retenue s'écrit
 
 \begin{equation}
 	K_p = \echaf{\frac{4 r_h^2 \Phi}{8}},
 	\label{eq:DefPermeabilite_LISN}
 \end{equation}
-et donne des résultats satisfaisants pour le développement de modèles \cite{hireche_experimental_2020, baltean_gravity_2025}.\bigskip
+et donne des résultats satisfaisants pour le développement de modèles \cite{hireche_experimental_2020, baltean_gravity_2025}.\smallskip
 
-Dans la réalité, les ondes acoustiques en jeu dans les machines thermoacoustiques ne sont ni totalement \og à ondes stationnaires \fg{} (voir le cycle thermodynamique sur la figure~\ref{fig:CycleBrayton}) ni tout à fait \og à ondes progressives \fg{} (dont le cycle est présenté sur la figure~\ref{fig:CycleStirling}). Il a d'ailleurs été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimale pour une pression acoustique donnée~\cite{poignand_etude_2006, poignand_thermoacoustic_2011}. Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque le débit acoustique atteint une amplitude donnée par
+Toutefois, l'empillement de tissus crée un milieu multicouche qui n'est certainement pas isotrope, et la définition de la perméabilité dans l'équation de Darcy considère un écoulement unidirectionnel, stationnaire et suffisamment lent \cite{dullien_porous_1992}. \echaf{ vraiment utile de rentrer dans les détails d'un modèle multi couche de la permeabilité ? }\cite{tan_new_2024}\medskip
+
+Dans la réalité, les ondes acoustiques en jeu dans les machines thermoacoustiques ne sont ni totalement \og à ondes stationnaires \fg{} (voir le cycle thermodynamique sur la figure~\ref{fig:CycleBrayton}) ni tout à fait \og à ondes progressives \fg{} (dont le cycle est présenté sur la figure~\ref{fig:CycleStirling}). Il a d'ailleurs été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimale pour une pression acoustique donnée~\cite{poignand_etude_2006, poignand_thermoacoustic_2011}. Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque la vitesse acoustique atteint une amplitude donnée par
 
 \begin{subequations}
 	\begin{align}
-		|u|_{\sf opt} &= \sqrt{\frac{4\omega\left(\echaf{kh+k_se_s}\right)\left(1-\Prandtl^2\right)\left(\echaf{1-\frac{\delta_\nu}{h}+\frac{\delta_\nu^2}{2h^2}}\right)}{\delta_\kappa \rho_0 C_p \left(1-\Prandtl\sqrt{\Prandtl}\right)}},	\label{eq:u_mag_opt_Gaelle}\\
+		|v|_{\sf opt} &= \sqrt{\frac{4\omega\left(\echaf{kh+k_se_s}\right)\left(1-\Prandtl^2\right)\left(\echaf{1-\frac{\delta_\nu}{h}+\frac{\delta_\nu^2}{2h^2}}\right)}{\delta_\kappa \rho_0 C_p \left(1-\Prandtl\sqrt{\Prandtl}\right)}}, & 	\label{eq:u_mag_opt_Gaelle}\\
 		\intertext{et un déphasage écrit}
-		\angle u_{\sf opt} &= \arctan\left[-\frac{1+\sqrt{\Prandtl}-\echaf{\frac{\delta_\nu}{h}}}{1-\sqrt{\Prandtl}+\echaf{\frac{\delta_\nu}{h}}\sqrt{\Prandtl}}\right].	\label{eq:u_arg_opt_Gaelle}
+		\angle v_{\sf opt} &= \arctan\left[-\frac{1+\sqrt{\Prandtl}-\echaf{\frac{\delta_\nu}{h}}}{1-\big(1-\echaf{\frac{\delta_\nu}{h}}\big)\sqrt{\Prandtl}}\right]+n \pi, & n \in \mathbb{Z}.	\label{eq:u_arg_opt_Gaelle}
 	\end{align}
 	\label{eq:u_opt_Gaelle}
 \end{subequations}
-\echaf{Remplacer $kh+k_s e_s$ par $\Phi k + (1-\Phi)k_s$ ?}
+\echaf{Remplacer $kh+k_s e_s$ par $\Phi k + (1-\Phi)k_s k_{s,frac}$ ? $\frac{\delta_\nu}{h}$ par $\frac{\delta_\nu}{r_h}$ ? -> redériver pour régénérateur}
 
 Cette machine nécessite entre autres choses le respect de la condition $\delta_{\kappa,\nu} \gg r_h$, de sorte à avoir un excellent contact thermique entre le fluide et le solide poreux. Pour le fluide considéré, les épaisseurs de couches limites sont tracées en fonction de la fréquence et comparé au rayon hydraulique sur la figure~\ref{fig:dKdV}.
 
@@ -201,18 +203,40 @@ Cette machine nécessite entre autres choses le respect de la condition $\delta_
 Les dimensions et paramètres du régénérateur sont résumés dans le tableau \ref{tab:ParamHydrauTAC}.
 
 \begin{table}[!ht]
-    \caption{Paramètres hydrauliques du régénérateur à la fréquence de fonctionnement du réfrigérateur $f=\qty{47}{\Hz}$.}
-    \label{tab:ParamHydrauTAC}
+	\caption{Géométrie du noyau thermoacoustique.}
+    \label{tab:GeometrieTAC}
     \centering
-    \begin{tabular}{l@{\hspace{1cm}}ll}
+    \begin{tabular}{l@{\hspace{1cm}}l}
     	\hline
     	\textbf{Paramètre} & \textbf{Valeur} \\\hline\hline
-    	Diamètre du noyau $D_{\sf reg}$ & \qty{148e-3}{\meter} \\
+    	Diamètre de l'échangeur ambiant $D_{\sf HXA}$ & \qty{110e-3}{\meter} \\
+    	Longueur du l'échangeur ambiant $L_{\sf HXA}$ & \qty{23e-3}{\meter} \\
+    	Diamètre du régénérateur $D_{\sf reg}$ & \qty{148e-3}{\meter} \\
     	Longueur du régénérateur $L_{\sf reg}$ & \qty{39e-3}{\meter} \\
+    	Diamètre du l'échangeur froid $D_{\sf HXF}$ & \qty{140e-3}{\meter} \\
+    	Longueur du l'échangeur froid $L_{\sf HXF}$ & \qty{7e-3}{\meter} \\
     	Diamètre du fil $d_w$ & \qty{53e-6}{\meter} \\
-        Rayon hydraulique $r_h$ & \qty{2.81e-5}{\meter}\\
         Porosité du noyau $\Phi$ & \qty{68}{\percent} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+    \caption{Paramètres thermiques et hydrauliques des expériences.}
+    \label{tab:ParamHydrauTAC}
+    \centering
+    \begin{tabular}{l@{\hspace{1cm}}l}
+    	\hline
+    	\textbf{Paramètre} & \textbf{Valeur} \\\hline\hline
+    	Fréquence d'opération $f_1$ & \qty{47}{\hertz} \\
+    	Pression statique $p_0$ & \qty{4e6}{\pascal} \\
+    	Rayon hydraulique $r_h$ & \qty{2.81e-5}{\meter}\\
+    	Masse volumique $\rho_0$ & \qty{22.2}{\kilo\gram\per\cubic\meter} \\
+        Célérité du son $c_0$ & \qty{547}{\meter\per\second} \\
+        Capacité thermique isobare $C_p$ & \qty{1405}{\joule\per\kilo\gram\per\kelvin} \\
+        Conductivité thermique du gaz $k_g$ & \qty{8.6e-2}{\watt\per\meter\per\kelvin} \\
         Couche limite thermique $\delta_\kappa$ & \qty{1.4452e-4}{\meter} \\
+        Viscosité dynamique $\mu$ & \qty{2.4e-5}{\kilo\gram\per\meter\per\second} \\
         Couche limite visqueuse $\delta_\nu$ & \qty{9.1120e-5}{\meter} \\
         Perméabilité $K_p$ & \qty{2.68e-10}{\meter\squared} \\
        	Amplitude du débit acoustique optimal $|u|_{\sf opt}$ & \echaf{valeur} \\
@@ -247,15 +271,33 @@ Le pompage de chaleur par effet thermoacoustique est exploité par des échangeu
 \end{figure}
 
 \subparagraph{\'Echangeur ambiant} 
-De l'énergie mécanique est continuellement apportée au système par les sources acoustiques, ce qui s'accompagne du pompage thermoacoustique de l'extrémité froide à l'extrémité chaude du noyau. Pour fixer la température de ce côté à une température ambiante, l'échangeur extrait de la chaleur au fluide chaud pour la céder à de l'eau froide qui circule à l'intérieur. L'échauffement global de la machine peut ainsi être évité.
+De l'énergie mécanique est continuellement apportée au système par les sources acoustiques, ce qui s'accompagne du pompage thermoacoustique de l'extrémité froide à l'extrémité chaude du noyau. Pour fixer la température de ce côté à une température ambiante, l'échangeur extrait un flux de chaleur $\dot Q_a$ au fluide chaud pour la céder à de l'eau froide qui circule à l'intérieur, ce qui est donnée par la relation 
+
+\begin{equation}
+	\dot Q_a = \dot m C_p \Delta T.
+	\label{eq:Qa_Definition}
+\end{equation}
+
+L'échauffement global de la machine peut ainsi être évité.
 
 Pour dimensionner l'échangeur, une méthode combinant un modèle \textsc{DeltaEC} et une analyse basée sur la différence de température logarithmique moyenne est utilisée pour déterminer la longueur, le diamètre et la porosité de l'échangeur, de même que l'architecture nécessaire au bon échange de chaleur, comme par exemple le nombre d'ailettes, leur épaisseur et leur espacement, et les diamètres des conduits d'eau \cite{ramadan_design_2021}.
 
 L'architecture proposée pour l'échangeur est représentée sur la figure~\ref{fig:AHXschema}. Elle comporte cinq canaux centraux qui divisent le flux d'eau total pour le faire circuler sur toute la section de l'échangeur. L'apport et l'évacuation de l'eau se font par deux conduits périphériques, connectés de sorte à faire suivre le chemin tracé en pointillées jaunes sur la figure. Les canaux centraux sont entourés de \num{190} ailettes dont l'épaisseur vaut \qty{1}{\milli\meter}, et qui sont séparées l'une de l'autre par \qty{1.5}{\milli\metre}. La porosité ainsi obtenue est donc de \echaf{valeur}
 
-\echaf{ajouter figure avec TC 13 14 et 15 pour montrer que peut importe ce qui se passe dans noyau l'ext reste à Ta}
+\echaf{ajouter figure avec TC 13 14 et 15 pour montrer que peut importe ce qui se passe dans noyau l'ext reste à Ta -> pour l'instant pas trouvé de données qui sont en accord clair avec ça, on laisse ?}
 
 \subparagraph{\'Echangeur froid}
+L'échangeur froid sert à estimer les performances du réfrigérateur, notamment la capacité de refroidissement et le coefficient de performances. 
+
+Après un dimensionnement réalisé en suivant la même méthode que pour l'échangeur ambiant, il est fabriqué en aluminium par impression 3D, et ne contient pas de fluide qui s'écoule à l'intérieur. À la place, six cartouches chauffantes (Omega, HDC19107) de diamètre \qty{3.2}{\milli\meter} sont placées dans des canaux centraux dont le diamètre est de \qty{3.6}{\milli\meter} afin de permettre l'application de pâte thermique et améliorer le transfert de chaleur. Ces cartouches sont connectées en parallèle, ce qui donne une résistance électrique de \qty{22.4}{\ohm} aux bornes de l'échangeur. 
+
+La puissance thermique $\dot Q_f$ est apporté par effet Joule au côté froid du noyau selon la relation
+
+\begin{equation}
+	\dot Q_f = \frac{E^2}{R},
+	\label{eq:Qf_Definition}
+\end{equation}
+où $E$ est la tension appliquée aux cartouches par un transformateur.
 
 \subsection{Instrumentation}
 L'instrumentation utilisée est basée sur celle conçue au début du projet \cite{ramadan_design_2021}, tout en modifiant quelques éléments.
@@ -477,15 +519,9 @@ Ensuite, en prévision de la mesure de flux de chaleur $\dot Q_a$ extrait par l'
 L'étape suivante dépend du type d'expérience menée : les mesures peuvent être sans ou avec acoustique, et ce, pour  différentes amplitudes de pression oscillante. %\echaf{la suite part en intro sur ce qui existe déjà} En revanche, certains des paramètres d'excitation restent constants pour toutes les expériences :  le gaz est également le même dans toutes les expériences. Il est composé de \qty{65}{\percent} d'hélium et de \qty{35}{\percent} d'argon, car dans ces proportions le nombre de Prandtl est minimum \cite{belcher_working_1999} ; ce mélange est ensuite pressurisé à \qty{40}{\bar}. Dans le cas des expériences avec acoustique, le modèle \textsc{DeltaEC} prédit les meilleurs performances à la fréquence $f=\qty{47}{\hertz}$, c'est-à-dire la fréquence de résonance du système. C'est par ailleurs le seul point de fonctionnement où l'impédance électrique est supérieure à la limite basse admise par l'amplificateur, soit \qty{2}{\ohm}. Ensuite, le déphasage inter-source $\varphi_{2-1}$ est également fixé à \ang{-60} pour toutes les expériences, également indiqué comme déphasage optimale par les simulations et que des expériences préliminaires confirment.
 
 \subsubsection{Mesures sans acoustique}\label{chap:MesureSansAcou}
-Pour ces mesures de type `\texttt{heat\_{}only}', la charge thermique du côté froid est appliquée au noyau sans alimenter les sources acoustiques, à la fin de l'acquisition `\texttt{water}'. Cette charge thermique consiste en l'alimentation électrique des cartouches chauffantes contenues dans l'échangeur par une puissance connue et donnée par
+Pour ces mesures de type `\texttt{heat\_{}only}', la charge thermique du côté froid est appliquée au noyau sans alimenter les sources acoustiques, à la fin de l'acquisition `\texttt{water}'. Cette charge thermique consiste en l'alimentation électrique des cartouches chauffantes contenues dans l'échangeur par une puissance connue et donnée par l'équation \ref{eq:Qf_Definition}.\smallskip
 
-\begin{equation}
-	Q_f = \frac{E^2}{R},
-	\label{eq:Qf_définitionEsurR}
-\end{equation}
-où $E$ est la tension appliquée aux cartouches et $R=\qty{22.4}{\ohm}$ la résistance équivalente des cartouches en parallèle.
-
-Ces mesures doivent permettre d'étudier la distribution de température en l'absence d'écoulement oscillant, ainsi que de calculer les valeurs de conductivité thermique $k_x$ et $k_r$ ou les coefficients de pertes latérales $h_x$ et $h_r$.\smallskip
+Ces mesures doivent permettre d'étudier la distribution de température en l'absence d'écoulement oscillant, ainsi que de calculer les valeurs de conductivité thermique $k_x$ et $k_r$ ou les coefficients de pertes latérales $h_x$ et $h_r$.\medskip
 
 \textbf{\textit{N.B. :}} Dans ce type d'expériences, l'eau qui circule dans l'échangeur ambiant et les cartouches placées dans l'échangeur froid inversent la direction du gradient de température le long du noyau thermoacoustique. Toutefois, les noms des zones \og froide \fg{} et \og ambiante \fg{} sont conservés pour des raisons de cohérence avec le reste de l'étude.
 
@@ -496,7 +532,9 @@ Au cours de cette étude, trois amplitudes acoustiques sont choisies. La premiè
 
 À l'inverse, le \textit{drive ratio} de la deuxième amplitude est le plus élevé avec $DR=\qty{3.5}{\percent}$, et est celui pour lequel les performances du réfrigérateur ($COP$, $Q_f$, ...) sont les plus élevées obtenues avec cette machine \cite{ramadan_design_2021}, mais aussi qui présentent de forts écarts à la théorie. 
 
-La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$, qui correspond à l'amplitude dite \og faible \fg{} dans les travaux de caractérisation du \textsc{Tacot} \cite{ramadan_design_2021}. \echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \smallskip
+La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$, qui correspond par ailleurs à l'amplitude dite \og faible \fg{} dans les travaux de caractérisation du \textsc{Tacot} \cite{ramadan_design_2021}. 
+
+%\echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \smallskip
 
 Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée. 
 

@@ -2521,6 +2521,29 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0011227510002225
       \endverb
     \endentry
+    \entry{ANR_thermo-acoustic_2019}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The goal of the project {TACOT} is to demonstrate the applicability of thermoacoustics for refrigeration in the automotive field. It brings together Groupe {PSA} and four {CNRS} research laboratories (Institut P’, {LAUM}, {LIMSI}, {LMFA}), and is organized into three challenges. The first challenge consists in designing, manufacturing and assessing the performance of a compact thermoacoustic device with one thermoacoustic core. The originality of the device comes from the use of two acoustic sources that yields its compactness. The device will be designed using available simulation tools that are based on the linear uni-dimensional theory of thermoacoustics and that can predict a steady state behavior of the device for one set of entry conditions. Due to the limiting hypotheses of these tools, it is expected that the performance of the prototype will be lower than the ones calculated by the model. It is therefore necessary to limit this discrepancy by assessing the performance of the device in order to better quantify the complexity of flow movement and heat transfer encountered in such a compact device. Simultaneous fundamental studies are proposed in a second challenge to improve the understanding and description of the phenomena that limit the efficiency of the device. Both experimental and numerical studies will be led to investigate about - acoustical characteristics of thermoacoustic core (regenerator plus heat exchangers) of complex shape, especially at high acoustic levels and with temperature gradient, - end effects and matching conditions between the different elements of the device: Source and cavity, regenerator and heat exchangers, heat exchangers and cavity ; these effects will be investigated experimentally both from a fluid dynamics and from a heat transfer point a view, - phenomenological analysis and numerical simulation of complex flows that can appear as consequences of high amplitudes, complex geometries and thermoacoustic heat pumping in each element of the compact device. In the third challenge the evolution towards a performant compact dual thermoacoustic core heat-pump device will be investigated. The aim of this last challenge is to bring thermoacoustic compact devices to a competitive positioning as compared to in-use technologies. For this purpose, the results of challenges 1 and 2 will be used to propose an evolution of the thermoacoustic core towards higher performance. Also studies on a new architecture of acoustic source will be initiated. This new source architecture should allow to use two thermoacoustic cores, thus increasing the heat pumped from the cold source. These three challenges should lead to the proposal of a complete dual core refrigerator that could be a viable substitute for traditional air conditioning systems in the automotive industry both in terms of size and performance.}
+      \field{langid}{english}
+      \field{title}{Thermo-Acoustic Cooler for On road Transportation}
+      \field{titleaddon}{Agence nationale de la recherche}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\AL62UI49\\Project-ANR-17-CE06-0007.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://anr.fr/Project-ANR-17-CE06-0007
+      \endverb
+      \verb{url}
+      \verb https://anr.fr/Project-ANR-17-CE06-0007
+      \endverb
+      \keyw{Refrigerator,Two sources,Agence nationale de la recherche,Presentation,Project definition}
+    \endentry
     \entry{ramadan_experimental_2021}{article}{}
       \name{author}{3}{}{%
         {{hash=252e111343da868be7c3e49babcce38c}{%
@@ -2577,6 +2600,62 @@
       \verb https://asa.scitation.org/doi/full/10.1121/10.0003375
       \endverb
       \keyw{Thermoacoustics,Fluid mechanics,Particle Image Velocimetry,Regenerator,Reynolds number,Stack,Strouhal number,Velocity field,Viscosity}
+    \endentry
+    \entry{poignand_test-bench_2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=472057254b33dc024674587cf9592421}{%
+           family={Poignand},
+           familyi={P\bibinitperiod},
+           given={Gaelle},
+           giveni={G\bibinitperiod}}}%
+        {{hash=12bbb021c628037a196693c4af4a6f16}{%
+           family={Olivier},
+           familyi={O\bibinitperiod},
+           given={Come},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f9850c71f3219b8c5cece876acf3b56d}{%
+           family={Penelet},
+           familyi={P\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{99fb9acb4b33d7353abc9e549b7e9d95}
+      \strng{fullhash}{e6b54eefbf262951d012e377485751e8}
+      \strng{bibnamehash}{e6b54eefbf262951d012e377485751e8}
+      \strng{authorbibnamehash}{e6b54eefbf262951d012e377485751e8}
+      \strng{authornamehash}{99fb9acb4b33d7353abc9e549b7e9d95}
+      \strng{authorfullhash}{e6b54eefbf262951d012e377485751e8}
+      \field{extraname}{3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The design of thermoacoustic coolers involves an adequate modeling of the thermoacoustic core's performance, which requires, in particular, a precise knowledge of their thermo-physical properties. Materials such as wire mesh stacks, foams, or compressed fibrous media are hard to describe, and their thermo-physical properties are rarely well enough quantified. Moreover, the classical linear thermoacoustic theory is not sufficient to accurately describe the performance of these materials. This paper deals with the experimental performance characterization of various materials for thermoacoustic heat pumping. A dedicated experimental test-bench has been specially developed, which is composed of two loudspeakers placed at opposite ends of a waveguide containing the porous material and a feedback loop to control the acoustic field in the porous material. Its originality is attributable to the possibility of identifying the optimal acoustic field, specific to each material, that maximizes the temperature difference at the ends of the material. Moreover, a specific protocol is implemented to access and compare the thermoacoustic heat flux through various materials at these optimal acoustic fields. Comparison of the experimental and theoretical results shows a reasonable agreement.}
+      \field{day}{1}
+      \field{issn}{0001-4966, 1520-8524}
+      \field{journaltitle}{The Journal of the Acoustical Society of America}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{5}
+      \field{title}{Test-bench for the experimental characterization of porous material used in thermoacoustic refrigerators}
+      \field{urlday}{28}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{volume}{152}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2804\bibrangedash 2815}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1121/10.0015051
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/jasa/article/152/5/2804/2839844/Test-bench-for-the-experimental-characterization
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/jasa/article/152/5/2804/2839844/Test-bench-for-the-experimental-characterization
+      \endverb
     \endentry
     \entry{hireche_experimental_2020}{article}{}
       \name{author}{7}{}{%
@@ -2712,29 +2791,6 @@
       \verb{url}
       \verb https://pubs.aip.org/jasa/article/157/2/833/3334199/Gravity-effects-in-a-compact-thermoacoustic-cavity
       \endverb
-    \endentry
-    \entry{ANR_thermo-acoustic_2019}{online}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The goal of the project {TACOT} is to demonstrate the applicability of thermoacoustics for refrigeration in the automotive field. It brings together Groupe {PSA} and four {CNRS} research laboratories (Institut P’, {LAUM}, {LIMSI}, {LMFA}), and is organized into three challenges. The first challenge consists in designing, manufacturing and assessing the performance of a compact thermoacoustic device with one thermoacoustic core. The originality of the device comes from the use of two acoustic sources that yields its compactness. The device will be designed using available simulation tools that are based on the linear uni-dimensional theory of thermoacoustics and that can predict a steady state behavior of the device for one set of entry conditions. Due to the limiting hypotheses of these tools, it is expected that the performance of the prototype will be lower than the ones calculated by the model. It is therefore necessary to limit this discrepancy by assessing the performance of the device in order to better quantify the complexity of flow movement and heat transfer encountered in such a compact device. Simultaneous fundamental studies are proposed in a second challenge to improve the understanding and description of the phenomena that limit the efficiency of the device. Both experimental and numerical studies will be led to investigate about - acoustical characteristics of thermoacoustic core (regenerator plus heat exchangers) of complex shape, especially at high acoustic levels and with temperature gradient, - end effects and matching conditions between the different elements of the device: Source and cavity, regenerator and heat exchangers, heat exchangers and cavity ; these effects will be investigated experimentally both from a fluid dynamics and from a heat transfer point a view, - phenomenological analysis and numerical simulation of complex flows that can appear as consequences of high amplitudes, complex geometries and thermoacoustic heat pumping in each element of the compact device. In the third challenge the evolution towards a performant compact dual thermoacoustic core heat-pump device will be investigated. The aim of this last challenge is to bring thermoacoustic compact devices to a competitive positioning as compared to in-use technologies. For this purpose, the results of challenges 1 and 2 will be used to propose an evolution of the thermoacoustic core towards higher performance. Also studies on a new architecture of acoustic source will be initiated. This new source architecture should allow to use two thermoacoustic cores, thus increasing the heat pumped from the cold source. These three challenges should lead to the proposal of a complete dual core refrigerator that could be a viable substitute for traditional air conditioning systems in the automotive industry both in terms of size and performance.}
-      \field{langid}{english}
-      \field{title}{Thermo-Acoustic Cooler for On road Transportation}
-      \field{titleaddon}{Agence nationale de la recherche}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
-      \field{urlyear}{2022}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb Snapshot:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\AL62UI49\\Project-ANR-17-CE06-0007.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://anr.fr/Project-ANR-17-CE06-0007
-      \endverb
-      \verb{url}
-      \verb https://anr.fr/Project-ANR-17-CE06-0007
-      \endverb
-      \keyw{Refrigerator,Two sources,Agence nationale de la recherche,Presentation,Project definition}
     \endentry
     \entry{poese_thermoacoustic_2004}{inproceedings}{}
       \name{author}{5}{}{%
@@ -2964,8 +3020,8 @@
       \strng{authorbibnamehash}{96bf8aa5164901076b4b9aeda80821a7}
       \strng{authornamehash}{96bf8aa5164901076b4b9aeda80821a7}
       \strng{authorfullhash}{96bf8aa5164901076b4b9aeda80821a7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{french}
@@ -2978,6 +3034,80 @@
       \verb Poignand - Étude théorique et expérimentale d'un réfrigérateu.pdf:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\ACGKKR8T\\Poignand - Étude théorique et expérimentale d'un réfrigérateu.pdf:application/pdf
       \endverb
       \keyw{Thermoacoustics,Refrigerator}
+    \endentry
+    \entry{poignand_optimal_2007}{article}{}
+      \name{author}{6}{}{%
+        {{hash=96bf8aa5164901076b4b9aeda80821a7}{%
+           family={Poignand},
+           familyi={P\bibinitperiod},
+           given={Gaëlle},
+           giveni={G\bibinitperiod}}}%
+        {{hash=729b5aaa25940d82e41a74e7124b63bc}{%
+           family={Lihoreau},
+           familyi={L\bibinitperiod},
+           given={Bertrand},
+           giveni={B\bibinitperiod}}}%
+        {{hash=556b71ea9085d3c8ee14052aa45a732e}{%
+           family={Lotton},
+           familyi={L\bibinitperiod},
+           given={Pierrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=52c582e7cb0019a60cd51afe3e74a431}{%
+           family={Gaviot},
+           familyi={G\bibinitperiod},
+           given={Etienne},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c82f0e067f7c8af93d487a9835a21b96}{%
+           family={Bruneau},
+           familyi={B\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b0c01eba708060292e8a54969755f5de}{%
+           family={Gusev},
+           familyi={G\bibinitperiod},
+           given={Vitaly},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d388f3ade9328f7e1bed630b5cc089f}
+      \strng{fullhash}{42f6772b1be050e4ffc77055e3cdd946}
+      \strng{bibnamehash}{5d388f3ade9328f7e1bed630b5cc089f}
+      \strng{authorbibnamehash}{5d388f3ade9328f7e1bed630b5cc089f}
+      \strng{authornamehash}{5d388f3ade9328f7e1bed630b5cc089f}
+      \strng{authorfullhash}{42f6772b1be050e4ffc77055e3cdd946}
+      \field{extraname}{4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Thermoacoustic refrigerators have been developed during the last 15 years, employing quasistanding resonant acoustic waves inside ﬂuid-ﬁlled cavities to transfer heat along a stack region. Because higher eﬃciency can be reached when a signiﬁcant travelling wave component exists in the resonator, speciﬁc resonant thermoacoustic devices have been designed allowing to adjust more or less the ratio of travelling and standing wave components. However, the acoustic pressure ﬁeld and the particle velocity ﬁeld do not appear to be the optimal ones, for the thermal quantities of interest. Thus, it is the aim of the paper to present a new kind of thermoacoustic standing wave-like device which allows to control easily and independently the pressure ﬁeld and the particle velocity ﬁeld, after investigating the optimal acoustic ﬁeld, in the stack region, for the main parameters of interest, i.e. the temperature gradient, the thermoacoustic heat ﬂow and the coeﬃcient of performance.}
+      \field{issn}{0003682X}
+      \field{journaltitle}{Applied Acoustics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{Applied Acoustics}
+      \field{title}{Optimal acoustic fields in compact thermoacoustic refrigerators}
+      \field{urlday}{28}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{volume}{68}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{642\bibrangedash 659}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.apacoust.2006.03.009
+      \endverb
+      \verb{file}
+      \verb Poignand et al. - 2007 - Optimal acoustic fields in compact thermoacoustic .pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\6AZS7JKW\\Poignand et al. - 2007 - Optimal acoustic fields in compact thermoacoustic .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0003682X06000697
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0003682X06000697
+      \endverb
     \endentry
     \entry{fontbonne_postprocessing_2025}{online}{}
       \name{author}{1}{}{%

@@ -1,26 +1,6 @@
 \chapter{Dispositif expérimental}\label{chap:DispositifExpe}
 \mylocaltoc
-
-%\vfill
-%\begin{figure}[!ht]
-%    \centering
-%    \external{fig_TOC_DispositifExpe}
-%%    \externalremake
-%    \input{../fig/TOC/TOC_DispositifExpe}
-%%    \caption{•}
-%%    \label{fig:•}
-%\end{figure}
-%\vfill
-
 \newpage
-
-%\vfill
-%{
-%\tikzsetfigurename{fig_TOC_DispositifExpe}
-%\input{../fig/TOC/TOC_DispositifExpe}
-%}
-%\vfill
-%\newpage
 
 \section{Introduction}\label{chap:IntroProtocExp}
 Après avoir brièvement rappelé les bases de fonctionnement des machines thermoacoustiques, il est temps de décrire le réfrigérateur support de cette thèse. Le choix de la géométrie, les paramètres hydrauliques du régénérateur utilisé, et enfin la chaîne d'excitation et d'acquisition sont présentés dans la section~\ref{chap:PresentationTacot} - \nameref{chap:PresentationTacot}. La deuxième partie présente les conditions expérimentales choisies ainsi que le protocole suivi pour chaque mesure dans la section~\ref{chap:ProtocolExpe} - \nameref{chap:ProtocolExpe}.
@@ -31,13 +11,15 @@ Après avoir brièvement rappelé les bases de fonctionnement des machines therm
 \section{Présentation du dispositif expérimental actuel}\label{chap:PresentationTacot}
 
 \subsection{Résultats déjà obtenus}\label{chap:PresTacot_ResultatsATE}
-\echaf{Quelques résultats. À mettre dans l'intro I ?} Au démarrage de cette thèse, le réfrigérateur existe déjà et sa caractérisation est publiée \cite{ramadan_design_2021}, et fait également l'objet d'études expérimentales~\cite{ramadan_experimental_2018, ramadan_experimental_2021} et  numériques~\cite{hireche_numerical_2019, hireche_experimental_2020, baltean_gravity_2025}. 
+\echaf{Quelques résultats. À mettre dans l'intro I ?} 
 
-Les expériences réalisées avant le début de cette thèse sont faite en utilisant un noyau dont la porosité est $\Phi=\qty{75}{\percent}$. Il est immergé dans un mélange de gaz pressurisé à \qty{40}{\bar} et composé de \qty{70}{\percent} d'hélium et de \qty{30}{\percent} d'argon, car dans ces proportions le nombre de Prandtl du mélange est minimum \cite{belcher_working_1999}. Le modèle linéaire 1D réalisé avec le logiciel \textsc{DeltaEC} prédit les meilleurs performances à la fréquence de résonance du système $f=\qty{47}{\hertz}$, pour laquelle la longueur d'onde vaut $\lambda=\qty{11.7}{\meter}$, validant une des hypothèse de compacité acoustique du modèle de Swift. C'est par ailleurs le seul point de fonctionnement où l'impédance électrique est supérieure à la limite basse admise par l'amplificateur, soit \qty{2}{\ohm}. Le déphasage inter-source est fixé à $\varphi_{2-1}=\ang{-60}$ pour toutes les expériences, car il s'agit de la valeur optimale d'après les simulations et ce qui est confirmé par des expériences préliminaires.
+Au démarrage de cette thèse, le réfrigérateur existe déjà puisque sa conception s'est faite dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Sa caractérisation est publiée \cite{ramadan_design_2021}, et il fait également l'objet d'études expérimentales~\cite{ramadan_experimental_2018, ramadan_experimental_2021, poignand_test-bench_2022} \echaf{papier Gaelle caractérisation matériaux poreux ?} et  numériques~\cite{hireche_numerical_2019, hireche_experimental_2020, baltean_gravity_2025}. 
 
-Dans cet article, il est montré qu'à ces fréquence et déphasage inter-sources, et à une amplitude $DR=\nicefrac{p_1}{p_0}=\qty{3.6}{\percent}$, une puissance d'alimentation des sources $\dot W_e=\qty{193}{\watt}$ et consommée, une quantité de chaleur de $\dot Q_f=\qty{290}{\watt}$ est extraite à la source froide et la température $T_a=\qty{15}{\degreeCelsius}$ est atteinte. Le coefficient de performance à ce point de fonctionnement est $\COP=\nicefrac{\dot Q_f}{\dot W_e}=\num{1.5}$, soit \qty{15}{\percent} du coefficient de performance de Carnot.\smallskip
+Les expériences réalisées avant le début de cette thèse sont faite en utilisant un noyau dont la porosité est $\Phi=\qty{75}{\percent}$. Il est immergé dans un mélange de gaz pressurisé à \qty{40}{\bar} et composé de \qty{70}{\percent} d'hélium et de \qty{30}{\percent} d'argon, car dans ces proportions le nombre de Prandtl du mélange est minimum \cite{belcher_working_1999}. Le modèle linéaire 1D réalisé avec le logiciel \textsc{DeltaEC} prédit les meilleurs performances à la fréquence de résonance du système $f=\qty{47}{\hertz}$, pour laquelle la longueur d'onde vaut $\lambda=\qty{11.7}{\meter}$, validant ainsi une des hypothèse de compacité acoustique du modèle de Swift. C'est par ailleurs le seul point de fonctionnement où l'impédance électrique de la source acoustique principale est supérieure à la limite basse admise par l'amplificateur qui l'alimente et qui vaut \qty{2}{\ohm}. Le déphasage inter-source est fixé à $\varphi_{2-1}=\ang{-60}$ pour toutes les expériences, car il s'agit de la valeur optimale d'après les simulations et ce qui est confirmé par des expériences préliminaires.
 
-Cependant, les résultats obtenus avant le démarrage de cette thèse montrent des écarts avec les prédictions de la théorie linéaire. Notamment, la température la plus basse mesurée se trouve au milieu du régénérateur et non pas à proximité de l'échangeur froid, comme le montre la figure~\ref{fig:ATE_ProfilsAX_5mm}. Enfin, et c'est le point de départ de cette thèse, la distribution transverse de température proche de ce même échangeur et tracée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm}  laisse supposer la présence d'une influence de la convection naturelle dans la machine. En effet, les expériences présentées dans l'article ont été réalisées avec la pompe à chaleur placée à l'horizontale, et les thermocouples situés dans le noyau maillent un plan vertical\footnote{Plus tard dans le manuscrit, cette orientation est définie comme étant l'orientation `\texttt{H1}'.}. La température augmente donc avec l'altitude, ce qui semble indiquer un impact de la gravité sur les températures dans la machine.
+Dans cet article, il est montré qu'à ces fréquence et déphasage inter-sources, et à une amplitude dont le \textit{drive ratio} vaut $DR=\nicefrac{p_1}{p_0}=\qty{3.6}{\percent}$, une puissance d'alimentation des sources $\dot W_e=\qty{193}{\watt}$ et consommée, une quantité de chaleur de $\dot Q_f=\qty{290}{\watt}$ est extraite à la source froide et la température $T_a=\qty{15}{\degreeCelsius}$ est atteinte. Le coefficient de performance à ce point de fonctionnement est $\COP=\nicefrac{\dot Q_f}{\dot W_e}=\num{1.5}$, soit \qty{15}{\percent} du coefficient de performance de Carnot.\smallskip
+
+Cependant, les résultats obtenus avant le démarrage de cette thèse montrent des écarts avec les prédictions de la théorie linéaire. Notamment, la température la plus basse mesurée se trouve au milieu du régénérateur et non pas à proximité de l'échangeur froid, comme le montre la figure~\ref{fig:ATE_ProfilsAX_5mm}. Enfin, et c'est le point de départ de cette thèse, la distribution transverse de température proche de ce même échangeur et tracée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm}  laisse supposer la présence d'un écoulement attribué à la convection naturelle dans la machine. En effet, les expériences présentées dans l'article ont été réalisées avec la pompe à chaleur placée à l'horizontale, et les thermocouples situés dans le noyau maillent un plan vertical\footnote{Plus tard dans le manuscrit, cette orientation est définie comme étant l'orientation `\texttt{H1}'.}. La température augmente donc avec l'altitude, ce qui semble indiquer un impact de la gravité sur les températures dans la machine.
 
 \begin{figure}[!ht]
     \centering
@@ -63,17 +45,31 @@ Cependant, les résultats obtenus avant le démarrage de cette thèse montrent d
 
 \subsection{Géométrie du réfrigérateur \textsc{Tacot}}
 \subsubsection{Cavité thermoacoustique}
-La pompe à chaleur a été dimensionnée et fabriquée dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Ce projet apporte beaucoup de contraintes, dont l'une des principales est la compacité. Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux (tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}), les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale usuellement utilisée en suivant les travaux de Poignand \textit{et al.} \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}. L'ajout d'une source acoustique secondaire dans la cavité thermoacoustique permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension, tel que réalisé dans les travaux de Poese \textit{et al.} \cite{poese_thermoacoustic_2004}. En plus de permettre une diminution du volume de la machine, utiliser une source secondaire offre plus de flexibilité qu'un résonateur sur la relation entre pression acoustique et vitesse particulaire, et facilite en particulier le ciblage du déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique. Un schéma général présente la géométrie de la pompe à chaleur sur la figure~\ref{fig:SchemaGeneralTACOT}, adapté de Ramadan \textit{et al.} \cite{ramadan_design_2021}. \smallskip
-
-Par ailleurs, le mélange de gaz contient de l'hélium très volatile, et qui plus est, à haute pression. La conception de la machine doit donc prendre en compte cette difficulté et l'appliquer dans le choix des dimensions du bâti, des joints toriques, et bien entendu des nombreuses traversées qui joignent l'intérieur et l'extérieur de la cavité. 
+Le projet \textsc{Tacot} apporte beaucoup de contraintes pour la conception du réfrigérateur, et l'une des principales est la compacité. Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}, les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. 
 
 \begin{figure}[!ht]
     \centering
     \external{fig_SchemaGeneralTACOT}
 %    \externalremake
     \input{../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex}
-    \caption{Schéma général du réfrigérateur \textsc{Tacot}. Le noyau thermoacoustique et le cône d'adaptation d'impédance sont mis en évidence.}
+    \caption{Schéma général du réfrigérateur \textsc{Tacot} extrait de \cite{ramadan_design_2021}. \textbf{(a)} agrandissement sur la boucle de rétroaction entre le noyau et le bâti de la machine, et \textbf{(b)} ensemble de la machine. Le noyau thermoacoustique et le cône d'adaptation d'impédance sont mis en évidence.}
     \label{fig:SchemaGeneralTACOT}
+\end{figure}
+
+Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale usuellement utilisée en suivant les travaux de Poignand \textit{et al.} \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}, et est présentée sur la figure~\ref{fig:SchemaGeneralTACOT}\textbf{(b)}. Dans ce cas, la boucle de rétroaction du guide d'onde se trouve tout autour du noyau placé au centre de la cavité thermoacoustique, ce que montre la figure~\ref{fig:SchemaGeneralTACOT}\textbf{(a)}.
+
+L'ajout d'une source acoustique secondaire au voisinage du noyau permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension, tel que réalisé dans les travaux de Poese \textit{et al.} \cite{poese_thermoacoustic_2004, poignand_thermoacoustic_2011, poignand_analysis_2013}. En plus de permettre une diminution du volume de la machine, utiliser une source secondaire offre plus de flexibilité qu'un résonateur sur la relation entre pression acoustique et vitesse particulaire, et facilite en particulier le ciblage du déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.\smallskip
+
+Par ailleurs, le mélange de gaz contient de l'hélium très volatile, et qui plus est, à haute pression. La conception de la machine doit donc prendre en compte cette difficulté et l'appliquer dans le choix des dimensions du bâti, des joints toriques, et bien entendu des nombreuses traversées qui joignent l'intérieur et l'extérieur de la cavité. 
+
+\begin{figure}[!ht]
+	\centering
+	\external{fig_TenuePressionStatique}
+	\externalremake
+	\input{../fig/fig_TenuePressionStatique/tex/fig_TenuePressionStatique}
+%	\includegraphics[width=.7\textwidth]{example-image}
+	\caption{Mesures de pression statique au cours du temps. \echaf{avec data du pc manip tacot}}
+	\label{fig:TenuePressionStatiqueTACOT}
 \end{figure}
 
 \subsubsection{Noyau thermoacoustique}
@@ -109,7 +105,7 @@ Tout comme la machine qui le contient, le noyau adopte une géométrie cylindriq
     \label{fig:TacotPhotosNoyau}
 \end{figure}
 
-Ces trois éléments sont ensuite insérés dans un tube cylindrique qui se fixe sur le bâti de la machine pour maintenir l'espace nécessaire à la boucle de rétroaction, ce que montre la figure~\ref{fig:PhotoNoyau}.
+Ces trois éléments sont ensuite insérés dans un tube cylindrique qui se fixe sur le bâti de la machine pour maintenir l'espace nécessaire à la boucle de rétroaction acoustique, ce que montre la figure~\ref{fig:PhotoNoyau}.
 
 \begin{figure}[!ht]
     \centering
@@ -175,9 +171,9 @@ où $\mathbf u_{\sf ref}$ est le débit de filtration d'un fluide qui s'écoule 
 \end{equation}
 et donne des résultats satisfaisants pour le développement de modèles \cite{hireche_experimental_2020, baltean_gravity_2025}.\smallskip
 
-Toutefois, l'empillement de tissus crée un milieu multicouche qui n'est certainement pas isotrope, et la définition de la perméabilité dans l'équation de Darcy considère un écoulement unidirectionnel, stationnaire et suffisamment lent \cite{dullien_porous_1992}. \echaf{ vraiment utile de rentrer dans les détails d'un modèle multi couche de la permeabilité ? }\cite{tan_new_2024}\medskip
+\echaf{Toutefois, la définition de la perméabilité dans l'équation de Darcy considère un écoulement unidirectionnel, stationnaire et suffisamment lent \cite{dullien_porous_1992}. De plus, l'empillement de tissus crée un milieu multicouche qui n'est certainement pas isotrope, Ce qui nécessite de considérer le caractère tensoriel de cette quantité.\echaf{ vraiment utile de rentrer dans les détails d'un modèle multi couche de la permeabilité ? }\cite{tan_new_2024}}\medskip
 
-Dans la réalité, les ondes acoustiques en jeu dans les machines thermoacoustiques ne sont ni totalement \og à ondes stationnaires \fg{} (voir le cycle thermodynamique sur la figure~\ref{fig:CycleBrayton}) ni tout à fait \og à ondes progressives \fg{} (dont le cycle est présenté sur la figure~\ref{fig:CycleStirling}). Il a d'ailleurs été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimale pour une pression acoustique donnée~\cite{poignand_etude_2006, poignand_thermoacoustic_2011}. Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque la vitesse acoustique atteint une amplitude donnée par
+Dans la réalité, les ondes acoustiques en jeu dans les machines thermoacoustiques ne sont ni totalement \og à ondes stationnaires \fg{} (voir le cycle thermodynamique sur la figure~\ref{fig:CycleBrayton}) ni tout à fait \og à ondes progressives \fg{} (dont le cycle est présenté sur la figure~\ref{fig:CycleStirling}). Il a d'ailleurs été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimale pour une pression acoustique donnée~\cite{poignand_etude_2006, poignand_optimal_2007, poignand_thermoacoustic_2011}. Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque la vitesse acoustique atteint une amplitude donnée par
 
 \begin{subequations}
 	\begin{align}
@@ -312,10 +308,14 @@ L'instrumentation utilisée est basée sur celle conçue au début du projet \ci
 %%	\externalremake
 %	\input{../fig/•}
 %	\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/•}};}
-\includegraphics[width=.7\textwidth]{example-image-a}
+\includegraphics[width=.7\textwidth]{example-image}
 	\caption{Photographie du banc de mesure complet}
 	\label{fig:BancMesureComplet}
 \end{figure}
+
+\echaf{reprendre la relecture d'ici}
+
+
 \subsubsection{Chaîne d'excitation}
 La chaîne d'excitation est présentée. Elle n'est pas modifiée durant cette thèse, et se compose d'un générateur de fonction à deux canaux (TekTronix, AFG3022). Chaque canal est ensuite connecté à un amplificateur pour chaque source acoustique. La source principale (RIX Industries, 1S241M) est alimentée par un amplificateur QSC PLD4.5, et la source secondaire (Peerless, GBS135F) par un amplificateur Yamaha P3500S.\medskip
 

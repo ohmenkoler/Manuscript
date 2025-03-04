@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '_main_.blg'
-[204] biber-MSWIN64:340> INFO - === 
-[285] Biber.pm:419> INFO - Reading '_main_.bcf'
-[547] Biber.pm:979> INFO - Found 63 citekeys in bib section 0
-[579] Biber.pm:4419> INFO - Processing section 0
-[603] Biber.pm:4610> INFO - Looking for bibtex file '../bib/phd_bib.bib' for section 0
-[710] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1102] bibtex.pm:1519> INFO - Found BibTeX data source '../bib/phd_bib.bib'
-[1851] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1851] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1851] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'fr-FR'
-[1851] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
-[1942] bbl.pm:660> INFO - Writing '_main_.bbl' with encoding 'UTF-8'
-[2008] bbl.pm:763> INFO - Output to _main_.bbl
-[2014] Biber.pm:131> WARN - ISBN '978-0-470-74661-5 978-0-470-74733-9' in entry 'allard_propagation_2009' is invalid - run biber with '--validate_datamodel' for details.
-[2014] Biber.pm:133> INFO - WARNINGS: 1
+[198] biber-MSWIN64:340> INFO - === 
+[262] Biber.pm:419> INFO - Reading '_main_.bcf'
+[518] Biber.pm:979> INFO - Found 65 citekeys in bib section 0
+[552] Biber.pm:4419> INFO - Processing section 0
+[577] Biber.pm:4610> INFO - Looking for bibtex file '../bib/phd_bib.bib' for section 0
+[670] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1054] bibtex.pm:1519> INFO - Found BibTeX data source '../bib/phd_bib.bib'
+[1821] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1821] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1821] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'fr-FR'
+[1821] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
+[1924] bbl.pm:660> INFO - Writing '_main_.bbl' with encoding 'UTF-8'
+[1992] bbl.pm:763> INFO - Output to _main_.bbl
+[1998] Biber.pm:131> WARN - ISBN '978-0-470-74661-5 978-0-470-74733-9' in entry 'allard_propagation_2009' is invalid - run biber with '--validate_datamodel' for details.
+[1998] Biber.pm:133> INFO - WARNINGS: 1

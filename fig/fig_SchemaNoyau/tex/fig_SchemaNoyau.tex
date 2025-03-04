@@ -1,12 +1,12 @@
-\begin{tikzpicture}[scale=.2]
-	\def\rCHX{14cm};
+\begin{tikzpicture}[scale=1/3]
+	\def\rCHX{7cm};
 	\def\lCHX{.7cm};
-	\def\rREG{14.8cm};
+	\def\rREG{7.4cm};
 	\def\lREG{3.9cm};
-	\def\rAHX{11cm};
+	\def\rAHX{5.5cm};
 	\def\lAHX{2.3cm};
-	\def\rRIX{10.8cm};
-	\def\rCONE{16.4cm};
+	\def\rRIX{5.4cm};
+	\def\rCONE{8.2cm};
 	
 	
 	\fill[pattern=horizontal lines,pattern color=MatlabOrange,draw=black] (0,-\rAHX) rectangle ++(\lAHX,2*\rAHX);
@@ -43,13 +43,13 @@
 	 
 	  \draw[<-, dashed] ({-(\lAHX+\lREG+\lCHX)/2},{\rCONE+\lAHX}) node[left]{$\mathbf e_x$} -- ({(\lAHX+\lREG+\lCHX)*1.5},{\rCONE+\lAHX});
 	  \draw[|-] (0,{\rCONE+\lAHX}) -- ++(\lAHX,0) node[midway,above=1pt, text=MatlabOrange]{\num{2.3}};
-	  \draw[|-] (\lAHX,{\rCONE+\lAHX}) -- ++(\lREG,0) node[midway,above=8pt]{\num{3.9}};
+	  \draw[|-] (\lAHX,{\rCONE+\lAHX}) -- ++(\lREG,0) node[midway,above=1pt]{\num{3.9}};
 	  \draw[|-|] ({\lAHX+\lREG},{\rCONE+\lAHX}) -- ++(\lCHX,0) node[midway,above=1pt, text=MatlabBlue]{\num{.7}};
 	  
 	  \draw[->, dashed] (-\lAHX,-1.1*\rCONE) -- ++(0,{2.2*\rCONE+\lAHX}) node[above]{$\mathbf e_r$};
 	  \draw[|-|] (-\lAHX,0) node[left]{\num{0}} -- (-\lAHX,\rAHX) node[left, text=MatlabOrange]{\num{5.5}};
-	  \draw[-|] (-\lAHX,0) -- (-\lAHX,\rREG) node[left]{\num{7.4}};
-	  \draw[-|] (-\lAHX,0) -- (-\lAHX,\rCHX) node[below left, text=MatlabBlue]{\num{7}};
+	  \draw[-|] (-\lAHX,0) -- (-\lAHX,\rREG) node(ra)[left]{\num{7.4}};
+	  \draw[-|] (-\lAHX,0) -- (-\lAHX,\rCHX) node[right, text=MatlabBlue]{\num{7}};
 	  
 	
 \end{tikzpicture}

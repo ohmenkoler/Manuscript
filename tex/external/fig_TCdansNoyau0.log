@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  4 MAR 2025 13:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  4 MAR 2025 14:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2812,8 +2812,7 @@ Missing character: There is no ; in font nullfont!
 altop \@gobble }{}}
 {C:/Users/mfontbon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program
  Files/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}{C:/Program Files/MiKTeX/fonts
-/enc/dvips/iwona/ts1-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/s
-y-iwona.enc}])
+/enc/dvips/iwona/ts1-iwona.enc}])
 
 LaTeX Warning: Reference `fig:SchemaGeneralTACOT' on page 19 undefined on input
  line 335.
@@ -2837,7 +2836,7 @@ t line 397.
 LaTeX Warning: Reference `fig:TACOTSuspendu_Palans' on page 20 undefined on inp
 ut line 397.
 
-<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=63, 126.42508pt
+<../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg, id=62, 126.42508pt
  x 94.84251pt>
 File: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped.jpg Graphic file (
 type jpg)
@@ -2845,7 +2844,7 @@ type jpg)
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Machine_horizBetter_cropped
 .jpg  used on input line 404.
 (pdftex.def)             Requested size: 195.89455pt x 146.96094pt.
-<../fig/fig_SystemeAccroche/Palans.jpg, id=64, 4047.12pt x 3035.34pt>
+<../fig/fig_SystemeAccroche/Palans.jpg, id=63, 4047.12pt x 3035.34pt>
 File: ../fig/fig_SystemeAccroche/Palans.jpg Graphic file (type jpg)
 <use ../fig/fig_SystemeAccroche/Palans.jpg>
 Package pdftex.def Info: ../fig/fig_SystemeAccroche/Palans.jpg  used on input l
@@ -3213,7 +3212,7 @@ LaTeX Warning: Reference `fig:SimuConvNat2D' on page 30 undefined on input line
 LaTeX Warning: Reference `fig:Comsol_ModeleSimplifie_Geometrie' on page 30 unde
 fined on input line 123.
 
-<../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png, id=71, 338.705
+<../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png, id=70, 338.705
 4pt x 301.6068pt>
 File: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png Graphic fi
 le (type png)
@@ -3245,7 +3244,7 @@ ined on input line 146.
 LaTeX Warning: Reference `fig:Comsol_AxiGeometrie_Vertical' on page 32 undefine
 d on input line 146.
 
-<../fig/fig_ConvNatComsol/DemiGeometrie_Horizontal.png, id=72, 227.4096pt x 198
+<../fig/fig_ConvNatComsol/DemiGeometrie_Horizontal.png, id=71, 227.4096pt x 198
 .9834pt>
 File: ../fig/fig_ConvNatComsol/DemiGeometrie_Horizontal.png Graphic file (type 
 png)
@@ -3253,7 +3252,7 @@ png)
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/DemiGeometrie_Horizontal.png 
  used on input line 156.
 (pdftex.def)             Requested size: 204.66675pt x 179.0834pt.
-<../fig/fig_ConvNatComsol/AxiGeometrie_Vertical.png, id=73, 227.4096pt x 198.98
+<../fig/fig_ConvNatComsol/AxiGeometrie_Vertical.png, id=72, 227.4096pt x 198.98
 34pt>
 File: ../fig/fig_ConvNatComsol/AxiGeometrie_Vertical.png Graphic file (type png
 )
@@ -4979,13 +4978,13 @@ nput line 36.
 LaTeX Warning: Reference `fig:ActiveControl_Teensy41' on page 62 undefined on i
 nput line 36.
 
-<../fig/fig_ActiveControl/ADAU1701.png, id=74, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=73, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 45.
 (pdftex.def)             Requested size: 149.87643pt x 142.26378pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=75, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=74, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
@@ -5140,7 +5139,7 @@ Annexe C.
 LaTeX Warning: Reference `fig:HPPeerless_WithAcc' on page i undefined on input 
 line 12.
 
-<../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png, id=76, 667.0521pt x 557.2
+<../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png, id=75, 667.0521pt x 557.2
 017pt>
 File: ../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png Graphic file (type pn
 g)
@@ -5456,18 +5455,17 @@ Package logreq Info: Writing requests to 'external/fig_TCdansNoyau0.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 78603 strings out of 474435
- 2004772 string characters out of 5751739
- 4340710 words of memory out of 5000000
- 99165 multiletter control sequences out of 15000+600000
+ 78634 strings out of 474435
+ 2004944 string characters out of 5751739
+ 4340425 words of memory out of 5000000
+ 99197 multiletter control sequences out of 15000+600000
  705898 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,22n,115p,4725b,2569s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb>
-Output written on external/fig_TCdansNoyau0.pdf (1 page, 58244 bytes).
+<C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb>
+Output written on external/fig_TCdansNoyau0.pdf (1 page, 42568 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
  266 words of extra memory for PDF output out of 10000 (max. 10000000)
 

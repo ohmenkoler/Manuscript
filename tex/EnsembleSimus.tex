@@ -189,9 +189,15 @@ En premier lieu, les phénomènes physiques considérés sont choisis de sorte �
 
 
 \subsection{Conditions aux frontières}
+\subsubsection{Thermiques}
 Toutes les parois sont considérées adiabatiques. Toutes ? Non, il reste encore des parois dont les conditions thermiques diffèrent. 
 
 Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixée à une température homogène sur la section, car c'est justement le gradient de température sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
+
+\echaf{ajouter étude paramètrique pour trouver -Qc=-Qth+Qchx}
+
+\subsubsection{Fluides}
+\echaf{abs matériau poreux car pas de license comsol + non-glissement partout par simplicité}
 
 \subsection{Résultats dans les zones d'intérêt}
 \subsubsection{Volume d'adaptation d'impédance}

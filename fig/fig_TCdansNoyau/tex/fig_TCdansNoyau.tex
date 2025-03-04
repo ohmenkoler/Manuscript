@@ -10,14 +10,14 @@
 	
 	
 	\fill[pattern=horizontal lines,pattern color=MatlabOrange,draw=black] (0,-\rAHX) rectangle ++(\lAHX,2*\rAHX);
-	\draw[MatlabOrange] (0,-\rCHX) node(AHX)[below left=1cm]{\'Echangeur ambiant};
+	\draw[MatlabOrange] (\lAHX/2,-\rCHX) node(AHX)[below=1cm, anchor=north east]{\'Echangeur ambiant};
 	\foreach \r in {-.9,0,.9}{
-		\draw[cyan] (-.15*\lREG,\r*\rAHX) node{\textbullet};
+		\draw[cyan] (-.15*\lREG,\r*\rAHX) node(TCahx\r){\textbullet};
 	}
 	\filldraw[draw=black,fill=gray!50!white] (0,\rAHX) rectangle (\lAHX,\rREG);		% côtés où l'eau circule
 	\filldraw[draw=black,fill=gray!50!white] (0,-\rAHX) rectangle (\lAHX,-\rREG);	%
 	
-	\draw[MatlabOrange,->] (AHX.east) to[out=0,in=-90] (\lAHX/2,-\rAHX);
+	\draw[MatlabOrange,->] (AHX.east) to[out=90,in=-90] (\lAHX/2,-\rAHX);
 	
 	\begin{scope}[xshift=\lAHX] % Reg
 		\fill[pattern=crosshatch,pattern color=gray,draw=black] (0,-\rREG) rectangle ++(\lREG,2*\rREG);
@@ -30,26 +30,29 @@
 	
 	\begin{scope}[xshift=\lAHX+\lREG] % CHX
 		\fill[pattern=horizontal lines,pattern color=MatlabBlue,draw=black] (0,-\rCHX) rectangle ++(\lCHX,2*\rCHX);
-		\draw[MatlabBlue] (\lCHX,-\rCHX) node(CHX)[below right=1cm]{\'Echangeur froid};
+		\draw[MatlabBlue] (\lCHX/2,-\rCHX) node(CHX)[below=1cm, anchor=north west]{\'Echangeur froid};
 		\foreach \r in {-.9,0,.9}{
-			\draw[cyan] (\lCHX+.15*\lREG,\r*\rCHX) node{\textbullet};
+			\draw[cyan] (\lCHX+.15*\lREG,\r*\rCHX) node(TCchx\r){\textbullet};
 		}
-		\draw[cyan] ({\lCHX+2.8*\lAHX},0) node{\textbullet};
+		\draw[cyan] ({\lCHX+2.8*\lAHX},0) node(TCrix){\textbullet};
 		
 	\filldraw[draw=black,fill=gray!50!white] (0,\rREG) rectangle (\lCHX,\rCHX);		% côtés où l'eau circule
 	\filldraw[draw=black,fill=gray!50!white] (0,-\rREG) rectangle (\lCHX,-\rCHX);	%
 	
 	\draw[MatlabYellow,rounded corners,very thick] (\lCHX,-\rCONE) -- ++(\lAHX,0) -- ++(2*\lAHX,{\rCONE-\rRIX}) -- ++(0,2*\rRIX) node(Cone){} -- ++(-2*\lAHX,{\rCONE-\rRIX})  -- ++(-\lAHX,0) -- cycle;
 	
-	\draw[MatlabBlue,->] (CHX.west) to[out=180,in=-90] (\lCHX/2,-\rCHX);
+	\draw[MatlabBlue,->] (CHX.west) to[out=90,in=-90] (\lCHX/2,-\rCHX);
 %	\draw[MatlabYellow,->] ($(Cone.center)+(3*\lAHX,3*\lAHX)$) node[anchor=south]{Cone d'adaptation d'impédance} to[out=-90,in=0] (Cone);
 	\end{scope}
 	
 	\draw[MatlabPurple,rounded corners,very thick] (0,-\rCONE) rectangle ++({\lAHX+\lREG+\lCHX},2*\rCONE);
 	
-	\draw[green!50!black] (0,0) node[left]{\begin{tabular}{rl}Source & \\ acoustique & $\leftarrow$ \\ secondaire &\end{tabular}};
-	\draw[green!50!black] ({\lCHX+\lREG+4*\lAHX},0) node[right]{\begin{tabular}{rl}	
-	 & Source \\ $\rightarrow$ & acoustique \\ & principale\end{tabular}};
+	\draw[green!50!black] (0,0) node(SA2)[left=1cm]{\begin{tabular}{r}Source \\ acoustique \\ secondaire \end{tabular}};
+	
+	\draw[green!50!black] ({\lCHX+\lREG+4*\lAHX},0) node(SA1)[right=1cm]{\begin{tabular}{l}	Source \\ acoustique \\ principale \end{tabular}};
+	\draw[green!50!black, <-] (SA1.west) -- ($(TCrix.east)+(.2*\lAHX,0)$);
+	
+	\draw[green!50!black, <-] (SA2.east) -- (TCahx0.west);
 	 
 	
 	 

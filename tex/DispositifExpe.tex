@@ -195,13 +195,25 @@ Ce cycle où les transformations sont isothermes est celui de Stirling, pour leq
 
 \begin{subequations}
 	\begin{align}
-		|v|_{\sf opt} &= \sqrt{\frac{4\omega\left(\echaf{kh+k_se_s}\right)\left(1-\Prandtl^2\right)\left(\echaf{1-\frac{\delta_\nu}{h}+\frac{\delta_\nu^2}{2h^2}}\right)}{\delta_\kappa \rho_0 C_p \left(1-\Prandtl\sqrt{\Prandtl}\right)}}, & 	\label{eq:u_mag_opt_Gaelle}\\
+		|v|_{\sf opt} &= \sqrt{\frac{4 \omega (kh+k_se_s) \left(1-\Prandtl^2\right)\left(1-\frac{\delta_\nu}{h}+\frac{\delta_\nu^2}{2h^2}\right)}{\delta_\kappa \rho_0 C_p \left(1-\Prandtl\sqrt{\Prandtl}\right)}}, & 	\label{eq:u_mag_opt_Gaelle}\\
 		\intertext{et un déphasage écrit}
-		\angle v_{\sf opt} &= \arctan\left[-\frac{1+\sqrt{\Prandtl}-\echaf{\frac{\delta_\nu}{h}}}{1-\big(1-\echaf{\frac{\delta_\nu}{h}}\big)\sqrt{\Prandtl}}\right]+n \pi, & n \in \mathbb{Z}.	\label{eq:u_arg_opt_Gaelle}
+		\angle v_{\sf opt} &= \arctan\left[-\frac{1+\sqrt{\Prandtl}-\frac{\delta_\nu}{h}}{1-\big(1-\frac{\delta_\nu}{h} \big)\sqrt{\Prandtl}}\right]+n \pi, & n \in \mathbb{Z}.	\label{eq:u_arg_opt_Gaelle}
 	\end{align}
 	\label{eq:u_opt_Gaelle}
 \end{subequations}
-\echaf{Remplacer $kh+k_s e_s$ par $\Phi k + (1-\Phi)k_s k_{s,frac}$ ? $\frac{\delta_\nu}{h}$ par $\frac{\delta_\nu}{r_h}$ ? -> redériver pour régénérateur}
+%\echaf{Remplacer $kh+k_s e_s$ par $\Phi k + (1-\Phi)k_s k_{s,frac}$ ? $\frac{\delta_\nu}{h}$ par $\frac{\delta_\nu}{r_h}$ ? -> redériver pour régénérateur}
+
+Pour un régénérateur dans lequel les processus sont isothermes, ces équations sont modifiées et s'écrivent \echaf{détailler}
+
+\begin{subequations}
+	\begin{align}
+		|v|_{\sf opt} &= \sqrt{\frac{2 \omega k_s(1-\Phi)}{\rho_0 C_p \IM[g_D]}},\label{eq:u_mag_opt_reg_Gaelle} \\
+		\intertext{et}
+		\angle v_{\sf opt} &= \arctan\left[-\frac{\IM[g]}{\RE[g]}\right],
+	\end{align}
+\end{subequations}
+avec $g_D = \frac{f_\kappa + \Prandtl f_\nu^*}{(1-\Prandtl^2)|1-f_\nu^*|^2}$ et $g = \frac{f_\kappa-f_\nu^*}{(1+\Prandtl)(1-f_\nu^*)}$.
+
 
 Au final, les dimensions du régénérateur sont résumés dans le tableau~\ref{tab:GeometrieTAC}, et les paramètres du fluides pour les points de fonctionnement du \textsc{Tacot}, dans le tableau~\ref{tab:ParamHydrauTAC}.
 

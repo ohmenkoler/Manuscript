@@ -1,23 +1,23 @@
-\chapter{Simulations réalisées}\label{chap:SimusRealisees}
+\chapter{\'Etudes théoriques et numériques}\label{chap:SimusRealisees}
 \mylocaltoc
 
 \section{Introduction}
 Dans ce chapitre, différents moyens de comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage sont expliqués. Tout d'abord, une analyse globale est réalisées dans la section~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim}. Les nombres adimensionnels utilisés dans la littérature pour évaluer la présence de convection naturelle y sont présentés et calculés. Ensuite, un modèle par éléments finis du régime stationnaire est développé dans la section~\ref{chap:FEM} - \nameref{chap:FEM} pour prendre en compte plus de paramètres d'étude. Enfin, un modèle analytique temporel du régime transitoire est présenté dans la section~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}.
 
-\section{\'Etude simplifiée et nombres adimensionnels}\label{chap:NbrAdim}
+\section{Concepts de convection naturelle et nombres adimensionnels}\label{chap:NbrAdim}
 Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géométries, du type de convection naturelle rencontré, de la porosité, etc. Des études hydrodynamiques sont menées pour aider à l'interprétation des mesures de température. \medskip
 
-Tout d'abord, deux étude très simplifiées sont réalisées pour une cavité 2D différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Ces études doivent permettre l'obtention d'ordres de grandeurs des quantité d'intérêt, en particulier le flux de chaleur $Q_{conv}$ qui agit comme une charge thermique sur le côté froid du noyau thermoacoustique. \smallskip
+Tout d'abord, deux étude très simplifiées sont réalisées pour une cavité 2D différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Ces études doivent permettre l'obtention d'ordres de grandeurs des quantité d'intérêt, en particulier le nombre de Rayleigh $\Rayleigh$ qui indique si un écoulement fluide causé par la convection naturelle peut être visible dans une configuration. \smallskip
 
 Ensuite, des simulations par éléments finis de cette cavité et sur le régénérateur sur le logiciel \textsc{Comsol} Multiphysics\textss\textregistered permettent d'estimer les lignes de courants dans la cellule et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid, en plus de déterminer des paramètres clés pour la compréhension des phénomènes thermiques en jeu.
 
 %\subsection{\'Etudes simplifiées}
 \subsection{Sans acoustique}
-Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, une étude très simplifiée dans une cavité rectangulaire en 2D et représentée sur les figures~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(a)} et {\color{MatlabOrange}(b)} est menée. 
+Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, une étude très simplifiée dans une cavité rectangulaire en 2D et représentée sur les figures~\ref{fig:SimuConvNat2D}{\color{MatlabBlue}(a)} et {\color{MatlabBlue}(b)} est menée. 
 
-Dans la première sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(a)}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.
+Dans la première sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabBlue}(a)}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.
 
-Dans la seconde sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(b)}, ce sont cette fois les sol et plafond qui sont fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos pour lesquels la température est $T_\infty$. Dans cette configuration, favorable a priori à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il s'établit des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre 650 et 1700 pour des parois horizontales à température fixe \cite{getling_rayleigh-benard_1998}. En dessous de cette valeur critique, seule la conduction thermique dans le fluide est à considérer. Le gaz s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:SimuConvNat2D}{\color{MatlabOrange}(b)} qui ne représente qu'une illustration grossière du mouvement du fluide. Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
+Dans la seconde sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabBlue}(b)}, ce sont cette fois les sol et plafond qui sont fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos pour lesquels la température est $T_\infty$. Dans cette configuration, favorable a priori à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il s'établit des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre 650 et 1700 pour des parois horizontales à température fixe \cite{getling_rayleigh-benard_1998}. En dessous de cette valeur critique, seule la conduction thermique dans le fluide est à considérer. Le gaz s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:SimuConvNat2D}{\color{MatlabBlue}(b)} qui ne représente qu'une illustration grossière du mouvement du fluide. Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
 
 \begin{figure}[!ht]
     \centering
@@ -118,8 +118,8 @@ avec $h$ le coefficient d'échange convectif à déterminer.\bigskip
 
 Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTemporel} doivent également être évalués par ces équations.
 
-\section{\'Elements finis}\label{chap:FEM}
-\subsection{Géométrie}
+\section{Simulations par éléments finis}\label{chap:FEM}
+\subsection{Géométrie du problème}
 Le modèle 2D simplifié d'une cavité différentiellement chauffée présentée sur la figure~\ref{fig:SimuConvNat2D} ne prend pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis \textsc{Comsol} Multiphysics\textss\textregistered grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.
 
 \begin{figure}[!ht]
@@ -183,20 +183,35 @@ Les trois domaines formant la géométrie, c'est-à-dire le cône d'adaptation d
     \label{fig:SuperpositionComsol}
 \end{figure}
 
-En premier lieu, les phénomènes physiques considérés sont choisis de sorte à conserver un modèle simple. Pour cette raison, seuls des volumes  de solides pleins et de gaz sont considérés dans le modèle complet. Ces domaines sont couplés, et l'interface physique \texttt{Heat transfer in Solids and Fluids (ht)} est appliqué à tous les volumes. Les domaines correspondant au régénérateur et à son enceinte et sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cependant, ce modèle ne prend pas en compte de simulation de mécanique des fluides, et pour prendre la gravité et le mouvement du fluide causé par la convection naturelle en compte dans le modèle fluide, et il est nécessaire d'ajouter un modèle d'écoulement \texttt{laminar flow (spf)}. Couplé par la multiphysique \texttt{Nonisothermal flow (intf)} au modèle thermique, le modèle des transferts thermiques dans le noyau est possible.   
+Le but de ce modèle est de simuler le plus simplement possible le comportement thermique du réfrigérateur. Pour cela, un modèle purement thermique équivalent est développé sur la géométrie réduite présentée.
+
+Pour conserver un modèle simple, seuls des volumes de solides non-poreux et de gaz sont considérés dans le modèle complet. Ces domaines sont couplés par l'interface multiphysique \texttt{Nonisothermal flow (intf)}, avec l'interface physique \texttt{Heat transfer in Solids and Fluids (ht)} pour traiter ces questions de transferts thermiques dans tous les volumes. Les domaines correspondant au régénérateur et à son enceinte et sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cependant, ce modèle ne prend pas en compte de simulation de mécanique des fluides, et pour prendre la gravité et le mouvement du fluide causé par la convection naturelle en compte dans le modèle fluide, et il est nécessaire d'ajouter un modèle d'écoulement \texttt{laminar flow (spf)}.
+
+Pour toutefois prendre en compte la conductivité anisotrope dûe à l'empilement de disques de tissus métalliques, la conduction dans le régénérateur est modélisée par une matrice de conductivité notée $\mathbf k_{\sf tissus}$ et écrite
+
+\begin{equation}
+	\mathbf k_{\sf tissus} = \begin{bmatrix}
+		\dfrac{k_{\sf inox}}{10} & 0 & 0 \\
+		0 & 2\dfrac{k_{\sf inox}}{10} & 0 \\
+		0 & 0 & 2\dfrac{k_{\sf inox}}{10}
+	\end{bmatrix}.
+	\label{eq:ConductiviteTensiorielle}
+\end{equation}
+
+
 
 \subsubsection{Ajout d'un modèle de matériau poreux}
 
 
 \subsection{Conditions aux frontières}
-\subsubsection{Thermiques}
+\subsubsection{Modèle thermiques}
 Toutes les parois sont considérées adiabatiques. Toutes ? Non, il reste encore des parois dont les conditions thermiques diffèrent. 
 
 Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixée à une température homogène sur la section, car c'est justement le gradient de température sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
 
 \echaf{ajouter étude paramètrique pour trouver -Qc=-Qth+Qchx}
 
-\subsubsection{Fluides}
+\subsubsection{Modèle fluides}
 \echaf{abs matériau poreux car pas de license comsol + non-glissement partout par simplicité}
 
 \subsection{Résultats dans les zones d'intérêt}

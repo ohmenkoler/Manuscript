@@ -1,4 +1,4 @@
-data = readtable('RegenOnly_u_opt_doubleincplot.txt');
+data = readtable('RegenOnly_new.txt');
 
 %%
 % data_COP = [[1e-4 -15 0] ; table2array(data(4:end,[1 2 7]))];
@@ -7,7 +7,17 @@ data = readtable('RegenOnly_u_opt_doubleincplot.txt');
 
 data_COP = table2array(data(:,[1 2 7]));
 data_DeltaT = table2array(data(:,[1 2 6]));
+    data_DeltaT(:,3) = -data_DeltaT(:,3);
 data_Qth = table2array(data(:,[1 2 5]));
+
+%%
+COP_b = data_COP(1:10:end,:);
+DeltaT_b = data_DeltaT(1:10:end,:);
+Qth_b = data_Qth(1:10:end,:);
+
+save("data_DeltaEC_u_opt_COP_noReshape.txt",'COP_b','-ascii')
+save("data_DeltaEC_u_opt_DeltaT_noReshape.txt",'DeltaT_b','-ascii')
+save("data_DeltaEC_u_opt_Qth_noReshape.txt",'Qth_b','-ascii')
 
 %%
 data_COP_r = data_COP;
@@ -36,33 +46,46 @@ arg_u_e = arg_u(1:10:end);
 [MAG_u, ARG_u] = meshgrid(mag_u_e,arg_u_e);
 
 %%
-COP_v = [reshape(COP_e,(21^2,1)];
+COP_v = [reshape(MAG_u,[21^2,1]) reshape(ARG_u,[21^2,1]) reshape(COP_e,[21^2,1])];
+DeltaT_v = [reshape(MAG_u,[21^2,1]) reshape(ARG_u,[21^2,1]) reshape(DeltaT_e,[21^2,1])];
+Qth_v = [reshape(MAG_u,[21^2,1]) reshape(ARG_u,[21^2,1]) reshape(Qth_e,[21^2,1])];
 
+save("data_DeltaEC_u_opt_COP.txt",'COP_v','-ascii')
+save("data_DeltaEC_u_opt_DeltaT.txt",'DeltaT_v','-ascii')
+save("data_DeltaEC_u_opt_Qth.txt",'Qth_v','-ascii')
+%%
+max_COP = max(max(COP_e));
+max_DeltaT = max(max(DeltaT_e));
+max_Qth = max(max(Qth_e));
+
+[x_COP,y_COP] = find(COP_e==max_COP);
+[x_DeltaT,y_DeltaT] = find(DeltaT_e==max_DeltaT);
+[x_Qth,y_Qth] = find(Qth_e==max_Qth);
 
 %%
-
 figure
-contour(mag_u_e,arg_u_e,COP_e)
+surf(mag_u_e,arg_u_e,COP_e)
+shading interp
 title("COP")
 colorbar
 xlabel("|u|")
 ylabel("arg u")
 
 figure
-contour(mag_u_e,arg_u_e,DeltaT_e)
+surf(mag_u_e,arg_u_e,DeltaT_e)
 title("\Delta T")
 colorbar
 xlabel("|u|")
 ylabel("arg u")
 
 figure
-contour(mag_u_e,arg_u_e,Qth_e)
+surf(mag_u_e,arg_u_e,Qth_e)
 title("Q_{th}")
 colorbar
 xlabel("|u|")
 ylabel("arg u")
 
 %%
-save("DeltaEC_u_opt_COP.txt",'data_COP','-ascii')
-save("DeltaEC_u_opt_DeltaT.txt",'data_DeltaT','-ascii')
-save("DeltaEC_u_opt_Qth.txt",'data_Qth','-ascii')
+% save("DeltaEC_u_opt_COP.txt",'data_COP','-ascii')
+% save("DeltaEC_u_opt_DeltaT.txt",'data_DeltaT','-ascii')
+% save("DeltaEC_u_opt_Qth.txt",'data_Qth','-ascii')

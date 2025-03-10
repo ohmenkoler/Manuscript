@@ -5,32 +5,56 @@
 Dans ce chapitre, différents moyens de comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage sont expliqués. Tout d'abord, une analyse globale est réalisées dans la section~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim}. Les nombres adimensionnels utilisés dans la littérature pour évaluer la présence de convection naturelle y sont présentés et calculés. Ensuite, un modèle par éléments finis du régime stationnaire est développé dans la section~\ref{chap:FEM} - \nameref{chap:FEM} pour prendre en compte plus de paramètres d'étude. Enfin, un modèle analytique temporel du régime transitoire est présenté dans la section~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}.
 
 \section{Concepts de convection naturelle et nombres adimensionnels}\label{chap:NbrAdim}
-Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géométries, du type de convection naturelle rencontré, de la porosité, etc. Des études hydrodynamiques sont menées pour aider à l'interprétation des mesures de température. \medskip
+Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau représentée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géométries, du type de convection naturelle rencontré, de la porosité, etc. Des études \echaf{hydrodynamiques} sont menées pour aider à l'interprétation des mesures de température. \medskip
 
-Tout d'abord, deux étude très simplifiées sont réalisées pour une cavité 2D différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Ces études doivent permettre l'obtention d'ordres de grandeurs des quantité d'intérêt, en particulier le nombre de Rayleigh $\Rayleigh$ qui indique si un écoulement fluide causé par la convection naturelle peut être visible dans une configuration. \smallskip
+Tout d'abord, deux études très simplifiées sont réalisées pour une cavité 2D différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Ces études doivent permettre l'obtention d'ordres de grandeurs des quantités d'intérêt, en particulier le nombre de Rayleigh $\Rayleigh$ qui indique si un écoulement fluide causé par la convection naturelle peut être visible dans une configuration.\smallskip
 
 Ensuite, des simulations par éléments finis de cette cavité et sur le régénérateur sur le logiciel \textsc{Comsol} Multiphysics\textss\textregistered permettent d'estimer les lignes de courants dans la cellule et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid, en plus de déterminer des paramètres clés pour la compréhension des phénomènes thermiques en jeu.
 
 %\subsection{\'Etudes simplifiées}
 \subsection{Sans acoustique}
-Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, une étude très simplifiée dans une cavité rectangulaire en 2D et représentée sur les figures~\ref{fig:SimuConvNat2D}{\color{MatlabBlue}(a)} et {\color{MatlabBlue}(b)} est menée. 
+\echaf{Préciser le focus sur la cavité RIX-CHX et donc cavité 2D}
 
-Dans la première sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabBlue}(a)}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.
+Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, une étude très simplifiée dans une cavité rectangulaire en 2D et représentée sur les figures~\ref{fig:ConvNat2D_HorizDeltaT} et \subref{fig:ConvNat2D_VertiDeltaT} est menée. 
 
-Dans la seconde sous-figure~\ref{fig:SimuConvNat2D}{\color{MatlabBlue}(b)}, ce sont cette fois les sol et plafond qui sont fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos pour lesquels la température est $T_\infty$. Dans cette configuration, favorable a priori à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il s'établit des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre 650 et 1700 pour des parois horizontales à température fixe \cite{getling_rayleigh-benard_1998}. En dessous de cette valeur critique, seule la conduction thermique dans le fluide est à considérer. Le gaz s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:SimuConvNat2D}{\color{MatlabBlue}(b)} qui ne représente qu'une illustration grossière du mouvement du fluide. Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
+Dans la première sous-figure~\ref{fig:ConvNat2D_HorizDeltaT}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}' \echaf{Schéma + quelle partie de la machine}, respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.
+
+Dans la seconde sous-figure~\ref{fig:ConvNat2D_VertiDeltaT}, ce sont cette fois les sol et plafond qui sont fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos pour lesquels la température est $T_\infty$. Dans cette configuration, favorable a priori à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il s'établit des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre 650 et 1700 pour des parois horizontales à température fixe \cite{getling_rayleigh-benard_1998}. En dessous de cette valeur critique, seule la conduction thermique dans le fluide est à considérer. Le gaz s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:ConvNat2D_VertiDeltaT} qui ne représente qu'une illustration grossière du mouvement du fluide. Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}' \echaf{Schéma + quelle partie de la machine}, présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
+
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_ConvNat2D}
+%%    \externalremake
+%    \input{../fig/fig_ConvNat2D/tex/fig_ConvNat2D}
+%    \caption{Cellule de convection naturelle dans une cavité rectangulaire 2D \textbf{(a)} pour un gradient de température normal à la direction de la gravité, et \textbf{(b)} pour un gradient de température colinéaire à la direction de la gravité. Quelle que soit la configuration, la distance caractéristique est mesurée dans la direction verticale.}
+%    \label{fig:ConvNat2D}
+%\end{figure}
 
 \begin{figure}[!ht]
     \centering
-    \external{fig_SimuConvNat2D}
-%    \externalremake
-    \input{../fig/fig_SimuConvNat2D/tex/fig_SimuConvNat2D}
-    \caption{Cellule de convection naturelle dans une cavité rectangulaire 2D \textbf{(a)} pour un gradient de température normal à la direction de la gravité, et \textbf{(b)} pour un gradient de température colinéaire à la direction de la gravité. Quelle que soit la configuration, la distance caractéristique est mesurée dans la direction verticale.}
-    \label{fig:SimuConvNat2D}
+	\begin{subfigure}[c]{.47\textwidth}
+		\centering
+		\external{fig_ConvNat2D}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat2D/tex/fig_ConvNat2D_HorizDeltaT}
+		\caption{}
+		\label{fig:ConvNat2D_HorizDeltaT}
+	\end{subfigure}		
+	\begin{subfigure}[c]{.47\textwidth}
+		\centering
+		\external{fig_ConvNat2D}
+%    	\externalremake
+    	\input{../fig/fig_ConvNat2D/tex/fig_ConvNat2D_VertiDeltaT}
+		\caption{}
+		\label{fig:ConvNat2D_VertiDeltaT}
+	\end{subfigure}	    
+    \caption{Cellule de convection naturelle dans une cavité rectangulaire 2D \textbf{(a)} pour un gradient de température normal à la direction de la gravité, et \textbf{(b)} pour un gradient de température colinéaire à la direction de la gravité. Quelle que soit la configuration, la distance caractéristique $L_c$ est mesurée dans la direction verticale.}
+    \label{fig:ConvNat2D}
 \end{figure}
 
 
 
-Il est possible de modéliser l'écoulement dans ce volume en utilisant les équations de Navier-Stokes avec l'approximation de Boussinesq qui s'écrivent
+Il est possible de modéliser l'écoulement dans \echaf{ce volume} en utilisant les équations de Navier-Stokes avec l'approximation de Boussinesq qui s'écrivent \echaf{préciser l'hypothèse de superposition des phénomènes}
 
 \begin{subequations} % page wikipédia RayleighBénard
 	\begin{align}
@@ -42,7 +66,9 @@ Il est possible de modéliser l'écoulement dans ce volume en utilisant les équ
 	\end{align}
 	\label{eq:NavierStokes_Boussinesq}%
 \end{subequations}
-pour la conservation de l'énergie interne. L'adimensionnement de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
+pour la conservation de l'énergie interne. 
+
+L'adimensionnement de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
 
 \begin{equation}
 	\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) = -\nabla p + \mathrm{Ra} T \mathbf e_{z,0} + \nabla^2 \cdot \mathbf{v},
@@ -53,17 +79,21 @@ et fait apparaître le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté d
 	\mathrm{Ra} = \frac{g \beta L_c^3}{\nu \kappa} (T_c-T_f),
 	\label{eq:NbrRayleigh}
 \end{equation}
-où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de la zone considérée, et $L_c$ est la dimension caractéristique de la cavité suivant la direction verticale. Ce nombre est primordial car il correspond au rapport des effets gravifiques qui mettent le fluide en mouvement aux effets qui le limitent, soit la diffusion thermique qui limite la différence de température et la viscosité qui ralentit l'écoulement du fluide. Sa valeur indique également le régime de l'écoulement causé par la convection car des vitesses de référence verticales et horizontales, notées $v_{ref}^{// \mathbf g}$ et $v_{ref}^{\perp \mathbf g}$, peuvent d'ailleurs être calculées en fonction de ce nombre de Rayleigh suivant les définitions
+où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de la zone considérée, et $L_c$ est la dimension caractéristique de la cavité suivant la direction verticale. Ce nombre est primordial car il correspond au rapport des effets gravifiques qui mettent le fluide en mouvement aux effets qui le limitent, soit la diffusion thermique qui limite la différence de température et la viscosité qui ralentit l'écoulement du fluide. 
+
+Sa valeur indique également le régime de l'écoulement causé par la convection à la vitesse de référence $v_{\sf ref}$, dont les composantes verticale $v_{\sf ref}^{// \mathbf g}$ et horizontale $v_{\sf ref}^{\perp \mathbf g}$ s'écrivent
+
+% car des vitesses de référence verticales et horizontales, notées $v_{ref}^{// \mathbf g}$ et $v_{ref}^{\perp \mathbf g}$, peuvent d'ailleurs être calculées en fonction de ce nombre de Rayleigh suivant les définitions
 
 \begin{subequations}
 	\begin{align}
-		v_{\sf ref}^{// \mathbf g} &\sim \frac{\kappa}{L_c}\sqrt{\Rayleigh} \label{eq:VitesseReferenceV_Rayleigh}\\
-		\intertext{pour la vitesse verticale, et}
+		v_{\sf ref}^{// \mathbf g} &\sim \frac{\kappa}{L_c}\sqrt{\Rayleigh}, \label{eq:VitesseReferenceV_Rayleigh}\\
+		\intertext{et}
 		v_{\sf ref}^{\perp \mathbf g} &\sim \frac{\kappa}{L_c}\sqrt[4]{\Rayleigh},	\label{eq:VitesseReferenceH_Rayleigh}
 	\end{align}
 	\label{eq:VitesseReference_Rayleigh}%
 \end{subequations}
-pour la vitesse horizontale d'après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:SimuConvNat2D}(a)).\medskip
+après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:ConvNat2D_HorizDeltaT}).\medskip
 
 Dans un matériau poreux, il peut également exister des écoulements liés à la convection naturelle. Dans ce cas, le nombre de Rayleigh est toujours une notion utile pour prédire le mouvement du fluide à l'intérieur, à condition toutefois de le modifier pour prendre en compte la perméabilité $K_p$ ainsi que la diffusivité thermique $\kappa_p$ de ce milieu. Il vient alors l'expression du nombre de Rayleigh-Darcy noté $\mathrm{Ra}_p$, et dont la définition est donnée par Nield et Bejan \cite{nield_convection_2013} par
 
@@ -120,7 +150,7 @@ Les calculs des nombres précédent peuvent guider l'intuition quant aux prédom
 
 \section{Simulations par éléments finis}\label{chap:FEM}
 \subsection{Géométrie du problème}
-Le modèle 2D simplifié d'une cavité différentiellement chauffée présentée sur la figure~\ref{fig:SimuConvNat2D} ne prend pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis \textsc{Comsol} Multiphysics\textss\textregistered grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.
+Le modèle 2D simplifié d'une cavité différentiellement chauffée présentée sur la figure~\ref{fig:ConvNat2D} ne prend pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis \textsc{Comsol} Multiphysics\textss\textregistered grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.
 
 \begin{figure}[!ht]
     \centering

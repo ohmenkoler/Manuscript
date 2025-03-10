@@ -1,4 +1,4 @@
-data = readtable('RegenOnly_new.txt');
+data = readtable('RegenOnly_4e-3m3s-1to16e-3.txt');
 
 %%
 % data_COP = [[1e-4 -15 0] ; table2array(data(4:end,[1 2 7]))];
@@ -7,7 +7,17 @@ data = readtable('RegenOnly_new.txt');
 
 data_COP = table2array(data(:,[1 2 7]));
 data_DeltaT = table2array(data(:,[1 2 6]));
+    data_DeltaT(:,3) = -data_DeltaT(:,3);
 data_Qth = table2array(data(:,[1 2 5]));
+
+%%
+COP_b = data_COP(1:10:end,:);
+DeltaT_b = data_DeltaT(1:10:end,:);
+Qth_b = data_Qth(1:10:end,:);
+
+save("data_DeltaEC_u_opt_COP_noReshape.txt",'COP_b','-ascii')
+save("data_DeltaEC_u_opt_DeltaT_noReshape.txt",'DeltaT_b','-ascii')
+save("data_DeltaEC_u_opt_Qth_noReshape.txt",'Qth_b','-ascii')
 
 %%
 data_COP_r = data_COP;
@@ -44,23 +54,43 @@ save("data_DeltaEC_u_opt_COP.txt",'COP_v','-ascii')
 save("data_DeltaEC_u_opt_DeltaT.txt",'DeltaT_v','-ascii')
 save("data_DeltaEC_u_opt_Qth.txt",'Qth_v','-ascii')
 %%
+max_COP = max(max(COP_e));
+max_DeltaT = max(max(DeltaT_e));
+max_Qth = max(max(Qth_e));
 
+[x_COP,y_COP] = find(COP_e==max_COP);
+[x_DeltaT,y_DeltaT] = find(DeltaT_e==max_DeltaT);
+[x_Qth,y_Qth] = find(Qth_e==max_Qth);
+
+mag_u_COP = mag_u_e(x_COP)
+arg_u_COP = arg_u_e(y_COP)
+
+mag_u_DeltaT = mag_u_e(x_DeltaT)
+arg_u_DeltaT = arg_u_e(y_DeltaT)
+
+mag_u_Qth = mag_u_e(x_Qth)
+arg_u_Qth = arg_u_e(y_Qth)
+
+%%
 figure
-contour(mag_u_e,arg_u_e,COP_e)
+imagesc(mag_u_e,arg_u_e,COP_e)
+shading interp
 title("COP")
 colorbar
 xlabel("|u|")
 ylabel("arg u")
 
 figure
-contour(mag_u_e,arg_u_e,DeltaT_e)
+imagesc(mag_u_e,arg_u_e,DeltaT_e)
+shading interp
 title("\Delta T")
 colorbar
 xlabel("|u|")
 ylabel("arg u")
 
 figure
-contour(mag_u_e,arg_u_e,Qth_e)
+imagesc(mag_u_e,arg_u_e,Qth_e)
+shading interp
 title("Q_{th}")
 colorbar
 xlabel("|u|")

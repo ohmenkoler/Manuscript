@@ -1,12 +1,12 @@
-data = readtable('RegenOnly_new.txt');
+data = readtable('RegenOnly_3e-4_4e-2_-30_30.txt');
 
 %%
 % data_COP = [[1e-4 -15 0] ; table2array(data(4:end,[1 2 7]))];
 % data_DeltaT = [[1e-4 -15 0] ; table2array(data(4:end,[1 2 6]))];
 % data_Qth = [[1e-4 -15 0] ; table2array(data(4:end,[1 2 5]))];
 
-data_COP = table2array(data(:,[1 2 7]));
-data_DeltaT = table2array(data(:,[1 2 6]));
+data_COP = table2array(data(:,[1 2 8]));
+data_DeltaT = table2array(data(:,[1 2 7]));
     data_DeltaT(:,3) = -data_DeltaT(:,3);
 data_Qth = table2array(data(:,[1 2 5]));
 

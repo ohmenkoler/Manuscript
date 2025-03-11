@@ -5,6 +5,8 @@
 Dans ce chapitre, différents moyens de comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage sont expliqués. Tout d'abord, une analyse globale est réalisées dans la section~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim}. Les nombres adimensionnels utilisés dans la littérature pour évaluer la présence de convection naturelle y sont présentés et calculés. Ensuite, un modèle par éléments finis du régime stationnaire est développé dans la section~\ref{chap:FEM} - \nameref{chap:FEM} pour prendre en compte plus de paramètres d'étude. Enfin, un modèle analytique temporel du régime transitoire est présenté dans la section~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}.
 
 \section{Concepts de convection naturelle et nombres adimensionnels}\label{chap:NbrAdim}
+\echaf{Cette section reste dans ce chapitre ou c'est mieux en intro ?}
+
 Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau représentée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géométries, du type de convection naturelle rencontré, de la porosité, etc. Des études \echaf{hydrodynamiques} sont menées pour aider à l'interprétation des mesures de température. \medskip
 
 Tout d'abord, deux études très simplifiées sont réalisées pour une cavité 2D différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Ces études doivent permettre l'obtention d'ordres de grandeurs des quantités d'intérêt, en particulier le nombre de Rayleigh $\Rayleigh$ qui indique si un écoulement fluide causé par la convection naturelle peut être visible dans une configuration.\smallskip
@@ -71,7 +73,7 @@ pour la conservation de l'énergie interne.
 L'adimensionnement de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
 
 \begin{equation}
-	\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) = -\nabla p + \mathrm{Ra} T \mathbf e_{z,0} + \nabla^2 \cdot \mathbf{v},
+	\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) = -\nabla p + \mathrm{Ra} T \mathbf e_{z,0} + \echaf{Re?} \nabla^2 \cdot \mathbf{v},
 	\label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}
 \end{equation}
 et fait apparaître le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl}, ainsi que le nombre de Rayleigh noté $\mathrm{Ra}$, et dont la définition est donnée par 
@@ -93,7 +95,22 @@ Sa valeur indique également le régime de l'écoulement causé par la convectio
 	\end{align}
 	\label{eq:VitesseReference_Rayleigh}%
 \end{subequations}
-après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:ConvNat2D_HorizDeltaT}).\medskip
+après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:ConvNat2D_HorizDeltaT}).\smallskip
+
+Lorsque la convection naturelle provoque un écoulement circulant à une vitesse de référence $v_{\sf ref}$, il est possible de quantifier la contribution des échanges thermiques ainsi provoqués et des pertes visqueuses en définissant le nombre de Grashof par
+
+\begin{equation}
+	\Grashof = \left( \frac{v_{\sf ref} L_c}{\nu} \right)^2,
+	\label{eq:NbrGrashof}
+\end{equation}
+et qui est relié au nombre de Rayleigh par la formule
+
+\begin{equation}
+	\Grashof = \frac{\Rayleigh}{\Prandtl}.
+	\label{eq:NbrGrashof_RayleighSurPrandtl}
+\end{equation}
+
+\medskip
 
 Dans un matériau poreux, il peut également exister des écoulements liés à la convection naturelle. Dans ce cas, le nombre de Rayleigh est toujours une notion utile pour prédire le mouvement du fluide à l'intérieur, à condition toutefois de le modifier pour prendre en compte la perméabilité $K_p$ ainsi que la diffusivité thermique $\kappa_p$ de ce milieu. Il vient alors l'expression du nombre de Rayleigh-Darcy noté $\mathrm{Ra}_p$, et dont la définition est donnée par Nield et Bejan \cite{nield_convection_2013} par
 
@@ -109,22 +126,10 @@ ainsi que la vitesse verticale de référence correspondante,
 \end{equation}
 
 
-Lorsque la convection naturelle provoque un écoulement circulant à une vitesse de référence $v_{\sf ref}$, il est possible de quantifier la contribution des échanges thermiques ainsi provoqués et des pertes visqueuses en définissant le nombre de Grashof par
-
-\begin{equation}
-	\Grashof = \left( \frac{v_{\sf ref} L_c}{\nu} \right)^2,
-	\label{eq:NbrGrashof}
-\end{equation}
-et qui est relié au nombre de Rayleigh par la formule
-
-\begin{equation}
-	\Grashof = \frac{\Rayleigh}{\Prandtl}.
-	\label{eq:NbrGrashof_RayleighSurPrandtl}
-\end{equation}
 
 
 \subsection{Avec acoustique}
-Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse ne peut pas être respectée dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causé par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
+Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse ne peut pas être respectée dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causés par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
 
 \begin{equation}
 	\Peclet = \frac{v L_c}{\kappa}.
@@ -150,7 +155,7 @@ Les calculs des nombres précédent peuvent guider l'intuition quant aux prédom
 
 \section{Simulations par éléments finis}\label{chap:FEM}
 \subsection{Géométrie du problème}
-Le modèle 2D simplifié d'une cavité différentiellement chauffée présentée sur la figure~\ref{fig:ConvNat2D} ne prend pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis \textsc{Comsol} Multiphysics\textss\textregistered grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.
+Les modèle 2D simplifiés de la cavité différentiellement chauffée présentée sur la figure~\ref{fig:ConvNat2D} ne prennent pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis \textsc{Comsol} Multiphysics\textss\textregistered grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.
 
 \begin{figure}[!ht]
     \centering
@@ -203,7 +208,7 @@ Ainsi, la géométrie considérée est toujours en trois dimensions pour les ori
 Les trois domaines formant la géométrie, c'est-à-dire le cône d'adaptation d'impédance, le régénérateur, et l'enceinte qui le contient sont modélisé par des matériaux similaires aux conditions expérimentales. Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et le cône d'adaptation d'impédance est supposé être rempli d'hélium.
 
 \subsection{Modèles physiques utilisés}
-\subsubsection{Sans matériau poreux}
+%\subsubsection{Sans matériau poreux}
 \begin{figure}[!ht]
     \centering
     \external{fig_SuperpositionComsol}
@@ -217,7 +222,7 @@ Le but de ce modèle est de simuler le plus simplement possible le comportement 
 
 Pour conserver un modèle simple, seuls des volumes de solides non-poreux et de gaz sont considérés dans le modèle complet. Ces domaines sont couplés par l'interface multiphysique \texttt{Nonisothermal flow (intf)}, avec l'interface physique \texttt{Heat transfer in Solids and Fluids (ht)} pour traiter ces questions de transferts thermiques dans tous les volumes. Les domaines correspondant au régénérateur et à son enceinte et sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cependant, ce modèle ne prend pas en compte de simulation de mécanique des fluides, et pour prendre la gravité et le mouvement du fluide causé par la convection naturelle en compte dans le modèle fluide, et il est nécessaire d'ajouter un modèle d'écoulement \texttt{laminar flow (spf)}.
 
-Pour toutefois prendre en compte la conductivité anisotrope dûe à l'empilement de disques de tissus métalliques, la conduction dans le régénérateur est modélisée par une matrice de conductivité notée $\mathbf k_{\sf tissus}$ et écrite
+Pour toutefois prendre en compte la conductivité anisotrope dûe à l'empilement de disques de tissus métalliques, la conduction dans le régénérateur est modélisée par une matrice de conductivité \echaf{diagonale} notée $\mathbf k_{\sf tissus}$ et écrite
 
 \begin{equation}
 	\mathbf k_{\sf tissus} = \begin{bmatrix}
@@ -228,20 +233,21 @@ Pour toutefois prendre en compte la conductivité anisotrope dûe à l'empilemen
 	\label{eq:ConductiviteTensiorielle}
 \end{equation}
 
+Choisir une représentation matricielle de la conductivité est également motivé par l'étude de la distribution de température en l'absence de conductivité transverse. \echaf{à vérifier, la conductivité des meshgrids est 2x plus grande sur la dimension transverse}
 
 
-\subsubsection{Ajout d'un modèle de matériau poreux}
+%\subsubsection{Ajout d'un modèle de matériau poreux}
 
 
 \subsection{Conditions aux frontières}
-\subsubsection{Modèle thermiques}
+\subsubsection{Modèle thermique}
 Toutes les parois sont considérées adiabatiques. Toutes ? Non, il reste encore des parois dont les conditions thermiques diffèrent. 
 
 Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixée à une température homogène sur la section, car c'est justement le gradient de température sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
 
 \echaf{ajouter étude paramètrique pour trouver -Qc=-Qth+Qchx}
 
-\subsubsection{Modèle fluides}
+\subsubsection{Modèle fluide}
 \echaf{abs matériau poreux car pas de license comsol + non-glissement partout par simplicité}
 
 \subsection{Résultats dans les zones d'intérêt}

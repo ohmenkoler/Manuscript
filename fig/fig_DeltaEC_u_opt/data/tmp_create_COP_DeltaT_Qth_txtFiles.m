@@ -1,4 +1,4 @@
-data = readtable('RegenOnly_4e-3m3s-1to16e-3.txt');
+data = readtable('RegenOnly_new.txt');
 
 %%
 % data_COP = [[1e-4 -15 0] ; table2array(data(4:end,[1 2 7]))];

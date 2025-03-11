@@ -23,7 +23,7 @@
 	
 	\begin{scope}[yslant=-1]
 		\begin{scope}[xslant=.71]%, rotate=90, xscale=1]
-		\node at (\decalage-\HX,0) (NewO) {};
+		\node at (\decalage-\HX,1.4*\R/2) (NewO) {};
 %		\draw[->, very thick] (NewO.center) -- ++(0,1.2*\R);
 %		\draw[->, very thick] (NewO.center) -- ++(1.2*\R,0);
 		
@@ -48,8 +48,8 @@
 	\end{scope}
 	\end{scope}
 	\begin{pgfonlayer}{background}
-		\draw[->, very thick] (NewO.center) -- ++(22.5:1.2*\R) node [above] {$\mathbf e_{y,0}$};
-		\draw[->, very thick] (NewO.center) -- ++(90:1.2*\R) node [left] {$\mathbf e_{z,0}$};
-		\draw[->, very thick] (NewO.center) -- ++(-45:1.2*\R) node [right] {$\mathbf e_{x,0}$};
+		\draw[->, very thick] (NewO.center) -- ++(22.5:\R) node [above] {$\mathbf e_{y,0}$};
+		\draw[->, very thick] (NewO.center) -- ++(90:\R) node [left] {$\mathbf e_{z,0}$};
+		\draw[->, very thick] (NewO.center) -- ++(-45:\R) node [right] {$\mathbf e_{x,0}$};
   	\end{pgfonlayer}
 \end{tikzpicture}

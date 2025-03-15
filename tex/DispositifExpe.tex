@@ -65,7 +65,7 @@ Par ailleurs, le mélange de gaz contient de l'hélium très volatile, et qui pl
 \begin{figure}[!ht]
 	\centering
 	\external{fig_TenuePressionStatique}
-	\externalremake
+%	\externalremake
 	\input{../fig/fig_TenuePressionStatique/tex/fig_TenuePressionStatique}
 %	\includegraphics[width=.7\textwidth]{example-image}
 	\caption{Mesures de pression statique dans le réfrigérateur \textsc{Tacot} au cours du temps. \echaf{avec data du pc manip tacot}}
@@ -191,7 +191,9 @@ Pour le fluide considéré, les épaisseurs de couches limites sont tracées en 
     \label{fig:dKdV}
 \end{figure}
 
-Ce cycle où les transformations sont isothermes est celui de Stirling, pour lequel les oscillations de pression et de vitesse sont en phase. Cependant, ce cycle représente un comportement asymptotique prenant place dans une machine thermoacoustique, tout comme le cycle de Brayton. Dans la réalité, il a été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimale pour une pression acoustique donnée~\cite{poignand_analysis_2013, poignand_etude_2006, poignand_optimal_2007, poignand_thermoacoustic_2011}. \echaf{Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque la vitesse acoustique atteint une amplitude donnée par}
+Ce cycle où les transformations sont isothermes est celui de Stirling, pour lequel les oscillations de pression et de vitesse sont en phase. Cependant, ce cycle représente un comportement asymptotique prenant place dans une machine thermoacoustique, tout comme le cycle de Brayton. Dans la réalité, il a été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimale pour une pression acoustique donnée~\cite{poignand_analysis_2013, poignand_etude_2006, poignand_optimal_2007, poignand_thermoacoustic_2011}.
+
+\begin{comment} \echaf{Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque la vitesse acoustique atteint une amplitude donnée par}
 
 \begin{subequations}
 	\begin{align}
@@ -213,10 +215,20 @@ Pour un régénérateur dans lequel les processus sont isothermes, ces équation
 	\end{align}
 \end{subequations}
 avec $g_D = \frac{f_\kappa + \Prandtl f_\nu^*}{(1-\Prandtl^2)|1-f_\nu^*|^2}$ et $g = \frac{f_\kappa-f_\nu^*}{(1+\Prandtl)(1-f_\nu^*)}$.
+\end{comment}
+
+Pour déterminer la valeur de ce débit $u_1$ dans le cas du noyau utilisé dans le \textsc{Tacot}, un modèle réduit comprenant uniquement le régénérateur et ses échangeurs est modélisé dans le logiciel \textsc{DeltaEC}. \echaf{ajouter schéma deltaec}. La figure~\ref{fig:DeltaEC_u_opt} est obtenue en exécutant le modèle pour une amplitude $|u_1|$ variant entre les valeurs \qtylist{3e-4;4e-2}{\cubic\meter\per\second}, et pour un déphasage $\angle u_1$ de \ang{-30} à \ang{30}.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=.7\textwidth]{example-image-a}
+	\caption{Schéma du noyau thermoacoustique du \textsc{Tacot} dans le modèle réduit \textsc{DeltaEC}.}
+	\label{fig:SchemaNoyauTA_DeltaEC_u_opt}
+\end{figure}
 
 \begin{figure}[!ht]
     \centering
-	\begin{subfigure}{.47\textwidth}
+	\begin{subfigure}[c]{.47\textwidth}
 		\centering
 		\external{fig_DeltaEC_u_opt_Qth}
 %		\externalremake
@@ -224,10 +236,8 @@ avec $g_D = \frac{f_\kappa + \Prandtl f_\nu^*}{(1-\Prandtl^2)|1-f_\nu^*|^2}$ et 
 		\caption{}
 		\label{fig:DeltaEC_u_opt_Qth}
 	\end{subfigure}
-	
-	\vspace{1em}	
-
-	\begin{subfigure}{.47\textwidth}
+	%	\vspace{1em}	
+	\begin{subfigure}[c]{.47\textwidth}
 		\centering
 		\external{fig_DeltaEC_u_opt_COP}
 %		\externalremake
@@ -235,7 +245,7 @@ avec $g_D = \frac{f_\kappa + \Prandtl f_\nu^*}{(1-\Prandtl^2)|1-f_\nu^*|^2}$ et 
 		\caption{}
 		\label{fig:DeltaEC_u_opt_COP}
 	\end{subfigure}  
-    \caption{Valeurs \ref{fig:DeltaEC_u_opt_Qth} du flux de chaleur thermoacoustique et \ref{fig:DeltaEC_u_opt_COP} du coefficient de performance, en fonction de l'amplitude et la phase du débit acoustique $u$. \echaf{ces data sont nimp}}
+    \caption{Valeurs \ref{fig:DeltaEC_u_opt_Qth} du flux de chaleur $\dot Q_f$ extrait par l'échangeur froid, et \ref{fig:DeltaEC_u_opt_COP} du coefficient de performance $\COP=\nicefrac{Q_f}{p_1 u_1}$, en fonction de l'amplitude et la phase du débit acoustique $u_1$.}
     \label{fig:DeltaEC_u_opt}
 \end{figure}
 

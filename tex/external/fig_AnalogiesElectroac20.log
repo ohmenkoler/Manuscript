@@ -1,0 +1,634 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.3.12)  12 MAR 2025 16:58
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**\def\tikzexternalrealjob{_main_}\input{_main_}
+(./_main_.tex (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/share/texlive/texmf-dist/tex/latex/iwona/iwona.sty
+Package: iwona 2005/10/03 v.1.2 Iwona package (MW)
+\c@mv@iwona=\count194
+\c@mv@iwonabold=\count195
+LaTeX Font Info:    Overwriting symbol font `operators' in version `iwona'
+(Font)                  OT1/cmr/m/n --> OT1/iwonalm/m/n on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `iwona'
+(Font)                  OML/cmm/m/it --> OML/iwonal/m/it on input line 59.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `iwona'
+(Font)                  OMS/cmsy/m/n --> OMS/iwonal/m/n on input line 60.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `iwona'
+(Font)                  OMX/cmex/m/n --> OMX/iwonal/m/n on input line 61.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `iwonabold'
+(Font)                  OT1/cmr/m/n --> OT1/iwonalm/b/n on input line 62.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `iwonabold'
+(Font)                  OML/cmm/m/it --> OML/iwonal/b/it on input line 63.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `iwonabold'
+(Font)                  OMS/cmsy/m/n --> OMS/iwonal/b/n on input line 64.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `iwonabol
+d'
+(Font)                  OMX/cmex/m/n --> OMX/iwonal/b/n on input line 65.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `iwona'
+(Font)                  OT1/cmr/bx/n --> OT1/iwonal/bx/n on input line 67.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `iwona'
+(Font)                  OT1/cmss/m/n --> OT1/iwonal/m/n on input line 68.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `iwona'
+(Font)                  OT1/cmr/m/it --> OT1/iwonal/m/it on input line 69.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `iwona'
+(Font)                  OT1/cmtt/m/n --> OT1/iwonal/m/n on input line 70.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `iwonabold'
+(Font)                  OT1/cmss/m/n --> OT1/iwonal/bx/n on input line 71.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `iwonabold'
+(Font)                  OT1/cmr/m/it --> OT1/iwonal/bx/it on input line 72.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+iwonal on input line
+ 112.
+(/usr/share/texlive/texmf-dist/tex/latex/iwona/t1iwonal.fd
+File: t1iwonal.fd 2008/07/22 v0.995 font definition file for T1/iwonal (MW)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/layout.sty
+Package: layout 2021-03-10 v1.2e Show layout parameters
+\oneinch=\count196
+\cnt@paperwidth=\count197
+\cnt@paperheight=\count198
+\cnt@hoffset=\count199
+\cnt@voffset=\count266
+\cnt@textheight=\count267
+\cnt@textwidth=\count268
+\cnt@topmargin=\count269
+\cnt@oddsidemargin=\count270
+\cnt@evensidemargin=\count271
+\cnt@headheight=\count272
+\cnt@headsep=\count273
+\cnt@marginparsep=\count274
+\cnt@marginparwidth=\count275
+\cnt@marginparpush=\count276
+\cnt@footskip=\count277
+\fheight=\count278
+\ref@top=\count279
+\ref@hoffset=\count280
+\ref@voffset=\count281
+\ref@head=\count282
+\ref@body=\count283
+\ref@foot=\count284
+\ref@margin=\count285
+\ref@marginwidth=\count286
+\ref@marginpar=\count287
+\Interval=\count288
+\ExtraYPos=\count289
+\PositionX=\count290
+\PositionY=\count291
+\ArrowLength=\count292
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count293
+\U@D=\dimen139
+\l@unhyphenated=\language87
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count294
+(/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2021/07/20 v3.5m French support from the babel system
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language75). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language75). Reported on input line 92.
+\FB@nonchar=\count295
+Package babel Info: Making : an active character on input line 430.
+Package babel Info: Making ; an active character on input line 431.
+Package babel Info: Making ! an active character on input line 432.
+Package babel Info: Making ? an active character on input line 433.
+\FBguill@level=\count296
+\FBold@everypar=\toks18
+\FB@Mht=\dimen140
+\mc@charclass=\count297
+\mc@charfam=\count298
+\mc@charslot=\count299
+\std@mcc=\count300
+\dec@mcc=\count301
+\listindentFB=\dimen141
+\descindentFB=\dimen142
+\labelindentFB=\dimen143
+\labelwidthFB=\dimen144
+\leftmarginFB=\dimen145
+\parindentFFN=\dimen146
+\FBfnindent=\dimen147
+)) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty) (/usr/share/
+texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count302
+)
+\csq@reset=\count303
+\csq@gtype=\count304
+\csq@glevel=\count305
+\csq@qlevel=\count306
+\csq@maxlvl=\count307
+\csq@tshold=\count308
+\csq@ltx@everypar=\toks20
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen148
+\WF@size=\dimen149
+\c@WF@wrappedlines=\count309
+\WF@box=\box50
+\WF@everypar=\toks21
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+Excluding comment 'comment') (/usr/share/texlive/texmf-dist/tex/latex/tools/mul
+ticol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count310
+\mult@box=\box51
+\multicol@leftmargin=\dimen150
+\c@unbalance=\count311
+\c@collectmore=\count312
+\doublecol@number=\count313
+\multicoltolerance=\count314
+\multicolpretolerance=\count315
+\full@width=\dimen151
+\page@free=\dimen152
+\premulticols=\dimen153
+\postmulticols=\dimen154
+\multicolsep=\skip49
+\multicolbaselineskip=\skip50
+\partial@page=\box52
+\last@line=\box53
+\maxbalancingoverflow=\dimen155
+\mult@rightbox=\box54
+\mult@grightbox=\box55
+\mult@firstbox=\box56
+\mult@gfirstbox=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\c@minrows=\count316
+\c@columnbadness=\count317
+\c@finalcolumnbadness=\count318
+\last@try=\dimen156
+\multicolovershoot=\dimen157
+\multicolundershoot=\dimen158
+\mult@nat@firstbox=\box94
+\colbreak@box=\box95
+\mc@col@check@num=\count319
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen159
+\ar@mcellbox=\box96
+\extrarowheight=\dimen160
+\NC@list=\toks22
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box97
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count320
+\LTcapwidth=\dimen161
+\LT@head=\box98
+\LT@firsthead=\box99
+\LT@foot=\box100
+\LT@lastfoot=\box101
+\LT@gbox=\box102
+\LT@cols=\count321
+\LT@rows=\count322
+\c@LT@tables=\count323
+\c@LT@chunks=\count324
+\LT@p@ftn=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/arydshln/arydshln.sty
+Package: arydshln 2019/02/21 v1.76 
+\dashlinedash=\dimen162
+\dashlinegap=\dimen163
+\adl@box=\box103
+\adl@height=\dimen164
+\adl@heightsave=\dimen165
+\adl@depth=\dimen166
+\adl@depthsave=\dimen167
+\adl@finaldepth=\dimen168
+\adl@columns=\count325
+\adl@ncol=\count326
+\adl@currentcolumn=\count327
+\adl@currentcolumnsave=\count328
+\adl@totalheight=\count329
+\adl@totalheightsave=\count330
+\adl@dash=\count331
+\adl@gap=\count332
+\adl@cla=\count333
+\adl@clb=\count334
+\adl@everyvbox=\toks24
+\adl@LTpagetotal=\dimen169
+) (/usr/share/texlive/texmf-dist/tex/latex/tabularray/tabularray.sty (/usr/shar
+e/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count335
+\l__pdf_internal_box=\box104
+))
+Package: tabularray 2021-12-01 v2021Q Typeset tabulars and arrays with LaTeX3
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+\l__tblr_a_int=\count336
+\l__tblr_c_int=\count337
+\l__tblr_r_int=\count338
+\l__tblr_d_dim=\dimen170
+\l__tblr_h_dim=\dimen171
+\l__tblr_o_dim=\dimen172
+\l__tblr_p_dim=\dimen173
+\l__tblr_q_dim=\dimen174
+\l__tblr_r_dim=\dimen175
+\l__tblr_s_dim=\dimen176
+\l__tblr_t_dim=\dimen177
+\l__tblr_v_dim=\dimen178
+\l__tblr_w_dim=\dimen179
+\l__tblr_a_box=\box105
+\l__tblr_b_box=\box106
+\l__tblr_c_box=\box107
+\l__tblr_d_box=\box108
+\g__tblr_table_count_int=\count339
+\c@rownum=\count340
+\c@colnum=\count341
+\c@rowcount=\count342
+\c@colcount=\count343
+\abovesep=\dimen180
+\belowsep=\dimen181
+\leftsep=\dimen182
+\rightsep=\dimen183
+\g_tblr_level_int=\count344
+\g__tblr_data_row_key_count_int=\count345
+\g__tblr_data_column_key_count_int=\count346
+\g__tblr_data_cell_key_count_int=\count347
+\g__tblr_array_int=\count348
+\l__tblr_key_count_int=\count349
+\l__tblr_key_quotient_int=\count350
+\l__tblr_key_quotient_two_int=\count351
+\l__tblr_key_remainder_int=\count352
+\g__tblr_data_str_value_count_int=\count353
+\rulewidth=\dimen184
+\l__multicolumn_cell_number_int=\count354
+\l__tblr_strut_ht_box=\box109
+\l__tblr_strut_dp_box=\box110
+\g__tblr_cell_wd_dim=\dimen185
+\g__tblr_cell_ht_dim=\dimen186
+\g__tblr_cell_head_dim=\dimen187
+\g__tblr_cell_foot_dim=\dimen188
+\l__column_target_dim=\dimen189
+\l__tblr_caption_box=\box111
+\l__tblr_caption_left_box=\box112
+\l__tblr_row_head_box=\box113
+\l__tblr_row_foot_box=\box114
+\l__tblr_row_head_foot_dim=\dimen190
+\tablewidth=\dimen191
+\l__tblr_table_firsthead_box=\box115
+\l__tblr_table_middlehead_box=\box116
+\l__tblr_table_lasthead_box=\box117
+\l__tblr_table_firstfoot_box=\box118
+\l__tblr_table_middlefoot_box=\box119
+\l__tblr_table_lastfoot_box=\box120
+\l__tblr_remain_height_dim=\dimen192
+\l__tblr_long_from_int=\count355
+\l__tblr_long_to_int=\count356
+\l__tblr_curr_i_int=\count357
+\l__tblr_prev_i_int=\count358
+\l__tblr_table_page_int=\count359
+\l__tblr_table_head_box=\box121
+\l__tblr_table_foot_box=\box122
+\l__tblr_table_head_foot_dim=\dimen193
+\l__tblr_table_head_body_foot_dim=\dimen194
+\l__tblr_table_box=\box123
+\l__tblr_table_hlines_box=\box124
+\l__tblr_hline_box=\box125
+\l__tblr_row_box=\box126
+\l__tblr_col_o_wd_dim=\dimen195
+\l__tblr_col_b_wd_dim=\dimen196
+\l__tblr_hline_leftskip_dim=\dimen197
+\l__tblr_hline_rightskip_dim=\dimen198
+\l__tblr_row_ht_dim=\dimen199
+\l__tblr_row_dp_dim=\dimen256
+\l__tblr_row_abovesep_dim=\dimen257
+\l__tblr_row_belowsep_dim=\dimen258
+\l__tblr_row_vlines_box=\box127
+\l__tblr_vline_box=\box128
+\l__tblr_cell_box=\box129
+\l__row_upper_dim=\dimen259
+\l__row_lower_dim=\dimen260
+\l__row_vpace_dim=\dimen261
+\l__tblr_vline_aboveskip_dim=\dimen262
+\l__tblr_vline_belowskip_dim=\dimen263
+\l__tblr_cell_wd_dim=\dimen264
+\l__tblr_cell_ht_dim=\dimen265
+\l__tblr_diag_box=\box130
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count360
+\float@exts=\toks25
+\float@box=\box131
+\@float@everytoks=\toks26
+\@floatcapt=\box132
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (./Plasma.tex) (./Inferno.tex) (/usr/share/texlive/texmf-dist/tex/latex/amsm
+ath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip57
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks27
+\ex@=\dimen266
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen267
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count361
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count362
+\leftroot@=\count363
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count364
+\DOTSCASE@=\count365
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box133
+\strutbox@=\box134
+\big@size=\dimen268
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count366
+\c@MaxMatrixCols=\count367
+\dotsspace@=\muskip16
+\c@parentequation=\count368
+\dspbrk@lvl=\count369
+\tag@help=\toks28
+\row@=\count370
+\column@=\count371
+\maxfields@=\count372
+\andhelp@=\toks29
+\eqnshift@=\dimen269
+\alignsep@=\dimen270
+\tagshift@=\dimen271
+\tagwidth@=\dimen272
+\totwidth@=\dimen273
+\lineht@=\dimen274
+\@envbody=\toks30
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks31
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip60
+\enit@outerparindent=\dimen275
+\enit@toks=\toks32
+\enit@inbox=\box135
+\enit@count@id=\count373
+\enitdp@description=\count374
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen276
+\TX@old@table=\dimen277
+\TX@old@col=\dimen278
+\TX@target=\dimen279
+\TX@delta=\dimen280
+\TX@cols=\count375
+\TX@ftn=\toks33
+) (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2021/02/02 v1.28 mathematical typesetting tools
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count376
+\calc@Bcount=\count377
+\calc@Adimen=\dimen281
+\calc@Bdimen=\dimen282
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count378
+\calc@Cskip=\skip63
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count379
+\l_MT_multwidth_dim=\dimen283
+\origjot=\skip64
+\l_MT_shortvdotswithinadjustabove_dim=\dimen284
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen285
+\l_MT_above_intertext_sep=\dimen286
+\l_MT_below_intertext_sep=\dimen287
+\l_MT_above_shortintertext_sep=\dimen288
+\l_MT_below_shortintertext_sep=\dimen289
+\xmathstrut@box=\box136
+\xmathstrut@dim=\dimen290
+) (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip65
+\L@UnitsRaiseTextstyle=\skip66
+\L@UnitsRaiseScriptstyle=\skip67
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup8
+\symboldletters=\mathgroup9
+\symboldsymbols=\mathgroup10
+\symboldlargesymbols=\mathgroup11
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+Package bm Info: No bold for \U/rsfs/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (/usr/share/texlive/texmf-dist/tex/latex/mwe/mwe.sty
+Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen291
+\Gin@req@width=\dimen292
+) (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texliv
+e/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count380
+\l__lipsum_a_int=\count381
+\l__lipsum_b_int=\count382
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/share/te
+xlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count383
+\c@Blindtext=\count384
+\c@blind@countparstart=\count385
+\blind@countxx=\count386
+\blindtext@numBlindtext=\count387
+\blind@countyy=\count388
+\c@blindlist=\count389
+\c@blindlistlevel=\count390
+\c@blindlist@level=\count391
+\blind@listitem=\count392
+\c@blind@listcount=\count393
+\c@blind@levelcount=\count394
+\blind@mathformula=\count395
+\blind@Mathformula=\count396
+\c@blind@randomcount=\count397
+\c@blind@randommax=\count398
+\c@blind@pangramcount=\count399
+\c@blind@pangrammax=\count400
+)) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen293
+\captionmargin@=\dimen294
+\captionwidth=\dimen295
+\caption@tempdima=\dimen296
+\caption@indent=\dimen297
+\caption@parindent=\dimen298
+\caption@hangindent=\dimen299
+Package caption Info: Standard document class detected.
+Package caption Info: french babel package is loaded.
+)
+\c@caption@flags=\count401
+\c@continuedfloat=\count402
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: wrapfig package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count403
+\c@subtable=\count404
+)
+! Undefined control sequence.
+l.182 	\subcaptionsetup
+                       {skip=0pt} 
+Here is how much of TeX's memory you used:
+ 11961 strings out of 478287
+ 213892 string characters out of 5849289
+ 644440 words of memory out of 5000000
+ 30031 multiletter control sequences out of 15000+600000
+ 472688 words of font info for 30 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 74i,0n,80p,314b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+!  ==> Fatal error occurred, no output PDF file produced!

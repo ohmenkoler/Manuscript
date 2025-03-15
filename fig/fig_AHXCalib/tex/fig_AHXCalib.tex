@@ -13,7 +13,11 @@
     ylabel=$\Delta T^w$ (\unit{\degreeCelsius}),
     xmajorticks=false,
     ybar,enlarge x limits=.15,
-    legend pos=outer north east]
+    area legend,
+    legend pos=outer north east,
+    legend cell align={left},
+    legend style={rounded corners},
+    scaled ticks=false, tick label style={/pgf/number format/fixed}]
     
     \addplot[solid,ultra thick,fill=MatlabBlue!25,draw=MatlabBlue] file {../fig/fig_AHXCalib/data/data_qdotDT0Water.txt};
     \addplot[solid,ultra thick,fill=MatlabOrange!25,draw=MatlabOrange,
@@ -37,7 +41,11 @@
     xtick={4.5,7,9.5},
     ybar,enlarge x limits=.15,
     at={($(DTqdot.south)+(0,-\spy)$)},anchor=north,
-    legend pos=outer north east]
+    area legend,
+    legend pos=outer north east,
+    legend cell align={left},
+    legend style={rounded corners},
+    scaled ticks=false, tick label style={/pgf/number format/fixed}]
     
     \addplot[solid,ultra thick,fill=MatlabOrange!25,draw=MatlabOrange] file{../fig/fig_AHXCalib/data/data_qdotQa1dotNoHeat.txt};
     \addplot[solid,ultra thick,fill=MatlabYellow!25,draw=MatlabYellow] file{../fig/fig_AHXCalib/data/data_qdotQa2dotHeat.txt};

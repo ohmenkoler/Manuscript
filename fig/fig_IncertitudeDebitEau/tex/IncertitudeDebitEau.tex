@@ -12,7 +12,8 @@
     ylabel={$\dot q_{\textsf{tb}}$ [\unit{\liter\per\minute}]},
     xmin=0,xmax=10,ymin=0,ymax=10,
     domain=0:9.5,
-    legend style = {at={(.97,.03)},anchor = south east}
+    legend cell align={left},
+    legend style = {at={(.97,.03)},anchor = south east, rounded corners}
     ]
         \addplot[solid,ultra thick,draw=MatlabBlue] file {../fig/fig_IncertitudeDebitEau/data/data_calibTurbineVSUltrason.txt} ;\addlegendentry{Exp.}
         \addplot[dashed,ultra thick,draw=MatlabBlue] {1.002*x - .3847}; \addlegendentry{Approx. linéaire,}

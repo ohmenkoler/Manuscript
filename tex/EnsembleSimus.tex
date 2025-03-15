@@ -2,7 +2,15 @@
 \mylocaltoc
 
 \section{Introduction}
-Dans ce chapitre, différents moyens de comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage sont expliqués. Tout d'abord, une analyse globale est réalisées dans la section~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim}. Les nombres adimensionnels utilisés dans la littérature pour évaluer la présence de convection naturelle y sont présentés et calculés. Ensuite, un modèle par éléments finis du régime stationnaire est développé dans la section~\ref{chap:FEM} - \nameref{chap:FEM} pour prendre en compte plus de paramètres d'étude. Enfin, un modèle analytique temporel du régime transitoire est présenté dans la section~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}.
+Dans ce chapitre, différents moyens appliqués pour comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage sont expliqués. 
+
+Tout d'abord, la section~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim} propose un rappel des modèles classiques de la littérature sur la convection naturelle. Dans cette partie, le cas des cavités rectangulaires en deux dimensions, ainsi que celui des cavités cylindriques en l'absence de matériau poreux est présenté. Cela permet d'introduire les nombres adimensionnels utilisés dans la littérature pour évaluer la présence de convection naturelle et de les calculer.
+
+Le système étudié dans ce travail est 
+
+Ensuite, un modèle par éléments finis du régime stationnaire est développé dans la section~\ref{chap:FEM} - \nameref{chap:FEM} pour prendre en compte plus de paramètres d'étude. 
+
+Enfin, un modèle analytique temporel du régime transitoire est présenté dans la section~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}.
 
 \section{Concepts de convection naturelle et nombres adimensionnels}\label{chap:NbrAdim}
 \echaf{Cette section reste dans ce chapitre ou c'est mieux en intro ?}
@@ -34,23 +42,29 @@ Dans la seconde sous-figure~\ref{fig:ConvNat2D_VertiDeltaT}, ce sont cette fois 
 
 \begin{figure}[!ht]
     \centering
-	\begin{subfigure}[c]{.47\textwidth}
+	\begin{subfigure}[c]{.42\textwidth}
 		\centering
-		\external{fig_ConvNat2D}
+		\external{fig_ConvNat2D_HorizDeltaT}
 %    	\externalremake
     	\input{../fig/fig_ConvNat2D/tex/fig_ConvNat2D_HorizDeltaT}
 		\caption{}
 		\label{fig:ConvNat2D_HorizDeltaT}
-	\end{subfigure}		
-	\begin{subfigure}[c]{.47\textwidth}
+	\end{subfigure}	
+%		\centering
+%		\external{fig_ConvNat2D_HorizDeltaT}
+%%    	\externalremake
+%		\tikz{\def\l{5};\draw[<->,dashed] (0,0) -- ++(0,\l) node[midway,fill=white]{$L_c$};}
+%		\phantomcaption
+%	\end{subfigure}	
+	\begin{subfigure}[c]{.42\textwidth}
 		\centering
-		\external{fig_ConvNat2D}
+		\external{fig_ConvNat2D_VertiDeltaT}
 %    	\externalremake
     	\input{../fig/fig_ConvNat2D/tex/fig_ConvNat2D_VertiDeltaT}
 		\caption{}
 		\label{fig:ConvNat2D_VertiDeltaT}
 	\end{subfigure}	    
-    \caption{Cellule de convection naturelle dans une cavité rectangulaire 2D \textbf{(a)} pour un gradient de température normal à la direction de la gravité, et \textbf{(b)} pour un gradient de température colinéaire à la direction de la gravité. Quelle que soit la configuration, la distance caractéristique $L_c$ est mesurée dans la direction verticale.}
+    \caption{Cellule de convection naturelle dans une cavité rectangulaire 2D \subref{fig:ConvNat2D_HorizDeltaT} pour un gradient de température normal à la direction de la gravité, et \subref{fig:ConvNat2D_VertiDeltaT} pour un gradient de température colinéaire à la direction de la gravité. Quelle que soit la configuration, la distance caractéristique $L_c$ est mesurée dans la direction verticale.}
     \label{fig:ConvNat2D}
 \end{figure}
 
@@ -154,6 +168,11 @@ avec $h$ le coefficient d'échange convectif à déterminer.\bigskip
 Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTemporel} doivent également être évalués par ces équations.
 
 \section{Simulations par éléments finis}\label{chap:FEM}
+\subsection{Modèle d'un système académique proche}
+Avant de considérer la cavité située entre la source acoustique principale et le noyau, dont la forme n'est pas conventionnelle, il est intéressant de développer un modèle proche de ce qui existe dans la littérature. En particulier, la convection dans des cavités cylindriques \echaf{cite trapezoidal + cylindric dans le mail d'LN}
+
+
+
 \subsection{Géométrie du problème}
 Les modèle 2D simplifiés de la cavité différentiellement chauffée présentée sur la figure~\ref{fig:ConvNat2D} ne prennent pas en compte plusieurs paramètres. En effet, la cavité est en réalité un cône, un flux oscillant se superpose à l'écoulement causé par la convection naturelle, et les conditions aux frontières sont plus complexes que des températures fixées. Pour connaître l'allure des lignes de courant à l'intérieur en présence d'un flux de masse provoqué par la convection naturelle, un modèle de la cavité est réalisé dans le logiciel d'éléments finis \textsc{Comsol} Multiphysics\textss\textregistered grâce à une géométrie présenté sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.
 
@@ -218,7 +237,7 @@ Les trois domaines formant la géométrie, c'est-à-dire le cône d'adaptation d
     \label{fig:SuperpositionComsol}
 \end{figure}
 
-Le but de ce modèle est de simuler le plus simplement possible le comportement thermique du réfrigérateur. Pour cela, un modèle purement thermique équivalent est développé sur la géométrie réduite présentée.
+Le but de ce modèle est de simuler le plus simplement possible le comportement thermique du réfrigérateur. Pour cela, un modèle purement thermique équivalent est développé pour la géométrie réduite présentée sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}, et dont les paramètres sont ajustés pour atteindre les amplitudes thermiques mesurées lors des expériences.
 
 Pour conserver un modèle simple, seuls des volumes de solides non-poreux et de gaz sont considérés dans le modèle complet. Ces domaines sont couplés par l'interface multiphysique \texttt{Nonisothermal flow (intf)}, avec l'interface physique \texttt{Heat transfer in Solids and Fluids (ht)} pour traiter ces questions de transferts thermiques dans tous les volumes. Les domaines correspondant au régénérateur et à son enceinte et sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cependant, ce modèle ne prend pas en compte de simulation de mécanique des fluides, et pour prendre la gravité et le mouvement du fluide causé par la convection naturelle en compte dans le modèle fluide, et il est nécessaire d'ajouter un modèle d'écoulement \texttt{laminar flow (spf)}.
 
@@ -241,9 +260,34 @@ Choisir une représentation matricielle de la conductivité est également motiv
 
 \subsection{Conditions aux frontières}
 \subsubsection{Modèle thermique}
-Toutes les parois sont considérées adiabatiques. Toutes ? Non, il reste encore des parois dont les conditions thermiques diffèrent. 
+Pour ce modèle correspondant au noyau et au cône d'adaptation d'impédance, deux configurations sont retenues pour les conditions aux frontières thermiques, légèrement différentes. Pour les deux, un flux de chaleur est retiré à la paroi qui représente l'échangeur froid, pour prendre en compte l'effet thermoacoustique \echaf{même si ce modèle ne contient pas de simulation acoustique}.
 
-Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixée à une température homogène sur la section, car c'est justement le gradient de température sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
+%\begin{figure}[!ht]
+%	\centering
+%	\begin{subfigure}[c]{.31\textwidth}
+%		\centering
+%		\includegraphics[width=.95\textwidth]{example-image-a}
+%		\caption{}
+%		\label{fig:Comsol_CondFront_Thermiques_Qc}
+%	\end{subfigure}
+%	\begin{subfigure}[c]{.31\textwidth}
+%		\centering
+%		\includegraphics[width=.95\textwidth]{example-image-b}
+%		\caption{}
+%		\label{fig:Comsol_CondFront_Thermiques_Ta}
+%	\end{subfigure}	
+%	\begin{subfigure}[c]{.31\textwidth}
+%		\centering
+%		\includegraphics[width=.95\textwidth]{example-image-c}
+%		\caption{}
+%		\label{fig:Comsol_CondFront_Thermiques_Adiab}
+%	\end{subfigure}
+%	\caption{Parois des domaines et conditions thermiques aux frontières correspondantes.}
+%	\label{fig:Comsol_CondFront_Thermiques}
+%\end{figure}
+
+\echaf{Un premier modèle est développé en considérant un flux de chaleur extrait à la paroi 
+Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixée à une température homogène sur la section, car c'est justement le gradient de température sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.}
 
 \echaf{ajouter étude paramètrique pour trouver -Qc=-Qth+Qchx}
 

@@ -6,18 +6,9 @@ data = readtable('RegenOnly_3e-4_4e-2_-30_30.txt');
 % data_Qth = [[1e-4 -15 0] ; table2array(data(4:end,[1 2 5]))];
 
 data_COP = table2array(data(:,[1 2 8]));
-data_DeltaT = table2array(data(:,[1 2 7]));
-    data_DeltaT(:,3) = -data_DeltaT(:,3);
+% data_DeltaT = table2array(data(:,[1 2 7]));
+%     data_DeltaT(:,3) = -data_DeltaT(:,3);
 data_Qth = table2array(data(:,[1 2 5]));
-
-%%
-COP_b = data_COP(1:10:end,:);
-DeltaT_b = data_DeltaT(1:10:end,:);
-Qth_b = data_Qth(1:10:end,:);
-
-save("data_DeltaEC_u_opt_COP_noReshape.txt",'COP_b','-ascii')
-save("data_DeltaEC_u_opt_DeltaT_noReshape.txt",'DeltaT_b','-ascii')
-save("data_DeltaEC_u_opt_Qth_noReshape.txt",'Qth_b','-ascii')
 
 %%
 data_COP_r = data_COP;

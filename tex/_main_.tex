@@ -1,3 +1,5 @@
+
+
 %---------------------------------------------------------------------%
 \documentclass[a4paper,11pt]{book}
 %\documentclass[a4paper,12pt]{report}
@@ -43,7 +45,7 @@
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 
 
-\newcommand{\echaf}[1]{\textcolor{red}{\{?#1?\}}}
+\newcommand{\echaf}[1]{\textcolor{red}{\{#1\}}}
 %---------------------------------------------------------------------%
 % PACKAGES
 %---------------------------------------------------------------------
@@ -174,6 +176,7 @@
 \usepackage{bm}
 \usepackage{mwe}
 \usepackage{graphicx}% Include figure files
+\usepackage{caption}
 \usepackage{subcaption}
 	\renewcommand\thesubfigure{(\alph{subfigure})}
 	\captionsetup[subfigure]{labelformat=simple}

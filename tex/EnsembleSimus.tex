@@ -310,7 +310,6 @@ Dans cette simulation, le régénérateur est modélisé en premier lieu comme u
 Un modèle temporel du régime transitoire de la distribution axiale de température dans le noyau thermoacoustique est créé pour approcher le réfrigérateur \textsc{Tacot} d'après le modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$ dans chaque volume élémentaire $S_{\sf reg} \deriv x$ du régénérateur discrétisé. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques. 
 
 \subsubsection{Champ acoustique considéré}
-%\begin{comment}
 Le modèle a pour but de calculer les transferts thermiques dans le régénérateur pour un champ acoustique quelconque. Aussi, l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}. Dans le cas d'un régénérateur compact du point de vue acoustique, les coefficients de cette matrice de transfert sont donnés par
 
 %\begin{subequations}
@@ -333,7 +332,7 @@ Le modèle a pour but de calculer les transferts thermiques dans le régénérat
 	p_1^{(n+1)}\\
 	u_1^{(n+1)}
 	\end{pmatrix}=\begin{bmatrix}
-	1 & -i\omega\frac{\rho}{\Phi S(1-f_\nu^{(n)})}\,\deriv x\\
+	1 & -i\omega\frac{\rho_0}{\Phi S\left(1-f_\nu^{(n)}\right)}\,\deriv x\\
 	-i\omega\frac{\Phi S \left(1 + (\gamma-1)f_\kappa^{(n)}\right)}{\gamma p_0}\ \deriv x & 1
 	\end{bmatrix}\begin{pmatrix}
 	p_1^{(n)}\\
@@ -360,8 +359,8 @@ Pour être le plus exhaustif possible, un grand nombre de phénomènes thermique
 \item Tout d'abord, le flux thermoacoustique 1D est calculé avec l'équation~\eqref{eq:FluxTA_swift} développée par Swift \cite{swift_thermoacoustics_2017}
 
 \begin{multline}
-	Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } pu^* \right] }_{q_{TA}(x)} \\ 
-	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |u|^2 }^{k_{TA}(x)}\partial_x \theta(r,x;t),
+	Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } p_1 v_1^* \right] }_{q_{TA}(x)} \\ 
+	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |v_1|^2 }^{k_{TA}(x)}\partial_x \theta(r,x;t),
 \label{eq:FluxTA_Transitoire_Regen}
 \end{multline}
 où $\theta(r,x;t) = T_0(r,x;t)-T_\infty$ est l'écart de la température locale à la température initiale. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans les dépendances spatio-temporelle. Il est important de remarquer la partie réelle de ce flux thermique, notée $q_{TA}$, qui ne dépend que du champ acoustique, et la partie imaginaire $k_{TA}$ qui dépend du gradient de température le long de l'empilement, et qui correspond à un terme de conduction induite par l'effet thermoacoustique.
@@ -445,12 +444,12 @@ dont l'intégrale sur la section de rayon $r_h$ est résolue par une méthode nu
 	\label{eq:FluxLat_Transitoire}
 \end{equation}
 
-\item L'échangeurs de chaleur froid apporte un flux de chaleur $Q_f$ en $x=0$, et l'échangeur ambiant retire un flux $Q_a$ en $x=L_{\sf reg}$. Cependant, chacun de ces flux se sépare en deux parties, l'une circulant dans le régénérateur et l'autre dans l'enceinte contenant les disques de tissus métalliques. La proportion $\epsilon$ qui circule dans le régénérateur est définie par
+\item L'échangeurs de chaleur froid apporte un flux de chaleur $Q_f$ en $x=0$, et l'échangeur ambiant retire un flux $Q_a$ en $x=L_{\sf reg}$. Cependant, chacun de ces flux se sépare en deux parties, l'une circulant dans le régénérateur et l'autre dans l'enceinte contenant les disques de tissus métalliques. La proportion $\epsilon$ qui circule dans le régénérateur est définie, \echaf{en négligeant la conduction par le fluide,} par
 \begin{equation}
 	\epsilon = \frac{k_s k_{s_{\sf frac}} (1-\Phi)S_{\sf reg}}{k_s k_{s_{\sf frac}} (1-\Phi)S_{\sf reg} + k_{\sf can} S_{\sf can}}.
 	\label{eq:ProportionQ_RegenCanister}
 \end{equation}
-et $k_{s_{\sf frac}}=\num{.1}$ le facteur de dégradation de conductivité qui quantifie la diminution de conductivité d'un matériau fait de tissus métalliques \cite{lewis_measurement_1998}.
+en considérant le facteur de dégradation de conductivité $k_{s_{\sf frac}}=\num{.1}$, qui quantifie la diminution de conductivité d'un matériau fait de tissus métalliques \cite{lewis_measurement_1998}. Pour le noyau installé au c\oe{}ur du réfrigérateur et dont les paramètres géométriques sont notés dans le tableau~\ref{tab:GeometrieTAC}, la proportion du flux de chaleur circulant dans le régénérateur est de \qty{25}{\percent}.
 
 \item Les effets de bords tels que les pertes de charges ou la vorticité sont pris en compte aux frontières du domaine grâce à des flux de chaleur $Q_{\sf vort}$ estimés empiriquement à $x=0$ et $x=L_{\sf reg}$.
 
@@ -458,63 +457,76 @@ et $k_{s_{\sf frac}}=\num{.1}$ le facteur de dégradation de conductivité qui q
 
 \subsubsection{Bilan thermique}
 
-Ces flux de chaleurs sont reportés dans l'équation modifiée du bilan de chaleur qui s'écrit
+Le bilan de chaleur dans chaque volume $S_{\sf reg} \deriv x$ du régénérateur s'écrit 
 
-%\begin{equation}
-%[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\partial_t \theta = - \nabla \cdot (Q_{TA} + Q_{\sf cond}) + Q_{\sf visq},
-%\label{eq:BilanChaleur_Transitoire}
-%\end{equation}
-%ce qui donne après développement de l'opérateur divergence en coordonnées cylindrique,
 
 \begin{equation}
-[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\ \partial_t \theta = - \partial_x Q_{TA} - \partial_x Q_{\sf cond}^{(x)} - \partial_r Q_{\sf cond}^{(r)} + Q_{\sf visq}.
+[\Phi\rho_0 C_p + (1-\Phi)\rho_s C_s]\ \partial_t \theta = - \partial_x Q_{TA} - \partial_x Q_{\sf cond}^{(x)} - \partial_r Q_{\sf cond}^{(r)} + Q_{\sf visq},
 \label{eq:BilanThermique_Transitoire}
 \end{equation}
 
-Le premier membre désigne la variation d'énergie interne suite à la variation de température, et le second membre, l'expression des flux thermiques dans chaque volume élémentaire. D'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux se produisent dans chaque volume, il sont donc source de chaleur et doivent être pris en compte tels quels. Ceci dit, le régénérateur est supposé axisymétrique, ce qui permet de considérer les composantes azimuthales $\nabla_\alpha \cdot Q_{TA}$ et $\nabla_\alpha \cdot Q_{\sf cond}$ comme nulles.
+Avec dans le premier membre qui désigne la variation d'énergie interne suite à la variation de température, et le second membre, l'expression des flux thermiques dans chaque volume élémentaire du régénérateur discrétisé. Deux types d'effets sont à noter : d'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux se produisent dans chaque volume, il sont donc source de chaleur et doivent être pris en compte tels quels.\smallskip
 
-Le problème décrit par l'équation~\ref{eq:BilanThermique_Transitoire} est conditionné aux frontières en $x=0$, $x=L_{\sf reg}$ et $r=R_{\sf reg}$ pour respecter la conservation d'énergie. Ces conditions se traduisent par le système d'équations
+Le problème décrit par l'équation~\ref{eq:BilanThermique_Transitoire} est conditionné aux frontières en $x=0$, $x=L_{\sf reg}$,  $r=0$ et $r=2R_{\sf reg}$, pour respecter la conservation d'énergie. Ces conditions se traduisent par le système d'équations
 
 \begin{subequations}
 	\begin{align}
-		Q_{\sf cond}^{(x)} + Q_f + Q_{\sf vort}(0) &= Q_{TA}(0) + h_x(0)\theta,\quad &x=0,\ r \in [0,R_{\sf reg}], t>0 \label{eq:CondFront_x_0Froid}\\%
-		Q_{TA}(L_{reg}) + Q_{\sf vort}(L_{reg})  &= Q_{\sf cond}^{(x)} + Q_a + h_x(L_{\sf reg})\theta, \quad &x=L_{\sf reg},\ r \in [0,R_{\sf reg}], t>0 \label{eq:CondFront_x_LregAmb}\\%
-		Q_{\sf cond}^{(r)} &= h_r(R_{\sf reg})\theta, \quad &r=R_{\sf reg},\ x \in [0,L_{\sf reg}], t>0 \label{eq:CondFront_r_ra}
+		k_x \partial_x \theta - h_x\theta &= Q_{TA}(0) - Q_{\sf vort}(0) - \epsilon Q_f, & x=0,\ r \in [0,R_{\sf reg}],\ t>0\ ; \label{eq:CondFront_x_0Froid}\\%
+		k_x \partial_x \theta + h_x \theta &= Q_{TA}(L_{\sf reg}) + Q_{\sf vort}(L_{\sf reg}) + \epsilon Q_a, & x=L_{\sf reg},\ r \in [0,R_{\sf reg}],\ t>0\ ; \label{eq:CondFront_x_LregAmb}\\%
+		k_r \partial_r \theta + h_r \theta &= 0, & r=0,\ 2R_{\sf reg},\ x \in [0,L_{\sf reg}],\ t>0. \label{eq:CondFront_r_Rreg}
 	\end{align}%
 	\label{eq:CondFront}%
 \end{subequations}
-où $Q_f$ et $Q_a$ sont les flux de chaleur retirés à l'échangeur froid d'une part et apporté à l'échangeur ambiant d'autre part. Ce système signifie que pour chaque frontière, la somme des flux entrant dans l'interface et des sources thermiques est égale aux flux qui en sortent. Il reste à introduire la distribution de température à $t=0$ notée $\theta_0(x,r)$ comme condition initiale, qui se présente comme
 
-\begin{equation}
-	\theta(x,r,t=0) = \theta_0(x,r).
-	\label{eq:CondInit}
-\end{equation}
+Ce système signifie que pour chaque frontière, la somme des flux entrant dans l'interface et des sources thermiques est égale aux flux qui en sortent. Il reste à introduire la distribution de température à $t=0$ notée $\theta_0(x,r)$ comme condition initiale, qui se présente comme
 
-Le report des flux de chaleurs des équations~\eqref{eq:FluxTA_Transitoire_Regen} à \eqref{eq:FluxLat_Transitoire} dans l'équation du problème~\eqref{eq:BilanThermique_Transitoire}, dans les conditions aux frontières~\eqref{eq:CondFront} et dans la condition initiale~\eqref{eq:CondInit} permet de poser le problème tel que
+\begin{align}
+	\theta(x,r,t=0) &= \theta_0(x,r), & t=0,\ x \in [0,L_{\sf reg}],\ r \in [0,2R_{\sf reg}], \label{eq:CondInit}
+\end{align}
+pour prendre en compte une distribution potentiellement non uniforme au début de la simulation, comme par exemple dans le cas des expérimentations menées suivant le protocole présenté dans la section~\ref{chap:Acquisitions} et où la circulation d'eau préalable à l'allumage des sources provoque un gradient axial de température (voir la figure~\ref{fig:WaterOnly_TC}).
 
-\begin{equation}
-	toto
-	\label{eq:ProbTransitoire_ApDvpt}
-\end{equation}
+%Le report des flux de chaleurs des équations~\eqref{eq:FluxTA_Transitoire_Regen} à \eqref{eq:FluxLat_Transitoire} dans l'équation du problème~\eqref{eq:BilanThermique_Transitoire}, dans les conditions aux frontières~\eqref{eq:CondFront} et dans la condition initiale~\eqref{eq:CondInit} permet de poser le problème tel que
+%
+%\begin{equation}
+%	toto
+%	\label{eq:ProbTransitoire_ApDvpt}
+%\end{equation}
+
 
 \subsubsection{Méthode des transformations intégrales}\label{chap:TransfoIntegrales}
-La résolution de l'équation~\eqref{eq:BilanThermique_Transitoire} qui comporte des termes sources requiert l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{ozisik_heat_1993}. Les équations s'écrivent alors
+Ce problème transitoire comporte des termes sources, et requiert donc une méthode de résolution différente. Le formalisme de Green est utilisé, par l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{ozisik_heat_1993}. Les équations du système~\eqref{eq:CondFront}, soit le bilan de chaleur~\eqref{eq:BilanThermique_Transitoire}, les conditions aux frontières~\eqref{eq:CondFront} et la condition initiale~\eqref{eq:CondInit} se réécrivent alors selon
 
 \begin{subequations}
 	\begin{align}
-		\echaf{Systeme\ ici},\label{eq:1_Transitoire}\\
-		\echaf{Systeme\ ici},\label{eq:2_Transitoire}
-	\end{align}
-	\label{eq:SystemeEq_Transitoire}
+		\frac{1}{g} \partial_t \theta &= \partial_{xx}^2 \theta + \gamma \partial_{rr}^2\theta + \beta, & x \in [0,L_{\sf reg}],\ r \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:BilanThermique_ChgtVariables} \\
+		\partial_x \theta - \eta_0 \theta &= q_0, & x=0,\ r \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:CondFront_x_0Froid_ChgtVariables} \\[6pt]
+		\partial_x \theta + \eta_{L_{\sf reg}} \theta &= q_{L_{\sf reg}}, & x=L_{\sf reg},\ r \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:CondFront_x_LregAmb_ChgtVariables} \\[6pt]
+		\partial_r \theta - \eta_r \theta &= 0, & r=0,\ 2R_{\sf reg},\ x \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:CondFront_r_Rreg_ChgtVariables} \\[6pt]
+		\theta(x,r,t=0) &= \theta_0(x,r), & t=0,\ x \in [0,L_{\sf reg}],\ r \in [0,2R_{\sf reg}].	\label{eq:CondInit_ChgtVariables}
+	\end{align}	
+	\label{eq:ProblemeTransitoire_ChgtVariables}
 \end{subequations}
-avec les changements de variables suivants
+\echaf{changer les noms $g, \gamma, q_0, q_L$} avec les changements de variables suivants
 
-\begin{itemize} \color{red}
-	\item 1
-	\item 2.
-\end{itemize}
+\begin{multicols}{2}
+	\begin{subequations}
+		\begin{align}
+			\eta_{0,L_{\sf reg}} &= \frac{\left.h_x\right|_{x=0,L_{\sf reg}}}{k_x + k_{TA}(L_{\sf reg})}, \\
+			\eta_r &= \frac{h_r}{k_r}, \\
+			q_0 &= \frac{Q_{TA}(0)-Q_{\sf vort}(L_{\sf reg})+\epsilon Q_f}{k_x+k_{TA}(L_{\sf reg})}, \\
+			q_l &= \frac{Q_{TA}(L_{\sf reg})+Q_{\sf vort}(L_{\sf reg})+\epsilon Q_a}{k_x+k_{TA}(L_{\sf reg})},
+		\end{align}
+		
+		\begin{align}
+			g(x) &= \frac{k_x + k_{TA}(x)}{\Phi \rho_0 C_p + (1-\Phi) \rho_s C_s}, \\
+			\gamma &= \frac{k_r}{k_x + k_{TA}(x)}, \\
+			\beta &= \frac{Q_{\sf visq}-\partial_x q_{TA}(x)}{k_x + k_{TA}(x)}.
+		\end{align}
+		\label{ChgtVariables}
+	\end{subequations}
+\end{multicols}
 
-%\end{comment}
+
 \subsection{Détermination des paramètres empiriques}
 Parce que le modèle contient un certain nombre de paramètres empiriques à ajuster pour retrouver les mêmes tendances que sur les résultats expérimentaux, il convient de procéder par étape.
 

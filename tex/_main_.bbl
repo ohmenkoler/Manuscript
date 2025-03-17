@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{none/global//global/global/global}
-    \entry{johnson_theory_1987}{article}{}{}
+  \datalist[entry]{none/global//global/global}
+    \entry{johnson_theory_1987}{article}{}
       \name{author}{3}{}{%
         {{hash=0e08bac8bf467ca2d9b0e1058eeca225}{%
            family={Johnson},
@@ -39,12 +39,10 @@
       }
       \strng{namehash}{d5d0402886178548816d16286333041a}
       \strng{fullhash}{937f184db9a14af3a647ea45dfdee74c}
-      \strng{fullhashraw}{937f184db9a14af3a647ea45dfdee74c}
       \strng{bibnamehash}{937f184db9a14af3a647ea45dfdee74c}
       \strng{authorbibnamehash}{937f184db9a14af3a647ea45dfdee74c}
       \strng{authornamehash}{d5d0402886178548816d16286333041a}
       \strng{authorfullhash}{937f184db9a14af3a647ea45dfdee74c}
-      \strng{authorfullhashraw}{937f184db9a14af3a647ea45dfdee74c}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -78,27 +76,25 @@
       \verb http://www.journals.cambridge.org/abstract_S0022112087000727
       \endverb
     \endentry
-    \entry{drummond_laminar_1984}{article}{}{}
+    \entry{drummond_laminar_1984}{article}{}
       \name{author}{2}{}{%
         {{hash=282476c3515b35eb640e5419aa0ef08c}{%
            family={Drummond},
            familyi={D\bibinitperiod},
-           given={J.E.},
-           giveni={J\bibinitperiod}}}%
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
         {{hash=36f5c6406f387d1581fc6d7c1cd394e6}{%
            family={Tahir},
            familyi={T\bibinitperiod},
-           given={M.I.},
-           giveni={M\bibinitperiod}}}%
+           given={M.\bibnamedelimi I.},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
       }
       \strng{namehash}{145b4352de74601ceeef8f1bcec14337}
       \strng{fullhash}{41f45789b7519b1850b3944c9a5df9fa}
-      \strng{fullhashraw}{41f45789b7519b1850b3944c9a5df9fa}
       \strng{bibnamehash}{41f45789b7519b1850b3944c9a5df9fa}
       \strng{authorbibnamehash}{41f45789b7519b1850b3944c9a5df9fa}
       \strng{authornamehash}{145b4352de74601ceeef8f1bcec14337}
       \strng{authorfullhash}{41f45789b7519b1850b3944c9a5df9fa}
-      \strng{authorfullhashraw}{41f45789b7519b1850b3944c9a5df9fa}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -132,7 +128,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/030193228490079X
       \endverb
     \endentry
-    \entry{duffourd_refrigerateur_2001}{thesis}{}{}
+    \entry{duffourd_refrigerateur_2001}{thesis}{}
       \name{author}{1}{}{%
         {{hash=51aa8109e86bae3313f739467ec83c6d}{%
            family={Duffourd},
@@ -145,12 +141,10 @@
       }
       \strng{namehash}{51aa8109e86bae3313f739467ec83c6d}
       \strng{fullhash}{51aa8109e86bae3313f739467ec83c6d}
-      \strng{fullhashraw}{51aa8109e86bae3313f739467ec83c6d}
       \strng{bibnamehash}{51aa8109e86bae3313f739467ec83c6d}
       \strng{authorbibnamehash}{51aa8109e86bae3313f739467ec83c6d}
       \strng{authornamehash}{51aa8109e86bae3313f739467ec83c6d}
       \strng{authorfullhash}{51aa8109e86bae3313f739467ec83c6d}
-      \strng{authorfullhashraw}{51aa8109e86bae3313f739467ec83c6d}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -167,7 +161,7 @@
       \verb Duffourd - 2001 - Réfrigérateur thermoacoustique études analytique.pdf:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\VWLTZLDT\\Duffourd - 2001 - Réfrigérateur thermoacoustique études analytique.pdf:application/pdf
       \endverb
     \endentry
-    \entry{penelet_etude_2004}{thesis}{}{}
+    \entry{penelet_etude_2004}{thesis}{}
       \name{author}{1}{}{%
         {{hash=46296b7781800d4201a0837fd1f1cb5b}{%
            family={Penelet},
@@ -183,12 +177,10 @@
       }
       \strng{namehash}{46296b7781800d4201a0837fd1f1cb5b}
       \strng{fullhash}{46296b7781800d4201a0837fd1f1cb5b}
-      \strng{fullhashraw}{46296b7781800d4201a0837fd1f1cb5b}
       \strng{bibnamehash}{46296b7781800d4201a0837fd1f1cb5b}
       \strng{authorbibnamehash}{46296b7781800d4201a0837fd1f1cb5b}
       \strng{authornamehash}{46296b7781800d4201a0837fd1f1cb5b}
       \strng{authorfullhash}{46296b7781800d4201a0837fd1f1cb5b}
-      \strng{authorfullhashraw}{46296b7781800d4201a0837fd1f1cb5b}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -204,7 +196,7 @@
       \endverb
       \keyw{Engine,Thermoacoustics,Travelling waves}
     \endentry
-    \entry{poignand_analysis_2013}{article}{}{}
+    \entry{poignand_analysis_2013}{article}{}
       \name{author}{5}{}{%
         {{hash=e19a50b30a9cae1a2eacf5ec366ae7ab}{%
            family={Poignand},
@@ -234,12 +226,10 @@
       }
       \strng{namehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{fullhash}{5f3af33a6c984cb6b22365c48fdce258}
-      \strng{fullhashraw}{5f3af33a6c984cb6b22365c48fdce258}
       \strng{bibnamehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{authorbibnamehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{authornamehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{authorfullhash}{5f3af33a6c984cb6b22365c48fdce258}
-      \strng{authorfullhashraw}{5f3af33a6c984cb6b22365c48fdce258}
       \field{extraname}{1}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
@@ -276,7 +266,7 @@
       \endverb
       \keyw{Thermoacoustics,Refrigerator,Coaxial,Compact}
     \endentry
-    \entry{poignand_thermoacoustic_2011}{article}{}{}
+    \entry{poignand_thermoacoustic_2011}{article}{}
       \name{author}{4}{}{%
         {{hash=e19a50b30a9cae1a2eacf5ec366ae7ab}{%
            family={Poignand},
@@ -301,12 +291,10 @@
       }
       \strng{namehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{fullhash}{1fd765847c54b750658b1b44fbdbd949}
-      \strng{fullhashraw}{1fd765847c54b750658b1b44fbdbd949}
       \strng{bibnamehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{authorbibnamehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{authornamehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{authorfullhash}{1fd765847c54b750658b1b44fbdbd949}
-      \strng{authorfullhashraw}{1fd765847c54b750658b1b44fbdbd949}
       \field{extraname}{2}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
@@ -344,13 +332,13 @@
       \endverb
       \keyw{Thermoacoustics,Refrigerator,Coaxial,Compact}
     \endentry
-    \entry{tijani_study_2008}{article}{}{}
+    \entry{tijani_study_2008}{article}{}
       \name{author}{2}{}{%
         {{hash=86fe59f5b31d726b582e3550bb027de1}{%
            family={Tijani},
            familyi={T\bibinitperiod},
-           given={M.E.H.},
-           giveni={M\bibinitperiod}}}%
+           given={M.\bibnamedelimi E.\bibnamedelimi H.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
         {{hash=84b85fda7a331e415064bcd639b1c575}{%
            family={Spoelstra},
            familyi={S\bibinitperiod},
@@ -359,12 +347,10 @@
       }
       \strng{namehash}{67909e765f7a8df193c86e7a5345833c}
       \strng{fullhash}{cf1fc6982689862b3f8e560a6f1c3461}
-      \strng{fullhashraw}{cf1fc6982689862b3f8e560a6f1c3461}
       \strng{bibnamehash}{cf1fc6982689862b3f8e560a6f1c3461}
       \strng{authorbibnamehash}{cf1fc6982689862b3f8e560a6f1c3461}
       \strng{authornamehash}{67909e765f7a8df193c86e7a5345833c}
       \strng{authorfullhash}{cf1fc6982689862b3f8e560a6f1c3461}
-      \strng{authorfullhashraw}{cf1fc6982689862b3f8e560a6f1c3461}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -399,7 +385,7 @@
       \endverb
       \keyw{Thermoacoustics,Refrigerator}
     \endentry
-    \entry{ramadan_design_2021}{article}{}{}
+    \entry{ramadan_design_2021}{article}{}
       \name{author}{4}{}{%
         {{hash=841d1559d51fa6af3b41d3ea4fad9638}{%
            family={Ramadan},
@@ -424,12 +410,10 @@
       }
       \strng{namehash}{15aec2b4a2bc0b0d1a9d8d051fdb5cb3}
       \strng{fullhash}{657dfe00c233c8a0cebd15fab546e9e1}
-      \strng{fullhashraw}{657dfe00c233c8a0cebd15fab546e9e1}
       \strng{bibnamehash}{15aec2b4a2bc0b0d1a9d8d051fdb5cb3}
       \strng{authorbibnamehash}{15aec2b4a2bc0b0d1a9d8d051fdb5cb3}
       \strng{authornamehash}{15aec2b4a2bc0b0d1a9d8d051fdb5cb3}
       \strng{authorfullhash}{657dfe00c233c8a0cebd15fab546e9e1}
-      \strng{authorfullhashraw}{657dfe00c233c8a0cebd15fab546e9e1}
       \field{extraname}{1}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
@@ -464,7 +448,7 @@
       \endverb
       \keyw{Thermoacoustics,Refrigerator,Two sources}
     \endentry
-    \entry{ross_influence_2003}{incollection}{}{}
+    \entry{ross_influence_2003}{incollection}{}
       \name{author}{4}{}{%
         {{hash=240f15f7d0b589c89d5552453f46785d}{%
            family={Liu},
@@ -502,16 +486,13 @@
       }
       \strng{namehash}{8e509e5e53b3287487b3d77bfc550fb5}
       \strng{fullhash}{40486ba97079425cb53296fdfb1f3592}
-      \strng{fullhashraw}{40486ba97079425cb53296fdfb1f3592}
       \strng{bibnamehash}{8e509e5e53b3287487b3d77bfc550fb5}
       \strng{authorbibnamehash}{8e509e5e53b3287487b3d77bfc550fb5}
       \strng{authornamehash}{8e509e5e53b3287487b3d77bfc550fb5}
       \strng{authorfullhash}{40486ba97079425cb53296fdfb1f3592}
-      \strng{authorfullhashraw}{40486ba97079425cb53296fdfb1f3592}
       \strng{editorbibnamehash}{87209b89ed34a2825e4a154d15e41f46}
       \strng{editornamehash}{87209b89ed34a2825e4a154d15e41f46}
       \strng{editorfullhash}{87209b89ed34a2825e4a154d15e41f46}
-      \strng{editorfullhashraw}{87209b89ed34a2825e4a154d15e41f46}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -542,7 +523,7 @@
       \verb http://link.springer.com/10.1007/0-306-47919-2_59
       \endverb
     \endentry
-    \entry{hireche_numerical_2019}{article}{}{}
+    \entry{hireche_numerical_2019}{article}{}
       \name{author}{5}{}{%
         {{hash=017783d6554201bcc3e477bf9cd5e5b9}{%
            family={Hireche},
@@ -572,12 +553,10 @@
       }
       \strng{namehash}{bd2b750d778daaaf22b2ad4f3bdfb5eb}
       \strng{fullhash}{e24be08fb860b520b555df9508c6ddf6}
-      \strng{fullhashraw}{e24be08fb860b520b555df9508c6ddf6}
       \strng{bibnamehash}{bd2b750d778daaaf22b2ad4f3bdfb5eb}
       \strng{authorbibnamehash}{bd2b750d778daaaf22b2ad4f3bdfb5eb}
       \strng{authornamehash}{bd2b750d778daaaf22b2ad4f3bdfb5eb}
       \strng{authorfullhash}{e24be08fb860b520b555df9508c6ddf6}
-      \strng{authorfullhashraw}{e24be08fb860b520b555df9508c6ddf6}
       \field{extraname}{1}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
@@ -614,7 +593,7 @@
       \endverb
       \keyw{Thermoacoustics,Numerical simulations,Natural convection,Porous medium}
     \endentry
-    \entry{pan_visualization_2012}{article}{}{}
+    \entry{pan_visualization_2012}{article}{}
       \name{author}{3}{}{%
         {{hash=f4531f7ed6a6f5633c1f2b3999f8d526}{%
            family={Pan},
@@ -634,12 +613,10 @@
       }
       \strng{namehash}{120dc3963c97f8f556b021df1a590368}
       \strng{fullhash}{9418bc6f5b0d8cdfcc72b0497882aece}
-      \strng{fullhashraw}{9418bc6f5b0d8cdfcc72b0497882aece}
       \strng{bibnamehash}{9418bc6f5b0d8cdfcc72b0497882aece}
       \strng{authorbibnamehash}{9418bc6f5b0d8cdfcc72b0497882aece}
       \strng{authornamehash}{120dc3963c97f8f556b021df1a590368}
       \strng{authorfullhash}{9418bc6f5b0d8cdfcc72b0497882aece}
-      \strng{authorfullhashraw}{9418bc6f5b0d8cdfcc72b0497882aece}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -674,12 +651,12 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931012006199
       \endverb
     \endentry
-    \entry{bianchi_transferts_2004}{book}{}{}
+    \entry{bianchi_transferts_2004}{book}{}
       \name{author}{3}{}{%
         {{hash=92e82d0630ac93d07603a190f6de8d8d}{%
            family={Bianchi},
            familyi={B\bibinitperiod},
-           given={A-M.},
+           given={A.-M.},
            giveni={A\bibinithyphendelim M\bibinitperiod}}}%
         {{hash=9d8c1e67ba1235baca5691c05df8b54a}{%
            family={Fautrelle},
@@ -700,12 +677,10 @@
       }
       \strng{namehash}{7570772384af8eca34cbf1ac4811e38b}
       \strng{fullhash}{333800dce3c8525f12ba388189dcb6d0}
-      \strng{fullhashraw}{333800dce3c8525f12ba388189dcb6d0}
       \strng{bibnamehash}{333800dce3c8525f12ba388189dcb6d0}
       \strng{authorbibnamehash}{333800dce3c8525f12ba388189dcb6d0}
       \strng{authornamehash}{7570772384af8eca34cbf1ac4811e38b}
       \strng{authorfullhash}{333800dce3c8525f12ba388189dcb6d0}
-      \strng{authorfullhashraw}{333800dce3c8525f12ba388189dcb6d0}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -716,7 +691,7 @@
       \field{year}{2004}
       \field{dateera}{ce}
     \endentry
-    \entry{babaei_investigation_2010}{inproceedings}{}{}
+    \entry{babaei_investigation_2010}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=bb7e946f0d205be83e82bbef5f4e8600}{%
            family={Babaei},
@@ -731,12 +706,10 @@
       }
       \strng{namehash}{fef7946a8edbb20ad33a267e3945e97f}
       \strng{fullhash}{ffb67da24298cd6667d8c0d50f030608}
-      \strng{fullhashraw}{ffb67da24298cd6667d8c0d50f030608}
       \strng{bibnamehash}{ffb67da24298cd6667d8c0d50f030608}
       \strng{authorbibnamehash}{ffb67da24298cd6667d8c0d50f030608}
       \strng{authornamehash}{fef7946a8edbb20ad33a267e3945e97f}
       \strng{authorfullhash}{ffb67da24298cd6667d8c0d50f030608}
-      \strng{authorfullhashraw}{ffb67da24298cd6667d8c0d50f030608}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -762,7 +735,7 @@
       \verb https://doi.org/10.1115/FEDSM-ICNMM2010-30798
       \endverb
     \endentry
-    \entry{gardner_cascade_2003}{article}{}{}
+    \entry{gardner_cascade_2003}{article}{}
       \name{author}{2}{}{%
         {{hash=9a10a23b87990cf43047a414fe48004c}{%
            family={Gardner},
@@ -777,12 +750,10 @@
       }
       \strng{namehash}{2da3931cc724888f0fd334e6d0bd72f1}
       \strng{fullhash}{e20536a7d412de793e03cb3342ef824e}
-      \strng{fullhashraw}{e20536a7d412de793e03cb3342ef824e}
       \strng{bibnamehash}{e20536a7d412de793e03cb3342ef824e}
       \strng{authorbibnamehash}{e20536a7d412de793e03cb3342ef824e}
       \strng{authornamehash}{2da3931cc724888f0fd334e6d0bd72f1}
       \strng{authorfullhash}{e20536a7d412de793e03cb3342ef824e}
-      \strng{authorfullhashraw}{e20536a7d412de793e03cb3342ef824e}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -817,7 +788,7 @@
       \verb https://pubs.aip.org/jasa/article/114/4/1905/547407/A-cascade-thermoacoustic-engine
       \endverb
     \endentry
-    \entry{shiina_critical_2010}{article}{}{}
+    \entry{shiina_critical_2010}{article}{}
       \name{author}{2}{}{%
         {{hash=e7b142f1f77df7700b008e812aab693d}{%
            family={Shiina},
@@ -832,12 +803,10 @@
       }
       \strng{namehash}{635747409e6eca85fb680d3707316c6a}
       \strng{fullhash}{40cd635c6853e68b7b2f5113e6b0865e}
-      \strng{fullhashraw}{40cd635c6853e68b7b2f5113e6b0865e}
       \strng{bibnamehash}{40cd635c6853e68b7b2f5113e6b0865e}
       \strng{authorbibnamehash}{40cd635c6853e68b7b2f5113e6b0865e}
       \strng{authornamehash}{635747409e6eca85fb680d3707316c6a}
       \strng{authorfullhash}{40cd635c6853e68b7b2f5113e6b0865e}
-      \strng{authorfullhashraw}{40cd635c6853e68b7b2f5113e6b0865e}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -872,7 +841,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931009006450
       \endverb
     \endentry
-    \entry{kvernvold_nonlinear_1979}{article}{}{}
+    \entry{kvernvold_nonlinear_1979}{article}{}
       \name{author}{2}{}{%
         {{hash=c4aee1fa71ef2f2ca013a2613c9cdcec}{%
            family={Kvernvold},
@@ -887,12 +856,10 @@
       }
       \strng{namehash}{50586e21e26487dcba2371f31e8c0b36}
       \strng{fullhash}{4fe31faff244160a4ed35e3384dd17a5}
-      \strng{fullhashraw}{4fe31faff244160a4ed35e3384dd17a5}
       \strng{bibnamehash}{4fe31faff244160a4ed35e3384dd17a5}
       \strng{authorbibnamehash}{4fe31faff244160a4ed35e3384dd17a5}
       \strng{authornamehash}{50586e21e26487dcba2371f31e8c0b36}
       \strng{authorfullhash}{4fe31faff244160a4ed35e3384dd17a5}
-      \strng{authorfullhashraw}{4fe31faff244160a4ed35e3384dd17a5}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -926,27 +893,25 @@
       \verb http://www.journals.cambridge.org/abstract_S0022112079002445
       \endverb
     \endentry
-    \entry{richard_critere_1981}{article}{}{}
+    \entry{richard_critere_1981}{article}{}
       \name{author}{2}{}{%
-        {{hash=9880562697add33b8ffeeacb7783baf1}{%
+        {{hash=2c08b4f87120c31dc438730d1db21c6c}{%
            family={Richard},
            familyi={R\bibinitperiod},
-           given={J.P.},
-           giveni={J\bibinitperiod}}}%
+           given={J.-P.},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
         {{hash=c8a3ece1c3fbffc23143e4ac7149f2e1}{%
            family={Gounot},
            familyi={G\bibinitperiod},
            given={J.},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{3402a9c3559d1ba52706f92859b0eca0}
-      \strng{fullhash}{09c45272cbb1cbe48da06cf22e13b011}
-      \strng{fullhashraw}{09c45272cbb1cbe48da06cf22e13b011}
-      \strng{bibnamehash}{09c45272cbb1cbe48da06cf22e13b011}
-      \strng{authorbibnamehash}{09c45272cbb1cbe48da06cf22e13b011}
-      \strng{authornamehash}{3402a9c3559d1ba52706f92859b0eca0}
-      \strng{authorfullhash}{09c45272cbb1cbe48da06cf22e13b011}
-      \strng{authorfullhashraw}{09c45272cbb1cbe48da06cf22e13b011}
+      \strng{namehash}{2db22b0ea39e5f45fe682b36ee2cd767}
+      \strng{fullhash}{3c7a239e636aefd788956c1cb9e92065}
+      \strng{bibnamehash}{3c7a239e636aefd788956c1cb9e92065}
+      \strng{authorbibnamehash}{3c7a239e636aefd788956c1cb9e92065}
+      \strng{authornamehash}{2db22b0ea39e5f45fe682b36ee2cd767}
+      \strng{authorfullhash}{3c7a239e636aefd788956c1cb9e92065}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -980,7 +945,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/0017931081901836
       \endverb
     \endentry
-    \entry{horton_convection_1945}{article}{}{}
+    \entry{horton_convection_1945}{article}{}
       \name{author}{2}{}{%
         {{hash=ec7e6542010b6c07ea33c8155ab5ac6d}{%
            family={Horton},
@@ -995,12 +960,10 @@
       }
       \strng{namehash}{7d08e2f901640ee17f6c22d40a82f3f7}
       \strng{fullhash}{0dc4370ffe79f77c8b6080992430cd91}
-      \strng{fullhashraw}{0dc4370ffe79f77c8b6080992430cd91}
       \strng{bibnamehash}{0dc4370ffe79f77c8b6080992430cd91}
       \strng{authorbibnamehash}{0dc4370ffe79f77c8b6080992430cd91}
       \strng{authornamehash}{7d08e2f901640ee17f6c22d40a82f3f7}
       \strng{authorfullhash}{0dc4370ffe79f77c8b6080992430cd91}
-      \strng{authorfullhashraw}{0dc4370ffe79f77c8b6080992430cd91}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -1035,7 +998,7 @@
       \verb https://pubs.aip.org/jap/article/16/6/367/158213/Convection-Currents-in-a-Porous-Medium
       \endverb
     \endentry
-    \entry{wakeland_use_2000}{article}{}{}
+    \entry{wakeland_use_2000}{article}{}
       \name{author}{1}{}{%
         {{hash=5f35124efb916f55620fc09b603bc365}{%
            family={Wakeland},
@@ -1045,12 +1008,10 @@
       }
       \strng{namehash}{5f35124efb916f55620fc09b603bc365}
       \strng{fullhash}{5f35124efb916f55620fc09b603bc365}
-      \strng{fullhashraw}{5f35124efb916f55620fc09b603bc365}
       \strng{bibnamehash}{5f35124efb916f55620fc09b603bc365}
       \strng{authorbibnamehash}{5f35124efb916f55620fc09b603bc365}
       \strng{authornamehash}{5f35124efb916f55620fc09b603bc365}
       \strng{authorfullhash}{5f35124efb916f55620fc09b603bc365}
-      \strng{authorfullhashraw}{5f35124efb916f55620fc09b603bc365}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
@@ -1084,7 +1045,7 @@
       \verb https://pubs.aip.org/asa/jasa/article/107/2/827-832/555415
       \endverb
     \endentry
-    \entry{backhaus_thermoacoustic-stirling_2000}{article}{}{}
+    \entry{backhaus_thermoacoustic-stirling_2000}{article}{}
       \name{author}{2}{}{%
         {{hash=52395bf87992fe8a3b278a1339f27e27}{%
            family={Backhaus},
@@ -1099,12 +1060,10 @@
       }
       \strng{namehash}{bc6c0bdd49079aa8033e670c7d92b2b7}
       \strng{fullhash}{7a31f3751b14c59cb4e38decf5996794}
-      \strng{fullhashraw}{7a31f3751b14c59cb4e38decf5996794}
       \strng{bibnamehash}{7a31f3751b14c59cb4e38decf5996794}
       \strng{authorbibnamehash}{7a31f3751b14c59cb4e38decf5996794}
       \strng{authornamehash}{bc6c0bdd49079aa8033e670c7d92b2b7}
       \strng{authorfullhash}{7a31f3751b14c59cb4e38decf5996794}
-      \strng{authorfullhashraw}{7a31f3751b14c59cb4e38decf5996794}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
@@ -1140,7 +1099,7 @@
       \endverb
       \keyw{Engine,Thermoacoustics,Jet flow}
     \endentry
-    \entry{rossi_electroacoustique_1986}{book}{}{}
+    \entry{rossi_electroacoustique_1986}{book}{}
       \name{author}{1}{}{%
         {{hash=fd4fe8657112bec19ceb03436154bfe5}{%
            family={Rossi},
@@ -1156,12 +1115,10 @@
       }
       \strng{namehash}{fd4fe8657112bec19ceb03436154bfe5}
       \strng{fullhash}{fd4fe8657112bec19ceb03436154bfe5}
-      \strng{fullhashraw}{fd4fe8657112bec19ceb03436154bfe5}
       \strng{bibnamehash}{fd4fe8657112bec19ceb03436154bfe5}
       \strng{authorbibnamehash}{fd4fe8657112bec19ceb03436154bfe5}
       \strng{authornamehash}{fd4fe8657112bec19ceb03436154bfe5}
       \strng{authorfullhash}{fd4fe8657112bec19ceb03436154bfe5}
-      \strng{authorfullhashraw}{fd4fe8657112bec19ceb03436154bfe5}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
@@ -1173,7 +1130,7 @@
       \field{year}{1986}
       \field{dateera}{ce}
     \endentry
-    \entry{novak_measurement_2019}{inproceedings}{}{}
+    \entry{novak_measurement_2019}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=c165ac65e25818d13dfa889d9c824f49}{%
            family={Novak},
@@ -1186,12 +1143,10 @@
       }
       \strng{namehash}{c165ac65e25818d13dfa889d9c824f49}
       \strng{fullhash}{c165ac65e25818d13dfa889d9c824f49}
-      \strng{fullhashraw}{c165ac65e25818d13dfa889d9c824f49}
       \strng{bibnamehash}{c165ac65e25818d13dfa889d9c824f49}
       \strng{authorbibnamehash}{c165ac65e25818d13dfa889d9c824f49}
       \strng{authornamehash}{c165ac65e25818d13dfa889d9c824f49}
       \strng{authorfullhash}{c165ac65e25818d13dfa889d9c824f49}
-      \strng{authorfullhashraw}{c165ac65e25818d13dfa889d9c824f49}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
@@ -1208,7 +1163,7 @@
       \verb Novak - Measurement of Loudspeaker Parameters A Pedagogic.pdf:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\HWK2HCIB\\Novak - Measurement of Loudspeaker Parameters A Pedagogic.pdf:application/pdf
       \endverb
     \endentry
-    \entry{guedra_etudes_2012}{thesis}{}{}
+    \entry{guedra_etudes_2012}{thesis}{}
       \name{author}{1}{}{%
         {{hash=64cf020202065fbd54d6c057d0425b75}{%
            family={Guédra},
@@ -1224,12 +1179,10 @@
       }
       \strng{namehash}{64cf020202065fbd54d6c057d0425b75}
       \strng{fullhash}{64cf020202065fbd54d6c057d0425b75}
-      \strng{fullhashraw}{64cf020202065fbd54d6c057d0425b75}
       \strng{bibnamehash}{64cf020202065fbd54d6c057d0425b75}
       \strng{authorbibnamehash}{64cf020202065fbd54d6c057d0425b75}
       \strng{authornamehash}{64cf020202065fbd54d6c057d0425b75}
       \strng{authorfullhash}{64cf020202065fbd54d6c057d0425b75}
-      \strng{authorfullhashraw}{64cf020202065fbd54d6c057d0425b75}
       \field{sortinit}{9}
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
@@ -1242,7 +1195,7 @@
       \verb Guédra - Etudes semi-analytiques des conditions de déclench.pdf:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\SIM5G7FT\\Guédra - Etudes semi-analytiques des conditions de déclench.pdf:application/pdf
       \endverb
     \endentry
-    \entry{hsu_effective_1996}{article}{}{}
+    \entry{hsu_effective_1996}{article}{}
       \name{author}{3}{}{%
         {{hash=f52776465b1ba6f03acdda4e01e93db6}{%
            family={Hsu},
@@ -1262,12 +1215,10 @@
       }
       \strng{namehash}{89d10853251a340395703747557da499}
       \strng{fullhash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
-      \strng{fullhashraw}{0d6a19e9eea62f9d3c65446d48ddd6c3}
       \strng{bibnamehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
       \strng{authorbibnamehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
       \strng{authornamehash}{89d10853251a340395703747557da499}
       \strng{authorfullhash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
-      \strng{authorfullhashraw}{0d6a19e9eea62f9d3c65446d48ddd6c3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1301,27 +1252,25 @@
       \verb https://arc.aiaa.org/doi/10.2514/3.825
       \endverb
     \endentry
-    \entry{li_effective_2006}{article}{}{}
+    \entry{li_effective_2006}{article}{}
       \name{author}{2}{}{%
-        {{hash=02821a48003406ef06e1ee4dfa9fca52}{%
+        {{hash=d32559a5fc6b9c48ad950f89259bc465}{%
            family={Li},
            familyi={L\bibinitperiod},
-           given={Chen},
+           given={C.},
            giveni={C\bibinitperiod}}}%
         {{hash=f2987a05cfe1f77f58eb89c52be85b1f}{%
            family={Peterson},
            familyi={P\bibinitperiod},
-           given={G.P.},
-           giveni={G\bibinitperiod}}}%
+           given={G.\bibnamedelimi P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
       }
-      \strng{namehash}{b8c9f21c9efafcc3cd58a13d256a3db5}
-      \strng{fullhash}{2830ae0fc2aa19381440c870601e26db}
-      \strng{fullhashraw}{2830ae0fc2aa19381440c870601e26db}
-      \strng{bibnamehash}{2830ae0fc2aa19381440c870601e26db}
-      \strng{authorbibnamehash}{2830ae0fc2aa19381440c870601e26db}
-      \strng{authornamehash}{b8c9f21c9efafcc3cd58a13d256a3db5}
-      \strng{authorfullhash}{2830ae0fc2aa19381440c870601e26db}
-      \strng{authorfullhashraw}{2830ae0fc2aa19381440c870601e26db}
+      \strng{namehash}{3516b270ba62fc048888eb284b5da39e}
+      \strng{fullhash}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \strng{bibnamehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \strng{authorbibnamehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \strng{authornamehash}{3516b270ba62fc048888eb284b5da39e}
+      \strng{authorfullhash}{89f7c18cd59d7a6716c94e9eb65e1f43}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1356,7 +1305,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931006002419
       \endverb
     \endentry
-    \entry{g_correlations_2022}{article}{}{}
+    \entry{g_correlations_2022}{article}{}
       \name{author}{5}{}{%
         {{hash=cd6a9bd2a175104eed40f0d33a8b4020}{%
            family={G},
@@ -1386,12 +1335,10 @@
       }
       \strng{namehash}{92351ed124f99be0156b51256865b8bd}
       \strng{fullhash}{24d0488d63ff2773510eba405a851ad2}
-      \strng{fullhashraw}{24d0488d63ff2773510eba405a851ad2}
       \strng{bibnamehash}{92351ed124f99be0156b51256865b8bd}
       \strng{authorbibnamehash}{92351ed124f99be0156b51256865b8bd}
       \strng{authornamehash}{92351ed124f99be0156b51256865b8bd}
       \strng{authorfullhash}{24d0488d63ff2773510eba405a851ad2}
-      \strng{authorfullhashraw}{24d0488d63ff2773510eba405a851ad2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1428,7 +1375,7 @@
       \endverb
       \keyw{Conduction,woven meshgrids}
     \endentry
-    \entry{rott_damped_1969}{article}{}{}
+    \entry{rott_damped_1969}{article}{}
       \name{author}{1}{}{%
         {{hash=16d66c91fb3c47e8d6436b3c4ccdeb21}{%
            family={Rott},
@@ -1438,12 +1385,10 @@
       }
       \strng{namehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{fullhash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
-      \strng{fullhashraw}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{bibnamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authorbibnamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authornamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authorfullhash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
-      \strng{authorfullhashraw}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -1478,7 +1423,7 @@
       \endverb
       \keyw{Thermoacoustics}
     \endentry
-    \entry{rott_thermally_1973}{article}{}{}
+    \entry{rott_thermally_1973}{article}{}
       \name{author}{1}{}{%
         {{hash=16d66c91fb3c47e8d6436b3c4ccdeb21}{%
            family={Rott},
@@ -1488,12 +1433,10 @@
       }
       \strng{namehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{fullhash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
-      \strng{fullhashraw}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{bibnamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authorbibnamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authornamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authorfullhash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
-      \strng{authorfullhashraw}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -1528,7 +1471,7 @@
       \endverb
       \keyw{Thermoacoustics}
     \endentry
-    \entry{rott_thermally_1975}{article}{}{}
+    \entry{rott_thermally_1975}{article}{}
       \name{author}{1}{}{%
         {{hash=16d66c91fb3c47e8d6436b3c4ccdeb21}{%
            family={Rott},
@@ -1538,12 +1481,10 @@
       }
       \strng{namehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{fullhash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
-      \strng{fullhashraw}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{bibnamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authorbibnamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authornamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authorfullhash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
-      \strng{authorfullhashraw}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \field{extraname}{3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -1578,7 +1519,7 @@
       \endverb
       \keyw{Thermoacoustics}
     \endentry
-    \entry{rott_thermally_1976}{article}{}{}
+    \entry{rott_thermally_1976}{article}{}
       \name{author}{2}{}{%
         {{hash=16d66c91fb3c47e8d6436b3c4ccdeb21}{%
            family={Rott},
@@ -1593,12 +1534,10 @@
       }
       \strng{namehash}{f4b10981a6f686054aa938459b2b22de}
       \strng{fullhash}{978d9d3f27c0d2fa7d02167f14e4d169}
-      \strng{fullhashraw}{978d9d3f27c0d2fa7d02167f14e4d169}
       \strng{bibnamehash}{978d9d3f27c0d2fa7d02167f14e4d169}
       \strng{authorbibnamehash}{978d9d3f27c0d2fa7d02167f14e4d169}
       \strng{authornamehash}{f4b10981a6f686054aa938459b2b22de}
       \strng{authorfullhash}{978d9d3f27c0d2fa7d02167f14e4d169}
-      \strng{authorfullhashraw}{978d9d3f27c0d2fa7d02167f14e4d169}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1632,7 +1571,7 @@
       \endverb
       \keyw{Thermoacoustics}
     \endentry
-    \entry{zouzoulas_thermally_1976}{article}{}{}
+    \entry{zouzoulas_thermally_1976}{article}{}
       \name{author}{2}{}{%
         {{hash=200fe6cbc1e62616973d368dd1f2527f}{%
            family={Zouzoulas},
@@ -1647,12 +1586,10 @@
       }
       \strng{namehash}{cf6138146dadfadd2db5fdb9b853ce26}
       \strng{fullhash}{569eaf099616b28f267c6fa0fe908cb8}
-      \strng{fullhashraw}{569eaf099616b28f267c6fa0fe908cb8}
       \strng{bibnamehash}{569eaf099616b28f267c6fa0fe908cb8}
       \strng{authorbibnamehash}{569eaf099616b28f267c6fa0fe908cb8}
       \strng{authornamehash}{cf6138146dadfadd2db5fdb9b853ce26}
       \strng{authorfullhash}{569eaf099616b28f267c6fa0fe908cb8}
-      \strng{authorfullhashraw}{569eaf099616b28f267c6fa0fe908cb8}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1686,7 +1623,7 @@
       \endverb
       \keyw{Thermoacoustics}
     \endentry
-    \entry{rott_thermoacoustics_1980}{incollection}{}{}
+    \entry{rott_thermoacoustics_1980}{incollection}{}
       \name{author}{1}{}{%
         {{hash=16d66c91fb3c47e8d6436b3c4ccdeb21}{%
            family={Rott},
@@ -1706,16 +1643,13 @@
       }
       \strng{namehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{fullhash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
-      \strng{fullhashraw}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{bibnamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authorbibnamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authornamehash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{authorfullhash}{16d66c91fb3c47e8d6436b3c4ccdeb21}
-      \strng{authorfullhashraw}{16d66c91fb3c47e8d6436b3c4ccdeb21}
       \strng{editorbibnamehash}{fd9c32332d38b3e80906ccdc6bf23469}
       \strng{editornamehash}{fd9c32332d38b3e80906ccdc6bf23469}
       \strng{editorfullhash}{fd9c32332d38b3e80906ccdc6bf23469}
-      \strng{editorfullhashraw}{fd9c32332d38b3e80906ccdc6bf23469}
       \field{extraname}{4}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -1748,7 +1682,7 @@
       \endverb
       \keyw{Thermoacoustics}
     \endentry
-    \entry{muller_thermally_1983}{article}{}{}
+    \entry{muller_thermally_1983}{article}{}
       \name{author}{2}{}{%
         {{hash=b226d27e5b0461f13091f45f3d1e563b}{%
            family={Müller},
@@ -1763,12 +1697,10 @@
       }
       \strng{namehash}{c50edb2f06e83af6670740de1bb9635f}
       \strng{fullhash}{2ce496e44fae58ca61cd10ed130935e8}
-      \strng{fullhashraw}{2ce496e44fae58ca61cd10ed130935e8}
       \strng{bibnamehash}{2ce496e44fae58ca61cd10ed130935e8}
       \strng{authorbibnamehash}{2ce496e44fae58ca61cd10ed130935e8}
       \strng{authornamehash}{c50edb2f06e83af6670740de1bb9635f}
       \strng{authorfullhash}{2ce496e44fae58ca61cd10ed130935e8}
-      \strng{authorfullhashraw}{2ce496e44fae58ca61cd10ed130935e8}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1803,7 +1735,7 @@
       \endverb
       \keyw{Thermoacoustics}
     \endentry
-    \entry{swift_thermoacoustics_2017}{book}{}{}
+    \entry{swift_thermoacoustics_2017}{book}{}
       \name{author}{1}{}{%
         {{hash=52937719af970c9a64a91af3eeb87bce}{%
            family={Swift},
@@ -1819,12 +1751,10 @@
       }
       \strng{namehash}{52937719af970c9a64a91af3eeb87bce}
       \strng{fullhash}{52937719af970c9a64a91af3eeb87bce}
-      \strng{fullhashraw}{52937719af970c9a64a91af3eeb87bce}
       \strng{bibnamehash}{52937719af970c9a64a91af3eeb87bce}
       \strng{authorbibnamehash}{52937719af970c9a64a91af3eeb87bce}
       \strng{authornamehash}{52937719af970c9a64a91af3eeb87bce}
       \strng{authorfullhash}{52937719af970c9a64a91af3eeb87bce}
-      \strng{authorfullhashraw}{52937719af970c9a64a91af3eeb87bce}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1852,7 +1782,7 @@
       \endverb
       \keyw{Engine,Thermoacoustics,Refrigerator}
     \endentry
-    \entry{belcher_working_1999}{article}{}{}
+    \entry{belcher_working_1999}{article}{}
       \name{author}{5}{}{%
         {{hash=b25f7ecbc536cb838f47c6ae36740ca8}{%
            family={Belcher},
@@ -1882,12 +1812,10 @@
       }
       \strng{namehash}{8613df21f62bdf2b1c8dffbd5aa1ac41}
       \strng{fullhash}{dad60a7d7e4f4cf702bdfccc89acae34}
-      \strng{fullhashraw}{dad60a7d7e4f4cf702bdfccc89acae34}
       \strng{bibnamehash}{8613df21f62bdf2b1c8dffbd5aa1ac41}
       \strng{authorbibnamehash}{8613df21f62bdf2b1c8dffbd5aa1ac41}
       \strng{authornamehash}{8613df21f62bdf2b1c8dffbd5aa1ac41}
       \strng{authorfullhash}{dad60a7d7e4f4cf702bdfccc89acae34}
-      \strng{authorfullhashraw}{dad60a7d7e4f4cf702bdfccc89acae34}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1922,7 +1850,7 @@
       \endverb
       \keyw{Engine,Thermoacoustics}
     \endentry
-    \entry{di_giulio_wire_2023}{article}{}{}
+    \entry{di_giulio_wire_2023}{article}{}
       \name{author}{4}{}{%
         {{hash=c8e4d40fcc8078b88055fb74be575097}{%
            family={Di\bibnamedelima Giulio},
@@ -1947,17 +1875,15 @@
       }
       \strng{namehash}{cc389bce50f520769901dcd962b20ef8}
       \strng{fullhash}{ab6c99e9224faab915476f99c1418972}
-      \strng{fullhashraw}{ab6c99e9224faab915476f99c1418972}
       \strng{bibnamehash}{cc389bce50f520769901dcd962b20ef8}
       \strng{authorbibnamehash}{cc389bce50f520769901dcd962b20ef8}
       \strng{authornamehash}{cc389bce50f520769901dcd962b20ef8}
       \strng{authorfullhash}{ab6c99e9224faab915476f99c1418972}
-      \strng{authorfullhashraw}{ab6c99e9224faab915476f99c1418972}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Thermoacoustic technology can play a significant role in the development of renewable energies. Thermoa­ coustic engines and heat pumps (or refrigerators) are however characterized by a low efficiency attributed to suboptimal components. The core of these devices is a porous material, named stack (or regenerator), in which thermoacoustic conversion takes place. The most frequently used stack in the literature remains the wire mesh, although there is still a lack of formulation for the corresponding thermoviscous response functions. Essentially, all the dynamic thermal and viscous behaviors of a porous structure can be derived thanks to the {JohnsonChampoux}-Allard-Lafarge ({JCAL}) semi-phenomenological model, where transport parameters provide input in­ formation on the macroscopic level to the model. Here, we report a set of structure–property correlations be­ tween the transport parameters of the stack and the geometrical features of the wire mesh obtained from firstprinciples calculations. Validation of the model is carried out by means of experimental measurements performed on three different specimens. Our results show that the knowledge of the termoviscous functions for the wire mesh allows drawing preliminary considerations on the thermoacoustic efficiency of the stack, without needing to consider a full numerical simulation of the entire device.}
+      \field{abstract}{Thermoacoustic technology can play a significant role in the development of renewable energies. Thermoa­ coustic engines and heat pumps (or refrigerators) are however characterized by a low efficiency attributed to suboptimal components. The core of these devices is a porous material, named stack (or regenerator), in which thermoacoustic conversion takes place. The most frequently used stack in the literature remains the wire mesh, although there is still a lack of formulation for the corresponding thermoviscous response functions. Essentially, all the dynamic thermal and viscous behaviors of a porous structure can be derived thanks to the {Johnson-Champoux}-Allard-Lafarge ({JCAL}) semi-phenomenological model, where transport parameters provide input in­ formation on the macroscopic level to the model. Here, we report a set of structure–property correlations be­ tween the transport parameters of the stack and the geometrical features of the wire mesh obtained from firstprinciples calculations. Validation of the model is carried out by means of experimental measurements performed on three different specimens. Our results show that the knowledge of the termoviscous functions for the wire mesh allows drawing preliminary considerations on the thermoacoustic efficiency of the stack, without needing to consider a full numerical simulation of the entire device.}
       \field{issn}{13594311}
       \field{journaltitle}{Applied Thermal Engineering}
       \field{langid}{english}
@@ -1986,12 +1912,12 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S135943112201746X
       \endverb
     \endentry
-    \entry{allard_propagation_2009}{book}{}{}
+    \entry{allard_propagation_2009}{book}{}
       \name{author}{2}{}{%
         {{hash=4f15ea706efd752471f3027b9bfa15e1}{%
            family={Allard},
            familyi={A\bibinitperiod},
-           given={J-F.},
+           given={J.-F.},
            giveni={J\bibinithyphendelim F\bibinitperiod}}}%
         {{hash=0c8d9574ab15c394ff5d3baca689696a}{%
            family={Atalla},
@@ -2004,19 +1930,17 @@
       }
       \strng{namehash}{a91c879f2984ba421efbbb69d56b771e}
       \strng{fullhash}{4aad6d166eafb87f951c9490737cfe74}
-      \strng{fullhashraw}{4aad6d166eafb87f951c9490737cfe74}
       \strng{bibnamehash}{4aad6d166eafb87f951c9490737cfe74}
       \strng{authorbibnamehash}{4aad6d166eafb87f951c9490737cfe74}
       \strng{authornamehash}{a91c879f2984ba421efbbb69d56b771e}
       \strng{authorfullhash}{4aad6d166eafb87f951c9490737cfe74}
-      \strng{authorfullhashraw}{4aad6d166eafb87f951c9490737cfe74}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{23}
       \field{edition}{1}
-      \field{isbn}{978-0-470-74661-5 978-0-470-74733-9}
+      \field{isbn}{978-0-470-74661-5}
       \field{langid}{english}
       \field{month}{10}
       \field{shorttitle}{Propagation of Sound in Porous Media}
@@ -2037,7 +1961,7 @@
       \verb https://onlinelibrary.wiley.com/doi/book/10.1002/9780470747339
       \endverb
     \endentry
-    \entry{pierens_development_2012}{inproceedings}{}{}
+    \entry{pierens_development_2012}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=a63c0275c38ca4dfd7efe593e301a6a9}{%
            family={Pierens},
@@ -2065,12 +1989,10 @@
       }
       \strng{namehash}{772281c9d6e730c6d0cb0ef5a47c9ff7}
       \strng{fullhash}{e96055a60a1d52bb9f4ed9fe3181df0f}
-      \strng{fullhashraw}{e96055a60a1d52bb9f4ed9fe3181df0f}
       \strng{bibnamehash}{772281c9d6e730c6d0cb0ef5a47c9ff7}
       \strng{authorbibnamehash}{772281c9d6e730c6d0cb0ef5a47c9ff7}
       \strng{authornamehash}{772281c9d6e730c6d0cb0ef5a47c9ff7}
       \strng{authorfullhash}{e96055a60a1d52bb9f4ed9fe3181df0f}
-      \strng{authorfullhashraw}{e96055a60a1d52bb9f4ed9fe3181df0f}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -2087,7 +2009,7 @@
       \endverb
       \keyw{Thermoacoustics,Refrigerator,Travelling waves}
     \endentry
-    \entry{adeff_measurement_1991}{thesis}{}{}
+    \entry{adeff_measurement_1991}{thesis}{}
       \name{author}{1}{}{%
         {{hash=04f6dd658d896057526dbfb6f8e8be79}{%
            family={Adeff},
@@ -2103,12 +2025,10 @@
       }
       \strng{namehash}{04f6dd658d896057526dbfb6f8e8be79}
       \strng{fullhash}{04f6dd658d896057526dbfb6f8e8be79}
-      \strng{fullhashraw}{04f6dd658d896057526dbfb6f8e8be79}
       \strng{bibnamehash}{04f6dd658d896057526dbfb6f8e8be79}
       \strng{authorbibnamehash}{04f6dd658d896057526dbfb6f8e8be79}
       \strng{authornamehash}{04f6dd658d896057526dbfb6f8e8be79}
       \strng{authorfullhash}{04f6dd658d896057526dbfb6f8e8be79}
-      \strng{authorfullhashraw}{04f6dd658d896057526dbfb6f8e8be79}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -2122,7 +2042,7 @@
       \verb Adeff - Measurement of the Space Thermoacoustic Refrigerat.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\QWDJBXRH\\Adeff - Measurement of the Space Thermoacoustic Refrigerat.pdf:application/pdf
       \endverb
     \endentry
-    \entry{ceperley_pistonless_1979}{article}{}{}
+    \entry{ceperley_pistonless_1979}{article}{}
       \name{author}{1}{}{%
         {{hash=be94d791f9264e584fa04195637d5592}{%
            family={Ceperley},
@@ -2132,12 +2052,10 @@
       }
       \strng{namehash}{be94d791f9264e584fa04195637d5592}
       \strng{fullhash}{be94d791f9264e584fa04195637d5592}
-      \strng{fullhashraw}{be94d791f9264e584fa04195637d5592}
       \strng{bibnamehash}{be94d791f9264e584fa04195637d5592}
       \strng{authorbibnamehash}{be94d791f9264e584fa04195637d5592}
       \strng{authornamehash}{be94d791f9264e584fa04195637d5592}
       \strng{authorfullhash}{be94d791f9264e584fa04195637d5592}
-      \strng{authorfullhashraw}{be94d791f9264e584fa04195637d5592}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -2171,7 +2089,7 @@
       \endverb
       \keyw{Engine,Thermoacoustics}
     \endentry
-    \entry{swift_thermoacoustics_2002}{article}{}{}
+    \entry{swift_thermoacoustics_2002}{article}{}
       \name{author}{2}{}{%
         {{hash=52937719af970c9a64a91af3eeb87bce}{%
            family={Swift},
@@ -2186,12 +2104,10 @@
       }
       \strng{namehash}{16d77d6ecdb5f3cc9a2b44e02ff45fb9}
       \strng{fullhash}{f0dfd913bba04cdd24b3fdf5337a2dad}
-      \strng{fullhashraw}{f0dfd913bba04cdd24b3fdf5337a2dad}
       \strng{bibnamehash}{f0dfd913bba04cdd24b3fdf5337a2dad}
       \strng{authorbibnamehash}{f0dfd913bba04cdd24b3fdf5337a2dad}
       \strng{authornamehash}{16d77d6ecdb5f3cc9a2b44e02ff45fb9}
       \strng{authorfullhash}{f0dfd913bba04cdd24b3fdf5337a2dad}
-      \strng{authorfullhashraw}{f0dfd913bba04cdd24b3fdf5337a2dad}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -2204,7 +2120,7 @@
       \field{pages}{21\bibrangedash 26}
       \range{pages}{6}
     \endentry
-    \entry{wollan_development_2002}{inproceedings}{}{}
+    \entry{wollan_development_2002}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=6a5dfbc9e59cdd48b05f8c068c540734}{%
            family={Wollan},
@@ -2232,12 +2148,10 @@
       }
       \strng{namehash}{5cb8fee5a5b6e8c78e2e12763b100718}
       \strng{fullhash}{b8cad400e993d9fc9c2a696cad1919aa}
-      \strng{fullhashraw}{b8cad400e993d9fc9c2a696cad1919aa}
       \strng{bibnamehash}{5cb8fee5a5b6e8c78e2e12763b100718}
       \strng{authorbibnamehash}{5cb8fee5a5b6e8c78e2e12763b100718}
       \strng{authornamehash}{5cb8fee5a5b6e8c78e2e12763b100718}
       \strng{authorfullhash}{b8cad400e993d9fc9c2a696cad1919aa}
-      \strng{authorfullhashraw}{b8cad400e993d9fc9c2a696cad1919aa}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -2252,7 +2166,7 @@
       \verb https://api.semanticscholar.org/CorpusID:109674106
       \endverb
     \endentry
-    \entry{garrett_thermoacoustic_1993}{article}{}{}
+    \entry{garrett_thermoacoustic_1993}{article}{}
       \name{author}{3}{}{%
         {{hash=46218a3fa6ec883e1358bb339679a601}{%
            family={Garrett},
@@ -2272,12 +2186,10 @@
       }
       \strng{namehash}{eac68547735e8ceacc84509ce2d2e5a6}
       \strng{fullhash}{7b02b86c295966aa9b0d9feb27a4ecff}
-      \strng{fullhashraw}{7b02b86c295966aa9b0d9feb27a4ecff}
       \strng{bibnamehash}{7b02b86c295966aa9b0d9feb27a4ecff}
       \strng{authorbibnamehash}{7b02b86c295966aa9b0d9feb27a4ecff}
       \strng{authornamehash}{eac68547735e8ceacc84509ce2d2e5a6}
       \strng{authorfullhash}{7b02b86c295966aa9b0d9feb27a4ecff}
-      \strng{authorfullhashraw}{7b02b86c295966aa9b0d9feb27a4ecff}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -2311,7 +2223,7 @@
       \verb https://arc.aiaa.org/doi/10.2514/3.466
       \endverb
     \endentry
-    \entry{Electroac_Grains}{online}{}{}
+    \entry{Electroac_Grains}{online}{}
       \name{author}{8}{}{%
         {{hash=3435f2f1072dd78e23d532bcc0d3da64}{%
            family={Bavu},
@@ -2356,12 +2268,10 @@
       }
       \strng{namehash}{d67f73709f206c2e28b0d6a4f5e4e10a}
       \strng{fullhash}{31838c1d39f59eb5ae184f6723d31aaf}
-      \strng{fullhashraw}{31838c1d39f59eb5ae184f6723d31aaf}
       \strng{bibnamehash}{d67f73709f206c2e28b0d6a4f5e4e10a}
       \strng{authorbibnamehash}{d67f73709f206c2e28b0d6a4f5e4e10a}
       \strng{authornamehash}{d67f73709f206c2e28b0d6a4f5e4e10a}
       \strng{authorfullhash}{31838c1d39f59eb5ae184f6723d31aaf}
-      \strng{authorfullhashraw}{31838c1d39f59eb5ae184f6723d31aaf}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -2375,7 +2285,7 @@
       \verb https://electroacoustique.univ-lemans.fr/
       \endverb
     \endentry
-    \entry{DeltaEC}{software}{}{}
+    \entry{DeltaEC}{software}{}
       \name{author}{3}{}{%
         {{hash=7c3679e2642a2dfeb1d607ffa161130f}{%
            family={Ward},
@@ -2395,12 +2305,10 @@
       }
       \strng{namehash}{15aed466916588a726dd43d76ef172fe}
       \strng{fullhash}{084c9b5840bd6ecb6c3db7f72601a6a4}
-      \strng{fullhashraw}{084c9b5840bd6ecb6c3db7f72601a6a4}
       \strng{bibnamehash}{084c9b5840bd6ecb6c3db7f72601a6a4}
       \strng{authorbibnamehash}{084c9b5840bd6ecb6c3db7f72601a6a4}
       \strng{authornamehash}{15aed466916588a726dd43d76ef172fe}
       \strng{authorfullhash}{084c9b5840bd6ecb6c3db7f72601a6a4}
-      \strng{authorfullhashraw}{084c9b5840bd6ecb6c3db7f72601a6a4}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -2418,7 +2326,7 @@
       \verb https://www.losalamosthermoacoustics.org/deltaec.html
       \endverb
     \endentry
-    \entry{so_internal_2006}{article}{}{}
+    \entry{so_internal_2006}{article}{}
       \name{author}{3}{}{%
         {{hash=45543d9eb1c6f382961115342c7cc8b7}{%
            family={So},
@@ -2438,12 +2346,10 @@
       }
       \strng{namehash}{3ff0f2062ba66bfd84309e0d72d4a436}
       \strng{fullhash}{df6b3fe8e7e1e83b8062b9e5cb6bb42d}
-      \strng{fullhashraw}{df6b3fe8e7e1e83b8062b9e5cb6bb42d}
       \strng{bibnamehash}{df6b3fe8e7e1e83b8062b9e5cb6bb42d}
       \strng{authorbibnamehash}{df6b3fe8e7e1e83b8062b9e5cb6bb42d}
       \strng{authornamehash}{3ff0f2062ba66bfd84309e0d72d4a436}
       \strng{authorfullhash}{df6b3fe8e7e1e83b8062b9e5cb6bb42d}
-      \strng{authorfullhashraw}{df6b3fe8e7e1e83b8062b9e5cb6bb42d}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -2478,7 +2384,7 @@
       \endverb
       \keyw{Thermoacoustics,Refrigerator}
     \endentry
-    \entry{bailliet_acoustic_2001}{article}{}{}
+    \entry{bailliet_acoustic_2001}{article}{}
       \name{author}{4}{}{%
         {{hash=b3fc747e9eea9a246893afc26ac79b7d}{%
            family={Bailliet},
@@ -2503,12 +2409,10 @@
       }
       \strng{namehash}{ad93f53346a7310fdae519634f6a03a9}
       \strng{fullhash}{68a4eba994ed329639c71b9faafcb8c3}
-      \strng{fullhashraw}{68a4eba994ed329639c71b9faafcb8c3}
       \strng{bibnamehash}{ad93f53346a7310fdae519634f6a03a9}
       \strng{authorbibnamehash}{ad93f53346a7310fdae519634f6a03a9}
       \strng{authornamehash}{ad93f53346a7310fdae519634f6a03a9}
       \strng{authorfullhash}{68a4eba994ed329639c71b9faafcb8c3}
-      \strng{authorfullhashraw}{68a4eba994ed329639c71b9faafcb8c3}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -2543,7 +2447,7 @@
       \endverb
       \keyw{Engine,Thermoacoustics,Refrigerator}
     \endentry
-    \entry{ramadan_experimental_2018}{article}{}{}
+    \entry{ramadan_experimental_2018}{article}{}
       \name{author}{3}{}{%
         {{hash=841d1559d51fa6af3b41d3ea4fad9638}{%
            family={Ramadan},
@@ -2563,12 +2467,10 @@
       }
       \strng{namehash}{15aec2b4a2bc0b0d1a9d8d051fdb5cb3}
       \strng{fullhash}{cac8237f8f5fb6507dad89de5dbbc44a}
-      \strng{fullhashraw}{cac8237f8f5fb6507dad89de5dbbc44a}
       \strng{bibnamehash}{cac8237f8f5fb6507dad89de5dbbc44a}
       \strng{authorbibnamehash}{cac8237f8f5fb6507dad89de5dbbc44a}
       \strng{authornamehash}{15aec2b4a2bc0b0d1a9d8d051fdb5cb3}
       \strng{authorfullhash}{cac8237f8f5fb6507dad89de5dbbc44a}
-      \strng{authorfullhashraw}{cac8237f8f5fb6507dad89de5dbbc44a}
       \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
@@ -2604,23 +2506,23 @@
       \endverb
       \keyw{Engine,Thermoacoustics,Natural convection}
     \endentry
-    \entry{zhang_novel_2011}{article}{}{}
+    \entry{zhang_novel_2011}{article}{}
       \name{author}{4}{}{%
         {{hash=848fa0113dff92ede4a4b46860341d44}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
-           given={L.M.},
-           giveni={L\bibinitperiod}}}%
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
         {{hash=0e39cd22b14535e693fd1cb6ef665a33}{%
            family={Hu},
            familyi={H\bibinitperiod},
-           given={J.Y.},
-           giveni={J\bibinitperiod}}}%
+           given={J.\bibnamedelimi Y.},
+           giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
         {{hash=c764945d76b82b47d87c59e366856673}{%
            family={Luo},
            familyi={L\bibinitperiod},
-           given={E.C.},
-           giveni={E\bibinitperiod}}}%
+           given={E.\bibnamedelimi C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
         {{hash=e71856544013998a6afdb111ae37b021}{%
            family={Dai},
            familyi={D\bibinitperiod},
@@ -2629,12 +2531,10 @@
       }
       \strng{namehash}{ce6e1184923d6b93180a2a7a421dbcf0}
       \strng{fullhash}{ac41307915589953900e075dac00a736}
-      \strng{fullhashraw}{ac41307915589953900e075dac00a736}
       \strng{bibnamehash}{ce6e1184923d6b93180a2a7a421dbcf0}
       \strng{authorbibnamehash}{ce6e1184923d6b93180a2a7a421dbcf0}
       \strng{authornamehash}{ce6e1184923d6b93180a2a7a421dbcf0}
       \strng{authorfullhash}{ac41307915589953900e075dac00a736}
-      \strng{authorfullhashraw}{ac41307915589953900e075dac00a736}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -2669,7 +2569,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0011227510002225
       \endverb
     \endentry
-    \entry{ANR_thermo-acoustic_2019}{online}{}{}
+    \entry{ANR_thermo-acoustic_2019}{online}{}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
@@ -2692,7 +2592,7 @@
       \endverb
       \keyw{Refrigerator,Two sources,Agence nationale de la recherche,Presentation,Project definition}
     \endentry
-    \entry{ramadan_experimental_2021}{article}{}{}
+    \entry{ramadan_experimental_2021}{article}{}
       \name{author}{3}{}{%
         {{hash=841d1559d51fa6af3b41d3ea4fad9638}{%
            family={Ramadan},
@@ -2712,12 +2612,10 @@
       }
       \strng{namehash}{15aec2b4a2bc0b0d1a9d8d051fdb5cb3}
       \strng{fullhash}{cac8237f8f5fb6507dad89de5dbbc44a}
-      \strng{fullhashraw}{cac8237f8f5fb6507dad89de5dbbc44a}
       \strng{bibnamehash}{cac8237f8f5fb6507dad89de5dbbc44a}
       \strng{authorbibnamehash}{cac8237f8f5fb6507dad89de5dbbc44a}
       \strng{authornamehash}{15aec2b4a2bc0b0d1a9d8d051fdb5cb3}
       \strng{authorfullhash}{cac8237f8f5fb6507dad89de5dbbc44a}
-      \strng{authorfullhashraw}{cac8237f8f5fb6507dad89de5dbbc44a}
       \field{extraname}{3}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
@@ -2751,7 +2649,7 @@
       \endverb
       \keyw{Thermoacoustics,Fluid mechanics,Particle Image Velocimetry,Regenerator,Reynolds number,Stack,Strouhal number,Velocity field,Viscosity}
     \endentry
-    \entry{poignand_test-bench_2022}{article}{}{}
+    \entry{poignand_test-bench_2022}{article}{}
       \name{author}{3}{}{%
         {{hash=e19a50b30a9cae1a2eacf5ec366ae7ab}{%
            family={Poignand},
@@ -2771,12 +2669,10 @@
       }
       \strng{namehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{fullhash}{b37206b302635bf21eb4ae0ec68e63e2}
-      \strng{fullhashraw}{b37206b302635bf21eb4ae0ec68e63e2}
       \strng{bibnamehash}{b37206b302635bf21eb4ae0ec68e63e2}
       \strng{authorbibnamehash}{b37206b302635bf21eb4ae0ec68e63e2}
       \strng{authornamehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{authorfullhash}{b37206b302635bf21eb4ae0ec68e63e2}
-      \strng{authorfullhashraw}{b37206b302635bf21eb4ae0ec68e63e2}
       \field{extraname}{3}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
@@ -2809,7 +2705,7 @@
       \verb https://pubs.aip.org/jasa/article/152/5/2804/2839844/Test-bench-for-the-experimental-characterization
       \endverb
     \endentry
-    \entry{hireche_experimental_2020}{article}{}{}
+    \entry{hireche_experimental_2020}{article}{}
       \name{author}{7}{}{%
         {{hash=017783d6554201bcc3e477bf9cd5e5b9}{%
            family={Hireche},
@@ -2849,12 +2745,10 @@
       }
       \strng{namehash}{bd2b750d778daaaf22b2ad4f3bdfb5eb}
       \strng{fullhash}{34e76e0aae9469a7a061bd9a0c62db9a}
-      \strng{fullhashraw}{34e76e0aae9469a7a061bd9a0c62db9a}
       \strng{bibnamehash}{bd2b750d778daaaf22b2ad4f3bdfb5eb}
       \strng{authorbibnamehash}{bd2b750d778daaaf22b2ad4f3bdfb5eb}
       \strng{authornamehash}{bd2b750d778daaaf22b2ad4f3bdfb5eb}
       \strng{authorfullhash}{34e76e0aae9469a7a061bd9a0c62db9a}
-      \strng{authorfullhashraw}{34e76e0aae9469a7a061bd9a0c62db9a}
       \field{extraname}{2}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
@@ -2888,7 +2782,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931019338827
       \endverb
     \endentry
-    \entry{baltean_gravity_2025}{article}{}{}
+    \entry{baltean_gravity_2025}{article}{}
       \name{author}{3}{}{%
         {{hash=8f43eab891591340053ef0d5368b3947}{%
            family={Baltean-Carlès},
@@ -2908,12 +2802,10 @@
       }
       \strng{namehash}{fb3a306f7832dad33fb314522e4f5c72}
       \strng{fullhash}{7ae4faa562b45a09c675928e80b6a541}
-      \strng{fullhashraw}{7ae4faa562b45a09c675928e80b6a541}
       \strng{bibnamehash}{7ae4faa562b45a09c675928e80b6a541}
       \strng{authorbibnamehash}{7ae4faa562b45a09c675928e80b6a541}
       \strng{authornamehash}{fb3a306f7832dad33fb314522e4f5c72}
       \strng{authorfullhash}{7ae4faa562b45a09c675928e80b6a541}
-      \strng{authorfullhashraw}{7ae4faa562b45a09c675928e80b6a541}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -2948,7 +2840,7 @@
       \verb https://pubs.aip.org/jasa/article/157/2/833/3334199/Gravity-effects-in-a-compact-thermoacoustic-cavity
       \endverb
     \endentry
-    \entry{poese_thermoacoustic_2004}{inproceedings}{}{}
+    \entry{poese_thermoacoustic_2004}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=a1de7cb721e7bd1d47af44394822a99b}{%
            family={Poese},
@@ -2983,12 +2875,10 @@
       }
       \strng{namehash}{f34ea1ac2ac92feaf3d84d3347274b80}
       \strng{fullhash}{d6ad1fe5166ec5399364b04b41096335}
-      \strng{fullhashraw}{d6ad1fe5166ec5399364b04b41096335}
       \strng{bibnamehash}{f34ea1ac2ac92feaf3d84d3347274b80}
       \strng{authorbibnamehash}{f34ea1ac2ac92feaf3d84d3347274b80}
       \strng{authornamehash}{f34ea1ac2ac92feaf3d84d3347274b80}
       \strng{authorfullhash}{d6ad1fe5166ec5399364b04b41096335}
-      \strng{authorfullhashraw}{d6ad1fe5166ec5399364b04b41096335}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -3002,7 +2892,7 @@
       \verb Poese et al. - Thermoacoustic refrigeration for ice cream sales.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\Z6CZ74SR\\Poese et al. - Thermoacoustic refrigeration for ice cream sales.pdf:application/pdf
       \endverb
     \endentry
-    \entry{nield_convection_2013}{book}{}{}
+    \entry{nield_convection_2013}{book}{}
       \name{author}{2}{}{%
         {{hash=b01d43ff688adfbff063a2be27059ca1}{%
            family={Nield},
@@ -3023,12 +2913,10 @@
       }
       \strng{namehash}{c901aadbd9dbb03dde088025e1f20f93}
       \strng{fullhash}{48bf40159630e509968800fc6153c146}
-      \strng{fullhashraw}{48bf40159630e509968800fc6153c146}
       \strng{bibnamehash}{48bf40159630e509968800fc6153c146}
       \strng{authorbibnamehash}{48bf40159630e509968800fc6153c146}
       \strng{authornamehash}{c901aadbd9dbb03dde088025e1f20f93}
       \strng{authorfullhash}{48bf40159630e509968800fc6153c146}
-      \strng{authorfullhashraw}{48bf40159630e509968800fc6153c146}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -3056,7 +2944,7 @@
       \endverb
       \keyw{Convection}
     \endentry
-    \entry{dullien_porous_1992}{book}{}{}
+    \entry{dullien_porous_1992}{book}{}
       \name{author}{1}{}{%
         {{hash=6c79ee43677ebb85e9ac68ace4205ec6}{%
            family={Dullien},
@@ -3072,12 +2960,10 @@
       }
       \strng{namehash}{6c79ee43677ebb85e9ac68ace4205ec6}
       \strng{fullhash}{6c79ee43677ebb85e9ac68ace4205ec6}
-      \strng{fullhashraw}{6c79ee43677ebb85e9ac68ace4205ec6}
       \strng{bibnamehash}{6c79ee43677ebb85e9ac68ace4205ec6}
       \strng{authorbibnamehash}{6c79ee43677ebb85e9ac68ace4205ec6}
       \strng{authornamehash}{6c79ee43677ebb85e9ac68ace4205ec6}
       \strng{authorfullhash}{6c79ee43677ebb85e9ac68ace4205ec6}
-      \strng{authorfullhashraw}{6c79ee43677ebb85e9ac68ace4205ec6}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -3094,12 +2980,12 @@
       \endverb
       \keyw{Porous materials,Transport theory}
     \endentry
-    \entry{tan_new_2024}{article}{}{}
+    \entry{tan_new_2024}{article}{}
       \name{author}{6}{}{%
         {{hash=bdf5860f5db9396aff3decd155c2ab38}{%
            family={Tan},
            familyi={T\bibinitperiod},
-           given={S-C.},
+           given={S.-C.},
            giveni={S\bibinithyphendelim C\bibinitperiod}}}%
         {{hash=67944c9cfdb53c5189d4fa82fb37af2e}{%
            family={Xu},
@@ -3119,7 +3005,7 @@
         {{hash=63feb444205572a8e33230c3ea7dee1c}{%
            family={Jiang},
            familyi={J\bibinitperiod},
-           given={Y-Y.},
+           given={Y.-Y.},
            giveni={Y\bibinithyphendelim Y\bibinitperiod}}}%
         {{hash=7c1da91092fcfd14695111a6167fe076}{%
            family={Kong},
@@ -3129,12 +3015,10 @@
       }
       \strng{namehash}{0f88231f82dcbc742e4fb874c3f3ebe5}
       \strng{fullhash}{023b5bc30ab59fd64a633c46adfa4fb6}
-      \strng{fullhashraw}{023b5bc30ab59fd64a633c46adfa4fb6}
       \strng{bibnamehash}{0f88231f82dcbc742e4fb874c3f3ebe5}
       \strng{authorbibnamehash}{0f88231f82dcbc742e4fb874c3f3ebe5}
       \strng{authornamehash}{0f88231f82dcbc742e4fb874c3f3ebe5}
       \strng{authorfullhash}{023b5bc30ab59fd64a633c46adfa4fb6}
-      \strng{authorfullhashraw}{023b5bc30ab59fd64a633c46adfa4fb6}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -3164,7 +3048,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0735193324006742
       \endverb
     \endentry
-    \entry{poignand_etude_2006}{thesis}{}{}
+    \entry{poignand_etude_2006}{thesis}{}
       \name{author}{1}{}{%
         {{hash=e19a50b30a9cae1a2eacf5ec366ae7ab}{%
            family={Poignand},
@@ -3180,12 +3064,10 @@
       }
       \strng{namehash}{e19a50b30a9cae1a2eacf5ec366ae7ab}
       \strng{fullhash}{e19a50b30a9cae1a2eacf5ec366ae7ab}
-      \strng{fullhashraw}{e19a50b30a9cae1a2eacf5ec366ae7ab}
       \strng{bibnamehash}{e19a50b30a9cae1a2eacf5ec366ae7ab}
       \strng{authorbibnamehash}{e19a50b30a9cae1a2eacf5ec366ae7ab}
       \strng{authornamehash}{e19a50b30a9cae1a2eacf5ec366ae7ab}
       \strng{authorfullhash}{e19a50b30a9cae1a2eacf5ec366ae7ab}
-      \strng{authorfullhashraw}{e19a50b30a9cae1a2eacf5ec366ae7ab}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -3201,7 +3083,7 @@
       \endverb
       \keyw{Thermoacoustics,Refrigerator}
     \endentry
-    \entry{poignand_optimal_2007}{article}{}{}
+    \entry{poignand_optimal_2007}{article}{}
       \name{author}{6}{}{%
         {{hash=e19a50b30a9cae1a2eacf5ec366ae7ab}{%
            family={Poignand},
@@ -3236,12 +3118,10 @@
       }
       \strng{namehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{fullhash}{1299d58711006af11ee0fe12fe262cb7}
-      \strng{fullhashraw}{1299d58711006af11ee0fe12fe262cb7}
       \strng{bibnamehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{authorbibnamehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{authornamehash}{135b6ea3e924487931c46e7637f6c5ad}
       \strng{authorfullhash}{1299d58711006af11ee0fe12fe262cb7}
-      \strng{authorfullhashraw}{1299d58711006af11ee0fe12fe262cb7}
       \field{extraname}{4}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
@@ -3277,7 +3157,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0003682X06000697
       \endverb
     \endentry
-    \entry{fontbonne_postprocessing_2025}{online}{}{}
+    \entry{fontbonne_postprocessing_2025}{online}{}
       \name{author}{1}{}{%
         {{hash=23472a5c36325e1eb093cb615dfcce55}{%
            family={Fontbonne},
@@ -3287,12 +3167,10 @@
       }
       \strng{namehash}{23472a5c36325e1eb093cb615dfcce55}
       \strng{fullhash}{23472a5c36325e1eb093cb615dfcce55}
-      \strng{fullhashraw}{23472a5c36325e1eb093cb615dfcce55}
       \strng{bibnamehash}{23472a5c36325e1eb093cb615dfcce55}
       \strng{authorbibnamehash}{23472a5c36325e1eb093cb615dfcce55}
       \strng{authornamehash}{23472a5c36325e1eb093cb615dfcce55}
       \strng{authorfullhash}{23472a5c36325e1eb093cb615dfcce55}
-      \strng{authorfullhashraw}{23472a5c36325e1eb093cb615dfcce55}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -3306,7 +3184,7 @@
       \verb https://github.com/ohmenkoler/tacotpostprocessing
       \endverb
     \endentry
-    \entry{getling_rayleigh-benard_1998}{book}{}{}
+    \entry{getling_rayleigh-benard_1998}{book}{}
       \name{author}{1}{}{%
         {{hash=e261e372d8f4c3dead3b75b9748e9dd6}{%
            family={Getling},
@@ -3322,12 +3200,10 @@
       }
       \strng{namehash}{e261e372d8f4c3dead3b75b9748e9dd6}
       \strng{fullhash}{e261e372d8f4c3dead3b75b9748e9dd6}
-      \strng{fullhashraw}{e261e372d8f4c3dead3b75b9748e9dd6}
       \strng{bibnamehash}{e261e372d8f4c3dead3b75b9748e9dd6}
       \strng{authorbibnamehash}{e261e372d8f4c3dead3b75b9748e9dd6}
       \strng{authornamehash}{e261e372d8f4c3dead3b75b9748e9dd6}
       \strng{authorfullhash}{e261e372d8f4c3dead3b75b9748e9dd6}
-      \strng{authorfullhashraw}{e261e372d8f4c3dead3b75b9748e9dd6}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -3344,7 +3220,7 @@
       \verb Getling and Getling - 1998 - Rayleigh-Bénard convection structures and dynamic.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\9HIJ4Z34\\Getling and Getling - 1998 - Rayleigh-Bénard convection structures and dynamic.pdf:application/pdf;Table of Contents PDF:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\PRMQSN57\\Getling and Getling - 1998 - Rayleigh-Bénard convection structures and dynamic.pdf:application/pdf
       \endverb
     \endentry
-    \entry{belleoud_etude_2016}{thesis}{}{}
+    \entry{belleoud_etude_2016}{thesis}{}
       \name{author}{1}{}{%
         {{hash=41cc95799a0f28aa2df2b09fb6662927}{%
            family={Belleoud},
@@ -3360,12 +3236,10 @@
       }
       \strng{namehash}{41cc95799a0f28aa2df2b09fb6662927}
       \strng{fullhash}{41cc95799a0f28aa2df2b09fb6662927}
-      \strng{fullhashraw}{41cc95799a0f28aa2df2b09fb6662927}
       \strng{bibnamehash}{41cc95799a0f28aa2df2b09fb6662927}
       \strng{authorbibnamehash}{41cc95799a0f28aa2df2b09fb6662927}
       \strng{authornamehash}{41cc95799a0f28aa2df2b09fb6662927}
       \strng{authorfullhash}{41cc95799a0f28aa2df2b09fb6662927}
-      \strng{authorfullhashraw}{41cc95799a0f28aa2df2b09fb6662927}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -3376,7 +3250,7 @@
       \verb Belleoud - Etude de la convection naturelle turbulente en cav.pdf:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\AKLPH7ZE\\Belleoud - Etude de la convection naturelle turbulente en cav.pdf:application/pdf
       \endverb
     \endentry
-    \entry{lotton_transient_2009}{article}{}{}
+    \entry{lotton_transient_2009}{article}{}
       \name{author}{7}{}{%
         {{hash=4c312e6e30b3a002a74236740dd255ab}{%
            family={Lotton},
@@ -3416,12 +3290,10 @@
       }
       \strng{namehash}{dde09d8dc409474615e3725a1e9f0863}
       \strng{fullhash}{47e9c542013a18d7b6c5f3dec58639b1}
-      \strng{fullhashraw}{47e9c542013a18d7b6c5f3dec58639b1}
       \strng{bibnamehash}{dde09d8dc409474615e3725a1e9f0863}
       \strng{authorbibnamehash}{dde09d8dc409474615e3725a1e9f0863}
       \strng{authornamehash}{dde09d8dc409474615e3725a1e9f0863}
       \strng{authorfullhash}{47e9c542013a18d7b6c5f3dec58639b1}
-      \strng{authorfullhashraw}{47e9c542013a18d7b6c5f3dec58639b1}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
@@ -3456,7 +3328,7 @@
       \endverb
       \keyw{Thermoacoustics,Refrigerator}
     \endentry
-    \entry{lewis_measurement_1998}{incollection}{}{}
+    \entry{lewis_measurement_1998}{incollection}{}
       \name{author}{4}{}{%
         {{hash=aa2f026a51f3ffab984de7e626a4e8e8}{%
            family={Lewis},
@@ -3494,16 +3366,13 @@
       }
       \strng{namehash}{404c7d8a20ae9695a18c871596c20ae3}
       \strng{fullhash}{1fbd4921f441d82c4799c7a6cc097baa}
-      \strng{fullhashraw}{1fbd4921f441d82c4799c7a6cc097baa}
       \strng{bibnamehash}{404c7d8a20ae9695a18c871596c20ae3}
       \strng{authorbibnamehash}{404c7d8a20ae9695a18c871596c20ae3}
       \strng{authornamehash}{404c7d8a20ae9695a18c871596c20ae3}
       \strng{authorfullhash}{1fbd4921f441d82c4799c7a6cc097baa}
-      \strng{authorfullhashraw}{1fbd4921f441d82c4799c7a6cc097baa}
       \strng{editorbibnamehash}{fe7a1942d76e78d769533c81685ddcfb}
       \strng{editornamehash}{fe7a1942d76e78d769533c81685ddcfb}
       \strng{editorfullhash}{fe7a1942d76e78d769533c81685ddcfb}
-      \strng{editorfullhashraw}{fe7a1942d76e78d769533c81685ddcfb}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
@@ -3532,7 +3401,7 @@
       \verb http://link.springer.com/10.1007/978-1-4757-9047-4_202
       \endverb
     \endentry
-    \entry{ozisik_heat_1993}{book}{}{}
+    \entry{ozisik_heat_1993}{book}{}
       \name{author}{1}{}{%
         {{hash=ad2133249adb0f8cb16160f77553836f}{%
            family={Özısık},
@@ -3548,12 +3417,10 @@
       }
       \strng{namehash}{ad2133249adb0f8cb16160f77553836f}
       \strng{fullhash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{fullhashraw}{ad2133249adb0f8cb16160f77553836f}
       \strng{bibnamehash}{ad2133249adb0f8cb16160f77553836f}
       \strng{authorbibnamehash}{ad2133249adb0f8cb16160f77553836f}
       \strng{authornamehash}{ad2133249adb0f8cb16160f77553836f}
       \strng{authorfullhash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{authorfullhashraw}{ad2133249adb0f8cb16160f77553836f}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}

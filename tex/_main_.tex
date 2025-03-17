@@ -33,7 +33,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \emergencystretch=1em
-%\let\epsilon\varepsilon
+\let\epsilon\varepsilon
 %\let\phi\varphi
 \let\textss\textsuperscript
 
@@ -189,12 +189,6 @@
 	inner=3cm,textwidth=17cm,		% Pour imprimer (plus de marge au centre côté reliure)
 	top=2cm,bottom=1.75cm]{geometry}
 
-\usepackage{hyperref}
-	\hypersetup{pdfborder = {0 0 0},%borderless hyperlinks
-    	colorlinks = true,
-    	citecolor=PythonGreen,
-    	urlcolor = MatlabOrange,
-    	linkcolor = MatlabBlue}
 \pagenumbering{arabic}
 \usepackage{fancyhdr}
 \usepackage{siunitx}
@@ -211,10 +205,17 @@
 \usepackage{multirow}
 %\usepackage{minitoc}
 \usepackage{etoc}
+\usepackage{hyperref}
+	\hypersetup{pdfborder = {0 0 0},%borderless hyperlinks
+    	colorlinks = true,
+    	citecolor=PythonGreen,
+    	urlcolor = MatlabOrange,
+    	linkcolor = MatlabBlue}
 \usepackage{titlesec}
 
 \setcounter{secnumdepth}{5}
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
+\etocsettocdepth{3}
 
 \usepackage[
 	style=numeric-comp,
@@ -345,7 +346,7 @@
 	\end{tblr}
 	\vfill
 
-	Soutenue le \echaf{juin 2025}
+	Soutenue le \echaf{16 juin 2025}
 	\vfill
 	
 	devant la Commission d'Examen
@@ -354,21 +355,16 @@
 	\textbf{\underline{JURY}}
 	\vfill
 	
-	\rule{7cm}{.5pt}\medskip
-	
-	\rule{7cm}{.5pt}\medskip
-	
-	\rule{7cm}{.5pt}\medskip
-	
-	\rule{7cm}{.5pt}\medskip
-	
-	\rule{7cm}{.5pt}\medskip
-	
-	\rule{7cm}{.5pt}\medskip
-	
-	\rule{7cm}{.5pt}\medskip
-	
-	\rule{7cm}{.5pt}\medskip
+	\begin{tabular}{rrr}
+	\textbf{Prénom \textsc{Nom}} & Grade, Université & \textit{Rôle} \\
+	\textbf{Prénom \textsc{Nom}} & Grade, Université & \textit{Rôle} \\
+	\textbf{Prénom \textsc{Nom}} & Grade, Université & \textit{Rôle} \\
+	\textbf{Prénom \textsc{Nom}} & Grade, Université & \textit{Rôle} \\
+	\textbf{Prénom \textsc{Nom}} & Grade, Université & \textit{Rôle} \\
+	\textbf{Prénom \textsc{Nom}} & Grade, Université & \textit{Rôle} \\
+	\textbf{Prénom \textsc{Nom}} & Grade, Université & \textit{Rôle} \\
+	\textbf{Prénom \textsc{Nom}} & Grade, Université & \textit{Rôle} \\
+	\end{tabular}
 	
 
 	

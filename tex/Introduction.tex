@@ -246,6 +246,32 @@ Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacous
 \subsection{Fonction visco-thermiques}
 \cite{swift_thermoacoustics_2017, di_giulio_wire_2023}
 
+Pour des pores de géométrie cylindrique : 
+
+\begin{multicols}{2}
+
+\begin{subequations}
+\begin{align}
+	h_\nu(r) &= \frac{J_0[(1-i)\frac{r}{\delta_\nu}]}{J_0[(1-i)\frac{r_h}{\delta_\nu}]}
+	\label{eq:FonctionViqueuse_r} \\
+	f_\nu &= \frac{2J_1[(1-i)\frac{r_h}{\delta_\nu}]}{(1-i)\frac{r_h}{\delta_\nu}J_0[(1-i)\frac{r_h}{\delta_\nu}]}
+	\label{eq:FonctionViqueuse_Moyenne}
+\end{align}
+\label{eq:FonctionsVisqueuses}
+\end{subequations}
+
+\begin{subequations}
+\begin{align}
+	h_\kappa(r) &= \echaf{\frac{J_0[(1-i)\frac{r}{\delta_\kappa}]}{J_0[(1-i)\frac{r_h}{\delta_\kappa}]}}
+	\label{eq:FonctionThermique_k} \\
+	f_\kappa &= \echaf{\frac{2J_1[(1-i)\frac{r_h}{\delta_\kappa}]}{(1-i)\frac{r_h}{\delta_\kappa}J_0[(1-i)\frac{r_h}{\delta_\kappa}]}}
+	\label{eq:FonctionThermique_Moyenne}
+\end{align}
+\label{eq:FonctionsThermiques}
+\end{subequations}
+
+\end{multicols}
+
 \subsubsection{Milieu tortueux}
 
 \cite{allard_propagation_2009}
@@ -260,12 +286,12 @@ Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacous
 \section{\'Etat de l'art}
 \cite{pierens_development_2012}
 
-\subsection{De la recherche fondamentale...}
+\subsection[De la recherche fondamentale...]{Recherche fondamentale}
 L'effet thermoacoustique est un phénomène observé depuis les environs du I\ier{} siècle avant notre ère \echaf{src souffleurs de verre + préparation du riz (cours Guillaume ?) ?} \cite{adeff_measurement_1991}
 
 Depuis les années 1970-1980 durant lesquelles les premières machines modernes ont été mises au point, beaucoup de chemin a été parcouru. Le premier moteur à ondes progressives a été construit par Ceperley en 1979 \cite{ceperley_pistonless_1979}, et la première pompe à chaleur par Hofler lors de son doctorat en 1983 \echaf{src}
 
-\subsection{... à des applications industrielles}
+\subsection[... à des applications industrielles]{Applications industrielles}
 Les machines thermoacoustiques sont intéressantes pour l'industrie \echaf{continuer avec cryocooler pour liquéfaction de gaz + TNO/BlueHeart ?}\cite{swift_thermoacoustics_2002, wollan_development_2002, adeff_measurement_1991, garrett_thermoacoustic_1993}
 
 \section{Outils électroacoustiques pour la thermoacoustique}

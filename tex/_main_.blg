@@ -1,17 +1,15 @@
-[0] Config.pm:308> INFO - This is Biber 2.20
-[0] Config.pm:311> INFO - Logfile is '_main_.blg'
-[132] biber-MSWIN64:340> INFO - === 
-[178] Biber.pm:420> INFO - Reading '_main_.bcf'
-[349] Biber.pm:994> INFO - Found 66 citekeys in bib section 0
-[368] Biber.pm:4463> INFO - Processing section 0
-[383] Biber.pm:4654> INFO - Looking for bibtex file '../bib/phd_bib.bib' for section 0
-[444] bibtex.pm:1713> INFO - LaTeX decoding ...
-[759] bibtex.pm:1519> INFO - Found BibTeX data source '../bib/phd_bib.bib'
-[1269] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1270] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1270] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'fr-FR'
-[1270] Biber.pm:4289> INFO - No sort tailoring available for locale 'fr-FR'
-[1329] bbl.pm:676> INFO - Writing '_main_.bbl' with encoding 'UTF-8'
-[1388] bbl.pm:779> INFO - Output to _main_.bbl
-[1401] Biber.pm:131> WARN - ISBN '978-0-470-74661-5 978-0-470-74733-9' in entry 'allard_propagation_2009' is invalid - run biber with '--validate_datamodel' for details.
-[1401] Biber.pm:133> INFO - WARNINGS: 1
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is '_main_.blg'
+[244] biber-MSWIN64:340> INFO - === 
+[323] Biber.pm:419> INFO - Reading '_main_.bcf'
+[579] Biber.pm:979> INFO - Found 66 citekeys in bib section 0
+[612] Biber.pm:4419> INFO - Processing section 0
+[636] Biber.pm:4610> INFO - Looking for bibtex file '../bib/phd_bib.bib' for section 0
+[731] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1167] bibtex.pm:1519> INFO - Found BibTeX data source '../bib/phd_bib.bib'
+[2027] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2028] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2028] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'fr-FR'
+[2028] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
+[2141] bbl.pm:660> INFO - Writing '_main_.bbl' with encoding 'UTF-8'
+[2230] bbl.pm:763> INFO - Output to _main_.bbl

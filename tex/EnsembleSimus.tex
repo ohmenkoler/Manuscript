@@ -498,34 +498,121 @@ Ce problème transitoire comporte des termes sources, et requiert donc une méth
 
 \begin{subequations}
 	\begin{align}
-		\frac{1}{g} \partial_t \theta &= \partial_{xx}^2 \theta + \gamma \partial_{rr}^2\theta + \beta, & x \in [0,L_{\sf reg}],\ r \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:BilanThermique_ChgtVariables} \\
-		\partial_x \theta - \eta_0 \theta &= q_0, & x=0,\ r \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:CondFront_x_0Froid_ChgtVariables} \\[6pt]
-		\partial_x \theta + \eta_{L_{\sf reg}} \theta &= q_{L_{\sf reg}}, & x=L_{\sf reg},\ r \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:CondFront_x_LregAmb_ChgtVariables} \\[6pt]
+		\frac{1}{\underline g(x)} \partial_t \theta &= \partial_{xx}^2 \theta + \underline k \partial_{rr}^2 \theta + \Gamma, & x \in [0,L_{\sf reg}],\ r \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:BilanThermique_ChgtVariables} \\
+		\partial_x \theta - \eta_0 \theta &= Q_0, & x=0,\ r \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:CondFront_x_0Froid_ChgtVariables} \\[6pt]
+		\partial_x \theta + \eta_{L_{\sf reg}} \theta &= Q_{L_{\sf reg}}, & x=L_{\sf reg},\ r \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:CondFront_x_LregAmb_ChgtVariables} \\[6pt]
 		\partial_r \theta - \eta_r \theta &= 0, & r=0,\ 2R_{\sf reg},\ x \in [0,2R_{\sf reg}],\ t>0\ ; \label{eq:CondFront_r_Rreg_ChgtVariables} \\[6pt]
 		\theta(x,r,t=0) &= \theta_0(x,r), & t=0,\ x \in [0,L_{\sf reg}],\ r \in [0,2R_{\sf reg}].	\label{eq:CondInit_ChgtVariables}
 	\end{align}	
 	\label{eq:ProblemeTransitoire_ChgtVariables}
 \end{subequations}
-\echaf{changer les noms $g, \gamma, q_0, q_L$} avec les changements de variables suivants
+avec le changement de variables suivant,
 
 \begin{multicols}{2}
 	\begin{subequations}
 		\begin{align}
+			Q_0 &= \frac{Q_{TA}(0)-Q_{\sf vort}(0)+\epsilon Q_f}{k_x+k_{TA}(L_{\sf reg})}, \\
+			Q_{L_{\sf reg}} &= \frac{Q_{TA}(L_{\sf reg})+Q_{\sf vort}(L_{\sf reg})+\epsilon Q_a}{k_x+k_{TA}(L_{\sf reg})},\\
 			\eta_{0,L_{\sf reg}} &= \frac{\left.h_x\right|_{x=0,L_{\sf reg}}}{k_x + k_{TA}(L_{\sf reg})}, \\
-			\eta_r &= \frac{h_r}{k_r}, \\
-			q_0 &= \frac{Q_{TA}(0)-Q_{\sf vort}(L_{\sf reg})+\epsilon Q_f}{k_x+k_{TA}(L_{\sf reg})}, \\
-			q_l &= \frac{Q_{TA}(L_{\sf reg})+Q_{\sf vort}(L_{\sf reg})+\epsilon Q_a}{k_x+k_{TA}(L_{\sf reg})},
+			\eta_r &= \frac{h_r}{k_r},
 		\end{align}
 		
 		\begin{align}
-			g(x) &= \frac{k_x + k_{TA}(x)}{\Phi \rho_0 C_p + (1-\Phi) \rho_s C_s}, \\
-			\gamma &= \frac{k_r}{k_x + k_{TA}(x)}, \\
-			\beta &= \frac{Q_{\sf visq}-\partial_x q_{TA}(x)}{k_x + k_{TA}(x)}.
+			\underline g(x) &= \frac{k_x + k_{TA}(x)}{\Phi \rho_0 C_p + (1-\Phi) \rho_s C_s}, \\
+			\underline k &= \frac{k_r}{k_x + k_{TA}(x)}, \\
+			\Gamma(x) &= \frac{Q_{\sf visq}-\partial_x q_{TA}(x)}{k_x + k_{TA}(x)}.
 		\end{align}
 		\label{ChgtVariables}
 	\end{subequations}
 \end{multicols}
 
+Le noyau est court devant la longueur d'onde $\lambda$, ce qui permet de considérer constantes les quantités $\underline g$, $\underline k$ et $\Gamma$, égales à leurs valeurs respectives en $x=0$.\medskip
+
+Le but est maintenant de d'appliquer les méthodes de transformations intégrales aux deux variables d'espace $x$ et $r$, pour ramener le problème à une équation différentielle ordinaire selon le temps $t$.
+
+\paragraph{Application de la méthode par rapport à $r$}
+Pour retirer la dépendance du problème aux dérivées partielles par rapport à la coordonnée transverse $r$, il faut trouver une fonction $R_n$ dans le problème aux valeurs propres $\sigma_{r,n}$ tel que
+\begin{equation}
+	\partial_{rr}^2 R_n(r) + \sigma_{r,n}^2 R_n(r) = 0,
+	\label{eq:TransfoInteg_ProbValPropre_R}
+\end{equation}
+avec comme conditions aux frontières
+
+\begin{align}
+	\partial_r R_n(r) + \eta_r R_n(r) &= 0, & r=0,\ 2R_{\sf reg},\  t>0. \label{eq:TransfoInteg_CondFront_R}
+\end{align}
+
+Les fonctions propres $R_n$ associées sont de la forme
+
+\begin{equation}
+	R_n(\sigma_{r,n},r) = \sigma_{r,n} \cos(\sigma_{r,n} r) + \eta_r \sin(\sigma_{r,n} r),
+	\label{eq:TransfoInteg_FonctionPropres_R}
+\end{equation}
+de norme $N_r(\sigma_{r,n})=\nicefrac{1}{2}R_{\sf reg}\left( \sigma_{r,n}^2+\eta_r^2 \right)$, et dont les valeurs propres $\sigma_{r,n}$ sont solutions de l'équation
+
+\begin{equation}
+	\tan(2\sigma_n R_{\sf reg}) = \frac{2\sigma_n \eta_r}{\sigma_{r,n}^2 - \eta_r^2}. 
+\end{equation}
+
+La solution $\theta(x,r;t)$ du problème s'écrit au moyen du couple d'équations
+
+\begin{subequations}
+	\begin{align}
+		\theta(x,r;t) &= \sum_{n=1}^{+\infty}\frac{R_n(\sigma_{r,n}, r)}{N_r(\sigma_{r,n})} \overline \theta(\sigma_{r,n},x;t), \label{eq:TransfoInteg_Inversion_R} \\ \intertext{et}
+		\overline \theta(\sigma_{r,n},x;t) &= \int_{0}^{2R_{\sf reg}} R_n(\sigma_{r,n},r')\theta(r',x;t)\ \deriv r', \label{TransfoInter_TransfoInteg_R}
+	\end{align}
+\end{subequations}
+qui sont respectivement la formule d'inversion et la transformation intégrale. Cette dernière est appliquée au système d'équations~\ref{eq:ProblemeTransitoire_ChgtVariables} pour donner
+
+\begin{subequations}
+	\begin{align}
+		\frac{1}{\underline g} \partial_t \overline \theta(\sigma_{r,n},x;t) &= \partial_{xx}^{2} \overline \theta(\sigma_{r,n},x;t) - \underline k \sigma_{r,n}^2 \overline \theta(\sigma_{r,n},x;t) + \overline \sigma, & x \in [0,L_{\sf reg}],\ t>0, \label{eq:TransfoInteg_BilanThermique_R} \\
+		\partial_x \overline \theta - \eta_0 \overline \theta &= \overline Q_0 & x=0,\ t>0, \label{eq:TransfoInteg_CondFront_x_0Froid_R} \\[6pt]
+		\partial_x \overline \theta - \eta_{L_{\sf reg}} \overline \theta &= \overline Q_{L_{\sf reg}} & x=L_{\sf reg},\ t>0, \label{eq:TransfoInteg_CondFront_x_LregAmb_R} \\[6pt]
+		\overline \theta(x,r,t=0) &= \overline \theta_0(x,r), & t=0,\ x \in [0,L_{\sf reg}]. \label{eq:TransfoInteg_CondInit_R}
+	\end{align}
+\end{subequations}
+
+\paragraph{Application de la méthode par rapport à $x$}
+De même que pour la variable $r$, une fonction $X_m$ est cherchée pour retirer la dépendance du problème par rapport à la coordonnée axiale $x$, de sorte à être solution du problème aux valeurs propres $\sigma_{x,m}$ noté
+
+\begin{equation}
+	\partial_{xx}^2 X_m(x) + \sigma_{x,m}^2 X_m(x) = 0,
+	\label{eq:TransfoInteg_ProbValPropre_X}
+\end{equation}
+avec pour conditions aux limites
+
+\begin{subequations}
+	\begin{align}
+		\partial_x X_m - \eta_0 X_m &= 0, & x=0, \label{eq:TransfoInteg_CondFront_X0} \\ \intertext{et}
+		\partial_x X_m + \eta_{L_{\sf reg}} X_m &= 0, & x=L_{\sf reg}. \label{eq:TransfoInteg_CondFront_XLreg}
+	\end{align}
+\end{subequations}
+
+La forme des fonctions propres $X_m$ est cette fois-ci donnée par 
+\begin{equation}
+	X_m(x) = \sigma_{x,m} \cos(\sigma_{x,m} x) + \eta_0 \sin(\sigma_{x,m} x),
+\end{equation}
+dont la norme vaut
+
+\begin{equation}
+	N_x = \nicefrac{1}{2}\left(\sigma_{x,m}^2 + \eta_0^2 \right)\left(L_{\sf reg}+\frac{\eta_{L_{\sf reg}}}{\sigma_{x,m}^2 + \eta_{L_{\sf reg}}^2}\right).
+\end{equation}
+
+Les valeurs propres sont solutions de l'équation
+\begin{equation}
+	\tan(\sigma_{x,m}L_{\sf reg}) = \frac{\sigma_{x,m}(\eta_0+\eta_{L_{\sf reg}})}{\sigma_{x,m}^2+\eta_0\eta_{L_{\sf reg}}}.
+\end{equation}
+
+Encore une fois, le système d'équations peut être résolu grâce à la paire de fonctions
+
+\begin{subequations}
+	\begin{align}
+		\overline\theta = \sum_{m=0}^{+\infty}\frac{X_m(x)}{N_x}\langle X_m|\overline \theta \rangle
+	\end{align}
+\end{subequations}
+
+\paragraph{Application des transformées intégrales inverses}
 
 \subsection{Détermination des paramètres empiriques}
 Parce que le modèle contient un certain nombre de paramètres empiriques à ajuster pour retrouver les mêmes tendances que sur les résultats expérimentaux, il convient de procéder par étape.

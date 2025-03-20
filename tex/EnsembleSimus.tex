@@ -186,27 +186,26 @@ Après avoir étudié ce qui se passe dans le cône seul, le noyau est ajouté �
     \label{fig:Comsol_ModeleSimplifie_Geometrie}
 \end{figure}
 
-Cette géométrie comporte trois domaines. Le premier est le cône déjà évoqué, qui dans la machine réelle adapte l'impédance de la source au reste de la cavité thermoacoustique. Ses dimensions sont les mêmes que dans la machine, à savoir un diamètre du côté de la source principale $D_{SA1}=\qty{108}{\milli\meter}$, un \echaf{diamètre du côté du noyau} $D_{TA}=\qty{164}{\milli\meter}$, et une longueur $L_{\sf cone}=\qty{3}{\centi\meter}$.\smallskip
+Cette géométrie comporte trois domaines. Le premier est le cône déjà évoqué, qui dans la machine réelle adapte l'impédance de la source au reste de la cavité thermoacoustique. Ses dimensions sont les mêmes que dans la machine, à savoir un diamètre du côté de la source principale $D_{SA1}=\qty{108}{\milli\meter}$, un diamètre du côté du noyau $D_{\sf can}=\qty{156}{\milli\meter}$, et une longueur $L_{\sf cone}=\qty{3}{\centi\meter}$.\smallskip
 
 Le second domaine est le régénérateur, de longueur $L_{\sf reg}=\qty{39}{\milli\meter}$ et de diamètre $D_{\sf reg}=\qty{148}{\milli\meter}$, une fois encore les dimensions du dispositif réel.\smallskip
 
-Le troisième domaine est l'enceinte contenant le régénérateur. Ces deux domaines partagent la même longueur, mais le \echaf{diamètre extérieur} de l'enceinte est $D_{\sf can}=\qty{156}{\milli\meter}$, de sorte à considérer une paroi métallique de \qty{1}{\milli\meter} d'épaisseur.\medskip
+Le troisième domaine est l'enceinte contenant le régénérateur. Sa longueur est la même que celle du régénérateur, mais son diamètre est $D_{\sf can}$, de sorte à considérer une paroi métallique de \qty{4}{\milli\meter} d'épaisseur.\medskip
 
 Les dimensions de la géométrie du modèle sont notées dans le tableau~\ref{tab:DimModeleComsol}.
 
 \begin{table}[!ht]
 	\centering
-	\caption{Dimensions des domaines pour le modèle \textsc{Comsol}.}
+	\caption{Dimensions des domaines pour le modèle \textsc{Comsol}\textss\textregistered.}
 	\label{tab:DimModeleComsol}	
 	\begin{tabular}{ll}
 		\hline
 		\textbf{Paramètre} & \textbf{Valeur} \\
 		\hline\hline
 		$D_{SA1}$ & \qty{108}{\milli\meter} \\
-		$D_{TA}$ & \qty{164}{\milli\meter} \echaf{vérifier} \\
+		$D_{\sf can}$ & \qty{156}{\milli\meter} \\
 		$L_{\sf cone}$ & \qty{30}{\milli\meter} \\
 		$D_{\sf reg}$ & \qty{148}{\milli\meter} \\
-		$D_{\sf can}$ & \qty{156}{\milli\meter} \echaf{vérifier} \\
 		$L_{\sf reg}$ & \qty{39}{\milli\meter} \\
 		\hline
 	\end{tabular}
@@ -272,7 +271,7 @@ Enfin, la convection est modélisée dans la cavité d'adaptation d'impédance. 
 
 Ces effets sont supposés se superposer selon le schéma~\ref{fig:SuperpositionComsol}, d'après les observations faites par Ramadan \textit{et al.} \cite{ramadan_design_2021}. Dans ce cas, le \textsc{Tacot} est positionné dans l'orientation `\texttt{H1}'. Les autres orientations doivent présenter d'autres résultats, car la convection naturelle ne se manifeste pas de la même manière dans le cas d'une configuration de Rayleigh-Bénard ou \echaf{une autre}\medskip
 
-\subsubsection{Modèle solide}
+\subsubsection{Composante solide}
 
 Pour prendre en compte la conductivité thermique anisotrope dûe à l'empilement de disques de tissus métalliques et quand bien même le matériau n'est pas représenté par un modèle poreux, la conduction dans le régénérateur est modélisée en utilisant une matrice de conductivité \echaf{diagonale} d'après les travaux de \cite{hsu_effective_1996}, notée $\mathbf k_{\sf tissus}$ et écrite
 
@@ -288,15 +287,15 @@ avec $k_{\sf inox}=\qty{14.388}{\watt\per\meter\per\kelvin}$ la conductivité th
 
 Choisir une représentation matricielle de la conductivité est également motivé par l'étude de la distribution de température en l'absence de conductivité transverse dans le régénérateur.
 
-\subsubsection{Modèle fluide}
-
+\subsubsection{Composante fluide}
+Dans la cavité d'adaptation, deux modèles thermique et fluidique sont couplés par la multiphysique \texttt{Non isothermal flow (nift)}. La pression à l'intérieur de ce volume est fixée à \qty{4e6}{\pascal}, comme c'est le cas au point de fonctionnement  choisi pour les expériences.
 
 
 %\subsubsection{Ajout d'un modèle de matériau poreux}
 
 
 \subsection{Conditions aux frontières}
-\subsubsection{Modèle thermique}
+\subsubsection{Problème thermique}
 Les conditions aux frontières du modèle de transfert thermique sont représentées sur la figure~\ref{fig:Comsol_CondFrontT}. Deux configurations sont retenues pour les conditions aux frontières thermiques. Pour les deux, un flux de chaleur $Q_f=\qty{-3}{\watt}$ \echaf{verif cette valeur} est d'une part retiré à la paroi qui représente l'échangeur froid, pour prendre en compte l'effet thermoacoustique même si ce modèle ne contient pas de simulation acoustique ; le côté ambiant est d'autre part fixé à la température $T_a=\qty{293}{\kelvin}$.
 
 \begin{figure}[!ht]
@@ -327,8 +326,8 @@ Les conditions aux frontières du modèle de transfert thermique sont représent
 
 \echaf{ajouter étude paramètrique pour trouver -Qc=-Qth+Qchx}
 
-\subsubsection{Modèle fluide}
-Les conditions aux frontières sont plus simples. En effet, dans toutes les configurations, la condition de non-glissement est 
+\subsubsection{Problème fluide}
+Pour cet aspect du modèle, les conditions aux frontières sont non-glissantes pour toutes les parois, et dans toutes les configurations. Cela se vérifie d'abord près des parois qui composent le bâti de la machine, mais aussi à la paroi de l'échangeur froid. En effet, au voisinage de cette dernière, la vitesse acoustique est supposée suffisamment faible~\cite{baltean_gravity_2025}.
 
 \subsection{Résultats}% dans les zones d'intérêt}
 %\subsubsection{Volume d'adaptation d'impédance}

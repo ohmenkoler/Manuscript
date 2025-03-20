@@ -66,4 +66,24 @@ La source acoustique principale est un moteur linéaire. Ce type de source est �
 \subsubsection{Source secondaire}
 
 
+\section{Simulations par éléments finis avancées}
+\subsection{Géométrie}
+Les simulations présentées dans la section~\ref{chap:FEM} ne prennent en compte que la cavité d'adaptation d'impédance, le régénérateur solide et l'enceinte qui le contient. Ce choix permet de limiter les couplages thermiques et les difficultés de calcul qui les accompagnent, et font suite à une hypothèse formulée sur la prédominance de la conduction thermique dans le régénérateur sur les autres effets. Cela se manifeste par l'usage d'une condition adiabatique pour la paroi extérieure de l'enceinte. 
+
+Cependant, la présence de la boucle de rétroaction introduit un couplage entre cette paroi extérieure, et l'extérieur de la machine. Pour ajouter cette condition aux frontières du noyau, le domaine correspondant au fluide est étendu, pour englober la boucle de rétroaction, ainsi que l'espace situé entre le côté ambiant du noyau et la source acoustique secondaire. La géométrie améliorée est dessinée sur la figure~\ref{fig:Geometrie_FeedbackLoop}.
+
+\begin{figure}[!ht]
+	\centering
+	\external{fig_Geometrie_FeedbackLoop}
+%	\externalremake
+	\input{../fig/fig_ConvNatComsol/tex/fig_Geometrie_FeedbackLoop}
+	\caption{Géométrie prenant en compte la boucle de rétroaction pour le modèle \textsc{Comsol}\textss\textregistered}
+	\label{fig:Geometrie_FeedbackLoop}
+\end{figure}
+
+\subsection{Conditions aux frontières adaptées}
+Les conditions aux frontières doivent être modifiées pour représenter le modèle. Les parois régénérateur-enceinte, et enceinte-boucle de rétroaction sont modélisées par une continuité des flux de chaleur et des températures, la paroi correspondant à l'échangeur ambiant est considérée comme une source de chaleur apportée par l'effet thermoacoustique, et les parois représentant les sources acoustiques sont traitées comme des parois adiabatiques.
+
+\subsection{Interface physique}
+Enfin, dans ce modèle, il serait également très intéressant de considérer les effets de la porosité sur le comportement du régénérateur, en particulier sur l'existence de circulations causées par la convection naturelle à l'intérieur du noyau. Cela se fait par l'interface \texttt{Brinkman equations (br)}.
 

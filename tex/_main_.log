@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  20 MAR 2025 00:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  20 MAR 2025 20:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2126,7 +2126,7 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 220.
-<example-image-a.pdf, id=1460, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=1480, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 224.
@@ -2220,7 +2220,7 @@ LaTeX Info: Symbol \textohm not provided by
 pdfTeX warning: pdflatex (file ./external/fig_CHXSchema0.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 > <./external/fig_TemperatureAHX_InOut0.pdf>]
-<example-image.pdf, id=1667, 321.2pt x 240.9pt>
+<example-image.pdf, id=1687, 321.2pt x 240.9pt>
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
 Package pdftex.def Info: example-image.pdf  used on input line 378.
@@ -2267,11 +2267,11 @@ File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [32]
 ===== Image 'external/fig_Comsol_ModeleSimplifie_Geometrie0' is up-to-date. ===
 ===
-Excluding 'comment' comment.
+Excluding 'comment' comment. [33]
 (../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex
 ===== Image 'external/fig_SuperpositionComsol0' is up-to-date. ======
-) [33] [34 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>] [35 <./exter
-nal/fig_SuperpositionComsol0.pdf>]
+) [34 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf> <./external/fig_Su
+perpositionComsol0.pdf>] [35]
 (../fig/fig_ComsolThermalCondFront/tex/Rix_Ambiant.tex
 ===== Image 'external/fig_Comsol_TambiantRix0' is up-to-date. ======
 ) (../fig/fig_ComsolThermalCondFront/tex/Rix_Adiab.tex
@@ -2485,7 +2485,9 @@ nsy410.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_ActiveControl_Teensy410.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->]) [67] (IndexNotations.tex
+>] (../fig/fig_ConvNatComsol/tex/fig_Geometrie_FeedbackLoop.tex
+===== Image 'external/fig_Geometrie_FeedbackLoop0' is up-to-date. ======
+)) [67 <./external/fig_Geometrie_FeedbackLoop0.pdf>] (IndexNotations.tex
 Annexe A.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -2834,19 +2836,19 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 4D01435CD61472B36AE12D58D3C3B2B5;21948.
+(rerunfilecheck)             Checksum: 811D53A9D5D96BCDEF5BD50DB2DD4E40;22792.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 77230 strings out of 474435
- 1945237 string characters out of 5751739
- 3205652 words of memory out of 5000000
- 97644 multiletter control sequences out of 15000+600000
+ 77254 strings out of 474435
+ 1946141 string characters out of 5751739
+ 3206071 words of memory out of 5000000
+ 97657 multiletter control sequences out of 15000+600000
  704974 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,112p,4691b,2834s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,16n,112p,4691b,2797s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
 gram Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Files/MiKTeX
 /fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/type1/now
@@ -2858,9 +2860,9 @@ eX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX/fonts/type
 uper/sfss0800.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt0900
 .pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Prog
 ram Files/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (100 pages, 28733055 bytes).
+Output written on _main_.pdf (100 pages, 28751104 bytes).
 PDF statistics:
- 4123 PDF objects out of 4296 (max. 8388607)
- 493 named destinations out of 1000 (max. 500000)
- 1545 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4172 PDF objects out of 4296 (max. 8388607)
+ 498 named destinations out of 1000 (max. 500000)
+ 1582 words of extra memory for PDF output out of 10000 (max. 10000000)
 

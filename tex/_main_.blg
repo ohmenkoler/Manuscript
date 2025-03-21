@@ -1,15 +1,15 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is '_main_.blg'
-[244] biber-MSWIN64:340> INFO - === 
-[323] Biber.pm:419> INFO - Reading '_main_.bcf'
-[579] Biber.pm:979> INFO - Found 66 citekeys in bib section 0
-[612] Biber.pm:4419> INFO - Processing section 0
-[636] Biber.pm:4610> INFO - Looking for bibtex file '../bib/phd_bib.bib' for section 0
-[731] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1167] bibtex.pm:1519> INFO - Found BibTeX data source '../bib/phd_bib.bib'
-[2027] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2028] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2028] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'fr-FR'
-[2028] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
-[2141] bbl.pm:660> INFO - Writing '_main_.bbl' with encoding 'UTF-8'
-[2230] bbl.pm:763> INFO - Output to _main_.bbl
+[1] Config.pm:307> INFO - This is Biber 2.19
+[1] Config.pm:310> INFO - Logfile is '_main_.blg'
+[532] biber-MSWIN64:340> INFO - === 
+[666] Biber.pm:419> INFO - Reading '_main_.bcf'
+[1203] Biber.pm:979> INFO - Found 68 citekeys in bib section 0
+[1274] Biber.pm:4419> INFO - Processing section 0
+[1336] Biber.pm:4610> INFO - Looking for bibtex file '../bib/phd_bib.bib' for section 0
+[1485] bibtex.pm:1713> INFO - LaTeX decoding ...
+[2370] bibtex.pm:1519> INFO - Found BibTeX data source '../bib/phd_bib.bib'
+[3956] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[3956] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[3956] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'fr-FR'
+[3957] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
+[4120] bbl.pm:660> INFO - Writing '_main_.bbl' with encoding 'UTF-8'
+[4252] bbl.pm:763> INFO - Output to _main_.bbl

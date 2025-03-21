@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  20 MAR 2025 00:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  21 MAR 2025 14:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3392,7 +3392,7 @@ LaTeX Warning: Reference `fig:ConvNat2D' on page 33 undefined on input line 171
 
 
 LaTeX Warning: Reference `fig:Comsol_ModeleSimplifie_Geometrie' on page 33 unde
-fined on input line 179.
+fined on input line 180.
 
 <../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png, id=76, 338.705
 4pt x 301.6068pt>
@@ -3400,57 +3400,61 @@ File: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png Graphic fi
 le (type png)
 <use ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png>
 Package pdftex.def Info: ../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geomet
-ry62.png  used on input line 184.
+ry62.png  used on input line 185.
 (pdftex.def)             Requested size: 338.70457pt x 301.60605pt.
 
 LaTeX Warning: Reference `tab:DimModeleComsol' on page 33 undefined on input li
-ne 195.
+ne 192.
 
 Excluding 'comment' comment. (../fig/fig_SuperpositionComsol/tex/fig_Superposit
 ionComsol.tex)
 
 LaTeX Warning: Reference `fig:OrientationCore_H1' on page 34 undefined on input
- line 258.
+ line 254.
 
 
 LaTeX Warning: Citation 'ramadan_design_2021' on page 34 undefined on input lin
-e 258.
+e 254.
 
 
 LaTeX Warning: Reference `fig:OrientationCore_H1' on page 34 undefined on input
- line 258.
+ line 254.
 
 
 LaTeX Warning: Citation 'ramadan_design_2021' on page 34 undefined on input lin
-e 258.
+e 254.
 
 
 LaTeX Warning: Reference `fig:SuperpositionComsol' on page 34 undefined on inpu
-t line 262.
+t line 258.
 
 
 LaTeX Warning: Reference `fig:Comsol_ModeleSimplifie_Geometrie' on page 34 unde
-fined on input line 262.
-
-
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 35 undefined on in
-put line 269.
+fined on input line 258.
 
 
 LaTeX Warning: Reference `fig:SuperpositionComsol' on page 35 undefined on inpu
-t line 273.
+t line 264.
+
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 35 undefined on in
+put line 264.
 
 
 LaTeX Warning: Citation 'ramadan_design_2021' on page 35 undefined on input lin
-e 273.
+e 266.
+
+
+LaTeX Warning: Reference `fig:OrientationCore_H1' on page 35 undefined on input
+ line 266.
 
 
 LaTeX Warning: Citation 'hsu_effective_1996' on page 35 undefined on input line
- 277.
+ 272.
 
 
 LaTeX Warning: Reference `fig:Comsol_CondFrontT' on page 35 undefined on input 
-line 300.
+line 295.
 
 (../fig/fig_ComsolThermalCondFront/tex/Rix_Ambiant.tex
 Missing character: There is no ; in font nullfont!
@@ -3475,36 +3479,52 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Hyper reference `fig:Comsol_CondFrontT_TambiantRix' on page 36 u
-ndefined on input line 320.
+ndefined on input line 315.
 
 
 LaTeX Warning: Reference `sub@fig:Comsol_CondFrontT_TambiantRix' on page 36 und
-efined on input line 320.
+efined on input line 315.
 
 
 LaTeX Warning: Hyper reference `fig:Comsol_CondFrontT_AdiabRix' on page 36 unde
-fined on input line 320.
+fined on input line 315.
 
 
 LaTeX Warning: Reference `sub@fig:Comsol_CondFrontT_AdiabRix' on page 36 undefi
-ned on input line 320.
+ned on input line 315.
 
 
 LaTeX Warning: Hyper reference `fig:Comsol_CondFrontT_TambiantRix' on page 36 u
-ndefined on input line 320.
+ndefined on input line 315.
 
 
 LaTeX Warning: Reference `sub@fig:Comsol_CondFrontT_TambiantRix' on page 36 und
-efined on input line 320.
+efined on input line 315.
 
 
 LaTeX Warning: Hyper reference `fig:Comsol_CondFrontT_AdiabRix' on page 36 unde
-fined on input line 320.
+fined on input line 315.
 
 
 LaTeX Warning: Reference `sub@fig:Comsol_CondFrontT_AdiabRix' on page 36 undefi
-ned on input line 320.
+ned on input line 315.
 
+
+LaTeX Warning: Citation 'baltean_gravity_2025' on page 36 undefined on input li
+ne 326.
+
+
+LaTeX Warning: Reference `fig:ConvNatComsol_VelociteArrow' on page 36 undefined
+ on input line 330.
+
+
+LaTeX Warning: Reference `fig:ConvNatComsol_TempTransverseCHX' on page 36 undef
+ined on input line 334.
+
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package pdftex.def Info: example-image-a.pdf  used on input line 343.
+(pdftex.def)             Requested size: 204.6029pt x 153.455pt.
 
 (../fig/fig_ConvNatComsol_Resultats/tex/fig_ConvNatComsol_TempTransverseCHX.tex
 \openout6 = `external/fig_ConvNatComsol_TempTransverseCHX0.dpth'.
@@ -3527,20 +3547,20 @@ eplacing it with a default range and clearing all plots. on input line 28.
  \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setloc
 altop \@gobble }{}}
 {C:/Users/mfontbon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program
- Files/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc}{C:/Program Files/MiKTeX/fonts
-/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/mi
--iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}])
+ Files/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Program Files/MiKTeX/fonts
+/enc/dvips/iwona/mi-iwona.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/iwona/ec
+-iwona.enc}])
 
 LaTeX Warning: Citation 'lotton_transient_2009' on page 36 undefined on input l
-ine 355.
+ine 368.
 
 
 LaTeX Warning: Reference `eq:TMatrix_prod_TppTuu' on page 37 undefined on input
- line 358.
+ line 371.
 
 
 LaTeX Warning: Reference `fig:Schema_FluxThermiquesNoyau_Gaelle' on page 37 und
-efined on input line 392.
+efined on input line 405.
 
 
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
@@ -3555,70 +3575,70 @@ Missing character: There is no ; in font nullfont!
 )
 
 LaTeX Warning: Reference `eq:FluxTA_swift' on page 37 undefined on input line 4
-04.
+17.
 
 
 LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 37 undefined on in
-put line 404.
+put line 417.
 
 
 LaTeX Warning: Citation 'hsu_effective_1996' on page 38 undefined on input line
- 435.
+ 448.
 
 
 LaTeX Warning: Reference `eq:FluxVisq_Transitoire' on page 38 undefined on inpu
-t line 448.
+t line 461.
 
 
 LaTeX Warning: Reference `eq:FonctionsVisqueuses' on page 38 undefined on input
- line 461.
+ line 474.
 
 
 LaTeX Warning: Reference `eq:FluxVisq_Transitoire_IntegralTSimplifie' on page 3
-8 undefined on input line 463.
+9 undefined on input line 476.
 
 
 LaTeX Warning: Citation 'lewis_measurement_1998' on page 39 undefined on input 
-line 497.
+line 510.
 
 
 LaTeX Warning: Reference `tab:GeometrieTAC' on page 39 undefined on input line 
-497.
+510.
 
 
 LaTeX Warning: Reference `eq:BilanThermique_Transitoire' on page 39 undefined o
-n input line 515.
+n input line 528.
 
 
-LaTeX Warning: Reference `chap:Acquisitions' on page 39 undefined on input line
- 531.
+LaTeX Warning: Reference `chap:Acquisitions' on page 40 undefined on input line
+ 544.
 
 
-LaTeX Warning: Reference `fig:WaterOnly_TC' on page 39 undefined on input line 
-531.
+LaTeX Warning: Reference `fig:WaterOnly_TC' on page 40 undefined on input line 
+544.
 
 
-LaTeX Warning: Citation 'ozisik_heat_1993' on page 39 undefined on input line 5
-42.
+LaTeX Warning: Citation 'ozisik_heat_1993' on page 40 undefined on input line 5
+55.
 
 
-LaTeX Warning: Reference `eq:CondFront' on page 39 undefined on input line 542.
-
-
-
-LaTeX Warning: Reference `eq:BilanThermique_Transitoire' on page 39 undefined o
-n input line 542.
-
-
-LaTeX Warning: Reference `eq:CondFront' on page 39 undefined on input line 542.
+LaTeX Warning: Reference `eq:CondFront' on page 40 undefined on input line 555.
 
 
 
-LaTeX Warning: Reference `eq:CondInit' on page 39 undefined on input line 542.
+LaTeX Warning: Reference `eq:BilanThermique_Transitoire' on page 40 undefined o
+n input line 555.
+
+
+LaTeX Warning: Reference `eq:CondFront' on page 40 undefined on input line 555.
+
+
+
+LaTeX Warning: Reference `eq:CondInit' on page 40 undefined on input line 555.
 
 
 LaTeX Warning: Reference `eq:ProblemeTransitoire_ChgtVariables' on page 41 unde
-fined on input line 610.
+fined on input line 623.
 
 (../fig/fig_TransitoireFit/tex/fig_TransitoireFit.tex
 Missing character: There is no ; in font nullfont!
@@ -5220,13 +5240,13 @@ nput line 36.
 LaTeX Warning: Reference `fig:ActiveControl_Teensy41' on page 66 undefined on i
 nput line 36.
 
-<../fig/fig_ActiveControl/ADAU1701.png, id=86, 444.91219pt x 422.32782pt>
+<../fig/fig_ActiveControl/ADAU1701.png, id=85, 444.91219pt x 422.32782pt>
 File: ../fig/fig_ActiveControl/ADAU1701.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/ADAU1701.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/ADAU1701.png  used on input l
 ine 45.
 (pdftex.def)             Requested size: 149.87643pt x 142.26378pt.
-<../fig/fig_ActiveControl/Teensy41.png, id=87, 807.7678pt x 589.4522pt>
+<../fig/fig_ActiveControl/Teensy41.png, id=86, 807.7678pt x 589.4522pt>
 File: ../fig/fig_ActiveControl/Teensy41.png Graphic file (type png)
 <use ../fig/fig_ActiveControl/Teensy41.png>
 Package pdftex.def Info: ../fig/fig_ActiveControl/Teensy41.png  used on input l
@@ -5267,7 +5287,26 @@ on input line 56.
 LaTeX Info: Symbol \textmu not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 60.
-) (IndexNotations.tex
+
+LaTeX Warning: Reference `chap:FEM' on page 67 undefined on input line 71.
+
+
+LaTeX Warning: Reference `fig:Geometrie_FeedbackLoop' on page 67 undefined on i
+nput line 73.
+
+(../fig/fig_ConvNatComsol/tex/fig_Geometrie_FeedbackLoop.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)) (IndexNotations.tex
 Annexe A.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -5381,7 +5420,7 @@ Annexe C.
 LaTeX Warning: Reference `fig:HPPeerless_WithAcc' on page i undefined on input 
 line 13.
 
-<../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png, id=88, 667.0521pt x 557.2
+<../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png, id=87, 667.0521pt x 557.2
 017pt>
 File: ../fig/fig_InstrumentationHP/HPPeerless_WithAcc.png Graphic file (type pn
 g)
@@ -5698,19 +5737,19 @@ erseCHX0.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 79187 strings out of 474435
- 2019746 string characters out of 5751739
- 4351757 words of memory out of 5000000
- 99709 multiletter control sequences out of 15000+600000
+ 79204 strings out of 474435
+ 2020592 string characters out of 5751739
+ 4350757 words of memory out of 5000000
+ 99722 multiletter control sequences out of 15000+600000
  708542 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,22n,115p,4725b,3299s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb>
 Output written on external/fig_ConvNatComsol_TempTransverseCHX0.pdf (1 page, 21
-5553 bytes).
+2201 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
  301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

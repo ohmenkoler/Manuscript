@@ -1,6 +1,6 @@
 \begin{tikzpicture}
     \def\width{.9*\textwidth};
-    \def\height{.45*\width};
+    \def\height{\width};
     \def\spx{.25cm};
     \def\spy{1.25cm};
     \def\legx{.5cm};
@@ -12,8 +12,8 @@
     grid=both, minor tick num=10, 
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
-    xlabel={Temps $t$ (\unit{\second})},
-    ylabel={Température $T$ ou $\theta$ (\unit{\kelvin})},
+    xlabel={Température $T$ (\unit{\kelvin})},
+    ylabel={Position radiale $r$ (\unit{\milli\meter})},
 %    xmin=0,xmax=75,ymin=0,ymax=.5/1000,
 %    xtick={0,25,50,75,100}, ytick={0,1e-4,...,10e-4},
 	scaled ticks=false, tick label style={/pgf/number format/fixed},

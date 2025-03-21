@@ -28,11 +28,11 @@ La conduction par les parois du noyau thermoacoustique est un facteur très impo
 
 
 
-\section{\'Electroacoustique}
+\subsection{\'Electroacoustique}
 
 Dans l'optique de poursuivre l'amélioration de cette pompe à chaleur thermoacoustique, l'aspect des sources acoustiques reste à considérer.
 
-\subsection{Contrôle actif}
+\subsubsection{Contrôle actif}
 Le champ acoustique doit être contrôlé avec précision, en particulier l'impédance acoustique et son déphasage au sein du matériau poreux. Dans l'état actuel de la machine, les sources acoustiques sont contrôlées manuellement, et le déphasage inter-sources acoustiques est réglé sur le générateur de signaux. Une étude de l'asservissement de la source secondaire au moyen d'un dispositif de traitement du signal en temps réel tel que le \textit{digital signal processor} ADAU1701 de SigmaDSP (figure~\ref{fig:ActiveControl_ADAU1701}) ou un Teensy~4.1 (figure~\ref{fig:ActiveControl_Teensy41}) est proposée pour la suite de cette thèse, pour atteindre le champ acoustique optimal.
 
 
@@ -59,11 +59,11 @@ Le champ acoustique doit être contrôlé avec précision, en particulier l'imp�
 
 Ces cartes sont toutefois sources de retards : les différents calculs réalisés par le processeur, les filtres, les conversions analogique-numérique et numérique-analogique prennent du temps, mais il est possible d'atteindre des retards faibles de l'ordre de \qty{80}{\micro\second}, ce qui correspond à un déphasage de \ang{1.35} à la fréquence de fonctionnement du \textsc{Tacot}, \qty{47}{\hertz}. Cette faible valeur rend possible leur utilisation pour un contrôle du champ acoustique dans la cavité thermoacoustique.
 
-\subsection{Remplacement des sources acoustiques}
-\subsubsection{Source principale}
+\subsubsection{Remplacement des sources acoustiques}
+\paragraph{Source principale}
 La source acoustique principale est un moteur linéaire. Ce type de source est à la fois onéreux et difficile à se procurer, c'est pourquoi il peut être intéressant d'étudier l'impact sur les performances d'une source alternative. En l'occurrence un haut-parleur du commerce Ciare CSW7012EVO. 
 
-\subsubsection{Source secondaire}
+\paragraph{Source secondaire}
 
 
 \section{Simulations par éléments finis avancées}

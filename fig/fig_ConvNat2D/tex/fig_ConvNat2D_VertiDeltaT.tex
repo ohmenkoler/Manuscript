@@ -52,7 +52,9 @@
 		\fill[pattern=north east lines,pattern color=MatlabOrange] (-\L/2,-\e) rectangle ++(\L,\e) node[above left, color=MatlabOrange]{$T_{c}$};
 		\fill[pattern=north east lines,pattern color=MatlabBlue] (-\L/2,\l+\e) rectangle ++(\L,-\e) node[below left, color=MatlabBlue]{$T_{f}$};
 		\draw[ultra thick] (-\L/2,0) rectangle ++(\L,\l);% node(O2)[below left]{$T_{\infty}$};
-		\draw (\L/2,3*\l/4) node[left]{$T_{\infty}$};
+		\draw (-\L/2,5*\l/6) node[right, 
+%		fill=white, fill opacity=.7, text opacity=1, rounded corners
+		]{$T_{\infty}$};
 		
 		
 %		\draw[<->] (-\L/2-.2,0) -- ++(0,\l) node[midway,left]{$L_c^{(2)}$};	

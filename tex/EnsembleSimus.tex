@@ -20,7 +20,7 @@ En particulier, le début de l'étude se concentre tout d'abord sur le cône d'a
 %Ensuite, des simulations par éléments finis de cette cavité sont réalisées avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered pour estimer la forme et la vitesse de la circulation de gaz dans la cavité, et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid. Cela permet également de considérer un volume en trois dimensions.
 
 %\subsection{\'Etudes simplifiées}
-\subsection{Sans acoustique}
+\subsection{Nombre de Rayleigh hors d'un matériau poreux}
 %\echaf{Préciser le focus sur la cavité RIX-CHX et donc cavité 2D}
 
 Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, le cône d'adaptation d'impédance représentée en jaune sur la figure~\ref{fig:SchemaNoyau} est assimilé à une cavité rectangulaire en deux dimensions, à laquelle est appliqué un gradient de température. Pour se rapprocher des conditions expériementales et particulièrement de son orientation par rapport à la gravité, celui-ci est soit horizontal, soit vertical, ce que montre la figure~\ref{fig:ConvNat2D}. 
@@ -85,7 +85,7 @@ pour la conservation de l'énergie interne.
 L'adimensionnement de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
 
 \begin{equation}
-	\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) = -\nabla \varpi + \mathrm{Ra} T \mathbf e_{z,0} + \nabla^2 \mathbf{v},
+	\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) = -\nabla \varpi + \mathrm{Ra} \theta \mathbf e_{z,0} + \nabla^2 \mathbf{v},
 	\label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}
 \end{equation}
 et fait apparaître le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl}, la pression adimensionnée $\varpi=\nicefrac{p}{\rho_0}$, ainsi que le nombre de Rayleigh noté $\mathrm{Ra}$, et dont la définition est donnée par 
@@ -107,24 +107,40 @@ Sa valeur indique également le régime de l'écoulement causé par la convectio
 	\end{align}
 	\label{eq:VitesseReference_Rayleigh}%
 \end{subequations}
-après la réécriture en 2D des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:ConvNat2D_HorizDeltaT}).\smallskip
+après la réécriture en deux dimensions des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:ConvNat2D_HorizDeltaT}).\smallskip
 
-Lorsque la convection naturelle provoque un écoulement circulant à une vitesse de référence $v_{\sf ref}$, il est possible de quantifier la contribution des échanges thermiques ainsi provoqués et des pertes visqueuses en définissant le nombre de Grashof par
+%Lorsque la convection naturelle provoque un écoulement circulant à une vitesse de référence $v_{\sf ref}$, il est possible de quantifier la contribution des échanges thermiques ainsi provoqués et des pertes visqueuses en définissant le nombre de Grashof par
+%
+%\begin{equation}
+%	\Grashof = \left( \frac{v_{\sf ref} L_c}{\nu} \right)^2,
+%	\label{eq:NbrGrashof}
+%\end{equation}
+%et qui est relié au nombre de Rayleigh par la formule
+%
+%\begin{equation}
+%	\Grashof = \frac{\Rayleigh}{\Prandtl}.
+%	\label{eq:NbrGrashof_RayleighSurPrandtl}
+%\end{equation}
+%
+%\medskip
+
+\subsection{Nombre de Rayleigh dans un matériau poreux}
+
+Dans un matériau poreux, il peut également exister un écoulement lié causé par la convection naturelle. Cet écoulement, se fait à une vitesse nommée vitesse de filtration ou vitesse de Darcy, et qui vaut
 
 \begin{equation}
-	\Grashof = \left( \frac{v_{\sf ref} L_c}{\nu} \right)^2,
-	\label{eq:NbrGrashof}
+	\mathbf v = \frac{K_p}{\nu}\left( -\frac{1}{\rho_0} \nabla p + \mathbf g \right),
+	\label{eq:VitesseDarcy}
 \end{equation}
-et qui est relié au nombre de Rayleigh par la formule
+qui modifie l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt} en prenant en compte la perméabilité $K_p$ %ainsi que la diffusivité thermique $\kappa_p$ de ce milieu
 
 \begin{equation}
-	\Grashof = \frac{\Rayleigh}{\Prandtl}.
-	\label{eq:NbrGrashof_RayleighSurPrandtl}
+	\frac{1}{\rho_0}\nabla p + \beta T \mathbf g + \frac{\nu}{K_p} \mathbf v = 0,
+	\label{eq:NavierStokes_Boussinesq_QtMvt_Poreux}
 \end{equation}
+d'après les travaux de Walch et Dulieu~\cite{walch_convection_1980} 
 
-\medskip
-
-Dans un matériau poreux, il peut également exister des écoulements liés à la convection naturelle. Dans ce cas, le nombre de Rayleigh est toujours une notion utile pour prédire le mouvement du fluide à l'intérieur, à condition toutefois de le modifier pour prendre en compte la perméabilité $K_p$ ainsi que la diffusivité thermique $\kappa_p$ de ce milieu. Il vient alors l'expression du nombre de Rayleigh-Darcy noté $\mathrm{Ra}_p$, et dont la définition est donnée par Nield et Bejan \cite{nield_convection_2013} par
+Le nombre de Rayleigh modifié en nombre de Rayleigh-Darcy et noté $\Rayleigh_p$ est, de même que son équivalent hors d'un matériau poreux, une notion utile pour prédire le mouvement du fluide à l'intérieur. Il s'obtient également en adimensionnant l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt_Poreux} ce qui donne la définition donnée par Nield et Bejan~\cite{nield_convection_2013} par
 
 \begin{equation}
 	\mathrm{Ra}_p = \frac{g \beta L_c K_p}{\nu \kappa_p} (T_c-T_f),
@@ -137,33 +153,32 @@ ainsi que la vitesse verticale de référence correspondante,
 	\label{eq:VitesseReference_Rayleigh_poreux}
 \end{equation}
 
+Encore une fois, une différence de comportement existe entre la situation représentée par la figure~\ref{fig:ConvNat2D_HorizDeltaT} et \ref{fig:ConvNat2D_VertiDeltaT}, en particulier l'existence d'un nombre de Rayleigh-Darcy critique en dessous duquel la convection n'a pas lieu, et seule la conduction transporte de la chaleur. La valeur de ce nombre critique est évaluée à $\Rayleigh_{p,c}=4\pi^2$ dans la littérature, ~\cite{elder_steady_1967} \echaf{parois non glissantes et imperméables...}
 
-
-
-\subsection{Avec acoustique}
-Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse ne peut pas être respectée dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causés par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
-
-\begin{equation}
-	\Peclet = \frac{v L_c}{\kappa}.
-	\label{eq:NbrPeclet}
-\end{equation}
-
-Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluide causé par un échange thermique, le nombre de Péclet quantifie les échanges de chaleur réalisés par un fluide déjà en mouvement. Cependant, il reste nécessaire de proposer une hypothèse quant à l'utilisation de ce nombre : la vitesse d'entraînement du fluide est ici la vitesse acoustique efficace $v_{\sf RMS}$, contrairement aux cas classiques de son utilisation dans la littérature où un écoulement continu est considéré. De même que le nombre de Rayleigh, le nombre de Péclet est lié aux nombres de Grashof et Prandtl suivant la relation 
-
-\begin{equation}
-	\Peclet \equiv \sqrt{\Grashof}~\Prandtl,
-	\label{eq:NbrPeclet_GrashofFoisPrandtl}
-\end{equation}
-différente de l'équation~\eqref{eq:NbrGrashof_RayleighSurPrandtl}.\medskip
-
-Ces échanges thermiques par convection sont à comparer aux transferts de chaleur par conduction, car il est tout à fait possible que les parois des cavités ou encore le matériau poreux lui-même offrent un chemin pour la diffusion thermique. La prépondérance de chaque effet est donnée par le calcul du nombre de Nusselt, dont la définition est
-
-\begin{equation}
-	\Nusselt = \frac{h L_c}{k},
-\end{equation}
-avec $h$ le coefficient d'échange convectif à déterminer.\bigskip
-
-Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTemporel} doivent également être évalués par ces équations.
+%\subsection{Avec acoustique}
+%Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse ne peut pas être respectée dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causés par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
+%
+%\begin{equation}
+%	\Peclet = \frac{v L_c}{\kappa}.
+%	\label{eq:NbrPeclet}
+%\end{equation}
+%
+%Contrairement au nombre de Rayleigh qui sert à comparer le mouvement d'un fluide causé par un échange thermique, le nombre de Péclet quantifie les échanges de chaleur réalisés par un fluide déjà en mouvement. Cependant, il reste nécessaire de proposer une hypothèse quant à l'utilisation de ce nombre : la vitesse d'entraînement du fluide est ici la vitesse acoustique efficace $v_{\sf RMS}$, contrairement aux cas classiques de son utilisation dans la littérature où un écoulement continu est considéré. De même que le nombre de Rayleigh, le nombre de Péclet est lié aux nombres de Grashof et Prandtl suivant la relation 
+%
+%\begin{equation}
+%	\Peclet \equiv \sqrt{\Grashof}~\Prandtl,
+%	\label{eq:NbrPeclet_GrashofFoisPrandtl}
+%\end{equation}
+%différente de l'équation~\eqref{eq:NbrGrashof_RayleighSurPrandtl}.\medskip
+%
+%Ces échanges thermiques par convection sont à comparer aux transferts de chaleur par conduction, car il est tout à fait possible que les parois des cavités ou encore le matériau poreux lui-même offrent un chemin pour la diffusion thermique. La prépondérance de chaque effet est donnée par le calcul du nombre de Nusselt, dont la définition est
+%
+%\begin{equation}
+%	\Nusselt = \frac{h L_c}{k},
+%\end{equation}
+%avec $h$ le coefficient d'échange convectif à déterminer.\bigskip
+%
+%Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTemporel} doivent également être évalués par ces équations.
 
 \section{Simulations par éléments finis}\label{chap:FEM}
 Les nombres adimensionnels présentés auparavant dans le cas des problèmes illustrés par la figure~\ref{fig:ConvNat2D} sont utiles pour l'obtention d'ordres de grandeurs des phénomènes liés à la convection naturelle, mais ne suffisent pas pour représenter de façon satisfaisante le système étudié dans ce travail. La géométrie est en trois dimensions, les parois qui provoquent le gradient de température ne sont pas à température fixée homogène sur tout la surface, et ne sont pas non plus rigide. Pour prendre en compte plus de phénomènes, un modèle \textsc{Comsol}\textss\textregistered est mis en place.\smallskip
@@ -172,12 +187,16 @@ Dans une première approximation, un compromis entre simplicité d'implémentati
 
 Ce modèle vise à simuler le comportement du réfrigérateur lorsque les sources acoustiques sont alimentées à faible amplitude, soit un \textit{drive ratio} $DR=\qty{.4}{\percent}$. Il est supposé que d'autres effets, tels que la vorticité, s'ajoutent au problème à plus forte amplitude.
 
-\subsection{Convection naturelle dans des cavités 3D}
-Avant de considérer la cavité située entre la source acoustique principale et le noyau, dont la forme n'est pas conventionnelle, il est intéressant de développer un modèle proche de ce qui existe dans la littérature. En particulier, la convection dans des cavités cylindriques, ou dans les cavités trapézoïdales, doit être étudiées pour donner un aperçu de la forme de la convection naturelle dans le système à l'essai \cite{basak_heat_2009, schneider_laminar_1992} \echaf{cite cylindric dans le mail d'LN}.
+\subsection{Convection naturelle dans des cavités en trois dimensions}
+Avant de considérer la cavité située entre la source acoustique principale et le noyau, dont la forme n'est pas conventionnelle, il est intéressant de développer un modèle proche de ce qui existe dans la littérature. En particulier, la convection dans des cavités cylindriques, ou dans les cavités trapézoïdales, doit être étudiées pour donner un aperçu de la forme de la convection naturelle dans le système à l'essai, qui combine ces deux facteurs de forme \cite{basak_heat_2009, schneider_laminar_1992}.
+
+\echaf{là il faut Comsol}
 
 \cite{basak_heat_2009} Trapèze
 
 \cite{schneider_laminar_1992} présente l'allure d'une cellule de convection naturelle dans une cavité cylindrique, à l'horizontale et la verticale
+
+
 
 \subsection{Noyau thermoacoustique}
 \subsubsection{Géométrie du problème}

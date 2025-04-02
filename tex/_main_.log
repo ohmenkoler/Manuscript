@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  27 MAR 2025 17:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  1 APR 2025 16:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2261,13 +2261,13 @@ Chapitre III.
 ) [31 <./external/fig_ConvNat2D_HorizDeltaT0.pdf> <./external/fig_ConvNat2D_Ver
 tiDeltaT0.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-34.
+36.
  (C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [32]
 ===== Image 'external/fig_Comsol_ModeleSimplifie_Geometrie0' is up-to-date. ===
 ===
-Excluding 'comment' comment. [33]
+[33] Excluding 'comment' comment.
 (../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex
 ===== Image 'external/fig_SuperpositionComsol0' is up-to-date. ======
 ) [34 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>] [35 <./external/f
@@ -2280,7 +2280,7 @@ ig_SuperpositionComsol0.pdf>]
 .pdf>]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 345.
+Package pdftex.def Info: example-image-a.pdf  used on input line 353.
 (pdftex.def)             Requested size: 204.6029pt x 153.455pt.
 
 (../fig/fig_ConvNatComsol_Resultats/tex/fig_ConvNatComsol_TempTransverseCHX.tex
@@ -2848,11 +2848,11 @@ Package logreq Info: Writing requests to '_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 77267 strings out of 474435
- 1946670 string characters out of 5751739
- 3206649 words of memory out of 5000000
- 97665 multiletter control sequences out of 15000+600000
- 704974 words of font info for 160 fonts, out of 8000000 for 9000
+ 77297 strings out of 474435
+ 1947113 string characters out of 5751739
+ 3206884 words of memory out of 5000000
+ 97692 multiletter control sequences out of 15000+600000
+ 731823 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,112p,4691b,2834s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
@@ -2866,9 +2866,9 @@ eX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX/fonts/type
 uper/sfss0800.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt0900
 .pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Prog
 ram Files/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (102 pages, 28749470 bytes).
+Output written on _main_.pdf (102 pages, 28750613 bytes).
 PDF statistics:
- 4168 PDF objects out of 4296 (max. 8388607)
- 503 named destinations out of 1000 (max. 500000)
+ 4169 PDF objects out of 4296 (max. 8388607)
+ 504 named destinations out of 1000 (max. 500000)
  1542 words of extra memory for PDF output out of 10000 (max. 10000000)
 

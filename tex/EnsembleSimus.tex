@@ -2,30 +2,32 @@
 \mylocaltoc
 
 \section{Introduction}
-Dans ce chapitre, différents moyens appliqués pour comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage sont expliqués. 
+Lors de son fonctionnement, des différences de température apparaîssent au sein du réfrigérateur \textsc{Tacot}. Cependant, les distributions de température mesurées telles que représentées sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} du côté de l'échangeur froid s'écartent des prédictions du modèle linéaire. Dans ce chapitre, différents moyens appliqués pour comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage sont expliqués.\medskip
 
-Tout d'abord, la section~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim} propose un rappel des modèles classiques de la littérature sur la convection naturelle. Dans cette partie, le cas des cavités rectangulaires en deux dimensions est présenté. Cela permet d'introduire les nombres adimensionnels utilisés dans la littérature pour évaluer la présence de convection naturelle et de les calculer pour prédire la présence ou l'absence d'une cellule de convection naturelle.
+Tout d'abord, la section~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim} propose un rappel des modèles classiques de la littérature sur la convection naturelle. Dans cette partie, un cas simplifié traitant de cavités rectangulaires en deux dimensions est présenté. Cela permet d'introduire les nombres adimensionnels utilisés dans la littérature pour évaluer la présence de convection naturelle et de les calculer pour prédire la présence ou l'absence d'une cellule de convection naturelle.\smallskip
 
-Ensuite, un modèle par éléments finis du régime stationnaire est développé avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered dans la section~\ref{chap:FEM} - \nameref{chap:FEM} pour étudier les conditions aux frontières plus complexes, ou le couplage entre la cavité d'adaptation d'impédance, le régénérateur et l'enceinte qui le contient.
+Ensuite, un modèle par éléments finis du régime stationnaire est développé avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered dans la section~\ref{chap:FEM} - \nameref{chap:FEM} pour étudier les conditions aux frontières plus complexes, ou le couplage entre la cavité d'adaptation d'impédance, le régénérateur et l'enceinte qui le contient.\smallskip
 
-Enfin, un modèle analytique temporel du régime transitoire est présenté dans la section~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}.
+Enfin, un modèle analytique temporel du régime transitoire est présenté dans la section~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}, qui simule en outre plus de phénomènes physiques comme l'échauffement visqueux dans le régénérateur, la vorticité tourbillonaire de part et d'autre du régénérateur, et les échanges convectifs avec les parois du noyau. \echaf{lister maintenant ou laisser pour la partie concernée?}.
 
 \section{Concepts de convection naturelle et nombres adimensionnels}\label{chap:NbrAdim}
-Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau représentée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géométries, de l'orientation du gradient de température par rapport à la gravité, de la porosité, etc.\medskip
+Au sein du réfrigérateur \textsc{Tacot} et particulièrement dans la cavité devant la source acoustique principale, la distribution de température du côté froid hors du noyau représentée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} laisse penser à la présence d'une cellule de convection naturelle à l'intérieur. Avant de chercher à modéliser en détail ce qui se produit à l'intérieur de différentes zones du \textsc{Tacot}, comme le cône d'adaptation d'impédance ou le noyau thermoacoustique, des nombres adimensionnels utilisés couramment en mécanique des fluides sont présentés, afin d'évaluer la présence de convection naturelle et quelques ordres de grandeurs concernant l'écoulement associé éventuel par leur calcul.\medskip
 
-Le début de l'étude se concentre tout d'abord sur la cavité d'adaptation d'impédance représentée en jaune sur la figure~\ref{fig:SchemaNoyau}. Pour simplifier le problème, cette cavité est rapportée à une cavité 2D rectangulaire et différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Cette partie de l'étude doit permettre l'obtention d'ordres de grandeurs des quantités d'intérêt, en particulier le nombre de Rayleigh $\Rayleigh$ qui indique si un écoulement fluide causé par la convection naturelle peut être visible dans une configuration.\smallskip
+%Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géométries, de l'orientation du gradient de température par rapport à la gravité, de la porosité, etc.\medskip
 
-Ensuite, des simulations par éléments finis de cette cavité sont réalisées avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered pour estimer les lignes de courants dans la cellule et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid, en plus de déterminer des paramètres clés pour la compréhension des phénomènes thermiques en jeu. Cela permet également de considérer \echaf{3D geometrie}
+En particulier, le début de l'étude se concentre tout d'abord sur le cône d'adaptation d'impédance représentée en jaune sur la figure~\ref{fig:SchemaNoyau}. Pour simplifier le problème, ce volume est rapporté à une cavité rectangulaire en deux dimensions différentiellement chauffée par des températures chaude $T_c$ et froide $T_f$. Cette partie de l'étude doit permettre l'obtention d'ordres de grandeurs des quantités d'intérêt, en particulier le nombre de Rayleigh $\Rayleigh$ qui indique si un écoulement fluide causé par la convection naturelle peut être visible dans une configuration.\smallskip
+
+%Ensuite, des simulations par éléments finis de cette cavité sont réalisées avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered pour estimer la forme et la vitesse de la circulation de gaz dans la cavité, et l'influence de cet écoulement sur la distribution de température sur l'échangeur froid. Cela permet également de considérer un volume en trois dimensions.
 
 %\subsection{\'Etudes simplifiées}
 \subsection{Sans acoustique}
 %\echaf{Préciser le focus sur la cavité RIX-CHX et donc cavité 2D}
 
-Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, une étude très simplifiée dans une cavité rectangulaire en 2D et représentée sur les figures~\ref{fig:ConvNat2D_HorizDeltaT} et \subref{fig:ConvNat2D_VertiDeltaT} est menée. L'intérêt est d'abord porté sur ce qui se passe dans la cavité d'adaptation d'impédance représentée en jaune sur la figure~\ref{fig:SchemaNoyau}, car il est d'abord suspecté que ce volume, qui ne contient que du gaz, est plus propice à la formation d'une cellule de convection naturelle.
+Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, le cône d'adaptation d'impédance représentée en jaune sur la figure~\ref{fig:SchemaNoyau} est assimilé à une cavité rectangulaire en deux dimensions, à laquelle est appliqué un gradient de température. Pour se rapprocher des conditions expériementales et particulièrement de son orientation par rapport à la gravité, celui-ci est soit horizontal, soit vertical, ce que montre la figure~\ref{fig:ConvNat2D}. 
 
-Dans la première sous-figure~\ref{fig:ConvNat2D_HorizDeltaT}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}' \echaf{Schéma + quelle partie de la machine}, respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.
+Dans la première sous-figure~\ref{fig:ConvNat2D_HorizDeltaT}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.
 
-Dans la seconde sous-figure~\ref{fig:ConvNat2D_VertiDeltaT}, ce sont cette fois les sol et plafond qui sont fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos pour lesquels la température est $T_\infty$. Dans cette configuration, favorable a priori à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il s'établit des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre 650 et 1700 pour des parois horizontales à température fixe \cite{getling_rayleigh-benard_1998}. En dessous de cette valeur critique, seule la conduction thermique dans le fluide est à considérer. Le gaz s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:ConvNat2D_VertiDeltaT} qui ne représente qu'une illustration grossière du mouvement du fluide. Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}' \echaf{Schéma + quelle partie de la machine}, présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
+Dans la seconde sous-figure~\ref{fig:ConvNat2D_VertiDeltaT}, ce sont cette fois les sol et plafond qui sont respectivement fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos laissés à la température ambiante $T_\infty$. Dans cette configuration, favorable à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il s'établit des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre \num{657.5} pour des parois horizontales libres et \num{1707.8} pour des parois horizontales fixes \cite{getling_rayleigh-benard_1998}. Le gaz chauffé, moins dense, s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:ConvNat2D_VertiDeltaT} qui ne représente qu'une illustration grossière du mouvement du fluide. Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
 
 %\begin{figure}[!ht]
 %    \centering
@@ -66,7 +68,7 @@ Dans la seconde sous-figure~\ref{fig:ConvNat2D_VertiDeltaT}, ce sont cette fois 
 
 
 
-Il est possible de modéliser l'écoulement dans \echaf{ce volume} en utilisant les équations de Navier-Stokes avec l'approximation de Boussinesq qui s'écrivent \echaf{préciser l'hypothèse de superposition des phénomènes}
+Dans un volume de fluide, tel que le cône d'adaptation d'impédance ou la cavité rectangulaire en deux dimensions par exemple, le mouvement est modélisé par les équations de Navier-Stokes avec l'approximation de Boussinesq. Ces équations s'écrivent avec le système
 
 \begin{subequations} % page wikipédia RayleighBénard
 	\begin{align}
@@ -83,10 +85,10 @@ pour la conservation de l'énergie interne.
 L'adimensionnement de l'équation \eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
 
 \begin{equation}
-	\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) = -\nabla p + \mathrm{Ra} T \mathbf e_{z,0} + \echaf{Re?} \nabla^2 \cdot \mathbf{v},
+	\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) = -\nabla \varpi + \mathrm{Ra} T \mathbf e_{z,0} + \nabla^2 \mathbf{v},
 	\label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}
 \end{equation}
-et fait apparaître le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl}, ainsi que le nombre de Rayleigh noté $\mathrm{Ra}$, et dont la définition est donnée par 
+et fait apparaître le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl}, la pression adimensionnée $\varpi=\nicefrac{p}{\rho_0}$, ainsi que le nombre de Rayleigh noté $\mathrm{Ra}$, et dont la définition est donnée par 
 \begin{equation}
 	\mathrm{Ra} = \frac{g \beta L_c^3}{\nu \kappa} (T_c-T_f),
 	\label{eq:NbrRayleigh}
@@ -325,7 +327,13 @@ Les conditions aux frontières du modèle de transfert thermique sont représent
 Pour trouver le flux de chaleur $Q_f$ à retirer à la paroi de l'échangeur froid, une étude paramétrique est menée en faisant varier ce paramètre jusqu'à obtenir un écart de température suffisament proche de celui mesuré lors des campagnes de mesures. La valeur retenue pour le modèle est \echaf{valeur} pour chacune des expériences.
 
 \paragraph{Problème fluide}
-Pour cet aspect du modèle, les conditions aux frontières sont non-glissantes pour toutes les parois, et dans toutes les configurations. Cela se vérifie d'abord près des parois qui composent le bâti de la machine, mais aussi à la paroi de l'échangeur froid. En effet, au voisinage de cette dernière, la vitesse acoustique est supposée suffisamment faible~\cite{baltean_gravity_2025}.
+Pour cet aspect du modèle, les conditions aux frontières sont non-glissantes pour toutes les parois, et dans toutes les configurations, ce qui se note
+
+\begin{equation}
+	\mathbf v = 0.
+\end{equation}
+
+Cela se vérifie d'abord près des parois qui composent le bâti de la machine, mais aussi à la paroi de l'échangeur froid, au voisinage de cette dernière, la vitesse est supposée suffisamment faible~\cite{baltean_gravity_2025}.
 
 \subsubsection{Résultats}% dans les zones d'intérêt}
 %\subsubsection{Volume d'adaptation d'impédance}

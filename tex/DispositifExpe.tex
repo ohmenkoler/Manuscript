@@ -257,8 +257,7 @@ Au final, les dimensions du régénérateur sont résumés dans le tableau~\ref{
 	\caption{Géométrie du noyau thermoacoustique.}
     \label{tab:GeometrieTAC}
     \centering
-    \begin{tabular}{l@{\hspace{1cm}}l}
-    	\hline
+    \begin{tblr}{columns=l, row{1}={font=\bf}, hline{1,Z}={1.5pt}}
     	\textbf{Paramètre} & \textbf{Valeur} \\\hline\hline
     	Diamètre de l'échangeur ambiant $D_{\sf HXA}$ & \qty{110e-3}{\meter} \\
     	Longueur du l'échangeur ambiant $L_{\sf HXA}$ & \qty{23e-3}{\meter} \\
@@ -268,33 +267,30 @@ Au final, les dimensions du régénérateur sont résumés dans le tableau~\ref{
     	Diamètre du l'échangeur froid $D_{\sf HXF}$ & \qty{140e-3}{\meter} \\
     	Longueur du l'échangeur froid $L_{\sf HXF}$ & \qty{7e-3}{\meter} \\
     	Diamètre du fil de maillage $d_w$ & \qty{53e-6}{\meter} \\
-        Porosité du noyau $\Phi$ & \qty{68}{\percent} \\
-        \hline
-    \end{tabular}
+        Porosité du noyau $\Phi$ & \qty{68}{\percent}
+    \end{tblr}
 \end{table}
 
 \begin{table}[!ht]
     \caption{Paramètres thermiques et hydrauliques des expériences.}
     \label{tab:ParamHydrauTAC}
     \centering
-    \begin{tabular}{l@{\hspace{1cm}}l}
-    	\hline
+    \begin{tblr}{columns=l, row{1}={font=\bf}, hline{1,Z}={1.5pt}}
     	\textbf{Paramètre} & \textbf{Valeur} \\\hline\hline
     	Fréquence d'opération $f_1$ & \qty{47}{\hertz} \\
     	Pression statique $p_0$ & \qty{4e6}{\pascal} \\
     	Rayon hydraulique $r_h$ & \qty{2.81e-5}{\meter}\\
     	Masse volumique $\rho_0$ & \qty{22.2}{\kilo\gram\per\cubic\meter} \\
-        Célérité du son $c_0$ & \qty{547}{\meter\per\second} \\
+        Célérité du son dans le fluide $c_0$ & \qty{547}{\meter\per\second} \\
         Capacité thermique isobare $C_p$ & \qty{1405}{\joule\per\kilo\gram\per\kelvin} \\
         Conductivité thermique du gaz $k_g$ & \qty{8.6e-2}{\watt\per\meter\per\kelvin} \\
         Couche limite thermique $\delta_\kappa$ & \qty{1.4452e-4}{\meter} \\
         Viscosité dynamique $\mu$ & \qty{2.4e-5}{\kilo\gram\per\meter\per\second} \\
         Couche limite visqueuse $\delta_\nu$ & \qty{9.1120e-5}{\meter} \\
         Perméabilité $K_p$ & \qty{2.68e-10}{\meter\squared} \\
-       	Amplitude du débit acoustique optimal $|u|_{\sf opt}$ & \echaf{valeur} \\
-		Phase du débit acoustique optimal $\angle u_{\sf opt}$ & \echaf{valeur} \\
-        \hline
-    \end{tabular}
+       	Amplitude du débit acoustique optimal $|u|_{\sf opt}$ & \qty{2.61e-2}{\cubic\meter\per\second} \\
+		Phase du débit acoustique optimal $\angle u_{\sf opt}$ & \ang{3} 
+    \end{tblr}
 \end{table}
 
 \paragraph{\'Echangeurs de chaleur}

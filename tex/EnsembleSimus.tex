@@ -23,7 +23,7 @@ En particulier, le début de l'étude se concentre tout d'abord sur le cône d'a
 \subsection{Nombre de Rayleigh hors d'un matériau poreux}
 %\echaf{Préciser le focus sur la cavité RIX-CHX et donc cavité 2D}
 
-Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, le cône d'adaptation d'impédance représentée en jaune sur la figure~\ref{fig:SchemaNoyau} est assimilé à une cavité rectangulaire en deux dimensions, à laquelle est appliqué un gradient de température. Pour se rapprocher des conditions expériementales et particulièrement de son orientation par rapport à la gravité, celui-ci est soit horizontal, soit vertical, ce que montre la figure~\ref{fig:ConvNat2D}. 
+Pour introduire des concepts utiles à la compréhension des phénomènes de convection naturelle, le cône d'adaptation d'impédance représentée en jaune sur la figure~\ref{fig:SchemaNoyau} est assimilé à une cavité rectangulaire en deux dimensions, à laquelle est appliqué un gradient de température correspondant à celui mesuré lors d'expériences. Pour se rapprocher des conditions expériementales et particulièrement de son orientation par rapport à la gravité, celui-ci est soit horizontal, soit vertical, ce que montre la figure~\ref{fig:ConvNat2D}. 
 
 Dans la première sous-figure~\ref{fig:ConvNat2D_HorizDeltaT}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.
 
@@ -107,7 +107,20 @@ Sa valeur indique également le régime de l'écoulement causé par la convectio
 	\end{align}
 	\label{eq:VitesseReference_Rayleigh}%
 \end{subequations}
-après la réécriture en deux dimensions des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:ConvNat2D_HorizDeltaT}).\smallskip
+après la réécriture en deux dimensions des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:ConvNat2D_HorizDeltaT}).\bigskip
+
+Une application numérique dans le cas d'une expérience à faible amplitude acoustique, pour laquelle la différence de température entre la source acoustique principale et le côté froid du régénérateur est de l'ordre de \qty{5}{\kelvin}, donne les valeurs notées dans le tableau~\ref{tab:NbrRayleigh_Vitesse}. En particulier, il est primordial de remarquer les valeurs très élevées des nombres de Rayleigh, ce qui place le problème dans le régime supercritique.
+
+\begin{table}[!ht]
+\caption{Nombres de Rayleigh et composantes de vitesse associées pour les configurations affichées sur la figure~\ref{fig:ConvNat2D} et pour une différence de température de \qty{5}{\kelvin}.}
+\label{tab:NbrRayleigh_Vitesse}
+\centering
+	\begin{tblr}{columns=l, hline{1,Z}={1.5pt}}
+	& $\Rayleigh$ & $v_{\sf ref}^{// \mathbf g}$ & $v_{\sf ref}^{\perp \mathbf g}$ \\\hline\hline
+	Horizontal & \num{2.3e8} & \qty{2.52e-1}{\meter\per\second} & \qty{2.05e-3}{\meter\per\second} \\
+	Vertical & \num{1.9e6} & \qty{1.13e-1}{\meter\per\second} & \qty{3.05e-3}{\meter\per\second} \\
+	\end{tblr}
+\end{table}
 
 %Lorsque la convection naturelle provoque un écoulement circulant à une vitesse de référence $v_{\sf ref}$, il est possible de quantifier la contribution des échanges thermiques ainsi provoqués et des pertes visqueuses en définissant le nombre de Grashof par
 %
@@ -132,7 +145,7 @@ Dans un matériau poreux, il peut également exister un écoulement lié causé 
 	\mathbf v = \frac{K_p}{\nu}\left( -\frac{1}{\rho_0} \nabla p + \mathbf g \right),
 	\label{eq:VitesseDarcy}
 \end{equation}
-qui modifie l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt} en prenant en compte la perméabilité $K_p$ %ainsi que la diffusivité thermique $\kappa_p$ de ce milieu
+qui modifie l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt} en prenant en compte la perméabilité $K_p$ \echaf{pas la diffusivité thermique $\kappa_p$ de ce milieu ?}
 
 \begin{equation}
 	\frac{1}{\rho_0}\nabla p + \beta T \mathbf g + \frac{\nu}{K_p} \mathbf v = 0,
@@ -146,7 +159,7 @@ Le nombre de Rayleigh modifié en nombre de Rayleigh-Darcy et noté $\Rayleigh_p
 	\mathrm{Ra}_p = \frac{g \beta L_c K_p}{\nu \kappa_p} (T_c-T_f),
 	\label{eq:NbrRayleigh_poreux}
 \end{equation}
-ainsi que la vitesse verticale de référence correspondante, 
+ainsi que la composante verticale de la vitesse de référence correspondante, 
 
 \begin{equation}
 	v_{\textsf{ref},p}^{// \mathbf g} = \frac{\kappa_p}{L_c} \Rayleigh_p.
@@ -154,6 +167,19 @@ ainsi que la vitesse verticale de référence correspondante,
 \end{equation}
 
 Encore une fois, une différence de comportement existe entre la situation représentée par la figure~\ref{fig:ConvNat2D_HorizDeltaT} et \ref{fig:ConvNat2D_VertiDeltaT}, en particulier l'existence d'un nombre de Rayleigh-Darcy critique en dessous duquel la convection n'a pas lieu, et seule la conduction transporte de la chaleur. La valeur de ce nombre critique est évaluée à $\Rayleigh_{p,c}=4\pi^2$ dans la littérature, ~\cite{elder_steady_1967} \echaf{parois non glissantes et imperméables...}
+
+Ici encore, une application numérique est réalisées pour les deux orientations de la figure~\ref{fig:ConvNat2D}, dans les mêmes conditions que le tableau~\ref{tab:NbrRayleigh_Vitesse}. Cette fois-ci, la valeur du nombre de Rayleigh pour chacune des orientations est largement inférieure à la valeur critique, 
+
+\begin{table}[!ht]
+\centering
+\caption{Nombres de Rayleigh-Darcy et composantes de vitesse associées pour les configurations affichées sur la figure~\ref{fig:ConvNat2D} et pour une différence de température de \qty{5}{\kelvin}.}
+\label{tab:NbrRayleighDarcy_Vitesse}
+\begin{tblr}{columns=l, hline{1,Z}={1.5pt}}
+	& $\Rayleigh$ & $v_{\sf ref}^{// \mathbf g}$ \\\hline\hline
+	Horizontal & \num{5e-2} & \qty{4.7e-5}{\meter\per\second} \\
+	Vertical & \num{1e-2} & \qty{4.7e-5}{\meter\per\second}
+\end{tblr}
+\end{table}
 
 %\subsection{Avec acoustique}
 %Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse ne peut pas être respectée dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causés par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
@@ -183,9 +209,9 @@ Encore une fois, une différence de comportement existe entre la situation repr�
 \section{Simulations par éléments finis}\label{chap:FEM}
 Les nombres adimensionnels présentés auparavant dans le cas des problèmes illustrés par la figure~\ref{fig:ConvNat2D} sont utiles pour l'obtention d'ordres de grandeurs des phénomènes liés à la convection naturelle, mais ne suffisent pas pour représenter de façon satisfaisante le système étudié dans ce travail. La géométrie est en trois dimensions, les parois qui provoquent le gradient de température ne sont pas à température fixée homogène sur tout la surface, et ne sont pas non plus rigide. Pour prendre en compte plus de phénomènes, un modèle \textsc{Comsol}\textss\textregistered est mis en place.\smallskip
 
-Dans une première approximation, un compromis entre simplicité d'implémentation et fidélité de la représentation est recherché. Le modèle qui en résulte ne prend en compte que des phénomènes thermiques et fluides, dont les paramètres sont ajustées pour représenter des situations observées lors des campagnes expérimentales. En particulier, le champ acoustique n'est pas ajouté à ce stade, pour ne pas compliquer les couplage inter-physiques au sein du logiciel.\medskip
+Dans une première approximation, un compromis entre simplicité d'implémentation et fidélité de la représentation est recherché. Le modèle qui en résulte ne prend en compte que des phénomènes thermiques et fluides, dont les paramètres sont ajustées pour représenter des situations observées lors des campagnes expérimentales. En particulier, le champ acoustique et la porosité du régénérateur ne sont pas ajoutés à ce stade, pour ne pas compliquer les couplage inter-physiques au sein du logiciel.\medskip
 
-Ce modèle vise à simuler le comportement du réfrigérateur lorsque les sources acoustiques sont alimentées à faible amplitude, soit un \textit{drive ratio} $DR=\qty{.4}{\percent}$. Il est supposé que d'autres effets, tels que la vorticité, s'ajoutent au problème à plus forte amplitude.
+Ce modèle vise à simuler le comportement thermique du réfrigérateur lorsque les sources acoustiques sont alimentées à faible amplitude, soit un \textit{drive ratio} $DR=\qty{.4}{\percent}$. Il est supposé que d'autres effets, tels que la vorticité, s'ajoutent au problème à plus forte amplitude, rendant insuffisante la modélisation thermique.
 
 \subsection{Convection naturelle dans des cavités en trois dimensions}
 Avant de considérer la cavité située entre la source acoustique principale et le noyau, dont la forme n'est pas conventionnelle, il est intéressant de développer un modèle proche de ce qui existe dans la littérature. En particulier, la convection dans des cavités cylindriques, ou dans les cavités trapézoïdales, doit être étudiées pour donner un aperçu de la forme de la convection naturelle dans le système à l'essai, qui combine ces deux facteurs de forme \cite{basak_heat_2009, schneider_laminar_1992}.
@@ -200,7 +226,7 @@ Avant de considérer la cavité située entre la source acoustique principale et
 
 \subsection{Noyau thermoacoustique}
 \subsubsection{Géométrie du problème}
-Après avoir étudié ce qui se passe dans le cône seul, le noyau est ajouté à la cavité d'adaptation d'impédance, selon une géométrie présentée sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.\medskip
+Après avoir étudié ce qui se passe dans le cône de fluide seul, le noyau est ajouté à la cavité d'adaptation d'impédance, selon une géométrie présentée sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.\medskip
 
 \begin{figure}[!ht]
     \centering
@@ -210,7 +236,7 @@ Après avoir étudié ce qui se passe dans le cône seul, le noyau est ajouté �
     \label{fig:Comsol_ModeleSimplifie_Geometrie}
 \end{figure}
 
-Cette géométrie comporte trois domaines. Le premier est le cône déjà évoqué, qui dans la machine réelle adapte l'impédance de la source au reste de la cavité thermoacoustique. Ses dimensions sont les mêmes que dans la machine, à savoir un diamètre du côté de la source principale $D_{SA1}=\qty{108}{\milli\meter}$, un diamètre du côté du noyau $D_{\sf can}=\qty{156}{\milli\meter}$, et une longueur $L_{\sf cone}=\qty{3}{\centi\meter}$. Le second domaine est le régénérateur, de longueur $L_{\sf reg}=\qty{39}{\milli\meter}$ et de diamètre $D_{\sf reg}=\qty{148}{\milli\meter}$, une fois encore les dimensions du dispositif réel. Le troisième domaine est l'enceinte contenant le régénérateur. Sa longueur est la même que celle du régénérateur, mais son diamètre est $D_{\sf can}$, de sorte à considérer une paroi métallique de \qty{4}{\milli\meter} d'épaisseur.\medskip
+Cette géométrie comporte trois domaines. Le premier est le cône déjà évoqué, qui dans la machine réelle adapte l'impédance de la source au reste de la cavité thermoacoustique. Ses dimensions sont les mêmes que dans la machine, à savoir un diamètre du côté de la source principale $D_{SA1}=\qty{108}{\milli\meter}$, un diamètre du côté du noyau $D_{\sf can}=\qty{156}{\milli\meter}$, et une longueur $L_{\sf cone}=\qty{3}{\centi\meter}$. Le second domaine est le régénérateur, de longueur $L_{\sf reg}=\qty{39}{\milli\meter}$ et de diamètre $D_{\sf reg}=\qty{148}{\milli\meter}$, une fois encore les dimensions du dispositif réel. Le troisième domaine est l'enceinte contenant le régénérateur. Sa longueur est la même que celle du régénérateur, et son diamètre est $D_{\sf can}$, de sorte à considérer une paroi métallique de \qty{2}{\milli\meter} d'épaisseur.\medskip
 
 Les dimensions de la géométrie du modèle sont notées dans le tableau~\ref{tab:DimModeleComsol}.
 
@@ -218,17 +244,15 @@ Les dimensions de la géométrie du modèle sont notées dans le tableau~\ref{ta
 	\centering
 	\caption{Dimensions des domaines pour le modèle \textsc{Comsol}\textss\textregistered.}
 	\label{tab:DimModeleComsol}	
-	\begin{tabular}{ll}
-		\hline
-		\textbf{Paramètre} & \textbf{Valeur} \\
+	\begin{tblr}{columns=l, hline{1,Z}={1.5pt}, row{1}={font=\bf}}
+		Paramètre & Valeur\\
 		\hline\hline
 		$D_{SA1}$ & \qty{108}{\milli\meter} \\
 		$D_{\sf can}$ & \qty{156}{\milli\meter} \\
 		$L_{\sf cone}$ & \qty{30}{\milli\meter} \\
 		$D_{\sf reg}$ & \qty{148}{\milli\meter} \\
-		$L_{\sf reg}$ & \qty{39}{\milli\meter} \\
-		\hline
-	\end{tabular}
+		$L_{\sf reg}$ & \qty{39}{\milli\meter} 
+	\end{tblr}
 \end{table}
 
 \begin{comment} % symétrie
@@ -278,9 +302,9 @@ Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et
     \label{fig:SuperpositionComsol}
 \end{figure}
 
-Le but de ce modèle de savoir si trois effets thermiques représentés sur la figure~\ref{fig:SuperpositionComsol}, c'est-à-dire le refroidissement du côté froid par effet thermoacoustique, la différence entre la température au centre et en périphérie du noyau, et le gradient transverse de température causé par la présence de convection naturelle, peuvent suffire pour expliquer la distribution de température dans le noyau thermoacoustique et simuler le plus simplement possible le comportement thermique du réfrigérateur. Pour cela, un modèle purement thermique équivalent est développé pour la géométrie présentée sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}, dans lequel les paramètres sont ajustés pour atteindre les amplitudes thermiques mesurées lors des expériences.\smallskip
+Le but de ce modèle de savoir si trois effets thermiques représentés sur la figure~\ref{fig:SuperpositionComsol}, c'est-à-dire (b) le refroidissement du côté froid par effet thermoacoustique, (c) la différence entre la température au centre et en périphérie du noyau, et (d) le gradient transverse de température causé par la présence de convection naturelle, peuvent suffire pour expliquer la distribution de température dans le noyau thermoacoustique et simuler le plus simplement possible le comportement thermique du réfrigérateur. Pour cela, un modèle purement thermique équivalent est développé pour la géométrie présentée sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}, dans lequel les paramètres sont ajustés pour atteindre les amplitudes thermiques mesurées lors des expériences.\smallskip
 
-Pour conserver un modèle simple, seuls des volumes de solides non-poreux et de gaz sont considérés dans le modèle complet. Ce choix, notamment pour le volume du régénérateur, permet de le modéliser en ne considérant aucun écoulement à l'intérieur. 
+Pour conserver un modèle simple, seuls des volumes de solides non-poreux et de gaz sont considérés dans le modèle complet. Ce choix pour le volume du régénérateur permet de le modéliser en ne considérant aucun écoulement à l'intérieur, ce qui est motivé au vu du nombre de Rayleigh-Darcy inférieur à sa valeur critique.
 
 Ces domaines sont couplés par l'interface multiphysique \texttt{Nonisothermal flow (intf)}, avec l'interface physique \texttt{Heat transfer in Solids and Fluids (ht)} pour traiter ces questions de transferts thermiques dans tous les volumes. Les domaines correspondant au régénérateur et à son enceinte et sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cependant, ce modèle fluide ne prend pas en compte de simulation de mécanique des fluides, et pour prendre la gravité et le mouvement du fluide causé par la convection naturelle en compte dans le modèle fluide, et il est nécessaire d'ajouter un modèle d'écoulement \texttt{laminar flow (spf)}.\medskip
 
@@ -485,12 +509,12 @@ Q_{\sf visq} = \frac{1}{r_h^2} \int_{0}^{r_h} \frac{1}{t_0} \int_0^{t_0} \mu \bi
 valide pour un régénérateur à pores circulaires \echaf{citation}, en considérant la composante longitudinale $v_{1,x}(x,r;t)$ de la vitesse particulaire d'ordre 1 $v_1(x,r;t)$. L'identité
 
 \begin{equation*}
-\frac{1}{t_0}\int_{0}^{t_0} \mu\ \big(\partial_r v_{1,x}(x,r;t)\big)^2\deriv t = \frac12\left|\partial_r v_{1,x}(x,r;t)\right|^2
+\frac{1}{t_0}\int_{0}^{t_0} \mu\ \big(\partial_r v_{1,x}(x,r;t)\big)^2\ \deriv t = \frac12\left|\partial_r v_{1,x}(x,r;t)\right|^2
 \end{equation*}
 permet de réécrire l'équation \eqref{eq:FluxVisq_Transitoire} sous la forme
 
 \begin{equation}
-	Q_{\sf visq} = \frac{1}{2r_h^2} \int_{0}^{r_h} \mu \left|\partial_r \tilde v_{1,x}(x,r;t)\right|^2\ r \deriv r.
+	Q_{\sf visq} = \frac{1}{2r_h^2} \int_{0}^{r_h} \mu \left|\partial_r v_{1,x}(x,r;t)\right|^2\ \textcolor{red}{r} \deriv r.
 	\label{eq:FluxVisq_Transitoire_IntegralTSimplifie}
 \end{equation}
 
@@ -505,11 +529,11 @@ avec $f_\nu$ et $h_\nu(r)$ les fonctions visqueuses définies dans les équation
 L'équation~\eqref{eq:FluxVisq_Transitoire_IntegralTSimplifie} devient donc
 
 \begin{equation*}
-	Q_{\sf visq} = \frac{\mu |u_1|^2}{2\big(r_h\Phi S|1-f_\nu|\big)^2}\int_0^{r_h} |\partial_r h_\nu(r)|^2\ r\deriv r,
+	Q_{\sf visq} = \frac{\mu |u_1|^2}{2\big(r_h\Phi S|1-f_\nu|\big)^2}\int_0^{r_h} |\partial_r h_\nu(r)|^2\ \textcolor{red}{r}\deriv r,
 \end{equation*}
 ou encore
 \begin{equation}
-	Q_{\sf visq} = \frac \mu 2 \left(\frac{|u_1|}{r_h \Phi S |1-f_\nu||J_0[(1-i)\frac{r_h}{\delta_\nu}]|}\right)^2 \int_{0}^{r_h}\left|J_1\left[(1-i)\frac{r}{\delta_\nu}\right]\right|^2\ r\deriv r \deriv t,
+	Q_{\sf visq} = \frac \mu 2 \left(\frac{|u_1|}{r_h \Phi S |1-f_\nu||J_0[(1-i)\frac{r_h}{\delta_\nu}]|}\right)^2 \int_{0}^{r_h}\left|J_1\left[(1-i)\frac{r}{\delta_\nu}\right]\right|^2\ \textcolor{red}{r}\deriv r \deriv t,
 \end{equation}
 dont l'intégrale sur la section de rayon $r_h$ est résolue par une méthode numérique.
 
@@ -544,7 +568,7 @@ en considérant le facteur de dégradation de conductivité $k_{s_{\sf frac}}=\n
 
 \subsubsection{Bilan thermique}
 
-Le bilan de chaleur dans chaque volume $S_{\sf reg} \deriv x$ du régénérateur s'écrit 
+Le bilan de chaleur dans chaque volume $S_{\sf reg}\ \deriv x$ du régénérateur s'écrit 
 
 
 \begin{equation}
@@ -581,7 +605,7 @@ pour prendre en compte une distribution potentiellement non uniforme au début d
 
 
 \subsubsection{Méthode des transformations intégrales}\label{chap:TransfoIntegrales}
-Ce problème transitoire comporte des termes sources, et requiert donc une méthode de résolution différente. Le formalisme de Green est utilisé, par l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{ozisik_heat_1993}. Les équations du système~\eqref{eq:CondFront}, soit le bilan de chaleur~\eqref{eq:BilanThermique_Transitoire}, les conditions aux frontières~\eqref{eq:CondFront} et la condition initiale~\eqref{eq:CondInit} se réécrivent alors selon
+Ce problème transitoire comporte des termes sources, ainsi que des dérivées partielles secondes selon l'espace, et requiert donc une méthode de résolution différente pour s'en affranchir et ramener le problème à la résolution d'une équation différentielle ordinaire homogène. Le formalisme de Green est utilisé, par l'usage de la méthode des transformations intégrales après réécriture des équations du système sous la forme d'un problème homogène équivalent \cite{hahn_heat_2012}. Les équations du système, c'est-à-dire le bilan de chaleur~\eqref{eq:BilanThermique_Transitoire}, les conditions aux frontières~\eqref{eq:CondFront} et la condition initiale~\eqref{eq:CondInit} se réécrivent alors selon
 
 \begin{subequations}
 	\begin{align}
@@ -600,7 +624,7 @@ avec le changement de variables suivant,
 		\begin{align}
 			Q_0 &= \frac{Q_{TA}(0)-Q_{\sf vort}(0)+\epsilon Q_f}{k_x+k_{TA}(L_{\sf reg})}, \\
 			Q_{L_{\sf reg}} &= \frac{Q_{TA}(L_{\sf reg})+Q_{\sf vort}(L_{\sf reg})+\epsilon Q_a}{k_x+k_{TA}(L_{\sf reg})},\\
-			\eta_{0,L_{\sf reg}} &= \frac{\left.h_x\right|_{x=0,L_{\sf reg}}}{k_x + k_{TA}(L_{\sf reg})}, \\
+			\eta_{0,L_{\sf reg}} &= \frac{\left.h_x\right|_{x=0,L_{\sf reg}}}{k_x + \left.k_{TA}\right|_{x=0,L_{\sf reg}}}, \\
 			\eta_r &= \frac{h_r}{k_r},
 		\end{align}
 		
@@ -646,14 +670,14 @@ La solution $\theta(x,r;t)$ du problème s'écrit au moyen du couple d'équation
 \begin{subequations}
 	\begin{align}
 		\theta(x,r;t) &= \sum_{n=1}^{+\infty}\frac{R_n(\sigma_{r,n}, r)}{N_r(\sigma_{r,n})} \overline \theta(\sigma_{r,n},x;t), \label{eq:TransfoInteg_Inversion_R} \\ \intertext{et}
-		\overline \theta(\sigma_{r,n},x;t) &= \int_{0}^{2R_{\sf reg}} R_n(\sigma_{r,n},r')\theta(r',x;t)\ \deriv r', \label{TransfoInter_TransfoInteg_R}
+		\overline \theta(\sigma_{r,n},x;t) &= \int_{0}^{2R_{\sf reg}} R_n(\sigma_{r,n},r')\theta(r',x;t)\ \deriv r', \label{eq:TransfoInter_TransfoInteg_R}
 	\end{align}
 \end{subequations}
 qui sont respectivement la formule d'inversion et la transformation intégrale. Cette dernière est appliquée au système d'équations~\ref{eq:ProblemeTransitoire_ChgtVariables} pour donner
 
 \begin{subequations}
 	\begin{align}
-		\frac{1}{\underline g} \partial_t \overline \theta(\sigma_{r,n},x;t) &= \partial_{xx}^{2} \overline \theta(\sigma_{r,n},x;t) - \underline k \sigma_{r,n}^2 \overline \theta(\sigma_{r,n},x;t) + \overline \sigma, & x \in [0,L_{\sf reg}],\ t>0, \label{eq:TransfoInteg_BilanThermique_R} \\
+		\frac{1}{\underline g} \partial_t \overline \theta(\sigma_{r,n},x;t) &= \partial_{xx}^{2} \overline \theta(\sigma_{r,n},x;t) - \underline k \sigma_{r,n}^2 \overline \theta(\sigma_{r,n},x;t) + \overline \Gamma, & x \in [0,L_{\sf reg}],\ t>0, \label{eq:TransfoInteg_BilanThermique_R} \\
 		\partial_x \overline \theta - \eta_0 \overline \theta &= \overline Q_0 & x=0,\ t>0, \label{eq:TransfoInteg_CondFront_x_0Froid_R} \\[6pt]
 		\partial_x \overline \theta - \eta_{L_{\sf reg}} \overline \theta &= \overline Q_{L_{\sf reg}} & x=L_{\sf reg},\ t>0, \label{eq:TransfoInteg_CondFront_x_LregAmb_R} \\[6pt]
 		\overline \theta(x,r,t=0) &= \overline \theta_0(x,r), & t=0,\ x \in [0,L_{\sf reg}]. \label{eq:TransfoInteg_CondInit_R}
@@ -695,17 +719,65 @@ Encore une fois, le système d'équations peut être résolu grâce à la paire 
 
 \begin{subequations}
 	\begin{align}
-		\overline\theta = \sum_{m=0}^{+\infty}\frac{X_m(x)}{N_x}\langle X_m|\overline \theta \rangle
+		\overline{\theta} = \sum_{m=0}^{+\infty}\frac{X_m(x)}{N_x}\tilde{\overline{\theta}},\label{eq:TransfoInteg_Inversion_X}\\
+		\intertext{et}
+		\tilde{\overline{\theta}} = \int_{0}^{L_{\sf reg}} X_m(x)\overline{\theta}\ \deriv x,\label{eq:TransfoInter_TransfoInteg_X}
 	\end{align}
 \end{subequations}
+où, la surbarre indique la transformée selon la variable $r$, et le tilde, selon la variable $x$.
+
+\echaf{L'application du théorème de Green donne}
+
+\begin{align}\color{red}
+	\partial_{zz}^2\tilde{\overline{\theta}} &= -\sigma_{x,m}^2\tilde{\overline{\theta}} + \textcolor{red}{ \left[\psi_m\partial_x\overline{\theta}-\overline{\theta}\partial_x\overline{\psi}_m\right]_{0}^{l}},\\
+	&= -\sigma_{x,m}^2\tilde{\overline{\theta}} + Q_{L_{\sf reg}}X_m(L_{\sf reg}) - Q_0X_m(0),\label{eq:TheoremeGreen}
+\end{align}
+ce qui permet d'obtenir
+
+\begin{align}
+	[\partial_t + \underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)]\tilde{\overline{\theta}} &= \underline{g}\left[Q_{L_{\sf reg}}X_m(L_{\sf reg}) - Q_0X_m(0) + \tilde{\overline{\Gamma}}\right], \label{eq:TheoremeGreen_TransfoInteg}\\
+	&=f_m(t),
+\end{align}
+en appliquant cette transformation au problème initial, dont la condition initiale s'écrit
+
+\begin{equation}
+	\tilde{\overline{\theta}}(\sigma_{r,n},\sigma_{x,m};t=0) = \tilde{\overline{\theta}}_0.
+\end{equation}
 
 \paragraph{Application des transformées intégrales inverses}
+L'équation~\ref{eq:TheoremeGreen_TransfoInteg} admet pour solution 
+
+\begin{equation}
+	\tilde{\overline{\theta}} = e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t}\left[\tilde{\overline{\theta}}_0+\int_{0}^{+\infty}e^{\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t'}f_m(t')\ \deriv t'\right],
+	\label{eq:DoubleTransform_T}
+\end{equation}
+qui peut s'écrire, en faisant l'hypothèse que $\overline{Q}_{L_{\sf reg}}$, $\overline{Q}_{0}$ et $\overline{\Gamma}$ évoluent lentement, comme
+
+\begin{equation}
+	\tilde{\overline{\theta}} = e^{-\underline{g}(\sigma_{x,m}^2 + \underline{k}\sigma_{r,n}^2)t}\tilde{\overline{\theta}}_0 + \frac{1 - e^{-\underline{g}(\sigma_{x,m}^2 + \underline{k}\sigma_{r,n}^2)}}{\sigma_{x,m}^2 + \underline{k}\sigma_{r,n}^2}\left(\overline{Q}_{L_{\sf reg}}X_m(L_{\sf reg}) - \overline{Q}_{0}X_m(0) +\tilde{\overline{\Gamma}}\right).
+	\label{eq:DoubleTransform_T_FaibleVariTempo_fm}
+\end{equation}
+
+Pour obtenir l'évolution temporelle de la température, cette solution est introduite successivement dans les formules d'inversion des transformées intégrales, d'abord selon $x$ via l'équation~\eqref{eq:TransfoInteg_Inversion_X} pour obtenir
+
+\begin{multline}
+	\overline{\theta}(x,\sigma_{r,n};t) = \sum_{m=1}^{+\infty} \frac{X_m(x)}{N_x}\frac{1-e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t}}{\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2}\\
+	\times \left(\overline{Q}_{L_{\sf reg}}X_m(L_{\sf reg}) - \overline{Q}_{0}X_m(0) +\tilde{\overline{\Gamma}}\right)\\
+	+ \sum_{m=1}^{+\infty}\frac{X_m(x)}{N_x} e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t} \tilde{\overline{\theta}}_0,
+\end{multline}
+puis selon $r$ avec l'équation~\eqref{eq:TransfoInteg_Inversion_R}, ce qui donne finalement
+
+\begin{multline}
+	\theta(x,r;t) = \sum_{n=1}^{+\infty}\sum_{m=1}^{+\infty}\frac{R_n(r)X_m(x)}{N_r N_x}\\
+	\times \Bigg[ \frac{1-e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t}}{\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2}\left(Q_{L_{\sf reg}}X_m(L_{\sf reg}) - Q_{0}X_m(0) + \textcolor{red}{\tilde{\overline{\Gamma}}}\right) \int_{0}^{R_{\sf reg}} R_n(r')\ \deriv r' \\
+	+ e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)} \int_{0}^{L_{\sf reg}}\int_{0}^{R_{\sf reg}}X_m(x')R_n(r')\theta_0\ \deriv x' \deriv r' \Bigg].
+\end{multline}
 
 \subsection{Détermination des paramètres empiriques}
 Parce que le modèle contient un certain nombre de paramètres empiriques à ajuster pour retrouver les mêmes tendances que sur les résultats expérimentaux, il convient de procéder par étape.
 
 \subsubsection{Coefficient d'échange aux extrémités du noyau}
-Tout d'abord, pour éliminer la vorticité, les expériences sans acoustiques sont exploitées, ce qui permet de déterminer les valeurs des coefficients d'échanges convectifs $h_x(x)$ en $x=0,\ L_{\sf reg}$, et $h_r(r)$ en $r=0,\ R_{\sf reg}$. Ces coefficients sont trouvés grâce à la minimisation d'une fonction de coût dans \textsc{Matlab}\textss\textregistered. En particulier, les fonctions \texttt{fminsearch} \echaf{et autres} sont appliquées pour réduire l'écart entre les températures mesurées, à la fois pour \echaf{toutes} les positions de thermocouples, et pour certains instants $t$.
+Tout d'abord, pour éliminer la vorticité, les expériences sans acoustiques sont exploitées, ce qui permet de déterminer les valeurs des coefficients d'échanges convectifs $h_x(x)$ en $x=0,\ L_{\sf reg}$, et $h_r(r)$ en $r=0,\ R_{\sf reg}$. Ces coefficients sont trouvés grâce à la minimisation d'une fonction de coût dans \textsc{Matlab}\textss\textregistered. En particulier, la fonction \texttt{fminsearch} est appliquée pour réduire l'écart entre les températures mesurées, à la fois pour chaque position de thermocouples, et pour certains instants $t$ choisis.
 
 \begin{figure}[!ht]
 	\centering
@@ -717,5 +789,13 @@ Tout d'abord, pour éliminer la vorticité, les expériences sans acoustiques so
 \end{figure}
 
 \subsubsection{Flux thermique de vorticité}
+Une fois les coefficients d'échanges $h$ estimés grâce aux mesures sans acoustiques, ils sont considérés constant et dépendant uniquement des matériaux de construction, et conservés pour le reste des simulations. Selon le même principe, le flux de chaleur ajouté par vorticité est estimé grâce à la minimisation d'une fonction de coût.\echaf{à faire}
 
 \section{Conclusion}
+Dans ce chapitre, plusieurs moyens pour interpréter les résultats des campagnes d'expériences sont présentés.\medskip
+
+Tout d'abord, les notions de nombres adimensionnels sont expliquées. En particulier, pour le cône d'adaptation d'impédance dans lequel seul du fluide se trouve d'une part, et pour le régénérateur poreux d'autre part, les nombres de Rayleigh sont calculés et permettent de prédire la mise en place de convection naturelle dans le cône d'adaptation d'impédance, mais pas dans le régénérateur. Ce calcul agit d'ailleurs comme point de départ pour ce travail de thèse.\smallskip
+
+Ensuite, un modèle par éléments finis est implémentés sous le logiciel \textsc{Comsol} Multiphysics\textss\textregistered en ne modélisant que des phénomènes thermiques comme la conduction et la convection, sans prendre en compte le champ acoustique ni la porosité du régénérateur. Ce modèle vise à simuler simplement la distribution de température dans le noyau, en considérant uniquement un flux de chaleur extrait à une paroi représentant l'échangeur froid, la conduction par le solide poreux, et la convection dans le cône d'adaptation d'impédance.\smallskip
+
+Enfin, un modèle analytique du régime transitoire a été développé, en simulant plus de phénomènes. Le champ acoustique est calculé pour déterminer le flux de chaleur thermoacoustique selon le modèle linéaire, et à cela s'ajoutent la conduction, la vorticité, les pertes latérales, et l'échauffement visqueux. La méthode des transformations intégrales permet de résoudre ce problème à plusieurs variables et avec sources, et peut également être 

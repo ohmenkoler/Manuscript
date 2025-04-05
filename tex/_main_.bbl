@@ -3606,37 +3606,43 @@
       \verb http://link.springer.com/10.1007/978-1-4757-9047-4_202
       \endverb
     \endentry
-    \entry{ozisik_heat_1993}{book}{}
-      \name{author}{1}{}{%
-        {{hash=ad2133249adb0f8cb16160f77553836f}{%
-           family={Özısık},
+    \entry{hahn_heat_2012}{book}{}
+      \name{author}{2}{}{%
+        {{hash=7363c54f14b3ff119bb79cbb6ec038c5}{%
+           family={Hahn},
+           familyi={H\bibinitperiod},
+           given={D.\bibnamedelimi W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=0a772384345085d39adf0869267b6b60}{%
+           family={Özisik},
            familyi={Ö\bibinitperiod},
-           given={M.\bibnamedelimi Necati},
+           given={M.\bibnamedelimi N.},
            giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {New York}%
+        {Hoboken, N.J}%
       }
       \list{publisher}{1}{%
-        {J. Wiley \& Sons, Inc}%
+        {Wiley}%
       }
-      \strng{namehash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{fullhash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{bibnamehash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{authorbibnamehash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{authornamehash}{ad2133249adb0f8cb16160f77553836f}
-      \strng{authorfullhash}{ad2133249adb0f8cb16160f77553836f}
+      \strng{namehash}{18720f5124d81229bcd9443cbcbb2630}
+      \strng{fullhash}{18720f5124d81229bcd9443cbcbb2630}
+      \strng{bibnamehash}{18720f5124d81229bcd9443cbcbb2630}
+      \strng{authorbibnamehash}{18720f5124d81229bcd9443cbcbb2630}
+      \strng{authornamehash}{18720f5124d81229bcd9443cbcbb2630}
+      \strng{authorfullhash}{18720f5124d81229bcd9443cbcbb2630}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{2nd ed}
-      \field{isbn}{978-0-471-53256-9}
+      \field{abstract}{"This book supplies the long awaited revision of the bestseller on heat conduction, replacing some of the coverage of numerical methods with content on micro- and nano-scale heat transfer. Extensive problems, cases, and examples have been thoroughly updated, and a solutions manual is available"}
+      \field{edition}{3rd ed}
+      \field{isbn}{978-1-118-41128-5}
       \field{title}{Heat conduction}
-      \field{year}{1993}
+      \field{year}{2012}
       \field{dateera}{ce}
       \verb{file}
-      \verb Özısik - 1993 - Heat conduction.pdf:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\EYT83H6K\\Özıs̜ık - 1993 - Heat conduction.pdf:application/pdf
+      \verb Hahn and Özisik - 2012 - Heat Conduction.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\LYLQFPQV\\Hahn and Özisik - 2012 - Heat Conduction.pdf:application/pdf
       \endverb
     \endentry
   \enddatalist

@@ -354,14 +354,12 @@ Ainsi, les systèmes électro-mécano-acoustiques comme les haut-parleurs ou les
 %	
 %	\end{tabular}
 
-	\begin{tblr}{ rows = {1cm}, row{1} = {15pt, font=\bf}, columns = {.25\textwidth, c} }
-		\hline
+	\begin{tblr}{ rows = {1cm}, row{1} = {15pt, font=\bf}, columns = {.25\textwidth, c}, hline{1,Z}={1.5pt} }
 %	\multicolumn{3}{|c|}{Domaines} \\\hline
 		Acoustique & Mécanique & \'Electrique \\ \hline\hline
-		\tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[L] ++(2,0);} \\
+		\tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \tikz{\draw(0,0) node[circle]{$m$};} & \myctikz{\draw(0,0) to[L] ++(2,0);} \\
 		\tikz{\draw(0,0) -- ++(1,0) -- ++(0,.5) -- ++(-1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[C] ++(2,0);} \\
-		\tikz{\fill[pattern={horizontal lines}](0,0) rectangle ++(1,.5);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[R] ++(2,0);} \\
-		\hline
+		\tikz{\fill[pattern={horizontal lines}](0,0) rectangle ++(1,.5);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[R] ++(2,0);}
 	\end{tblr}
 \end{table}
 }

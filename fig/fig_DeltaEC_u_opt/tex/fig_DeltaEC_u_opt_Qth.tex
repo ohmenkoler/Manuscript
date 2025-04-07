@@ -19,13 +19,14 @@
 		at={(0.5,1.03)},
 		anchor=south,
 		xticklabel pos=upper,
+		xlabel=$\dot Q_f$,
 		},
     ]
     	\addplot3[surf, mesh/rows=21, shader=interp, patch type=bilinear] file {../fig/fig_DeltaEC_u_opt/data/data_DeltaEC_u_opt_Qth.txt}; 
     	\draw[dashed,very thick] (3e-4,3) -| node[above, xshift = -2mm, yshift=2mm, fill=white,opacity=.5,text opacity=1,rounded corners,] {\scriptsize \begin{tabular}{l}
-    	$Q_f = \qty{808}{\watt}$ \\
-    	$|u_1|_{\sf opt}^{(Q_f)} = \qty{2.61e-2}{\cubic\meter\per\second}$ \\
-    	$\angle (u_1)_{\sf opt}^{(Q_f)} = \ang{3}$
+    	$\dot Q_f = \qty{808}{\watt}$ \\
+    	$|u_1|_{\sf opt}^{(\dot Q_f)} = \qty{2.61e-2}{\cubic\meter\per\second}$ \\
+    	$\angle (u_1)_{\sf opt}^{(\dot Q_f)} = \ang{3}$
     	\end{tabular}} (2.61e-2,-30);
     \end{axis}
 \end{tikzpicture}

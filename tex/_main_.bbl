@@ -3455,6 +3455,79 @@
       \endverb
       \keyw{Convection,Cylindrique,Horizontal,Vertical}
     \endentry
+    \entry{lewis_measurement_1998}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=aa2f026a51f3ffab984de7e626a4e8e8}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=96c3ff3f8de1edf33d3f5c4a8dd68210}{%
+           family={Kuriyama},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c6eca5785ebd1f358058cb0bdfde7369}{%
+           family={Kuriyama},
+           familyi={K\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a5750ee07ba667803bb2d91a96368eca}{%
+           family={Radebaugh},
+           familyi={R\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=fe7a1942d76e78d769533c81685ddcfb}{%
+           family={Kittel},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, {MA}}%
+      }
+      \list{publisher}{1}{%
+        {Springer {US}}%
+      }
+      \strng{namehash}{1fbd4921f441d82c4799c7a6cc097baa}
+      \strng{fullhash}{1fbd4921f441d82c4799c7a6cc097baa}
+      \strng{bibnamehash}{404c7d8a20ae9695a18c871596c20ae3}
+      \strng{authorbibnamehash}{404c7d8a20ae9695a18c871596c20ae3}
+      \strng{authornamehash}{1fbd4921f441d82c4799c7a6cc097baa}
+      \strng{authorfullhash}{1fbd4921f441d82c4799c7a6cc097baa}
+      \strng{editorbibnamehash}{fe7a1942d76e78d769533c81685ddcfb}
+      \strng{editornamehash}{fe7a1942d76e78d769533c81685ddcfb}
+      \strng{editorfullhash}{fe7a1942d76e78d769533c81685ddcfb}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Cryogenic Engineering}
+      \field{isbn}{978-1-4757-9049-8}
+      \field{title}{Measurement of Heat Conduction through Stacked Screens}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1611\bibrangedash 1618}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-1-4757-9047-4_202
+      \endverb
+      \verb{file}
+      \verb Kuriyama et al. - MEASUREMENT OF BEAT CONDUCTION THROUGH STACKED SCR.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\7XWWNXX3\\Kuriyama et al. - MEASUREMENT OF BEAT CONDUCTION THROUGH STACKED SCR.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-1-4757-9047-4_202
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-1-4757-9047-4_202
+      \endverb
+    \endentry
     \entry{lotton_transient_2009}{article}{}
       \name{author}{7}{}{%
         {{hash=4c312e6e30b3a002a74236740dd255ab}{%
@@ -3532,79 +3605,6 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931009003135
       \endverb
       \keyw{Thermoacoustics,Refrigerator}
-    \endentry
-    \entry{lewis_measurement_1998}{incollection}{}
-      \name{author}{4}{}{%
-        {{hash=aa2f026a51f3ffab984de7e626a4e8e8}{%
-           family={Lewis},
-           familyi={L\bibinitperiod},
-           given={M.\bibnamedelimi A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=96c3ff3f8de1edf33d3f5c4a8dd68210}{%
-           family={Kuriyama},
-           familyi={K\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=c6eca5785ebd1f358058cb0bdfde7369}{%
-           family={Kuriyama},
-           familyi={K\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-        {{hash=a5750ee07ba667803bb2d91a96368eca}{%
-           family={Radebaugh},
-           familyi={R\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=fe7a1942d76e78d769533c81685ddcfb}{%
-           family={Kittel},
-           familyi={K\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Boston, {MA}}%
-      }
-      \list{publisher}{1}{%
-        {Springer {US}}%
-      }
-      \strng{namehash}{1fbd4921f441d82c4799c7a6cc097baa}
-      \strng{fullhash}{1fbd4921f441d82c4799c7a6cc097baa}
-      \strng{bibnamehash}{404c7d8a20ae9695a18c871596c20ae3}
-      \strng{authorbibnamehash}{404c7d8a20ae9695a18c871596c20ae3}
-      \strng{authornamehash}{1fbd4921f441d82c4799c7a6cc097baa}
-      \strng{authorfullhash}{1fbd4921f441d82c4799c7a6cc097baa}
-      \strng{editorbibnamehash}{fe7a1942d76e78d769533c81685ddcfb}
-      \strng{editornamehash}{fe7a1942d76e78d769533c81685ddcfb}
-      \strng{editorfullhash}{fe7a1942d76e78d769533c81685ddcfb}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Advances in Cryogenic Engineering}
-      \field{isbn}{978-1-4757-9049-8}
-      \field{title}{Measurement of Heat Conduction through Stacked Screens}
-      \field{urlday}{23}
-      \field{urlmonth}{12}
-      \field{urlyear}{2024}
-      \field{year}{1998}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1611\bibrangedash 1618}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1007/978-1-4757-9047-4_202
-      \endverb
-      \verb{file}
-      \verb Kuriyama et al. - MEASUREMENT OF BEAT CONDUCTION THROUGH STACKED SCR.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\7XWWNXX3\\Kuriyama et al. - MEASUREMENT OF BEAT CONDUCTION THROUGH STACKED SCR.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://link.springer.com/10.1007/978-1-4757-9047-4_202
-      \endverb
-      \verb{url}
-      \verb http://link.springer.com/10.1007/978-1-4757-9047-4_202
-      \endverb
     \endentry
     \entry{hahn_heat_2012}{book}{}
       \name{author}{2}{}{%

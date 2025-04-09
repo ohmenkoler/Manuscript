@@ -19,17 +19,17 @@
     legend style={rounded corners},
     scaled ticks=false, tick label style={/pgf/number format/fixed}]
     
-    \addplot[solid,ultra thick,fill=MatlabBlue!25,draw=MatlabBlue] file {../fig/fig_AHXCalib/data/data_qdotDT0Water.txt};
-    \addplot[solid,ultra thick,fill=MatlabOrange!25,draw=MatlabOrange,
+    \addplot[solid,ultra thick,fill=Plasma1!25,draw=Plasma1] file {../fig/fig_AHXCalib/data/data_qdotDT0Water.txt};
+    \addplot[solid,ultra thick,fill=Plasma43!25,draw=Plasma43,
     postaction={
-        pattern=north east lines,pattern color=MatlabOrange
+        pattern=north east lines,pattern color=Plasma43
     }] file {../fig/fig_AHXCalib/data/data_qdotDT1WaterAcou.txt};
-    \addplot[solid,ultra thick,fill=MatlabOrange!25,draw=MatlabOrange] file {../fig/fig_AHXCalib/data/data_qdotDT10Acou.txt};
-    \addplot[solid,ultra thick,fill=MatlabYellow!25,draw=MatlabYellow,
+    \addplot[solid,ultra thick,fill=Plasma43!25,draw=Plasma43] file {../fig/fig_AHXCalib/data/data_qdotDT10Acou.txt};
+    \addplot[solid,ultra thick,fill=Plasma85!25,draw=Plasma85,
      postaction={
-        pattern=north east lines,pattern color=MatlabYellow
+        pattern=north east lines,pattern color=Plasma85
     }] file {../fig/fig_AHXCalib/data/data_qdotDT2WaterAcouQc.txt};
-    \addplot[solid,ultra thick,fill=MatlabYellow!25,draw=MatlabYellow] file {../fig/fig_AHXCalib/data/data_qdotDT20AcouQc.txt};
+    \addplot[solid,ultra thick,fill=Plasma85!25,draw=Plasma85] file {../fig/fig_AHXCalib/data/data_qdotDT20AcouQc.txt};
     \legend{$\Delta T_0^w$ \\ $\Delta T_1^w$ \\ $\Delta T_1^w-\Delta T_0^w$ \\ $\Delta T_2^w$ \\ $\Delta T_2^w-\Delta T_0^w$ \\};
 \end{axis}
 
@@ -47,8 +47,8 @@
     legend style={rounded corners},
     scaled ticks=false, tick label style={/pgf/number format/fixed}]
     
-    \addplot[solid,ultra thick,fill=MatlabOrange!25,draw=MatlabOrange] file{../fig/fig_AHXCalib/data/data_qdotQa1dotNoHeat.txt};
-    \addplot[solid,ultra thick,fill=MatlabYellow!25,draw=MatlabYellow] file{../fig/fig_AHXCalib/data/data_qdotQa2dotHeat.txt};
+    \addplot[solid,ultra thick,fill=Plasma43!25,draw=Plasma43] file{../fig/fig_AHXCalib/data/data_qdotQa1dotNoHeat.txt};
+    \addplot[solid,ultra thick,fill=Plasma85!25,draw=Plasma85] file{../fig/fig_AHXCalib/data/data_qdotQa2dotHeat.txt};
     \legend{$\dot Q_f=0$ \\ $\dot Q_f \neq 0$ \\};
     \end{axis}
     

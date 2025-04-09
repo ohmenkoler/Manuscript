@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  7 APR 2025 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  9 APR 2025 02:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2066,9 +2066,9 @@ Chapitre II.
 [11]
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 18.
+            Default family used instead on input line 19.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-2.
+3.
  (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -2080,8 +2080,6 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 Files/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
 ===== Image 'external/fig_SchemaGeneralTACOT0' is up-to-date. ======
-) (../fig/fig_TenuePressionStatique/tex/fig_TenuePressionStatique.tex
-===== Image 'external/fig_TenuePressionStatique0' is up-to-date. ======
 ) [13 <./external/fig_ATE_ProfilsAX_5mm0.pdf> <./external/fig_ATE_ProfilsCHX_5m
 m0.pdf
 
@@ -2091,7 +2089,9 @@ lusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./external/fig_SchemaGeneralTACOT0.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
->]
+>] (../fig/fig_TenuePressionStatique/tex/fig_TenuePressionStatique.tex
+===== Image 'external/fig_TenuePressionStatique0' is up-to-date. ======
+)
 ===== Image 'external/fig_TacotPhotosNoyau_AHX0' is up-to-date. ======
 ===== Image 'external/fig_TacotPhotosNoyau_Regenerateur0' is up-to-date. ======
 
@@ -2101,7 +2101,7 @@ lusion: multiple pdfs with page group included in a single page
 ===== Image 'external/fig_SchemaNoyau0' is up-to-date. ======
 )
 LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
-e 137.
+e 136.
  (C:\Program Files\MiKTeX\tex/latex/iwona\ot1iwonal.fd
 File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
 ) [14 <./external/fig_TenuePressionStatique0.pdf> <./external/fig_TacotPhotosNo
@@ -2113,19 +2113,19 @@ ig_TacotPhotosNoyau_CHX0.pdf>] [15 <./external/fig_PhotoNoyau0.pdf> <./external
 ) Excluding 'comment' comment.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 221.
+            Default family used instead on input line 240.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 221.
+            Default family used instead on input line 240.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 221.
+            Default family used instead on input line 240.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 221.
+            Default family used instead on input line 240.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 221.
+            Default family used instead on input line 240.
 
 ===== Image 'external/fig_RegenOnly_DeltaEC_Schematics0' is up-to-date. ======
 (../fig/fig_DeltaEC_u_opt/tex/fig_DeltaEC_u_opt_Qth.tex
@@ -2142,101 +2142,113 @@ LaTeX Info: Symbol \textminus not provided by
 > Step: calculate cell and line sizes.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 294.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 294.
 > Step: build the whole table.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 274.
+            Default family used instead on input line 294.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 294.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 294.
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2246,222 +2258,214 @@ LaTeX Info: Symbol \textminus not provided by
 > Step: calculate cell and line sizes.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 > Step: build the whole table.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 296.
+            Default family used instead on input line 317.
 
 ===== Image 'external/fig_AHXSchema0' is up-to-date. ======
 ===== Image 'external/fig_CHXSchema0' is up-to-date. ======
-[16 <./external/fig_dKdV0.pdf>] [17 <./external/fig_RegenOnly_DeltaEC_Schematic
-s0.pdf> <./external/fig_DeltaEC_u_opt_Qth0.pdf> <./external/fig_DeltaEC_u_opt_C
-OP0.pdf>] (../fig/fig_TemperatureAHX_InOut/tex/fig_TemperatureAHX_InOut.tex
+[16] [17 <./external/fig_dKdV0.pdf> <./external/fig_RegenOnly_DeltaEC_Schematic
+s0.pdf>] [18 <./external/fig_DeltaEC_u_opt_Qth0.pdf> <./external/fig_DeltaEC_u_
+opt_COP0.pdf>]
+(../fig/fig_TemperatureAHX_InOut/tex/fig_TemperatureAHX_InOut.tex
 ===== Image 'external/fig_TemperatureAHX_InOut0' is up-to-date. ======
-) [18]
-LaTeX Info: Symbol \textohm not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 350.
- [19 <./external/fig_AHXSchema0.pdf> <./external/fig_CHXSchema0.pdf
+) [19 <./external/fig_AHXSchema0.pdf> <./external/fig_CHXSchema0.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_CHXSchema0.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
-> <./external/fig_TemperatureAHX_InOut0.pdf>]
-(../fig/fig_BancEssaisComplet/tex/BancEssaisComplet.tex
+>]
+LaTeX Info: Symbol \textohm not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 371.
+ (../fig/fig_BancEssaisComplet/tex/BancEssaisComplet.tex
 ===== Image 'external/fig_BancEssaisComplet0' is up-to-date. ======
-) [20 <./external/fig_BancEssaisComplet0.pdf>]
+) [20 <./external/fig_TemperatureAHX_InOut0.pdf>]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
-) [21 <./external/fig_TCdansNoyau0.pdf>]
+) [21 <./external/fig_BancEssaisComplet0.pdf>]
+(../fig/fig_PhotosPressionStatDyn/tex/fig_PhotosPressionStatDyn.tex
+===== Image 'external/fig_PhotosPressionStatDyn0' is up-to-date. ======
+) [22 <./external/fig_TCdansNoyau0.pdf> <./external/fig_PhotosPressionStatDyn0.
+pdf>]
 ===== Image 'external/fig_SystemeAccroche_Machine0' is up-to-date. ======
 ===== Image 'external/fig_SystemeAccroche_Palan0' is up-to-date. ======
-[22 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroc
+[23 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroc
 he_Palan0.pdf>] (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 ===== Image 'external/fig_OrientationCore_H10' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
@@ -2470,18 +2474,21 @@ he_Palan0.pdf>] (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 ===== Image 'external/fig_OrientationCore_V10' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreV2.tex
 ===== Image 'external/fig_OrientationCore_V20' is up-to-date. ======
-) [23 <./external/fig_OrientationCore_H10.pdf> <./external/fig_OrientationCore_
+) [24 <./external/fig_OrientationCore_H10.pdf> <./external/fig_OrientationCore_
 H20.pdf> <./external/fig_OrientationCore_V10.pdf> <./external/fig_OrientationCo
 re_V20.pdf>] (../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_TC.tex
 ===== Image 'external/fig_WaterOnly_TC0' is up-to-date. ======
 ) (../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_PT.tex
 ===== Image 'external/fig_WaterOnly_PT0' is up-to-date. ======
-) [24] [25 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf
->] Excluding 'comment' comment. [26]) (EnsembleSimus.tex [27] [28
-
-]
+) (../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_DPT.tex
+===== Image 'external/fig_WaterOnly_DPT0' is up-to-date. ======
+) [25] [26 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf
+> <./external/fig_WaterOnly_DPT0.pdf>] [27] Excluding 'comment' comment.)
+(EnsembleSimus.tex [28]
 Chapitre III.
-[29] [30
+[29
+
+] [30
 
 ] (../fig/fig_ConvNat2D/tex/fig_ConvNat2D_HorizDeltaT.tex
 ===== Image 'external/fig_ConvNat2D_HorizDeltaT0' is up-to-date. ======
@@ -2701,7 +2708,7 @@ ig_SuperpositionComsol0.pdf>]
 ===== Image 'external/fig_Comsol_AdiabRix0' is up-to-date. ======
 ) [36 <./external/fig_Comsol_TambiantRix0.pdf> <./external/fig_Comsol_AdiabRix0
 .pdf>]
-<example-image-a.pdf, id=2216, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=2255, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 397.
@@ -3265,7 +3272,7 @@ Annexe F.
 ] [1
 
 
-] [2] [3] [4] (Abstract.tex) [5
+] [2] [3] [4] [5] (Abstract.tex) [6
 
 ] (_main_.aux)
  ***********
@@ -3273,33 +3280,32 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 9F528454BC82B19F2F1B287CC3476D01;22545.
+(rerunfilecheck)             Checksum: E0FC313E3BA98ACF0F6F1A4BF42861C4;21839.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 77440 strings out of 474435
- 1952125 string characters out of 5751739
- 3208659 words of memory out of 5000000
- 97817 multiletter control sequences out of 15000+600000
- 739043 words of font info for 205 fonts, out of 8000000 for 9000
+ 77486 strings out of 474435
+ 1954313 string characters out of 5751739
+ 3209451 words of memory out of 5000000
+ 97849 multiletter control sequences out of 15000+600000
+ 735935 words of font info for 204 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,158p,4691b,2834s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,16n,158p,4691b,2797s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Pro
 gram Files/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Program Files/MiKTeX
 /fonts/type1/nowacki/iwona/iwonali.pfb><C:/Program Files/MiKTeX/fonts/type1/now
-acki/iwona/iwonam.pfb><C:/Program Files/MiKTeX/fonts/type1/nowacki/iwona/iwonam
-i.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-s
-uper/sfss0800.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt0900
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (102 pages, 29278529 bytes).
+acki/iwona/iwonam.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmss17.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/M
+iKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX/fonts/type1/public/c
+m-super/sftt0900.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1
+095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on _main_.pdf (103 pages, 30548727 bytes).
 PDF statistics:
- 4233 PDF objects out of 4296 (max. 8388607)
- 515 named destinations out of 1000 (max. 500000)
- 1547 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4275 PDF objects out of 4296 (max. 8388607)
+ 520 named destinations out of 1000 (max. 500000)
+ 1533 words of extra memory for PDF output out of 10000 (max. 10000000)
 

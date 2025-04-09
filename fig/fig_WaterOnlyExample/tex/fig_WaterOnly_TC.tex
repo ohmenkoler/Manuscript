@@ -4,7 +4,8 @@
     \def\legx{.5cm};
     \def\legy{\legx};
     
-    \begin{axis}[name=plot,width={\width},height={\height},grid=both,minor tick num=4,
+    \begin{axis}[name=plot,width={\width},height={\height},
+    grid=both,minor tick num=5,
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
     xlabel={Temps $t$ (\unit{\s})},
@@ -16,15 +17,15 @@
     legend style = {at={(1.01,1.05)},anchor = north east, cells={align=right},rounded corners},legend columns=5,
     ]
     	
-    	\addplot[ultra thick,Plasma85] file {{../fig/fig_WaterOnlyExample/data/Water_TC2.txt}};\addlegendentry{TC 2}
+    	\addplot[ultra thick,Plasma85] file {{../fig/fig_WaterOnlyExample/data/v2/Water_TC2.txt}};\addlegendentry{TC 2}
     	
-    	\addplot[ultra thick,Plasma64] file {{../fig/fig_WaterOnlyExample/data/Water_TC5.txt}};\addlegendentry{TC 5}
+    	\addplot[ultra thick,Plasma64] file {{../fig/fig_WaterOnlyExample/data/v2/Water_TC5.txt}};\addlegendentry{TC 5}
     	
-    	\addplot[ultra thick,Plasma43] file {{../fig/fig_WaterOnlyExample/data/Water_TC8.txt}};\addlegendentry{TC 8}
+    	\addplot[ultra thick,Plasma43] file {{../fig/fig_WaterOnlyExample/data/v2/Water_TC8.txt}};\addlegendentry{TC 8}
     	
-    	\addplot[ultra thick,Plasma22] file {{../fig/fig_WaterOnlyExample/data/Water_TC11.txt}};\addlegendentry{TC 11}
+    	\addplot[ultra thick,Plasma22] file {{../fig/fig_WaterOnlyExample/data/v2/Water_TC11.txt}};\addlegendentry{TC 11}
     	
-    	\addplot[ultra thick,Plasma1] file {{../fig/fig_WaterOnlyExample/data/Water_TC14.txt}};\addlegendentry{TC 14}
+    	\addplot[ultra thick,Plasma1] file {{../fig/fig_WaterOnlyExample/data/v2/Water_TC14.txt}};\addlegendentry{TC 14}
     	  
     \end{axis}
 %    \draw (plot.center) node[rotate=30]{\color{red}AFFICHER LES DONNEES};

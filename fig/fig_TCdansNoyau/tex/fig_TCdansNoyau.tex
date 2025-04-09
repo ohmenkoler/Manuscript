@@ -11,8 +11,9 @@
 	
 	\fill[pattern=horizontal lines,pattern color=MatlabOrange,draw=black] (0,-\rAHX) rectangle ++(\lAHX,2*\rAHX);
 	\draw[MatlabOrange] (\lAHX/2,-\rCHX) node(AHX)[below=1cm, anchor=north east]{\'Echangeur ambiant};
-	\foreach \r in {-.9,0,.9}{
-		\draw[cyan] (-.15*\lREG,\r*\rAHX) node(TCahx\r){\textbullet};
+	\foreach \r [count=\rcount from 13] in {.9,0,-.9}{
+%		\draw[cyan] (-.15*\lREG,\r*\rAHX) node(TCahx\r){\textbullet};
+		\draw (-.15*\lREG,\r*\rAHX) node (TCahx\r) [minimum size=10pt,draw,circle,fill=white,opacity=.7,text opacity=1]{}node{\scriptsize \rcount};
 	}
 	\filldraw[draw=black,fill=gray!50!white] (0,\rAHX) rectangle (\lAHX,\rREG);		% côtés où l'eau circule
 	\filldraw[draw=black,fill=gray!50!white] (0,-\rAHX) rectangle (\lAHX,-\rREG);	%
@@ -22,19 +23,23 @@
 	\begin{scope}[xshift=\lAHX] % Reg
 		\fill[pattern=crosshatch,pattern color=gray,draw=black] (0,-\rREG) rectangle ++(\lREG,2*\rREG);
 		\draw[black] (\lREG/2,.5*\rREG) node[anchor=center, rounded corners, rotate=90, fill=white, fill opacity=.5, text opacity=1]{Régén.};		
-		\foreach \x in {.15,.5,.85}{
-			\foreach \r in {-.9,0,.9}{
-				\draw[cyan] (\x*\lREG,\r*\rREG) node{\textbullet};
-		}}
+		\foreach \x [count=\xcount] in {.85,.5,.15}{
+			\foreach \r/\rcount [evaluate=\rcount as \nodename using {int(\rcount+3*\xcount)}] in {.9/1,0/2,-.9/3}{
+%				\draw[cyan] (\x*\lREG,\r*\rREG) node{\textbullet};
+				\draw (\x*\lREG,\r*\rREG) node[minimum size=10pt,draw,circle,fill=white,opacity=.7,text opacity=1]{} node{\scriptsize \nodename};
+				}
+			}
 	\end{scope}
 	
 	\begin{scope}[xshift=\lAHX+\lREG] % CHX
 		\fill[pattern=horizontal lines,pattern color=MatlabBlue,draw=black] (0,-\rCHX) rectangle ++(\lCHX,2*\rCHX);
 		\draw[MatlabBlue] (\lCHX/2,-\rCHX) node(CHX)[below=1cm, anchor=north west]{\'Echangeur froid};
-		\foreach \r in {-.9,0,.9}{
-			\draw[cyan] (\lCHX+.15*\lREG,\r*\rCHX) node(TCchx\r){\textbullet};
+		\foreach \r [count=\rcount] in {.9,0,-.9}{
+%			\draw[cyan] (\lCHX+.15*\lREG,\r*\rCHX) node(TCchx\r){\textbullet};
+			\draw (\lCHX+.15*\lREG,\r*\rCHX) node (TCchx\r) [minimum size=10pt,draw,circle,fill=white,opacity=.7,text opacity=1]{} node{\scriptsize \rcount};
 		}
-		\draw[cyan] ({\lCHX+2.8*\lAHX},0) node(TCrix){\textbullet};
+%		\draw[cyan] ({\lCHX+2.8*\lAHX},0) node(TCrix){\textbullet};
+		\draw ({\lCHX+2.8*\lAHX},0) node (TCrix) [minimum size=10pt,draw,circle,fill=white,opacity=.7,text opacity=1]{}node{\scriptsize 0};
 		
 	\filldraw[draw=black,fill=gray!50!white] (0,\rREG) rectangle (\lCHX,\rCHX);		% côtés où l'eau circule
 	\filldraw[draw=black,fill=gray!50!white] (0,-\rREG) rectangle (\lCHX,-\rCHX);	%

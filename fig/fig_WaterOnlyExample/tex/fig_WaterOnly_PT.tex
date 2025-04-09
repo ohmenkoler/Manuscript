@@ -4,7 +4,8 @@
     \def\legx{.5cm};
     \def\legy{\legx};
     
-    \begin{axis}[name=plot,width={\width},height={\height},grid=both,minor tick num=4,
+    \begin{axis}[name=mainplot,width={\width},height={\height},
+    grid=both,minor tick num=5,
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
     xlabel={Temps $t$ (\unit{\s})},
@@ -18,8 +19,31 @@
     ]
     	
     	
-    	\addplot[ultra thick,black] file {{../fig/fig_WaterOnlyExample/data/Water_PT.txt}};%\addlegendentry{TC 14}
+    	\addplot[ultra thick,Plasma1] file {{../fig/fig_WaterOnlyExample/data/v2/Water_PT1.txt}};\addlegendentry{Entrée}
+    	\addplot[ultra thick,Plasma85] file {{../fig/fig_WaterOnlyExample/data/v2/Water_PT2.txt}};\addlegendentry{Sortie}
+    	
+    	\draw[dashed] (3200,15.1) node(a1){} rectangle (3500,15.5)node(a2){};
     	
     \end{axis}
-%    \draw (plot.center) node[rotate=30]{\color{red}AFFICHER LES DONNEES};
+
+	\begin{axis}[name=secplot,width={.4*\width},height={.6*\height},
+%	grid=both,minor tick num=4,
+%    grid style={line width=.1pt, draw=gray!10},
+%    major grid style={line width=.2pt,draw=gray!50},
+    at={($(mainplot.north east)+(-2em,-3em)$)},anchor=north east,
+%    xlabel={Temps $t$ (\unit{\s})},
+%    ylabel={ $\theta$ (\unit{\kelvin})},
+    xmin=3200,xmax=3500,
+	ymin=15.1,ymax=15.5,
+    xtick={3000,3100,...,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
+    domain=0:100,
+    legend style = {at={(1.01,1.05)},anchor = north east, cells={align=right},rounded corners},legend columns=3,
+    scaled ticks=false, tick label style={/pgf/number format/fixed}
+    ]
+    
+    	\addplot[ultra thick,Plasma1] file {{../fig/fig_WaterOnlyExample/data/v2/Water_PT1.txt}};
+    	\addplot[ultra thick,Plasma75] file {{../fig/fig_WaterOnlyExample/data/v2/Water_PT2.txt}};
+    \end{axis}
+    
+    \draw[dashed] (a1) -- (secplot.south west) (a2) -- (secplot.north east);
 \end{tikzpicture}

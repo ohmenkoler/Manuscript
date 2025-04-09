@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  9 APR 2025 02:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.14)  9 APR 2025 11:32
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2772,17 +2772,74 @@ LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 337.
  (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_High.tex
-===== Image 'external/fig_Acou_CHXout_H1H2_High0' is up-to-date. ======
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_Acou_CHXout_H1H2_High0" "
+\def\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_Acou_CHXout_H1H2_High0" "\def\tikzexternalrealjob{_main_}\input{
+_main_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
-===== Image 'external/fig_HeatOnly_CHXout_V1V20' is up-to-date. ======
+\openout5 = `external/fig_HeatOnly_CHXout_V1V20.md5'.
+
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_HeatOnly_CHXout_V1V20" "\
+def\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_HeatOnly_CHXout_V1V20" "\def\tikzexternalrealjob{_main_}\input{_
+main_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
 ) [51 <./external/fig_Acou_CHXout_H1H2_Mid0.pdf>] [52 <./external/fig_Acou_CHXo
 ut_H1H2_High0.pdf> <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Low.tex
-===== Image 'external/fig_Acou_CHXout_V1V2_Low0' is up-to-date. ======
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_Acou_CHXout_V1V2_Low0" "\
+def\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_Acou_CHXout_V1V2_Low0" "\def\tikzexternalrealjob{_main_}\input{_
+main_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
-===== Image 'external/fig_Acou_CHXout_V1V2_Mid0' is up-to-date. ======
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_Acou_CHXout_V1V2_Mid0" "\
+def\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_Acou_CHXout_V1V2_Mid0" "\def\tikzexternalrealjob{_main_}\input{_
+main_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_High.tex
-===== Image 'external/fig_Acou_CHXout_V1V2_High0' is up-to-date. ======
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
+n-error -interaction=batchmode -jobname "external/fig_Acou_CHXout_V1V2_High0" "
+\def\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
+ "external/fig_Acou_CHXout_V1V2_High0" "\def\tikzexternalrealjob{_main_}\input{
+_main_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_H1H2.tex
 ===== Image 'external/fig_HeatOnly_CHXin_H1H20' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_Regmid_H1H2.tex
@@ -3286,9 +3343,9 @@ Package logreq Info: Writing requests to '_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 77486 strings out of 474435
- 1954313 string characters out of 5751739
- 3209451 words of memory out of 5000000
+ 77489 strings out of 474435
+ 1954326 string characters out of 5751739
+ 3209452 words of memory out of 5000000
  97849 multiletter control sequences out of 15000+600000
  735935 words of font info for 204 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3303,9 +3360,9 @@ iKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX/fonts/t
 ype1/public/cm-super/sfss0800.pfb><C:/Program Files/MiKTeX/fonts/type1/public/c
 m-super/sftt0900.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1
 095.pfb><C:/Program Files/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on _main_.pdf (103 pages, 30548727 bytes).
+Output written on _main_.pdf (103 pages, 30548962 bytes).
 PDF statistics:
- 4275 PDF objects out of 4296 (max. 8388607)
+ 4276 PDF objects out of 4296 (max. 8388607)
  520 named destinations out of 1000 (max. 500000)
  1533 words of extra memory for PDF output out of 10000 (max. 10000000)
 

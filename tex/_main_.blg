@@ -1,0 +1,15 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is '_main_.blg'
+[165] biber-MSWIN64:340> INFO - === 
+[217] Biber.pm:420> INFO - Reading '_main_.bcf'
+[399] Biber.pm:994> INFO - Found 73 citekeys in bib section 0
+[418] Biber.pm:4463> INFO - Processing section 0
+[433] Biber.pm:4654> INFO - Looking for bibtex file '../bib/phd_bib.bib' for section 0
+[500] bibtex.pm:1713> INFO - LaTeX decoding ...
+[834] bibtex.pm:1519> INFO - Found BibTeX data source '../bib/phd_bib.bib'
+[1352] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1352] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1352] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'fr-FR'
+[1352] Biber.pm:4289> INFO - No sort tailoring available for locale 'fr-FR'
+[1411] bbl.pm:676> INFO - Writing '_main_.bbl' with encoding 'UTF-8'
+[1470] bbl.pm:779> INFO - Output to _main_.bbl

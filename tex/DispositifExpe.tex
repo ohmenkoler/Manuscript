@@ -57,18 +57,16 @@ Cependant, les résultats obtenus avant le démarrage de cette thèse montrent d
 \subsubsection{Cavité thermoacoustique}
 \echaf{Enleve : Le projet \textsc{Tacot} apporte beaucoup de contraintes pour la conception du réfrigérateur, et l'une des principales est la compacité\textcolor{purple}{du fait de son embarquement dans un véhicule}.} Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}, les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. 
 
-%\begin{figure}[!ht]
-%    \centering
-%    \external{fig_SchemaGeneralTACOT}
-%%    \externalremake
-%    \input{../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex}
-%    \caption{Schéma général du réfrigérateur \textsc{Tacot} extrait de \cite{ramadan_design_2021}. \textbf{(a)} agrandissement sur la boucle de rétroaction entre le noyau et le bâti de la machine, et \textbf{(b)} ensemble de la machine. Le noyau thermoacoustique et le cône d'adaptation d'impédance sont mis en évidence.\echaf{surligner la rétroaction}}
-%    \label{fig:SchemaGeneralTACOT}
-%\end{figure}
+\begin{figure}[!ht]
+    \centering
+    \external{fig_SchemaGeneralTACOT}
+%    \externalremake
+    \input{../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex}
+    \caption{Schéma général du réfrigérateur \textsc{Tacot} extrait de \cite{ramadan_design_2021}. \textbf{(a)} agrandissement sur la boucle de rétroaction entre le noyau et le bâti de la machine, et \textbf{(b)} ensemble de la machine. Le noyau thermoacoustique et le cône d'adaptation d'impédance sont mis en évidence.}
+    \label{fig:SchemaGeneralTACOT}
+\end{figure}
 
-\begin{tikzpicture}
-\draw(0,0) -- (1,0);
-\end{tikzpicture}
+
 
 Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale usuellement utilisée en suivant les travaux de Poignand \textit{et al.} \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}, et est présentée sur la figure~\ref{fig:SchemaGeneralTACOT}(b) \textcolor{purple}{Ajouter ref}. Dans ce cas, la boucle de rétroaction du guide d'onde se trouve tout autour du noyau placé au centre de la cavité thermoacoustique, ce que montre la figure~\ref{fig:SchemaGeneralTACOT}(a).\textcolor{purple}{Bien décrirela géométrie compacte ici: noyau TA + 2src + boucle de rétroaction} L'ajout d'une source acoustique secondaire au voisinage du noyau permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension, tel que réalisé dans les références \cite{poese_thermoacoustic_2004, poignand_thermoacoustic_2011, poignand_analysis_2013}. En plus de permettre une diminution du volume de la machine, l'utilisation d'une source secondaire offre plus de flexibilité qu'un résonateur sur la relation entre pression acoustique et vitesse particulaire au sein du noyau thermoacoustique, en facilitant en particulier le ciblage du déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique\textcolor{purple}{, ainsi que la vitesse elle-même} \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.\smallskip
 
@@ -663,18 +661,20 @@ Au cours de cette étude, trois amplitudes acoustiques sont choisies. La premiè
 
 La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty{2}{\percent}$, qui correspond par ailleurs à l'amplitude dite \og faible \fg{} dans les travaux de caractérisation du \textsc{Tacot} \cite{ramadan_design_2021}.\medskip 
 
-%\begin{figure}[!ht]
-%	\centering
-%	\external{fig_AcouExample}
-%%	\externalremake
-%	\input{../fig/fig_AcouExample/tex/fig_AcouExample}
-%	\caption{Example de mesure de température de gaz après mise en marche du réfrigérateur, extrait de la campagne `\texttt{Acou}' dans l'orientation `\texttt{V2}' pour un \textit{drive ratio} $DR=\qty{3.5}{\percent}$.}
-%	\label{fig:AcouExample}
-%\end{figure}
+%\tikz{\draw(0,0) -- (1,0);}
+
+\begin{figure}[!ht]
+	\centering
+	\external{fig_AcouExample}
+%	\externalremake
+	\input{../fig/fig_AcouExample/tex/fig_AcouExample}
+	\caption{Example de mesure de température de gaz après mise en marche du réfrigérateur, extrait de la campagne `\texttt{Acou}' dans l'orientation `\texttt{V2}' pour un \textit{drive ratio} $DR=\qty{3.5}{\percent}$.}
+	\label{fig:AcouExample}
+\end{figure}
 
 %\echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \smallskip
 
-Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée. 
+\'Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée. 
 
 \section{Post-traitement des données}\label{chap:PostTraitement}
 À la fin des acquisitions, les données sont post-traitées en utilisant un code \textsc{Matlab}\textss\textregistered dédié et développé au cours de ce travail, disponible en ligne \cite{fontbonne_postprocessing_2025}.\bigskip

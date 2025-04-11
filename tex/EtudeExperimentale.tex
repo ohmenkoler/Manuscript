@@ -301,19 +301,19 @@ L'échangeur ambiant extrait la chaleur des volumes élémentaires de gaz qui os
 
 
 
-%\begin{figure}[!ht]
-%    \centering
-%    \external{fig_Acou_CHXout_H1H2_High}
-%%    \externalremake
-%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_High}
-%    \caption{\'Evolution temporelle des températures dans la cavité d'adaptation d'impédance pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$.}
-%    \label{fig:Acou_CHXout_H1H2_High}
-%\end{figure}
+\begin{figure}[!ht]
+    \centering
+    \external{fig_Acou_CHXout_H1H2_High}
+%    \externalremake
+    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_High}
+    \caption{\'Evolution temporelle des températures dans la cavité d'adaptation d'impédance pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$.\echaf{changer les données pour les high ampli}}
+    \label{fig:Acou_CHXout_H1H2_High}
+\end{figure}
 
 
 \subsubsection{Réfrigérateur vertical}
 \paragraph*{Sans acoustique}
-\echaf{ICI les manips heat only}
+
 
 \begin{figure}[!ht]
     \centering
@@ -325,8 +325,7 @@ L'échangeur ambiant extrait la chaleur des volumes élémentaires de gaz qui os
 \end{figure}
 
 \paragraph*{Avec acoustique}
-La figure~\ref{fig:Acou_CHXout_V1V2_Low} trace les températures mesurées dans la cavité d'adaptation d'impédance pour des expériences où le réfrigérateur est placé dans les orientations verticales présentées figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}, pour une amplitude \og faible \fg{} soit un \textit{drive ratio} $DR=\qty{.4}{\percent}$. Contrairement aux expériences horizontales où les effets de convection naturelle sont toujours présents mais pas toujours visibles, dans les expériences verticales il existe une configuration favorable à la mise en place d'une instabilité de convection naturelle de type Rayleigh-Bénard, et l'autre, inverse, qui est stable. La première configuration est l'orientation `\texttt{V1}', car la source acoustique y est en dessous du noyau thermoacoustique, car le sens du gradient de température est opposé à la gravité, tandis que la seconde est l'orientation `\texttt{V2}' où la source acoustique est au-dessus du noyau. Dans cette dernière orientation, le gradient de température est dans le même sens que la gravité, et il n'y a pas de flux de chaleur qui apparaît de manière spontanée. La première remarque concerne la différence d'aspect de l'évolution des températures entre une orientation et l'autre, malgré une axi-symétrie visible dans les deux cas et attendue au vu de la colinéarité de la dimensions axiale $\mathbf e_x$ et de la gravité $\mathbf g$. En observant les tracés en lignes tiretées, qui tracent l'évolution de la température $\theta$ au cours de l'expérience dans l'orientation `\texttt{V2}', une différence de température de \qty{3.2}{\degreeCelsius} entre l'échangeur froid du noyau et la source acoustique principale plus chaude apparaît et se maintient durant toute la durée de l'expérience. C'est d'ailleurs le plus grand écart de température relevé dans cette zone. Plus précisément, la température mesurée devant la source acoustique principale baisse \qty{.8}{\degreeCelsius} même après démarrage de celle-ci, ce qui est assez faible pour être en accord avec l'hypothèse de stabilité des températures en l'absence de flux massique causé par la convection naturelle. Dans l'orientation inverse `\texttt{V1}' représentée par les tracés en traits pleins, la différence de température apparaît également après le démarrage des sources acoustiques. Toutefois, après \qty{1800}{\second} les thermocouples sur l'axe de symétrie et en vis à vis l'un de l'autre, autrement dit devant la source acoustique principale et le thermocouple~2, affichent la même température. De manière plus générale, tous les thermocouple de cette zone d'adaptation d'impédance sont à des températures plus homogènes, puisque l'écart maximum de températures est dans ce cas de \qty{.8}{\degreeCelsius}. Un effet très remarquable pour cette orientation est l'évolution de température en deux étapes : la première, pendant laquelle la température sur l'échangeur froid diminue et qui s'étend du démarrage des sources à \qty{1100}{\second}, et la seconde, de cet instant jusqu'à la fin de l'acquisition et où un réchauffement des thermocouples sur l'échangeur froid apparaît. Il semblerait qu'il s'agisse là de la manifestations de deux effets aux constantes de temps différentes, l'effet thermoacoustique qui agit dès l'allumage des sources acoustiques et la convection naturelle, plus lente. Il est supposé que lors de la première étape, la différence de température augmente peu à peu et le nombre de Rayleigh avec elle, et ce, jusqu'au dépassement de la valeur critique de $\Rayleigh_c$. Au delà de cette valeur \echaf{que l'on peut estimer expérimentalement avec l'équation~\eqref{eq:NbrRayleigh} appliquée à la différence de température $\Delta \theta|_{t=\qty{1100}{\second}}$ ou bien quand $\partial^2_{tt}\theta=\num{0}$}, une cellule de convection de type Rayleigh-Bénard se met en place, et déplace avec le fluide en mouvement une certaine quantité de chaleur $Q_{\sf conv}$ de la source acoustique vers l'échangeur froid. Le gradient de température entre la source acoustique principale et l'échangeur froid n'étant pas fixé, les deux extrémités de la cavité d'adaptation d'impédance voient leur température converger vers un point d'équilibre, à la valeur moyenne des températures mesurées au mêmes emplacements dans l'orientation `\texttt{V2}'.
-\smallskip
+
  
 \begin{figure}[!ht]
     \centering
@@ -337,8 +336,6 @@ La figure~\ref{fig:Acou_CHXout_V1V2_Low} trace les températures mesurées dans 
     \label{fig:Acou_CHXout_V1V2_Low}
 \end{figure}
 
-À moyenne amplitude pour un \textit{drive ratio} $DR=\qty{2}{\percent}$, les résultats des expériences sont tracés sur la figure~\ref{fig:Acou_CHXout_V1V2_Mid}. Pour cette série, il est difficile de conclure sur le comportement d'une supposée cellule de convection naturelle : les différences entre les deux configurations ne correspondent pas aux tendances mises en évidence par les expériences à faible amplitude.
-\smallskip
 
 \begin{figure}[!ht]
     \centering
@@ -349,7 +346,6 @@ La figure~\ref{fig:Acou_CHXout_V1V2_Low} trace les températures mesurées dans 
     \label{fig:Acou_CHXout_V1V2_Mid}
 \end{figure}
 
-En revanche, la figure~\ref{fig:Acou_CHXout_V1V2_High} qui présente les résultats obtenus à haute amplitude, c'est-à-dire pour un \textit{drive ratio} de $DR=\qty{3.5}{\percent}$, les effets liés à la convection naturelle sont visibles. En effet, les tendances sont les mêmes qu'à faible amplitude acoustique, à d'autres échelles en termes d'amplitude ce température ou de temps, et une différence de résultats de l'ordre de \qty{6}{\degreeCelsius} est manifeste en fonction de l'orientation du réfrigérateur. Notamment, les courbes en trait tiretés qui représentent l'orientation `\texttt{V2}' montrent à nouveau un refroidissement de la zone avant une stabilisation des températures, tandis que les courbes en trait plein affichent un réchauffement à $t=\qty{400}{\second}$ entre le refroidissement initial et la stabilisation des températures dans la cavité conique dans l'orientation `\texttt{V1}'.
 
 \begin{figure}[!ht]
     \centering
@@ -400,9 +396,7 @@ En revanche, la figure~\ref{fig:Acou_CHXout_V1V2_High} qui présente les résult
 
 
 \paragraph*{Faible amplitude acoustique}
-Les figures~\ref{fig:Acou_CHXin_H1H2_Low} à \ref{fig:Acou_AHXin_H1H2_Low} montrent les résultats à faible amplitude acoustique, pour les trois positions axiales le long du régénérateur. Dans cette configuration, le nombre de Rayleigh $\Rayleigh_p$ est de \echaf{Valeur}. 
 
-Tout d'abord, du côté de l'échangeur froid dont les résultats d'expériences sont affichés sur la figure~\ref{fig:Acou_CHXin_H1H2_Low}, une tendance similaire à ce qui a été montré dans la cavité d'adaptation d'impédance sur la figure~\ref{fig:Acou_CHXout_H1H2_Low} est visible. Notamment, la température mesurée par le thermocouple~5 placé au centre du régénérateur est la même dans les deux orientations, avec une diminution de \qty{5.2}{\degreeCelsius} par rapport à la température initiale pour l'orientation `\texttt{H1}', et de \qty{4.8}{\degreeCelsius} pour l'orientation `\texttt{H2}'. La périphérie du régénérateur, dont les températures sont acquises par les thermocouples~4~et~6, voient à l'inverse leur température varier en fonction de l'orientation. Dans l'orientation `\texttt{H1}', les températures données par les thermocouples~5~et~6 sont respectivement égales à \qty{-5.2}{\degreeCelsius} et \qty{-4.8}{\degreeCelsius}, et le thermocouple~4 indique une température de \qty{-2.9}{\degreeCelsius}. En revanche, dans l'orientation `\texttt{H2}' ce sont cette fois les thermocouples~4~et~6 qui sont proches car égaux à \qty{-3}{\degreeCelsius} et \qty{-3.2}{\degreeCelsius}, et le thermocouple~5 qui relève \qty{-4.8}{\degreeCelsius}. La symétrie par rapport au plan vertical passant par le centre du régénérateur est ainsi maintenue du côté froid intérieur du régénérateur, de même que ce que l'étude dans la cavité d'adapatation d'impédance montre le paragraphe~§\ref{chap:Acou_CHXout_H1H2_low}.
 
 \begin{figure}[!ht]
     \centering

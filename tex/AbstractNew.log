@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.11)  11 APR 2025 15:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.11)  11 APR 2025 17:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2016,8 +2016,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
-
-No file AbstractNew.aux.
+ (AbstractNew.aux)
 \openout1 = `AbstractNew.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 384.
@@ -2125,6 +2124,7 @@ or `french'. on input line 384.
 
 No file AbstractNew.toc.
 Package hyperref Info: Link coloring ON on input line 384.
+(AbstractNew.out) (AbstractNew.out)
 \@outlinefile=\write6
 \openout6 = `AbstractNew.out'.
 
@@ -2168,39 +2168,24 @@ ap}{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package rerunfilecheck Warning: File `AbstractNew.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `AbstractNew.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                AbstractNew
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `AbstractNew.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'AbstractNew.run.xml'.
 \openout1 = `AbstractNew.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 74667 strings out of 473523
- 1890090 string characters out of 5707334
- 3160352 words of memory out of 5000000
- 97016 multiletter control sequences out of 15000+600000
+ 74675 strings out of 473523
+ 1890422 string characters out of 5707334
+ 3157458 words of memory out of 5000000
+ 97018 multiletter control sequences out of 15000+600000
  574880 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,5n,87p,1206b,1784s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowa
 cki/iwona/iwonal.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKT
 eX/fonts/type1/nowacki/iwona/iwonali.pfb>
-Output written on AbstractNew.pdf (1 page, 56568 bytes).
+Output written on AbstractNew.pdf (1 page, 56111 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)

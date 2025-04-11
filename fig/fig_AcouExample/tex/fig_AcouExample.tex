@@ -5,7 +5,7 @@
     \def\legy{\legx};
     
     \begin{axis}[name=plot,width={\width},height={\height},
-    grid=both,minor tick num=5,
+    grid=both,minor tick num=4,
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
     xlabel={Temps $t$ (\unit{\s})},
@@ -17,26 +17,25 @@
     legend cell align={left},
     legend style = {at={($(1,1)+(2mm,-2mm)$)},anchor = south east,rounded corners},legend columns=5,
     ]
-    	\addplot[ultra thick,Plasma1] file {{../fig/fig_AcouExample/data/data_TC1_0beg.txt}};\addlegendentry{TC 1}
+    	\addplot[ultra thick,Plasma7, dashed] file {{../fig/fig_AcouExample/data/data_TC1_0beg.txt}};\addlegendentry{TC 1}
     	\addplot[ultra thick,Plasma7] file {{../fig/fig_AcouExample/data/data_TC2_0beg.txt}};\addlegendentry{TC 2}
-    	\addplot[ultra thick,Plasma13] file {{../fig/fig_AcouExample/data/data_TC3_0beg.txt}};\addlegendentry{TC 3}
+    	\addplot[ultra thick,Plasma7, loosely dotted] file {{../fig/fig_AcouExample/data/data_TC3_0beg.txt}};\addlegendentry{TC 3}
     	
-    	\addplot[ultra thick,Plasma19] file {{../fig/fig_AcouExample/data/data_TC4_0beg.txt}};\addlegendentry{TC 4}
+    	\addplot[ultra thick,Plasma25, dashed] file {{../fig/fig_AcouExample/data/data_TC4_0beg.txt}};\addlegendentry{TC 4}
     	\addplot[ultra thick,Plasma25] file {{../fig/fig_AcouExample/data/data_TC5_0beg.txt}};\addlegendentry{TC 5}
-    	\addplot[ultra thick,Plasma31] file {{../fig/fig_AcouExample/data/data_TC6_0beg.txt}};\addlegendentry{TC 6}
+    	\addplot[ultra thick,Plasma25, loosely dotted] file {{../fig/fig_AcouExample/data/data_TC6_0beg.txt}};\addlegendentry{TC 6}
     	
-    	\addplot[ultra thick,Plasma37] file {{../fig/fig_AcouExample/data/data_TC7_0beg.txt}};\addlegendentry{TC 7}
+    	\addplot[ultra thick,Plasma43, dashed] file {{../fig/fig_AcouExample/data/data_TC7_0beg.txt}};\addlegendentry{TC 7}
     	\addplot[ultra thick,Plasma43] file {{../fig/fig_AcouExample/data/data_TC8_0beg.txt}};\addlegendentry{TC 8}
-    	\addplot[ultra thick,Plasma49] file {{../fig/fig_AcouExample/data/data_TC9_0beg.txt}};\addlegendentry{TC 9}
+    	\addplot[ultra thick,Plasma43, loosely dotted] file {{../fig/fig_AcouExample/data/data_TC9_0beg.txt}};\addlegendentry{TC 9}
     	
-    	\addplot[ultra thick,Plasma55] file {{../fig/fig_AcouExample/data/data_TC10_0beg.txt}};\addlegendentry{TC 11}
+    	\addplot[ultra thick,Plasma61, dashed] file {{../fig/fig_AcouExample/data/data_TC10_0beg.txt}};\addlegendentry{TC 10}
     	\addplot[ultra thick,Plasma61] file {{../fig/fig_AcouExample/data/data_TC11_0beg.txt}};\addlegendentry{TC 11}
-    	\addplot[ultra thick,Plasma67] file {{../fig/fig_AcouExample/data/data_TC12_0beg.txt}};\addlegendentry{TC 12}
+    	\addplot[ultra thick,Plasma61, loosely dotted] file {{../fig/fig_AcouExample/data/data_TC12_0beg.txt}};\addlegendentry{TC 12}
     	
-    	\addplot[ultra thick,Plasma73] file {{../fig/fig_AcouExample/data/data_TC13_0beg.txt}};\addlegendentry{TC 13}
+    	\addplot[ultra thick,Plasma79, dashed] file {{../fig/fig_AcouExample/data/data_TC13_0beg.txt}};\addlegendentry{TC 13}
     	\addplot[ultra thick,Plasma79] file {{../fig/fig_AcouExample/data/data_TC14_0beg.txt}};\addlegendentry{TC 14}
-    	\addplot[ultra thick,Plasma85] file {{../fig/fig_AcouExample/data/data_TC15_0beg.txt}};\addlegendentry{TC 15}
-
-    	  
+    	\addplot[ultra thick,Plasma79, loosely dotted] file {{../fig/fig_AcouExample/data/data_TC15_0beg.txt}};\addlegendentry{TC 15}
+   	  
     \end{axis}
 \end{tikzpicture}

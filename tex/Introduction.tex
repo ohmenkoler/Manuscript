@@ -539,6 +539,49 @@ u_e
 
 Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations spécialisés tels que \textsc{DeltaEC}, soit suffisante pour prédire le comportement des machines thermoacoustiques de même que leurs performances, de nombreux effets sont négligés~\cite{DeltaEC}. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible et que les températures le long des dimensions transverses du noyau peuvent être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faible que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.\echaf{à suivre}
 
+
+\section{Résultats antérieurs au doctorat}\label{chap:PresTacot_ResultatsATE}
+\echaf{Quelques résultats. À mettre dans l'intro I ?} \textcolor{purple}{Ces résultats arrivent trop tôt}
+
+Au démarrage de cette thèse, le réfrigérateur existe déjà puisque sa conception s'est faite dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Sa caractérisation est publiée \cite{ramadan_design_2021}, et il fait également l'objet d'études expérimentales~\cite{ramadan_experimental_2018, ramadan_experimental_2021, poignand_test-bench_2022} et  numériques~\cite{hireche_experimental_2020, baltean_gravity_2025}.\smallskip
+
+Les expériences réalisées avant le début de cette thèse sont faite en utilisant un noyau dont la porosité est $\Phi=\qty{75}{\percent}$. Il est immergé dans un mélange de gaz pressurisé à \qty{40}{\bar} et composé de \qty{70}{\percent} d'hélium et de \qty{30}{\percent} d'argon, car dans ces proportions le nombre de Prandtl du mélange est minimum \cite{belcher_working_1999}. Le modèle linéaire 1D réalisé avec le logiciel \textsc{DeltaEC} prédit les meilleurs performances à la fréquence de résonance du système $f=\qty{47}{\hertz}$, pour laquelle la longueur d'onde vaut $\lambda=\qty{11.7}{\meter}$, validant ainsi une des hypothèse de compacité acoustique du modèle de Swift. C'est par ailleurs la seule fréquence où l'impédance électrique de la source acoustique principale est supérieure à la limite basse admise par l'amplificateur qui l'alimente et qui vaut \qty{2}{\ohm}. Le déphasage inter-source est fixé à $\varphi_{2-1}=\ang{-60}$ pour toutes les expériences, car il s'agit de la valeur optimale pour maximiser le flux de chaleur $\dot Q_f$ extrait par l'échangeur froid, d'après les simulations réalisées sous le logiciel \textsc{DeltaEC}, et ce qui est confirmé par des expériences préliminaires.\smallskip
+
+Dans cet article de caractérisation~\cite{ramadan_design_2021} il est montré qu'à ces fréquence et déphasage inter-sources, et à une amplitude correspondant le \textit{drive ratio} vaut $DR=\nicefrac{p_1}{p_0}=\qty{3.6}{\percent}$, une puissance d'alimentation des sources $\dot W_e=\qty{193}{\watt}$ et consommée, une quantité de chaleur de $\dot Q_f=\qty{290}{\watt}$ est extraite à la source froide dont la température $T_f=\qty{13.3}{\degreeCelsius}$ est atteinte. Le coefficient de performance à ce point de fonctionnement est $\COP=\nicefrac{\dot Q_f}{\dot W_e}=\num{1.5}$, soit \qty{15}{\percent} du coefficient de performance de Carnot. Un schéma résume les résultats de ce point de fonctionnement sur la figure~\ref{fig:CaractMachineATE}.\medskip
+
+\begin{figure}[!ht]
+	\centering
+	\external{fig_CaractMachineATE}
+%	\externalremake
+	\input{../fig/fig_CaractMachineATE/tex/fig_CaractMachineATE}
+	\caption{Résumé des caractéristiques de la machine au point de fonctionnement présenté}
+	\label{fig:CaractMachineATE}
+\end{figure}
+
+Cependant, les résultats obtenus avant le démarrage de cette thèse montrent des écarts avec les prédictions de la théorie linéaire. Notamment, la température la plus basse mesurée se trouve au milieu du régénérateur et non pas à proximité de l'échangeur froid, comme le montre la figure~\ref{fig:ATE_ProfilsAX_5mm}. Enfin, et c'est le point de départ de cette thèse, la distribution transverse de température proche de ce même échangeur et tracée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm}  laisse supposer la présence d'un écoulement attribué à la convection naturelle dans la machine. En effet, les expériences présentées dans l'article ont été réalisées avec la pompe à chaleur placée à l'horizontale, et les thermocouples situés dans le noyau maillent un plan vertical\footnote{Plus tard dans le manuscrit, cette orientation est définie comme étant l'orientation `\texttt{H1}'.}. La température augmente donc avec l'altitude, ce qui semble indiquer un impact de la gravité sur les températures dans la machine.
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_ATE_ProfilsAX_5mm}
+%		\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_Litterature/ATE_ProfilsAX_5mm.png}};}
+		\caption{}
+		\label{fig:ATE_ProfilsAX_5mm}
+	\end{subfigure}		
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_ATE_ProfilsCHX_5mm}
+%		\externalremake
+		\tikz{\draw(0,0) node{\includegraphics[width=.95\textwidth]{../fig/fig_Litterature/ATE_ProfilsCHX_5mm.png}};}
+		\caption{}
+		\label{fig:ATE_ProfilsCHX_5mm}
+	\end{subfigure}	    
+    \caption{Mesures et simulation linéaire de profils de température dans le régénérateur du \textsc{Tacot} pour différentes amplitudes acoustiques \cite{ramadan_design_2021}. \subref{fig:ATE_ProfilsAX_5mm} profils axiaux, et \subref{fig:ATE_ProfilsCHX_5mm}, profils transverses du côté de l'échangeur froid. }
+    \label{fig:ATE_Profils_5mm}
+\end{figure}
+
 \section{Plan du manuscrit}
 Après avoir présenté les éléments de base du travail sur ce réfrigérateur thermoacoustique \textsc{Tacot}, le contexte autour de cette thèse, et l'axe sur lequel elle se concentre, un plan est proposé.\medskip
 

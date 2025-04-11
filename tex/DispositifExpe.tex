@@ -387,7 +387,7 @@ L'instrumentation utilisée est celle conçue au début du projet \cite{ramadan_
 	\external{fig_Capteurs}
 %	\externalremake
 	\tikz{\draw(0,0) node{\includegraphics[width=.97\textwidth]{../fig/fig_Capteurs/Sensors_updated.png}};}
-	\caption{Schéma de la machine avec tous les emplacements des capteurs}
+	\caption{Schéma de la machine avec les emplacements des capteurs, adapté de~\cite{ramadan_design_2021}}
 	\label{fig:Capteurs}
 \end{figure}
 
@@ -415,9 +415,9 @@ La chaîne d'excitation est présentée. Elle n'est pas modifiée durant cette t
 \subsubsection{Chaîne d'acquisition}
 La chaîne d'acquisition se compose de plus de trente capteurs. Tous ne sont pas utilisés, mais peuvent servir de contrôle durant une expérience, pour s'assurer du bon déroulement de celle-ci. Les différentes quantités acquises sont détaillées dans cette partie, car quelques modifications ont été apportées au dispositif de mesure mis en place dans le projet \textsc{Tacot} avant le démarrage de cette thèse.
 
-\paragraph{Alimentation électrique des sources} L'alimentation électrique de la source acoustique principale est mesurée au moyen d'une sonde différentielle pour la tension \echaf{et le courant ?}. Pour la source acoustique secondaire, un multimètre  et une pince de courant (Sefram, SP 280) se chargent de mesurer sa consommation électrique. En parallèle, les tensions aux bornes des deux sources sont affichées sur un oscilloscope pour s'assurer de leur déphasage.
+\paragraph{Alimentation électrique des sources acoustiques} L'alimentation électrique de la source acoustique principale est mesurée au moyen d'une sonde différentielle pour la tension \echaf{et le courant ?}. Pour la source acoustique secondaire, un multimètre  et une pince de courant (Sefram, SP 280) se chargent de mesurer sa consommation électrique. En parallèle, les tensions aux bornes des deux sources sont affichées sur un oscilloscope pour s'assurer de leur déphasage.
 
-\paragraph{Température} Dix-neuf thermocouples Type K de \qty{.5}{\milli\meter} de diamètre sont placés de la manière suivante : quinze thermocouples mesurent la température en différentes positions du noyau, un devant la source acoustique principale, deux derrière celle-ci, et un derrière la source acoustique secondaire. Cependant, la carte d'acquisition utilisée (National Instruments, NI9213) ne comporte que seize entrées, il faut donc sélectionner les trois thermocouples dont les signaux sont mis de côté, suivant les informations recherchées dans une expérimentation donnée. Dans tous les résultats de mesures discutés dans la suite, les thermocouples du noyau et de devant la source acoustique principale sont connectés. Le placement de ces thermocouples d'intérêt est représenté sur la figure~\ref{fig:TCdansNoyau} par les cercles numérotés.
+\paragraph{Température du gaz dans le noyau} Dix-neuf thermocouples Type K de \qty{.5}{\milli\meter} de diamètre sont placés de la manière suivante : quinze thermocouples mesurent la température en différentes positions du noyau, un devant la source acoustique principale, deux derrière celle-ci, et un derrière la source acoustique secondaire. Cependant, la carte d'acquisition utilisée (National Instruments, NI9213) ne comporte que seize entrées, il faut donc sélectionner les trois thermocouples dont les signaux sont mis de côté, suivant les informations recherchées dans une expérimentation donnée. Dans tous les résultats de mesures discutés dans la suite, les thermocouples du noyau et de devant la source acoustique principale sont connectés. Le placement de ces thermocouples d'intérêt est représenté sur la figure~\ref{fig:TCdansNoyau} par les cercles numérotés.
 
 \begin{figure}[!ht]
     \centering
@@ -442,7 +442,7 @@ La chaîne d'acquisition se compose de plus de trente capteurs. Tous ne sont pas
 	\label{fig:PhotosPressionStatDyn}
 \end{figure}
 
-\paragraph{Flux de chaleur extrait par l'échangeur ambiant} Le principe de fonctionnement de cet échangeur est détaillé dans l'annexe~\ref{chap:AHX}. \echaf{déjà dit ?} La quantité de chaleur extraite du côté ambiant du noyau est estimée en calculant la différence de température entre l'entrée d'eau de l'échangeur et sa sortie d'eau. Ces deux températures sont mesurées grâce à deux sondes de platine PT100 connectées sur une carte d'acquisition (National Instruments, NI9217). Ici, l'installation matérielle n'est pas modifiée par rapport au démarrage de la thèse, mais le protocole de mesure de ce flux de chaleur est étoffé au cours de ce travail pour améliorer la fiabilité de la mesure du flux de chaleur extrait par l'échangeur.
+\paragraph{Flux de chaleur extrait par l'échangeur ambiant} Pour mesurer les températures d'eau à l'entrée et la sortie de l'échangeur de chaleur ambiant nécessaires au calcul du flux de chaleur extrait, deux sondes de platine PT100 sont connectées sur une carte d'acquisition (National Instruments, NI9217). Ici, l'installation matérielle n'est pas modifiée par rapport au démarrage de la thèse, mais le protocole de mesure de ce flux de chaleur est étoffé au cours de ce travail pour améliorer la fiabilité de la mesure du flux de chaleur extrait par l'échangeur.
 
 \paragraph{Déplacement des sources} Le piston de chaque source acoustique est équipé d'un accéléromètre. Pour la source acoustique principale, l'accéléromètre (MMF, KS91C), déjà en place au début de cette thèse, est collé sur la face arrière. Pour la source secondaire, le capteur (PCB Piezotronics, 352C23) est collé sur la face avant, après une installation peu conventionnelle détaillée en annexe~\ref{chap:InstrumHP}. Ces capteurs sont choisis de sorte à ne pas trop varier la masse de l'équipage mobile, en particulier pour la source secondaire où la masse du piston et celle de l'ensemble accéléromètre et câble sont du même ordre de grandeur.
 
@@ -674,11 +674,23 @@ La troisième est choisie à un \textit{drive ratio} intermédiaire où $DR=\qty
 
 %\echaf{ajouter de la physique, pourquoi on choisit ces amplitudes là ? Donner l'impression qu'on fait les choses pour une bonne raison, pas comme un automate} \smallskip
 
-\'Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée. 
+\'Eventuellement, une charge thermique peut ensuite être appliquée au noyau dans le cadre d'une expérience annotée `\texttt{Qc*W}' où \texttt{*} représente la puissance injectée.\bigskip
+
+Dans chacun des types d'expérience (`\texttt{water}', `\texttt{acou}' ou `\texttt{Qc*W}'), les durées d'acquisitions sont supérieures à \qty{1}{\hour}, car le régime transitoire peut parfois présenter des comportements surprenants. C'est le cas par exemple, sur la figure~\ref{fig:Repetabilite_V1} qui représente l'évolution temporelle des températures des thermocouples 7 et 8 pour deux expériences identiques. En l'occurrence, le réfrigérateur est placé en positions `\texttt{V1}', à forte amplitude acoustique. Il est possible de remarquer d'une part que les résultats obtenus sont très différents les uns des autres, et surtout d'autre part que le régime transitoire n'est pas atteint.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_Repetabilite_V1}
+    %\externalremake
+    \input{../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1}
+    \caption{\echaf{Figure illustrant des problèmes de répétabilité}}
+    \label{fig:Repetabilite_V1}
+\end{figure}
+
 
 \section{Post-traitement des données}\label{chap:PostTraitement}
 À la fin des acquisitions, les données sont post-traitées en utilisant un code \textsc{Matlab}\textss\textregistered dédié et développé au cours de ce travail, disponible en ligne \cite{fontbonne_postprocessing_2025}.\bigskip
-%
+
 %\subsection{Pré-traitement des fichiers}
 Pendant chaque campagne de mesure réalisée suivant le protocole décrit dans la section~\ref{chap:Acquisitions}, des fichiers bruts de mesures sont générés. Ils présentent deux inconvénients majeurs : leur format est \texttt{*.tdms}, celui de NI LabVIEW, et ils sont très lourds. La première étape de traitement des données est d'extraire uniquement les informations nécessaires pour les préparer à d'autres actions en utilisant un script \textsc{Matlab}\textss\textregistered, et à les sauvegarder dans un fichier \texttt{*.mat}.\medskip
 

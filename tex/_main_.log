@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.11)  11 APR 2025 13:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.11)  11 APR 2025 16:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2801,20 +2801,21 @@ _V20.pdf>] (../fig/fig_TenuePressionStatique/tex/fig_TenuePressionStatique.tex
 [27 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf>]
 (../fig/fig_AcouExample/tex/fig_AcouExample.tex
 ===== Image 'external/fig_AcouExample0' is up-to-date. ======
+) (../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1.tex
+===== Image 'external/fig_Repetabilite_V10' is up-to-date. ======
 )
 
-[28 <./external/fig_AcouExample0.pdf>] Excluding 'comment' comment.)
-(EnsembleSimus.tex
+[28 <./external/fig_AcouExample0.pdf>] Excluding 'comment' comment.
 
-[29]
+[29 <./external/fig_Repetabilite_V10.pdf>]) (EnsembleSimus.tex
 
-[30
-
-]
+[30]
 Chapitre III.
 
 
-[31]
+[31
+
+]
 
 [32
 
@@ -3042,7 +3043,7 @@ LaTeX Info: Symbol \textminus not provided by
 
 [38 <./external/fig_Comsol_TambiantRix0.pdf> <./external/fig_Comsol_AdiabRix0.p
 df>]
-<example-image-a.pdf, id=2323, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=2347, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 397.
@@ -3103,19 +3104,22 @@ Chapitre IV.
 ===== Image 'external/fig_PerfConvNat_100W_Qa0' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_100W_COP.tex
 ===== Image 'external/fig_PerfConvNat_50W_COP1' is up-to-date. ======
+) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
+===== Image 'external/fig_HeatOnly_CHXout_H1H20' is up-to-date. ======
 )
 
 [48
 
-]
+] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Low.tex
+===== Image 'external/fig_Acou_CHXout_H1H2_Low0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Mid.tex
+===== Image 'external/fig_Acou_CHXout_H1H2_Mid0' is up-to-date. ======
+) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
+===== Image 'external/fig_HeatOnly_CHXout_V1V20' is up-to-date. ======
+)
 
 [49 <./external/fig_PerfConvNat_Tf_0W0.pdf> <./external/fig_PerfConvNat_0W_Ta0.
 pdf> <./external/fig_PerfConvNat_0W_Qa0.pdf>]
-
-LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_High' on page 50 undefined on in
-put line 289.
-
-
 
 [50 <./external/fig_PerfConvNat_50W_Tf0.pdf> <./external/fig_PerfConvNat_50W_Ta
 0.pdf> <./external/fig_PerfConvNat_50W_Qa0.pdf> <./external/fig_PerfConvNat_50W
@@ -3123,39 +3127,14 @@ _COP0.pdf>]
 
 [51 <./external/fig_PerfConvNat_100W_Tf0.pdf> <./external/fig_PerfConvNat_100W_
 Ta0.pdf> <./external/fig_PerfConvNat_100W_Qa0.pdf> <./external/fig_PerfConvNat_
-50W_COP1.pdf>] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
-===== Image 'external/fig_HeatOnly_CHXout_H1H20' is up-to-date. ======
-) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Low.tex
-===== Image 'external/fig_Acou_CHXout_H1H2_Low0' is up-to-date. ======
-)
-
-[52 <./external/fig_HeatOnly_CHXout_H1H20.pdf>]
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Mid.tex
-===== Image 'external/fig_Acou_CHXout_H1H2_Mid0' is up-to-date. ======
-)
-
-LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_High' on page 53 undefined on in
-put line 346.
-
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 346.
-
-
-[53 <./external/fig_Acou_CHXout_H1H2_Low0.pdf> <./external/fig_Acou_CHXout_H1H2
-_Mid0.pdf>] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
-===== Image 'external/fig_HeatOnly_CHXout_V1V20' is up-to-date. ======
-)
-
-[54 <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Low.tex
+50W_COP1.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_Mid0' is up-to-date. ======
 )
 
-[55 <./external/fig_Acou_CHXout_V1V2_Low0.pdf>]
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_High.tex
+[52 <./external/fig_HeatOnly_CHXout_H1H20.pdf> <./external/fig_Acou_CHXout_H1H2
+_Low0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_High.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_H1H2.tex
 ===== Image 'external/fig_HeatOnly_CHXin_H1H20' is up-to-date. ======
@@ -3166,30 +3145,31 @@ _Mid0.pdf>] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
 )
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 449.
+            Default family used instead on input line 405.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 449.
+            Default family used instead on input line 405.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 449.
+            Default family used instead on input line 405.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 449.
+            Default family used instead on input line 405.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 449.
+            Default family used instead on input line 405.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 449.
+            Default family used instead on input line 405.
 
 
-[56 <./external/fig_Acou_CHXout_V1V2_Mid0.pdf> <./external/fig_Acou_CHXout_V1V2
-_High0.pdf>]
+LaTeX Warning: Reference `chap:Acou_CHXout_H1H2_low' on page 53 undefined on in
+put line 405.
 
-[57 <./external/fig_HeatOnly_CHXin_H1H20.pdf> <./external/fig_HeatOnly_Regmid_H
-1H20.pdf> <./external/fig_HeatOnly_AHXin_H1H20.pdf>]
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
+
+
+[53 <./external/fig_Acou_CHXout_H1H2_Mid0.pdf> <./external/fig_HeatOnly_CHXout_
+V1V20.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Low.tex
 ===== Image 'external/fig_Acou_Regmid_H1H2_Low0' is up-to-date. ======
@@ -3198,25 +3178,29 @@ _High0.pdf>]
 )
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 492.
+            Default family used instead on input line 448.
+
+
+[54 <./external/fig_Acou_CHXout_V1V2_Low0.pdf> <./external/fig_Acou_CHXout_V1V2
+_Mid0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 517.
+            Default family used instead on input line 473.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 517.
+            Default family used instead on input line 473.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 517.
+            Default family used instead on input line 473.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 517.
+            Default family used instead on input line 473.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 518.
+            Default family used instead on input line 474.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 518.
+            Default family used instead on input line 474.
  (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid.tex
@@ -3226,11 +3210,17 @@ LaTeX Info: Symbol \textminus not provided by
 )
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 561.
+            Default family used instead on input line 517.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 561.
- (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
+            Default family used instead on input line 517.
+
+
+[55 <./external/fig_Acou_CHXout_V1V2_High0.pdf>]
+
+[56 <./external/fig_HeatOnly_CHXin_H1H20.pdf> <./external/fig_HeatOnly_Regmid_H
+1H20.pdf> <./external/fig_HeatOnly_AHXin_H1H20.pdf>]
+(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High.tex
 ===== Image 'external/fig_Acou_Regmid_H1H2_High0' is up-to-date. ======
@@ -3238,33 +3228,31 @@ LaTeX Info: Symbol \textminus not provided by
 ===== Image 'external/fig_Acou_AHXin_H1H2_High0' is up-to-date. ======
 )
 
-[58] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_V1V2.tex
+[57 <./external/fig_Acou_CHXin_H1H2_Low0.pdf> <./external/fig_Acou_Regmid_H1H2_
+Low0.pdf> <./external/fig_Acou_AHXin_H1H2_Low0.pdf>]
+(../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_V1V2.tex
 ===== Image 'external/fig_HeatOnly_CHXin_V1V20' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_Regmid_V1V2.tex
 ===== Image 'external/fig_HeatOnly_Regmid_V1V20' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_AHXin_V1V2.tex
 ===== Image 'external/fig_HeatOnly_AHXin_V1V20' is up-to-date. ======
-)
-
-[59 <./external/fig_Acou_CHXin_H1H2_Low0.pdf> <./external/fig_Acou_Regmid_H1H2_
-Low0.pdf> <./external/fig_Acou_AHXin_H1H2_Low0.pdf>]
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low.tex
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Low.tex
 ===== Image 'external/fig_Acou_Regmid_V1V2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Low.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_Low0' is up-to-date. ======
-) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
+)
+
+[58 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H2_
+Mid0.pdf> <./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
+(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_Regmid_V1V2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_Mid0' is up-to-date. ======
-)
-
-[60 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H2_
-Mid0.pdf> <./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_High.tex
 ===== Image 'external/fig_Acou_Regmid_V1V2_High0' is up-to-date. ======
@@ -3272,39 +3260,36 @@ Mid0.pdf> <./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
 ===== Image 'external/fig_Acou_AHXin_V1V2_High0' is up-to-date. ======
 )
 
-[61 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1H2
+[59 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1H2
 _High0.pdf> <./external/fig_Acou_AHXin_H1H2_High0.pdf>]
 
-[62 <./external/fig_HeatOnly_CHXin_V1V20.pdf> <./external/fig_HeatOnly_Regmid_V
+[60 <./external/fig_HeatOnly_CHXin_V1V20.pdf> <./external/fig_HeatOnly_Regmid_V
 1V20.pdf> <./external/fig_HeatOnly_AHXin_V1V20.pdf>]
 
-[63 <./external/fig_Acou_CHXin_V1V2_Low0.pdf> <./external/fig_Acou_Regmid_V1V2_
+[61 <./external/fig_Acou_CHXin_V1V2_Low0.pdf> <./external/fig_Acou_Regmid_V1V2_
 Low0.pdf> <./external/fig_Acou_AHXin_V1V2_Low0.pdf>]
-(../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1.tex
-===== Image 'external/fig_Repetabilite_V10' is up-to-date. ======
-)
 
-[64 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid_V1V2_
+[62 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid_V1V2_
 Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_Mid0.pdf>]) (Conclusion.tex
 
-[65 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_Regmid_V1V2
+[63 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_Regmid_V1V2
 _High0.pdf> <./external/fig_Acou_AHXin_V1V2_High0.pdf>]
 
-[66 <./external/fig_Repetabilite_V10.pdf>]
+[64]
 Chapitre V.
 
 
-[67
+[65
 
 ]) (Perspectives.tex
 
-[68
+[66
 
 ]
 Chapitre VI.
 
 
-[69
+[67
 
 ]
 ===== Image 'external/fig_ActiveControl_ADAU17010' is up-to-date. ======
@@ -3314,7 +3299,7 @@ LaTeX Info: Symbol \textmu not provided by
             Default family used instead on input line 60.
 
 
-[70
+[68
 
  <./external/fig_ActiveControl_ADAU17010.pdf> <./external/fig_ActiveControl_Tee
 nsy410.pdf
@@ -3325,7 +3310,7 @@ pdfTeX warning: pdflatex (file ./external/fig_ActiveControl_Teensy410.pdf): PDF
 ===== Image 'external/fig_Geometrie_FeedbackLoop0' is up-to-date. ======
 ))
 
-[71 <./external/fig_Geometrie_FeedbackLoop0.pdf>] (IndexNotations.tex
+[69 <./external/fig_Geometrie_FeedbackLoop0.pdf>] (IndexNotations.tex
 Annexe A.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -3711,7 +3696,7 @@ Annexe F.
 
 [4]
 
-[5] (Abstract.tex)
+[5]
 
 [6
 
@@ -3726,21 +3711,16 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `_main_.out' has not changed.
 (rerunfilecheck)             Checksum: 9716171B0F69FE195D037B478473F7BC;22716.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                _main_
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 78909 strings out of 473523
- 2019352 string characters out of 5707334
- 3274250 words of memory out of 5000000
- 100166 multiletter control sequences out of 15000+600000
- 736703 words of font info for 204 fonts, out of 8000000 for 9000
+ 78889 strings out of 473523
+ 2018908 string characters out of 5707334
+ 3273959 words of memory out of 5000000
+ 100155 multiletter control sequences out of 15000+600000
+ 733525 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,158p,4691b,2955s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -3765,9 +3745,9 @@ rs/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona
 /type1/nowacki/iwona/iwonam.pfb><C:/Users/juliette utilisateur/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/juliette utilisateur/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on _main_.pdf (105 pages, 31027308 bytes).
+Output written on _main_.pdf (103 pages, 31019254 bytes).
 PDF statistics:
- 4459 PDF objects out of 5155 (max. 8388607)
- 524 named destinations out of 1000 (max. 500000)
+ 4433 PDF objects out of 5155 (max. 8388607)
+ 518 named destinations out of 1000 (max. 500000)
  1562 words of extra memory for PDF output out of 10000 (max. 10000000)
 

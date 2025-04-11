@@ -1,0 +1,424 @@
+\documentclass[a4paper,11pt]{book}
+%\documentclass[a4paper,12pt]{report}
+%---------------------------------------------------------------------%
+% MODIFY TEXT APPEARANCE
+%---------------------------------------------------------------------%
+% \usepackage[default]{comicneue}
+
+%\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+%\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[light,math]{iwona}
+\renewcommand{\sldefault}{it} % In headers, automatically replace \textsl (which doesn't exist for iwona) by \textit
+
+\newcommand{\deriv}{\mathrm{d}}
+\newcommand{\Deriv}{\mathrm{D}}
+\newcommand{\Rayleigh}{\mathrm{Ra}}
+\newcommand{\Prandtl}{\mathrm{Pr}}
+\newcommand{\Nusselt}{\mathrm{Nu}}
+\newcommand{\Reynolds}{\mathrm{Re}}
+\newcommand{\Grashof}{\mathrm{Gr}}
+\newcommand{\Peclet}{\mathrm{Pe}}
+\newcommand{\COP}{\mathrm{COP}}
+
+\newcommand{\RE}{\mathfrak{Re}}
+\newcommand{\IM}{\mathfrak{Im}}
+%\newcommand{\RE}{\mathrm{Re}}
+%\newcommand{\IM}{\mathrm{Im}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\emergencystretch=1em
+\let\epsilon\varepsilon
+%\let\phi\varphi
+\let\textss\textsuperscript
+
+\usepackage{layout}
+\renewcommand{\thesubparagraph}{\theparagraph.\roman{subparagraph}}
+\renewcommand{\theparagraph}{\thesubsubsection.\alph{paragraph}}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\thechapter.\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+
+
+\newcommand{\echaf}[1]{\textcolor{red}{\{#1\}}}
+%---------------------------------------------------------------------%
+% PACKAGES
+%---------------------------------------------------------------------
+\newcommand{\mylocaltoc}{
+	\vfill
+	\hrule \vspace{.5cm}
+	{\hypersetup{linkcolor = black}
+		\localtableofcontents
+	}%
+	\vspace{.5cm} \hrule
+	\vfill
+	\clearpage
+}
+
+\usepackage[french]{babel}
+\usepackage{csquotes}
+\usepackage{wrapfig}
+\usepackage{comment}
+\usepackage{multicol}
+\usepackage{array}
+	\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	\setlength{\extrarowheight}{5pt}
+\usepackage{longtable}
+\usepackage{arydshln}
+	\setlength\dashlinedash{1pt}
+	\setlength\dashlinegap{1.5pt}
+%	\setlength\arrayrulewidth{1cm}
+\usepackage{tabularray}
+	
+%\newcommand{\mycite}[4]{
+%	\begin{flushright}
+%	\begin{tabular}{R{#4}L{#4}}
+%		\multicolumn{2}{r}{#1}\\
+%		\textit{-- #2} & \textbf{#3}
+%	\end{tabular}
+%\end{flushright}
+%}
+\usepackage{float}
+% -----------------------------------------------------
+\usepackage[dvipsnames]{xcolor}
+	\definecolor{PythonBlue}{HTML}{1f77b4}
+	\definecolor{PythonOrange}{HTML}{ff7f0e}
+	\definecolor{PythonGreen}{HTML}{2ca02c}
+	\definecolor{PythonRed}{HTML}{d62728}
+	\definecolor{PythonPurple}{HTML}{9467bd}
+	\definecolor{PythonBrown}{HTML}{8c564b}
+	\definecolor{PythonPink}{HTML}{e377c2}
+	\definecolor{PythonGray}{HTML}{7f7f7f}
+	\definecolor{PythonOlive}{HTML}{bcbd22}
+	\definecolor{PythonCyan}{HTML}{17becf}
+	%----------------------------------
+	\definecolor{MatlabBlue}{rgb}{0, 0.4470, 0.7410}
+	\definecolor{MatlabDeepBlue}{HTML}{00375c}
+	\definecolor{MatlabOrange}{rgb}{0.8500, 0.3250, 0.0980}
+	\definecolor{MatlabDeepOrange}{HTML}{69280c}
+	\definecolor{MatlabYellow}{rgb}{0.9290, 0.6940, 0.1250}
+	\definecolor{MatlabDeepYellow}{HTML}{7a5a0b}
+	\definecolor{MatlabPurple}{rgb}{0.4940, 0.1840, 0.5560}
+	\definecolor{MatlabGreen}{rgb}{0.4660 ,0.6740 ,0.1880}
+	\definecolor{MatlabCyan}{rgb}{0.3010, 0.7450, 0.9330}
+	\definecolor{MatlabBrown}{rgb}{0.6350, 0.0780, 0.1840}
+	% %----------------------------------
+	\definecolor{Blue1}{HTML}{330099}%{030164} %
+	\definecolor{Blue2}{HTML}{000099}%{050296}
+	\definecolor{Blue3}{HTML}{003399}%{0603c8}
+	\definecolor{Blue4}{HTML}{6600ff}%{0804fa}
+	\definecolor{Blue5}{HTML}{0000ff}%{3936fb}
+	\definecolor{Blue6}{HTML}{0066ff}%{6b68fc}
+
+	\definecolor{Cyan1}{HTML}{0099cc}%{004a66} %
+	\definecolor{Cyan2}{HTML}{009999}%{006f99}
+	\definecolor{Cyan3}{HTML}{339999}%{0094cc}
+	\definecolor{Cyan4}{HTML}{00ddff}%{00b9ff}
+	\definecolor{Cyan5}{HTML}{00dddd}%{33c7ff}
+	\definecolor{Cyan6}{HTML}{66dddd}%{66d5ff}
+
+	\definecolor{Green1}{HTML}{009966}%{006600} %
+	\definecolor{Green2}{HTML}{009900}%{009900}
+	\definecolor{Green3}{HTML}{669900}%{00cc00}
+	\definecolor{Green4}{HTML}{00ffcc}%{00ff00}
+	\definecolor{Green5}{HTML}{00ff00}%{33ff33}
+	\definecolor{Green6}{HTML}{ccff00}%{66ff66}
+
+	\definecolor{Yellow1}{HTML}{b56727}%{656600} %
+	\definecolor{Yellow2}{HTML}{be5504}%{999900}
+	\definecolor{Yellow3}{HTML}{fc6a03}%{cbcc00}
+	\definecolor{Yellow4}{HTML}{e5c000}%{feff00}
+	\definecolor{Yellow5}{HTML}{ffe600}%{feff33}
+	\definecolor{Yellow6}{HTML}{f6e683}%{feff66}
+	
+	\definecolor{Red1}{HTML}{990033}%{660000} %
+	\definecolor{Red2}{HTML}{990000}%{990000}
+	\definecolor{Red3}{HTML}{993300}%{cc0000}
+	\definecolor{Red4}{HTML}{ff0066}%{ff0000}
+	\definecolor{Red5}{HTML}{ff0000}%{ff3333}
+	\definecolor{Red6}{HTML}{ff6600}%{ff6666}
+	%----------------------------------
+	\definecolor{ju0}{HTML}{000000}
+	\definecolor{ju1}{HTML}{2d0377}
+	\definecolor{ju2}{HTML}{7e03a8}
+	\definecolor{ju3}{HTML}{b52f8c}
+	\definecolor{ju4}{HTML}{de5f65}
+	\definecolor{ju5}{HTML}{f89540}
+	\definecolor{ju6}{HTML}{fbd524}
+	\definecolor{ju7}{HTML}{f0f921}
+	%----------------------------------
+	\definecolor{PlasmaBlue}{HTML}{0C0786}
+	\definecolor{PlasmaViolet}{RGB}{168,34,150}
+	\definecolor{PlasmaPink}{HTML}{CA4678}
+	\definecolor{PlasmaOrange}{RGB}{247,147,65}
+	\definecolor{PlasmaYellow}{HTML}{EFF821}
+	%----------------------------------
+%	\input{Plasma}
+%	\input{Inferno}
+% -----------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{makeidx}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{nicefrac}
+\usepackage{bm}
+\usepackage{mwe}
+\usepackage{graphicx}% Include figure files
+\usepackage{caption}
+\usepackage{subcaption}
+	\renewcommand\thesubfigure{(\alph{subfigure})}
+	\captionsetup[subfigure]{labelformat=simple}
+	\captionsetup{labelfont=bf,font=footnotesize,width=.97\textwidth}
+	\subcaptionsetup{skip=0pt}
+\usepackage{dcolumn}% Align table columns on decimal point
+
+\usepackage[
+	left=2cm,right=2cm,					% Pour un fichier numérique (marges égales à droite et gauche)
+%	inner=3cm,textwidth=17cm,		% Pour imprimer (plus de marge au centre côté reliure)
+	top=2cm,bottom=1.75cm]{geometry}
+
+\pagenumbering{arabic}
+\usepackage{fancyhdr}
+\usepackage{siunitx}
+	\sisetup{locale = FR,
+	    detect-all,
+	    exponent-product = \cdot,
+    	group-separator = \text{\,},
+%    	per-mode = symbol
+    	}
+    \DeclareSIUnit[quantity-product = {\,}]
+		\bar{\text{bar}}
+	\DeclareSIUnit[quantity-product = {\,}]
+		\jour{\text{j}}
+\usepackage{multirow}
+%\usepackage{minitoc}
+\usepackage{etoc}
+\usepackage{hyperref}
+	\hypersetup{pdfborder = {0 0 0},%borderless hyperlinks
+    	colorlinks = true,
+    	citecolor=PythonGreen,
+    	urlcolor = MatlabBlue,
+    	linkcolor = MatlabBlue}
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{2}
+\etocsettocdepth{3}
+
+\usepackage[
+	style=numeric-comp,
+	sorting=none,
+	backend=biber,
+	maxcitenames=99,
+	url=false,
+	eprint=false]{biblatex} %Imports biblatex package
+\addbibresource{../bib/phd_bib.bib}
+%---------------------------------------------------------------------%
+% TIKZ PACKAGES
+%---------------------------------------------------------------------%
+\usepackage{tikz}
+	\usetikzlibrary{patterns,patterns.meta}
+	\usetikzlibrary{shapes}
+	\usetikzlibrary{arrows.meta}
+	\usetikzlibrary{calc,shadows,matrix}
+	\usetikzlibrary{decorations.pathreplacing}
+	\usetikzlibrary{automata,positioning}
+	\usetikzlibrary{math,fit}
+	\usetikzlibrary{fadings,shadings}
+	\usetikzlibrary{mindmap}
+	\tikzset{>=latex}
+	\tikzset{arw/.style={>={latex[length=3mm,width=5mm]},line width=2mm,draw=gray}}
+
+\usepackage[european,
+	american inductors,
+	american resistors,
+	straight voltages]{circuitikz}
+	\usetikzlibrary{babel,patterns,
+	arrows,
+	decorations.pathmorphing,
+	backgrounds,
+	positioning,
+	fit,
+	matrix}
+	\ctikzset{quadpoles/transformer/inner=1,
+		quadpoles/transformer/width=0.6,
+		quadpoles/gyrator/inner=1,
+		quadpoles/gyrator/width=0.75,
+		quadpoles style=inline,
+		inductors/width=.6,
+		inductors/coils=4,
+		resistors/scale=.75}
+	\newcommand{\myctikz}[1]{\begin{circuitikz}#1\end{circuitikz}}
+%---------------------------------------------------------------------%
+%---------------------------------------------------------------------%
+% PGFPLOTS PACKAGES
+%---------------------------------------------------------------------%
+\usepackage{pgfplots}
+	\usepgfplotslibrary{patchplots}
+	\usepgfplotslibrary{fillbetween}
+	\usepgfplotslibrary{polar} 
+	\usetikzlibrary{pgfplots.polar}
+	\pgfplotsset{every axis ticks/.append style={font=\sffamily\footnotesize},
+	compat=1.18}%1.18
+	\pgfkeys{/pgf/number format/.cd,int detect,1000 sep={\,},min exponent for 1000 sep=4}
+	\pgfplotsset{
+    	legend image with text/.style={
+        legend image code/.code={%
+        \node[anchor=center] at (0.3cm,0cm) {#1};
+        }
+    },
+}
+%		\input{pgfplotsset_colormap_plasma}
+
+%---------------------------------------------%
+% EXTERNAL
+%---------------------------------------------%
+\usepgfplotslibrary{external} 
+	\tikzexternalize[optimize=false]
+	\tikzsetexternalprefix{external/}
+	\newcommand{\external}[1]{\tikzsetfigurename{#1}}
+	\newcommand{\externalremake}{\tikzset{external/remake next}}
+
+
+%-----------------------------------------------------------------%
+% TITLE PAGE
+%-----------------------------------------------------------------%
+\title{
+    %{ \includegraphics[height=3cm]{{logo/Institut_P'_logo.png}}} \hfill \includegraphics[height=3cm]{{logo/CNRS_logo.pdf}} \hfill { \includegraphics[height=3.7cm]{{logo/laum-logo.png}}}
+%    \includegraphics[height=2cm]{{/run/media/ohmenkoler/Samsung_T5/Docs/Université/Templates_LaTex/Logos/lemans-universite-large.jpg}}\hfill\includegraphics[height=2cm]{{/run/media/ohmenkoler/Samsung_T5/Docs/Université/Templates_LaTex/Logos/ufr.PNG}}
+    %\vfill
+    %\includegraphics[width=.4\textwidth]{{logo/Université_de_Poitiers_(logo_2012).png}}
+%    \includegraphics[height=4cm]{{/run/media/ohmenkoler/Samsung_T5/Docs/Université/Templates_LaTex/Logos/imdea.JPG}}
+{\small
+   	\textbf{THÈSE}
+   	\vfill
+
+	Pour l’obtention du Grade de
+	\vfill
+
+	DOCTEUR DE L’UNIVERSITÉ DE POITIERS
+	\vfill
+
+	(ÉCOLE SUPÉRIEURE d’INGÉNIEURS de POITIERS)
+
+	(Diplôme National - Arrêté du 25 mai 2016)
+	\vfill
+
+	École Doctorale 651 :
+
+	MIMME – Mathématiques – Informatique – Matériaux – Mécanique - Energétique
+	\vfill
+
+	Secteur de Recherche :
+
+	Acoustique
+	\vfill
+	
+	Présentée par :
+	
+	Martin Fontbonne
+	
+%}
+    \vfill
+%        \hrule\leavevmode\\[0.3cm]
+        \textbf{\Large \'Etude de l'impact de la convection naturelle sur la distribution de température dans le noyau d'une pompe à chaleur thermoacoustique compacte coaxiale} %\\[0.65cm]
+%        \hrule
+    \vfill
+%{\normalsize
+	Direction de thèse :\smallskip 
+	
+	\begin{tblr}{rows = {12pt}, columns = {.5\textwidth, l}, column{1} = {.3\textwidth, font=\bf}}
+		Hélène Bailliet & Institut Pprime, Université de Poitiers \\
+		Jean-Christophe Valière & Institut Pprime, Université de Poitiers \\	
+		Gaëlle Poignand & LAUM, Le Mans Université
+	\end{tblr}
+	\vfill
+
+	Soutenue le 17 juin 2025
+	\vfill
+	
+	devant la Commission d'Examen
+	\vfill
+	
+	\textbf{\underline{JURY}}
+	\vfill
+	
+	\begin{tabular}{llr}
+	\textbf{D. \textsc{Baltéan-Carlès}} & Maîtresse de conférence, LISN, Sorbonne Université & \textit{Rapporteure} \\
+	\textbf{F. \textsc{Lanzetta}} & Professeur, FEMTO-ST, Université Bourgogne Franche-Comté & \textit{Rapporteur} \\
+	\textbf{R. \textsc{Keolian}} & Professeur \'Emérite, College of Engineering, University of Pennsylvania & \textit{Examinateur} \\
+	\textbf{G. \textsc{Penelet}} & Professeur, LAUM, Le Mans Université & \textit{Examinateur} \\
+	\textbf{I. \textsc{Ramadan}} & Maître de conférence, Institut PPRIME, Université de Poitiers & \textit{Examinateur} \\
+	\textbf{H. \textsc{Bailliet}} & Maîtresse de conférence, Institut PPRIME, Université de Poitiers & \textit{Directrice} \\
+	\textbf{G. \textsc{Poignand}} & Ingénieure d'étude, LAUM, Le Mans Université & \textit{Codirectrice} \\
+	\textbf{J.-C. \textsc{Valière}} & Professeur, Institut PPRIME, Université de Poitiers & \textit{Codirecteur} 
+	\end{tabular}
+	
+
+	
+}
+}%vertically center text
+
+\author{}
+\date{}
+%\author{\begin{tabular}{r @{ } l}
+%Auteur : & Martin Fontbonne\\
+%Encadrants : & Hélène Bailliet, \textit{Université de Poitiers}\\
+%	& Jean-Christophe Valière, \textit{Université de Poitiers}\\
+%	& Gaëlle Poignand, \textit{Le Mans Université}
+%\end{tabular}}
+%\date{\echaf{??} 2025}
+
+%\dominitoc
+\raggedbottom
+%---------------------------------------------------------------------%
+\begin{document}
+
+{
+%\scriptsize
+
+\vfill
+
+{\Large Résumé :}\medskip
+\begin{multicols}{2}
+La thermoacoustique est un domaine interdisciplinaire à l'interface entre les transferts thermiques, la mécanique des fluides et l'acoustique, et concerne l'étude des interactions entre les ondes acoustiques et les variations de température. Dans cette thèse portant sur une pompe à chaleur thermoacoustique, l'accent est mis sur l'impact de la convection naturelle sur la distribution de température complexe au sein de son noyau.
+
+La convection naturelle est un phénomène où des variations de densité causée par des différences de température provoquent un mouvement de fluide et un transfert de chaleur. Ceux-ci peuvent influer sur les performances de la machine et  perturber la distribution de température déjà complexe dans un noyau thermoacoustique.
+
+L'objectif principal de cette thèse expérimentale est d'analyser et de quantifier l'effet de la convection naturelle sur cette distribution de température. Une approche combinant expérimentations réalisées en suivant un protocole minutieux, et simulations numériques est adoptée pour étudier les mécanismes sous-jacents régissant les transferts thermiques dans le noyau, en pivotant la pompe à chaleur et son noyau dans diverses orientations d'intérêt. Un modèle théorique temporel du régime transitoire est également développé pour prédire le comportement du système et ainsi améliorer la compréhension de la machine. Il est montré que la distribution de température est grandement impactée par la circulation de gaz dans la cavité s'ouvrant sur le noyau.
+
+Un espace dans la littérature portant sur la thermoacoustique est ainsi comblé par les résultats de cette étude de l'impact de la convection naturelle sur la distribution de température dans le noyau de la pompe à chaleur thermoacoustique.
+\end{multicols}
+\bigskip
+
+{\large \textit{Mots clés :}} thermoacoustique,  distribution de température, convection naturelle, conduction thermique, étude expérimentale, simulations numériques, modèles théoriques.
+
+\vfill
+
+{\Large Abstract:}\medskip
+\begin{multicols}{2}
+Thermoacoustics is an interdisciplinary domain, at the interface between heat transfers, fluid mechanics and acoustics, and constists in the interaction between acoustic waves and temperature variations. This work is focused on a thermoacoustic heat pump, and especially on the impact of natural convection on the complex temperature distribution in its core.
+
+Natural convection is a phenomenon where density variations caused by temperature differences set a fluid in motion and transfer heat. Those can influence the devices' perfomances and disturb the already complex temperature distributions in a thermoacoustic core.
+
+The main goal of this experimental PhD work is to analyse and quantify the effect of natural convection on that temperature distribution. Experimental studies performed by following a thorough protocol, and numerical simulations are combined to study the heat transfer mecanisms at play in the core, by rotating the heat pump and its core in all sorts of interesting orientations. A time domain, analytical simulation of the transient regime is also developed in order to predict the behaviour of the system and thus, enhance the understanding of the machine. It is proven that the temperature distribution is greatly impacted by the gaz flow in the cavity facing the core.
+
+A space in literature about thermoacoustics is filled with the results of this study of the impact of natural convection on the temperature distribution in the core of a thermoacoustic heat pump.
+\end{multicols}
+\bigskip
+
+{\large \textit{Keywords:}} thermoacoustics, temperature distribution, natural convection, thermal conduction, experimental study, numerical simulations, theoretical models.
+
+\vfill
+}
+
+\end{document}

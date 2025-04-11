@@ -26,11 +26,11 @@
     	
     \end{axis}
 
-	\begin{axis}[name=secplot,width={.4*\width},height={.6*\height},
+	\begin{axis}[name=secplot,width={.4*\width},height={.7*\height},
 %	grid=both,minor tick num=4,
 %    grid style={line width=.1pt, draw=gray!10},
 %    major grid style={line width=.2pt,draw=gray!50},
-    at={($(mainplot.north east)+(-2em,-3em)$)},anchor=north east,
+    at={($(mainplot.east)+(-5mm,4mm)$)},anchor=east,
 %    xlabel={Temps $t$ (\unit{\s})},
 %    ylabel={ $\theta$ (\unit{\kelvin})},
     xmin=3200,xmax=3500,
@@ -43,6 +43,8 @@
     
     	\addplot[ultra thick,Plasma1] file {{../fig/fig_WaterOnlyExample/data/v2/Water_PT1.txt}};
     	\addplot[ultra thick,Plasma75] file {{../fig/fig_WaterOnlyExample/data/v2/Water_PT2.txt}};
+    	
+    	\draw[<->] (3350,15.238)  -- (3350,15.322) node[midway, right]{\qty{8.4e-2}{\degreeCelsius}};
     \end{axis}
     
     \draw[dashed] (a1) -- (secplot.south west) (a2) -- (secplot.north east);

@@ -1,6 +1,6 @@
 \begin{tikzpicture}
     \def\width{.9*\textwidth};
-    \def\height{.45*\width};
+    \def\height{.4*\width};
     \def\spx{.25cm};
     \def\spy{1.25cm};
     \def\legx{.5cm};
@@ -9,20 +9,44 @@
 
     
     \begin{axis}[name=TenuePress,width={\width},height={\height},
-    grid=both, minor tick num=10, 
+    grid=both, minor tick num=4, 
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
     xlabel={Temps $t$ (\unit{\jour})},
     ylabel={Pression statique $p_0$ (\unit{\pascal})},
-%    xmin=0,xmax=75,ymin=0,ymax=.5/1000,
+%    xmin=0,xmax=75,
+	ymin=20,ymax=45,
 %    xtick={0,25,50,75,100}, ytick={0,1e-4,...,10e-4},
     scaled ticks=false, tick label style={/pgf/number format/fixed},
     domain=0:100,
     legend cell align={left},
-    legend style = {at={($(1,1)+(-2mm,-2mm)$)},anchor = north east,rounded corners}
+    legend style = {at={($(0,0)+(2mm,2mm)$)},anchor = south west,rounded corners, legend columns=3}
     ]
     
-%    \addplot[Plasma1, ultra thick] coordinates {(1,1),}
-
+    \addlegendimage{empty legend}\addlegendentry{}
+    \addlegendimage{legend image with text=Mesure}\addlegendentry{}
+    \addlegendimage{legend image with text=Fit}\addlegendentry{}
+    
+    \addlegendimage{legend image with text=02/03/22}\addlegendentry{}
+    
+	\addplot[Plasma1, only marks, mark=*, mark size= 3pt] coordinates {(0,39.8) (1,39.2) (5,38.49) (14,37.63) (21,36.59) (27,35.77) (29,35.5) (48,33.53)};\addlegendentry{}
+	
+	\addplot[Plasma1, dashed, domain=0:48] {-.1268*x+39.369};\addlegendentry{}   
+	
+	\addlegendimage{legend image with text=30/11/23}\addlegendentry{} 
+	
+    
+    \addplot[Plasma43, only marks, mark=*, mark size= 3pt] coordinates {(0,40.2) (4,39.5) (11,39.15) (20,38.15) (41,37.9)};\addlegendentry{}
+    
+	\addplot[Plasma43, dashed, domain=0:41] {-.0536*x+39.794};\addlegendentry{}
+	
+	
+	\addlegendimage{legend image with text=10/01/24}\addlegendentry{} 
+    
+    \addplot[Plasma85, only marks, mark=*, mark size= 3pt] coordinates {(0,40) (14,39.4)};\addlegendentry{}
+    
+	\addplot[Plasma85, dashed, domain=0:14] {-.0429*x+40};\addlegendentry{}
+	
+	
     \end{axis}
 \end{tikzpicture}

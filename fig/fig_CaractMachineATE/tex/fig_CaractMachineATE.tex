@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\fill[gray!50,rounded corners](-1.5,-1) rectangle (1.5,1) node[midway,align=center,text=black]{\textsc{Tacot}};
+			
+	\draw[->,very thick,MatlabBlue](0,-2.4) -- (0,-1.1) node[midway,left]{$Q_f=\qty{290}{\watt}$};
+	\draw[->,very thick,MatlabOrange](0,1.1) -- (0,2.4) node[midway,left]{$Q_a=\qty{367}{\watt}$};
+	\draw[<-,very thick](-1.6,0) -- ++(-3,0) node(a){} node[midway,above]{$\dot W_{ac}=\qty{315.6}{\watt}$};
+	
+	\fill[black!50,rounded corners] ($(a.center)+(-.1,-.75)$) rectangle ++(-2,1.5) node[midway,text=black]{\begin{tabular}{c} Sources\\acoustiques \end{tabular}} node(b){};
+	
+	\draw[<-,very thick] ($(b.center)+(-.1,-1/3*1.5)$) -- ++(-3,0) node[midway, above]{$\dot W_e^{(SA1)}=\qty{180.2}{\watt}$};
+	\draw[<-,very thick] ($(b.center)+(-.1,-2/3*1.5)$) -- ++(-3,0) node(c)[circle]{} node[midway, below]{$\dot W_e^{(SA2)}=\qty{12.4}{\watt}$};
+	
+	\draw[MatlabOrange, ultra thick](3,2.5) node(d1){} -- ($(d1 -| c)+(-1.5,0)$) node[near end,below]{$T_a=\qty{47.2}{\degreeCelsius}$};
+	\draw[MatlabBlue, ultra thick](3,-2.5) node(d2){} -- ($(d2 -| c)+(-1.5,0)$) node[near end,above]{$T_f=\qty{13.3}{\degreeCelsius}$};
+\end{tikzpicture}

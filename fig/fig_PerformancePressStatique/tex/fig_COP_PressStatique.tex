@@ -1,6 +1,6 @@
 \begin{tikzpicture}
     \def\width{.9*\textwidth};
-    \def\height{.45*\width};
+    \def\height{.2*\textheight};
     \def\spx{.25cm};
     \def\spy{1.25cm};
     \def\legx{.5cm};
@@ -12,9 +12,10 @@
     grid=both, minor tick num=4, 
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
-    xlabel={Temps $t$ (\unit{\second})},
-    ylabel={Température $\theta$ (\unit{\kelvin})},
-%    xmin=0,xmax=75,ymin=0,ymax=.5/1000,
+     xlabel={Pression statique $p_0$ (\unit{\bar})},
+    ylabel={$\COP$ (\unit{\watt})},
+%	xmin=0,xmax=1.5,
+	ymin=0.5,ymax=1.5,
 %    xtick={0,25,50,75,100}, ytick={0,1e-4,...,10e-4},
 	scaled ticks=false, tick label style={/pgf/number format/fixed},
     domain=0:100,
@@ -22,8 +23,7 @@
     legend style = {at={($(1,1)+(-2mm,-2mm)$)},anchor = north east,rounded corners}
     ]
     
-    \draw (axis cs:.5,.5) node [rotate=30, text=red] {AJOUTER DONNEES};
-%    \addplot[Plasma1, ultra thick] coordinates {(1,1),}
-
+   \addplot[Plasma1, only marks, mark size=3pt] coordinates{(33,.6251) (35,.8743) (40,1.4071)};
+   
     \end{axis}
 \end{tikzpicture}

@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+\def\dv{3cm}
+\def\dh{5cm}
+\tikzset{elips/.style={ellipse,draw,minimum width=2em,minimum height=1.8em,inner ysep=0pt},}
+
+\foreach \x/\y in {0/{Résultats antérieurs},1/{Convection naturelle}}{
+	\draw (0,-\dv*\x) node(a\x) [rectangle, rounded corners, draw,fill=Plasma75] {\y}; 
+	}
+	
+\foreach \i/\j/\k in {-3/Orientations/Essais,-1/Instrumentation/{Quantité d'intérêt},1/Protocole/Fiabilité,3/{Post-Traitement}/Justesse}{
+	\draw ($(a1.center)+(\i*\dh/3,-\dv)$) node(b\i)[rectangle, rounded corners, draw, fill=Plasma75]{\j};
+	\draw (a1.south) to[out=-90,in=90] node[anchor=center, pos=.75, fill=white, fill opacity=.7, text opacity=1, rectangle, rounded corners, draw]{\k} (b\i);
+	}
+	
+\draw (a0.south) -- (a1.north) node[midway, fill=white, fill opacity=.7, text opacity=1, rectangle, rounded corners, draw]{\'Ecarts avec \textsc{DeltaEC}};
+
+
+\foreach \x/\y in {1/V2,2/V1,3/H2,4/H1}{
+	\draw[->] (b-3.south) to[out={-\x*36},in=90] ++(-\x*36:1.5cm) node[below]{`\texttt{\y}'};
+}
+
+\foreach \x/\y in {1/{\dot W_e},2/{\dot Q_{f,a}},3/a,4/p,5/T}{
+	\draw[->] (b-1.south) to[out={-\x*30},in=90] ++(-\x*30:1.5cm) node[below]{$\y$};
+}
+
+\foreach \x/\y in {1/{\shortstack{Valeurs \\ initiales}},2/{\shortstack{Acquisitions \\ longues}}}{
+	\draw[->] (b1.south) to[out={-\x*60},in=90] ++(-\x*60:1.7cm) node[below]{\y};
+}
+
+\foreach \x/\y in {1/{$\dot Q_a$},2/{$f_{\text{\sf ré-ech}}$},3/{$\theta$}}{
+	\draw[->] (b3.south) to[out={-\x*45},in=90] ++(-\x*45:1.5cm) node[below]{\y};
+}
+\end{tikzpicture}

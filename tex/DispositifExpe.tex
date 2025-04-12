@@ -14,7 +14,7 @@ Après avoir brièvement rappelé les bases de fonctionnement des machines therm
 
 \subsection{Géométrie du réfrigérateur \textsc{Tacot}}
 \subsubsection{Cavité thermoacoustique}
-\echaf{Enleve : Le projet \textsc{Tacot} apporte beaucoup de contraintes pour la conception du réfrigérateur, et l'une des principales est la compacité\textcolor{purple}{du fait de son embarquement dans un véhicule}.} Contrairement aux autres systèmes thermoacoustiques existant et bien plus volumineux tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}, les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. 
+Contrairement à d'autres systèmes thermoacoustiques existant et bien plus volumineux tels que le liquéfacteur de gaz naturel développé par Swift et Wollan au Los Alamos National Laboratory \cite{swift_thermoacoustics_2002, wollan_development_2002}, ou le réfrigérateur cryogénique thermoacoustique spatial (STAR) \cite{adeff_measurement_1991, garrett_thermoacoustic_1993}, les dimensions doivent être réduites tout en conservant un pompage de chaleur efficace. 
 
 \begin{figure}[!ht]
     \centering
@@ -24,7 +24,6 @@ Après avoir brièvement rappelé les bases de fonctionnement des machines therm
     \caption{Schéma général du réfrigérateur \textsc{Tacot} extrait de \cite{ramadan_design_2021}. \textbf{(a)} agrandissement sur la boucle de rétroaction entre le noyau et le bâti de la machine, et \textbf{(b)} ensemble de la machine. Le noyau thermoacoustique et le cône d'adaptation d'impédance sont mis en évidence.}
     \label{fig:SchemaGeneralTACOT}
 \end{figure}
-
 
 
 Pour cela, une géométrie coaxiale pour la cavité thermoacoustique est préférée à celle toroïdale usuellement utilisée en suivant les travaux de Poignand \textit{et al.} \cite{poignand_thermoacoustic_2011, poignand_analysis_2013}, et est présentée sur la figure~\ref{fig:SchemaGeneralTACOT}(b) \textcolor{purple}{Ajouter ref}. Dans ce cas, la boucle de rétroaction du guide d'onde se trouve tout autour du noyau placé au centre de la cavité thermoacoustique, ce que montre la figure~\ref{fig:SchemaGeneralTACOT}(a).\textcolor{purple}{Bien décrirela géométrie compacte ici: noyau TA + 2src + boucle de rétroaction} L'ajout d'une source acoustique secondaire au voisinage du noyau permet également de gagner en compacité, en remplaçant un résonateur plus long par la masse de son équipage mobile et la souplesse de sa suspension, tel que réalisé dans les références \cite{poese_thermoacoustic_2004, poignand_thermoacoustic_2011, poignand_analysis_2013}. En plus de permettre une diminution du volume de la machine, l'utilisation d'une source secondaire offre plus de flexibilité qu'un résonateur sur la relation entre pression acoustique et vitesse particulaire au sein du noyau thermoacoustique, en facilitant en particulier le ciblage du déphasage optimal entre pression et vitesse acoustiques au sein du noyau thermoacoustique, ainsi que la vitesse elle-même~\cite{poignand_thermoacoustic_2011, poignand_analysis_2013}.\smallskip
@@ -167,7 +166,7 @@ Pour le fluide considéré, les épaisseurs de couches limites sont tracées en 
     \label{fig:dKdV}
 \end{figure}
 
-Ce cycle où les transformations sont isothermes est celui de Stirling, pour lequel les oscillations de pression et de vitesse sont en phase. Cependant, ce cycle représente un comportement asymptotique, et il a été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimal pour une pression acoustique donnée, et en particulier un déphasage proche mais différent de \ang{0}~\cite{poignand_analysis_2013, poignand_etude_2006, poignand_optimal_2007, poignand_thermoacoustic_2011}, et ce, suivant la quantité à maximiser ($Q_f,\ \COP$...). La connaissance de ces valeurs optimales des amplitude et phase du débit acoustique permettent ensuite, lors de la conception sous \textsc{DeltaEC}, de dimensionner chaque élément du circuit acoustique sans s'écarter de ce déphasage optimal.
+Ce cycle où les transformations sont isothermes est celui de Stirling, pour lequel les oscillations de pression et de vitesse sont en phase. Cependant, ce cycle représente un comportement asymptotique, et il a été montré dans la littérature portant sur les machines à plusieurs sources qu'il existe une vitesse acoustique optimal pour une pression acoustique donnée, et en particulier un déphasage proche mais différent de \ang{0}~\cite{poignand_analysis_2013, poignand_etude_2006, poignand_optimal_2007, poignand_thermoacoustic_2011}, et ce, suivant la quantité à maximiser ($Q_f,\ \COP$...). La connaissance de ces valeurs optimales des amplitude et phase du débit acoustique permet ensuite, lors de la conception sous \textsc{DeltaEC}, de dimensionner chaque élément du circuit acoustique sans s'écarter de ce déphasage optimal.\medskip
 
 \begin{comment} \echaf{Les puissances thermiques pompées et le gradient de températures le long du régénérateur sont les plus élevées lorsque la vitesse acoustique atteint une amplitude donnée par}
 
@@ -193,7 +192,7 @@ Pour un régénérateur dans lequel les processus sont isothermes, ces équation
 avec $g_D = \frac{f_\kappa + \Prandtl f_\nu^*}{(1-\Prandtl^2)|1-f_\nu^*|^2}$ et $g = \frac{f_\kappa-f_\nu^*}{(1+\Prandtl)(1-f_\nu^*)}$.
 \end{comment}
 
-Pour déterminer la valeur de ce débit $u_1$ dans le cas du noyau utilisé dans le \textsc{Tacot}, un modèle réduit comprenant uniquement le régénérateur et ses échangeurs est modélisé dans le logiciel \textsc{DeltaEC} suivant le schéma affiché sur la figure~\ref{fig:RegenOnly_DeltaEC_Schematics}. La figure~\ref{fig:DeltaEC_u_opt} est obtenue en exécutant le modèle pour une amplitude $|u_1|$ variant entre les valeurs \qtylist{3e-4;4e-2}{\cubic\meter\per\second}, et pour un déphasage $\angle u_1$ de \ang{-30} à \ang{30}.
+Pour déterminer la valeur de ce débit $u_1$ dans le cas du noyau utilisé dans le \textsc{Tacot}, un modèle réduit comprenant uniquement le régénérateur et ses échangeurs est modélisé dans le logiciel \textsc{DeltaEC} suivant le schéma affiché sur la figure~\ref{fig:RegenOnly_DeltaEC_Schematics}. La figure~\ref{fig:DeltaEC_u_opt} est obtenue en exécutant le modèle pour une amplitude $|u_1|$ variant entre les valeurs \qtylist{3e-4;4e-2}{\cubic\meter\per\second}, et pour un déphasage $\angle u_1$ de \ang{-30} à \ang{30}.\medskip
 
 \begin{figure}[!ht]
 	\centering
@@ -293,14 +292,14 @@ Au final, les dimensions du régénérateur sont résumées dans le tableau~\ref
 		\caption{}
 		\label{fig:CHXschema}
 	\end{subfigure}	    
-    \caption{Schémas des échangeurs de chaleur~\cite{ramadan_design_2021}. \subref{fig:AHXschema} échangeur ambiant, où les trait pointillés jaune montrent le circuit d'eau, et \subref{fig:CHXschema} échangeur froid sur lequel l'emplacement des cartouches chauffantes est indiqué par les rectangles. \echaf{mettre version vierge du CHX}}
+    \caption{Schémas des échangeurs de chaleur~\cite{ramadan_design_2021}. \subref{fig:AHXschema} échangeur ambiant, où les trait pointillés jaune montrent le circuit d'eau, et \subref{fig:CHXschema} échangeur froid sur lequel l'emplacement des cartouches chauffantes est indiqué par les rectangles.}
     \label{fig:HXschema}
 \end{figure}
 
 Le pompage de chaleur par effet thermoacoustique est exploité par des échangeurs conçus en même temps que le reste du dispositif expérimental, en utilisant le logiciel \textsc{DeltaEC} pour déterminer les caractéristiques comme la longueur axiale, la surface, ou la porosité~\cite{ramadan_design_2021}. Ces paramètres sont déterminés pour maximiser l'échange de chaleur qui requiert la plus grande surface de contact possible, tout en laissant s'écouler librement le fluide sans causer de pertes de charges trop importantes. Par ailleurs, leurs longueurs sont au moins deux fois supérieures à l'excursion particulaire crête à crête, qui est de l'ordre de \qty{1}{\centi\meter} dans les conditions d'opération de la machine. Cependant, les paramètres calculés avec \textsc{DeltaEC} ne sont pas suffisant pour concevoir un échangeur fonctionnel, et le fonctionnement de chacun de ces échangeur étant radicalement différent l'un de l'autre, quelques détails de conception propres à chacun sont à présenter.
 
 \subparagraph{\'Echangeur de chaleur ambiant} \label{chap:DispExpe_AHX}
-De l'énergie mécanique est continuellement apportée au système par les sources acoustiques, ce qui s'accompagne du pompage thermoacoustique de l'extrémité froide à l'extrémité chaude du noyau. Pour fixer la température de ce côté à une température ambiante et éviter l'échauffement global de la machine, l'échangeur ambiant extrait un flux de chaleur $\dot Q_a$ au fluide chaud pour la céder à de l'eau froide qui circule à l'intérieur.
+De l'énergie mécanique est continuellement apportée au système par les sources acoustiques, ce qui s'accompagne du pompage thermoacoustique de l'extrémité froide à l'extrémité chaude du noyau. Pour fixer la température de ce côté à une température ambiante et éviter l'échauffement global de la machine, l'échangeur de chaleur ambiant présenté sur la figure~\ref{fig:TacotPhotosNoyau_AHX} extrait un flux de chaleur $\dot Q_a$ au fluide chaud pour la céder à de l'eau froide qui circule à l'intérieur.
 
 Pour dimensionner l'échangeur, une méthode combinant un modèle \textsc{DeltaEC} et une analyse basée sur la différence de température logarithmique moyenne a été utilisée pour déterminer la longueur, le diamètre et la porosité de l'échangeur, ainsi que le nombre d'ailettes, leur épaisseur et leur espacement, et les diamètres des conduits d'eau \cite{ramadan_design_2021}. \smallskip
 
@@ -312,7 +311,7 @@ L'architecture proposée pour l'échangeur est représentée sur la figure~\ref{
 	\external{fig_TemperatureAHX_InOut}
 %	\externalremake
 	\input{../fig/fig_TemperatureAHX_InOut/tex/fig_TemperatureAHX_InOut}
-	\caption{\'Evolution temporelle des températures de part et d'autre de l'échangeur ambiant. \echaf{trouver figure qui prouve que l'AHX est dimensionné pour extraire X W}.}
+	\caption{\'Evolution temporelle des températures de part et d'autre de l'échangeur ambiant dans le cas d'une expérience à haute amplitude acoustique.}
 	\label{fig:TemperatureAHX_InOut}
 \end{figure}
 
@@ -322,10 +321,12 @@ Au final, en mesurant la différence de température de l'eau entre l'entrée et
 	\dot Q_a = \dot m C_p \Delta T^{(w)},
 	\label{eq:Qa_Definition}
 \end{equation}
-où $\Delta T^{(w)}$ représente la différence de température d'eau entre la sortie et l'entrée de la conduite dans l'échangeur ambiant.
+où $\Delta T^{(w)}$ représente la différence de température d'eau entre la sortie et l'entrée de la conduite dans l'échangeur ambiant.\bigskip
+
+Il est possible de vérifier le bon fonctionnement de l'échangeur en observant les températures de fluide de part et d'autre de l'échangeur sur une expérience tracée sur la figure~\ref{fig:AcouExample}, c'est-à-dire les thermocouples \numlist{10;11;12} (voir la figure~\ref{fig:TCdansNoyau} pour l'emplacement des thermocouples) placés à l'intérieur du noyau et qui indiquent une augmentation de l'ordre de \qty{20}{\degreeCelsius} par rapport à l'état initial, et les thermocouples \numlist{13;14;15} placés de l'autre côté de l'échangeur et dont la température n'augmente que de \qty{5}{\degreeCelsius} durant l'expérience.
 
 \subparagraph{\'Echangeur de chaleur froid} \label{chap:DispExpe_CHX}
-La caractérisation des performances du réfrigérateur, comme la capacité de refroidissement et le coefficient de performances, repose sur la mesure de la puissance à fournir pour atteindre une certaine température et à s'y stabiliser, et c'est à cet échangeur d'agir comme une charge thermique.
+La caractérisation des performances du réfrigérateur, comme la capacité de refroidissement et le coefficient de performances, repose sur la mesure de la puissance à fournir pour atteindre une certaine température et à s'y stabiliser, et c'est à l'échangeur de chaleur froid présenté sur la figure~\ref{fig:TacotPhotosNoyau_CHX} d'agir comme une charge thermique.
 
 Après un dimensionnement réalisé en suivant la même méthode que pour l'échangeur ambiant, il est fabriqué en aluminium par impression 3D. En revanche, il ne contient pas de fluide qui s'écoule à l'intérieur. À la place, six cartouches chauffantes (Omega, HDC19107) de diamètre \qty{3.2}{\milli\meter} sont placées dans des canaux centraux selon la configuration de la figure~\ref{fig:CHXschema} et dont le diamètre est de \qty{3.6}{\milli\meter} afin de permettre l'application de pâte thermique et améliorer le transfert de chaleur. Ces cartouches sont connectées en parallèle, ce qui donne une résistance électrique de \qty{22.4}{\ohm} aux bornes de l'échangeur et une puissance électrique maximale admise de \qty{600}{\watt}. Autour de ces canaux se trouve \num{140} ailettes d'\qty{1}{\milli\meter} d'épaisseur espacées de \qty{1.5}{\milli\meter}, pour une porosité de \qty{40}{\percent}.
 %\echaf{ajouter surface de contact cartouche-HX et HX-gaz ?}
@@ -553,7 +554,7 @@ La longue série d'acquisitions réalisée au cours de ce travail a permis de d�
 
 \subsubsection{\'Etat initial}
 
-Tout d'abord et pour toutes les expériences, l'état initial de toutes les grandeurs est acquis sur une minute et sauvegardé sous un label `\texttt{init}' à chaque début de journée de campagne. Cela permet de garder en mémoire toutes les conditions expérimentales initiales dont les valeurs peuvent potentiellement influer sur le comportement du réfrigérateur, comme par exemple la température ambiante ou la pression statique. En effet, le mélange de gaz contient \qty{65}{\percent} d'argon, et \qty{35}{\percent} d'hélium très volatile, d'autant plus que la pression statiques est très élevée. Au cours du temps, une partie du gaz fuit et les proportions du mélange changent. La pression du mélange gazeux au sein de la machine est mesurée dans le temps et est affichée sur la figure~\ref{fig:TenuePressionStatique}. Au final, quand la pression diminue au dessous de \qty{38}{\bar}, une vidange est réalisée.\smallskip
+Tout d'abord et pour toutes les expériences, l'état initial de toutes les grandeurs est acquis sur une minute et sauvegardé sous un label `\texttt{init}' à chaque début de journée de campagne. Cela permet de garder en mémoire toutes les conditions expérimentales initiales dont les valeurs peuvent potentiellement influer sur le comportement du réfrigérateur, comme par exemple la température ambiante ou la pression statique. En effet, le mélange de gaz contient \qty{65}{\percent} d'argon, et \qty{35}{\percent} d'hélium très volatile, d'autant plus que la pression statiques est très élevée. Au cours du temps, une partie du gaz fuit, comme le montre la figure~\ref{fig:TenuePressionStatique} où la pression statique du mélange est tracée sur quelques jours, et il est estimé que ce soit majoritairement la pression partielle de l'hélium qui diminue. .\smallskip
 
 \begin{figure}[!ht]
 	\centering
@@ -564,30 +565,34 @@ Tout d'abord et pour toutes les expériences, l'état initial de toutes les gran
 	\label{fig:TenuePressionStatique}
 \end{figure}
 
-%\begin{figure}[!ht]
-%    \centering
-%	\begin{subfigure}{\textwidth}
-%		\centering
-%		\external{fig_Qc_PressStatique}
-%%		\externalremake
-%		\input{../fig/fig_PerformancePressStatique/tex/fig_Qc_PressStatique}
-%		\caption{}
-%		\label{fig:Qc_PressStatique}
-%	\end{subfigure}
-%		
-%	\vspace{1em}
-%	
-%	\begin{subfigure}{\textwidth}
-%		\centering
-%		\external{fig_COP_PressStatique}
-%%		\externalremake
-%		\input{../fig/fig_PerformancePressStatique/tex/fig_COP_PressStatique}
-%		\caption{}
-%		\label{fig:COP_PressStatique}
-%	\end{subfigure}
-%    \caption{toto}
-%    \label{fig:PressStatique}
-%\end{figure}
+Pour se rendre compte de l'impact de la baisse de pression sur les performances, une série d'expériences réalisées à haute amplitude acoustique dans l'orientation `\texttt{H1}' avec l'échangeur froid alimenté pour maintenir une température de consigne de \qty{15}{\degreeCelsius} au thermocouple~\num{5} a été réalisée en début de thèse, en laissant délibérément le réfrigérateur se vider de son fluide. En observant, sur la figure~\ref{fig:PressStatique}, le flux de chaleur nécessaire pour assurer l'équilibre de température, ainsi que le coefficient de performances obtenu en rapportant ce flux de chaleur à la puissance consommée par les sources acoustiques. Si la figure~\ref{fig:Qc_PressStatique} montre que la puissance pompée par effet thermoacoustique est relativement constant, la figure~\ref{fig:COP_PressStatique} montre quant à elle une augmentation de la puissance consommée par les sources acoustiques lorsque la pression statique diminue.\medskip
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Qc_PressStatique}
+%		\externalremake
+		\input{../fig/fig_PerformancePressStatique/tex/fig_Qc_PressStatique}
+		\caption{}
+		\label{fig:Qc_PressStatique}
+	\end{subfigure}
+		
+	\vspace{1em}
+	
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_COP_PressStatique}
+%		\externalremake
+		\input{../fig/fig_PerformancePressStatique/tex/fig_COP_PressStatique}
+		\caption{}
+		\label{fig:COP_PressStatique}
+	\end{subfigure}
+    \caption{toto}
+    \label{fig:PressStatique}
+\end{figure}
+
+La vidange doit donc être réalisée le plus souvent possible pour garantir les proportions du mélange, mais vider chaque jour l'intégralité du gaz contenu dans la machine risque d'engendrer une surconsommation de gaz, et un compromis est trouvé en renouvelant le fluide quand la pression diminue au dessous de \qty{38}{\bar}
 
 \subsubsection{Mesure préalable de la température d'eau}
 
@@ -664,9 +669,7 @@ Un exemple d'acquisition faite sur \qty{10}{\minute} montre sur la figure~\ref{f
 	\label{fig:AcouExample}
 \end{figure}
 
-Cependant, si dans le cas de l'expérience tracée sur la figure~\ref{fig:AcouExample} la distribution de température se stabilise très vite, ce n'est pas toujours le cas. En l'occurrence, lors de deux autres expériences réalisées l'une à la suite de l'autre et dont les évolutions de températures des thermocouples 7 et 8 sont tracées sur la figure~\ref{fig:Repetabilite_V1}, le comportement est complètement différent.\echaf{ici}\smallskip
-
-Pour prévenir une acquisition trop courte et un risque de manquer l'apparitions d'éventuels phénomènes durant le régime transitoire, les durées d'acquisitions sont supérieures à \qty{1}{\hour} dans chacun des types d'expérience (`\texttt{water}', `\texttt{acou}' ou `\texttt{Qc*W}').
+Cependant, si dans le cas de l'expérience tracée sur la figure~\ref{fig:AcouExample} la distribution de température se stabilise très vite, ce n'est pas toujours le cas. En l'occurrence, lors de deux autres expériences réalisées l'une à la suite de l'autre et dont les évolutions de températures des thermocouples 7 et 8 sont tracées sur la figure~\ref{fig:Repetabilite_V1}, le comportement est complètement différent. Sur le même intervalle de temps de \qty{600}{\second}, au lieu de se stabiliser à une température située entre celles du côté ambiant et du côté froid comme sur la figure~\ref{fig:AcouExample}, les thermocouples 7 et 8 dont les températures sont tracées sur la figure~\ref{fig:Repetabilite_V1} enregistrent une augmentation suivie d'une diminution de la température de \qty{10}{\degreeCelsius} pour le 1\ier{} jour, et une augmentation par palier de l'ordre de \qty{15}{\degreeCelsius} pour le 2\ieme{} jour.\smallskip
 
 \begin{figure}[!ht]
     \centering
@@ -677,9 +680,13 @@ Pour prévenir une acquisition trop courte et un risque de manquer l'apparitions
     \label{fig:Repetabilite_V1}
 \end{figure}
 
+Le but ici n'est cependant pas de tenter d'expliquer la cause de ces comportements, mais plutôt de montrer le besoin d'acquisitions suffisamment longues pour atteindre un régime stationnaire.
+
+Pour prévenir une acquisition trop courte et un risque de manquer l'apparitions d'éventuels phénomènes durant le régime transitoire, les durées d'acquisitions sont supérieures à \qty{1}{\hour} dans chacun des types d'expérience, c'est-à-dire `\texttt{water}', `\texttt{acou}' ou `\texttt{Qc*W}'.
+
 
 \section{Post-traitement des données}\label{chap:PostTraitement}
-À la fin des acquisitions, les données sont post-traitées en utilisant un code \textsc{Matlab}\textss\textregistered dédié et développé au cours de ce travail, disponible en ligne \cite{fontbonne_postprocessing_2025}.\bigskip
+À la fin des acquisitions, les données sont post-traitées en utilisant un code \textsc{Matlab}\textss\textregistered dédié et développé au cours de ce travail, disponible en ligne \cite{fontbonne_postprocessing_2025}.\medskip
 
 %\subsection{Pré-traitement des fichiers}
 Pendant chaque campagne de mesure réalisée suivant le protocole décrit dans la section~\ref{chap:Acquisitions}, des fichiers bruts de mesures sont générés. Ils présentent deux inconvénients majeurs : leur format est \texttt{*.tdms}, celui de NI LabVIEW, et ils sont très lourds. La première étape de traitement des données est d'extraire uniquement les informations nécessaires pour les préparer à d'autres actions en utilisant un script \textsc{Matlab}\textss\textregistered, et à les sauvegarder dans un fichier \texttt{*.mat}.\medskip
@@ -690,7 +697,7 @@ Ensuite, la valeur initiales est retirée de chaque signal temporel de thermocou
 
 Le poids très élevé des fichiers bruts est causé par cet échantillonnage, imposé par les cartes d'acquisition de pression dynamique à tout le \texttt{vi} LabVIEW. Cette fréquence est largement supérieure à ce qu' aussi bien pour les quantités non oscillantes comme la température, que les données oscillant à la fréquence $f_1=\qty{47}{\hertz}$ comme la pression dynamique ou l'accélération. Il est donc nécessaire d'alléger les données, et les températures sont ré-échantillonées à une fréquence $f_{re}=\qty{.1}{\hertz}$. De leur côté, les autres données oscillantes ne sont pas ré-échantillonnées mais sont coupées pour ne conserver que les \num{20} dernières périodes entières des signaux, soit un nombre de points donné par $20 \times \nicefrac{f_e}{f_1}$.\smallskip
 
-Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est ensuite traité : pour les expériences en deux étapes ou plus (une expérience de type `\texttt{water}' suivie d'une autre de type `\texttt{acou}' par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue, comme le montre la figure~\ref{fig:WaterOnly_PT}. Une première valeur de $\dot Q_a^{(w)}$ est donc calculée et enregistrée dans un fichier \texttt{*.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée \echaf{changer notation dans l'annexe AHX}.\smallskip
+Le cas du flux de chaleur extrait par l'échangeur ambiant $\dot Q_a$ est ensuite traité : pour les expériences en deux étapes ou plus (une expérience de type `\texttt{water}' suivie d'une autre de type `\texttt{acou}' par exemple), il faut d'abord extraire les informations sur l'état du système avant le démarrage des sources, et en particulier l'écart de températures mesuré par les sondes de platine à l'entrée et à la sortie de l'échangeur ambiant. Cet écart peut être non-nul malgré l'atteinte d'un équilibre thermique après l'ouverture de la circulation d'eau et une attente suffisamment longue, comme le montre la figure~\ref{fig:WaterOnly_PT}. Une première valeur de $\dot Q_a^{(w)}$ est donc calculée et enregistrée dans un fichier \texttt{*.mat}. Lors du traitement d'un fichier avec acoustique, il est alors possible de recharger cette valeur et la soustraire à la nouvelle valeur de $\dot Q_a^{(ac)}$ calculée.\smallskip
 
 Les amplitudes et phases des pressions dynamiques et accélérations sont calculées en utilisant le principe de la détection synchrone. Cette méthode est appliquée pour les quatre capteurs de pression dynamique et les deux accéléromètres, et en considérant cinq harmoniques. Le drive ratio est calculé en divisant l'amplitude de pression du microphone situé dans la boucle de rétroaction du guide d'onde à la fréquence fondamentale par la pression statique
 
@@ -712,14 +719,23 @@ Comme dit précédemment, la fréquence de fonctionnement du \textsc{Tacot} est 
 
 
 \section{Conclusion}
-\echaf{schéma pour résumer l'ordre des choses, le protocole, les qté enregistrées}
-Ce chapitre présente le réfrigérateur existant déjà au début de ce travail de thèse. L'utilisation d'une géométrie coaxiale et de deux sources est rappelée, justifiée par la nécessité de compacité de la machine.\smallskip
+Ce chapitre présente le réfrigérateur existant déjà au début de ce travail de thèse. L'utilisation d'une géométrie coaxiale et de deux sources est d'abord rappelée, justifiée par la nécessité de compacité de la machine et de ciblage du déphasage optimal entre pression et vitesse acoustiques dans le régénérateur.\smallskip
 
-Quelques résultats obtenus dans la littérature sont présentés, en gardant à l'esprit les écarts avec le modèle \textsc{DeltaEC}. De tous les phénomènes qui prennent place dans un tel système, la convection naturelle est l'effet qui est étudié ici. Pour cela, le système doit pouvoir être orienté dans toutes les orientations, parmi lesquelles quatre sont choisies pour leur caractère académique.
+Après la présentation de quelques résultats obtenus dans la littérature et montrant des écarts avec le modèle \textsc{DeltaEC}, l'hypothèse de présence d'écoulements de fluides causés par la convection naturelle est formulée. Pour la valider ou non, le système est orienté dans quatre orientations choisies pour leur caractère académique.
 
-L'instrumentation modifiée pour permettre l'excitation et l'observation du réfrigérateur est décrite, en notant toutefois les limites du dispositif causées par la compacité du prototype.
+L'instrumentation adaptée pour permettre l'excitation et l'observation du réfrigérateur est décrite, en notant toutefois les limites du dispositif causées par la compacité du prototype.
 
 Le protocole de mesure est également présenté. Il est dépendant des résultats à extraire, et est le résultat d'un grand nombre de campagnes d'expériences. Ce protocole permet d'obtenir des résultats comparables entre les différentes configurations.
+
+Le post-traitement appliqué aux résultats bruts des acquisitions est enfin développé, pour assurer une exploitation juste des résultats des mesures en ré-échantillonant les données, puis en prenant en compte les valeurs initiales des mesurandes.
+
+\begin{center}
+{\tikzsetfigurename{fig_ConclusionChap2}
+\input{../fig/fig_ConclusionChap2/tex/fig_ConclusionChap2}
+}
+\end{center}
+
+
 
 
 

@@ -386,9 +386,27 @@
 %---------------------------------------------------------------------%
 \begin{document}
 %---------------------------------------------------------------------%
-{\tikzsetfigurename{fig_ConclusionChap2}
-\input{../fig/fig_ConclusionChap2/tex/fig_ConclusionChap2}
-}
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}[c]{.47\textwidth}
+		\centering
+		\external{fig_Comsol_TambiantRix}
+%		\externalremake
+		\input{../fig/fig_ComsolThermalCondFront/tex/Rix_Ambiant}
+		\caption{}
+		\label{fig:Comsol_CondFrontT_TambiantRix}
+	\end{subfigure}		
+	\begin{subfigure}[c]{.47\textwidth}
+		\centering
+		\external{fig_Comsol_AdiabRix}
+%		\externalremake
+		\input{../fig/fig_ComsolThermalCondFront/tex/Rix_Adiab}
+		\caption{}
+		\label{fig:Comsol_CondFrontT_AdiabRix}
+	\end{subfigure}	    
+    \caption{Conditions aux frontières thermiques. Le côté ambiant du régénérateur est à température fixée, le côté froid est modélisé par un puit de chaleur, et la paroi de la source acoustique principale est modélisée par deux conditions asymptotiques. \subref{fig:Comsol_CondFrontT_TambiantRix} température ambiante, et \subref{fig:Comsol_CondFrontT_AdiabRix} adiabatique.}
+    \label{fig:Comsol_CondFrontT}
+\end{figure}
 %---------------------------------------------------------------------%
 \end{document}
 %---------------------------------------------------------------------%

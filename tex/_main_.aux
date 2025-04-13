@@ -413,6 +413,7 @@
 \newlabel{fig:BancEssaisComplet}{{II.10}{20}{Photographie du banc d'essais complet. (a) palans de suspension, (b) armoire contenant les bouteilles de gaz d'hélium et d'argon, (c) armoire électrique contenant les protections du système et la régulation en température, (d) ordinateur de contrôle et d'acquisitions, (e) console de gaz pour la vidange, (f) réfrigérateur \textsc {Tacot}, (g) baie d'acquisition}{figure.caption.22}{}}
 \@writefile{toc}{\contentsline {paragraph}{\numberline {II.2.2.3.a}Alimentation électrique des sources acoustiques}{20}{paragraph.2.2.2.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{\numberline {II.2.2.3.b}Température du gaz dans le noyau}{20}{paragraph.2.2.2.3.2}\protected@file@percent }
+\newlabel{chap:PresTC}{{II.2.2.3.b}{20}{Température du gaz dans le noyau}{paragraph.2.2.2.3.2}{}}
 \@writefile{toc}{\contentsline {paragraph}{\numberline {II.2.2.3.c}Pression dynamique}{20}{paragraph.2.2.2.3.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {II.11}{\ignorespaces Emplacement des thermocouples choisis pour l'étude thermique du noyau thermoacoustique. Agrandissement des encadrés violet et jaune de la figure~\ref {fig:SchemaGeneralTACOT}.}}{21}{figure.caption.23}\protected@file@percent }
 \newlabel{fig:TCdansNoyau}{{II.11}{21}{Emplacement des thermocouples choisis pour l'étude thermique du noyau thermoacoustique. Agrandissement des encadrés violet et jaune de la figure~\ref {fig:SchemaGeneralTACOT}}{figure.caption.23}{}}
@@ -485,6 +486,8 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap:SimusRealisees}{{III}{31}{\'Etudes théoriques et numériques}{chapter.3}{}}
 \@writefile{toc}{\etoc@startlocaltoc{4}}
+\abx@aux@cite{0}{rott_thermoacoustics_1980}
+\abx@aux@segm{0}{0}{rott_thermoacoustics_1980}
 \abx@aux@cite{0}{getling_rayleigh-benard_1998}
 \abx@aux@segm{0}{0}{getling_rayleigh-benard_1998}
 \@writefile{toc}{\contentsline {section}{\numberline {III.1}Introduction}{32}{section.3.1}\protected@file@percent }
@@ -501,8 +504,11 @@
 \newlabel{eq:NavierStokes_Boussinesq_QtMvt}{{III.1b}{33}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.1b}{}}
 \newlabel{eq:NavierStokes_Boussinesq_NRJinterne}{{III.1c}{33}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.1c}{}}
 \newlabel{eq:NavierStokes_Boussinesq}{{III.1}{33}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.1c}{}}
-\newlabel{eq:NonDim_NavierStokes_Boussinesq_QtMvt}{{III.2}{33}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.2}{}}
-\newlabel{eq:NbrRayleigh}{{III.3}{33}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.3}{}}
+\newlabel{eq:MasseVolumiqueBoussinesq}{{III.2}{33}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.2}{}}
+\newlabel{eq:NonDim_NavierStokes_Boussinesq_Conti}{{III.3a}{33}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.3a}{}}
+\newlabel{eq:NonDim_NavierStokes_Boussinesq_QtMvt}{{III.3b}{33}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.3b}{}}
+\newlabel{eq:NonDim_NavierStokes_Boussinesq_NRJinterne}{{III.3c}{33}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.3c}{}}
+\newlabel{eq:NbrRayleigh}{{III.4}{33}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.4}{}}
 \abx@aux@cite{0}{belleoud_etude_2016}
 \abx@aux@segm{0}{0}{belleoud_etude_2016}
 \abx@aux@cite{0}{walch_convection_1980}
@@ -511,53 +517,51 @@
 \abx@aux@segm{0}{0}{nield_convection_2013}
 \abx@aux@cite{0}{elder_steady_1967}
 \abx@aux@segm{0}{0}{elder_steady_1967}
-\newlabel{eq:VitesseReferenceV_Rayleigh}{{III.4a}{34}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.4a}{}}
-\newlabel{eq:VitesseReferenceH_Rayleigh}{{III.4b}{34}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.4b}{}}
-\newlabel{eq:VitesseReference_Rayleigh}{{III.4}{34}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.4b}{}}
+\newlabel{eq:VitesseReferenceV_Rayleigh}{{III.5a}{34}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.5a}{}}
+\newlabel{eq:VitesseReferenceH_Rayleigh}{{III.5b}{34}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.5b}{}}
+\newlabel{eq:VitesseReference_Rayleigh}{{III.5}{34}{Nombre de Rayleigh hors d'un matériau poreux}{equation.3.5b}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {III.1}{\ignorespaces Nombres de Rayleigh et composantes de vitesse associées pour les configurations affichées sur la figure~\ref {fig:ConvNat2D} et pour une différence de température de \qty {5}{\kelvin }.}}{34}{table.caption.33}\protected@file@percent }
 \newlabel{tab:NbrRayleigh_Vitesse}{{III.1}{34}{Nombres de Rayleigh et composantes de vitesse associées pour les configurations affichées sur la figure~\ref {fig:ConvNat2D} et pour une différence de température de \qty {5}{\kelvin }}{table.caption.33}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {III.2.2}Nombre de Rayleigh dans un matériau poreux}{34}{subsection.3.2.2}\protected@file@percent }
-\newlabel{eq:VitesseDarcy}{{III.5}{34}{Nombre de Rayleigh dans un matériau poreux}{equation.3.5}{}}
-\newlabel{eq:NavierStokes_Boussinesq_QtMvt_Poreux}{{III.6}{34}{Nombre de Rayleigh dans un matériau poreux}{equation.3.6}{}}
-\newlabel{eq:NbrRayleigh_poreux}{{III.7}{34}{Nombre de Rayleigh dans un matériau poreux}{equation.3.7}{}}
-\newlabel{eq:VitesseReference_Rayleigh_poreux}{{III.8}{34}{Nombre de Rayleigh dans un matériau poreux}{equation.3.8}{}}
-\abx@aux@cite{0}{basak_heat_2009}
-\abx@aux@segm{0}{0}{basak_heat_2009}
-\abx@aux@cite{0}{schneider_laminar_1992}
-\abx@aux@segm{0}{0}{schneider_laminar_1992}
+\newlabel{eq:VitesseDarcy}{{III.6}{34}{Nombre de Rayleigh dans un matériau poreux}{equation.3.6}{}}
+\newlabel{eq:NavierStokes_Boussinesq_QtMvt_Poreux}{{III.7}{34}{Nombre de Rayleigh dans un matériau poreux}{equation.3.7}{}}
+\newlabel{eq:NbrRayleigh_poreux}{{III.8}{34}{Nombre de Rayleigh dans un matériau poreux}{equation.3.8}{}}
+\newlabel{eq:VitesseReference_Rayleigh_poreux}{{III.9}{34}{Nombre de Rayleigh dans un matériau poreux}{equation.3.9}{}}
+\abx@aux@cite{0}{ramadan_design_2021}
+\abx@aux@segm{0}{0}{ramadan_design_2021}
+\abx@aux@cite{0}{ramadan_design_2021}
+\abx@aux@segm{0}{0}{ramadan_design_2021}
 \@writefile{lot}{\contentsline {table}{\numberline {III.2}{\ignorespaces Nombres de Rayleigh-Darcy et composantes de vitesse associées pour les configurations affichées sur la figure~\ref {fig:ConvNat2D} et pour une différence de température de \qty {5}{\kelvin }.}}{35}{table.caption.34}\protected@file@percent }
 \newlabel{tab:NbrRayleighDarcy_Vitesse}{{III.2}{35}{Nombres de Rayleigh-Darcy et composantes de vitesse associées pour les configurations affichées sur la figure~\ref {fig:ConvNat2D} et pour une différence de température de \qty {5}{\kelvin }}{table.caption.34}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {III.3}Simulations par éléments finis}{35}{section.3.3}\protected@file@percent }
 \newlabel{chap:FEM}{{III.3}{35}{Simulations par éléments finis}{section.3.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {III.3.1}Cône d'adaptation d'impédance seul}{35}{subsection.3.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {III.3.2}Noyau thermoacoustique}{35}{subsection.3.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.3.2.1}Géométrie du problème}{35}{subsubsection.3.3.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {III.2}{\ignorespaces Phénomènes thermiques pris en compte dans le modèle \textsc  {Comsol} Multi\-physics\textsuperscript  \textregistered thermique équivalent, dans le cas de l'orientation `\texttt  {H1}' présentée sur la figure~\ref {fig:OrientationCore_H1}. (a) tendance du gradient transverse de température tel qu'observé au niveau de l'échangeur froid dans \blx@tocontentsinit {0}\cite {ramadan_design_2021}, (b) température froide atteinte par effet thermoacoustique, (c) conduction thermique transverse dans le milieu poreux et par les parois de l'enceinte, (d) gradient de température transverse causé par la convection naturelle.}}{35}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:SuperpositionComsol}{{III.2}{35}{Phénomènes thermiques pris en compte dans le modèle \textsc {Comsol} Multi\-physics\textss \textregistered thermique équivalent, dans le cas de l'orientation `\texttt {H1}' présentée sur la figure~\ref {fig:OrientationCore_H1}. (a) tendance du gradient transverse de température tel qu'observé au niveau de l'échangeur froid dans \cite {ramadan_design_2021}, (b) température froide atteinte par effet thermoacoustique, (c) conduction thermique transverse dans le milieu poreux et par les parois de l'enceinte, (d) gradient de température transverse causé par la convection naturelle}{figure.caption.35}{}}
+\abx@aux@cite{0}{schneider_laminar_1992}
+\abx@aux@segm{0}{0}{schneider_laminar_1992}
+\abx@aux@cite{0}{basak_heat_2009}
+\abx@aux@segm{0}{0}{basak_heat_2009}
+\@writefile{toc}{\contentsline {subsection}{\numberline {III.3.1}Cône d'adaptation d'impédance seul}{36}{subsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {III.3.2}Noyau thermoacoustique}{36}{subsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.3.2.1}Géométrie du problème}{36}{subsubsection.3.3.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {III.3}{\ignorespaces Géométrie du modèle simplifié du régénérateur et de la cavité d'adaptation d'impédance.}}{36}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:Comsol_ModeleSimplifie_Geometrie}{{III.3}{36}{Géométrie du modèle simplifié du régénérateur et de la cavité d'adaptation d'impédance}{figure.caption.36}{}}
 \abx@aux@cite{0}{lewis_measurement_1998}
 \abx@aux@segm{0}{0}{lewis_measurement_1998}
 \abx@aux@cite{0}{swift_thermoacoustics_2017}
 \abx@aux@segm{0}{0}{swift_thermoacoustics_2017}
-\abx@aux@cite{0}{ramadan_design_2021}
-\abx@aux@segm{0}{0}{ramadan_design_2021}
-\abx@aux@cite{0}{ramadan_design_2021}
-\abx@aux@segm{0}{0}{ramadan_design_2021}
-\@writefile{lof}{\contentsline {figure}{\numberline {III.2}{\ignorespaces Géométrie du modèle simplifié du régénérateur et de la cavité d'adaptation d'impédance.}}{36}{figure.caption.35}\protected@file@percent }
-\newlabel{fig:Comsol_ModeleSimplifie_Geometrie}{{III.2}{36}{Géométrie du modèle simplifié du régénérateur et de la cavité d'adaptation d'impédance}{figure.caption.35}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {III.3}{\ignorespaces Dimensions des domaines pour le modèle \textsc  {Comsol}\textsuperscript  \textregistered .}}{36}{table.caption.36}\protected@file@percent }
-\newlabel{tab:DimModeleComsol}{{III.3}{36}{Dimensions des domaines pour le modèle \textsc {Comsol}\textss \textregistered }{table.caption.36}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.3.2.2}Matériaux composant les domaines}{36}{subsubsection.3.3.2.2}\protected@file@percent }
 \abx@aux@cite{0}{swift_thermoacoustics_2017}
 \abx@aux@segm{0}{0}{swift_thermoacoustics_2017}
-\abx@aux@cite{0}{ramadan_design_2021}
-\abx@aux@segm{0}{0}{ramadan_design_2021}
-\@writefile{lof}{\contentsline {figure}{\numberline {III.3}{\ignorespaces Phénomènes thermiques pris en compte dans le modèle \textsc  {Comsol} Multi\-physics\textsuperscript  \textregistered thermique équivalent, dans le cas de l'orientation `\texttt  {H1}' présentée sur la figure~\ref {fig:OrientationCore_H1}. (a) tendance du gradient transverse de température tel qu'observé au niveau de l'échangeur froid dans \blx@tocontentsinit {0}\cite {ramadan_design_2021}, (b) température froide atteinte par effet thermoacoustique, (c) conduction thermique transverse dans le milieu poreux et par les parois de l'enceinte, (d) gradient de température transverse causé par la convection naturelle.}}{37}{figure.caption.37}\protected@file@percent }
-\newlabel{fig:SuperpositionComsol}{{III.3}{37}{Phénomènes thermiques pris en compte dans le modèle \textsc {Comsol} Multi\-physics\textss \textregistered thermique équivalent, dans le cas de l'orientation `\texttt {H1}' présentée sur la figure~\ref {fig:OrientationCore_H1}. (a) tendance du gradient transverse de température tel qu'observé au niveau de l'échangeur froid dans \cite {ramadan_design_2021}, (b) température froide atteinte par effet thermoacoustique, (c) conduction thermique transverse dans le milieu poreux et par les parois de l'enceinte, (d) gradient de température transverse causé par la convection naturelle}{figure.caption.37}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III.3}{\ignorespaces Dimensions des domaines pour le modèle \textsc  {Comsol}\textsuperscript  \textregistered .}}{37}{table.caption.37}\protected@file@percent }
+\newlabel{tab:DimModeleComsol}{{III.3}{37}{Dimensions des domaines pour le modèle \textsc {Comsol}\textss \textregistered }{table.caption.37}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.3.2.2}Matériaux composant les domaines}{37}{subsubsection.3.3.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {III.3.2.3}Modèles physiques utilisés}{37}{subsubsection.3.3.2.3}\protected@file@percent }
 \newlabel{chap:FEM_Physique}{{III.3.2.3}{37}{Modèles physiques utilisés}{subsubsection.3.3.2.3}{}}
-\abx@aux@cite{0}{hsu_effective_1996}
-\abx@aux@segm{0}{0}{hsu_effective_1996}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {III.3.2.3.a}Composante solide}{38}{paragraph.3.3.2.3.1}\protected@file@percent }
-\newlabel{eq:ConductiviteTensiorielle}{{III.9}{38}{Composante solide}{equation.3.9}{}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {III.3.2.3.b}Composante fluide}{38}{paragraph.3.3.2.3.2}\protected@file@percent }
+\abx@aux@cite{0}{ramadan_design_2021}
+\abx@aux@segm{0}{0}{ramadan_design_2021}
+\abx@aux@cite{0}{baltean_gravity_2025}
+\abx@aux@segm{0}{0}{baltean_gravity_2025}
+\newlabel{eq:ConductiviteTensiorielle}{{III.10}{38}{Modèles physiques utilisés}{equation.3.10}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {III.3.2.4}Conditions aux frontières}{38}{subsubsection.3.3.2.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{\numberline {III.3.2.4.a}Problème thermique}{38}{paragraph.3.3.2.4.1}\protected@file@percent }
 \newlabel{fig:Comsol_CondFrontT_TambiantRix}{{III.4(a)}{38}{\relax }{figure.caption.38}{}}
@@ -566,11 +570,9 @@
 \newlabel{sub@fig:Comsol_CondFrontT_AdiabRix}{{(b)}{38}{\relax }{figure.caption.38}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {III.4}{\ignorespaces Conditions aux frontières thermiques. Le côté ambiant du régénérateur est à température fixée, le côté froid est modélisé par un puit de chaleur, et la paroi de la source acoustique principale est modélisée par deux conditions asymptotiques. \subref  {fig:Comsol_CondFrontT_TambiantRix} température ambiante, et \subref  {fig:Comsol_CondFrontT_AdiabRix} adiabatique.}}{38}{figure.caption.38}\protected@file@percent }
 \newlabel{fig:Comsol_CondFrontT}{{III.4}{38}{Conditions aux frontières thermiques. Le côté ambiant du régénérateur est à température fixée, le côté froid est modélisé par un puit de chaleur, et la paroi de la source acoustique principale est modélisée par deux conditions asymptotiques. \subref {fig:Comsol_CondFrontT_TambiantRix} température ambiante, et \subref {fig:Comsol_CondFrontT_AdiabRix} adiabatique}{figure.caption.38}{}}
-\abx@aux@cite{0}{baltean_gravity_2025}
-\abx@aux@segm{0}{0}{baltean_gravity_2025}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {III.3.2.4.b}Problème fluide}{38}{paragraph.3.3.2.4.2}\protected@file@percent }
 \abx@aux@cite{0}{lotton_transient_2009}
 \abx@aux@segm{0}{0}{lotton_transient_2009}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {III.3.2.4.b}Problème fluide}{39}{paragraph.3.3.2.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {III.3.2.5}Résultats}{39}{subsubsection.3.3.2.5}\protected@file@percent }
 \newlabel{fig:ConvNatComsol_VelociteArrow}{{III.5(a)}{39}{\relax }{figure.caption.39}{}}
 \newlabel{sub@fig:ConvNatComsol_VelociteArrow}{{(a)}{39}{\relax }{figure.caption.39}{}}
@@ -580,67 +582,67 @@
 \newlabel{fig:ConvNatComsol}{{III.5}{39}{Résultats simulés pour le noyau thermoacoustique couplé avec la cavité d'adaptation d'impédance}{figure.caption.39}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {III.4}Modèle temporel du régime transitoire}{39}{section.3.4}\protected@file@percent }
 \newlabel{chap:ModeleTemporel}{{III.4}{39}{Modèle temporel du régime transitoire}{section.3.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {III.4.1}Présentation du modèle}{39}{subsection.3.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.1.1}Champ acoustique considéré}{39}{subsubsection.3.4.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {III.4.1}Géométrie du problème}{39}{subsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {III.4.2}Champ acoustique considéré}{39}{subsection.3.4.2}\protected@file@percent }
 \abx@aux@cite{0}{swift_thermoacoustics_2017}
 \abx@aux@segm{0}{0}{swift_thermoacoustics_2017}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.1.2}Mécanismes pris en compte dans le modèle}{40}{subsubsection.3.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {III.4.3}Mécanismes pris en compte dans le modèle}{40}{subsection.3.4.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {III.6}{\ignorespaces Représentation schématique des flux thermiques considérés dans le modèle transitoire du régénérateur.}}{40}{figure.caption.40}\protected@file@percent }
 \newlabel{fig:Schema_FluxThermiquesNoyau_Gaelle}{{III.6}{40}{Représentation schématique des flux thermiques considérés dans le modèle transitoire du régénérateur}{figure.caption.40}{}}
-\newlabel{eq:FluxTA_Transitoire_Regen}{{III.12}{40}{Mécanismes pris en compte dans le modèle}{equation.3.12}{}}
+\newlabel{eq:FluxTA_Transitoire_Regen}{{III.13}{40}{Mécanismes pris en compte dans le modèle}{equation.3.13}{}}
 \abx@aux@cite{0}{hsu_effective_1996}
 \abx@aux@segm{0}{0}{hsu_effective_1996}
+\newlabel{eq:FluxVisq_Transitoire}{{III.15}{41}{Mécanismes pris en compte dans le modèle}{equation.3.15}{}}
+\newlabel{eq:FluxVisq_Transitoire_IntegralTSimplifie}{{III.16}{41}{Mécanismes pris en compte dans le modèle}{equation.3.16}{}}
+\newlabel{eq:lienVitesseDebit_PoreCylindrique}{{III.17}{41}{Mécanismes pris en compte dans le modèle}{equation.3.17}{}}
+\newlabel{eq:FluxLat_Transitoire}{{III.19}{41}{Mécanismes pris en compte dans le modèle}{equation.3.19}{}}
 \abx@aux@cite{0}{lewis_measurement_1998}
 \abx@aux@segm{0}{0}{lewis_measurement_1998}
-\newlabel{eq:FluxVisq_Transitoire}{{III.14}{41}{Mécanismes pris en compte dans le modèle}{equation.3.14}{}}
-\newlabel{eq:FluxVisq_Transitoire_IntegralTSimplifie}{{III.15}{41}{Mécanismes pris en compte dans le modèle}{equation.3.15}{}}
-\newlabel{eq:lienVitesseDebit_PoreCylindrique}{{III.16}{41}{Mécanismes pris en compte dans le modèle}{equation.3.16}{}}
-\newlabel{eq:FluxLat_Transitoire}{{III.18}{41}{Mécanismes pris en compte dans le modèle}{equation.3.18}{}}
-\newlabel{eq:ProportionQ_RegenCanister}{{III.19}{41}{Mécanismes pris en compte dans le modèle}{equation.3.19}{}}
 \abx@aux@cite{0}{hahn_heat_2012}
 \abx@aux@segm{0}{0}{hahn_heat_2012}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.1.3}Bilan thermique}{42}{subsubsection.3.4.1.3}\protected@file@percent }
-\newlabel{eq:BilanThermique_Transitoire}{{III.20}{42}{Bilan thermique}{equation.3.20}{}}
-\newlabel{eq:CondFront_x_0Froid}{{III.21a}{42}{Bilan thermique}{equation.3.21a}{}}
-\newlabel{eq:CondFront_x_LregAmb}{{III.21b}{42}{Bilan thermique}{equation.3.21b}{}}
-\newlabel{eq:CondFront_r_Rreg}{{III.21c}{42}{Bilan thermique}{equation.3.21c}{}}
-\newlabel{eq:CondFront}{{III.21}{42}{Bilan thermique}{equation.3.21c}{}}
-\newlabel{eq:CondInit}{{III.22}{42}{Bilan thermique}{equation.3.22}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.1.4}Méthode des transformations intégrales}{42}{subsubsection.3.4.1.4}\protected@file@percent }
-\newlabel{chap:TransfoIntegrales}{{III.4.1.4}{42}{Méthode des transformations intégrales}{subsubsection.3.4.1.4}{}}
-\newlabel{eq:BilanThermique_ChgtVariables}{{III.23a}{43}{Méthode des transformations intégrales}{equation.3.23a}{}}
-\newlabel{eq:CondFront_x_0Froid_ChgtVariables}{{III.23b}{43}{Méthode des transformations intégrales}{equation.3.23b}{}}
-\newlabel{eq:CondFront_x_LregAmb_ChgtVariables}{{III.23c}{43}{Méthode des transformations intégrales}{equation.3.23c}{}}
-\newlabel{eq:CondFront_r_Rreg_ChgtVariables}{{III.23d}{43}{Méthode des transformations intégrales}{equation.3.23d}{}}
-\newlabel{eq:CondInit_ChgtVariables}{{III.23e}{43}{Méthode des transformations intégrales}{equation.3.23e}{}}
-\newlabel{eq:ProblemeTransitoire_ChgtVariables}{{III.23}{43}{Méthode des transformations intégrales}{equation.3.23e}{}}
-\newlabel{ChgtVariables}{{III.24}{43}{Méthode des transformations intégrales}{equation.3.24g}{}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {III.4.1.4.a}Application de la méthode par rapport à $r$}{43}{paragraph.3.4.1.4.1}\protected@file@percent }
-\newlabel{eq:TransfoInteg_ProbValPropre_R}{{III.25}{43}{Application de la méthode par rapport à $r$}{equation.3.25}{}}
-\newlabel{eq:TransfoInteg_CondFront_R}{{III.26}{43}{Application de la méthode par rapport à $r$}{equation.3.26}{}}
-\newlabel{eq:TransfoInteg_FonctionPropres_R}{{III.27}{43}{Application de la méthode par rapport à $r$}{equation.3.27}{}}
-\newlabel{eq:TransfoInteg_Inversion_R}{{III.29a}{43}{Application de la méthode par rapport à $r$}{equation.3.29a}{}}
-\newlabel{eq:TransfoInter_TransfoInteg_R}{{III.29b}{43}{Application de la méthode par rapport à $r$}{equation.3.29b}{}}
-\newlabel{eq:TransfoInteg_BilanThermique_R}{{III.30a}{44}{Application de la méthode par rapport à $r$}{equation.3.30a}{}}
-\newlabel{eq:TransfoInteg_CondFront_x_0Froid_R}{{III.30b}{44}{Application de la méthode par rapport à $r$}{equation.3.30b}{}}
-\newlabel{eq:TransfoInteg_CondFront_x_LregAmb_R}{{III.30c}{44}{Application de la méthode par rapport à $r$}{equation.3.30c}{}}
-\newlabel{eq:TransfoInteg_CondInit_R}{{III.30d}{44}{Application de la méthode par rapport à $r$}{equation.3.30d}{}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {III.4.1.4.b}Application de la méthode par rapport à $x$}{44}{paragraph.3.4.1.4.2}\protected@file@percent }
-\newlabel{eq:TransfoInteg_ProbValPropre_X}{{III.31}{44}{Application de la méthode par rapport à $x$}{equation.3.31}{}}
-\newlabel{eq:TransfoInteg_CondFront_X0}{{III.32a}{44}{Application de la méthode par rapport à $x$}{equation.3.32a}{}}
-\newlabel{eq:TransfoInteg_CondFront_XLreg}{{III.32b}{44}{Application de la méthode par rapport à $x$}{equation.3.32b}{}}
-\newlabel{eq:TransfoInteg_Inversion_X}{{III.36a}{44}{Application de la méthode par rapport à $x$}{equation.3.36a}{}}
-\newlabel{eq:TransfoInter_TransfoInteg_X}{{III.36b}{44}{Application de la méthode par rapport à $x$}{equation.3.36b}{}}
-\newlabel{eq:TheoremeGreen}{{III.38}{44}{Application de la méthode par rapport à $x$}{equation.3.38}{}}
-\newlabel{eq:TheoremeGreen_TransfoInteg}{{III.39}{45}{Application de la méthode par rapport à $x$}{equation.3.39}{}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {III.4.1.4.c}Application des transformées intégrales inverses}{45}{paragraph.3.4.1.4.3}\protected@file@percent }
-\newlabel{eq:DoubleTransform_T}{{III.42}{45}{Application des transformées intégrales inverses}{equation.3.42}{}}
-\newlabel{eq:DoubleTransform_T_FaibleVariTempo_fm}{{III.43}{45}{Application des transformées intégrales inverses}{equation.3.43}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {III.4.2}Détermination des paramètres empiriques}{45}{subsection.3.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.2.1}Coefficient d'échange aux extrémités du noyau}{45}{subsubsection.3.4.2.1}\protected@file@percent }
+\newlabel{eq:ProportionQ_RegenCanister}{{III.20}{42}{Mécanismes pris en compte dans le modèle}{equation.3.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {III.4.4}Bilan thermique}{42}{subsection.3.4.4}\protected@file@percent }
+\newlabel{eq:BilanThermique_Transitoire}{{III.21}{42}{Bilan thermique}{equation.3.21}{}}
+\newlabel{eq:CondFront_x_0Froid}{{III.22a}{42}{Bilan thermique}{equation.3.22a}{}}
+\newlabel{eq:CondFront_x_LregAmb}{{III.22b}{42}{Bilan thermique}{equation.3.22b}{}}
+\newlabel{eq:CondFront_r_Rreg}{{III.22c}{42}{Bilan thermique}{equation.3.22c}{}}
+\newlabel{eq:CondFront}{{III.22}{42}{Bilan thermique}{equation.3.22c}{}}
+\newlabel{eq:CondInit}{{III.23}{42}{Bilan thermique}{equation.3.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {III.4.5}Méthode des transformations intégrales}{42}{subsection.3.4.5}\protected@file@percent }
+\newlabel{chap:TransfoIntegrales}{{III.4.5}{42}{Méthode des transformations intégrales}{subsection.3.4.5}{}}
+\newlabel{eq:BilanThermique_ChgtVariables}{{III.24a}{43}{Méthode des transformations intégrales}{equation.3.24a}{}}
+\newlabel{eq:CondFront_x_0Froid_ChgtVariables}{{III.24b}{43}{Méthode des transformations intégrales}{equation.3.24b}{}}
+\newlabel{eq:CondFront_x_LregAmb_ChgtVariables}{{III.24c}{43}{Méthode des transformations intégrales}{equation.3.24c}{}}
+\newlabel{eq:CondFront_r_Rreg_ChgtVariables}{{III.24d}{43}{Méthode des transformations intégrales}{equation.3.24d}{}}
+\newlabel{eq:CondInit_ChgtVariables}{{III.24e}{43}{Méthode des transformations intégrales}{equation.3.24e}{}}
+\newlabel{eq:ProblemeTransitoire_ChgtVariables}{{III.24}{43}{Méthode des transformations intégrales}{equation.3.24e}{}}
+\newlabel{ChgtVariables}{{III.25}{43}{Méthode des transformations intégrales}{equation.3.25g}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.5.1}Application de la méthode dans la direction transverse}{43}{subsubsection.3.4.5.1}\protected@file@percent }
+\newlabel{eq:TransfoInteg_ProbValPropre_R}{{III.26}{43}{Application de la méthode dans la direction transverse}{equation.3.26}{}}
+\newlabel{eq:TransfoInteg_CondFront_R}{{III.27}{43}{Application de la méthode dans la direction transverse}{equation.3.27}{}}
+\newlabel{eq:TransfoInteg_FonctionPropres_R}{{III.28}{43}{Application de la méthode dans la direction transverse}{equation.3.28}{}}
+\newlabel{eq:TransfoInteg_Inversion_R}{{III.30a}{43}{Application de la méthode dans la direction transverse}{equation.3.30a}{}}
+\newlabel{eq:TransfoInter_TransfoInteg_R}{{III.30b}{44}{Application de la méthode dans la direction transverse}{equation.3.30b}{}}
+\newlabel{eq:TransfoInteg_BilanThermique_R}{{III.31a}{44}{Application de la méthode dans la direction transverse}{equation.3.31a}{}}
+\newlabel{eq:TransfoInteg_CondFront_x_0Froid_R}{{III.31b}{44}{Application de la méthode dans la direction transverse}{equation.3.31b}{}}
+\newlabel{eq:TransfoInteg_CondFront_x_LregAmb_R}{{III.31c}{44}{Application de la méthode dans la direction transverse}{equation.3.31c}{}}
+\newlabel{eq:TransfoInteg_CondInit_R}{{III.31d}{44}{Application de la méthode dans la direction transverse}{equation.3.31d}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.5.2}Application de la méthode dans la direction axiale}{44}{subsubsection.3.4.5.2}\protected@file@percent }
+\newlabel{eq:TransfoInteg_ProbValPropre_X}{{III.32}{44}{Application de la méthode dans la direction axiale}{equation.3.32}{}}
+\newlabel{eq:TransfoInteg_CondFront_X0}{{III.33a}{44}{Application de la méthode dans la direction axiale}{equation.3.33a}{}}
+\newlabel{eq:TransfoInteg_CondFront_XLreg}{{III.33b}{44}{Application de la méthode dans la direction axiale}{equation.3.33b}{}}
+\newlabel{eq:TransfoInteg_Inversion_X}{{III.37a}{44}{Application de la méthode dans la direction axiale}{equation.3.37a}{}}
+\newlabel{eq:TransfoInter_TransfoInteg_X}{{III.37b}{44}{Application de la méthode dans la direction axiale}{equation.3.37b}{}}
+\newlabel{eq:TheoremeGreen}{{III.39}{45}{Application de la méthode dans la direction axiale}{equation.3.39}{}}
+\newlabel{eq:TheoremeGreen_TransfoInteg}{{III.40}{45}{Application de la méthode dans la direction axiale}{equation.3.40}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.5.3}Application des transformées intégrales inverses}{45}{subsubsection.3.4.5.3}\protected@file@percent }
+\newlabel{eq:DoubleTransform_T}{{III.43}{45}{Application des transformées intégrales inverses}{equation.3.43}{}}
+\newlabel{eq:DoubleTransform_T_FaibleVariTempo_fm}{{III.44}{45}{Application des transformées intégrales inverses}{equation.3.44}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {III.4.6}Détermination des paramètres empiriques}{45}{subsection.3.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.6.1}Coefficient d'échange aux extrémités du noyau}{46}{subsubsection.3.4.6.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {III.7}{\ignorespaces Fit sur le transitoire heat only}}{46}{figure.caption.41}\protected@file@percent }
 \newlabel{fig:TransitoireFit}{{III.7}{46}{Fit sur le transitoire heat only}{figure.caption.41}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.2.2}Flux thermique de vorticité}{46}{subsubsection.3.4.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {III.4.6.2}Flux thermique de vorticité}{46}{subsubsection.3.4.6.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {III.5}Conclusion}{46}{section.3.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{\numberline {IV}Résultats et discussion}{47}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -900,7 +902,7 @@
 \newlabel{eq:Porisite_Masse}{{F.1}{r}{Quantité de tissus}{equation.F.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {F.2}Instrumentation}{r}{section.F.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{Bibliographie}{I}{appendix*.68}\protected@file@percent }
-\abx@aux@read@bbl@mdfivesum{901DF6933C827921FCF84D2C0554E8CD}
+\abx@aux@read@bbl@mdfivesum{FA0DCC2CC4C1590013B857942FE41566}
 \abx@aux@defaultrefcontext{0}{johnson_theory_1987}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{drummond_laminar_1984}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{duffourd_refrigerateur_2001}{none/global//global/global/global}
@@ -968,8 +970,8 @@
 \abx@aux@defaultrefcontext{0}{belleoud_etude_2016}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{walch_convection_1980}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{elder_steady_1967}{none/global//global/global/global}
-\abx@aux@defaultrefcontext{0}{basak_heat_2009}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{schneider_laminar_1992}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{basak_heat_2009}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{lewis_measurement_1998}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{lotton_transient_2009}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{hahn_heat_2012}{none/global//global/global/global}

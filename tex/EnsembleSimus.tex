@@ -96,7 +96,7 @@ L'adimensionnement du système d'équations~\eqref{eq:NavierStokes_Boussinesq} d
 \begin{subequations}
 	\begin{align}
 		\nabla \cdot \mathbf v &=0, \label{eq:NonDim_NavierStokes_Boussinesq_Conti}\\
-		\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) &= -\nabla \varpi + \mathrm{Ra} \theta \mathbf e_{z,0} + \nabla^2 \mathbf{v}, \label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}\\
+		\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) &= -\nabla \varpi + \mathrm{Ra} \theta \echaf{\mathbf e_{z,0}\mathbf k} + \nabla^2 \mathbf{v}, \label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}\\
 		\partial_t T + (\mathbf v \cdot \nabla) T - k \nabla^2 T &= 0. \label{eq:NonDim_NavierStokes_Boussinesq_NRJinterne}
 	\end{align}
 \end{subequations}
@@ -349,7 +349,7 @@ Cette conduction transverse d'une part et plus importante dans l'enceinte du ré
 
 \subsubsection{Conditions aux frontières}
 \paragraph{Problème thermique}
-Les conditions aux frontières du modèle de transfert thermique sont représentées sur la figure~\ref{fig:Comsol_CondFrontT}. Deux configurations sont retenues pour les conditions aux frontières thermiques. Pour les deux, un flux de chaleur $\dot Q_f=\qty{-3}{\watt}$ \echaf{verif cette valeur} est d'une part retiré à la paroi qui représente l'échangeur froid, pour prendre en compte l'effet thermoacoustique même si ce modèle ne contient pas de simulation acoustique ; le côté ambiant est d'autre part soit fixé à la température $T_a=\qty{293}{\kelvin}$, soit considéré adiabatique. Les continuités des températures et des flux de chaleur s'appliquent en outre entre les différents domaines.
+Les conditions aux frontières du modèle de transfert thermique sont représentées sur la figure~\ref{fig:Comsol_CondFrontT}. Deux configurations sont retenues pour les conditions aux frontières thermiques. Pour les deux, un flux de chaleur $\dot Q_f=\qty{-10}{\watt}$e st d'une part retiré à la paroi qui représente l'échangeur froid, pour prendre en compte l'effet thermoacoustique même si ce modèle ne contient pas de simulation acoustique ; le côté ambiant est d'autre part soit à la température $T_a=\qty{293}{\kelvin}$. La différence entre les deux configurations se fait au niveau de la paroi qui représente la source acoustique principale : dans l'une, cette paroi est également modélisée par une paroi à température ambiante, tandis que dans l'autre, elle est considérée adiabatique. Les continuités des températures et des flux de chaleur s'appliquent en outre entre les différents domaines.
 
 \begin{figure}[!ht]
     \centering
@@ -389,34 +389,37 @@ Cela se vérifie d'abord près des parois qui composent le bâti de la machine, 
 
 \subsubsection{Résultats}% dans les zones d'intérêt}
 %\subsubsection{Volume d'adaptation d'impédance}
-\echaf{figure avec velocity arrow surface, en attente de Comsol}\ref{fig:ConvNatComsol_VelociteArrow}
 
-+
+\paragraph{Température}
 
-La figure~\ref{fig:ConvNatComsol_TempTransverseCHX} montre une comparaison entre la distribution observée lors d'expériences à proximité de l'échangeur de chaleur froid, et la simulation de cette distribution avec les paramètres \echaf{blabla}.
+Les résultats des simulations sont tracés, en commençant par une analyse de la distribution de température dans le cône d'adaptation d'impédance et le noyau, avec la source acoustique principale fixée à la température ambiante comme présenté sur la figure~\ref{fig:Comsol_CondFrontT_TambiantRix}.
+
 
 \begin{figure}[!ht]
-    \centering
-	\begin{subfigure}{.47\textwidth}
-		\centering
-%		\external{•}
-%		\externalremake
-%		\input{•}
-		\includegraphics[width=.9\textwidth]{example-image-a}
-		\caption{}
-		\label{fig:ConvNatComsol_VelociteArrow}
-	\end{subfigure}		
-	\begin{subfigure}{.47\textwidth}
-		\centering
-		\external{fig_ConvNatComsol_TempTransverseCHX}
-%		\externalremake
-		\input{../fig/fig_ConvNatComsol_Resultats/tex/fig_ConvNatComsol_TempTransverseCHX}
-		\caption{Profil transversal de température du côté de l'échangeur froid.}
-		\label{fig:ConvNatComsol_TempTransverseCHX}
-	\end{subfigure}	    
-    \caption{Résultats simulés pour le noyau thermoacoustique couplé avec la cavité d'adaptation d'impédance}
-    \label{fig:ConvNatComsol}
+	\centering
+	\includegraphics[width=.7\textwidth]{../fig/fig_ConvNatComsol_Resultats/H_RIXTa_Global.png}
+	\caption{Résultats H RIX à T=Ta}
+	\label{fig:H_RIXTa_Global}
 \end{figure}
+
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=.7\textwidth]{../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Global.png}
+	\caption{Résultats V1 RIX à T=Ta}
+	\label{fig:V1_RIXTa_Global}
+\end{figure}
+
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=.7\textwidth]{../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Global.png}
+	\caption{Résultats V2 RIX à T=Ta}
+	\label{fig:V2_RIXTa_Global}
+\end{figure}
+
+
+
 
 %\subsubsection{Régénérateur}
 %Le nombre de Rayleigh dans un matériau poreux dépend de sa perméabilité. Il est assez difficile de la calculer car il faut connaître la vitesse d'écoulement et la différence de pression de part et d'autre du domaine étudié. Le régénérateur est modélisé dans \textsc{Comsol} Multiphysics\textss\textregistered pour extraire ses paramètres hydrauliques et calculer les nombres adimensionnels déjà présentés.

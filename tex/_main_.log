@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  13 APR 2025 23:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  14 APR 2025 16:04
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3026,28 +3026,43 @@ Excluding 'comment' comment.
 
 [38 <./external/fig_Comsol_TambiantRix0.pdf> <./external/fig_Comsol_AdiabRix0.p
 df>]
-<example-image-a.pdf, id=2419, 321.2pt x 240.9pt>
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 405.
-(pdftex.def)             Requested size: 204.6029pt x 153.455pt.
+<../fig/fig_ConvNatComsol_Resultats/H_RIXTa_Global.png, id=2417, 480.8364pt x 3
+58.4592pt>
+File: ../fig/fig_ConvNatComsol_Resultats/H_RIXTa_Global.png Graphic file (type 
+png)
+<use ../fig/fig_ConvNatComsol_Resultats/H_RIXTa_Global.png>
+Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/H_RIXTa_Global.png 
+ used on input line 400.
+(pdftex.def)             Requested size: 338.5863pt x 252.42387pt.
+<../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Global.png, id=2419, 480.8364pt x 
+358.4592pt>
+File: ../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Global.png Graphic file (type
+ png)
+<use ../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Global.png>
+Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Global.png
+  used on input line 408.
+(pdftex.def)             Requested size: 338.5863pt x 252.42387pt.
+<../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Global.png, id=2420, 480.8364pt x 
+358.4592pt>
+File: ../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Global.png Graphic file (type
+ png)
+<use ../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Global.png>
+Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Global.png
+  used on input line 415.
+(pdftex.def)             Requested size: 338.5863pt x 252.42387pt.
 
-(../fig/fig_ConvNatComsol_Resultats/tex/fig_ConvNatComsol_TempTransverseCHX.tex
-===== Image 'external/fig_ConvNatComsol_TempTransverseCHX0' is up-to-date. ====
-==
-)
 
-[39 <C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/tex/latex/mwe/
-example-image-a.pdf> <./external/fig_ConvNatComsol_TempTransverseCHX0.pdf>]
+[39 <../fig/fig_ConvNatComsol_Resultats/H_RIXTa_Global.png> <../fig/fig_ConvNat
+Comsol_Resultats/V1_RIXTa_Global.png>]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
 ====
 )
 
-[40 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
+[40 <../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Global.png>]
 
-[41]
+[41 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
 
 [42]
 
@@ -3055,17 +3070,21 @@ u_Gaelle.tex
 
 [44]
 
-[45] (../fig/fig_TransitoireFit/tex/fig_TransitoireFit.tex
+[45]
+
+[46] (../fig/fig_TransitoireFit/tex/fig_TransitoireFit.tex
 ===== Image 'external/fig_TransitoireFit0' is up-to-date. ======
 )) (EtudeExperimentale.tex
 
-[46 <./external/fig_TransitoireFit0.pdf>]
+[47 <./external/fig_TransitoireFit0.pdf>]
+
+[48
+
+]
 Chapitre IV.
 
 
-[47
-
-] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_Tf.tex
+[49] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_Tf.tex
 ===== Image 'external/fig_PerfConvNat_Tf_0W0' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_Ta.tex
 ===== Image 'external/fig_PerfConvNat_0W_Ta0' is up-to-date. ======
@@ -3091,7 +3110,7 @@ Chapitre IV.
 ===== Image 'external/fig_HeatOnly_CHXout_H1H20' is up-to-date. ======
 )
 
-[48
+[50
 
 ] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_H1H2_Low0' is up-to-date. ======
@@ -3115,7 +3134,7 @@ Chapitre IV.
 ===== Image 'external/fig_HeatOnly_AHXin_H1H20' is up-to-date. ======
 )
 
-[49 <./external/fig_PerfConvNat_Tf_0W0.pdf> <./external/fig_PerfConvNat_0W_Ta0.
+[51 <./external/fig_PerfConvNat_Tf_0W0.pdf> <./external/fig_PerfConvNat_0W_Ta0.
 pdf> <./external/fig_PerfConvNat_0W_Qa0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Low0' is up-to-date. ======
@@ -3129,7 +3148,7 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 442.
 
 
-[50 <./external/fig_PerfConvNat_50W_Tf0.pdf> <./external/fig_PerfConvNat_50W_Ta
+[52 <./external/fig_PerfConvNat_50W_Tf0.pdf> <./external/fig_PerfConvNat_50W_Ta
 0.pdf> <./external/fig_PerfConvNat_50W_Qa0.pdf> <./external/fig_PerfConvNat_50W
 _COP0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
@@ -3152,7 +3171,7 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 468.
 
 
-[51 <./external/fig_PerfConvNat_100W_Tf0.pdf> <./external/fig_PerfConvNat_100W_
+[53 <./external/fig_PerfConvNat_100W_Tf0.pdf> <./external/fig_PerfConvNat_100W_
 Ta0.pdf> <./external/fig_PerfConvNat_100W_Qa0.pdf> <./external/fig_PerfConvNat_
 50W_COP1.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Mid0' is up-to-date. ======
@@ -3169,7 +3188,7 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 511.
 
 
-[52 <./external/fig_HeatOnly_CHXout_H1H20.pdf> <./external/fig_Acou_CHXout_H1H2
+[54 <./external/fig_HeatOnly_CHXout_H1H20.pdf> <./external/fig_Acou_CHXout_H1H2
 _Low0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High.tex
@@ -3196,7 +3215,7 @@ _Low0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_Mid0' is up-to-date. ======
 )
 
-[53 <./external/fig_Acou_CHXout_H1H2_Mid0.pdf> <./external/fig_Acou_CHXout_H1H2
+[55 <./external/fig_Acou_CHXout_H1H2_Mid0.pdf> <./external/fig_Acou_CHXout_H1H2
 _High0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_High.tex
@@ -3205,51 +3224,51 @@ _High0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
 ===== Image 'external/fig_Acou_AHXin_V1V2_High0' is up-to-date. ======
 )
 
-[54 <./external/fig_HeatOnly_CHXout_V1V20.pdf> <./external/fig_Acou_CHXout_V1V2
+[56 <./external/fig_HeatOnly_CHXout_V1V20.pdf> <./external/fig_Acou_CHXout_V1V2
 _Low0.pdf>]) (Conclusion.tex
 
-[55 <./external/fig_Acou_CHXout_V1V2_Mid0.pdf> <./external/fig_Acou_CHXout_V1V2
+[57 <./external/fig_Acou_CHXout_V1V2_Mid0.pdf> <./external/fig_Acou_CHXout_V1V2
 _High0.pdf>]
 
-[56 <./external/fig_HeatOnly_CHXin_H1H20.pdf> <./external/fig_HeatOnly_Regmid_H
+[58 <./external/fig_HeatOnly_CHXin_H1H20.pdf> <./external/fig_HeatOnly_Regmid_H
 1H20.pdf> <./external/fig_HeatOnly_AHXin_H1H20.pdf>]
 
-[57 <./external/fig_Acou_CHXin_H1H2_Low0.pdf> <./external/fig_Acou_Regmid_H1H2_
+[59 <./external/fig_Acou_CHXin_H1H2_Low0.pdf> <./external/fig_Acou_Regmid_H1H2_
 Low0.pdf> <./external/fig_Acou_AHXin_H1H2_Low0.pdf>]
 
-[58 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H2_
+[60 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H2_
 Mid0.pdf> <./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
 
-[59 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1H2
+[61 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1H2
 _High0.pdf> <./external/fig_Acou_AHXin_H1H2_High0.pdf>]
 
-[60 <./external/fig_HeatOnly_CHXin_V1V20.pdf> <./external/fig_HeatOnly_Regmid_V
+[62 <./external/fig_HeatOnly_CHXin_V1V20.pdf> <./external/fig_HeatOnly_Regmid_V
 1V20.pdf> <./external/fig_HeatOnly_AHXin_V1V20.pdf>]
 
-[61 <./external/fig_Acou_CHXin_V1V2_Low0.pdf> <./external/fig_Acou_Regmid_V1V2_
+[63 <./external/fig_Acou_CHXin_V1V2_Low0.pdf> <./external/fig_Acou_Regmid_V1V2_
 Low0.pdf> <./external/fig_Acou_AHXin_V1V2_Low0.pdf>]
 
-[62 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid_V1V2_
+[64 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid_V1V2_
 Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_Mid0.pdf>]
 
-[63 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_Regmid_V1V2
+[65 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_Regmid_V1V2
 _High0.pdf> <./external/fig_Acou_AHXin_V1V2_High0.pdf>]
 
-[64
+[66
 
 ]
 Chapitre V.
 
 
-[65]) (Perspectives.tex
+[67]) (Perspectives.tex
 
-[66
+[68
 
 ]
 Chapitre VI.
 
 
-[67
+[69
 
 ]
 ===== Image 'external/fig_ActiveControl_ADAU17010' is up-to-date. ======
@@ -3259,7 +3278,7 @@ LaTeX Info: Symbol \textmu not provided by
             Default family used instead on input line 60.
 
 
-[68
+[70
 
  <./external/fig_ActiveControl_ADAU17010.pdf> <./external/fig_ActiveControl_Tee
 nsy410.pdf
@@ -3270,7 +3289,7 @@ pdfTeX warning: pdflatex (file ./external/fig_ActiveControl_Teensy410.pdf): PDF
 ===== Image 'external/fig_Geometrie_FeedbackLoop0' is up-to-date. ======
 ))
 
-[69 <./external/fig_Geometrie_FeedbackLoop0.pdf>] (IndexNotations.tex
+[71 <./external/fig_Geometrie_FeedbackLoop0.pdf>] (IndexNotations.tex
 Annexe A.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -3658,16 +3677,16 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 3CC7EEB95885AB01A29E58D8BC8561B1;23712.
+(rerunfilecheck)             Checksum: 7212F209F421B66DCA83F8EBF4C1705F;23712.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  79658 strings out of 473523
- 2039462 string characters out of 5707334
- 3283781 words of memory out of 5000000
- 100901 multiletter control sequences out of 15000+600000
+ 2039456 string characters out of 5707334
+ 3283599 words of memory out of 5000000
+ 100902 multiletter control sequences out of 15000+600000
  733525 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,16n,159p,4037b,2957s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3691,11 +3710,10 @@ teur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Use
 rs/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona
 /iwonali.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts
 /type1/nowacki/iwona/iwonam.pfb><C:/Users/juliette utilisateur/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/juliette utilisateur/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on _main_.pdf (103 pages, 31083793 bytes).
+ograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on _main_.pdf (105 pages, 35210127 bytes).
 PDF statistics:
- 4516 PDF objects out of 5155 (max. 8388607)
- 521 named destinations out of 1000 (max. 500000)
- 1606 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4509 PDF objects out of 5155 (max. 8388607)
+ 526 named destinations out of 1000 (max. 500000)
+ 1611 words of extra memory for PDF output out of 10000 (max. 10000000)
 

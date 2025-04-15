@@ -10,12 +10,12 @@
     major grid style={line width=.2pt,draw=gray!50},
     xlabel={Temps $t$ (\unit{\s})},
     ylabel={\'Ecart de température $\theta$ (\unit{\kelvin})},
-    xmin=0,xmax=600,
+    xmin=0,xmax=1200,
 %	ymin=-45,ymax=20,
     xtick={0,300,600,...,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
     domain=0:100,
     legend cell align={left},
-    legend style = {at={($(1,1)+(2mm,-2mm)$)},anchor = south east,rounded corners},legend columns=5,
+    legend style = {at={($(1,1)+(2mm,2mm)$)},anchor = north east,rounded corners},legend columns=3,
     ]
     	\addplot[ultra thick,Plasma7, dashed] file {{../fig/fig_AcouExample/data/data_TC1_0beg.txt}};\addlegendentry{TC 1}
     	\addplot[ultra thick,Plasma7] file {{../fig/fig_AcouExample/data/data_TC2_0beg.txt}};\addlegendentry{TC 2}

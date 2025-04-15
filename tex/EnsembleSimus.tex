@@ -391,33 +391,64 @@ Cela se vérifie d'abord près des parois qui composent le bâti de la machine, 
 %\subsubsection{Volume d'adaptation d'impédance}
 
 \paragraph{Température}
+%Pour commencer, la distribution de température pour chaque orientation est analysée. Les résultats des simulations sont tracés sur les figures~\ref{fig:H_RIXTa_Global}, \ref{fig:V1_RIXTa_Global} et \ref{fig:V2_RIXTa_Global}, dans le cas où la source acoustique principale est fixée à la température ambiante comme présenté sur la figure~\ref{fig:Comsol_CondFrontT_TambiantRix}. La norme du champ de vitesse est superposé à la distribution de température réprésentée par des cartes de couleur.
 
-Les résultats des simulations sont tracés, en commençant par une analyse de la distribution de température dans le cône d'adaptation d'impédance et le noyau, avec la source acoustique principale fixée à la température ambiante comme présenté sur la figure~\ref{fig:Comsol_CondFrontT_TambiantRix}.
+
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=.7\textwidth]{../fig/fig_ConvNatComsol_Resultats/H_RIXTa_Global.png}
+%	\caption{Résultats H RIX à T=Ta}
+%	\label{fig:H_RIXTa_Global}
+%\end{figure}
+%
+%
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=.7\textwidth]{../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Global.png}
+%	\caption{Résultats V1 RIX à T=Ta}
+%	\label{fig:V1_RIXTa_Global}
+%\end{figure}
+%
+%
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=.7\textwidth]{../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Global.png}
+%	\caption{Résultats V2 RIX à T=Ta}
+%	\label{fig:V2_RIXTa_Global}
+%\end{figure}
+
+Tout d'abord, la distribution de température est tracée sur la figure~\ref{fig:RIXTa_Detail}
 
 
-\begin{figure}[!ht]
+\begin{figure}[!htp]
 	\centering
-	\includegraphics[width=.7\textwidth]{../fig/fig_ConvNatComsol_Resultats/H_RIXTa_Global.png}
-	\caption{Résultats H RIX à T=Ta}
-	\label{fig:H_RIXTa_Global}
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/H1_RIXTa_Detail.png}
+		\caption{}
+		\label{fig:H1_RIXTa_Detail}
+	\end{subfigure}	
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/H2_RIXTa_Detail.png}
+		\caption{}
+		\label{fig:H2_RIXTa_Detail}
+	\end{subfigure}	
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Detail.png}
+		\caption{}
+		\label{fig:V1_RIXTa_Detail}
+	\end{subfigure}	
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Detail.png}
+		\caption{}
+		\label{fig:V2_RIXTa_Detail}
+	\end{subfigure}
+	\caption{Distribution de température dans le cône d'adaptation d'impédance et dans le noyau (carte de couleur), et norme de vitesse de l'écoulement dans la cellule de convection naturelle. Les orientations sont \subref{fig:H1_RIXTa_Detail} `\texttt{H1}', \subref{fig:H2_RIXTa_Detail} `\texttt{H2}', \subref{fig:V1_RIXTa_Detail} `\texttt{V1}', et \subref{fig:V2_RIXTa_Detail} `\texttt{V2}'.}
+	\label{fig:RIXTa_Detail}
 \end{figure}
-
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=.7\textwidth]{../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Global.png}
-	\caption{Résultats V1 RIX à T=Ta}
-	\label{fig:V1_RIXTa_Global}
-\end{figure}
-
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=.7\textwidth]{../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Global.png}
-	\caption{Résultats V2 RIX à T=Ta}
-	\label{fig:V2_RIXTa_Global}
-\end{figure}
-
 
 
 

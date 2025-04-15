@@ -3,11 +3,11 @@
 \def\dh{5cm}
 \tikzset{elips/.style={ellipse,draw,minimum width=2em,minimum height=1.8em,inner ysep=0pt},}
 
-\foreach \x/\y in {0/{Résultats antérieurs},1/{Convection naturelle}}{
+\foreach \x/\y in {0/{Résultats antérieurs},1/{Convection naturelle ?}}{
 	\draw (0,-\dv*\x) node(a\x) [rectangle, rounded corners, draw,fill=Plasma75] {\y}; 
 	}
 	
-\foreach \i/\j/\k in {-3/Orientations/Essais,-1/Instrumentation/{Quantité d'intérêt},1/Protocole/Fiabilité,3/{Post-Traitement}/Justesse}{
+\foreach \i/\j/\k in {-3/Orientations/Essais,-1/Instrumentation/{Quantités d'intérêts},1/Protocole/Fiabilité,3/{Post-Traitement}/Justesse}{
 	\draw ($(a1.center)+(\i*\dh/3,-\dv)$) node(b\i)[rectangle, rounded corners, draw, fill=Plasma75]{\j};
 	\draw (a1.south) to[out=-90,in=90] node[anchor=center, pos=.75, fill=white, fill opacity=.7, text opacity=1, rectangle, rounded corners, draw]{\k} (b\i);
 	}
@@ -27,7 +27,7 @@
 	\draw[->] (b1.south) to[out={-\x*60},in=90] ++(-\x*60:1.7cm) node[below]{\y};
 }
 
-\foreach \x/\y in {1/{$\dot Q_a$},2/{$f_{\text{\sf ré-ech}}$},3/{$\theta$}}{
+\foreach \x/\y in {1/{$\dot Q_a$},2/{$f_{re}$},3/{$\theta$}}{
 	\draw[->] (b3.south) to[out={-\x*45},in=90] ++(-\x*45:1.5cm) node[below]{\y};
 }
 \end{tikzpicture}

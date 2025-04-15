@@ -30,13 +30,13 @@
 	\filldraw[draw=black,fill=gray!50!white] (0,\rREG) rectangle (\lCHX,\rCHX);		% côtés où l'eau circule
 	\filldraw[draw=black,fill=gray!50!white] (0,-\rREG) rectangle (\lCHX,-\rCHX);	%
 	
-	\draw[MatlabYellow,rounded corners,very thick] (\lCHX,-\rCONE) -- ++(\lAHX,0) -- ++(2*\lAHX,{\rCONE-\rRIX}) -- ++(0,2*\rRIX) node(Cone){} -- ++(-2*\lAHX,{\rCONE-\rRIX})  -- ++(-\lAHX,0) -- cycle;
+%	\draw[MatlabYellow,rounded corners,very thick] (\lCHX,-\rCONE) -- ++(\lAHX,0) -- ++(2*\lAHX,{\rCONE-\rRIX}) -- ++(0,2*\rRIX) node(Cone){} -- ++(-2*\lAHX,{\rCONE-\rRIX})  -- ++(-\lAHX,0) -- cycle;
 	
 	\draw[MatlabBlue,->] (CHX.north west) to[out=90,in=-90] (\lCHX/2,-\rCHX);
 %	\draw[MatlabYellow,->] ($(Cone.center)+(3*\lAHX,3*\lAHX)$) node[anchor=south]{Cone d'adaptation d'impédance} to[out=-90,in=0] (Cone);
 	\end{scope}
 	
-	\draw[MatlabPurple,rounded corners,very thick] (0,-\rCONE) rectangle ++({\lAHX+\lREG+\lCHX},2*\rCONE);
+%	\draw[MatlabPurple,rounded corners,very thick] (0,-\rCONE) rectangle ++({\lAHX+\lREG+\lCHX},2*\rCONE);
 	
 %	\draw[green!50!black] (0,0) node[left]{\begin{tabular}{r}Source \\ acoustique \\ secondaire \end{tabular}};
 %	\draw[green!50!black] ({\lCHX+\lREG+4*\lAHX},0) node[right]{\begin{tabular}{l} Source \\ acoustique \\ principale\end{tabular}};

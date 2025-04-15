@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  14 APR 2025 13:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  15 APR 2025 02:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2183,124 +2183,70 @@ Package biblatex Info: Reference segment=0 on input line 387.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-(../fig/fig_ComsolThermalCondFront/tex/Rix_Ambiant.tex
-\openout5 = `external/fig_Comsol_TambiantRix0.md5'.
+(../fig/fig_ConclusionChap2/tex/fig_ConclusionChap2.tex
+\openout5 = `external/fig_ConclusionChap20.md5'.
 
 \openout5 = `totomain.auxlock'.
 
 
 ===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_Comsol_TambiantRix0" "\de
-f\tikzexternalrealjob{totomain}\input{totomain}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_Comsol_TambiantRix0" "\def\tikzexternalrealjob{totomain}\input{t
-otomain}")...executed.
-
-\openout5 = `totomain.auxlock'.
-
-)
-LaTeX Font Info:    Trying to load font information for OT1+iwonalm on input li
-ne 398.
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ot
-1iwonalm.fd
-File: ot1iwonalm.fd 2005/10/05 v1.2 font definition file for OT1/iwonalm (MW)
-)
-LaTeX Font Info:    Trying to load font information for OML+iwonal on input lin
-e 398.
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\om
-liwonal.fd
-File: omliwonal.fd 2008/07/22 v0.995 font definition file for OML/iwonal (MW)
-)
-LaTeX Font Info:    Trying to load font information for OMS+iwonal on input lin
-e 398.
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\om
-siwonal.fd
-File: omsiwonal.fd 2008/07/22 v0.995 font definition file for OMS/iwonal (MW)
-)
-LaTeX Font Info:    Trying to load font information for OMX+iwonal on input lin
-e 398.
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\om
-xiwonal.fd
-File: omxiwonal.fd 2008/07/22 v0.995 font definition file for OMX/iwonal (MW)
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 398
-.
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
-\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 398
-.
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
-\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 39
-8.
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/jknappen
-\ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
-98.
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd
-\ustmry.fd) (../fig/fig_ComsolThermalCondFront/tex/Rix_Adiab.tex
-\openout5 = `external/fig_Comsol_AdiabRix0.md5'.
-
-\openout5 = `totomain.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_Comsol_AdiabRix0" "\def\t
+n-error -interaction=batchmode -jobname "external/fig_ConclusionChap20" "\def\t
 ikzexternalrealjob{totomain}\input{totomain}"' ========
 runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_Comsol_AdiabRix0" "\def\tikzexternalrealjob{totomain}\input{toto
+ "external/fig_ConclusionChap20" "\def\tikzexternalrealjob{totomain}\input{toto
 main}")...executed.
 
 \openout5 = `totomain.auxlock'.
 
 )
 
+Package caption Warning: Unused \captionsetup[subfigure] on input line 182.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[sub] on input line 184.
+See the caption package documentation for explanation.
+
+
+
 [1{C:/Users/juliette utilisateur/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.m
 ap}{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
 /iwona/ec-iwona.enc}
 
-{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iw
-ona/ec-iwona-sc.enc} <./external/fig_Comsol_TambiantRix0.pdf> <./external/fig_C
-omsol_AdiabRix0.pdf>] (totomain.aux)
+ <./external/fig_ConclusionChap20.pdf>] (totomain.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `totomain.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                totomain
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'totomain.run.xml'.
 \openout1 = `totomain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 75784 strings out of 473523
- 1917188 string characters out of 5707334
- 3182588 words of memory out of 5000000
- 98059 multiletter control sequences out of 15000+600000
- 609358 words of font info for 81 fonts, out of 8000000 for 9000
+ 75504 strings out of 473523
+ 1911372 string characters out of 5707334
+ 3179058 words of memory out of 5000000
+ 97829 multiletter control sequences out of 15000+600000
+ 565444 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,7n,104p,1203b,1790s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,5n,104p,1203b,1786s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowa
 cki/iwona/iwonal.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKT
-eX/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Users/juliette utilisateur/AppData
-/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonam.pfb>
-Output written on totomain.pdf (1 page, 96125 bytes).
+eX/fonts/type1/nowacki/iwona/iwonali.pfb>
+Output written on totomain.pdf (1 page, 66081 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 2 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

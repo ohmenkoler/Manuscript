@@ -2,17 +2,16 @@
 \mylocaltoc
 
 \section{Introduction}\label{chap:EtudeExpe_Intro}
-Lors des expériences réalisées lors de la caractérisation du réfrigérateur \textsc{Tacot}, il a été montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau comme par exemple sur la figure~\ref{fig:ATE_Profils_5mm}~\cite{ramadan_design_2021}. Cet écart au comportement attendu, c'est-à-dire un gradient linéaire entre les côtés froid et ambiant du noyau thermoacoustique, ainsi qu'une température radiale uniforme sur la section du noyau thermoacoustique, implique la présence d'un écoulement moyen non nul et d'effets non-linéaires dans le réfrigérateur. Parmi les hypothèses formulées quant à la cause de ces disparités avec la théorie linéaire de Rott, plusieurs hypothèses peuvent être envisagées : vent acoustique, turbulence, formation de tourbillons, génération d'harmoniques supérieures, et convection naturelle. Parmi ces effets, peu d'études portent sur cette dernière, bien qu'il ait déjà été montré que le déclenchement de moteurs ou encore l'uniformité de température sur la section y étaient sensibles \cite{ross_influence_2003,  hireche_numerical_2019, ramadan_experimental_2018,  zhang_novel_2011}. Plusieurs paramètres sont étudiés pour quantifier la dépendance du comportement de la machine à la direction de la gravité. 
+Lors des expériences réalisées lors de la caractérisation du réfrigérateur \textsc{Tacot}, il a été montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau comme par exemple sur la figure~\ref{fig:ATE_Profils_5mm}~\cite{ramadan_design_2021}. Cet écart au comportement attendu, c'est-à-dire un gradient linéaire entre les côtés froid et ambiant du noyau thermoacoustique, ainsi qu'une température radiale uniforme sur la section du noyau thermoacoustique, implique la présence d'un écoulement moyen non nul et d'effets non-linéaires dans le réfrigérateur. Parmi les hypothèses formulées quant à la cause de ces disparités avec la théorie linéaire de Rott, plusieurs hypothèses peuvent être envisagées : vent acoustique, turbulence, formation de tourbillons, génération d'harmoniques supérieures, et convection naturelle. Parmi ces effets, peu d'études portent sur cette dernière, bien qu'il ait déjà été montré que le déclenchement de moteurs ou encore l'uniformité de température sur la section y étaient sensibles \cite{ross_influence_2003,  hireche_numerical_2019, ramadan_experimental_2018}, dont quelques unes sur le sujet des réfrigérateurs thermoacoustiques~\cite{zhang_novel_2011, babaei_investigation_2010}.\smallskip
 
-<<<<<<< HEAD
-\section{Impact de la convection naturelle sur les performances du réfrigérateur}
-Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=Q_f/W_e$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = \nicefrac{T_f}{T_a-T_f}$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées \echaf{numéro de TC correspondants}. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section. 
-=======
-\section{\'Etude des performances}
-Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=Q_f/W_e$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = \nicefrac{T_f}{T_a-T_f}$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section. 
->>>>>>> parent of 65bbdad (Suppr tout ancien contenu chap4 cone adapt imped)
+Plusieurs paramètres  sont étudiés pour quantifier la dépendance du comportement de la machine à la direction de la gravité et la convection naturelle. Tout d'abord, les performances obtenues au cours de différentes expériences sont présentées dans le paragraphe~\ref{chap:PerfConvNat}, pour adopter une vue d'ensemble du réfrigérateur. Les aspects étudiés dans cette section sont les températures atteintes au niveau de chaque échangeur, les flux de chaleur échangés par ces derniers, et le coefficient de performance, et une fois le régime stationnaire atteint.\smallskip
 
-Dans cette étude, les quatre orientations définies sur les schémas de la figure~\ref{fig:OrientationCore} sont tour à tour mises en place. Pour chacune, des expériences sont réalisées en suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}, cette fois en réglant les charges thermiques $\dot Q_f$ de \qtylist{50;100}{\watt}. Les résultats des expériences tracés sur les figures~\ref{fig:PerfConvNat_0W} à \ref{fig:PerfConvNat_100W} proviennent du tableau~\ref{tab:RecapResultExpe}.\medskip
+Une analyse plus avancée est ensuite proposée dans le paragraphe~\ref{chap:DistribTemperature}, où les températures mesurées à tous les emplacements de thermocouples présentés dans le protocole expliqué plus tôt sont tracées. Cette partie de l'étude est séparée en deux étapes. D'une part, une analyse temporelle est réalisée en observant les données transitoires et les résultats de la simulation analytique temporelle présentée dans le paragraphe~\ref{chap:ModeleTemporel}, puis les profils axiaux et radiaux sont déduits à partir des valeurs de température en régime stationnaire pour se placer dans la même configuration que le modèle par éléments finis expliqué dans le paragraphe~\ref{chap:FEM}.
+
+\section{Impact de la convection naturelle sur les performances du réfrigérateur}\label{chap:PerfConvNat}
+Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=Q_f/W_e$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = \nicefrac{T_f}{T_a-T_f}$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées en calculant respectivement les moyennes des signaux de température des thermocouples \numlist{4;5;6}, et \numlist{10;11;12}. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes et égales à la moyenne des données de thermocouples placés sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section. 
+
+Les quatre orientations définies sur les schémas de la figure~\ref{fig:OrientationCore} sont tour à tour mises en place, et pour chacune des expériences sont réalisées en suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}. Les charges thermiques $\dot Q_f$ de \qtylist{0;50;100}{\watt} sont tour à tour appliquées par l'échangeur de chaleur froid. Les résultats des expériences tracés sur les figures~\ref{fig:PerfConvNat_0W} à \ref{fig:PerfConvNat_100W} proviennent du tableau~\ref{tab:RecapResultExpe}.\medskip
 
 
 %\begin{figure}[!ht]
@@ -56,6 +55,9 @@ Dans cette étude, les quatre orientations définies sur les schémas de la figu
 %    \label{fig:PerfConvNat}
 %\end{figure}
 
+
+\subsection{Absence de charge thermique}
+
 \begin{figure}[!ht]
     \centering
 	\begin{subfigure}{.48\textwidth}
@@ -93,9 +95,13 @@ Dans cette étude, les quatre orientations définies sur les schémas de la figu
 %		\caption{}
 %		\label{fig:PerfConvNat_0W_COP}
 %	\end{subfigure}	     
-    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $Q_f=\qty{0}{\watt}$ : \subref{fig:PerfConvNat_0W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_0W_Ta} température ambiante~$T_a$, et \subref{fig:PerfConvNat_0W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.\echaf{ajouter valeurs DeltaEC}}
+    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $\dot Q_f=\qty{0}{\watt}$ : \subref{fig:PerfConvNat_0W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_0W_Ta} température ambiante~$T_a$, et \subref{fig:PerfConvNat_0W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.\echaf{ajouter valeurs DeltaEC}}
     \label{fig:PerfConvNat_0W}
 \end{figure}
+
+Sur la figure~\ref{fig:PerfConvNat_0W_Tf}, la décroissance de la température froide atteinte est clairement visible, et ce, pour n'importe quelle orientation. La différence se remarque \echaf{continuer ici}
+
+\subsection{Charge thermique de \qty{50}{\watt}}
 
 \begin{figure}[!ht]
     \centering
@@ -134,9 +140,11 @@ Dans cette étude, les quatre orientations définies sur les schémas de la figu
 		\caption{}
 		\label{fig:PerfConvNat_50W_COP}
 	\end{subfigure}	     
-    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $Q_f=\qty{50}{\watt}$ : \subref{fig:PerfConvNat_50W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_50W_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_50W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$, et \subref{fig:PerfConvNat_50W_COP} coefficient de performance rapporté à Carnot. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.\echaf{ajouter valeurs DeltaEC}}
+    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $\dot Q_f=\qty{50}{\watt}$ : \subref{fig:PerfConvNat_50W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_50W_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_50W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$, et \subref{fig:PerfConvNat_50W_COP} coefficient de performance rapporté à Carnot. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.\echaf{ajouter valeurs DeltaEC}}
     \label{fig:PerfConvNat_50W}
 \end{figure}
+
+\subsection{Charge thermique de \qty{100}{\watt}}
 
 \begin{figure}[!ht]
     \centering
@@ -175,7 +183,7 @@ Dans cette étude, les quatre orientations définies sur les schémas de la figu
 		\caption{}
 		\label{fig:PerfConvNat_100W_COP}
 	\end{subfigure}	     
-    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $Q_f=\qty{100}{\watt}$ : \subref{fig:PerfConvNat_100W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_100W_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_100W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$, et \subref{fig:PerfConvNat_100W_COP} le coefficient de performance rapporté à Carnot. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.\echaf{ajouter valeurs DeltaEC}}
+    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $\dot Q_f=\qty{100}{\watt}$ : \subref{fig:PerfConvNat_100W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_100W_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_100W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$, et \subref{fig:PerfConvNat_100W_COP} le coefficient de performance rapporté à Carnot. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.\echaf{ajouter valeurs DeltaEC}}
     \label{fig:PerfConvNat_100W}
 \end{figure}
 
@@ -261,8 +269,11 @@ L'échangeur ambiant extrait la chaleur des volumes élémentaires de gaz qui os
 %    \label{fig:PerfConvNat_DR35}
 %\end{figure}
 
-\section{Distribution des températures}
-\subsection{Dans la cavité d'adaptation d'impédance}
+\section{Distribution des températures}\label{chap:DistribTemperature}
+\subsection{Dans le cône d'adaptation d'impédance}
+L'étude des distributions de température commence par le cône d'adaptation d'impédance
+
+
 \subsubsection{Réfrigérateur horizontal}
 \paragraph*{Sans acoustique}
 

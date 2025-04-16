@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  15 APR 2025 02:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  15 APR 2025 23:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2734,12 +2734,19 @@ LaTeX Info: Symbol \textohm not provided by
 
 
 [18 <./external/fig_TemperatureAHX_InOut0.pdf>]
-===== Image 'external/fig_Capteurs0' is up-to-date. ======
+<../fig/fig_Capteurs/Sensors_updated2.pdf, id=1683, 1172.12906pt x 478.03593pt>
+
+File: ../fig/fig_Capteurs/Sensors_updated2.pdf Graphic file (type pdf)
+<use ../fig/fig_Capteurs/Sensors_updated2.pdf>
+Package pdftex.def Info: ../fig/fig_Capteurs/Sensors_updated2.pdf  used on inpu
+t line 353.
+(pdftex.def)             Requested size: 469.18652pt x 191.34956pt.
+
 (../fig/fig_BancEssaisComplet/tex/BancEssaisComplet.tex
 ===== Image 'external/fig_BancEssaisComplet0' is up-to-date. ======
 )
 
-[19 <./external/fig_Capteurs0.pdf>]
+[19 <../fig/fig_Capteurs/Sensors_updated2.pdf>]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
 )
@@ -3009,43 +3016,49 @@ Excluding 'comment' comment.
 
 [38 <./external/fig_Comsol_TambiantRix0.pdf> <./external/fig_Comsol_AdiabRix0.p
 df>]
-<../fig/fig_ConvNatComsol_Resultats/H1_RIXTa_Detail.png, id=2399, 224.7597pt x 
-224.7597pt>
-File: ../fig/fig_ConvNatComsol_Resultats/H1_RIXTa_Detail.png Graphic file (type
- png)
-<use ../fig/fig_ConvNatComsol_Resultats/H1_RIXTa_Detail.png>
-Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/H1_RIXTa_Detail.png
-  used on input line 427.
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa_Detail2.png, 
+id=2398, 224.7597pt x 224.7597pt>
+File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa_Detail2.
+png Graphic file (type png)
+<use ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa_Detail2.p
+ng>
+Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorm
+e/H1_RIXTa_Detail2.png  used on input line 427.
 (pdftex.def)             Requested size: 204.6029pt x 204.61052pt.
-<../fig/fig_ConvNatComsol_Resultats/H2_RIXTa_Detail.png, id=2401, 224.7597pt x 
-224.7597pt>
-File: ../fig/fig_ConvNatComsol_Resultats/H2_RIXTa_Detail.png Graphic file (type
- png)
-<use ../fig/fig_ConvNatComsol_Resultats/H2_RIXTa_Detail.png>
-Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/H2_RIXTa_Detail.png
-  used on input line 433.
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa_Detail2.png, 
+id=2400, 224.7597pt x 224.7597pt>
+File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa_Detail2.
+png Graphic file (type png)
+<use ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa_Detail2.p
+ng>
+Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorm
+e/H2_RIXTa_Detail2.png  used on input line 433.
 (pdftex.def)             Requested size: 204.6029pt x 204.61052pt.
-<../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Detail.png, id=2402, 224.7597pt x 
-224.7597pt>
-File: ../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Detail.png Graphic file (type
- png)
-<use ../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Detail.png>
-Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/V1_RIXTa_Detail.png
-  used on input line 439.
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa_Detail2.png, 
+id=2401, 224.7597pt x 224.7597pt>
+File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa_Detail2.
+png Graphic file (type png)
+<use ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa_Detail2.p
+ng>
+Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorm
+e/V1_RIXTa_Detail2.png  used on input line 442.
 (pdftex.def)             Requested size: 204.6029pt x 204.61052pt.
-<../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Detail.png, id=2403, 224.7597pt x 
-224.7597pt>
-File: ../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Detail.png Graphic file (type
- png)
-<use ../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Detail.png>
-Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Detail.png
-  used on input line 445.
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa_Detail2.png, 
+id=2402, 224.7597pt x 224.7597pt>
+File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa_Detail2.
+png Graphic file (type png)
+<use ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa_Detail2.p
+ng>
+Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorm
+e/V2_RIXTa_Detail2.png  used on input line 448.
 (pdftex.def)             Requested size: 204.6029pt x 204.61052pt.
 
 
-[39 <../fig/fig_ConvNatComsol_Resultats/H1_RIXTa_Detail.png> <../fig/fig_ConvNa
-tComsol_Resultats/H2_RIXTa_Detail.png> <../fig/fig_ConvNatComsol_Resultats/V1_R
-IXTa_Detail.png> <../fig/fig_ConvNatComsol_Resultats/V2_RIXTa_Detail.png>]
+[39 <../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa_Detail2.p
+ng> <../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa_Detail2.p
+ng> <../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa_Detail2.p
+ng> <../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa_Detail2.p
+ng>]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
@@ -3062,13 +3075,13 @@ u_Gaelle.tex
 
 [44]
 
-[45] (../fig/fig_TransitoireFit/tex/fig_TransitoireFit.tex
+[45]
+
+[46] (../fig/fig_TransitoireFit/tex/fig_TransitoireFit.tex
 ===== Image 'external/fig_TransitoireFit0' is up-to-date. ======
-)
+)) (EtudeExperimentale.tex
 
-[46 <./external/fig_TransitoireFit0.pdf>]) (EtudeExperimentale.tex
-
-[47]
+[47 <./external/fig_TransitoireFit0.pdf>]
 
 [48
 
@@ -3669,16 +3682,16 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 3CC7EEB95885AB01A29E58D8BC8561B1;23712.
+(rerunfilecheck)             Checksum: F91A5192D37FFAFF8610901222ACD1D6;23936.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 79669 strings out of 473523
- 2039999 string characters out of 5707334
- 3284195 words of memory out of 5000000
- 100916 multiletter control sequences out of 15000+600000
+ 79673 strings out of 473523
+ 2041099 string characters out of 5707334
+ 3284296 words of memory out of 5000000
+ 100922 multiletter control sequences out of 15000+600000
  733525 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,16n,159p,4037b,2957s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3705,9 +3718,9 @@ rs/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona
 ograms/MiKTeX/fonts/type1/nowacki/iwona/iwonami.pfb><C:/Users/juliette utilisat
 eur/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
 b>
-Output written on _main_.pdf (105 pages, 32205808 bytes).
+Output written on _main_.pdf (105 pages, 32031861 bytes).
 PDF statistics:
- 4503 PDF objects out of 5155 (max. 8388607)
- 524 named destinations out of 1000 (max. 500000)
+ 4502 PDF objects out of 5155 (max. 8388607)
+ 523 named destinations out of 1000 (max. 500000)
  1616 words of extra memory for PDF output out of 10000 (max. 10000000)
 

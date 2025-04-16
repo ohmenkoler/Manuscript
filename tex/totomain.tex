@@ -387,11 +387,14 @@
 \begin{document}
 %---------------------------------------------------------------------%
 
-\begin{center}
-{\tikzsetfigurename{fig_ConclusionChap2}
-\input{../fig/fig_ConclusionChap2/tex/fig_ConclusionChap2}
-}
-\end{center}
+\begin{figure}[!ht]
+    \centering
+    \external{fig_Schema_FluxThermiquesNoyau_Gaelle}
+%    \externalremake
+    \input{../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoyau_Gaelle}
+    \caption{Représentation schématique des flux thermiques considérés dans le modèle transitoire du régénérateur.}
+    \label{fig:Schema_FluxThermiquesNoyau_Gaelle}
+\end{figure}
 
 %---------------------------------------------------------------------%
 \end{document}

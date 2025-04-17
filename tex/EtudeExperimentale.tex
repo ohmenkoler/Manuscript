@@ -9,7 +9,7 @@ Plusieurs paramètres  sont étudiés pour quantifier la dépendance du comporte
 Une analyse plus avancée est ensuite proposée dans le paragraphe~\ref{chap:DistribTemperature}, où les températures mesurées à tous les emplacements de thermocouples présentés dans le protocole expliqué plus tôt sont tracées. Cette partie de l'étude est séparée en deux étapes. D'une part, une analyse temporelle est réalisée en observant les données transitoires et les résultats de la simulation analytique temporelle présentée dans le paragraphe~\ref{chap:ModeleTemporel}, puis les profils axiaux et radiaux sont déduits à partir des valeurs de température en régime stationnaire pour se placer dans la même configuration que le modèle par éléments finis expliqué dans le paragraphe~\ref{chap:FEM}.
 
 \section{Impact de la convection naturelle sur les performances du réfrigérateur}\label{chap:PerfConvNat}
-Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=Q_f/W_e$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = \nicefrac{T_f}{T_a-T_f}$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées en calculant respectivement les moyennes des signaux de température des thermocouples \numlist{4;5;6}, et \numlist{10;11;12}. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes et égales à la moyenne des données de thermocouples placés sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section. 
+Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En faisant abstraction de la distribution de température non encore expliquée, des quantités telles que la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=\nicefrac{Q_f}{W_e}$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = \nicefrac{T_f}{T_a-T_f}$ ou les température froide $T_f$ et ambiante $T_a$ sont relevées en calculant respectivement les moyennes des signaux de température des thermocouples \numlist{4;5;6}, et \numlist{10;11;12}. Pour cette partie de l'étude, plusieurs hypothèses sont proposées : les températures sont supposées constantes et égales à la moyenne des données de thermocouples placés sur la section du noyau, et les échangeurs sont considérés parfaits avec un flux thermique homogène sur la section. 
 
 Les quatre orientations définies sur les schémas de la figure~\ref{fig:OrientationCore} sont tour à tour mises en place, et pour chacune des expériences sont réalisées en suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}. Les charges thermiques $\dot Q_f$ de \qtylist{0;50;100}{\watt} sont tour à tour appliquées par l'échangeur de chaleur froid. Les résultats des expériences tracés sur les figures~\ref{fig:PerfConvNat_0W} à \ref{fig:PerfConvNat_100W} proviennent du tableau~\ref{tab:RecapResultExpe}.\medskip
 
@@ -87,15 +87,15 @@ Les quatre orientations définies sur les schémas de la figure~\ref{fig:Orienta
 		\caption{}
 		\label{fig:PerfConvNat_0W_Qa}
 	\end{subfigure}%
-%	\begin{subfigure}{.48\textwidth}
-%		\centering
-%		\external{fig_PerfConvNat_0W_COP}
-%%        \externalremake
-%        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_COP}
-%		\caption{}
-%		\label{fig:PerfConvNat_0W_COP}
-%	\end{subfigure}	     
-    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $\dot Q_f=\qty{0}{\watt}$ : \subref{fig:PerfConvNat_0W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_0W_Ta} température ambiante~$T_a$, et \subref{fig:PerfConvNat_0W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.\echaf{ajouter valeurs DeltaEC}}
+	\begin{subfigure}{.48\textwidth}
+		\centering
+		\external{fig_PerfConvNat_0W_COP}
+%        \externalremake
+        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_COP}
+		\caption{}
+		\label{fig:PerfConvNat_0W_COP}
+	\end{subfigure}	     
+    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $\dot Q_f=\qty{0}{\watt}$ : \subref{fig:PerfConvNat_0W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_0W_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_0W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques, et \subref{fig:PerfConvNat_0W_COP} le coefficient de performance rapporté à Carnot. Les couleurs indiquent l'orientation, et le remplissage des marqueurs, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.}
     \label{fig:PerfConvNat_0W}
 \end{figure}
 
@@ -140,7 +140,7 @@ Sur la figure~\ref{fig:PerfConvNat_0W_Tf}, la décroissance de la température f
 		\caption{}
 		\label{fig:PerfConvNat_50W_COP}
 	\end{subfigure}	     
-    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $\dot Q_f=\qty{50}{\watt}$ : \subref{fig:PerfConvNat_50W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_50W_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_50W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$, et \subref{fig:PerfConvNat_50W_COP} coefficient de performance rapporté à Carnot. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.\echaf{ajouter valeurs DeltaEC}}
+    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $\dot Q_f=\qty{50}{\watt}$ : \subref{fig:PerfConvNat_50W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_50W_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_50W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$, et \subref{fig:PerfConvNat_50W_COP} coefficient de performance rapporté à Carnot. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.}
     \label{fig:PerfConvNat_50W}
 \end{figure}
 
@@ -183,13 +183,38 @@ Sur la figure~\ref{fig:PerfConvNat_0W_Tf}, la décroissance de la température f
 		\caption{}
 		\label{fig:PerfConvNat_100W_COP}
 	\end{subfigure}	     
-    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $\dot Q_f=\qty{100}{\watt}$ : \subref{fig:PerfConvNat_100W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_100W_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_100W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$, et \subref{fig:PerfConvNat_100W_COP} le coefficient de performance rapporté à Carnot. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.\echaf{ajouter valeurs DeltaEC}}
+    \caption{Influence de la convection naturelle sur les performances sur différents indicateur, pour une charge thermique $\dot Q_f=\qty{100}{\watt}$ : \subref{fig:PerfConvNat_100W_Tf} température froide $T_f$, \subref{fig:PerfConvNat_100W_Ta} température ambiante~$T_a$, \subref{fig:PerfConvNat_100W_Qa} quantité de chaleur extraite du côté ambiant $\dot Q_a$, et \subref{fig:PerfConvNat_100W_COP} le coefficient de performance rapporté à Carnot. Les températures indiquées représentent l'évolution depuis l'état avant le démarrage des sources acoustiques. Les couleurs indiquent l'orientation et le remplissage, si le résultat est obtenu expérimentalement ou par une simulation \textsc{DeltaEC}.}
     \label{fig:PerfConvNat_100W}
 \end{figure}
 
 La première observation concerne les températures atteintes aux deux extrémités du noyau, représentées sur les figures \ref{fig:PerfConvNat_0W_Tf}-\subref{fig:PerfConvNat_0W_Ta}, \ref{fig:PerfConvNat_50W_Tf}-\subref{fig:PerfConvNat_50W_Ta} et \ref{fig:PerfConvNat_100W_Tf}-\subref{fig:PerfConvNat_100W_Ta}. La température froide $T_f$, de manière générale, est plus basse quand le \textit{drive ratio} augmente. La température du côté ambiant est, quant à elle, relativement constante quel que soit le \textit{drive ratio} avec un écart de l'ordre de \qty{10}{\degreeCelsius}. Cette constance est expliqué par les échanges thermiques avec l'échangeur voisin.\smallskip
 
 L'échangeur ambiant extrait la chaleur des volumes élémentaires de gaz qui oscillent à son voisinage. Il est donc attendu de voir la chaleur extraite par cet échangeur augmenter avec le \textit{drive ratio}. Comme attendu la tendance montrée sur les figures~\ref{fig:PerfConvNat_0W_Qa} le montre. \echaf{finir}
+
+\begin{figure}[!ht]
+	\centering
+	\begin{subfigure}{.9\textwidth}
+		\centering
+		\external{fig_PerfConvNat_COP_DR2}
+%   	\externalremake
+    	\input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR2}
+		\caption{}
+		\label{fig:PerfConvNat_COP_DR2}
+	\end{subfigure}
+	
+	\vspace{1em}
+	
+	\begin{subfigure}{.9\textwidth}
+		\centering
+		\external{fig_PerfConvNat_COP_DR35}
+%   	\externalremake
+    	\input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR35}
+		\caption{}
+		\label{fig:PerfConvNat_COP_DR35}
+	\end{subfigure}
+	\caption{Valeurs du coefficients de performances en fonction de la charge thermique appliquée à l'échangeur froid, à différents \textit{drive ratios}. \subref{fig:PerfConvNat_COP_DR2} $DR=\qty{2}{\percent}$, et \subref{fig:PerfConvNat_COP_DR35} $DR=\qty{3.5}{\percent}$.}
+	\label{fig:PerfConvNat_COP_DR}
+\end{figure}
 
 
 %\begin{figure}[!ht]

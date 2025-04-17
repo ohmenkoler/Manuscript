@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  15 APR 2025 22:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  17 APR 2025 15:32
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2155,10 +2155,10 @@ lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `french'. on input line 387.
-
-No file totomain.toc.
+\Etoc@tf=\read5
 Package hyperref Info: Link coloring ON on input line 387.
-(totomain.out) (totomain.out)
+ (totomain.out)
+(totomain.out)
 \@outlinefile=\write6
 \openout6 = `totomain.out'.
 
@@ -2183,41 +2183,322 @@ Package biblatex Info: Reference segment=0 on input line 387.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
+(EtudeExperimentale.tex
+Chapitre I.
+\tf@toc=\write7
+\openout7 = `totomain.toc'.
 
-(../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
-u_Gaelle.tex
-\openout5 = `external/fig_Schema_FluxThermiquesNoyau_Gaelle0.md5'.
+LaTeX Font Info:    Trying to load font information for OT1+iwonalm on input li
+ne 2.
 
-\openout5 = `totomain.auxlock'.
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ot
+1iwonalm.fd
+File: ot1iwonalm.fd 2005/10/05 v1.2 font definition file for OT1/iwonalm (MW)
+)
+LaTeX Font Info:    Trying to load font information for OML+iwonal on input lin
+e 2.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\om
+liwonal.fd
+File: omliwonal.fd 2008/07/22 v0.995 font definition file for OML/iwonal (MW)
+)
+LaTeX Font Info:    Trying to load font information for OMS+iwonal on input lin
+e 2.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\om
+siwonal.fd
+File: omsiwonal.fd 2008/07/22 v0.995 font definition file for OMS/iwonal (MW)
+)
+LaTeX Font Info:    Trying to load font information for OMX+iwonal on input lin
+e 2.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\om
+xiwonal.fd
+File: omxiwonal.fd 2008/07/22 v0.995 font definition file for OMX/iwonal (MW)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
+\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
+\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
 
 
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_Schema_FluxThermiquesNoya
-u_Gaelle0" "\def\tikzexternalrealjob{totomain}\input{totomain}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_Schema_FluxThermiquesNoyau_Gaelle0" "\def\tikzexternalrealjob{to
-tomain}\input{totomain}")...executed.
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/jknappen
+\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
+.
 
-\openout5 = `totomain.auxlock'.
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd
+\ustmry.fd)
+
+[1
+
+
+{C:/Users/juliette utilisateur/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map
+}{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/i
+wona/ec-iwona.enc}]
+
+LaTeX Warning: Reference `fig:ATE_Profils_5mm' on page 2 undefined on input lin
+e 5.
+
+
+LaTeX Warning: Citation 'ramadan_design_2021' on page 2 undefined on input line
+ 5.
+
+
+LaTeX Warning: Citation 'ross_influence_2003' on page 2 undefined on input line
+ 5.
+
+
+LaTeX Warning: Citation 'hireche_numerical_2019' on page 2 undefined on input l
+ine 5.
+
+
+LaTeX Warning: Citation 'ramadan_experimental_2018' on page 2 undefined on inpu
+t line 5.
+
+
+LaTeX Warning: Citation 'zhang_novel_2011' on page 2 undefined on input line 5.
+
+
+
+LaTeX Warning: Citation 'babaei_investigation_2010' on page 2 undefined on inpu
+t line 5.
+
+
+LaTeX Warning: Reference `chap:ModeleTemporel' on page 2 undefined on input lin
+e 9.
+
+
+LaTeX Warning: Reference `chap:FEM' on page 2 undefined on input line 9.
+
+LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
+e 12.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ot
+1iwonal.fd
+File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
+)
+
+LaTeX Warning: Reference `fig:OrientationCore' on page 2 undefined on input lin
+e 14.
+
+
+LaTeX Warning: Reference `chap:MesureAvecAcou' on page 2 undefined on input lin
+e 14.
+
+
+LaTeX Warning: Reference `tab:RecapResultExpe' on page 2 undefined on input lin
+e 14.
+
+(../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_Tf.tex
+===== Image 'external/fig_PerfConvNat_Tf_0W0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_Ta.tex
+===== Image 'external/fig_PerfConvNat_0W_Ta0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_Qa.tex
+===== Image 'external/fig_PerfConvNat_0W_Qa0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_0W_COP.tex
+===== Image 'external/fig_PerfConvNat_0W_COP0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_50W_Tf.tex
+===== Image 'external/fig_PerfConvNat_50W_Tf0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_50W_Ta.tex
+===== Image 'external/fig_PerfConvNat_50W_Ta0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_50W_Qa.tex
+===== Image 'external/fig_PerfConvNat_50W_Qa0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_50W_COP.tex
+===== Image 'external/fig_PerfConvNat_50W_COP0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_100W_Tf.tex
+===== Image 'external/fig_PerfConvNat_100W_Tf0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_100W_Ta.tex
+===== Image 'external/fig_PerfConvNat_100W_Ta0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_100W_Qa.tex
+===== Image 'external/fig_PerfConvNat_100W_Qa0' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_100W_COP.tex
+===== Image 'external/fig_PerfConvNat_50W_COP1' is up-to-date. ======
+)
+LaTeX Font Info:    Trying to load font information for TS1+iwonal on input lin
+e 190.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ts
+1iwonal.fd
+File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
+)
+
+Package babel Info: 'french' activates 'french' shorthands.
+(babel)             Reported  on input line 191.
+[2
+
+{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iw
+ona/ec-iwona-sc.enc}{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTe
+X/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Users/juliette utilisateur/AppData/Loc
+al/Programs/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Users/juliette utilis
+ateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc}]
+(../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR2.tex
+===== Image 'external/fig_PerfConvNat_COP_DR20' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR35.tex
+===== Image 'external/fig_PerfConvNat_COP_DR350' is up-to-date. ======
+)
+
+[3{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
+iwona/ts1-iwona.enc} <./external/fig_PerfConvNat_Tf_0W0.pdf> <./external/fig_Pe
+rfConvNat_0W_Ta0.pdf> <./external/fig_PerfConvNat_0W_Qa0.pdf> <./external/fig_P
+erfConvNat_0W_COP0.pdf>]
+(../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
+===== Image 'external/fig_HeatOnly_CHXout_H1H20' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Low.tex
+===== Image 'external/fig_Acou_CHXout_H1H2_Low0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Mid.tex
+===== Image 'external/fig_Acou_CHXout_H1H2_Mid0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_High.tex
+===== Image 'external/fig_Acou_CHXout_H1H2_High0' is up-to-date. ======
+) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
+===== Image 'external/fig_HeatOnly_CHXout_V1V20' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Low.tex
+===== Image 'external/fig_Acou_CHXout_V1V2_Low0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
+===== Image 'external/fig_Acou_CHXout_V1V2_Mid0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_High.tex
+===== Image 'external/fig_Acou_CHXout_V1V2_High0' is up-to-date. ======
+)
+
+[4 <./external/fig_PerfConvNat_50W_Tf0.pdf> <./external/fig_PerfConvNat_50W_Ta0
+.pdf> <./external/fig_PerfConvNat_50W_Qa0.pdf> <./external/fig_PerfConvNat_50W_
+COP0.pdf>] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_H1H2.tex
+===== Image 'external/fig_HeatOnly_CHXin_H1H20' is up-to-date. ======
+) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_Regmid_H1H2.tex
+===== Image 'external/fig_HeatOnly_Regmid_H1H20' is up-to-date. ======
+) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_AHXin_H1H2.tex
+===== Image 'external/fig_HeatOnly_AHXin_H1H20' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
+===== Image 'external/fig_Acou_CHXin_H1H2_Low0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Low.tex
+===== Image 'external/fig_Acou_Regmid_H1H2_Low0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Low.tex
+===== Image 'external/fig_Acou_AHXin_H1H2_Low0' is up-to-date. ======
+)
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 478.
+
+
+[5 <./external/fig_PerfConvNat_100W_Tf0.pdf> <./external/fig_PerfConvNat_100W_T
+a0.pdf> <./external/fig_PerfConvNat_100W_Qa0.pdf> <./external/fig_PerfConvNat_5
+0W_COP1.pdf>]
+
+[6 <./external/fig_PerfConvNat_COP_DR20.pdf> <./external/fig_PerfConvNat_COP_DR
+350.pdf> <./external/fig_HeatOnly_CHXout_H1H20.pdf>]
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 503.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 503.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 503.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 503.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 504.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 504.
+
+
+[7 <./external/fig_Acou_CHXout_H1H2_Low0.pdf> <./external/fig_Acou_CHXout_H1H2_
+Mid0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid.tex
+===== Image 'external/fig_Acou_CHXin_H1H2_Mid0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid.tex
+===== Image 'external/fig_Acou_Regmid_H1H2_Mid0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Mid.tex
+===== Image 'external/fig_Acou_AHXin_H1H2_Mid0' is up-to-date. ======
+)
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 547.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 547.
+
+
+[8 <./external/fig_Acou_CHXout_H1H2_High0.pdf> <./external/fig_HeatOnly_CHXout_
+V1V20.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
+===== Image 'external/fig_Acou_CHXin_H1H2_High0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High.tex
+===== Image 'external/fig_Acou_Regmid_H1H2_High0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_High.tex
+===== Image 'external/fig_Acou_AHXin_H1H2_High0' is up-to-date. ======
+) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_V1V2.tex
+===== Image 'external/fig_HeatOnly_CHXin_V1V20' is up-to-date. ======
+) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_Regmid_V1V2.tex
+===== Image 'external/fig_HeatOnly_Regmid_V1V20' is up-to-date. ======
+) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_AHXin_V1V2.tex
+===== Image 'external/fig_HeatOnly_AHXin_V1V20' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low.tex
+===== Image 'external/fig_Acou_CHXin_V1V2_Low0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Low.tex
+===== Image 'external/fig_Acou_Regmid_V1V2_Low0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Low.tex
+===== Image 'external/fig_Acou_AHXin_V1V2_Low0' is up-to-date. ======
+)
+
+[9 <./external/fig_Acou_CHXout_V1V2_Low0.pdf> <./external/fig_Acou_CHXout_V1V2_
+Mid0.pdf>] (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
+===== Image 'external/fig_Acou_CHXin_V1V2_Mid0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Mid.tex
+===== Image 'external/fig_Acou_Regmid_V1V2_Mid0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_Mid.tex
+===== Image 'external/fig_Acou_AHXin_V1V2_Mid0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
+===== Image 'external/fig_Acou_CHXin_V1V2_High0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_High.tex
+===== Image 'external/fig_Acou_Regmid_V1V2_High0' is up-to-date. ======
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_V1V2_High.tex
+===== Image 'external/fig_Acou_AHXin_V1V2_High0' is up-to-date. ======
+)
+
+LaTeX Warning: Reference `fig:Repetabilite_V1' on page 10 undefined on input li
+ne 877.
 
 )
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 182.
-See the caption package documentation for explanation.
+[10 <./external/fig_Acou_CHXout_V1V2_High0.pdf>]
 
+[11 <./external/fig_HeatOnly_CHXin_H1H20.pdf> <./external/fig_HeatOnly_Regmid_H
+1H20.pdf> <./external/fig_HeatOnly_AHXin_H1H20.pdf>]
 
-Package caption Warning: Unused \captionsetup[sub] on input line 184.
-See the caption package documentation for explanation.
+[12 <./external/fig_Acou_CHXin_H1H2_Low0.pdf> <./external/fig_Acou_Regmid_H1H2_
+Low0.pdf> <./external/fig_Acou_AHXin_H1H2_Low0.pdf>]
 
+[13 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H2_
+Mid0.pdf> <./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
 
+[14 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1H2
+_High0.pdf> <./external/fig_Acou_AHXin_H1H2_High0.pdf>]
 
-[1{C:/Users/juliette utilisateur/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.m
-ap}{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
-/iwona/ec-iwona.enc}
+[15 <./external/fig_HeatOnly_CHXin_V1V20.pdf> <./external/fig_HeatOnly_Regmid_V
+1V20.pdf> <./external/fig_HeatOnly_AHXin_V1V20.pdf>]
 
-{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iw
-ona/ec-iwona-sc.enc} <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>] (
-totomain.aux)
+[16 <./external/fig_Acou_CHXin_V1V2_Low0.pdf> <./external/fig_Acou_Regmid_V1V2_
+Low0.pdf> <./external/fig_Acou_AHXin_V1V2_Low0.pdf>]
+
+[17 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid_V1V2_
+Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_Mid0.pdf>]
+
+[18 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_Regmid_V1V2
+_High0.pdf> <./external/fig_Acou_AHXin_V1V2_High0.pdf>] (totomain.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -2227,7 +2508,7 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `totomain.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 09CF3200F6D71DD5E030EAAA55678B0A;3593.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                totomain
@@ -2238,20 +2519,24 @@ Package logreq Info: Writing requests to 'totomain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 75527 strings out of 473523
- 1912047 string characters out of 5707334
- 3180197 words of memory out of 5000000
- 97847 multiletter control sequences out of 15000+600000
- 576989 words of font info for 43 fonts, out of 8000000 for 9000
+ 76792 strings out of 473523
+ 1953485 string characters out of 5707334
+ 3208305 words of memory out of 5000000
+ 98811 multiletter control sequences out of 15000+600000
+ 659703 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,5n,104p,1203b,1790s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowa
-cki/iwona/iwonal.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKT
-eX/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Users/juliette utilisateur/AppData
-/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonam.pfb>
-Output written on totomain.pdf (1 page, 88985 bytes).
+ 89i,7n,104p,1518b,2452s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ectt1095.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\juliette utilisateur\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/juli
+ette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonal
+.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/n
+owacki/iwona/iwonali.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/
+MiKTeX/fonts/type1/nowacki/iwona/iwonam.pfb>
+Output written on totomain.pdf (18 pages, 1780637 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1477 PDF objects out of 1728 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 467 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2375,6 +2375,12 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">../bib/phd_bib.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">ramadan_design_2021</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">ross_influence_2003</bcf:citekey>
+    <bcf:citekey order="2" intorder="2">hireche_numerical_2019</bcf:citekey>
+    <bcf:citekey order="2" intorder="3">ramadan_experimental_2018</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">zhang_novel_2011</bcf:citekey>
+    <bcf:citekey order="3" intorder="2">babaei_investigation_2010</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

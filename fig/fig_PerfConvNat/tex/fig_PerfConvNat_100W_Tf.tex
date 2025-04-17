@@ -1,4 +1,4 @@
-\begin{tikzpicture}[every mark/.append style={line width=2pt}]
+\begin{tikzpicture}[every mark/.append style={line width=1pt}]
 	\def\width{.9*\textwidth};
 	\def\height{\width};
 	
@@ -7,29 +7,24 @@
 		grid style={line width=.1pt, draw=gray!10},
 	    major grid style={line width=.2pt,draw=gray!50},
 	    xmin=.1,xmax=3.8,
-		xlabel={$DR$ [\unit{\percent}]},
-		ylabel={$\theta_f$ [\unit{\kelvin}]},
+		xlabel={$DR$ (\unit{\percent})},
+		ylabel={$\theta_f$ (\unit{\kelvin})},
 		legend style = {at={(.02,.02)}, anchor=south west, rounded corners, legend columns=2,},
 		legend cell align={left},
-		legend entries={`\texttt{V1}', `\texttt{V2}',
-		`\texttt{H1}', `\texttt{H2}',
-		{Expé.}, {Simu.}
-		}
+%		legend entries={`\texttt{V1}', `\texttt{V2}',
+%		`\texttt{H1}', `\texttt{H2}',
+%		{Expé.}, {Simu.}
+%		}
 	]
 	
-	\addlegendimage{only marks, mark=diamond*, color=Plasma1, mark size=5pt}
-	\addlegendimage{only marks, mark=diamond*, color=Plasma25, mark size=4pt}
-	
-	\addlegendimage{only marks, mark=diamond*, color=Plasma50, mark size=3pt}
-	\addlegendimage{only marks, mark=diamond*, color=Plasma75, mark size=2pt}
-	
-	\addlegendimage{only marks, mark=square*, mark size=5pt}
-	\addlegendimage{only marks, mark=square, mark size=5pt}
-
 		
-	\addplot[only marks, mark=diamond*,color=Plasma1, mark size=5pt] file {../fig/fig_PerfConvNat/data/V1_Tf_DR_Qc100.txt};%\addlegendentry{`\texttt{V1}'};
-	\addplot[only marks, mark=diamond*,color=Plasma25, mark size=4pt] file {../fig/fig_PerfConvNat/data/V2_Tf_DR_Qc100.txt};%\addlegendentry{`\texttt{V2}'};
-	\addplot[only marks, mark=diamond*,color=Plasma50, mark size=3pt] file {../fig/fig_PerfConvNat/data/H1_Tf_DR_Qc100.txt};%\addlegendentry{`\texttt{H1}'};
-	\addplot[only marks, mark=diamond*,color=Plasma75, mark size=2pt] file {../fig/fig_PerfConvNat/data/H2_Tf_DR_Qc100.txt};%\addlegendentry{`\texttt{H2}'};
+	\addplot[only marks, mark=diamond*,color=Plasma75, mark size=5pt] file {../fig/fig_PerfConvNat/data/V1_Tf_DR_Qc100.txt};\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=diamond*,color=Plasma50, mark size=4pt] file {../fig/fig_PerfConvNat/data/V2_Tf_DR_Qc100.txt};\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=diamond*,color=Plasma25, mark size=3pt] file {../fig/fig_PerfConvNat/data/H1_Tf_DR_Qc100.txt};\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=diamond*,color=Plasma1, mark size=2pt] file {../fig/fig_PerfConvNat/data/H2_Tf_DR_Qc100.txt};\addlegendentry{`\texttt{H2}'};
+	
+	\addlegendimage{only marks, mark=square*, mark size=5pt}\addlegendentry{Expé.}
+	\addlegendimage{only marks, mark=square, mark size=5pt}\addlegendentry{Simu.}
+	
 	\end{axis}
 \end{tikzpicture}

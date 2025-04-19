@@ -10,7 +10,7 @@
 		xlabel={$\dot Q_f$ (\unit{\watt})},
 		ylabel={$\COP$ (\unit{\percent})},
 		legend cell align={left},
-		legend style = {at={($(1,1)+(3mm,2mm)$)}, anchor=north east, rounded corners, legend columns=2}
+		legend style = {at={($(1,1)+(3.5mm,2mm)$)}, anchor=north east, rounded corners, legend columns=2}
 	]
 	\addplot[only marks, mark=*,color=Plasma75, mark size=5pt] file {../fig/fig_PerfConvNat/data/V1_COP_Qc_DR2.txt};\addlegendentry{`\texttt{V1}'};
 	\addplot[only marks, mark=*,color=Plasma50, mark size=4pt] file {../fig/fig_PerfConvNat/data/V2_COP_Qc_DR2.txt};\addlegendentry{`\texttt{V2}'};
@@ -20,10 +20,10 @@
 	\addlegendimage{only marks, mark=*, mark size=5pt}\addlegendentry{Expé.}
 	\addlegendimage{only marks, mark=o, mark size=5pt}\addlegendentry{Simu.}
 	
-	\addplot[only marks, mark=o,color=Plasma75, mark size=5pt] file {../fig/fig_PerfConvNat/data/DeltaEC_V1_COP_Qc_DR2.txt};%\addlegendentry{`\texttt{V1}'};
-	\addplot[only marks, mark=o,color=Plasma50, mark size=4pt] file {../fig/fig_PerfConvNat/data/DeltaEC_V2_COP_Qc_DR2.txt};%\addlegendentry{`\texttt{V2}'};
-	\addplot[only marks, mark=o,color=Plasma25, mark size=3pt] file {../fig/fig_PerfConvNat/data/DeltaEC_H1_COP_Qc_DR2.txt};%\addlegendentry{`\texttt{H1}'};
-	\addplot[only marks, mark=o,color=Plasma1, mark size=2pt] file {../fig/fig_PerfConvNat/data/DeltaEC_H2_COP_Qc_DR2.txt};%\addlegendentry{`\texttt{H2}'};
+	\addplot[only marks, mark=o,color=Plasma75, mark size=5pt] file {../fig/fig_PerfConvNat/data/DeltaEC_V1_COP_Qc_DR2_Copie.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=o,color=Plasma50, mark size=4pt] file {../fig/fig_PerfConvNat/data/DeltaEC_V2_COP_Qc_DR2_Copie.txt};%\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=o,color=Plasma25, mark size=3pt] file {../fig/fig_PerfConvNat/data/DeltaEC_H1_COP_Qc_DR2_Copie.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=o,color=Plasma1, mark size=2pt] file {../fig/fig_PerfConvNat/data/DeltaEC_H2_COP_Qc_DR2_Copie.txt};%\addlegendentry{`\texttt{H2}'};
 
 	\end{axis}
 \end{tikzpicture}

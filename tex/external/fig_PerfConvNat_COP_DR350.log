@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  18 APR 2025 18:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  19 APR 2025 22:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -5036,23 +5036,25 @@ ne 14.
 
 
 LaTeX Warning: Reference `fig:PerfConvNat_COP_DR' on page 50 undefined on input
- line 19.
+ line 21.
 
 
 LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR2' on page 50 undefined o
-n input line 19.
+n input line 21.
 
 
 LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR2' on page 50 undefined on 
-input line 19.
+input line 21.
 
 
 LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR35' on page 50 undefined 
-on input line 19.
+on input line 21.
 
 
 LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR35' on page 50 undefined on
- input line 19.
+ input line 21.
+
+
 
 Excluding 'comment' comment. (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR
 2.tex
@@ -5066,10 +5068,14 @@ PGFPlots: reading {../fig/fig_PerfConvNat/data/H1_COP_Qc_DR2.txt}
 Missing character: There is no ; in font nullfont!
 PGFPlots: reading {../fig/fig_PerfConvNat/data/H2_COP_Qc_DR2.txt}
 Missing character: There is no ; in font nullfont!
-PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_V1_COP_Qc_DR2.txt}
-PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_V2_COP_Qc_DR2.txt}
-PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_H1_COP_Qc_DR2.txt}
-PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_H2_COP_Qc_DR2.txt}
+PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_V1_COP_Qc_DR2_Copie.txt}
+
+PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_V2_COP_Qc_DR2_Copie.txt}
+
+PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_H1_COP_Qc_DR2_Copie.txt}
+
+PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_H2_COP_Qc_DR2_Copie.txt}
+
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR35.tex
 \openout6 = `external/fig_PerfConvNat_COP_DR350.dpth'.
 
@@ -5082,11 +5088,15 @@ PGFPlots: reading {../fig/fig_PerfConvNat/data/V1_COP_Qc_DR35.txt}
 PGFPlots: reading {../fig/fig_PerfConvNat/data/V2_COP_Qc_DR35.txt}
 PGFPlots: reading {../fig/fig_PerfConvNat/data/H1_COP_Qc_DR35.txt}
 PGFPlots: reading {../fig/fig_PerfConvNat/data/H2_COP_Qc_DR35.txt}
-PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_V1_COP_Qc_DR35.txt}
-PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_V2_COP_Qc_DR35.txt}
-PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_H1_COP_Qc_DR35.txt}
-PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_H2_COP_Qc_DR35.txt}
-[50
+PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_V1_COP_Qc_DR35_Copie.txt
+}
+PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_V2_COP_Qc_DR35_Copie.txt
+}
+PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_H1_COP_Qc_DR35_Copie.txt
+}
+PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_H2_COP_Qc_DR35_Copie.txt
+}
+[51
 
 \@writefile{toc}{\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble
  \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setloc
@@ -5097,36 +5107,68 @@ wona/rm-iwona.enc}{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/
 fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Users/juliette utilisateur/AppData/Local
 /Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}])
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR2' on page 50 undefined o
-n input line 218.
+LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR2' on page 51 undefined o
+n input line 220.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR2' on page 50 undefined on 
-input line 218.
+LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR2' on page 51 undefined on 
+input line 220.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR35' on page 50 undefined 
-on input line 218.
+LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR35' on page 51 undefined 
+on input line 220.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR35' on page 50 undefined on
- input line 218.
+LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR35' on page 51 undefined on
+ input line 220.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR2' on page 50 undefined o
-n input line 218.
+LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR2' on page 51 undefined o
+n input line 220.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR2' on page 50 undefined on 
-input line 218.
+LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR2' on page 51 undefined on 
+input line 220.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR35' on page 50 undefined 
-on input line 218.
+LaTeX Warning: Hyper reference `fig:PerfConvNat_COP_DR35' on page 51 undefined 
+on input line 220.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR35' on page 50 undefined on
- input line 218.
+LaTeX Warning: Reference `sub@fig:PerfConvNat_COP_DR35' on page 51 undefined on
+ input line 220.
+
+
+LaTeX Warning: Reference `fig:PerfConvNat_COP_DR' on page 51 undefined on input
+ line 224.
+
+
+LaTeX Warning: Reference `fig:PerfConvNat_COP_DR' on page 51 undefined on input
+ line 228.
+
+
+LaTeX Warning: Reference `fig:PerfConvNat_Qa_DR' on page 51 undefined on input 
+line 228.
+
+
+LaTeX Warning: Reference `fig:PerfConvNat_Qa_DR' on page 51 undefined on input 
+line 232.
+
+
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR2' on page 51 undefined on
+ input line 232.
+
+
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR2' on page 51 undefined on i
+nput line 232.
+
+
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR35' on page 51 undefined o
+n input line 232.
+
+
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR35' on page 51 undefined on 
+input line 232.
 
 (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa_DR2.tex
 Missing character: There is no ; in font nullfont!
@@ -5156,38 +5198,42 @@ PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_H1_Qa_Qc_DR35.txt}
 PGFPlots: reading {../fig/fig_PerfConvNat/data/DeltaEC_H2_Qa_Qc_DR35.txt}
 )
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR2' on page 50 undefined on
- input line 242.
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR2' on page 51 undefined on
+ input line 252.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR2' on page 50 undefined on i
-nput line 242.
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR2' on page 51 undefined on i
+nput line 252.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR35' on page 50 undefined o
-n input line 242.
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR35' on page 51 undefined o
+n input line 252.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR35' on page 50 undefined on 
-input line 242.
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR35' on page 51 undefined on 
+input line 252.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR2' on page 50 undefined on
- input line 242.
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR2' on page 51 undefined on
+ input line 252.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR2' on page 50 undefined on i
-nput line 242.
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR2' on page 51 undefined on i
+nput line 252.
 
 
-LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR35' on page 50 undefined o
-n input line 242.
+LaTeX Warning: Hyper reference `fig:PerfConvNat_Qa_DR35' on page 51 undefined o
+n input line 252.
 
 
-LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR35' on page 50 undefined on 
-input line 242.
+LaTeX Warning: Reference `sub@fig:PerfConvNat_Qa_DR35' on page 51 undefined on 
+input line 252.
 
 
+
+
+LaTeX Warning: Reference `fig:OrientationCore' on page 52 undefined on input li
+ne 339.
 
 (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
 Missing character: There is no ; in font nullfont!
@@ -5315,9 +5361,7 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC3_0be
 g_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}}
 PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC3_0be
 g_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
-)
-
-(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
+) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -5410,7 +5454,9 @@ PGFPlots: reading {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC12_
 0beg_RixOff_PhaseRIXHP-60°_OrientationH1_Qc40W_Serie1.txt}}
 PGFPlots: reading {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/H1H2/data_TC12_
 0beg_RixOff_PhaseRIXHP-60°_OrientationH2_Qc40W_Serie1.txt}}
-) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
+)
+
+(../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -5463,104 +5509,104 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC12_0b
 eg_RixLow_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Low' on page 52 undefined o
-n input line 491.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Low' on page 53 undefined o
+n input line 507.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Low' on page 52 undefined on 
-input line 491.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Low' on page 53 undefined on 
+input line 507.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Low' on page 52 undefined 
-on input line 491.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Low' on page 53 undefined 
+on input line 507.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Low' on page 52 undefined on
- input line 491.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Low' on page 53 undefined on
+ input line 507.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Low' on page 52 undefined o
-n input line 491.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Low' on page 53 undefined o
+n input line 507.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Low' on page 52 undefined on 
-input line 491.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Low' on page 53 undefined on 
+input line 507.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Low' on page 52 undefined o
-n input line 491.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Low' on page 53 undefined o
+n input line 507.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Low' on page 52 undefined on 
-input line 491.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Low' on page 53 undefined on 
+input line 507.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Low' on page 52 undefined 
-on input line 491.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Low' on page 53 undefined 
+on input line 507.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Low' on page 52 undefined on
- input line 491.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Low' on page 53 undefined on
+ input line 507.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Low' on page 52 undefined o
-n input line 491.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Low' on page 53 undefined o
+n input line 507.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Low' on page 52 undefined on 
-input line 491.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Low' on page 53 undefined on 
+input line 507.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Low' on page 52 undefined on inp
-ut line 504.
-
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 504.
-
-LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Low' on page 52 undefined on inpu
-t line 515.
-
-
-
-
-LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Mid' on page 53 undefined on inpu
-t line 527.
-
-
-LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Mid' on page 53 undefined on inp
-ut line 527.
-
-
-LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Mid' on page 53 undefined on inpu
-t line 527.
-
-
-LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Mid' on page 53 undefined on inpu
-t line 529.
+LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Low' on page 53 undefined on inp
+ut line 520.
 
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 529.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 529.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 529.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 529.
+            Default family used instead on input line 520.
 
-LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_Mid' on page 53 undefined on inp
-ut line 530.
+LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Low' on page 53 undefined on inpu
+t line 531.
+
+
+
+
+LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Mid' on page 54 undefined on inpu
+t line 543.
+
+
+LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Mid' on page 54 undefined on inp
+ut line 543.
+
+
+LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Mid' on page 54 undefined on inpu
+t line 543.
+
+
+LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_Mid' on page 54 undefined on inpu
+t line 545.
 
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 530.
+            Default family used instead on input line 545.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 530.
+            Default family used instead on input line 545.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 545.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 545.
+
+LaTeX Warning: Reference `fig:Acou_CHXout_H1H2_Mid' on page 54 undefined on inp
+ut line 546.
+
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 546.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 546.
 
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid.tex
@@ -5616,80 +5662,80 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC12_0b
 eg_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 54 undefined o
-n input line 569.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 55 undefined o
+n input line 585.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 54 undefined on 
-input line 569.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 55 undefined on 
+input line 585.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 54 undefined 
-on input line 569.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 55 undefined 
+on input line 585.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 54 undefined on
- input line 569.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 55 undefined on
+ input line 585.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 54 undefined o
-n input line 569.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 55 undefined o
+n input line 585.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 54 undefined on 
-input line 569.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 55 undefined on 
+input line 585.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 54 undefined o
-n input line 569.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 55 undefined o
+n input line 585.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 54 undefined on 
-input line 569.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 55 undefined on 
+input line 585.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 54 undefined 
-on input line 569.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 55 undefined 
+on input line 585.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 54 undefined on
- input line 569.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 55 undefined on
+ input line 585.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 54 undefined o
-n input line 569.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 55 undefined o
+n input line 585.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 54 undefined on 
-input line 569.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 55 undefined on 
+input line 585.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Mid' on page 54 undefined on inp
-ut line 573.
+LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_Mid' on page 55 undefined on inp
+ut line 589.
 
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 573.
+            Default family used instead on input line 589.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 573.
+            Default family used instead on input line 589.
 
 
 
-LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Mid' on page 55 undefined on inpu
-t line 584.
+LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_Mid' on page 56 undefined on inpu
+t line 600.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_High' on page 55 undefined on inp
-ut line 597.
+LaTeX Warning: Reference `fig:Acou_CHXin_H1H2_High' on page 56 undefined on inp
+ut line 613.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_High' on page 55 undefined on in
-put line 597.
+LaTeX Warning: Reference `fig:Acou_Regmid_H1H2_High' on page 56 undefined on in
+put line 613.
 
 
-LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_High' on page 55 undefined on inp
-ut line 597.
+LaTeX Warning: Reference `fig:Acou_AHXin_H1H2_High' on page 56 undefined on inp
+ut line 613.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
 Missing character: There is no ; in font nullfont!
@@ -5744,52 +5790,52 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2High/data_TC12_0
 beg_RixHigh_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 55 undefined 
-on input line 627.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 56 undefined 
+on input line 643.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 55 undefined on
- input line 627.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 56 undefined on
+ input line 643.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 55 undefined
- on input line 627.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 56 undefined
+ on input line 643.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 55 undefined o
-n input line 627.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 56 undefined o
+n input line 643.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 55 undefined 
-on input line 627.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 56 undefined 
+on input line 643.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 55 undefined on
- input line 627.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 56 undefined on
+ input line 643.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 55 undefined 
-on input line 627.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 56 undefined 
+on input line 643.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 55 undefined on
- input line 627.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 56 undefined on
+ input line 643.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 55 undefined
- on input line 627.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 56 undefined
+ on input line 643.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 55 undefined o
-n input line 627.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 56 undefined o
+n input line 643.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 55 undefined 
-on input line 627.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 56 undefined 
+on input line 643.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 55 undefined on
- input line 627.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 56 undefined on
+ input line 643.
 
 (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_V1V2.tex
 Missing character: There is no ; in font nullfont!
@@ -5844,64 +5890,64 @@ PGFPlots: reading {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC12_
 0beg_RixOff_PhaseRIXHP-60°_OrientationV2_Qc40W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:HeatOnly_CHXin_V1V2' on page 55 undefined o
-n input line 689.
+LaTeX Warning: Hyper reference `fig:HeatOnly_CHXin_V1V2' on page 56 undefined o
+n input line 705.
 
 
-LaTeX Warning: Reference `sub@fig:HeatOnly_CHXin_V1V2' on page 55 undefined on 
-input line 689.
+LaTeX Warning: Reference `sub@fig:HeatOnly_CHXin_V1V2' on page 56 undefined on 
+input line 705.
 
 
-LaTeX Warning: Hyper reference `fig:HeatOnly_Regmid_V1V2' on page 55 undefined 
-on input line 689.
+LaTeX Warning: Hyper reference `fig:HeatOnly_Regmid_V1V2' on page 56 undefined 
+on input line 705.
 
 
-LaTeX Warning: Reference `sub@fig:HeatOnly_Regmid_V1V2' on page 55 undefined on
- input line 689.
+LaTeX Warning: Reference `sub@fig:HeatOnly_Regmid_V1V2' on page 56 undefined on
+ input line 705.
 
 
-LaTeX Warning: Hyper reference `fig:HeatOnly_AHXin_V1V2' on page 55 undefined o
-n input line 689.
+LaTeX Warning: Hyper reference `fig:HeatOnly_AHXin_V1V2' on page 56 undefined o
+n input line 705.
 
 
-LaTeX Warning: Reference `sub@fig:HeatOnly_AHXin_V1V2' on page 55 undefined on 
-input line 689.
+LaTeX Warning: Reference `sub@fig:HeatOnly_AHXin_V1V2' on page 56 undefined on 
+input line 705.
 
 
-LaTeX Warning: Hyper reference `fig:HeatOnly_CHXin_V1V2' on page 55 undefined o
-n input line 689.
+LaTeX Warning: Hyper reference `fig:HeatOnly_CHXin_V1V2' on page 56 undefined o
+n input line 705.
 
 
-LaTeX Warning: Reference `sub@fig:HeatOnly_CHXin_V1V2' on page 55 undefined on 
-input line 689.
+LaTeX Warning: Reference `sub@fig:HeatOnly_CHXin_V1V2' on page 56 undefined on 
+input line 705.
 
 
-LaTeX Warning: Hyper reference `fig:HeatOnly_Regmid_V1V2' on page 55 undefined 
-on input line 689.
+LaTeX Warning: Hyper reference `fig:HeatOnly_Regmid_V1V2' on page 56 undefined 
+on input line 705.
 
 
-LaTeX Warning: Reference `sub@fig:HeatOnly_Regmid_V1V2' on page 55 undefined on
- input line 689.
+LaTeX Warning: Reference `sub@fig:HeatOnly_Regmid_V1V2' on page 56 undefined on
+ input line 705.
 
 
-LaTeX Warning: Hyper reference `fig:HeatOnly_AHXin_V1V2' on page 55 undefined o
-n input line 689.
+LaTeX Warning: Hyper reference `fig:HeatOnly_AHXin_V1V2' on page 56 undefined o
+n input line 705.
 
 
-LaTeX Warning: Reference `sub@fig:HeatOnly_AHXin_V1V2' on page 55 undefined on 
-input line 689.
+LaTeX Warning: Reference `sub@fig:HeatOnly_AHXin_V1V2' on page 56 undefined on 
+input line 705.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_Low' on page 55 undefined on inpu
-t line 693.
+LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_Low' on page 56 undefined on inpu
+t line 709.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_Low' on page 55 undefined on inp
-ut line 693.
+LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_Low' on page 56 undefined on inp
+ut line 709.
 
 
-LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_Low' on page 55 undefined on inpu
-t line 693.
+LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_Low' on page 56 undefined on inpu
+t line 709.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low.tex
 Missing character: There is no ; in font nullfont!
@@ -5956,66 +6002,64 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_TC12_0b
 eg_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Low' on page 55 undefined o
-n input line 750.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Low' on page 56 undefined o
+n input line 766.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Low' on page 55 undefined on 
-input line 750.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Low' on page 56 undefined on 
+input line 766.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Low' on page 55 undefined 
-on input line 750.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Low' on page 56 undefined 
+on input line 766.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Low' on page 55 undefined on
- input line 750.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Low' on page 56 undefined on
+ input line 766.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Low' on page 55 undefined o
-n input line 750.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Low' on page 56 undefined o
+n input line 766.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Low' on page 55 undefined on 
-input line 750.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Low' on page 56 undefined on 
+input line 766.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Low' on page 55 undefined o
-n input line 750.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Low' on page 56 undefined o
+n input line 766.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Low' on page 55 undefined on 
-input line 750.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Low' on page 56 undefined on 
+input line 766.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Low' on page 55 undefined 
-on input line 750.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Low' on page 56 undefined 
+on input line 766.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Low' on page 55 undefined on
- input line 750.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Low' on page 56 undefined on
+ input line 766.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Low' on page 55 undefined o
-n input line 750.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Low' on page 56 undefined o
+n input line 766.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Low' on page 55 undefined on 
-input line 750.
-
-
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Low' on page 56 undefined on 
+input line 766.
 
 
 LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_Mid' on page 56 undefined on inpu
-t line 754.
+t line 770.
 
 
 LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_Mid' on page 56 undefined on inp
-ut line 754.
+ut line 770.
 
 
 LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_Mid' on page 56 undefined on inpu
-t line 754.
+t line 770.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
 Missing character: There is no ; in font nullfont!
@@ -6071,63 +6115,65 @@ eg_RixMid_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
 )
 
 LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Mid' on page 56 undefined o
-n input line 810.
+n input line 826.
 
 
 LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Mid' on page 56 undefined on 
-input line 810.
+input line 826.
 
 
 LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Mid' on page 56 undefined 
-on input line 810.
+on input line 826.
 
 
 LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Mid' on page 56 undefined on
- input line 810.
+ input line 826.
 
 
 LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Mid' on page 56 undefined o
-n input line 810.
+n input line 826.
 
 
 LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Mid' on page 56 undefined on 
-input line 810.
+input line 826.
 
 
 LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Mid' on page 56 undefined o
-n input line 810.
+n input line 826.
 
 
 LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Mid' on page 56 undefined on 
-input line 810.
+input line 826.
 
 
 LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Mid' on page 56 undefined 
-on input line 810.
+on input line 826.
 
 
 LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Mid' on page 56 undefined on
- input line 810.
+ input line 826.
 
 
 LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Mid' on page 56 undefined o
-n input line 810.
+n input line 826.
 
 
 LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Mid' on page 56 undefined on 
-input line 810.
+input line 826.
 
 
-LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_High' on page 56 undefined on inp
-ut line 814.
 
 
-LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_High' on page 56 undefined on in
-put line 814.
+LaTeX Warning: Reference `fig:Acou_CHXin_V1V2_High' on page 57 undefined on inp
+ut line 830.
 
 
-LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_High' on page 56 undefined on inp
-ut line 814.
+LaTeX Warning: Reference `fig:Acou_Regmid_V1V2_High' on page 57 undefined on in
+put line 830.
+
+
+LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_High' on page 57 undefined on inp
+ut line 830.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
 Missing character: There is no ; in font nullfont!
@@ -6182,68 +6228,66 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC12_0
 beg_RixHigh_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 56 undefined 
-on input line 871.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 57 undefined 
+on input line 887.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 56 undefined on
- input line 871.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 57 undefined on
+ input line 887.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 56 undefined
- on input line 871.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 57 undefined
+ on input line 887.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 56 undefined o
-n input line 871.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 57 undefined o
+n input line 887.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 56 undefined 
-on input line 871.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 57 undefined 
+on input line 887.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 56 undefined on
- input line 871.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 57 undefined on
+ input line 887.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 56 undefined 
-on input line 871.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 57 undefined 
+on input line 887.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 56 undefined on
- input line 871.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 57 undefined on
+ input line 887.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 56 undefined
- on input line 871.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 57 undefined
+ on input line 887.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 56 undefined o
-n input line 871.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 57 undefined o
+n input line 887.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 56 undefined 
-on input line 871.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 57 undefined 
+on input line 887.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 56 undefined on
- input line 871.
-
-
-
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 57 undefined on
+ input line 887.
 
 
 
 
 
-LaTeX Warning: Reference `fig:Repetabilite_V1' on page 59 undefined on input li
-ne 903.
+
+
+
+LaTeX Warning: Reference `fig:Repetabilite_V1' on page 60 undefined on input li
+ne 919.
 
 
 
 ) (Conclusion.tex
-
-
 
 
 
@@ -6788,17 +6832,17 @@ n.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 81631 strings out of 473523
- 2113046 string characters out of 5707334
- 4829314 words of memory out of 5000000
- 103028 multiletter control sequences out of 15000+600000
- 730834 words of font info for 202 fonts, out of 8000000 for 9000
+ 81634 strings out of 473523
+ 2113147 string characters out of 5707334
+ 4830264 words of memory out of 5000000
+ 103030 multiletter control sequences out of 15000+600000
+ 734016 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,22n,162p,1552b,3299s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowa
 cki/iwona/iwonal.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKT
 eX/fonts/type1/nowacki/iwona/iwonali.pfb>
-Output written on external/fig_PerfConvNat_COP_DR350.pdf (1 page, 209983 bytes)
+Output written on external/fig_PerfConvNat_COP_DR350.pdf (1 page, 209793 bytes)
 .
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)

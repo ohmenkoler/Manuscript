@@ -13,7 +13,9 @@ Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. En 
 
 Les quatre orientations définies sur les schémas de la figure~\ref{fig:OrientationCore} sont tour à tour mises en place, et pour chacune des expériences sont réalisées en suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}. Les charges thermiques $\dot Q_f$ de \qtylist{0;50;100}{\watt} sont tour à tour appliquées par l'échangeur de chaleur froid. Les résultats des expériences sont notées dans le  tableau~\ref{tab:RecapResultExpe}.\smallskip
 
-Les résultats sont comparés avec le modèle sous \textsc{DeltaEC} sur lequel la conception de la machine s'est basée, avec les conditions expérimentales implémentée pour correspondre à chaque expérience, telles que le \textit{drive ratio} les températures des côtés ambiant et froid. Les flux de chaleur extrait par l'échangeur de chaleur ambiant $\dot Q_a$ et le coefficient de performances $\COP$ rapporté au coefficient de performance de Carnot sont ensuite relevés.\medskip
+\subsection{Coefficient de performances}
+
+Les résultats sont comparés avec le modèle sous \textsc{DeltaEC} sur lequel la conception de la machine s'est basée, avec les conditions expérimentales implémentée pour correspondre à chaque expérience, telles que le \textit{drive ratio} et les températures des côtés ambiant et froid. Les flux de chaleur extrait par l'échangeur de chaleur ambiant $\dot Q_a$ et le coefficient de performances $\COP$ rapporté au coefficient de performance de Carnot sont ensuite relevés.\medskip
 
 
 La figure~\ref{fig:PerfConvNat_COP_DR} présente tout d'abord les valeurs de coefficients de performance théoriques et expérimentaux, en fonction de la charge thermique $\dot Q_f$ appliquée à l'échangeur de chaleur froid. Ces résultats sont séparés en deux sous-figures, avec sur la première~\subref{fig:PerfConvNat_COP_DR2} les données obtenues à un \textit{drive ratio} $DR=\qty{2}{\percent}$, et sur la seconde~\subref{fig:PerfConvNat_COP_DR35}, à un \textit{drive ratio} $DR=\qty{3.5}{\percent}$.
@@ -219,9 +221,15 @@ La figure~\ref{fig:PerfConvNat_COP_DR} présente tout d'abord les valeurs de coe
 	\label{fig:PerfConvNat_COP_DR}
 \end{figure}
 
-Plusieurs observations peuvent être faites avec cette figure. Premièrement, l'écart entre les résultats théoriques (disques pleins) et expérimentaux (cerles) est plus faible quand le \textit{drive ratio} dimine et ce, pour toutes les orientations. C'est cohérent avec le fait qu'avec l'augmentation de l'amplitude acoustique appraîssent des effets non pris en compte par \textsc{DeltaEC}. En observant pour chaque charge thermique $\dot Q_f$ et chaque \textit{drive ratio} $DR$ les écarts de résultats qui ne dépendent que de l'orientation, il à remarquer des écarts \echaf{finir phrase}.\bigskip
+Plusieurs observations peuvent être faites avec cette figure~\ref{fig:PerfConvNat_COP_DR}. Premièrement, les résultats de simulations sont tous plus importants que les résultats expérimentaux, ce qui est cohérent avec le fait que \textsc{DeltaEC} ne prend pas en compte tous les phénomènes prenant place dans la machine réelle. Ensuite, l'écart entre les résultats théoriques (disques pleins) et expérimentaux (cercles) est plus faible quand le \textit{drive ratio} dimine et ce, pour toutes les orientations. C'est cohérent avec le fait qu'avec l'augmentation de l'amplitude acoustique appraîssent des effets non pris en compte par \textsc{DeltaEC}. En observant pour chaque charge thermique $\dot Q_f$ et chaque \textit{drive ratio} $DR$ les écarts de résultats qui ne dépendent que de l'orientation, il à remarquer des écarts \echaf{finir phrase sur écarts entre expé et écarts entre simus}. 
 
-La figure~\ref{fig:PerfConvNat_Qa_DR} montre les valeurs obtenues théoriquement et expérimentalement de flux de chaleur extraits par l'échangeur ambiant, à nouveau en fonction de la charge thermique donnée par l'échangeur de chaleur froid.\echaf{là aussi}
+Il ressort de cette figure que le coefficient de performance le plus élevé est obtenu en plaçant le réfrigérateur dans l'orientation `\texttt{V1}', aussi bien en observant les résultats expérimentaux que numériques.\medskip
+
+\textit{\textbf{Remarque :} la charge thermique totale au niveau de l'échangeur de chaleur froid n'est pas réellement nulle dans le cas des expériences à l'abscisse $\dot Q_f=0$, et donc le coefficient de performances à ce point non plus. En effet, les coefficients de performances sont calculés par le rapport de $\dot Q_f$ par $\dot W_e$, ce qui sous-entend que la charge thermique du côté froid du régénérateur ne dépend que de l'alimentation électrique des cartouches chauffantes contenues dans l'échangeur de chaleur, en négligeant d'autres composantes de la charge totale, telles que le flux de chaleur convectif apporté par la convection naturelle et l'écoulement de fluide qui l'accompagne, et la conduction de chaleur dans le fluide \echaf{ajouter figure Comsol dans la cavité avec les flèches de flux cond et conv pour montrer que cond est négligeable}. La charge thermique indiquée sur l'axe des abscisses des figures~\ref{fig:PerfConvNat_COP_DR} et \ref{fig:PerfConvNat_Qa_DR} n'inclut que cette composante apportée par les cartouches chauffantes, ce qui est une approximation suffisante lorsque $\dot Q_f\neq0$. Pour $\dot Q_f=0$, ce sont à l'inverse les autres composantes, et notamment celle causée par la convection naturelle, qui sont prédominantes, ce qui implique que la charge totale n'est pas réellement égale à \num{0}.}\bigskip
+
+\subsection{Flux de chaleur extrait par l'échangeur de chaleur ambiant}
+
+La figure~\ref{fig:PerfConvNat_Qa_DR} montre les valeurs obtenues théoriquement et expérimentalement de flux de chaleur extraits par l'échangeur ambiant, à nouveau en fonction de la charge thermique donnée par l'échangeur de chaleur froid, et pour deux amplitudes acoustiques : le \textit{drive ratio} $DR=\qty{2}{\percent}$ est affiché sur la sous-figure~\subref{fig:PerfConvNat_Qa_DR2}, et le \textit{drive ratio} $DR=\qty{3.5}{\percent}$, sur la sous-figure~\subref{fig:PerfConvNat_Qa_DR35}.
 
 \begin{figure}[!ht]
 	\centering
@@ -244,6 +252,10 @@ La figure~\ref{fig:PerfConvNat_Qa_DR} montre les valeurs obtenues théoriquement
 	\caption{Valeurs du flux de chaleur extrait par l'échangeur ambiant en fonction de la charge thermique appliquée à l'échangeur de chaleur froid, à différents \textit{drive ratios}. \subref{fig:PerfConvNat_Qa_DR2} $DR=\qty{2}{\percent}$, et \subref{fig:PerfConvNat_Qa_DR35} $DR=\qty{3.5}{\percent}$.}
 	\label{fig:PerfConvNat_Qa_DR}
 \end{figure}
+
+Sur cette figure~\ref{fig:PerfConvNat_Qa_DR}, les résultats expérimentaux et numériques sont très différents. Ici encore, les écarts entre le modèle \textsc{DeltaEC} et la réalité se creusent avec l'augmentation de l'amplitude acoustique. Pour les deux amplitudes acoustiques représentées, les valeurs théoriques de flux de chaleurs extraits $\dot Q_a$ sont indépendantes de la charge thermique appliquée et sont trois fois supérieures aux valeurs expérimentales qui croissent linéairement avec $\dot Q_f$. Cependant, l'augmentation de \qty{50}{\watt} du côté froid du régénérateur se traduit par une augmentation plus faible de \qty{30}{\watt}, pour toutes les orientations et aussi bien à l'amplitude acoustique pour laquelle $DR=\qty{2}{\percent}$ qu'à celle où $DR=\qty{3.5}{\percent}$. Cette indépendance de la valeur du flux de chaleur extrait semble dire que le flux de chaleur thermoacoustique n'est pas impacté par la convection naturelle. Ce résultat concorde avec le fait que la circulation de fluide dans le régénérateur n'est pas \bigskip
+
+\subsection{Températures atteintes par les côtés froid et ambiant du régénérateur}
 
 %\begin{figure}[!ht]
 %    \centering
@@ -324,12 +336,12 @@ La figure~\ref{fig:PerfConvNat_Qa_DR} montre les valeurs obtenues théoriquement
 
 \section{Distribution des températures}\label{chap:DistribTemperature}
 \subsection{Dans le cône d'adaptation d'impédance}
-L'étude des distributions de température commence par le cône d'adaptation d'impédance
+L'étude des distributions de température commence par la cavité d'adaptation d'impédance, dans laquelle la présence d'une cellule de convection naturelle est suspectée. Pour toutes les orientations présentées dans la figure~\ref{fig:OrientationCore}, plusieurs types d'expériences sont réalisées.
 
 
 \subsubsection{Réfrigérateur horizontal}
 \paragraph*{Sans acoustique}
-
+Des mesures sans acoustiques sont d'abord réalisées pour séparer les effets qui se superposent lors du fonctionnement de la machine. L'eau est mise en circulation dans l'échangeur de chaleur ambiant, et les cartouches chauffantes sont alimentées par une puissance de \qty{40}{\watt}. Les températures atteintes par les parois ne dépendent donc que de l'orientation, et l'étude des valeurs atteintes en plus de la distribution à l'extérieur de l'échangeur de chaleur froid permet de répondre à la question 
 
 \begin{figure}[!ht]
     \centering
@@ -339,6 +351,8 @@ L'étude des distributions de température commence par le cône d'adaptation d'
     \caption{\'Evolution temporelle des températures dans la cavité d'adaptation d'impédance pour les expériences dans les orientation `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} nul.}
     \label{fig:HeatOnly_CHXout_H1H2}
 \end{figure}
+
+
 
 \paragraph*{Avec acoustique}
 

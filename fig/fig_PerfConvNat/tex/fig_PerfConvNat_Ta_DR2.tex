@@ -1,4 +1,4 @@
-\begin{tikzpicture}[every mark/.append style={mark size=5pt, line width=2pt}]
+\begin{tikzpicture}[every mark/.append style={line width=1pt}]
 	\def\width{.9*\textwidth};
 	\def\height{1*\width};
 	
@@ -7,13 +7,15 @@
 		grid style={line width=.1pt, draw=gray!10},
 	    major grid style={line width=.2pt,draw=gray!50},
 	    xtick={0,50,100},
-		xlabel={$Q_f$ [\unit{\watt}]},
-		ylabel={$T_a$ [\unit{\kelvin}]},
-		legend style = {at={(.5,.95)}, anchor=north, rounded corners, legend columns=2}
+		ylabel={$\theta_a$ (\unit{\kelvin})},
+		xlabel={$\dot Q_f$ (\unit{\watt})},
+		legend cell align={left},
+		legend style = {at={($(1,0)+(3.5mm,2mm)$)}, anchor=south east, rounded corners, legend columns=2}
 	]
-	\addplot[only marks, mark=*,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V1_Ta_Qc_DR2.txt};%\addlegendentry{`\texttt{V1}'};
-	\addplot[only marks, mark=o,color=MatlabBlue] file {../fig/fig_PerfConvNat/data/V2_Ta_Qc_DR2.txt};%\addlegendentry{`\texttt{V2}'};
-	\addplot[only marks, mark=*,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H1_Ta_Qc_DR2.txt};%\addlegendentry{`\texttt{H1}'};
-	\addplot[only marks, mark=o,color=MatlabOrange] file {../fig/fig_PerfConvNat/data/H2_Ta_Qc_DR2.txt};%\addlegendentry{`\texttt{H2}'};
+	
+	\addplot[only marks, mark=*,color=Plasma75, mark size=5pt] file {../fig/fig_PerfConvNat/data/V1_Thetaa_Qc_DR2.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=*,color=Plasma50, mark size=4pt] file {../fig/fig_PerfConvNat/data/V2_Thetaa_Qc_DR2.txt};%\addlegendentry{`\texttt{V2}'};	
+	\addplot[only marks, mark=*,color=Plasma25, mark size=3pt] file {../fig/fig_PerfConvNat/data/H1_Thetaa_Qc_DR2.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=*,color=Plasma1, mark size=2pt] file {../fig/fig_PerfConvNat/data/H2_Thetaa_Qc_DR2.txt};%\addlegendentry{`\texttt{H2}'};
 	\end{axis}
 \end{tikzpicture}

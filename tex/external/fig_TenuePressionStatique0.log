@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  12 APR 2025 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=latex 2025.4.20)  20 APR 2025 19:36
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**\def\tikzexternalrealjob{totomain}\input{totomain}
-(totomain.tex
+**\def\tikzexternalrealjob{_main_}\input{_main_}
+(_main_.tex
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/base\boo
 k.cls
 Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
@@ -481,16 +481,15 @@ Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 -cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 274.
+Package xcolor Info: Driver file: dvips.def on input line 274.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/graphics
--def\pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+-def\dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/graphics
 \mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
@@ -514,10 +513,14 @@ es/xparse\xparse.sty
 Package: expl3 2025-01-18 L3 programming layer (loader) 
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/l3backen
-d\l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count385
+d\l3backend-dvips.def
+File: l3backend-dvips.def 2024-05-08 L3 backend support: dvips
 \l__pdf_internal_box=\box137
+\l__pdf_backend_content_box=\box138
+\l__pdf_backend_model_box=\box139
+\g__pdf_backend_annotation_int=\count385
+\g__pdf_backend_link_int=\count386
+\g__pdf_backend_link_sf_int=\count387
 ))
 Package: xparse 2024-08-16 L3 Experimental document command parser
 )) (Plasma.tex) (Inferno.tex)
@@ -546,19 +549,19 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count386
+\inf@bad=\count388
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count387
-\leftroot@=\count388
+\uproot@=\count389
+\leftroot@=\count390
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count389
-\DOTSCASE@=\count390
+\classnum@=\count391
+\DOTSCASE@=\count392
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box138
-\strutbox@=\box139
+\Mathstrutbox@=\box140
+\strutbox@=\box141
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
@@ -566,20 +569,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen286
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count391
+\macc@depth=\count393
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count392
+\c@MaxMatrixCols=\count394
 \dotsspace@=\muskip17
-\c@parentequation=\count393
-\dspbrk@lvl=\count394
+\c@parentequation=\count395
+\dspbrk@lvl=\count396
 \tag@help=\toks29
-\row@=\count395
-\column@=\count396
-\maxfields@=\count397
+\row@=\count397
+\column@=\count398
+\maxfields@=\count399
 \andhelp@=\toks30
 \eqnshift@=\dimen287
 \alignsep@=\dimen288
@@ -622,9 +625,9 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip62
 \enit@outerparindent=\dimen293
 \enit@toks=\toks33
-\enit@inbox=\box140
-\enit@count@id=\count398
-\enitdp@description=\count399
+\enit@inbox=\box142
+\enit@count@id=\count400
+\enitdp@description=\count401
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/tools\ta
 bularx.sty
@@ -634,7 +637,7 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@old@col=\dimen296
 \TX@target=\dimen297
 \TX@delta=\dimen298
-\TX@cols=\count400
+\TX@cols=\count402
 \TX@ftn=\toks34
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd
@@ -651,22 +654,22 @@ Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/tools\ca
 lc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count401
-\calc@Bcount=\count402
+\calc@Acount=\count403
+\calc@Bcount=\count404
 \calc@Adimen=\dimen299
 \calc@Bdimen=\dimen300
 \calc@Askip=\skip63
 \calc@Bskip=\skip64
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count403
+\calc@Ccount=\count405
 \calc@Cskip=\skip65
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/mathtool
 s\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count404
+\g_MT_multlinerow_int=\count406
 \l_MT_multwidth_dim=\dimen301
 \origjot=\skip66
 \l_MT_shortvdotswithinadjustabove_dim=\dimen302
@@ -675,7 +678,7 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_intertext_sep=\dimen305
 \l_MT_above_shortintertext_sep=\dimen306
 \l_MT_below_shortintertext_sep=\dimen307
-\xmathstrut@box=\box141
+\xmathstrut@box=\box143
 \xmathstrut@dim=\dimen308
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/units\ni
@@ -721,7 +724,7 @@ Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 -cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 106.
+Package graphics Info: Driver file: dvips.def on input line 106.
 )
 \Gin@req@height=\dimen309
 \Gin@req@width=\dimen310
@@ -733,9 +736,9 @@ es/l3keys2e\l3keys2e.sty
 Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count405
-\l__lipsum_a_int=\count406
-\l__lipsum_b_int=\count407
+\g__lipsum_par_int=\count407
+\l__lipsum_a_int=\count408
+\l__lipsum_b_int=\count409
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\l
 ipsum.ltd.tex))
@@ -747,24 +750,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 pace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count408
-\c@Blindtext=\count409
-\c@blind@countparstart=\count410
-\blind@countxx=\count411
-\blindtext@numBlindtext=\count412
-\blind@countyy=\count413
-\c@blindlist=\count414
-\c@blindlistlevel=\count415
-\c@blindlist@level=\count416
-\blind@listitem=\count417
-\c@blind@listcount=\count418
-\c@blind@levelcount=\count419
-\blind@mathformula=\count420
-\blind@Mathformula=\count421
-\c@blind@randomcount=\count422
-\c@blind@randommax=\count423
-\c@blind@pangramcount=\count424
-\c@blind@pangrammax=\count425
+\c@blindtext=\count410
+\c@Blindtext=\count411
+\c@blind@countparstart=\count412
+\blind@countxx=\count413
+\blindtext@numBlindtext=\count414
+\blind@countyy=\count415
+\c@blindlist=\count416
+\c@blindlistlevel=\count417
+\c@blindlist@level=\count418
+\blind@listitem=\count419
+\c@blind@listcount=\count420
+\c@blind@levelcount=\count421
+\blind@mathformula=\count422
+\blind@Mathformula=\count423
+\c@blind@randomcount=\count424
+\c@blind@randommax=\count425
+\c@blind@pangramcount=\count426
+\c@blind@pangrammax=\count427
 ))
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/caption\
 caption.sty
@@ -784,8 +787,8 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 Package caption Info: Standard document class detected.
 Package caption Info: french babel package is loaded.
 )
-\c@caption@flags=\count426
-\c@continuedfloat=\count427
+\c@caption@flags=\count428
+\c@continuedfloat=\count429
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -799,9 +802,9 @@ Package caption Info: wrapfig package is loaded.
 subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count428
+\c@subfigure=\count430
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count429
+\c@subtable=\count431
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/tools\dc
 olumn.sty
@@ -819,9 +822,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count430
-\Gm@cntv=\count431
-\c@Gm@tempcnt=\count432
+\Gm@cnth=\count432
+\Gm@cntv=\count433
+\c@Gm@tempcnt=\count434
 \Gm@bindingoffset=\dimen319
 \Gm@wd@mp=\dimen320
 \Gm@odd@mp=\dimen321
@@ -857,20 +860,20 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\
 siunitx.sty
 Package: siunitx 2025-03-26 v3.4.8 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count433
-\l__siunitx_number_exponent_fixed_int=\count434
-\l__siunitx_number_min_decimal_int=\count435
-\l__siunitx_number_min_integer_int=\count436
-\l__siunitx_number_round_precision_int=\count437
-\l__siunitx_number_lower_threshold_int=\count438
-\l__siunitx_number_upper_threshold_int=\count439
-\l__siunitx_number_group_first_int=\count440
-\l__siunitx_number_group_size_int=\count441
-\l__siunitx_number_group_minimum_int=\count442
+\l__siunitx_number_uncert_offset_int=\count435
+\l__siunitx_number_exponent_fixed_int=\count436
+\l__siunitx_number_min_decimal_int=\count437
+\l__siunitx_number_min_integer_int=\count438
+\l__siunitx_number_round_precision_int=\count439
+\l__siunitx_number_lower_threshold_int=\count440
+\l__siunitx_number_upper_threshold_int=\count441
+\l__siunitx_number_group_first_int=\count442
+\l__siunitx_number_group_size_int=\count443
+\l__siunitx_number_group_minimum_int=\count444
 \l__siunitx_angle_tmp_dim=\dimen327
-\l__siunitx_angle_marker_box=\box142
-\l__siunitx_angle_unit_box=\box143
-\l__siunitx_compound_count_int=\count443
+\l__siunitx_angle_marker_box=\box144
+\l__siunitx_angle_unit_box=\box145
+\l__siunitx_compound_count_int=\count445
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/translat
 ions\translations.sty
@@ -892,21 +895,21 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 ))
-\l__siunitx_table_tmp_box=\box144
+\l__siunitx_table_tmp_box=\box146
 \l__siunitx_table_tmp_dim=\dimen328
 \l__siunitx_table_column_width_dim=\dimen329
-\l__siunitx_table_integer_box=\box145
-\l__siunitx_table_decimal_box=\box146
-\l__siunitx_table_uncert_box=\box147
-\l__siunitx_table_before_box=\box148
-\l__siunitx_table_after_box=\box149
+\l__siunitx_table_integer_box=\box147
+\l__siunitx_table_decimal_box=\box148
+\l__siunitx_table_uncert_box=\box149
+\l__siunitx_table_before_box=\box150
+\l__siunitx_table_after_box=\box151
 \l__siunitx_table_before_dim=\dimen330
 \l__siunitx_table_carry_dim=\dimen331
-\l__siunitx_unit_tmp_int=\count444
-\l__siunitx_unit_position_int=\count445
-\l__siunitx_unit_total_int=\count446
+\l__siunitx_unit_tmp_int=\count446
+\l__siunitx_unit_position_int=\count447
+\l__siunitx_unit_total_int=\count448
 )
 
 Package siunitx Info: Option "detect-all" has been deprecated in this release.
@@ -922,7 +925,7 @@ Package siunitx Info: Option "detect-all" has been deprecated in this release.
 \multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip84
-\multirow@cntb=\count447
+\multirow@cntb=\count449
 \multirow@dima=\skip85
 \bigstrutjot=\dimen332
 )
@@ -939,9 +942,9 @@ s\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
 \Etoc@toctoks=\toks37
-\c@etoc@tocid=\count448
-\etoc@framed@titlebox=\box150
-\etoc@framed@contentsbox=\box151
+\c@etoc@tocid=\count450
+\etoc@framed@titlebox=\box152
+\etoc@framed@contentsbox=\box153
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/hyperref
 \hyperref.sty
@@ -971,7 +974,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count449
+\c@section@level=\count451
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/string
 enc\stringenc.sty
@@ -979,8 +982,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen333
-\Hy@linkcounter=\count450
-\Hy@pagecounter=\count451
+\Hy@linkcounter=\count452
+\Hy@pagecounter=\count453
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/hyperref
 \pd1enc.def
@@ -992,7 +995,7 @@ Now handling font encoding PD1 ...
 c\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count452
+\Hy@SavedSpaceFactor=\count454
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/hyperref
 \puenc.def
@@ -1007,7 +1010,7 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count453
+\c@Hy@tempcnt=\count455
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/url\url.
 sty
@@ -1026,7 +1029,7 @@ calc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count454
+\Fld@menulength=\count456
 \Field@Width=\dimen335
 \Fld@charsize=\dimen336
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -1042,15 +1045,30 @@ egshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count455
-\c@Item=\count456
-\c@Hfootnote=\count457
+\Hy@abspage=\count457
+\c@Item=\count458
+\c@Hfootnote=\count459
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver (default): hdvips.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/hyperref
-\hpdftex.def
-File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
+\hdvips.def
+File: hdvips.def 2024-11-05 v7.01l Hyperref driver for dvips
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/hyperref
+\pdfmark.def
+File: pdfmark.def 2024-11-05 v7.01l Hyperref definitions for pdfmark specials
+\pdf@docset=\toks38
+\pdf@box=\box154
+\pdf@toks=\toks39
+\pdf@defaulttoks=\toks40
+\HyField@AnnotCount=\count460
+\Fld@listcount=\count461
+\c@bookmark@seq@number=\count462
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/rerunfil
+echeck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/base\atv
 eryend-ltx.sty
@@ -1058,13 +1076,6 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count458
-\c@bookmark@seq@number=\count459
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/rerunfil
-echeck\rerunfilecheck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
-
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/unique
 counter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
@@ -1073,18 +1084,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
 \Hy@SectionHShift=\skip86
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 213.
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 215.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/titlesec
 \titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box152
+\ttl@box=\box155
 \beforetitleunit=\skip87
 \aftertitleunit=\skip88
 \ttl@plus=\dimen337
 \ttl@minus=\dimen338
-\ttl@toksa=\toks38
+\ttl@toksa=\toks41
 \titlewidth=\dimen339
 \titlewidthlast=\dimen340
 \titlewidthfirst=\dimen341
@@ -1096,55 +1107,55 @@ Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/logreq\l
 ogreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count460
+\lrq@indent=\count463
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/logreq\l
 ogreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count461
-\c@listtotal=\count462
-\c@listcount=\count463
-\c@liststart=\count464
-\c@liststop=\count465
-\c@citecount=\count466
-\c@citetotal=\count467
-\c@multicitecount=\count468
-\c@multicitetotal=\count469
-\c@instcount=\count470
-\c@maxnames=\count471
-\c@minnames=\count472
-\c@maxitems=\count473
-\c@minitems=\count474
-\c@citecounter=\count475
-\c@maxcitecounter=\count476
-\c@savedcitecounter=\count477
-\c@uniquelist=\count478
-\c@uniquename=\count479
-\c@refsection=\count480
-\c@refsegment=\count481
-\c@maxextratitle=\count482
-\c@maxextratitleyear=\count483
-\c@maxextraname=\count484
-\c@maxextradate=\count485
-\c@maxextraalpha=\count486
-\c@abbrvpenalty=\count487
-\c@highnamepenalty=\count488
-\c@lownamepenalty=\count489
-\c@maxparens=\count490
-\c@parenlevel=\count491
-\blx@tempcnta=\count492
-\blx@tempcntb=\count493
-\blx@tempcntc=\count494
-\c@blx@maxsection=\count495
-\blx@maxsegment@0=\count496
-\blx@notetype=\count497
-\blx@parenlevel@text=\count498
-\blx@parenlevel@foot=\count499
-\blx@sectionciteorder@0=\count500
-\blx@sectionciteorderinternal@0=\count501
-\blx@entrysetcounter=\count502
-\blx@biblioinstance=\count503
+\c@tabx@nest=\count464
+\c@listtotal=\count465
+\c@listcount=\count466
+\c@liststart=\count467
+\c@liststop=\count468
+\c@citecount=\count469
+\c@citetotal=\count470
+\c@multicitecount=\count471
+\c@multicitetotal=\count472
+\c@instcount=\count473
+\c@maxnames=\count474
+\c@minnames=\count475
+\c@maxitems=\count476
+\c@minitems=\count477
+\c@citecounter=\count478
+\c@maxcitecounter=\count479
+\c@savedcitecounter=\count480
+\c@uniquelist=\count481
+\c@uniquename=\count482
+\c@refsection=\count483
+\c@refsegment=\count484
+\c@maxextratitle=\count485
+\c@maxextratitleyear=\count486
+\c@maxextraname=\count487
+\c@maxextradate=\count488
+\c@maxextraalpha=\count489
+\c@abbrvpenalty=\count490
+\c@highnamepenalty=\count491
+\c@lownamepenalty=\count492
+\c@maxparens=\count493
+\c@parenlevel=\count494
+\blx@tempcnta=\count495
+\blx@tempcntb=\count496
+\blx@tempcntc=\count497
+\c@blx@maxsection=\count498
+\blx@maxsegment@0=\count499
+\blx@notetype=\count500
+\blx@parenlevel@text=\count501
+\blx@parenlevel@foot=\count502
+\blx@sectionciteorder@0=\count503
+\blx@sectionciteorderinternal@0=\count504
+\blx@entrysetcounter=\count505
+\blx@biblioinstance=\count506
 \labelnumberwidth=\skip89
 \labelalphawidth=\skip90
 \biblabelsep=\skip91
@@ -1156,9 +1167,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read3
 \blx@bcfout=\write4
 \blx@langwohyphens=\language80
-\c@mincomprange=\count504
-\c@maxcomprange=\count505
-\c@mincompwidth=\count506
+\c@mincomprange=\count507
+\c@maxcomprange=\count508
+\c@mincompwidth=\count509
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1170,74 +1181,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count507
-\c@savedafterword=\count508
-\c@annotator=\count509
-\c@savedannotator=\count510
-\c@author=\count511
-\c@savedauthor=\count512
-\c@bookauthor=\count513
-\c@savedbookauthor=\count514
-\c@commentator=\count515
-\c@savedcommentator=\count516
-\c@editor=\count517
-\c@savededitor=\count518
-\c@editora=\count519
-\c@savededitora=\count520
-\c@editorb=\count521
-\c@savededitorb=\count522
-\c@editorc=\count523
-\c@savededitorc=\count524
-\c@foreword=\count525
-\c@savedforeword=\count526
-\c@holder=\count527
-\c@savedholder=\count528
-\c@introduction=\count529
-\c@savedintroduction=\count530
-\c@namea=\count531
-\c@savednamea=\count532
-\c@nameb=\count533
-\c@savednameb=\count534
-\c@namec=\count535
-\c@savednamec=\count536
-\c@translator=\count537
-\c@savedtranslator=\count538
-\c@shortauthor=\count539
-\c@savedshortauthor=\count540
-\c@shorteditor=\count541
-\c@savedshorteditor=\count542
-\c@labelname=\count543
-\c@savedlabelname=\count544
-\c@institution=\count545
-\c@savedinstitution=\count546
-\c@lista=\count547
-\c@savedlista=\count548
-\c@listb=\count549
-\c@savedlistb=\count550
-\c@listc=\count551
-\c@savedlistc=\count552
-\c@listd=\count553
-\c@savedlistd=\count554
-\c@liste=\count555
-\c@savedliste=\count556
-\c@listf=\count557
-\c@savedlistf=\count558
-\c@location=\count559
-\c@savedlocation=\count560
-\c@organization=\count561
-\c@savedorganization=\count562
-\c@origlocation=\count563
-\c@savedoriglocation=\count564
-\c@origpublisher=\count565
-\c@savedorigpublisher=\count566
-\c@publisher=\count567
-\c@savedpublisher=\count568
-\c@language=\count569
-\c@savedlanguage=\count570
-\c@origlanguage=\count571
-\c@savedoriglanguage=\count572
-\c@pageref=\count573
-\c@savedpageref=\count574
+\c@afterword=\count510
+\c@savedafterword=\count511
+\c@annotator=\count512
+\c@savedannotator=\count513
+\c@author=\count514
+\c@savedauthor=\count515
+\c@bookauthor=\count516
+\c@savedbookauthor=\count517
+\c@commentator=\count518
+\c@savedcommentator=\count519
+\c@editor=\count520
+\c@savededitor=\count521
+\c@editora=\count522
+\c@savededitora=\count523
+\c@editorb=\count524
+\c@savededitorb=\count525
+\c@editorc=\count526
+\c@savededitorc=\count527
+\c@foreword=\count528
+\c@savedforeword=\count529
+\c@holder=\count530
+\c@savedholder=\count531
+\c@introduction=\count532
+\c@savedintroduction=\count533
+\c@namea=\count534
+\c@savednamea=\count535
+\c@nameb=\count536
+\c@savednameb=\count537
+\c@namec=\count538
+\c@savednamec=\count539
+\c@translator=\count540
+\c@savedtranslator=\count541
+\c@shortauthor=\count542
+\c@savedshortauthor=\count543
+\c@shorteditor=\count544
+\c@savedshorteditor=\count545
+\c@labelname=\count546
+\c@savedlabelname=\count547
+\c@institution=\count548
+\c@savedinstitution=\count549
+\c@lista=\count550
+\c@savedlista=\count551
+\c@listb=\count552
+\c@savedlistb=\count553
+\c@listc=\count554
+\c@savedlistc=\count555
+\c@listd=\count556
+\c@savedlistd=\count557
+\c@liste=\count558
+\c@savedliste=\count559
+\c@listf=\count560
+\c@savedlistf=\count561
+\c@location=\count562
+\c@savedlocation=\count563
+\c@organization=\count564
+\c@savedorganization=\count565
+\c@origlocation=\count566
+\c@savedoriglocation=\count567
+\c@origpublisher=\count568
+\c@savedorigpublisher=\count569
+\c@publisher=\count570
+\c@savedpublisher=\count571
+\c@language=\count572
+\c@savedlanguage=\count573
+\c@origlanguage=\count574
+\c@savedoriglanguage=\count575
+\c@pageref=\count576
+\c@savedpageref=\count577
 \shorthandwidth=\skip97
 \shortjournalwidth=\skip98
 \shortserieswidth=\skip99
@@ -1265,19 +1276,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/biblatex
 \biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count575
-\c@textcitetotal=\count576
-\c@textcitemaxnames=\count577
-\c@biburlbigbreakpenalty=\count578
-\c@biburlbreakpenalty=\count579
-\c@biburlnumpenalty=\count580
-\c@biburlucpenalty=\count581
-\c@biburllcpenalty=\count582
+\c@textcitecount=\count578
+\c@textcitetotal=\count579
+\c@textcitemaxnames=\count580
+\c@biburlbigbreakpenalty=\count581
+\c@biburlbreakpenalty=\count582
+\c@biburlnumpenalty=\count583
+\c@biburlucpenalty=\count584
+\c@biburllcpenalty=\count585
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count583
+\c@smartand=\count586
 )
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
@@ -1297,8 +1308,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/biblatex
 /bbx\standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count584
-\c@bbx:relatedtotal=\count585
+\c@bbx:relatedcount=\count587
+\c@bbx:relatedtotal=\count588
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
@@ -1306,10 +1317,10 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/biblatex
 /cbx\numeric-comp.cbx
 File: numeric-comp.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count586
-\c@cbx@tempcntb=\count587
-\c@cbx@tempcntc=\count588
-\c@cbx@tempcntd=\count589
+\c@cbx@tempcnta=\count589
+\c@cbx@tempcntb=\count590
+\c@cbx@tempcntc=\count591
+\c@cbx@tempcntd=\count592
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1348,13 +1359,13 @@ clayer\pgf.sty
 ities\pgfrcs.sty
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ut
 ilities\pgfutil-common.tex
-\pgfutil@everybye=\toks39
+\pgfutil@everybye=\toks42
 \pgfutil@tempdima=\dimen342
 \pgfutil@tempdimb=\dimen343
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ut
 ilities\pgfutil-latex.def
-\pgfutil@abb=\box153
+\pgfutil@abb=\box156
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ut
 ilities\pgfrcs.code.tex
@@ -1374,12 +1385,12 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ut
 ilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks40
-\pgfkeys@temptoks=\toks41
+\pgfkeys@pathtoks=\toks43
+\pgfkeys@temptoks=\toks44
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ut
 ilities\pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks42
+\pgfkeys@tmptoks=\toks45
 ))
 \pgf@x=\dimen344
 \pgf@y=\dimen345
@@ -1393,34 +1404,35 @@ ilities\pgfkeyslibraryfiltered.code.tex
 \pgf@yd=\dimen353
 \w@pgf@writea=\write5
 \r@pgf@reada=\read4
-\c@pgf@counta=\count590
-\c@pgf@countb=\count591
-\c@pgf@countc=\count592
-\c@pgf@countd=\count593
-\t@pgf@toka=\toks43
-\t@pgf@tokb=\toks44
-\t@pgf@tokc=\toks45
-\pgf@sys@id@count=\count594
+\c@pgf@counta=\count593
+\c@pgf@countb=\count594
+\c@pgf@countc=\count595
+\c@pgf@countd=\count596
+\t@pgf@toka=\toks46
+\t@pgf@tokb=\toks47
+\t@pgf@tokc=\toks48
+\pgf@sys@id@count=\count597
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/sy
 stemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-dvips.def
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/sy
-stemlayer\pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+stemlayer\pgfsys-dvips.def
+File: pgfsys-dvips.def 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/sy
-stemlayer\pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+stemlayer\pgfsys-common-postscript.def
+File: pgfsys-common-postscript.def 2023-01-15 v3.1.10 (3.1.10)
+\pgf@objectcount=\count598
 )))
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/sy
 stemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count595
-\pgfsyssoftpath@bigbuffer@items=\count596
+\pgfsyssoftpath@smallbuffer@items=\count599
+\pgfsyssoftpath@bigbuffer@items=\count600
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/sy
 stemlayer\pgfsysprotocol.code.tex
@@ -1437,11 +1449,11 @@ th\pgfmathutil.code.tex)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ma
 th\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen354
-\pgfmath@count=\count597
-\pgfmath@box=\box154
-\pgfmath@toks=\toks46
-\pgfmath@stack@operand=\toks47
-\pgfmath@stack@operation=\toks48
+\pgfmath@count=\count601
+\pgfmath@box=\box157
+\pgfmath@toks=\toks49
+\pgfmath@stack@operand=\toks50
+\pgfmath@stack@operation=\toks51
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ma
 th\pgfmathfunctions.code.tex)
@@ -1465,7 +1477,7 @@ th\pgfmathfunctions.integerarithmetics.code.tex)
 th\pgfmathcalc.code.tex)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ma
 th\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count598
+\c@pgfmathroundto@lastzeros=\count602
 ))
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ma
 th\pgfint.code.tex)
@@ -1502,10 +1514,10 @@ File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ba
 siclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box155
-\pgf@hbox=\box156
-\pgf@layerbox@main=\box157
-\pgf@picture@serial@count=\count599
+\pgfpic=\box158
+\pgf@hbox=\box159
+\pgf@layerbox@main=\box160
+\pgf@picture@serial@count=\count603
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ba
 siclayer\pgfcoregraphicstate.code.tex
@@ -1540,8 +1552,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 siclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen378
-\pgf@sys@shading@range@num=\count600
-\pgf@shadingcount=\count601
+\pgf@sys@shading@range@num=\count604
+\pgf@shadingcount=\count605
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ba
 siclayer\pgfcoreimage.code.tex
@@ -1550,7 +1562,7 @@ File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ba
 siclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box158
+\pgfexternal@startupbox=\box161
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/ba
 siclayer\pgfcorelayers.code.tex
@@ -1571,7 +1583,7 @@ File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/mo
 dules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box159
+\pgfnodeparttextbox=\box162
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/mo
 dules\pgfmoduleplot.code.tex
@@ -1602,8 +1614,8 @@ ilities\pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen381
 \pgffor@skip=\dimen382
-\pgffor@stack=\toks49
-\pgffor@toks=\toks50
+\pgffor@stack=\toks52
+\pgffor@toks=\toks53
 ))
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fr
 ontendlayer/tikz\tikz.code.tex
@@ -1612,7 +1624,7 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/li
 braries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count602
+\pgf@plot@mark@count=\count606
 \pgfplotmarksize=\dimen383
 )
 \tikz@lastx=\dimen384
@@ -1623,23 +1635,23 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@lastmovetoy=\dimen389
 \tikzleveldistance=\dimen390
 \tikzsiblingdistance=\dimen391
-\tikz@figbox=\box160
-\tikz@figbox@bg=\box161
-\tikz@tempbox=\box162
-\tikz@tempbox@bg=\box163
-\tikztreelevel=\count603
-\tikznumberofchildren=\count604
-\tikznumberofcurrentchild=\count605
-\tikz@fig@count=\count606
+\tikz@figbox=\box163
+\tikz@figbox@bg=\box164
+\tikz@tempbox=\box165
+\tikz@tempbox@bg=\box166
+\tikztreelevel=\count607
+\tikznumberofchildren=\count608
+\tikznumberofcurrentchild=\count609
+\tikz@fig@count=\count610
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/mo
 dules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count607
-\pgfmatrixcurrentcolumn=\count608
-\pgf@matrix@numberofcolumns=\count609
+\pgfmatrixcurrentrow=\count611
+\pgfmatrixcurrentcolumn=\count612
+\pgf@matrix@numberofcolumns=\count613
 )
-\tikz@expandcount=\count610
+\tikz@expandcount=\count614
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fr
 ontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
@@ -1704,26 +1716,26 @@ File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/li
 braries/shapes\pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box164
-\pgfnodeparttwobox=\box165
-\pgfnodepartthreebox=\box166
-\pgfnodepartfourbox=\box167
-\pgfnodeparttwentybox=\box168
-\pgfnodepartnineteenbox=\box169
-\pgfnodeparteighteenbox=\box170
-\pgfnodepartseventeenbox=\box171
-\pgfnodepartsixteenbox=\box172
-\pgfnodepartfifteenbox=\box173
-\pgfnodepartfourteenbox=\box174
-\pgfnodepartthirteenbox=\box175
-\pgfnodeparttwelvebox=\box176
-\pgfnodepartelevenbox=\box177
-\pgfnodeparttenbox=\box178
-\pgfnodepartninebox=\box179
-\pgfnodeparteightbox=\box180
-\pgfnodepartsevenbox=\box181
-\pgfnodepartsixbox=\box182
-\pgfnodepartfivebox=\box183
+\pgfnodepartlowerbox=\box167
+\pgfnodeparttwobox=\box168
+\pgfnodepartthreebox=\box169
+\pgfnodepartfourbox=\box170
+\pgfnodeparttwentybox=\box171
+\pgfnodepartnineteenbox=\box172
+\pgfnodeparteighteenbox=\box173
+\pgfnodepartseventeenbox=\box174
+\pgfnodepartsixteenbox=\box175
+\pgfnodepartfifteenbox=\box176
+\pgfnodepartfourteenbox=\box177
+\pgfnodepartthirteenbox=\box178
+\pgfnodeparttwelvebox=\box179
+\pgfnodepartelevenbox=\box180
+\pgfnodeparttenbox=\box181
+\pgfnodepartninebox=\box182
+\pgfnodeparteightbox=\box183
+\pgfnodepartsevenbox=\box184
+\pgfnodepartsixbox=\box185
+\pgfnodepartfivebox=\box186
 )))
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/li
 braries\pgflibraryarrows.meta.code.tex
@@ -1764,11 +1776,11 @@ dules\pgfmoduledecorations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen398
 \pgfdecoratedinputsegmentremainingdistance=\dimen399
 \pgf@decorate@distancetomove=\dimen400
-\pgf@decorate@repeatstate=\count611
+\pgf@decorate@repeatstate=\count615
 \pgfdecorationsegmentamplitude=\dimen401
 \pgfdecorationsegmentlength=\dimen402
 )
-\tikz@lib@dec@box=\box184
+\tikz@lib@dec@box=\box187
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/li
 braries/decorations\pgflibrarydecorations.pathreplacing.code.tex))
@@ -1786,9 +1798,9 @@ ontendlayer/tikz/libraries\tikzlibrarymath.code.tex
 ontendlayer/tikz/libraries\tikzlibraryfpu.code.tex
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/li
 braries\pgflibraryfpu.code.tex))
-\tikz@math@for@depth=\count612
+\tikz@math@for@depth=\count616
 \tikz@math@dimen=\dimen403
-\tikz@math@toks=\toks51
+\tikz@math@toks=\toks54
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fr
 ontendlayer/tikz/libraries\tikzlibraryfit.code.tex
@@ -1841,9 +1853,9 @@ File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/circui
 tikz\pgfcirc.defines.tex
-\pgf@circ@count@a=\count613
-\pgf@circ@count@b=\count614
-\pgf@circ@count@c=\count615
+\pgf@circ@count@a=\count617
+\pgf@circ@count@b=\count618
+\pgf@circ@count@c=\count619
 \pgf@circ@res@up=\dimen411
 \pgf@circ@res@down=\dimen412
 \pgf@circ@res@zero=\dimen413
@@ -1858,7 +1870,7 @@ tikz\pgfcirc.defines.tex
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/circui
 tikz\pgfcircutils.tex
-\ctikz@scratchbox=\box185
+\ctikz@scratchbox=\box188
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/circui
 tikz\pgfcircpath.tex)
@@ -1870,7 +1882,7 @@ tikz\pgfcircmonopoles.tex)
 tikz\pgfcircbipoles.tex)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/circui
 tikz\pgfcirctripoles.tex
-\pgf@circ@res@count=\count616
+\pgf@circ@res@count=\count620
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/circui
 tikz\pgfcircquadpoles.tex)
@@ -1906,8 +1918,8 @@ braries/decorations\pgflibrarydecorations.pathmorphing.code.tex))
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fr
 ontendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box186
-\pgf@layerboxsaved@background=\box187
+\pgf@layerbox@background=\box189
+\pgf@layerboxsaved@background=\box190
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots
 \pgfplots.sty
@@ -1919,12 +1931,12 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 ts\pgfplots.code.tex
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts\pgfplotscore.code.tex
-\t@pgfplots@toka=\toks52
-\t@pgfplots@tokb=\toks53
-\t@pgfplots@tokc=\toks54
+\t@pgfplots@toka=\toks55
+\t@pgfplots@tokb=\toks56
+\t@pgfplots@tokc=\toks57
 \pgfplots@tmpa=\dimen424
-\c@pgfplots@coordindex=\count617
-\c@pgfplots@scanlineindex=\count618
+\c@pgfplots@coordindex=\count621
+\c@pgfplots@scanlineindex=\count622
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/sys\pgfplotssysgeneric.code.tex))
@@ -1933,9 +1945,9 @@ ts/libs\pgfplotslibrary.code.tex)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks55
-\t@pgf@tokb=\toks56
-\t@pgf@tokc=\toks57
+\t@pgf@toka=\toks58
+\t@pgf@tokb=\toks59
+\t@pgf@tokc=\toks60
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
@@ -1947,14 +1959,14 @@ ts/liststructure\pgfplotsliststructure.code.tex)
 ts/liststructure\pgfplotsliststructureext.code.tex)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/liststructure\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count619
+\c@pgfplotsarray@tmp=\count623
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/liststructure\pgfplotsmatrix.code.tex)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/numtable\pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count620
-\t@pgfplotstable@a=\toks58
+\c@pgfplotstable@counta=\count624
+\t@pgfplotstable@a=\toks61
 )
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/liststructure\pgfplotsdeque.code.tex)
@@ -1966,10 +1978,10 @@ ts/util\pgfplotsbinary.data.code.tex))
 ts/util\pgfplotsutil.verb.code.tex)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/libs\pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count621
+\c@pgfplotslibrarysurf@no=\count625
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
-ts/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def)))
+ts/sys\pgflibrarypgfplots.surfshading.pgfsys-dvips.def)))
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/util\pgfplotscolormap.code.tex
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
@@ -1996,7 +2008,7 @@ ts\pgfplotsticks.code.tex)
 ts\pgfplots.paths.code.tex)
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/libs\tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count622
+\pgfplots@numplots=\count626
 \pgfplots@xmin@reg=\dimen425
 \pgfplots@xmax@reg=\dimen426
 \pgfplots@ymin@reg=\dimen427
@@ -2022,7 +2034,7 @@ ts/pgfcontrib\tikzlibraryfillbetween.code.tex
 ontendlayer/tikz/libraries\tikzlibraryintersections.code.tex
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgf/li
 braries\pgflibraryintersections.code.tex
-\pgf@intersect@solutions=\count623
+\pgf@intersect@solutions=\count627
 ))
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/generic/pgfplo
 ts/pgfcontrib\tikzlibrarydecorations.softclip.code.tex
@@ -2051,60 +2063,34 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
 No file external/fig_TenuePressionStatique0.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 387.
-LaTeX Font Info:    ... okay on input line 387.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 387.
-LaTeX Font Info:    ... okay on input line 387.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 387.
-LaTeX Font Info:    ... okay on input line 387.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 387.
-LaTeX Font Info:    ... okay on input line 387.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 387.
-LaTeX Font Info:    ... okay on input line 387.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 387.
-LaTeX Font Info:    ... okay on input line 387.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 387.
-LaTeX Font Info:    ... okay on input line 387.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 387.
-LaTeX Font Info:    ... okay on input line 387.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 387.
-LaTeX Font Info:    ... okay on input line 387.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 389.
+LaTeX Font Info:    ... okay on input line 389.
 Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported  on input line 387.
-LaTeX Info: Redefining \degres on input line 387.
+(babel)             Reported  on input line 389.
+LaTeX Info: Redefining \degres on input line 389.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 387.
+(french.ldf)             reported on input line 389.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 387.
-LaTeX Info: Redefining \up on input line 387.
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/context/base/m
-kii\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count624
-\scratchdimen=\dimen431
-\scratchbox=\box188
-\nofMPsegments=\count625
-\nofMParguments=\count626
-\everyMPshowfont=\toks59
-\MPscratchCnt=\count627
-\MPscratchDim=\dimen432
-\MPnumerator=\count628
-\makeMPintoPDFobject=\count629
-\everyMPtoPDFconversion=\toks60
-)
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf
--pkg\epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/00miktex
-\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
+(french.ldf)             reported on input line 389.
+LaTeX Info: Redefining \up on input line 389.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -2148,10 +2134,13 @@ File: translations-basic-dictionary-french.trsl (french translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `french'. on input line 387.
+or `french'. on input line 389.
 No file external/fig_TenuePressionStatique0.toc.
 \providecommand\hyper@newdestlabel[2]{}
-Package hyperref Info: Link coloring ON on input line 387.
+Package hyperref Info: Link coloring ON on input line 389.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 Package biblatex Info: Trying to load language 'french'...
 Package biblatex Info: ... file 'french.lbx' found.
 
@@ -2166,126 +2155,528 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'external/fig_TenuePressionStatique0.bbl' not f
 ound.
 No file external/fig_TenuePressionStatique0.bbl.
-Package biblatex Info: Reference section=0 on input line 387.
-Package biblatex Info: Reference segment=0 on input line 387.
+Package biblatex Info: Reference section=0 on input line 389.
+Package biblatex Info: Reference segment=0 on input line 389.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-(../fig/fig_TenuePressionStatique/tex/fig_TenuePressionStatique.tex
-\openout6 = `external/fig_TenuePressionStatique0.dpth'.
-
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
 LaTeX Font Info:    Trying to load font information for OT1+iwonalm on input li
-ne 51.
+ne 393.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ot
 1iwonalm.fd
 File: ot1iwonalm.fd 2005/10/05 v1.2 font definition file for OT1/iwonalm (MW)
 )
 LaTeX Font Info:    Trying to load font information for OML+iwonal on input lin
-e 51.
+e 393.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\om
 liwonal.fd
 File: omliwonal.fd 2008/07/22 v0.995 font definition file for OML/iwonal (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMS+iwonal on input lin
-e 51.
+e 393.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\om
 siwonal.fd
 File: omsiwonal.fd 2008/07/22 v0.995 font definition file for OMS/iwonal (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMX+iwonal on input lin
-e 51.
+e 393.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\om
 xiwonal.fd
 File: omxiwonal.fd 2008/07/22 v0.995 font definition file for OMX/iwonal (MW)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 393
+.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
 \umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 393
+.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
 \umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 51
-.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 39
+3.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/jknappen
 \ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
-1.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
+93.
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd
-\ustmry.fd) [1
-
-\@writefile{toc}{\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble
- \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setloc
-altop \@gobble }{}}
-{C:/Users/juliette utilisateur/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map
-}{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/i
-wona/rm-iwona.enc}{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/
-fonts/enc/dvips/iwona/ec-iwona.enc}{C:/Users/juliette utilisateur/AppData/Local
-/Programs/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}])
-
-Package caption Warning: Unused \captionsetup[subfigure] on input line 182.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: Unused \captionsetup[sub] on input line 184.
-See the caption package documentation for explanation.
+\ustmry.fd)
 
 
 
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
- ***********
-
-LaTeX Warning: There were undefined references.
+(Citations.tex) (Remerciements.tex
 
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                external/fig_TenuePressionStatique0
-(biblatex)                and rerun LaTeX afterwards.
 
-Package logreq Info: Writing requests to 'external/fig_TenuePressionStatique0.r
-un.xml'.
-\openout1 = `external/fig_TenuePressionStatique0.run.xml'.
+)
 
- ) 
-Here is how much of TeX's memory you used:
- 76228 strings out of 473523
- 1929984 string characters out of 5707334
- 2992326 words of memory out of 5000000
- 98518 multiletter control sequences out of 15000+600000
- 605741 words of font info for 80 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 93i,21n,107p,1239b,2426s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowa
-cki/iwona/iwonal.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKT
-eX/fonts/type1/nowacki/iwona/iwonali.pfb>
-Output written on external/fig_TenuePressionStatique0.pdf (1 page, 49360 bytes)
+
+
+Package babel Info: 'french' activates 'french' shorthands.
+(babel)             Reported  on input line 405.
+
+
+
+
+(Introduction.tex
+Chapitre I.
+
+
+
+LaTeX Warning: Citation 'johnson_theory_1987' on page 2 undefined on input line
+ 10.
+
+
+LaTeX Warning: Citation 'drummond_laminar_1984' on page 2 undefined on input li
+ne 10.
+
+
+LaTeX Warning: Citation 'duffourd_refrigerateur_2001' on page 2 undefined on in
+put line 12.
+
+
+LaTeX Warning: Citation 'penelet_etude_2004' on page 2 undefined on input line 
+12.
+
+
+LaTeX Warning: Citation 'penelet_etude_2004' on page 2 undefined on input line 
+13.
+
+
+LaTeX Warning: Citation 'poignand_analysis_2013' on page 2 undefined on input l
+ine 15.
+
+
+LaTeX Warning: Citation 'poignand_thermoacoustic_2011' on page 2 undefined on i
+nput line 15.
+
+
+LaTeX Warning: Citation 'tijani_study_2008' on page 2 undefined on input line 1
+5.
+
+
+LaTeX Warning: Citation 'ramadan_design_2021' on page 2 undefined on input line
+ 15.
+
+
+LaTeX Warning: Citation 'ross_influence_2003' on page 2 undefined on input line
+ 17.
+
+
+LaTeX Warning: Citation 'hireche_numerical_2019' on page 2 undefined on input l
+ine 17.
+
+
+LaTeX Warning: Citation 'pan_visualization_2012' on page 2 undefined on input l
+ine 17.
+
+
+LaTeX Warning: Citation 'bianchi_transferts_2004' on page 2 undefined on input 
+line 17.
+
+
+LaTeX Warning: Citation 'babaei_investigation_2010' on page 2 undefined on inpu
+t line 17.
+
+
+LaTeX Warning: Citation 'gardner_cascade_2003' on page 2 undefined on input lin
+e 17.
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 17--18
+[]\T1/iwonal/m/n/10.95 Convection na-tu-relle : [[], [], [],
+ []
+
+
+LaTeX Warning: Citation 'shiina_critical_2010' on page 2 undefined on input lin
+e 18.
+
+
+LaTeX Warning: Citation 'kvernvold_nonlinear_1979' on page 2 undefined on input
+ line 18.
+
+
+LaTeX Warning: Citation 'richard_critere_1981' on page 2 undefined on input lin
+e 18.
+
+
+LaTeX Warning: Citation 'horton_convection_1945' on page 2 undefined on input l
+ine 18.
+
+
+Overfull \hbox (39.13214pt too wide) in paragraph at lines 18--20
+[]\T1/iwonal/m/n/10.95 Convection na-tu-relle dans les po-reux : [[], [], [],
+ []
+
+
+LaTeX Warning: Citation 'wakeland_use_2000' on page 2 undefined on input line 2
+0.
+
+
+LaTeX Warning: Citation 'backhaus_thermoacoustic-stirling_2000' on page 2 undef
+ined on input line 20.
+
+
+LaTeX Warning: Citation 'poignand_analysis_2013' on page 2 undefined on input l
+ine 20.
+
+
+Overfull \hbox (73.25845pt too wide) in paragraph at lines 20--21
+[]\T1/iwonal/m/n/10.95 Analogies élec-troac en TA : [[], [], []] 
+ []
+
+
+LaTeX Warning: Citation 'rossi_electroacoustique_1986' on page 2 undefined on i
+nput line 21.
+
+
+LaTeX Warning: Citation 'novak_measurement_2019' on page 2 undefined on input l
+ine 21.
+
+
+LaTeX Warning: Citation 'guedra_etudes_2012' on page 2 undefined on input line 
+22.
+
+
+LaTeX Warning: Citation 'penelet_etude_2004' on page 2 undefined on input line 
+23.
+
+
+LaTeX Warning: Citation 'hsu_effective_1996' on page 2 undefined on input line 
+24.
+
+
+LaTeX Warning: Citation 'li_effective_2006' on page 2 undefined on input line 2
+4.
+
+
+LaTeX Warning: Citation 'g_correlations_2022' on page 2 undefined on input line
+ 24.
+
+
+LaTeX Warning: Citation 'rott_damped_1969' on page 2 undefined on input line 31
 .
-PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+
+LaTeX Warning: Citation 'rott_thermally_1973' on page 2 undefined on input line
+ 31.
+
+
+LaTeX Warning: Citation 'rott_thermally_1975' on page 2 undefined on input line
+ 31.
+
+
+LaTeX Warning: Citation 'rott_thermally_1976' on page 2 undefined on input line
+ 31.
+
+
+LaTeX Warning: Citation 'zouzoulas_thermally_1976' on page 2 undefined on input
+ line 31.
+
+
+LaTeX Warning: Citation 'rott_thermoacoustics_1980' on page 2 undefined on inpu
+t line 31.
+
+
+LaTeX Warning: Citation 'muller_thermally_1983' on page 2 undefined on input li
+ne 31.
+
+
+Overfull \hbox (80.51593pt too wide) in paragraph at lines 31--32
+[]\T1/iwonal/m/n/10.95 , [], [], [], []] 
+ []
+
+
+LaTeX Warning: Reference `fig:MoteurVSFrigoTA' on page 2 undefined on input lin
+e 33.
+
+
+LaTeX Warning: Reference `fig:MoteurTA' on page 2 undefined on input line 33.
+
+
+LaTeX Warning: Reference `fig:FrigoTA' on page 2 undefined on input line 33.
+
+(../fig/fig_PrincipeTA/tex/MoteurTA.tex) (../fig/fig_PrincipeTA/tex/PaCTA.tex)
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 2 undefined on inp
+ut line 58.
+
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 2 undefined on inp
+ut line 58.
+
+LaTeX Font Info:    Trying to load font information for TS1+iwonal on input lin
+e 62.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ts
+1iwonal.fd
+File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
+)
+
+LaTeX Warning: Reference `fig:CycleBrayton' on page 2 undefined on input line 8
+9.
+
+
+LaTeX Warning: Reference `fig:CycleStirling' on page 2 undefined on input line 
+89.
+
+(../fig/fig_CycleBrayton/tex/DepCompAdiab.tex) (../fig/fig_CycleBrayton/tex/QFl
+uideToPlaque.tex) (../fig/fig_CycleBrayton/tex/DepDetAdiab.tex) (../fig/fig_Cyc
+leBrayton/tex/QPlaqueToFluide.tex) (../fig/fig_Cycle_Stirling/tex/CompIsoT.tex)
+(../fig/fig_Cycle_Stirling/tex/DepAllerIsoV.tex) (../fig/fig_Cycle_Stirling/tex
+/DetIsoT.tex) (../fig/fig_Cycle_Stirling/tex/DepRetourIsoV.tex)
+
+
+
+
+
+
+LaTeX Warning: Citation 'belcher_working_1999' on page 5 undefined on input lin
+e 200.
+
+LaTeX Font Info:    Trying to load font information for U+euf on input line 224
+.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
+\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 5 undefined on inp
+ut line 240.
+
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 5 undefined on inp
+ut line 247.
+
+
+LaTeX Warning: Citation 'di_giulio_wire_2023' on page 5 undefined on input line
+ 247.
+
+
+
+
+LaTeX Warning: Citation 'allard_propagation_2009' on page 6 undefined on input 
+line 277.
+
+
+LaTeX Warning: Citation 'pierens_development_2012' on page 6 undefined on input
+ line 287.
+
+
+LaTeX Warning: Citation 'adeff_measurement_1991' on page 6 undefined on input l
+ine 290.
+
+
+LaTeX Warning: Citation 'ceperley_pistonless_1979' on page 6 undefined on input
+ line 292.
+
+
+LaTeX Warning: Citation 'hofler_thermoacoustic_1986' on page 6 undefined on inp
+ut line 292.
+
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2002' on page 6 undefined on inp
+ut line 295.
+
+
+LaTeX Warning: Citation 'wollan_development_2002' on page 6 undefined on input 
+line 295.
+
+
+LaTeX Warning: Citation 'adeff_measurement_1991' on page 6 undefined on input l
+ine 295.
+
+
+LaTeX Warning: Citation 'garrett_thermoacoustic_1993' on page 6 undefined on in
+put line 295.
+
+
+Overfull \hbox (57.63936pt too wide) in paragraph at lines 295--296
+\T1/iwonal/m/n/10.95 fac-tion de gaz + TNO/BlueHeart ?}[][[], [], [],
+ []
+
+
+LaTeX Warning: Citation 'Electroac_Grains' on page 6 undefined on input line 31
+8.
+
+
+
+
+LaTeX Warning: Reference `fig:CircEquivTAC' on page 7 undefined on input line 3
+69.
+
+(../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex)
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 7 undefined on inp
+ut line 376.
+
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 7 undefined on inp
+ut line 376.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--376
+[]\T1/iwonal/b/sc/9 Figure I.4 \T1/iwonal/b/n/9 ^^U |\T1/iwonal/m/n/9 Cir-cuit 
+équi-valent à un noyau ther-moa-cous-tique. Ex-trait de
+ []
+
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 7 undefined on inp
+ut line 386.
+
+
+LaTeX Warning: Citation 'rott_thermoacoustics_1980' on page 7 undefined on inpu
+t line 392.
+
+
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 7 undefined on inp
+ut line 392.
+
+
+
+
+LaTeX Warning: Reference `fig:WavesInDuctPiece' on page 8 undefined on input li
+ne 410.
+
+
+LaTeX Warning: Reference `eq:TMatrix_TppTuu' on page 8 undefined on input line 
+410.
+
+(../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+
+LaTeX Warning: Reference `fig:CircEquivTAC' on page 8 undefined on input line 4
+84.
+
+
+LaTeX Warning: Citation 'DeltaEC' on page 8 undefined on input line 540.
+
+
+LaTeX Warning: Citation 'so_internal_2006' on page 8 undefined on input line 54
+0.
+
+
+LaTeX Warning: Citation 'bailliet_acoustic_2001' on page 8 undefined on input l
+ine 540.
+
+
+LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
+t line 540.
+
+
+LaTeX Warning: Citation 'ross_influence_2003' on page 8 undefined on input line
+ 540.
+
+
+LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
+t line 540.
+
+
+LaTeX Warning: Citation 'hireche_numerical_2019' on page 8 undefined on input l
+ine 540.
+
+
+LaTeX Warning: Citation 'zhang_novel_2011' on page 8 undefined on input line 54
+0.
+
+
+LaTeX Warning: Citation 'babaei_investigation_2010' on page 8 undefined on inpu
+t line 540.
+
+
+
+
+LaTeX Warning: Citation 'ANR_thermo-acoustic_2019' on page 9 undefined on input
+ line 546.
+
+
+LaTeX Warning: Citation 'ramadan_design_2021' on page 9 undefined on input line
+ 546.
+
+
+LaTeX Warning: Citation 'ramadan_experimental_2018' on page 9 undefined on inpu
+t line 546.
+
+
+LaTeX Warning: Citation 'ramadan_experimental_2021' on page 9 undefined on inpu
+t line 546.
+
+
+LaTeX Warning: Citation 'poignand_test-bench_2022' on page 9 undefined on input
+ line 546.
+
+
+LaTeX Warning: Citation 'hireche_experimental_2020' on page 9 undefined on inpu
+t line 546.
+
+
+LaTeX Warning: Citation 'baltean_gravity_2025' on page 9 undefined on input lin
+e 546.
+
+
+LaTeX Warning: Citation 'belcher_working_1999' on page 9 undefined on input lin
+e 548.
+
+LaTeX Info: Symbol \textohm not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 548.
+
+LaTeX Warning: Citation 'ramadan_design_2021' on page 9 undefined on input line
+ 550.
+
+
+LaTeX Warning: Reference `fig:CaractMachineATE' on page 9 undefined on input li
+ne 550.
+
+(../fig/fig_CaractMachineATE/tex/fig_CaractMachineATE.tex)
+
+LaTeX Warning: Reference `fig:ATE_ProfilsAX_5mm' on page 9 undefined on input l
+ine 561.
+
+
+LaTeX Warning: Reference `fig:ATE_ProfilsCHX_5mm' on page 9 undefined on input 
+line 561.
+
+
+! LaTeX Error: Cannot determine size of graphic in ../fig/fig_Litterature/ATE_P
+rofilsAX_5mm.png (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.569 ...fig_Litterature/ATE_ProfilsAX_5mm.png}};}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ 
+Here is how much of TeX's memory you used:
+ 77266 strings out of 473524
+ 1961056 string characters out of 5707360
+ 3083881 words of memory out of 5000000
+ 99501 multiletter control sequences out of 15000+600000
+ 701562 words of font info for 159 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 93i,13n,115p,1400b,1786s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.

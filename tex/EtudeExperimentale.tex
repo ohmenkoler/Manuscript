@@ -253,9 +253,71 @@ La figure~\ref{fig:PerfConvNat_Qa_DR} montre les valeurs obtenues théoriquement
 	\label{fig:PerfConvNat_Qa_DR}
 \end{figure}
 
-Sur cette figure~\ref{fig:PerfConvNat_Qa_DR}, les résultats expérimentaux et numériques sont très différents. Ici encore, les écarts entre le modèle \textsc{DeltaEC} et la réalité se creusent avec l'augmentation de l'amplitude acoustique. Pour les deux amplitudes acoustiques représentées, les valeurs théoriques de flux de chaleurs extraits $\dot Q_a$ sont indépendantes de la charge thermique appliquée et sont trois fois supérieures aux valeurs expérimentales qui croissent linéairement avec $\dot Q_f$. Cependant, l'augmentation de \qty{50}{\watt} du côté froid du régénérateur se traduit par une augmentation plus faible de \qty{30}{\watt}, pour toutes les orientations et aussi bien à l'amplitude acoustique pour laquelle $DR=\qty{2}{\percent}$ qu'à celle où $DR=\qty{3.5}{\percent}$. Cette indépendance de la valeur du flux de chaleur extrait semble dire que le flux de chaleur thermoacoustique n'est pas impacté par la convection naturelle. Ce résultat concorde avec le fait que la circulation de fluide dans le régénérateur n'est pas \bigskip
+Sur cette figure~\ref{fig:PerfConvNat_Qa_DR}, les résultats expérimentaux et numériques sont très différents. Ici encore, les écarts entre le modèle \textsc{DeltaEC} et la réalité se creusent avec l'augmentation de l'amplitude acoustique. Pour les deux amplitudes acoustiques représentées, les valeurs théoriques de flux de chaleurs extraits $\dot Q_a$ sont indépendantes de la charge thermique appliquée et sont trois fois supérieures aux valeurs expérimentales qui croissent linéairement avec $\dot Q_f$. Cependant, l'augmentation de \qty{50}{\watt} du côté froid du régénérateur se traduit par une augmentation plus faible de \qty{30}{\watt}, pour toutes les orientations et aussi bien à l'amplitude acoustique pour laquelle $DR=\qty{2}{\percent}$ qu'à celle où $DR=\qty{3.5}{\percent}$. Cette indépendance de la valeur du flux de chaleur extrait semble dire que le flux de chaleur thermoacoustique n'est pas impacté par la convection naturelle. Ce résultat concorde avec le fait que le fluide ne circule pas dans le régénérateur sous l'effet de la convection naturelle.\bigskip
 
 \subsection{Températures atteintes par les côtés froid et ambiant du régénérateur}
+L'influence de la convection naturelle peut être observée avec l'écart de température entre les zones froide et ambiante du régénérateur. La figure~\ref{fig:PerfConvNat_Tf_DR} présente les températures froide $\theta_f$ et ambiante $\theta_a$ après soustraction à la valeur de température ambiante et moyennées sur les sections correspondantes, pour les deux \textit{drive ratio}, $DR=\qty{2}{\percent}$ sur la sous-figure~\subref{fig:PerfConvNat_TaTf_DR2}, et $DR=\qty{3.5}{\percent}$ sur la sous-figure~\subref{fig:PerfConvNat_TaTf_DR35}.
+
+\begin{figure}[!ht]
+	\centering
+%	\begin{subfigure}[b]{.47\textwidth}
+%		\centering
+%		\external{fig_PerfConvNat_Tf_DR2}
+%%        \externalremake
+%        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf_DR2}
+%		\caption{}
+%		\label{fig:PerfConvNat_Tf_DR2}
+%	\end{subfigure}
+%	\begin{subfigure}[b]{.47\textwidth}
+%		\centering
+%		\external{fig_PerfConvNat_Tf_DR35}
+%%        \externalremake
+%        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Tf_DR35}
+%		\caption{}
+%		\label{fig:PerfConvNat_Tf_DR35}
+%	\end{subfigure}
+%	
+%	\vspace{1em}
+%	
+%	\begin{subfigure}[b]{.47\textwidth}
+%		\centering
+%		\external{fig_PerfConvNat_Ta_DR2}
+%%        \externalremake
+%        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Ta_DR2}
+%		\caption{}
+%		\label{fig:PerfConvNat_Ta_DR2}
+%	\end{subfigure}
+%	\begin{subfigure}[b]{.47\textwidth}
+%		\centering
+%		\external{fig_PerfConvNat_Ta_DR35}
+%%        \externalremake
+%        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Ta_DR35}
+%		\caption{}
+%		\label{fig:PerfConvNat_Ta_DR35}
+%	\end{subfigure}
+
+\begin{subfigure}[b]{.47\textwidth}
+		\centering
+		\external{fig_PerfConvNat_TaTf_DR2}
+%        \externalremake
+        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_TaTf_DR2}
+		\caption{}
+		\label{fig:PerfConvNat_TaTf_DR2}
+	\end{subfigure}
+	\begin{subfigure}[b]{.47\textwidth}
+		\centering
+		\external{fig_PerfConvNat_TaTf_DR35}
+%        \externalremake
+        \input{../fig/fig_PerfConvNat/tex/fig_PerfConvNat_TaTf_DR35}
+		\caption{}
+		\label{fig:PerfConvNat_TaTf_DR35}
+	\end{subfigure}
+	\caption{Valeurs des températures atteintes au côté froid du régénérateur, soustraites à la température ambiante $T\infty$, et moyennées sur la section en fonction de la charge thermique appliquée à l'échangeur de chaleur froid, à différents \textit{drive ratios}. \subref{fig:PerfConvNat_TaTf_DR2} $DR=\qty{2}{\percent}$, et \subref{fig:PerfConvNat_TaTf_DR35} $DR=\qty{3.5}{\percent}$.}
+	\label{fig:PerfConvNat_Tf_DR}
+\end{figure}
+
+Ces figures montrent que pour chaque orientation, la température froide $\theta_f$ croît linéairement avec la charge thermique $\dot Q_f$ pour chaque amplitude acoustique, alors que la température ambiante $\theta_a$ varie peu avec cette charge thermique. C'est donc la différence de température entre ces deux côtés du régénérateur qui diminue, ce qui explique l'augmentation du coefficient de performances de Carnot. Cette différence se réduit par ailleurs plus dans le cas de l'orientation `\texttt{V1}'.
+
 
 %\begin{figure}[!ht]
 %    \centering
@@ -293,7 +355,7 @@ Sur cette figure~\ref{fig:PerfConvNat_Qa_DR}, les résultats expérimentaux et n
 %		\label{fig:PerfConvNat_COP_DR2}
 %	\end{subfigure}	      
 %    \caption{Influence de la convection naturelle sur les performances sur différents indicateurs, pour différentes charges thermiques et à \textit{drive ratio} $DR~=~\qty{2}{\percent}$. \subref{fig:PerfConvNat_Tf_DR2} température froide $T_f$, \subref{fig:PerfConvNat_Ta_DR2} température ambiante~$T_a$, \subref{fig:PerfConvNat_Qa_DR2} quantité de chaleur extraite du côté ambiant $\dot Q_a$ et \subref{fig:PerfConvNat_COP_DR2} rapport entre le coefficient de performance froid et de Carnot. \echaf{ajouter valeurs DeltaEC}}
-%    \label{fig:PerfConvNat_DR2}
+%    \label{fig:PerfConvNat__DR2}
 %\end{figure}
 %
 %\begin{figure}[!ht]
@@ -334,28 +396,53 @@ Sur cette figure~\ref{fig:PerfConvNat_Qa_DR}, les résultats expérimentaux et n
 %    \label{fig:PerfConvNat_DR35}
 %\end{figure}
 
+\subsection{Discussion}
+L'analyse du champ 1D de températures et de des puissances thermiques transférées par les échangeurs de chaleurs montrent que le flux de chaleur majoritaire au sein du régénérateur est le flux provoqué par l'effet thermoacoustique. Cependant, l'orientation et la convection naturelle jouent un rôle dans les conditions aux frontières du régénérateur, puisque l'orientation `\texttt{V1}'
+
 \section{Distribution des températures}\label{chap:DistribTemperature}
+Considérer la température comme constante sur la section du régénérateur permet d'adopter une vue d'ensemble quant au comportement de la machine en fonctionnement, mais ne suffit pas pour décrire ce qu'il se passe dans différentes zones du réfrigérateur de manière plus avancée. Pour répondre aux questions sur l'allure de la convection naturelle, les données des expériences présentées dans le paragraphe précédent sont cette fois-ci étudiées sur leur régime transitoire, et sans moyenner les températures sur les sections.
+
 \subsection{Dans le cône d'adaptation d'impédance}
-L'étude des distributions de température commence par la cavité d'adaptation d'impédance, dans laquelle la présence d'une cellule de convection naturelle est suspectée. Pour toutes les orientations présentées dans la figure~\ref{fig:OrientationCore}, plusieurs types d'expériences sont réalisées.
+L'étude des distributions de température commence par la cavité d'adaptation d'impédance, dans laquelle la présence d'une cellule de convection naturelle est suspectée. Pour toutes les orientations présentées dans la figure~\ref{fig:OrientationCore}, plusieurs types d'expériences sont réalisées, et l'étude se concentre sur les signaux de thermocouples placés dans la cavité d'adaptation d'impédance marqué de jaune dans la figure~\ref{fig:TCdansNoyau}, et donc des thermocouples \numlist{0;1;2;3}. 
 
 
-\subsubsection{Réfrigérateur horizontal}
-\paragraph*{Sans acoustique}
-Des mesures sans acoustiques sont d'abord réalisées pour séparer les effets qui se superposent lors du fonctionnement de la machine. L'eau est mise en circulation dans l'échangeur de chaleur ambiant, et les cartouches chauffantes sont alimentées par une puissance de \qty{40}{\watt}. Les températures atteintes par les parois ne dépendent donc que de l'orientation, et l'étude des valeurs atteintes en plus de la distribution à l'extérieur de l'échangeur de chaleur froid permet de répondre à la question 
+\subsubsection{Sans acoustique}
+Des mesures sans acoustiques sont d'abord réalisées pour séparer les effets qui se superposent lors du fonctionnement de la machine. L'eau est mise en circulation dans l'échangeur de chaleur ambiant, et les cartouches chauffantes sont alimentées par une puissance de \qty{40}{\watt}. Les températures atteintes par les parois ne dépendent donc que de l'orientation, et l'étude des valeurs atteintes en plus de la distribution à l'extérieur de l'échangeur de chaleur froid permet de répondre à la question de l'écoulement de fluide à l'intérieur.
+
+\paragraph{Réfrigérateur horizontal}
+La première série d'expérience est faite dans les orientations `\texttt{H1}' et `\texttt{H2}' (voir les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}). Les résultats de ces mesures de températures sont tracés en fonction du temps après soustraction de la température ambiante sur la figure~\ref{fig:HeatOnly_CHXout_H1H2}.
 
 \begin{figure}[!ht]
     \centering
     \external{fig_HeatOnly_CHXout_H1H2}
 %    \externalremake
     \input{../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2}
-    \caption{\'Evolution temporelle des températures dans la cavité d'adaptation d'impédance pour les expériences dans les orientation `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} nul.}
+    \caption{\'Evolution temporelle des températures dans la cavité d'adaptation d'impédance pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} nul.}
     \label{fig:HeatOnly_CHXout_H1H2}
+\end{figure}
+
+Cette figure met en évidence la différence de comportement entre la distribution de températures qui se met en place dans les cas des orientations `\texttt{H1}', représentée par des traits pleins, et `\texttt{H2}', représenté par des traits pointillés. Pour chaque cas, la température augmente dès l'alimentation des cartouches chauffantes comme l'indiquent les courbes des signaux de thermocouples \numlist{1;2;3}. Le thermocouple placé devant la source acoustique principale, à l'autre extrémité de la cavité d'adaptation d'impédance, chauffe également mais dans une moindre mesure, et présente un délai de \qty{200}{\second}. Des écarts de \qty{7.2}{\kelvin} pour l'orientation `\texttt{H1}' et \qty{8.5}{\kelvin} pour l'orientation `\texttt{H2}' apparaissent, ce qui provoque une mise en mouvement du fluide dans la cavité.
+
+C'est après cette mise en place d'une cellule de convection naturelle que les différences entre les orientations sont visibles. Dans l'orientation `\texttt{H1}', la température au point \num{3}, à l'altitude la plus faible, est \qty{13}{\kelvin} en dessous de la température au point \num{2}, et elle-même se trouve \qty{7}{\kelvin} en dessous de la température au point \num{1}. Ce gradient vertical de température est causé par la montée du fluide chaud et moins dense le long de l'échangeur froid. \echaf{et H2 ne marche pas vraiment.}
+
+\echaf{insérer fig Comsol}
+
+\paragraph{Réfrigérateur vertical}
+
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_HeatOnly_CHXout_V1V2}
+%    \externalremake
+    \input{../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2}
+    \caption{\'Evolution temporelle des températures dans la cavité d'adaptation d'impédance pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} nul.}
+    \label{fig:HeatOnly_CHXout_V1V2}
 \end{figure}
 
 
 
-\paragraph*{Avec acoustique}
-
+\subsubsection{Avec acoustique}
+\paragraph{Réfrigérateur horizontal}
 
 \begin{figure}[!ht]
     \centering
@@ -389,20 +476,8 @@ Des mesures sans acoustiques sont d'abord réalisées pour séparer les effets q
 \end{figure}
 
 
-\subsubsection{Réfrigérateur vertical}
-\paragraph*{Sans acoustique}
 
-
-\begin{figure}[!ht]
-    \centering
-    \external{fig_HeatOnly_CHXout_V1V2}
-%    \externalremake
-    \input{../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2}
-    \caption{\'Evolution temporelle des températures dans la cavité d'adaptation d'impédance pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} nul.}
-    \label{fig:HeatOnly_CHXout_V1V2}
-\end{figure}
-
-\paragraph*{Avec acoustique}
+\paragraph{Réfrigérateur vertical}
 
  
 \begin{figure}[!ht]
@@ -888,46 +963,6 @@ Les figures~\ref{fig:Acou_CHXin_H1H2_High}, \ref{fig:Acou_Regmid_H1H2_High} et \
     \label{fig:Acou_V1V2_High}
 \end{figure}
 
-\subsection{Dans la cavité entre la source acoustique secondaire et le noyau thermoacoustique}
-
-\echaf{à enlever ?}
-
-%\begin{figure}[!ht] % V1V2 low AHX out
-%    \centering
-%    \external{fig_Acou_AHXout_V1V2_Low}
-%%    \externalremake
-%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXout_V1V2_Low}
-%    \caption{AHX out V1V2 low}
-%    \label{fig:Acou_AHXout_V1V2_Low}
-%\end{figure}
-%
-%\begin{figure}[!ht] % H1H2 low AHX out
-%    \centering
-%    \external{fig_Acou_AHXout_H1H2_Low}
-%%    \externalremake
-%    \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXout_H1H2_Low}
-%    \caption{AHX out H1H2 low}
-%    \label{fig:Acou_AHXout_H1H2_Low}
-%\end{figure}
-
-%\clearpage
-
-\section{Limite de répétabilité}
-
-De nombreux phénomènes se produisent dans le noyau sans qu'il ne soit pour l'heure possible des les expliquer. L'un d'eux a pour répercussion une difficulté à répondre à la question de la reproductibilité de la distribution de température dans le noyau, car la température présente plusieurs points de stabilité. Une expérience réalisée dans l'orientation `\texttt{V1}', à haute amplitude acoustique et sans charge thermique est reproduite à deux reprises pour vérifier la répétabilité des mesures. À l'opposé du résultat anticipé, la distribution est complètement différente \echaf{à continuer}  
-
-Ces expériences, issues d'une autre série de mesure interrompue justement à cause de son allure radicalement différente des résultats obtenus, sont tracés sur la figure~\ref{fig:Repetabilite_V1}.
-
-%\begin{figure}[!ht]
-%    \centering
-%    \external{fig_Repetabilite_V1}
-%    %\externalremake
-%    \input{../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1}
-%    \caption{\echaf{Figure illustrant des problèmes de répétabilité}}
-%    \label{fig:Repetabilite_V1}
-%\end{figure}
-
-Dans cette
 
 
 \section{Conclusion}

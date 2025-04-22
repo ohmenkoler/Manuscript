@@ -1,6 +1,6 @@
 \begin{tikzpicture}
     \def\width{.9*\textwidth};
-    \def\height{.5*\width};
+    \def\height{.25*\textheight};
     \def\legx{.5cm};
     \def\legy{\legx};
     
@@ -8,10 +8,11 @@
     grid=both,minor tick num=4,
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
-    xlabel={Temps $t$ [\unit{\s}]},
-    ylabel={\'Ecart de température $\theta$ [\unit{\kelvin}]},
+    xlabel={Temps $t$ (\unit{\s})},
+    ylabel={\'Ecart de température $\theta$ (\unit{\kelvin})},
     xmin=0,xmax=3500,
-	ymin=-3,ymax=2,
+	ymin=-3,ymax=3,
+	ytick={-3,-2,...,3},
     xtick={0,600,1200,1800,2400,3000,3500},%ytick={},
     domain=0:100,
     legend style = {at={(1.01,1.05)},anchor = north east,cells={align=right},rounded corners},legend columns=3,

@@ -11,43 +11,40 @@
     xlabel={Temps $t$ (\unit{\s})},
     ylabel={\'Ecart de température $\theta$ (\unit{\kelvin})},
     xmin=0,xmax=2700,
-	 ymin=-25,ymax=20,
+	 ymin=-25,ymax=10,
 	 ytick={-25,-20,...,20},
     xtick={0,600,...,2400,2700},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
     domain=0:100,
-    legend style = {at={(1.01,1.05)},anchor = north east,rounded corners},legend columns=3,
-%    legend cell align={right},
+    legend style = {at={(1.01,1.05)},anchor = north east,cells={align=right},rounded corners},legend columns=5,
+%    legend cell align=right
     ]
     
-    	\addlegendimage{legend image with text=}
+		\addlegendimage{legend image with text=}
 		\addlegendentry{}
-		\addlegendimage{legend image with text=`\texttt{H1}'}
-		\addlegendentry{}
-		\addlegendimage{legend image with text=`\texttt{H2}'} 
-		\addlegendentry{}   
-    
-    	\addlegendimage{legend image with text=TC 0}
+		\addlegendimage{legend image with text=TC 0}
     	\addlegendentry{}
-    	
-    	\addplot[ultra thick,black] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC0_0beg_RixMid_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};\addlegendentry{}
-		\addplot[ultra thick,black,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC0_0beg_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};\addlegendentry{}
-		
-		\addlegendimage{legend image with text=TC 1}
-		\addlegendentry{}
-		
-    	\addplot[ultra thick,Plasma1] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC1_0beg_RixMid_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,Plasma1,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC1_0beg_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};\addlegendentry{}
-    	
+    	\addlegendimage{legend image with text=TC 1}
+    	\addlegendentry{}
     	\addlegendimage{legend image with text=TC 2}
-		\addlegendentry{}
-		
-    	\addplot[ultra thick,Plasma43] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC2_0beg_RixMid_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,Plasma43,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC2_0beg_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};\addlegendentry{}
-    	
+    	\addlegendentry{}
     	\addlegendimage{legend image with text=TC 3}
+    	\addlegendentry{}
+		
+		
+		\addlegendimage{legend image with text={`\texttt{H1}'}}
+		\addlegendentry{}
+    	
+    	\addplot[ultra thick,black] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC0_0beg_RixMid_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};\addlegendentry{}    	
+    	\addplot[ultra thick,Plasma1] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC1_0beg_RixMid_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,Plasma43] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC2_0beg_RixMid_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,Plasma85] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC3_0beg_RixMid_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};\addlegendentry{} 
+    	
+    	\addlegendimage{legend image with text={`\texttt{H2}'}}
 		\addlegendentry{}
 		
-    	\addplot[ultra thick,Plasma85] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC3_0beg_RixMid_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};\addlegendentry{}    	
+		\addplot[ultra thick,black,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC0_0beg_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};\addlegendentry{}
+		\addplot[ultra thick,Plasma1,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC1_0beg_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};\addlegendentry{}
+		\addplot[ultra thick,Plasma43,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC2_0beg_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};\addlegendentry{}
     	\addplot[ultra thick,Plasma85,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC3_0beg_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};\addlegendentry{}
         
 %        \legend{\\ \\};

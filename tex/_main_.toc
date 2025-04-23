@@ -35,16 +35,16 @@
 \contentsline {subsubsection}{\numberline {II.2.1.1}Cavité thermoacoustique}{16}{subsubsection.2.2.1.1}%
 \contentsline {subsubsection}{\numberline {II.2.1.2}Noyau thermoacoustique}{17}{subsubsection.2.2.1.2}%
 \contentsline {paragraph}{\numberline {II.2.1.2.a}Régénérateur}{17}{paragraph.2.2.1.2.1}%
-\contentsline {paragraph}{\numberline {II.2.1.2.b}\'Echangeurs de chaleur}{20}{paragraph.2.2.1.2.2}%
-\contentsline {subparagraph}{\numberline {II.2.1.2.b.i}\'Echangeur de chaleur ambiant}{22}{subparagraph.2.2.1.2.2.1}%
-\contentsline {subparagraph}{\numberline {II.2.1.2.b.ii}\'Echangeur de chaleur froid}{22}{subparagraph.2.2.1.2.2.2}%
+\contentsline {paragraph}{\numberline {II.2.1.2.b}\'Echangeurs de chaleur}{19}{paragraph.2.2.1.2.2}%
+\contentsline {subparagraph}{\numberline {II.2.1.2.b.i}\'Echangeur de chaleur ambiant}{20}{subparagraph.2.2.1.2.2.1}%
+\contentsline {subparagraph}{\numberline {II.2.1.2.b.ii}\'Echangeur de chaleur froid}{23}{subparagraph.2.2.1.2.2.2}%
 \contentsline {subsection}{\numberline {II.2.2}Instrumentation}{23}{subsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {II.2.2.1}Banc d'essais}{23}{subsubsection.2.2.2.1}%
-\contentsline {subsubsection}{\numberline {II.2.2.2}Chaîne d'excitation}{23}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {II.2.2.2}Chaîne d'excitation}{24}{subsubsection.2.2.2.2}%
 \contentsline {subsubsection}{\numberline {II.2.2.3}Chaîne d'acquisition}{24}{subsubsection.2.2.2.3}%
 \contentsline {paragraph}{\numberline {II.2.2.3.a}Alimentation électrique des sources acoustiques}{24}{paragraph.2.2.2.3.1}%
-\contentsline {paragraph}{\numberline {II.2.2.3.b}Température du gaz dans le noyau}{24}{paragraph.2.2.2.3.2}%
-\contentsline {paragraph}{\numberline {II.2.2.3.c}Pression dynamique}{24}{paragraph.2.2.2.3.3}%
+\contentsline {paragraph}{\numberline {II.2.2.3.b}Température du gaz dans le noyau}{25}{paragraph.2.2.2.3.2}%
+\contentsline {paragraph}{\numberline {II.2.2.3.c}Pression dynamique}{25}{paragraph.2.2.2.3.3}%
 \contentsline {paragraph}{\numberline {II.2.2.3.d}Pression statique}{25}{paragraph.2.2.2.3.4}%
 \contentsline {paragraph}{\numberline {II.2.2.3.e}Flux de chaleur extrait par l'échangeur ambiant}{25}{paragraph.2.2.2.3.5}%
 \contentsline {paragraph}{\numberline {II.2.2.3.f}Déplacement des sources}{26}{paragraph.2.2.2.3.6}%
@@ -54,9 +54,9 @@
 \contentsline {subsection}{\numberline {II.3.2}Acquisitions}{28}{subsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {II.3.2.1}\'Etat initial}{28}{subsubsection.2.3.2.1}%
 \contentsline {subsubsection}{\numberline {II.3.2.2}Mesure préalable de la température d'eau}{29}{subsubsection.2.3.2.2}%
-\contentsline {subsubsection}{\numberline {II.3.2.3}Mesures sans acoustique}{29}{subsubsection.2.3.2.3}%
-\contentsline {subsubsection}{\numberline {II.3.2.4}Mesures avec acoustique}{30}{subsubsection.2.3.2.4}%
-\contentsline {section}{\numberline {II.4}Post-traitement des données}{31}{section.2.4}%
+\contentsline {subsubsection}{\numberline {II.3.2.3}Mesures sans acoustique}{30}{subsubsection.2.3.2.3}%
+\contentsline {subsubsection}{\numberline {II.3.2.4}Mesures avec acoustique}{31}{subsubsection.2.3.2.4}%
+\contentsline {section}{\numberline {II.4}Post-traitement des données}{32}{section.2.4}%
 \contentsline {section}{\numberline {II.5}Conclusion}{33}{section.2.5}%
 \contentsline {chapter}{\numberline {III}\'Etudes théoriques et numériques}{35}{chapter.3}%
 \etoc@startlocaltoc {4}
@@ -102,27 +102,32 @@
 \contentsline {paragraph}{\numberline {IV.3.1.1.b}Réfrigérateur vertical}{58}{paragraph.4.3.1.1.2}%
 \contentsline {subsubsection}{\numberline {IV.3.1.2}Expériences avec acoustique}{59}{subsubsection.4.3.1.2}%
 \contentsline {paragraph}{\numberline {IV.3.1.2.a}Réfrigérateur horizontal}{59}{paragraph.4.3.1.2.1}%
-\contentsline {paragraph}{\numberline {IV.3.1.2.b}Réfrigérateur vertical}{60}{paragraph.4.3.1.2.2}%
-\contentsline {subsection}{\numberline {IV.3.2}À l'intérieur du régénérateur}{60}{subsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {IV.3.2.1}Réfrigérateur horizontal}{60}{subsubsection.4.3.2.1}%
-\contentsline {subsubsection}{\numberline {IV.3.2.2}Réfrigérateur vertical}{64}{subsubsection.4.3.2.2}%
-\contentsline {section}{\numberline {IV.4}Conclusion}{64}{section.4.4}%
-\contentsline {chapter}{\numberline {V}Conclusion}{71}{chapter.5}%
+\contentsline {paragraph}{\numberline {IV.3.1.2.b}Réfrigérateur vertical}{61}{paragraph.4.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {IV.3.1.3}Discussion}{63}{subsubsection.4.3.1.3}%
+\contentsline {subsection}{\numberline {IV.3.2}À l'intérieur du régénérateur}{63}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {IV.3.2.1}Expériences sans acoustique}{63}{subsubsection.4.3.2.1}%
+\contentsline {paragraph}{\numberline {IV.3.2.1.a}Réfrigérateur horizontal}{63}{paragraph.4.3.2.1.1}%
+\contentsline {paragraph}{\numberline {IV.3.2.1.b}Réfrigérateur vertical}{63}{paragraph.4.3.2.1.2}%
+\contentsline {subsubsection}{\numberline {IV.3.2.2}Expériences avec acoustique}{63}{subsubsection.4.3.2.2}%
+\contentsline {paragraph}{\numberline {IV.3.2.2.a}Réfrigérateur horizontal}{63}{paragraph.4.3.2.2.1}%
+\contentsline {paragraph}{\numberline {IV.3.2.2.b}Réfrigérateur vertical}{63}{paragraph.4.3.2.2.2}%
+\contentsline {section}{\numberline {IV.4}Conclusion}{63}{section.4.4}%
+\contentsline {chapter}{\numberline {V}Conclusion}{73}{chapter.5}%
 \etoc@startlocaltoc {6}
-\contentsline {section}{\numberline {V.1}Section}{72}{section.5.1}%
-\contentsline {chapter}{\numberline {VI}Perspectives}{73}{chapter.6}%
+\contentsline {section}{\numberline {V.1}Section}{74}{section.5.1}%
+\contentsline {chapter}{\numberline {VI}Perspectives}{75}{chapter.6}%
 \etoc@startlocaltoc {7}
-\contentsline {section}{\numberline {VI.1}Expérimentations supplémentaires}{74}{section.6.1}%
-\contentsline {subsection}{\numberline {VI.1.1}\'Etude de la conduction par les parois du noyau thermoacoustique}{74}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {VI.1.2}\'Electroacoustique}{74}{subsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {VI.1.2.1}Contrôle actif}{74}{subsubsection.6.1.2.1}%
-\contentsline {subsubsection}{\numberline {VI.1.2.2}Remplacement des sources acoustiques}{74}{subsubsection.6.1.2.2}%
-\contentsline {paragraph}{\numberline {VI.1.2.2.a}Source principale}{74}{paragraph.6.1.2.2.1}%
-\contentsline {paragraph}{\numberline {VI.1.2.2.b}Source secondaire}{75}{paragraph.6.1.2.2.2}%
-\contentsline {section}{\numberline {VI.2}Simulations par éléments finis avancées}{75}{section.6.2}%
-\contentsline {subsection}{\numberline {VI.2.1}Géométrie}{75}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {VI.2.2}Conditions aux frontières adaptées}{75}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {VI.2.3}Interface physique}{75}{subsection.6.2.3}%
+\contentsline {section}{\numberline {VI.1}Expérimentations supplémentaires}{76}{section.6.1}%
+\contentsline {subsection}{\numberline {VI.1.1}\'Etude de la conduction par les parois du noyau thermoacoustique}{76}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {VI.1.2}\'Electroacoustique}{76}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {VI.1.2.1}Contrôle actif}{76}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {VI.1.2.2}Remplacement des sources acoustiques}{76}{subsubsection.6.1.2.2}%
+\contentsline {paragraph}{\numberline {VI.1.2.2.a}Source principale}{76}{paragraph.6.1.2.2.1}%
+\contentsline {paragraph}{\numberline {VI.1.2.2.b}Source secondaire}{77}{paragraph.6.1.2.2.2}%
+\contentsline {section}{\numberline {VI.2}Simulations par éléments finis avancées}{77}{section.6.2}%
+\contentsline {subsection}{\numberline {VI.2.1}Géométrie}{77}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {VI.2.2}Conditions aux frontières adaptées}{77}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {VI.2.3}Interface physique}{77}{subsection.6.2.3}%
 \contentsline {chapter}{\numberline {A}Débit d'eau optimal dans l'échangeur ambiant}{a}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Détermination de la chaleur pompée}{a}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Incertitudes de mesures}{b}{section.A.2}%

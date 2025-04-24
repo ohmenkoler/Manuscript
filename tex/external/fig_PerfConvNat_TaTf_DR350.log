@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=latex 2025.4.20)  20 APR 2025 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=latex 2025.4.20)  24 APR 2025 02:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2231,68 +2231,128 @@ Package babel Info: 'french' activates 'french' shorthands.
 
 
 
-(Introduction.tex
+(IndexNotations.tex
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 14.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 15.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 16.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 17.
+LaTeX Font Info:    Trying to load font information for OT1+iwonal on input lin
+e 19.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ot
+1iwonal.fd
+File: ot1iwonal.fd 2008/07/22 v0.995 font definition file for OT1/iwonal (MW)
+)
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 22.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 25.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 26.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 26.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 42.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 43.
+LaTeX Font Info:    Trying to load font information for TS1+iwonal on input lin
+e 59.
+
+(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ts
+1iwonal.fd
+File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
+)
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 61.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 62.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 66.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 67.
+) (Introduction.tex
+
+
+
 Chapitre I.
 
 
 
-LaTeX Warning: Citation 'johnson_theory_1987' on page 2 undefined on input line
+LaTeX Warning: Citation 'johnson_theory_1987' on page 6 undefined on input line
  10.
 
 
-LaTeX Warning: Citation 'drummond_laminar_1984' on page 2 undefined on input li
+LaTeX Warning: Citation 'drummond_laminar_1984' on page 6 undefined on input li
 ne 10.
 
 
-LaTeX Warning: Citation 'duffourd_refrigerateur_2001' on page 2 undefined on in
+LaTeX Warning: Citation 'duffourd_refrigerateur_2001' on page 6 undefined on in
 put line 12.
 
 
-LaTeX Warning: Citation 'penelet_etude_2004' on page 2 undefined on input line 
+LaTeX Warning: Citation 'penelet_etude_2004' on page 6 undefined on input line 
 12.
 
 
-LaTeX Warning: Citation 'penelet_etude_2004' on page 2 undefined on input line 
+LaTeX Warning: Citation 'penelet_etude_2004' on page 6 undefined on input line 
 13.
 
 
-LaTeX Warning: Citation 'poignand_analysis_2013' on page 2 undefined on input l
+LaTeX Warning: Citation 'poignand_analysis_2013' on page 6 undefined on input l
 ine 15.
 
 
-LaTeX Warning: Citation 'poignand_thermoacoustic_2011' on page 2 undefined on i
+LaTeX Warning: Citation 'poignand_thermoacoustic_2011' on page 6 undefined on i
 nput line 15.
 
 
-LaTeX Warning: Citation 'tijani_study_2008' on page 2 undefined on input line 1
+LaTeX Warning: Citation 'tijani_study_2008' on page 6 undefined on input line 1
 5.
 
 
-LaTeX Warning: Citation 'ramadan_design_2021' on page 2 undefined on input line
+LaTeX Warning: Citation 'ramadan_design_2021' on page 6 undefined on input line
  15.
 
 
-LaTeX Warning: Citation 'ross_influence_2003' on page 2 undefined on input line
+LaTeX Warning: Citation 'ross_influence_2003' on page 6 undefined on input line
  17.
 
 
-LaTeX Warning: Citation 'hireche_numerical_2019' on page 2 undefined on input l
+LaTeX Warning: Citation 'hireche_numerical_2019' on page 6 undefined on input l
 ine 17.
 
 
-LaTeX Warning: Citation 'pan_visualization_2012' on page 2 undefined on input l
+LaTeX Warning: Citation 'pan_visualization_2012' on page 6 undefined on input l
 ine 17.
 
 
-LaTeX Warning: Citation 'bianchi_transferts_2004' on page 2 undefined on input 
+LaTeX Warning: Citation 'bianchi_transferts_2004' on page 6 undefined on input 
 line 17.
 
 
-LaTeX Warning: Citation 'babaei_investigation_2010' on page 2 undefined on inpu
+LaTeX Warning: Citation 'babaei_investigation_2010' on page 6 undefined on inpu
 t line 17.
 
 
-LaTeX Warning: Citation 'gardner_cascade_2003' on page 2 undefined on input lin
+LaTeX Warning: Citation 'gardner_cascade_2003' on page 6 undefined on input lin
 e 17.
 
 
@@ -2301,19 +2361,19 @@ Underfull \hbox (badness 1132) in paragraph at lines 17--18
  []
 
 
-LaTeX Warning: Citation 'shiina_critical_2010' on page 2 undefined on input lin
+LaTeX Warning: Citation 'shiina_critical_2010' on page 6 undefined on input lin
 e 18.
 
 
-LaTeX Warning: Citation 'kvernvold_nonlinear_1979' on page 2 undefined on input
+LaTeX Warning: Citation 'kvernvold_nonlinear_1979' on page 6 undefined on input
  line 18.
 
 
-LaTeX Warning: Citation 'richard_critere_1981' on page 2 undefined on input lin
+LaTeX Warning: Citation 'richard_critere_1981' on page 6 undefined on input lin
 e 18.
 
 
-LaTeX Warning: Citation 'horton_convection_1945' on page 2 undefined on input l
+LaTeX Warning: Citation 'horton_convection_1945' on page 6 undefined on input l
 ine 18.
 
 
@@ -2322,15 +2382,15 @@ Overfull \hbox (39.13214pt too wide) in paragraph at lines 18--20
  []
 
 
-LaTeX Warning: Citation 'wakeland_use_2000' on page 2 undefined on input line 2
+LaTeX Warning: Citation 'wakeland_use_2000' on page 6 undefined on input line 2
 0.
 
 
-LaTeX Warning: Citation 'backhaus_thermoacoustic-stirling_2000' on page 2 undef
+LaTeX Warning: Citation 'backhaus_thermoacoustic-stirling_2000' on page 6 undef
 ined on input line 20.
 
 
-LaTeX Warning: Citation 'poignand_analysis_2013' on page 2 undefined on input l
+LaTeX Warning: Citation 'poignand_analysis_2013' on page 6 undefined on input l
 ine 20.
 
 
@@ -2339,59 +2399,59 @@ Overfull \hbox (73.25845pt too wide) in paragraph at lines 20--21
  []
 
 
-LaTeX Warning: Citation 'rossi_electroacoustique_1986' on page 2 undefined on i
+LaTeX Warning: Citation 'rossi_electroacoustique_1986' on page 6 undefined on i
 nput line 21.
 
 
-LaTeX Warning: Citation 'novak_measurement_2019' on page 2 undefined on input l
+LaTeX Warning: Citation 'novak_measurement_2019' on page 6 undefined on input l
 ine 21.
 
 
-LaTeX Warning: Citation 'guedra_etudes_2012' on page 2 undefined on input line 
+LaTeX Warning: Citation 'guedra_etudes_2012' on page 6 undefined on input line 
 22.
 
 
-LaTeX Warning: Citation 'penelet_etude_2004' on page 2 undefined on input line 
+LaTeX Warning: Citation 'penelet_etude_2004' on page 6 undefined on input line 
 23.
 
 
-LaTeX Warning: Citation 'hsu_effective_1996' on page 2 undefined on input line 
+LaTeX Warning: Citation 'hsu_effective_1996' on page 6 undefined on input line 
 24.
 
 
-LaTeX Warning: Citation 'li_effective_2006' on page 2 undefined on input line 2
+LaTeX Warning: Citation 'li_effective_2006' on page 6 undefined on input line 2
 4.
 
 
-LaTeX Warning: Citation 'g_correlations_2022' on page 2 undefined on input line
+LaTeX Warning: Citation 'g_correlations_2022' on page 6 undefined on input line
  24.
 
 
-LaTeX Warning: Citation 'rott_damped_1969' on page 2 undefined on input line 31
+LaTeX Warning: Citation 'rott_damped_1969' on page 6 undefined on input line 31
 .
 
 
-LaTeX Warning: Citation 'rott_thermally_1973' on page 2 undefined on input line
+LaTeX Warning: Citation 'rott_thermally_1973' on page 6 undefined on input line
  31.
 
 
-LaTeX Warning: Citation 'rott_thermally_1975' on page 2 undefined on input line
+LaTeX Warning: Citation 'rott_thermally_1975' on page 6 undefined on input line
  31.
 
 
-LaTeX Warning: Citation 'rott_thermally_1976' on page 2 undefined on input line
+LaTeX Warning: Citation 'rott_thermally_1976' on page 6 undefined on input line
  31.
 
 
-LaTeX Warning: Citation 'zouzoulas_thermally_1976' on page 2 undefined on input
+LaTeX Warning: Citation 'zouzoulas_thermally_1976' on page 6 undefined on input
  line 31.
 
 
-LaTeX Warning: Citation 'rott_thermoacoustics_1980' on page 2 undefined on inpu
+LaTeX Warning: Citation 'rott_thermoacoustics_1980' on page 6 undefined on inpu
 t line 31.
 
 
-LaTeX Warning: Citation 'muller_thermally_1983' on page 2 undefined on input li
+LaTeX Warning: Citation 'muller_thermally_1983' on page 6 undefined on input li
 ne 31.
 
 
@@ -2400,37 +2460,30 @@ Overfull \hbox (80.51593pt too wide) in paragraph at lines 31--32
  []
 
 
-LaTeX Warning: Reference `fig:MoteurVSFrigoTA' on page 2 undefined on input lin
+LaTeX Warning: Reference `fig:MoteurVSFrigoTA' on page 6 undefined on input lin
 e 33.
 
 
-LaTeX Warning: Reference `fig:MoteurTA' on page 2 undefined on input line 33.
+LaTeX Warning: Reference `fig:MoteurTA' on page 6 undefined on input line 33.
 
 
-LaTeX Warning: Reference `fig:FrigoTA' on page 2 undefined on input line 33.
+LaTeX Warning: Reference `fig:FrigoTA' on page 6 undefined on input line 33.
 
 (../fig/fig_PrincipeTA/tex/MoteurTA.tex) (../fig/fig_PrincipeTA/tex/PaCTA.tex)
 
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 2 undefined on inp
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
 ut line 58.
 
 
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 2 undefined on inp
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 6 undefined on inp
 ut line 58.
 
-LaTeX Font Info:    Trying to load font information for TS1+iwonal on input lin
-e 62.
 
-(C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ts
-1iwonal.fd
-File: ts1iwonal.fd 2008/07/22 v0.995 font definition file for TS1/iwonal (MW)
-)
-
-LaTeX Warning: Reference `fig:CycleBrayton' on page 2 undefined on input line 8
+LaTeX Warning: Reference `fig:CycleBrayton' on page 6 undefined on input line 8
 9.
 
 
-LaTeX Warning: Reference `fig:CycleStirling' on page 2 undefined on input line 
+LaTeX Warning: Reference `fig:CycleStirling' on page 6 undefined on input line 
 89.
 
 (../fig/fig_CycleBrayton/tex/DepCompAdiab.tex) (../fig/fig_CycleBrayton/tex/QFl
@@ -2444,7 +2497,7 @@ leBrayton/tex/QPlaqueToFluide.tex) (../fig/fig_Cycle_Stirling/tex/CompIsoT.tex)
 
 
 
-LaTeX Warning: Citation 'belcher_working_1999' on page 5 undefined on input lin
+LaTeX Warning: Citation 'belcher_working_1999' on page 9 undefined on input lin
 e 200.
 
 LaTeX Font Info:    Trying to load font information for U+euf on input line 224
@@ -2455,54 +2508,54 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 224
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 5 undefined on inp
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 9 undefined on inp
 ut line 240.
 
 
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 5 undefined on inp
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 9 undefined on inp
 ut line 247.
 
 
-LaTeX Warning: Citation 'di_giulio_wire_2023' on page 5 undefined on input line
+LaTeX Warning: Citation 'di_giulio_wire_2023' on page 9 undefined on input line
  247.
 
 
 
 
-LaTeX Warning: Citation 'allard_propagation_2009' on page 6 undefined on input 
-line 277.
+LaTeX Warning: Citation 'allard_propagation_2009' on page 10 undefined on input
+ line 277.
 
 
-LaTeX Warning: Citation 'pierens_development_2012' on page 6 undefined on input
- line 287.
+LaTeX Warning: Citation 'pierens_development_2012' on page 10 undefined on inpu
+t line 287.
 
 
-LaTeX Warning: Citation 'adeff_measurement_1991' on page 6 undefined on input l
-ine 290.
+LaTeX Warning: Citation 'adeff_measurement_1991' on page 10 undefined on input 
+line 290.
 
 
-LaTeX Warning: Citation 'ceperley_pistonless_1979' on page 6 undefined on input
- line 292.
+LaTeX Warning: Citation 'ceperley_pistonless_1979' on page 10 undefined on inpu
+t line 292.
 
 
-LaTeX Warning: Citation 'hofler_thermoacoustic_1986' on page 6 undefined on inp
-ut line 292.
+LaTeX Warning: Citation 'hofler_thermoacoustic_1986' on page 10 undefined on in
+put line 292.
 
 
-LaTeX Warning: Citation 'swift_thermoacoustics_2002' on page 6 undefined on inp
-ut line 295.
+LaTeX Warning: Citation 'swift_thermoacoustics_2002' on page 10 undefined on in
+put line 295.
 
 
-LaTeX Warning: Citation 'wollan_development_2002' on page 6 undefined on input 
+LaTeX Warning: Citation 'wollan_development_2002' on page 10 undefined on input
+ line 295.
+
+
+LaTeX Warning: Citation 'adeff_measurement_1991' on page 10 undefined on input 
 line 295.
 
 
-LaTeX Warning: Citation 'adeff_measurement_1991' on page 6 undefined on input l
-ine 295.
-
-
-LaTeX Warning: Citation 'garrett_thermoacoustic_1993' on page 6 undefined on in
-put line 295.
+LaTeX Warning: Citation 'garrett_thermoacoustic_1993' on page 10 undefined on i
+nput line 295.
 
 
 Overfull \hbox (57.63936pt too wide) in paragraph at lines 295--296
@@ -2510,51 +2563,51 @@ Overfull \hbox (57.63936pt too wide) in paragraph at lines 295--296
  []
 
 
-LaTeX Warning: Citation 'Electroac_Grains' on page 6 undefined on input line 31
-8.
+LaTeX Warning: Citation 'Electroac_Grains' on page 10 undefined on input line 3
+18.
 
 
 
 
-LaTeX Warning: Reference `fig:CircEquivTAC' on page 7 undefined on input line 3
-69.
+LaTeX Warning: Reference `fig:CircEquivTAC' on page 11 undefined on input line 
+369.
 
 (../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC.tex)
 
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 7 undefined on inp
-ut line 376.
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 11 undefined on in
+put line 376.
 
 
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 7 undefined on inp
-ut line 376.
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 11 undefined on in
+put line 376.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
-[]\T1/iwonal/b/sc/9 Figure I.4 \T1/iwonal/b/n/9 ^^U |\T1/iwonal/m/n/9 Cir-cuit 
-équi-valent à un noyau ther-moa-cous-tique. Ex-trait de
+Underfull \hbox (badness 1924) in paragraph at lines 376--376
+[]\T1/iwonal/b/sc/10 Figure I.4 \T1/iwonal/b/n/10 ^^U |\T1/iwonal/m/n/10 Cir-cu
+it équi-valent à un noyau ther-moa-cous-tique. Ex-trait de
  []
 
 
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 7 undefined on inp
-ut line 386.
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 11 undefined on in
+put line 386.
 
 
-LaTeX Warning: Citation 'rott_thermoacoustics_1980' on page 7 undefined on inpu
-t line 392.
-
-
-LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 7 undefined on inp
+LaTeX Warning: Citation 'rott_thermoacoustics_1980' on page 11 undefined on inp
 ut line 392.
 
 
+LaTeX Warning: Citation 'swift_thermoacoustics_2017' on page 11 undefined on in
+put line 392.
 
 
-LaTeX Warning: Reference `fig:WavesInDuctPiece' on page 8 undefined on input li
-ne 410.
 
 
-LaTeX Warning: Reference `eq:TMatrix_TppTuu' on page 8 undefined on input line 
-410.
+LaTeX Warning: Reference `fig:WavesInDuctPiece' on page 12 undefined on input l
+ine 410.
+
+
+LaTeX Warning: Reference `eq:TMatrix_TppTuu' on page 12 undefined on input line
+ 410.
 
 (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
 Missing character: There is no ; in font nullfont!
@@ -2565,97 +2618,97 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-LaTeX Warning: Reference `fig:CircEquivTAC' on page 8 undefined on input line 4
-84.
+LaTeX Warning: Reference `fig:CircEquivTAC' on page 12 undefined on input line 
+484.
 
 
-LaTeX Warning: Citation 'DeltaEC' on page 8 undefined on input line 540.
+LaTeX Warning: Citation 'DeltaEC' on page 12 undefined on input line 540.
 
 
-LaTeX Warning: Citation 'so_internal_2006' on page 8 undefined on input line 54
-0.
+LaTeX Warning: Citation 'so_internal_2006' on page 12 undefined on input line 5
+40.
 
 
-LaTeX Warning: Citation 'bailliet_acoustic_2001' on page 8 undefined on input l
-ine 540.
+LaTeX Warning: Citation 'bailliet_acoustic_2001' on page 12 undefined on input 
+line 540.
 
 
-LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
-t line 540.
+LaTeX Warning: Citation 'ramadan_experimental_2018' on page 12 undefined on inp
+ut line 540.
 
 
-LaTeX Warning: Citation 'ross_influence_2003' on page 8 undefined on input line
- 540.
+LaTeX Warning: Citation 'ross_influence_2003' on page 12 undefined on input lin
+e 540.
 
 
-LaTeX Warning: Citation 'ramadan_experimental_2018' on page 8 undefined on inpu
-t line 540.
+LaTeX Warning: Citation 'ramadan_experimental_2018' on page 12 undefined on inp
+ut line 540.
 
 
-LaTeX Warning: Citation 'hireche_numerical_2019' on page 8 undefined on input l
-ine 540.
+LaTeX Warning: Citation 'hireche_numerical_2019' on page 12 undefined on input 
+line 540.
 
 
-LaTeX Warning: Citation 'zhang_novel_2011' on page 8 undefined on input line 54
-0.
+LaTeX Warning: Citation 'zhang_novel_2011' on page 12 undefined on input line 5
+40.
 
 
-LaTeX Warning: Citation 'babaei_investigation_2010' on page 8 undefined on inpu
-t line 540.
+LaTeX Warning: Citation 'babaei_investigation_2010' on page 12 undefined on inp
+ut line 540.
 
 
 
 
-LaTeX Warning: Citation 'ANR_thermo-acoustic_2019' on page 9 undefined on input
- line 546.
-
-
-LaTeX Warning: Citation 'ramadan_design_2021' on page 9 undefined on input line
- 546.
-
-
-LaTeX Warning: Citation 'ramadan_experimental_2018' on page 9 undefined on inpu
+LaTeX Warning: Citation 'ANR_thermo-acoustic_2019' on page 13 undefined on inpu
 t line 546.
 
 
-LaTeX Warning: Citation 'ramadan_experimental_2021' on page 9 undefined on inpu
-t line 546.
-
-
-LaTeX Warning: Citation 'poignand_test-bench_2022' on page 9 undefined on input
- line 546.
-
-
-LaTeX Warning: Citation 'hireche_experimental_2020' on page 9 undefined on inpu
-t line 546.
-
-
-LaTeX Warning: Citation 'baltean_gravity_2025' on page 9 undefined on input lin
+LaTeX Warning: Citation 'ramadan_design_2021' on page 13 undefined on input lin
 e 546.
 
 
-LaTeX Warning: Citation 'belcher_working_1999' on page 9 undefined on input lin
-e 548.
+LaTeX Warning: Citation 'ramadan_experimental_2018' on page 13 undefined on inp
+ut line 546.
+
+
+LaTeX Warning: Citation 'ramadan_experimental_2021' on page 13 undefined on inp
+ut line 546.
+
+
+LaTeX Warning: Citation 'poignand_test-bench_2022' on page 13 undefined on inpu
+t line 546.
+
+
+LaTeX Warning: Citation 'hireche_experimental_2020' on page 13 undefined on inp
+ut line 546.
+
+
+LaTeX Warning: Citation 'baltean_gravity_2025' on page 13 undefined on input li
+ne 546.
+
+
+LaTeX Warning: Citation 'belcher_working_1999' on page 13 undefined on input li
+ne 548.
 
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 548.
 
-LaTeX Warning: Citation 'ramadan_design_2021' on page 9 undefined on input line
- 550.
+LaTeX Warning: Citation 'ramadan_design_2021' on page 13 undefined on input lin
+e 550.
 
 
-LaTeX Warning: Reference `fig:CaractMachineATE' on page 9 undefined on input li
-ne 550.
+LaTeX Warning: Reference `fig:CaractMachineATE' on page 13 undefined on input l
+ine 550.
 
 (../fig/fig_CaractMachineATE/tex/fig_CaractMachineATE.tex)
 
-LaTeX Warning: Reference `fig:ATE_ProfilsAX_5mm' on page 9 undefined on input l
-ine 561.
-
-
-LaTeX Warning: Reference `fig:ATE_ProfilsCHX_5mm' on page 9 undefined on input 
+LaTeX Warning: Reference `fig:ATE_ProfilsAX_5mm' on page 13 undefined on input 
 line 561.
+
+
+LaTeX Warning: Reference `fig:ATE_ProfilsCHX_5mm' on page 13 undefined on input
+ line 561.
 
 
 ! LaTeX Error: Cannot determine size of graphic in ../fig/fig_Litterature/ATE_P
@@ -2672,11 +2725,11 @@ If that doesn't work, type  X <return>  to quit.
 
  
 Here is how much of TeX's memory you used:
- 77266 strings out of 473524
- 1961056 string characters out of 5707360
- 3083881 words of memory out of 5000000
- 99501 multiletter control sequences out of 15000+600000
- 701562 words of font info for 159 fonts, out of 8000000 for 9000
+ 77366 strings out of 473524
+ 1962958 string characters out of 5707360
+ 3084987 words of memory out of 5000000
+ 99593 multiletter control sequences out of 15000+600000
+ 696889 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,13n,115p,1400b,1786s stack positions out of 10000i,1000n,20000p,200000b,200000s
 No pages of output.

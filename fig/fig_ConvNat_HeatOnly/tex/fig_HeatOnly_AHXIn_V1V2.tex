@@ -12,34 +12,34 @@
     xmin=0,xmax=3500,
 	ymin=-5,ymax=50,
     xtick={0,600,...,3000,3500},
-    ytick={-5,0,10,...,60},    
+    ytick={-5,0,5,...,60},
     domain=0:100,
-    legend style = {at={(1.02,.98)},anchor = north east,cells={align=right},rounded corners},legend columns=3,
+    legend style = {at={(1.02,1.05)},anchor=north east, cells={align=right},rounded corners},legend columns=4,
     ]
     	\addlegendimage{legend image with text=}
 		\addlegendentry{}
-		\addlegendimage{legend image with text={`\texttt{V1}'}}
+		\addlegendimage{legend image with text=TC 10}
 		\addlegendentry{}
-		\addlegendimage{legend image with text=`\texttt{V2}'} 
-		\addlegendentry{}   
-    
-		\addlegendimage{legend image with text={TC 10}}
+		\addlegendimage{legend image with text=TC 11}
 		\addlegendentry{}
-		
-    	\addplot[ultra thick,color=MatlabBlue] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC10_0beg_RixOff_PhaseRIXHP-60°_OrientationV1_Qc40W_Serie3.txt}};\addlegendentry{}
-    	\addplot[ultra thick,color=MatlabBlue,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC10_0beg_RixOff_PhaseRIXHP-60°_OrientationV2_Qc40W_Serie1.txt}};\addlegendentry{}
-    	
-    	\addlegendimage{legend image with text=TC 11}
-		\addlegendentry{}
-		
-    	\addplot[ultra thick,MatlabOrange] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC11_0beg_RixOff_PhaseRIXHP-60°_OrientationV1_Qc40W_Serie3.txt}};\addlegendentry{}
-    	\addplot[ultra thick,MatlabOrange,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC11_0beg_RixOff_PhaseRIXHP-60°_OrientationV2_Qc40W_Serie1.txt}};\addlegendentry{}
-    	
 		\addlegendimage{legend image with text=TC 12}
+		\addlegendentry{} 
+    
+    			
+		\addlegendimage{legend image with text=`\texttt{V1}'}
 		\addlegendentry{}
 		
-    	\addplot[ultra thick,MatlabYellow] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC12_0beg_RixOff_PhaseRIXHP-60°_OrientationV1_Qc40W_Serie3.txt}};\addlegendentry{}    	
-    	\addplot[ultra thick,MatlabYellow,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC12_0beg_RixOff_PhaseRIXHP-60°_OrientationV2_Qc40W_Serie1.txt}};\addlegendentry{}		
+    	\addplot[ultra thick,Plasma1] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC10_0beg_RixOff_PhaseRIXHP-60°_OrientationV1_Qc40W_Serie3.txt}};\addlegendentry{}
+    	\addplot[ultra thick,Plasma43] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC11_0beg_RixOff_PhaseRIXHP-60°_OrientationV1_Qc40W_Serie3.txt}};\addlegendentry{}
+    	\addplot[ultra thick,Plasma85] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC12_0beg_RixOff_PhaseRIXHP-60°_OrientationV1_Qc40W_Serie3.txt}};\addlegendentry{}
+    	
+    	\addlegendimage{legend image with text=`\texttt{V2}'}
+		\addlegendentry{}
+		
+    	\addplot[ultra thick,Plasma1,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC10_0beg_RixOff_PhaseRIXHP-60°_OrientationV2_Qc40W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,Plasma43,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC11_0beg_RixOff_PhaseRIXHP-60°_OrientationV2_Qc40W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,Plasma85,dashed] file {{../fig/fig_ConvNat_HeatOnly/data/FixedPower/V1V2/data_TC12_0beg_RixOff_PhaseRIXHP-60°_OrientationV2_Qc40W_Serie1.txt}};\addlegendentry{}
+		
         
 %        \legend{\\ \\};
     \end{axis}

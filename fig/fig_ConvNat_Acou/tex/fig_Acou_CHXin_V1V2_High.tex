@@ -4,43 +4,41 @@
     \def\legx{.5cm};
     \def\legy{\legx};
         
-    \begin{axis}[width={\width},height={\height},grid=both,minor tick num=5,
+    \begin{axis}[width={\width},height={\height},grid=both,minor tick num=4,
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
     xlabel={Temps $t$ [\unit{\s}]},
     ylabel={\'Ecart de température $\theta$ [\unit{\kelvin}]},
     xmin=0,xmax=3500,
 	ymin=-45,ymax=45,
-    xtick={0,600,1200,1800,2400,3000,3500},
-    ytick={-40,-20,...,40},
+	ytick={-50,-40,...,50},
+    xtick={0,600,1200,1800,2400,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
     domain=0:100,
-    legend style = {at={(1.01,.98)},anchor = north east,rounded corners},legend columns=3,
+    legend style = {at={(1.01,1.05)},anchor = north east,rounded corners},legend columns=4,
     ]
     
     	\addlegendimage{legend image with text=}
-		\addlegendentry{}
-		\addlegendimage{legend image with text=`\texttt{V1}'}
-		\addlegendentry{}
-		\addlegendimage{legend image with text=`\texttt{V2}'} 
-		\addlegendentry{}       	
-    	
+		\addlegendentry{}    	
     	\addlegendimage{legend image with text=TC 4}
     	\addlegendentry{}
-    
-		\addplot[ultra thick,MatlabBlue] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC4_0beg_RixHigh_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,MatlabBlue,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC4_0beg_RixHigh_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
-    	
     	\addlegendimage{legend image with text=TC 5}
 		\addlegendentry{}
-    	
-    	\addplot[ultra thick,MatlabOrange] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC5_0beg_RixHigh_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,MatlabOrange,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC5_0beg_RixHigh_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
-    	
     	\addlegendimage{legend image with text=TC 6}
 		\addlegendentry{}
     	
-    	\addplot[ultra thick,MatlabYellow] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC6_0beg_RixHigh_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,MatlabYellow,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC6_0beg_RixHigh_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addlegendimage{legend image with text=`\texttt{V1}'}
+		\addlegendentry{}
+    
+		\addplot[ultra thick,Plasma1] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC4_0beg_RixHigh_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,Plasma43] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC5_0beg_RixHigh_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,Plasma85] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC6_0beg_RixHigh_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
+		
+		\addlegendimage{legend image with text=`\texttt{V2}'} 
+		\addlegendentry{}  
+		
+    	\addplot[ultra thick,Plasma1,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC4_0beg_RixHigh_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,Plasma43,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC5_0beg_RixHigh_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[ultra thick,Plasma85,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC6_0beg_RixHigh_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
         
 %        \legend{\\ \\};
     \end{axis}

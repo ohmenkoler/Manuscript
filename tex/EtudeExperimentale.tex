@@ -406,7 +406,7 @@ L'analyse du champ 1D de températures et de des puissances thermiques transfér
 \section{Distribution des températures}\label{chap:DistribTemperature}
 Considérer la température comme constante sur la section du régénérateur permet d'adopter une vue d'ensemble quant au comportement de la machine en fonctionnement, mais ne suffit pas pour décrire ce qu'il se passe dans différentes zones du réfrigérateur de manière plus avancée. Pour répondre aux questions sur l'allure de la convection naturelle, les données des expériences présentées dans le paragraphe précédent sont cette fois-ci étudiées sur leur régime transitoire, et sans moyenner les températures sur les sections.
 
-\subsection{Dans le cône d'adaptation d'impédance}
+\subsection{Dans le cône d'adaptation d'impédance}\label{chap:DistribTemp_CavAdaptImped}
 L'étude des distributions de température commence par la cavité d'adaptation d'impédance, dans laquelle la présence d'une cellule de convection naturelle est suspectée. Pour toutes les orientations présentées dans la figure~\ref{fig:OrientationCore}, plusieurs types d'expériences sont réalisées, et l'étude se concentre sur les signaux de thermocouples placés dans la cavité d'adaptation d'impédance marqué de jaune dans la figure~\ref{fig:TCdansNoyau}, et donc des thermocouples \numlist{0;1;2;3}. 
 
 
@@ -546,17 +546,23 @@ Au final, les températures dans toute la cavité sont plus proches les unes des
 
 La série d'expérience est reproduite à forte amplitude acoustique où $DR=\qty{3.5}{\percent}$. La figure~\ref{fig:Acou_CHXout_V1V2_High} représente l'évolution temporelle des températures depuis leur valeur initiale. Les observations sont similaires à celles formulées pour l'amplitude intermédiaire, pour une amplitude de température plus marquée du fait de l'effet thermoacoustique plus intense.\smallskip
 
-Principalement, le réchauffement des températures après l'atteint de la température la plus froide à l'instant $t=\qty{400}{\second}$
+Principalement, le réchauffement des températures après l'atteinte de la température la plus froide à l'instant $t=\qty{400}{\second}$ est à nouveau observable, et les températures finales dans l'orientation `\texttt{V1}' sont plus élevées de \qty{5}{\kelvin} que celles de l'orientation `\texttt{V2}'.\smallskip
+
+Cette fois-ci, l'axisymétrie du système n'est plus respectée, dans aucune des orientations, et des écarts de \qty{-4}{\kelvin} en `\texttt{H1}' et \qty{-3.5}{\kelvin} en `\texttt{H2}' entre les thermocouples \numlist{1;3}, avec systématiquement le thermocouple~\num{3} en dessous du \num{1}.
 
 \subsubsection{Discussion}
 
 Dans la cavité d'adaptation d'impédance, les orientations `\texttt{V1}' et `\texttt{V2}' sont complémentaires. La première comporte la paroi froide, c'est-à-dire l'échangeur de chaleur froid, au plafond et la paroi plus chaude, c'est-à-dire la paroi de la source acoustique principale au sol. C'est une configuration de type Rayleigh-Bénard, favorable à la présence d'une cellule de convection naturelle sous réserve de se situer au delà du nombre de Rayleigh critique. La seconde est intrinsèquement stable, et ne permet pas la mise en mouvement du fluide à l'intérieur de la cavité.
 
-Cela se vérifie par l'observation d'une température minimale atteinte par un thermocouple donnée à un instant qui dépend de manière inversement proportionnelle à l'amplitude acoustique et suivie d'un réchauffement du fluide autour dudit thermocouple. \echaf{ça pourrait être la visco mais on le verrait pour toutes les orientations, et on le verrait probablement pas à faible amplitude}
+Cela se vérifie par l'observation d'une température minimale atteinte par un thermocouple donnée à un instant qui dépend de manière inversement proportionnelle à l'amplitude acoustique et suivie d'un réchauffement du fluide autour dudit thermocouple. \echaf{ça pourrait être la visco mais on le verrait pour toutes les orientations, et on le verrait probablement pas à faible amplitude. En plus on et hors du poreux}
 
-\subsection{À l'intérieur du régénérateur}
+\subsection{À l'intérieur du régénérateur}\label{chap:DistribTemp_Regen}
+Les expériences menées dans le paragraphe~\ref{chap:DistribTemp_CavAdaptImped} donnent d'autres valeurs de température en regardant les thermocouples~\numrange{4}{12}.
+
 \subsubsection{Expériences sans acoustique}
-\paragraph{Réfrigérateur horizontal}
+Encore une fois, les expériences sans acoustique sont analysées en premières. La comparaison entre les orientations `\texttt{H1}' et `\texttt{H2}' est faite avec la figure~\ref{fig:HeatOnly_Regen_H1H2}, et celle pour les orientations `\texttt{V1}' et `\texttt{V2}'  sur la figure~\ref{fig:HeatOnly_Regen_V1V2}.\medskip
+ 
+%\paragraph{Réfrigérateur horizontal}
 
 \begin{figure}[!ht]
     \centering
@@ -586,11 +592,19 @@ Cela se vérifie par l'observation d'une température minimale atteinte par un t
 		\caption{\numlist{10;11;12}}
 		\label{fig:HeatOnly_AHXin_H1H2}
 	\end{subfigure}		   
-    \caption{\echaf{changer caption}}
-    \label{fig:HeatOnly_H1H2}
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} nul. \subref{fig:HeatOnly_CHXin_H1H2} côté froid (TC \numlist{4;5;6}), \subref{fig:HeatOnly_Regmid_H1H2} milieu (TC \numlist{7;8;9}), \subref{fig:HeatOnly_AHXin_H1H2} côté ambiant (TC \numlist{10;11;12}).}
+    \label{fig:HeatOnly_Regen_H1H2}
 \end{figure}
 
-\paragraph{Réfrigérateur vertical}
+La sous-figure~\ref{fig:HeatOnly_CHXin_H1H2} représente l'évolution de la distribution de température sur la section du régénérateur à sont extrémité froide, et est très proche de la figure~\ref{fig:HeatOnly_CHXout_H1H2}, avec notamment dans l'orientation `\texttt{H1}' des écarts entre les températures mesurées par le thermocouple \num{4} situé en haut du régénérateur et qui relève \qty{6}{\kelvin}, le thermocouple \num{5} sur l'axe du noyau et qui lit \qty{10}{\kelvin}, et le thermocouple \num{6} en bas de noyau à la température \qty{19}{\kelvin}. \echaf{comme pour la cavité, la `\texttt{H2}' ne marche pas}.\smallskip
+
+Les températures au milieu du régénérateur sont tracées au cours du temps sur la sous-figure~\ref{fig:HeatOnly_Regmid_H1H2}. \echaf{décrire chaque sous-figure ? trop de redite ?}\smallskip
+
+La sous-figure~\ref{fig:HeatOnly_AHXin_H1H2} montre l'évolution de température sur la section qui fait face à l'échangeur de chaleur ambiant.\medskip
+
+L'observation de ces résultats d'expériences avec le réfrigérateur placé dans les orientations horizontales semble montrer qu'en l'absence d'écoulement oscillant, la distribution de température dans le régénérateur est déjà plutôt complexe. Le seul moyen de transport de chaleur dans le régénérateur possible dans ce milieu poreux est la conduction. La distribution totale de température est donc une combinaison de ce transfert et du couplage avec la distribution mesurée dans la cavité d'adaptation d'impédance perturbée par l'écoulement provoqué par la convection naturelle.\echaf{pas fini}\bigskip
+
+%\paragraph{Réfrigérateur vertical}
 
 \begin{figure}[!ht]
     \centering
@@ -621,12 +635,13 @@ Cela se vérifie par l'observation d'une température minimale atteinte par un t
 		\label{fig:HeatOnly_AHXin_V1V2}
 	\end{subfigure}		   
     \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} nul. \subref{fig:HeatOnly_CHXin_V1V2} côté froid (TC \numlist{4;5;6}), \subref{fig:HeatOnly_Regmid_V1V2} milieu (TC \numlist{7;8;9}), \subref{fig:HeatOnly_AHXin_V1V2} côté ambiant (TC \numlist{10;11;12}).}
-    \label{fig:HeatOnly_V1V2}
+    \label{fig:HeatOnly_Regen_V1V2}
 \end{figure}
 
 
+
 \subsubsection{Expériences avec acoustique}
-\paragraph{Réfrigérateur horizontal}
+%\paragraph{Réfrigérateur horizontal}
 
 
 \begin{figure}[!ht]
@@ -658,7 +673,7 @@ Cela se vérifie par l'observation d'une température minimale atteinte par un t
 		\label{fig:Acou_AHXin_H1H2_Low}
 	\end{subfigure}	
     \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$. \subref{fig:Acou_CHXin_H1H2_Low} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_Low} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_Low} côté ambiant (TC \numlist{10;11;12}).} 
-    \label{fig:Acou_H1H2_Low}
+    \label{fig:Acou_Regen_H1H2_Low}
 \end{figure}
 
 
@@ -692,7 +707,7 @@ Cela se vérifie par l'observation d'une température minimale atteinte par un t
 		\label{fig:Acou_AHXin_H1H2_Mid}
 	\end{subfigure}	
     \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à  \textit{drive ratio} moyen $DR=\qty{2}{\percent}$. \subref{fig:Acou_CHXin_H1H2_Mid} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_Mid} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_Mid} côté ambiant (TC \numlist{10;11;12}).} 
-    \label{fig:Acou_H1H2_Mid}
+    \label{fig:Acou_Regen_H1H2_Mid}
 \end{figure}
 
 
@@ -726,11 +741,11 @@ Cela se vérifie par l'observation d'une température minimale atteinte par un t
 		\label{fig:Acou_AHXin_H1H2_High}
 	\end{subfigure}	
     \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$. \subref{fig:Acou_CHXin_H1H2_High} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_High} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_High} côté ambiant (TC \numlist{10;11;12}).} 
-    \label{fig:Acou_H1H2_High}
+    \label{fig:Acou_Regen_H1H2_High}
 \end{figure}
 
 
-\paragraph{Réfrigérateur vertical}
+%\paragraph{Réfrigérateur vertical}
 
 \begin{figure}[!ht]
     \centering
@@ -761,7 +776,7 @@ Cela se vérifie par l'observation d'une température minimale atteinte par un t
 		\label{fig:Acou_AHXin_V1V2_Low}
 	\end{subfigure}		
     \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$. \subref{fig:Acou_CHXin_V1V2_Low} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_V1V2_Low} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_V1V2_Low} côté ambiant (TC \numlist{10;11;12}).}
-    \label{fig:Acou_V1V2_Low}
+    \label{fig:Acou_Regen_V1V2_Low}
 \end{figure}
 
 
@@ -795,7 +810,7 @@ Cela se vérifie par l'observation d'une température minimale atteinte par un t
 		\label{fig:Acou_AHXin_V1V2_Mid}
 	\end{subfigure}		
     \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} moyen $DR=\qty{2}{\percent}$. \subref{fig:Acou_CHXin_V1V2_Mid} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_V1V2_Mid} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_V1V2_Mid} côté ambiant (TC \numlist{10;11;12}).}
-    \label{fig:Acou_V1V2_Mid}
+    \label{fig:Acou_Regen_V1V2_Mid}
 \end{figure}
 
 
@@ -829,7 +844,7 @@ Cela se vérifie par l'observation d'une température minimale atteinte par un t
 		\label{fig:Acou_AHXin_V1V2_High}
 	\end{subfigure}		
     \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à haut \textit{drive ratio} $DR=\qty{3.5}{\percent}$. \subref{fig:Acou_CHXin_V1V2_High} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_V1V2_High} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_V1V2_High} côté ambiant (TC \numlist{10;11;12}).}
-    \label{fig:Acou_V1V2_High}
+    \label{fig:Acou_Regen_V1V2_High}
 \end{figure}
 
 

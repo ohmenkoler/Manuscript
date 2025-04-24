@@ -1,17 +1,19 @@
-\chapter{\'Etudes théoriques et numériques}\label{chap:SimusRealisees}
+\chapter{\'Etudes théoriques et numériques de convection naturelle}\label{chap:SimusRealisees}
 \mylocaltoc
 
 \section{Introduction}
-Lors de son fonctionnement, une différence de température s'établit aux extremités du régénérateur. Les distributions de température sont mesurées grâce à un jeu de thermocouples présentés dans le paragraphe~\ref{chap:PresTC}. Les résultats expérimentaux observés tels que ceux représentés sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} du côté de l'échangeur froid s'écartent des prédictions du modèle linéaire 1D classique décrit par Rott~\cite{rott_thermoacoustics_1980}. Dans ce chapitre, différents modèles sont développés pour comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage.\medskip
+Comme constaté en amont de cette thèse, les distributions de température mesurées dans le c\oe{}ur du réfrigérateur \textsc{Tacot} sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} s'écartent des prédictions du modèle linéaire 1D classique basé sur lest travaux de Rott~\cite{rott_thermoacoustics_1980}. Dans ce chapitre, l'utilisation de différents modèles est envisagée pour comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage.\medskip
 
-Tout d'abord, le paragraphe~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim} propose un rappel des modèles classiques de la littérature sur la convection naturelle. Dans cette partie, le cas simplifié traitant de cavités rectangulaires à deux dimensions est présenté. Cela permet d'introduire les nombres adimensionnels utilisés dans la littérature pour prédire la présence ou l'absence d'une cellule de convection naturelle.\smallskip
+En préambule, le paragraphe~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim} propose un rappel des modèles classiques de la littérature sur la convection naturelle. Dans cette partie, le cas simplifié traitant de cavités rectangulaires à deux dimensions est présenté. Cela permet d'introduire les nombres adimensionnels utilisés dans la littérature pour prédire la présence ou l'absence d'une cellule de convection naturelle.\smallskip
 
-Ensuite, un modèle par éléments finis du régime stationnaire du champ de température et de la vitesse de convection est développé avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered dans le paragraphe~\ref{chap:FEM} - \nameref{chap:FEM} pour étudier les conditions aux frontières plus complexes, ou le couplage entre la cavité d'adaptation d'impédance, le régénérateur et l'enceinte qui le contient.\smallskip
+Ensuite, un calcul par éléments finis du régime stationnaire du champ de température et de la vitesse de convection est effectué avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered dans le paragraphe~\ref{chap:FEM} - \nameref{chap:FEM} pour étudier les conditions aux frontières plus complexes, ou le couplage entre la cavité d'adaptation d'impédance, le régénérateur et l'enceinte qui le contient.\smallskip
 
-Enfin, un modèle analytique temporel est présenté dans le paragraphe~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}, qui prend en compte des phénomènes physiques non inclus dans la théorie linéaire, comme par exemple l'échauffement visqueux dans le régénérateur, la vorticité tourbillonaire de part et d'autre du régénérateur, et les échanges convectifs avec les parois du noyau.
+Enfin, un modèle analytique temporel est adapté à la description du \textsc{Tacot} dans le paragraphe~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}. Ce modèle prend en compte des phénomènes physiques non inclus dans la théorie linéaire, comme l'échauffement visqueux dans le régénérateur, la vorticité tourbillonaire de part et d'autre du régénérateur, et les échanges convectifs avec les parois du noyau.
 
-\section{Concepts de convection naturelle et nombres adimensionnels}\label{chap:NbrAdim}
-Au sein du réfrigérateur thermoacoustique utilisé, et particulièrement dans la cavité devant la source acoustique principale, la distribution de température mesurée du côté froid hors du noyau représentée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} laisse penser à la présence d'une cellule de convection naturelle. Avant de chercher à modéliser en détail ce qui se produit, des nombres adimensionnels utilisés couramment en mécanique des fluides tels que le nombre de Rayleigh sont présentés, afin d'évaluer la présence de convection naturelle et quelques ordres de grandeurs concernant l'écoulement associé éventuel par leur calcul.\medskip
+\section{Convection naturelle et nombres adimensionnels}\label{chap:NbrAdim}
+Au sein du réfrigérateur thermoacoustique utilisé, et particulièrement dans la cavité devant la source acoustique principale, la distribution de température mesurée au bord intérieur froid du régénérateur représentée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} laisse penser à la présence d'une cellule de convection naturelle. Avant de chercher à modéliser en détail ce qui se produit, des nombres adimensionnels utilisés couramment en mécanique des fluides tels que le nombre de Rayleigh $\Rayleigh$ sont présentés, afin d'évaluer la présence de convection naturelle et quelques ordres de grandeurs concernant l'écoulement associé éventuel par leur calcul.
+
+L'estimation de $\Rayleigh$ dans la cavité entre la source acoustique principale et l'échangeur de chaleur froid pour une configuration typique de fonctionnement du \textsc{Tacot} permet de conforter la suspicion de présence d'écoulements convectifs.
 
 %Il est difficile de se rendre compte des flux massique et thermique causés par la différence de température de part et d'autre des différentes zones du \textsc{Tacot} -- volume d'adaptation d'impédance, noyau thermoacoustique -- à cause de leurs géométries, de l'orientation du gradient de température par rapport à la gravité, de la porosité, etc.\medskip
 
@@ -23,13 +25,13 @@ Au sein du réfrigérateur thermoacoustique utilisé, et particulièrement dans 
 \subsection{Nombre de Rayleigh hors d'un matériau poreux}
 %\echaf{Préciser le focus sur la cavité RIX-CHX et donc cavité 2D}
 
-Dans ce paragraphe, des concepts utiles à la compréhension des phénomènes de convection naturelle sont introduits. On considère la cavité rectangulaire à deux dimensions est soumise à un gradient de température, soit horizontal, soit vertical, ce que montre la figure~\ref{fig:ConvNat2D}.\medskip
+Dans ce paragraphe, des concepts utiles à la compréhension des phénomènes de convection naturelle sont introduits. On considère une cavité rectangulaire à deux dimensions différentiellement chauffée, par un gradient de température soit horizontal, soit vertical, comme montré sur la figure~\ref{fig:ConvNat2D}. L'air qui la remplit est au repos, sans mouvement acoustique.\medskip
 
-\textcolor{purple}{manque des références à la littérature + notion de CDC cf commentaire 1}
+\textcolor{purple}{manque des références à la littérature + notion de CDC cf commentaire 1 -> Batchelor 1954, Xin 2005 HDR}
 
-Dans la première sous-figure~\ref{fig:ConvNat2D_HorizDeltaT}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que le sol, le plafond et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales.\smallskip%Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.\smallskip
+Dans la première sous-figure~\ref{fig:ConvNat2D_HorizDeltaT}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que les parois basse et haute et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales.\smallskip%Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.\smallskip
 
-Dans la seconde sous-figure~\ref{fig:ConvNat2D_VertiDeltaT}, ce sont cette fois les sol et plafond qui sont respectivement fixés aux températures chaude $T_c$ et froide $T_f$, et les murs et le gaz au repos laissés à la température ambiante $T_\infty$. Dans cette configuration, favorable à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il s'établit des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre \num{657.5} pour des parois horizontales libres et \num{1707.8} pour des parois horizontales fixes \cite{getling_rayleigh-benard_1998}. Le gaz chauffé, moins dense, s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:ConvNat2D_VertiDeltaT} qui ne représente qu'une illustration grossière du mouvement du fluide.% Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
+Dans la seconde sous-figure~\ref{fig:ConvNat2D_VertiDeltaT}, ce sont cette fois les parois basse et haute qui sont respectivement fixés aux températures chaude $T_c$ et froide $T_f$, et les parois verticales et le gaz au repos laissés à la température ambiante $T_\infty$. Dans cette configuration, favorable à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il s'établit des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre \num{657.5} pour des parois horizontales libres et \num{1707.8} pour des parois horizontales fixes \cite{getling_rayleigh-benard_1998}. Le gaz chauffé, moins dense, s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:ConvNat2D_VertiDeltaT} qui ne représente qu'une illustration grossière du mouvement du fluide.% Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
 
 %\begin{figure}[!ht]
 %    \centering
@@ -77,7 +79,7 @@ Ces équations s'écrivent avec le système
 	\begin{align}
 		\nabla \cdot \mathbf v &= 0, \label{eq:NavierStokes_Boussinesq_Conti}\\
 		\intertext{pour la conservation de la masse,}
-		\rho_0 [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \rho_0\beta \mathbf g (T_c-T_f), \label{eq:NavierStokes_Boussinesq_QtMvt}\\
+		\rho_0 [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \rho_0\beta \mathbf g (T_c-T_f), \echaf{Valable III.1 (a) et (b) ?} \label{eq:NavierStokes_Boussinesq_QtMvt}\\
 		\intertext{pour la conservation de la quantité de mouvement, et}
 		\partial_t T + (\mathbf v \cdot \nabla) T - k \nabla^2T &= 0. \label{eq:NavierStokes_Boussinesq_NRJinterne}
 	\end{align}
@@ -86,7 +88,7 @@ Ces équations s'écrivent avec le système
 pour la conservation de l'énergie interne. Dans le cadre de l'approximation de Boussinesq, la masse volumique est considérée constante sauf dans le terme de pesanteur, et sa variation, faible, est linéaire avec la température selon l'équation
 
 \begin{equation}
-	\rho(T) = \rho_0[1-\beta(T-T_0)].
+	\rho_0'(T) = \rho_0[1-\beta(T_0-T_\infty)].
 	\label{eq:MasseVolumiqueBoussinesq}
 \end{equation}
 
@@ -101,7 +103,7 @@ L'adimensionnement du système d'équations~\eqref{eq:NavierStokes_Boussinesq} d
 	\end{align}
 \end{subequations}
 
-Cet adimensionnement laisse apparaître des nombres sans dimension dont l'étude permet de comparer par similitude des configurations différentes, comme le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl}, la pression adimensionnée $\varpi=\nicefrac{p}{\rho_0}$, et le nombre de Rayleigh noté $\mathrm{Ra}$. Il est défini par 
+Cet adimensionnement laisse apparaître des nombres sans dimension dont l'étude permet de comparer par similitude des configurations différentes, comme le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl}, la pression adimensionnée $\varpi=\nicefrac{p}{\rho_0}$ \echaf{vrai adimensionnement à faire}, et le nombre de Rayleigh noté $\mathrm{Ra}$. Il est défini par 
 
 \begin{equation}
 	\mathrm{Ra} = \frac{g \beta L_c^3}{\nu \kappa} (T_c-T_f),
@@ -109,7 +111,7 @@ Cet adimensionnement laisse apparaître des nombres sans dimension dont l'étude
 \end{equation}
 où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de la zone considérée, et $L_c$ est la dimension caractéristique de la cavité suivant la direction verticale. Ce nombre est primordial car il correspond au rapport des effets gravifiques qui mettent le fluide en mouvement aux effets qui le limitent, soit la diffusion thermique qui limite la différence de température et la viscosité qui ralentit l'écoulement du fluide. 
 
-Sa valeur indique également le régime de l'écoulement causé par la convection à la vitesse de référence $v_{\sf ref}$, dont les composantes verticale $v_{\sf ref}^{// \mathbf g}$ et horizontale $v_{\sf ref}^{\perp \mathbf g}$ s'écrivent
+Sa valeur indique également le régime de l'écoulement causé par la convection à la vitesse de référence $v_{\sf ref}$, dont les composantes verticale $v_{\sf ref}^{// \mathbf g}$ et horizontale $v_{\sf ref}^{\perp \mathbf g}$ s'écrivent \echaf{ajouter autres refs}
 
 % car des vitesses de référence verticales et horizontales, notées $v_{ref}^{// \mathbf g}$ et $v_{ref}^{\perp \mathbf g}$, peuvent d'ailleurs être calculées en fonction de ce nombre de Rayleigh suivant les définitions
 
@@ -173,7 +175,7 @@ Le nombre de Rayleigh modifié en nombre de Rayleigh-Darcy et noté $\Rayleigh_p
 	\mathrm{Ra}_p = \frac{g \beta L_c K_p}{\nu \kappa_p} (T_c-T_f),
 	\label{eq:NbrRayleigh_poreux}
 \end{equation}
-ainsi que la composante verticale de la vitesse de référence correspondante, 
+et la composante verticale de la vitesse de référence correspondante s'écrit, 
 
 \begin{equation}
 	v_{\textsf{ref},p}^{// \mathbf g} = \frac{\kappa_p}{L_c} \Rayleigh_p.
@@ -182,7 +184,7 @@ ainsi que la composante verticale de la vitesse de référence correspondante,
 
 Encore une fois, une différence de comportement existe entre la situation représentée par la figure~\ref{fig:ConvNat2D_HorizDeltaT} et \ref{fig:ConvNat2D_VertiDeltaT}, en particulier l'existence d'un nombre de Rayleigh-Darcy critique en dessous duquel la convection n'a pas lieu, et seule la conduction transporte de la chaleur. La valeur de ce nombre critique est évaluée à $\Rayleigh_{p,c}=4\pi^2$ dans la littérature, ~\cite{elder_steady_1967} \echaf{parois non glissantes et imperméables...}
 
-Ici encore, une application numérique est réalisées pour les deux orientations de la figure~\ref{fig:ConvNat2D}, dans les mêmes conditions que le tableau~\ref{tab:NbrRayleigh_Vitesse}. Cette fois-ci, les valeurs des nombres de Rayleigh-Darcy pour chacune des orientations sont largement inférieures à la valeur critique, \echaf{ce qui permet de déduire l'absence de circulations de fluides causées par la convection naturelle.}
+Ici encore, une application numérique est réalisées pour les deux orientations de la figure~\ref{fig:ConvNat2D}, dans les mêmes conditions que le tableau~\ref{tab:NbrRayleigh_Vitesse}. Cette fois-ci, les valeurs des nombres de Rayleigh-Darcy pour chacune des orientations sont largement inférieures à la valeur critique.%, \echaf{ce qui permet de déduire l'absence de circulations de fluides causées par la convection naturelle.}
 
 \begin{table}[!ht]
 \centering
@@ -500,8 +502,8 @@ L'orientation `\texttt{V2}' est finalement présentée sur la figure~\ref{fig:V2
 
 \echaf{Que mettre de plus dans cette partie ?}
 
-\section{Modèle temporel du régime transitoire} \label{chap:ModeleTemporel}
-Un modèle temporel du régime transitoire de la distribution de température dans le noyau thermoacoustique est créé. Ce modèle fait suite au modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}, adapté au réfrigérateur thermoacoustique étudié, c'est-à-dire qui utilise un régénérateur au lieu d'un stack dans un champ acoustique \echaf{2D/3D} quelconque. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques. 
+\section{Modèle du régime transitoire} \label{chap:ModeleTemporel}
+Un modèle du régime transitoire de la distribution de température dans le noyau thermoacoustique est créé. Ce modèle fait suite au modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}, adapté au réfrigérateur thermoacoustique étudié, c'est-à-dire qui utilise un régénérateur au lieu d'un stack dans un champ acoustique \echaf{2D/3D} quelconque. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latéral au travers des parois de la cavité $Q_{\sf lat}$. Pour compenser les écarts entre les prévisions du modèle et les mesures, un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges ou les effets entropiques. 
 
 \subsection{Géométrie du problème}
 Le modèle considère un régénérateur à deux dimensions en coordonnées cartésiennes, à pores circulaires de rayon hydraulique $r_h$ et de porosité $\Phi$, de longueur $L_{\sf reg}$ et de hauteur $D_{\sf reg}$, avec l'échangeur de chaleur froid placé en $x=0$ et l'échangeur ambiant en $x=L_{\sf reg}$.

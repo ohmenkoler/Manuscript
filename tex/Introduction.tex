@@ -411,14 +411,14 @@ Les coefficients dépendent de l'organe en question : par exemple, dans le cas d
 
 \begin{equation}
     \begin{pmatrix}
-        p_s\\
-        u_s
+        p_1^{(s)}\\
+        u_1^{(s)}
     \end{pmatrix}=\begin{bmatrix}
         \cos\big(k(x_2-x_1)\big) & - i Z_c \sin\big(k(x_2-x_1)\big)\\
         - i \dfrac{1}{Z_c} \sin\big(k(x_2-x_1)\big) & \cos\big(k(x_2-x_1)\big)
     \end{bmatrix}\begin{pmatrix}
-        p_e\\
-        u_e
+        p_1^{(e)}\\
+        u_1^{(e)}
     \end{pmatrix},
     \label{eq:TMatrixCosSin}
 \end{equation}
@@ -463,6 +463,7 @@ en adoptant la convention temporelle $e^{+i\omega t}$ et une orientation anti-sy
 %\end{subequations}
 
 \subsubsection{Matrice de transfert d'un noyau thermoacoustique}
+\echaf{notation $p_s$ à changer en $p_1^{(s)}$ etc.}
 
 Comme déjà expliqué plus haut, le processus thermoacoustique se produit dans un matériau poreux placé dans le guide d'ondes des machines thermoacoustiques. La définition des termes constituant la matrice de transfert change alors légèremement pour prendre en compte sa porosité $\Phi$ selon l'équation
 

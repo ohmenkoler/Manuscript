@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {I.5.3}Matrices de transfert}{11}{subsection.1.5.3}%
 \contentsline {subsubsection}{\numberline {I.5.3.1}En général}{11}{subsubsection.1.5.3.1}%
 \contentsline {subsubsection}{\numberline {I.5.3.2}Matrice de transfert d'un noyau thermoacoustique}{12}{subsubsection.1.5.3.2}%
-\contentsline {section}{\numberline {I.6}Limites des modèles}{12}{section.1.6}%
+\contentsline {section}{\numberline {I.6}Limites des modèles}{13}{section.1.6}%
 \contentsline {section}{\numberline {I.7}Résultats antérieurs au doctorat}{13}{section.1.7}%
 \contentsline {section}{\numberline {I.8}Plan du manuscrit}{14}{section.1.8}%
 \contentsline {chapter}{\numberline {II}Dispositif expérimental}{15}{chapter.2}%
@@ -66,28 +66,28 @@
 \contentsline {subsection}{\numberline {III.2.1}Nombre de Rayleigh hors d'un matériau poreux}{36}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {III.2.2}Nombre de Rayleigh dans un matériau poreux}{38}{subsection.3.2.2}%
 \contentsline {section}{\numberline {III.3}Simulations par éléments finis}{39}{section.3.3}%
-\contentsline {subsection}{\numberline {III.3.1}Cône d'adaptation d'impédance seul}{40}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {III.3.2}Cône d'adaptation d'impédance couplé au noyau thermoacoustique}{40}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {III.3.1}Cavité d'adaptation d'impédance seule}{39}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {III.3.2}Cavité d'adaptation d'impédance couplée au noyau thermoacoustique}{40}{subsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {III.3.2.1}Géométrie du problème}{40}{subsubsection.3.3.2.1}%
 \contentsline {subsubsection}{\numberline {III.3.2.2}Matériaux composant les domaines}{41}{subsubsection.3.3.2.2}%
 \contentsline {subsubsection}{\numberline {III.3.2.3}Modèles physiques utilisés}{41}{subsubsection.3.3.2.3}%
 \contentsline {subsubsection}{\numberline {III.3.2.4}Conditions aux frontières}{42}{subsubsection.3.3.2.4}%
 \contentsline {paragraph}{\numberline {III.3.2.4.a}Problème thermique}{42}{paragraph.3.3.2.4.1}%
 \contentsline {paragraph}{\numberline {III.3.2.4.b}Problème fluide}{42}{paragraph.3.3.2.4.2}%
-\contentsline {subsubsection}{\numberline {III.3.2.5}Résultats}{43}{subsubsection.3.3.2.5}%
-\contentsline {section}{\numberline {III.4}Modèle du régime transitoire}{44}{section.3.4}%
-\contentsline {subsection}{\numberline {III.4.1}Géométrie du problème}{44}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {III.4.2}Champ acoustique considéré}{44}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {III.3.2.5}Résultats}{42}{subsubsection.3.3.2.5}%
+\contentsline {section}{\numberline {III.4}Modèle du régime transitoire}{43}{section.3.4}%
+\contentsline {subsection}{\numberline {III.4.1}Géométrie du problème}{45}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {III.4.2}Champ acoustique considéré}{45}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {III.4.3}Mécanismes pris en compte dans le modèle}{45}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {III.4.4}Bilan thermique}{47}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {III.4.5}Méthode des transformations intégrales}{47}{subsection.3.4.5}%
-\contentsline {subsubsection}{\numberline {III.4.5.1}Application de la méthode dans la direction transverse}{48}{subsubsection.3.4.5.1}%
-\contentsline {subsubsection}{\numberline {III.4.5.2}Application de la méthode dans la direction axiale}{49}{subsubsection.3.4.5.2}%
-\contentsline {subsubsection}{\numberline {III.4.5.3}Application des transformées intégrales inverses}{50}{subsubsection.3.4.5.3}%
-\contentsline {subsection}{\numberline {III.4.6}Détermination des paramètres empiriques}{50}{subsection.3.4.6}%
+\contentsline {subsection}{\numberline {III.4.5}Méthode des transformations intégrales}{48}{subsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {III.4.5.1}Application de la méthode dans la direction transverse}{49}{subsubsection.3.4.5.1}%
+\contentsline {subsubsection}{\numberline {III.4.5.2}Application de la méthode dans la direction axiale}{50}{subsubsection.3.4.5.2}%
+\contentsline {subsubsection}{\numberline {III.4.5.3}Application des transformées intégrales inverses}{51}{subsubsection.3.4.5.3}%
+\contentsline {subsection}{\numberline {III.4.6}Détermination des paramètres empiriques}{51}{subsection.3.4.6}%
 \contentsline {subsubsection}{\numberline {III.4.6.1}Coefficient d'échange aux extrémités du noyau}{51}{subsubsection.3.4.6.1}%
 \contentsline {subsubsection}{\numberline {III.4.6.2}Flux thermique de vorticité}{51}{subsubsection.3.4.6.2}%
-\contentsline {section}{\numberline {III.5}Conclusion}{51}{section.3.5}%
+\contentsline {section}{\numberline {III.5}Conclusion}{52}{section.3.5}%
 \contentsline {chapter}{\numberline {IV}Résultats et discussion}{53}{chapter.4}%
 \etoc@startlocaltoc {5}
 \contentsline {section}{\numberline {IV.1}Introduction}{54}{section.4.1}%

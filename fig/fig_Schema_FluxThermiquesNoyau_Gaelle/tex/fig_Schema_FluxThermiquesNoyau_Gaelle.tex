@@ -38,25 +38,25 @@
 
 
 % --------------------------------------------------- Dimensions
-\draw (\CHXnorth) node [above right] {\begin{tabular}{ll}\'Echangeur \\  froid\end{tabular}};
-\draw (\AHXnorth) node [above left] {\begin{tabular}{rr}\'Echangeur \\ ambiant \end{tabular}  };
+\draw (\CHXnorth) node [above right] {\begin{tabular}{ll} Côté \\  froid\end{tabular}};
+\draw (\AHXnorth) node [above left] {\begin{tabular}{rr} Côté \\ ambiant \end{tabular}  };
 
 \draw (0,-\Ryreg) node[below left] {0};
 \draw (\Lreg,-\Ryreg) node{|} node[below left] {$L_{\sf reg}$};
 \draw (\CHXnorth) -- ++(-.5cm,0) node[left] {$D_{\sf reg}$};
 
 %%% Q_TA
-\draw[arw,->,draw=MatlabBlue] ({.25*\Lreg},0) -- ++(.33*\Lreg,0) node[right] {$Q_{TA}$} node(MidQTA)[midway]{};
+\draw[arw,->,draw=MatlabBlue] ({.33*\Lreg},.15*\Ryreg) -- ++(.33*\Lreg,0) node[midway, above] {$Q_{TA}$} node(MidQTA)[midway]{};
 %
 %\draw[arw,<-,draw=MatlabBlue] ($(\CHXsouth)+(-1mm,-1mm)$) -- ++(-120:.33*\Lreg)node[pos=.75, left]{$Q_{TA}(0)$};
 %\draw[arw,->,draw=MatlabBlue] ($(\AHXsouth)+(1mm,-1mm)$) -- ++(-60:.33*\Lreg)node[pos=.25, right]{$Q_{TA}(L_{\sf reg})$};
 
 %%% Q_cond
-\draw[arw,->,draw=MatlabOrange] ({.75*\Lreg},.15*\Ryreg)  -- ++(-.33*\Lreg,0) node[left] {$Q_{\sf cond}^{(x)}$} node(MidCondx1)[midway]{};
-\draw[arw,->,draw=MatlabOrange] ({.75*\Lreg},-.15*\Ryreg)  -- ++(-.33*\Lreg,0) node(MidCondx2)[midway]{} node[left] {$Q_{\sf cond}^{(x)}$};
+\draw[arw,->,draw=MatlabOrange] ({.67*\Lreg},-.15*\Ryreg)  -- ++(-.33*\Lreg,0) node[midway, below] {$Q_{\sf cond}^{(x)}$} node(MidCondx1)[midway]{};
+%\draw[arw,->,draw=MatlabOrange] ({.75*\Lreg},.20*\Ryreg)  -- ++(-.33*\Lreg,0) node(MidCondx2)[midway]{} node[left] {$Q_{\sf cond}^{(x)}$};
 
-\draw[arw,->,draw=MatlabYellow] ({.25*\Lreg},.3*\Ryreg)  -- ++(0,.33*\Lreg) node[above] {$Q_{\sf cond}^{(r)}$} node(MidCondr1)[midway]{};
-\draw[arw,->,draw=MatlabYellow] ({.75*\Lreg},-.3*\Ryreg)  -- ++(0,-.33*\Lreg) node[below] {$Q_{\sf cond}^{(r)}$} node(MidCondr2)[midway]{};
+\draw[arw,->,draw=MatlabYellow] ({.25*\Lreg},.3*\Ryreg)  -- ++(0,.33*\Lreg) node[midway, left] {$Q_{\sf cond}^{(r)}$} node(MidCondr1)[midway]{};
+\draw[arw,->,draw=MatlabYellow] ({.75*\Lreg},-.3*\Ryreg)  -- ++(0,-.33*\Lreg) node[midway, right] {$Q_{\sf cond}^{(r)}$} node(MidCondr2)[midway]{};
 
 %%% Q_visq
 \draw[arw,<->,draw=PythonGreen] ($(MidCondr1 -| MidCondx1)+(-.33*\Lreg/2,0)$)  -- ++(.33*\Lreg,0) node[midway,above]{$Q_{\sf visq}$};

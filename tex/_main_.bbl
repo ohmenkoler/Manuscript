@@ -1821,6 +1821,7 @@
       \strng{authornamehash}{52937719af970c9a64a91af3eeb87bce}
       \strng{authorfullhash}{52937719af970c9a64a91af3eeb87bce}
       \strng{authorfullhashraw}{52937719af970c9a64a91af3eeb87bce}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -3756,6 +3757,50 @@
       \endverb
       \verb{url}
       \verb http://link.springer.com/10.1007/978-1-4757-9047-4_202
+      \endverb
+    \endentry
+    \entry{swift_thermoacoustic_1988}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=52937719af970c9a64a91af3eeb87bce}{%
+           family={Swift},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{fullhash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{fullhashraw}{52937719af970c9a64a91af3eeb87bce}
+      \strng{bibnamehash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{authorbibnamehash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{authornamehash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{authorfullhash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{authorfullhashraw}{52937719af970c9a64a91af3eeb87bce}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Thermoacoustic engines, or acoustic heat engines, are energy‐conversion devices that achieve simplicity and concomitant reliability by use of acoustic technology. Their efficiency can be a substantial fraction of Carnot’s efficiency. In thermoacoustic prime movers, heat flow from a high‐temperature source to a low‐temperature sink generates acoustic power (which may be converted to electric power using a transducer). In thermoacoustic heat pumps and refrigerators, acoustic power is used to pump heat from a low‐temperature source to a high‐temperature sink. This review teaches the fundamentals of thermoacoustic engines, by analysis, intuition, and example.}
+      \field{issn}{0001-4966}
+      \field{journaltitle}{The Journal of the Acoustical Society of America}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{Thermoacoustic engines}
+      \field{volume}{84}
+      \field{year}{1988}
+      \field{pages}{1145\bibrangedash 1180}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1121/1.396617
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.aip.org/asa/jasa/article-pdf/84/4/1145/11703730/1145\_1\_online.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1121/1.396617
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1121/1.396617
       \endverb
     \endentry
     \entry{lotton_transient_2009}{article}{}{}

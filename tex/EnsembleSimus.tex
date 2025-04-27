@@ -610,7 +610,7 @@ L'orientation `\texttt{V2}' est finalement présentée sur la figure~\ref{fig:V2
 \section{Modèle du régime transitoire} \label{chap:ModeleTemporel}
 Le modèle décrit précédemment constitue une première tentative d'explication, mais est trop rudimentaire pour représenter fidèlement la réalité. Cette approche, de même que la théorie classique de la thermoacoustique~\cite{swift_thermoacoustic_1988}, se base sur l'équilibre entre le flux de chaleur pompé par l'effet thermoacoustique, et le flux de conduction thermique qui s'y oppose en circulant par le matériau poreux et les parois qui l'entourent. Le modèle par éléments finis est également limité au régime stationnaire, empêchant toute étude de phénomènes qui influencent de manière dynamique le système et prennent place durant le régime transitoire. En particulier, à haute amplitude acoustique, les écarts se creusent entre les simulations du régime établi uniquement.\smallskip
 
-Un modèle du régime transitoire de la distribution de température dans le noyau thermoacoustique est créé. Ce modèle fait suite au modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}, adapté au réfrigérateur thermoacoustique étudié, c'est-à-dire qui utilise un régénérateur au lieu d'un stack dans un champ acoustique \echaf{2D/3D} quelconque. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latérales au travers des parois de la cavité $Q_{\sf lat}$. Un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau et sa valeur est ajustée pour que les températures calculées soient au plus proche des températures mesurées. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges et/ou les effets entropiques. 
+Un modèle du régime transitoire de la distribution de température dans le noyau thermoacoustique est créé. Ce modèle fait suite au modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}, adapté au réfrigérateur thermoacoustique étudié, c'est-à-dire qui utilise un régénérateur au lieu d'un stack dans un champ acoustique \echaf{2D/3D} quelconque. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latérales au travers des parois du régénérateur $Q_{\sf par}$. Un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau et sa valeur est ajustée pour que les températures calculées soient au plus proche des températures mesurées. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges et/ou les effets entropiques. 
 
 \subsection{Géométrie du problème}
 Le système décrit est uniquement constitué d'un régénérateur à deux dimensions en coordonnées cartésiennes, à pores circulaires de rayon hydraulique $r_h$ et de porosité $\Phi$, de longueur $L_{\sf reg}$, et de hauteur $D_{\sf reg}$. Les échangeur de chaleur sont ignorés dans ce modèle, mais des conditions aux frontières les remplacent, avec le côté froid placé en $x=0$ et le côté ambiant en $x=L_{\sf reg}$.
@@ -671,9 +671,9 @@ Pour être le plus exhaustif possible, un grand nombre de phénomènes thermique
 	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |v_1|^2 }^{k_{TA}(x)}\partial_x \theta(r,x;t),
 \label{eq:FluxTA_Transitoire_Regen}
 \end{multline}
-\echaf{reprendre ici} avec $\theta(r,x,t) = T_0(r,x,t)-T_\infty$ l'écart de la température locale $T_0$ à la température initiale $T_\infty$. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans les dépendances spatio-temporelle. Il est important de remarquer que le premier terme de ce flux thermique, noté $q_{TA}$, ne dépend que du champ acoustique, et que le second terme, $k_{TA}$, correspond à un terme de conduction induite par l'effet thermoacoustique qui s'oppose au flux précédent et diminue le coefficient de performance du processus thermoacoustique.
+avec $\theta(r,x,t) = T_0(r,x,t)-T_\infty$ l'écart de la température locale $T_0$ à la température initiale $T_\infty$. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans les dépendances spatio-temporelle. Il est important de remarquer que le premier terme de ce flux thermique, noté $q_{TA}$, ne dépend que du champ acoustique, et que le second terme, $k_{TA}$, correspond à une conductivité induite par l'effet thermoacoustique qui s'oppose au flux précédent et diminue le coefficient de performance du processus thermoacoustique.
 
-\item Le flux de chaleur retour par conduction dans le régénérateur est prise en compte dans les directions axiale $\textbf e_x$ et transversale $\textbf{e}_r$ du régénérateur avec les équations
+\item \echaf{pas clair, comment est décrit fluide versus solide et conductions associées? Quel est le lien avec la partie im présentée ci dessus?} Le flux de chaleur retour par conduction dans le régénérateur est pris en compte dans les directions axiale $\textbf e_x$ et transversale $\textbf{e}_r$ du régénérateur avec les équations
 
 %\begin{equation}
 %	Q_{\sf cond} = -\begin{pmatrix}
@@ -695,30 +695,32 @@ Pour être le plus exhaustif possible, un grand nombre de phénomènes thermique
 	\end{equation}
 	\end{multicols}
 \end{subequations}
-où $x$ et $r$ dénotent respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique longitudinale apparente et $k_x~=~\Phi k_{g} + (1-\Phi)k_{s}k_{s_{\sf frac}}$ \echaf{verifier}. Il existe dans la littérature des mesures de la conductivité transversale dans un milieu poreux constitué d'un empilement de tissus \cite{hsu_effective_1996}. 
+où $x$ et $r$ dénotent respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique longitudinale apparente et $k_x~=~\Phi k_{g} + (1-\Phi)k_{s}k_{s_{\sf frac}}$. De même que pour le modèle du régénérateur dans le paragraphe~\ref{chap:FEM}, la conductivité thermique transversale est considérée deux fois supérieure à la conductivité axiale~\cite{hsu_effective_1996}. 
 
 
-\item Le flux de chaleur généré par les pertes visqueuses dans le régénérateur par unité de volume et en moyenne sur une période acoustique $t_0$ sont estimées avec l'équation
+\item Le flux de chaleur généré par les pertes visqueuses dans le régénérateur par unité de volume et en moyenne sur une période acoustique $t_0$ est estimé avec l'équation
 \begin{equation}
-Q_{\sf visq} = \frac{1}{r_h^2} \int_{0}^{r_h} \frac{1}{t_0} \int_0^{t_0} \mu\ \big(\partial_r v_{1,x}(x,r;t)\big)^2\ \textcolor{red}{r} \deriv r \deriv t,
+	\echaf{dot ?} Q_{\sf visq} = \frac{1}{r_h^2} \int_{0}^{r_h} \frac{1}{t_0} \int_0^{t_0} \mu\ \big(\partial_r v_{1,x}(r,x,t)\big)^2\ \textcolor{red}{r} \deriv r \deriv t,
 \label{eq:FluxVisq_Transitoire}
 \end{equation}
-valide pour un régénérateur à pores circulaires \echaf{citation ? Swift, Pierrick ?}, en considérant la composante longitudinale $v_{1,x}(x,r;t)$ de la vitesse particulaire d'ordre 1 $v_1(x,r;t)$. L'identité
+valide pour un régénérateur à pores circulaires \echaf{citation ? Swift, Pierrick ?}, en considérant la composante longitudinale $v_{1,x}(r,x,t)$ de la vitesse particulaire d'ordre 1 $v_1(r,x,t)$. L'identité
 
 \begin{equation*}
-\frac{1}{t_0}\int_{0}^{t_0}\big(\partial_r v_{1,x}(x,r;t)\big)^2\ \deriv t = \frac12\left|\partial_r v_{1,x}(x,r;t)\right|^2
+\frac{1}{t_0}\int_{0}^{t_0}\big(\partial_r v_{1,x}(r,x,t)\big)^2\ \deriv t = \frac12\left|\partial_r v_{1,x}(r,x,t)\right|^2
 \end{equation*}
 permet de réécrire l'équation \eqref{eq:FluxVisq_Transitoire} sous la forme
 
 \begin{equation}
-	Q_{\sf visq} = \frac{1}{2r_h^2} \int_{0}^{r_h} \mu \left|\partial_r v_{1,x}(x,r;t)\right|^2\ \textcolor{red}{r} \deriv r.
+	\echaf{dot ?} Q_{\sf visq} = \frac{1}{2r_h^2} \int_{0}^{r_h} \mu \left|\partial_r v_{1,x}(r,x,t)\right|^2\ \textcolor{red}{r} \deriv r.
 	\label{eq:FluxVisq_Transitoire_IntegralTSimplifie}
 \end{equation}
+
+\echaf{il y a plein d'hypothèses faites pour arriver à cela, il faut les expliciter}
 
 Le profil transverse de vitesse dans un pore cylindrique est pris en compte dans l'expression de la vitesse, ce qui donne 
 
 \begin{equation}
-	v_1(z,r;t) = \frac{u_1}{\Phi S} \frac{1-h_\nu(r)}{1-f_\nu},
+	v_1(r,x,t) = \frac{u_1}{\Phi S} \frac{1-h_\nu(r)}{1-f_\nu},
 	\label{eq:lienVitesseDebit_PoreCylindrique}
 \end{equation}
 avec $u_1$ le débit acoustique moyenné sur une section transverse $\Phi S$, $f_\nu$ et $h_\nu(r)$ les fonctions visqueuses définies dans les équations~\eqref{eq:FonctionsVisqueuses}, et $f_\nu$ la moyenne de $h_\nu(r)$ sur la section de pores.
@@ -732,7 +734,7 @@ ou encore
 \begin{equation}
 	Q_{\sf visq} = \mu \left(\frac{|u_1|}{r_h \delta_\nu \Phi S |1-f_\nu||J_0[(1-i)\frac{r_h}{\delta_\nu}]|}\right)^2 \int_{0}^{r_h}\left|J_1\left[(1-i)\frac{r}{\delta_\nu}\right]\right|^2\ \textcolor{red}{r}\deriv r \deriv t,
 \end{equation}
-dont l'intégrale sur la section de rayon $r_h$ est résolue par une méthode numérique.
+avec $J_0$ et $J_1$ les fonctions de Bessel de première espèce, respectivement d'ordres \num{0} et \num{1}. L'intégrale sur la section de rayon $r_h$ est résolue par la méthode numérique \texttt{integral} de \textsc{Matlab}\textss\textregistered.
 
 %\item Les pertes latérales aux extrémités en $x=0$ et $x=L_{\sf reg}$ du régénérateur sont prises en compte par
 %
@@ -745,14 +747,14 @@ dont l'intégrale sur la section de rayon $r_h$ est résolue par une méthode nu
 %
 %\item Les pertes latérales sur la périphérie à $r=R_{\sf reg}$ sont prises en comptes en considérant le coefficient d'échange convectif $\left.h_r\right|_{r=i}$ pour $i=0,2R_{\sf reg}$.
 
-\item Les pertes latérales sont évaluées à l'aide de coefficients d'échanges convectifs empiriques $\left.h_x\right|_{x=i}$ ($i=0,\ L_{\sf reg}$) et $\left.h_r\right|_{r=j}$ ($j=0,\ D_{\sf reg}$), respectivement pour les parois le long de l'axe $\mathbf e_x$ et le long de l'axe $\mathbf e_r$. Les flux de chaleurs perdus à chacune de ces parois suivent la forme 
+\item Les flux de chaleur échangés avec les parois sont évaluées à l'aide de coefficients d'échanges convectifs empiriques $\left.h_x\right|_{x=i}$ ($i=0,\ L_{\sf reg}$) et $\left.h_r\right|_{r=j}$ ($j=0,\ D_{\sf reg}$), respectivement pour les parois le long de l'axe $\mathbf e_x$ et le long de l'axe $\mathbf e_r$. Ces coefficients sont ajustés pour que la distribution de température calculée soit les plus proches possibles des distributions obtenues expérimentalement. Les flux de chaleurs perdus à chacune de ces parois suivent la forme 
 
 \begin{equation}
-	Q_{\sf lat} = h\theta.
+	Q_{\sf par} = h\theta.
 	\label{eq:FluxLat_Transitoire}
 \end{equation}
 
-\item L'échangeurs de chaleur froid apporte un flux de chaleur $Q_f$ en $x=0$, et l'échangeur ambiant retire un flux $Q_a$ en $x=L_{\sf reg}$. Cependant, chacun de ces flux se sépare en deux parties, l'une circulant dans le régénérateur et l'autre dans l'enceinte contenant les disques de tissus métalliques. La proportion $\epsilon$ qui circule dans le régénérateur est définie, en négligeant la conduction par le fluide, par
+\item \echaf{reprendre ici} L'échangeur de chaleur froid apporte un flux de chaleur $Q_f$ en $x=0$, et l'échangeur ambiant retire un flux $Q_a$ en $x=L_{\sf reg}$. Cependant, chacun de ces flux se sépare en deux parties, l'une circulant dans le régénérateur et l'autre dans l'enceinte contenant les disques de tissus métalliques. La proportion $\epsilon$ qui circule dans le régénérateur est définie, en négligeant la conduction par le fluide, par
 \begin{equation}
 	\epsilon = \frac{k_s k_{s_{\sf frac}} (1-\Phi)S_{\sf reg}}{k_s k_{s_{\sf frac}} (1-\Phi)S_{\sf reg} + k_{\sf can} S_{\sf can}}.
 	\label{eq:ProportionQ_RegenCanister}
@@ -859,25 +861,25 @@ Les fonctions propres $R_n$ associées sont de la forme
 de norme $N_r(\sigma_{r,n})=\nicefrac{D_{\sf reg}}{2}\left( \sigma_{r,n}^2+\eta_r^2 \right)$, et dont les valeurs propres $\sigma_{r,n}$ sont solutions de l'équation
 
 \begin{equation}
-	\tan(2\sigma_{r,n} D_{\sf reg}) = \frac{2\sigma_{r,n} \eta_r}{\sigma_{r,n}^2 - \eta_r^2}. 
+	\tan(\sigma_{r,n} D_{\sf reg}) = \frac{2\sigma_{r,n} \eta_r}{\sigma_{r,n}^2 - \eta_r^2}. 
 \end{equation}
 
-La solution $\theta(x,r;t)$ du problème s'écrit au moyen du couple d'équations
+La solution $\theta(r,x,t)$ du problème s'écrit au moyen du couple d'équations
 
 \begin{subequations}
 	\begin{align}
-		\theta(x,r;t) &= \sum_{n=1}^{+\infty}\frac{R_n(\sigma_{r,n}, r)}{N_r(\sigma_{r,n})} \overline \theta(\sigma_{r,n},x;t), \label{eq:TransfoInteg_Inversion_R} \\ \intertext{et}
-		\overline \theta(\sigma_{r,n},x;t) &= \int_{0}^{D_{\sf reg}} R_n(\sigma_{r,n},r')\theta(r',x;t)\ \deriv r', \label{eq:TransfoInter_TransfoInteg_R}
+		\theta(r,x,t) &= \sum_{n=1}^{+\infty}\frac{R_n(\sigma_{r,n}, r)}{N_r(\sigma_{r,n})} \overline \theta(\sigma_{r,n},x,t), \label{eq:TransfoInteg_Inversion_R} \\ \intertext{et}
+		\overline \theta(\sigma_{r,n},x,t) &= \int_{0}^{D_{\sf reg}} R_n(\sigma_{r,n},r')\theta(r',x,t)\ \deriv r', \label{eq:TransfoInter_TransfoInteg_R}
 	\end{align}
 \end{subequations}
 qui sont respectivement la formule d'inversion et la transformation intégrale. Cette dernière est appliquée au système d'équations~\ref{eq:ProblemeTransitoire_ChgtVariables} pour donner
 
 \begin{subequations}
 	\begin{align}
-		\frac{1}{\underline g} \partial_t \overline \theta(\sigma_{r,n},x;t) &= \partial_{xx}^{2} \overline \theta(\sigma_{r,n},x;t) - \underline k \sigma_{r,n}^2 \overline \theta(\sigma_{r,n},x;t) + \overline \Gamma, & x \in [0,L_{\sf reg}],\ t>0, \label{eq:TransfoInteg_BilanThermique_R} \\
+		\frac{1}{\underline g} \partial_t \overline \theta(\sigma_{r,n},x,t) &= \partial_{xx}^{2} \overline \theta(\sigma_{r,n},x,t) - \underline k \sigma_{r,n}^2 \overline \theta(\sigma_{r,n},x,t) + \overline \Gamma, & x \in [0,L_{\sf reg}],\ t>0, \label{eq:TransfoInteg_BilanThermique_R} \\
 		\partial_x \overline \theta - \eta_0 \overline \theta &= \overline Q_0 & x=0,\ t>0, \label{eq:TransfoInteg_CondFront_x_0Froid_R} \\[6pt]
 		\partial_x \overline \theta - \eta_{L_{\sf reg}} \overline \theta &= \overline Q_{L_{\sf reg}} & x=L_{\sf reg},\ t>0, \label{eq:TransfoInteg_CondFront_x_LregAmb_R} \\[6pt]
-		\overline \theta(x,r,t=0) &= \overline \theta_0(x,r), & t=0,\ x \in [0,L_{\sf reg}]. \label{eq:TransfoInteg_CondInit_R}
+		\overline \theta(r,x,t=0) &= \overline \theta_0(r,x), & t=0,\ x \in [0,L_{\sf reg}]. \label{eq:TransfoInteg_CondInit_R}
 	\end{align}
 \end{subequations}
 
@@ -938,7 +940,7 @@ ce qui permet d'obtenir
 en appliquant cette transformation au problème initial, dont la condition initiale s'écrit
 
 \begin{equation}
-	\tilde{\overline{\theta}}(\sigma_{r,n},\sigma_{x,m};t=0) = \tilde{\overline{\theta}}_0.
+	\tilde{\overline{\theta}}(\sigma_{r,n},\sigma_{x,m},t=0) = \tilde{\overline{\theta}}_0.
 \end{equation}
 
 \subsubsection{Application des transformées intégrales inverses}
@@ -958,14 +960,14 @@ qui peut s'écrire, en faisant l'hypothèse que $\overline{Q}_{L_{\sf reg}}$, $\
 Pour obtenir l'évolution temporelle de la température, cette solution est introduite successivement dans les formules d'inversion des transformées intégrales, d'abord selon $x$ via l'équation~\eqref{eq:TransfoInteg_Inversion_X} pour obtenir
 
 \begin{multline}
-	\overline{\theta}(x,\sigma_{r,n};t) = \sum_{m=1}^{+\infty} \frac{X_m(x)}{N_x}\frac{1-e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t}}{\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2}\\
+	\overline{\theta}(\sigma_{r,n},x,t) = \sum_{m=1}^{+\infty} \frac{X_m(x)}{N_x}\frac{1-e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t}}{\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2}\\
 	\times \left(\overline{Q}_{L_{\sf reg}}X_m(L_{\sf reg}) - \overline{Q}_{0}X_m(0) +\tilde{\overline{\Gamma}}\right)\\
 	+ \sum_{m=1}^{+\infty}\frac{X_m(x)}{N_x} e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t} \tilde{\overline{\theta}}_0,
 \end{multline}
 puis selon $r$ avec l'équation~\eqref{eq:TransfoInteg_Inversion_R}, ce qui donne finalement
 
 \begin{multline}
-	\theta(x,r;t) = \sum_{n=1}^{+\infty}\sum_{m=1}^{+\infty}\frac{R_n(r)X_m(x)}{N_r N_x}\\
+	\theta(r,x,t) = \sum_{n=1}^{+\infty}\sum_{m=1}^{+\infty}\frac{R_n(r)X_m(x)}{N_r N_x}\\
 	\times \Bigg[ \frac{1-e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t}}{\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2}\left(Q_{L_{\sf reg}}X_m(L_{\sf reg}) - Q_{0}X_m(0) + \textcolor{red}{\tilde{\overline{\Gamma}}}\right) \int_{0}^{D_{\sf reg}} R_n(r')\ \deriv r' \\
 	+ e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)} \int_{0}^{L_{\sf reg}}\int_{0}^{D_{\sf reg}}X_m(x')R_n(r')\theta_0\ \deriv x' \deriv r' \Bigg].
 \end{multline}

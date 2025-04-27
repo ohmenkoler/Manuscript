@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  27 APR 2025 03:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  28 APR 2025 00:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2421,7 +2421,7 @@ ectroac11.pdf> <./external/fig_CircEquivTAC0.pdf>]
 [12 <./external/fig_WavesInDuctPiece0.pdf>]
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 549.
+            Default family used instead on input line 550.
 
 (../fig/fig_CaractMachineATE/tex/fig_CaractMachineATE.tex
 ===== Image 'external/fig_CaractMachineATE0' is up-to-date. ======
@@ -3125,7 +3125,10 @@ u_Gaelle.tex
 [46 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
 
 [47]
-Overfull \vbox (15.0113pt too high) has occurred while \output is active []
+Overfull \vbox (69.41133pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (69.41133pt too high) has occurred while \output is active []
 
 
 [48]
@@ -3746,7 +3749,7 @@ Package logreq Info: Writing requests to '_main_.run.xml'.
 Here is how much of TeX's memory you used:
  79633 strings out of 473523
  2038173 string characters out of 5707334
- 3286968 words of memory out of 5000000
+ 3286967 words of memory out of 5000000
  100888 multiletter control sequences out of 15000+600000
  729041 words of font info for 194 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3775,9 +3778,9 @@ Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonam.pfb><C:/Users/juliette utilisa
 teur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonami.pfb><C:/Us
 ers/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/symbols/msam10.pfb>
-Output written on _main_.pdf (107 pages, 31324315 bytes).
+Output written on _main_.pdf (107 pages, 31325111 bytes).
 PDF statistics:
- 4565 PDF objects out of 5155 (max. 8388607)
+ 4566 PDF objects out of 5155 (max. 8388607)
  532 named destinations out of 1000 (max. 500000)
  1627 words of extra memory for PDF output out of 10000 (max. 10000000)
 

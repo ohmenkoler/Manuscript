@@ -4,11 +4,11 @@
 \section{Introduction}
 Comme constaté en amont de cette thèse, les distributions de température mesurées dans le c\oe{}ur du réfrigérateur \textsc{Tacot} sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} s'écartent des prédictions du modèle linéaire 1D classique basé sur lest travaux de Rott~\cite{rott_thermoacoustics_1980}. Dans ce chapitre, l'utilisation de différents modèles est envisagée pour comprendre les phénomènes prenant place dans le noyau thermoacoustique et dans son voisinage.\medskip
 
-En préambule, le paragraphe~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim} propose un rappel des modèles classiques de la littérature sur la convection naturelle. Dans cette partie, le cas simplifié traitant de cavités rectangulaires à deux dimensions est présenté. Cela permet d'introduire les nombres adimensionnels utilisés dans la littérature pour prédire la présence ou l'absence d'une cellule de convection naturelle.\smallskip
+En préambule, le paragraphe~\ref{chap:NbrAdim} - \nameref{chap:NbrAdim} propose un rappel des modèles classiques de la littérature sur la convection naturelle. Dans cette partie, le cas simplifié traitant de cavités rectangulaires à deux dimensions et différentiellement chauffées est présenté. Cela permet d'introduire les nombres adimensionnels utilisés dans la littérature pour prédire la présence ou l'absence d'une cellule de convection naturelle.\smallskip
 
-Ensuite, un calcul par éléments finis du régime stationnaire du champ de température et de la vitesse de convection est effectué avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered dans le paragraphe~\ref{chap:FEM} - \nameref{chap:FEM} pour étudier les conditions aux frontières plus complexes, ou le couplage entre la cavité d'adaptation d'impédance, le régénérateur et l'enceinte qui le contient.\smallskip
+Ensuite, un calcul par éléments finis du régime stationnaire du champ de température et de la vitesse de convection est effectué avec le logiciel \textsc{Comsol} Multiphysics\textss\textregistered dans le paragraphe~\ref{chap:FEM} - \nameref{chap:FEM} pour étudier les conditions aux frontières plus complexes, ou le couplage entre la cavité d'adaptation d'impédance, le régénérateur et l'enveloppe qui le contient.\smallskip
 
-Enfin, un modèle analytique temporel est adapté à la description du \textsc{Tacot} dans le paragraphe~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}. Ce modèle prend en compte des phénomènes physiques non inclus dans la théorie linéaire, comme l'échauffement visqueux dans le régénérateur, la vorticité tourbillonaire de part et d'autre du régénérateur, et les échanges convectifs avec les parois du noyau.
+Enfin, un modèle analytique temporel est adapté à la description du \textsc{Tacot} dans le paragraphe~\ref{chap:ModeleTemporel} - \nameref{chap:ModeleTemporel}. Ce modèle prend en compte des phénomènes physiques non inclus dans la théorie linéaire, comme l'échauffement visqueux dans le régénérateur, la vorticité tourbillonaire de part et d'autre du régénérateur, et les échanges convectifs avec l'extérieur au niveau des parois du noyau.
 
 \section{Convection naturelle et nombres adimensionnels}\label{chap:NbrAdim}
 Au sein du réfrigérateur thermoacoustique utilisé, et particulièrement dans la cavité devant la source acoustique principale, la distribution de température mesurée au bord intérieur froid du régénérateur représentée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} laisse penser à la présence d'une cellule de convection naturelle. Avant de chercher à modéliser en détail ce qui se produit, des nombres adimensionnels utilisés couramment en mécanique des fluides tels que le nombre de Rayleigh $\Rayleigh$ sont présentés, afin d'évaluer la présence de convection naturelle et quelques ordres de grandeurs concernant l'écoulement associé éventuel par leur calcul.
@@ -25,13 +25,11 @@ L'estimation de $\Rayleigh$ dans la cavité entre la source acoustique principal
 \subsection{Nombre de Rayleigh hors d'un matériau poreux}
 %\echaf{Préciser le focus sur la cavité RIX-CHX et donc cavité 2D}
 
-Dans ce paragraphe, des concepts utiles à la compréhension des phénomènes de convection naturelle sont introduits. On considère une cavité rectangulaire à deux dimensions différentiellement chauffée, par un gradient de température soit horizontal, soit vertical, comme montré sur la figure~\ref{fig:ConvNat2D}. L'air qui la remplit est au repos, sans mouvement acoustique.\medskip
+Dans ce paragraphe, des concepts utiles à la compréhension des phénomènes de convection naturelle sont introduits. On considère une cavité rectangulaire à deux dimensions différentiellement chauffée par un gradient de température soit horizontal, soit vertical, comme montré sur la figure~\ref{fig:ConvNat2D}. L'air qui la remplit est au repos, sans mouvement acoustique. Ce type de cavité est couramment utilisé dans la littérature du domaine de la convection naturelle, et ce, depuis le milieu du XX\ieme{} siècle \cite{batchelor_heat_1954, menard_convection_2005, chorin_modification_2018}.\medskip
 
-\textcolor{purple}{manque des références à la littérature + notion de CDC cf commentaire 1 -> Batchelor 1954, Xin 2005 HDR}
+Dans la première sous-figure~\ref{fig:ConvNat2D_HorizDeltaT}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que les parois basse et haute sont adiabatique et le gaz au repos, à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales. En chauffant, sa densité diminue, ce qui provoque son élévation le long de la paroi chaude. Une fois en haut de la cavité, la conservation du débit impose au fluide de se déplacer horizontalement vers la paroi froide, à proximité de laquelle sa température baisse et sa densité augmente, ce qui s'ensuit d'un écoulement du fluide vers le bas.\smallskip%Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.\smallskip
 
-Dans la première sous-figure~\ref{fig:ConvNat2D_HorizDeltaT}, les parois verticales droite et gauche sont respectivement maintenues à une température froide $T_f$ et chaude $T_c$, tandis que les parois basse et haute et le gaz au repos sont à la température $T_\infty$. En régime stationnaire, il s'établit une cellule de convection naturelle dans laquelle le gaz est mis en mouvement par les  variations de masse volumique proches des parois verticales.\smallskip%Cette configuration s'apparente aux orientations `\texttt{H1}' et `\texttt{H2}', respectivement présentées sur les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}.\smallskip
-
-Dans la seconde sous-figure~\ref{fig:ConvNat2D_VertiDeltaT}, ce sont cette fois les parois basse et haute qui sont respectivement fixés aux températures chaude $T_c$ et froide $T_f$, et les parois verticales et le gaz au repos laissés à la température ambiante $T_\infty$. Dans cette configuration, favorable à la mise en place d'une instabilité de \og Rayleigh-Bénard \fg{}, il s'établit des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre \num{657.5} pour des parois horizontales libres et \num{1707.8} pour des parois horizontales fixes \cite{getling_rayleigh-benard_1998}. Le gaz chauffé, moins dense, s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:ConvNat2D_VertiDeltaT} qui ne représente qu'une illustration grossière du mouvement du fluide.% Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
+Dans la seconde sous-figure~\ref{fig:ConvNat2D_VertiDeltaT}, ce sont cette fois les parois basse et haute qui sont respectivement fixés aux températures chaude $T_c$ et froide $T_f$, et les parois verticales qui sont adiabatiques. Le gaz au repos est, en revanche, toujours à la température ambiante $T_\infty$. Pour de faibles nombres de Rayleigh ($\Rayleigh<\num{1e3}$), le transfert de chaleur est uniquement possible par conduction, mais cette configuration est favorable à la mise en place d'une instabilité de Rayleigh-Bénard, il s'établit des cellules de convection naturelle de forme plus ou moins complexe au delà du nombre de Rayleigh critique $\Rayleigh_c$ compris entre \num{657.5} pour des parois horizontales libres et \num{1707.8} pour des parois horizontales fixes \cite{getling_rayleigh-benard_1998}. Le gaz chauffé, moins dense, s'élève depuis la paroi chaude jusqu'à la paroi froide, de laquelle il redescend ensuite pour revenir à son point de départ. Dans ce cas, la cellule de convection naturelle peut adopter une structure très complexe, plus que ce que peut suggérer la figure~\ref{fig:ConvNat2D_VertiDeltaT} qui ne représente qu'une illustration grossière du mouvement du fluide.% Les expériences correspondant à ce cas sont mises en place en suivant les orientations `\texttt{V1}' et `\texttt{V2}', présentés respectivement sur les figures~\ref{fig:OrientationCore_V1} et \subref{fig:OrientationCore_V2}
 
 %\begin{figure}[!ht]
 %    \centering
@@ -79,16 +77,18 @@ Ces équations s'écrivent avec le système
 	\begin{align}
 		\nabla \cdot \mathbf v &= 0, \label{eq:NavierStokes_Boussinesq_Conti}\\
 		\intertext{pour la conservation de la masse,}
-		\rho_0 [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \rho_0\beta \mathbf g (T_c-T_f), \echaf{Valable III.1 (a) et (b) ?} \label{eq:NavierStokes_Boussinesq_QtMvt}\\
+		\rho_0' [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \rho_0\beta \mathbf g (T_c-T_f), \label{eq:NavierStokes_Boussinesq_QtMvt}\\
 		\intertext{pour la conservation de la quantité de mouvement, et}
 		\partial_t T + (\mathbf v \cdot \nabla) T - k \nabla^2T &= 0. \label{eq:NavierStokes_Boussinesq_NRJinterne}
 	\end{align}
 	\label{eq:NavierStokes_Boussinesq}%
 \end{subequations}
-pour la conservation de l'énergie interne. Dans le cadre de l'approximation de Boussinesq, la masse volumique est considérée constante sauf dans le terme de pesanteur, et sa variation, faible, est linéaire avec la température selon l'équation
+pour la conservation de l'énergie interne, avec comme conditions aux frontières le non-glissement aux parois.
+
+Dans le cadre de l'approximation de Boussinesq, la masse volumique est considérée constante sauf dans le terme de pesanteur, et sa variation, faible, est linéaire avec la température selon l'équation
 
 \begin{equation}
-	\rho_0'(T) = \rho_0[1-\beta(T_0-T_\infty)].
+	\rho_0(T) = \rho_0'[1-\beta(T_0-T_\infty)].
 	\label{eq:MasseVolumiqueBoussinesq}
 \end{equation}
 
@@ -98,20 +98,20 @@ L'adimensionnement du système d'équations~\eqref{eq:NavierStokes_Boussinesq} d
 \begin{subequations}
 	\begin{align}
 		\nabla \cdot \mathbf v &=0, \label{eq:NonDim_NavierStokes_Boussinesq_Conti}\\
-		\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) &= -\nabla \varpi + \mathrm{Ra} \theta \echaf{\mathbf e_{z,0}\mathbf k} + \nabla^2 \mathbf{v}, \label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}\\
+		\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) &= -\nabla \varpi + \mathrm{Ra} \theta \mathbf e_{z,0} + \nabla^2 \mathbf{v}, \label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}\\
 		\partial_t T + (\mathbf v \cdot \nabla) T - k \nabla^2 T &= 0. \label{eq:NonDim_NavierStokes_Boussinesq_NRJinterne}
 	\end{align}
 \end{subequations}
 
-Cet adimensionnement laisse apparaître des nombres sans dimension dont l'étude permet de comparer par similitude des configurations différentes, comme le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl}, la pression adimensionnée $\varpi=\nicefrac{p}{\rho_0}$ \echaf{vrai adimensionnement à faire}, et le nombre de Rayleigh noté $\mathrm{Ra}$. Il est défini par 
+Cet adimensionnement laisse apparaître des nombres sans dimension dont l'étude permet de comparer par similitude des configurations différentes, comme le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl} et le nombre de Rayleigh noté $\mathrm{Ra}$. Il est défini par 
 
 \begin{equation}
 	\mathrm{Ra} = \frac{g \beta L_c^3}{\nu \kappa} (T_c-T_f),
 	\label{eq:NbrRayleigh}
 \end{equation}
-où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de la zone considérée, et $L_c$ est la dimension caractéristique de la cavité suivant la direction verticale. Ce nombre est primordial car il correspond au rapport des effets gravifiques qui mettent le fluide en mouvement aux effets qui le limitent, soit la diffusion thermique qui limite la différence de température et la viscosité qui ralentit l'écoulement du fluide. 
+où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de la zone considérée, et $L_c$ est la dimension caractéristique de la cavité suivant la direction verticale. Ce nombre est primordial car il correspond au rapport des effets qui mettent le fluide en mouvement, c'est-à-dire l'expansion volumique qui abaisse la densité locale du fluide, aux effets qui le limitent, soit la diffusion thermique qui limite la différence de température et la viscosité qui ralentit l'écoulement du fluide. 
 
-Sa valeur indique également le régime de l'écoulement causé par la convection à la vitesse de référence $v_{\sf ref}$, dont les composantes verticale $v_{\sf ref}^{// \mathbf g}$ et horizontale $v_{\sf ref}^{\perp \mathbf g}$ s'écrivent \echaf{ajouter autres refs}
+Sa valeur indique également le régime de l'écoulement causé par la convection à la vitesse de référence $v_{\sf ref}$, dont les composantes verticale $v_{\sf ref}^{// \mathbf g}$ et horizontale $v_{\sf ref}^{\perp \mathbf g}$ s'écrivent
 
 % car des vitesses de référence verticales et horizontales, notées $v_{ref}^{// \mathbf g}$ et $v_{ref}^{\perp \mathbf g}$, peuvent d'ailleurs être calculées en fonction de ce nombre de Rayleigh suivant les définitions
 
@@ -123,7 +123,7 @@ Sa valeur indique également le régime de l'écoulement causé par la convectio
 	\end{align}
 	\label{eq:VitesseReference_Rayleigh}%
 \end{subequations}
-après la réécriture en deux dimensions des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:ConvNat2D_HorizDeltaT}). \echaf{Il est supposé que dans le cas d'un gradient vertical, lorsqu'une cellule stable de convection naturelle est en place, les vitesses sont données par les mêmes formules.}\bigskip
+après la réécriture en deux dimensions des équations de conservation de la quantité de mouvement et de l'énergie par Belleoud \cite{belleoud_etude_2016} et dans le cas où le gradient de température est horizontal (voir la configuration de la figure~\ref{fig:ConvNat2D_HorizDeltaT}). Il est supposé que dans le cas d'un gradient vertical, lorsqu'une cellule stable de convection naturelle est en place, les vitesses sont données par les mêmes formules.\bigskip
 
 Une application numérique dans le cas d'une expérience à faible amplitude acoustique, pour laquelle la différence de température entre la source acoustique principale et le côté froid du régénérateur est de l'ordre de \qty{5}{\kelvin}, donne les valeurs notées dans le tableau~\ref{tab:NbrRayleigh_Vitesse}. En particulier, il est primordial de remarquer les valeurs très élevées des nombres de Rayleigh, ce qui place le problème dans le régime supercritique.
 
@@ -161,7 +161,7 @@ Dans un matériau poreux, il peut également exister un écoulement lié causé 
 	\mathbf v = \frac{K_p}{\nu}\left( -\frac{1}{\rho_0} \nabla p + \mathbf g \right),
 	\label{eq:VitesseDarcy}
 \end{equation}
-qui modifie l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt} en prenant en compte la perméabilité $K_p$ \echaf{pas la diffusivité thermique $\kappa_p$ de ce milieu ?}
+qui modifie l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt} en prenant en compte la perméabilité $K_p$ telle que
 
 \begin{equation}
 	\frac{1}{\rho_0}\nabla p + \beta T \mathbf g + \frac{\nu}{K_p} \mathbf v = 0,
@@ -182,7 +182,7 @@ et la composante verticale de la vitesse de référence correspondante s'écrit
 	\label{eq:VitesseReference_Rayleigh_poreux}
 \end{equation}
 
-Encore une fois, une différence de comportement existe entre les situations représentées par les figures~\ref{fig:ConvNat2D_HorizDeltaT} et \ref{fig:ConvNat2D_VertiDeltaT}, en particulier l'existence d'un nombre de Rayleigh-Darcy critique en dessous duquel la convection n'a pas lieu, et seule la conduction transporte de la chaleur. La valeur de ce nombre critique est évaluée à $\Rayleigh_{p,c}=4\pi^2$ dans la littérature, ~\cite{elder_steady_1967} \echaf{parois non glissantes et imperméables...}
+Encore une fois, une différence de comportement existe entre les situations représentées par les figures~\ref{fig:ConvNat2D_HorizDeltaT} et \ref{fig:ConvNat2D_VertiDeltaT}, en particulier l'existence d'un nombre de Rayleigh-Darcy critique en dessous duquel la convection n'a pas lieu, et seule la conduction transporte de la chaleur. La valeur de ce nombre critique est évaluée à $\Rayleigh_{p,c}=4\pi^2$ dans la littérature, pour des parois non-glissantes et imperméables toutefois~\cite{elder_steady_1967}.
 
 Ici encore, une application numérique est réalisée pour les deux orientations de la figure~\ref{fig:ConvNat2D}, dans les mêmes conditions que le tableau~\ref{tab:NbrRayleigh_Vitesse}. Cette fois-ci, les valeurs des nombres de Rayleigh-Darcy pour chacune des orientations sont largement inférieures à la valeur critique.%, \echaf{ce qui permet de déduire l'absence de circulations de fluides causées par la convection naturelle.}
 
@@ -191,14 +191,14 @@ Ici encore, une application numérique est réalisée pour les deux orientations
 \caption{Nombres de Rayleigh-Darcy et composantes de vitesse associées pour les configurations affichées sur la figure~\ref{fig:ConvNat2D} et pour une différence de température de \qty{5}{\kelvin}.}
 \label{tab:NbrRayleighDarcy_Vitesse}
 \begin{tblr}{columns=l, hline{1,Z}={1.5pt}}
-	& $\Rayleigh$ & $v_{\sf ref}^{// \mathbf g}$ \\\hline\hline
+	& $\Rayleigh_p$ & $v_{\sf ref}^{// \mathbf g}$ \\\hline\hline
 	Horizontal (\ref{fig:ConvNat2D_HorizDeltaT}) & \num{5e-2} & \qty{4.7e-5}{\meter\per\second} \\
 	Vertical (\ref{fig:ConvNat2D_VertiDeltaT}) & \num{1e-2} & \qty{4.7e-5}{\meter\per\second}
 \end{tblr}
 \end{table}
 
 
-De cette première approche des effets de convection naturelle dans deux zones du réfrigérateur \textsc{Tacot}, c'est-à-dire la cavité située entre la source acoustique principale et l'échangeur de chaleur froid d'une part, et le régénérateur d'autre part, il apparaît donc que les valeurs du nombre de Rayleigh penchent en faveur de la possibilité de formation de cellules de convection dans la cavité mais pas dans le régénérateur. Ceci encourage à continuer les investigations dans cette cavité, ce qui est proposé dans \echaf{le paragraphe qui suit}.
+De cette première approche des effets de convection naturelle dans deux zones du réfrigérateur \textsc{Tacot}, c'est-à-dire la cavité située entre la source acoustique principale et l'échangeur de chaleur froid d'une part, et le régénérateur d'autre part, il apparaît donc que les valeurs du nombre de Rayleigh penchent en faveur de la possibilité de formation de cellules de convection dans la cavité mais pas dans le régénérateur. Ceci encourage à continuer les investigations dans cette cavité, ce qui est proposé dans le paragraphe qui suit.
 
 %\subsection{Avec acoustique}
 %Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse ne peut pas être respectée dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causés par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
@@ -226,49 +226,29 @@ De cette première approche des effets de convection naturelle dans deux zones d
 %Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTemporel} doivent également être évalués par ces équations.
 
 \section{Simulations par éléments finis}\label{chap:FEM}
-Les nombres adimensionnels présentés auparavant dans le cas des problèmes illustrés par la figure~\ref{fig:ConvNat2D} ont permis d'approcher des ordres de grandeurs des phénomènes liés à la convection naturelle. Pour décrire plus avant les structures convectives anticipées, une \echaf{première} approche de simulation est proposée en utilisant le logiciel \textsc{Comsol}\textss\textregistered.\smallskip
+Les nombres adimensionnels présentés auparavant dans le cas des problèmes illustrés par la figure~\ref{fig:ConvNat2D} ont permis d'approcher des ordres de grandeurs des phénomènes liés à la convection naturelle. Pour décrire plus avant les structures convectives anticipées, une \echaf{première} approche de simulation est proposée en utilisant le logiciel \textsc{Comsol}\textss\textregistered. Le but de ce modèle de savoir si la superposition de trois effets thermiques (l'effet thermoacoustique, les pertes pariétales, et la présence de convection naturelle) suffit à expliquer la distribution de température sur la section de l'échangeur de chaleur froid du moins, sinon dans le noyau thermoacoustique.\medskip
 
-
-Le but de ce modèle de savoir si la superposition de trois effets thermiques (l'effet thermoacoustique, les pertes pariétales, et la présence de convection naturelle) suffit à expliquer la distribution de température sur la section de l'échangeur de chaleur froid du moins, sinon dans le noyau thermoacoustique. Ces deux premiers effets thermiques, représentés sur les figures~\ref{fig:SuperpositionComsol}(b) et (c), se caractérisent respectivement par le refroidissement d'une extrémité du régénérateur, et par un écart de température entre le centre et la périphérie du noyau. Pour modéliser le plus simplement possible le comportement thermique du réfrigérateur, un calcul est effectué en prenant en compte uniquement ces effets thermiques couplés au troisième, dont un exemple de manifestation est représenté sur la figure~\ref{fig:SuperpositionComsol}(d).\medskip
-
-\begin{figure}[!ht]
-    \centering
-    \external{fig_SuperpositionComsol}
-    %\externalremake
-    \input{../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol}
-    \caption{Représentation schématique de l'enjeu du modèle \textsc{Comsol} Multi\-physics\textss\textregistered thermique équivalent, dans le cas de l'orientation `\texttt{H1}' présentée sur la figure~\ref{fig:OrientationCore_H1}. (a) tendance du gradient transverse de température tel qu'observé au niveau de l'échangeur froid dans \cite{ramadan_design_2021}, (b) température froide atteinte par effet thermoacoustique, (c) conduction thermique transverse dans le milieu poreux et par les parois de l'enceinte, (d) gradient de température transverse causé par la convection naturelle.}
-    \label{fig:SuperpositionComsol}
-\end{figure}
-
-Dans une première approximation, un compromis entre simplicité d'implémentation et fidélité de la représentation est recherché. Le modèle qui en résulte ne prend en compte que des phénomènes thermiques et inertiels, dont les paramètres sont ajustées pour représenter des situations observées lors des campagnes expérimentales. En particulier, le champ acoustique et la porosité du régénérateur ne sont pas intégrés pour cette première approche et seul l'effet du champ acoustique en termes de distribution de températures est inclus. Quant au régénérateur, il est décrit comme un solide.\smallskip
+Dans une première approximation, un compromis entre simplicité d'implémentation et fidélité de la représentation est recherché. Le modèle qui en résulte ne prend en compte que des phénomènes thermiques et inertiels, dont les paramètres sont ajustées pour représenter des situations observées lors des campagnes expérimentales. En particulier, le champ acoustique et la porosité du régénérateur ne sont pas intégrés pour cette première approche et seul l'effet du champ acoustique en termes de distribution de températures est inclus. Quant au régénérateur, il est décrit comme un solide, ce qui est en accord avec le calcul du nombre de Rayleigh-Darcy qui ne semble pas indiquer la présence d'écoulements dûs à la gravité à l'intérieur.\smallskip
 
 Cette description rudimentaire n'a pour seule ambition que d'approcher la distribution de température à l'échangeur de chaleur froid, uniquement pour de faibles niveaux acoustiques, \textit{i.e.} $DR=\qty{.4}{\percent}$, pour lesquels on espère que l'effet thermique du champ acoustique peut être résumé au gradient de température induit thermoacoustiquement et qu'un principe de superposition est applicable. Pour des niveaux plus élevés, d'autres effets tels que la vorticité s'ajoutent au problème, rendant insuffisante la modélisation.
 
-\subsection{Cavité d'adaptation d'impédance seule}
-\echaf{là il faut Comsol}
-
-\echaf{ajouter schéma du montage avec zone concernée entourée}
-
-La cavité située entre la source acoustique principale et le noyau a une forme qui n'est pas conventionnelle, et il est intéressant de développer préalablement un modèle avec une configuration déjà étudiée dans la littérature. En particulier, la convection dans des cavités cylindriques~\cite{schneider_laminar_1992}, ou dans les cavités trapézoïdales~\cite{basak_heat_2009}, doit être étudiée pour donner un aperçu de la forme de la convection naturelle dans le système à l'essai, qui combine ces deux facteurs de forme.
-
-La géométrie du cône est la même que dans la machine, à savoir un diamètre du côté de la source principale $D_{SA1}=\qty{108}{\milli\meter}$, un diamètre du côté du noyau $D_{\sf can}=\qty{156}{\milli\meter}$, et une longueur $L_{\sf cone}=\qty{3}{\centi\meter}$
-
-\echaf{à finir cette partie}
 
 
-\subsection{Cavité d'adaptation d'impédance couplée au noyau thermoacoustique}
-\subsubsection{Géométrie du problème}
-Après avoir étudié ce qui se passe dans le cône de fluide seul, le noyau lui est ajouté et couplé, selon une géométrie présentée sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.\echaf{ajouter schéma du montage avec zone concernée entourée}\medskip
+
+
+%\subsection{Cavité d'adaptation d'impédance couplée au noyau thermoacoustique}
+\subsection{Géométrie du problème}
+Après avoir étudié ce qui se passe dans le cône de fluide seul, le régénérateur et son enveloppe lui sont couplés, selon une géométrie présentée sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.\medskip
 
 \begin{figure}[!ht]
     \centering
     \external{fig_Comsol_ModeleSimplifie_Geometrie}
-    \tikz{\draw(0,0) node{\includegraphics{../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png}};}
-    \caption{Géométrie du modèle simplifié du régénérateur et de la cavité d'adaptation d'impédance.}
+    \tikz{\draw(0,0) node{\includegraphics[scale=.7]{../fig/fig_ConvNatComsol/Comsol_SimplifiedModel_Geometry62.png}};}
+    \caption{Géométrie du modèle de la cavité d'adaptation d'impédance couplée au noyau thermoacoustique.}
     \label{fig:Comsol_ModeleSimplifie_Geometrie}
 \end{figure}
 
-Cette géométrie comporte trois domaines. Le premier est le cône décrit précédemment. Le second domaine est le régénérateur, de longueur $L_{\sf reg}=\qty{39}{\milli\meter}$ et de diamètre $D_{\sf reg}=\qty{148}{\milli\meter}$, une fois encore les dimensions du dispositif réel. Le troisième domaine est l'enveloppe contenant le régénérateur. Sa longueur est la même que celle du régénérateur, et son diamètre est $D_{\sf can}$, de sorte à considérer une paroi métallique de \qty{2}{\milli\meter} d'épaisseur. Les dimensions de la géométrie du modèle sont notées dans le tableau~\ref{tab:DimModeleComsol}.
+Cette géométrie comporte trois domaines de dimensions proches de celles des éléments correspondants dans la machine. Le premier est le cône qui représente la cavité d'adaptation d'impédance. Cette cavité est ici réduite à un cône tronqué dont le diamètre du col, au niveau de la source acoustique principale, est $D_{SA1}=\qty{108}{\milli\meter}$ et le diamètre du pavillon, celui du noyau, est $D_{\sf can}=\qty{149}{\milli\meter}$. Ces deux parois sont espacées d'une distance $L_{\sf cone}=\qty{30}{\milli\meter}$. Le second domaine est le régénérateur, de longueur $L_{\sf reg}=\qty{39}{\milli\meter}$ et de diamètre $D_{\sf reg}=\qty{145}{\milli\meter}$. Le troisième domaine est l'enveloppe contenant le régénérateur. Sa longueur est la même que celle du régénérateur, et son diamètre est $D_{\sf can}$, de sorte à considérer une paroi métallique de \qty{2}{\milli\meter} d'épaisseur. Les dimensions de la géométrie du modèle sont notées dans le tableau~\ref{tab:DimModeleComsol}.
 
 \begin{table}[!ht]
 	\centering
@@ -278,9 +258,9 @@ Cette géométrie comporte trois domaines. Le premier est le cône décrit préc
 		Paramètre & Valeur\\
 		\hline\hline
 		$D_{SA1}$ & \qty{108}{\milli\meter} \\
-		$D_{\sf can}$ & \qty{156}{\milli\meter} \\
+		$D_{\sf can}$ & \qty{149}{\milli\meter} \\
 		$L_{\sf cone}$ & \qty{30}{\milli\meter} \\
-		$D_{\sf reg}$ & \qty{148}{\milli\meter} \\
+		$D_{\sf reg}$ & \qty{145}{\milli\meter} \\
 		$L_{\sf reg}$ & \qty{39}{\milli\meter} 
 	\end{tblr}
 \end{table}
@@ -318,7 +298,7 @@ Ainsi, la géométrie considérée est toujours en trois dimensions pour les ori
 
 \end{comment}
 
-\subsubsection{Matériaux composant les domaines}
+\subsection{Matériaux composant les domaines}
 Les trois domaines sont modélisé par des matériaux similaires aux conditions expérimentales.\smallskip
 
 Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et le cône d'adaptation d'impédance rempli d'hélium.
@@ -337,7 +317,7 @@ avec $k_{\sf inox}=\qty{14.388}{\watt\per\meter\per\kelvin}$ la conductivité th
 
 \echaf{schéma nécessaire avec à gauche le système réel et à droite comment il est modélisé}
 
-\subsubsection{Modèles physiques utilisés}\label{chap:FEM_Physique}
+\subsection{Modèles physiques utilisés}\label{chap:FEM_Physique}
 %\subsubsection{Sans matériau poreux}
 
 
@@ -345,10 +325,19 @@ avec $k_{\sf inox}=\qty{14.388}{\watt\per\meter\per\kelvin}$ la conductivité th
 
 Pour conserver un modèle simple, seuls des volumes de solides non-poreux et de gaz sont considérés dans le modèle complet. Ce choix pour le volume du régénérateur permet de le modéliser en ne considérant aucun écoulement à l'intérieur, ce qui est motivé au vu du nombre de Rayleigh-Darcy inférieur à sa valeur critique.
 
-Ces domaines sont modélisés avec l'interface physique \texttt{Heat transfer in Solids and Fluids (ht)} pour résoudre l'équation de la chaleur dans tous les volumes. Les domaines correspondant au régénérateur et à son enceinte et sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cependant, ce modèle fluide ne prend pas en compte de simulation de mécanique des fluides, et pour prendre la gravité et le mouvement du fluide causé par la convection naturelle en compte dans le modèle fluide, et il est nécessaire d'ajouter un modèle d'écoulement \texttt{laminar flow (spf)}. Ceci implique d'utiliser l'interface multiphysique \texttt{Nonisothermal flow (intf)}, dans la mesure où le phénomène étudié met en jeu un couplage entre la dynamique des fluides et les transferts thermiques Ainsi, la pression $p$ ainsi que les champs de vitesse verticale et horizontale sont déterminés à partir des équations de Navier-Stokes, tandis que la température $T$ est obtenue via la résolution de l’équation de la chaleur. Ces grandeurs sont couplées au sein d’un cadre multiphysique permettant de prendre en compte les interactions entre écoulement fluide et transfert thermique.\medskip
+Ces domaines sont modélisés avec l'interface physique \texttt{Heat transfer in Solids and Fluids (ht)} pour résoudre l'équation de la chaleur dans tous les volumes. Les domaines correspondant au régénérateur et à son enceinte et sont marqués comme solides, et le domaine représentant la cavité d'adaptation d'impédance comme fluide. Cependant, ce modèle fluide ne prend pas en compte de simulation de mécanique des fluides, et pour prendre la gravité et le mouvement du fluide causé par la convection naturelle en compte dans le modèle fluide, et il est nécessaire d'ajouter un modèle d'écoulement \texttt{laminar flow (spf)}. Ceci implique d'utiliser l'interface multiphysique \texttt{Nonisothermal flow (nitf)}, dans la mesure où le phénomène étudié met en jeu un couplage entre la dynamique des fluides et les transferts thermiques Ainsi, la pression $p$ ainsi que les champs de vitesse verticale et horizontale sont déterminés à partir des équations de Navier-Stokes, tandis que la température $T$ est obtenue via la résolution de l’équation de la chaleur. Ces grandeurs sont couplées au sein d’un cadre multiphysique permettant de prendre en compte les interactions entre écoulement fluide et transfert thermique.\medskip
 
 
-Les trois effets pris en compte dans le modèle et que montre schématiquement la figure~\ref{fig:SuperpositionComsol} sont considérés de la manière suivante : premièrement, un flux de chaleur est retiré par effet thermoacoustique à la paroi qui se situe à l'interface entre la cavité d'adaptation d'impédance et le noyau, ce qui provoque son refroidissement homogène sur la section. C'est ce qui est proposé par la théorie linéaire, et qui s'illustre sur la figure~\ref{fig:SuperpositionComsol}(b) ; ensuite, la conduction dans l'acier inoxydable composant l'empilement de tissus métalliques et l'enveloppe qui les contient est modélisée en utilisant deux valeurs de conductivité thermique, pour chacun de ces domaines. Pour l'enveloppe, c'est la valeur de l'acier inoxydable $k_{\sf inox}$ qui est considérée, tandis que la conductivité du régénérateur est implémentée en utilisant la conductivité tensorielle $\mathbf k_{\sf tissus}$ définie dans l'équation~\eqref{eq:ConductiviteTensiorielle}. Cette conductivité \echaf{complexe} doit causer une non-uniformité axisymétrique de la température sur la section comme ce que propose la figure~\ref{fig:SuperpositionComsol}(c) ; enfin, la convection est modélisée dans la cavité d'adaptation d'impédance, en faisant l'hypothèse d'un écoulement faiblement compressible. Cet effet est celui qui dépend de l'orientation : l'écoulement provoqué romp l'axisymétrie du système dans l'orientation `\texttt{H1}' où la direction de la gravité est dans le plan des thermocouples et perpendiculaire à l'axe d'axisymétrie du réfrigérateur, mais ne le fait pas dans les orientations `\texttt{V1}' et `\texttt{V2}'. La figure~\ref{fig:SuperpositionComsol}(d) schématise le cas de l'orientation `\texttt{H1}', qui est d'ailleurs celle choisie dans les travaux de Ramadan \textit{et al.} \cite{ramadan_design_2021}, dans lesquels la distribution de température observée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} est présentée, et que les effets listés ici proposent d'expliquer par leur superposition.
+Les trois effets pris en compte dans le modèle et que montrent schématiquement la figure~\ref{fig:SuperpositionComsol} sont considérés de la manière suivante : premièrement, un flux de chaleur est retiré par effet thermoacoustique à la paroi qui se situe à l'interface entre la cavité d'adaptation d'impédance et le noyau, ce qui provoque son refroidissement homogène sur la section. C'est ce qui est proposé par la théorie linéaire, et qui s'illustre sur la figure~\ref{fig:SuperpositionComsol}(b) ; ensuite, la conduction dans l'acier inoxydable composant l'empilement de tissus métalliques et l'enveloppe qui les contient est modélisée en utilisant deux valeurs de conductivité thermique, pour chacun de ces domaines. Pour l'enveloppe, c'est la valeur de l'acier inoxydable $k_{\sf inox}$ qui est considérée, tandis que la conductivité du régénérateur est implémentée en utilisant la conductivité tensorielle $\mathbf k_{\sf tissus}$ définie dans l'équation~\eqref{eq:ConductiviteTensiorielle}. Cette conductivité \echaf{complexe} doit causer une non-uniformité axisymétrique de la température sur la section comme ce que propose la figure~\ref{fig:SuperpositionComsol}(c) ; enfin, la convection est modélisée dans la cavité d'adaptation d'impédance, en faisant l'hypothèse d'un écoulement faiblement compressible. Cet effet est celui qui dépend de l'orientation : l'écoulement provoqué romp l'axisymétrie du système dans l'orientation `\texttt{H1}' où la direction de la gravité est dans le plan des thermocouples et perpendiculaire à l'axe d'axisymétrie du réfrigérateur, mais ne le fait pas dans les orientations `\texttt{V1}' et `\texttt{V2}'. La figure~\ref{fig:SuperpositionComsol}(d) schématise le cas de l'orientation `\texttt{H1}', qui est d'ailleurs celle choisie dans les travaux de Ramadan \textit{et al.} \cite{ramadan_design_2021}, dans lesquels la distribution de température observée sur la figure~\ref{fig:ATE_ProfilsCHX_5mm} est présentée, et que les effets listés ici proposent d'expliquer par leur superposition.
+
+\begin{figure}[!ht]
+    \centering
+    \external{fig_SuperpositionComsol}
+    %\externalremake
+    \input{../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol}
+    \caption{Représentation schématique de l'enjeu du modèle \textsc{Comsol} Multi\-physics\textss\textregistered thermique équivalent, dans le cas de l'orientation `\texttt{H1}' présentée sur la figure~\ref{fig:OrientationCore_H1}. (a) tendance du gradient transverse de température tel qu'observé au niveau de l'échangeur froid sur la figure~\ref{fig:ATE_ProfilsCHX_5mm}~\cite{ramadan_design_2021}, (b) température froide uniforme atteinte par effet thermoacoustique, (c) échauffement de la périphérie par conduction thermique transverse dans le milieu poreux et par les parois de l'enceinte, (d) gradient de température transverse causé par la convection naturelle.}
+    \label{fig:SuperpositionComsol}
+\end{figure}
 
 % Les autres orientations doivent présenter d'autres résultats, car la convection naturelle ne se manifeste pas de la même manière dans le cas d'une configuration de Rayleigh-Bénard ou \echaf{une autre}\medskip
 
@@ -356,29 +345,29 @@ Les trois effets pris en compte dans le modèle et que montre schématiquement l
 %\subsubsection{Ajout d'un modèle de matériau poreux}
 
 
-\subsubsection{Conditions aux frontières}\label{chap:FEM_CondFront}
-\paragraph{Problème thermique}
-Les conditions aux frontières du modèle de transfert thermique sont représentées sur la figure~\ref{fig:Comsol_CondFrontT}. Un flux de chaleur $\dot Q_f=\qty{-10}{\watt}$ est retiré à la paroi située entre la cavité d'adaptation d'impédance et le régénérateur pour simuler le pompage de chaleur par l'effet thermoacoustique, et la paroi du côté ambiant du régénérateur est à température fixée uniforme $T_a=\qty{293}{\kelvin}$. Ensuite, deux configurations sont retenues pour les conditions aux frontières sur la paroi à l'emplacement de la source acoustique principale. Dans la première, cette paroi est à la température ambiante $T_a=\qty{293}{\kelvin}$, tandis que dans la seconde, elle est considérée adiabatique. Ces conditions sont choisies pour leur caractère asymptotique, et la condition thermique réelle à cette surface est supposée être une combinaison des deux. Enfin, les continuités des températures et des flux de chaleur s'appliquent entre les différents domaines.
+\subsection{Conditions aux frontières}\label{chap:FEM_CondFront}
+\subsubsection{Problème thermique}
+Les conditions aux frontières du modèle de transfert thermique sont représentées sur la figure~\ref{fig:Comsol_CondFrontT}. Un flux de chaleur $\dot Q_f=\qty{-10}{\watt}$ est retiré à la paroi située entre la cavité d'adaptation d'impédance et le régénérateur pour simuler le pompage de chaleur par l'effet thermoacoustique, et les parois du côté ambiant du régénérateur et de la source acoustique principale sont à température fixée uniforme $T_a=\qty{293}{\kelvin}$. Enfin, les continuités des températures et des flux de chaleur s'appliquent entre les différents domaines.
 
 \begin{figure}[!ht]
-    \centering
-	\begin{subfigure}[c]{.47\textwidth}
+%    \centering
+%	\begin{subfigure}[c]{.47\textwidth}
 		\centering
 		\external{fig_Comsol_TambiantRix}
 %		\externalremake
 		\input{../fig/fig_ComsolThermalCondFront/tex/Rix_Ambiant}
-		\caption{}
-		\label{fig:Comsol_CondFrontT_TambiantRix}
-	\end{subfigure}		
-	\begin{subfigure}[c]{.47\textwidth}
-		\centering
-		\external{fig_Comsol_AdiabRix}
-%		\externalremake
-		\input{../fig/fig_ComsolThermalCondFront/tex/Rix_Adiab}
-		\caption{}
-		\label{fig:Comsol_CondFrontT_AdiabRix}
-	\end{subfigure}	    
-    \caption{Conditions aux frontières thermiques. Le côté ambiant du régénérateur est à température fixée, le côté froid est modélisé par un puit de chaleur, et la paroi de la source acoustique principale est modélisée par deux conditions asymptotiques. \subref{fig:Comsol_CondFrontT_TambiantRix} température ambiante, et \subref{fig:Comsol_CondFrontT_AdiabRix} adiabatique.}
+%		\caption{}
+%		\label{fig:Comsol_CondFrontT_TambiantRix}
+%	\end{subfigure}		
+%	\begin{subfigure}[c]{.47\textwidth}
+%		\centering
+%		\external{fig_Comsol_AdiabRix}
+%%		\externalremake
+%		\input{../fig/fig_ComsolThermalCondFront/tex/Rix_Adiab}
+%		\caption{}
+%		\label{fig:Comsol_CondFrontT_AdiabRix}
+%	\end{subfigure}	    
+    \caption{Conditions aux frontières thermiques. Le côté froid du régénérateur (en bleu) est modélisé comme un puit de chaleur, les parois correspondant à la source acoustique principale et au côté ambiant (en orange) sont considérées à température ambiante constante et uniforme, les autres frontières avec l'extérieur (en jaune) sont adiabatiques, et les parois à l'intérieur de la géométrie (en traits pointillés noirs) dénotent la continuité des températures et flux de chaleurs.}
     \label{fig:Comsol_CondFrontT}
 \end{figure}
 
@@ -387,7 +376,7 @@ Les conditions aux frontières du modèle de transfert thermique sont représent
 %Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixée à une température homogène sur la section, car c'est justement le gradient de température sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
 
 
-\paragraph{Problème fluide}
+\subsubsection{Problème fluide}
 Pour cet aspect du modèle, les conditions aux frontières sont non-glissantes pour toutes les parois, et dans toutes les configurations, ce qui se note
 
 \begin{equation}
@@ -396,7 +385,7 @@ Pour cet aspect du modèle, les conditions aux frontières sont non-glissantes p
 
 %Cela se vérifie d'abord près des parois qui composent le bâti de la machine, mais aussi à la paroi de l'échangeur froid, au voisinage de cette dernière, la vitesse est supposée suffisamment faible~\cite{baltean_gravity_2025}.
 
-\subsubsection{Résultats}% dans les zones d'intérêt}
+\subsection{Résultats}% dans les zones d'intérêt}
 %\subsubsection{Volume d'adaptation d'impédance}
 
 %\paragraph{Température}
@@ -429,15 +418,15 @@ Pour cet aspect du modèle, les conditions aux frontières sont non-glissantes p
 Tout d'abord, la distribution de température et l'allure de la vitesse de l'écoulement dans le cône d'adaptation d'impédance sont tracées sur la figure~\ref{fig:RIXTa_Detail_Cmap_T_Fleche_vNorme}, pour chaque orientation.\medskip
 
 
-\begin{figure}[!htp]
+\begin{figure}[!ht]
 	\centering
 	\begin{subfigure}{.47\textwidth}
 		\centering
-		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/Cmap_T/H1_RIXTa.png}
+		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png}
 	\end{subfigure}	
 	\begin{subfigure}{.47\textwidth}
 		\centering
-		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/Cmap_T/H2_RIXTa.png}
+		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa.png}
 	\end{subfigure}	
 	
 	\vspace{-2em}	
@@ -497,11 +486,11 @@ Tout d'abord, la distribution de température et l'allure de la vitesse de l'éc
 	
 	\begin{subfigure}{.47\textwidth}
 		\centering
-		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/Cmap_T/V1_RIXTa.png}
+		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa.png}
 	\end{subfigure}	
 	\begin{subfigure}{.47\textwidth}
 		\centering
-		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/Cmap_T/V2_RIXTa.png}
+		\includegraphics[width=.9\textwidth]{../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa.png}
 	\end{subfigure}
 	
 	\vspace{-2em}	
@@ -515,12 +504,12 @@ Tout d'abord, la distribution de température et l'allure de la vitesse de l'éc
            		height=0pt,
                 width=0pt,
                 colorbar horizontal,
-                point meta min=285,
+                point meta min=285.4,
                 point meta max=293,
                 colorbar style={
 		    	scaled ticks=false, tick label style={/pgf/number format/fixed},
                 	width=3.5cm,
-                	xtick={285,289,293},
+                	xtick={285.4,289.2,293},
                 	at={(-0.5,0.0)},anchor=south,   
                 	title style={xshift=3.5cm,yshift=4cm},
                 	}
@@ -540,12 +529,12 @@ Tout d'abord, la distribution de température et l'allure de la vitesse de l'éc
            		height=0pt,
                 width=0pt,
                 colorbar horizontal,
-                point meta min=279,
+                point meta min=278.5,
                 point meta max=293,
                 colorbar style={
                 	scaled ticks=false, tick label style={/pgf/number format/fixed},
                 	width=3.5cm,
-                	xtick={279,286,293},
+                	xtick={278.5,285.8,293},
                 	at={(-0.5,0.0)},anchor=south,   
                 	title style={xshift=3.5cm,yshift=4cm},
                 	}
@@ -556,17 +545,17 @@ Tout d'abord, la distribution de température et l'allure de la vitesse de l'éc
 		\caption{}
 		\label{fig:V2_RIXTa_Detail_Cmap_T_Fleche_vNorme}
 	\end{subfigure} 
-	\caption{Distribution de température dans le cône d'adaptation d'impédance et dans le noyau (carte de couleur), et vitesse de l'écoulement dans la cellule de convection naturelle (flèches). Les orientations sont \subref{fig:H1_RIXTa_Detail_Cmap_T_Fleche_vNorme} `\texttt{H1}', \subref{fig:H2_RIXTa_Detail_Cmap_T_Fleche_vNorme} `\texttt{H2}', \subref{fig:V1_RIXTa_Detail_Cmap_T_Fleche_vNorme} `\texttt{V1}', et \subref{fig:V2_RIXTa_Detail_Cmap_T_Fleche_vNorme} `\texttt{V2}'. \echaf{Changer colorbar + axes cassés}}
+	\caption{Distribution de température dans le cône d'adaptation d'impédance et dans le noyau (carte de couleur), et vitesse de l'écoulement dans la cellule de convection naturelle (flèches). Les orientations sont \subref{fig:H1_RIXTa_Detail_Cmap_T_Fleche_vNorme} `\texttt{H1}', \subref{fig:H2_RIXTa_Detail_Cmap_T_Fleche_vNorme} `\texttt{H2}', \subref{fig:V1_RIXTa_Detail_Cmap_T_Fleche_vNorme} `\texttt{V1}', et \subref{fig:V2_RIXTa_Detail_Cmap_T_Fleche_vNorme} `\texttt{V2}'. }
 	\label{fig:RIXTa_Detail_Cmap_T_Fleche_vNorme}
 \end{figure}
 
-Sur la figure~\ref{fig:H1_RIXTa_Detail_Cmap_T_Fleche_vNorme}, le gradient de température entre les zones ambiante et froide en \echaf{$x=0$} du régénérateur est horizontal selon l'axe $x$, avec \qty{14}{\kelvin} sur \qty{39}{\milli\meter}. Sur le plan ($x,z$) Une cellule de convection naturelle montant de la paroi de la source acoustique principale en \echaf{$x=\qty{-30}{\milli\meter}$} et à la température $T=\qty{293}{\kelvin}$, et redescendant du côté de l'échangeur froid à la température $\qty{279}{\kelvin}$, est mise en évidence par les flèches dont la longueur correspond à la norme de la vitesse. Il est intéressant de remarquer l'impact de la forme trapezoïdale de ce cône d'adaptation d'impédance, par le fait que la vitesse d'écoulement montant est plus élevée que celle de l'écoulement descendant. Cela traduit une \echaf{section apparente} où s'écoule le flux mis en mouvement par la convection naturelle devant la source acoustique principale plus faible que la \echaf{section apparente} où il s'écoule devant l'échangeur froid, et manifeste le respect de la conservation du débit. Cette conservation se manifeste également par le fait que l'écoulement monte sur la quasi-totalité du cône, et ne redescend qu'à proximité de l'échangeur froid. Cela s'accompagne d'une distribution de la température asymétrique, car l'écoulement s'accompagne d'un flux de chaleur convectif.\smallskip
+Sur la figure~\ref{fig:H1_RIXTa_Detail_Cmap_T_Fleche_vNorme}, le gradient de température entre les zones ambiante et froide est horizontal selon l'axe $x$, avec \qty{14}{\kelvin} sur \qty{39}{\milli\meter}. Sur le plan ($x,z$) Une cellule de convection naturelle montant de la paroi de la source acoustique principale à gauche et à la température $T=\qty{293}{\kelvin}$, et redescendant du côté de l'échangeur froid à la température $\qty{278.2}{\kelvin}$, est mise en évidence par les flèches indiquant la direction de la vitesse en trois dimensions. Il est intéressant de remarquer l'impact de la forme trapezoïdale de ce cône d'adaptation d'impédance, par le fait que la vitesse d'écoulement montant proche du col du cône est plus élevée que celle de l'écoulement descendant à son pavillon. Cela traduit une section apparente plus faible devant la source acoustique principale que celle devant l'échangeur froid, et manifeste le respect de la conservation du débit. L'écoulement s'accompagne d'une distribution de la température asymétrique, car l'écoulement s'accompagne d'un flux de chaleur convectif.\smallskip
 
-La figure~\ref{fig:H2_RIXTa_Detail_Cmap_T_Fleche_vNorme} est obtenue avec la même simulation, en observant cette fois le plan ($x,y$). Dans ce cas, les flèches qui représentent la norme de vitesse sont toutes normales à ce plan d'observation, et aucun flux massique ne circule dans le plan. La configuration est donc symétrique.\smallskip
+La figure~\ref{fig:H2_RIXTa_Detail_Cmap_T_Fleche_vNorme} est obtenue avec la même simulation, en observant cette fois le plan ($x,y$). Dans ce cas, les flèches qui représentent la direction de vitesse sont toutes normales à ce plan d'observation, et aucun flux massique ne circule dans le plan. La configuration est donc symétrique.\medskip
 
-Les résultats de simulation pour l'orientation `\texttt{V1}' sont tracés sur la figure~\ref{fig:V1_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Cette fois, le gradient de température entre les températures ambiantes et froide est vertical, le long de l'axe $z$. La paroi qui correspond à la source acoustique principale, à la température $T=\qty{293}{\kelvin}$, est en bas de la géométrie, au dessous de la paroi de l'échangeur de chaleur froid dont la température se situe à $T=\qty{286}{\kelvin}$. Cette température atteinte par la paroi de laquelle la même puissance thermique est extraite est supérieur à celle atteint au même emplacement dans le cas du gradient thermique horizontal. Cela s'explique par la circulation de gaz, qui monte de la source acoustique principale par le centre du noyau et cède de la chaleur au fluide situé près de l'échangeur de chaleur froid.\smallskip
+Les résultats de simulation pour l'orientation `\texttt{V1}' sont tracés sur la figure~\ref{fig:V1_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Cette fois, le gradient de température entre les températures ambiantes et froide est vertical, le long de l'axe $z$. La paroi qui correspond à la source acoustique principale, à la température $T=\qty{293}{\kelvin}$, est en bas de la géométrie, au dessous de la paroi de l'échangeur de chaleur froid dont la température se situe à $T=\qty{285.4}{\kelvin}$. Cette température atteinte par la paroi de laquelle la même puissance thermique est extraite est supérieur à celle atteint au même emplacement dans le cas du gradient thermique horizontal. Cela s'explique par la circulation de gaz, qui monte de la source acoustique principale par le centre du noyau et cède de la chaleur au fluide situé près de l'échangeur de chaleur froid. Le diamètre de la paroi de la source de chaleur que constitue la source acoustique principale est plus petit que le diamètre de la paroi en face, celle à la frontière avec le noyau, et cette différence favorise l'élévation d'une colonne de fluide plus chaud par le centre de la cavité, ce qui est conforme à la littérature sur le sujet~\cite{basak_heat_2009}\smallskip
 
-L'orientation `\texttt{V2}' est finalement présentée sur la figure~\ref{fig:V2_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Ce résultat est le plus surprenant, car il montre également la présence d'un écoulement circulant dans le cône d'adaptation d'impédance, alors que cette configuration est a priori stable et n'est pas censée déclencher la mise en mouvement du fluide. En effet, le fluide chaud moins dense se trouve déjà au dessus du fluide plus froid.\medskip
+L'orientation `\texttt{V2}' est finalement présentée sur la figure~\ref{fig:V2_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Ce résultat est le plus surprenant, car il montre également la présence d'un écoulement circulant dans le cône d'adaptation d'impédance, alors que cette configuration est a priori stable et n'est pas censée déclencher la mise en mouvement du fluide. En effet, le fluide chaud moins dense se trouve déjà au dessus du fluide plus froid. Il est possible que le fluide à proximité de la paroi chaude se déplace horizontalement du centre vers la périphérie jusqu'à rencontrer une zone plus froide, où la densité locale du fluide diminue. Celui-ci descend le long de la paroi qui la guide du fait de l'angle du cône, et la conservation du débit provoque la mise en mouvement du reste du fluide qui suit la même trajectoire. Des études paramétriques qui se concentrent sur cette orientation dans une configuration plus simple sont menées pour varier la géométrie de la cavité, et les résultats sont présentés en Annexe~\ref{chap:CircuFluideV2}.\medskip
 
 %La composante verticale selon l'axe $z$ de la vitesse est maintenant tracée sur la figure~\ref{fig:RIXTa_Detail_Cmap_w_Fleche_ConvCond}. À cette carte de couleur sont superposées deux surfaces de flèche, rouge pour le flux de chaleur convectif, vert pour le flux de conduction thermique. D'une manière générale, la conduction est majoritaire dans le noyau, et négligeable dans le cône d'adaptation d'impédance car la faible longueur des flèches les rend invisibles sur les figures.
 
@@ -605,20 +594,22 @@ L'orientation `\texttt{V2}' est finalement présentée sur la figure~\ref{fig:V2
 
 
 
-\echaf{Que mettre de plus dans cette partie ?}
+%\echaf{Que mettre de plus dans cette partie ?}
 
 \section{Modèle du régime transitoire} \label{chap:ModeleTemporel}
-Le modèle décrit précédemment constitue une première tentative d'explication, mais est trop rudimentaire pour représenter fidèlement la réalité. Cette approche, de même que la théorie classique de la thermoacoustique~\cite{swift_thermoacoustic_1988}, se base sur l'équilibre entre le flux de chaleur pompé par l'effet thermoacoustique, et le flux de conduction thermique qui s'y oppose en circulant par le matériau poreux et les parois qui l'entourent. Le modèle par éléments finis est également limité au régime stationnaire, empêchant toute étude de phénomènes qui influencent de manière dynamique le système et prennent place durant le régime transitoire. En particulier, à haute amplitude acoustique, les écarts se creusent entre les simulations du régime établi uniquement.\smallskip
+Le modèle décrit précédemment constitue une première tentative d'explication, mais est trop rudimentaire pour représenter fidèlement la réalité. Cette approche, de même que la théorie classique de la thermoacoustique~\cite{swift_thermoacoustic_1988}, se base sur l'équilibre entre le flux de chaleur pompé par l'effet thermoacoustique, et le flux de conduction thermique qui s'y oppose en circulant par le matériau poreux et les parois qui l'entourent. Le modèle par éléments finis est également limité au régime stationnaire, empêchant toute étude de phénomènes qui influencent de manière dynamique le système et prennent place durant le régime transitoire.\smallskip
 
-Un modèle du régime transitoire de la distribution de température dans le noyau thermoacoustique est créé. Ce modèle fait suite au modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}, adapté au réfrigérateur thermoacoustique étudié, c'est-à-dire qui utilise un régénérateur au lieu d'un stack dans un champ acoustique \echaf{2D/3D} quelconque. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latérales au travers des parois du régénérateur $Q_{\sf par}$. Un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau et sa valeur est ajustée pour que les températures calculées soient au plus proche des températures mesurées. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges et/ou les effets entropiques. 
+Un modèle de la distribution de température dans le noyau thermoacoustique en régime transitoire est donc adpaté et fait suite au modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}. Ce modèle se rapproche du réfrigérateur thermoacoustique étudié, c'est-à-dire qui utilise un régénérateur au lieu d'un stack dans un champ acoustique 3D quelconque. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latérales au travers des parois du régénérateur $Q_{\sf par}$. Un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau et sa valeur est ajustée pour que les températures calculées soient au plus proche des températures mesurées. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges et/ou les effets entropiques. 
 
 \subsection{Géométrie du problème}
-Le système décrit est uniquement constitué d'un régénérateur à deux dimensions en coordonnées cartésiennes, à pores circulaires de rayon hydraulique $r_h$ et de porosité $\Phi$, de longueur $L_{\sf reg}$, et de hauteur $D_{\sf reg}$. Les échangeur de chaleur sont ignorés dans ce modèle, mais des conditions aux frontières les remplacent, avec le côté froid placé en $x=0$ et le côté ambiant en $x=L_{\sf reg}$.
+Le système décrit est uniquement constitué d'un régénérateur à deux dimensions en coordonnées cartésiennes, à pores circulaires de rayon hydraulique $r_h$ et de porosité $\Phi$, de longueur $L_{\sf reg}$, et de section $S_{\sf reg} = \pi\frac{D^2_{\sf reg}}{4}$, avec $D_{\sf reg}$ la hauteur du régénérateur.\smallskip
+
+Les échangeur de chaleur sont ignorés dans ce modèle, mais des conditions aux frontières les remplacent, avec le côté froid placé en $x=0$ et le côté ambiant en $x=L_{\sf reg}$. La géométrie n'inclut pas non plus l'enveloppe qui contient le régénérateur aux coordonnées $r=0$ et $r=D_{\sf reg}$, mais son influence est prise en compte dans les conditions aux frontières d'une manière développée plus loin. \echaf{est-ce que ça suffit pour dire qu'on ne calcule pas ce qu'il y a dans le canister mais qu'on ne l'oublie pas ?}
 
 \echaf{ajouter schéma où tout est enlevé sauf le régén}
 
 \subsection{Champ acoustique considéré}
-Le modèle a pour base un bilan thermique dans le régénérateur pour un champ acoustique quelconque. Pour ce faire, la géométrie est discrétisée le long de l'axe $\mathbf e_x$ en $N$ éléments de longueur $\deriv x$ et l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit d'autant de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}, en faisant l'hypothèse de linéarité de la propagation de l'onde acoustique dans un fluide de Stokes, homogène et \echaf{au repos}. Dans le cas d'un régénérateur compact du point de vue acoustique, cette matrice de transfert est donnée par
+Le modèle a pour base un bilan thermique dans le régénérateur pour un champ acoustique quelconque. Pour ce faire, la géométrie est discrétisée le long de l'axe $\mathbf e_x$ en $N$ éléments de longueur $\deriv x$. Chaque élément $n$ du régénérateur est acoustiquement compact et l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit d'autant de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}, en faisant l'hypothèse de linéarité de la propagation de l'onde acoustique dans un fluide de Stokes, homogène et \echaf{au repos = en l'absence d'écoulement continu ?}. Dans le cas d'un régénérateur compact du point de vue acoustique, cette matrice de transfert est donnée par
 
 %\begin{subequations}
 %	\begin{multicols}{2}
@@ -647,7 +638,7 @@ Le modèle a pour base un bilan thermique dans le régénérateur pour un champ 
 	u_1^{(n)}
 	\end{pmatrix},
 \end{equation}
-où $f_\nu^{(n)}$ et $f_\kappa^{(n)}$ sont les fonction visco-thermiques moyennées sur la section $S_{\sf reg}$ présentées dans les équations~\eqref{eq:FonctionViqueuse_Moyenne} et \eqref{eq:FonctionThermique_Moyenne}, et $p_1$ et $v_1$ les pression et vitesse acoustiques.
+où $f_\nu^{(n)}$ et $f_\kappa^{(n)}$ sont les fonction visco-thermiques moyennées sur la section $S_{\sf reg}$ présentées dans les équations~\eqref{eq:FonctionViqueuse_Moyenne} et \eqref{eq:FonctionThermique_Moyenne}, et $p_1$ et $v_1$ les pression et vitesse acoustiques oscillant à la pulsation $\omega=2\pi f_1$.
 
 \subsection{Mécanismes pris en compte dans le modèle}
 %Ensuite, les flux thermiques sont également pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Transitoire_Regen} à \eqref{eq:FluxLat_Transitoire} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer au sein du régénérateur.
@@ -667,8 +658,8 @@ Pour être le plus exhaustif possible, un grand nombre de phénomènes thermique
 \item Tout d'abord, le flux de chaleur thermoacoustique par unité de surface est calculé avec l'équation~\eqref{eq:FluxTA_swift} développée par Swift \cite{swift_thermoacoustics_2017}
 
 \begin{multline}
-	Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } p_1 v_1^* \right] }_{q_{TA}(x)} \echaf{ajouter i ou j} \\ 
-	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |v_1|^2 }^{k_{TA}(x)}\partial_x \theta(r,x;t),
+	\dot Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } p_1 v_1^* \right] }_{q_{TA}(x)} \echaf{ajouter i ou j} \\ 
+	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S_{\sf reg}}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |v_1|^2 }^{k_{TA}(x)}\partial_x \theta(r,x;t),
 \label{eq:FluxTA_Transitoire_Regen}
 \end{multline}
 avec $\theta(r,x,t) = T_0(r,x,t)-T_\infty$ l'écart de la température locale $T_0$ à la température initiale $T_\infty$. Pour la suite du document, cet écart de température sera simplement écrit $\theta$, sans les dépendances spatio-temporelle. Il est important de remarquer que le premier terme de ce flux thermique, noté $q_{TA}$, ne dépend que du champ acoustique, et que le second terme, $k_{TA}$, correspond à une conductivité induite par l'effet thermoacoustique qui s'oppose au flux précédent et diminue le coefficient de performance du processus thermoacoustique.
@@ -688,22 +679,29 @@ avec $\theta(r,x,t) = T_0(r,x,t)-T_\infty$ l'écart de la température locale $T
 	\begin{multicols}{2}
 	\noindent
 	\begin{equation}
-		Q_{\sf cond}^{(x)} = -k_x \partial_x \theta,
+		\dot Q_{\sf cond}^{(x)} = -k_x \partial_x \theta,
 	\end{equation}
 	\begin{equation}
-		Q_{\sf cond}^{(r)} = -k_r \partial_r \theta,
+		\dot Q_{\sf cond}^{(r)} = -k_r \partial_r \theta,
 	\end{equation}
 	\end{multicols}
 \end{subequations}
-où $x$ et $r$ dénotent respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique longitudinale apparente et $k_x~=~\Phi k_{g} + (1-\Phi)k_{s}k_{s_{\sf frac}}$. De même que pour le modèle du régénérateur dans le paragraphe~\ref{chap:FEM}, la conductivité thermique transversale est considérée deux fois supérieure à la conductivité axiale~\cite{hsu_effective_1996}. 
+où $x$ et $r$ dénotent respectivement les directions axiale et radiale où circulent les flux de conduction. La porosité influe sur la conductivité thermique longitudinale apparente et $k_x~=~\Phi k_{g} + (1-\Phi)k_{s}k_{s_{\sf frac}}$. De même que pour le modèle du régénérateur dans le paragraphe~\ref{chap:FEM}, la conductivité thermique transversale est considérée deux fois supérieure à la conductivité axiale~\cite{hsu_effective_1996}.\medskip
+
+En plus d'être réduite par l'empilement de disques de tissus métallique, la conductivité du régénérateur est plus faible que celle de l'enveloppe qui contient les disques de tissus, ce qui a pour conséquence la modification des conditions aux frontières aux extrémités axiales du noyau. L'échangeur de chaleur froid apporte un flux de chaleur $Q_f$ en $x=0$, et l'échangeur ambiant retire un flux $Q_a$ en $x=L_{\sf reg}$. Cependant, chacun de ces flux se sépare en deux parties, l'une circulant dans le régénérateur et l'autre dans l'enceinte contenant les disques de tissus métalliques. La proportion $\epsilon$ qui circule dans le régénérateur est définie, en négligeant la conduction par le fluide, par
+\begin{equation}
+	\epsilon = \frac{k_s k_{s_{\sf frac}} (1-\Phi)S_{\sf reg}}{k_s k_{s_{\sf frac}} (1-\Phi)S_{\sf reg} + k_{\sf can} S_{\sf can}}.
+	\label{eq:ProportionQ_RegenCanister}
+\end{equation}
+en considérant le facteur de dégradation de conductivité $k_{s_{\sf frac}}=\qty{10}{\percent}$, qui quantifie la diminution de conductivité d'un matériau fait de tissus métalliques \cite{lewis_measurement_1998}. Pour le noyau installé au c\oe{}ur du réfrigérateur et dont les paramètres géométriques sont notés dans le tableau~\ref{tab:GeometrieTAC}, la proportion du flux de chaleur circulant dans le régénérateur est de $\epsilon=\qty{25}{\percent}$.
 
 
 \item Le flux de chaleur généré par les pertes visqueuses dans le régénérateur par unité de volume et en moyenne sur une période acoustique $t_0$ est estimé avec l'équation
 \begin{equation}
-	\echaf{dot ?} Q_{\sf visq} = \frac{1}{r_h^2} \int_{0}^{r_h} \frac{1}{t_0} \int_0^{t_0} \mu\ \big(\partial_r v_{1,x}(r,x,t)\big)^2\ \textcolor{red}{r} \deriv r \deriv t,
+	\dot Q_{\sf visq} = \frac{1}{r_h^2} \int_{0}^{r_h} \frac{1}{t_0} \int_0^{t_0} \mu\ \big(\partial_r v_{1,x}(r,x,t)\big)^2\ r \deriv r \deriv t,
 \label{eq:FluxVisq_Transitoire}
 \end{equation}
-valide pour un régénérateur à pores circulaires \echaf{citation ? Swift, Pierrick ?}, en considérant la composante longitudinale $v_{1,x}(r,x,t)$ de la vitesse particulaire d'ordre 1 $v_1(r,x,t)$. L'identité
+valide pour un régénérateur à pores circulaires , en considérant la composante longitudinale $v_{1,x}(r,x,t)$ de la vitesse particulaire d'ordre 1 $v_1(r,x,t)$. L'identité
 
 \begin{equation*}
 \frac{1}{t_0}\int_{0}^{t_0}\big(\partial_r v_{1,x}(r,x,t)\big)^2\ \deriv t = \frac12\left|\partial_r v_{1,x}(r,x,t)\right|^2
@@ -711,30 +709,29 @@ valide pour un régénérateur à pores circulaires \echaf{citation ? Swift, Pie
 permet de réécrire l'équation \eqref{eq:FluxVisq_Transitoire} sous la forme
 
 \begin{equation}
-	\echaf{dot ?} Q_{\sf visq} = \frac{1}{2r_h^2} \int_{0}^{r_h} \mu \left|\partial_r v_{1,x}(r,x,t)\right|^2\ \textcolor{red}{r} \deriv r.
+	\dot Q_{\sf visq} = \frac{\mu}{2r_h^2} \int_{0}^{r_h} \left|\partial_r v_{1,x}(r,x,t)\right|^2\ r \deriv r,
 	\label{eq:FluxVisq_Transitoire_IntegralTSimplifie}
 \end{equation}
+en considérant que $v_{1,x} \gg v_{1,r}$, et que $\mathbf v=0$ sur les parois.
 
 \echaf{il y a plein d'hypothèses faites pour arriver à cela, il faut les expliciter}
 
 Le profil transverse de vitesse dans un pore cylindrique est pris en compte dans l'expression de la vitesse, ce qui donne 
 
 \begin{equation}
-	v_1(r,x,t) = \frac{u_1}{\Phi S} \frac{1-h_\nu(r)}{1-f_\nu},
+	v_{1,x}(r,x,t) = \frac{u_1}{\Phi S_{\sf reg}} \frac{1-h_\nu(r)}{1-f_\nu},
 	\label{eq:lienVitesseDebit_PoreCylindrique}
 \end{equation}
-avec $u_1$ le débit acoustique moyenné sur une section transverse $\Phi S$, $f_\nu$ et $h_\nu(r)$ les fonctions visqueuses définies dans les équations~\eqref{eq:FonctionsVisqueuses}, et $f_\nu$ la moyenne de $h_\nu(r)$ sur la section de pores.
+avec $u_1$ le débit acoustique moyenné sur une section transverse $\Phi S_{\sf reg}$, $f_\nu$ et $h_\nu(r)$ les fonctions visqueuses définies dans les équations~\eqref{eq:FonctionsVisqueuses}, et $f_\nu$ la moyenne de $h_\nu(r)$ sur la section de pores.
 
 L'équation~\eqref{eq:FluxVisq_Transitoire_IntegralTSimplifie} devient donc
 
-\begin{equation*}
-	Q_{\sf visq} = \frac{\mu |u_1|^2}{2\big(r_h\Phi S|1-f_\nu|\big)^2}\int_0^{r_h} |\partial_r h_\nu(r)|^2\ \textcolor{red}{r}\deriv r,
-\end{equation*}
-ou encore
-\begin{equation}
-	Q_{\sf visq} = \mu \left(\frac{|u_1|}{r_h \delta_\nu \Phi S |1-f_\nu||J_0[(1-i)\frac{r_h}{\delta_\nu}]|}\right)^2 \int_{0}^{r_h}\left|J_1\left[(1-i)\frac{r}{\delta_\nu}\right]\right|^2\ \textcolor{red}{r}\deriv r \deriv t,
-\end{equation}
-avec $J_0$ et $J_1$ les fonctions de Bessel de première espèce, respectivement d'ordres \num{0} et \num{1}. L'intégrale sur la section de rayon $r_h$ est résolue par la méthode numérique \texttt{integral} de \textsc{Matlab}\textss\textregistered.
+\begin{align}
+	\dot Q_{\sf visq} &= \frac{\mu |u_1|^2}{2\big(r_h\Phi S_{\sf reg}|1-f_\nu|\big)^2}\int_0^{r_h} |\partial_r h_\nu(r)|^2\ r \deriv r, \nonumber\\ 
+	\intertext{ou encore}
+	\dot Q_{\sf visq} &= \mu \left(\frac{|u_1|}{r_h \delta_\nu \Phi S_{\sf reg} |1-f_\nu|\left|J_0\left[(1-i)\dfrac{r_h}{\delta_\nu}\right]\right|}\right)^2 \int_{0}^{r_h}\left|J_1\left[(1-i)\frac{r}{\delta_\nu}\right]\right|^2\ r \deriv r ,
+\end{align}
+avec $J_0$ et $J_1$ les fonctions de Bessel de première espèce, respectivement d'ordres \num{0} et \num{1}. L'intégrale sur le rayon de pore $r_h$ est résolue par la méthode numérique \texttt{integral} de \textsc{Matlab}\textss\textregistered.
 
 %\item Les pertes latérales aux extrémités en $x=0$ et $x=L_{\sf reg}$ du régénérateur sont prises en compte par
 %
@@ -747,27 +744,57 @@ avec $J_0$ et $J_1$ les fonctions de Bessel de première espèce, respectivement
 %
 %\item Les pertes latérales sur la périphérie à $r=R_{\sf reg}$ sont prises en comptes en considérant le coefficient d'échange convectif $\left.h_r\right|_{r=i}$ pour $i=0,2R_{\sf reg}$.
 
-\item Les flux de chaleur échangés avec les parois sont évaluées à l'aide de coefficients d'échanges convectifs empiriques $\left.h_x\right|_{x=i}$ ($i=0,\ L_{\sf reg}$) et $\left.h_r\right|_{r=j}$ ($j=0,\ D_{\sf reg}$), respectivement pour les parois le long de l'axe $\mathbf e_x$ et le long de l'axe $\mathbf e_r$. Ces coefficients sont ajustés pour que la distribution de température calculée soit les plus proches possibles des distributions obtenues expérimentalement. Les flux de chaleurs perdus à chacune de ces parois suivent la forme 
+\item Les flux de chaleur échangés avec les parois sont évaluées à l'aide de coefficients d'échanges convectifs $\left.h_x\right|_{x=i}$ ($i=0,\ L_{\sf reg}$) et $\left.h_r\right|_{r=j}$ ($j=0,\ D_{\sf reg}$), respectivement pour les parois le long de l'axe $\mathbf e_x$ et le long de l'axe $\mathbf e_r$. 
+
+Les premiers, qui représentent les pertes dûes aux imperfections des échangeurs et/ou aux changements de milieu, sont déterminés empiriquement, via un ajustement pour approcher le plus possible la distribution de température calculée de celle obtenue expérimentalement et détaillé ultérieurement. 
+
+Les second sont calculés grâce à une résistance thermique $R_{th}$ équivalente à l'interface entre le régénérateur et ce qui se trouve au delà, c'est-à-dire l'enveloppe qui ceint le régénérateur, le tube qui contient l'ensemble formé, et la couche de fluide contenu dans la boucle de rétroaction acoustique. Un schéma d'une coupe de cet assemblage est représenté sur la figure~\ref{fig:TemperatureCanisterConditionLimite}, qui montre les coefficients d'échanges entre chaque paroi, et la conductivité des matériaux qui composent ces élément et qui transportent de la chaleur vers l'extérieur de la machine.
+
+\begin{figure}[!ht]
+	\centering
+	\external{fig_TemperatureCanisterConditionLimite}
+%	\externalremake
+	\input{../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterConditionLimite}
+	\caption{Schéma en coupe du régénérateur accompagné de son enveloppe, du tube qui les contient et de la boucle de rétroaction. À chaque interface, un coefficient d'échange est considéré : $h_t$ dépend de l'état de surface des deux tubes en acier inoxydables imbriqués, et $h_c$ est un coefficient d'échange convectif qui traduit une fuite thermique vers l'extérieur.}
+	\label{fig:TemperatureCanisterConditionLimite}
+\end{figure}
+
+Le coefficient d'échange $h_r$ se calcule avec la formule
+
+\begin{subequations}
+	\begin{align}
+		h_r &= \frac{1}{R_{th}},\nonumber \\
+			&= \dfrac{1}{\dfrac{\ell_{\sf env}}{k_{\sf inox}} + \dfrac{1}{h_c} + \dfrac{\ell_{\sf tub}}{k_{\sf inox}} + \dfrac{1}{h_c}}.\label{eq:h_r_Rth}
+	\end{align}
+\end{subequations}
+
+Les flux de chaleurs perdus à chacune de ces parois suivent la forme 
 
 \begin{equation}
 	Q_{\sf par} = h\theta.
 	\label{eq:FluxLat_Transitoire}
 \end{equation}
 
-\item \echaf{reprendre ici} L'échangeur de chaleur froid apporte un flux de chaleur $Q_f$ en $x=0$, et l'échangeur ambiant retire un flux $Q_a$ en $x=L_{\sf reg}$. Cependant, chacun de ces flux se sépare en deux parties, l'une circulant dans le régénérateur et l'autre dans l'enceinte contenant les disques de tissus métalliques. La proportion $\epsilon$ qui circule dans le régénérateur est définie, en négligeant la conduction par le fluide, par
-\begin{equation}
-	\epsilon = \frac{k_s k_{s_{\sf frac}} (1-\Phi)S_{\sf reg}}{k_s k_{s_{\sf frac}} (1-\Phi)S_{\sf reg} + k_{\sf can} S_{\sf can}}.
-	\label{eq:ProportionQ_RegenCanister}
-\end{equation}
-en considérant le facteur de dégradation de conductivité $k_{s_{\sf frac}}=\num{.1}$, qui quantifie la diminution de conductivité d'un matériau fait de tissus métalliques \cite{lewis_measurement_1998}. Pour le noyau installé au c\oe{}ur du réfrigérateur et dont les paramètres géométriques sont notés dans le tableau~\ref{tab:GeometrieTAC}, la proportion du flux de chaleur circulant dans le régénérateur est de \qty{25}{\percent}.
+La détermination des coefficients d'échanges se fait par l'exploitation des expériences sans acoustiques, car le flux de chaleur causé par la vorticité aux extrémités du régénérateur en est absent. Ces coefficients sont trouvés grâce à la minimisation d'une fonction de coût dans \textsc{Matlab}\textss\textregistered en utilisant la routine \texttt{lsqnonlin} pour chaque position de thermocouples, et pour certains instants $t$ choisis. Un jeu de coefficients est trouvé, et donne la distribution de température sur l'axe du régénérateur représentée sur la figure~\ref{fig:TransitoireFit}.
 
-\item Les effets de bords tels que les pertes de charges ou la vorticité sont pris en compte aux frontières du domaine grâce à des flux de chaleur $Q_{\sf vort}$ estimés empiriquement à $x=0$ et $x=L_{\sf reg}$.
+\begin{figure}[!ht]
+	\centering
+	\external{fig_TransitoireFit}
+%	\externalremake
+	\input{../fig/fig_TransitoireFit/tex/fig_TransitoireFit}
+	\caption{Distribution de température sur l'axe mesurée lors d'une expérience sans acoustique dans l'orientation `\texttt{V1}' (traits pleins) et calculée (traits pointillés), après ajustement des coefficients d'échanges pour y correspondre.}
+	\label{fig:TransitoireFit}
+\end{figure}
+
+Cette figure montre un assez bon accord entre la distribution de température calculée et celle mesurée et en particulier du côté ambiant, mais en sous-estimant tout de même les pertes à l'extrémité froide du régénérateur.
+
+\item Les effets de bords tels que les pertes de charges ou la vorticité sont pris en compte aux frontières du domaine grâce à des flux de chaleur $Q_{\sf vort}$ estimés empiriquement à $x=0$ et $x=L_{\sf reg}$. De même que les coefficients d'échanges convectifs, les valeurs de ce flux de chaleur sont ajustées pour approcher les résultats expérimentaux.
 
 \end{enumerate}
 
 \subsection{Bilan thermique}
 
-Le bilan de chaleur dans chaque volume $S_{\sf reg}\ \deriv x$ du régénérateur s'écrit 
+Le bilan de chaleur est calculé dans chaque volume $S_{\sf reg}\ \deriv x$ du régénérateur et s'écrit 
 
 
 \begin{equation}
@@ -775,7 +802,8 @@ Le bilan de chaleur dans chaque volume $S_{\sf reg}\ \deriv x$ du régénérateu
 \label{eq:BilanThermique_Transitoire}
 \end{equation}
 
-Avec dans le premier membre qui désigne la variation d'énergie interne suite à la variation de température, et le second membre, l'expression des flux thermiques dans chaque volume élémentaire du régénérateur discrétisé. Deux types d'effets sont à noter : d'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux se produisent dans chaque volume, il sont donc source de chaleur et doivent être pris en compte tels quels.\smallskip
+Avec dans le premier membre qui désigne la variation d'énergie interne suite à la variation de température, et le second membre, l'expression des flux thermiques dans chaque volume élémentaire du régénérateur discrétisé.\smallskip
+% Deux types d'effets sont à noter : d'une part, les flux thermoacoustiques et de conduction sont \og de passage \fg{} au travers de ce volume, et c'est seulement dans le cas d'une divergence non nulle que la température y évolue. D'autre part, les effets visqueux se produisent dans chaque volume, il sont donc source de chaleur et doivent être pris en compte tels quels.\smallskip
 
 Le problème décrit par l'équation~\ref{eq:BilanThermique_Transitoire} est conditionné aux frontières en $x=0$, $x=L_{\sf reg}$,  $r=0$ et $r=D_{\sf reg}$, pour respecter la conservation d'énergie. Ces conditions se traduisent par le système d'équations
 
@@ -788,7 +816,9 @@ Le problème décrit par l'équation~\ref{eq:BilanThermique_Transitoire} est con
 	\label{eq:CondFront}%
 \end{subequations}
 
-Ce système traduit le fait que pour chaque frontière, la somme des flux entrant dans l'interface et des sources thermiques est égale aux flux qui en sortent. Il reste à introduire la distribution de température à $t=0$ notée $\theta_0(x,r)$ comme condition initiale, qui se présente comme
+%\echaf{pas de $k_r \partial_r \theta \pm h_r \theta$ ?}
+
+Ce système traduit le fait que pour les frontières en $x=0$, $x=L_{\sf reg}$, $r=0$ et $r=D_{\sf reg}$, \echaf{un bilan thermique est fait entre les flux de chaleur sortant du domaine, ceux entrant et ceux qui sont source de chaleur}. Il reste à introduire la distribution de température à $t=0$ notée $\theta_0(x,r)$ comme condition initiale, qui se présente comme
 
 \begin{align}
 	\theta(x,r,t=0) &= \theta_0(x,r), & t=0,\ x \in [0,L_{\sf reg}],\ r \in [0,D_{\sf reg}], \label{eq:CondInit}
@@ -816,7 +846,7 @@ Ce problème transitoire comporte des termes sources, ainsi que des dérivées p
 	\end{align}	
 	\label{eq:ProblemeTransitoire_ChgtVariables}
 \end{subequations}
-\echaf{\eqref{eq:CondFront_r_Rreg_ChgtVariables} pourquoi pas $\partial_r \theta \pm \eta_r \theta$ ?} avec les changements de variables suivants,
+avec les changements de variables suivants,
 
 \begin{multicols}{2}
 	\begin{subequations}
@@ -925,16 +955,16 @@ Encore une fois, le système d'équations peut être résolu grâce à la paire 
 \end{subequations}
 où, la surbarre indique la transformée selon la variable $r$, et le tilde, selon la variable $x$.
 
-\echaf{L'application du théorème de Green donne}
-
-\begin{align}\color{red}
-	\partial_{zz}^2\tilde{\overline{\theta}} &= -\sigma_{x,m}^2\tilde{\overline{\theta}} + \textcolor{red}{ \left[\psi_m\partial_x\overline{\theta}-\overline{\theta}\partial_x\overline{\psi}_m\right]_{0}^{l}},\\
-	&= -\sigma_{x,m}^2\tilde{\overline{\theta}} + Q_{L_{\sf reg}}X_m(L_{\sf reg}) - Q_0X_m(0),\label{eq:TheoremeGreen}
-\end{align}
-ce qui permet d'obtenir
+L'application du théorème de Green donne
 
 \begin{align}
-	[\partial_t + \underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)]\tilde{\overline{\theta}} &= \underline{g}\left[Q_{L_{\sf reg}}X_m(L_{\sf reg}) - Q_0X_m(0) + \tilde{\overline{\Gamma}}\right], \label{eq:TheoremeGreen_TransfoInteg}\\
+	\partial_{xx}^2\tilde{\overline{\theta}} &= -\sigma_{x,m}^2\tilde{\overline{\theta}} + \left[X_m\partial_x\overline{\theta}-\overline{\theta}\partial_x X_m\right]_{0}^{L_{\sf reg}},\\
+	&= -\sigma_{x,m}^2\tilde{\overline{\theta}} + \overline{Q}_{L_{\sf reg}}X_m(L_{\sf reg}) - \overline{Q}_0X_m(0),\label{eq:TheoremeGreen}
+\end{align}
+ce qui permet d'obtenir 
+
+\begin{align}
+	[\partial_t + \underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)]\tilde{\overline{\theta}} &= \underline{g}\left[\overline{Q}_{L_{\sf reg}}X_m(L_{\sf reg}) - \overline{Q}_0X_m(0) + \tilde{\overline{\Gamma}}\right], \label{eq:TheoremeGreen_TransfoInteg}\\
 	&=f_m(t),
 \end{align}
 en appliquant cette transformation au problème initial, dont la condition initiale s'écrit
@@ -968,33 +998,24 @@ puis selon $r$ avec l'équation~\eqref{eq:TransfoInteg_Inversion_R}, ce qui donn
 
 \begin{multline}
 	\theta(r,x,t) = \sum_{n=1}^{+\infty}\sum_{m=1}^{+\infty}\frac{R_n(r)X_m(x)}{N_r N_x}\\
-	\times \Bigg[ \frac{1-e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t}}{\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2}\left(Q_{L_{\sf reg}}X_m(L_{\sf reg}) - Q_{0}X_m(0) + \textcolor{red}{\tilde{\overline{\Gamma}}}\right) \int_{0}^{D_{\sf reg}} R_n(r')\ \deriv r' \\
+	\times \Bigg[ \frac{1-e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)t}}{\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2}\left(Q_{L_{\sf reg}}X_m(L_{\sf reg}) - Q_{0}X_m(0) + \tilde{\Gamma}\right) \int_{0}^{D_{\sf reg}} R_n(r')\ \deriv r' \\
 	+ e^{-\underline{g}(\sigma_{x,m}^2+\underline{k}\sigma_{r,n}^2)} \int_{0}^{L_{\sf reg}}\int_{0}^{D_{\sf reg}}X_m(x')R_n(r')\theta_0\ \deriv x' \deriv r' \Bigg].
 \end{multline}
 
-\subsection{Détermination des paramètres empiriques}
-Parce que le modèle contient un certain nombre de paramètres empiriques à ajuster pour retrouver les mêmes tendances que sur les résultats expérimentaux, il convient de procéder par étape.
-
-\subsubsection{Coefficient d'échange aux extrémités du noyau}
-Tout d'abord, pour éliminer la vorticité, les expériences sans acoustiques sont exploitées, ce qui permet de déterminer les valeurs des coefficients d'échanges convectifs $h_x(x)$ en $x=0,\ L_{\sf reg}$, et $h_r(r)$ en $r=0,\ D_{\sf reg}$. Ces coefficients sont trouvés grâce à la minimisation d'une fonction de coût dans \textsc{Matlab}\textss\textregistered. En particulier, la fonction \texttt{fminsearch} est appliquée pour réduire l'écart entre les températures mesurées, à la fois pour chaque position de thermocouples, et pour certains instants $t$ choisis.
-
-\begin{figure}[!ht]
-	\centering
-	\external{fig_TransitoireFit}
-%	\externalremake
-	\input{../fig/fig_TransitoireFit/tex/fig_TransitoireFit}
-	\caption{Fit sur le transitoire heat only}
-	\label{fig:TransitoireFit}
-\end{figure}
-
-\subsubsection{Flux thermique de vorticité}
-Une fois les coefficients d'échanges $h$ estimés grâce aux mesures sans acoustiques, ils sont considérés constant et dépendant uniquement des matériaux de construction, et conservés pour le reste des simulations. Selon le même principe, le flux de chaleur ajouté par vorticité est estimé grâce à la minimisation d'une fonction de coût.\echaf{à faire}
+%\subsection{Détermination des paramètres empiriques}
+%Parce que le modèle contient un certain nombre de paramètres empiriques à ajuster pour retrouver les mêmes tendances que sur les résultats expérimentaux, il convient de procéder par étape.
+%
+%\subsubsection{Coefficient d'échange aux extrémités du noyau}
+%
+%
+%\subsubsection{Flux thermique de vorticité}
+%Une fois les coefficients d'échanges $h$ estimés grâce aux mesures sans acoustiques, ils sont considérés constant et dépendant uniquement des matériaux de construction, et conservés pour le reste des simulations. Selon le même principe, le flux de chaleur ajouté par vorticité est estimé grâce à la minimisation d'une fonction de coût.\echaf{à faire}
 
 \section{Conclusion}
-Dans ce chapitre, plusieurs moyens pour interpréter les résultats des campagnes d'expériences sont présentés.\medskip
+Dans ce chapitre, plusieurs modèles pour interpréter les résultats des campagnes d'expériences sont développés.\medskip
 
-Tout d'abord, les notions de nombres adimensionnels sont expliquées. En particulier, pour le cône d'adaptation d'impédance dans lequel seul du fluide se trouve d'une part, et pour le régénérateur poreux d'autre part, les nombres de Rayleigh sont calculés et permettent de prédire la mise en place de convection naturelle dans le cône d'adaptation d'impédance, mais pas dans le régénérateur. Ce calcul agit d'ailleurs comme point de départ pour ce travail de thèse.\smallskip
+Tout d'abord, les notions de nombres adimensionnels sont expliquées, en approchant le problème par une cavité différentiellement chauffée. Une distinction est faite entre la cavité d'adaptation d'impédance dans lequel seul du fluide se trouve et  le régénérateur poreux, et pour chaque cas les nombres de Rayleigh sont calculés. Ces calculs préliminaires permette de prédire la mise en place de convection naturelle dans le cône d'adaptation d'impédance, mais pas dans le régénérateur, ainsi que des ordres de grandeurs des vitesses de circulation où celle-ci apparaît. Ce calcul agit d'ailleurs comme point de départ pour ce travail de thèse.\smallskip
 
 Ensuite, un modèle par éléments finis est implémentés sous le logiciel \textsc{Comsol} Multiphysics\textss\textregistered en ne modélisant que des phénomènes thermiques comme la conduction et la convection, sans prendre en compte le champ acoustique ni la porosité du régénérateur. Ce modèle vise à simuler simplement la distribution de température dans le noyau, en considérant uniquement un flux de chaleur extrait à une paroi représentant l'échangeur froid, la conduction par le solide poreux, et la convection dans le cône d'adaptation d'impédance.\smallskip
 
-Enfin, un modèle analytique du régime transitoire a été développé, en simulant plus de phénomènes. Le champ acoustique est calculé pour déterminer le flux de chaleur thermoacoustique selon le modèle linéaire, et à cela s'ajoutent la conduction, la vorticité, les pertes latérales, et l'échauffement visqueux. La méthode des transformations intégrales permet de résoudre ce problème à plusieurs variables et avec sources, et peut également être 
+Enfin, un modèle analytique du régime transitoire a été développé, en simulant plus de phénomènes laissés de côté dans les approches précédentes. Le champ acoustique est calculé pour déterminer le flux de chaleur thermoacoustique selon le modèle linéaire, et à cela s'ajoutent les flux de chaleur conduits par les différents milieu, la vorticité qui cause un échauffement aux bords dans l'axe du régénérateur, les pertes latérales sur ces mêmes bords et à l'interface avec l'enveloppe qui contient le régénérateur, et l'échauffement visqueux qui apparaît avec l'augmentation de la vitesse acoustique. Ce problème inhomogène et à plusieurs variables est résolu en appliquant successivement pour chaque variable d'espace la méthode des tranformations intégrales, pour ne garder que la dépendance temporelle. Les paramètres comme les coefficients d'échanges responsables des pertes latérales sont estimés empiriquement, en ajustant leur valeur pour approcher les résultats expérimentaux. 

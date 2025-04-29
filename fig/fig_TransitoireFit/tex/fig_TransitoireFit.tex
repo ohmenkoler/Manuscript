@@ -9,21 +9,42 @@
 
     
     \begin{axis}[name=TenuePress,width={\width},height={\height},
-    grid=both, minor tick num=10, 
+    grid=both, minor tick num=4, 
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
     xlabel={Temps $t$ (\unit{\second})},
     ylabel={Température $\theta$ (\unit{\kelvin})},
-%    xmin=0,xmax=75,ymin=0,ymax=.5/1000,
-%    xtick={0,25,50,75,100}, ytick={0,1e-4,...,10e-4},
+    xmin=0, xmax=3500,
+    xtick={0,600,...,3500},
+    ymin=-5, ymax=60,
+    ytick={-10,0,...,60},
 	scaled ticks=false, tick label style={/pgf/number format/fixed},
     domain=0:100,
     legend cell align={left},
-    legend style = {at={($(1,1)+(-2mm,-2mm)$)},anchor = north east,rounded corners}
+    legend style = {at={($(0,1)+(1mm,3mm)$)},anchor = north west,rounded corners},legend columns=4,
     ]
+    
+    	\addlegendimage{legend image with text=}
+		\addlegendentry{}
+		\addlegendimage{legend image with text=TC 5}
+    	\addlegendentry{}
+    	\addlegendimage{legend image with text=TC 8}
+    	\addlegendentry{}
+    	\addlegendimage{legend image with text=TC 11}
+    	\addlegendentry{}
+    			
+		\addlegendimage{legend image with text=Expé.}
+		\addlegendentry{}
   
-    \draw (axis cs:.5,.5) node [rotate=30, text=red] {AJOUTER DONNEES};
-%    \addplot[Plasma1, ultra thick] coordinates {(1,1),}
-
+		\addplot[ultra thick, Plasma1] file {../fig/fig_TransitoireFit/data/mes_temp_5.txt};\addlegendentry{}
+		\addplot[ultra thick, Plasma43] file {../fig/fig_TransitoireFit/data/mes_temp_8.txt};\addlegendentry{}
+		\addplot[ultra thick, Plasma85] file {../fig/fig_TransitoireFit/data/mes_temp_11.txt};\addlegendentry{}
+	
+		\addlegendimage{legend image with text=Ajust.}
+		\addlegendentry{}
+		
+		\addplot[ultra thick, Plasma1, dashed] file {../fig/fig_TransitoireFit/data/fit_temp_5.txt};\addlegendentry{}
+		\addplot[ultra thick, Plasma43, dashed] file {../fig/fig_TransitoireFit/data/fit_temp_8.txt};\addlegendentry{}
+		\addplot[ultra thick, Plasma85, dashed] file {../fig/fig_TransitoireFit/data/fit_temp_11.txt};\addlegendentry{}
     \end{axis}
 \end{tikzpicture}

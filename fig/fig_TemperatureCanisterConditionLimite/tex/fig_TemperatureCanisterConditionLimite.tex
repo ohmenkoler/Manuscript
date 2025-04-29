@@ -4,31 +4,52 @@
 	\def\eWALL{13pt};
 	\def\eFB{6mm};
 	
-	\fill[gray] (0,0) node(O){} rectangle (\lREG,-\eCAN);
-	\fill[top color=gray,bottom color=white](0,-\eCAN) node(eCAN){} rectangle (\lREG,-2*\eCAN);
+	% Regen
+	\fill[top color=gray,bottom color=white](0,0) node(O){} rectangle ++(\lREG,-2*\eCAN) node(regense){};	
 	
-	\fill[right color=black!25,left color=white] ($(O)+(0,\eWALL)$) node(eWALL){} rectangle (-\lREG/4,0);
-	\fill[black!25] (O) rectangle (\lREG,\eWALL) node[midway, color=black]{$k_{\sf acier}$};
-	\fill[right color=white,left color=black!25] ($(O)+(\lREG,0)$) rectangle ++(\lREG/4,\eWALL);
+	% Canister
+	\fill[gray] (O) rectangle ++(\lREG,\eCAN) node(canne){} node[midway, text=white]{$k_{\sf inox}$};
 	
-	\fill[blue!25!white] ($(O)+(0,\eWALL+\eFB)$) node(eFB){} rectangle ++(\lREG,-\eFB);
-	\fill[right color=blue!25!white,left color=white] (eFB) rectangle ++(-\lREG/4,-\eFB);
-	\fill[right color=white,left color=blue!25!white] ($(eFB)+(\lREG,0)$) rectangle ++(\lREG/4,-\eFB);
-	\fill[top color=white,bottom color=blue!25!white] (eFB) rectangle ++(\lREG,.5*\eFB);
+	% Interface regen canister
+	\draw[white, dashed] (O.center) -- (O.center -| canne.center);
+	
+	% Tube
+	\fill[right color=black!25,left color=white] (O |- canne) node(wallsw){} rectangle ++(-\lREG/4,\eWALL);
+	\fill[black!25] (wallsw) rectangle +(\lREG,\eWALL) node[midway, color=black]{$k_{\sf inox}$} node(wallne){};
+	\fill[right color=white,left color=black!25] (wallne) rectangle ++(\lREG/4,-\eWALL);
+	
+	% Feedback	
+	\fill[blue!25!white] (O |- wallne) node(fbsw){} rectangle ++(\lREG,\eFB) node(fbne){};
+	\fill[right color=blue!25!white,left color=white] (fbsw) rectangle ++(-\lREG/4,\eFB);
+	\fill[right color=white,left color=blue!25!white] (fbne) rectangle ++(\lREG/4,-\eFB);
+	\fill[top color=white,bottom color=blue!25!white] (fbne) rectangle ++(-\lREG,.5*\eFB);
 	\shade[upper left=white,upper right=white,
-         lower left=white,lower right=blue!25!white] (eFB) rectangle ++(-\lREG/4,.5*\eFB);
+         lower left=white,lower right=blue!25!white] (fbsw |- fbne) rectangle ++(-\lREG/4,.5*\eFB) node(fbnw){};
 	\shade[upper left=white,upper right=white,
-         lower left=blue!25!white,lower right=white] ($(eFB)+(\lREG,0)$) rectangle ++(\lREG/4,.5*\eFB);
-	\draw[->,line width=.5mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},blue!75!white] ($(eWALL)+(\lREG/2,0)$) -- ++(0,\eFB) node[midway,right,blue!75!white]{$h_{\sf conv}$};
+         lower left=blue!25!white,lower right=white] (fbne) rectangle ++(\lREG/4,.5*\eFB);
+         
+	% Axes         
+	\draw[very thick, -|] (O.center |- regense.center) -- (O.center) node[midway, left=1cm]{Régénérateur}; 		
+	\draw[very thick, -|] (O.center) -- (O.center |- canne.center) node[midway, left]{$\ell_{\sf env}$} node[midway, left=1cm]{Enveloppe du régénérateur};
+	\draw[very thick, -|] (O.center |- canne.center) -- (O.center |- wallne.center) node[midway, left]{$\ell_{\sf tub}$} node[midway, left=1cm]{Tube contenant le noyau};
+	\draw[very thick] (O.center |- wallne.center) -- (O.center |- fbnw) node[midway, left=1cm]{Boucle de rétroaction};
+	
+	
+	% hconv et hcontact
+	\draw[<-] ($(O.center)!.75!(O.center -| canne.center)$) -- ++(2cm,-.5cm) node[right]{$h_r$};
+	\draw[<-] ($(wallsw.center)!.75!(wallsw.center -| wallne.center)$) -- ++(2cm,-.5cm) node[right]{$h_{t}$};
+	\draw[<-] ($(fbsw.center)!.75!(fbsw.center -| fbne.center)$) -- ++(2cm,-.5cm) node[right]{$h_{c}$};
+	
+%	\draw[->,line width=.5mm,decorate,decoration={snake,amplitude=.4mm,segment length=2mm,post length=2mm},blue!75!white] ($(eWALL)+(\lREG/2,0)$) -- ++(0,\eFB) node[midway,right,blue!75!white]{$h_{\sf conv}$};
 	
 	
 	
-	\draw[<-] ($(eFB)+(0,\eFB)$) -- ($(eCAN)+(0,-1.1*\eCAN)$) node[pos=0, left]{$\mathbf{e}_r$};
-	\draw[->] (-1mm,0) node(lab){} -- (4*\lREG/3,0) node[above]{$\mathbf{e}_x$};
+%	\draw[<-] ($(eFB)+(0,\eFB)$) -- ($(eCAN)+(0,-1.1*\eCAN)$) node[pos=0, left]{$\mathbf{e}_r$};
+%	\draw[->] (-1mm,0) node(lab){} -- (4*\lREG/3,0) node[above]{$\mathbf{e}_x$};
 	
-	\draw ($(eWALL) + (-\lREG/4,1.5*\eFB/2)$) node[left]{Canal de rétroaction};
-	\draw ($(O) + (-\lREG/4,\eWALL/2)$) node[left]{Tube contenant le noyau};
-	\draw (eWALL) node[left]{$e_{\sf env}$};
-	\draw (O) node[left]{0};
-	\draw[line width=.5mm, dashed, draw=MatlabOrange] (eCAN.base) node[left]{$-e_{\sf enc}$} -- ++(\lREG,0);
+%	\draw ($(eWALL) + (-\lREG/4,1.5*\eFB/2)$) node[left]{Canal de rétroaction};
+%	\draw ($(O) + (-\lREG/4,\eWALL/2)$) node[left]{Tube contenant le noyau};
+%	\draw (eWALL) node[left]{$e_{\sf env}$};
+%	\draw (O) node[left]{0};
+%	\draw[line width=.5mm, dashed, draw=MatlabOrange] (eCAN.base) node[left]{$-e_{\sf enc}$} -- ++(\lREG,0);
 \end{tikzpicture}

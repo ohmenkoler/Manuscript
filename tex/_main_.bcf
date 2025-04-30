@@ -96,7 +96,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>99</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
@@ -104,7 +104,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>99</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -331,7 +331,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>99</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
@@ -339,7 +339,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>99</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -2501,28 +2501,28 @@
     <bcf:citekey order="72" intorder="1">walch_convection_1980</bcf:citekey>
     <bcf:citekey order="73" intorder="1">nield_convection_2013</bcf:citekey>
     <bcf:citekey order="74" intorder="1">elder_steady_1967</bcf:citekey>
-    <bcf:citekey order="75" intorder="1">lewis_measurement_1998</bcf:citekey>
-    <bcf:citekey order="75" intorder="2">swift_thermoacoustics_2017</bcf:citekey>
-    <bcf:citekey order="76" intorder="1">li_effective_2006</bcf:citekey>
-    <bcf:citekey order="76" intorder="2">hsu_effective_1996</bcf:citekey>
-    <bcf:citekey order="77" intorder="1">ramadan_design_2021</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">ramadan_design_2021</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">schneider_laminar_1992</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">basak_heat_2009</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">lewis_measurement_1998</bcf:citekey>
+    <bcf:citekey order="77" intorder="2">swift_thermoacoustics_2017</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">li_effective_2006</bcf:citekey>
+    <bcf:citekey order="78" intorder="2">hsu_effective_1996</bcf:citekey>
     <bcf:citekey order="79" intorder="1">ramadan_design_2021</bcf:citekey>
-    <bcf:citekey order="80" intorder="1">basak_heat_2009</bcf:citekey>
-    <bcf:citekey order="81" intorder="1">swift_thermoacoustic_1988</bcf:citekey>
-    <bcf:citekey order="82" intorder="1">lotton_transient_2009</bcf:citekey>
-    <bcf:citekey order="83" intorder="1">swift_thermoacoustics_2017</bcf:citekey>
-    <bcf:citekey order="84" intorder="1">hsu_effective_1996</bcf:citekey>
-    <bcf:citekey order="85" intorder="1">lewis_measurement_1998</bcf:citekey>
-    <bcf:citekey order="86" intorder="1">hahn_heat_2012</bcf:citekey>
-    <bcf:citekey order="87" intorder="1">ramadan_design_2021</bcf:citekey>
-    <bcf:citekey order="88" intorder="1">ross_influence_2003</bcf:citekey>
-    <bcf:citekey order="88" intorder="2">hireche_numerical_2019</bcf:citekey>
-    <bcf:citekey order="88" intorder="3">ramadan_experimental_2018</bcf:citekey>
-    <bcf:citekey order="89" intorder="1">zhang_novel_2011</bcf:citekey>
-    <bcf:citekey order="89" intorder="2">babaei_investigation_2010</bcf:citekey>
-    <bcf:citekey order="90" intorder="1">schneider_laminar_1992</bcf:citekey>
-    <bcf:citekey order="91" intorder="1">basak_heat_2009</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">ramadan_design_2021</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">ramadan_design_2021</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">basak_heat_2009</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">swift_thermoacoustic_1988</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">lotton_transient_2009</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">swift_thermoacoustics_2017</bcf:citekey>
+    <bcf:citekey order="86" intorder="1">hsu_effective_1996</bcf:citekey>
+    <bcf:citekey order="87" intorder="1">lewis_measurement_1998</bcf:citekey>
+    <bcf:citekey order="88" intorder="1">hahn_heat_2012</bcf:citekey>
+    <bcf:citekey order="89" intorder="1">ramadan_design_2021</bcf:citekey>
+    <bcf:citekey order="90" intorder="1">ross_influence_2003</bcf:citekey>
+    <bcf:citekey order="90" intorder="2">hireche_numerical_2019</bcf:citekey>
+    <bcf:citekey order="90" intorder="3">ramadan_experimental_2018</bcf:citekey>
+    <bcf:citekey order="91" intorder="1">zhang_novel_2011</bcf:citekey>
+    <bcf:citekey order="91" intorder="2">babaei_investigation_2010</bcf:citekey>
     <bcf:citekey order="92" intorder="1">ANR_thermo-acoustic_2019</bcf:citekey>
     <bcf:citekey order="92" intorder="2">ramadan_design_2021</bcf:citekey>
   </bcf:section>

@@ -448,8 +448,12 @@ Ici encore, les résultats de chacune des configurations sont différents. Premi
 Ce qui est montré également ici par les résultats obtenus dans l'orientation `\texttt{V1}' est le faible échange convectif entre l'échangeur de chaleur froid et le régénérateur \echaf{et/ou} l'écoulement continu négligeable à l'intérieur du régénérateur. En revanche, le fluide chaud qui monte des cartouches chauffantes vers la source acoustique principale dans l'orientation `\texttt{V2}' y rencontre un volume de fluide à température ambiante, à l'arrière de cette source.
 
 \subsubsection{Expériences avec acoustique}
-\paragraph{Réfrigérateur horizontal}
 Après avoir adopté un point de vue d'ensemble énergétique, puis avoir étudié la distribution de température dans la cavité d'adaptation d'impédance en l'absence d'oscillations acoustiques, il est temps de vérifier la superposition des effets de convection naturelle montrés à ceux provoqués par la présence d'ondes acoustiques. Les trois amplitudes acoustiques présentées dans le paragraphe~\ref{chap:MesureAvecAcou} sont paramétrées pour des expériences dont les résultats sont tracés sur les figures~\ref{fig:Acou_CHXout_H1H2_Low} à \ref{fig:Acou_CHXout_H1H2_High}.
+
+\paragraph{Réfrigérateur horizontal}
+
+
+
 
 \begin{figure}[!ht]
     \centering
@@ -513,7 +517,7 @@ Encore une fois, les trois amplitudes acoustiques sont mises en place pour des e
     \label{fig:Acou_CHXout_V1V2_Low}
 \end{figure}
 
-Pour ces orientations, des expériences à faible amplitude acoustique où $DR=\qty{.4}{\percent}$ sont réalisée et les résultats sont présentés sur la figure~\ref{fig:Acou_CHXout_V1V2_Low}. Le comportement diffère fortement d'une orientation à l'autre, puisqu'en `\texttt{V2}' l'écart entre les températures devant la source acoustique principale et sur la section de l'échangeur de chaleur froid se creuse avec \qty{-.5}{\kelvin} pour la première et \qty{-4}{\kelvin} au centre de la seconde. Les thermocouples \numlist{1;3} atteignent tous deux \qty{-3}{\kelvin}, ce qui montre l'axisymétrie du système dans cette orientation.\smallskip
+Pour ces orientations, des expériences à faible amplitude acoustique où $DR=\qty{.4}{\percent}$ sont réalisée et les résultats sont présentés sur la figure~\ref{fig:Acou_CHXout_V1V2_Low}. Le comportement diffère fortement d'une orientation à l'autre, puisqu'en `\texttt{V2}' l'écart entre les températures devant la source acoustique principale et sur la section de l'échangeur de chaleur froid se creuse avec \qty{-.5}{\kelvin} pour la première et \qty{-4}{\kelvin} au centre de la seconde. Les thermocouples \numlist{1;3} atteignent tous deux \qty{-3}{\kelvin}, ce qui est en accord avec l'hypothèse de l'axisymétrie du système dans cette orientation.\smallskip
 
 L'orientation `\texttt{V1}' voit d'abord une différence de température apparaître entre la source acoustique principale qui reste à température ambiante et l'échangeur de chaleur froid qui atteint \qty{-3}{\kelvin} au centre et \qty{-2}{\kelvin} en périphérie à l'instant $t=\qty{1200}{\second}$. Après ce moment, les températures convergent l'une vers l'autre et les températures finalement atteintes au régime stationnaire sont \qtylist{-2.1;-1.2}{\kelvin}, respectivement par les couples de thermocouples \numlist{0;2} et \numlist{1;3}. Il est suspecté que cet effet dont la constante de temps est plus grande que celle de l'effet thermoacoustique soit causé par la convection naturelle et l'écoulement de fluide associé, assez lent du fait des faibles écarts de températures atteints ici.\smallskip
 
@@ -557,14 +561,14 @@ Dans la cavité d'adaptation d'impédance, les orientations `\texttt{V1}' et `\t
 Cela se vérifie par l'observation d'une température minimale atteinte par un thermocouple donnée à un instant qui dépend de manière inversement proportionnelle à l'amplitude acoustique et suivie d'un réchauffement du fluide autour dudit thermocouple. \echaf{ça pourrait être la visco mais on le verrait pour toutes les orientations, et on le verrait probablement pas à faible amplitude. En plus on et hors du poreux}
 
 \subsection{À l'intérieur du régénérateur}\label{chap:DistribTemp_Regen}
-Les expériences menées dans le paragraphe~\ref{chap:DistribTemp_CavAdaptImped} donnent d'autres valeurs de température en regardant les thermocouples~\numrange{4}{12}.
+Les expériences menées dans le paragraphe~\ref{chap:DistribTemp_CavAdaptImped} donnent d'autres valeurs de température en regardant les thermocouples~\numrange{4}{12} placés à l'intérieur du régénérateur. \echaf{Dans la suite de ce manuscrit, les résultats pour les couples d'orientations `\texttt{H1}' et `\texttt{H2}', et `\texttt{V1}' et `\texttt{V2}, pour chaque blabla }
 
 \subsubsection{Expériences sans acoustique}
-Encore une fois, les expériences sans acoustique sont analysées en premières. La comparaison entre les orientations `\texttt{H1}' et `\texttt{H2}' est faite avec la figure~\ref{fig:HeatOnly_Regen_H1H2}, et celle pour les orientations `\texttt{V1}' et `\texttt{V2}'  sur la figure~\ref{fig:HeatOnly_Regen_V1V2}.\medskip
+Encore une fois, les expériences sans acoustique sont analysées en premières. La comparaison entre les orientations `\texttt{H1}' et `\texttt{H2}' est faite avec la figure~\ref{fig:HeatOnly_Regen_H1H2}, et celle pour les orientations `\texttt{V1}' et `\texttt{V2}' sur la figure~\ref{fig:HeatOnly_Regen_V1V2}.\medskip
  
 %\paragraph{Réfrigérateur horizontal}
 
-\begin{figure}[!ht]
+\begin{figure}[!htp]
     \centering
 	\begin{subfigure}{\textwidth}
 		\centering
@@ -606,7 +610,7 @@ L'observation de ces résultats d'expériences avec le réfrigérateur placé da
 
 %\paragraph{Réfrigérateur vertical}
 
-\begin{figure}[!ht]
+\begin{figure}[!htp]
     \centering
 	\begin{subfigure}{\textwidth}
 		\centering
@@ -641,11 +645,18 @@ L'observation de ces résultats d'expériences avec le réfrigérateur placé da
 
 
 \subsubsection{Expériences avec acoustique}
-%\paragraph{Réfrigérateur horizontal}
-
-
-\begin{figure}[!ht]
+\paragraph{Faible amplitude acoustique}
+\begin{figure}[!htp]
     \centering
+    \begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_H10.pdf}
+	\end{subfigure} 
+	\begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_H20.pdf}
+	\end{subfigure} \vspace{-30pt}
+	
 	\begin{subfigure}{\textwidth}
 		\centering
 		\external{fig_Acou_CHXin_H1H2_Low}
@@ -676,79 +687,34 @@ L'observation de ces résultats d'expériences avec le réfrigérateur placé da
     \label{fig:Acou_Regen_H1H2_Low}
 \end{figure}
 
+La figure~\ref{fig:Acou_Regen_H1H2_Low} est obtenue à l'amplitude acoustique faible, au \textit{drive ratio} $DR=\qty{.4}{\percent}$ avec le réfrigérateur placé à l'horizontale (orientations `\texttt{H1}' et `\texttt{H2}'). Les sources acoustiques sont alimentées à l'instant $t=\qty{100}{\second}$, et les températures sont acquises pendant \qty{1}{\hour}.\medskip
+
+Les thermocouples du côté froid, en $x=0$, numérotés TC~\numrange{4}{6}, montrent sur la figure~\ref{fig:Acou_CHXin_H1H2_Low} un refroidissement global de la zone, avec une stabilisation des températures en \qty{1100}{\second}. Sur l'axe du régénérateur, le thermocouple TC~\num{5} indique une diminution de \qty{5}{\kelvin} par rapport à la température initiale, aussi bien en dans l'orientation `\texttt{H1}' que dans l'orientation `\texttt{H2}'. En revanche, pour les thermocouples TC~\numlist{4;6} situés en périphérie du régénérateur relèvent des températures différentes selon la configuration. Dans l'orientation `\texttt{H1}', le TC~\num{4} mesure une baisse de la température à \qty{3}{\kelvin} en dessous de sa température initiale, et le TC~\num{6}, une baisse de \qty{4.8}{\kelvin} par rapport à l'état initial. En revanche, dans l'orientation `\texttt{H2}', les thermocouples~\numlist{4;6} s'abaissent à la même température, \qty{3}{\kelvin} en dessous de la valeur initiale.
+
+Dans le cas de l'orientation `\texttt{H1}', cette distribution de température semble confirmer la présence d'une cellule de convection naturelle dans la cavité d'adaptation d'impédance, puisqu'un écart de température existe entre le bas et le haut du régénérateur, dont les températures sont respectivement mesurées par les thermocouple~\numlist{4;6}, et suit la même tendance que celle mesurée par les thermocouples~\numrange{1}{3} situés de l'autre côté de l'échangeur de chaleur froid, dans laquelle un flux montent le long du piston de la source acoustique principale dont la température est plus élevée que le côté froid du noyau, en emportant un flux de chaleur jusqu'au contact avec l'échangeur froid, le long duquel le fluide descend jusqu'en bas de la cavité. Lors de cette phase de descente, de la chaleur est extraite du fluide qui agit comme une charge thermique non uniforme sur la section, dont la température diminue peu à peu. Cependant, le gradient radial de température n'est pas linéaire, et les températures relevées au centre (TC~\num{5}) et en bas (TC~\num{6}) du régénérateur ne sont espacées que de \qty{.4}{\kelvin}, alors que le thermocouple placé en haut se trouve \qty{2}{\kelvin} plus haut. Plusieurs hypothèses sur les processus d'échanges thermiques qui peuvent se produire au niveau de l'échangeur froid sont proposées : durant la descente d'un volume élémentaire de fluide le long de la paroi extérieure de l'échangeur froid, sa température diminue à chaque cycle thermodynamique par pompage thermoacoustique jusqu'à atteindre un équilibre thermique, et il est possible que celui-ci soit atteint avant d'avoir parcouru toute le diamètre de l'échangeur ; il est également possible que l'effet thermoacoustique soit plus marqué au centre du régénérateur que sur sa périphérie, notamment à cause du flux de conduction thermique retour facilité par la présence de l'enveloppe qui contient le régénérateur, qui provoque la non-uniformité de température schématisée sur la figure~\ref{fig:SuperpositionComsol}(c).\medskip
+
+Les températures mesurées au milieu du régénérateur par les thermocouples~\numrange{7}{9} situés en $x=\nicefrac{L_{\sf reg}}{2}$ et tracées sur la figure~\ref{fig:Acou_Regmid_H1H2_Low} montrent dans chaque orientation une température sur la section qui varie très peu par rapport à l'état initial puisque la température finale la plus basse est \qty{-.4}{\kelvin} et mesurée par le thermocouple~\num{9}, et la plus haute, \qty{.3}{\kelvin}, par le thermocouple~\num{8}. De plus, les données de températures de chaque thermocouple se superposent quasi-parfaitement d'une orientation à l'autre, avec moins de \qty{.25}{\kelvin} d'écart.
+
+Le résultat l'impact de la convection naturelle visibles sur les thermocouples du côté froid (à l'extérieur du noyau avec les TC~\numlist{1;2;3} ou à l'intérieur avec les TC~\numlist{4;5;6}) semble négligeable. Un effet est visible autour de l'instant $t=\qty{300}{\second}$, mais non-expliqué au moment de la rédaction de ce manuscrit : avant, les évolutions de températures semblent suivre une certaine tendance, qui s'inverse après cet instant.\medskip
+
+Du côté ambiant, les températures sont relevées par les thermocouples~\numlist{10;11;12}, et leur évolution est tracée sur la figure~\ref{fig:Acou_AHXin_H1H2_Low}. D'une manière générale, les températures de ces trois thermocouples augmentent d'\qty{1}{\kelvin} au bout un temps de \qty{150}{\second}, sauf dans l'orientation `\texttt{V1}' où le thermocouple~\num{11} situé sur l'axe affiche une augmentation de \qty{3.6}{\kelvin} \echaf{et je ne sais pas pourquoi}. 
+
+La zone s'échauffe suite à l'apport de chaleur par l'effet thermoacoustique. L'échangeur en extrait une grande partie et la température augmente peu par rapport à la baisse de température du côté froid, mais il est imparfait et ne peut tout retirer.\bigskip
 
 
-\begin{figure}[!ht]
+
+\begin{figure}[!htp]
     \centering
-	\begin{subfigure}{\textwidth}
-		\centering
-		\external{fig_Acou_CHXin_H1H2_Mid}
-%    	\externalremake
-        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid}
-		\caption{}
-		\label{fig:Acou_CHXin_H1H2_Mid}
-	\end{subfigure} \vspace{1em}
+    \begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_V10.pdf}
+	\end{subfigure} 
+	\begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_V20.pdf}
+	\end{subfigure} \vspace{-25pt}
 	
-	\begin{subfigure}{\textwidth}
-		\centering
-		\external{fig_Acou_Regmid_H1H2_Mid}
-%    	\externalremake
-        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid}
-		\caption{}
-		\label{fig:Acou_Regmid_H1H2_Mid}
-	\end{subfigure} \vspace{1em}
 	
-	\begin{subfigure}{\textwidth}
-		\centering
-		\external{fig_Acou_AHXin_H1H2_Mid}
-%    	\externalremake
-        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Mid}
-		\caption{}
-		\label{fig:Acou_AHXin_H1H2_Mid}
-	\end{subfigure}	
-    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à  \textit{drive ratio} moyen $DR=\qty{2}{\percent}$. \subref{fig:Acou_CHXin_H1H2_Mid} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_Mid} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_Mid} côté ambiant (TC \numlist{10;11;12}).} 
-    \label{fig:Acou_Regen_H1H2_Mid}
-\end{figure}
-
-
-
-\begin{figure}[!ht]
-    \centering
-	\begin{subfigure}{\textwidth}
-		\centering
-		\external{fig_Acou_CHXin_H1H2_High}
-%    	\externalremake
-        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High}
-		\caption{}
-		\label{fig:Acou_CHXin_H1H2_High}
-	\end{subfigure}	\vspace{1em}
-	
-	\begin{subfigure}{\textwidth}
-		\centering
-		\external{fig_Acou_Regmid_H1H2_High}
-%    	\externalremake
-        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High}
-		\caption{}
-		\label{fig:Acou_Regmid_H1H2_High}
-	\end{subfigure} \vspace{1em}
-	
-	\begin{subfigure}{\textwidth}
-		\centering
-		\external{fig_Acou_AHXin_H1H2_High}
-%    	\externalremake
-        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_High}
-		\caption{}
-		\label{fig:Acou_AHXin_H1H2_High}
-	\end{subfigure}	
-    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$. \subref{fig:Acou_CHXin_H1H2_High} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_High} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_High} côté ambiant (TC \numlist{10;11;12}).} 
-    \label{fig:Acou_Regen_H1H2_High}
-\end{figure}
-
-
-%\paragraph{Réfrigérateur vertical}
-
-\begin{figure}[!ht]
-    \centering
 	\begin{subfigure}{\textwidth}
 		\centering
 		\external{fig_Acou_CHXin_V1V2_Low}
@@ -779,10 +745,89 @@ L'observation de ces résultats d'expériences avec le réfrigérateur placé da
     \label{fig:Acou_Regen_V1V2_Low}
 \end{figure}
 
+La figure~\ref{fig:Acou_Regen_V1V2_Low} représente également les données de température obtenues lors d'expériences à faible amplitude acoustique, en plaçant cette fois le réfrigérateur dans les orientations verticales `\texttt{V1}' et `\texttt{V2}'. Les sources acoustiques sont alimentées à l'instant $t=\qty{100}{\second}$, et l'acquisition dure \qty{1}{\hour}.\medskip
 
+L'allure des températures dépend de l'orientation, même si les température du côté froid tracées sur la figure~\ref{fig:Acou_CHXin_V1V2_Low} diminuent là encore après le démarrage de l'expérience. À la fin de l'expérience, les températures sur l'axe atteignent \qty{-4.6}{\kelvin} dans l'orientation `\texttt{V1}' et \qty{-8.1}{\kelvin} dans l'orientation `\texttt{V2}'. Les thermocouples périphériques, \numlist{4;6}, voient respectivement leur température s'abaisser à \qtylist{-3.2;-2.6}{\kelvin} dans l'orientation `\texttt{V1}', tandis que dans l'orientation `\texttt{V2}', leur température diminue de la même manière pour les deux jusqu'à atteindre \qty{-4.8}{\kelvin}. Les trois thermocouples montrent qu'après un refroidissement initial de \qtyrange{100}{1200}{\second}, les températures remontent avant d'atteindre le régime établi dans l'orientation `\texttt{V1}', et ce comportement est absent des mesures réalisées dans l'orientation `\texttt{V2}'.
+
+Plusieurs choses peuvent être observées sur ces distributions du côté froid du régénérateur mesurées par les thermocouples~\numlist{4;5;6}. Tout d'abord, cette figure est très similaire à celle qui affiche la distribution radiale de température de l'autre côté de l'échangeur froid et mesurée par les thermocouples~\numlist{1;2;3}. Cependant, ici les températures atteintes sont plus basses, puisque les thermocouples~\numlist{4;5;6} sont situés à l'intérieur du noyau. Dans les deux cas, le centre (TC~\num{5}) est plus froid que la périphérie (TC~\numlist{4;6}), ce qui est probablement causé par le fait que la chaleur est mieux conduite par l'enveloppe que par l'empilement de disques de tissus métalliques. La différence entre les distributions radiales des températures dans les deux orientations apparaît via le réchauffement qui a lieu au temps $t=\qty{1200}{\second}$. Cet instant correspond au moment où la température devant le piston de la source acoustique principale et mesurée par le thermocouple~\num{0} s'abaisse pour atteindre la même température que le centre de l'échangeur de chaleur froid mesuré par le thermocouple~\num{2} après la montée du fluide. D'ailleurs, de même que les thermocouples~\numlist{1;2;3}, les thermocouples~\numlist{4;5;6} sont plus rapprochés dans l'orientation `\texttt{V1}' que dans l'orientation `\texttt{V2}', car même si la température du côté froid du régénérateur est plus basse que la température de l'autre côté de l'échangeur de chaleur, la cellule de convection naturelle qui apparaît dans la cavité impose l'allure radiale de la distribution de température à cette extrémité du régénérateur.\medskip
+
+Les thermocouples~\numrange{7}{9} mesurent la température au milieu du régénérateur, en $x=\nicefrac{L_{\sf reg}}{2}$. L'allure des distributions mesurées est très différente entre l'orientation `\texttt{V1}' et l'orientation `\texttt{V2}', puisque pour la première, les températures relevées par les trois thermocouplels sont égales les unes aux autres et ne décroissent que de \qty{.4}{\kelvin}, et pour la seconde, le thermocouple~\num{8} sur l'axe indique une diminution de \qty{3.2}{\kelvin} par rapport à l'état avant allumage des sources acoustiques et les thermocouples~\numlist{7;9} en périphérie, une baisse de la température de \qty{1.6}{\kelvin} par rapport à la température initiale. Comme sur la figure~\ref{fig:Acou_Regmid_H1H2_Low}, entre l'allumage des sources à $t=\qty{100}{\second}$ et un instant à $t=\qty{300}{\second}$ les thermocouples semblent augmenter légèrement jusqu'à \qty{.4}{\kelvin} avant de converger vers l'état final de l'expérience.
+
+Ces distributions de température sont toutes deux compatibles avec l'hypothèse de l'axisymétrie du système dans les orientations verticales. Leur différence s'explique par la continuité entre la distribution mesurée du côté froid du régénérateur par les thermocouples~\numlist{4;5;6} et la distribution de température du côté ambiant et relevée par les thermocouples~\numlist{10;11;12} et dont l'analyse est développée ci-après.\medskip
+
+Cette distribution du côté ambiant est tracée sur la figure~\ref{fig:Acou_AHXin_V1V2_Low}. Dans une orientation comme dans l'autre, la température mesurées sur la section par les thermocouples~\numlist{10;11;12} semble uniforme et augmente faiblement après l'allumage des sources acoustique. L'augmentation de température est de \qty{1.4}{\kelvin} pour l'orientation `\texttt{V1}' et de \qty{.4}{\kelvin} pour l'orientation `\texttt{V2}'.
+
+Ces distributions de températures semblent indiquer que l'échangeur de chaleur impose une température ambiante constante au cours du temps.
 
 \begin{figure}[!ht]
+	\centering
+	\external{fig_Acou_axProfile_V1V2_Low}
+%	\externalremake
+	\input{../fig/fig_ConvNat_Acou/tex/fig_Acou_axProfile_V1V2_Low}
+	\caption{Profil axial V1V2 low}
+	\label{fig:Acou_axProfile_V1V2_Low}
+\end{figure}
+
+\textit{\textbf{Remarque :} \echaf{Cette figure \ref{fig:Acou_axProfile_V1V2_Low} semble dire confirmer l'absence de convection dans le poreux parce qu'en V2 on aurait un angle plus marqué si un flux de fluide montait de l'ambiant vers le haut or il est plus aigu en V1 + on a bien la confirmation que la conduction est meilleure dans le canister mais que la conduction transverse bof bof parce que le gradient en périph change pas mais au centre oui}}
+
+\bigskip
+
+
+\paragraph{Moyenne amplitude acoustique}
+\begin{figure}[!htp]
     \centering
+    \begin{subfigure}[t]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_H10.pdf}
+	\end{subfigure} 
+	\begin{subfigure}[t]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_H20.pdf}
+	\end{subfigure} \vspace{-30pt}
+	
+	\begin{subfigure}{\textwidth}
+		\centering	
+		\external{fig_Acou_CHXin_H1H2_Mid}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid}
+		\caption{}
+		\label{fig:Acou_CHXin_H1H2_Mid}
+	\end{subfigure} \vspace{1em}
+	
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_Regmid_H1H2_Mid}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid}
+		\caption{}
+		\label{fig:Acou_Regmid_H1H2_Mid}
+	\end{subfigure} \vspace{1em}
+	
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_AHXin_H1H2_Mid}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_Mid}
+		\caption{}
+		\label{fig:Acou_AHXin_H1H2_Mid}
+	\end{subfigure}	
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à  \textit{drive ratio} moyen $DR=\qty{2}{\percent}$. \subref{fig:Acou_CHXin_H1H2_Mid} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_Mid} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_Mid} côté ambiant (TC \numlist{10;11;12}).} 
+    \label{fig:Acou_Regen_H1H2_Mid}
+\end{figure}
+
+Les expériences présentés dans le paragraphe précédent sont reproduite à moyenne amplitude acoustique, au \textit{drive ratio} $DR=\qty{2}{\percent}$.
+
+\begin{figure}[!htp]
+    \centering
+    \begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_V10.pdf}
+	\end{subfigure} 
+	\begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_V20.pdf}
+	\end{subfigure} \vspace{-25pt}
+	
 	\begin{subfigure}{\textwidth}
 		\centering
 		\external{fig_Acou_CHXin_V1V2_Mid}
@@ -814,9 +859,63 @@ L'observation de ces résultats d'expériences avec le réfrigérateur placé da
 \end{figure}
 
 
+\paragraph{Haute amplitude acoustique}
 
-\begin{figure}[!ht]
+
+\begin{figure}[!htp]
     \centering
+    \begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_H10.pdf}
+	\end{subfigure} 
+	\begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_H20.pdf}
+	\end{subfigure} \vspace{-30pt}
+	
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_CHXin_H1H2_High}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High}
+		\caption{}
+		\label{fig:Acou_CHXin_H1H2_High}
+	\end{subfigure}	\vspace{1em}
+	
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_Regmid_H1H2_High}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High}
+		\caption{}
+		\label{fig:Acou_Regmid_H1H2_High}
+	\end{subfigure} \vspace{1em}
+	
+	\begin{subfigure}{\textwidth}
+		\centering
+		\external{fig_Acou_AHXin_H1H2_High}
+%    	\externalremake
+        \input{../fig/fig_ConvNat_Acou/tex/fig_Acou_AHXin_H1H2_High}
+		\caption{}
+		\label{fig:Acou_AHXin_H1H2_High}
+	\end{subfigure}	
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à haut \textit{drive ratio} $DR=\qty{3.4}{\percent}$. \subref{fig:Acou_CHXin_H1H2_High} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_High} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_High} côté ambiant (TC \numlist{10;11;12}).} 
+    \label{fig:Acou_Regen_H1H2_High}
+\end{figure}
+
+
+
+\begin{figure}[!htp]
+    \centering
+    \begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_V10.pdf}
+	\end{subfigure} 
+	\begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_V20.pdf}
+	\end{subfigure} \vspace{-25pt}
+	
 	\begin{subfigure}{\textwidth}
 		\centering
 		\external{fig_Acou_CHXin_V1V2_High}

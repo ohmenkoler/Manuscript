@@ -66,75 +66,80 @@
 \contentsline {subsection}{\numberline {III.2.1}Nombre de Rayleigh hors d'un matériau poreux}{36}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {III.2.2}Nombre de Rayleigh dans un matériau poreux}{38}{subsection.3.2.2}%
 \contentsline {section}{\numberline {III.3}Simulations par éléments finis}{39}{section.3.3}%
-\contentsline {subsection}{\numberline {III.3.1}Géométrie du problème}{39}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {III.3.2}Matériaux composant les domaines}{40}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {III.3.3}Modèles physiques utilisés}{41}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {III.3.4}Conditions aux frontières}{41}{subsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {III.3.4.1}Problème thermique}{41}{subsubsection.3.3.4.1}%
-\contentsline {subsubsection}{\numberline {III.3.4.2}Problème fluide}{42}{subsubsection.3.3.4.2}%
-\contentsline {subsection}{\numberline {III.3.5}Résultats}{42}{subsection.3.3.5}%
-\contentsline {section}{\numberline {III.4}Modèle du régime transitoire}{44}{section.3.4}%
-\contentsline {subsection}{\numberline {III.4.1}Géométrie du problème}{44}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {III.4.2}Champ acoustique considéré}{45}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {III.4.3}Mécanismes pris en compte dans le modèle}{45}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {III.4.4}Bilan thermique}{48}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {III.4.5}Méthode des transformations intégrales}{49}{subsection.3.4.5}%
-\contentsline {subsubsection}{\numberline {III.4.5.1}Application de la méthode dans la direction transverse}{50}{subsubsection.3.4.5.1}%
-\contentsline {subsubsection}{\numberline {III.4.5.2}Application de la méthode dans la direction axiale}{50}{subsubsection.3.4.5.2}%
-\contentsline {subsubsection}{\numberline {III.4.5.3}Application des transformées intégrales inverses}{51}{subsubsection.3.4.5.3}%
-\contentsline {section}{\numberline {III.5}Conclusion}{52}{section.3.5}%
-\contentsline {chapter}{\numberline {IV}Résultats expérimentaux et discussions}{53}{chapter.4}%
+\contentsline {subsection}{\numberline {III.3.1}Cavité d'adaptation d'impédance seule}{39}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {III.3.1.1}Description du modèle}{39}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {III.3.1.2}\'Etude sur la direction du cône}{40}{subsubsection.3.3.1.2}%
+\contentsline {subsection}{\numberline {III.3.2}Cavité d'adaptation d'impédance couplée au noyau thermoacoustique}{41}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {III.3.2.1}Géométrie du problème}{41}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {III.3.2.2}Matériaux composant les domaines}{43}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {III.3.2.3}Modèles physiques utilisés}{43}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {III.3.2.4}Conditions aux frontières}{44}{subsubsection.3.3.2.4}%
+\contentsline {paragraph}{\numberline {III.3.2.4.a}Problème thermique}{44}{paragraph.3.3.2.4.1}%
+\contentsline {paragraph}{\numberline {III.3.2.4.b}Problème fluide}{44}{paragraph.3.3.2.4.2}%
+\contentsline {subsubsection}{\numberline {III.3.2.5}Résultats}{44}{subsubsection.3.3.2.5}%
+\contentsline {section}{\numberline {III.4}Modèle du régime transitoire}{46}{section.3.4}%
+\contentsline {subsection}{\numberline {III.4.1}Géométrie du problème}{47}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {III.4.2}Champ acoustique considéré}{47}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {III.4.3}Mécanismes pris en compte dans le modèle}{47}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {III.4.4}Bilan thermique}{51}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {III.4.5}Méthode des transformations intégrales}{51}{subsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {III.4.5.1}Application de la méthode dans la direction transverse}{52}{subsubsection.3.4.5.1}%
+\contentsline {subsubsection}{\numberline {III.4.5.2}Application de la méthode dans la direction axiale}{53}{subsubsection.3.4.5.2}%
+\contentsline {subsubsection}{\numberline {III.4.5.3}Application des transformées intégrales inverses}{54}{subsubsection.3.4.5.3}%
+\contentsline {subsection}{\numberline {III.4.6}Résultats}{54}{subsection.3.4.6}%
+\contentsline {section}{\numberline {III.5}Conclusion}{54}{section.3.5}%
+\contentsline {chapter}{\numberline {IV}Résultats expérimentaux et discussions}{57}{chapter.4}%
 \etoc@startlocaltoc {5}
-\contentsline {section}{\numberline {IV.1}Introduction}{54}{section.4.1}%
-\contentsline {section}{\numberline {IV.2}Impact de la convection naturelle sur les performances du réfrigérateur}{54}{section.4.2}%
-\contentsline {subsection}{\numberline {IV.2.1}Coefficient de performances}{54}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {IV.2.2}Flux de chaleur extrait par l'échangeur de chaleur ambiant}{55}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {IV.2.3}Températures atteintes par les côtés froid et ambiant du régénérateur}{56}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {IV.2.4}Discussion}{57}{subsection.4.2.4}%
-\contentsline {section}{\numberline {IV.3}Distribution des températures}{57}{section.4.3}%
-\contentsline {subsection}{\numberline {IV.3.1}Dans le cône d'adaptation d'impédance}{57}{subsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {IV.3.1.1}Expériences sans acoustique}{57}{subsubsection.4.3.1.1}%
-\contentsline {paragraph}{\numberline {IV.3.1.1.a}Réfrigérateur horizontal}{57}{paragraph.4.3.1.1.1}%
-\contentsline {paragraph}{\numberline {IV.3.1.1.b}Réfrigérateur vertical}{58}{paragraph.4.3.1.1.2}%
-\contentsline {subsubsection}{\numberline {IV.3.1.2}Expériences avec acoustique}{59}{subsubsection.4.3.1.2}%
-\contentsline {paragraph}{\numberline {IV.3.1.2.a}Réfrigérateur horizontal}{59}{paragraph.4.3.1.2.1}%
-\contentsline {paragraph}{\numberline {IV.3.1.2.b}Réfrigérateur vertical}{61}{paragraph.4.3.1.2.2}%
-\contentsline {subsubsection}{\numberline {IV.3.1.3}Discussion}{63}{subsubsection.4.3.1.3}%
-\contentsline {subsection}{\numberline {IV.3.2}À l'intérieur du régénérateur}{63}{subsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {IV.3.2.1}Expériences sans acoustique}{63}{subsubsection.4.3.2.1}%
-\contentsline {subsubsection}{\numberline {IV.3.2.2}Expériences avec acoustique}{63}{subsubsection.4.3.2.2}%
-\contentsline {section}{\numberline {IV.4}Conclusion}{63}{section.4.4}%
-\contentsline {chapter}{\numberline {V}Conclusion}{73}{chapter.5}%
+\contentsline {section}{\numberline {IV.1}Introduction}{58}{section.4.1}%
+\contentsline {section}{\numberline {IV.2}Impact de la convection naturelle sur les performances du réfrigérateur}{58}{section.4.2}%
+\contentsline {subsection}{\numberline {IV.2.1}Coefficient de performances}{58}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {IV.2.2}Flux de chaleur extrait par l'échangeur de chaleur ambiant}{59}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {IV.2.3}Températures atteintes par les côtés froid et ambiant du régénérateur}{60}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {IV.2.4}Discussion}{61}{subsection.4.2.4}%
+\contentsline {section}{\numberline {IV.3}Distribution des températures}{61}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}Dans le cône d'adaptation d'impédance}{61}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {IV.3.1.1}Expériences sans acoustique}{61}{subsubsection.4.3.1.1}%
+\contentsline {paragraph}{\numberline {IV.3.1.1.a}Réfrigérateur horizontal}{61}{paragraph.4.3.1.1.1}%
+\contentsline {paragraph}{\numberline {IV.3.1.1.b}Réfrigérateur vertical}{62}{paragraph.4.3.1.1.2}%
+\contentsline {subsubsection}{\numberline {IV.3.1.2}Expériences avec acoustique}{63}{subsubsection.4.3.1.2}%
+\contentsline {paragraph}{\numberline {IV.3.1.2.a}Réfrigérateur horizontal}{63}{paragraph.4.3.1.2.1}%
+\contentsline {paragraph}{\numberline {IV.3.1.2.b}Réfrigérateur vertical}{65}{paragraph.4.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {IV.3.1.3}Discussion}{67}{subsubsection.4.3.1.3}%
+\contentsline {subsection}{\numberline {IV.3.2}À l'intérieur du régénérateur}{67}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {IV.3.2.1}Expériences sans acoustique}{67}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {IV.3.2.2}Expériences avec acoustique}{67}{subsubsection.4.3.2.2}%
+\contentsline {paragraph}{\numberline {IV.3.2.2.a}Faible amplitude acoustique}{67}{paragraph.4.3.2.2.1}%
+\contentsline {paragraph}{\numberline {IV.3.2.2.b}Moyenne amplitude acoustique}{75}{paragraph.4.3.2.2.2}%
+\contentsline {paragraph}{\numberline {IV.3.2.2.c}Haute amplitude acoustique}{75}{paragraph.4.3.2.2.3}%
+\contentsline {section}{\numberline {IV.4}Conclusion}{75}{section.4.4}%
+\contentsline {chapter}{\numberline {V}Conclusion}{79}{chapter.5}%
 \etoc@startlocaltoc {6}
-\contentsline {section}{\numberline {V.1}Section}{74}{section.5.1}%
-\contentsline {chapter}{\numberline {VI}Perspectives}{75}{chapter.6}%
+\contentsline {section}{\numberline {V.1}Section}{80}{section.5.1}%
+\contentsline {chapter}{\numberline {VI}Perspectives}{81}{chapter.6}%
 \etoc@startlocaltoc {7}
-\contentsline {section}{\numberline {VI.1}Expérimentations supplémentaires}{76}{section.6.1}%
-\contentsline {subsection}{\numberline {VI.1.1}\'Etude de la conduction par les parois du noyau thermoacoustique}{76}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {VI.1.2}\'Electroacoustique}{76}{subsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {VI.1.2.1}Contrôle actif}{76}{subsubsection.6.1.2.1}%
-\contentsline {subsubsection}{\numberline {VI.1.2.2}Remplacement des sources acoustiques}{76}{subsubsection.6.1.2.2}%
-\contentsline {paragraph}{\numberline {VI.1.2.2.a}Source principale}{76}{paragraph.6.1.2.2.1}%
-\contentsline {paragraph}{\numberline {VI.1.2.2.b}Source secondaire}{77}{paragraph.6.1.2.2.2}%
-\contentsline {section}{\numberline {VI.2}Simulations par éléments finis avancées}{77}{section.6.2}%
-\contentsline {subsection}{\numberline {VI.2.1}Géométrie}{77}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {VI.2.2}Conditions aux frontières adaptées}{77}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {VI.2.3}Interface physique}{77}{subsection.6.2.3}%
-\contentsline {chapter}{\numberline {A}Circulation de fluide dans la cavité trapézoïdale}{a}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Description du modèle}{a}{section.A.1}%
-\contentsline {section}{\numberline {A.2}\'Etude sur la direction du cône}{b}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Débit d'eau optimal dans l'échangeur ambiant}{e}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Détermination de la quantité de chaleur pompée}{e}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Incertitudes de mesures}{f}{section.B.2}%
-\contentsline {subsection}{\numberline {B.2.1}Température}{f}{subsection.B.2.1}%
-\contentsline {subsection}{\numberline {B.2.2}Débit d'eau}{f}{subsection.B.2.2}%
-\contentsline {chapter}{\numberline {C}Instrumentation de la source secondaire}{i}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Objectif}{i}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Choix du capteur}{i}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Montage}{i}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Vérification}{i}{section.C.4}%
-\contentsline {subsection}{\numberline {C.4.1}Banc de mesures}{i}{subsection.C.4.1}%
-\contentsline {subsection}{\numberline {C.4.2}Résultats}{i}{subsection.C.4.2}%
-\contentsline {chapter}{\numberline {D}Récapitulatif des conditions expérimentales}{k}{appendix.D}%
-\contentsline {section}{\numberline {D.1}\'Etude sur la convection naturelle}{k}{section.D.1}%
-\contentsline {chapter}{Bibliographie}{I}{appendix*.71}%
+\contentsline {section}{\numberline {VI.1}Expérimentations supplémentaires}{82}{section.6.1}%
+\contentsline {subsection}{\numberline {VI.1.1}\'Etude de la conduction par les parois du noyau thermoacoustique}{82}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {VI.1.2}\'Electroacoustique}{82}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {VI.1.2.1}Contrôle actif}{82}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {VI.1.2.2}Remplacement des sources acoustiques}{82}{subsubsection.6.1.2.2}%
+\contentsline {paragraph}{\numberline {VI.1.2.2.a}Source principale}{82}{paragraph.6.1.2.2.1}%
+\contentsline {paragraph}{\numberline {VI.1.2.2.b}Source secondaire}{83}{paragraph.6.1.2.2.2}%
+\contentsline {section}{\numberline {VI.2}Simulations par éléments finis avancées}{83}{section.6.2}%
+\contentsline {subsection}{\numberline {VI.2.1}Géométrie}{83}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {VI.2.2}Conditions aux frontières adaptées}{83}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {VI.2.3}Interface physique}{83}{subsection.6.2.3}%
+\contentsline {chapter}{\numberline {A}Débit d'eau optimal dans l'échangeur ambiant}{a}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Détermination de la quantité de chaleur pompée}{a}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Incertitudes de mesures}{b}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Température}{b}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Débit d'eau}{b}{subsection.A.2.2}%
+\contentsline {chapter}{\numberline {B}Instrumentation de la source secondaire}{e}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Objectif}{e}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Choix du capteur}{e}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Montage}{e}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Vérification}{e}{section.B.4}%
+\contentsline {subsection}{\numberline {B.4.1}Banc de mesures}{e}{subsection.B.4.1}%
+\contentsline {subsection}{\numberline {B.4.2}Résultats}{e}{subsection.B.4.2}%
+\contentsline {chapter}{\numberline {C}Récapitulatif des conditions expérimentales}{g}{appendix.C}%
+\contentsline {section}{\numberline {C.1}\'Etude sur la convection naturelle}{g}{section.C.1}%
+\contentsline {chapter}{Bibliographie}{I}{appendix*.73}%

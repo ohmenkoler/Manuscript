@@ -23,7 +23,7 @@ Les conditions aux frontières pour cette géométrie incluent des parois adiaba
 \section{\'Etude sur la direction du cône}
 Dans cette section, le diamètre de la paroi supérieure est gardé constant, et le diamètre de la base du cône $D_{SA1}$ balaye de \qtyrange{54}{97}{\milli\meter}. Trois valeurs sont sélectionnées : la première correspond aux dimensions de la cavité dans le modèle décrit dans le paragraphe~\ref{chap:FEM}, La deuxième valeur du diamètre est celle de la paroi qui lui fait face, de sorte à obtenir un cylindre. La troisième valeur est choisie de manière à avoir le même angle pour le cône, en ayant cette fois le col en haut. Cette dernière configuration est quasi-identique à l'orientation `\texttt{V2}'.\smallskip
 
-Pour chacune de ces géométries, le calcul est effectué, et la composante verticale de la vitesse $v_{0,z}$ est tracée sur la figure~\ref{fig:ConvNatComsol_ConeParamRix}.
+Pour chacune de ces géométries, le calcul est effectué, et la composante verticale de la vitesse $v^{//\mathbf g}$ est tracée sur la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix}. Dans chaque cas, la paroi chaude est en haut de la géométrie, et la paroi froide, en dessous. 
 
 \begin{figure}[!ht]
 	\centering
@@ -31,7 +31,7 @@ Pour chacune de ces géométries, le calcul est effectué, et la composante vert
 	\centering
 	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove}
 	\caption{}
-	\label{fig:ConvNatComsol_ConeParamRix_SmallBase}
+	\label{fig:ConvNatComsol_V2_ConeParamRix_SmallBase}
 	\end{subfigure}
 	
 	\vspace{1em}
@@ -41,7 +41,7 @@ Pour chacune de ces géométries, le calcul est effectué, et la composante vert
 	\centering
 	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove}
 	\caption{}
-	\label{fig:ConvNatComsol_ConeParamRix_Cylinder}
+	\label{fig:ConvNatComsol_V2_ConeParamRix_Cylinder}
 	\end{subfigure}
 	
 	\vspace{1em}
@@ -51,7 +51,7 @@ Pour chacune de ces géométries, le calcul est effectué, et la composante vert
 	\centering
 	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THAbove}
 	\caption{}
-	\label{fig:ConvNatComsol_ConeParamRix_LargeBase}
+	\label{fig:ConvNatComsol_V2_ConeParamRix_LargeBase}
 	\end{subfigure}
 	\begin{subfigure}[t]{.47\textwidth}    
       	\centering
@@ -77,8 +77,70 @@ Pour chacune de ces géométries, le calcul est effectué, et la composante vert
         	\end{axis}
 		\end{tikzpicture} 
 	\end{subfigure} 
-	\caption{Composante verticale de la vitesse dans la cavité conique pour trois géométries.}
-	\label{fig:ConvNatComsol_ConeParamRix}
+	\caption{Composante verticale de la vitesse dans la cavité conique pour trois géométries, dans le cas d'un chauffage par la paroi haute.}
+	\label{fig:ConvNatComsol_V2_ConeParamRix}
 \end{figure}
 
-Dans chaque cas, la paroi chaude est en haut de la géométrie, et la paroi froide, en bas. Lorsque la géométrie est conique, la vitesse n'est pas nulle, et une cellule se met en place dans la cavité. Lorsque la paroi de plus petit diamètre est en bas, le fluide monte par la périphérie, et redescend au centre. C'est l'inverse lorsque la paroi de plus petit diamètre est en haut, où le fluide monte par le centre et redescend par les côtés. Lorsque la cavité est cylindrique, la vitesse est nulle, ce qui est le résultat attendu pour cette configuration où il est attendu \textit{a priori} que l'instabilité de Rayleigh-Bénard ne puisse pas apparaître.
+Lorsque la géométrie est conique, la vitesse n'est pas nulle, et une cellule se met en place dans la cavité. Lorsque la paroi de plus petit diamètre est en bas, le fluide monte par la périphérie, et redescend au centre. C'est l'inverse lorsque la paroi de plus petit diamètre est en haut, où le fluide monte par le centre et redescend par les côtés. Lorsque la cavité est cylindrique, la vitesse est nulle, ce qui est un résultat attendu dans cette configuration pour laquelle l'instabilité de Rayleigh-Bénard ne peut \textit{a priori} pas apparaître.\smallskip
+
+\bigskip
+
+Les mêmes simulations sont réalisées en utilisant les mêmes géométries, en fixant cette fois la paroi inférieure à la température chaude $T_c=\qty{293}{\kelvin}$ et la paroi supérieure à la température froide $T_f=\qty{288}{\kelvin}$. Les vitesses verticales $v^{//\mathbf g}$ sont tracées sur la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix}.
+
+\begin{figure}[!ht]
+	\centering
+	\begin{subfigure}{.97\textwidth}
+	\centering
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow}
+	\caption{}
+	\label{fig:ConvNatComsol_V1_ConeParamRix_SmallBase}
+	\end{subfigure}
+	
+	\vspace{1em}
+	
+	\centering
+	\begin{subfigure}{.97\textwidth}
+	\centering
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow}
+	\caption{}
+	\label{fig:ConvNatComsol_V1_ConeParamRix_Cylinder}
+	\end{subfigure}
+	
+	\vspace{1em}
+	
+	\centering
+	\begin{subfigure}{.97\textwidth}
+	\centering
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THBelow}
+	\caption{}
+	\label{fig:ConvNatComsol_V1_ConeParamRix_LargeBase}
+	\end{subfigure}
+	\begin{subfigure}[t]{.47\textwidth}    
+      	\centering
+		\begin{tikzpicture}[rotate=0]
+			\begin{axis}[
+		    	hide axis,
+            	scale only axis,
+           		height=0pt,
+                width=0pt,
+                colorbar horizontal,
+                point meta min=-1.1e-3,
+                point meta max=1.1e-3,
+                colorbar style={
+                	scaled ticks=false, 
+%					tick label style={/pgf/number format/fixed},
+                	width=3.5cm,
+                	xtick={-1.1e-3,0,1.1e-3},
+                	at={(-0.5,0.0)},anchor=south,   
+                	title style={xshift=3.5cm,yshift=4cm},
+                	}
+				]
+            	\addplot [draw=none] coordinates {(0,0) (1,1)};
+        	\end{axis}
+		\end{tikzpicture} 
+	\end{subfigure} 
+	\caption{Composante verticale de la vitesse dans la cavité conique pour trois géométries, dans le cas d'un chauffage par la paroi basse.}
+	\label{fig:ConvNatComsol_V1_ConeParamRix}
+\end{figure}
+
+Pour ce jeu de simulations, il est attendu qu'une cellule de convection naturelle se mette en place, en faisant circuler un fluide du bas vers le haut. \echaf{à continuer suivant mail LN}

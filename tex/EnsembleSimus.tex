@@ -200,6 +200,8 @@ Ici encore, une application numérique est réalisée pour les deux orientations
 
 De cette première approche des effets de convection naturelle dans deux zones du réfrigérateur \textsc{Tacot}, c'est-à-dire la cavité située entre la source acoustique principale et l'échangeur de chaleur froid d'une part, et le régénérateur d'autre part, il apparaît donc que les valeurs du nombre de Rayleigh penchent en faveur de la possibilité de formation de cellules de convection dans la cavité mais pas dans le régénérateur. Ceci encourage à continuer les investigations dans cette cavité, ce qui est proposé dans le paragraphe qui suit.
 
+\echaf{ajouter conclu intermédiaire sur les config où on attend de la convection basée sur le Rayleigh}
+
 %\subsection{Avec acoustique}
 %Les termes précédents sont issus de la littérature en l'absence d'écoulement oscillant. Cette hypothèse ne peut pas être respectée dans le cas des expériences menées avec acoustique, et un autre indicateur est introduit pour quantifier les échanges de chaleur causés par un fluide en mouvement. Cet indicateur est le nombre de Péclet, noté $\Peclet$, et défini par
 %
@@ -226,6 +228,157 @@ De cette première approche des effets de convection naturelle dans deux zones d
 %Les calculs des nombres précédent peuvent guider l'intuition quant aux prédominances de chaque effet prennant place dans le noyau et aux environs de celui-ci : la vitesse d'entraînement du gaz par convection, la quantité de chaleur transportée par elle, son importance par rapport à la conduction par le matériau poreux et ses parois. Des paramètres utiles pour des modèles plus avancés et présenté notamment en section~\ref{chap:ModeleTemporel} doivent également être évalués par ces équations.
 
 \section{Simulations par éléments finis}\label{chap:FEM}
+
+\echaf{Remettre l'annexe ici pour faire transition entre la CDC et la cavité conique + l'angle}
+
+\subsection{Cavité d'adaptation d'impédance seule}\label{chap:CircuFluideV2}
+\subsubsection{Description du modèle}
+
+La cavité située entre la source acoustique principale et le noyau a une forme qui n'est pas conventionnelle, et il est intéressant de développer préalablement un modèle avec une configuration déjà étudiée dans la littérature. En particulier, la convection dans des cavités cylindriques~\cite{schneider_laminar_1992}, ou dans les cavités trapézoïdales~\cite{basak_heat_2009}, doit être étudiée pour donner un aperçu de la forme de la convection naturelle dans le système à l'essai, qui combine ces deux formes.\medskip
+
+La géométrie de la cavité est similaire à celle dans la machine, à savoir un cône tronqué de diamètre du côté de la source principale $D_{SA1}=\qty{108}{\milli\meter}$, un diamètre du côté du noyau $D_{\sf can}=\qty{149}{\milli\meter}$, et une hauteur $L_{\sf cone}=\qty{3}{\centi\meter}$. Contrairement à la zone entourée en jaune sur la figure~\ref{fig:SchemaGeneralTACOT}, seule la partie conique est considérée ici, en omettant le cylindre qui se trouve entre le \echaf{pavillon} du cône et l'échangeur de chaleur froid.\smallskip
+
+La géométrie de la cavité d'adaptation d'impédance est implémentée au sein d'un modèle \textsc{Comsol} suivant la figure~\ref{fig:Comsol_Geometrie_ConeSeul}, pour simuler le comportement, notamment le déclenchement et l'allure éventuelle de cellules de convection naturelle au cours d'études paramétriques dans lesquelles plusieurs paramètres sont variés. Les orientations pour ces simulations sont choisies avec un gradient de température vertical, positif et négatif, et les paramètres balayés lors de l'étude sont la hauteur du cône et le diamètre du col.\medskip
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png}
+	\caption{Géométrie utilisée pour l'étude préliminaire de convection naturelle dans la cavité d'adaptation d'impédance simplifiée.}
+	\label{fig:Comsol_Geometrie_ConeSeul}
+\end{figure}
+
+Cette cavité est remplie d'hélium à pression atmosphérique, pour comparer avec les résultats du paragraphe~\ref{chap:FEM} pour lequel la pression statique dans la cavité est de \qty{40}{\bar}.\medskip
+
+L'équation de la chaleur est résolue dans le domaine avec l'interface physique \texttt{Heat transfer in Fluids (ht)}, et ce problème est couplé à un modèle d'écoulement \texttt{Laminar flow  (spf)} par l'interface multiphysique \texttt{Nonisothermal flow (nitf)}. L'écoulement est considéré incompressible sous l'approximation de Boussinesq.\smallskip
+
+Les conditions aux frontières pour cette géométrie incluent des parois adiabatiques sur le pourtour du cône, une température $T_c=\qty{293}{\kelvin}$ uniforme sur la section de la paroi haute, et une température $T_f=T_c-\qty{5}{\kelvin}=\qty{288}{\kelvin}$ sur la section de la base du cône. La vitesse est considérée nulle sur toutes les parois.
+
+\subsubsection{\'Etude sur la direction du cône}
+Dans cette section, le diamètre de la paroi supérieure est gardé constant, et le diamètre de la base du cône $D_{SA1}$ balaye de \qtyrange{54}{97}{\milli\meter}. Trois valeurs sont sélectionnées : la première correspond aux dimensions de la cavité dans le modèle décrit dans le paragraphe~\ref{chap:FEM}, La deuxième valeur du diamètre est celle de la paroi qui lui fait face, de sorte à obtenir un cylindre. La troisième valeur est choisie de manière à avoir le même angle pour le cône, en ayant cette fois le col en haut. Cette dernière configuration est quasi-identique à l'orientation `\texttt{V2}'.\smallskip
+
+Pour chacune de ces géométries, le calcul est effectué, et la composante verticale de la vitesse $v^{//\mathbf g}$ est tracée sur la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix}. Dans chaque cas, la paroi chaude est en haut de la géométrie, et la paroi froide, en dessous. 
+
+\begin{figure}[!ht]
+	\centering
+	\begin{subfigure}{.97\textwidth}
+	\centering
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove}
+	\caption{}
+	\label{fig:ConvNatComsol_V2_ConeParamRix_SmallBase}
+	\end{subfigure}
+	
+	\vspace{1em}
+	
+	\centering
+	\begin{subfigure}{.97\textwidth}
+	\centering
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove}
+	\caption{}
+	\label{fig:ConvNatComsol_V2_ConeParamRix_Cylinder}
+	\end{subfigure}
+	
+	\vspace{1em}
+	
+	\centering
+	\begin{subfigure}{.97\textwidth}
+	\centering
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THAbove}
+	\caption{}
+	\label{fig:ConvNatComsol_V2_ConeParamRix_LargeBase}
+	\end{subfigure}
+	\begin{subfigure}[t]{.47\textwidth}    
+      	\centering
+		\begin{tikzpicture}[rotate=0]
+			\begin{axis}[
+		    	hide axis,
+            	scale only axis,
+           		height=0pt,
+                width=0pt,
+                colorbar horizontal,
+                point meta min=-9.7e-4,
+                point meta max=9.7e-4,
+                colorbar style={
+                	scaled ticks=false, 
+%					tick label style={/pgf/number format/fixed},
+                	width=3.5cm,
+                	xtick={-9.7e-4,0,9.7e-4},
+                	at={(-0.5,0.0)},anchor=south,   
+                	title style={xshift=3.5cm,yshift=4cm},
+                	}
+				]
+            	\addplot [draw=none] coordinates {(0,0) (1,1)};
+        	\end{axis}
+		\end{tikzpicture} 
+	\end{subfigure} 
+	\caption{Composante verticale de la vitesse dans la cavité conique pour trois géométries, dans le cas d'un chauffage par la paroi haute.}
+	\label{fig:ConvNatComsol_V2_ConeParamRix}
+\end{figure}
+
+Lorsque la géométrie est conique, la vitesse n'est pas nulle, et une cellule se met en place dans la cavité. Lorsque la paroi de plus petit diamètre est en bas, le fluide monte par la périphérie, et redescend au centre. C'est l'inverse lorsque la paroi de plus petit diamètre est en haut, où le fluide monte par le centre et redescend par les côtés. Lorsque la cavité est cylindrique, la vitesse est nulle, ce qui est un résultat attendu dans cette configuration pour laquelle l'instabilité de Rayleigh-Bénard ne peut \textit{a priori} pas apparaître.\smallskip
+
+\bigskip
+
+Les mêmes simulations sont réalisées en utilisant les mêmes géométries, en fixant cette fois la paroi inférieure à la température chaude $T_c=\qty{293}{\kelvin}$ et la paroi supérieure à la température froide $T_f=\qty{288}{\kelvin}$. Les vitesses verticales $v^{//\mathbf g}$ sont tracées sur la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix}.
+
+\begin{figure}[!ht]
+	\centering
+	\begin{subfigure}{.97\textwidth}
+	\centering
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow}
+	\caption{}
+	\label{fig:ConvNatComsol_V1_ConeParamRix_SmallBase}
+	\end{subfigure}
+	
+	\vspace{1em}
+	
+	\centering
+	\begin{subfigure}{.97\textwidth}
+	\centering
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow}
+	\caption{}
+	\label{fig:ConvNatComsol_V1_ConeParamRix_Cylinder}
+	\end{subfigure}
+	
+	\vspace{1em}
+	
+	\centering
+	\begin{subfigure}{.97\textwidth}
+	\centering
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THBelow}
+	\caption{}
+	\label{fig:ConvNatComsol_V1_ConeParamRix_LargeBase}
+	\end{subfigure}
+	\begin{subfigure}[t]{.47\textwidth}    
+      	\centering
+		\begin{tikzpicture}[rotate=0]
+			\begin{axis}[
+		    	hide axis,
+            	scale only axis,
+           		height=0pt,
+                width=0pt,
+                colorbar horizontal,
+                point meta min=-1.1e-3,
+                point meta max=1.1e-3,
+                colorbar style={
+                	scaled ticks=false, 
+%					tick label style={/pgf/number format/fixed},
+                	width=3.5cm,
+                	xtick={-1.1e-3,0,1.1e-3},
+                	at={(-0.5,0.0)},anchor=south,   
+                	title style={xshift=3.5cm,yshift=4cm},
+                	}
+				]
+            	\addplot [draw=none] coordinates {(0,0) (1,1)};
+        	\end{axis}
+		\end{tikzpicture} 
+	\end{subfigure} 
+	\caption{Composante verticale de la vitesse dans la cavité conique pour trois géométries, dans le cas d'un chauffage par la paroi basse.}
+	\label{fig:ConvNatComsol_V1_ConeParamRix}
+\end{figure}
+
+Pour ce jeu de simulations, il est attendu qu'une cellule de convection naturelle se mette en place, en faisant circuler un fluide du bas vers le haut. \echaf{à continuer suivant mail LN}
+
+
 Les nombres adimensionnels présentés auparavant dans le cas des problèmes illustrés par la figure~\ref{fig:ConvNat2D} ont permis d'approcher des ordres de grandeurs des phénomènes liés à la convection naturelle. Pour décrire plus avant les structures convectives anticipées, une \echaf{première} approche de simulation est proposée en utilisant le logiciel \textsc{Comsol}\textss\textregistered. Le but de ce modèle de savoir si la superposition de trois effets thermiques (l'effet thermoacoustique, les pertes pariétales, et la présence de convection naturelle) suffit à expliquer la distribution de température sur la section de l'échangeur de chaleur froid du moins, sinon dans le noyau thermoacoustique.\medskip
 
 Dans une première approximation, un compromis entre simplicité d'implémentation et fidélité de la représentation est recherché. Le modèle qui en résulte ne prend en compte que des phénomènes thermiques et inertiels, dont les paramètres sont ajustées pour représenter des situations observées lors des campagnes expérimentales. En particulier, le champ acoustique et la porosité du régénérateur ne sont pas intégrés pour cette première approche et seul l'effet du champ acoustique en termes de distribution de températures est inclus. Quant au régénérateur, il est décrit comme un solide, ce qui est en accord avec le calcul du nombre de Rayleigh-Darcy qui ne semble pas indiquer la présence d'écoulements dûs à la gravité à l'intérieur.\smallskip
@@ -236,8 +389,8 @@ Cette description rudimentaire n'a pour seule ambition que d'approcher la distri
 
 
 
-%\subsection{Cavité d'adaptation d'impédance couplée au noyau thermoacoustique}
-\subsection{Géométrie du problème}
+\subsection{Cavité d'adaptation d'impédance couplée au noyau thermoacoustique}
+\subsubsection{Géométrie du problème}
 Après avoir étudié ce qui se passe dans le cône de fluide seul, le régénérateur et son enveloppe lui sont couplés, selon une géométrie présentée sur la figure~\ref{fig:Comsol_ModeleSimplifie_Geometrie}.\medskip
 
 \begin{figure}[!ht]
@@ -298,7 +451,7 @@ Ainsi, la géométrie considérée est toujours en trois dimensions pour les ori
 
 \end{comment}
 
-\subsection{Matériaux composant les domaines}
+\subsubsection{Matériaux composant les domaines}
 Les trois domaines sont modélisé par des matériaux similaires aux conditions expérimentales.\smallskip
 
 Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et le cône d'adaptation d'impédance rempli d'hélium.
@@ -317,7 +470,7 @@ avec $k_{\sf inox}=\qty{14.388}{\watt\per\meter\per\kelvin}$ la conductivité th
 
 \echaf{schéma nécessaire avec à gauche le système réel et à droite comment il est modélisé}
 
-\subsection{Modèles physiques utilisés}\label{chap:FEM_Physique}
+\subsubsection{Modèles physiques utilisés}\label{chap:FEM_Physique}
 %\subsubsection{Sans matériau poreux}
 
 
@@ -345,8 +498,8 @@ Les trois effets pris en compte dans le modèle et que montrent schématiquement
 %\subsubsection{Ajout d'un modèle de matériau poreux}
 
 
-\subsection{Conditions aux frontières}\label{chap:FEM_CondFront}
-\subsubsection{Problème thermique}
+\subsubsection{Conditions aux frontières}\label{chap:FEM_CondFront}
+\paragraph{Problème thermique}
 Les conditions aux frontières du modèle de transfert thermique sont représentées sur la figure~\ref{fig:Comsol_CondFrontT}. Un flux de chaleur $\dot Q_f=\qty{-10}{\watt}$ est retiré à la paroi située entre la cavité d'adaptation d'impédance et le régénérateur pour simuler le pompage de chaleur par l'effet thermoacoustique, et les parois du côté ambiant du régénérateur et de la source acoustique principale sont à température fixée uniforme $T_a=\qty{293}{\kelvin}$. Enfin, les continuités des températures et des flux de chaleur s'appliquent entre les différents domaines.
 
 \begin{figure}[!ht]
@@ -376,7 +529,7 @@ Les conditions aux frontières du modèle de transfert thermique sont représent
 %Par simplicité, les parois correspondantes à l'échangeur ambiant et à la source acoustique principale sont considérées avec une température constante égale à la température ambiante, soit $T_a=\qty{293}{\kelvin}$. La paroi correspondant à l'échangeur froid ne peut pas être fixée à une température homogène sur la section, car c'est justement le gradient de température sur la section qui constitue le point de départ de l'hypothèse de convection naturelle. Cette paroi est donc modélisée par une source de chaleur analogue au flux de chaleur thermoacoustique. La température diminue dans cette zone pendant l'opération du \textsc{Tacot}, et du point de vue de l'échangeur à cette position, le flux de chaleur est sortant. Il est alors nécessaire de le considérer négatif.
 
 
-\subsubsection{Problème fluide}
+\paragraph{Problème fluide}
 Pour cet aspect du modèle, les conditions aux frontières sont non-glissantes pour toutes les parois, et dans toutes les configurations, ce qui se note
 
 \begin{equation}
@@ -385,7 +538,7 @@ Pour cet aspect du modèle, les conditions aux frontières sont non-glissantes p
 
 %Cela se vérifie d'abord près des parois qui composent le bâti de la machine, mais aussi à la paroi de l'échangeur froid, au voisinage de cette dernière, la vitesse est supposée suffisamment faible~\cite{baltean_gravity_2025}.
 
-\subsection{Résultats}% dans les zones d'intérêt}
+\subsubsection{Résultats}% dans les zones d'intérêt}
 %\subsubsection{Volume d'adaptation d'impédance}
 
 %\paragraph{Température}
@@ -549,11 +702,11 @@ Tout d'abord, la distribution de température et l'allure de la vitesse de l'éc
 	\label{fig:RIXTa_Detail_Cmap_T_Fleche_vNorme}
 \end{figure}
 
-Sur la figure~\ref{fig:H1_RIXTa_Detail_Cmap_T_Fleche_vNorme}, le gradient de température entre les zones ambiante et froide est horizontal selon l'axe $x$, avec \qty{14}{\kelvin} sur \qty{39}{\milli\meter}. Sur le plan ($x,z$) Une cellule de convection naturelle montant de la paroi de la source acoustique principale à gauche et à la température $T=\qty{293}{\kelvin}$, et redescendant du côté de l'échangeur froid à la température $\qty{278.2}{\kelvin}$, est mise en évidence par les flèches indiquant la direction de la vitesse en trois dimensions. Il est intéressant de remarquer l'impact de la forme trapezoïdale de ce cône d'adaptation d'impédance, par le fait que la vitesse d'écoulement montant proche du col du cône est plus élevée que celle de l'écoulement descendant à son pavillon. Cela traduit une section apparente plus faible devant la source acoustique principale que celle devant l'échangeur froid, et manifeste le respect de la conservation du débit. L'écoulement s'accompagne d'une distribution de la température asymétrique, car l'écoulement s'accompagne d'un flux de chaleur convectif.\smallskip
+Sur la figure~\ref{fig:H1_RIXTa_Detail_Cmap_T_Fleche_vNorme}, le gradient de température entre les zones ambiante et froide est horizontal selon l'axe $\mathbf e_{x,0}$, avec \qty{14}{\kelvin} sur \qty{39}{\milli\meter}. Sur le plan ($\mathbf e_{x,0},\mathbf e_{z,0}$) Une cellule de convection naturelle montant de la paroi de la source acoustique principale à gauche et à la température $T=\qty{293}{\kelvin}$, et redescendant du côté de l'échangeur froid à la température $\qty{278.2}{\kelvin}$, est mise en évidence par les flèches indiquant la direction de la vitesse en trois dimensions. Il est intéressant de remarquer l'impact de la forme trapezoïdale de ce cône d'adaptation d'impédance, par le fait que la vitesse d'écoulement montant proche du col du cône est plus élevée que celle de l'écoulement descendant à son pavillon. Cela traduit une section apparente plus faible devant la source acoustique principale que celle devant l'échangeur froid, et manifeste le respect de la conservation du débit. L'écoulement s'accompagne d'une distribution de la température asymétrique, car l'écoulement s'accompagne d'un flux de chaleur convectif.\smallskip
 
 La figure~\ref{fig:H2_RIXTa_Detail_Cmap_T_Fleche_vNorme} est obtenue avec la même simulation, en observant cette fois le plan ($x,y$). Dans ce cas, les flèches qui représentent la direction de vitesse sont toutes normales à ce plan d'observation, et aucun flux massique ne circule dans le plan. La configuration est donc symétrique.\medskip
 
-Les résultats de simulation pour l'orientation `\texttt{V1}' sont tracés sur la figure~\ref{fig:V1_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Cette fois, le gradient de température entre les températures ambiantes et froide est vertical, le long de l'axe $z$. La paroi qui correspond à la source acoustique principale, à la température $T=\qty{293}{\kelvin}$, est en bas de la géométrie, au dessous de la paroi de l'échangeur de chaleur froid dont la température se situe à $T=\qty{285.4}{\kelvin}$. Cette température atteinte par la paroi de laquelle la même puissance thermique est extraite est supérieur à celle atteint au même emplacement dans le cas du gradient thermique horizontal. Cela s'explique par la circulation de gaz, qui monte de la source acoustique principale par le centre du noyau et cède de la chaleur au fluide situé près de l'échangeur de chaleur froid. Le diamètre de la paroi de la source de chaleur que constitue la source acoustique principale est plus petit que le diamètre de la paroi en face, celle à la frontière avec le noyau, et cette différence favorise l'élévation d'une colonne de fluide plus chaud par le centre de la cavité, ce qui est conforme à la littérature sur le sujet~\cite{basak_heat_2009}\smallskip
+Les résultats de simulation pour l'orientation `\texttt{V1}' sont tracés sur la figure~\ref{fig:V1_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Cette fois, le gradient de température entre les températures ambiantes et froide est vertical, le long de l'axe $\mathbf e_{z,0}$. La paroi qui correspond à la source acoustique principale, à la température $T=\qty{293}{\kelvin}$, est au dessous de la paroi de l'échangeur de chaleur froid dont la température se situe à $T=\qty{285.4}{\kelvin}$. Un écoulement montant au centre de la cavité et redescendant le long des parois périphériques est observable. Du fluide chaud arrive donc au contact de la paroi froide, lui cède de la chaleur, et la température y est plus élevée que dans les autres configurations. De plus, le diamètre de la paroi de la source de chaleur que constitue la source acoustique principale est plus petit que le diamètre de la paroi en face, celle à la frontière avec le noyau. Cette différence de diamètre favorise l'élévation d'une colonne de fluide plus chaud par le centre de la cavité plutôt que par la périphérie, ce qui est conforme à la littérature sur le sujet~\cite{basak_heat_2009}\smallskip
 
 L'orientation `\texttt{V2}' est finalement présentée sur la figure~\ref{fig:V2_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Ce résultat est le plus surprenant, car il montre également la présence d'un écoulement circulant dans le cône d'adaptation d'impédance, alors que cette configuration est a priori stable et n'est pas censée déclencher la mise en mouvement du fluide. En effet, le fluide chaud moins dense se trouve déjà au dessus du fluide plus froid. Il est possible que le fluide à proximité de la paroi chaude se déplace horizontalement du centre vers la périphérie jusqu'à rencontrer une zone plus froide, où la densité locale du fluide diminue. Celui-ci descend le long de la paroi qui la guide du fait de l'angle du cône, et la conservation du débit provoque la mise en mouvement du reste du fluide qui suit la même trajectoire. Des études paramétriques qui se concentrent sur cette orientation dans une configuration plus simple sont menées pour varier la géométrie de la cavité, et les résultats sont présentés en Annexe~\ref{chap:CircuFluideV2}.\medskip
 
@@ -1010,6 +1163,9 @@ puis selon $r$ avec l'équation~\eqref{eq:TransfoInteg_Inversion_R}, ce qui donn
 %
 %\subsubsection{Flux thermique de vorticité}
 %Une fois les coefficients d'échanges $h$ estimés grâce aux mesures sans acoustiques, ils sont considérés constant et dépendant uniquement des matériaux de construction, et conservés pour le reste des simulations. Selon le même principe, le flux de chaleur ajouté par vorticité est estimé grâce à la minimisation d'une fonction de coût.\echaf{à faire}
+
+\subsection{Résultats}
+\echaf{Ajouter fig avec évolution à 3 DR en fittant avec les données mesurées en H2}
 
 \section{Conclusion}
 Dans ce chapitre, plusieurs modèles pour interpréter les résultats des campagnes d'expériences sont développés.\medskip

@@ -3,12 +3,16 @@
     \def\height{.25*\textheight};
     \def\legx{.5cm};
     \def\legy{\legx};
+    \def\x1{3100};
+    \def\y1{.3};
+    \def\x2{3500};
+    \def\y2{-.5};
         
-    \begin{axis}[width={\width},height={\height},grid=both,minor tick num=4,
+    \begin{axis}[name=mainplot,width={\width},height={\height},grid=both,minor tick num=4,
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
-    xlabel={Temps $t$ [\unit{\s}]},
-    ylabel={\'Ecart de température $\theta$ [\unit{\kelvin}]},
+    xlabel={Temps $t$ (\unit{\s})},
+    ylabel={\'Ecart de température $\theta$ (\unit{\kelvin})},
     xmin=0,xmax=3500,
 	ymin=-6,ymax=4,
     xtick={0,600,1200,1800,2400,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
@@ -38,7 +42,40 @@
     	\addplot[ultra thick,Plasma1,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC7_0beg_RixLow_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};\addlegendentry{}
     	\addplot[ultra thick,Plasma43,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC8_0beg_RixLow_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};\addlegendentry{}
     	\addplot[ultra thick,Plasma85,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC9_0beg_RixLow_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};\addlegendentry{}
+    	
+    	\draw[dashed] (3100,.5) node(a1){} rectangle (3500,-.5) node(a2){};
         
 %        \legend{\\ \\};
     \end{axis}
+    
+    \begin{axis}[name=secplot,width={\width/2},height={\height/2},grid=both,minor tick num=4,
+    grid style={line width=.1pt, draw=gray!10},
+    major grid style={line width=.2pt,draw=gray!50},
+    scaled ticks=false, tick label style={/pgf/number format/fixed},
+%    xlabel={$t$ (\unit{\s})},
+%    ylabel={$\theta$ (\unit{\kelvin})},
+    xmin=3100,xmax=3500,
+    ymin=-.5,ymax=.5,
+    xtick={3000,3100,...,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
+    ytick={-.5,0,.5},
+    domain=0:100,
+    legend style = {at={(1.01,1.05)},anchor = north east,rounded corners},legend columns=4,
+    at={($(mainplot.east)+(-5mm,0)$)}, anchor=north east,
+    ]
+    
+    	
+		
+		\addplot[ultra thick,Plasma1] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC7_0beg_RixLow_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};
+    	\addplot[ultra thick,Plasma43] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC8_0beg_RixLow_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};
+    	\addplot[ultra thick,Plasma85] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC9_0beg_RixLow_PhaseRIXHP-60°_OrientationH1_Qc0W_Serie1.txt}};
+		
+		
+    	\addplot[ultra thick,Plasma1,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC7_0beg_RixLow_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};
+    	\addplot[ultra thick,Plasma43,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC8_0beg_RixLow_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};
+    	\addplot[ultra thick,Plasma85,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Low/data_TC9_0beg_RixLow_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}};
+        
+%        \legend{\\ \\};
+    \end{axis}
+    \draw[dashed] (a1) -- (secplot.north west) (a2) -- (secplot.south east);
+    
 \end{tikzpicture}

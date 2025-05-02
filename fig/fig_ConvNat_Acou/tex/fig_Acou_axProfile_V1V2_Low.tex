@@ -1,4 +1,4 @@
-\begin{tikzpicture}
+\begin{tikzpicture}[every mark/.append style={line width=1.5pt, mark size=5pt}]
     \def\width{.9*\textwidth};
     \def\height{.25*\textheight};
     \def\legx{.5cm};
@@ -9,11 +9,11 @@
     grid style={line width=.1pt, draw=gray!10},
     major grid style={line width=.2pt,draw=gray!50},
     scaled ticks=false, tick label style={/pgf/number format/fixed},
-    xlabel={Position axiale dans le régénérateur $x$ [\unit{\milli\meter}]},
-    ylabel={\'Ecart de température $\theta$ [\unit{\kelvin}]},
-    xmin=0,xmax=39,
+    xlabel={Position axiale dans le régénérateur $x$ (\unit{\milli\meter})},
+    ylabel={\'Ecart de température $\theta$ (\unit{\kelvin})},
+    xmin=-1,xmax=40,
 	ymin=-9,ymax=3,
-	ytick={-9,-8,...,3},
+	ytick={-9,-7,...,3},
     xtick={0,19.5,39},
     legend style = {at={(1.01,.05)},anchor = south east,rounded corners},legend columns=4,
     legend cell align={left},
@@ -31,16 +31,16 @@
     	\addlegendimage{legend image with text=`\texttt{V1}'}
 		\addlegendentry{}
 		
-		\addplot[ultra thick,Plasma1] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_4710_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,Plasma43] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_5811_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,Plasma85] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_6912_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
+		\addplot[only marks, mark=+, Plasma1] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_4710_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[only marks, mark=+, Plasma43] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_5811_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[only marks, mark=+, Plasma85] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_6912_RixLow_PhaseRIXHP-60°_OrientationV1_Qc0W_Serie1.txt}};\addlegendentry{}
 		
 		\addlegendimage{legend image with text=`\texttt{V2}'} 
 		\addlegendentry{}  
 		
-    	\addplot[ultra thick,Plasma1,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_4710_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,Plasma43,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_5811_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
-    	\addplot[ultra thick,Plasma85,dashed] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_6912_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[only marks, mark=x, Plasma1] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_4710_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[only marks, mark=x, Plasma43] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_5811_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
+    	\addplot[only marks, mark=x, Plasma85] file {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Low/data_axProfil_6912_RixLow_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}};\addlegendentry{}
         
 %        \legend{\\ \\};
     \end{axis}

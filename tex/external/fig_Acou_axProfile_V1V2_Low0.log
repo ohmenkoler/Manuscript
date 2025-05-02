@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  1 MAY 2025 01:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  1 MAY 2025 11:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -6331,6 +6331,10 @@ ut line 754.
 LaTeX Warning: Reference `fig:Acou_AHXin_V1V2_Low' on page 75 undefined on inpu
 t line 758.
 
+
+LaTeX Warning: Reference `fig:Acou_axProfile_V1V2_Low' on page 75 undefined on 
+input line 762.
+
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_axProfile_V1V2_Low.tex
 \openout6 = `external/fig_Acou_axProfile_V1V2_Low0.dpth'.
 
@@ -6364,15 +6368,21 @@ wona/rm-iwona.enc}{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/
 fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Users/juliette utilisateur/AppData/Local
 /Programs/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc}{C:/Users/juliette utilisat
 eur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}])
+
+LaTeX Warning: Reference `fig:Acou_axProfile_V1V2_Low' on page 75 undefined on 
+input line 777.
+
+
+
 File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
-line 781.
+line 784.
 (pdftex.def)             Requested size: 61.86597pt x 92.92944pt.
 File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
-line 785.
+line 788.
 (pdftex.def)             Requested size: 78.28377pt x 88.67004pt.
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid.tex
 Missing character: There is no ; in font nullfont!
@@ -6427,62 +6437,62 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2Mid/data_TC12_0b
 eg_RixMid_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 75 undefined o
-n input line 814.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 76 undefined o
+n input line 817.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 75 undefined on 
-input line 814.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 76 undefined on 
+input line 817.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 75 undefined 
-on input line 814.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 76 undefined 
+on input line 817.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 75 undefined on
- input line 814.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 76 undefined on
+ input line 817.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 75 undefined o
-n input line 814.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 76 undefined o
+n input line 817.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 75 undefined on 
-input line 814.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 76 undefined on 
+input line 817.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 75 undefined o
-n input line 814.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_Mid' on page 76 undefined o
+n input line 817.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 75 undefined on 
-input line 814.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_Mid' on page 76 undefined on 
+input line 817.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 75 undefined 
-on input line 814.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_Mid' on page 76 undefined 
+on input line 817.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 75 undefined on
- input line 814.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_Mid' on page 76 undefined on
+ input line 817.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 75 undefined o
-n input line 814.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_Mid' on page 76 undefined o
+n input line 817.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 75 undefined on 
-input line 814.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_Mid' on page 76 undefined on 
+input line 817.
 
 File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
-line 824.
+line 827.
 (pdftex.def)             Requested size: 75.50389pt x 88.67004pt.
 File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
-line 828.
+line 831.
 (pdftex.def)             Requested size: 75.50389pt x 88.67004pt.
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
 Missing character: There is no ; in font nullfont!
@@ -6537,62 +6547,62 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2Mid/data_TC12_0b
 eg_RixMid_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Mid' on page 75 undefined o
-n input line 857.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Mid' on page 76 undefined o
+n input line 860.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Mid' on page 75 undefined on 
-input line 857.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Mid' on page 76 undefined on 
+input line 860.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Mid' on page 75 undefined 
-on input line 857.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Mid' on page 76 undefined 
+on input line 860.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Mid' on page 75 undefined on
- input line 857.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Mid' on page 76 undefined on
+ input line 860.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Mid' on page 75 undefined o
-n input line 857.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Mid' on page 76 undefined o
+n input line 860.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Mid' on page 75 undefined on 
-input line 857.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Mid' on page 76 undefined on 
+input line 860.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Mid' on page 75 undefined o
-n input line 857.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_Mid' on page 76 undefined o
+n input line 860.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Mid' on page 75 undefined on 
-input line 857.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_Mid' on page 76 undefined on 
+input line 860.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Mid' on page 75 undefined 
-on input line 857.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_Mid' on page 76 undefined 
+on input line 860.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Mid' on page 75 undefined on
- input line 857.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_Mid' on page 76 undefined on
+ input line 860.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Mid' on page 75 undefined o
-n input line 857.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_Mid' on page 76 undefined o
+n input line 860.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Mid' on page 75 undefined on 
-input line 857.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_Mid' on page 76 undefined on 
+input line 860.
 
 File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
-line 869.
+line 872.
 (pdftex.def)             Requested size: 61.86597pt x 92.92944pt.
 File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
-line 873.
+line 876.
 (pdftex.def)             Requested size: 78.28377pt x 88.67004pt.
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
 Missing character: There is no ; in font nullfont!
@@ -6647,62 +6657,62 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtH1H2High/data_TC12_0
 beg_RixHigh_PhaseRIXHP-60°_OrientationH2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 75 undefined 
-on input line 902.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 76 undefined 
+on input line 905.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 75 undefined on
- input line 902.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 76 undefined on
+ input line 905.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 75 undefined
- on input line 902.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 76 undefined
+ on input line 905.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 75 undefined o
-n input line 902.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 76 undefined o
+n input line 905.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 75 undefined 
-on input line 902.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 76 undefined 
+on input line 905.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 75 undefined on
- input line 902.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 76 undefined on
+ input line 905.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 75 undefined 
-on input line 902.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_H1H2_High' on page 76 undefined 
+on input line 905.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 75 undefined on
- input line 902.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_H1H2_High' on page 76 undefined on
+ input line 905.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 75 undefined
- on input line 902.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_H1H2_High' on page 76 undefined
+ on input line 905.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 75 undefined o
-n input line 902.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_H1H2_High' on page 76 undefined o
+n input line 905.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 75 undefined 
-on input line 902.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_H1H2_High' on page 76 undefined 
+on input line 905.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 75 undefined on
- input line 902.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_H1H2_High' on page 76 undefined on
+ input line 905.
 
 File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
-line 912.
+line 915.
 (pdftex.def)             Requested size: 75.50389pt x 88.67004pt.
 File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
-line 916.
+line 919.
 (pdftex.def)             Requested size: 75.50389pt x 88.67004pt.
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
 Missing character: There is no ; in font nullfont!
@@ -6757,56 +6767,54 @@ PGFPlots: reading {{../fig/fig_ConvNat_Acou/data/DataMatTxtV1V2High/data_TC12_0
 beg_RixHigh_PhaseRIXHP-60°_OrientationV2_Qc0W_Serie1.txt}}
 )
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 75 undefined 
-on input line 945.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 76 undefined 
+on input line 948.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 75 undefined on
- input line 945.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 76 undefined on
+ input line 948.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 75 undefined
- on input line 945.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 76 undefined
+ on input line 948.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 75 undefined o
-n input line 945.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 76 undefined o
+n input line 948.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 75 undefined 
-on input line 945.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 76 undefined 
+on input line 948.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 75 undefined on
- input line 945.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 76 undefined on
+ input line 948.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 75 undefined 
-on input line 945.
+LaTeX Warning: Hyper reference `fig:Acou_CHXin_V1V2_High' on page 76 undefined 
+on input line 948.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 75 undefined on
- input line 945.
+LaTeX Warning: Reference `sub@fig:Acou_CHXin_V1V2_High' on page 76 undefined on
+ input line 948.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 75 undefined
- on input line 945.
+LaTeX Warning: Hyper reference `fig:Acou_Regmid_V1V2_High' on page 76 undefined
+ on input line 948.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 75 undefined o
-n input line 945.
+LaTeX Warning: Reference `sub@fig:Acou_Regmid_V1V2_High' on page 76 undefined o
+n input line 948.
 
 
-LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 75 undefined 
-on input line 945.
+LaTeX Warning: Hyper reference `fig:Acou_AHXin_V1V2_High' on page 76 undefined 
+on input line 948.
 
 
-LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 75 undefined on
- input line 945.
+LaTeX Warning: Reference `sub@fig:Acou_AHXin_V1V2_High' on page 76 undefined on
+ input line 948.
 
 ) (Conclusion.tex
-
-
 
 
 
@@ -7292,10 +7300,10 @@ Package logreq Info: Writing requests to 'external/fig_Acou_axProfile_V1V2_Low0
 
  ) 
 Here is how much of TeX's memory you used:
- 81998 strings out of 473523
- 2127939 string characters out of 5707334
- 4092681 words of memory out of 5000000
- 103339 multiletter control sequences out of 15000+600000
+ 81999 strings out of 473523
+ 2127968 string characters out of 5707334
+ 4090362 words of memory out of 5000000
+ 103340 multiletter control sequences out of 15000+600000
  731106 words of font info for 193 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,22n,162p,2243b,3309s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -7303,7 +7311,7 @@ Here is how much of TeX's memory you used:
 /ec/dpi600\ectt1095.pk><C:/Users/juliette utilisateur/AppData/Local/Programs/Mi
 KTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Users/juliette utilisateur/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb>
-Output written on external/fig_Acou_axProfile_V1V2_Low0.pdf (1 page, 410877 byt
+Output written on external/fig_Acou_axProfile_V1V2_Low0.pdf (1 page, 410531 byt
 es).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)

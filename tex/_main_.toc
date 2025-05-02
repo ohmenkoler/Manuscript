@@ -59,36 +59,39 @@
 \contentsline {subsubsection}{\numberline {II.3.2.4}Mesures avec acoustique}{31}{subsubsection.2.3.2.4}%
 \contentsline {section}{\numberline {II.4}Post-traitement des données}{32}{section.2.4}%
 \contentsline {section}{\numberline {II.5}Conclusion}{33}{section.2.5}%
-\contentsline {chapter}{\numberline {III}\'Etudes théoriques et numériques de convection naturelle}{35}{chapter.3}%
+\contentsline {chapter}{\numberline {III}Convection naturelle dans le \textsc {Tacot}, approche théorique}{35}{chapter.3}%
 \etoc@startlocaltoc {4}
 \contentsline {section}{\numberline {III.1}Introduction}{36}{section.3.1}%
 \contentsline {section}{\numberline {III.2}Convection naturelle et nombres adimensionnels}{36}{section.3.2}%
 \contentsline {subsection}{\numberline {III.2.1}Nombre de Rayleigh hors d'un matériau poreux}{36}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {III.2.2}Nombre de Rayleigh dans un matériau poreux}{38}{subsection.3.2.2}%
 \contentsline {section}{\numberline {III.3}Simulations par éléments finis}{39}{section.3.3}%
-\contentsline {subsection}{\numberline {III.3.1}Cavité d'adaptation d'impédance seule}{39}{subsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {III.3.1.1}Description du modèle}{39}{subsubsection.3.3.1.1}%
-\contentsline {subsubsection}{\numberline {III.3.1.2}\'Etude sur la direction du cône}{40}{subsubsection.3.3.1.2}%
-\contentsline {subsection}{\numberline {III.3.2}Cavité d'adaptation d'impédance couplée au noyau thermoacoustique}{41}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {III.3.2.1}Géométrie du problème}{41}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {III.3.2.2}Matériaux composant les domaines}{43}{subsubsection.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {III.3.2.3}Modèles physiques utilisés}{43}{subsubsection.3.3.2.3}%
-\contentsline {subsubsection}{\numberline {III.3.2.4}Conditions aux frontières}{44}{subsubsection.3.3.2.4}%
-\contentsline {paragraph}{\numberline {III.3.2.4.a}Problème thermique}{44}{paragraph.3.3.2.4.1}%
-\contentsline {paragraph}{\numberline {III.3.2.4.b}Problème fluide}{44}{paragraph.3.3.2.4.2}%
-\contentsline {subsubsection}{\numberline {III.3.2.5}Résultats}{44}{subsubsection.3.3.2.5}%
-\contentsline {section}{\numberline {III.4}Modèle du régime transitoire}{46}{section.3.4}%
-\contentsline {subsection}{\numberline {III.4.1}Géométrie du problème}{47}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {III.4.2}Champ acoustique considéré}{47}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {III.4.3}Mécanismes pris en compte dans le modèle}{47}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {III.4.4}Bilan thermique}{51}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {III.4.5}Méthode des transformations intégrales}{51}{subsection.3.4.5}%
-\contentsline {subsubsection}{\numberline {III.4.5.1}Application de la méthode dans la direction transverse}{52}{subsubsection.3.4.5.1}%
-\contentsline {subsubsection}{\numberline {III.4.5.2}Application de la méthode dans la direction axiale}{53}{subsubsection.3.4.5.2}%
-\contentsline {subsubsection}{\numberline {III.4.5.3}Application des transformées intégrales inverses}{54}{subsubsection.3.4.5.3}%
-\contentsline {subsection}{\numberline {III.4.6}Résultats}{54}{subsection.3.4.6}%
-\contentsline {section}{\numberline {III.5}Conclusion}{54}{section.3.5}%
-\contentsline {chapter}{\numberline {IV}Résultats expérimentaux et discussions}{57}{chapter.4}%
+\contentsline {subsection}{\numberline {III.3.1}Cavité d'adaptation d'impédance seule}{40}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {III.3.1.1}Géométrie du problème}{40}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {III.3.1.2}Matériau composant le domaine}{40}{subsubsection.3.3.1.2}%
+\contentsline {subsubsection}{\numberline {III.3.1.3}Modèles physiques utilisés}{40}{subsubsection.3.3.1.3}%
+\contentsline {subsubsection}{\numberline {III.3.1.4}Conditions aux frontières}{41}{subsubsection.3.3.1.4}%
+\contentsline {subsubsection}{\numberline {III.3.1.5}Résultats}{41}{subsubsection.3.3.1.5}%
+\contentsline {subsection}{\numberline {III.3.2}Cavité d'adaptation d'impédance couplée au noyau thermoacoustique}{43}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {III.3.2.1}Géométrie du problème}{43}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {III.3.2.2}Matériaux composant les domaines}{44}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {III.3.2.3}Modèles physiques utilisés}{44}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {III.3.2.4}Conditions aux frontières}{45}{subsubsection.3.3.2.4}%
+\contentsline {paragraph}{\numberline {III.3.2.4.a}Problème thermique}{45}{paragraph.3.3.2.4.1}%
+\contentsline {paragraph}{\numberline {III.3.2.4.b}Problème fluide}{46}{paragraph.3.3.2.4.2}%
+\contentsline {subsubsection}{\numberline {III.3.2.5}Résultats}{46}{subsubsection.3.3.2.5}%
+\contentsline {section}{\numberline {III.4}Modèle du régime transitoire}{47}{section.3.4}%
+\contentsline {subsection}{\numberline {III.4.1}Géométrie du problème}{48}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {III.4.2}Champ acoustique considéré}{48}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {III.4.3}Mécanismes pris en compte dans le modèle}{48}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {III.4.4}Bilan thermique}{52}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {III.4.5}Méthode des transformations intégrales}{52}{subsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {III.4.5.1}Application de la méthode dans la direction transverse}{53}{subsubsection.3.4.5.1}%
+\contentsline {subsubsection}{\numberline {III.4.5.2}Application de la méthode dans la direction axiale}{54}{subsubsection.3.4.5.2}%
+\contentsline {subsubsection}{\numberline {III.4.5.3}Application des transformées intégrales inverses}{55}{subsubsection.3.4.5.3}%
+\contentsline {subsection}{\numberline {III.4.6}Résultats}{55}{subsection.3.4.6}%
+\contentsline {section}{\numberline {III.5}Conclusion}{56}{section.3.5}%
+\contentsline {chapter}{\numberline {IV}Convection naturelle dans le \textsc {Tacot}, approche expérimentale}{57}{chapter.4}%
 \etoc@startlocaltoc {5}
 \contentsline {section}{\numberline {IV.1}Introduction}{58}{section.4.1}%
 \contentsline {section}{\numberline {IV.2}Impact de la convection naturelle sur les performances du réfrigérateur}{58}{section.4.2}%
@@ -142,4 +145,4 @@
 \contentsline {subsection}{\numberline {B.4.2}Résultats}{e}{subsection.B.4.2}%
 \contentsline {chapter}{\numberline {C}Récapitulatif des conditions expérimentales}{g}{appendix.C}%
 \contentsline {section}{\numberline {C.1}\'Etude sur la convection naturelle}{g}{section.C.1}%
-\contentsline {chapter}{Bibliographie}{I}{appendix*.73}%
+\contentsline {chapter}{Bibliographie}{I}{appendix*.72}%

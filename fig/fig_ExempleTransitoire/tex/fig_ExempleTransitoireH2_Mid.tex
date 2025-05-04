@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+    \def\width{.9*\textwidth};
+    \def\height{.25*\textheight};
+    \def\legx{.5cm};
+    \def\legy{\legx};
+    
+    \begin{axis}[name=plot,width={\width},height={\height},
+    grid=both,minor tick num=4,
+    grid style={line width=.1pt, draw=gray!10},
+    major grid style={line width=.2pt,draw=gray!50},
+    xlabel={Temps $t$ (\unit{\s})},
+    ylabel={\'Ecart de température $\theta$ (\unit{\kelvin})},
+    xmin=0,xmax=3500,
+%	ymin=-45,ymax=20,
+    xtick={0,600,...,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
+    domain=0:100,
+    legend cell align={left},
+    legend style = {at={($(1,1)+(2mm,2mm)$)},anchor = north east,rounded corners},legend columns=3,
+    ]
+    	
+    	\addplot[ultra thick,Plasma1, dashed] file {{../fig/fig_ExempleTransitoire/data/data_TC4_H2_Mid.txt}};\addlegendentry{TC 4}
+    	\addplot[ultra thick,Plasma1] file {{../fig/fig_ExempleTransitoire/data/data_TC5_H2_Mid.txt}};\addlegendentry{TC 5}
+    	\addplot[ultra thick,Plasma1, loosely dotted] file {{../fig/fig_ExempleTransitoire/data/data_TC6_H2_Mid.txt}};\addlegendentry{TC 6}
+    	
+    	\addplot[ultra thick,Plasma43, dashed] file {{../fig/fig_ExempleTransitoire/data/data_TC7_H2_Mid.txt}};\addlegendentry{TC 7}
+    	\addplot[ultra thick,Plasma43] file {{../fig/fig_ExempleTransitoire/data/data_TC8_H2_Mid.txt}};\addlegendentry{TC 8}
+    	\addplot[ultra thick,Plasma43, loosely dotted] file {{../fig/fig_ExempleTransitoire/data/data_TC9_H2_Mid.txt}};\addlegendentry{TC 9}
+    	
+    	\addplot[ultra thick,Plasma85, dashed] file {{../fig/fig_ExempleTransitoire/data/data_TC10_H2_Mid.txt}};\addlegendentry{TC 10}
+    	\addplot[ultra thick,Plasma85] file {{../fig/fig_ExempleTransitoire/data/data_TC11_H2_Mid.txt}};\addlegendentry{TC 11}
+    	\addplot[ultra thick,Plasma85, loosely dotted] file {{../fig/fig_ExempleTransitoire/data/data_TC12_H2_Mid.txt}};\addlegendentry{TC 12}
+    	
+   	  
+    \end{axis}
+\end{tikzpicture}

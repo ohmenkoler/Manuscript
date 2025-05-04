@@ -2,7 +2,7 @@
 	\def\width{.9*\textwidth};
 	\def\height{1*\width};
 	
-	\begin{axis}[width=\width,height=\height,
+	\begin{axis}[name=mainplot,width=\width,height=\height,
 		grid=both,minor tick num=4, 
 		grid style={line width=.1pt, draw=gray!10},
 	    major grid style={line width=.2pt,draw=gray!50},
@@ -24,8 +24,34 @@
 	\addplot[only marks, mark=o,color=Plasma50, mark size=4pt] file {../fig/fig_PerfConvNat/data/DeltaEC_V2_Qa_Qc_DR35.txt};%\addlegendentry{`\texttt{V2}'};
 	\addplot[only marks, mark=o,color=Plasma25, mark size=3pt] file {../fig/fig_PerfConvNat/data/DeltaEC_H1_Qa_Qc_DR35.txt};%\addlegendentry{`\texttt{H1}'};
 	\addplot[only marks, mark=o,color=Plasma1, mark size=2pt] file {../fig/fig_PerfConvNat/data/DeltaEC_H2_Qa_Qc_DR35.txt};%\addlegendentry{`\texttt{H2}'};
+	
+	\draw[dashed] (axis cs:40,230) node(anw){} rectangle (axis cs:60,180) node(ase){};
 
 	\end{axis}
+	
+	
+	
+	
+	\begin{axis}[name=secplot,width=.5*\width,height=.5*\height,
+		at={($(mainplot.center)+(0,5mm)$)}, anchor=center,
+		grid=both,minor tick num=3, 
+		grid style={line width=.1pt, draw=gray!10},
+	    major grid style={line width=.2pt,draw=gray!50},
+	    xtick={40,50,60},
+	    xmin=40, xmax=60,
+	    ymin=180, ymax=230,
+%		xlabel={$\dot Q_f$ (\unit{\watt})},
+%		ylabel={$\dot Q_a$ (\unit{\watt})},
+		legend cell align={left},
+		legend style = {at={($(.5,.5)+(0,0)$)}, anchor=center, rounded corners, legend columns=2}
+	]
+		\addplot[only marks, mark=*,color=Plasma75, mark size=5pt] file {../fig/fig_PerfConvNat/data/V1_Qa_Qc_DR35.txt};%\addlegendentry{`\texttt{V1}'};
+	\addplot[only marks, mark=*,color=Plasma50, mark size=4pt] file {../fig/fig_PerfConvNat/data/V2_Qa_Qc_DR35.txt};%\addlegendentry{`\texttt{V2}'};
+	\addplot[only marks, mark=*,color=Plasma25, mark size=3pt] file {../fig/fig_PerfConvNat/data/H1_Qa_Qc_DR35.txt};%\addlegendentry{`\texttt{H1}'};
+	\addplot[only marks, mark=*,color=Plasma1, mark size=2pt] file {../fig/fig_PerfConvNat/data/H2_Qa_Qc_DR35.txt};%\addlegendentry{`\texttt{H2}'};
+		\end{axis}
+		
+		\draw[dashed] (anw) -- (secplot.south west) (anw -| ase) -- (secplot.south east);
 \end{tikzpicture}
 
 

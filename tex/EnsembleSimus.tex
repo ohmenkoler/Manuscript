@@ -1,4 +1,4 @@
-\chapter{Convection naturelle dans le \textsc{Tacot}, approche théorique}\label{chap:SimusRealisees}
+\chapter[Convection naturelle dans le \textsc{Tacot} -- approche théorique]{Convection naturelle dans le \textsc{Tacot}\\approche théorique}\label{chap:SimusRealisees}
 \mylocaltoc
 
 \section{Introduction}
@@ -949,11 +949,11 @@ La détermination des coefficients d'échanges se fait par l'exploitation des ex
 	\external{fig_TransitoireFit}
 %	\externalremake
 	\input{../fig/fig_TransitoireFit/tex/fig_TransitoireFit}
-	\caption{Distribution de température sur l'axe mesurée lors d'une expérience sans acoustique dans l'orientation `\texttt{V1}' (traits pleins) et calculée (traits pointillés), après ajustement des coefficients d'échanges $h_x$.}
+	\caption{Distribution de température sur l'axe mesurée lors d'une expérience sans acoustique dans l'orientation `\texttt{H2}' (traits pleins) et calculée (traits pointillés), après ajustement des coefficients d'échanges $h_x$.}
 	\label{fig:TransitoireFit}
 \end{figure}
 
-Cette figure montre un assez bon accord entre la distribution de température calculée et celle mesurée et en particulier du côté ambiant, mais en sous-estimant tout de même les pertes à l'extrémité de l'échangeur de chaleur froid\footnote{Cette mesure est de type `\texttt{heat\_only}', et les cartouches chauffantes de l'échangeur ``froid'' font que cette extrémité est à une température plus élevée que la température ambiante.} du régénérateur.
+Cette figure montre un assez bon accord entre la distribution de température calculée et celle mesurée, avec tout de même quelques écart dans les \qty{1200}{\second} après le démarrage des sources. Ces écarts sont particulièrement marqués au milieu du régénérateur.
 
 \item Les effets de bords tels que les pertes de charges ou la vorticité sont pris en compte aux frontières du domaine grâce à des flux de chaleur $Q_{\sf vort}$ estimés empiriquement à $x=0$ et $x=L_{\sf reg}$. De même que les coefficients d'échanges convectifs, les valeurs de ce flux de chaleur sont ajustées pour approcher les résultats expérimentaux.
 
@@ -1179,7 +1179,48 @@ puis selon $r$ avec l'équation~\eqref{eq:TransfoInteg_Inversion_R}, ce qui donn
 %Une fois les coefficients d'échanges $h$ estimés grâce aux mesures sans acoustiques, ils sont considérés constant et dépendant uniquement des matériaux de construction, et conservés pour le reste des simulations. Selon le même principe, le flux de chaleur ajouté par vorticité est estimé grâce à la minimisation d'une fonction de coût.\echaf{à faire}
 
 \subsection{Résultats}
-\echaf{Ajouter fig avec évolution à 3 DR en fittant avec les données mesurées en H2}
+Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenire les résultats pour différents \textit{drive ratio} sur la figure~\ref{fig:ExempleTransitoireH2}.\medskip
+
+\begin{figure}[!htp]
+\centering
+\begin{subfigure}{.9\textwidth}
+	\centering
+	\external{fig_ExempleTransitoireH2_Low}
+%	\externalremake
+	\input{../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_Low}
+	\caption{}
+	\label{fig:ExempleTransitoireH2_Low}
+\end{subfigure}
+
+\vspace{1em}
+
+\begin{subfigure}{.9\textwidth}
+	\centering
+	\external{fig_ExempleTransitoireH2_Mid}
+%	\externalremake
+	\input{../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_Mid}
+	\caption{}
+	\label{fig:ExempleTransitoireH2_Mid}
+\end{subfigure}
+
+\vspace{1em}
+
+\begin{subfigure}{.9\textwidth}
+	\centering
+	\external{fig_ExempleTransitoireH2_High}
+%	\externalremake
+	\input{../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_High}
+	\caption{}
+	\label{fig:ExempleTransitoireH2_High}
+\end{subfigure}
+\caption{Distributions de températures calculés avec le modèle transitoire pour trois \textit{drive ratio}. \subref{fig:ExempleTransitoireH2_Low} $DR=\qty{.4}{\percent}$, \subref{fig:ExempleTransitoireH2_Mid} $DR=\qty{2}{\percent}$, et \subref{fig:ExempleTransitoireH2_High} $DR=\qty{3.5}{\percent}$.}
+\label{fig:ExempleTransitoireH2}
+\end{figure}
+
+
+Ce modèle doit prédire un refroidissement à la paroi du côté de l'échangeur froid. La figure montre le contraire, malgré l'implémentation des données de la machine réelle dans le modèle. Ces paramètres, en plus des coefficients d'échanges aux extrémités du régénérateur $\left.h_x\right|_{x=0,L_{\sf reg}}$ et aux parois latérales $\left.h_r\right|_{r=0,D_{\sf reg}}$, sont les pression et vitesse acoustiques (amplitude et phase), et les flux de chaleur apportés ou extrait par les échangeurs de chaleur.\medskip
+
+Quelque chose ne fonctionne pas au moment de la rédaction de ce manuscrit de thèse, et toutes les températures du régénérateur augmentent d'une manière que ne laisse pas de doute sur la présence d'une erreur dans le modèle.
 
 \section{Conclusion}
 Dans ce chapitre, plusieurs modèles pour interpréter les résultats des campagnes d'expériences sont développés.\medskip

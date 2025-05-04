@@ -460,7 +460,9 @@ L'étude des distributions de température commence par la cavité d'adaptation 
 
 
 \subsubsection{Expériences sans acoustique}
-Des mesures sans acoustiques sont d'abord réalisées pour séparer les effets qui se superposent lors du fonctionnement de la machine. L'eau est mise en circulation dans l'échangeur de chaleur ambiant, et les cartouches chauffantes sont alimentées par une puissance de \qty{40}{\watt\rms}. Les températures obtenues sont tracées sur les figures~\ref{fig:HeatOnly_CHXout_H1H2} et \ref{fig:HeatOnly_CHXout_V1V2}.
+Des mesures sans acoustiques sont d'abord réalisées pour séparer les effets qui se superposent lors du fonctionnement de la machine, afin d'avoir un système plus simple à analyser, ainsi que pour réaliser des expériences dans une configuration différente, pour vérifier la robustesse des raisonnements proposés ci-après.
+
+L'eau est mise en circulation dans l'échangeur de chaleur ambiant, et les cartouches chauffantes sont alimentées par une puissance de \qty{40}{\watt\rms}. Les températures obtenues sont tracées sur les figures~\ref{fig:HeatOnly_CHXout_H1H2} et \ref{fig:HeatOnly_CHXout_V1V2}. 
 
 \paragraph{Réfrigérateur horizontal}
 La première série d'expérience est faite dans les orientations `\texttt{H1}' et `\texttt{H2}' (voir les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}). Les résultats de ces mesures de températures sont tracés en fonction du temps après soustraction de la température ambiante sur la figure~\ref{fig:HeatOnly_CHXout_H1H2}.
@@ -504,7 +506,7 @@ Ce qui est montré également ici par les résultats obtenus dans l'orientation 
 L'étude de la distribution de température dans la cavité d'adaptation d'impédance en l'absence d'oscillations acoustiques met en évidence la circulation dûe à la convection naturelle. Le comportement thermique dans cette même cavité est maintenant investigué en présence d'écoulements oscillants pour étudier leur superposition aux effets de convection naturelle déjà évoqués. Les trois amplitudes acoustiques présentées dans le paragraphe~\ref{chap:MesureAvecAcou} sont paramétrées pour des expériences dont les résultats sont tracés sur la figure~\ref{fig:Acou_CHXout_H1H2}.
 
 \paragraph{Réfrigérateur horizontal}
-La première expérience, au \textit{drive ratio} $DR=\qty{.4}{\percent}$, présente sur la figure~\ref{fig:Acou_CHXout_H1H2_Low} les évolutions temporelles de températures obtenues.\medskip
+La première série d'expériences, au \textit{drive ratio} $DR=\qty{.4}{\percent}$, présente sur la figure~\ref{fig:Acou_CHXout_H1H2_Low} les évolutions temporelles de températures obtenues dans les orientations `\texttt{H1}' et `\texttt{H2}'.\medskip
 
 \begin{figure}[!htp]
 	\centering
@@ -565,17 +567,17 @@ Cette figure montre que les résultats expérimentaux et numériques sont cohér
 L'étude de cette dernière permet de montrer que la conductivité du milieu poreux, ici représentée par une matrice diagonale $\mathbf k_{\sf tissus}$ (voir l'équation~\eqref{eq:ConductiviteTensiorielle}) n'est pas adaptée : la conductivité transversale est surestimée, et conduit la chaleur depuis l'enveloppe en périphérie du noyau.\bigskip
 
 
-Les expériences pour les orientations `\texttt{V1}' et `\texttt{V2}' sont reproduites à moyenne amplitude acoustique, et les résultats temporels expérimentaux sont tracés sur la figure~\ref{fig:Acou_CHXout_V1V2_Low}.
+Les expériences pour les orientations `\texttt{H1}' et `\texttt{H2}' sont reproduites à moyenne amplitude acoustique, et les résultats temporels expérimentaux sont tracés sur la figure~\ref{fig:Acou_CHXout_H1H2_Mid}.
 
 
 
-Les résultats, tracés sur la figure~\ref{fig:Acou_CHXout_H1H2_Mid}, sont similaires à ce qui est observé à faible amplitude acoustique, en étant plus marqué par les écarts de température plus intenses. Un gradient vertical de température est visible le long de l'échangeur de chaleur froid dans l'orientation `\texttt{V1}', avec le thermocouple~\num1 qui baisse de \qty{7}{\kelvin} par rapport à l'état initial, et les thermocouples~\numlist{2;3} qui diminuent de \qty{17}{\kelvin}. Dans l'orientation `\texttt{V2}', les thermocouples~\numlist{1;3} en périphérie indiquent une baisse de \qty{13}{\kelvin} de la température, et de \qty{22}{\kelvin} pour le thermocouple~\num2. Le thermocouple~\num0, devant la source acoustique principale, indique pour les deux configurations une diminution de \qty{5}{\kelvin}.
+Les résultats sont similaires à ce qui est observé à faible amplitude acoustique sur la figure~\ref{fig:Acou_CHXout_H1H2_Low}, en étant plus marqué par les écarts de température plus intenses. Un gradient vertical de température est visible le long de l'échangeur de chaleur froid dans l'orientation `\texttt{H1}', avec le thermocouple~\num1 qui baisse de \qty{7}{\kelvin} par rapport à l'état initial, et les thermocouples~\numlist{2;3} qui diminuent de \qty{17}{\kelvin}. Dans l'orientation `\texttt{H2}', les thermocouples~\numlist{1;3} en périphérie indiquent une baisse de \qty{13}{\kelvin} de la température, et de \qty{22}{\kelvin} pour le thermocouple~\num2. Le thermocouple~\num0, devant la source acoustique principale, indique pour les deux configurations une diminution de \qty{5}{\kelvin}.
 
 
 Les résultats de températures dans le cas où le réfrigérateur est dans l'orientation `\texttt{H1}', le même comportement qu'à faible amplitude est observable à moyenne amplitude. À nouveau, la source acoustique refroidit peu par rapport à la température moyenne sur l'échangeur de chaleur, et le thermocouple \num{1} se trouve à une température proche. Les thermocouples \numlist{2;3} respectivement sur l'axe et en bas de la cavité sont à la même température, ce qui  montre que l'effet thermoacoustique est plus intense au centre qu'en périphérie et devient presque prédominant dans la superposition au gradient vertical de température associé à l'écoulement qui s'élève le long de la paroi de la source acoustique principale et qui redescend le long de l'échangeur de chaleur froid. En plaçant le réfrigérateur dans l'orientation `\texttt{H2}', les températures périphériques se stabilisent une température égale à la moyenne des températures au mêmes emplacements dans l'orientation `\texttt{H1}'.\bigskip
 
 
-Enfin, l'expérience à haute amplitude acoustique, c'est-à-dire avec un \textit{drive ratio} $DR=\qty{3.5}{\percent}$ est réalisée pour les deux orientations, et les résultats sont tracés sur la figure~\ref{fig:Acou_CHXout_H1H2_High}.\smallskip
+Enfin, l'expérience à haute amplitude acoustique, c'est-à-dire avec un \textit{drive ratio} $DR=\qty{3.5}{\percent}$ est réalisée pour les deux orientations horizontales `\texttt{H1}' et H`\texttt{H2}', et les résultats sont tracés sur la figure~\ref{fig:Acou_CHXout_H1H2_High}.\smallskip
 
 
 
@@ -628,13 +630,13 @@ Pour ces orientations, des expériences à faible amplitude acoustique où $DR=\
  
 
 
-Les températures dans l'orientation `\texttt{V2}' décroissent après le démarrage pour se fixer à leurs températures, qui se distribuent de manière symétrique à \qty{-4}{\kelvin} au centre de l'échangeur froid (TC~\num2) et \qtylist{-2.9}{\kelvin} pour sa périphérie (TC~\numlist{1;3}). La distribution de températures dans l'orientation `\texttt{V1}' est aussi symétrique, mais les températures sont plus élevées : le thermocouple~\num2 au centre de l'échangeur baisse de \qty{2.4}{\kelvin} par rapport à l'état initial, et la périphérie, de \qtylist{1.4;1.2}{\kelvin}, respectivement pour les thermocouples~\numlist{1;3}. Dans cette orientation, après une une décroissance des température sur l'échangeur jusqu'à $t=\qty{1200}{\second}$, les thermocouples~\numlist{1;2;3} montrent un réchauffement, simultané avec l'abaissement de la température du thermocouple~\num0 placé devant la source acoustique, qui indique la même température que le thermocouple~\num2 fixé au centre de l'échangeur.
+Les températures dans l'orientation `\texttt{V2}' décroissent après le démarrage jusqu'à leurs valeurs finales, qui se distribuent de manière symétrique à \qty{-4}{\kelvin} au centre de l'échangeur froid (TC~\num2) et \qtylist{-2.9}{\kelvin} pour sa périphérie (TC~\numlist{1;3}). La distribution de températures dans l'orientation `\texttt{V1}' est aussi symétrique, mais les températures sont plus élevées : le thermocouple~\num2 au centre de l'échangeur baisse de \qty{2.4}{\kelvin} par rapport à l'état initial, et la périphérie, de \qtylist{1.4;1.2}{\kelvin}, respectivement pour les thermocouples~\numlist{1;3}. Dans cette orientation, après une une décroissance des température sur l'échangeur jusqu'à $t=\qty{1200}{\second}$, les thermocouples~\numlist{1;2;3} montrent un réchauffement, simultané avec l'abaissement de la température du thermocouple~\num0 placé devant la source acoustique, qui indique la même température que le thermocouple~\num2 fixé au centre de l'échangeur.
 
 Les deux orientations présentent une axisymétrie du système. L'orientation `\texttt{V1}' semble favorable à la présence d'une cellule de convection naturelle qui met en contact thermique la source acoustique, plus chaude et placée en base de la cavité, à l'échangeur plus froid. Cette cellule se déclenche et fait converger les températures des thermocouples~\numlist{0;2}, avec un délai causé par la constante de temps plus élevée pour le flux convectif que pour l'effet thermoacoustique. La circulation de fluide homogénéise la température, et l'orientation `\texttt{V1}' montre moins d'écarts entre les températures dans la cavité que l'orientation `\texttt{V2}'.\medskip
 
 \textit{\textbf{Remarque :} la stabilisation des températures à partir de \qty{3000}{\second} confirme le besoin de réaliser des acquisitions longues supérieures à \qty{1}{\hour}. Cela pourrait provenir d'un impact à peu près équivalent des effets thermoacoustique et de convection naturelle au sein de cette cavité.}\bigskip
 
-Pour développer l'analyse de la figure~\ref{fig:Acou_CHXout_V1V2_Low}, la distribution de température le long de la paroi est tracée sur la figure~\ref{fig:Comsol_CHXout_V1V2_Low}, et comparée au calcul par éléments finis, à laquelle est soustraite la température ambiante (\qty{293}{\kelvin} dans le cas de la simulation numérique, et la valeur indiquée dans le tableau~\ref{tab:RecapResultExpe} pour les résultats expérimentaux), .
+Pour développer l'analyse de la figure~\ref{fig:Acou_CHXout_V1V2_Low}, la distribution de température le long de la paroi extérieur de l'échangeur froid est tracée sur la figure~\ref{fig:Comsol_CHXout_V1V2_Low}, et comparée au calcul par éléments finis, à laquelle est soustraite la température ambiante (\qty{293}{\kelvin} dans le cas de la simulation numérique, et la valeur indiquée dans le tableau~\ref{tab:RecapResultExpe} pour les résultats expérimentaux).
 
 \begin{figure}[!ht]
     \centering
@@ -651,7 +653,7 @@ Cette figure montre une distribution où le centre (TC~\num2) est plus froid pou
 
 Cette simulation ne correspond pas à ce qui est mesuré expérimentalement, d'une part par la forme de la distribution, et par l'écart de température entre les deux orientations. Cela peut s'expliquer par, tout d'abord, une surestimation du flux de chaleur retiré à la paroi froide dans le calcul numérique, car les température simulées pour chaque orientation sont plus basses que leur équivalent expérimental, et parce que l'écart entre les orientations est plus grand dans les résultats numériques que dans les résultats expérimentaux. Ensuite, la conduction transverse est probablement surestimée, puisque dans le régénérateur simulé, la température est constante sur la section (voir la figure~\ref{fig:RIXTa_Detail_Cmap_T_Fleche_vNorme}).\bigskip
 
-La figure~\ref{fig:Acou_CHXout_V1V2_Mid} représente la distribution de température dans la cavité pour chaque orientation à l'amplitude acoustique intermédiaire, $DR=\qty{2}{\percent}$.\medskip
+La figure~\ref{fig:Acou_CHXout_V1V2_Mid} représente la distribution de température dans la cavité pour chaque orientation verticale `\texttt{V1}' et `\texttt{V2}' à l'amplitude acoustique intermédiaire, $DR=\qty{2}{\percent}$.\medskip
 
 
 
@@ -661,7 +663,7 @@ Cette figure est plus difficile à analyser que la précédente et présente des
 Les températures dans cette dernière orientation sont plus haute que pour l'autre cas, car une circulation se met en place, et transporte un flux convectif qui charge thermiquement l'échangeur avec un retard. L'orientation `\texttt{V2}' montre toujours une distribution symétrique, mais pas l'orientation `\texttt{V1}', ce qui pourrait être causé par l'écoulement de convection qui n'est plus laminaire. Au final, ce qui ressort de cette figure est la mise en évidence de la convection naturelle dans la cavité, dont les symptômes sont de moins en moins visibles quand l'amplitude acoustique augmente.\bigskip
 
 
-La série d'expérience est reproduite à forte amplitude acoustique où $DR=\qty{3.5}{\percent}$. La figure~\ref{fig:Acou_CHXout_V1V2_High} représente l'évolution temporelle des températures depuis leur valeur initiale.\medskip
+La série d'expériences dans les orientations verticales `\texttt{V1}' et `\texttt{V2}' est reproduite à forte amplitude acoustique où $DR=\qty{3.5}{\percent}$. La figure~\ref{fig:Acou_CHXout_V1V2_High} représente l'évolution temporelle des températures depuis leur valeur initiale.\medskip
 
 
 
@@ -681,7 +683,7 @@ Cela se vérifie par l'observation d'une température minimale atteinte par un t
 Les expériences menées dans le paragraphe~\ref{chap:DistribTemp_CavAdaptImped} donnent d'autres valeurs de température en regardant les thermocouples~\numrange{4}{12} placés à l'intérieur du régénérateur. Dans la suite de ce manuscrit, les expériences sont regroupées par amplitude acoustique, et pour chacune, les résultats entre les couples d'orientation sont comparés, avec `\texttt{H1}' et `\texttt{H2}' d'une part, et `\texttt{V1}' et `\texttt{V2}' d'autre part.
 
 \subsubsection{Expériences sans acoustique}
-Encore une fois, les expériences sans acoustique sont analysées en premières. La comparaison entre les orientations `\texttt{H1}' et `\texttt{H2}' est faite avec la figure~\ref{fig:HeatOnly_Regen_H1H2}, et celle pour les orientations `\texttt{V1}' et `\texttt{V2}' sur la figure~\ref{fig:HeatOnly_Regen_V1V2}.\medskip
+Encore une fois, les expériences sans acoustique sont analysées en premières. La comparaison des résultats issus d'expériences de type `\texttt{heat\_only}' entre les orientations `\texttt{H1}' et `\texttt{H2}' est faite avec la figure~\ref{fig:HeatOnly_Regen_H1H2}, et celle pour les orientations `\texttt{V1}' et `\texttt{V2}' sur la figure~\ref{fig:HeatOnly_Regen_V1V2}.\smallskip
  
 %\paragraph{Réfrigérateur horizontal}
 
@@ -712,7 +714,20 @@ Encore une fois, les expériences sans acoustique sont analysées en premières.
 		\input{../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_AHXin_H1H2}
 		\caption{}
 		\label{fig:HeatOnly_AHXin_H1H2}
-	\end{subfigure}		   
+	\end{subfigure}
+	
+	\vspace{-8cm}
+	
+	\begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_H10.pdf}
+	\end{subfigure} 
+	\begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_H20.pdf}
+	\end{subfigure} 
+	
+	\vspace{5cm}  
     \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à \textit{drive ratio} nul. \subref{fig:HeatOnly_CHXin_H1H2} côté froid (TC \numlist{4;5;6}), \subref{fig:HeatOnly_Regmid_H1H2} milieu (TC \numlist{7;8;9}), \subref{fig:HeatOnly_AHXin_H1H2} côté ambiant (TC \numlist{10;11;12}).}
     \label{fig:HeatOnly_Regen_H1H2}
 \end{figure}
@@ -724,13 +739,20 @@ Ici, la distribution de température sur la paroi interne du régénérateur (TC
 
 Les températures au milieu du régénérateur sont tracées au cours du temps sur la sous-figure~\ref{fig:HeatOnly_Regmid_H1H2}.\medskip
 
-Après l'alimentation des cartouches chauffantes, les températures au milieu augmentent globalement. Dans l'orientation `\texttt{H1}', l\bigskip
+Après l'alimentation des cartouches chauffantes, les températures au milieu augmentent globalement. Dans l'orientation `\texttt{H1}', le thermocouple~\num7 en haut du régénérateur augmente de \qty{10}{\kelvin}, le thermocouple~\num8 sur l'axe, de \qty{6}{\kelvin}, et le thermocouple~\num9, en bas du régénérateur, de\qty{3}{\kelvin}. Ces augmentations se font plus tardivement que l'échauffement indiqué par les thermocouples~\numlist{4;5;6} à l'extrémité chauffée par les cartouches, avec un délai de \qty{150}{\second} pour les thermocouples~\numlist{7;9} et \qty{300}{\second} pour le thermocouple~\num8.
+
+Ici, c'est surtout la conduction par les matériaux, c'est-à-dire l'acier de l'enveloppe, et les disques de tissus en acier inoxydable contenus à l'intérieur, qui est visible. Le peu de chaleur donné par convection par l'échangeur au régénérateur est conduit jusqu'au côté ambiant, et les valeurs de températures sont plus basses que celle mesurée du côté des cartouches chauffantes. Le temps de réaction des température sur cette section au milieu du régénérateur est similaire à celui de la paroi de la source acoustique principale, dont la température est relevée par le thermocouple~\num0, à l'exception que celui-ci voit sa température évoluer plus faiblement. La même observation peut être faite pour l'orientation `\texttt{H2}', ce qui conforte l'hypothèse de faible échange convectif entre le fluide hors du noyau et le régénérateur même si la distribution asymétrique sur la paroi externe empêchait d'utiliser ces données pour répondre à la question de convection.\bigskip
 
 La sous-figure~\ref{fig:HeatOnly_AHXin_H1H2} montre l'évolution de température sur la section qui fait face à l'échangeur de chaleur ambiant.\medskip
 
-L'observation de ces résultats d'expériences avec le réfrigérateur placé dans les orientations horizontales semble montrer qu'en l'absence d'écoulement oscillant, la distribution de température dans le régénérateur est déjà plutôt complexe. Le seul moyen de transport de chaleur dans le régénérateur possible dans ce milieu poreux est la conduction. La distribution totale de température est donc une combinaison de ce transfert et du couplage avec la distribution mesurée dans la cavité d'adaptation d'impédance perturbée par l'écoulement provoqué par la convection naturelle.\echaf{pas fini}\bigskip
+Les températures mesurées dans l'orientation `\texttt{H1}' montrent une distribution de températures non-uniforme sur la section, dépendant de l'orientation et après une augmentation globale de toutes les températures mesurées. Le thermocouple~\num{10} situé en haut du régénérateur montre un échauffement de \qty{4}{\kelvin}, le thermocouple~\num{11} sur l'axe, de \qty{11}{\kelvin}, et le thermocouple~\num{12} placé en bas du régénérateur relève une augmentation de \qty{.5}{\kelvin}. Les températures mesurées dans l'orientation `\texttt{H2}' sont groupée, avec toutes les températures comprises entre \qtylist{2;3}{\kelvin}.
+
+La distribution obtenue dans l'orientation `\texttt{H1}' montre que la plus haute élévation de température mesurée par le thermocouple~\num{11} sur l'axe du régénérateur est plus élevée que celle rélevée au milieu du régénérateur par le thermocouple~\num7 situé en haut. Un passage conduisant bien la chaleur par la paroi mais n'étant pas instrumenté avec un thermocouple pourrait conduire la chaleur provenant des cartouches chauffantes vers le côté ambiant, et une inhomogénéité dans l'assemblage des tissus pourrait conduire ce flux vers le centre du régénérateur du côté ambiant. Cependant, ce comportement impliquant la conduction thermique ne devrait pas dépendre de l'orientation, ce qui est pourtant le cas ici. \echaf{donc je sais pas}\bigskip
+
+L'observation de ces résultats d'expériences avec le réfrigérateur placé dans les orientations horizontales semble montrer qu'en l'absence d'écoulement oscillant, la distribution de température dans le régénérateur est déjà plutôt complexe. Le seul moyen de transport de chaleur dans le régénérateur possible dans ce milieu poreux semble être la conduction. La distribution totale de température est donc une combinaison de ce transfert et du couplage avec la distribution mesurée dans la cavité d'adaptation d'impédance perturbée par l'écoulement provoqué par la convection naturelle.\bigskip
 
 %\paragraph{Réfrigérateur vertical}
+Les expériences en `\texttt{heat\_only}' sont reproduites dans les orientations verticales `\texttt{V1}' et `\texttt{V2}', et les températures mesurées sont tracées au cours du temps sur la figure~\ref{fig:HeatOnly_Regen_V1V2}.\smallskip
 
 \begin{figure}[!htp]
     \centering
@@ -777,6 +799,19 @@ L'observation de ces résultats d'expériences avec le réfrigérateur placé da
     \label{fig:HeatOnly_Regen_V1V2}
 \end{figure}
 
+La figure~\ref{fig:HeatOnly_CHXin_V1V2} représente l'évolution temporelle des températures du côté des cartouches chauffantes du régénérateur, acquises par les thermocouples~\numlist{4;5;6}. Dans les deux orientations, les températures augmentent pour tous les thermocouples. Le thermocouple~\num5, placé sur l'axe du régénérateur, indique une augmentation de la température de \qty{47}{\kelvin} au dessus de la tempérture initiale en `\texttt{V1}', et de \qty{13}{\kelvin} en `\texttt{V2}'.   La distribution de température est symétrique dans l'orientation `\texttt{V1}', avec les thermocouples périphériques~\numlist{4;6} qui indiquent une hausse de \qty{43}{\kelvin} par rapport à la température initiale, soit \qty{4}{\kelvin} en dessous de la température sur l'axe mesurée par le thermocouple~\num2. En revanche, les résultats issus de l'expérience dans l'orientation `\texttt{V2}' ne montrent pas de symétrie dans la distribution de température, et les thermocouples périphériques~\numlist{4;6} mesurent respectivement des hausses de températures de \qtylist{15;12}{\kelvin}.
+
+Le fait que l'orientation `\texttt{V1}' soit favorable à une élévation plus intense de la température autour des cartouches que l'orientation `\texttt{V2}' confirme l'observation réalisée sur la figure~\ref{fig:HeatOnly_CHXout_V1V2} qui représente les données de températures temporelles acquises par les thermocouples~\numlist{1;2;3} et placés sur la paroi extérieure de l'échangeur contenant les cartouches chauffantes : lorsqu'elles sont placées en bas de la cavité comme dans l'orientation `\texttt{V2}', le flux de chaleur convectif réchauffe la paroi de la source acoustique principale et le volume de fluide au repos placé derrière, mais lorsqu'elles sont au dessus de cette cavité comme c'est le cas dans l'orientation `\texttt{V1}', l'échange de chaleur entre le fluide et le régénérateur se fait assez peu, et la température augmente. Il n'est toutefois pas nul, et la température du thermocouples~\num{5} est plus faible de \qty{6}{\kelvin} que la température du thermocouple~\num{2} placés en dessous. En revanche, les températures périphériques sont plus hautes à l'intérieur du noyau (TC~\numlist{4;6}, \qty{46}{\kelvin}) qu'à l'extérieur (TC~\numlist{1;3}, \qty{40}{\kelvin}), ce qui peut laisser penser à un flux conductif radial du centre vers la périphérie. Les résultats dans l'orientation `\texttt{V2}' vont également dans ce sens, puisque l'écart entre la température la plus haute et la plus basse vaut \qty{9}{\kelvin} à l'extérieur du noyau, et \qty{4}{\kelvin} à l'intérieur.\bigskip
+
+Les données de température sur la section médiane du régénérateur sont représentées sur la figure~\ref{fig:HeatOnly_Regmid_V1V2}. Il est possible d'y voir leur augmentation au cours du temps, avec dans les deux orientations un délai de \qty{300}{\second} pour les thermocouples~\numlist{7;9} situés en périphérie du régénérateur et \qty{400}{\second} pour le thermocouple~\num8 placé sur son axe. Les températures augmentent de \qty{17}{\kelvin} pour le thermocouple~\num7 et de \qty{20}{\kelvin} pour les thermocouples~\numlist{8;9} dans l'orientation `\texttt{V1}' tandis que dans l'orientation`\texttt{V2}', ces trois thermocouples montrent une augmentation de \qty{5}{\kelvin}.
+
+Les délais avant réchauffement des températures au milieu du régénérateur semblent montrer d'une part que l'échange de chaleur se fait plus lentement que le chauffage des cartouches lors de leur alimentation, et d'autre part que la conduction transverse ajoute un délai supplémentaire avant l'augmentation de la température sur l'axe.\bigskip
+
+Pour répondre à la question de la convection naturelle dans le régénérateur, il faut analyser la distribution de température du côté ambiant qui est tracée sur la figure~\ref{fig:HeatOnly_AHXin_V1V2}. La distribution obtenue en `\texttt{V1}' par les thermocouples~\numlist{10;11;12} montre une uniformité de température au niveau des points de mesure, avec une augmentation de \qty{5}{\kelvin}. Cet échauffement présente un délai par rapport à l'allumage des cartouches, de la même valeur de \qty{300}{\second} que celui apparent sur les courbes de températures mesurées au milieu du régénérateur par les thermocouples~\numlist{7;8;9} et tracés sur la figure~\ref{fig:HeatOnly_Regmid_V1V2}. 
+
+La proximité de valeur du délai avant échauffement entre les mesures de thermocouples~\numlist{7;8;9} et \numlist{10;11;12} confirme la prédominance de la conduction dans les transferts de chaleur qui se produisent dans le régénérateur.\bigskip
+
+Cette étude préliminaire montre que la convection apparaît bien dans la cavité d'adaptation d'impédance, et agit comme une charge thermique ajoutée à celle des cartouches chauffantes. Le processus de transport de chaleur majoritaire en l'absence d'ondes acoustiques et d'effets thermoacoustiques est la conduction, et l'échange convectif entre le régénérateur et la cavité d'adaptation d'impédance est très faible en l'absence d'écoulement oscillant. Enfin et surtout, la convection naturelle n'apparaît pas au sein du régénérateur comme l'indique le nombre de Rayleigh calculé dans le cas de l'orientation `\texttt{V1}', où une différence de température de l'ordre de \qty{50}{\kelvin} mène à $\Rayleigh\sim\num{e-1}$ et à une vitesse verticale de l'ordre $v_{\sf ref}^{//\mathbf g}\sim\num{e-4}$. Les résultats obtenues dans l'orientation `\texttt{V1}' (voir la figure~\ref{fig:HeatOnly_Regen_V1V2}) confirment cette proposition, car la température mesurée sur la section au milieu du régénérateur se situe à la moyenne entre les températures des côtés froid et ambiant. Regardons maintenant le comportement du régénérateur en présence d'un champ acoustique.
 
 
 \subsubsection{Expériences avec acoustique}
@@ -1168,6 +1203,6 @@ Comme pour les expériences à haute amplitude à l'horizontale, les températur
 \section{Conclusion}
 Pour les quatre orientations présentées sur la figure~\ref{fig:OrientationCore}, des expériences sont menées à différentes amplitudes acoustiques.
 
-\echaf{convection dans le poreux : il n'y en a pas, ce qui est conforme aux simulations, et l'amplitude acoustique fait apparaître d'autre phénomènes bien avant d'atteindre un gradient de température suffisamment élevé pour déclencher une instabilité de RB dans le poreux}
+\echaf{convection dans le poreux : il n'y en a pas, ce qui est conforme aux simulations, et l'amplitude acoustique fait apparaître d'autre phénomènes bien avant d'atteindre un gradient de température suffisamment élevé pour déclencher une instabilité de RB dans le poreux  C'est aussi vrai en heat only, alors qu'il n'y  a pas l'effet thermoacoustique.}
 
 \echaf{bilan thermique : le principe de superposition schématisé sur la figure~\ref{fig:SuperpositionComsol} est en partie confirmée par l'observation des mesures réalisées à différentes amplitudes, mais dans le modèle il manque entre autres choses 1) des effets qui apparaissent au fur et à mesure que l'amplitude acoustique augmente, et 2) une prise en compte de la prépondérance de certains effets sur d'autres. Notamment, les symptômes de la présence de cellules de convection naturelle sont de moins en moins visibles quand l'amplitude acoustique augmente, d'une part avec le renforcement de l'effet thermoacoustique, et d'autre part à cause de l'apparition d'effets non-linéaires comme la viscosité qui dépend de la vitesse acoustique.}

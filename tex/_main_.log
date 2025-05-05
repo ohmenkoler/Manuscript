@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  5 MAY 2025 10:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  5 MAY 2025 13:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2438,16 +2438,20 @@ df> <./external/fig_ATE_ProfilsCHX_5mm0.pdf
 pdfTeX warning: pdflatex (file ./external/fig_ATE_ProfilsCHX_5mm0.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
 >]
+
+[15]
+
+[16
+
+]
 Chapitre II.
 
 
-[15
-
-] (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
+[17] (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
 ===== Image 'external/fig_SchemaGeneralTACOT0' is up-to-date. ======
 )
 
-[16
+[18
 
  <./external/fig_SchemaGeneralTACOT0.pdf>]
 ===== Image 'external/fig_TacotPhotosNoyau_AHX0' is up-to-date. ======
@@ -2459,11 +2463,11 @@ Chapitre II.
 ===== Image 'external/fig_SchemaNoyau0' is up-to-date. ======
 )
 
-[17 <./external/fig_TacotPhotosNoyau_AHX0.pdf> <./external/fig_TacotPhotosNoyau
+[19 <./external/fig_TacotPhotosNoyau_AHX0.pdf> <./external/fig_TacotPhotosNoyau
 _Regenerateur0.pdf> <./external/fig_TacotPhotosNoyau_CHX0.pdf> <./external/fig_
 PhotoNoyau0.pdf> <./external/fig_SchemaNoyau0.pdf>]
 
-[18] (../fig/fig_dKdV/tex/fig_dKdV.tex
+[20] (../fig/fig_dKdV/tex/fig_dKdV.tex
 ===== Image 'external/fig_dKdV0' is up-to-date. ======
 ) Excluding 'comment' comment.
 ===== Image 'external/fig_RegenOnly_DeltaEC_Schematics0' is up-to-date. ======
@@ -2765,17 +2769,17 @@ LaTeX Info: Symbol \textminus not provided by
 ===== Image 'external/fig_CHXSchema0' is up-to-date. ======
 
 
-[19 <./external/fig_dKdV0.pdf>]
+[21 <./external/fig_dKdV0.pdf>]
 
-[20 <./external/fig_RegenOnly_DeltaEC_Schematics0.pdf>]
+[22 <./external/fig_RegenOnly_DeltaEC_Schematics0.pdf>]
 (../fig/fig_TemperatureAHX_InOut/tex/fig_TemperatureAHX_InOut.tex
 ===== Image 'external/fig_TemperatureAHX_InOut0' is up-to-date. ======
 )
 
-[21 <./external/fig_DeltaEC_u_opt_Qth0.pdf> <./external/fig_DeltaEC_u_opt_COP0.
+[23 <./external/fig_DeltaEC_u_opt_Qth0.pdf> <./external/fig_DeltaEC_u_opt_COP0.
 pdf>]
 
-[22 <./external/fig_AHXSchema0.pdf> <./external/fig_CHXSchema0.pdf
+[24 <./external/fig_AHXSchema0.pdf> <./external/fig_CHXSchema0.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_CHXSchema0.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
@@ -2783,7 +2787,7 @@ ultiple pdfs with page group included in a single page
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 335.
-<../fig/fig_Capteurs/Sensors_updated2.pdf, id=1701, 1172.12906pt x 478.03593pt>
+<../fig/fig_Capteurs/Sensors_updated2.pdf, id=1707, 1172.12906pt x 478.03593pt>
 
 File: ../fig/fig_Capteurs/Sensors_updated2.pdf Graphic file (type pdf)
 <use ../fig/fig_Capteurs/Sensors_updated2.pdf>
@@ -2792,24 +2796,24 @@ t line 353.
 (pdftex.def)             Requested size: 469.18652pt x 191.34956pt.
 
 
-[23 <../fig/fig_Capteurs/Sensors_updated2.pdf>]
+[25 <../fig/fig_Capteurs/Sensors_updated2.pdf>]
 (../fig/fig_BancEssaisComplet/tex/BancEssaisComplet.tex
 ===== Image 'external/fig_BancEssaisComplet0' is up-to-date. ======
 )
 
-[24 <./external/fig_BancEssaisComplet0.pdf>]
+[26 <./external/fig_BancEssaisComplet0.pdf>]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
 ) (../fig/fig_PhotosPressionStatDyn/tex/fig_PhotosPressionStatDyn.tex
 ===== Image 'external/fig_PhotosPressionStatDyn0' is up-to-date. ======
 )
 
-[25 <./external/fig_TCdansNoyau0.pdf>]
+[27 <./external/fig_TCdansNoyau0.pdf>]
 ===== Image 'external/fig_SystemeAccroche_Machine0' is up-to-date. ======
 ===== Image 'external/fig_SystemeAccroche_Palan0' is up-to-date. ======
 
 
-[26 <./external/fig_PhotosPressionStatDyn0.pdf>]
+[28 <./external/fig_PhotosPressionStatDyn0.pdf>]
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 ===== Image 'external/fig_OrientationCore_H10' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
@@ -2820,7 +2824,7 @@ t line 353.
 ===== Image 'external/fig_OrientationCore_V20' is up-to-date. ======
 )
 
-[27 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroc
+[29 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroc
 he_Palan0.pdf> <./external/fig_OrientationCore_H10.pdf> <./external/fig_Orienta
 tionCore_H20.pdf> <./external/fig_OrientationCore_V10.pdf> <./external/fig_Orie
 ntationCore_V20.pdf>]
@@ -2832,9 +2836,9 @@ ntationCore_V20.pdf>]
 ===== Image 'external/fig_COP_PressStatique0' is up-to-date. ======
 )
 
-[28]
+[30]
 
-[29 <./external/fig_TenuePressionStatique0.pdf> <./external/fig_Qc_PressStatiqu
+[31 <./external/fig_TenuePressionStatique0.pdf> <./external/fig_Qc_PressStatiqu
 e0.pdf> <./external/fig_COP_PressStatique0.pdf>]
 (../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_TC.tex
 ===== Image 'external/fig_WaterOnly_TC0' is up-to-date. ======
@@ -2842,32 +2846,32 @@ e0.pdf> <./external/fig_COP_PressStatique0.pdf>]
 ===== Image 'external/fig_WaterOnly_PT0' is up-to-date. ======
 )
 
-[30 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf>]
+[32 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf>]
 (../fig/fig_AcouExample/tex/fig_AcouExample.tex
 ===== Image 'external/fig_AcouExample0' is up-to-date. ======
 ) (../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1.tex
 ===== Image 'external/fig_Repetabilite_V10' is up-to-date. ======
 )
 
-[31]
+[33]
 
-[32 <./external/fig_AcouExample0.pdf> <./external/fig_Repetabilite_V10.pdf>]
+[34 <./external/fig_AcouExample0.pdf> <./external/fig_Repetabilite_V10.pdf>]
 Excluding 'comment' comment.
 (../fig/fig_ConclusionChap2/tex/fig_ConclusionChap2.tex
 ===== Image 'external/fig_ConclusionChap20' is up-to-date. ======
 )
 
-[33]) (EnsembleSimus.tex
+[35]) (EnsembleSimus.tex
 
-[34 <./external/fig_ConclusionChap20.pdf>]
+[36 <./external/fig_ConclusionChap20.pdf>]
 Chapitre III.
 
 
-[35
+[37
 
 ]
 
-[36
+[38
 
 ] (../fig/fig_ConvNat2D/tex/fig_ConvNat2D_HorizDeltaT.tex
 ===== Image 'external/fig_ConvNat2D_HorizDeltaT0' is up-to-date. ======
@@ -2875,7 +2879,7 @@ Chapitre III.
 ===== Image 'external/fig_ConvNat2D_VertiDeltaT0' is up-to-date. ======
 )
 
-[37 <./external/fig_ConvNat2D_HorizDeltaT0.pdf> <./external/fig_ConvNat2D_Verti
+[39 <./external/fig_ConvNat2D_HorizDeltaT0.pdf> <./external/fig_ConvNat2D_Verti
 DeltaT0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -2951,7 +2955,7 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 138.
 
 
-[38]
+[40]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 199.
@@ -3014,8 +3018,8 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 199.
 
 
-[39]
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png, id=2317, 216.68954p
+[41]
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png, id=2323, 216.68954p
 t x 216.68954pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png Graphic file (t
 ype png)
@@ -3025,8 +3029,8 @@ png  used on input line 250.
 (pdftex.def)             Requested size: 216.68901pt x 216.68901pt.
 
 
-[40 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png>]
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png, id=2328, 44
+[42 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png>]
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png, id=2334, 44
 9.5194pt x 88.04895pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png Graphic
  file (type png)
@@ -3034,7 +3038,7 @@ File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png Graphic
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_
 THBelow.png  used on input line 272.
 (pdftex.def)             Requested size: 449.51828pt x 88.04874pt.
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow.png, id=2329, 449
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow.png, id=2335, 449
 .5194pt x 87.6876pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow.png Graphic 
 file (type png)
@@ -3042,7 +3046,7 @@ file (type png)
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_T
 HBelow.png  used on input line 282.
 (pdftex.def)             Requested size: 449.51828pt x 87.68738pt.
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THBelow.png, id=2330, 44
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THBelow.png, id=2336, 44
 9.5194pt x 89.01254pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THBelow.png Graphic
  file (type png)
@@ -3060,11 +3064,11 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 325.
 
 
-[41 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png> <../fig
+[43 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png> <../fig
 /fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow.png> <../fig/fig_ConvNat
 Comsol_Resultats/ConeSeul/LargeBase_THBelow.png> <./external/_main_-figure0.pdf
 >]
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png, id=2366, 44
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png, id=2372, 44
 9.5194pt x 78.41295pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png Graphic
  file (type png)
@@ -3072,7 +3076,7 @@ File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png Graphic
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_
 THAbove.png  used on input line 343.
 (pdftex.def)             Requested size: 449.51828pt x 78.41273pt.
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove.png, id=2367, 449
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove.png, id=2373, 449
 .5194pt x 78.41295pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove.png Graphic 
 file (type png)
@@ -3080,7 +3084,7 @@ file (type png)
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_T
 HAbove.png  used on input line 352.
 (pdftex.def)             Requested size: 449.51828pt x 78.41273pt.
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THAbove.png, id=2368, 44
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THAbove.png, id=2374, 44
 9.5194pt x 78.7743pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THAbove.png Graphic
  file (type png)
@@ -3110,7 +3114,7 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 399.
 
 
-[42 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png> <../fig
+[44 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png> <../fig
 /fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove.png> <../fig/fig_ConvNat
 Comsol_Resultats/ConeSeul/LargeBase_THAbove.png> <./external/_main_-figure1.pdf
 >]
@@ -3118,18 +3122,18 @@ Comsol_Resultats/ConeSeul/LargeBase_THAbove.png> <./external/_main_-figure1.pdf
 ===
 
 
-[43 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>]
+[45 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>]
 Excluding 'comment' comment.
 
-[44] (../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex
+[46] (../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex
 ===== Image 'external/fig_SuperpositionComsol0' is up-to-date. ======
 ) (../fig/fig_ComsolThermalCondFront/tex/Rix_Ambiant.tex
 ===== Image 'external/fig_Comsol_TambiantRix0' is up-to-date. ======
 )
 
-[45 <./external/fig_SuperpositionComsol0.pdf> <./external/fig_Comsol_TambiantRi
+[47 <./external/fig_SuperpositionComsol0.pdf> <./external/fig_Comsol_TambiantRi
 x0.pdf>]
-<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png, id=2498,
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png, id=2504,
  224.7597pt x 224.7597pt>
 File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png Grap
 hic file (type png)
@@ -3137,7 +3141,7 @@ hic file (type png)
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorm
 e/H1_RIXTa.png  used on input line 589.
 (pdftex.def)             Requested size: 204.6029pt x 204.61052pt.
-<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa.png, id=2499,
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa.png, id=2505,
  224.7597pt x 224.7597pt>
 File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa.png Grap
 hic file (type png)
@@ -3148,7 +3152,7 @@ e/H2_RIXTa.png  used on input line 593.
 
 ===== Image 'external/_main_-figure2' is up-to-date. ======
 ===== Image 'external/_main_-figure3' is up-to-date. ======
-<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa.png, id=2502,
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa.png, id=2508,
  224.7597pt x 224.7597pt>
 File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa.png Grap
 hic file (type png)
@@ -3156,7 +3160,7 @@ hic file (type png)
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorm
 e/V1_RIXTa.png  used on input line 653.
 (pdftex.def)             Requested size: 204.6029pt x 204.61052pt.
-<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa.png, id=2503,
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa.png, id=2509,
  224.7597pt x 224.7597pt>
 File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa.png Grap
 hic file (type png)
@@ -3168,41 +3172,41 @@ e/V2_RIXTa.png  used on input line 657.
 ===== Image 'external/_main_-figure5' is up-to-date. ======
 
 
-[46 <../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png> <../
+[48 <../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png> <../
 fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa.png> <./external/
 _main_-figure2.pdf> <./external/_main_-figure3.pdf> <../fig/fig_ConvNatComsol_R
 esultats/Cmap_T_Fleche_vNorme/V1_RIXTa.png> <../fig/fig_ConvNatComsol_Resultats
 /Cmap_T_Fleche_vNorme/V2_RIXTa.png> <./external/_main_-figure4.pdf> <./external
 /_main_-figure5.pdf>]
 
-[47]
+[49]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
 ====
 )
 
-[48]
+[50]
 
-[49 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
+[51 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
 (../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterCondi
 tionLimite.tex
 ===== Image 'external/fig_TemperatureCanisterConditionLimite0' is up-to-date. =
 =====
 )
 
-[50] (../fig/fig_TransitoireFit/tex/fig_TransitoireFit.tex
+[52] (../fig/fig_TransitoireFit/tex/fig_TransitoireFit.tex
 ===== Image 'external/fig_TransitoireFit0' is up-to-date. ======
 )
 
-[51 <./external/fig_TemperatureCanisterConditionLimite0.pdf> <./external/fig_Tr
+[53 <./external/fig_TemperatureCanisterConditionLimite0.pdf> <./external/fig_Tr
 ansitoireFit0.pdf>]
 
-[52]
+[54]
 
-[53]
+[55]
 
-[54] (../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_Low.tex
+[56] (../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_Low.tex
 ===== Image 'external/fig_ExempleTransitoireH2_Low0' is up-to-date. ======
 ) (../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_Mid.tex
 ===== Image 'external/fig_ExempleTransitoireH2_Mid0' is up-to-date. ======
@@ -3210,45 +3214,45 @@ ansitoireFit0.pdf>]
 ===== Image 'external/fig_ExempleTransitoireH2_High0' is up-to-date. ======
 )
 
-[55]
+[57]
 
-[56 <./external/fig_ExempleTransitoireH2_Low0.pdf> <./external/fig_ExempleTrans
+[58 <./external/fig_ExempleTransitoireH2_Low0.pdf> <./external/fig_ExempleTrans
 itoireH2_Mid0.pdf> <./external/fig_ExempleTransitoireH2_High0.pdf>])
 (EtudeExperimentale.tex
 
-[57]
+[59]
 
-[58
+[60
 
 ]
 Chapitre IV.
 
 
-[59] Excluding 'comment' comment.
+[61] Excluding 'comment' comment.
 (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR2.tex
 ===== Image 'external/fig_PerfConvNat_COP_DR20' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR35.tex
 ===== Image 'external/fig_PerfConvNat_COP_DR350' is up-to-date. ======
 )
-<./external/fig_OrientationCore_V10.pdf, id=2915, 151.00816pt x 177.34053pt>
+<./external/fig_OrientationCore_V10.pdf, id=2921, 151.00816pt x 177.34053pt>
 File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
 line 222.
 (pdftex.def)             Requested size: 87.06349pt x 102.24872pt.
-<./external/fig_OrientationCore_V20.pdf, id=2916, 151.00816pt x 177.34053pt>
+<./external/fig_OrientationCore_V20.pdf, id=2922, 151.00816pt x 177.34053pt>
 File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
 line 225.
 (pdftex.def)             Requested size: 87.06349pt x 102.24872pt.
-<./external/fig_OrientationCore_H10.pdf, id=2917, 123.73225pt x 185.85936pt>
+<./external/fig_OrientationCore_H10.pdf, id=2923, 123.73225pt x 185.85936pt>
 File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
 line 228.
 (pdftex.def)             Requested size: 87.06349pt x 130.78413pt.
-<./external/fig_OrientationCore_H20.pdf, id=2918, 156.56793pt x 177.34053pt>
+<./external/fig_OrientationCore_H20.pdf, id=2924, 156.56793pt x 177.34053pt>
 File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
@@ -3256,11 +3260,11 @@ line 231.
 (pdftex.def)             Requested size: 87.06349pt x 98.61728pt.
 
 
-[60
+[62
 
 ]
 
-[61 <./external/fig_PerfConvNat_COP_DR20.pdf> <./external/fig_PerfConvNat_COP_D
+[63 <./external/fig_PerfConvNat_COP_DR20.pdf> <./external/fig_PerfConvNat_COP_D
 R350.pdf> <./external/fig_OrientationCore_V10.pdf> <./external/fig_OrientationC
 ore_V20.pdf> <./external/fig_OrientationCore_H10.pdf> <./external/fig_Orientati
 onCore_H20.pdf>] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa_DR2.tex
@@ -3290,7 +3294,7 @@ line 280.
 (pdftex.def)             Requested size: 87.06349pt x 98.61728pt.
 
 
-[62 <./external/fig_PerfConvNat_Qa_DR20.pdf> <./external/fig_PerfConvNat_Qa_DR3
+[64 <./external/fig_PerfConvNat_Qa_DR20.pdf> <./external/fig_PerfConvNat_Qa_DR3
 50.pdf>] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_TaTf_DR2.tex
 ===== Image 'external/fig_PerfConvNat_TaTf_DR20' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_TaTf_DR35.tex
@@ -3318,16 +3322,16 @@ line 362.
 (pdftex.def)             Requested size: 87.06349pt x 98.61728pt.
 
 
-[63 <./external/fig_PerfConvNat_TaTf_DR20.pdf> <./external/fig_PerfConvNat_TaTf
+[65 <./external/fig_PerfConvNat_TaTf_DR20.pdf> <./external/fig_PerfConvNat_TaTf
 _DR350.pdf>] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_H1H20' is up-to-date. ======
 )
 
-[64] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
+[66] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_V1V20' is up-to-date. ======
 )
 
-[65 <./external/fig_HeatOnly_CHXout_H1H20.pdf>]
+[67 <./external/fig_HeatOnly_CHXout_H1H20.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_H1H2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Mid.tex
@@ -3346,15 +3350,15 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 547.
 
 
-[66 <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
+[68 <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
 
-[67 <./external/fig_Acou_CHXout_H1H2_Low0.pdf> <./external/fig_Acou_CHXout_H1H2
+[69 <./external/fig_Acou_CHXout_H1H2_Low0.pdf> <./external/fig_Acou_CHXout_H1H2
 _Mid0.pdf> <./external/fig_Acou_CHXout_H1H2_High0.pdf>]
 (../fig/fig_ConvNatComsol_Resultats/tex/fig_Comsol_CHXout_H1H2_Low.tex
 ===== Image 'external/fig_Comsol_CHXout_H1H2_Low0' is up-to-date. ======
 )
 
-[68 <./external/fig_Comsol_CHXout_H1H2_Low0.pdf>]
+[70 <./external/fig_Comsol_CHXout_H1H2_Low0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 584.
@@ -3379,9 +3383,9 @@ LaTeX Info: Symbol \textminus not provided by
 ===== Image 'external/fig_Comsol_CHXout_V1V2_Low0' is up-to-date. ======
 )
 
-[69]
+[71]
 
-[70 <./external/fig_Acou_CHXout_V1V2_Low0.pdf> <./external/fig_Acou_CHXout_V1V2
+[72 <./external/fig_Acou_CHXout_V1V2_Low0.pdf> <./external/fig_Acou_CHXout_V1V2
 _Mid0.pdf> <./external/fig_Acou_CHXout_V1V2_High0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -3427,7 +3431,7 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 670.
 
 
-[71 <./external/fig_Comsol_CHXout_V1V2_Low0.pdf>]
+[73 <./external/fig_Comsol_CHXout_V1V2_Low0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 674.
@@ -3454,9 +3458,9 @@ line 727.
 (pdftex.def)             Requested size: 78.28377pt x 88.67004pt.
 
 
-[72]
+[74]
 
-[73 <./external/fig_HeatOnly_CHXin_H1H20.pdf> <./external/fig_HeatOnly_Regmid_H
+[75 <./external/fig_HeatOnly_CHXin_H1H20.pdf> <./external/fig_HeatOnly_Regmid_H
 1H20.pdf> <./external/fig_HeatOnly_AHXin_H1H20.pdf>]
 (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_V1V2.tex
 ===== Image 'external/fig_HeatOnly_CHXin_V1V20' is up-to-date. ======
@@ -3477,9 +3481,9 @@ line 794.
 (pdftex.def)             Requested size: 75.50389pt x 88.67004pt.
 
 
-[74]
+[76]
 
-[75 <./external/fig_HeatOnly_CHXin_V1V20.pdf> <./external/fig_HeatOnly_Regmid_V
+[77 <./external/fig_HeatOnly_CHXin_V1V20.pdf> <./external/fig_HeatOnly_Regmid_V
 1V20.pdf> <./external/fig_HeatOnly_AHXin_V1V20.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Low0' is up-to-date. ======
@@ -3500,9 +3504,9 @@ line 860.
 (pdftex.def)             Requested size: 78.28377pt x 88.67004pt.
 
 
-[76]
+[78]
 
-[77 <./external/fig_Acou_CHXin_H1H2_Low0.pdf> <./external/fig_Acou_Regmid_H1H2_
+[79 <./external/fig_Acou_CHXin_H1H2_Low0.pdf> <./external/fig_Acou_Regmid_H1H2_
 Low0.pdf> <./external/fig_Acou_AHXin_H1H2_Low0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -3542,15 +3546,15 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 931.
 
 
-[78]
+[80]
 
-[79 <./external/fig_Acou_CHXin_V1V2_Low0.pdf> <./external/fig_Acou_Regmid_V1V2_
+[81 <./external/fig_Acou_CHXin_V1V2_Low0.pdf> <./external/fig_Acou_Regmid_V1V2_
 Low0.pdf> <./external/fig_Acou_AHXin_V1V2_Low0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_axProfile_V1V2_Low.tex
 ===== Image 'external/fig_Acou_axProfile_V1V2_Low0' is up-to-date. ======
 )
 
-[80 <./external/fig_Acou_axProfile_V1V2_Low0.pdf>]
+[82 <./external/fig_Acou_axProfile_V1V2_Low0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_Mid.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_Mid0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_Mid.tex
@@ -3570,9 +3574,9 @@ line 1000.
 (pdftex.def)             Requested size: 78.28377pt x 88.67004pt.
 
 
-[81]
+[83]
 
-[82 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H2_
+[84 <./external/fig_Acou_CHXin_H1H2_Mid0.pdf> <./external/fig_Acou_Regmid_H1H2_
 Mid0.pdf> <./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_Mid0' is up-to-date. ======
@@ -3609,9 +3613,9 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 1076.
 
 
-[83]
+[85]
 
-[84 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid_V1V2_
+[86 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid_V1V2_
 Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_Mid0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_High0' is up-to-date. ======
@@ -3638,7 +3642,7 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 1135.
 
 
-[85 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1H2
+[87 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1H2
 _High0.pdf> <./external/fig_Acou_AHXin_H1H2_High0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -3673,9 +3677,9 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 1193.
 
 
-[86]
+[88]
 
-[87 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_Regmid_V1V2
+[89 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_Regmid_V1V2
 _High0.pdf> <./external/fig_Acou_AHXin_V1V2_High0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -3688,21 +3692,21 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 1197.
 ) (Conclusion.tex
 
-[88]
+[90]
 Chapitre V.
 ) (Perspectives.tex
 
-[89
+[91
 
 ]
 
-[90
+[92
 
 ]
 Chapitre VI.
 
 
-[91]
+[93]
 ===== Image 'external/fig_ActiveControl_ADAU17010' is up-to-date. ======
 ===== Image 'external/fig_ActiveControl_Teensy410' is up-to-date. ======
 LaTeX Info: Symbol \textmu not provided by
@@ -3710,20 +3714,20 @@ LaTeX Info: Symbol \textmu not provided by
             Default family used instead on input line 76.
 
 
-[92
+[94
 
 ] (../fig/fig_ConvNatComsol/tex/fig_Geometrie_FeedbackLoop.tex
 ===== Image 'external/fig_Geometrie_FeedbackLoop0' is up-to-date. ======
 )
 
-[93 <./external/fig_ActiveControl_ADAU17010.pdf> <./external/fig_ActiveControl_
+[95 <./external/fig_ActiveControl_ADAU17010.pdf> <./external/fig_ActiveControl_
 Teensy410.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_ActiveControl_Teensy410.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
 >])
 
-[94 <./external/fig_Geometrie_FeedbackLoop0.pdf>] (AHX.tex
+[96 <./external/fig_Geometrie_FeedbackLoop0.pdf>] (AHX.tex
 Annexe A.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -4045,8 +4049,8 @@ Package logreq Info: Writing requests to '_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 79812 strings out of 473523
- 2050465 string characters out of 5707334
+ 79814 strings out of 473523
+ 2050479 string characters out of 5707334
  3290510 words of memory out of 5000000
  101023 multiletter control sequences out of 15000+600000
  739191 words of font info for 196 fonts, out of 8000000 for 9000
@@ -4076,9 +4080,9 @@ Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonam.pfb><C:/Users/juliette utilisa
 teur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonami.pfb><C:/Us
 ers/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/symbols/msam10.pfb>
-Output written on _main_.pdf (120 pages, 33155470 bytes).
+Output written on _main_.pdf (122 pages, 33157509 bytes).
 PDF statistics:
- 5048 PDF objects out of 5155 (max. 8388607)
- 550 named destinations out of 1000 (max. 500000)
+ 5055 PDF objects out of 5155 (max. 8388607)
+ 552 named destinations out of 1000 (max. 500000)
  1722 words of extra memory for PDF output out of 10000 (max. 10000000)
 

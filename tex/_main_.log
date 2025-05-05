@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  5 MAY 2025 00:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  5 MAY 2025 10:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2373,16 +2373,17 @@ Chapitre I.
 
 [6
 
-{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iw
-ona/ex-iwona.enc}]
+]
 
-[7 <./external/fig_MoteurTA0.pdf> <./external/fig_FrigoTA0.pdf> <./external/fig
-_1_BraytonDepComp0.pdf> <./external/fig_2_BraytonQfluidePlaque0.pdf> <./externa
-l/fig_3_BraytonDepDet0.pdf> <./external/fig_4_BraytonQPlaqueFluide0.pdf>]
+[7{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
+iwona/ex-iwona.enc} <./external/fig_MoteurTA0.pdf> <./external/fig_FrigoTA0.pdf
+> <./external/fig_1_BraytonDepComp0.pdf> <./external/fig_2_BraytonQfluidePlaque
+0.pdf> <./external/fig_3_BraytonDepDet0.pdf> <./external/fig_4_BraytonQPlaqueFl
+uide0.pdf>]
 
 [8 <./external/fig_1_StirlingComp0.pdf> <./external/fig_2_StirlingDep10.pdf> <.
 /external/fig_3_StirlingDet0.pdf> <./external/fig_4_StirlingDep20.pdf>]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 224
+LaTeX Font Info:    Trying to load font information for U+euf on input line 225
 .
 
 (C:\Users\juliette utilisateur\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
@@ -2420,7 +2421,7 @@ ectroac11.pdf> <./external/fig_CircEquivTAC0.pdf>]
 [12 <./external/fig_WavesInDuctPiece0.pdf>]
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 550.
+            Default family used instead on input line 551.
 
 (../fig/fig_CaractMachineATE/tex/fig_CaractMachineATE.tex
 ===== Image 'external/fig_CaractMachineATE0' is up-to-date. ======
@@ -4046,7 +4047,7 @@ Package logreq Info: Writing requests to '_main_.run.xml'.
 Here is how much of TeX's memory you used:
  79812 strings out of 473523
  2050465 string characters out of 5707334
- 3290508 words of memory out of 5000000
+ 3290510 words of memory out of 5000000
  101023 multiletter control sequences out of 15000+600000
  739191 words of font info for 196 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4075,7 +4076,7 @@ Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonam.pfb><C:/Users/juliette utilisa
 teur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonami.pfb><C:/Us
 ers/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/symbols/msam10.pfb>
-Output written on _main_.pdf (120 pages, 33155535 bytes).
+Output written on _main_.pdf (120 pages, 33155470 bytes).
 PDF statistics:
  5048 PDF objects out of 5155 (max. 8388607)
  550 named destinations out of 1000 (max. 500000)

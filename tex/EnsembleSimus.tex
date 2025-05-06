@@ -766,7 +766,7 @@ Le calcul par éléments finis montre que la température du point froid dépend
 \section{Modèle du régime transitoire} \label{chap:ModeleTemporel}
 Le modèle décrit précédemment constitue une première tentative d'explication, mais est trop rudimentaire pour représenter fidèlement la réalité. Cette approche, de même que la théorie classique de la thermoacoustique~\cite{swift_thermoacoustic_1988}, se base sur l'équilibre entre le flux de chaleur pompé par l'effet thermoacoustique, et le flux de conduction thermique qui s'y oppose en circulant par le matériau poreux et les parois qui l'entourent. Le modèle par éléments finis est également limité au régime stationnaire, empêchant toute étude de phénomènes qui influencent de manière dynamique le système et prennent place durant le régime transitoire.\smallskip
 
-Dans cette partie, un modèle de la distribution de température dans le noyau thermoacoustique en régime transitoire qui fait suite au modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}, est adapté au réfrigérateur thermoacoustique étudié, qui utilise un régénérateur au lieu d'un stack (utilisé dans \cite{lotton_transient_2009}) dans un champ acoustique 3D quelconque. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latérales au travers des parois du régénérateur $Q_{\sf par}$. Un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau et sa valeur est ajustée pour que les températures calculées soient au plus proche des températures mesurées. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges et/ou les effets entropiques. 
+Dans cette partie, un modèle de la distribution de température dans le noyau thermoacoustique en régime transitoire qui fait suite au modèle 1D développé par Lotton \textit{et al.} pour un réfrigérateur à ondes stationnaires \cite{lotton_transient_2009}, est adapté au réfrigérateur thermoacoustique étudié, qui utilise un régénérateur au lieu d'un stack (utilisé dans \cite{lotton_transient_2009}) dans un champ acoustique 3D quelconque. Ce modèle calcule le bilan de chaleur au sein du régénérateur en faisant intervenir les flux de chaleur thermoacoustique $Q_{\sf TA}$, de conduction thermique $Q_{\sf cond}$, de frottement visqueux $Q_{\sf visq}$, et de pertes latérales au travers des parois du régénérateur $Q_{\sf ext}$. Un flux de chaleur $Q_{\sf vort}$ estimé empiriquement est également pris en compte dans les conditions aux frontières sur l'axe du noyau et sa valeur est ajustée pour que les températures calculées soient au plus proche des températures mesurées. Ce flux est supposé lié aux effets de bord du noyau tels que la vorticité, les pertes de charges et/ou les effets entropiques. 
 
 \subsection{Géométrie du problème}
 Le système décrit est uniquement constitué d'un régénérateur à deux dimensions en coordonnées cartésiennes, à pores circulaires de rayon hydraulique $r_h$ et de porosité $\Phi$, de longueur $L_{\sf reg}$, et de section $S_{\sf reg} = \pi\frac{D^2_{\sf reg}}{4}$, avec $D_{\sf reg}$ la hauteur du régénérateur.\smallskip
@@ -903,7 +903,7 @@ avec $J_0$ et $J_1$ les fonctions de Bessel de première espèce, respectivement
 %\item Les pertes latérales aux extrémités en $x=0$ et $x=L_{\sf reg}$ du régénérateur sont prises en compte par
 %
 %\begin{equation}
-%	Q_{\sf lat}^{(x)} = h_x \theta,
+%	Q_{\sf ext}^{(x)} = h_x \theta,
 %	\label{eq:FluxLat_Transitoire}
 %\end{equation}
 %où $h_x$ est le coefficient d'échanges thermique entre les extrémités du noyau et le fluide à température ambiante. Ils sont déterminés de façon empirique.
@@ -935,14 +935,14 @@ Le coefficient d'échange $h_r$ aux parois du régénérateur se calcule avec un
 	\end{align}
 \end{subequations}
 
-Les flux de chaleurs perdus à chacune de ces parois suivent la forme 
+Les flux de chaleurs avec ces parois vers l'extérieur suivent la forme 
 
-\begin{equation}
-	Q_{\sf par} = h\theta.
+\begin{align}
+	\dot Q_{\sf ext} &= h_i\theta,&i=r,x.
 	\label{eq:FluxLat_Transitoire}
-\end{equation}
+\end{align}
 
-La détermination des coefficients d'échanges se fait par l'exploitation des expériences sans acoustiques, car le flux de chaleur causé par la vorticité aux extrémités du régénérateur en est absent. Ces coefficients sont trouvés grâce à la minimisation d'une fonction de coût dans \textsc{Matlab}\textss\textregistered en utilisant la routine \texttt{lsqnonlin} pour chaque position de thermocouples, et pour certains instants $t$ choisis. Un jeu de coefficients est trouvé, et donne la distribution de température sur l'axe du régénérateur représentée sur la figure~\ref{fig:TransitoireFit}.
+La détermination des coefficients d'échanges se fait par l'exploitation des expériences. Ces coefficients sont trouvés grâce à la minimisation de l'écart entre la distribution de température calculée et celle mesurée, en utilisant la routine \texttt{lsqnonlin} dans \textsc{Matlab}\textss\textregistered pour chaque position de thermocouples, et pour certains instants $t$ choisis. Pour chaque amplitude acoustique simulée et chaque orientation, un jeu de coefficients est trouvé qui inclut l'échange convectif entre l'acier inoxydable des tissus du régénérateur, l'échange convectif amélioré par l'effet thermoacoustique qui déplace un petit volume de fluide extérieur au régénérateur vers l'intérieur, et par la convection. Les échanges convectifs avec les tissus sont documentés dans la littérature~\cite{tian_cross_2007, g_correlations_2022} pour des écoulements continus, mais peu dans le cas d'écoulements oscillants, et le choix de la simplicité est fait pour l'estimation des coefficients $h_i$. Dans le cas de l'orientation `\texttt{H2}' sans acoustique, les coefficients ajustés permette d'obtenir  la distribution de température sur l'axe du régénérateur représentée sur la figure~\ref{fig:TransitoireFit}.
 
 \begin{figure}[!ht]
 	\centering

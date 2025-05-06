@@ -898,191 +898,28 @@
       \endverb
       \keyw{Thermoacoustics,Refrigerator,Coaxial,Compact}
     \endentry
-    \entry{hsu_effective_1996}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=f52776465b1ba6f03acdda4e01e93db6}{%
-           family={Hsu},
-           familyi={H\bibinitperiod},
-           given={C.\bibnamedelimi T.},
-           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=9b1e3050fbbc07a6cce7aae4df7de299}{%
-           family={Wong},
-           familyi={W\bibinitperiod},
-           given={K.\bibnamedelimi W.},
-           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=edc88214d45510c94ed4f6ad3d18c91a}{%
-           family={Cheng},
-           familyi={C\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
-      \strng{fullhash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
-      \strng{fullhashraw}{0d6a19e9eea62f9d3c65446d48ddd6c3}
-      \strng{bibnamehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
-      \strng{authorbibnamehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
-      \strng{authornamehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
-      \strng{authorfullhash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
-      \strng{authorfullhashraw}{0d6a19e9eea62f9d3c65446d48ddd6c3}
+    \entry{ANR_thermo-acoustic_2019}{online}{}{}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0887-8722, 1533-6808}
-      \field{journaltitle}{Journal of Thermophysics and Heat Transfer}
+      \field{abstract}{The goal of the project {TACOT} is to demonstrate the applicability of thermoacoustics for refrigeration in the automotive field. It brings together Groupe {PSA} and four {CNRS} research laboratories (Institut P’, {LAUM}, {LIMSI}, {LMFA}), and is organized into three challenges. The first challenge consists in designing, manufacturing and assessing the performance of a compact thermoacoustic device with one thermoacoustic core. The originality of the device comes from the use of two acoustic sources that yields its compactness. The device will be designed using available simulation tools that are based on the linear uni-dimensional theory of thermoacoustics and that can predict a steady state behavior of the device for one set of entry conditions. Due to the limiting hypotheses of these tools, it is expected that the performance of the prototype will be lower than the ones calculated by the model. It is therefore necessary to limit this discrepancy by assessing the performance of the device in order to better quantify the complexity of flow movement and heat transfer encountered in such a compact device. Simultaneous fundamental studies are proposed in a second challenge to improve the understanding and description of the phenomena that limit the efficiency of the device. Both experimental and numerical studies will be led to investigate about - acoustical characteristics of thermoacoustic core (regenerator plus heat exchangers) of complex shape, especially at high acoustic levels and with temperature gradient, - end effects and matching conditions between the different elements of the device: Source and cavity, regenerator and heat exchangers, heat exchangers and cavity ; these effects will be investigated experimentally both from a fluid dynamics and from a heat transfer point a view, - phenomenological analysis and numerical simulation of complex flows that can appear as consequences of high amplitudes, complex geometries and thermoacoustic heat pumping in each element of the compact device. In the third challenge the evolution towards a performant compact dual thermoacoustic core heat-pump device will be investigated. The aim of this last challenge is to bring thermoacoustic compact devices to a competitive positioning as compared to in-use technologies. For this purpose, the results of challenges 1 and 2 will be used to propose an evolution of the thermoacoustic core towards higher performance. Also studies on a new architecture of acoustic source will be initiated. This new source architecture should allow to use two thermoacoustic cores, thus increasing the heat pumped from the cold source. These three challenges should lead to the proposal of a complete dual core refrigerator that could be a viable substitute for traditional air conditioning systems in the automotive industry both in terms of size and performance.}
       \field{langid}{english}
-      \field{month}{7}
-      \field{number}{3}
-      \field{shortjournal}{Journal of Thermophysics and Heat Transfer}
-      \field{title}{Effective stagnant thermal conductivity of wire screens}
-      \field{urlday}{4}
-      \field{urlmonth}{2}
-      \field{urlyear}{2025}
-      \field{volume}{10}
-      \field{year}{1996}
-      \field{dateera}{ce}
+      \field{title}{Thermo-Acoustic Cooler for On road Transportation}
+      \field{titleaddon}{Agence nationale de la recherche}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2022}
       \field{urldateera}{ce}
-      \field{pages}{542\bibrangedash 545}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.2514/3.825
-      \endverb
       \verb{file}
-      \verb Hsu et al. - 1996 - Effective stagnant thermal conductivity of wire sc.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\L8EYWMEN\\Hsu et al. - 1996 - Effective stagnant thermal conductivity of wire sc.pdf:application/pdf
+      \verb Snapshot:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\AL62UI49\\Project-ANR-17-CE06-0007.html:text/html
       \endverb
       \verb{urlraw}
-      \verb https://arc.aiaa.org/doi/10.2514/3.825
+      \verb https://anr.fr/Project-ANR-17-CE06-0007
       \endverb
       \verb{url}
-      \verb https://arc.aiaa.org/doi/10.2514/3.825
+      \verb https://anr.fr/Project-ANR-17-CE06-0007
       \endverb
-    \endentry
-    \entry{li_effective_2006}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=d32559a5fc6b9c48ad950f89259bc465}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-        {{hash=f2987a05cfe1f77f58eb89c52be85b1f}{%
-           family={Peterson},
-           familyi={P\bibinitperiod},
-           given={G.\bibnamedelimi P.},
-           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \strng{namehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
-      \strng{fullhash}{89f7c18cd59d7a6716c94e9eb65e1f43}
-      \strng{fullhashraw}{89f7c18cd59d7a6716c94e9eb65e1f43}
-      \strng{bibnamehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
-      \strng{authorbibnamehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
-      \strng{authornamehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
-      \strng{authorfullhash}{89f7c18cd59d7a6716c94e9eb65e1f43}
-      \strng{authorfullhashraw}{89f7c18cd59d7a6716c94e9eb65e1f43}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A combined experimental and theoretical investigation was conducted to examine the thermal conductivity of layers of wire mesh screen. Employing a carefully controlled sintering process, layers of sintered wire screen were examined experimentally. The experimental results indicate that the eﬀective thermal conductivity in the z-direction (i.e., normal to the plane of the wire screen layers) for single layer, inline structures and staggered multilayer wire screens is approximately 4–25\% and 6.4–35\% times that of the solid metal thermal conductivity, respectively. In addition to the conductivity of the base material, the contact conditions between the individual wires, as well as between the individual layers were found to be the most important factors in the determination of the eﬀective thermal conductivity. In parallel with the experimental investigation, an analytical model was developed and shown to accurately predict the eﬀective thermal conductivity of these layers as a function of the contact conditions between the wires, between the individual layers, and between the solid heating surface and the ﬁrst layer of screen. In addition to the contact conditions, this new model is strongly dependent on three geometric parameters: the mesh number, M, the wire diameter, d, and the compression factor, cf. Experimental data from this and other investigations were used to verify the accuracy of the model, which was shown to accurately predict the eﬀective conductivity as a function of the above mentioned parameters. In addition, a comprehensive literature review was performed and analyzed in order to further substantiate the validity and accuracy of this new model. The resulting conclusions highlight the importance of the contact conditions between the wires in the individual layers, and between the layers and the solid surface.}
-      \field{issn}{00179310}
-      \field{journaltitle}{International Journal of Heat and Mass Transfer}
-      \field{langid}{english}
-      \field{month}{10}
-      \field{number}{21}
-      \field{shortjournal}{International Journal of Heat and Mass Transfer}
-      \field{title}{The effective thermal conductivity of wire screen}
-      \field{urlday}{4}
-      \field{urlmonth}{2}
-      \field{urlyear}{2025}
-      \field{volume}{49}
-      \field{year}{2006}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{4095\bibrangedash 4105}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1016/j.ijheatmasstransfer.2006.03.031
-      \endverb
-      \verb{file}
-      \verb Li and Peterson - 2006 - The effective thermal conductivity of wire screen.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\C5XVMSGD\\Li and Peterson - 2006 - The effective thermal conductivity of wire screen.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931006002419
-      \endverb
-      \verb{url}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931006002419
-      \endverb
-    \endentry
-    \entry{g_correlations_2022}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=cd6a9bd2a175104eed40f0d33a8b4020}{%
-           family={G},
-           familyi={G\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=9736ae8a55810f2dc16e8d075e6afa8f}{%
-           family={Srinivas},
-           familyi={S\bibinitperiod},
-           given={K.\bibnamedelimi E.\bibnamedelimi S.},
-           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=261c511e25e93aeb300d57166fb108b9}{%
-           family={Harikrishnan},
-           familyi={H\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=bf7410a9ee723b715ee14837f2328888}{%
-           family={N},
-           familyi={N\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-        {{hash=4608b72a12eecd94c0c67779c0c715a5}{%
-           family={Mobedi},
-           familyi={M\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{24d0488d63ff2773510eba405a851ad2}
-      \strng{fullhash}{24d0488d63ff2773510eba405a851ad2}
-      \strng{fullhashraw}{24d0488d63ff2773510eba405a851ad2}
-      \strng{bibnamehash}{24d0488d63ff2773510eba405a851ad2}
-      \strng{authorbibnamehash}{24d0488d63ff2773510eba405a851ad2}
-      \strng{authornamehash}{24d0488d63ff2773510eba405a851ad2}
-      \strng{authorfullhash}{24d0488d63ff2773510eba405a851ad2}
-      \strng{authorfullhashraw}{24d0488d63ff2773510eba405a851ad2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Metal foams have gained attention due to their heat transfer augmenting capabilities. In the literature, correlations describing relations among their morphological characteristics have successfully been established and well discussed. However, collective expressions that categorize stacked wire mesh based on their morphology and thermo-hydraulic expressions required for numerical modeling are less explored in the literature. In the present study, cross relations among the morphological characteristics of stacked wire-mesh were arrived at based on mesh-size, wire diameter and stacking type, which are essential for describing the medium and determining key input parameters required for numerical modeling. Furthermore, correlation for speciﬁc surface area, a vital parameter that plays a major role in interstitial heat transfer, is provided. With the arrived correlations, properties of stacked wire-mesh samples of orderly varied mesh-size and porosity are obtained for various stacking scenarios, and corresponding thermo-hydraulic parameters appearing in the governing equations are evaluated. A vertical channel housing the categorized wire-mesh porous media is numerically modeled to analyze thermal and ﬂow characteristics of such a medium. The proposed correlations can be used in conﬁdence to evaluate thermo-hydraulic parameters appearing in governing equations in order to numerically model various samples of stacked wire-mesh types of porous media in a variety of heat transfer applications.}
-      \field{day}{24}
-      \field{issn}{1996-1073}
-      \field{journaltitle}{Energies}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{number}{7}
-      \field{shortjournal}{Energies}
-      \field{title}{Correlations and Numerical Modeling of Stacked Woven Wire-Mesh Porous Media for Heat Exchange Applications}
-      \field{urlday}{17}
-      \field{urlmonth}{2}
-      \field{urlyear}{2025}
-      \field{volume}{15}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{2371}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/en15072371
-      \endverb
-      \verb{file}
-      \verb G et al. - 2022 - Correlations and Numerical Modeling of Stacked Wov.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\I3MXJQ8V\\G et al. - 2022 - Correlations and Numerical Modeling of Stacked Wov.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.mdpi.com/1996-1073/15/7/2371
-      \endverb
-      \verb{url}
-      \verb https://www.mdpi.com/1996-1073/15/7/2371
-      \endverb
-      \keyw{Conduction,woven meshgrids}
+      \keyw{Refrigerator,Two sources,Agence nationale de la recherche,Presentation,Project definition}
     \endentry
     \entry{rott_damped_1969}{article}{}{}
       \name{author}{1}{}{%
@@ -2368,29 +2205,6 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0011227510002225
       \endverb
     \endentry
-    \entry{ANR_thermo-acoustic_2019}{online}{}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The goal of the project {TACOT} is to demonstrate the applicability of thermoacoustics for refrigeration in the automotive field. It brings together Groupe {PSA} and four {CNRS} research laboratories (Institut P’, {LAUM}, {LIMSI}, {LMFA}), and is organized into three challenges. The first challenge consists in designing, manufacturing and assessing the performance of a compact thermoacoustic device with one thermoacoustic core. The originality of the device comes from the use of two acoustic sources that yields its compactness. The device will be designed using available simulation tools that are based on the linear uni-dimensional theory of thermoacoustics and that can predict a steady state behavior of the device for one set of entry conditions. Due to the limiting hypotheses of these tools, it is expected that the performance of the prototype will be lower than the ones calculated by the model. It is therefore necessary to limit this discrepancy by assessing the performance of the device in order to better quantify the complexity of flow movement and heat transfer encountered in such a compact device. Simultaneous fundamental studies are proposed in a second challenge to improve the understanding and description of the phenomena that limit the efficiency of the device. Both experimental and numerical studies will be led to investigate about - acoustical characteristics of thermoacoustic core (regenerator plus heat exchangers) of complex shape, especially at high acoustic levels and with temperature gradient, - end effects and matching conditions between the different elements of the device: Source and cavity, regenerator and heat exchangers, heat exchangers and cavity ; these effects will be investigated experimentally both from a fluid dynamics and from a heat transfer point a view, - phenomenological analysis and numerical simulation of complex flows that can appear as consequences of high amplitudes, complex geometries and thermoacoustic heat pumping in each element of the compact device. In the third challenge the evolution towards a performant compact dual thermoacoustic core heat-pump device will be investigated. The aim of this last challenge is to bring thermoacoustic compact devices to a competitive positioning as compared to in-use technologies. For this purpose, the results of challenges 1 and 2 will be used to propose an evolution of the thermoacoustic core towards higher performance. Also studies on a new architecture of acoustic source will be initiated. This new source architecture should allow to use two thermoacoustic cores, thus increasing the heat pumped from the cold source. These three challenges should lead to the proposal of a complete dual core refrigerator that could be a viable substitute for traditional air conditioning systems in the automotive industry both in terms of size and performance.}
-      \field{langid}{english}
-      \field{title}{Thermo-Acoustic Cooler for On road Transportation}
-      \field{titleaddon}{Agence nationale de la recherche}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
-      \field{urlyear}{2022}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb Snapshot:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\AL62UI49\\Project-ANR-17-CE06-0007.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://anr.fr/Project-ANR-17-CE06-0007
-      \endverb
-      \verb{url}
-      \verb https://anr.fr/Project-ANR-17-CE06-0007
-      \endverb
-      \keyw{Refrigerator,Two sources,Agence nationale de la recherche,Presentation,Project definition}
-    \endentry
     \entry{ramadan_design_2021}{article}{}{}
       \name{author}{4}{}{%
         {{hash=841d1559d51fa6af3b41d3ea4fad9638}{%
@@ -2916,8 +2730,8 @@
       \strng{authornamehash}{06a105d93c93df5a8b74bd19c444d875}
       \strng{authorfullhash}{06a105d93c93df5a8b74bd19c444d875}
       \strng{authorfullhashraw}{06a105d93c93df5a8b74bd19c444d875}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In thermoacoustics, stacks and regenerators are porous media where energy conversion takes place. Modelling full thermoacoustic devices with a {CFD} approach, in order to capture some nonlinearities, can be extremely expensive from a computational perspective compared to a standard linear approach used in the frequency domain. At the same time, macroscopic models for porous media developed for steady-state flows cannot be directly applied in oscillating flow conditions. Moreover, macroscopic models in the available literature for oscillating flows are inaccurate at high frequencies or require a closure coefficient to be determined numerically (with Direct Numerical Simulations) or experimentally. In this article, a time domain macroscopic model for heat and fluid flow is proposed based on the concepts of complex Darcy and Nusselt numbers in the linear regime. Such coefficients, introduced in the past to describe the oscillatory phenomena, have been used for the first time to build a {CFD} macroscopic model in terms of their real and imaginary parts. For two different porous media, a parallel plate and a transversal pin array, the developed macroscopic model is verified with the microscopic solution. Furthermore, for a transversal pin array stack, the proposed model is validated against experimental data from the available literature, showing a very good agreement. The findings of this paper can help to strongly reduce the computational costs of oscillatory flow simulations without prior direct numerical simulations of the porous core.}
@@ -2970,8 +2784,8 @@
       \strng{authornamehash}{5360644647f9cbf6122b92849f9c5dff}
       \strng{authorfullhash}{5360644647f9cbf6122b92849f9c5dff}
       \strng{authorfullhashraw}{5360644647f9cbf6122b92849f9c5dff}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{In this article, a comprehensive review of the computational ﬂuid dynamics ({CFD})-based modeling approach for thermoacoustic energy conversion devices is proposed. Although thermoacoustic phenomena were discovered two centuries ago, only in recent decades have such thermoacoustic devices been spreading for energy conversion. The limited understanding of thermoacoustic nonlinearities is one of the reasons limiting their diffusion. {CFD} is a powerful tool that allows taking into consideration all the nonlinear phenomena neglected by linear theory, on which standard designs are based, to develop energy devices that are increasingly efﬁcient. Starting from a description of all possible numerical models to highlight the difference from a full {CFD} method, the nonlinearities (dynamic, ﬂuid dynamic and acoustic) are discussed from a physical and modeling point of view. The articles found in the literature were analyzed according to their setup, with either a single thermoacoustic core ({TAC}) or a full device. With regard to the full devices, a further distinction was made between those models solved at the microscopic scale and those involving a macroscopic porous media approach to model the thermoacoustic core. This review shows that there is no nonlinear porous media model that can be applied to the stack, regenerator and heat exchangers of all thermoacoustic devices in oscillating ﬂows for each frequency, and that the eventual choice of turbulence model requires further studies.}
@@ -3417,8 +3231,8 @@
       \strng{authornamehash}{41cc95799a0f28aa2df2b09fb6662927}
       \strng{authorfullhash}{41cc95799a0f28aa2df2b09fb6662927}
       \strng{authorfullhashraw}{41cc95799a0f28aa2df2b09fb6662927}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Etude de la convection naturelle turbulente en cavité verticale différentiellement chauffée: Analyse des structures et des transferts turbulents}
@@ -3777,6 +3591,120 @@
       \verb http://link.springer.com/10.1007/978-1-4757-9047-4_202
       \endverb
     \endentry
+    \entry{li_effective_2006}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d32559a5fc6b9c48ad950f89259bc465}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f2987a05cfe1f77f58eb89c52be85b1f}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={G.\bibnamedelimi P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \strng{fullhash}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \strng{fullhashraw}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \strng{bibnamehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \strng{authorbibnamehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \strng{authornamehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \strng{authorfullhash}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \strng{authorfullhashraw}{89f7c18cd59d7a6716c94e9eb65e1f43}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A combined experimental and theoretical investigation was conducted to examine the thermal conductivity of layers of wire mesh screen. Employing a carefully controlled sintering process, layers of sintered wire screen were examined experimentally. The experimental results indicate that the eﬀective thermal conductivity in the z-direction (i.e., normal to the plane of the wire screen layers) for single layer, inline structures and staggered multilayer wire screens is approximately 4–25\% and 6.4–35\% times that of the solid metal thermal conductivity, respectively. In addition to the conductivity of the base material, the contact conditions between the individual wires, as well as between the individual layers were found to be the most important factors in the determination of the eﬀective thermal conductivity. In parallel with the experimental investigation, an analytical model was developed and shown to accurately predict the eﬀective thermal conductivity of these layers as a function of the contact conditions between the wires, between the individual layers, and between the solid heating surface and the ﬁrst layer of screen. In addition to the contact conditions, this new model is strongly dependent on three geometric parameters: the mesh number, M, the wire diameter, d, and the compression factor, cf. Experimental data from this and other investigations were used to verify the accuracy of the model, which was shown to accurately predict the eﬀective conductivity as a function of the above mentioned parameters. In addition, a comprehensive literature review was performed and analyzed in order to further substantiate the validity and accuracy of this new model. The resulting conclusions highlight the importance of the contact conditions between the wires in the individual layers, and between the layers and the solid surface.}
+      \field{issn}{00179310}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{21}
+      \field{shortjournal}{International Journal of Heat and Mass Transfer}
+      \field{title}{The effective thermal conductivity of wire screen}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{volume}{49}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4095\bibrangedash 4105}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.ijheatmasstransfer.2006.03.031
+      \endverb
+      \verb{file}
+      \verb Li and Peterson - 2006 - The effective thermal conductivity of wire screen.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\C5XVMSGD\\Li and Peterson - 2006 - The effective thermal conductivity of wire screen.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931006002419
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0017931006002419
+      \endverb
+    \endentry
+    \entry{hsu_effective_1996}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=f52776465b1ba6f03acdda4e01e93db6}{%
+           family={Hsu},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=9b1e3050fbbc07a6cce7aae4df7de299}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=edc88214d45510c94ed4f6ad3d18c91a}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
+      \strng{fullhash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
+      \strng{fullhashraw}{0d6a19e9eea62f9d3c65446d48ddd6c3}
+      \strng{bibnamehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
+      \strng{authorbibnamehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
+      \strng{authornamehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
+      \strng{authorfullhash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
+      \strng{authorfullhashraw}{0d6a19e9eea62f9d3c65446d48ddd6c3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0887-8722, 1533-6808}
+      \field{journaltitle}{Journal of Thermophysics and Heat Transfer}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{3}
+      \field{shortjournal}{Journal of Thermophysics and Heat Transfer}
+      \field{title}{Effective stagnant thermal conductivity of wire screens}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{volume}{10}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{542\bibrangedash 545}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.2514/3.825
+      \endverb
+      \verb{file}
+      \verb Hsu et al. - 1996 - Effective stagnant thermal conductivity of wire sc.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\L8EYWMEN\\Hsu et al. - 1996 - Effective stagnant thermal conductivity of wire sc.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arc.aiaa.org/doi/10.2514/3.825
+      \endverb
+      \verb{url}
+      \verb https://arc.aiaa.org/doi/10.2514/3.825
+      \endverb
+    \endentry
     \entry{swift_thermoacoustic_1988}{article}{}{}
       \name{author}{1}{}{%
         {{hash=52937719af970c9a64a91af3eeb87bce}{%
@@ -3934,6 +3862,139 @@
       \verb{file}
       \verb Guédra - Etudes semi-analytiques des conditions de déclench.pdf:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\SIM5G7FT\\Guédra - Etudes semi-analytiques des conditions de déclench.pdf:application/pdf
       \endverb
+    \endentry
+    \entry{tian_cross_2007}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=f372e195c8bd0b7315ea04ca259b2d85}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c81a3c63564789385533024ebe90717d}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={T.\bibnamedelimi J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=664929d315a8759b8bb9fcff8196ce15}{%
+           family={Hodson},
+           familyi={H\bibinitperiod},
+           given={H.\bibnamedelimi P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=489890d121d066b3051a8afc0ccce972}{%
+           family={Queheillalt},
+           familyi={Q\bibinitperiod},
+           given={D.\bibnamedelimi T.},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=d05ffe7735a8fb4bc170026afd8f94d1}{%
+           family={Wadley},
+           familyi={W\bibinitperiod},
+           given={H.\bibnamedelimi N.\bibnamedelimi G.},
+           giveni={H\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8a25a83f06d89a37590453f689e674c}
+      \strng{fullhash}{a8a25a83f06d89a37590453f689e674c}
+      \strng{fullhashraw}{a8a25a83f06d89a37590453f689e674c}
+      \strng{bibnamehash}{a8a25a83f06d89a37590453f689e674c}
+      \strng{authorbibnamehash}{a8a25a83f06d89a37590453f689e674c}
+      \strng{authornamehash}{a8a25a83f06d89a37590453f689e674c}
+      \strng{authorfullhash}{a8a25a83f06d89a37590453f689e674c}
+      \strng{authorfullhashraw}{a8a25a83f06d89a37590453f689e674c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a combined experimental and theoretical study on the thermal–hydraulic performance of a novel type of periodic textile cellular structure, subjected to forced convection using both air and water as a coolant. The samples were fabricated as sandwich panels, with the textile cores bonded to two solid face-sheets using a brazing alloy. These efficient load supporting sandwich structures can also be used for active cooling. The effects of cell topology, pore fraction and material properties (high thermal conductivity copper or low thermal conductivity stainless steel) on both coolants flow resistance and heat transfer rate were measured. The flow friction factor is found to depend mainly on the open area ratio in the flow direction (which is dependent upon cell topology and pore fraction), whilst the amount of heat transferred is dependent upon solid conductivity, pore fraction and surface area density. Analytical models were used to develop predictive relations between both the pressure loss and heat transfer performance for different textile geometries. Good agreement between the predictions and measurements were obtained. Due to high thermal capacity of water, it was found that the model for water cooling must account for the additional contribution due to thermal dispersion. The dispersion conductivity was found to be related to coolant property, local flow velocity, wire diameter and pore fraction. Finally, the thermal performance of brazed woven textiles is compared with other heat exchanger media, such as open-celled metallic foams and louvered fins.}
+      \field{issn}{0017-9310}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{number}{13}
+      \field{title}{Cross flow heat exchange of textile cellular metal core sandwich panels}
+      \field{volume}{50}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{2521\bibrangedash 2536}
+      \range{pages}{16}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ijheatmasstransfer.2006.11.042
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0017931007000129
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0017931007000129
+      \endverb
+      \keyw{Fin analogy,Forced convection,Heat transfer,Pressure loss,Thermal dispersion,Thermal efficiency,Woven textile}
+    \endentry
+    \entry{g_correlations_2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=cd6a9bd2a175104eed40f0d33a8b4020}{%
+           family={G},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9736ae8a55810f2dc16e8d075e6afa8f}{%
+           family={Srinivas},
+           familyi={S\bibinitperiod},
+           given={K.\bibnamedelimi E.\bibnamedelimi S.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=261c511e25e93aeb300d57166fb108b9}{%
+           family={Harikrishnan},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bf7410a9ee723b715ee14837f2328888}{%
+           family={N},
+           familyi={N\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4608b72a12eecd94c0c67779c0c715a5}{%
+           family={Mobedi},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{24d0488d63ff2773510eba405a851ad2}
+      \strng{fullhash}{24d0488d63ff2773510eba405a851ad2}
+      \strng{fullhashraw}{24d0488d63ff2773510eba405a851ad2}
+      \strng{bibnamehash}{24d0488d63ff2773510eba405a851ad2}
+      \strng{authorbibnamehash}{24d0488d63ff2773510eba405a851ad2}
+      \strng{authornamehash}{24d0488d63ff2773510eba405a851ad2}
+      \strng{authorfullhash}{24d0488d63ff2773510eba405a851ad2}
+      \strng{authorfullhashraw}{24d0488d63ff2773510eba405a851ad2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Metal foams have gained attention due to their heat transfer augmenting capabilities. In the literature, correlations describing relations among their morphological characteristics have successfully been established and well discussed. However, collective expressions that categorize stacked wire mesh based on their morphology and thermo-hydraulic expressions required for numerical modeling are less explored in the literature. In the present study, cross relations among the morphological characteristics of stacked wire-mesh were arrived at based on mesh-size, wire diameter and stacking type, which are essential for describing the medium and determining key input parameters required for numerical modeling. Furthermore, correlation for speciﬁc surface area, a vital parameter that plays a major role in interstitial heat transfer, is provided. With the arrived correlations, properties of stacked wire-mesh samples of orderly varied mesh-size and porosity are obtained for various stacking scenarios, and corresponding thermo-hydraulic parameters appearing in the governing equations are evaluated. A vertical channel housing the categorized wire-mesh porous media is numerically modeled to analyze thermal and ﬂow characteristics of such a medium. The proposed correlations can be used in conﬁdence to evaluate thermo-hydraulic parameters appearing in governing equations in order to numerically model various samples of stacked wire-mesh types of porous media in a variety of heat transfer applications.}
+      \field{day}{24}
+      \field{issn}{1996-1073}
+      \field{journaltitle}{Energies}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{7}
+      \field{shortjournal}{Energies}
+      \field{title}{Correlations and Numerical Modeling of Stacked Woven Wire-Mesh Porous Media for Heat Exchange Applications}
+      \field{urlday}{17}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{volume}{15}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2371}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/en15072371
+      \endverb
+      \verb{file}
+      \verb G et al. - 2022 - Correlations and Numerical Modeling of Stacked Wov.pdf:C\:\\Users\\mfontbon\\Desktop\\sDrive\\Zotero\\storage\\I3MXJQ8V\\G et al. - 2022 - Correlations and Numerical Modeling of Stacked Wov.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1996-1073/15/7/2371
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1996-1073/15/7/2371
+      \endverb
+      \keyw{Conduction,woven meshgrids}
     \endentry
     \entry{hahn_heat_2012}{book}{}{}
       \name{author}{2}{}{%

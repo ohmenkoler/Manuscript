@@ -1,7 +1,6 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{\nameref {chap:Remerciements}}{v}{chapter*.1}%
-\contentsline {chapter}{\nameref {chap:IndexNotations}}{1}{chapter*.3}%
+\contentsline {chapter}{\nameref {chap:IndexNotations}}{1}{chapter*.2}%
 \contentsline {chapter}{\numberline {I}Introduction}{5}{chapter.1}%
 \etoc@startlocaltoc {2}
 \contentsline {section}{\numberline {I.1}Revue bibliographique}{6}{section.1.1}%
@@ -84,13 +83,13 @@
 \contentsline {subsection}{\numberline {III.4.1}Géométrie du problème}{50}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {III.4.2}Champ acoustique considéré}{50}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {III.4.3}Mécanismes pris en compte dans le modèle}{50}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {III.4.4}Bilan thermique}{54}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {III.4.4}Bilan thermique}{53}{subsection.3.4.4}%
 \contentsline {subsection}{\numberline {III.4.5}Méthode des transformations intégrales}{54}{subsection.3.4.5}%
 \contentsline {subsubsection}{\numberline {III.4.5.1}Application de la méthode dans la direction transverse}{55}{subsubsection.3.4.5.1}%
 \contentsline {subsubsection}{\numberline {III.4.5.2}Application de la méthode dans la direction axiale}{56}{subsubsection.3.4.5.2}%
 \contentsline {subsubsection}{\numberline {III.4.5.3}Application des transformées intégrales inverses}{57}{subsubsection.3.4.5.3}%
 \contentsline {subsection}{\numberline {III.4.6}Résultats}{57}{subsection.3.4.6}%
-\contentsline {section}{\numberline {III.5}Conclusion}{57}{section.3.5}%
+\contentsline {section}{\numberline {III.5}Conclusion}{59}{section.3.5}%
 \contentsline {chapter}{\numberline {IV}Convection naturelle dans le \textsc {Tacot} -- approche expérimentale}{61}{chapter.4}%
 \etoc@startlocaltoc {5}
 \contentsline {section}{\numberline {IV.1}Introduction}{62}{section.4.1}%
@@ -136,13 +135,14 @@
 \contentsline {section}{\numberline {A.2}Incertitudes de mesures}{b}{section.A.2}%
 \contentsline {subsection}{\numberline {A.2.1}Température}{b}{subsection.A.2.1}%
 \contentsline {subsection}{\numberline {A.2.2}Débit d'eau}{b}{subsection.A.2.2}%
-\contentsline {chapter}{\numberline {B}Instrumentation de la source secondaire}{e}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Objectif}{e}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Choix du capteur}{e}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Montage}{e}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Vérification}{e}{section.B.4}%
-\contentsline {subsection}{\numberline {B.4.1}Banc de mesures}{e}{subsection.B.4.1}%
-\contentsline {subsection}{\numberline {B.4.2}Résultats}{e}{subsection.B.4.2}%
-\contentsline {chapter}{\numberline {C}Récapitulatif des conditions expérimentales}{g}{appendix.C}%
-\contentsline {section}{\numberline {C.1}\'Etude sur la convection naturelle}{g}{section.C.1}%
+\contentsline {chapter}{\numberline {B}Coefficients d'échanges convectifs du modèle du régime transitoire}{e}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Instrumentation de la source secondaire}{g}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Objectif}{g}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Choix du capteur}{g}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Montage}{g}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Vérification}{g}{section.C.4}%
+\contentsline {subsection}{\numberline {C.4.1}Banc de mesures}{g}{subsection.C.4.1}%
+\contentsline {subsection}{\numberline {C.4.2}Résultats}{g}{subsection.C.4.2}%
+\contentsline {chapter}{\numberline {D}Récapitulatif des conditions expérimentales}{i}{appendix.D}%
+\contentsline {section}{\numberline {D.1}\'Etude sur la convection naturelle}{i}{section.D.1}%
 \contentsline {chapter}{Bibliographie}{I}{appendix*.71}%

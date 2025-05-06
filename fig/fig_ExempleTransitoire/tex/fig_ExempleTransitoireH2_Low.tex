@@ -11,11 +11,11 @@
     xlabel={Temps $t$ (\unit{\s})},
     ylabel={\'Ecart de température $\theta$ (\unit{\kelvin})},
     xmin=0,xmax=3500,
-%	ymin=-45,ymax=20,
+	ymin=-12,ymax=5,
     xtick={0,600,...,3000,3500},%ytick={0,9.1120/100000,1.4452/10000,2.5/10000,5/10000,1/1000},
     domain=0:100,
     legend cell align={left},
-    legend style = {at={($(1,1)+(2mm,2mm)$)},anchor = north east,rounded corners},legend columns=3,
+    legend style = {at={($(1,1)+(2mm,3mm)$)},anchor = north east,rounded corners},legend columns=3,
     ]
     	
     	\addplot[ultra thick,Plasma1, dashed] file {{../fig/fig_ExempleTransitoire/data/data_TC4_H2_Low.txt}};\addlegendentry{TC 4}

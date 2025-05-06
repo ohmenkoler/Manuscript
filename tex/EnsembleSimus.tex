@@ -953,7 +953,9 @@ La détermination des coefficients d'échanges se fait par l'exploitation des ex
 	\label{fig:TransitoireFit}
 \end{figure}
 
-Cette figure montre un assez bon accord entre la distribution de température calculée et celle mesurée, avec tout de même quelques écart dans les \qty{1200}{\second} après le démarrage des sources. Ces écarts sont particulièrement marqués au milieu du régénérateur.
+Cette figure montre un assez bon accord entre la distribution de température calculée et celle mesurée, avec tout de même quelques écart dans les \qty{1200}{\second} après le démarrage des sources. Ces écarts sont particulièrement marqués au milieu du régénérateur qui est assez éloigné des fontières.\medskip
+
+\textit{\textbf{Remarque :} malgré un bon accord entre simulation et expérience en l'absence d'acoustique, l'ajout d'un champ acoustique dans le modèle provoque l'apparition de différences de températures trop importantes, ce qui laisse penser que les coefficients calculés ici ne représentent qu'une partie des échanges convectifs entre le fluide et les disques de tissus métalliques, et sous estiment les échanges réellement effectués. Ces derniers incluent également l'amélioration du contact fluide-solide par le déplacement des volumes élémentaires de fluide à l'intérieur du régénérateur, et l'influence de la convection naturelle.}
 
 \item Les effets de bords tels que les pertes de charges ou la vorticité sont pris en compte aux frontières du domaine grâce à des flux de chaleur $Q_{\sf vort}$ estimés empiriquement à $x=0$ et $x=L_{\sf reg}$. De même que les coefficients d'échanges convectifs, les valeurs de ce flux de chaleur sont ajustées pour approcher les résultats expérimentaux.
 
@@ -1179,7 +1181,7 @@ puis selon $r$ avec l'équation~\eqref{eq:TransfoInteg_Inversion_R}, ce qui donn
 %Une fois les coefficients d'échanges $h$ estimés grâce aux mesures sans acoustiques, ils sont considérés constant et dépendant uniquement des matériaux de construction, et conservés pour le reste des simulations. Selon le même principe, le flux de chaleur ajouté par vorticité est estimé grâce à la minimisation d'une fonction de coût.\echaf{à faire}
 
 \subsection{Résultats}
-Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenire les résultats pour différents \textit{drive ratio} sur la figure~\ref{fig:ExempleTransitoireH2}.\medskip
+Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenire les résultats pour différents \textit{drive ratios} sur la figure~\ref{fig:ExempleTransitoireH2}.\medskip
 
 \begin{figure}[!htp]
 \centering
@@ -1213,7 +1215,7 @@ Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenire les
 	\caption{}
 	\label{fig:ExempleTransitoireH2_High}
 \end{subfigure}
-\caption{Distributions de températures calculés avec le modèle transitoire pour trois \textit{drive ratio}. \subref{fig:ExempleTransitoireH2_Low} $DR=\qty{.4}{\percent}$, \subref{fig:ExempleTransitoireH2_Mid} $DR=\qty{2}{\percent}$, et \subref{fig:ExempleTransitoireH2_High} $DR=\qty{3.5}{\percent}$.}
+\caption{Distributions de températures calculés avec le modèle transitoire pour trois \textit{drive ratios} dont les données expérimentales utilisées pour l'ajustement sont issus d'une expérience sans acoustique dans l'orientation `\texttt{H2}'. \subref{fig:ExempleTransitoireH2_Low} $DR=\qty{.4}{\percent}$, \subref{fig:ExempleTransitoireH2_Mid} $DR=\qty{2}{\percent}$, et \subref{fig:ExempleTransitoireH2_High} $DR=\qty{3.5}{\percent}$.}
 \label{fig:ExempleTransitoireH2}
 \end{figure}
 

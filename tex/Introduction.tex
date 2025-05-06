@@ -27,7 +27,7 @@
 \section{Contexte du travail}
 Ce travail de thèse a été mené entre janvier 2022 et juin 2025 au sein de l'Institut PPRIME - UPR3346 de Poitiers sous la direction de Hélène Bailliet, maîtresse de conférences HDR, et de Jean-Christophe Valière, professeur des universités, et Gaëlle Poignand, ingénieure d'étude au Laboratoire d'Acoustique de l'Université du Mans - UMR6613, dans le cadre d'un projet de recherche financé par le ministère de l'enseignement supérieur et de la recherche. Dans ces deux unités, les machines thermoacoustiques constitue une parties des thématiques de recherche, et notamment l'étude de la réfrigération thermoacoustique compacte.
 
-Ce projet de thèse fait suite au projet ANR \textsc{TACOT}~\cite{ANR_thermo-acoustic_2019}
+Ce projet de thèse fait suite au projet ANR \textsc{TACOT}~\cite{ANR_thermo-acoustic_2019} \echaf{dans lequel}
 
 \section{Bases de thermoacoustique}
 \subsection{Concepts généraux}
@@ -134,7 +134,7 @@ Les cycles thermodynamiques évoqués plus tôt sont différents en fonction de 
 	\label{fig:CycleBrayton}
 \end{figure} % Brayton
 
-\begin{figure}[!htp]
+\begin{figure}[!ht]
 	\centering
 	\begin{subfigure}{.47\textwidth}
 		\centering
@@ -215,7 +215,7 @@ Un volume de fluide obéit aux lois de conservations de masse, d'énergies et d'
 		\rho T \deriv_t s &= \bnabla\cdot (k \nabla T) + \left(\overline{\overline{\sigma}} \cdot \bnabla\right) \cdot \mathbf v, &\text{(conservation de l'énergie)}\label{eq:ThermoLin_NRJ}
 	\end{align}
 \end{subequations}
-en utilisant les variables d'intérêt suivante : la pression $p$, le débit $u$, la vitesse $v$, la masse volumique $\rho$, la température $T$ et l'entropie $s$. Elles considérées monochromatiques et oscillant à la fréquence $f_1=\nicefrac{\omega_1}{2\pi}$ et sont écrites selon le formalisme de Rott en adoptant la convention temporelle $e^{i\omega_1 t}$~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
+en utilisant les variables d'intérêt suivante : la pression $p$, le débit $u$, la vitesse $v$, la masse volumique $\rho$, la température $T$ et l'entropie $s$. Elles sont considérées monochromatiques et oscillant à la fréquence $f_1=\nicefrac{\omega_1}{2\pi}$ et sont écrites selon le formalisme de Rott en adoptant la convention temporelle $e^{i\omega_1 t}$~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
 
 \begin{subequations}
 	\begin{multicols}{2}
@@ -238,7 +238,7 @@ Ici, les indices indiquent l'ordre de grandeur, avec en particulier l'indice \nu
 	\bullet_1 \ll \bullet_0,
 	\label{eq:ConditionLinearite}
 \end{equation}
-où $\bullet$ représente indifféremment les variables citées précédemment.\medskip
+où $\bullet$ représente indifféremment les variables citées précédemment quand la composante continue est non-nulle.\medskip
 
 L'équation de la conservation de la masse~\eqref{eq:ThermoLin_ConservMass} peut être réécrite avec ces variables comme
 

@@ -210,12 +210,12 @@ Un volume de fluide obéit aux lois de conservations de masse, d'énergies et d'
 
 \begin{subequations}
 	\begin{align}
-		\partial_t \rho + \nabla \cdot (\rho \mathbf v) &= 0, \label{eq:ConservMass}\\
-		\rho \deriv_t \mathbf v &= -\nabla p + \mu\left( \nabla^2 \mathbf v +\left(\frac13+\frac{\mu_v}{\mu} \right)\nabla\left(\nabla \cdot \mathbf v\right)\right), \label{eq:NavierStokes_QteMvt_base}\\
-		\rho T\deriv_t s &= \nabla\cdot (k \nabla T) + \overline{\overline{\sigma}}\cdot \textcolor{red}{\nabla \mathbf v}. \label{eq:ConservEnergie}
+		\partial_t \rho + \bnabla \cdot (\rho \mathbf v) &= 0, &\text{(conservation de la masse)}\label{eq:ThermoLin_ConservMass}\\
+		\rho\left[\partial_t\mathbf v + (\mathbf v \cdot \bnabla)\right] &= -\bnabla p + \mu \bnabla^2 \mathbf v, &\text{(conservation de la quantité de mouvement)}\label{eq:ThermoLin_QtMvt}\\
+		\rho T \deriv_t s &= \bnabla\cdot (k \nabla T) + \left(\overline{\overline{\sigma}} \cdot \bnabla\right) \cdot \mathbf v, &\text{(conservation de l'énergie)}\label{eq:ThermoLin_NRJ}
 	\end{align}
 \end{subequations}
-en utilisant les variables d'intérêt suivante : la pression $p$, le débit $u$, la vitesse $v$, la masse volumique $\rho$, la température $T$ et l'entropie $s$. Elles sont écrites selon le formalisme de Rott avec les équations
+en utilisant les variables d'intérêt suivante : la pression $p$, le débit $u$, la vitesse $v$, la masse volumique $\rho$, la température $T$ et l'entropie $s$. Elles considérées monochromatiques et oscillant à la fréquence $f_1=\nicefrac{\omega_1}{2\pi}$ et sont écrites selon le formalisme de Rott en adoptant la convention temporelle $e^{i\omega_1 t}$~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
 
 \begin{subequations}
 	\begin{multicols}{2}
@@ -223,7 +223,7 @@ en utilisant les variables d'intérêt suivante : la pression $p$, le débit $u$
 		\begin{align}
 			p(x,t) &= p_0 + \RE \left[p_1(x) e^{i\omega t}\right],\label{eq:pression_rott}\\
 			u(x,t) &= \RE \left[u_1(x) e^{i\omega t}\right],\label{eq:debit_rott}\\
-			v(x,t) &= \RE \left[v_1(x) e^{i\omega t}\right],\label{eq:vitesse_rott}
+			v(x,y,z,t) &= \RE \left[v_1(x,y,z) e^{i\omega t}\right],\label{eq:vitesse_rott}
 	\end{align}
 	\begin{align}
 			\rho(x,r,t) &= \rho_0(x) + \RE \left[\rho_1(x,r) e^{i\omega t}\right],\label{eq:massVol_rott}\\
@@ -238,7 +238,59 @@ Ici, les indices indiquent l'ordre de grandeur, avec en particulier l'indice \nu
 	\bullet_1 \ll \bullet_0,
 	\label{eq:ConditionLinearite}
 \end{equation}
-où $\bullet$ représente indifféremment la pression, la masse volumique, etc.
+où $\bullet$ représente indifféremment les variables citées précédemment.\medskip
+
+L'équation de la conservation de la masse~\eqref{eq:ThermoLin_ConservMass} peut être réécrite avec ces variables comme
+
+\begin{equation}
+	i\omega_1 v_1 = -\deriv_x p_1 + \mu\left[\partial^2_{yy} v_1 + \partial^2_{zz}\right],
+\end{equation}
+avec $v_1=0$ sur chaque surface. La solution $v_1$ de cette équation s'écrit
+
+\begin{equation}
+	v_1 = \frac{i}{\omega_1 \rho_0}[1-h_\nu(y,z)]\deriv_x p_1,
+\end{equation}
+qui fait intervenir les échanges d'énergie dans la couche limite visqueuse $\delta_\nu$ au travers de la fonction $h_\nu$. Les intégrations sur la section de pore par rapport à $y$ et $z$ donnent 
+
+\begin{equation}
+	\deriv p_1 = -\frac{i\omega \rho_0 \deriv x}{S(1-f_\nu)}u_1,
+\end{equation}
+où $f_\nu$ est la moyenne de $h_\nu$ sur la section. Les fonctions visqueuses sont définies en coordonnées polaires (en remplaçant les coordonnées transverses $y$ et $z$ par la coordonnée radiale $r=\sqrt{y^2+z^2}$) dans le cas de pores cylindriques par~\cite{arnott_general_1991}
+
+\begin{subequations}
+		\begin{align}
+			h_\nu(r) &= \dfrac{J_0\left[(1-i)\dfrac{r}{\delta_\nu}\right]}{J_0\left[(1-i)\dfrac{r_h}{\delta_\nu}\right]},
+			\label{eq:FonctionViqueuse_r} \\
+			f_\nu &= \dfrac{2J_1\left[(1-i)\dfrac{r_h}{\delta_\nu}\right]}{(1-i)\dfrac{r_h}{\delta_\nu}J_0\left[(1-i)\dfrac{r_h}{\delta_\nu}\right]},
+			\label{eq:FonctionViqueuse_Moyenne}
+		\end{align}
+		\label{eq:FonctionsVisqueuses}
+\end{subequations}
+avec $J_0$ et $J_1$ les fonctions de Bessel de première espèce, respectivement d'ordres \num{0} et \num{1}.\smallskip
+
+L'équation de la conservation de l'énergie est elle aussi réécrite avec les approximations des équations~\eqref{eq:variables_rott}, ce qui donne
+
+\begin{equation}
+	\rho_0 c_p (i\omega_1 T_1 + v_1\deriv_x T_0) - i\omega_1 p_1 = k[\partial^2_{yy} T_1 + \partial^2_{zz}T_1],\echaf{continuer}
+\end{equation}
+
+\begin{subequations}
+		\begin{align}
+			h_\kappa(r) &= \dfrac{J_0\left[(1-i)\dfrac{r}{\delta_\kappa}\right]}{J_0\left[(1-i)\dfrac{r_h}{\delta_\kappa}\right]},
+			\label{eq:FonctionThermique_k} \\
+			f_\kappa &= \dfrac{2J_1\left[(1-i)\dfrac{r_h}{\delta_\kappa}\right]}{(1-i)\dfrac{r_h}{\delta_\kappa}J_0\left[(1-i)\dfrac{r_h}{\delta_\kappa}\right]},
+			\label{eq:FonctionThermique_Moyenne}
+		\end{align}
+		\label{eq:FonctionsThermiques}
+\end{subequations}
+
+La théorie linéaire montre que le champ de pression acoustique au sein d'un matériau poreux est solution de l'équation de Helmholtz qui s'écrit~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
+
+\begin{equation}
+	\left[1+(\gamma-1)f_\kappa\right]p_1+\left(\frac{c_0}{\omega_1}\right)^2\deriv_x \big\{(1-f_\nu)\deriv_x [p_1]\big\} - \beta \left(\frac{c_0}{\omega_1}\right)^2 \frac{f_\kappa - f_\nu}{1-\Prandtl} \deriv_x [T_0]\ \deriv_x [p_1] = 0.
+	\label{eq:Rott_Swift_WaveEquation}
+\end{equation}
+
 
 Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacoustics_2017} par
 \begin{equation}
@@ -246,46 +298,7 @@ Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacous
 	\label{eq:FluxTA_swift}
 \end{equation}
 
-\subsection{Fonction visco-thermiques}
-\cite{swift_thermoacoustics_2017, di_giulio_wire_2023}
 
-Pour des pores de géométrie cylindrique : 
-
-\begin{multicols}{2}
-
-	\begin{subequations}
-		\begin{align}
-			h_\nu(r) &= \dfrac{J_0\left[(1-i)\dfrac{r}{\delta_\nu}\right]}{J_0\left[(1-i)\dfrac{r_h}{\delta_\nu}\right]}
-			\label{eq:FonctionViqueuse_r} \\
-			f_\nu &= \dfrac{2J_1\left[(1-i)\dfrac{r_h}{\delta_\nu}\right]}{(1-i)\dfrac{r_h}{\delta_\nu}J_0\left[(1-i)\dfrac{r_h}{\delta_\nu}\right]}
-			\label{eq:FonctionViqueuse_Moyenne}
-		\end{align}
-		\label{eq:FonctionsVisqueuses}
-	\end{subequations}
-
-	\begin{subequations}
-		\begin{align}
-			h_\kappa(r) &= \echaf{\dfrac{J_0\left[(1-i)\dfrac{r}{\delta_\kappa}\right]}{J_0\left[(1-i)\dfrac{r_h}{\delta_\kappa}\right]}}
-			\label{eq:FonctionThermique_k} \\
-			f_\kappa &= \echaf{\dfrac{2J_1\left[(1-i)\dfrac{r_h}{\delta_\kappa}\right]}{(1-i)\dfrac{r_h}{\delta_\kappa}J_0\left[(1-i)\dfrac{r_h}{\delta_\kappa}\right]}}
-			\label{eq:FonctionThermique_Moyenne}
-		\end{align}
-		\label{eq:FonctionsThermiques}
-	\end{subequations}
-
-\end{multicols}
-où $J_0$ et $J_1$ sont les fonctions de Bessel de première espèce, respectivement d'ordres \num{0} et \num{1}.
-
-\subsubsection{Milieu tortueux}
-
-\cite{allard_propagation_2009}
-
-\begin{subequations}
-	\begin{align}
-		f_\nu &= \\
-		f_\kappa &= 
-	\end{align}
-\end{subequations}
 
 \section{\'Etat de l'art}
 \cite{pierens_development_2012}
@@ -298,102 +311,102 @@ Depuis les années 1970-1980 durant lesquelles les premières machines modernes 
 \subsection[... à des applications industrielles]{Applications industrielles}
 Les machines thermoacoustiques sont intéressantes pour l'industrie \echaf{continuer avec cryocooler pour liquéfaction de gaz + TNO/BlueHeart ?}\cite{swift_thermoacoustics_2002, wollan_development_2002, adeff_measurement_1991, garrett_thermoacoustic_1993}
 
-\section{Outils électroacoustiques pour la thermoacoustique}
-%\subsection{Transduction électrodynamique}
-%Un transducteur est un système qui convertit une forme d'énergie en une autre. En électroacoustique, les haut-parleurs transforment l'énergie électrique en énergie acoustique, ou inversement pour les microphones. Pour réaliser cette transduction, plusieurs technologies existent : électrodynamique, électrostatique...
+%\section{Outils électroacoustiques pour la thermoacoustique}
+%%\subsection{Transduction électrodynamique}
+%%Un transducteur est un système qui convertit une forme d'énergie en une autre. En électroacoustique, les haut-parleurs transforment l'énergie électrique en énergie acoustique, ou inversement pour les microphones. Pour réaliser cette transduction, plusieurs technologies existent : électrodynamique, électrostatique...
+%%
+%%\begin{figure}[!ht]
+%%    \centering
+%%    \external{fig_HautParleur}
+%%%    \externalremake
+%%    \input{../fig/fig_HautParleur/tex/fig_HautParleur}
+%%    \caption{Vue en coupe d'un haut parleur électrodynamique}
+%%    \label{fig:HautParleur}
+%%\end{figure}
 %
-%\begin{figure}[!ht]
-%    \centering
-%    \external{fig_HautParleur}
-%%    \externalremake
-%    \input{../fig/fig_HautParleur/tex/fig_HautParleur}
-%    \caption{Vue en coupe d'un haut parleur électrodynamique}
-%    \label{fig:HautParleur}
-%\end{figure}
-
-\subsection{Modèles aux constantes localisées et circuits électriques équivalents}
-
-\subsubsection{En général}
-
-Lorsque la longueur d'onde $\lambda$ est très grande devant une dimension caractéristique $a$ du système, soit lorsque $\nicefrac{2\pi a}{\lambda} \ll 1$, il est possible de réaliser certaines approximations pour modéliser ce système. Ces approximations simplificatrices sont supports d'analogies électro-mécano-acoustiques. 
-
-Sous ces hypothèses, un tube se comporte que sa composante inertielle, ce qui le rend analogue à une masse mécanique et à une inductance électrique. À l'inverse, une cavité voit son impédance ramenée à un ressort mécanique et un condensateur électrique. Enfin, les pertes d'énergie se représentent par une résistance dans les trois domaines.
-
-Ainsi, les systèmes électro-mécano-acoustiques comme les haut-parleurs ou les guides d'ondes peuvent être modélisés au moyen d'un circuit électrique équivalent \cite{Electroac_Grains}. 
-%Le circuit équivalent au haut-parleur électrodynamique est présenté figure~\ref{fig:HP_LEM}.
+%\subsection{Modèles aux constantes localisées et circuits électriques équivalents}
 %
-%\begin{figure}[!ht]
-%    \centering
-%    \external{fig_HP_LEM}
-%%    \externalremake
-%    \input{../fig/fig_HP_LEM/tex/fig_HP_LEM}
-%    \caption{Circuit électrique équivalent à un haut-parleur suivant un modèle aux constantes localisées (convention mécanique impédance)}
-%    \label{fig:HP_LEM}
-%\end{figure}
-
-{
-\setlength{\extrarowheight}{7pt}
-  \tikzsetfigurename{fig_AnalogiesElectroac}
-\paragraph{Analogies électro-mécaniques}
-\echaf{blabla}
-
-\paragraph{Analogies acousto-mécaniques}
-\echaf{blabla}
-
-\paragraph{Résumé des analogies}
-\echaf{blabla}
-
-\begin{table}[!ht]
-	\caption{Analogies électro-mécano-acoustiques}
-	\label{tab:AnalogElectroMecanoAcoust}
-	\centering
-%	\begin{tabular}{ m{.25\textwidth}  m{.25\textwidth}  m{.25\textwidth} }
-%	\hline
+%\subsubsection{En général}
+%
+%Lorsque la longueur d'onde $\lambda$ est très grande devant une dimension caractéristique $a$ du système, soit lorsque $\nicefrac{2\pi a}{\lambda} \ll 1$, il est possible de réaliser certaines approximations pour modéliser ce système. Ces approximations simplificatrices sont supports d'analogies électro-mécano-acoustiques. 
+%
+%Sous ces hypothèses, un tube se comporte que sa composante inertielle, ce qui le rend analogue à une masse mécanique et à une inductance électrique. À l'inverse, une cavité voit son impédance ramenée à un ressort mécanique et un condensateur électrique. Enfin, les pertes d'énergie se représentent par une résistance dans les trois domaines.
+%
+%Ainsi, les systèmes électro-mécano-acoustiques comme les haut-parleurs ou les guides d'ondes peuvent être modélisés au moyen d'un circuit électrique équivalent \cite{Electroac_Grains}. 
+%%Le circuit équivalent au haut-parleur électrodynamique est présenté figure~\ref{fig:HP_LEM}.
+%%
+%%\begin{figure}[!ht]
+%%    \centering
+%%    \external{fig_HP_LEM}
+%%%    \externalremake
+%%    \input{../fig/fig_HP_LEM/tex/fig_HP_LEM}
+%%    \caption{Circuit électrique équivalent à un haut-parleur suivant un modèle aux constantes localisées (convention mécanique impédance)}
+%%    \label{fig:HP_LEM}
+%%\end{figure}
+%
+%{
+%\setlength{\extrarowheight}{7pt}
+%  \tikzsetfigurename{fig_AnalogiesElectroac}
+%\paragraph{Analogies électro-mécaniques}
+%\echaf{blabla}
+%
+%\paragraph{Analogies acousto-mécaniques}
+%\echaf{blabla}
+%
+%\paragraph{Résumé des analogies}
+%\echaf{blabla}
+%
+%\begin{table}[!ht]
+%	\caption{Analogies électro-mécano-acoustiques}
+%	\label{tab:AnalogElectroMecanoAcoust}
+%	\centering
+%%	\begin{tabular}{ m{.25\textwidth}  m{.25\textwidth}  m{.25\textwidth} }
+%%	\hline
+%%%	\multicolumn{3}{|c|}{Domaines} \\\hline
+%%	Acoustique & Mécanique & \'Electrique \\ \hline\hline
+%%	\tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[L] ++(2,0);} \\
+%%	\tikz{\draw(0,0) -- ++(1,0) -- ++(0,.5) -- ++(-1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[C] ++(2,0);} \\
+%%	\tikz{\fill[pattern={horizontal lines}](0,0) rectangle ++(1,.5);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[R] ++(2,0);} \\
+%%	\hline
+%%	
+%%	\end{tabular}
+%
+%	\begin{tblr}{ rows = {1cm}, row{1} = {15pt, font=\bf}, columns = {.25\textwidth, c}, hline{1,Z}={1.5pt} }
 %%	\multicolumn{3}{|c|}{Domaines} \\\hline
-%	Acoustique & Mécanique & \'Electrique \\ \hline\hline
-%	\tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[L] ++(2,0);} \\
-%	\tikz{\draw(0,0) -- ++(1,0) -- ++(0,.5) -- ++(-1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[C] ++(2,0);} \\
-%	\tikz{\fill[pattern={horizontal lines}](0,0) rectangle ++(1,.5);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[R] ++(2,0);} \\
-%	\hline
-%	
-%	\end{tabular}
+%		Acoustique & Mécanique & \'Electrique \\ \hline\hline
+%		\tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \tikz{\draw(0,0) node[circle]{$m$};} & \myctikz{\draw(0,0) to[L] ++(2,0);} \\
+%		\tikz{\draw(0,0) -- ++(1,0) -- ++(0,.5) -- ++(-1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[C] ++(2,0);} \\
+%		\tikz{\fill[pattern={horizontal lines}](0,0) rectangle ++(1,.5);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[R] ++(2,0);}
+%	\end{tblr}
+%\end{table}
+%}
+%
+%\subsubsection{Circuit électrique équivalent à un noyau thermoacoustique}
+%
+%Comme les autres systèmes électro-mécano-acoustique présentés auparavant, le noyau thermoacoustique peut être représenté sur la figure~\ref{fig:CircEquivTAC} par un circuit électrique équivalent, sous réserve qu'il soit acoustiquement compact. Comme pour un tube creux, les termes des équations de conservation d'énergie et de masse se traduisent par des masse et compliance acoustiques équivalents, et sont respectivement modélisés par une inductance $L$ et une capacité $C$. Les effets visco-thermiques ajoutés au circuit sous la forme d'une résistance visqueuse $R_\nu$ et d'une conductance thermique $\frac{1}{R_\kappa}$.
+%
+%\begin{figure}[!ht]
+%    \centering
+%    \external{fig_CircEquivTAC}
+%%    \externalremake
+%    \input{../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC}
+%    \caption{Circuit équivalent à un noyau thermoacoustique. Extrait de \cite{swift_thermoacoustics_2017}}
+%    \label{fig:CircEquivTAC}
+%\end{figure}
+%
+%Il reste à introduire la quantité complexe $G$, défini par 
+%
+%\begin{equation}
+%    G = \frac{f_\kappa - f_\nu}{(1-f_\nu)(1-\mathrm{Pr})}\frac{1}{T_m}\frac{\deriv T_m}{\deriv x},
+%    \label{eq:GainNoyauTA_Swift}
+%\end{equation}
+%et qui représente le gain ou l'atténuation du débit acoustique \cite{swift_thermoacoustics_2017}. Sa dépendance au gradient de température est surtout le rend important pour les moteurs thermoacoustiques principalement, mais il est impossible de le négliger dans les réfrigérateurs même si la différence de température entre les extrémités est moindre.
+%
+%\subsection{Circuit équivalent à une machine complète}
 
-	\begin{tblr}{ rows = {1cm}, row{1} = {15pt, font=\bf}, columns = {.25\textwidth, c}, hline{1,Z}={1.5pt} }
-%	\multicolumn{3}{|c|}{Domaines} \\\hline
-		Acoustique & Mécanique & \'Electrique \\ \hline\hline
-		\tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \tikz{\draw(0,0) node[circle]{$m$};} & \myctikz{\draw(0,0) to[L] ++(2,0);} \\
-		\tikz{\draw(0,0) -- ++(1,0) -- ++(0,.5) -- ++(-1,0);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[C] ++(2,0);} \\
-		\tikz{\fill[pattern={horizontal lines}](0,0) rectangle ++(1,.5);} & \tikz{\draw(0,0) -- ++(1,0);\draw(0,.5) -- ++(1,0);} & \myctikz{\draw(0,0) to[R] ++(2,0);}
-	\end{tblr}
-\end{table}
-}
-
-\subsubsection{Circuit électrique équivalent à un noyau thermoacoustique}
-
-Comme les autres systèmes électro-mécano-acoustique présentés auparavant, le noyau thermoacoustique peut être représenté sur la figure~\ref{fig:CircEquivTAC} par un circuit électrique équivalent, sous réserve qu'il soit acoustiquement compact. Comme pour un tube creux, les termes des équations de conservation d'énergie et de masse se traduisent par des masse et compliance acoustiques équivalents, et sont respectivement modélisés par une inductance $L$ et une capacité $C$. Les effets visco-thermiques ajoutés au circuit sous la forme d'une résistance visqueuse $R_\nu$ et d'une conductance thermique $\frac{1}{R_\kappa}$.
-
-\begin{figure}[!ht]
-    \centering
-    \external{fig_CircEquivTAC}
-%    \externalremake
-    \input{../fig/fig_CircEquivTAC/tex/fig_CircEquivTAC}
-    \caption{Circuit équivalent à un noyau thermoacoustique. Extrait de \cite{swift_thermoacoustics_2017}}
-    \label{fig:CircEquivTAC}
-\end{figure}
-
-Il reste à introduire la quantité complexe $G$, défini par 
-
-\begin{equation}
-    G = \frac{f_\kappa - f_\nu}{(1-f_\nu)(1-\mathrm{Pr})}\frac{1}{T_m}\frac{\deriv T_m}{\deriv x},
-    \label{eq:GainNoyauTA_Swift}
-\end{equation}
-et qui représente le gain ou l'atténuation du débit acoustique \cite{swift_thermoacoustics_2017}. Sa dépendance au gradient de température est surtout le rend important pour les moteurs thermoacoustiques principalement, mais il est impossible de le négliger dans les réfrigérateurs même si la différence de température entre les extrémités est moindre.
-
-\subsection{Circuit équivalent à une machine complète}
-
-\subsection{Matrices de transfert}
-\subsubsection{En général}
-Malgré la possibilité de modéliser le circuit acoustique au sein d'une machine thermoacoustique avec des circuits électriques équivalents, la propagation dans le noyau nécessite l'usage d'un modèle un peu plus avancé. En effet, le comportement des machines thermoacoustiques peut assez simplement être prédit en faisant usage de la théorie linéaire \cite{rott_thermoacoustics_1980, swift_thermoacoustics_2017}. Une des  hypothèses de ces modèles concerne la propagation d'ondes unidimensionnelles au c\oe{}ur de celles-ci, et donc la possibilité de représenter le noyau par un ensemble de matrices de transfert.
+\section{Matrices de transfert}
+\subsection{En général}
+Le comportement des machines thermoacoustiques peut assez simplement être prédit en faisant usage de la théorie linéaire \cite{rott_damped_1969, rott_thermoacoustics_1980, swift_thermoacoustics_2017}. Une des hypothèses de ces modèles concerne la propagation d'ondes unidimensionnelles au c\oe{}ur de celles-ci, et donc la possibilité de représenter le noyau par un ensemble de matrices de transfert.
 
 Ces matrices de transfert relient les pression et débit acoustiques de part et d'autre d'un organe d'un circuit acoustique assimilé à un quadripôle équivalent, et se présente sous la forme
 
@@ -466,7 +479,7 @@ en adoptant la convention temporelle $e^{+i\omega t}$ et une orientation anti-sy
 %    \label{eq:SMatrixCoeff}%
 %\end{subequations}
 
-\subsubsection{Matrice de transfert d'un noyau thermoacoustique}
+\subsection{Matrice de transfert d'un noyau thermoacoustique}
 \echaf{notation $p_s$ à changer en $p_1^{(s)}$ etc.}
 
 Comme déjà expliqué plus haut, le processus thermoacoustique se produit dans un matériau poreux placé dans le guide d'ondes des machines thermoacoustiques. La définition des termes constituant la matrice de transfert change alors légèremement pour prendre en compte sa porosité $\Phi$ selon l'équation
@@ -517,7 +530,7 @@ ou bien même en simplifiant encore plus les choses par
 \end{equation}
 
 
-Enfin, si le matériau poreux est long, il est possible de le représenter par une succession de $N$ portions élémentaires du poreux et donc un produit de matrices de transfert
+Enfin, si le matériau poreux est long, il est possible de le représenter par une succession de $N$ portions élémentaires du poreux et donc un produit de matrices de transfert \cite{ceperley_pistonless_1979}
 
 \begin{equation}
 \begin{pmatrix}

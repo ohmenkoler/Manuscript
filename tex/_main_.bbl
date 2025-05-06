@@ -1416,119 +1416,105 @@
       \endverb
       \keyw{Engine,Thermoacoustics}
     \endentry
-    \entry{di_giulio_wire_2023}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=c8e4d40fcc8078b88055fb74be575097}{%
-           family={Di\bibnamedelima Giulio},
-           familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-        {{hash=1652efa28eda8dda7c628707b41d0f5d}{%
-           family={Nguyen},
-           familyi={N\bibinitperiod},
-           given={C.\bibnamedelimi T.},
-           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=410d4b508a8bad5f1b19f94bed9d1f2a}{%
-           family={Perrot},
-           familyi={P\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-        {{hash=e898e5735f053c26ff383fb87bf20dda}{%
-           family={Dragonetti},
-           familyi={D\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
+    \entry{swift_thermoacoustic_1988}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=52937719af970c9a64a91af3eeb87bce}{%
+           family={Swift},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
       }
-      \strng{namehash}{ab6c99e9224faab915476f99c1418972}
-      \strng{fullhash}{ab6c99e9224faab915476f99c1418972}
-      \strng{fullhashraw}{ab6c99e9224faab915476f99c1418972}
-      \strng{bibnamehash}{ab6c99e9224faab915476f99c1418972}
-      \strng{authorbibnamehash}{ab6c99e9224faab915476f99c1418972}
-      \strng{authornamehash}{ab6c99e9224faab915476f99c1418972}
-      \strng{authorfullhash}{ab6c99e9224faab915476f99c1418972}
-      \strng{authorfullhashraw}{ab6c99e9224faab915476f99c1418972}
+      \strng{namehash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{fullhash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{fullhashraw}{52937719af970c9a64a91af3eeb87bce}
+      \strng{bibnamehash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{authorbibnamehash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{authornamehash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{authorfullhash}{52937719af970c9a64a91af3eeb87bce}
+      \strng{authorfullhashraw}{52937719af970c9a64a91af3eeb87bce}
+      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Thermoacoustic technology can play a significant role in the development of renewable energies. Thermoa­ coustic engines and heat pumps (or refrigerators) are however characterized by a low efficiency attributed to suboptimal components. The core of these devices is a porous material, named stack (or regenerator), in which thermoacoustic conversion takes place. The most frequently used stack in the literature remains the wire mesh, although there is still a lack of formulation for the corresponding thermoviscous response functions. Essentially, all the dynamic thermal and viscous behaviors of a porous structure can be derived thanks to the {Johnson-Champoux}-Allard-Lafarge ({JCAL}) semi-phenomenological model, where transport parameters provide input in­ formation on the macroscopic level to the model. Here, we report a set of structure–property correlations be­ tween the transport parameters of the stack and the geometrical features of the wire mesh obtained from firstprinciples calculations. Validation of the model is carried out by means of experimental measurements performed on three different specimens. Our results show that the knowledge of the termoviscous functions for the wire mesh allows drawing preliminary considerations on the thermoacoustic efficiency of the stack, without needing to consider a full numerical simulation of the entire device.}
-      \field{issn}{13594311}
-      \field{journaltitle}{Applied Thermal Engineering}
-      \field{langid}{english}
-      \field{month}{2}
-      \field{shortjournal}{Applied Thermal Engineering}
-      \field{title}{Wire mesh stack and regenerator model for thermoacoustic devices}
-      \field{urlday}{17}
-      \field{urlmonth}{4}
-      \field{urlyear}{2023}
-      \field{volume}{221}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{119816}
-      \range{pages}{1}
+      \field{abstract}{Thermoacoustic engines, or acoustic heat engines, are energy‐conversion devices that achieve simplicity and concomitant reliability by use of acoustic technology. Their efficiency can be a substantial fraction of Carnot’s efficiency. In thermoacoustic prime movers, heat flow from a high‐temperature source to a low‐temperature sink generates acoustic power (which may be converted to electric power using a transducer). In thermoacoustic heat pumps and refrigerators, acoustic power is used to pump heat from a low‐temperature source to a high‐temperature sink. This review teaches the fundamentals of thermoacoustic engines, by analysis, intuition, and example.}
+      \field{issn}{0001-4966}
+      \field{journaltitle}{The Journal of the Acoustical Society of America}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{Thermoacoustic engines}
+      \field{volume}{84}
+      \field{year}{1988}
+      \field{pages}{1145\bibrangedash 1180}
+      \range{pages}{36}
       \verb{doi}
-      \verb 10.1016/j.applthermaleng.2022.119816
+      \verb 10.1121/1.396617
       \endverb
-      \verb{file}
-      \verb Di Giulio et al. - 2023 - Wire mesh stack and regenerator model for thermoac.pdf:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\TIBWNED9\\Di Giulio et al. - 2023 - Wire mesh stack and regenerator model for thermoac.pdf:application/pdf
+      \verb{eprint}
+      \verb https://pubs.aip.org/asa/jasa/article-pdf/84/4/1145/11703730/1145\_1\_online.pdf
       \endverb
       \verb{urlraw}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S135943112201746X
+      \verb https://doi.org/10.1121/1.396617
       \endverb
       \verb{url}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S135943112201746X
+      \verb https://doi.org/10.1121/1.396617
       \endverb
     \endentry
-    \entry{allard_propagation_2009}{book}{}{}
-      \name{author}{2}{}{%
-        {{hash=4f15ea706efd752471f3027b9bfa15e1}{%
-           family={Allard},
+    \entry{arnott_general_1991}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a5b2b42e28f18b6d937df16a5bd287de}{%
+           family={Arnott},
            familyi={A\bibinitperiod},
-           given={J.-F.},
-           giveni={J\bibinithyphendelim F\bibinitperiod}}}%
-        {{hash=0c8d9574ab15c394ff5d3baca689696a}{%
-           family={Atalla},
-           familyi={A\bibinitperiod},
-           given={N.},
-           giveni={N\bibinitperiod}}}%
+           given={W.\bibnamedelimi P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=03c4a8e9c493a40ff61f4bb2889a5c15}{%
+           family={Bass},
+           familyi={B\bibinitperiod},
+           given={H.\bibnamedelimi E.},
+           giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=ccd72d0a372f9bf312a7b9ade06a40db}{%
+           family={Raspet},
+           familyi={R\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Wiley}%
-      }
-      \strng{namehash}{4aad6d166eafb87f951c9490737cfe74}
-      \strng{fullhash}{4aad6d166eafb87f951c9490737cfe74}
-      \strng{fullhashraw}{4aad6d166eafb87f951c9490737cfe74}
-      \strng{bibnamehash}{4aad6d166eafb87f951c9490737cfe74}
-      \strng{authorbibnamehash}{4aad6d166eafb87f951c9490737cfe74}
-      \strng{authornamehash}{4aad6d166eafb87f951c9490737cfe74}
-      \strng{authorfullhash}{4aad6d166eafb87f951c9490737cfe74}
-      \strng{authorfullhashraw}{4aad6d166eafb87f951c9490737cfe74}
+      \strng{namehash}{d01cba4acfc44783009865e7e42a7a7b}
+      \strng{fullhash}{d01cba4acfc44783009865e7e42a7a7b}
+      \strng{fullhashraw}{d01cba4acfc44783009865e7e42a7a7b}
+      \strng{bibnamehash}{d01cba4acfc44783009865e7e42a7a7b}
+      \strng{authorbibnamehash}{d01cba4acfc44783009865e7e42a7a7b}
+      \strng{authornamehash}{d01cba4acfc44783009865e7e42a7a7b}
+      \strng{authorfullhash}{d01cba4acfc44783009865e7e42a7a7b}
+      \strng{authorfullhashraw}{d01cba4acfc44783009865e7e42a7a7b}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{day}{23}
-      \field{edition}{1}
-      \field{isbn}{978-0-470-74661-5}
-      \field{langid}{english}
-      \field{month}{10}
-      \field{shorttitle}{Propagation of Sound in Porous Media}
-      \field{title}{Propagation of Sound in Porous Media: Modelling Sound Absorbing Materials}
-      \field{urlday}{27}
-      \field{urlmonth}{2}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Theoretical treatments of thermoacoustics have been reported for stacks with circular pore and parallel plate geometries. A general linear formulation is developed for gas‐filled thermoacoustic elements such as heat exchangers, stacks, and tubes having pores of arbitrary cross‐sectional geometry. For compactness in the following, F represents the functional form of the transverse variation of the longitudinal particle velocity. Generally, F is a function of frequency, pore geometry, the response functions and transport coefficients of the gas used, and the ambient value of the gas density. Expressions are developed for the acoustic temperature, density, particle velocity, pressure, heat flow, and work flow from knowledge of F. Heat and work flows are compared in the short stack approximation for stacks consisting of parallel plates, circular, square, and equilateral triangular pores. In this approximation, heat and work flows are found to be greatest for the parallel plate stack geometry. Pressure and specific acoustic impedance translation theorems are derived to simplify computation of the acoustical field quantities at all points within a thermoacoustic engine. Relations with capillary‐pore‐based porous media models are developed.}
+      \field{day}{1}
+      \field{issn}{0001-4966}
+      \field{journaltitle}{The Journal of the Acoustical Society of America}
+      \field{month}{12}
+      \field{number}{6}
+      \field{shortjournal}{The Journal of the Acoustical Society of America}
+      \field{title}{General formulation of thermoacoustics for stacks having arbitrarily shaped pore cross sections}
+      \field{urlday}{5}
+      \field{urlmonth}{6}
       \field{urlyear}{2025}
-      \field{year}{2009}
+      \field{volume}{90}
+      \field{year}{1991}
       \field{dateera}{ce}
       \field{urldateera}{ce}
+      \field{pages}{3228\bibrangedash 3237}
+      \range{pages}{10}
       \verb{doi}
-      \verb 10.1002/9780470747339
+      \verb 10.1121/1.401432
       \endverb
       \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/book/10.1002/9780470747339
+      \verb https://doi.org/10.1121/1.401432
       \endverb
       \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/book/10.1002/9780470747339
+      \verb https://doi.org/10.1121/1.401432
       \endverb
     \endentry
     \entry{pierens_development_2012}{inproceedings}{}{}
@@ -1687,8 +1673,8 @@
       \strng{authornamehash}{ea1c342d09b8c65e30b8dcf1eb0f8e53}
       \strng{authorfullhash}{ea1c342d09b8c65e30b8dcf1eb0f8e53}
       \strng{authorfullhashraw}{ea1c342d09b8c65e30b8dcf1eb0f8e53}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The thermoacoustic theory of N. Rott is applied to a design for a thermoacoustic refrigerator having one moving part. Some general features and practical aspects of the design are discussed. A fully functional refrigerator has been constructed and its measured temperature and efficiency performance is presented. The lowest measured ratio of cold temperature to ambient temperature is 0.66 and the highest measured coefficient of performance relative to Carnot is 12\% of Carnot at a temperature ratio of 0.82. The refrigerator is powered by a high-intensity acoustic driver apparatus that is instrumented for accurate measurement of the accoustic power delivered by the driver. The accuracy of the power measurement is (+{OR}-)3\% and the phase between the acoustic pressure and velocity at the driver is measured with an accuracy of (+{OR}-)1({DEGREES}). There are various acoustic losses and heat loading effects that occur in the experiment in addition to the primary measured powers. The magnitude of these additional effects have been either measured or calculated so that a valid comparison between the experiment the Rott theory can be made. The resulting agreement between experiment and theory is fair.}
@@ -1845,70 +1831,6 @@
       \endverb
       \verb{url}
       \verb https://arc.aiaa.org/doi/10.2514/3.466
-      \endverb
-    \endentry
-    \entry{Electroac_Grains}{online}{}{}
-      \name{author}{8}{}{%
-        {{hash=3435f2f1072dd78e23d532bcc0d3da64}{%
-           family={Bavu},
-           familyi={B\bibinitperiod},
-           given={É.},
-           giveni={É\bibinitperiod}}}%
-        {{hash=a88412ea17220624db71f6aba5cbf32a}{%
-           family={Lissek},
-           familyi={L\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-        {{hash=e7c5c310b86f4c29c00efc6e36e59697}{%
-           family={Melon},
-           familyi={M\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=4c312e6e30b3a002a74236740dd255ab}{%
-           family={Lotton},
-           familyi={L\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=b2baf141a306a003d413b1d191778696}{%
-           family={Gazengel},
-           familyi={G\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod}}}%
-        {{hash=29a14037f4cb1839db0a56c0db8fc4a7}{%
-           family={Durand},
-           familyi={D\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=2d47b94f7d5bf5dc310c9a818e845595}{%
-           family={Herzog},
-           familyi={H\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=46296b7781800d4201a0837fd1f1cb5b}{%
-           family={Penelet},
-           familyi={P\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{31838c1d39f59eb5ae184f6723d31aaf}
-      \strng{fullhash}{31838c1d39f59eb5ae184f6723d31aaf}
-      \strng{fullhashraw}{31838c1d39f59eb5ae184f6723d31aaf}
-      \strng{bibnamehash}{31838c1d39f59eb5ae184f6723d31aaf}
-      \strng{authorbibnamehash}{31838c1d39f59eb5ae184f6723d31aaf}
-      \strng{authornamehash}{31838c1d39f59eb5ae184f6723d31aaf}
-      \strng{authorfullhash}{31838c1d39f59eb5ae184f6723d31aaf}
-      \strng{authorfullhashraw}{31838c1d39f59eb5ae184f6723d31aaf}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Électroacoustique}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://electroacoustique.univ-lemans.fr/
-      \endverb
-      \verb{url}
-      \verb https://electroacoustique.univ-lemans.fr/
       \endverb
     \endentry
     \entry{DeltaEC}{software}{}{}
@@ -2236,8 +2158,8 @@
       \strng{authornamehash}{657dfe00c233c8a0cebd15fab546e9e1}
       \strng{authorfullhash}{657dfe00c233c8a0cebd15fab546e9e1}
       \strng{authorfullhashraw}{657dfe00c233c8a0cebd15fab546e9e1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Thermoacoustic refrigeration technology is a green alternative for the conventional refrigeration system in vehicles. The former uses environmentally friendly inert gases whereas the latter uses chemical refrigerants that can have severe impacts on the environment. In order to apply thermoacoustic technology in the automobile industry, the size and the weight of plausible thermoacoustic refrigerators should be decreased.}
@@ -2730,8 +2652,8 @@
       \strng{authornamehash}{06a105d93c93df5a8b74bd19c444d875}
       \strng{authorfullhash}{06a105d93c93df5a8b74bd19c444d875}
       \strng{authorfullhashraw}{06a105d93c93df5a8b74bd19c444d875}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In thermoacoustics, stacks and regenerators are porous media where energy conversion takes place. Modelling full thermoacoustic devices with a {CFD} approach, in order to capture some nonlinearities, can be extremely expensive from a computational perspective compared to a standard linear approach used in the frequency domain. At the same time, macroscopic models for porous media developed for steady-state flows cannot be directly applied in oscillating flow conditions. Moreover, macroscopic models in the available literature for oscillating flows are inaccurate at high frequencies or require a closure coefficient to be determined numerically (with Direct Numerical Simulations) or experimentally. In this article, a time domain macroscopic model for heat and fluid flow is proposed based on the concepts of complex Darcy and Nusselt numbers in the linear regime. Such coefficients, introduced in the past to describe the oscillatory phenomena, have been used for the first time to build a {CFD} macroscopic model in terms of their real and imaginary parts. For two different porous media, a parallel plate and a transversal pin array, the developed macroscopic model is verified with the microscopic solution. Furthermore, for a transversal pin array stack, the proposed model is validated against experimental data from the available literature, showing a very good agreement. The findings of this paper can help to strongly reduce the computational costs of oscillatory flow simulations without prior direct numerical simulations of the porous core.}
@@ -2784,8 +2706,8 @@
       \strng{authornamehash}{5360644647f9cbf6122b92849f9c5dff}
       \strng{authorfullhash}{5360644647f9cbf6122b92849f9c5dff}
       \strng{authorfullhashraw}{5360644647f9cbf6122b92849f9c5dff}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{In this article, a comprehensive review of the computational ﬂuid dynamics ({CFD})-based modeling approach for thermoacoustic energy conversion devices is proposed. Although thermoacoustic phenomena were discovered two centuries ago, only in recent decades have such thermoacoustic devices been spreading for energy conversion. The limited understanding of thermoacoustic nonlinearities is one of the reasons limiting their diffusion. {CFD} is a powerful tool that allows taking into consideration all the nonlinear phenomena neglected by linear theory, on which standard designs are based, to develop energy devices that are increasingly efﬁcient. Starting from a description of all possible numerical models to highlight the difference from a full {CFD} method, the nonlinearities (dynamic, ﬂuid dynamic and acoustic) are discussed from a physical and modeling point of view. The articles found in the literature were analyzed according to their setup, with either a single thermoacoustic core ({TAC}) or a full device. With regard to the full devices, a further distinction was made between those models solved at the microscopic scale and those involving a macroscopic porous media approach to model the thermoacoustic core. This review shows that there is no nonlinear porous media model that can be applied to the stack, regenerator and heat exchangers of all thermoacoustic devices in oscillating ﬂows for each frequency, and that the eventual choice of turbulence model requires further studies.}
@@ -2847,8 +2769,8 @@
       \strng{authornamehash}{48bf40159630e509968800fc6153c146}
       \strng{authorfullhash}{48bf40159630e509968800fc6153c146}
       \strng{authorfullhashraw}{48bf40159630e509968800fc6153c146}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-1-4614-5540-0}
@@ -2896,8 +2818,8 @@
       \strng{authornamehash}{6c79ee43677ebb85e9ac68ace4205ec6}
       \strng{authorfullhash}{6c79ee43677ebb85e9ac68ace4205ec6}
       \strng{authorfullhashraw}{6c79ee43677ebb85e9ac68ace4205ec6}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{edition}{2nd ed}
@@ -3231,8 +3153,8 @@
       \strng{authornamehash}{41cc95799a0f28aa2df2b09fb6662927}
       \strng{authorfullhash}{41cc95799a0f28aa2df2b09fb6662927}
       \strng{authorfullhashraw}{41cc95799a0f28aa2df2b09fb6662927}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Etude de la convection naturelle turbulente en cavité verticale différentiellement chauffée: Analyse des structures et des transferts turbulents}
@@ -3262,8 +3184,8 @@
       \strng{authornamehash}{c0514c84d0d4de1194e09a6cf22b5d09}
       \strng{authorfullhash}{c0514c84d0d4de1194e09a6cf22b5d09}
       \strng{authorfullhashraw}{c0514c84d0d4de1194e09a6cf22b5d09}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0302-0738}
@@ -3612,8 +3534,8 @@
       \strng{authornamehash}{89f7c18cd59d7a6716c94e9eb65e1f43}
       \strng{authorfullhash}{89f7c18cd59d7a6716c94e9eb65e1f43}
       \strng{authorfullhashraw}{89f7c18cd59d7a6716c94e9eb65e1f43}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A combined experimental and theoretical investigation was conducted to examine the thermal conductivity of layers of wire mesh screen. Employing a carefully controlled sintering process, layers of sintered wire screen were examined experimentally. The experimental results indicate that the eﬀective thermal conductivity in the z-direction (i.e., normal to the plane of the wire screen layers) for single layer, inline structures and staggered multilayer wire screens is approximately 4–25\% and 6.4–35\% times that of the solid metal thermal conductivity, respectively. In addition to the conductivity of the base material, the contact conditions between the individual wires, as well as between the individual layers were found to be the most important factors in the determination of the eﬀective thermal conductivity. In parallel with the experimental investigation, an analytical model was developed and shown to accurately predict the eﬀective thermal conductivity of these layers as a function of the contact conditions between the wires, between the individual layers, and between the solid heating surface and the ﬁrst layer of screen. In addition to the contact conditions, this new model is strongly dependent on three geometric parameters: the mesh number, M, the wire diameter, d, and the compression factor, cf. Experimental data from this and other investigations were used to verify the accuracy of the model, which was shown to accurately predict the eﬀective conductivity as a function of the above mentioned parameters. In addition, a comprehensive literature review was performed and analyzed in order to further substantiate the validity and accuracy of this new model. The resulting conclusions highlight the importance of the contact conditions between the wires in the individual layers, and between the layers and the solid surface.}
@@ -3672,8 +3594,8 @@
       \strng{authornamehash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
       \strng{authorfullhash}{0d6a19e9eea62f9d3c65446d48ddd6c3}
       \strng{authorfullhashraw}{0d6a19e9eea62f9d3c65446d48ddd6c3}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0887-8722, 1533-6808}
@@ -3703,50 +3625,6 @@
       \endverb
       \verb{url}
       \verb https://arc.aiaa.org/doi/10.2514/3.825
-      \endverb
-    \endentry
-    \entry{swift_thermoacoustic_1988}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=52937719af970c9a64a91af3eeb87bce}{%
-           family={Swift},
-           familyi={S\bibinitperiod},
-           given={G.\bibnamedelimi W.},
-           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \strng{namehash}{52937719af970c9a64a91af3eeb87bce}
-      \strng{fullhash}{52937719af970c9a64a91af3eeb87bce}
-      \strng{fullhashraw}{52937719af970c9a64a91af3eeb87bce}
-      \strng{bibnamehash}{52937719af970c9a64a91af3eeb87bce}
-      \strng{authorbibnamehash}{52937719af970c9a64a91af3eeb87bce}
-      \strng{authornamehash}{52937719af970c9a64a91af3eeb87bce}
-      \strng{authorfullhash}{52937719af970c9a64a91af3eeb87bce}
-      \strng{authorfullhashraw}{52937719af970c9a64a91af3eeb87bce}
-      \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Thermoacoustic engines, or acoustic heat engines, are energy‐conversion devices that achieve simplicity and concomitant reliability by use of acoustic technology. Their efficiency can be a substantial fraction of Carnot’s efficiency. In thermoacoustic prime movers, heat flow from a high‐temperature source to a low‐temperature sink generates acoustic power (which may be converted to electric power using a transducer). In thermoacoustic heat pumps and refrigerators, acoustic power is used to pump heat from a low‐temperature source to a high‐temperature sink. This review teaches the fundamentals of thermoacoustic engines, by analysis, intuition, and example.}
-      \field{issn}{0001-4966}
-      \field{journaltitle}{The Journal of the Acoustical Society of America}
-      \field{month}{10}
-      \field{number}{4}
-      \field{title}{Thermoacoustic engines}
-      \field{volume}{84}
-      \field{year}{1988}
-      \field{pages}{1145\bibrangedash 1180}
-      \range{pages}{36}
-      \verb{doi}
-      \verb 10.1121/1.396617
-      \endverb
-      \verb{eprint}
-      \verb https://pubs.aip.org/asa/jasa/article-pdf/84/4/1145/11703730/1145\_1\_online.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1121/1.396617
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1121/1.396617
       \endverb
     \endentry
     \entry{lotton_transient_2009}{article}{}{}
@@ -3851,8 +3729,8 @@
       \strng{authornamehash}{64cf020202065fbd54d6c057d0425b75}
       \strng{authorfullhash}{64cf020202065fbd54d6c057d0425b75}
       \strng{authorfullhashraw}{64cf020202065fbd54d6c057d0425b75}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Etudes semi-analytiques des conditions de déclenchement et de saturation des auto-oscillations dans des moteurs thermoacoustiques de géométries diverses}

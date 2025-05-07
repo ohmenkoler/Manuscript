@@ -20,14 +20,24 @@
 %    \draw[<-] (\xone-.1,\height/2) -- ++(-\arrow,0) node[midway]{\shortstack{$p_e$\\$u_e$}};
 %    \draw[->] (\xtwo+.1,\height/2) -- ++(+\arrow,0) node[midway]{\shortstack{$p_s$\\$u_s$}};
 
-	\draw[<-] (\xone-.1,\height/3) -- ++(-\arrow,0) node[near end, below]{$p_e^+$};
-    \draw[->] (\xtwo+.1,\height/3) -- ++(+\arrow,0) node[near end, below]{$p_s^+$};
-    \draw[->] (\xone-.1,2*\height/3) -- ++(-\arrow,0) node[near end, above]{$p_e^-$};
-    \draw[<-] (\xtwo+.1,2*\height/3) -- ++(+\arrow,0) node[near end, above]{$p_s^-$};
-    
-    \draw[->] (-.2*\length,-.2*\height) --   ++(1.4*\length,0) node[right]{$x$};
+%	\draw[<-] (\xone-.1,\height/3) -- ++(-\arrow,0) node[near end, below]{$p_e^+$};
+%    \draw[->] (\xtwo+.1,\height/3) -- ++(+\arrow,0) node[near end, below]{$p_s^+$};
+%    \draw[->] (\xone-.1,2*\height/3) -- ++(-\arrow,0) node[near end, above]{$p_e^-$};
+%    \draw[<-] (\xtwo+.1,2*\height/3) -- ++(+\arrow,0) node[near end, above]{$p_s^-$};
+%    
+    \draw[->] (-.2*\length,-.2*\height) --   ++(1.4*\length,0) node[right]{$\mathbf e_x$};
     
     \draw[<->] (x1.east) -- (x2.west) node[midway, fill=white] {$L$};
+    
+    \draw (1.3*\length,.5*\height) node{$\equiv$};
+    \draw (1.5*\length,1*\height/4) -- ++(1cm,0) node(Tsw){} node(e2)[midway]{};
+    \draw[->] (1.5*\length,3*\height/4) -- ++(1cm,0) node(e1)[midway]{} node[midway,above]{$u_1^{(e)}$};
+    \draw ($(Tsw.center)+(0,-\height/4)$) rectangle ++(3*\height/4,\height) node[midway]{$[\mathbf T]$} node(Tne){};
+    \draw[->] ($(Tne.center)+(0,-\height/4)$) -- ++(1cm,0) node(Tsw){} node(s1)[midway]{} node[midway,above]{$u_1^{(s)}$};
+    \draw ($(Tne.center)+(0,-3*\height/4)$) -- ++(1cm,0) node(s2)[midway]{};
+    \draw[->] (e2.north) -- (e1.south) node[midway, left]{$p_1^{(e)}$};
+    \draw[->] (s2.north) -- (s1.south) node[midway, right]{$p_1^{(s)}$};
+    
     
 %    \draw (a2) node[above]{\bf (a)};
     

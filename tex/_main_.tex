@@ -243,6 +243,36 @@
 	\usetikzlibrary{mindmap}
 	\tikzset{>=latex}
 	\tikzset{arw/.style={>={latex[length=3mm,width=5mm]},line width=2mm,draw=gray}}
+	\tikzset{
+  % style to apply some styles to each segment of a path
+  on each segment/.style={
+    decorate,
+    decoration={
+      show path construction,
+      moveto code={},
+      lineto code={
+        \path [#1]
+        (\tikzinputsegmentfirst) -- (\tikzinputsegmentlast);
+      },
+      curveto code={
+        \path [#1] (\tikzinputsegmentfirst)
+        .. controls
+        (\tikzinputsegmentsupporta) and (\tikzinputsegmentsupportb)
+        ..
+        (\tikzinputsegmentlast);
+      },
+      closepath code={
+        \path [#1]
+        (\tikzinputsegmentfirst) -- (\tikzinputsegmentlast);
+      },
+    },
+  },
+  % style to add an arrow in the middle of a path
+  mid arrow/.style={postaction={decorate,decoration={
+        markings,
+        mark=at position .5 with {\arrow[#1]{latex}}
+      }}},
+}
 
 \usepackage[european,
 	american inductors,
@@ -360,7 +390,7 @@
 	{\scriptsize
 	\begin{tabular}{llr}
 	\textbf{D. \textsc{Baltéan-Carlès}} & Maîtresse de conférences HDR, LISN, Sorbonne Université & \textit{Rapporteure} \\
-	\textbf{F. \textsc{Lanzetta}} & Professeur des Universités, FEMTO-ST, Université \echaf{Marie et Louis Pasteur} & \textit{Rapporteur} \\
+	\textbf{F. \textsc{Lanzetta}} & Professeur des Universités, FEMTO-ST, Université Marie et Louis Pasteur & \textit{Rapporteur} \\
 	\textbf{R. \textsc{Keolian}} & Professeur \'Emérite, College of Engineering, University of Pennsylvania & \textit{Examinateur} \\
 %	\textbf{G. \textsc{Penelet}} & Professeur, LAUM, Le Mans Université & \textit{Examinateur} \\
 %	\textbf{I. \textsc{Ramadan}} & Maître de conférences, Institut PPRIME, Université de Poitiers & \textit{Examinateur} \\
@@ -433,7 +463,7 @@
 
 \input{Conclusion}
 
-\input{Perspectives}
+%\input{Perspectives}
 
 %---------------------------------------------------------------------%
 % APPENDICES

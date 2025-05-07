@@ -253,7 +253,8 @@ avec $v_1=0$ sur chaque surface. La solution $v_1$ de cette équation s'écrit
 qui fait intervenir les échanges d'énergie dans la couche limite visqueuse $\delta_\nu$ au travers de la fonction $h_\nu$. Les intégrations sur la section de pore par rapport à $y$ et $z$ donnent 
 
 \begin{equation}
-	\deriv p_1 = -\frac{i\omega \rho_0 \deriv x}{S(1-f_\nu)}u_1,
+	\deriv p_1 = -\frac{i\omega_1 \rho_0 \deriv x}{S(1-f_\nu)}u_1,
+	\label{eq:ThermoLin_dp1}
 \end{equation}
 où $f_\nu$ est la moyenne de $h_\nu$ sur la section. Les fonctions visqueuses sont définies en coordonnées polaires (en remplaçant les coordonnées transverses $y$ et $z$ par la coordonnée radiale $r=\sqrt{y^2+z^2}$) dans le cas de pores cylindriques par~\cite{arnott_general_1991}
 
@@ -271,9 +272,20 @@ avec $J_0$ et $J_1$ les fonctions de Bessel de première espèce, respectivement
 L'équation de la conservation de l'énergie est elle aussi réécrite avec les approximations des équations~\eqref{eq:variables_rott}, ce qui donne
 
 \begin{equation}
-	\rho_0 c_p (i\omega_1 T_1 + v_1\deriv_x T_0) - i\omega_1 p_1 = k[\partial^2_{yy} T_1 + \partial^2_{zz}T_1],\echaf{continuer}
+	\rho_0 c_p (i\omega_1 T_1 + v_1\deriv_x T_0) - i\omega_1 p_1 = k[\partial^2_{yy} T_1 + \partial^2_{zz}T_1].
 \end{equation}
 
+La solution $T_1$ de cette équation différentielle s'écrit
+\begin{equation}
+	T_1=\frac{1}{\rho_0 c_p}(1-h_\kappa)p_1 - \frac{1}{i \omega_1 S} \deriv_x [T_0] \frac{(1-h_\kappa) - \Prandtl(1-h_\nu)}{(1-f_\nu)(1-\Prandtl)}u_1,
+\end{equation}
+dont la moyenne sur la section vaut
+\begin{equation}
+	\left\langle T_1 \right\rangle=\frac{1}{\rho_0 c_p}(1-f_\kappa)p_1 - \frac{1}{i \omega_1 S} \deriv_x [T_0] \frac{(1-f_\kappa) - \Prandtl(1-f_\nu)}{(1-f_\nu)(1-\Prandtl)}u_1.
+	\label{eq:T_1_moyenne_fkappa}
+\end{equation}
+
+Ici, ce sont les fonctions thermiques qui apparaissent, qui sont définies par
 \begin{subequations}
 		\begin{align}
 			h_\kappa(r) &= \dfrac{J_0\left[(1-i)\dfrac{r}{\delta_\kappa}\right]}{J_0\left[(1-i)\dfrac{r_h}{\delta_\kappa}\right]},
@@ -284,8 +296,19 @@ L'équation de la conservation de l'énergie est elle aussi réécrite avec les 
 		\label{eq:FonctionsThermiques}
 \end{subequations}
 
-La théorie linéaire montre que le champ de pression acoustique au sein d'un matériau poreux est solution de l'équation de Helmholtz qui s'écrit~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
+Pour un gaz parfait, la relation entre les variables $p$, $\rho$ et $T$ moyennées sur la section s'écrit
+\begin{equation}
+	\left\langle \rho_1 \right\rangle = \frac{\rho_0}{p_0} \left\langle p_1 \right\rangle - \frac{\rho_0}{T_0} \left\langle T_1 \right\rangle,
+	\label{eq:GazParfait_notationDifferentielle}
+\end{equation}
+ce qui, en reportant le résultat de l'équation~\eqref{eq:GazParfait_notationDifferentielle} dans l'équation de conservation de la masse~\eqref{eq:ThermoLin_ConservMass} en tenant compte du résultat de l'équation~\eqref{eq:T_1_moyenne_fkappa}, donne
+\begin{equation}
+	\deriv u_1	= -\frac{i \omega_1 S \deriv x}{\gamma p_0}[1+(\gamma-1)f_\kappa]p_1 + \frac{f_\kappa - f_\nu}{(1-f_\nu)(1-\Prandtl)}\frac{\deriv T_0}{T_0}u_1.
+	\label{eq:ThermoLin_du1}
+\end{equation} 
 
+
+L'équation de Helmholtz dont le champ de pression est solution est obtenue en combinant les équations~\eqref{eq:ThermoLin_dp1} et \eqref{eq:ThermoLin_du1}, ce qui s'écrit~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
 \begin{equation}
 	\left[1+(\gamma-1)f_\kappa\right]p_1+\left(\frac{c_0}{\omega_1}\right)^2\deriv_x \big\{(1-f_\nu)\deriv_x [p_1]\big\} - \beta \left(\frac{c_0}{\omega_1}\right)^2 \frac{f_\kappa - f_\nu}{1-\Prandtl} \deriv_x [T_0]\ \deriv_x [p_1] = 0.
 	\label{eq:Rott_Swift_WaveEquation}
@@ -412,14 +435,14 @@ Ces matrices de transfert relient les pression et débit acoustiques de part et 
 
 \begin{equation}
     \begin{pmatrix}
-        p_s\\
-        u_s
+        p_1^{(s)}\\
+        u_1^{(s)}
     \end{pmatrix}=\begin{bmatrix}
         T_{pp} & T_{pu} \\
         T_{up} & T_{uu}
     \end{bmatrix}\begin{pmatrix}
-        p_e\\
-        u_e
+        p_1^{(e)}\\
+        u_1^{(e)}
     \end{pmatrix}.
     \label{eq:TMatrix_TppTuu}
 \end{equation}
@@ -555,12 +578,10 @@ u_e
 %    \item Génération d'harmoniques par les sources ? vérifier si superposition d'effet à 47 Hz avec 2x47 Hz etc.
 %\end{itemize}
 
-Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations spécialisés tels que \textsc{DeltaEC}, soit suffisante pour prédire le comportement des machines thermoacoustiques de même que leurs performances, de nombreux effets sont négligés~\cite{DeltaEC}. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible et que les températures le long des dimensions transverses du noyau peuvent être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faible que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.\echaf{à suivre}
+Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations spécialisés tels que \textsc{DeltaEC}, soit suffisante pour prédire le comportement des machines thermoacoustiques de même que leurs performances, de nombreux effets sont négligés~\cite{DeltaEC}. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est en trois dimensions, ce qui rend la théorie classique à une dimension insuffisant pour prendre en compte son influence sur la distribution de température. Il est par ailleurs assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible et que les températures le long des dimensions transverses du noyau peuvent être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faible que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.
 
 
 \section{Résultats antérieurs au doctorat}\label{chap:PresTacot_ResultatsATE}
-\echaf{Quelques résultats. À mettre dans l'intro I ?} \textcolor{purple}{Ces résultats arrivent trop tôt}
-
 Au démarrage de cette thèse, le réfrigérateur existe déjà puisque sa conception s'est faite dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Sa caractérisation est publiée \cite{ramadan_design_2021}, et il fait également l'objet d'études expérimentales~\cite{ramadan_experimental_2018, ramadan_experimental_2021, poignand_test-bench_2022} et  numériques~\cite{hireche_experimental_2020, baltean_gravity_2025}.\smallskip
 
 Les expériences réalisées avant le début de cette thèse sont faite en utilisant un noyau dont la porosité est $\Phi=\qty{75}{\percent}$. Il est immergé dans un mélange de gaz pressurisé à \qty{40}{\bar} et composé de \qty{70}{\percent} d'hélium et de \qty{30}{\percent} d'argon, car dans ces proportions le nombre de Prandtl du mélange est minimum \cite{belcher_working_1999}. Le modèle linéaire 1D réalisé avec le logiciel \textsc{DeltaEC} prédit les meilleurs performances à la fréquence de résonance du système $f=\qty{47}{\hertz}$, pour laquelle la longueur d'onde vaut $\lambda=\qty{11.7}{\meter}$, validant ainsi une des hypothèse de compacité acoustique du modèle de Swift. C'est par ailleurs la seule fréquence où l'impédance électrique de la source acoustique principale est supérieure à la limite basse admise par l'amplificateur qui l'alimente et qui vaut \qty{2}{\ohm}. Le déphasage inter-source est fixé à $\varphi_{2-1}=\ang{-60}$ pour toutes les expériences, car il s'agit de la valeur optimale pour maximiser le flux de chaleur $\dot Q_f$ extrait par l'échangeur froid, d'après les simulations réalisées sous le logiciel \textsc{DeltaEC}, et ce qui est confirmé par des expériences préliminaires.\smallskip
@@ -611,6 +632,6 @@ Le chapitre~\ref{chap:EtudeExpe} est dédié à l'approche expérimentale de la 
 
 Chap~\ref{chap:Conc} - \nameref{chap:Conc}.\smallskip
 
-\ref{chap:Persp} - \nameref{chap:Persp}.
+%\ref{chap:Persp} - \nameref{chap:Persp}.
 
 

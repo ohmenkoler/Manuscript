@@ -1,8 +1,10 @@
-\chapter{Conclusion générale}\label{chap:Conc}%\addcontentsline{toc}{chapter}{\nameref{chap:Conc}}
+\chapter{Conclusion et perspectives}\label{chap:Conc}%\addcontentsline{toc}{chapter}{\nameref{chap:Conc}}
 %\markboth{CONCLUSION}{}
 %\mylocaltoc
 
 %\section{Section}
+
+\section{Conclusion générale}
 
 %Cette thèse expérimentale porte sur un réfrigérateur thermoacoustique compact, conçu lors du projet ANR \textsc{Tacot}. Cette machine exploite les interactions entre des ondes sonores de fort niveau et un matériau poreux (appelé "régénérateur") pour générer un flux de chaleur le long de celui-ci. Un volume élémentaire de fluide subit un cycle thermodynamique causé par les oscillations de pression et de position. Cette machine a pour application industrielle prévue la climatisation automobile, et requiert donc une géométrie compacte. La cavité thermoacoustique contenant le noyau est coaxiale, avec face au piston de la source acoustique un guide d'onde 
 %
@@ -43,3 +45,93 @@ Des expériences sont menées à différentes amplitudes acoustiques, et avec di
 %    Des simulations par éléments finis plus sophistiquées avec une géométrie plus précise, des conditions aux frontières adaptées et des interfaces physiques améliorées
 %
 %Ce travail contribue significativement à la compréhension des phénomènes thermiques dans les systèmes thermoacoustiques compacts et ouvre la voie à l'optimisation de ces dispositifs pour des applications pratiques.
+
+
+
+\section{Perspectives}
+
+
+
+\subsection{Expérimentations supplémentaires}
+
+\subsubsection{\'Etudes avancées de la convection dans la cavité conique}
+La convection dans la cavité conique a été étudiée expérimentalement dans le chapitre~\ref{chap:EtudeExpe}. Cependant, l'instrumentation dans cette cavité ne comprend que quatre thermocouples, et une étude plus avancée, notamment des champs de vitesse dans cette cavité, serait intéressante pour évaluer les phénomènes de convection mis en évidence. En particulier, les conditions aux frontières sont très importantes dans la compréhension des mouvement de fluide dans la cavité~\cite{mergui_convection_1996}, et une version académique de celle-ci pourrait apporter beaucoup d'informations sur le comportement du fluide près des frontières.
+
+\subsubsection{\'Etudes avancées de la conduction dans le noyau}
+\paragraph{\'Etude de la conduction par les parois du noyau thermoacoustique}
+La conduction par les parois du noyau thermoacoustique est un facteur très important à prendre en compte. En effet, lorsque le réfrigérateur fonctionne et qu'un gradient de température s'établit le long du régénérateur, un flux de chaleur \og retour \fg{} de conduction apparaît dans le sens opposé au flux de chaleur thermoacoustique. Cependant, contrairement au matériau poreux qui compose le régénérateur, il n'est pas nécessaire que les parois soit conductrice de chaleur. Dans cette section, l'enceinte qui contient les disques de tissu métallique et qui est initialement usinée dans un cylindre d'acier inoxydable est remplacée par une pièce similaire imprimée en plastique. L'ABS est choisi pour la fabrication de ce nouveau contenant plutôt que le PLA, car ce dernier peut se ramollir sous l'action des températures atteintes dans certaines expériences, c'est-à-dire autour de \num{50} à \qty{60}{\degreeCelsius}. Dans le cas de l'ABS, cette température limite d'utilisation est élevée à \qty{100}{\degreeCelsius}.
+
+\paragraph{Conductivité de l'empilement de disques de tissus métalliques}
+La comparaison entre les simulation numériques et les expériences (voir les figures~\ref{fig:Comsol_CHXout_H1H2_Low} et \ref{fig:Comsol_CHXout_V1V2_Low}) montre que l'estimation de la conductivité d'après la définition de $\mathbf k_{\sf tissus}$ dans l'équation~\eqref{eq:ConductiviteTensiorielle} est incorrecte. En effet, la conductivité transverse est surestimée, et les termes extradiagonaux sont certainement non-nuls. Un travail avancé sur l'estimation de cette conductivité doit être fait, pour déterminer les coefficients d'une nouvelle matrice $\mathbf k_{\sf tissus}$ de la forme
+
+\begin{equation}
+	\mathbf k_{\sf tissus} = \begin{bmatrix}
+	k_{xx} & k_{xy} & k_{xz} \\
+	k_{yx} & k_{yy} & k_{yz} \\
+	k_{zx} & k_{zy} & k_{zz} 
+	\end{bmatrix}
+	\label{eq:ConductiviteTensorielle_FullAnisot}
+\end{equation}
+
+
+
+\subsubsection{\'Electroacoustique}
+
+Dans l'optique de poursuivre l'amélioration de cette pompe à chaleur thermoacoustique, l'aspect des sources acoustiques reste à considérer.
+
+\paragraph{Contrôle actif}
+Le champ acoustique doit être contrôlé avec précision, en particulier l'impédance acoustique et son déphasage au sein du matériau poreux. Dans l'état actuel de la machine, les sources acoustiques sont contrôlées manuellement, et le déphasage inter-sources acoustiques est réglé sur le générateur de signaux. Une étude de l'asservissement de la source secondaire au moyen d'un dispositif de traitement du signal en temps réel tel que le \textit{digital signal processor} ADAU1701 de SigmaDSP (figure~\ref{fig:ActiveControl_ADAU1701}) ou un Teensy~4.1 (figure~\ref{fig:ActiveControl_Teensy41}) est proposée pour la suite de cette thèse, pour atteindre le champ acoustique optimal.
+
+
+
+\begin{figure}[!ht]
+    \centering
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_ActiveControl_ADAU1701}
+		\tikz{\draw(0,0) node{\includegraphics[height=5cm]{../fig/fig_ActiveControl/ADAU1701}};}
+		\caption{}
+		\label{fig:ActiveControl_ADAU1701}
+	\end{subfigure}		
+	\begin{subfigure}{.47\textwidth}
+		\centering
+		\external{fig_ActiveControl_Teensy41}
+		\tikz{\draw(0,0) node{\includegraphics[height=5cm]{../fig/fig_ActiveControl/Teensy41}};}
+		\caption{}
+		\label{fig:ActiveControl_Teensy41}
+	\end{subfigure}	    
+    \caption{Dispositif de traitement du signal numérique en temps réel. \subref{fig:ActiveControl_ADAU1701} SigmaDSP ADAU1701 et \subref{fig:ActiveControl_Teensy41} Teensy 4.1}
+    \label{fig:ActiveControl}
+\end{figure}
+
+Ces cartes sont toutefois sources de retards : les différents calculs réalisés par le processeur, les filtres, les conversions analogique-numérique et numérique-analogique prennent du temps, mais il est possible d'atteindre des retards faibles de l'ordre de \qty{80}{\micro\second}, ce qui correspond à un déphasage de \ang{1.35} à la fréquence de fonctionnement du \textsc{Tacot}, \qty{47}{\hertz}. Cette faible valeur rend possible leur utilisation pour un contrôle du champ acoustique dans la cavité thermoacoustique.
+
+\paragraph{Remplacement des sources acoustiques}
+\subparagraph{Source principale}
+La source acoustique principale est un moteur linéaire. Ce type de source est à la fois onéreux et difficile à se procurer, c'est pourquoi il peut être intéressant d'étudier l'impact sur les performances d'une source alternative. En l'occurrence un haut-parleur du commerce Ciare CSW7012EVO. 
+
+\subparagraph{Source secondaire}
+Le rôle de la source acoustique secondaire est multiple, mais les performances de la machine pourrait être grandement améliorées en utilisant un haut-parleur plus puissant. Une idée serait de concevoir une source acoustique avec un aimant dont le champ magnétique est plus intense, et d'utiliser à la place du cône un piston en nid d'abeille, afin de réduire ses dimensions et ainsi, pouvoir augmenter son déplacement sans heurter l'échangeur ambiant qui se trouve juste en face.
+
+\subsection{Simulations par éléments finis avancées}
+\subsubsection{Géométrie}
+Les simulations présentées dans la section~\ref{chap:FEM} ne prennent en compte que la cavité d'adaptation d'impédance, le régénérateur solide et l'enceinte qui le contient. Ce choix permet de limiter les couplages thermiques et les difficultés de calcul qui les accompagnent, et font suite à une hypothèse formulée sur la prédominance de la conduction thermique dans le régénérateur sur les autres effets. Cela se manifeste par l'usage d'une condition adiabatique pour la paroi extérieure de l'enceinte. 
+
+Cependant, la présence de la boucle de rétroaction introduit un couplage entre cette paroi extérieure, et l'extérieur de la machine. Pour ajouter cette condition aux frontières du noyau, le domaine correspondant au fluide est étendu, pour englober la boucle de rétroaction, ainsi que l'espace situé entre le côté ambiant du noyau et la source acoustique secondaire. La géométrie de ce modèle avancée avec les conditions aux frontières correspondantes est dessinée sur la figure~\ref{fig:Geometrie_FeedbackLoop}.
+
+\begin{figure}[!ht]
+	\centering
+	\external{fig_Geometrie_FeedbackLoop}
+%	\externalremake
+	\input{../fig/fig_ConvNatComsol/tex/fig_Geometrie_FeedbackLoop}
+	\caption{Géométrie prenant en compte la boucle de rétroaction pour le modèle \textsc{Comsol}\textss\textregistered}
+	\label{fig:Geometrie_FeedbackLoop}
+\end{figure}
+
+\subsubsection{Conditions aux frontières adaptées}
+Les conditions aux frontières doivent être modifiées pour représenter le modèle. Les parois régénérateur-enceinte, et enceinte-boucle de rétroaction sont modélisées par une continuité des flux de chaleur et des températures, la paroi correspondant à l'échangeur ambiant est considérée comme une source de chaleur apportée par l'effet thermoacoustique, et les parois représentant les sources acoustiques sont traitées comme des parois adiabatiques.
+
+\subsubsection{Interface physique}
+Enfin, dans ce modèle, il serait également très intéressant de considérer les effets de la porosité sur le comportement du régénérateur, en particulier sur l'existence de circulations causées par la convection naturelle à l'intérieur du noyau. Cela se fait par l'interface \texttt{Brinkman equations (br)}, qui n'avait pas été incluse dans le modèle du paragraphe~\ref{chap:FEM} qui constituait une première approche.
+
+

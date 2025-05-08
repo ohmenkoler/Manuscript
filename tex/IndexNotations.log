@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  23 APR 2025 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  8 MAY 2025 17:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1449,120 +1449,6 @@ Overfull \hbox (17.77783pt too wide) in paragraph at lines 22--22
  []
 
 ! Misplaced alignment tab character &.
-l.23         $G$ &
-                   \echaf{?/m} & Gain thermoacoustique unitaire \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.23         $G$ & \echaf
-                         {?/m} & Gain thermoacoustique unitaire \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Missing character: There is no ? in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no m in font nullfont!
-! Misplaced alignment tab character &.
-l.23         $G$ & \echaf{?/m} &
-                                 Gain thermoacoustique unitaire \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no G in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 23--23
- []$\OML/cmm/m/it/10 G$ 
- []
-
-! Undefined control sequence.
-<recently read> \Grashof 
-                         
-l.24         $\Grashof
-                      $ & --- & Nombre de Grashof \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-l.24         $\Grashof$ &
-                          --- & Nombre de Grashof \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-! Misplaced alignment tab character &.
-l.24         $\Grashof$ & --- &
-                                Nombre de Grashof \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no N in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no G in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no f in font nullfont!
-! Misplaced alignment tab character &.
 l.25         $k_0$ &
                      \unit{\radian\per\meter} & Nombre d'onde sans perte \ec...
 I can't figure out why you would want to use a tab mark
@@ -2006,55 +1892,6 @@ Overfull \hbox (10.00003pt too wide) in paragraph at lines 28--28
  [][]$ 
  []
 
-! Undefined control sequence.
-<recently read> \Nusselt 
-                         
-l.29         $\Nusselt
-                      $ & --- & Nombre de Nusselt \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-l.29         $\Nusselt$ &
-                          --- & Nombre de Nusselt \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-! Misplaced alignment tab character &.
-l.29         $\Nusselt$ & --- &
-                                Nombre de Nusselt \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no N in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no N in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no t in font nullfont!
 ! Misplaced alignment tab character &.
 l.30         $p_0$ &
                      \unit{\pascal} & Pression statique dans le réfrigérat...
@@ -2195,58 +2032,6 @@ Missing character: There is no e in font nullfont!
 
 Overfull \hbox (9.51738pt too wide) in paragraph at lines 31--31
  []$\OML/cmm/m/it/10 p[]$ 
- []
-
-! Undefined control sequence.
-<recently read> \Peclet 
-                        
-l.32         $\Peclet
-                     $ & --- & Nombre de Péclet \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-l.32         $\Peclet$ &
-                         --- & Nombre de Péclet \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-! Misplaced alignment tab character &.
-l.32         $\Peclet$ & --- &
-                               Nombre de Péclet \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no N in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no P in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no t in font nullfont!
-
-Overfull \hbox (4.44444pt too wide) in paragraph at lines 32--32
- \/cmr/m/n/10 ^^Se 
  []
 
 ! Undefined control sequence.
@@ -3322,8 +3107,8 @@ Overfull \hbox (4.44444pt too wide) in paragraph at lines 46--46
  []
 
 ! Misplaced alignment tab character &.
-l.47         $Q_c$ &
-                     \unit{\watt} & Flux de chaleur extrait par l'eau circul...
+l.47         $\dot Q_c$ &
+                          \unit{\watt} & Flux de chaleur extrait par l'eau c...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3332,8 +3117,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.47         $Q_c$ & \unit
-                          {\watt} & Flux de chaleur extrait par l'eau circul...
+l.47         $\dot Q_c$ & \unit
+                               {\watt} & Flux de chaleur extrait par l'eau c...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3341,8 +3126,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.47         $Q_c$ & \unit{\watt
-                                } & Flux de chaleur extrait par l'eau circul...
+l.47         $\dot Q_c$ & \unit{\watt
+                                     } & Flux de chaleur extrait par l'eau c...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3350,8 +3135,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.47         $Q_c$ & \unit{\watt} &
-                                    Flux de chaleur extrait par l'eau circul...
+l.47         $\dot Q_c$ & \unit{\watt} &
+                                         Flux de chaleur extrait par l'eau c...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3419,7 +3204,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 
 Overfull \hbox (11.9793pt too wide) in paragraph at lines 47--47
- []$\OML/cmm/m/it/10 Q[]$ 
+ []$[]$ 
  []
 
 
@@ -3428,8 +3213,8 @@ Overfull \hbox (4.44444pt too wide) in paragraph at lines 47--47
  []
 
 ! Misplaced alignment tab character &.
-l.48         $Q_f$ &
-                     \unit{\watt} & Flux de chaleur apporté par les résist...
+l.48         $\dot Q_f$ &
+                          \unit{\watt} & Flux de chaleur apporté par les r�...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3438,8 +3223,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.48         $Q_f$ & \unit
-                          {\watt} & Flux de chaleur apporté par les résist...
+l.48         $\dot Q_f$ & \unit
+                               {\watt} & Flux de chaleur apporté par les r�...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3447,8 +3232,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.48         $Q_f$ & \unit{\watt
-                                } & Flux de chaleur apporté par les résist...
+l.48         $\dot Q_f$ & \unit{\watt
+                                     } & Flux de chaleur apporté par les r�...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3456,8 +3241,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.48         $Q_f$ & \unit{\watt} &
-                                    Flux de chaleur apporté par les résist...
+l.48         $\dot Q_f$ & \unit{\watt} &
+                                         Flux de chaleur apporté par les r�...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3532,7 +3317,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no d in font nullfont!
 
 Overfull \hbox (13.08963pt too wide) in paragraph at lines 48--48
- []$\OML/cmm/m/it/10 Q[]$ 
+ []$[]$ 
  []
 
 
@@ -3867,12 +3652,12 @@ Overfull \hbox (31.81946pt too wide) in paragraph at lines 59--59
  []
 
 
-Overfull \hbox (18.8056pt too wide) in paragraph at lines 59--59
+Overfull \hbox (30.1126pt too wide) in paragraph at lines 59--59
  \OML/cmm/m/it/10 '[] \OMS/cmsy/m/n/10 ^^@ 
  []
 
 
-Overfull \hbox (11.0278pt too wide) in paragraph at lines 59--59
+Overfull \hbox (22.3348pt too wide) in paragraph at lines 59--59
  \OML/cmm/m/it/10 '[]$ 
  []
 
@@ -5703,50 +5488,6 @@ Overfull \hbox (4.44444pt too wide) in paragraph at lines 91--91
  \/cmr/m/n/10 ^^Se 
  []
 
-
-
-
-! LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 		$
-        \square_p$ & Caractéristique du milieu poreux \\		
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[1
-! Undefined control sequence.
-<write> ...label{chap:IndexNotations}{{}{\thepage 
-                                                  }{}{}{}}
-l.92 		$
-        \square_p$ & Caractéristique du milieu poreux \\		
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\newlabel{chap:IndexNotations}{{}{}{}{}{}}
-! Undefined control sequence.
-<write> ...apter}{{chap:IndexNotations}}{\thepage 
-                                                  }{}\protected@file@percent }
-l.92 		$
-        \square_p$ & Caractéristique du milieu poreux \\		
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-\@writefile{toc}{\contentsline {chapter}{{chap:IndexNotations}}{}{}\protected@f
-ile@percent }
-{C:/Users/juliette utilisateur/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map
-}]
 ! Undefined control sequence.
 <recently read> \square 
                         
@@ -5806,6 +5547,50 @@ Overfull \hbox (4.44444pt too wide) in paragraph at lines 92--92
  \/cmr/m/n/10 ^^Se 
  []
 
+
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 ..._p$ & Caractéristique du milieu poreux \\
+                                                  		
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+! Undefined control sequence.
+<write> ...label{chap:IndexNotations}{{}{\thepage 
+                                                  }{}{}{}}
+l.92 ..._p$ & Caractéristique du milieu poreux \\
+                                                  		
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{chap:IndexNotations}{{}{}{}{}{}}
+! Undefined control sequence.
+<write> ...apter}{{chap:IndexNotations}}{\thepage 
+                                                  }{}\protected@file@percent }
+l.92 ..._p$ & Caractéristique du milieu poreux \\
+                                                  		
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\@writefile{toc}{\contentsline {chapter}{{chap:IndexNotations}}{}{}\protected@f
+ile@percent }
+{C:/Users/juliette utilisateur/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map
+}]
 ! Undefined control sequence.
 <recently read> \square 
                         
@@ -5946,11 +5731,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 59 strings out of 473523
- 942 string characters out of 5707334
- 409471 words of memory out of 5000000
- 23381 multiletter control sequences out of 15000+600000
+ 56 strings out of 473523
+ 922 string characters out of 5707334
+ 408471 words of memory out of 5000000
+ 23378 multiletter control sequences out of 15000+600000
  560110 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,6n,32p,220b,183s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 26i,5n,32p,220b,185s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!

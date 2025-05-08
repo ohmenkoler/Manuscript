@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  8 MAY 2025 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  9 MAY 2025 01:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2332,18 +2332,16 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 67.
- [2{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
-/iwona/ts1-iwona.enc}]) (Introduction.tex
+) (Introduction.tex
 
-[3]
-
-[4
-
-]
+[2{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
+iwona/ts1-iwona.enc}]
 Chapitre I.
 
 
-[5] (../fig/fig_PrincipeTA/tex/MoteurTA.tex
+[3
+
+] (../fig/fig_PrincipeTA/tex/MoteurTA.tex
 ===== Image 'external/fig_MoteurTA0' is up-to-date. ======
 ) (../fig/fig_PrincipeTA/tex/PaCTA.tex
 ===== Image 'external/fig_FrigoTA0' is up-to-date. ======
@@ -2365,17 +2363,17 @@ Chapitre I.
 ===== Image 'external/fig_4_StirlingDep20' is up-to-date. ======
 )
 
-[6
+[4
 
 ]
 
-[7{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
+[5{C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
 iwona/ex-iwona.enc} <./external/fig_MoteurTA0.pdf> <./external/fig_FrigoTA0.pdf
 > <./external/fig_1_BraytonDepComp0.pdf> <./external/fig_2_BraytonQfluidePlaque
 0.pdf> <./external/fig_3_BraytonDepDet0.pdf> <./external/fig_4_BraytonQPlaqueFl
 uide0.pdf>]
 
-[8 <./external/fig_1_StirlingComp0.pdf> <./external/fig_2_StirlingDep10.pdf> <.
+[6 <./external/fig_1_StirlingComp0.pdf> <./external/fig_2_StirlingDep10.pdf> <.
 /external/fig_3_StirlingDet0.pdf> <./external/fig_4_StirlingDep20.pdf>]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 229
 .
@@ -2385,26 +2383,13 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 229
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 
-[9]
+[7]
 
-[10] (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
-\openout5 = `external/fig_WavesInDuctPiece0.md5'.
-
-\openout5 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "external/fig_WavesInDuctPiece0" "\def\
-tikzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "external/fig_WavesInDuctPiece0" "\def\tikzexternalrealjob{_main_}\input{_main
-_}")...executed.
-
-\openout5 = `_main_.auxlock'.
-
+[8] (../fig/fig_WavesInDuctPiece/tex/fig_WavesInDuctPiece.tex
+===== Image 'external/fig_WavesInDuctPiece0' is up-to-date. ======
 )
 
-[11 <./external/fig_WavesInDuctPiece0.pdf>]
+[9 <./external/fig_WavesInDuctPiece0.pdf>]
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 608.
@@ -2416,26 +2401,26 @@ LaTeX Info: Symbol \textohm not provided by
 ===== Image 'external/fig_ATE_ProfilsCHX_5mm0' is up-to-date. ======
 
 
-[12 <./external/fig_CaractMachineATE0.pdf>]) (DispositifExpe.tex
+[10 <./external/fig_CaractMachineATE0.pdf>]) (DispositifExpe.tex
 
-[13 <./external/fig_ATE_ProfilsAX_5mm0.pdf> <./external/fig_ATE_ProfilsCHX_5mm0
+[11 <./external/fig_ATE_ProfilsAX_5mm0.pdf> <./external/fig_ATE_ProfilsCHX_5mm0
 .pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_ATE_ProfilsCHX_5mm0.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
 >]
 
-[14
+[12
 
 ]
 Chapitre II.
 
 
-[15] (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
+[13] (../fig/fig_TACOTSchematics/tex/fig_TACOTSchematics.tex
 ===== Image 'external/fig_SchemaGeneralTACOT0' is up-to-date. ======
 )
 
-[16
+[14
 
  <./external/fig_SchemaGeneralTACOT0.pdf>]
 ===== Image 'external/fig_TacotPhotosNoyau_AHX0' is up-to-date. ======
@@ -2447,11 +2432,11 @@ Chapitre II.
 ===== Image 'external/fig_SchemaNoyau0' is up-to-date. ======
 )
 
-[17 <./external/fig_TacotPhotosNoyau_AHX0.pdf> <./external/fig_TacotPhotosNoyau
+[15 <./external/fig_TacotPhotosNoyau_AHX0.pdf> <./external/fig_TacotPhotosNoyau
 _Regenerateur0.pdf> <./external/fig_TacotPhotosNoyau_CHX0.pdf> <./external/fig_
 PhotoNoyau0.pdf> <./external/fig_SchemaNoyau0.pdf>]
 
-[18] (../fig/fig_dKdV/tex/fig_dKdV.tex
+[16] (../fig/fig_dKdV/tex/fig_dKdV.tex
 ===== Image 'external/fig_dKdV0' is up-to-date. ======
 ) Excluding 'comment' comment.
 ===== Image 'external/fig_RegenOnly_DeltaEC_Schematics0' is up-to-date. ======
@@ -2753,17 +2738,17 @@ LaTeX Info: Symbol \textminus not provided by
 ===== Image 'external/fig_CHXSchema0' is up-to-date. ======
 
 
-[19 <./external/fig_dKdV0.pdf>]
+[17 <./external/fig_dKdV0.pdf>]
 
-[20 <./external/fig_RegenOnly_DeltaEC_Schematics0.pdf>]
+[18 <./external/fig_RegenOnly_DeltaEC_Schematics0.pdf>]
 (../fig/fig_TemperatureAHX_InOut/tex/fig_TemperatureAHX_InOut.tex
 ===== Image 'external/fig_TemperatureAHX_InOut0' is up-to-date. ======
 )
 
-[21 <./external/fig_DeltaEC_u_opt_Qth0.pdf> <./external/fig_DeltaEC_u_opt_COP0.
+[19 <./external/fig_DeltaEC_u_opt_Qth0.pdf> <./external/fig_DeltaEC_u_opt_COP0.
 pdf>]
 
-[22 <./external/fig_AHXSchema0.pdf> <./external/fig_CHXSchema0.pdf
+[20 <./external/fig_AHXSchema0.pdf> <./external/fig_CHXSchema0.pdf
 
 pdfTeX warning: pdflatex (file ./external/fig_CHXSchema0.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
@@ -2771,7 +2756,7 @@ ultiple pdfs with page group included in a single page
 LaTeX Info: Symbol \textohm not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 335.
-<../fig/fig_Capteurs/Sensors_updated2.pdf, id=1529, 1172.12906pt x 478.03593pt>
+<../fig/fig_Capteurs/Sensors_updated2.pdf, id=1521, 1172.12906pt x 478.03593pt>
 
 File: ../fig/fig_Capteurs/Sensors_updated2.pdf Graphic file (type pdf)
 <use ../fig/fig_Capteurs/Sensors_updated2.pdf>
@@ -2780,24 +2765,24 @@ t line 353.
 (pdftex.def)             Requested size: 469.18652pt x 191.34956pt.
 
 
-[23 <../fig/fig_Capteurs/Sensors_updated2.pdf>]
+[21 <../fig/fig_Capteurs/Sensors_updated2.pdf>]
 (../fig/fig_BancEssaisComplet/tex/BancEssaisComplet.tex
 ===== Image 'external/fig_BancEssaisComplet0' is up-to-date. ======
 )
 
-[24 <./external/fig_BancEssaisComplet0.pdf>]
+[22 <./external/fig_BancEssaisComplet0.pdf>]
 (../fig/fig_TCdansNoyau/tex/fig_TCdansNoyau.tex
 ===== Image 'external/fig_TCdansNoyau0' is up-to-date. ======
 ) (../fig/fig_PhotosPressionStatDyn/tex/fig_PhotosPressionStatDyn.tex
 ===== Image 'external/fig_PhotosPressionStatDyn0' is up-to-date. ======
 )
 
-[25 <./external/fig_TCdansNoyau0.pdf>]
+[23 <./external/fig_TCdansNoyau0.pdf>]
 ===== Image 'external/fig_SystemeAccroche_Machine0' is up-to-date. ======
 ===== Image 'external/fig_SystemeAccroche_Palan0' is up-to-date. ======
 
 
-[26 <./external/fig_PhotosPressionStatDyn0.pdf>]
+[24 <./external/fig_PhotosPressionStatDyn0.pdf>]
 (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH1.tex
 ===== Image 'external/fig_OrientationCore_H10' is up-to-date. ======
 ) (../fig/fig_OrientationCore/tex/subfig_OrientationCoreH2.tex
@@ -2808,10 +2793,10 @@ t line 353.
 ===== Image 'external/fig_OrientationCore_V20' is up-to-date. ======
 )
 
-[27 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroc
+[25 <./external/fig_SystemeAccroche_Machine0.pdf> <./external/fig_SystemeAccroc
 he_Palan0.pdf>]
 
-[28 <./external/fig_OrientationCore_H10.pdf> <./external/fig_OrientationCore_H2
+[26 <./external/fig_OrientationCore_H10.pdf> <./external/fig_OrientationCore_H2
 0.pdf> <./external/fig_OrientationCore_V10.pdf> <./external/fig_OrientationCore
 _V20.pdf>] (../fig/fig_TenuePressionStatique/tex/fig_TenuePressionStatique.tex
 ===== Image 'external/fig_TenuePressionStatique0' is up-to-date. ======
@@ -2821,39 +2806,39 @@ _V20.pdf>] (../fig/fig_TenuePressionStatique/tex/fig_TenuePressionStatique.tex
 ===== Image 'external/fig_COP_PressStatique0' is up-to-date. ======
 )
 
-[29 <./external/fig_TenuePressionStatique0.pdf>]
+[27 <./external/fig_TenuePressionStatique0.pdf>]
 (../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_TC.tex
 ===== Image 'external/fig_WaterOnly_TC0' is up-to-date. ======
 ) (../fig/fig_WaterOnlyExample/tex/fig_WaterOnly_PT.tex
 ===== Image 'external/fig_WaterOnly_PT0' is up-to-date. ======
 )
 
-[30 <./external/fig_Qc_PressStatique0.pdf> <./external/fig_COP_PressStatique0.p
+[28 <./external/fig_Qc_PressStatique0.pdf> <./external/fig_COP_PressStatique0.p
 df>]
 
-[31 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf>]
+[29 <./external/fig_WaterOnly_TC0.pdf> <./external/fig_WaterOnly_PT0.pdf>]
 (../fig/fig_AcouExample/tex/fig_AcouExample.tex
 ===== Image 'external/fig_AcouExample0' is up-to-date. ======
 ) (../fig/fig_Repetabilite_V1/tex/fig_Repetabilite_V1.tex
 ===== Image 'external/fig_Repetabilite_V10' is up-to-date. ======
 )
 
-[32 <./external/fig_AcouExample0.pdf> <./external/fig_Repetabilite_V10.pdf>]
+[30 <./external/fig_AcouExample0.pdf> <./external/fig_Repetabilite_V10.pdf>]
 Excluding 'comment' comment.
 
-[33] (../fig/fig_ConclusionChap2/tex/fig_ConclusionChap2.tex
+[31] (../fig/fig_ConclusionChap2/tex/fig_ConclusionChap2.tex
 ===== Image 'external/fig_ConclusionChap20' is up-to-date. ======
 )) (EnsembleSimus.tex
 
-[34 <./external/fig_ConclusionChap20.pdf>]
+[32 <./external/fig_ConclusionChap20.pdf>]
 Chapitre III.
 
 
-[35
+[33
 
 ]
 
-[36
+[34
 
 ] (../fig/fig_ConvNat2D/tex/fig_ConvNat2D_HorizDeltaT.tex
 ===== Image 'external/fig_ConvNat2D_HorizDeltaT0' is up-to-date. ======
@@ -2861,7 +2846,7 @@ Chapitre III.
 ===== Image 'external/fig_ConvNat2D_VertiDeltaT0' is up-to-date. ======
 )
 
-[37 <./external/fig_ConvNat2D_HorizDeltaT0.pdf> <./external/fig_ConvNat2D_Verti
+[35 <./external/fig_ConvNat2D_HorizDeltaT0.pdf> <./external/fig_ConvNat2D_Verti
 DeltaT0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
@@ -2937,7 +2922,7 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 138.
 
 
-[38]
+[36]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 199.
@@ -3000,8 +2985,8 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 199.
 
 
-[39]
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png, id=2169, 216.68954p
+[37]
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png, id=2162, 216.68954p
 t x 216.68954pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png Graphic file (t
 ype png)
@@ -3011,8 +2996,8 @@ png  used on input line 250.
 (pdftex.def)             Requested size: 216.68901pt x 216.68901pt.
 
 
-[40 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png>]
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png, id=2180, 44
+[38 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/Geometrie.png>]
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png, id=2173, 44
 9.5194pt x 88.04895pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png Graphic
  file (type png)
@@ -3020,7 +3005,7 @@ File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png Graphic
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_
 THBelow.png  used on input line 272.
 (pdftex.def)             Requested size: 449.51828pt x 88.04874pt.
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow.png, id=2181, 449
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow.png, id=2174, 449
 .5194pt x 87.6876pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow.png Graphic 
 file (type png)
@@ -3028,7 +3013,7 @@ file (type png)
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_T
 HBelow.png  used on input line 282.
 (pdftex.def)             Requested size: 449.51828pt x 87.68738pt.
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THBelow.png, id=2182, 44
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THBelow.png, id=2175, 44
 9.5194pt x 89.01254pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THBelow.png Graphic
  file (type png)
@@ -3046,11 +3031,11 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 325.
 
 
-[41 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png> <../fig
+[39 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow.png> <../fig
 /fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow.png> <../fig/fig_ConvNat
 Comsol_Resultats/ConeSeul/LargeBase_THBelow.png> <./external/_main_-figure0.pdf
 >]
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png, id=2219, 44
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png, id=2211, 44
 9.5194pt x 78.41295pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png Graphic
  file (type png)
@@ -3058,7 +3043,7 @@ File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png Graphic
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_
 THAbove.png  used on input line 343.
 (pdftex.def)             Requested size: 449.51828pt x 78.41273pt.
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove.png, id=2220, 449
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove.png, id=2212, 449
 .5194pt x 78.41295pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove.png Graphic 
 file (type png)
@@ -3066,7 +3051,7 @@ file (type png)
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_T
 HAbove.png  used on input line 352.
 (pdftex.def)             Requested size: 449.51828pt x 78.41273pt.
-<../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THAbove.png, id=2221, 44
+<../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THAbove.png, id=2213, 44
 9.5194pt x 78.7743pt>
 File: ../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THAbove.png Graphic
  file (type png)
@@ -3096,7 +3081,7 @@ LaTeX Info: Symbol \textminus not provided by
             Default family used instead on input line 399.
 
 
-[42 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png> <../fig
+[40 <../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove.png> <../fig
 /fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove.png> <../fig/fig_ConvNat
 Comsol_Resultats/ConeSeul/LargeBase_THAbove.png> <./external/_main_-figure1.pdf
 >]
@@ -3104,18 +3089,18 @@ Comsol_Resultats/ConeSeul/LargeBase_THAbove.png> <./external/_main_-figure1.pdf
 ===
 
 
-[43 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>]
+[41 <./external/fig_Comsol_ModeleSimplifie_Geometrie0.pdf>]
 Excluding 'comment' comment.
 
-[44] (../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex
+[42] (../fig/fig_SuperpositionComsol/tex/fig_SuperpositionComsol.tex
 ===== Image 'external/fig_SuperpositionComsol0' is up-to-date. ======
 ) (../fig/fig_ComsolThermalCondFront/tex/Rix_Ambiant.tex
 ===== Image 'external/fig_Comsol_TambiantRix0' is up-to-date. ======
 )
 
-[45 <./external/fig_SuperpositionComsol0.pdf> <./external/fig_Comsol_TambiantRi
+[43 <./external/fig_SuperpositionComsol0.pdf> <./external/fig_Comsol_TambiantRi
 x0.pdf>]
-<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png, id=2351,
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png, id=2344,
  224.7597pt x 224.7597pt>
 File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png Grap
 hic file (type png)
@@ -3123,7 +3108,7 @@ hic file (type png)
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorm
 e/H1_RIXTa.png  used on input line 589.
 (pdftex.def)             Requested size: 204.6029pt x 204.61052pt.
-<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa.png, id=2352,
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa.png, id=2345,
  224.7597pt x 224.7597pt>
 File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa.png Grap
 hic file (type png)
@@ -3134,7 +3119,7 @@ e/H2_RIXTa.png  used on input line 593.
 
 ===== Image 'external/_main_-figure2' is up-to-date. ======
 ===== Image 'external/_main_-figure3' is up-to-date. ======
-<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa.png, id=2355,
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa.png, id=2348,
  224.7597pt x 224.7597pt>
 File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V1_RIXTa.png Grap
 hic file (type png)
@@ -3142,7 +3127,7 @@ hic file (type png)
 Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorm
 e/V1_RIXTa.png  used on input line 653.
 (pdftex.def)             Requested size: 204.6029pt x 204.61052pt.
-<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa.png, id=2356,
+<../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa.png, id=2349,
  224.7597pt x 224.7597pt>
 File: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/V2_RIXTa.png Grap
 hic file (type png)
@@ -3154,42 +3139,40 @@ e/V2_RIXTa.png  used on input line 657.
 ===== Image 'external/_main_-figure5' is up-to-date. ======
 
 
-[46 <../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png> <../
+[44 <../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H1_RIXTa.png> <../
 fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme/H2_RIXTa.png> <./external/
 _main_-figure2.pdf> <./external/_main_-figure3.pdf> <../fig/fig_ConvNatComsol_R
 esultats/Cmap_T_Fleche_vNorme/V1_RIXTa.png> <../fig/fig_ConvNatComsol_Resultats
 /Cmap_T_Fleche_vNorme/V2_RIXTa.png> <./external/_main_-figure4.pdf> <./external
 /_main_-figure5.pdf>]
 
-[47]
+[45]
 (../fig/fig_Schema_FluxThermiquesNoyau_Gaelle/tex/fig_Schema_FluxThermiquesNoya
 u_Gaelle.tex
 ===== Image 'external/fig_Schema_FluxThermiquesNoyau_Gaelle0' is up-to-date. ==
 ====
 )
 
-[48]
+[46]
 
-[49 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
+[47 <./external/fig_Schema_FluxThermiquesNoyau_Gaelle0.pdf>]
 (../fig/fig_TemperatureCanisterConditionLimite/tex/fig_TemperatureCanisterCondi
 tionLimite.tex
 ===== Image 'external/fig_TemperatureCanisterConditionLimite0' is up-to-date. =
 =====
 )
 
-[50] (../fig/fig_TransitoireFit/tex/fig_TransitoireFit.tex
+[48] (../fig/fig_TransitoireFit/tex/fig_TransitoireFit.tex
 ===== Image 'external/fig_TransitoireFit0' is up-to-date. ======
 )
 
-[51 <./external/fig_TemperatureCanisterConditionLimite0.pdf>]
+[49 <./external/fig_TemperatureCanisterConditionLimite0.pdf>]
 
-[52 <./external/fig_TransitoireFit0.pdf>]
+[50 <./external/fig_TransitoireFit0.pdf>]
 
-[53]
+[51]
 
-[54]
-
-[55] (../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_Low.tex
+[52] (../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_Low.tex
 ===== Image 'external/fig_ExempleTransitoireH2_Low0' is up-to-date. ======
 ) (../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_Mid.tex
 ===== Image 'external/fig_ExempleTransitoireH2_Mid0' is up-to-date. ======
@@ -3197,58 +3180,215 @@ tionLimite.tex
 ===== Image 'external/fig_ExempleTransitoireH2_High0' is up-to-date. ======
 )
 
-[56 <./external/fig_ExempleTransitoireH2_Low0.pdf> <./external/fig_ExempleTrans
+[53]
+
+[54 <./external/fig_ExempleTransitoireH2_Low0.pdf> <./external/fig_ExempleTrans
 itoireH2_Mid0.pdf> <./external/fig_ExempleTransitoireH2_High0.pdf>])
 (EtudeExperimentale.tex
 
-[57]
+[55]
 
-[58
+[56
 
 ]
 Chapitre IV.
 
 
-[59] Excluding 'comment' comment.
-(../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR2.tex
-===== Image 'external/fig_PerfConvNat_COP_DR20' is up-to-date. ======
-) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR35.tex
-===== Image 'external/fig_PerfConvNat_COP_DR350' is up-to-date. ======
-)
-<./external/fig_OrientationCore_V10.pdf, id=2785, 151.00816pt x 188.30249pt>
-File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
-<use ./external/fig_OrientationCore_V10.pdf>
-Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
-line 222.
-(pdftex.def)             Requested size: 98.15413pt x 122.39516pt.
-<./external/fig_OrientationCore_V20.pdf, id=2786, 151.00816pt x 188.30249pt>
-File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
-<use ./external/fig_OrientationCore_V20.pdf>
-Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
-line 225.
-(pdftex.def)             Requested size: 98.15413pt x 122.39516pt.
-<./external/fig_OrientationCore_H10.pdf, id=2787, 123.73225pt x 196.82033pt>
-File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
-<use ./external/fig_OrientationCore_H10.pdf>
-Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
-line 228.
-(pdftex.def)             Requested size: 80.42499pt x 127.93169pt.
-<./external/fig_OrientationCore_H20.pdf, id=2788, 156.56793pt x 188.30249pt>
-File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
-<use ./external/fig_OrientationCore_H20.pdf>
-Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
-line 231.
-(pdftex.def)             Requested size: 101.76793pt x 122.39516pt.
+[57]
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 37.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 37.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 38.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 38.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 39.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 39.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 40.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 41.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 41.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 42.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 42.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 43.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 43.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 47.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 47.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 48.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 48.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 49.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 49.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 50.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 51.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 51.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 52.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 52.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 53.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 53.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 57.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 57.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 58.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 58.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 59.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 59.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 61.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 61.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 62.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 62.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 63.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 63.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 67.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 67.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 68.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 68.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 69.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 69.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 70.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 71.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 71.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 72.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 72.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 73.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 73.
 
 
-[60
+[58
 
 ]
 
-[61 <./external/fig_PerfConvNat_COP_DR20.pdf> <./external/fig_PerfConvNat_COP_D
-R350.pdf> <./external/fig_OrientationCore_V10.pdf> <./external/fig_OrientationC
-ore_V20.pdf> <./external/fig_OrientationCore_H10.pdf> <./external/fig_Orientati
-onCore_H20.pdf>] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa_DR2.tex
+[59] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_TaTf_DR2.tex
+===== Image 'external/fig_PerfConvNat_TaTf_DR20' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_TaTf_DR35.tex
+===== Image 'external/fig_PerfConvNat_TaTf_DR350' is up-to-date. ======
+)
+<./external/fig_OrientationCore_V10.pdf, id=2788, 151.00816pt x 188.30249pt>
+File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
+<use ./external/fig_OrientationCore_V10.pdf>
+Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
+line 135.
+(pdftex.def)             Requested size: 98.15413pt x 122.39516pt.
+<./external/fig_OrientationCore_V20.pdf, id=2789, 151.00816pt x 188.30249pt>
+File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
+<use ./external/fig_OrientationCore_V20.pdf>
+Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
+line 138.
+(pdftex.def)             Requested size: 98.15413pt x 122.39516pt.
+<./external/fig_OrientationCore_H10.pdf, id=2790, 123.73225pt x 196.82033pt>
+File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
+<use ./external/fig_OrientationCore_H10.pdf>
+Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
+line 141.
+(pdftex.def)             Requested size: 80.42499pt x 127.93169pt.
+<./external/fig_OrientationCore_H20.pdf, id=2791, 156.56793pt x 188.30249pt>
+File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
+<use ./external/fig_OrientationCore_H20.pdf>
+Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
+line 144.
+(pdftex.def)             Requested size: 101.76793pt x 122.39516pt.
+
+
+[60 <./external/fig_PerfConvNat_TaTf_DR20.pdf> <./external/fig_PerfConvNat_TaTf
+_DR350.pdf> <./external/fig_OrientationCore_V10.pdf> <./external/fig_Orientatio
+nCore_V20.pdf> <./external/fig_OrientationCore_H10.pdf> <./external/fig_Orienta
+tionCore_H20.pdf>] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa_DR2.tex
 ===== Image 'external/fig_PerfConvNat_Qa_DR20' is up-to-date. ======
 ) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa_DR35.tex
 ===== Image 'external/fig_PerfConvNat_Qa_DR350' is up-to-date. ======
@@ -3256,63 +3396,78 @@ onCore_H20.pdf>] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_Qa_DR2.tex
 File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
-line 271.
+line 261.
 (pdftex.def)             Requested size: 98.15413pt x 122.39516pt.
 File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
-line 274.
+line 264.
 (pdftex.def)             Requested size: 98.15413pt x 122.39516pt.
 File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
-line 277.
+line 267.
 (pdftex.def)             Requested size: 80.42499pt x 127.93169pt.
 File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
-line 280.
+line 270.
 (pdftex.def)             Requested size: 101.76793pt x 122.39516pt.
 
 
-[62 <./external/fig_PerfConvNat_Qa_DR20.pdf> <./external/fig_PerfConvNat_Qa_DR3
-50.pdf>] (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_TaTf_DR2.tex
-===== Image 'external/fig_PerfConvNat_TaTf_DR20' is up-to-date. ======
-) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_TaTf_DR35.tex
-===== Image 'external/fig_PerfConvNat_TaTf_DR350' is up-to-date. ======
+[61 <./external/fig_PerfConvNat_Qa_DR20.pdf> <./external/fig_PerfConvNat_Qa_DR3
+50.pdf>] Excluding 'comment' comment.
+(../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR2.tex
+===== Image 'external/fig_PerfConvNat_COP_DR20' is up-to-date. ======
+) (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR35.tex
+===== Image 'external/fig_PerfConvNat_COP_DR350' is up-to-date. ======
 )
 File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
-line 353.
+line 493.
 (pdftex.def)             Requested size: 98.15413pt x 122.39516pt.
 File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
-line 356.
+line 496.
 (pdftex.def)             Requested size: 98.15413pt x 122.39516pt.
 File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
-line 359.
+line 499.
 (pdftex.def)             Requested size: 80.42499pt x 127.93169pt.
 File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
-line 362.
+line 502.
 (pdftex.def)             Requested size: 101.76793pt x 122.39516pt.
 
 
-[63 <./external/fig_PerfConvNat_TaTf_DR20.pdf> <./external/fig_PerfConvNat_TaTf
-_DR350.pdf>] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
+[62 <./external/fig_PerfConvNat_COP_DR20.pdf> <./external/fig_PerfConvNat_COP_D
+R350.pdf>]
+
+[63] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_H1H20' is up-to-date. ======
 )
+File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
+<use ./external/fig_OrientationCore_H10.pdf>
+Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
+line 547.
+(pdftex.def)             Requested size: 61.86597pt x 98.40991pt.
+File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
+<use ./external/fig_OrientationCore_H20.pdf>
+Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
+line 551.
+(pdftex.def)             Requested size: 78.28377pt x 94.151pt.
 
-[64] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
+
+[64 <./external/fig_HeatOnly_CHXout_H1H20.pdf>]
+(../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_V1V20' is up-to-date. ======
 )
 
-[65 <./external/fig_HeatOnly_CHXout_H1H20.pdf>]
+[65 <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_H1H2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_H1H2_Mid.tex
@@ -3322,31 +3477,30 @@ _DR350.pdf>] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
 )
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 547.
+            Default family used instead on input line 626.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 547.
+            Default family used instead on input line 626.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 547.
-
-
-[66 <./external/fig_HeatOnly_CHXout_V1V20.pdf>]
-
-[67 <./external/fig_Acou_CHXout_H1H2_Low0.pdf> <./external/fig_Acou_CHXout_H1H2
-_Mid0.pdf> <./external/fig_Acou_CHXout_H1H2_High0.pdf>]
-(../fig/fig_ConvNatComsol_Resultats/tex/fig_Comsol_CHXout_H1H2_Low.tex
+            Default family used instead on input line 626.
+ (../fig/fig_ConvNatComsol_Resultats/tex/fig_Comsol_CHXout_H1H2_Low.tex
 ===== Image 'external/fig_Comsol_CHXout_H1H2_Low0' is up-to-date. ======
 )
 
-[68 <./external/fig_Comsol_CHXout_H1H2_Low0.pdf>]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 584.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 584.
+[66]
 
+[67 <./external/fig_Acou_CHXout_H1H2_Low0.pdf> <./external/fig_Acou_CHXout_H1H2
+_Mid0.pdf> <./external/fig_Acou_CHXout_H1H2_High0.pdf>]
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 663.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 663.
+
+
+[68 <./external/fig_Comsol_CHXout_H1H2_Low0.pdf>]
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Low.tex
 ===== Image 'external/fig_Acou_CHXout_V1V2_Low0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXout_V1V2_Mid.tex
@@ -3356,13 +3510,32 @@ LaTeX Info: Symbol \textminus not provided by
 )
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 633.
+            Default family used instead on input line 712.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 633.
+            Default family used instead on input line 712.
  (../fig/fig_ConvNatComsol_Resultats/tex/fig_Comsol_CHXout_V1V2_Low.tex
 ===== Image 'external/fig_Comsol_CHXout_V1V2_Low0' is up-to-date. ======
 )
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 740.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 740.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 740.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 740.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 740.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 740.
+
 
 [69]
 
@@ -3370,56 +3543,37 @@ LaTeX Info: Symbol \textminus not provided by
 _Mid0.pdf> <./external/fig_Acou_CHXout_V1V2_High0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 661.
+            Default family used instead on input line 749.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 661.
+            Default family used instead on input line 749.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 661.
+            Default family used instead on input line 749.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 661.
+            Default family used instead on input line 749.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 661.
+            Default family used instead on input line 749.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 661.
+            Default family used instead on input line 749.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 670.
+            Default family used instead on input line 749.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 670.
+            Default family used instead on input line 749.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 670.
+            Default family used instead on input line 753.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 670.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 670.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 670.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 670.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 670.
+            Default family used instead on input line 753.
 
 
 [71 <./external/fig_Comsol_CHXout_V1V2_Low0.pdf>]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 674.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 674.
-
 (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXin_H1H2.tex
 ===== Image 'external/fig_HeatOnly_CHXin_H1H20' is up-to-date. ======
 ) (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_Regmid_H1H2.tex
@@ -3430,12 +3584,12 @@ LaTeX Info: Symbol \textminus not provided by
 File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
-line 723.
+line 802.
 (pdftex.def)             Requested size: 61.86597pt x 98.40991pt.
 File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
-line 727.
+line 806.
 (pdftex.def)             Requested size: 78.28377pt x 94.151pt.
 
 
@@ -3453,12 +3607,12 @@ line 727.
 File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
-line 790.
+line 869.
 (pdftex.def)             Requested size: 75.50389pt x 94.151pt.
 File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
-line 794.
+line 873.
 (pdftex.def)             Requested size: 75.50389pt x 94.151pt.
 
 
@@ -3476,12 +3630,12 @@ line 794.
 File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
-line 856.
+line 935.
 (pdftex.def)             Requested size: 61.86597pt x 98.40991pt.
 File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
-line 860.
+line 939.
 (pdftex.def)             Requested size: 78.28377pt x 94.151pt.
 
 
@@ -3491,7 +3645,7 @@ line 860.
 Low0.pdf> <./external/fig_Acou_AHXin_H1H2_Low0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 873.
+            Default family used instead on input line 952.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_Low.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_Low0' is up-to-date. ======
@@ -3503,28 +3657,28 @@ LaTeX Info: Symbol \textminus not provided by
 File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
-line 918.
+line 997.
 (pdftex.def)             Requested size: 75.50389pt x 94.151pt.
 File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
-line 922.
+line 1001.
 (pdftex.def)             Requested size: 75.50389pt x 94.151pt.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 931.
+            Default family used instead on input line 1010.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 931.
+            Default family used instead on input line 1010.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 931.
+            Default family used instead on input line 1010.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 931.
+            Default family used instead on input line 1010.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 931.
+            Default family used instead on input line 1010.
 
 
 [78]
@@ -3546,12 +3700,12 @@ Low0.pdf> <./external/fig_Acou_AHXin_V1V2_Low0.pdf>]
 File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
-line 996.
+line 1075.
 (pdftex.def)             Requested size: 61.86597pt x 98.40991pt.
 File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
-line 1000.
+line 1079.
 (pdftex.def)             Requested size: 78.28377pt x 94.151pt.
 
 
@@ -3565,12 +3719,12 @@ Mid0.pdf> <./external/fig_Acou_AHXin_H1H2_Mid0.pdf>]
 File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
-line 1039.
+line 1118.
 (pdftex.def)             Requested size: 75.50389pt x 94.151pt.
 File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
-line 1043.
+line 1122.
 (pdftex.def)             Requested size: 75.50389pt x 94.151pt.
  (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_Mid.tex
 ===== Image 'external/fig_Acou_Regmid_V1V2_Mid0' is up-to-date. ======
@@ -3579,25 +3733,24 @@ line 1043.
 )
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 1072.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 1076.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 1076.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 1076.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 1076.
+            Default family used instead on input line 1151.
 
 
-[83]
-
-[84 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid_V1V2_
+[83 <./external/fig_Acou_CHXin_V1V2_Mid0.pdf> <./external/fig_Acou_Regmid_V1V2_
 Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_Mid0.pdf>]
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 1155.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 1155.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 1155.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 1155.
+
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_H1H2_High.tex
 ===== Image 'external/fig_Acou_CHXin_H1H2_High0' is up-to-date. ======
 ) (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_H1H2_High.tex
@@ -3608,32 +3761,34 @@ Mid0.pdf> <./external/fig_Acou_AHXin_V1V2_Mid0.pdf>]
 File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input 
-line 1123.
+line 1202.
 (pdftex.def)             Requested size: 61.86597pt x 98.40991pt.
 File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input 
-line 1127.
+line 1206.
 (pdftex.def)             Requested size: 78.28377pt x 94.151pt.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 1135.
+            Default family used instead on input line 1214.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 1135.
+            Default family used instead on input line 1214.
 
+
+[84]
 
 [85 <./external/fig_Acou_CHXin_H1H2_High0.pdf> <./external/fig_Acou_Regmid_H1H2
 _High0.pdf> <./external/fig_Acou_AHXin_H1H2_High0.pdf>]
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 1139.
+            Default family used instead on input line 1218.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 1139.
+            Default family used instead on input line 1218.
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 1139.
+            Default family used instead on input line 1218.
 
 (../fig/fig_ConvNat_Acou/tex/fig_Acou_CHXin_V1V2_High.tex
 ===== Image 'external/fig_Acou_CHXin_V1V2_High0' is up-to-date. ======
@@ -3641,12 +3796,12 @@ LaTeX Info: Symbol \textminus not provided by
 File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input 
-line 1163.
+line 1242.
 (pdftex.def)             Requested size: 75.50389pt x 94.151pt.
 File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input 
-line 1167.
+line 1246.
 (pdftex.def)             Requested size: 75.50389pt x 94.151pt.
  (../fig/fig_ConvNat_Acou/tex/fig_Acou_Regmid_V1V2_High.tex
 ===== Image 'external/fig_Acou_Regmid_V1V2_High0' is up-to-date. ======
@@ -3655,23 +3810,22 @@ line 1167.
 )
 LaTeX Info: Symbol \textminus not provided by
             font family iwonal in TS1 encoding.
-            Default family used instead on input line 1193.
+            Default family used instead on input line 1272.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 1276.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 1276.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 1276.
 
 
 [86]
 
 [87 <./external/fig_Acou_CHXin_V1V2_High0.pdf> <./external/fig_Acou_Regmid_V1V2
-_High0.pdf> <./external/fig_Acou_AHXin_V1V2_High0.pdf>]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 1197.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 1197.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 1197.
-) (Conclusion.tex
+_High0.pdf> <./external/fig_Acou_AHXin_V1V2_High0.pdf>]) (Conclusion.tex
 
 [88]
 Chapitre V.
@@ -3854,169 +4008,12 @@ been already used, duplicate ignored
 l.63 \end{longtable}
                      [9
 
-]
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 143.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 143.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 144.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 144.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 145.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 145.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 146.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 147.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 147.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 148.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 148.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 149.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 149.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 153.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 153.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 154.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 154.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 155.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 155.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 156.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 157.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 157.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 158.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 158.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 159.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 159.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 163.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 163.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 164.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 164.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 165.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 165.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 167.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 167.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 168.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 168.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 169.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 169.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 173.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 173.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 174.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 174.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 175.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 175.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 176.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 177.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 177.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 178.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 178.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 179.
-LaTeX Info: Symbol \textminus not provided by
-            font family iwonal in TS1 encoding.
-            Default family used instead on input line 179.
- [10])
+])
 
-[11]
-
-[12
-
-]
+[10]
 
 [1
+
 
 ]
 
@@ -4034,17 +4031,17 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `_main_.out' has not changed.
-(rerunfilecheck)             Checksum: 7BB91C082AC77E3F4FACE0CF56EC4FA1;21485.
+(rerunfilecheck)             Checksum: 752A813481E95615369C11603198E86B;21488.
 Package logreq Info: Writing requests to '_main_.run.xml'.
 \openout1 = `_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  79445 strings out of 473523
- 2037211 string characters out of 5707334
- 3289645 words of memory out of 5000000
- 100703 multiletter control sequences out of 15000+600000
- 740420 words of font info for 198 fonts, out of 8000000 for 9000
+ 2037245 string characters out of 5707334
+ 3275739 words of memory out of 5000000
+ 100705 multiletter control sequences out of 15000+600000
+ 743064 words of font info for 199 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,16n,159p,3001b,2964s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -4052,7 +4049,7 @@ pdfTeX warning (dest): name{table.D.1} has been referenced but does not exist,
 replaced by a fixed one
 
 
-pdfTeX warning (dest): name{table.D.2} has been referenced but does not exist, 
+pdfTeX warning (dest): name{table.4.1} has been referenced but does not exist, 
 replaced by a fixed one
 
  <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e
@@ -4072,9 +4069,9 @@ sateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonam.pfb><C:/U
 sers/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwo
 na/iwonami.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on _main_.pdf (118 pages, 33137072 bytes).
+Output written on _main_.pdf (116 pages, 33137816 bytes).
 PDF statistics:
- 4918 PDF objects out of 5155 (max. 8388607)
- 522 named destinations out of 1000 (max. 500000)
+ 4916 PDF objects out of 5155 (max. 8388607)
+ 520 named destinations out of 1000 (max. 500000)
  1545 words of extra memory for PDF output out of 10000 (max. 10000000)
 

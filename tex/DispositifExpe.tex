@@ -242,7 +242,7 @@ Pour déterminer l'amplitude et la phase du débit $u_1$ dans le cas du noyau ut
 		\caption{}
 		\label{fig:DeltaEC_u_opt_COP}
 	\end{subfigure}  
-    \caption{Valeurs \subref{fig:DeltaEC_u_opt_Qth} du flux de chaleur $\dot Q_f$ extrait par l'échangeur froid, et \subref{fig:DeltaEC_u_opt_COP} du coefficient de performance $\COP=\nicefrac{Q_f}{p_1 u_1}$, en fonction de l'amplitude et la phase du débit acoustique $u_1$.}
+    \caption{Valeurs numériques \subref{fig:DeltaEC_u_opt_Qth} du flux de chaleur $\dot Q_f$ extrait par l'échangeur froid, et \subref{fig:DeltaEC_u_opt_COP} du coefficient de performance $\COP=\nicefrac{Q_f}{p_1 u_1}$ obtenues avec le logiciel \textsc{DeltaEC}, en fonction de l'amplitude et la phase du débit acoustique $u_1$.}
     \label{fig:DeltaEC_u_opt}
 \end{figure}
 
@@ -315,7 +315,7 @@ L'architecture proposée pour l'échangeur est représentée sur la figure~\ref{
 	\external{fig_TemperatureAHX_InOut}
 %	\externalremake
 	\input{../fig/fig_TemperatureAHX_InOut/tex/fig_TemperatureAHX_InOut}
-	\caption{\'Evolution temporelle des températures de part et d'autre de l'échangeur ambiant dans le cas d'une expérience à haute amplitude acoustique.}
+	\caption{\'Evolution temporelle des températures de part et d'autre de l'échangeur ambiant (thermocouples TC~\numlist{10;11;12} à l'intérieur du noyau, \numlist{13;14;15} à l'extérieur) dans le cas d'une expérience à haute amplitude acoustique.}
 	\label{fig:TemperatureAHX_InOut}
 \end{figure}
 
@@ -327,7 +327,7 @@ Au final, en mesurant la différence de température de l'eau entre l'entrée et
 \end{equation}
 où $\Delta T^{(w)}$ représente la différence de température d'eau entre la sortie et l'entrée de la conduite dans l'échangeur ambiant.\bigskip
 
-Pour vérifier le bon fonctionnement de l'échangeur, les températures de fluide de part et d'autre de celui-ci sont donnés par la figure~\ref{fig:AcouExample}, c'est-à-dire les relevés des thermocouples \numlist{10;11;12} (voir la figure~\ref{fig:TCdansNoyau} pour l'emplacement des thermocouples) placés à l'intérieur du noyau et qui indiquent une augmentation de l'ordre de \qty{20}{\degreeCelsius} par rapport à l'état initial, et les thermocouples \numlist{13;14;15} placés de l'autre côté de l'échangeur et dont la température n'augmente que de \qty{5}{\degreeCelsius} durant l'expérience.
+Pour vérifier le bon fonctionnement de l'échangeur, les températures de fluide de part et d'autre de celui-ci sont donnés par la figure~\ref{fig:TemperatureAHX_InOut}, c'est-à-dire les relevés des thermocouples \numlist{10;11;12} (voir la figure~\ref{fig:TCdansNoyau} pour l'emplacement des thermocouples) placés à l'intérieur du noyau et qui indiquent une augmentation de l'ordre de \qty{20}{\degreeCelsius} par rapport à l'état initial, et les thermocouples \numlist{13;14;15} placés de l'autre côté de l'échangeur et dont la température n'augmente que de \qty{5}{\degreeCelsius} durant l'expérience.
 
 \subparagraph{\'Echangeur de chaleur froid} \label{chap:DispExpe_CHX}
 La caractérisation des performances du réfrigérateur, comme la capacité de refroidissement et le coefficient de performances, repose sur la mesure de la puissance à fournir pour atteindre une certaine température et à s'y stabiliser, et c'est à l'échangeur de chaleur froid présenté sur la figure~\ref{fig:TacotPhotosNoyau_CHX} d'agir comme une charge thermique.

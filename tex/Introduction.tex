@@ -2,40 +2,42 @@
 %\markboth{INTRODUCTION}{}
 \mylocaltoc
 
-\section{Revue bibliographique}
-
-\begin{itemize}
-%    \item Théorie linéaire de Rott : \cite{rott_damped_1969, rott_thermally_1973, rott_thermally_1975, rott_thermally_1976, zouzoulas_thermally_1976, rott_thermoacoustics_1980, muller_thermally_1983} 
-%    \item $f_\nu$ et $f_\kappa$ : \cite{swift_thermoacoustics_2017,di_giulio_wire_2023}
-    \item Tortuosité et matériaux poreux : \cite{johnson_theory_1987, drummond_laminar_1984}
-%    \item Phase optimale : \cite{poignand_etude_2006}
-    \item Thermocouples dans noyau TA : \cite{duffourd_refrigerateur_2001, penelet_etude_2004}
-    \item Bilan de chaleur dans coeur TA : \cite{penelet_etude_2004}
-%    \item Mélange de gaz : \cite{belcher_working_1999}
-%    \item Géométrie coaxiale : \cite{poignand_analysis_2013, poignand_thermoacoustic_2011, tijani_study_2008, ramadan_design_2021}
-%    \item Géométrie compacte : \cite{poignand_etude_2006}
-    \item Convection naturelle : \cite{ross_influence_2003, hireche_numerical_2019, pan_visualization_2012, bianchi_transferts_2004, babaei_investigation_2010, gardner_cascade_2003}
-    \item Convection naturelle dans les poreux : \cite{shiina_critical_2010, richard_critere_1981, horton_convection_1945}
-%    \item Streaming : \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}
-    \item Analogies électroac en TA : \cite{wakeland_use_2000, backhaus_thermoacoustic-stirling_2000, poignand_analysis_2013}
-%    \item Electroac générale : \cite{rossi_electroacoustique_1986, novak_measurement_2019}
-%    \item Pertes latérales : \cite{guedra_etudes_2012}
-    \item Non uniformité de température sur la section : \cite{penelet_etude_2004}
-%    \item Conduction dans les stack et meshgrids : \cite{hsu_effective_1996, li_effective_2006, g_correlations_2022}
-\end{itemize}
+%\section{Revue bibliographique}
+%
+%\begin{itemize}
+%%    \item Théorie linéaire de Rott : \cite{rott_damped_1969, rott_thermally_1973, rott_thermally_1975, rott_thermally_1976, zouzoulas_thermally_1976, rott_thermoacoustics_1980, muller_thermally_1983} 
+%%    \item $f_\nu$ et $f_\kappa$ : \cite{swift_thermoacoustics_2017,di_giulio_wire_2023}
+%    \item Tortuosité et matériaux poreux : \cite{johnson_theory_1987, drummond_laminar_1984}
+%%    \item Phase optimale : \cite{poignand_etude_2006}
+%    \item Thermocouples dans noyau TA : \cite{duffourd_refrigerateur_2001, penelet_etude_2004}
+%    \item Bilan de chaleur dans coeur TA : \cite{penelet_etude_2004}
+%%    \item Mélange de gaz : \cite{belcher_working_1999}
+%%    \item Géométrie coaxiale : \cite{poignand_analysis_2013, poignand_thermoacoustic_2011, tijani_study_2008, ramadan_design_2021}
+%%    \item Géométrie compacte : \cite{poignand_etude_2006}
+%    \item Convection naturelle : \cite{ross_influence_2003, hireche_numerical_2019, pan_visualization_2012, bianchi_transferts_2004, babaei_investigation_2010, gardner_cascade_2003}
+%    \item Convection naturelle dans les poreux : \cite{shiina_critical_2010, richard_critere_1981, horton_convection_1945}
+%%    \item Streaming : \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}
+%    \item Analogies électroac en TA : \cite{wakeland_use_2000, backhaus_thermoacoustic-stirling_2000, poignand_analysis_2013}
+%%    \item Electroac générale : \cite{rossi_electroacoustique_1986, novak_measurement_2019}
+%%    \item Pertes latérales : \cite{guedra_etudes_2012}
+%    \item Non uniformité de température sur la section : \cite{penelet_etude_2004}
+%%    \item Conduction dans les stack et meshgrids : \cite{hsu_effective_1996, li_effective_2006, g_correlations_2022}
+%\end{itemize}
 
 \section{Contexte du travail}
-Ce travail de thèse a été mené entre janvier 2022 et juin 2025 au sein de l'Institut PPRIME - UPR3346 de Poitiers sous la direction de Hélène Bailliet, maîtresse de conférences HDR, et de Jean-Christophe Valière, professeur des universités, et Gaëlle Poignand, ingénieure d'étude au Laboratoire d'Acoustique de l'Université du Mans - UMR6613, dans le cadre d'un projet de recherche financé par le ministère de l'enseignement supérieur et de la recherche. Dans ces deux unités, les machines thermoacoustiques constitue une parties des thématiques de recherche, et notamment l'étude de la réfrigération thermoacoustique compacte.
+Ce travail de thèse a été mené entre janvier 2022 et juin 2025 au sein de l'Institut PPRIME - UPR3346 de Poitiers sous la direction de Hélène Bailliet, maîtresse de conférences HDR, et de Jean-Christophe Valière, professeur des universités, et Gaëlle Poignand, ingénieure d'étude au Laboratoire d'Acoustique de l'Université du Mans - UMR6613, dans le cadre d'un projet de recherche financé par le ministère de l'enseignement supérieur et de la recherche. Dans ces deux unités, les machines thermoacoustiques constitue une parties des thématiques de recherche, et notamment l'étude de la réfrigération thermoacoustique compacte.\medskip
 
-Ce projet de thèse fait suite au projet ANR \textsc{TACOT}~\cite{ANR_thermo-acoustic_2019} \echaf{dans lequel}
+Ce projet de thèse fait suite au projet ANR \textsc{TACOT}~\cite{ANR_thermo-acoustic_2019, ramadan_design_2021} dans lequel un réfrigérateur thermoacoustique coaxial compact a été mis au point. La présentation détaillée de cette machine, qui peut extraire \qty{290}{\watt} à la source froide dont la température est \qty{13.3}{\degreeCelsius}, avec un coefficient de performance de \num{1.5}, est faite dans le chapitre \ref{chap:DispositifExpe} dédié au dispositif expérimental utilisé lors de ce doctorat.\medskip
+
+Avant de commencer l'étude de la problématique de cette thèse qui porte sur les effets de la convection naturelle au sein du réfrigérateur, quelques bases de thermoacoustique issues de la théorie linéaire de Rott~\cite{rott_damped_1969, rott_thermoacoustics_1980} sont rappelées. Les limites pour le cas de cette étude des effets de convection sont exposés, et un plan de manuscrit pour comprendre leur manifestation est proposé.
 
 \section{Bases de thermoacoustique}
 \subsection{Concepts généraux}
-Les machines thermoacoustique utilisent les interactions visqueuses et thermiques entre un gaz et un matériau solide poreux ou d’un empilement de plaques (\textit{stack} en anglais) placé dedans lors d’un cycle de compression-détente de ce gaz. En particulier, les pression, volume et température, qui sont liées par les lois thermodynamiques, sont des grandeurs d’intérêt en thermoacoustique dont la théorie linéaire est en grande partie écrite par Rott et Swift au cours des années 1980 \cite{rott_damped_1969, rott_thermally_1973, rott_thermally_1975, rott_thermally_1976, zouzoulas_thermally_1976, rott_thermoacoustics_1980, muller_thermally_1983}
+Les machines thermoacoustiques utilisent les interactions visqueuses et thermiques entre un gaz et un matériau solide poreux ou un empilement de plaques (\textit{stack} en anglais) placé à l'intérieur lors d’un cycle de compression-détente de ce gaz. En particulier, les pression, volume et température, qui sont liées par les lois thermodynamiques, sont des grandeurs d’intérêt en thermoacoustique dont la théorie linéaire est en grande partie écrite par Rott et Swift au cours des années 1980 \cite{rott_damped_1969, rott_thermally_1973, rott_thermally_1975, rott_thermally_1976, zouzoulas_thermally_1976, rott_thermoacoustics_1980, muller_thermally_1983}
 
 Deux schémas de principe des machines thermoacoustiques sont présentés figure~\ref{fig:MoteurVSFrigoTA}. Le mode moteur (figure~\ref{fig:MoteurTA}) transforme l’énergie thermique en énergie acoustique, tandis que le mode pompe à chaleur et réfrigérateur (figure~\ref{fig:FrigoTA}) génère un flux de chaleur sous l'action d'une énergie acoustique. 
 
-Dans un moteur thermoacoustique, le chauffage d'un côté du matériau poreux apporte de l'énergie à une parcelle de gaz située à proximité de ce côté du stack. Son volume augmente alors et pousse les autres parcelles de gaz attenantes à l'intérieur du stack, en direction de l'autre extrémité plus froide. Elle cèdent de l'énergie au solide, leur volume diminue et elle retrouvent leur position initiale, où le cycle recommence. Finalement, c'est un travail acoustique qui est généré.
+Dans un moteur thermoacoustique, le chauffage d'un côté du matériau poreux apporte de l'énergie à une parcelle de gaz située à proximité de ce côté du stack. Son volume augmente alors et pousse les autres parcelles de gaz attenantes à l'intérieur du stack, en direction de l'autre extrémité plus froide. Elles cèdent alors de l'énergie au solide, leur volume diminue et elles retrouvent leur position initiale, où le cycle recommence. Finalement, un travail acoustique est généré.
 
 La pompe à chaleur fonctionne en suivant le cycle thermodynamique inverse : l'onde acoustique fournit un travail au fluide et le compresse, ce qui fait augmenter sa température. À l'extrémité du matériau poreux dont la température initiale est inférieure à celle du fluide, une certaine quantité de chaleur est extraite du fluide. La parcelle de fluide se déplace alors dans le matériau poreux, se détend et refroidit, puis extrait à son tour une quantité de chaleur au solide. Au final, un flux de chaleur de la source à refroidir vers l'ambiant est provoqué de proche en proche.\smallskip
 
@@ -62,7 +64,7 @@ La pompe à chaleur fonctionne en suivant le cycle thermodynamique inverse : l'o
 	\label{fig:MoteurVSFrigoTA}
 \end{figure}
 
-Après avoir succintement défini le mode de fonctionnement d'une machine, il est nécessaire de présenter de type de propagation d'onde prenant place au sein de son noyau. Il existe deux comportements asymptotiques qui dépendent de la forme du résonateur de la machine : les ondes stationnaires d'une part et les ondes progressives d'autre part. Ces deux cas sont radicalement différents, car le déphasage entre la pression acoustique $p$ et la vitesse acoustique $v$ est de \ang{90} dans le premier cas, et \ang{0} dans le second.
+Après avoir succinctement défini le mode de fonctionnement d'une machine, il est nécessaire de présenter de type de propagation d'ondes qui a lieu dans son noyau. Il existe deux comportements asymptotiques qui dépendent de la forme du résonateur de la machine : les ondes stationnaires et les ondes progressives. Ces deux cas sont radicalement différents, car le déphasage entre la pression acoustique $p$ et la vitesse acoustique $v$ est de \ang{90} dans le premier cas, et \ang{0} dans le second.
 
 %\begin{figure}[!ht]
 %    \centering
@@ -212,7 +214,7 @@ Un volume de fluide obéit aux lois de conservations de masse, d'énergies et d'
 	\begin{align}
 		\partial_t \rho + \bnabla \cdot (\rho \mathbf v) &= 0, &\text{(conservation de la masse)}\label{eq:ThermoLin_ConservMass}\\
 		\rho\left[\partial_t\mathbf v + (\mathbf v \cdot \bnabla)\right] &= -\bnabla p + \mu \bnabla^2 \mathbf v, &\text{(conservation de la quantité de mouvement)}\label{eq:ThermoLin_QtMvt}\\
-		\rho T \deriv_t s &= \bnabla\cdot (k \nabla T) + \left(\overline{\overline{\sigma}} \cdot \bnabla\right) \cdot \mathbf v, &\text{(conservation de l'énergie)}\label{eq:ThermoLin_NRJ}
+		\rho T \deriv_t s &= \bnabla\cdot (k \nabla T), &\text{(conservation de l'énergie)}\label{eq:ThermoLin_NRJ}
 	\end{align}
 \end{subequations}
 en utilisant les variables d'intérêt suivante : la pression $p$, le débit $u$, la vitesse $v$, la masse volumique $\rho$, la température $T$ et l'entropie $s$. Elles sont considérées monochromatiques et oscillant à la fréquence $f_1=\nicefrac{\omega_1}{2\pi}$ et sont écrites selon le formalisme de Rott en adoptant la convention temporelle $e^{i\omega_1 t}$~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
@@ -272,16 +274,16 @@ avec $J_0$ et $J_1$ les fonctions de Bessel de première espèce, respectivement
 L'équation de la conservation de l'énergie est elle aussi réécrite avec les approximations des équations~\eqref{eq:variables_rott}, ce qui donne
 
 \begin{equation}
-	\rho_0 c_p (i\omega_1 T_1 + v_1\deriv_x T_0) - i\omega_1 p_1 = k[\partial^2_{yy} T_1 + \partial^2_{zz}T_1].
+	\rho_0 C_p (i\omega_1 T_1 + v_1\deriv_x T_0) - i\omega_1 p_1 = k[\partial^2_{yy} T_1 + \partial^2_{zz}T_1].
 \end{equation}
 
 La solution $T_1$ de cette équation différentielle s'écrit
 \begin{equation}
-	T_1=\frac{1}{\rho_0 c_p}(1-h_\kappa)p_1 - \frac{1}{i \omega_1 S} \deriv_x [T_0] \frac{(1-h_\kappa) - \Prandtl(1-h_\nu)}{(1-f_\nu)(1-\Prandtl)}u_1,
+	T_1=\frac{1}{\rho_0 C_p}(1-h_\kappa)p_1 - \frac{1}{i \omega_1 S} \deriv_x [T_0] \frac{(1-h_\kappa) - \Prandtl(1-h_\nu)}{(1-f_\nu)(1-\Prandtl)}u_1,
 \end{equation}
 dont la moyenne sur la section vaut
 \begin{equation}
-	\left\langle T_1 \right\rangle=\frac{1}{\rho_0 c_p}(1-f_\kappa)p_1 - \frac{1}{i \omega_1 S} \deriv_x [T_0] \frac{(1-f_\kappa) - \Prandtl(1-f_\nu)}{(1-f_\nu)(1-\Prandtl)}u_1.
+	\left\langle T_1 \right\rangle=\frac{1}{\rho_0 C_p}(1-f_\kappa)p_1 - \frac{1}{i \omega_1 S} \deriv_x [T_0] \frac{(1-f_\kappa) - \Prandtl(1-f_\nu)}{(1-f_\nu)(1-\Prandtl)}u_1.
 	\label{eq:T_1_moyenne_fkappa}
 \end{equation}
 
@@ -298,10 +300,11 @@ Ici, ce sont les fonctions thermiques qui apparaissent, qui sont définies par
 
 Pour un gaz parfait, la relation entre les variables $p$, $\rho$ et $T$ moyennées sur la section s'écrit
 \begin{equation}
-	\left\langle \rho_1 \right\rangle = \frac{\rho_0}{p_0} \left\langle p_1 \right\rangle - \frac{\rho_0}{T_0} \left\langle T_1 \right\rangle,
+	\left\langle \rho_1 \right\rangle = \frac{\rho_0}{p_0} \left\langle p_1 \right\rangle - \frac{\rho_0}{T_0} \left\langle T_1 \right\rangle.
 	\label{eq:GazParfait_notationDifferentielle}
 \end{equation}
-ce qui, en reportant le résultat de l'équation~\eqref{eq:GazParfait_notationDifferentielle} dans l'équation de conservation de la masse~\eqref{eq:ThermoLin_ConservMass} en tenant compte du résultat de l'équation~\eqref{eq:T_1_moyenne_fkappa}, donne
+
+Le report du résultat de l'équation~\eqref{eq:GazParfait_notationDifferentielle} dans l'équation de conservation de la masse~\eqref{eq:ThermoLin_ConservMass} en tenant compte du résultat de l'équation~\eqref{eq:T_1_moyenne_fkappa}, donne
 \begin{equation}
 	\deriv u_1	= -\frac{i \omega_1 S \deriv x}{\gamma p_0}[1+(\gamma-1)f_\kappa]p_1 + \frac{f_\kappa - f_\nu}{(1-f_\nu)(1-\Prandtl)}\frac{\deriv T_0}{T_0}u_1.
 	\label{eq:ThermoLin_du1}
@@ -323,16 +326,20 @@ Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacous
 
 
 
-\section{\'Etat de l'art}
-\cite{pierens_development_2012}
+%\section{\'Etat de l'art}
+%\cite{pierens_development_2012}
+%
+%\subsection[De la recherche fondamentale...]{Recherche fondamentale}
+%L'effet thermoacoustique est un phénomène observé depuis les environs du I\ier{} siècle avant notre ère \echaf{src souffleurs de verre + préparation du riz (cours Guillaume ?) ?} \cite{adeff_measurement_1991}
+%
+%Depuis les années 1970-1980 durant lesquelles les premières machines modernes ont été mises au point, beaucoup de chemin a été parcouru. Le premier moteur à ondes progressives a été construit par Ceperley en 1979 \cite{ceperley_pistonless_1979}, et la première pompe à chaleur par Hofler lors de son doctorat en 1986 \cite{hofler_thermoacoustic_1986}
+%
+%\subsection[... à des applications industrielles]{Applications industrielles}
+%Les machines thermoacoustiques sont intéressantes pour l'industrie \echaf{continuer avec cryocooler pour liquéfaction de gaz + TNO/BlueHeart ?}\cite{swift_thermoacoustics_2002, wollan_development_2002, adeff_measurement_1991, garrett_thermoacoustic_1993}
 
-\subsection[De la recherche fondamentale...]{Recherche fondamentale}
-L'effet thermoacoustique est un phénomène observé depuis les environs du I\ier{} siècle avant notre ère \echaf{src souffleurs de verre + préparation du riz (cours Guillaume ?) ?} \cite{adeff_measurement_1991}
 
-Depuis les années 1970-1980 durant lesquelles les premières machines modernes ont été mises au point, beaucoup de chemin a été parcouru. Le premier moteur à ondes progressives a été construit par Ceperley en 1979 \cite{ceperley_pistonless_1979}, et la première pompe à chaleur par Hofler lors de son doctorat en 1986 \cite{hofler_thermoacoustic_1986}
 
-\subsection[... à des applications industrielles]{Applications industrielles}
-Les machines thermoacoustiques sont intéressantes pour l'industrie \echaf{continuer avec cryocooler pour liquéfaction de gaz + TNO/BlueHeart ?}\cite{swift_thermoacoustics_2002, wollan_development_2002, adeff_measurement_1991, garrett_thermoacoustic_1993}
+
 
 %\section{Outils électroacoustiques pour la thermoacoustique}
 %%\subsection{Transduction électrodynamique}
@@ -429,7 +436,7 @@ Les machines thermoacoustiques sont intéressantes pour l'industrie \echaf{conti
 
 \section{Matrices de transfert}
 \subsection{En général}
-Le comportement des machines thermoacoustiques peut assez simplement être prédit en faisant usage de la théorie linéaire \cite{rott_damped_1969, rott_thermoacoustics_1980, swift_thermoacoustics_2017}. Une des hypothèses de ces modèles concerne la propagation d'ondes unidimensionnelles au c\oe{}ur de celles-ci, et donc la possibilité de représenter le noyau par un ensemble de matrices de transfert.
+Le comportement des machines thermoacoustiques peut être prédit en faisant usage de la théorie linéaire \cite{rott_damped_1969, rott_thermoacoustics_1980, swift_thermoacoustics_2017}. Celle-ci s'appuie sur l'hypothèse d'une propagation unidimensionnelle permettant de représenter le noyau par un ensemble de matrices de transfert.
 
 Ces matrices de transfert relient les pression et débit acoustiques de part et d'autre d'un organe d'un circuit acoustique assimilé à un quadripôle équivalent, et se présente sous la forme
 
@@ -503,54 +510,68 @@ en adoptant la convention temporelle $e^{+i\omega t}$ et une orientation anti-sy
 %\end{subequations}
 
 \subsection{Matrice de transfert d'un noyau thermoacoustique}
-\echaf{notation $p_s$ à changer en $p_1^{(s)}$ etc.}
-
-Comme déjà expliqué plus haut, le processus thermoacoustique se produit dans un matériau poreux placé dans le guide d'ondes des machines thermoacoustiques. La définition des termes constituant la matrice de transfert change alors légèremement pour prendre en compte sa porosité $\Phi$ selon l'équation
-
-\begin{equation}
-\begin{pmatrix}
-p_s\\
-u_s
-\end{pmatrix} = \begin{bmatrix}
-\cos(k_x L) & -i\frac{\rho_0 c_0}{\Phi S}\sin(k_x L)\\
--i\frac{\Phi S}{\rho_0 c_0}\sin(k_x L) & \cos(k_x L)
-\end{bmatrix}
-\begin{pmatrix}
-p_e\\
-u_e
-\end{pmatrix}.\label{eq:Tmatrix_poreux}
-\end{equation}
-
-
-La représentation du circuit sur la figure~\ref{fig:CircEquivTAC} se traduit au moyen de matrice de transfert à l'ordre 1 par 
-
+Comme déjà expliqué plus haut, le processus thermoacoustique se produit dans un matériau poreux placé dans le guide d'ondes des machines thermoacoustiques. La définition des termes constituant la matrice de transfert change alors, en considérant un élément court de longueur $\deriv x$ d'un empilement selon l'équation
 
 \begin{equation}
 	\begin{pmatrix}
-		p + \deriv p\\
-		u + \deriv u
+	p_1 + \deriv p_1 \\
+	u_1 + \deriv u_1
 	\end{pmatrix} = \begin{bmatrix}
-	1 & -\left(i\omega L + R_\nu\right)~\deriv x  \\
-	-\left(\frac{1}{R_\kappa} + i \omega C\right)~\deriv x & g~\deriv x \end{bmatrix} \begin{pmatrix}
-	p \\
-	u
-	\end{pmatrix}, \label{eq:TMatrix_NoyauTA}
+	1 & -\dfrac{i \omega_1 \rho_0 \deriv x}{S(1-f_\nu)} \\
+	-\dfrac{i \omega_1 S \deriv x}{\gamma p_0}[1+(\gamma-1)f_\kappa] & 1+\dfrac{f_\kappa - f_\nu}{(1-f_\nu)(1-\Prandtl)}\dfrac{\deriv T_0}{T_0}
+	\end{bmatrix}\begin{pmatrix}
+	p_1 \\
+	u_1
+	\end{pmatrix}
+	\label{eq:ThermoLin_Tmatrix}
 \end{equation}
-ou bien même en simplifiant encore plus les choses par
 
-\begin{equation}
-    \begin{pmatrix}
-        p + \deriv p \\
-        u + \deriv u
-    \end{pmatrix} = \begin{bmatrix}
-    1 & -R_\nu \\
-    0 & 1
-    \end{bmatrix}\begin{pmatrix}
-        p \\
-        u
-    \end{pmatrix}.
-    \label{eq:Tmatrix_NoyauTA_simplifie}
-\end{equation}
+%
+%
+%\begin{equation}
+%\begin{pmatrix}
+%p_s\\
+%u_s
+%\end{pmatrix} = \begin{bmatrix}
+%\cos(k_x L) & -i\frac{\rho_0 c_0}{\Phi S}\sin(k_x L)\\
+%-i\frac{\Phi S}{\rho_0 c_0}\sin(k_x L) & \cos(k_x L)
+%\end{bmatrix}
+%\begin{pmatrix}
+%p_e\\
+%u_e
+%\end{pmatrix}.\label{eq:Tmatrix_poreux}
+%\end{equation}
+%
+%
+%La représentation du circuit sur la figure~\ref{fig:CircEquivTAC} se traduit au moyen de matrice de transfert à l'ordre 1 par 
+%
+%
+%\begin{equation}
+%	\begin{pmatrix}
+%		p + \deriv p\\
+%		u + \deriv u
+%	\end{pmatrix} = \begin{bmatrix}
+%	1 & -\left(i\omega L + R_\nu\right)~\deriv x  \\
+%	-\left(\frac{1}{R_\kappa} + i \omega C\right)~\deriv x & g~\deriv x \end{bmatrix} \begin{pmatrix}
+%	p \\
+%	u
+%	\end{pmatrix}, \label{eq:TMatrix_NoyauTA}
+%\end{equation}
+%ou bien même en simplifiant encore plus les choses par
+%
+%\begin{equation}
+%    \begin{pmatrix}
+%        p + \deriv p \\
+%        u + \deriv u
+%    \end{pmatrix} = \begin{bmatrix}
+%    1 & -R_\nu \\
+%    0 & 1
+%    \end{bmatrix}\begin{pmatrix}
+%        p \\
+%        u
+%    \end{pmatrix}.
+%    \label{eq:Tmatrix_NoyauTA_simplifie}
+%\end{equation}
 
 
 Enfin, si le matériau poreux est long, il est possible de le représenter par une succession de $N$ portions élémentaires du poreux et donc un produit de matrices de transfert \cite{ceperley_pistonless_1979}
@@ -578,15 +599,15 @@ u_e
 %    \item Génération d'harmoniques par les sources ? vérifier si superposition d'effet à 47 Hz avec 2x47 Hz etc.
 %\end{itemize}
 
-Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations spécialisés tels que \textsc{DeltaEC}, soit suffisante pour prédire le comportement des machines thermoacoustiques de même que leurs performances, de nombreux effets sont négligés~\cite{DeltaEC}. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est en trois dimensions, ce qui rend la théorie classique à une dimension insuffisant pour prendre en compte son influence sur la distribution de température. Il est par ailleurs assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible et que les températures le long des dimensions transverses du noyau peuvent être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faible que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.
+Bien que la théorie linéaire de Rott, au travers notamment de logiciels de simulations spécialisés tels que \textsc{DeltaEC}, permette de prédire le comportement et les performances des machines thermoacoustiques, de nombreux effets sont négligés~\cite{DeltaEC}. Le vent acoustique \cite{so_internal_2006, bailliet_acoustic_2001, ramadan_experimental_2018}, les écoulements turbulents et la formations de tourbillons, la génération d'harmoniques supérieures et la convection naturelle sont autant d'effets non linéaires qui ne respectent pas les hypothèses retenues pour les modèles. Ce dernier effet est en trois dimensions, ce qui rend la théorie classique à une dimension insuffisant pour prendre en compte son influence sur la distribution de température. Il est par ailleurs assez peu étudié, bien qu'il a déjà été observé que le déclenchement de moteurs thermoacoustique y est très sensible. De plus, les températures le long des dimensions transverses du noyau peuvent aussi être inhomogènes \cite{ross_influence_2003, ramadan_experimental_2018, hireche_numerical_2019}. Dans le cas des pompes à chaleur et réfrigérateurs pour lesquelles les gradients de températures sont plus faibles que pour les moteurs, la littérature sur la convection naturelle est encore plus rare, ce qui motive ce projet de recherche \cite{zhang_novel_2011, babaei_investigation_2010}.
 
 
 \section{Résultats antérieurs au doctorat}\label{chap:PresTacot_ResultatsATE}
-Au démarrage de cette thèse, le réfrigérateur existe déjà puisque sa conception s'est faite dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Sa caractérisation est publiée \cite{ramadan_design_2021}, et il fait également l'objet d'études expérimentales~\cite{ramadan_experimental_2018, ramadan_experimental_2021, poignand_test-bench_2022} et  numériques~\cite{hireche_experimental_2020, baltean_gravity_2025}.\smallskip
+Au démarrage de cette thèse, le réfrigérateur existe déjà puisque sa conception s'est faite dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Sa caractérisation est publiée \cite{ramadan_design_2021}, et il a fait également l'objet d'études expérimentales~\cite{ramadan_experimental_2018, ramadan_experimental_2021, poignand_test-bench_2022} et  numériques~\cite{hireche_experimental_2020, baltean_gravity_2025}.\smallskip
 
-Les expériences réalisées avant le début de cette thèse sont faite en utilisant un noyau dont la porosité est $\Phi=\qty{75}{\percent}$. Il est immergé dans un mélange de gaz pressurisé à \qty{40}{\bar} et composé de \qty{70}{\percent} d'hélium et de \qty{30}{\percent} d'argon, car dans ces proportions le nombre de Prandtl du mélange est minimum \cite{belcher_working_1999}. Le modèle linéaire 1D réalisé avec le logiciel \textsc{DeltaEC} prédit les meilleurs performances à la fréquence de résonance du système $f=\qty{47}{\hertz}$, pour laquelle la longueur d'onde vaut $\lambda=\qty{11.7}{\meter}$, validant ainsi une des hypothèse de compacité acoustique du modèle de Swift. C'est par ailleurs la seule fréquence où l'impédance électrique de la source acoustique principale est supérieure à la limite basse admise par l'amplificateur qui l'alimente et qui vaut \qty{2}{\ohm}. Le déphasage inter-source est fixé à $\varphi_{2-1}=\ang{-60}$ pour toutes les expériences, car il s'agit de la valeur optimale pour maximiser le flux de chaleur $\dot Q_f$ extrait par l'échangeur froid, d'après les simulations réalisées sous le logiciel \textsc{DeltaEC}, et ce qui est confirmé par des expériences préliminaires.\smallskip
+Les expériences réalisées avant le début de cette thèse sont faites en utilisant un noyau dont la porosité est $\Phi=\qty{75}{\percent}$. Il est immergé dans un mélange de gaz pressurisé à \qty{40}{\bar} et composé de \qty{70}{\percent} d'hélium et de \qty{30}{\percent} d'argon, car dans ces proportions le nombre de Prandtl du mélange est minimum \cite{belcher_working_1999}. Le modèle linéaire 1D réalisé avec le logiciel \textsc{DeltaEC} prédit les meilleurs performances à la fréquence de résonance du système $f=\qty{47}{\hertz}$, pour laquelle la longueur d'onde vaut $\lambda=\qty{11.7}{\meter}$, validant ainsi une des hypothèses de compacité acoustique du modèle de Swift. C'est par ailleurs la seule fréquence où l'impédance électrique de la source acoustique principale est supérieure à la limite basse admise par l'amplificateur qui l'alimente et qui vaut \qty{2}{\ohm}. Le déphasage inter-source est fixé à $\varphi_{2-1}=\varphi_{SA2} - \varphi_{SA1}=\ang{-60}$ pour toutes les expériences, car il s'agit de la valeur optimale pour maximiser le flux de chaleur $\dot Q_f$ extrait par l'échangeur froid, d'après les simulations réalisées sous le logiciel \textsc{DeltaEC}, et ce qui est confirmé par des expériences préliminaires.\smallskip
 
-Dans cet article de caractérisation~\cite{ramadan_design_2021} il est montré qu'à ces fréquence et déphasage inter-sources, et à une amplitude correspondant le \textit{drive ratio} vaut $DR=\nicefrac{p_1}{p_0}=\qty{3.6}{\percent}$, une puissance d'alimentation des sources $\dot W_e=\qty{193}{\watt}$ et consommée, une quantité de chaleur de $\dot Q_f=\qty{290}{\watt}$ est extraite à la source froide dont la température $T_f=\qty{13.3}{\degreeCelsius}$ est atteinte. Le coefficient de performance à ce point de fonctionnement est $\COP=\nicefrac{\dot Q_f}{\dot W_e}=\num{1.5}$, soit \qty{15}{\percent} du coefficient de performance de Carnot. Un schéma résume les résultats de ce point de fonctionnement sur la figure~\ref{fig:CaractMachineATE}.\medskip
+Dans cet article de caractérisation~\cite{ramadan_design_2021} il est montré qu'à ces fréquence et déphasage inter-sources, et à une amplitude correspondant au \textit{drive ratio} $DR=\nicefrac{p_1}{p_0}=\qty{3.6}{\percent}$, une puissance d'alimentation des sources $\dot W_e=\qty{193}{\watt}$ et consommée, une quantité de chaleur de $\dot Q_f=\qty{290}{\watt}$ est extraite à la source froide dont la température $T_f=\qty{13.3}{\degreeCelsius}$ est atteinte. Le coefficient de performance à ce point de fonctionnement est $\COP=\nicefrac{\dot Q_f}{\dot W_e}=\num{1.5}$, soit \qty{15}{\percent} du coefficient de performance de Carnot. Un schéma résume les résultats de ce point de fonctionnement sur la figure~\ref{fig:CaractMachineATE}.\medskip
 
 \begin{figure}[!ht]
 	\centering
@@ -624,13 +645,14 @@ Cependant, les résultats obtenus avant le démarrage de cette thèse montrent d
 \section{Plan du manuscrit}
 Après avoir présenté les éléments de base du travail sur ce réfrigérateur thermoacoustique \textsc{Tacot}, le contexte autour de cette thèse, et l'axe sur lequel elle se concentre, un plan est proposé.\medskip
 
-Dans le chapitre~\ref{chap:DispositifExpe}, le dispositif expérimental est présenté. Cela inclut une présentation de la géométrie du refrigérateur, l'instrumentation utilisée pour les acquisitions, le déroulé d'une expérience, et les conditions de chacune d'entre elle. L'accent est porté sur l'étude de la convection naturelle, et les orientations du réfrigérateur choisies pour répondre aux hypothèses auxquelles il faut apporter des réponses sont définies.\smallskip
 
-Le chapitre~\ref{chap:SimusRealisees} introduit l'approche théorique de la convection naturelle dans le réfrigérateur, dans le but de comprendre le fonctionnement du réfrigérateur au-delà de ce que prédit la théorie linéaire en prenant en compte plus de phénomènes. La première simulation permet d'introduire des quantités adimensionnelles couramment utilisées en mécanique des fluides. En particulier, l'étude du nombre de Rayleigh permet d'anticiper la présence ou l'absence d'un courant de convection naturelle dans différentes zones du réfrigérateur ainsi que de calculer des ordres de grandeurs des vitesses d'écoulement dans les cas où la convection naturelle met en mouvement le fluide. Suite à cela, un modèle numérique du régime stationnaire par éléments finis et réalisé à l'aide du logiciel \textsc{Comsol} Multiphysics\textss\textregistered est présenté. Ce modèle, pour rester simple tout en représentant plus de phénomènes, vise à simuler le comportement purement thermique d'un système équivalent. Enfin, un modèle analytique du régime transitoire est proposé, en prenant en compte les mêmes phénomènes que dans la simulation numérique.\smallskip
+Dans le chapitre~\ref{chap:DispositifExpe}, le dispositif expérimental est présenté. Cela inclut une présentation de la géométrie du réfrigérateur, de l’instrumentation utilisée pour les acquisitions, du déroulé d’une expérience et des conditions de chacune d’entre elles. L’accent est mis sur l’étude de la convection naturelle et les orientations du réfrigérateur choisies pour répondre aux hypothèses à valider sont définies.\smallskip
+
+Le chapitre~\ref{chap:SimusRealisees} introduit l'approche théorique de la convection naturelle dans le réfrigérateur, dans le but de comprendre le fonctionnement du réfrigérateur au-delà de ce que prédit la théorie linéaire en tenant compte de davantage de phénomènes. La première simulation permet d'introduire des quantités adimensionnelles couramment utilisées en mécanique des fluides. En particulier, l'étude du nombre de Rayleigh permet d'anticiper la présence ou l'absence d'un courant de convection naturelle dans différentes zones du réfrigérateur ainsi que de calculer des ordres de grandeurs des vitesses d'écoulement dans les cas où la convection naturelle met en mouvement le fluide. Suite à cela, un modèle numérique du régime stationnaire par éléments finis et réalisé à l'aide du logiciel \textsc{Comsol} Multiphysics\textss\textregistered est présenté. Ce modèle, pour rester simple tout en représentant plus de phénomènes, vise à simuler le comportement purement thermique d'un système équivalent. Enfin, un modèle analytique du régime transitoire est proposé, en prenant en compte les mêmes phénomènes que dans la simulation numérique.\smallskip
 
 Le chapitre~\ref{chap:EtudeExpe} est dédié à l'approche expérimentale de la convection naturelle dans le réfrigérateur et se divise en plusieurs parties. La première adopte un point de vue d'ensemble de la machine, en étudiant ses performances sous différentes orientations. Notamment, les températures atteintes, les flux de chaleur entrant et sortant, et les coefficients de performances sont mesurés, et comparés à des simulations réalisées au moyen logiciel \textsc{DeltaEC}~\cite{DeltaEC}, dédié à la simulation des machines thermoacoustiques.\smallskip
 
-Chap~\ref{chap:Conc} - \nameref{chap:Conc}.\smallskip
+Une conclusion générale est apportée dans le chapitre~\ref{chap:Conc}, et les résultats principaux sont rappelés avec leurs interprétations formulées succinctement. Ce travail de thèse soulève beaucoup de questions, auxquelles des expérimentations et simulations supplémentaires répondront. D'autres axes de recherches y sont mentionnés.\smallskip
 
 %\ref{chap:Persp} - \nameref{chap:Persp}.
 

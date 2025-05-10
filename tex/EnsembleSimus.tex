@@ -241,7 +241,7 @@ Cette description rudimentaire n'a pour seule ambition que d'approcher la distri
 La forme de la cavité située entre la source acoustique principale et le noyau n'est pas conventionnelle, et il est intéressant de développer préalablement un modèle avec une configuration déjà étudiée dans la littérature. En particulier, la convection dans des cavités cylindriques~\cite{schneider_laminar_1992}, ou dans les cavités trapézoïdales~\cite{basak_heat_2009}, doit être étudiée pour donner un aperçu de la forme de la convection naturelle dans le système à l'essai, qui combine ces deux formes.\medskip
 
 
-La géométrie retenue pour le modèle de la cavité est similaire à celle dans la machine, à savoir un cône tronqué. La paroi inférieure correspond au piston de la source acoustique principale dont le diamètre est $D_{SA1}=\qty{108}{\milli\meter}$, et la paroi supérieure représente la surface de l'échangeur de chaleur froid dont le diamètre est $D_{\sf can}=\qty{149}{\milli\meter}$. Ces parois sont espacées d'une distance $L_{\sf cone}=\qty{3}{\centi\meter}$. Contrairement à la zone entourée en jaune sur la figure~\ref{fig:SchemaGeneralTACOT}, seule la partie conique est considérée ici, en omettant le cylindre qui se trouve entre le \echaf{pavillon} du cône et l'échangeur de chaleur froid.\smallskip
+La géométrie retenue pour le modèle de la cavité est similaire à celle dans la machine, à savoir un cône tronqué. La paroi inférieure correspond au piston de la source acoustique principale dont le diamètre est $D_{SA1}=\qty{108}{\milli\meter}$, et la paroi supérieure représente la surface de l'échangeur de chaleur froid dont le diamètre est $D_{\sf can}=\qty{149}{\milli\meter}$. Ces parois sont espacées d'une distance $L_{\sf cone}=\qty{3}{\centi\meter}$. Contrairement à la zone entourée en jaune sur la figure~\ref{fig:SchemaGeneralTACOT}, seule la partie conique est considérée ici, en omettant le cylindre qui se trouve entre le cône et l'échangeur de chaleur froid.\smallskip
 
 La géométrie est implémentée au sein d'un modèle \textsc{Comsol} suivant la figure~\ref{fig:Comsol_Geometrie_ConeSeul}, pour simuler le comportement, notamment le déclenchement et l'allure éventuelle de cellules de convection naturelle au cours d'une étude paramétrique dans laquelle le diamètre de la source acoustique principale est varié de \qtyrange{108}{193}{\milli\meter}. Le choix de ces valeur permet d'obtenir deux configurations de cônes et dont les angles entre la verticale et la paroi inclinée sont opposés, ainsi qu'une configuration où la cavité est cylindrique.\medskip
 
@@ -269,7 +269,7 @@ Les simulations pour lesquelles la cavité est chauffée par le bas sont réalis
 	\centering
 	\begin{subfigure}{.97\textwidth}
 	\centering
-	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow}
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THBelow2}
 	\caption{}
 	\label{fig:ConvNatComsol_V1_ConeParamRix_SmallBase}
 	\end{subfigure}
@@ -279,7 +279,7 @@ Les simulations pour lesquelles la cavité est chauffée par le bas sont réalis
 	\centering
 	\begin{subfigure}{.97\textwidth}
 	\centering
-	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow}
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THBelow2}
 	\caption{}
 	\label{fig:ConvNatComsol_V1_ConeParamRix_Cylinder}
 	\end{subfigure}
@@ -289,7 +289,7 @@ Les simulations pour lesquelles la cavité est chauffée par le bas sont réalis
 	\centering
 	\begin{subfigure}{.97\textwidth}
 	\centering
-	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THBelow}
+	\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THBelow2}
 	\caption{}
 	\label{fig:ConvNatComsol_V1_ConeParamRix_LargeBase}
 	\end{subfigure}
@@ -310,14 +310,15 @@ Les simulations pour lesquelles la cavité est chauffée par le bas sont réalis
                 	width=3.5cm,
                 	xtick={-1.1e-3,0,1.1e-3},
                 	at={(-0.5,0.0)},anchor=south,   
-                	title style={xshift=3.5cm,yshift=4cm},
+                	title style={xshift=0cm,yshift=-2cm},
+                	title={$v^{//\mathbf g}$ (\unit{\meter\per\second})},
                 	}
 				]
             	\addplot [draw=none] coordinates {(0,0) (1,1)};
         	\end{axis}
 		\end{tikzpicture} 
 	\end{subfigure} 
-	\caption{Composante verticale de la vitesse dans la cavité conique pour trois géométries, dans le cas d'un chauffage par la paroi basse.}
+	\caption{Composante verticale de la vitesse dans la cavité conique pour trois géométries, dans le cas d'un chauffage par la paroi basse. Les courbes isothermes sont superposées et indiquent la température $T_0$ en \unit{\kelvin}.}
 	\label{fig:ConvNatComsol_V1_ConeParamRix}
 \end{figure}
 
@@ -328,7 +329,7 @@ Le champ de vitesse sur le plan de coupe de la cavité cylindrique est représen
 
 Le troisième cas concerne la cavité avec la paroi inférieure plus grande que la paroi supérieure sur la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_LargeBase}. Dans cette configuration, le calcule de la vitesse indique la circulation d'un flux massique montant par la périphérie de la cavité et descendant à une vitesse plus faible en son centre.\medskip
 
-Pour ce jeu de simulations, il est attendu qu'une cellule de convection naturelle se mette en place suite au déclenchement d'une instabilité de Rayleigh-Bénard, en faisant circuler un fluide du bas vers le haut. C'est ce qu'il se passe lorsque la cavité est conique, et l'angle du cône influe sur la direction de rotation. Dans le cas de la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_SmallBase}, la paroi inférieure plus petite peut être vue comme une source favorisant l'échauffement au centre et donc l'élévation du fluide, et l'allure de la cellule de convection naturelle ressemble à celle obtenue dans~\cite{basak_heat_2009}. À l'inverse, la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_LargeBase} présente la situation opposée, où la surface froide favorise le refroidissement du fluide au centre de la cavité.\smallskip
+Pour ce jeu de simulations, il est attendu qu'une cellule de convection naturelle se mette en place suite au déclenchement d'une instabilité de Rayleigh-Bénard, en faisant circuler un fluide du bas vers le haut lorsque le nombre de Rayleigh est supérieure à sa valeur critique, ici \num{1708} (les parois horizontales sont rigides). C'est ce qu'il se passe lorsque la cavité est conique, et l'angle du cône influe sur la direction de rotation. Dans le cas de la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_SmallBase}, la paroi inférieure plus petite peut être vue comme une source favorisant l'échauffement au centre et donc l'élévation du fluide, et l'allure de la cellule de convection naturelle ressemble à celle obtenue dans~\cite{basak_heat_2009}. À l'inverse, la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_LargeBase} présente la situation opposée, où la surface froide favorise le refroidissement du fluide au centre de la cavité.\smallskip
 
 Le cas de la cavité cylindrique est surprenant. Dans la littérature, ce cas présente un écoulement montant le long de la périphérie et descendant au centre~\cite{schneider_laminar_1992}, ce qui n'est pas visible ici. Cependant, le fait d'inverser le sens de circulation au moment où la cavité est cylindrique semble en réalité montrer l'existence de deux cellules qui tournent en sens inverse l'une de l'autre, ce qui résulte en une vitesse nulle.
 
@@ -340,7 +341,7 @@ L'étude paramétrique est ensuite reproduite, en inversant les températures ch
 	\centering
 	\begin{subfigure}{.97\textwidth}
 		\centering
-		\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove}
+		\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/SmallBase_THAbove2}
 		\caption{}
 		\label{fig:ConvNatComsol_V2_ConeParamRix_SmallBase}
 	\end{subfigure}
@@ -349,7 +350,7 @@ L'étude paramétrique est ensuite reproduite, en inversant les températures ch
 	
 	\begin{subfigure}{.97\textwidth}
 		\centering
-		\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove}
+		\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/Cylinder_THAbove2}
 		\caption{}
 		\label{fig:ConvNatComsol_V2_ConeParamRix_Cylinder}
 	\end{subfigure}
@@ -358,7 +359,7 @@ L'étude paramétrique est ensuite reproduite, en inversant les températures ch
 	
 	\begin{subfigure}{.97\textwidth}
 		\centering
-		\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THAbove}
+		\includegraphics{../fig/fig_ConvNatComsol_Resultats/ConeSeul/LargeBase_THAbove2}
 		\caption{}
 		\label{fig:ConvNatComsol_V2_ConeParamRix_LargeBase}
 	\end{subfigure}
@@ -379,14 +380,15 @@ L'étude paramétrique est ensuite reproduite, en inversant les températures ch
                 	width=3.5cm,
                 	xtick={-9.7e-4,0,9.7e-4},
                 	at={(-0.5,0.0)},anchor=south,   
-                	title style={xshift=3.5cm,yshift=4cm},
+                	title style={xshift=0cm,yshift=-2cm},
+                	title={$v^{//\mathbf g}$ (\unit{\meter\per\second})},
                 	}
 				]
             	\addplot [draw=none] coordinates {(0,0) (1,1)};
         	\end{axis}
 		\end{tikzpicture} 
 	\end{subfigure} 
-	\caption{Composante verticale de la vitesse dans la cavité conique pour trois géométries, dans le cas d'un chauffage par la paroi haute.}
+	\caption{Composante verticale de la vitesse dans la cavité conique pour trois géométries, dans le cas d'un chauffage par la paroi haute. Les courbes isothermes sont superposées et indiquent la température $T_0$ en \unit{\kelvin}.}
 	\label{fig:ConvNatComsol_V2_ConeParamRix}
 \end{figure}
 
@@ -396,7 +398,7 @@ Pour la cavité cylindrique, la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix_Cy
 
 Les résultats obtenus dans la configuration où la paroi inférieure est la plus grande est affichée sur la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix_LargeBase}. La composante verticale de la vitesse montre que dans ce cas, un flux massique monte de la base vers le haut, et redescend par la périphérie à une vitesse plus grande. Cependant, les vitesses montante et descendantes sont plus faibles que celles indiquées sur la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix_SmallBase}.\medskip
 
-Dans la configuration de la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix} comme dans la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix}, il est possible de remarquer que la vitesse n'est pas nulle quand la cavité est conique. Toutefois, le sens de circulation des cellules de convection naturelle s'inverse quand le gradient de température change de signe.  La vitesse maximum atteinte par l'écoulement lorsque la température chaude est sur la paroi en haut de la géométrie qui vaut~\qty{9.7e-4}{\meter\per\second} est plus faible que celle où cette température est en bas qui est de \qty{1.1e-3}{\meter\per\second}, ce qui semble aller dans le sens où il n'est pas attendu qu'une instabilité de convection naturelle soit déclenchée dans ce cas.\medskip
+Dans la configuration de la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix} comme dans la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix}, il est possible de remarquer que la vitesse n'est pas nulle quand la cavité est conique, et que les courbes isothermes. Toutefois, le sens de circulation des cellules de convection naturelle s'inverse quand le gradient de température change de signe.  La vitesse maximum atteinte par l'écoulement lorsque la température chaude est sur la paroi en haut de la géométrie qui vaut~\qty{9.7e-4}{\meter\per\second} est plus faible que celle où cette température est en bas qui est de \qty{1.1e-3}{\meter\per\second}, ce qui semble aller dans le sens où il n'est pas attendu qu'une instabilité de convection naturelle soit déclenchée dans ce cas.\medskip
 
 Au final, la simulation par éléments finis semble montrer que la forme de la cavité peut provoquer des écoulements liés à la convection naturelle dans des configurations où ce n'est pas attendu, ce que l'analyse des ordres de grandeur ne peut montrer.
 
@@ -468,7 +470,7 @@ Les trois domaines sont modélisé par des matériaux les plus proches possibles
 
 Les parois de l'enceinte et le régénérateur sont en acier inoxydable 316L, et le cône d'adaptation d'impédance rempli d'hélium.
 
-Pour conserver un modèle simple, seuls des volumes de solides non-poreux et de gaz sont considérés dans le modèle complet. Ce choix pour le volume du régénérateur permet de le modéliser en ne considérant aucun écoulement à l'intérieur, ce qui est motivé au vu du nombre de Rayleigh-Darcy inférieur à sa valeur critique. Le régénérateur est modélisé par un matériau solide homogène, et pour prendre en compte la conductivité dégradée~\cite{lewis_measurement_1998, swift_thermoacoustics_2017} et l'\echaf{anisotropie} causées par l'empilement des disques de tissus métallique~\cite{li_effective_2006, hsu_effective_1996}, une matrice de conductivité thermique $\mathbf k_{tissus}$ remplace la valeur $k_{\sf inox}$ avec
+Pour conserver un modèle simple, seuls des volumes de solides non-poreux et de gaz sont considérés dans le modèle complet. Ce choix pour le volume du régénérateur permet de le modéliser en ne considérant aucun écoulement à l'intérieur, ce qui est motivé au vu du nombre de Rayleigh-Darcy inférieur à sa valeur critique. Le régénérateur est modélisé par un matériau solide homogène, et pour prendre en compte la conductivité dégradée à \qty{10}{\percent} de la valeur du matériau plein~\cite{lewis_measurement_1998, swift_thermoacoustics_2017} et l'anisotropie causées par l'empilement des disques de tissus métallique qui donne une conductivité transversale deux fois supérieure à la valeur longitudinale~\cite{li_effective_2006, hsu_effective_1996}, une matrice de conductivité thermique $\mathbf k_{tissus}$ remplace la valeur $k_{\sf inox}$ avec
 
 \begin{equation}
 	\mathbf k_{\sf tissus} = \begin{bmatrix}
@@ -480,7 +482,7 @@ Pour conserver un modèle simple, seuls des volumes de solides non-poreux et de 
 \end{equation}
 où $k_{\sf inox}=\qty{14.388}{\watt\per\meter\per\kelvin}$ la conductivité thermique de l'acier inoxydable plein. 
 
-\echaf{schéma nécessaire avec à gauche le système réel et à droite comment il est modélisé}
+%\echaf{schéma nécessaire avec à gauche le système réel et à droite comment il est modélisé}
 
 \subsubsection{Modèles physiques utilisés}\label{chap:FEM_Physique}
 %\subsubsection{Sans matériau poreux}
@@ -611,7 +613,8 @@ Tout d'abord, la distribution de température et l'allure de la vitesse de l'éc
                 	width=3.5cm,
                 	xtick={278.2,285.6,293},
                 	at={(-0.5,0.0)},anchor=south,   
-                	title style={xshift=3.5cm,yshift=4cm},
+                	title style={xshift=0cm,yshift=-2cm},
+                	title={$T_0$ (\unit{\kelvin})},
                 	}
 				]
             	\addplot [draw=none] coordinates {(0,0) (1,1)};
@@ -636,7 +639,8 @@ Tout d'abord, la distribution de température et l'allure de la vitesse de l'éc
                 	width=3.5cm,
                 	xtick={278.6,285.8,293},
                 	at={(-0.5,0.0)},anchor=south,   
-                	title style={xshift=3.5cm,yshift=4cm},
+                	title style={xshift=0cm,yshift=-2cm},
+                	title={$T_0$ (\unit{\kelvin})},
                 	}
 				]
             	\addplot [draw=none] coordinates {(0,0) (1,1)};
@@ -675,7 +679,8 @@ Tout d'abord, la distribution de température et l'allure de la vitesse de l'éc
                 	width=3.5cm,
                 	xtick={285.4,289.2,293},
                 	at={(-0.5,0.0)},anchor=south,   
-                	title style={xshift=3.5cm,yshift=4cm},
+                	title style={xshift=0cm,yshift=-2cm},
+                	title={$T_0$ (\unit{\kelvin})},
                 	}
 				]
             	\addplot [draw=none] coordinates {(0,0) (1,1)};
@@ -700,7 +705,8 @@ Tout d'abord, la distribution de température et l'allure de la vitesse de l'éc
                 	width=3.5cm,
                 	xtick={278.5,285.8,293},
                 	at={(-0.5,0.0)},anchor=south,   
-                	title style={xshift=3.5cm,yshift=4cm},
+                	title style={xshift=0cm,yshift=-2cm},
+                	title={$T_0$ (\unit{\kelvin})},
                 	}
 				]
             	\addplot [draw=none] coordinates {(0,0) (1,1)};
@@ -719,7 +725,7 @@ La figure~\ref{fig:H2_RIXTa_Detail_Cmap_T_Fleche_vNorme} est obtenue avec la mê
 
 Les résultats de simulation pour l'orientation `\texttt{V1}' sont tracés sur la figure~\ref{fig:V1_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Cette fois, le gradient de température entre les températures ambiantes et froide est vertical, le long de l'axe $\mathbf e_{z,0}$. La paroi qui correspond à la source acoustique principale, à la température $T=\qty{293}{\kelvin}$, est au dessous de la paroi de l'échangeur de chaleur froid dont la température se situe à $T=\qty{285.4}{\kelvin}$. Un écoulement montant au centre de la cavité et redescendant le long des parois périphériques est observable. Du fluide chaud arrive donc au contact de la paroi froide, lui cède de la chaleur, et la température y est plus élevée que dans les autres configurations ($T=\qty{278}{\kelvin}$). De plus, le diamètre de la paroi de la source de chaleur que constitue la source acoustique principale est plus petit que le diamètre de la paroi en face, celle à la frontière avec le noyau. Cette différence de diamètre favorise l'élévation d'une colonne de fluide plus chaud par le centre de la cavité plutôt que par la périphérie, ce qui est conforme à la littérature sur le sujet~\cite{basak_heat_2009}\smallskip
 
-L'orientation `\texttt{V2}' est finalement présentée sur la figure~\ref{fig:V2_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Ce résultat est le plus surprenant, car il montre également la présence d'un écoulement circulant dans le cône d'adaptation d'impédance, alors que cette configuration est a priori stable et n'est pas censée déclencher la mise en mouvement du fluide. En effet, le fluide chaud moins dense se trouve déjà au dessus du fluide plus froid. Il est possible que le fluide à proximité de la paroi chaude se déplace horizontalement du centre vers la périphérie jusqu'à rencontrer une zone plus froide, où la densité locale du fluide diminue. Celui-ci descend le long de la paroi qui la guide du fait de l'angle du cône, et la conservation du débit provoque la mise en mouvement du reste du fluide qui suit la même trajectoire. Ces résultats simialaires à ceux obtenus dans les études paramétriques dédiés à la cavité seule~\ref{chap:CircuFluideV2}.\bigskip
+L'orientation `\texttt{V2}' est finalement présentée sur la figure~\ref{fig:V2_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Ce résultat est le plus surprenant, car il montre également la présence d'un écoulement circulant dans le cône d'adaptation d'impédance, alors que cette configuration est a priori stable et n'est pas censée déclencher la mise en mouvement du fluide. En effet, le fluide chaud moins dense se trouve déjà au dessus du fluide plus froid. Il apparaît que le fluide à proximité de la paroi plus chaude se déplace horizontalement du centre vers la périphérie jusqu'à rencontrer une zone plus froide, où la densité locale du fluide diminue. Celui-ci descend le long de la paroi qui la guide du fait de l'angle du cône, et la conservation du débit provoque la mise en mouvement du reste du fluide qui suit la même trajectoire. Ces résultats simialaires à ceux obtenus dans les études paramétriques dédiés à la cavité seule~\ref{chap:CircuFluideV2}.\bigskip
 
 Le calcul par éléments finis montre que la température du point froid dépend de l'orientation, puisque celui-ci est à la température~\qty{285}{\kelvin} dans le cas `\texttt{V1}', et \qty{278}{\kelvin} dans les autres cas. De plus, ce côté du régénérateur présente une distribution de température asymétrique dans l'orientation `\texttt{H1}', alors que les autres orientation sont soit symétriques par rapport au plan vertical qui coupe le noyau en son milieu (cas `\texttt{H2}'), soit axisymétriuque (cas `\texttt{V1}' et `\texttt{V2}'). Enfin, contrairement à ce que laisse supposer le calcul d'ordre de grandeur du nombre de Rayleigh, un écoulement de nature convective serait également présent dans la cavité d'adaptation d'impédance dans l'orientation `\texttt{V2}', qui est dans le cas des cavité cylindriques une configuration stable.
 
@@ -771,12 +777,10 @@ Dans cette partie, un modèle de la distribution de température dans le noyau t
 \subsection{Géométrie du problème}
 Le système décrit est uniquement constitué d'un régénérateur à deux dimensions en coordonnées cartésiennes, à pores circulaires de rayon hydraulique $r_h$ et de porosité $\Phi$, de longueur $L_{\sf reg}$, et de section $S_{\sf reg} = \pi\frac{D^2_{\sf reg}}{4}$, avec $D_{\sf reg}$ la hauteur du régénérateur.\smallskip
 
-Les échangeur de chaleur sont ignorés dans ce modèle, mais des conditions aux frontières les remplacent, avec le côté froid placé en $x=0$ et le côté ambiant en $x=L_{\sf reg}$. La géométrie n'inclut pas non plus l'enveloppe qui contient le régénérateur aux coordonnées $r=0$ et $r=D_{\sf reg}$, mais son influence est prise en compte dans les conditions aux frontières d'une manière développée plus loin. \echaf{est-ce que ça suffit pour dire qu'on ne calcule pas ce qu'il y a dans le canister mais qu'on ne l'oublie pas ?}
-
-\echaf{ajouter schéma où tout est enlevé sauf le régén}
+Les échangeur de chaleur sont ignorés dans ce modèle, mais des conditions aux frontières les remplacent, avec le côté froid placé en $x=0$ et le côté ambiant en $x=L_{\sf reg}$. La géométrie n'inclut pas non plus l'enveloppe qui contient le régénérateur aux coordonnées $r=0$ et $r=D_{\sf reg}$, mais son influence est prise en compte dans les conditions aux frontières via un coefficient d'échange thermique.
 
 \subsection{Champ acoustique considéré}
-Le modèle a pour base un bilan thermique dans le régénérateur pour un champ acoustique quelconque. Pour ce faire, la géométrie est discrétisée le long de l'axe $\mathbf e_x$ en $N$ éléments de longueur $\deriv x$. Chaque élément $n$ du régénérateur est acoustiquement compact et l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit d'autant de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}, en faisant l'hypothèse de linéarité de la propagation de l'onde acoustique dans un fluide de Stokes, homogène et \echaf{au repos = en l'absence d'écoulement continu ?}. Dans le cas d'un régénérateur compact du point de vue acoustique, cette matrice de transfert est donnée par
+Le modèle a pour base un bilan thermique dans le régénérateur pour un champ acoustique quelconque. Pour ce faire, la géométrie est discrétisée le long de l'axe $\mathbf e_x$ en $N$ éléments de longueur $\deriv x$. Chaque élément $n$ du régénérateur est acoustiquement compact et l'expression des quantités oscillantes dans le noyau peut-être donnée par un produit d'autant de matrices de transfert élémentaires de l'équation~\eqref{eq:TMatrix_prod_TppTuu}, en faisant l'hypothèse de linéarité de la propagation de l'onde acoustique dans un fluide de Stokes, homogène et en l'absence d'écoulement continu. Dans le cas d'un régénérateur compact du point de vue acoustique, cette matrice de transfert est donnée par
 
 %\begin{subequations}
 %	\begin{multicols}{2}
@@ -798,14 +802,14 @@ Le modèle a pour base un bilan thermique dans le régénérateur pour un champ 
 	p_1^{(n+1)}\\
 	u_1^{(n+1)}
 	\end{pmatrix}=\begin{bmatrix}
-	1 & -i\omega\dfrac{\rho_0}{\Phi S_{\sf reg}\left(1-f_\nu^{(n)}\right)}\,\deriv x\\
-	-i\omega\dfrac{\Phi S_{\sf reg} \left(1 + (\gamma-1)f_\kappa^{(n)}\right)}{\gamma p_0}\ \deriv x & 1
+	1 & -i\omega_1\dfrac{\rho_0}{\Phi S_{\sf reg}\left(1-f_\nu^{(n)}\right)}\,\deriv x\\
+	-i\omega_1\dfrac{\Phi S_{\sf reg} \left(1 + (\gamma-1)f_\kappa^{(n)}\right)}{\gamma p_0}\ \deriv x & 1
 	\end{bmatrix}\begin{pmatrix}
 	p_1^{(n)}\\
 	u_1^{(n)}
 	\end{pmatrix},
 \end{equation}
-où $f_\nu^{(n)}$ et $f_\kappa^{(n)}$ sont les fonction visco-thermiques moyennées sur la section $S_{\sf reg}$ présentées dans les équations~\eqref{eq:FonctionViqueuse_Moyenne} et \eqref{eq:FonctionThermique_Moyenne}, et $p_1$ et $v_1$ les pression et vitesse acoustiques oscillant à la pulsation $\omega=2\pi f_1$.
+où $f_\nu^{(n)}$ et $f_\kappa^{(n)}$ sont les fonction visco-thermiques moyennées sur la section $S_{\sf reg}$ présentées dans les équations~\eqref{eq:FonctionViqueuse_Moyenne} et \eqref{eq:FonctionThermique_Moyenne}, et $p_1$ et $v_1$ les pression et vitesse acoustiques oscillant à la pulsation $\omega_1=2\pi f_1$.
 
 \subsection{Mécanismes pris en compte dans le modèle}
 %Ensuite, les flux thermiques sont également pour la plupart différents dans le cas d'un réfrigérateur contenant un régénérateur à la place d'un \textit{stack}, et sont définis dans les équations \eqref{eq:FluxTA_Transitoire_Regen} à \eqref{eq:FluxLat_Transitoire} accompagnées de la figure~\ref{fig:Schema_FluxThermiquesNoyau_Gaelle} pour les illustrer au sein du régénérateur.
@@ -825,7 +829,7 @@ Pour être le plus exhaustif possible, un grand nombre de phénomènes thermique
 \item Tout d'abord, le flux de chaleur thermoacoustique par unité de surface est calculé avec l'équation~\eqref{eq:FluxTA_swift} développée par Swift \cite{swift_thermoacoustics_2017}
 
 \begin{multline}
-	\dot Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } p_1 v_1^* \right] }_{q_{TA}(x)} \echaf{ajouter i ou j} \\ 
+	\dot Q_{TA} = \underbrace{ -\frac12~\RE\left[ \frac{ f_\kappa-f_\nu^* }{ (1+\mathrm{Pr})(1-f_\nu^*) } p_1 v_1^* \right] }_{q_{TA}(x)} \\ 
 	+ \overbrace{ \frac12 \frac{\rho_0 C_p}{\Phi S_{\sf reg}}~\IM\left[ \frac{f_\kappa + \mathrm{Pr} f_\nu^*}{(1-\mathrm{Pr}^2)|1-f_\nu|^2} \right] |v_1|^2 }^{k_{TA}(x)}\partial_x \theta(r,x;t),
 \label{eq:FluxTA_Transitoire_Regen}
 \end{multline}
@@ -928,12 +932,12 @@ Les second sont calculés grâce à une résistance thermique $R_{th}$ équivale
 
 Le coefficient d'échange $h_r$ aux parois du régénérateur se calcule avec une formule qui prend en compte les résistances thermiques de l'enveloppe du régénérateur, du tube qui contient le noyau \cite{guedra_etudes_2012, penelet_etude_2004}
 
-\begin{subequations}
+%\begin{subequations}
 	\begin{align}
 		h_r &= \frac{1}{R_{th}},\nonumber \\
-			&= \dfrac{1}{\dfrac{\ell_{\sf env}}{k_{\sf inox}} + \dfrac{1}{h_c} + \dfrac{\ell_{\sf tub}}{k_{\sf inox}} + \dfrac{1}{h_c}}.\label{eq:h_r_Rth}
+			&= \dfrac{1}{\dfrac{\ell_{\sf env}}{k_{\sf inox}} + \dfrac{1}{h_t} + \dfrac{\ell_{\sf tub}}{k_{\sf inox}} + \dfrac{1}{h_c}}.\label{eq:h_r_Rth}
 	\end{align}
-\end{subequations}
+%\end{subequations}
 
 Les flux de chaleurs avec ces parois vers l'extérieur suivent la forme 
 
@@ -1010,7 +1014,7 @@ Ce problème transitoire comporte des termes sources, ainsi que des dérivées p
 		\frac{1}{\underline g(x)} \partial_t \theta &= \partial_{xx}^2 \theta + \underline k \partial_{rr}^2 \theta + \Gamma, & x \in [0,L_{\sf reg}],\ r \in [0,D_{\sf reg}],\ t>0\ ; \label{eq:BilanThermique_ChgtVariables} \\
 		\partial_x \theta - \eta_0 \theta &= Q_0, & x=0,\ r \in [0,D_{\sf reg}],\ t>0\ ; \label{eq:CondFront_x_0Froid_ChgtVariables} \\[6pt]
 		\partial_x \theta + \eta_{L_{\sf reg}} \theta &= Q_{L_{\sf reg}}, & x=L_{\sf reg},\ r \in [0,D_{\sf reg}],\ t>0\ ; \label{eq:CondFront_x_LregAmb_ChgtVariables} \\[6pt]
-		\partial_r \theta - \eta_r \theta &= 0, & r=0,\ D_{\sf reg},\ x \in [0,L_{\sf reg}],\ t>0\ ; \label{eq:CondFront_r_Rreg_ChgtVariables} \\[6pt]
+		\partial_r \theta + \eta_r \theta &= 0, & r=0,\ D_{\sf reg},\ x \in [0,L_{\sf reg}],\ t>0\ ; \label{eq:CondFront_r_Rreg_ChgtVariables} \\[6pt]
 		\theta(x,r,t=0) &= \theta_0(x,r), & t=0,\ x \in [0,L_{\sf reg}],\ r \in [0,D_{\sf reg}].	\label{eq:CondInit_ChgtVariables}
 	\end{align}	
 	\label{eq:ProblemeTransitoire_ChgtVariables}
@@ -1021,7 +1025,7 @@ avec les changements de variables suivants,
 	\begin{subequations}
 		\begin{align}
 			Q_0 &= \frac{Q_{TA}(0)-Q_{\sf vort}(0)-\epsilon Q_f}{k_x+k_{TA}(L_{\sf reg})}, \\
-			Q_{L_{\sf reg}} &= \frac{Q_{TA}(L_{\sf reg})+Q_{\sf vort}(L_{\sf reg})+\epsilon Q_a}{k_x+k_{TA}(L_{\sf reg})},\\
+			Q_{L_{\sf reg}} &= \frac{Q_{TA}(L_{\sf reg})-Q_{\sf vort}(L_{\sf reg})+\epsilon Q_a}{k_x+k_{TA}(L_{\sf reg})},\\
 			\eta_{0,L_{\sf reg}} &= \frac{\left.h_x\right|_{x=0,L_{\sf reg}}}{k_x + \left.k_{TA}\right|_{x=0,L_{\sf reg}}}, \\
 			\eta_r &= \frac{h_r}{k_r},
 		\end{align}
@@ -1031,7 +1035,7 @@ avec les changements de variables suivants,
 			\underline k &= \frac{k_r}{k_x + k_{TA}(x)}, \\
 			\Gamma(x) &= \frac{Q_{\sf visq}-\partial_x q_{TA}(x)}{k_x + k_{TA}(x)}.
 		\end{align}
-		\label{ChgtVariables}
+		\label{eq:}
 	\end{subequations}
 \end{multicols}
 
@@ -1057,7 +1061,7 @@ Les fonctions propres $R_n$ associées sont de la forme
 	R_n(\sigma_{r,n},r) = \sigma_{r,n} \cos(\sigma_{r,n} r) + \eta_r \sin(\sigma_{r,n} r),
 	\label{eq:TransfoInteg_FonctionPropres_R}
 \end{equation}
-de norme $N_r(\sigma_{r,n})=\nicefrac{D_{\sf reg}}{2}\left( \sigma_{r,n}^2+\eta_r^2 \right)$, et dont les valeurs propres $\sigma_{r,n}$ sont solutions de l'équation
+de norme $N_r(\sigma_{r,n})=\nicefrac{D_{\sf reg}}{2}\left( \sigma_{r,n}^2+\eta_r^2 \right)+\eta_r$, et dont les valeurs propres $\sigma_{r,n}$ sont solutions de l'équation
 
 \begin{equation}
 	\tan(\sigma_{r,n} D_{\sf reg}) = \frac{2\sigma_{r,n} \eta_r}{\sigma_{r,n}^2 - \eta_r^2}. 
@@ -1071,13 +1075,13 @@ La solution $\theta(r,x,t)$ du problème s'écrit au moyen du couple d'équation
 		\overline \theta(\sigma_{r,n},x,t) &= \int_{0}^{D_{\sf reg}} R_n(\sigma_{r,n},r')\theta(r',x,t)\ \deriv r', \label{eq:TransfoInter_TransfoInteg_R}
 	\end{align}
 \end{subequations}
-qui sont respectivement la formule d'inversion et la transformation intégrale. Cette dernière est appliquée au système d'équations~\ref{eq:ProblemeTransitoire_ChgtVariables} pour donner
+qui sont respectivement la formule d'inversion et la transformation intégrale. Cette dernière est appliquée au système d'équations~\ref{eq:ProblemeTransitoire_ChgtVariables} par rapport à la variable $r$ pour donner
 
 \begin{subequations}
 	\begin{align}
 		\frac{1}{\underline g} \partial_t \overline \theta(\sigma_{r,n},x,t) &= \partial_{xx}^{2} \overline \theta(\sigma_{r,n},x,t) - \underline k \sigma_{r,n}^2 \overline \theta(\sigma_{r,n},x,t) + \overline \Gamma, & x \in [0,L_{\sf reg}],\ t>0, \label{eq:TransfoInteg_BilanThermique_R} \\
 		\partial_x \overline \theta - \eta_0 \overline \theta &= \overline Q_0 & x=0,\ t>0, \label{eq:TransfoInteg_CondFront_x_0Froid_R} \\[6pt]
-		\partial_x \overline \theta - \eta_{L_{\sf reg}} \overline \theta &= \overline Q_{L_{\sf reg}} & x=L_{\sf reg},\ t>0, \label{eq:TransfoInteg_CondFront_x_LregAmb_R} \\[6pt]
+		\partial_x \overline \theta + \eta_{L_{\sf reg}} \overline \theta &= \overline Q_{L_{\sf reg}} & x=L_{\sf reg},\ t>0, \label{eq:TransfoInteg_CondFront_x_LregAmb_R} \\[6pt]
 		\overline \theta(r,x,t=0) &= \overline \theta_0(r,x), & t=0,\ x \in [0,L_{\sf reg}]. \label{eq:TransfoInteg_CondInit_R}
 	\end{align}
 \end{subequations}
@@ -1105,7 +1109,7 @@ La forme des fonctions propres $X_m$ est cette fois-ci donnée par
 dont la norme vaut
 
 \begin{equation}
-	N_x = \nicefrac{1}{2}\left(\sigma_{x,m}^2 + \eta_0^2 \right)\left(L_{\sf reg}+\frac{\eta_{L_{\sf reg}}}{\sigma_{x,m}^2 + \eta_{L_{\sf reg}}^2}\right).
+	N_x = \nicefrac{1}{2}\left[\left(\sigma_{x,m}^2 + \eta_0^2 \right)\left(L_{\sf reg}+\frac{\eta_{L_{\sf reg}}}{\sigma_{x,m}^2 + \eta_{L_{\sf reg}}^2}\right)+\eta_0\right].
 \end{equation}
 
 Les valeurs propres sont solutions de l'équation
@@ -1227,8 +1231,8 @@ Quelque chose ne fonctionne pas au moment de la rédaction de ce manuscrit de th
 \section{Conclusion}
 Dans ce chapitre, plusieurs modèles pour interpréter les résultats des campagnes d'expériences sont développés.\medskip
 
-Tout d'abord, les notions de nombres adimensionnels sont expliquées, en approchant le problème par une cavité différentiellement chauffée. Une distinction est faite entre la cavité d'adaptation d'impédance dans lequel seul du fluide se trouve et  le régénérateur poreux, et pour chaque cas les nombres de Rayleigh sont calculés. Ces calculs préliminaires permette de prédire la mise en place de convection naturelle dans le cône d'adaptation d'impédance, mais pas dans le régénérateur, ainsi que des ordres de grandeurs des vitesses de circulation où celle-ci apparaît.\smallskip
+Tout d'abord, les notions de nombres adimensionnels sont expliquées, en approchant le problème par une cavité différentiellement chauffée. Une distinction est faite entre la cavité d'adaptation d'impédance dans laquelle seul du fluide se trouve et le régénérateur poreux, et pour chaque cas les nombres de Rayleigh sont calculés. Ces calculs préliminaires permettent de prédire la mise en place de convection naturelle dans le cône d'adaptation d'impédance, mais pas dans le régénérateur, ainsi que des ordres de grandeurs des vitesses de circulation où celle-ci apparaît.\smallskip
 
 Ensuite, un modèle par éléments finis est implémenté sous le logiciel \textsc{Comsol} Multiphysics\textss\textregistered en ne modélisant que des phénomènes thermiques comme la conduction et la convection, sans prendre en compte le champ acoustique ni la porosité du régénérateur. Ce modèle vise à simuler simplement la distribution de température dans le noyau, en considérant uniquement un flux de chaleur extrait à une paroi représentant l'échangeur froid, la conduction par le solide poreux, et la convection dans le cône d'adaptation d'impédance. Cette dernière est également étudiée séparément, puisque l'orientation `\texttt{V2}' où il n'est pas attendu de circulation liée à la convection naturelle présente une mise en mouvement du fluide.\smallskip
 
-Enfin, un modèle analytique du régime transitoire a été développé, en simulant plus de phénomènes laissés de côté dans les approches précédentes. Le champ acoustique est calculé pour déterminer le flux de chaleur thermoacoustique selon le modèle linéaire, et à cela s'ajoutent les flux de chaleur conduits par les différents milieu, la vorticité qui cause un échauffement aux bords dans l'axe du régénérateur, les pertes latérales sur ces mêmes bords et à l'interface avec l'enveloppe qui contient le régénérateur, et l'échauffement visqueux qui apparaît avec l'augmentation de la vitesse acoustique. Ce problème inhomogène et à plusieurs variables est résolu en appliquant successivement pour chaque variable d'espace la méthode des tranformations intégrales, pour ne garder que la dépendance temporelle. Les paramètres comme les coefficients d'échanges responsables des pertes latérales sont estimés empiriquement, en ajustant leur valeur pour approcher les résultats expérimentaux. 
+Enfin, un modèle analytique du régime transitoire a été développé, en simulant plus de phénomènes laissés de côté dans les approches précédentes. Le champ acoustique est calculé pour déterminer le flux de chaleur thermoacoustique selon le modèle linéaire, et à cela s'ajoutent les flux de chaleur conduits par les différents milieu, la vorticité qui cause un échauffement aux bords dans l'axe du régénérateur, les pertes latérales sur ces mêmes bords et à l'interface avec l'enveloppe qui contient le régénérateur, et l'échauffement visqueux qui apparaît avec l'augmentation de la vitesse acoustique. Ce problème inhomogène et à plusieurs variables est résolu en appliquant successivement pour chaque variable d'espace la méthode des tranformations intégrales, pour ne garder que la dépendance temporelle. Les paramètres comme les coefficients d'échanges responsables des pertes latérales au niveau des échangeurs sont estimés empiriquement, en ajustant leur valeur pour approcher les résultats expérimentaux. 

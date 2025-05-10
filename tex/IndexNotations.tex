@@ -19,10 +19,10 @@
         $\COP_{\sf carnot}$ & --- & Coefficient de performance de Carnot, $\COP_{\sf carnot} = \frac{T_f}{T_a-T_f}$ \\
         $DR$ & \unit{\percent} & \textit{Drive ratio}, $DR=\frac{p_1}{p_0}$ \\
         $f_1$ & \unit{\hertz} & Fréquence du signal acoustique \\
-        $\mathbf{g}$ & \unit{\meter\per\square\second} & Accélération terrestre, $\mathbf{g}=-g \mathbf e_{z,0}$ avec $g=\qty{9.81}{\meter\per\second\squared}$ \\
+        $\mathbf{g}$ & \unit{\meter\per\square\second} & Accélération de la pesanteur, $\mathbf{g}=-g \mathbf e_{z,0}$ avec $g=\qty{9.81}{\meter\per\second\squared}$ \\
 %        $G$ & \echaf{?/m} & Gain thermoacoustique unitaire \\
 %        $\Grashof$ & --- & Nombre de Grashof \\
-        $k_0$ & \unit{\radian\per\meter} & Nombre d'onde sans perte \echaf{trouver autre chose} \\
+        $k_0$ & \unit{\per\meter} & Nombre d'onde sans perte \echaf{trouver autre chose} \\
         $k$ & \unit{\joule\per\meter\per\kelvin} & Conductivité thermique \\
         $K_p$ & \unit{\meter\squared} & Perméabilité hydraulique d'un matériau poreux \\
         $L_{\sf reg}$ & \unit{\milli\meter} & Longueur du régénérateur, $L_{\sf reg}=\qty{39}{\milli\meter}$ \\
@@ -31,7 +31,7 @@
         $p_1$ & \unit{\pascal} & Pression acoustique \\
 %        $\Peclet$ & --- & Nombre de Péclet \\
         $\Prandtl$ & --- & Nombre de Prandtl \\
-        $\mathbf{e}_r$ & \echaf{---} & Vecteur unitaire transverse du noyau \\
+        $\mathbf{e}_r$ & \echaf{---} & Vecteur unitaire radial \\
         $R_{\sf reg}$ & \unit{\milli\meter} & Rayon du régénérateur, $R_{\sf reg}=\qty{74}{\milli\meter}$ \\
         $\Rayleigh$ & --- & Nombre de Rayleigh \\
         $r_h$ & \unit{\meter} & Rayon hydraulique des pores du régénérateur \\
@@ -42,8 +42,8 @@
         $u$ & \unit{\cubic\meter\per\second} & Débit acoustique \\
         $v$ & \unit{\meter\per\second} & Vitesse acoustique \\
         $\dot W_e$ & \unit{\watt} & Puissance électrique consommée par les sources acoustiques \\
-        $\mathbf{e}_x$ & --- & Vecteur unitaire axial du noyau \\
-        $\mathbf e_{x0}$ & --- & \echaf{définir} \\
+        $\mathbf{e}_x$ & --- & Vecteur unitaire axial \\
+%        $\mathbf e_{x0}$ & --- & \echaf{définir} \\
         $\dot Q_c$ & \unit{\watt} & Flux de chaleur extrait par l'eau circulant dans l'échangeur ambiant \\
         $\dot Q_f$ & \unit{\watt} & Flux de chaleur apporté par les résistances chauffantes dans l'échangeur froid\\
     \end{longtable}
@@ -56,6 +56,8 @@
         \textbf{Symbole} & \textbf{Unité} & \textbf{Définition} \\\hline\hline
 %        $\psi_v$ & \unit{\degree} & Rotation de l'axe de symétrie du réfrigérateur par rapport à l'axe horizontal\\
 %        $\psi_h$ & \unit{\degree} & Rotation autour de l'axe de symétrie du réfrigérateur \\
+		$\varphi_{SA1}$ & \unit{\degree} & Phase de la source acoustique principale \\
+		$\varphi_{SA2}$ & \unit{\degree} & Phase de la source acoustique secondaire \\
         $\varphi_{2-1}$ & \unit{\degree} & Déphasage entre les sources acoustiques, $\varphi_{1-2} = \varphi_{SA2} - \varphi_{SA1}$\\
         $\Phi$ & \unit{\percent} & Porosité du régénérateur \\
         $\rho_0$ & \unit{\kilo\gram\per\cubic\meter} & Masse volumique moyenne du gaz \\
@@ -85,7 +87,7 @@
         \hline \endlastfoot
         $\square_0$	& Valeur moyenne de la variable \\
         $\square_1$ & Valeur oscillante à l'ordre 1 de la variable \\
-		$\square_c$ & Caractéristique critique\\
+		$\square_c$ & Valeur critique \\
 		$\square^{\perp \mathbf g}$ & Perpendiculaire à la gravité $\mathbf g$ \\
 		$\square^{//\mathbf g}$ & Parallèle à la gravité $\mathbf g$ \\
 		$\square^*$ & Conjugué complexe\\

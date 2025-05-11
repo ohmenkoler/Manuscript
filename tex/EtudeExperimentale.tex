@@ -4,15 +4,79 @@
 \section{Introduction}\label{chap:EtudeExpe_Intro}
 Les expériences réalisées lors de la caractérisation du réfrigérateur \textsc{Tacot}, ont montré que le gradient axial de température dans le noyau thermoacoustique n'est pas linéaire, et que les températures ne sont pas homogènes le long de la direction transverse du noyau (voir la figure~\ref{fig:ATE_Profils_5mm})~\cite{ramadan_design_2021}. Parmi les hypothèses formulées quant à la cause de ces disparités avec la théorie linéaire de Rott, qui est associée à un gradient linéaire entre les côtés froid et ambiant du noyau thermoacoustique, ainsi qu'une température radiale uniforme sur la section du noyau thermoacoustique, plusieurs hypothèses peuvent être envisagées : vent acoustique, turbulence, formation de tourbillons, génération d'harmoniques supérieures, et convection naturelle. Parmi ces effets, peu d'études portent sur cette dernière, bien qu'il ait déjà été montré que le déclenchement de moteurs ou encore l'uniformité de température sur la section y étaient sensibles \cite{ross_influence_2003,  hireche_numerical_2019, ramadan_experimental_2018}. Le sujet des réfrigérateurs thermoacoustiques est d'ailleurs assez peu traité dans la littérature~\cite{zhang_novel_2011, babaei_investigation_2010}.\smallskip
 
-Les expériences reportées ici visent à quantifier la dépendance du comportement de la machine à la direction de la gravité pour mieux appréhender le rôle de la convection naturelle. Tout d'abord, pour adopter une vue d'ensemble, les performances du réfrigérateur obtenues au cours de différentes expériences sont présentées dans le paragraphe~\ref{chap:PerfConvNat}. Les aspects étudiés dans cette section sont les températures atteintes au niveau de chaque échangeur, les flux de chaleur échangés par ces derniers, et le coefficient de performance, le tout en régime stationnaire.\smallskip
+Les expériences reportées ici visent à quantifier la dépendance du comportement de la machine à la direction de la gravité pour mieux appréhender le rôle de la convection naturelle. Tout d'abord, une analyse des températures mesurées à tous les emplacements de thermocouples est proposée. Cette partie de l'étude est séparée en deux étapes. Dans la première, les sources acoustiques ne sont pas alimentées, pour étudier le comportement thermique du réfrigérateur en l'absence d'oscillations acoustiques dans le paragraphe~\ref{chap:DistribTemperature_HeatOnly}. Dans la seconde, les sources acoustiques sont utilisées, et les résultats obtenus pour trois amplitudes acoustiques sont analysés dans le paragraphe~\ref{chap:DistribTemperature}.\smallskip
 
-Une analyse des températures mesurées à tous les emplacements de thermocouples est ensuite proposée dans le paragraphe~\ref{chap:DistribTemperature}. Cette partie de l'étude est séparée en deux étapes. Dans un premier temps, les données transitoires sont comparés aux résultats de la simulation analytique temporelle présentée dans le paragraphe~\ref{chap:ModeleTemporel}, puis les profils axiaux et radiaux sont déduits à partir des valeurs de température en régime stationnaire pour se placer dans la même configuration que le modèle par éléments finis expliqué dans le paragraphe~\ref{chap:FEM}.
+Enfin, pour adopter une vue d'ensemble, les performances du réfrigérateur obtenues au cours de différentes expériences sont présentées dans le paragraphe~\ref{chap:PerfConvNat}. Les aspects étudiés dans cette section sont les températures atteintes au niveau de chaque échangeur, les flux de chaleur échangés par ces derniers, et le coefficient de performance, le tout en régime stationnaire.\smallskip
 
-\section{Expériences préliminaires sans acoustique}
-\subsection{Distributions de température dans la cavité d'adaptation d'impédance}
+
+Avant toute analyse des résultats obtenus pour les amplitudes acoustiques choisies et les orientations définies, ceux-ci sont résumés dans le tableau~\ref{tab:RecapResultExpe}.
+
+\begin{longtable}{llll llll lll}
+	\caption{Récapitulatif des résultats expérimentaux. Les températures $\theta_a$, $\theta_f$ et $\theta_{SA1}$ indiquées représentent l'écart de la moyenne des températures sur la section par rapport aux températures initiales $T_\infty$.}
+	\label{tab:RecapResultExpe}\\%
+	
+	\hline
+	$\xi_1$ & $\xi_2$ & $DR$ & $T_\infty$ & $\theta_a$  & $\theta_f$ & $\theta_{SA1}$ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Orientation} \\%
+	
+	\multicolumn{2}{c}{(\unit{\milli\meter})} & (\unit{\percent})  & \multicolumn{4}{c}{(\unit{\kelvin})} &\multicolumn{2}{c}{(\unit{\watt})} & (\unit{\percent}) & \\\hline\hline \endfirsthead
+	
+	\multicolumn{11}{l}{...suite du tableau \ref{tab:RecapResultExpe}}\\\hline
+	$\xi_1$ & $\xi_2$  & $DR$ & $T_\infty$ & $\theta_a$  & $\theta_f$ & $\theta_{SA1}$ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Orientation} \\%
+	
+	\multicolumn{2}{c}{(\unit{\milli\meter})} & (\unit{\percent}) &  \multicolumn{4}{c}{(\unit{\kelvin})} &\multicolumn{2}{c}{(\unit{\watt})} & (\unit{\percent}) & \\\hline\hline \endhead
+	
+	\hline
+	\multicolumn{11}{r}{Continué sur la page suivante...} \endfoot
+    \hline \endlastfoot
+	
+	\num{0} & \num{0}  &  \num{0} & \num{291.4} & \num{5.1} & \num{11.7} & \num{4.5} & \num{10} & \num{40} & --- & \multirow{8}{*}{`\texttt{H1}'} \\*
+	\num{1} & \num{.3} &  \num{.4} & \num{291} & \num{1.8} & \num{-4.3} & \num{-.7} & \num{.8} & \num{0} & \num{0} &  \\*
+	\num{5} & \num{1.1} &  \num{2} & \num{290.8} & \num{3.3} & \num{-27} & \num{-4.6} & \num{72} & \num{0} & \num{0} & \\*
+	\num{5} & \num{1.1} &  \num{2} & \num{289.7} & \num{3.6} & \num{-17.2} & \num{-2.4} & \num{84} & \num{50} & \num{4.5} & \\*
+	\num{5.1} & \num{1.1} &  \num{2} & \num{289.7} & \num{6.5} & \num{-.6} & \num{1.3} & \num{117} & \num{100} & \num{2.7} & \\*
+	\num{8.5} & \num{1.8} & \num{3.4} & \num{290.6} & \num{5.4} & \num{-34.6} & \num{-8.2} & \num{195} & \num{0} & \num{0} & \\*
+	\num{8.5} & \num{1.7} &  \num{3.5} & \num{290.5} & \num{2.9} & \num{-29.7} & \num{-6.5} & \num{216} & \num{50} & \num{2.9} & \\*
+	\num{8.5} & \num{1.8} &  \num{3.5} & \num{290.5} & \num{4.7} & \num{-22.8} & \num{-4} & \num{241} & \num{100} & \num{4.9} & \\
+	
+	 \hdashline
+	\num{0} & \num{0} &  \num{0} & \num{291.2} & \num{2.4} & \num{12.8} & \num{4.3} & \num{12} & 40 & --- & \multirow{8}{*}{`\texttt{H2}'} \\*
+	\num{1} & \num{.4} & \num{.4} & \num{290.7} & \num{1} & \num{-3.7} & \num{-.3} & \num{0} & \num{0} & \num{0} & \\*
+	\num{5} & \num{1.2} & \num{2} & \num{291.3} & \num{2.5} & \num{-28} & \num{-5.1} & \num{74} & \num{0} & \num{0} & \\*
+	\num{4.9} & \num{1.1} &  \num{2} & \num{293.7} & \num{4.6} & \num{-17.3} & \num{-3.7} & \num{119} & \num{50} & \num{5} & \\*
+	\num{5} & \num{1.1} &  \num{2} & \num{293.7} & \num{8.1} & \num{4.6} & \num{-.3} & \num{139} & \num{100} & \num{6} & \\*
+	\num{8.5} & \num{1.7} & \num{3.4} & \num{291.5} & \num{8.1} & \num{-34.2} & \num{-8.5} & \num{159} & \num{0} & \num{0} & \\*
+	\num{8.4} & \num{1.8} &  \num{3.5} & \num{293.1} & \num{10.3} & \num{-23.4} & \num{-5.6} & \num{202} & \num{50} & \num{2.9} & \\*
+	\num{8.4} & \num{1.8} &  \num{3.5} & \num{293.1} & \num{12.8} & \num{-16.8} & \num{-2.8} & \num{226} & \num{100} & \num{5.1} & \\
+	
+	 \hdashline
+	\num{0} & \num{0} & \num{0} & \num{293.1} & \num{6.3} & \num{44.6} & \num{2.9} & \num{11} & \num{40} & --- & \multirow{8}{*}{`\texttt{V1}'} \\*
+	\num{1} & \num{.4} & \num{.4} & \num{293.6} & \num{1.3} & \num{-3.4} & \num{-2.3} & \num{2} & \num{0} & \num{0} & \\*
+	\num{5} & \num{1.1} & \num{2} & \num{290.3} & \num{8.9} & \num{-20.1} & \num{-5} & \num{53} & \num{0} & \num{0} & \\*
+	\num{5} & \num{1.1} & \num{2} & \num{291.9} & \num{8.8} & \num{-10.8} & \num{-2.1} & \num{86} & \num{50} & \num{4.6} & \\*
+	\num{5} & \num{1.1} & \num{2} & \num{291.9} & \num{12.5} & \num{.5} & \num{2.4} & \num{105} & \num{100} & \num{5.4} & \\*
+	\num{8.4} & \num{1.6} & \num{3.5} & \num{292.9} & \num{18.2} & \num{-25.3} & \num{-5.4} & \num{167} & \num{0} & \num{0} & \\*
+	\num{8.3} & \num{1.7} & \num{3.4} & \num{292} & \num{20.3} & \num{-21.5} & \num{-4} & \num{192} & \num{50} & \num{3.5} & \\*
+	\num{8.3} & \num{1.7} & \num{3.4} & \num{292} & \num{20.2} & \num{-15.5} & \num{-.8} & \num{218} & \num{100} & \num{5.4} & \\
+	
+	 \hdashline 
+	\num{0} & \num{0} & \num{0} & \num{295.2} & \num{1.7} & \num{13.4} & \num{16.7} & \num{.7} & \num{40} & --- & \multirow{8}{*}{`\texttt{V2}'} \\*
+	\num{1} & \num{.7} & \num{.4} & \num{289.9} & \num{.2} & \num{-6} & \num{-.7} & \num{5} & \num{0} & \num{0} & \\*
+	\num{5} & \num{1.7} & \num{2} & \num{290.1} & \num{3.2} & \num{-25.7} & \num{-5.4} & \num{61} & \num{0} & \num{0} & \\*
+	\num{5.1} & \num{1.6} & \num{2} & \num{289.7} & \num{3.4} & \num{-15.1} & \num{-2.3} & \num{86} & \num{50} & \num{4.2} & \\*
+	\num{5.1} & \num{1.3} & \num{2} & \num{289.7} & \num{6} & \num{-1.9} & \num{2.1} & \num{108} & \num{100} & \num{3.4} & \\*
+	\num{8.6} & \num{2.24} & \num{3.5} & \num{290} & \num{4} & \num{-32.8} & \num{-8.8} & \num{176} & \num{0} & \num{0} & \\*
+	\num{8.4} & \num{2.24} & \num{3.4} & \num{289.5} & \num{5.3} & \num{-28} & \num{-6.9} & \num{189} & \num{50} & \num{3.1} & \\*
+	\num{8.4} & \num{2} & \num{3.4} & \num{289.5} & \num{7.3} & \num{-20.5} & \num{-3.5} & \num{210} & \num{100} & \num{5.2} & \\*
+\end{longtable}
+\section{Expériences préliminaires sans acoustique}\label{chap:DistribTemperature_HeatOnly}
 Des mesures sans acoustique sont d'abord réalisées pour séparer les effets qui se superposent lors du fonctionnement de la machine, afin d'avoir un système plus simple à analyser, ainsi que pour réaliser des expériences dans une configuration différente, pour vérifier la robustesse des raisonnements proposés ci-après.
 
 L'eau est mise en circulation dans l'échangeur de chaleur ambiant, et les cartouches chauffantes sont alimentées par une puissance de \qty{40}{\watt\rms}, générant un point chaud au niveau de l'échangeur ``froid''. Les températures obtenues sont tracées sur les figures~\ref{fig:HeatOnly_CHXout_H1H2} et \ref{fig:HeatOnly_CHXout_V1V2}. 
+
+Rappelons que les résultats du chapitre~\ref{chap:SimusRealisees} anticipent une situation favorable à des écoulements de convection naturelle dans la cavité d'adaptation d'impédance pour certaines orientations et/ou gradients de températures, ce qui ne serait pas le cas dans la machine.
+
+\subsection{Distributions de température dans la cavité d'adaptation d'impédance}
+L'attention est d'abord portée sur la cavité située entre la source acoustique principale, dans laquelle les nombres de Rayleigh calculés dans le paragraphe~\ref{chap:Rayleigh_NonPoreux} et les simulations par éléments finis présentées dans le paragraphe~\ref{chap:FEM} prédisent des recirculations de fluide causées par la convection naturelle.
 
 \subsubsection{Réfrigérateur horizontal}
 La première série d'expérience est réalisée dans les orientations `\texttt{H1}' et `\texttt{H2}' (voir les figures~\ref{fig:OrientationCore_H1} et \subref{fig:OrientationCore_H2}, en gardant à l'esprit qu'il s'agit d'un abus de langage puisque la machine est dans la même orientation, horizontale, pour les deux cas, et seul le plan de thermocouples est modifié). Les résultats de ces mesures de températures sont tracés en fonction du temps après soustraction de la température initiale sur la figure~\ref{fig:HeatOnly_CHXout_H1H2}.
@@ -37,7 +101,7 @@ La première série d'expérience est réalisée dans les orientations `\texttt{
     \label{fig:HeatOnly_CHXout_H1H2}
 \end{figure}
 
-Cette figure met en évidence la différence de comportement entre la distribution de températures qui se met en place dans les cas des orientations `\texttt{H1}', représentée par des traits pleins et pour laquelle le plan de thermocouples est vertical, et `\texttt{H2}', représenté par des traits pointillés et pour laquelle le plan est horizontal. Pour chaque cas, la température augmente dès l'alimentation des cartouches chauffantes comme l'indiquent les courbes des signaux de thermocouples \numlist{1;2;3}. Le thermocouple \num{0} placé devant la source acoustique principale à l'autre extrémité de la cavité d'adaptation d'impédance, chauffe également mais dans une moindre mesure à \qty{4}{\kelvin} par rapport à sa température initiale $T_\infty$ (notée dans le tableau~\ref{tab:RecapResultExpe}) pour les deux orientations, et ce avec un décalage de \qty{200}{\second}. Des écarts de \qty{7.2}{\kelvin} pour l'orientation `\texttt{H1}' et \qty{8.5}{\kelvin} pour l'orientation `\texttt{H2}' apparaissent entre la source acoustique et l'échangeur muni de cartouches. Les estimations du chapitre~\ref{chap:SimusRealisees} de la vitesse de circulation du fluide dans le cas de gradients horizontaux de température \echaf{voir quoi dire d'autre}, indiquent que de telles conditions sont de nature à provoquer une mise en mouvement du fluide dans la cavité.
+Cette figure met en évidence la différence de comportement entre la distribution de températures qui se met en place dans les cas des orientations `\texttt{H1}', représentée par des traits pleins et pour laquelle le plan de thermocouples est vertical, et `\texttt{H2}', représenté par des traits pointillés et pour laquelle le plan est horizontal. Pour chaque cas, la température augmente dès l'alimentation des cartouches chauffantes comme l'indiquent les courbes des signaux de thermocouples \numlist{1;2;3}. Le thermocouple \num{0} placé devant la source acoustique principale à l'autre extrémité de la cavité d'adaptation d'impédance, chauffe également mais dans une moindre mesure à \qty{4}{\kelvin} par rapport à sa température initiale $T_\infty$ (notée dans le tableau~\ref{tab:RecapResultExpe}) pour les deux orientations, et ce avec un décalage de \qty{200}{\second}. Des écarts de \qty{7.2}{\kelvin} pour l'orientation `\texttt{H1}' et \qty{8.5}{\kelvin} pour l'orientation `\texttt{H2}' apparaissent entre la source acoustique et l'échangeur muni de cartouches. Les estimations du chapitre~\ref{chap:SimusRealisees} de la vitesse de circulation du fluide dans le cas de gradients horizontaux de température indiquent que de telles conditions sont de nature à provoquer une mise en mouvement du fluide dans la cavité.
 
 Les résultats de mesures présentés en figure~\ref{fig:HeatOnly_CHXout_H1H2} vont dans ce sens, en suivant la logique suivante : le fluide s'échauffe près de l'échangeur de chaleur froid, et s'élève suite à la diminution de la densité, ce qui provoque un flux massique montant accompagné d'un flux de chaleur convectif. Ces flux se propagent jusqu'à la paroi de la source acoustique principale, le long de laquelle ils redescendent et se traduisent par une charge thermique sur cette paroi. Cette circulation, qui se fait à la vitesse $\mathbf v_{\sf ref}$ (voir l'équation~\eqref{eq:VitesseReference_Rayleigh}) a un certain temps d'établissement, qui dépend du nombre de Rayleigh et donc de la différence de température, ce qui explique le délai avant chauffage du thermocouple~\num{0}. Après la mise en place de cette cellule de convection naturelle, les différences de températures entre les orientations et les emplacements de thermocouples sont visibles. Dans l'orientation `\texttt{H1}', la température en haut de la cavité (TC~\num{1}) est la plus chaude, à \qty{24}{\kelvin}, le thermocouple~\num{2}, sur l'axe de la cavité, indique une température de \qty{17}{\kelvin}, et le thermocouple~\num{3} situé en bas de la cavité, une augmentation de \qty{4}{\kelvin} par rapport à la température initiale. Cette distribution valide l'hypothèse concernant la circulation dans la cavité d'adaptation d'impédance en l'absence d'écoulement oscillant.
 
@@ -51,14 +115,25 @@ La stratification observée dans le plan vertical n'a pas son équivalent dan le
 
 \begin{figure}[!ht]
     \centering
+    \begin{subfigure}{.98\textwidth}
     \external{fig_HeatOnly_CHXout_V1V2}
 %    \externalremake
     \input{../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2}
+    \end{subfigure}
+    
+    \begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_V10.pdf}
+	\end{subfigure} 
+	\begin{subfigure}[c]{.25\textwidth}
+%		\centering
+		\includegraphics[scale=.5]{./external/fig_OrientationCore_V20.pdf}
+	\end{subfigure}
     \caption{\'Evolution temporelle des températures dans la cavité d'adaptation d'impédance pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} nul.}
     \label{fig:HeatOnly_CHXout_V1V2}
 \end{figure}
 
-Comme attendu d'après l'étude des ordres de grandeur des nombres de Rayleigh (voir le paragraphe~\ref{chap:Rayleigh_NonPoreux}, les résultats de chacune des configurations sont différents. Premièrement, la température de l'échangeur de chaleur froid s'élève de \qty{53}{\kelvin}  par rapport à la température ambiante sur l'axe, dont la température est acquise par le thermocouple~\num{2}, et \qty{40}{\kelvin} sur la périphérie (thermocouples~\numlist{1;3}) dans l'orientation `\texttt{V1}' (traits pleins). Dans l'orientation `\texttt{V2}' (trait pointillés), l'augmentation de température par rapport à la température initiale est de \qty{25}{\kelvin} sur l'axe (thermocouple~\num{2}) et \qtylist{16;21}{\kelvin} sur la périphérie (respectivement les TC~\numlist{1;3}). On constate donc une non uniformité transverse de la température, avec une symétrie par rapport à l'axe du guide dans le cas `\texttt{V1}', et sans symétrie dans le cas `\texttt{V2}'. La température de la source acoustique principale mesurée par le thermocouple~\num{0} dépend elle aussi de l'orientation. Dans le cas `\texttt{V1}', cette température augmente de \qty{3}{\kelvin}, et dans le cas `\texttt{V2}', de \qty{17}{\kelvin}.
+Comme attendu d'après l'étude des ordres de grandeur des nombres de Rayleigh (voir le paragraphe~\ref{chap:Rayleigh_NonPoreux}), les résultats de chacune des configurations sont différents. Premièrement, la température de l'échangeur de chaleur froid s'élève de \qty{53}{\kelvin}  par rapport à la température ambiante sur l'axe, dont la température est acquise par le thermocouple~\num{2}, et \qty{40}{\kelvin} sur la périphérie (thermocouples~\numlist{1;3}) dans l'orientation `\texttt{V1}' (traits pleins). Dans l'orientation `\texttt{V2}' (trait pointillés), l'augmentation de température par rapport à la température initiale est de \qty{25}{\kelvin} sur l'axe (thermocouple~\num{2}) et \qtylist{16;21}{\kelvin} sur la périphérie (respectivement les TC~\numlist{1;3}). On constate donc une non uniformité transverse de la température, avec une symétrie par rapport à l'axe du guide dans le cas `\texttt{V1}', et sans symétrie dans le cas `\texttt{V2}'. La température de la source acoustique principale mesurée par le thermocouple~\num{0} dépend elle aussi de l'orientation. Dans le cas `\texttt{V1}', cette température augmente de \qty{3}{\kelvin}, et dans le cas `\texttt{V2}', de \qty{17}{\kelvin}.
 
 Dans le cas de ces expériences `\texttt{heat\_only}', les cartouches chauffantes de l'échangeur agissent comme une source de chaleur qui fait face à la paroi de la source acoustique principale. Les résultats donnés par la figure~\ref{fig:HeatOnly_CHXout_V1V2} sont en accord avec l'hypothèse selon laquelle une circulation fluide de nature convective type Rayleigh-Bénard est mise en place en orientation `\texttt{V2}' ($\Rayleigh\sim \num{e7}>\Rayleigh_c$), ce qui n'est pas le cas en orientation `\texttt{V1}'. En effet, un tel mouvement de fluide met en contact les zones de la cavité à des température différentes, ce qui se traduit par une homogénéisation des températures. Ainsi, les courbes de température représentant l'orientation `\texttt{V2}' sont beaucoup plus proches les unes des autres que celles représentant l'orientation `\texttt{V1}'. La paroi de la source acoustique principale subit un échauffement dans l'orientation `\texttt{V2}' et sa température est quasi-égale à celle du thermocouple~\num1.\medskip
 
@@ -67,7 +142,7 @@ Dans le cas de ces expériences `\texttt{heat\_only}', les cartouches chauffante
 La symétrie de la distribution dans l'orientation `\texttt{V1}', avec l'égalité des températures périphériques (TC~\numlist{1;3}), ainsi que la température plus élevée sur l'axe qu'en périphérie pourrait être un marqueur de conduction thermique à travers l'enveloppe de la machine.
 
 \subsection{Distributions de température dans le régénérateur}
-Comme dans le cas de la cavité, les expériences sans acoustique sont tout d'abord analysées. La comparaison des résultats issus d'expériences de type `\texttt{heat\_only}' entre les orientations `\texttt{H1}' et `\texttt{H2}' est faite avec la figure~\ref{fig:HeatOnly_Regen_H1H2}, et celle pour les orientations `\texttt{V1}' et `\texttt{V2}' sur la figure~\ref{fig:HeatOnly_Regen_V1V2}.\smallskip
+Après l'étude du cas de la cavité, les résultats des expériences à l'intérieur du régénérateur obtenus par les thermocouples~\numrange{4}{12} sont analysés. La comparaison des résultats issus d'expériences de type `\texttt{heat\_only}' entre les orientations `\texttt{H1}' et `\texttt{H2}' est faite avec la figure~\ref{fig:HeatOnly_Regen_H1H2}, et celle pour les orientations `\texttt{V1}' et `\texttt{V2}' sur la figure~\ref{fig:HeatOnly_Regen_V1V2}.\smallskip
  
 \subsubsection{Réfrigérateur horizontal}
 
@@ -201,7 +276,7 @@ Cette étude préliminaire montre que la convection dans la cavité d'adaptation
 
 
 \section{Expériences avec acoustique}\label{chap:DistribTemperature}
-Après cette vue d'ensemble de la machine, les températures mesurées sont étudiées, dans un premier temps dans la cavité se trouvant entre la source principale et l'échangeur foird, puisdans le c\oe{}ur de la machine. Rappelons que les résultats du chapitre~\ref{chap:SimusRealisees} anticipent une situation favorable à des écoulements de convection naturelle dans la cavité d'adaptation d'impédance pour certaines orientations et/ou gradients de températures, ce qui ne serait pas le cas dans la machine.
+Après cette série d'expériences où les effets thermiques seuls ont été étudiés dans la machine, les sources acoustiques sont mises en marche et les températures mesurées sont étudiées, dans un premier temps dans la cavité se trouvant entre la source principale et l'échangeur froid, puis dans le c\oe{}ur de la machine.
 
 \subsection{Distribution des températures dans la cavité d'adaptation d'impédance}\label{chap:DistribTemp_CavAdaptImped}
 L'étude des distributions de température commence par la cavité d'adaptation d'impédance, dans laquelle la présence d'une cellule de convection naturelle est suspectée. Pour toutes les orientations présentées dans la figure~\ref{fig:OrientationCore}, plusieurs types d'expériences sont réalisées, et l'étude se concentre sur les signaux de thermocouples placés dans la cavité d'adaptation d'impédance marqué de jaune dans la figure~\ref{fig:TCdansNoyau}, c'est-à-dire les thermocouples \numlist{0;1;2;3}. 
@@ -384,7 +459,7 @@ La série d'expériences dans les orientations verticales `\texttt{V1}' et `\tex
 
 Les observations concordent avec celles formulées pour l'amplitude intermédiaire, avec des écarts de température plus marqués du fait de l'effet thermoacoustique plus intense. Les températures de la source acoustique (TC~\num0) par rapport à l'état initial sont \qty{-5}{\kelvin} pour l'orientation `\texttt{V1}' et \qty{-9}{\kelvin} pour l'orientation `\texttt{V2}'. La distribution est asymétrique dans les deux orientations, avec en `\texttt{V1}' les thermocouples~\numlist{1;2;3} qui indiquent respectivement \qtylist{-11;-21;-16}{\kelvin}, et en `\texttt{V2}', les tempértatures~\qtylist{-16;-24;-20}{\kelvin}. L'orientation `\texttt{V1}' montre à nouveau un réchauffement après l'atteint d'un minimum à $t=\qty{300}{\second}$, tandis que les températures de l'orientation `\texttt{V2}' décroissent directement vers leur valeur finale.\smallskip
 
-Principalement, le réchauffement des températures après l'atteinte de la température la plus froide à l'instant $t=\qty{400}{\second}$ est à nouveau observable, et les températures finales dans l'orientation `\texttt{V1}' sont plus élevées de \qty{5}{\kelvin} que celles de l'orientation `\texttt{V2}'.\echaf{pourquoi retirer cette phrase ?}\smallskip
+Principalement, le réchauffement des températures après l'atteinte de la température la plus froide à l'instant $t=\qty{400}{\second}$ est à nouveau observable, et les températures finales dans l'orientation `\texttt{V1}' sont plus élevées de \qty{5}{\kelvin} que celles de l'orientation `\texttt{V2}'.\smallskip
 
 Cette fois-ci, l'axisymétrie du système n'est plus respectée, dans aucune des orientations, et des écarts de \qty{-4}{\kelvin} en `\texttt{V1}' et \qty{-3.5}{\kelvin} en `\texttt{V2}' entre les thermocouples \numlist{1;3}, avec systématiquement le thermocouple~\num{3} en dessous du \num{1}.\bigskip
 
@@ -449,7 +524,7 @@ La figure~\ref{fig:Acou_Regen_H1H2_Low} est obtenue à l'amplitude acoustique fa
 	
 	\vspace{1.75cm}
 	
-    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$. \subref{fig:Acou_CHXin_H1H2_Low} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_Low} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_Low} côté ambiant (TC \numlist{10;11;12}). La température au démarrage de l'expérience est $T_\infty=\qty{18.5}{\degreeCelsius}$.} 
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$. \subref{fig:Acou_CHXin_H1H2_Low} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_Low} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_Low} côté ambiant (TC \numlist{10;11;12}).} 
     \label{fig:Acou_Regen_H1H2_Low}
 \end{figure}
 
@@ -508,7 +583,7 @@ La figure~\ref{fig:Acou_Regen_V1V2_Low} représente également les évolutions t
 	\end{subfigure}
 	
 	 \vspace{2cm}
-    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$. \subref{fig:Acou_CHXin_V1V2_Low} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_V1V2_Low} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_V1V2_Low} côté ambiant (TC \numlist{10;11;12}). La température au démarrage de l'expérience est $T_\infty=\qty{22}{\degreeCelsius}$ en `\texttt{V1}' et \qty{17}{\degreeCelsius} en `\texttt{V2}'.}
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à faible \textit{drive ratio} $DR=\qty{.4}{\percent}$. \subref{fig:Acou_CHXin_V1V2_Low} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_V1V2_Low} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_V1V2_Low} côté ambiant (TC \numlist{10;11;12}).}
     \label{fig:Acou_Regen_V1V2_Low}
 \end{figure}
 
@@ -592,7 +667,7 @@ Des expériences à moyenne amplitude acoustique, au \textit{drive ratio} $DR=\q
 	\end{subfigure} 
 	
 	\vspace{2cm}
-    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à  \textit{drive ratio} moyen $DR=\qty{2}{\percent}$. \subref{fig:Acou_CHXin_H1H2_Mid} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_Mid} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_Mid} côté ambiant (TC \numlist{10;11;12}). La température au démarrage de l'expérience est $T_\infty=\qty{18.5}{\degreeCelsius}$.} 
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{H1}' et `\texttt{H2}' à  \textit{drive ratio} moyen $DR=\qty{2}{\percent}$. \subref{fig:Acou_CHXin_H1H2_Mid} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_H1H2_Mid} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_H1H2_Mid} côté ambiant (TC \numlist{10;11;12}).} 
     \label{fig:Acou_Regen_H1H2_Mid}
 \end{figure}
 
@@ -657,7 +732,7 @@ Les expériences à moyenne amplitude acoustique pour les orientations `\texttt{
 	\end{subfigure}	
 	
 		
-    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} moyen $DR=\qty{2}{\percent}$. \subref{fig:Acou_CHXin_V1V2_Mid} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_V1V2_Mid} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_V1V2_Mid} côté ambiant (TC \numlist{10;11;12}). La température au démarrage de l'expérience est $T_\infty=\qty{17}{\degreeCelsius}$.}
+    \caption{\'Evolution temporelle des températures dans le régénérateur pour les expériences dans les orientations `\texttt{V1}' et `\texttt{V2}' à \textit{drive ratio} moyen $DR=\qty{2}{\percent}$. \subref{fig:Acou_CHXin_V1V2_Mid} côté froid (TC \numlist{4;5;6}), \subref{fig:Acou_Regmid_V1V2_Mid} milieu (TC \numlist{7;8;9}), \subref{fig:Acou_AHXin_V1V2_Mid} côté ambiant (TC \numlist{10;11;12}).}
     \label{fig:Acou_Regen_V1V2_Mid}
 \end{figure}
 
@@ -796,69 +871,13 @@ La figure~\ref{fig:Acou_AHXin_V1V2_High} montre les données de températures ob
 Comme pour les expériences à haute amplitude à l'horizontale, les températures du milieu et du côté ambiant rendent l'analyse des figures~\ref{fig:Acou_Regmid_V1V2_High} et \subref{fig:Acou_AHXin_V1V2_High} difficile, car les symptômes de convection naturelle deviennent invisibles par rapport aux résultats du côté froid du noyau, à l'exception du fait que les températures mesurées en `\texttt{V1}' ont tendance à être plus élevées que celles obtenues en `\texttt{V2}'.\medskip
 
 \section[Orientation du \textsc{Tacot} et impact sur les performances]{Impact de l'orientation du \textsc{Tacot} sur les performances du réfrigérateur}\label{chap:PerfConvNat}
-\echaf{changer parce que c'est plus le début} Pour commencer cette étude expérimentale, une vue d'ensemble est adoptée. Sont considérées ici la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=\nicefrac{Q_f}{W_e}$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = \nicefrac{T_f}{T_a-T_f}$ (les température froide $T_f$ et ambiante $T_a$ sont obtenues en calculant respectivement les moyennes des signaux de température des thermocouples \numlist{4;5;6}, et \numlist{10;11;12}).\medskip
+Finalement, une vue d'ensemble est adoptée pour étudier le réfrigérateur. Sont considérées ici la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=\nicefrac{Q_f}{W_e}$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = \nicefrac{T_f}{T_a-T_f}$ (les température froide $T_f$ et ambiante $T_a$ sont obtenues en calculant respectivement les moyennes des signaux de température des thermocouples \numlist{4;5;6}, et \numlist{10;11;12}).\medskip
 
-Le \textsc{Tacot} est successivment positionné dans les quatre orientations définies sur les schémas de la figure~\ref{fig:OrientationCore}, et les expériences sont réalisées en suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}. Les charges thermiques $\dot Q_f$ de \qtylist{0;50;100}{\watt} sont tour à tour appliquées au niveau de l'échangeur de chaleur froid et trois niveaux acoustiques sont considérés. Les résultats des expériences sont notées dans le tableau~\ref{tab:RecapResultExpe}.\medskip
+Le \textsc{Tacot} est successivement positionné dans les quatre orientations définies sur les schémas de la figure~\ref{fig:OrientationCore}, et les expériences sont réalisées en suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}. Les charges thermiques $\dot Q_f$ de \qtylist{0;50;100}{\watt} sont tour à tour appliquées au niveau de l'échangeur de chaleur froid et trois niveaux acoustiques sont considérés. Les résultats des expériences sont notées dans le tableau~\ref{tab:RecapResultExpe}.\medskip
 
 Un inconvénient de cette vision globale en termes de performances de la machine est qu'elle passe sous silence la complexité des phénomènes qui dirigent le comportement du réfrigérateur. En conséquence, nous devrons souvent nous contenter dans cette partie d'observer les phénomènes sans les interpréter de manière satisfaisante.
 
-\begin{longtable}{llll llll lll}
-	\caption{Récapitulatif des résultats expérimentaux. Les températures $\theta_a$, $\theta_f$ et $\theta_{SA1}$ indiquées représentent l'écart de la moyenne des températures sur la section par rapport aux températures initiales $T_\infty$.}
-	\label{tab:RecapResultExpe}\\%
-	
-	\hline
-	$\xi_1$ & $\xi_2$ & $DR$ & $T_\infty$ & $\theta_a$  & $\theta_f$ & $\theta_{SA1}$ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Orientation} \\%
-	
-	\multicolumn{2}{c}{(\unit{\milli\meter})} & (\unit{\percent})  & \multicolumn{4}{c}{(\unit{\kelvin})} &\multicolumn{2}{c}{(\unit{\watt})} & (\unit{\percent}) & \\\hline\hline \endfirsthead
-	
-	\multicolumn{11}{l}{...suite du tableau \ref{tab:RecapResultExpe}}\\\hline
-	$\xi_1$ & $\xi_2$  & $DR$ & $T_\infty$ & $\theta_a$  & $\theta_f$ & $\theta_{SA1}$ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Orientation} \\%
-	
-	\multicolumn{2}{c}{(\unit{\milli\meter})} & (\unit{\percent}) &  \multicolumn{4}{c}{(\unit{\kelvin})} &\multicolumn{2}{c}{(\unit{\watt})} & (\unit{\percent}) & \\\hline\hline \endhead
-	
-	\hline
-	\multicolumn{11}{r}{Continué sur la page suivante...} \endfoot
-    \hline \endlastfoot
-	
-	\num{0} & \num{0}  &  \num{0} & \num{291.4} & \num{5.1} & \num{11.7} & \num{4.5} & \num{10} & \num{40} & --- & \multirow{8}{*}{`\texttt{H1}'} \\*
-	\num{1} & \num{.3} &  \num{.4} & \num{291} & \num{1.8} & \num{-4.3} & \num{-.7} & \num{.8} & \num{0} & \num{0} &  \\*
-	\num{5} & \num{1.1} &  \num{2} & \num{290.8} & \num{3.3} & \num{-27} & \num{-4.6} & \num{72} & \num{0} & \num{0} & \\*
-	\num{5} & \num{1.1} &  \num{2} & \num{289.7} & \num{3.6} & \num{-17.2} & \num{-2.4} & \num{84} & \num{50} & \num{4.5} & \\*
-	\num{5.1} & \num{1.1} &  \num{2} & \num{289.7} & \num{6.5} & \num{-.6} & \num{1.3} & \num{117} & \num{100} & \num{2.7} & \\*
-	\num{8.5} & \num{1.8} & \num{3.4} & \num{290.6} & \num{5.4} & \num{-34.6} & \num{-8.2} & \num{195} & \num{0} & \num{0} & \\*
-	\num{8.5} & \num{1.7} &  \num{3.5} & \num{290.5} & \num{2.9} & \num{-29.7} & \num{-6.5} & \num{216} & \num{50} & \num{2.9} & \\*
-	\num{8.5} & \num{1.8} &  \num{3.5} & \num{290.5} & \num{4.7} & \num{-22.8} & \num{-4} & \num{241} & \num{100} & \num{4.9} & \\
-	
-	 \hdashline
-	\num{0} & \num{0} &  \num{0} & \num{291.2} & \num{2.4} & \num{12.8} & \num{4.3} & \num{12} & 40 & --- & \multirow{8}{*}{`\texttt{H2}'} \\*
-	\num{1} & \num{.4} & \num{.4} & \num{290.7} & \num{1} & \num{-3.7} & \num{-.3} & \num{0} & \num{0} & \num{0} & \\*
-	\num{5} & \num{1.2} & \num{2} & \num{291.3} & \num{2.5} & \num{-28} & \num{-5.1} & \num{74} & \num{0} & \num{0} & \\*
-	\num{4.9} & \num{1.1} &  \num{2} & \num{293.7} & \num{4.6} & \num{-17.3} & \num{-3.7} & \num{119} & \num{50} & \num{5} & \\*
-	\num{5} & \num{1.1} &  \num{2} & \num{293.7} & \num{8.1} & \num{4.6} & \num{-.3} & \num{139} & \num{100} & \num{6} & \\*
-	\num{8.5} & \num{1.7} & \num{3.4} & \num{291.5} & \num{8.1} & \num{-34.2} & \num{-8.5} & \num{159} & \num{0} & \num{0} & \\*
-	\num{8.4} & \num{1.8} &  \num{3.5} & \num{293.1} & \num{10.3} & \num{-23.4} & \num{-5.6} & \num{202} & \num{50} & \num{2.9} & \\*
-	\num{8.4} & \num{1.8} &  \num{3.5} & \num{293.1} & \num{12.8} & \num{-16.8} & \num{-2.8} & \num{226} & \num{100} & \num{5.1} & \\
-	
-	 \hdashline
-	\num{0} & \num{0} & \num{0} & \num{293.1} & \num{6.3} & \num{44.6} & \num{2.9} & \num{11} & \num{40} & --- & \multirow{8}{*}{`\texttt{V1}'} \\*
-	\num{1} & \num{.4} & \num{.4} & \num{293.6} & \num{1.3} & \num{-3.4} & \num{-2.3} & \num{2} & \num{0} & \num{0} & \\*
-	\num{5} & \num{1.1} & \num{2} & \num{290.3} & \num{8.9} & \num{-20.1} & \num{-5} & \num{53} & \num{0} & \num{0} & \\*
-	\num{5} & \num{1.1} & \num{2} & \num{291.9} & \num{8.8} & \num{-10.8} & \num{-2.1} & \num{86} & \num{50} & \num{4.6} & \\*
-	\num{5} & \num{1.1} & \num{2} & \num{291.9} & \num{12.5} & \num{.5} & \num{2.4} & \num{105} & \num{100} & \num{5.4} & \\*
-	\num{8.4} & \num{1.6} & \num{3.5} & \num{292.9} & \num{18.2} & \num{-25.3} & \num{-5.4} & \num{167} & \num{0} & \num{0} & \\*
-	\num{8.3} & \num{1.7} & \num{3.4} & \num{292} & \num{20.3} & \num{-21.5} & \num{-4} & \num{192} & \num{50} & \num{3.5} & \\*
-	\num{8.3} & \num{1.7} & \num{3.4} & \num{292} & \num{20.2} & \num{-15.5} & \num{-.8} & \num{218} & \num{100} & \num{5.4} & \\
-	
-	 \hdashline 
-	\num{0} & \num{0} & \num{0} & \num{295.2} & \num{1.7} & \num{13.4} & \num{16.7} & \num{.7} & \num{40} & --- & \multirow{8}{*}{`\texttt{V2}'} \\*
-	\num{1} & \num{.7} & \num{.4} & \num{289.9} & \num{.2} & \num{-6} & \num{-.7} & \num{5} & \num{0} & \num{0} & \\*
-	\num{5} & \num{1.7} & \num{2} & \num{290.1} & \num{3.2} & \num{-25.7} & \num{-5.4} & \num{61} & \num{0} & \num{0} & \\*
-	\num{5.1} & \num{1.6} & \num{2} & \num{289.7} & \num{3.4} & \num{-15.1} & \num{-2.3} & \num{86} & \num{50} & \num{4.2} & \\*
-	\num{5.1} & \num{1.3} & \num{2} & \num{289.7} & \num{6} & \num{-1.9} & \num{2.1} & \num{108} & \num{100} & \num{3.4} & \\*
-	\num{8.6} & \num{2.24} & \num{3.5} & \num{290} & \num{4} & \num{-32.8} & \num{-8.8} & \num{176} & \num{0} & \num{0} & \\*
-	\num{8.4} & \num{2.24} & \num{3.4} & \num{289.5} & \num{5.3} & \num{-28} & \num{-6.9} & \num{189} & \num{50} & \num{3.1} & \\*
-	\num{8.4} & \num{2} & \num{3.4} & \num{289.5} & \num{7.3} & \num{-20.5} & \num{-3.5} & \num{210} & \num{100} & \num{5.2} & \\*
-\end{longtable}
+
 
 \subsection{Températures atteintes par les côtés froid et ambiant du régénérateur}
 La figure~\ref{fig:PerfConvNat_TaTf_DR} présente les écarts de températures froide $\theta_f$ et ambiante $\theta_a$ après soustraction à la valeur de température initiale. Les écarts par rapport à la température initiale sont respectivement donnés par la moyennes des thermocouples~\numlist{4;5;6}, et \numlist{10;11;12}, pour les deux \textit{drive ratio} $DR=\qty{2}{\percent}$ sur la sous-figure~\subref{fig:PerfConvNat_TaTf_DR2}, et $DR=\qty{3.5}{\percent}$ sur la sous-figure~\subref{fig:PerfConvNat_TaTf_DR35}.
@@ -919,16 +938,16 @@ La figure~\ref{fig:PerfConvNat_TaTf_DR} présente les écarts de températures f
 	\end{subfigure}
 	
 	\begin{subfigure}[t]{.21\textwidth}
-	\includegraphics[scale=.65]{./external/fig_OrientationCore_V10.pdf}
+	\includegraphics[scale=.63]{./external/fig_OrientationCore_V10.pdf}
 	\end{subfigure}
 	\begin{subfigure}[t]{.21\textwidth}
-	\includegraphics[scale=.65]{./external/fig_OrientationCore_V20.pdf}
+	\includegraphics[scale=.63]{./external/fig_OrientationCore_V20.pdf}
 	\end{subfigure}
 	\begin{subfigure}[t]{.21\textwidth}
-	\includegraphics[scale=.65]{./external/fig_OrientationCore_H10.pdf}
+	\includegraphics[scale=.63]{./external/fig_OrientationCore_H10.pdf}
 	\end{subfigure}
 	\begin{subfigure}[t]{.21\textwidth}
-	\includegraphics[scale=.65]{./external/fig_OrientationCore_H20.pdf}
+	\includegraphics[scale=.63]{./external/fig_OrientationCore_H20.pdf}
 	\end{subfigure}
 	\caption{Valeurs des températures atteintes au côté froid du régénérateur, soustraites à la température ambiante $T_\infty$, et moyennées sur la section en fonction de la charge thermique appliquée à l'échangeur de chaleur froid, à différents \textit{drive ratios}, pour les orientation `\texttt{V1}', `\texttt{V2}', `\texttt{H1}' et `\texttt{H2}'. \subref{fig:PerfConvNat_TaTf_DR2} $DR=\qty{2}{\percent}$, et \subref{fig:PerfConvNat_TaTf_DR35} $DR=\qty{3.5}{\percent}$.}
 	\label{fig:PerfConvNat_TaTf_DR}

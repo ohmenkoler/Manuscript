@@ -10,7 +10,7 @@
     x tick label style={
         /pgf/number format/1000 sep=},  
     %xlabel=$\dot q$ (\unit{\l\per\minute}),
-    ylabel=$\Delta T^w$ (\unit{\degreeCelsius}),
+    ylabel=$\Delta T^{(w)}$ (\unit{\degreeCelsius}),
     xmajorticks=false,
     ybar,enlarge x limits=.15,
     area legend,
@@ -30,7 +30,7 @@
         pattern=north east lines,pattern color=Plasma85
     }] file {../fig/fig_AHXCalib/data/data_qdotDT2WaterAcouQc.txt};
     \addplot[solid,ultra thick,fill=Plasma85!25,draw=Plasma85] file {../fig/fig_AHXCalib/data/data_qdotDT20AcouQc.txt};
-    \legend{$\Delta T_0^w$ \\ $\Delta T_1^w$ \\ $\Delta T_1^w-\Delta T_0^w$ \\ $\Delta T_2^w$ \\ $\Delta T_2^w-\Delta T_0^w$ \\};
+    \legend{$\Delta T_0^{(w)}$ \\ $\Delta T_1^{(w)}$ \\ $\Delta T_1^{(w)}-\Delta T_0^{(w)}$ \\ $\Delta T_2^{(w)}$ \\ $\Delta T_2^{(w)}-\Delta T_0^{(w)}$ \\};
 \end{axis}
 
 \begin{axis}[name=Qdotqdot,height=\height,width=\width, 

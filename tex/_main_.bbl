@@ -3290,41 +3290,6 @@
       \verb https://www.sciencedirect.com/science/article/pii/001793109500133T
       \endverb
     \endentry
-    \entry{novak_measurement_2019}{inproceedings}{}{}
-      \name{author}{1}{}{%
-        {{hash=c165ac65e25818d13dfa889d9c824f49}{%
-           family={Novak},
-           familyi={N\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Aachen}%
-      }
-      \strng{namehash}{c165ac65e25818d13dfa889d9c824f49}
-      \strng{fullhash}{c165ac65e25818d13dfa889d9c824f49}
-      \strng{fullhashraw}{c165ac65e25818d13dfa889d9c824f49}
-      \strng{bibnamehash}{c165ac65e25818d13dfa889d9c824f49}
-      \strng{authorbibnamehash}{c165ac65e25818d13dfa889d9c824f49}
-      \strng{authornamehash}{c165ac65e25818d13dfa889d9c824f49}
-      \strng{authorfullhash}{c165ac65e25818d13dfa889d9c824f49}
-      \strng{authorfullhashraw}{c165ac65e25818d13dfa889d9c824f49}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In this paper, we discuss a pedagogical approach to measuring an electrodynamic loudspeaker and understanding the importance of the development of more precise models. The traditional way of measuring an electrodynamic loudspeaker consists of adjusting the loudspeaker model parameters to get the best ﬁt with the measured signals. The method proposed in this paper is based on a straightforward idea that permits ﬁrst to estimate the force factor without any model assumption and then to separate the electrical and mechanical impedance intuitively. Consequently, both impedances can be studied separately to highlight the importance of using models incorporating eddy currents on the electrical side and creep effect on the mechanical side. Python code to follow all the steps is available online on https://ant-novak.com/pages/speaker\_params/.}
-      \field{eventtitle}{23rd International congress on Acoustics}
-      \field{langid}{english}
-      \field{title}{Measurement of Loudspeaker Parameters: A Pedagogical Approach}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \field{pages}{7924\bibrangedash 7301}
-      \range{pages}{-602}
-      \verb{file}
-      \verb Novak - Measurement of Loudspeaker Parameters A Pedagogic.pdf:C\:\\Users\\mfontbon\\ownCloud - FONTBONNE Martin@mycore.core-cloud.net\\Zotero\\storage\\HWK2HCIB\\Novak - Measurement of Loudspeaker Parameters A Pedagogic.pdf:application/pdf
-      \endverb
-    \endentry
   \enddatalist
 \endrefsection
 \endinput

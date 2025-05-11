@@ -25,9 +25,9 @@
 %\end{itemize}
 
 \section{Contexte du travail}
-Ce travail de thèse a été mené entre janvier 2022 et juin 2025 au sein de l'Institut PPRIME - UPR3346 de Poitiers en collaboration avec le Laboratoire d'Acoustique de l'Université du Mans - UMR6613. Dans ces deux unités, les machines thermoacoustiques constitue une parties des thématiques de recherche, et notamment l'étude de la réfrigération thermoacoustique compacte.\medskip
+Ce travail de thèse a été mené entre janvier 2022 et juin 2025 au sein de l'Institut PPRIME - UPR3346 de Poitiers en collaboration avec le Laboratoire d'Acoustique de l'Université du Mans - UMR6613. Dans ces deux unités, les machines thermoacoustiques constituent une partie des thématiques de recherche, et notamment l'étude de la réfrigération thermoacoustique compacte.\medskip
 
-Ce travail de thèse fait suite au projet ANR \textsc{TACOT} (ThermoAcoustic Cooling for Onroad Transportation)~\cite{ANR_thermo-acoustic_2019, ramadan_design_2021} dans lequel un réfrigérateur thermoacoustique coaxial compact a été mis au point. Le projet \textsc{Tacot} a permis de débuter la qualification de la machine et de définir des points de  fonctionnement, typiquement comme l'extraction de \qty{290}{\watt} à une source froide dont la température est \qty{13.3}{\degreeCelsius}, avec un coefficient de performance de \num{1.5}.\medskip
+Ce travail de thèse fait suite au projet ANR \textsc{TACOT} (ThermoAcoustic Cooling for Onroad Transportation)~\cite{ANR_thermo-acoustic_2019, ramadan_design_2021} dans lequel un réfrigérateur thermoacoustique coaxial compact a été mis au point. Le projet \textsc{Tacot} a permis de débuter la qualification de la machine et de définir des points de  fonctionnement, typiquement l'extraction de \qty{290}{\watt} à une source froide dont la température est \qty{13.3}{\degreeCelsius}, avec un coefficient de performance de \num{1.5}.\medskip
 
 L'objectif global du présent travail était de poursuivre cette qualification et de faire des propositions pour l'évolution de la machine. Pour introduire plus précisément les objectifs et l'organisation du mémoire, quelques bases de thermoacoustique issues de la théorie linéaire de Rott~\cite{rott_damped_1969, rott_thermoacoustics_1980} sont rappelées. Les limites pour le cas de cette étude des effets de convection sont exposées, et un plan de manuscrit pour comprendre leur manifestation est proposé.
 
@@ -212,44 +212,46 @@ Un volume de fluide obéit aux lois de conservations de masse, de quantité de m
 
 \begin{subequations}
 	\begin{align}
-		\partial_t \rho + \bnabla \cdot (\rho \mathbf v) &= 0, &\text{(conservation de la masse)}\label{eq:ThermoLin_ConservMass}\\
-		\rho\left[\partial_t\mathbf v + (\mathbf v \cdot \bnabla)\right] &= -\bnabla p + \mu \bnabla^2 \mathbf v, &\text{(conservation de la quantité de mouvement)}\label{eq:ThermoLin_QtMvt}\\
-		\rho T \deriv_t s &= \bnabla\cdot (k \nabla T), &\text{(propagation de chaleur)}\label{eq:ThermoLin_NRJ}
+		\partial_t \rho + \bnabla \cdot (\rho \mathbf v) &= 0, &\text{\small(conservation de la masse)}\label{eq:ThermoLin_ConservMass}\\
+		\rho\left[\partial_t\mathbf v + (\mathbf v \cdot \bnabla)\mathbf v\right] &= -\bnabla p + \mu \bnabla^2 \mathbf v+ \left(\eta+\dfrac{\mu}{3}\right)\bnabla(\bnabla\cdot\mathbf v), &\text{\small(conservation de la quantité de mouvement)}\label{eq:ThermoLin_QtMvt}\\
+		\rho T \deriv_t s &= \bnabla\cdot (k \nabla T), &\text{\small(propagation de chaleur)}\label{eq:ThermoLin_NRJ}
 	\end{align}
 \end{subequations}
-en utilisant les variables d'intérêt suivantes : la pression $p$, le débit $u$, la composante axiale de la vitesse $v$, la masse volumique $\rho$, la température $T$ et l'entropie $s$. Elles sont considérées monochromatiques et oscillant à la fréquence $f_1=\nicefrac{\omega_1}{2\pi}$, dont la longueur d'onde $\lambda_1=\nicefrac{c_0}{f_1}$ est considérée grande devant les couches limites visqueuse $\delta_\nu$ et thermiques $\delta_\kappa$. Ces variables sont écrites en tenant compte des approximation de Rott en adoptant la convention temporelle $e^{i\omega t}$, pour le cas des gaz parfaits sans vitesse d'entraînement du fluide~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
+en utilisant les variables d'intérêt suivantes : la pression $p$, le débit $u$, la composante selon $x$ de la vitesse $v$, la masse volumique $\rho$, les température $T$ du fluide et $T_s$ du solide, et l'entropie $s$. Elles sont considérées monochromatiques et oscillant à la fréquence $f_1=\nicefrac{\omega_1}{2\pi}$, dont la longueur d'onde $\lambda_1=\nicefrac{c_0}{f_1}$ est considérée grande devant les couches limites visqueuse $\delta_\nu$ et thermiques $\delta_\kappa$. Ces variables sont écrites en tenant compte des approximation de Rott en adoptant la convention temporelle $e^{i\omega t}$, pour le cas des gaz parfaits sans vitesse d'entraînement du fluide~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
 
+\setlength\columnsep{3pt}
 \begin{subequations}
 	\begin{multicols}{2}
 	\noindent
 		\begin{align}
 			p(x,t) &= p_0 + \RE \left[p_1(x) e^{i\omega_1 t}\right],\label{eq:pression_rott}\\
 			u(x,t) &= \RE \left[u_1(x) e^{i\omega_1 t}\right],\label{eq:debit_rott}\\
-			v(x,y,z,t) &= \RE \left[v_1(x,y,z) e^{i\omega_1 t}\right],\label{eq:vitesse_rott}
+			v(x,y,z,t) &= \RE \left[v_1(x,y,z) e^{i\omega_1 t}\right],\label{eq:vitesse_rott}\\
+			\rho(x,y,z,t) &= \rho_0(x) + \RE \left[\rho_1(x,y,z) e^{i\omega_1 t}\right],\label{eq:massVol_rott}
 	\end{align}
 	\begin{align}
-			\rho(x,y,z,t) &= \rho_0(x) + \RE \left[\rho_1(x,y,z) e^{i\omega_1 t}\right],\label{eq:massVol_rott}\\
 			T(x,y,z,t) &= T_0(x) + \RE \left[T_1(x,y,z) e^{i\omega_1 t}\right],\label{eq:temperature_rott}\\
+			T_s(x,y,z,t) &= T_{s,0}(x) + \RE \left[T_{s,1}(x,y,z) e^{i\omega_1 t}\right],\label{eq:temperatureSolide_rott}\\
 			s(x,y,z,t) &= s_0(x) + \RE \left[s_1(x,y,z) e^{i\omega_1 t}\right].\label{eq:entropie_rott}
 		\end{align}
 		\label{eq:variables_rott}
 	\end{multicols}
 \end{subequations}
-
+\setlength\columnsep{10pt}
 
 Ici, les indices indiquent l'ordre de grandeur, avec en particulier l'indice \num{0} qui dénote une valeur constante à l'ordre \num{0}, et l'indice \num{1} qui signifie l'oscillation à l'ordre \num{1} de la quantité à la pulsation $\omega_1=2\pi f_1$. Il est supposé que le système opère dans un régime linéaire, ce qui se traduit par
 \begin{equation}
 	\left|\bullet_1\right| \ll \bullet_0,
 	\label{eq:ConditionLinearite}
 \end{equation}
-où $\bullet$ représente indifféremment les variables citées précédemment quand la composante continue est non-nulle. Les composantes oscillantes des pression $p_1$ et débit $u_1$ acoustiques sont supposée ne dépendre que de $x$, mais la composante axiale de la vitesse acoustique $v_1$ prend en compte le profil de vitesse causé par la présences des effets viscothermiques à proximité des parois.\medskip
+où $\bullet$ représente indifféremment les variables citées précédemment quand la composante continue est non-nulle. Les composantes oscillantes des pression $p_1$ et débit $u_1$ acoustiques sont supposée ne dépendre que de $x$, mais la composante selon $x$ de la vitesse acoustique $v_1$ prend en compte le profil de vitesse causé par la présence des effets viscothermiques à proximité des parois. D'autres hypothèses simplificatrices sont admises ici, telles que l'absence de sources de débit, de force et de de chaleur dans le domaine d'étude, l'égalité des températures moyennes dans le fluide $T_0(x)$ et dans le solide $T_{s,0}(x)$, le caractère laminaire du mouvement particulaire, et l'indépendance des paramètres thermophysiques du fluide et du solide à la température.\medskip
 
 L'équation de la conservation de la quantité de mouvement~\eqref{eq:ThermoLin_QtMvt} peut être réécrite avec ces variables comme
 
 \begin{equation}
-	i\omega \rho_0 v_1 = -\deriv_x p_1 + \mu\left[\partial^2_{yy} v_1 + \partial^2_{zz}\right],
+	i\omega_1 \rho_0 v_1 = -\deriv_x p_1 + \mu\left[\partial^2_{yy} v_1 + \partial^2_{zz}v_1\right],
 \end{equation}
-avec $v_1=0$ sur chaque surface. La solution $v_1$ de cette équation s'écrit
+car $\partial_{xx}^2 v_1 \ll \partial_{yy}^2 v_1,~\partial_{zz}^2 v_1$. Le solide est considéré parfaitement rigide, et sur chaque surface, $v_1=0$. La solution $v_1$ de cette équation s'écrit alors
 
 \begin{equation}
 	v_1 = \frac{i}{\omega_1 \rho_0}[1-h_\nu(y,z)]\deriv_x p_1,
@@ -276,10 +278,9 @@ avec $J_0$ et $J_1$ les fonctions de Bessel de première espèce, respectivement
 L'équation de la chaleur est elle aussi réécrite avec les approximations des équations~\eqref{eq:variables_rott}, ce qui donne
 
 \begin{equation}
-	\rho_0 C_p (i\omega_1 T_1 + v_1\deriv_x T_0) - i\omega_1 p_1 = k[\partial^2_{yy} T_1 + \partial^2_{zz}T_1].
+	\rho_0 C_p (i\omega_1 T_1 + v_1\deriv_x T_0) - i\omega_1 p_1 = k[\partial^2_{yy} T_1 + \partial^2_{zz}T_1],
 \end{equation}
-
-La solution $T_1$ de cette équation différentielle s'écrit
+en considérant $\partial_{xx}^2 T_1 \ll \partial_{yy}^2 T_1,~\partial_{zz}^2 T_1$. La solution $T_1$ de cette équation différentielle s'écrit
 \begin{equation}
 	T_1=\frac{1}{\rho_0 C_p}(1-h_\kappa)p_1 - \frac{1}{i \omega_1 S} \deriv_x [T_0] \frac{(1-h_\kappa) - \Prandtl(1-h_\nu)}{(1-f_\nu)(1-\Prandtl)}u_1,
 \end{equation}
@@ -664,9 +665,9 @@ Après avoir présenté les éléments de base du travail sur ce réfrigérateur
 
 Dans le chapitre~\ref{chap:DispositifExpe}, le dispositif expérimental est présenté. Cela inclut une présentation de la géométrie du réfrigérateur, de l’instrumentation utilisée pour les acquisitions, du déroulé d’une expérience et des conditions de chacune d’entre elles. L’accent est mis sur l’étude de la convection naturelle et les orientations du réfrigérateur choisies pour répondre aux hypothèses à valider sont définies.\smallskip
 
-Le chapitre~\ref{chap:SimusRealisees} introduit l'approche théorique de la convection naturelle dans le réfrigérateur, dans le but de comprendre le fonctionnement du réfrigérateur au-delà de ce que prédit la théorie linéaire en tenant compte de davantage de phénomènes. La première simulation permet d'introduire des quantités adimensionnelles couramment utilisées en mécanique des fluides. En particulier, l'étude du nombre de Rayleigh permet d'anticiper la présence ou l'absence d'un courant de convection naturelle dans différentes zones du réfrigérateur ainsi que de calculer des ordres de grandeurs des vitesses d'écoulement dans les cas où la convection naturelle met en mouvement le fluide. Suite à cela, un modèle numérique du régime stationnaire par éléments finis et réalisé à l'aide du logiciel \textsc{Comsol} Multiphysics\textss\textregistered est présenté. Ce modèle, pour rester simple tout en représentant plus de phénomènes, vise à simuler le comportement purement thermique d'un système équivalent. Enfin, un modèle analytique du régime transitoire est proposé, en prenant en compte les mêmes phénomènes que dans la simulation numérique.\smallskip
+Le chapitre~\ref{chap:SimusRealisees} introduit l'approche théorique de la convection naturelle dans le réfrigérateur, dans le but de comprendre le fonctionnement du réfrigérateur au-delà de ce que prédit la théorie linéaire en tenant compte de davantage de phénomènes. La première partie de ce chapitre permet d'introduire des quantités adimensionnelles couramment utilisées en mécanique des fluides. En particulier, l'étude du nombre de Rayleigh permet d'anticiper la présence ou l'absence d'un courant de convection naturelle dans différentes zones du réfrigérateur ainsi que de calculer des ordres de grandeurs des vitesses d'écoulement dans les cas où la convection naturelle met en mouvement le fluide. Suite à cela, un modèle numérique du régime stationnaire par éléments finis et réalisé à l'aide du logiciel \textsc{Comsol} Multiphysics\textss\textregistered est présenté. Ce modèle, pour rester simple tout en représentant plus de phénomènes, vise à simuler le comportement purement thermique d'un système équivalent. Enfin, un modèle analytique du régime transitoire est proposé, en prenant en compte les mêmes phénomènes que dans la simulation numérique.\smallskip
 
-Le chapitre~\ref{chap:EtudeExpe} est dédié à l'approche expérimentale de la convection naturelle dans le réfrigérateur et se divise en plusieurs parties. La première adopte un point de vue d'ensemble de la machine, en étudiant ses performances sous différentes orientations. Notamment, les températures atteintes, les flux de chaleur entrant et sortant, et les coefficients de performances sont mesurés, et comparés à des simulations réalisées au moyen logiciel \textsc{DeltaEC}~\cite{DeltaEC}, dédié à la simulation des machines thermoacoustiques.\smallskip
+Le chapitre~\ref{chap:EtudeExpe} est dédié à l'approche expérimentale de la convection naturelle dans le réfrigérateur et se divise en plusieurs parties. La première partie présente des résultats dans une configuration où les effets thermiques sont séparés des effets thermoacoustiques, en étudiant la distribution des températures en l'absence de champ acoustique. La deuxième partie s'intéresse aux distributions obtenues, cette fois en utilisant les sources acoustiques pour générer plusieurs amplitudes au c\oe{}ur de la machine. La dernière partie adopte un point de vue d'ensemble de la machine, en étudiant ses performances sous différentes orientations. Notamment, les températures atteintes, les flux de chaleur entrant et sortant, et les coefficients de performances sont mesurés, et comparés à des simulations réalisées au moyen logiciel \textsc{DeltaEC}~\cite{DeltaEC}, dédié à la simulation des machines thermoacoustiques.\smallskip
 
 Une conclusion générale est apportée dans le chapitre~\ref{chap:Conc}, et les résultats principaux sont rappelés avec leurs interprétations formulées succinctement. Ce travail de thèse soulève beaucoup de questions, auxquelles des expérimentations et simulations supplémentaires répondront. D'autres axes de recherches y sont mentionnés.\smallskip
 

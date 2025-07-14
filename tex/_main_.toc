@@ -1,6 +1,7 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{\nameref {chap:IndexNotations}}{1}{chapter*.3}%
+\contentsline {chapter}{\nameref {chap:Remerciements}}{v}{chapter*.2}%
+\contentsline {chapter}{\nameref {chap:IndexNotations}}{1}{chapter*.4}%
 \contentsline {chapter}{\numberline {I}Introduction}{3}{chapter.1}%
 \etoc@startlocaltoc {2}
 \contentsline {section}{\numberline {I.1}Contexte du travail}{4}{section.1.1}%
@@ -124,4 +125,4 @@
 \contentsline {section}{\numberline {B.3}Montage}{c}{section.B.3}%
 \contentsline {chapter}{\numberline {C}Récapitulatif des conditions expérimentales}{e}{appendix.C}%
 \contentsline {section}{\numberline {C.1}\'Etude sur la convection naturelle}{e}{section.C.1}%
-\contentsline {chapter}{Bibliographie}{I}{appendix*.71}%
+\contentsline {chapter}{Bibliographie}{I}{appendix*.72}%

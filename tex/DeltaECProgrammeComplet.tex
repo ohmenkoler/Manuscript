@@ -1,0 +1,412 @@
+\chapter{Programme \textsc{DeltaEC} de simulation de la machine complète}
+
+Le programme servant à simuler les différentes configurations tracées sur les figures~\ref{fig:PerfConvNat_TaTf_DR}, \ref{fig:PerfConvNat_Qa_DR}, et \ref{fig:PerfConvNat_COP_DR} est représenté par l'algorithme suivant : 
+
+\begin{linenumbers}
+\begin{verbatim}
+TITLE      Change Me
+!->Z:\Martin\Simulations\PerformanceStudy\DR2_Qc0.out
+!Created@14:36:42  09-Jan-2025 with DeltaEC version 6.4b2.7!under win32,
+using Win 6.2.9200 () under Python 2.7.9.
+!---------------------------------  0 ---------------------------------
+BEGIN      
+ 4.0000E+6  a Mean P Pa                 
+   47.795   b Freq   Hz       G         
+  338.24    c TBeg   K        G         
+ 1.0117E+5  d |p|    Pa       G         
+ -100.62    e Ph(p)  deg      G         
+     0.0000 f |U|    m^3/s              
+     0.0000 g Ph(U)  deg                
+    0.7000  j nL                        
+HeAr           Gas type                 
+!---------------------------------  1 ---------------------------------
+RPN        Drive Ratio
+     0.0000 a G or T                    2.5293                    A %
+0d 0a / 100 *
+!---------------------------------  2 ---------------------------------
+ANCHOR     Change Me
+!---------------------------------  3 ---------------------------------
+RPN        Vessel Length and ellipsoidal volume
+    0.2550  a G or T                    1.7200E-3                 A m^3
+1.72e-3
+!---------------------------------  4 ---------------------------------
+RPN        Vessel diameter and Volume
+    0.1950  a G or T                    9.3355E-3                 A m^3
+pi 4 / 4a 4a * * 3a * 3A +
+!---------------------------------  5 ---------------------------------
+RPN        Alternator volume and gas volume
+!The value of the alternator volume 4.21 L is roughly estimated from the
+!drawings but the actual value is not known.
+ 4.2100E-3  a G or T                    5.1255E-3                 A m^3
+4A 5a -
+!---------------------------------  6 ---------------------------------
+COMPLIANCE cavite arriere
+!This volume equals to the volume of the vessel minus the alternator volume.
+!As informed by Rix industries the volume of the alternator is 4.21 Litres.
+    0.14902 a SurfAr m^2      6b         1.0117E+5  A |p|    Pa
+sameas   5A b Volume m^3      Mstr       -100.62    B Ph(p)  deg
+                                         2.3359E-2  C |U|    m^3/s
+                                          169.30    D Ph(U)  deg
+                                           -1.6284  E Htot   W
+ideal           Solid type                 -1.6284  F Edot   W
+!---------------------------------  7 ---------------------------------
+RPN        diametre piston
+    0.10795 a G or T                    9.1524E-3                 A ChngeMe
+7a 7a * pi * 4 /
+!---------------------------------  8 ---------------------------------
+TBRANCH    Change Me
+-2.3213E+4  a Re(Zb) Pa-s/m^3 G          1.0117E+5  A |p|    Pa
+ 4.3305E+6  b Im(Zb) Pa-s/m^3 G          -100.62    B Ph(p)  deg
+                                         2.3363E-2  C |U|    m^3/s
+                                          169.07    D Ph(U)  deg
+                                           -6.335   E HtotBr W
+                                           -6.335   F EdotBr W
+                                            4.7066  G EdotTr W
+!---------------------------------  9 ---------------------------------
+VESPEAKER  Qdrive 1S241M (2000 watts electric power)
+!Imax=25.4 A(Amp)
+!Umax=294 V(Amp)
+sameas   7A a Area   m^2                 1.2458E+5  A |p|    Pa
+    0.7000  b R      ohms                  82.741   B Ph(p)  deg
+ 3.1700E-2  c L      H                   2.3362E-2  C |U|    m^3/s
+   58.700   d BLProd T-m                  169.07    D Ph(U)  deg
+    4.2320  e M      kg                    93.203   E Htot   W
+ 1.3114E+5  f K      N/m                   93.203   F Edot   W
+   33.370   g Rm     N-s/m                211.65    G WorkIn W
+  143.76    h |V|    V        G           143.76    H Volts  V
+     0.0000 i Ph(V)  deg                    2.9989  I Amps   A
+                                          -10.931   J Ph(V/I) deg
+                                         2.2566E+5  K |Px|   Pa
+ideal           Solid type                 81.233   L Ph(Px) deg
+!--------------------------------- 10 ---------------------------------
+RPN        Zac1
+     0.0000 a G or T                    -86.328                   A arg(Zac
+                                        5.3326E+6                 B |Zac1|
+9A 9C / 9B 9D -
+!--------------------------------- 11 ---------------------------------
+RPN        Force the mechanical resonance
+!To achieve the mechanical resonance, the phase between the Current and the
+!Velocity should be (zero or 180)
+!Imax=25.4 A(Amp)
+!Umax=294 V(Amp)
+     0.0000 a =A?                       2.0505E-13                A I
+9J 9D - sin
+!--------------------------------- 12 ---------------------------------
+RPN        Force the electrical resonance
+!To achieve the electrical resonance, the phase between the Current and the
+!Voltage should be (zero or 180)
+!Imax=25.4 A(Amp)
+!Umax=294 V(Amp)
+     0.0000 a G or T                    -0.18962                  A ChngeMe
+9J sin
+!--------------------------------- 13 ---------------------------------
+RPN        Pk-Pk displacment max 24 mm
+   17.000   a =A?                       17.000                    A mm
+9C w / 9a / 2000 *
+!--------------------------------- 14 ---------------------------------
+RPN        eta source without seal gap
+     0.0000 a G or T                    44.035                    A %
+Edot 9G / 100 *
+!--------------------------------- 15 ---------------------------------
+SOFTEND    Change Me
+     0.0000 a Re(z)                      1.2458E+5  A |p|    Pa
+     0.0000 b Im(z)                        82.741   B Ph(p)  deg
+                                         2.3362E-2  C |U|    m^3/s
+                                          169.07    D Ph(U)  deg
+                                           93.203   E Htot   W
+                                           93.203   F Edot   W
+                                            0.26398 G Re(z)
+                                           -4.1133  H Im(z)
+                                          338.24    I T      K
+!--------------------------------- 16 ---------------------------------
+RPN        Piston seal gap
+ 2.1000E-5  a G or T                         0.0000               A ChngeMe
+0.00
+!--------------------------------- 17 ---------------------------------
+RPN        Seal length and the Resistance
+ 2.5000E-2  a G or T                    2.4241E+9                 A Pa.s/m3
+12 17a * mu * 7a / pi / 16a 3 ^ /
+!--------------------------------- 18 ---------------------------------
+IMPEDANCE  Change Me
+sameas  17A a Re(Zs) Pa-s/m^3            1.2458E+5  A |p|    Pa
+     0.0000 b Im(Zs) Pa-s/m^3              82.741   B Ph(p)  deg
+                                         9.3090E-5  C |U|    m^3/s
+                                          -98.767   D Ph(U)  deg
+                                           -5.7966  E Htot   W
+                                           -5.7966  F Edot   W
+!--------------------------------- 19 ---------------------------------
+UNION      Change Me
+ 15         a SegNum                     1.2458E+5  A |p|    Pa
+sameas  15A b |p|Sft Pa       =19A         82.741   B Ph(p)  deg
+sameas  15B c Ph(p)S deg      =19B       2.3359E-2  C |U|    m^3/s
+                                          169.30    D Ph(U)  deg
+                                           87.406   E Htot   W
+                                           87.406   F Edot   W
+                                          338.24    G T      K
+!--------------------------------- 20 ---------------------------------
+RPN        eta source with seal gap
+     0.0000 a G or T                    41.297                    A %
+Edot 9G / 100 *
+!--------------------------------- 21 ---------------------------------
+COMPLIANCE The cavity of the driver at rest position (Front volume)
+!As informed by Rix industries the front volume of the alternator is 0.35
+!Litres.
+ 1.2880E-2  a SurfAr m^2                 1.2458E+5  A |p|    Pa
+ 3.5000E-4  b Volume m^3                   82.741   B Ph(p)  deg
+                                         2.1399E-2  C |U|    m^3/s
+                                          168.99    D Ph(U)  deg
+                                           87.193   E Htot   W
+ideal           Solid type                 87.193   F Edot   W
+!--------------------------------- 22 ---------------------------------
+CONE       Cone entre HP 2 et noyau
+sameas   7A a AreaI  m^2      Mstr       1.2495E+5  A |p|    Pa
+    0.33913 b PerimI m        22a          82.729   B Ph(p)  deg
+ 4.0000E-2  c Length m                   1.8090E-2  C |U|    m^3/s
+sameas  33A d AreaF  m^2      Mstr        168.32    D Ph(U)  deg
+    0.51532 e PerimF m        22d          86.903   E Htot   W
+ 5.0000E-4  f Srough                       86.903   F Edot   W
+ideal           Solid type              
+!--------------------------------- 23 ---------------------------------
+RPN        ChangeMe
+     0.0000 a G or T                    -85.59                    A ChngeMe
+                                        6.9071E+6                 B ChngeMe
+p1 U1 / abs p1 U1 / arg
+!--------------------------------- 24 ---------------------------------
+INSULATE   Change Me
+!--------------------------------- 25 ---------------------------------
+TBRANCH    Change Me
+ 5.5877E+6  a Re(Zb) Pa-s/m^3 G          1.2495E+5  A |p|    Pa
+-1.0663E+7  b Im(Zb) Pa-s/m^3 G            82.729   B Ph(p)  deg
+                                         1.0380E-2  C |U|    m^3/s
+                                          145.07    D Ph(U)  deg
+                                          300.99    E HtotBr W
+                                          300.99    F EdotBr W
+                                         -214.09    G EdotTr W
+!--------------------------------- 26 ---------------------------------
+RPN        surface approx bypass
+ 5.1800E-2  a G or T                    2.1074E-3                 A m^2
+pi 26a 26a * * 4 /
+!--------------------------------- 27 ---------------------------------
+RPN        longueur bypass
+     0.0000 a G or T                    0.1504                    A ChngeMe
+35c 41c 42c 47c 52c 55c + + + + +
+!--------------------------------- 28 ---------------------------------
+DUCT       bypass (1st part)
+sameas  26A a Area   m^2                 1.2688E+5  A |p|    Pa
+    1.0000  b Perim  m                     82.225   B Ph(p)  deg
+ 7.3000E-2  c Length m                   9.5864E-3  C |U|    m^3/s
+ 5.0000E-4  d Srough                      142.72    D Ph(U)  deg
+                                          300.99    E Htot   W
+ideal           Solid type                299.52    F Edot   W
+!--------------------------------- 29 ---------------------------------
+DUCT       bypass (2nd part)
+!The Area of this part equals to the area of the slots in the bypass tube
+!(see the drawings)
+ 1.2566E-3  a Area   m^2                 1.2778E+5  A |p|    Pa
+sameas  28b b Perim  m                     81.966   B Ph(p)  deg
+ 2.2000E-2  c Length m                   9.4372E-3  C |U|    m^3/s
+ 5.0000E-4  d Srough                      142.27    D Ph(U)  deg
+                                          300.99    E Htot   W
+ideal           Solid type                298.74    F Edot   W
+!--------------------------------- 30 ---------------------------------
+RPN        Length of the last part of bypass tube
+     0.0000 a G or T                    5.5400E-2                 A m
+27A 28c - 29c -
+!--------------------------------- 31 ---------------------------------
+DUCT       bypass (3rd part)
+sameas  26A a Area   m^2                 1.2910E+5  A |p|    Pa
+sameas  28b b Perim  m                     81.602   B Ph(p)  deg
+sameas  30A c Length m                   8.8347E-3  C |U|    m^3/s
+ 5.0000E-4  d Srough                      140.14    D Ph(U)  deg
+                                          300.99    E Htot   W
+ideal           Solid type                297.61    F Edot   W
+!--------------------------------- 32 ---------------------------------
+RPN        aire regen
+    0.1520  a G or T                    1.8146E-2                 A m^2
+pi 4 / 32a 32a * *
+!--------------------------------- 33 ---------------------------------
+RPN        aire tube arriere noyau
+    0.1640  a G or T                    2.1124E-2                 A m^2
+pi 4 / 33a 33a * *
+!--------------------------------- 34 ---------------------------------
+DUCT       tube arriere noyau
+sameas  33A a Area   m^2      Mstr       1.2916E+5  A |p|    Pa
+    0.51522 b Perim  m        34a          81.581   B Ph(p)  deg
+ 3.5000E-2  c Length m                   5.6250E-3  C |U|    m^3/s
+ 5.0000E-4  d Srough                      116.66    D Ph(U)  deg
+                                          300.99    E Htot   W
+ideal           Solid type                297.29    F Edot   W
+!--------------------------------- 35 ---------------------------------
+DUCT       espace entre cav arr et HP
+sameas  32A a Area   m^2      Mstr       1.2917E+5  A |p|    Pa
+    0.47753 b Perim  m        35a          81.559   B Ph(p)  deg
+ 3.0000E-2  c Length m                   4.5993E-3  C |U|    m^3/s
+ 5.0000E-4  d Srough                       82.340   D Ph(U)  deg
+                                          300.99    E Htot   W
+ideal           Solid type                297.03    F Edot   W
+!--------------------------------- 36 ---------------------------------
+RPN        Voltage of 2nd source
+     0.0000 a G or T                    8.7509                    A V
+9h 7 115 / *
+!--------------------------------- 37 ---------------------------------
+RPN        Edot
+  348.94    a G or T                    297.03                    A ChngeMe
+Edot
+!--------------------------------- 38 ---------------------------------
+VESPEAKER  GBS_135F (35 watts electric power)
+ 8.5000E-3  a Area   m^2                 1.2824E+5  A |p|    Pa
+    3.2800  b R      ohms                  81.481   B Ph(p)  deg
+ 2.1000E-4  c L      H                   4.5947E-3  C |U|    m^3/s
+    4.9100  d BLProd T-m                   82.341   D Ph(U)  deg
+ 1.2300E-2  e M      kg                   303.67    E Htot   W
+ 1926.0     f K      N/m                  294.57    F Edot   W
+    0.1400  g Rm     N-s/m                  2.6791  G WorkIn W
+   -3.2835  h |V|    V        G             3.2835  H Volts  V
+  -60.00    i Ph(V)  deg                    1.7145  I Amps   A
+                                           17.866   J Ph(V/I) deg
+                                          954.70    K |Px|   Pa
+ideal           Solid type                -87.869   L Ph(Px) deg
+!--------------------------------- 39 ---------------------------------
+RPN        Zac2
+     0.0000 a G or T                    -0.85961                  A arg(Zac
+                                        2.7910E+7                 B |Zac2|
+38A 38C / 38B 38D -
+!--------------------------------- 40 ---------------------------------
+RPN        Pk-Pk displacment max 6.6 mm
+    3.6000  a =A?                       3.6000                    A mm
+38C 38a / w / 2000 *
+!--------------------------------- 41 ---------------------------------
+DUCT       espace entre HP et HHX
+ 1.1310E-2  a Area   m^2      Mstr       1.2823E+5  A |p|    Pa
+    0.3770  b Perim  m        41a          81.452   B Ph(p)  deg
+ 2.5000E-2  c Length m                   4.8512E-3  C |U|    m^3/s
+ 5.0000E-4  d Srough                       62.637   D Ph(U)  deg
+                                          303.67    E Htot   W
+ideal           Solid type                294.40    F Edot   W
+!--------------------------------- 42 ---------------------------------
+HX         echangeur ambient
+sameas  41a a Area   m^2                 1.2814E+5  A |p|    Pa
+    0.3200  b GasA/A                       81.368   B Ph(p)  deg
+ 2.3000E-2  c Length m                   5.0113E-3  C |U|    m^3/s
+ 7.5000E-4  d y0     m                     56.984   D Ph(U)  deg
+ -283.11    e HeatIn W        G            20.565   E Htot   W
+  328.00    f SolidT K        =42H        292.42    F Edot   W
+                                          338.24    G GasT   K
+ideal           Solid type                328.00    H SolidT K
+!--------------------------------- 43 ---------------------------------
+RPN        Pk-Pk disp / Length of AHX
+     0.0000 a G or T                    0.40093                   A ChngeMe
+42C 42a / 42b / w / 2 * 42c /
+!--------------------------------- 44 ---------------------------------
+RPN        p1 av regen
+     0.0000 a G or T                    1.2814E+5                 A abs p1
+                                        81.368                    B arg p1
+p1 arg p1 abs
+!--------------------------------- 45 ---------------------------------
+RPN        v1 av regen
+    0.1000  a G or T                    0.27617                   A arg Uav
+                                        5.0113E-3                 B abs Uav
+                                        56.984                    C abs u a
+U1 arg U1 abs U1 abs 47a /
+!--------------------------------- 46 ---------------------------------
+RPN        phi p U av reg
+     0.0000 a G or T                    -24.383                   A ChngeMe
+U1 arg p1 arg -
+!--------------------------------- 47 ---------------------------------
+STKSCREEN  regenerateur
+!The vendor of the screens is "Gantois" and the reference number is 102083
+sameas  32A a Area   m^2                 1.2505E+5  A |p|    Pa
+    0.6800  b VolPor                       82.751   B Ph(p)  deg
+ 4.4000E-2  c Length m                   7.0793E-3  C |U|    m^3/s
+ 2.8100E-5  d rh     m                     21.840   D Ph(U)  deg
+    0.1000  e ksFrac                       20.565   E Htot   W
+                                          215.20    F Edot   W
+                                          338.24    G TBeg   K
+stainless           Solid type            271.85    H TEnd   K
+!--------------------------------- 48 ---------------------------------
+RPN        DeltaT
+  -50.508   a G or T                    -66.397                   A dT
+47H 47G -
+!--------------------------------- 49 ---------------------------------
+RPN        angle u-p opt 8 deg
+   70.445   a G or T                    -42.647                   A 8 deg
+U1 arg p1 arg - 46A + 2 /
+!--------------------------------- 50 ---------------------------------
+RPN        us_centre 0.25 ms-1
+ 6.4800E-2  a G or T                    6.0453E-3                 A us_cent
+42C 47C + 2 /
+!--------------------------------- 51 ---------------------------------
+RPN        p_centre
+ 1000.0     a G or T                    1.2659E+5                 A p_cent
+42A 47A + 2 /
+!--------------------------------- 52 ---------------------------------
+HX         HX froid
+sameas  32A a Area   m^2                 1.2502E+5  A |p|    Pa
+    0.6000  b GasA/A                       82.744   B Ph(p)  deg
+ 6.4000E-3  c Length m                   7.4312E-3  C |U|    m^3/s
+ 1.0000E-3  d y0     m                     20.208   D Ph(U)  deg
+  193.52    e HeatIn W        G           214.09    E Htot   W
+  278.00    f SolidT K        =52H        214.24    F Edot   W
+                                          271.85    G GasT   K
+stainless           Solid type            278.00    H SolidT K
+!--------------------------------- 53 ---------------------------------
+RPN        Pk-Pk disp / Length of CHX
+     0.0000 a G or T                    0.71026                   A ChngeMe
+52C 52a / 52b / w / 2 * 52c /
+!--------------------------------- 54 ---------------------------------
+RPN        COP thermoac.
+     0.0000 a G or T                    2.5060                    A cop
+52e 42F 47F - /
+!--------------------------------- 55 ---------------------------------
+DUCT       tube apres regen
+sameas  32A a Area   m^2      Mstr       1.2495E+5  A |p|    Pa
+    0.47755 b Perim  m        55a          82.729   B Ph(p)  deg
+ 2.2000E-2  c Length m                   9.4835E-3  C |U|    m^3/s
+ 5.0000E-4  d Srough                       13.912   D Ph(U)  deg
+                                          214.09    E Htot   W
+ideal           Solid type                214.09    F Edot   W
+!--------------------------------- 56 ---------------------------------
+SOFTEND    Change Me
+     0.0000 a Re(z)                      1.2495E+5  A |p|    Pa
+     0.0000 b Im(z)                        82.729   B Ph(p)  deg
+     0.0000 c Htot   W                   9.4835E-3  C |U|    m^3/s
+                                           13.912   D Ph(U)  deg
+                                          214.09    E Htot   W
+                                          214.09    F Edot   W
+                                            6.5407  G Re(z)
+                                           16.878   H Im(z)
+                                          271.85    I T      K
+!--------------------------------- 57 ---------------------------------
+UNION      Change Me
+ 56         a SegNum                     1.2495E+5  A |p|    Pa
+sameas  56A b |p|Sft Pa       =57A         82.729   B Ph(p)  deg
+sameas  56B c Ph(p)S deg      =57B       4.0449E-13 C |U|    m^3/s
+sameas  56I d TSoft  K                    -92.179   D Ph(U)  deg
+                                         6.4104E-9  E Htot   W
+                                        -2.5171E-8  F Edot   W
+                                          338.24    G T      K
+!--------------------------------- 58 ---------------------------------
+HARDEND    Change Me
+     0.0000 a R(1/z)          =58G       1.2495E+5  A |p|    Pa
+     0.0000 b I(1/z)          =58H         82.729   B Ph(p)  deg
+     0.0000 c Htot   W        =58E       4.0449E-13 C |U|    m^3/s
+                                          -92.179   D Ph(U)  deg
+                                         6.4104E-9  E Htot   W
+                                        -2.5171E-8  F Edot   W
+                                        -1.8075E-12 G R(1/z)
+                                        -1.6106E-13 H I(1/z)
+!--------------------------------- 59 ---------------------------------
+VOLUME     Gas Volume
+     0.0000 a Target                     9.5032E-3  A TotVol m^3
+  6         b BegSeg                    
+ 55         c EndSeg                    
+!--------------------------------- 60 ---------------------------------
+RPN        Reynolds number after the cone
+     0.0000 a G or T                    63.620                    A ChngeMe
+22C 22d / rho * dn * mu /
+!--------------------------------- 61 ---------------------------------
+RPN        Reynolds number before the cone
+     0.0000 a G or T                    173.69                    A ChngeMe
+21C 22a / rho * dn * mu /
+\end{verbatim}
+\end{linenumbers}

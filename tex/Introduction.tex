@@ -204,7 +204,7 @@ En outre, ces deux épaisseurs de couche limites sont également liées par le n
 \end{subequations}
 et qui décrit le rapport de force entre les effets visqueux et thermiques. Dans le cas des machines thermoacoustiques, le nombre de Prandtl doit être le plus faible possible, afin de favoriser les échanges de chaleur sans perdre d'énergie à cause de la viscosité du fluide. Pour ce faire, il est possible de mélanger des gaz pour abaisser sa valeur \cite{belcher_working_1999} puisque dans le cas des gaz monoatomiques, le nombre de Prandtl ne dépend pas de la température et $\Prandtl=\nicefrac{2}{3}$.
 
-Les effets viscothermiques sont ainsi à la base du comportement des machines thermoacoustiques ; ces effets devront donc être décrit dans les parties qui suivent.
+Les effets viscothermiques sont ainsi à la base du comportement des machines thermoacoustiques ; ces effets devront donc être décrits dans les parties qui suivent.
 
 \subsection{\'Equations fondamentales de l'acoustique en fluides dissipatifs}
 
@@ -214,10 +214,10 @@ Un volume de fluide obéit aux lois de conservations de masse, de quantité de m
 	\begin{align}
 		\partial_t \rho + \bnabla \cdot (\rho \mathbf v) &= 0, &\text{\small(conservation de la masse)}\label{eq:ThermoLin_ConservMass}\\
 		\rho\left[\partial_t\mathbf v + (\mathbf v \cdot \bnabla)\mathbf v\right] &= -\bnabla p + \mu \bnabla^2 \mathbf v+ \left(\eta+\dfrac{\mu}{3}\right)\bnabla(\bnabla\cdot\mathbf v), &\text{\small(conservation de la quantité de mouvement)}\label{eq:ThermoLin_QtMvt}\\
-		\rho T \deriv_t s &= \bnabla\cdot (k \nabla T), &\text{\small(propagation de chaleur)}\label{eq:ThermoLin_NRJ}
+		\rho T \deriv_t s &= \bnabla\cdot (k \nabla T) \quad \echaf{where debit u}, &\text{\small\textcolor{red}{(propagation de chaleur)}}\label{eq:ThermoLin_NRJ}
 	\end{align}
 \end{subequations}
-en utilisant les variables d'intérêt suivantes : la pression $p$, le débit $u$, la composante selon $x$ de la vitesse $v$, la masse volumique $\rho$, les température $T$ du fluide et $T_s$ du solide, et l'entropie $s$. Elles sont considérées monochromatiques et oscillant à la fréquence $f_1=\nicefrac{\omega_1}{2\pi}$, dont la longueur d'onde $\lambda_1=\nicefrac{c_0}{f_1}$ est considérée grande devant les couches limites visqueuse $\delta_\nu$ et thermiques $\delta_\kappa$. Ces variables sont écrites en tenant compte des approximation de Rott en adoptant la convention temporelle $e^{i\omega t}$, pour le cas des gaz parfaits sans vitesse d'entraînement du fluide~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
+en utilisant les variables d'intérêt suivantes : la pression $p$, le débit $u$, la composante selon $x$ de la vitesse $v$, la masse volumique $\rho$, les température $T$ du fluide et $T_s$ du solide, et l'entropie $s$. Elles sont considérées monochromatiques et oscillant à la fréquence $f_1=\nicefrac{\omega_1}{2\pi}$, dont la longueur d'onde $\lambda_1=\nicefrac{c_0}{f_1}$ est considérée grande devant les couches limites visqueuse $\delta_\nu$ et thermique $\delta_\kappa$. Ces variables sont écrites en tenant compte des approximations de Rott en adoptant la convention temporelle $e^{i\omega t}$, pour le cas des gaz parfaits sans vitesse d'entraînement du fluide~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
 
 \setlength\columnsep{3pt}
 \begin{subequations}
@@ -244,7 +244,7 @@ Ici, les indices indiquent l'ordre de grandeur, avec en particulier l'indice \nu
 	\left|\bullet_1\right| \ll \bullet_0,
 	\label{eq:ConditionLinearite}
 \end{equation}
-où $\bullet$ représente indifféremment les variables citées précédemment quand la composante continue est non-nulle. Les composantes oscillantes des pression $p_1$ et débit $u_1$ acoustiques sont supposée ne dépendre que de $x$, mais la composante selon $x$ de la vitesse acoustique $v_1$ prend en compte le profil de vitesse causé par la présence des effets viscothermiques à proximité des parois. D'autres hypothèses simplificatrices sont admises ici, telles que l'absence de sources de débit, de force et de de chaleur dans le domaine d'étude, l'égalité des températures moyennes dans le fluide $T_0(x)$ et dans le solide $T_{s,0}(x)$, le caractère laminaire du mouvement particulaire, et l'indépendance des paramètres thermophysiques du fluide et du solide à la température.\medskip
+où $\bullet$ représente indifféremment les variables citées précédemment quand la composante continue est non-nulle. Les composantes oscillantes des pression $p_1$ et débit $u_1$ acoustiques sont supposées ne dépendre que de $x$, mais la composante selon $x$ de la vitesse acoustique $v_1$ prend en compte le profil de vitesse causé par la présence des effets viscothermiques à proximité des parois. D'autres hypothèses simplificatrices sont admises ici, telles que l'absence de sources de débit, de force et de de chaleur dans le domaine d'étude, l'égalité des températures moyennes dans le fluide $T_0(x)$ et dans le solide $T_{s,0}(x)$, le caractère laminaire du mouvement particulaire, et l'indépendance des paramètres thermophysiques du fluide et du solide à la température.\medskip
 
 L'équation de la conservation de la quantité de mouvement~\eqref{eq:ThermoLin_QtMvt} peut être réécrite avec ces variables comme
 
@@ -262,7 +262,7 @@ qui fait intervenir les échanges d'énergie dans la couche limite visqueuse $\d
 	\deriv p_1 = -\frac{i\omega_1 \rho_0 \deriv x}{S(1-f_\nu)}u_1,
 	\label{eq:ThermoLin_dp1}
 \end{equation}
-où $f_\nu$ est la moyenne de $h_\nu$ sur la section. Les fonctions visqueuses sont définies en coordonnées cylindrique (en remplaçant les coordonnées transverses $y$ et $z$ par la coordonnée radiale $r=\sqrt{y^2+z^2}$) dans le cas de pores cylindriques par~\cite{arnott_general_1991}
+où $f_\nu$ est la moyenne de $h_\nu$ sur la section. Les fonctions visqueuses sont définies en coordonnées cylindriques (en remplaçant les coordonnées transverses $y$ et $z$ par la coordonnée radiale $r=\sqrt{y^2+z^2}$) dans le cas de pores cylindriques par~\cite{arnott_general_1991}
 
 \begin{subequations}
 		\begin{align}
@@ -323,9 +323,10 @@ L'équation de Helmholtz dont le champ de pression est solution est obtenue en c
 
 Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacoustics_2017} par
 \begin{equation}
-	Q_{TA} = \underbrace{\frac{1}{2} \RE\left[pu^* \left( 1 - \frac{f_\kappa - f_\nu^*}{(1 - \Prandtl)(1 - f_\nu^*)} \right) \right]}_{q_{TA}} + \underbrace{\frac{\rho_0 C_p }{\Phi S \omega_1 } \frac{1}{2} \IM \left[ \frac{f_\kappa + \Prandtl f_\nu^*}{(1-\Prandtl)|1-f_\nu|^2} |u|^2\right]}_{k_{TA}} \deriv_x T
+	Q_{TA} = \underbrace{\frac{1}{2} \RE\left[pu^* \left( 1 - \frac{f_\kappa - f_\nu^*}{(1 - \Prandtl)(1 - f_\nu^*)} \right) \right]}_{q_{TA}} + \underbrace{\frac{\rho_0 C_p }{\Phi S \omega_1 } \frac{1}{2} \IM \left[ \frac{f_\kappa + \Prandtl f_\nu^*}{(1-\Prandtl)|1-f_\nu|^2} |u|^2\right]}_{k_{TA}} \deriv_x T,
 	\label{eq:FluxTA_swift}
 \end{equation}
+\echaf{où $q_{TA}$ correspond au flux de chaleur provoqué par la présence de l'onde acoustique et indépendant du gradient de température, et $k_{TA}$ à une conductivité thermique induite par l'effet thermoacoustique.}
 
 
 
@@ -622,7 +623,7 @@ Bien que la théorie linéaire de Rott, au travers notamment de logiciels de sim
 \section{Résultats antérieurs au doctorat}\label{chap:PresTacot_ResultatsATE}
 Au démarrage de cette thèse, le réfrigérateur existe déjà puisque sa conception s'est faite dans le cadre du projet ANR \textsc{Tacot} (ThermoAcoustic Cooler for Onroad Transportation), qui porte sur l'application d'une pompe à chaleur thermoacoustique pour la climatisation automobile \cite{ANR_thermo-acoustic_2019}. Sa caractérisation est publiée \cite{ramadan_design_2021}, et il a fait également l'objet d'études expérimentales~\cite{ramadan_experimental_2018, ramadan_experimental_2021, poignand_test-bench_2022} et  numériques~\cite{hireche_experimental_2020, baltean_gravity_2025}.\smallskip
 
-Les expériences réalisées avant le début de cette thèse sont faites en utilisant un noyau dont la porosité est $\Phi=\qty{75}{\percent}$. Il est immergé dans un mélange de gaz pressurisé à \qty{40}{\bar} et composé de \qty{70}{\percent} d'hélium et de \qty{30}{\percent} d'argon, car dans ces proportions le nombre de Prandtl du mélange atteint un minimum \cite{belcher_working_1999}. Le modèle linéaire réalisé avec le logiciel \textsc{DeltaEC} prédit les meilleurs performances à la fréquence de résonance du système $f_1=\qty{47}{\hertz}$, pour laquelle la longueur d'onde vaut $\lambda_1=\qty{11.7}{\meter}$, validant ainsi l'hypothèse de compacité acoustique. C'est par ailleurs la seule fréquence où l'impédance électrique de la source acoustique principale est supérieure à la limite basse admise par l'amplificateur qui l'alimente et qui vaut \qty{2}{\ohm}. Le déphasage inter-source est fixé à $\varphi_{2-1}=\varphi_{SA2} - \varphi_{SA1}=\ang{-60}$ pour toutes les expériences, car il s'agit de la valeur optimale pour maximiser le flux de chaleur $\dot Q_f$ extrait par l'échangeur froid, d'après les simulations réalisées sous le logiciel \textsc{DeltaEC}, et ce qui est confirmé par des expériences préliminaires.\smallskip
+Les expériences réalisées avant le début de cette thèse sont faites en utilisant un noyau dont la porosité est $\Phi=\qty{75}{\percent}$. Il est immergé dans un mélange de gaz pressurisé à \qty{40}{\bar} et composé de \qty{70}{\percent} d'hélium et de \qty{30}{\percent} d'argon, car dans ces proportions le nombre de Prandtl du mélange atteint un minimum qui vaut $\mathrm{Pr} = \num{.42}$ \cite{belcher_working_1999}. Le modèle linéaire réalisé avec le logiciel \textsc{DeltaEC} prédit les meilleurs performances à la fréquence de résonance du système $f_1=\qty{47}{\hertz}$, pour laquelle la longueur d'onde vaut $\lambda_1=\qty{11.7}{\meter}$, validant ainsi l'hypothèse de compacité acoustique. C'est par ailleurs la seule fréquence où l'impédance électrique de la source acoustique principale est supérieure à la limite basse admise par l'amplificateur qui l'alimente et qui vaut \qty{2}{\ohm}. Le déphasage inter-source est fixé à $\varphi_{2-1}=\varphi_{SA2} - \varphi_{SA1}=\ang{-60}$ pour toutes les expériences, car il s'agit de la valeur optimale pour maximiser le flux de chaleur $\dot Q_f$ extrait par l'échangeur froid, d'après les simulations réalisées sous le logiciel \textsc{DeltaEC}, et ce qui est confirmé par des expériences préliminaires.\smallskip
 
 Dans cet article de caractérisation~\cite{ramadan_design_2021} il est montré qu'à ces fréquence et déphasage inter-sources, et à une amplitude correspondant au \textit{drive ratio} $DR=\nicefrac{p_1}{p_0}=\qty{3.6}{\percent}$, une puissance d'alimentation des sources $\dot W_e=\qty{193}{\watt}$ est consommée, une quantité de chaleur de $\dot Q_f=\qty{290}{\watt}$ est extraite à la source froide à maintenir à une température $T_f=\qty{13.3}{\degreeCelsius}$ (cette température, mesurée du côté froid et sur l'axe du régénérateur, est fixée comme consigne pour un système d'asservissement de l'alimentation électrique de cartouches chauffantes contenues dans l'échangeur de chaleur froid). Le coefficient de performance à ce point de fonctionnement est $\COP=\nicefrac{\dot Q_f}{\dot W_e}=\num{1.5}$, soit \qty{15}{\percent} du coefficient de performance de Carnot. Un schéma résume les résultats de ce point de fonctionnement sur la figure~\ref{fig:CaractMachineATE}.\medskip
 
@@ -663,7 +664,7 @@ Cependant, les résultats obtenus avant le démarrage de cette thèse montrent d
 Après avoir présenté les éléments de base du travail sur ce réfrigérateur thermoacoustique \textsc{Tacot}, le contexte autour de cette thèse, et l'axe sur lequel elle se concentre, un plan est proposé.\medskip
 
 
-Dans le chapitre~\ref{chap:DispositifExpe}, le dispositif expérimental est présenté. Cela inclut une présentation de la géométrie du réfrigérateur, de l’instrumentation utilisée pour les acquisitions, du déroulé d’une expérience et des conditions de chacune d’entre elles. L’accent est mis sur l’étude de la convection naturelle et les orientations du réfrigérateur choisies pour répondre aux hypothèses à valider sont définies.\smallskip
+Dans le chapitre~\ref{chap:DispositifExpe}, le dispositif expérimental est présenté. Cela inclut une présentation de la géométrie du réfrigérateur, de l’instrumentation utilisée pour les acquisitions, du déroulé d’une expérience et des conditions de chacune d’entre elles. L’accent est mis sur l’étude de la convection naturelle, et les orientations du réfrigérateur retenues pour cette étude.\smallskip
 
 Le chapitre~\ref{chap:SimusRealisees} introduit l'approche théorique de la convection naturelle dans le réfrigérateur, dans le but de comprendre le fonctionnement du réfrigérateur au-delà de ce que prédit la théorie linéaire en tenant compte de davantage de phénomènes. La première partie de ce chapitre permet d'introduire des quantités adimensionnelles couramment utilisées en mécanique des fluides. En particulier, l'étude du nombre de Rayleigh permet d'anticiper la présence ou l'absence d'un courant de convection naturelle dans différentes zones du réfrigérateur ainsi que de calculer des ordres de grandeurs des vitesses d'écoulement dans les cas où la convection naturelle met en mouvement le fluide. Suite à cela, un modèle numérique du régime stationnaire par éléments finis et réalisé à l'aide du logiciel \textsc{Comsol} Multiphysics\textss\textregistered est présenté. Ce modèle, pour rester simple tout en représentant plus de phénomènes, vise à simuler le comportement purement thermique d'un système équivalent. Enfin, un modèle analytique du régime transitoire est proposé, en prenant en compte les mêmes phénomènes que dans la simulation numérique.\smallskip
 

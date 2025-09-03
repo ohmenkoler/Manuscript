@@ -186,12 +186,12 @@ et la composante verticale de la vitesse de référence correspondante s'écrit
 
 Encore une fois, une différence de comportement existe entre les situations représentées par les figures~\ref{fig:ConvNat2D_HorizDeltaT} et \ref{fig:ConvNat2D_VertiDeltaT}. En particulier, il existe dans le cas~\ref{fig:ConvNat2D_VertiDeltaT} un nombre de Rayleigh-Darcy critique en dessous duquel la convection n'a pas lieu, et seule la conduction transporte de la chaleur. La valeur de ce nombre critique est évaluée à $\Rayleigh_{p,c}=4\pi^2$ dans la littérature, pour des parois non-glissantes et imperméables~\cite{elder_steady_1967, nield_convection_2013} et prend en compte l'anisotropie du matériau~\cite{kvernvold_nonlinear_1979}.\smallskip
 
-Ici encore, une application numérique est réalisée pour les deux orientations de la figure~\ref{fig:ConvNat2D}, dans les mêmes conditions que le tableau~\ref{tab:NbrRayleigh_Vitesse}. Cette fois-ci, les valeurs des nombres de Rayleigh-Darcy pour chacune des orientations sont largement inférieures à la valeur critique.%, \echaf{ce qui permet de déduire l'absence de circulations de fluides causées par la convection naturelle.}
+Ici encore, une application numérique est réalisée pour les deux orientations de la figure~\ref{fig:ConvNat2D}, dans les mêmes conditions que le tableau~\ref{tab:NbrRayleigh_Vitesse}. Cette fois-ci, les valeurs des nombres de Rayleigh-Darcy pour chacune des orientations sont largement inférieures à la valeur critique quand elle existe. Pour le cas horizontal, où la notion de nombre de Rayleigh critique n'a pas lieu d'être, c'est la vitesse de référence de l'écoulement associé à la convection naturelle qui est étudiée.%, \echaf{ce qui permet de déduire l'absence de circulations de fluides causées par la convection naturelle.}
 
 \begin{table}[!ht]
 \centering
 \caption{Ordres de grandeur des nombres de Rayleigh-Darcy et composantes de vitesse associées pour les configurations affichées sur la figure~\ref{fig:ConvNat2D} et pour une différence de température de \qty{5}{\kelvin}.}
-\label{tab:NbrRayleighDarcy_Vitesse}
+\label{tab:NbrRayleighDarcy_Vitesse_5K}
 \begin{tblr}{columns=l, hline{1,Z}={1.5pt}}
 	& $L_c$ (\unit{\milli\metre}) &  $\Rayleigh_p$ & $v_{\sf ref}^{// \mathbf g}$ (\unit{\meter\per\second}) \\\hline\hline
 	Horizontal (\ref{fig:ConvNat2D_HorizDeltaT}) & \num{30} & \num{e-2} & \num{e-5} \\
@@ -199,6 +199,16 @@ Ici encore, une application numérique est réalisée pour les deux orientations
 \end{tblr}
 \end{table}
 
+\begin{table}[!ht]
+\centering
+\caption{Ordres de grandeur des nombres de Rayleigh-Darcy et composantes de vitesse associées pour les configurations affichées sur la figure~\ref{fig:ConvNat2D} et pour une différence de température de \qty{50}{\kelvin}.}
+\label{tab:NbrRayleighDarcy_Vitesse_50K}
+\begin{tblr}{columns=l, hline{1,Z}={1.5pt}}
+	& $L_c$ (\unit{\milli\metre}) &  $\Rayleigh_p$ & $v_{\sf ref}^{// \mathbf g}$ (\unit{\meter\per\second}) \\\hline\hline
+	Horizontal (\ref{fig:ConvNat2D_HorizDeltaT}) & \num{30} & \num[retain-zero-exponent=true]{e0} & \num{e-4} \\
+	Vertical (\ref{fig:ConvNat2D_VertiDeltaT}) & \num{149} & \num[retain-zero-exponent=true]{e0} & \num{e-4}
+\end{tblr}
+\end{table}
 
 De cette première approche des effets de convection naturelle dans deux zones du réfrigérateur \textsc{Tacot}, c'est-à-dire la cavité située entre la source acoustique principale et l'échangeur de chaleur froid d'une part, et le régénérateur d'autre part, il apparaît donc que les valeurs du nombre de Rayleigh penchent en faveur de la possibilité de formation de cellules de convection dans la cavité mais pas dans le régénérateur. Ceci encourage à continuer les investigations dans cette cavité, ce qui est proposé dans le paragraphe qui suit.\bigskip
 
@@ -263,7 +273,7 @@ L'équation de la chaleur est résolue dans une étude du régime stationnaire a
 L'étude est réalisées pour deux configurations de conditions aux frontières. Dans l'une, la paroi supérieure est à la température $T_c=\qty{293}{\kelvin}$ et la paroi inférieure, à la température $T_f=T_c-\qty{5}{\kelvin}=\qty{288}{\kelvin}$, et dans l'autre, les températures sont inversées. Dans les deux cas, le pourtour du cône est considéré adiabatique, et la vitesse est considérée nulle sur toutes les parois.
 
 \subsubsection{Résultats}
-Les simulations pour lesquelles la cavité est chauffée par le bas sont réalisées, et la composante verticale de la vitesse sur le plan de coupe ($x,z$) est tracée pour trois géométries sur la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix}.\medskip
+Les simulations axisymétriques pour lesquelles la cavité est chauffée par le bas sont réalisées, et la composante verticale de la vitesse sur le plan de coupe ($x,z$) est tracée pour trois géométries sur la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix}.\medskip
 
 \begin{figure}[!ht]
 	\centering
@@ -323,15 +333,15 @@ Les simulations pour lesquelles la cavité est chauffée par le bas sont réalis
 \end{figure}
 
 
-La figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_SmallBase} représente une vue en coupe sur le de la cavité dans une situation où la paroi chaude se trouve au bas de la géométrie, et où la paroi inférieure de la géométrie est de plus petit diamètre que celle au dessus. Un champ de vitesse non nul est visible, avec une colonne de fluide montant au centre de la cavité du même diamètre que la paroi chaude. Le fluide redescend par la périphérie, à une vitesse plus importante (\qty{1.1e-3}{\meter\per\second}) que celle du fluide montant.\smallskip
+La figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_SmallBase} représente une vue en coupe au centre de la cavité dans une situation où la paroi chaude se trouve au bas de la géométrie, et où la paroi inférieure de la géométrie est de plus petit diamètre que celle au dessus. Un champ de vitesse non nul est visible, avec une colonne de fluide montant au centre de la cavité du même diamètre que la paroi chaude. Le fluide redescend par la périphérie, à une vitesse plus importante (\qty{1.1e-3}{\meter\per\second}) que celle du fluide montant.\smallskip
 
 Le champ de vitesse sur le plan de coupe de la cavité cylindrique est représenté sur la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_Cylinder} et sa valeur est nulle en tout point de la géométrie.\smallskip
 
 Le troisième cas concerne la cavité avec la paroi inférieure plus grande que la paroi supérieure sur la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_LargeBase}. Dans cette configuration, le calcule de la vitesse indique la circulation d'un flux massique montant par la périphérie de la cavité et descendant à une vitesse plus faible en son centre.\medskip
 
-Pour ce jeu de simulations, il est attendu qu'une cellule de convection naturelle se mette en place suite au déclenchement d'une instabilité de Rayleigh-Bénard, en faisant circuler un fluide du bas vers le haut lorsque le nombre de Rayleigh est supérieure à sa valeur critique, ici \num{1708} (les parois horizontales sont rigides). C'est ce qu'il se passe lorsque la cavité est conique, et l'angle du cône influe sur la direction de rotation. Dans le cas de la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_SmallBase}, la paroi inférieure plus petite peut être vue comme une source favorisant l'échauffement au centre et donc l'élévation du fluide, et l'allure de la cellule de convection naturelle ressemble à celle obtenue dans~\cite{basak_heat_2009}. À l'inverse, la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_LargeBase} présente la situation opposée, où la surface froide favorise le refroidissement du fluide au centre de la cavité.\smallskip
+Pour ce jeu de simulations, il est attendu qu'une cellule de convection naturelle se mette en place suite au déclenchement d'une instabilité de Rayleigh-Bénard, en faisant circuler un fluide du bas vers le haut lorsque le nombre de Rayleigh est supérieur à sa valeur critique, ici \num{1708} (les parois horizontales sont rigides). C'est ce qu'il se passe lorsque la cavité est conique, et l'angle du cône influe sur la direction de rotation. Dans le cas de la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_SmallBase}, la paroi inférieure plus petite peut être vue comme une source favorisant l'échauffement au centre et donc l'élévation du fluide, et l'allure de la cellule de convection naturelle ressemble à celle obtenue dans~\cite{basak_heat_2009}. À l'inverse, la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_LargeBase} présente la situation opposée, où la surface froide favorise le refroidissement du fluide au centre de la cavité.\smallskip
 
-Le cas de la cavité cylindrique est surprenant. Dans la littérature, ce cas présente un écoulement montant le long de la périphérie et descendant au centre~\cite{schneider_laminar_1992}, ce qui n'est pas visible ici. Cependant, le fait d'inverser le sens de circulation au moment où la cavité est cylindrique semble en réalité montrer l'existence de deux cellules qui tournent en sens inverse l'une de l'autre, ce qui résulte en une vitesse nulle.
+Le cas de la cavité cylindrique est surprenant. Dans la littérature, ce cas présente un écoulement montant le long de la périphérie et descendant au centre~\cite{schneider_laminar_1992}, ce qui n'est pas visible ici. Cependant, le fait d'inverser le sens de circulation au moment où la cavité est cylindrique pourrait montrer l'existence de deux cellules qui tournent en sens inverse l'une de l'autre, ce qui résulte en une vitesse nulle.
 
 \bigskip
 
@@ -719,13 +729,13 @@ Tout d'abord, la distribution de température et l'allure de la vitesse de l'éc
 	\label{fig:RIXTa_Detail_Cmap_T_Fleche_vNorme}
 \end{figure}
 
-Sur la figure~\ref{fig:H1_RIXTa_Detail_Cmap_T_Fleche_vNorme}, le gradient de température entre les zones ambiante et froide est horizontal selon l'axe $\mathbf e_{x,0}$, avec \qty{14}{\kelvin} sur \qty{39}{\milli\meter}. Sur le plan ($\mathbf e_{x,0},\mathbf e_{z,0}$) Une cellule de convection naturelle montant de la paroi de la source acoustique principale à gauche et à la température $T=\qty{293}{\kelvin}$, et redescendant du côté de l'échangeur froid à la température $\qty{278.2}{\kelvin}$, est mise en évidence par les flèches indiquant la direction de la vitesse en trois dimensions. Il est intéressant de remarquer l'impact de la forme trapezoïdale de ce cône d'adaptation d'impédance, par le fait que la vitesse d'écoulement montant proche du col du cône est plus élevée que celle de l'écoulement descendant à son pavillon. Cela traduit une section apparente plus faible devant la source acoustique principale que celle devant l'échangeur froid, et manifeste le respect de la conservation du débit. L'écoulement s'accompagne d'une distribution de la température asymétrique, car l'écoulement s'accompagne d'un flux de chaleur convectif.\smallskip
+Sur la figure~\ref{fig:H1_RIXTa_Detail_Cmap_T_Fleche_vNorme}, le gradient de température entre les zones ambiante et froide est horizontal selon l'axe $\mathbf e_{x,0}$, avec \qty{14}{\kelvin} sur \qty{39}{\milli\meter}. Sur le plan ($\mathbf e_{x,0},\mathbf e_{z,0}$), une cellule de convection naturelle montant de la paroi de la source acoustique principale à gauche et à la température $T=\qty{293}{\kelvin}$, et redescendant du côté de l'échangeur froid à la température $\qty{278.2}{\kelvin}$, est mise en évidence par les flèches indiquant la direction de la vitesse en trois dimensions. Il est intéressant de remarquer l'impact de la forme trapezoïdale de ce cône d'adaptation d'impédance, par le fait que la vitesse d'écoulement montant proche du col du cône est plus élevée que celle de l'écoulement descendant à son pavillon. Cela traduit une section apparente plus faible devant la source acoustique principale que celle devant l'échangeur froid, et manifeste le respect de la conservation du débit. L'écoulement s'accompagne d'une distribution de la température asymétrique, car l'écoulement s'accompagne d'un flux de chaleur convectif.\smallskip
 
 La figure~\ref{fig:H2_RIXTa_Detail_Cmap_T_Fleche_vNorme} est obtenue avec la même simulation, en observant cette fois le plan ($x,y$). Dans ce cas, les flèches qui représentent la direction de vitesse sont toutes normales à ce plan d'observation, et aucun flux massique ne circule dans le plan. La configuration est donc symétrique.\medskip
 
-Les résultats de simulation pour l'orientation `\texttt{V1}' sont tracés sur la figure~\ref{fig:V1_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Cette fois, le gradient de température entre les températures ambiantes et froide est vertical, le long de l'axe $\mathbf e_{z,0}$. La paroi qui correspond à la source acoustique principale, à la température $T=\qty{293}{\kelvin}$, est au dessous de la paroi de l'échangeur de chaleur froid dont la température se situe à $T=\qty{285.4}{\kelvin}$. Un écoulement montant au centre de la cavité et redescendant le long des parois périphériques est observable. Du fluide chaud arrive donc au contact de la paroi froide, lui cède de la chaleur, et la température y est plus élevée que dans les autres configurations ($T=\qty{278}{\kelvin}$). De plus, le diamètre de la paroi de la source de chaleur que constitue la source acoustique principale est plus petit que le diamètre de la paroi en face, celle à la frontière avec le noyau. Cette différence de diamètre favorise l'élévation d'une colonne de fluide plus chaud par le centre de la cavité plutôt que par la périphérie, ce qui est conforme à la littérature sur le sujet~\cite{basak_heat_2009}\smallskip
+Les résultats de simulation pour l'orientation `\texttt{V1}' sont tracés sur la figure~\ref{fig:V1_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Cette fois, le gradient de température entre les températures ambiantes et froide est vertical, le long de l'axe $\mathbf e_{z,0}$. La paroi qui correspond à la source acoustique principale, à la température $T=\qty{293}{\kelvin}$, est au dessous de la paroi de l'échangeur de chaleur froid dont la température se situe à $T=\qty{285.4}{\kelvin}$. Un écoulement montant au centre de la cavité et redescendant le long des parois périphériques est observable, comme ce que montre la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_SmallBase} obtenue par une simulation d'un système analogue. Du fluide chaud arrive donc au contact de la paroi froide, lui cède de la chaleur, et la température y est plus élevée que dans les autres configurations ($T=\qty{278}{\kelvin}$). De plus, le diamètre de la paroi de la source de chaleur que constitue la source acoustique principale est plus petit que le diamètre de la paroi en face, celle à la frontière avec le noyau. Cette différence de diamètre favorise l'élévation d'une colonne de fluide plus chaud par le centre de la cavité plutôt que par la périphérie, ce qui est conforme à la littérature sur le sujet~\cite{basak_heat_2009}\smallskip
 
-L'orientation `\texttt{V2}' est finalement présentée sur la figure~\ref{fig:V2_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Ce résultat est le plus surprenant, car il montre également la présence d'un écoulement circulant dans le cône d'adaptation d'impédance, alors que cette configuration est a priori stable et n'est pas censée déclencher la mise en mouvement du fluide. En effet, le fluide chaud moins dense se trouve déjà au dessus du fluide plus froid. Il apparaît que le fluide à proximité de la paroi plus chaude se déplace horizontalement du centre vers la périphérie jusqu'à rencontrer une zone plus froide, où la densité locale du fluide diminue. Celui-ci descend le long de la paroi qui la guide du fait de l'angle du cône, et la conservation du débit provoque la mise en mouvement du reste du fluide qui suit la même trajectoire. Ces résultats simialaires à ceux obtenus dans les études paramétriques dédiés à la cavité seule~\ref{chap:CircuFluideV2}, qui ont montré que la forme du cône provoque le mouvement du fluide en périphérie.\bigskip
+L'orientation `\texttt{V2}' est finalement présentée sur la figure~\ref{fig:V2_RIXTa_Detail_Cmap_T_Fleche_vNorme}. Ce résultat est le plus surprenant, car il montre également la présence d'un écoulement circulant dans le cône d'adaptation d'impédance, alors que cette configuration est a priori stable et n'est pas censée déclencher la mise en mouvement du fluide. En effet, le fluide chaud moins dense se trouve déjà au dessus du fluide plus froid. Il apparaît que le fluide à proximité de la paroi plus chaude se déplace horizontalement du centre vers la périphérie jusqu'à rencontrer une zone plus froide, où la densité locale du fluide diminue. Celui-ci descend le long de la paroi qui la guide du fait de l'angle du cône, et la conservation du débit provoque la mise en mouvement du reste du fluide qui suit la même trajectoire. Ces résultats sont similaires à ceux obtenus dans les études paramétriques dédiés à la cavité seule~\ref{chap:CircuFluideV2}, et notamment illustrés sur la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix_LargeBase}, qui ont montré que la forme du cône provoque le mouvement du fluide en périphérie.\bigskip
 
 Le calcul par éléments finis montre que la température du point froid dépend de l'orientation, puisque celui-ci est à la température~\qty{285}{\kelvin} dans le cas `\texttt{V1}', et \qty{278}{\kelvin} dans les autres cas. De plus, ce côté du régénérateur présente une distribution de température asymétrique dans l'orientation `\texttt{H1}', alors que les autres orientation sont soit symétriques par rapport au plan vertical qui coupe le noyau en son milieu (cas `\texttt{H2}'), soit axisymétriuque (cas `\texttt{V1}' et `\texttt{V2}'). Enfin, contrairement à ce que laisse supposer le calcul d'ordre de grandeur du nombre de Rayleigh, un écoulement de nature convective serait également présent dans la cavité d'adaptation d'impédance dans l'orientation `\texttt{V2}', qui est dans le cas des cavité cylindriques une configuration stable.
 
@@ -955,7 +965,7 @@ La détermination des coefficients d'échanges se fait par l'exploitation des ex
 	\label{fig:TransitoireFit}
 \end{figure}
 
-Cette figure montre un assez bon accord entre la distribution de température calculée et celle mesurée, avec tout de même quelques écart dans les \qty{1200}{\second} après le démarrage des sources. Ces écarts sont particulièrement marqués au milieu du régénérateur qui est assez éloigné des fontières.\medskip
+Cette figure montre un assez bon accord entre la distribution de température calculée et celle mesurée, avec tout de même quelques écarts dans les \qty{1200}{\second} après le démarrage des sources. Ces écarts sont particulièrement marqués au milieu du régénérateur qui est assez éloigné des fontières.\medskip
 
 \textit{\textbf{Remarque :} malgré un bon accord entre simulation et expérience en l'absence d'acoustique, l'ajout d'un champ acoustique dans le modèle provoque l'apparition de différences de températures trop importantes, ce qui laisse penser que les coefficients calculés ici ne représentent qu'une partie des échanges convectifs entre le fluide et les disques de tissus métalliques, et sous estiment les échanges réellement effectués. Ces derniers incluent également l'amélioration du contact fluide-solide par le déplacement des volumes élémentaires de fluide à l'intérieur du régénérateur, et l'influence de la convection naturelle.}
 
@@ -965,7 +975,7 @@ Cette figure montre un assez bon accord entre la distribution de température ca
 
 \subsection{Bilan thermique}
 
-Le bilan de chaleur est calculé dans chaque volume $S_{\sf reg}\ \deriv x$ du régénérateur et s'écrit 
+Le bilan de chaleur est calculé dans chaque volume 2D $S_{\sf reg}\ \deriv x$ du régénérateur et s'écrit 
 
 
 \begin{equation}
@@ -1183,7 +1193,7 @@ puis selon $r$ avec l'équation~\eqref{eq:TransfoInteg_Inversion_R}, ce qui donn
 %Une fois les coefficients d'échanges $h$ estimés grâce aux mesures sans acoustiques, ils sont considérés constant et dépendant uniquement des matériaux de construction, et conservés pour le reste des simulations. Selon le même principe, le flux de chaleur ajouté par vorticité est estimé grâce à la minimisation d'une fonction de coût.\echaf{à faire}
 
 \subsection{Résultats}
-Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenire les résultats pour différents \textit{drive ratios} sur la figure~\ref{fig:ExempleTransitoireH2}.\medskip
+Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenir les résultats pour différents \textit{drive ratios} sur la figure~\ref{fig:ExempleTransitoireH2}.\medskip
 
 \begin{figure}[!htp]
 \centering

@@ -70,28 +70,25 @@ Dans la seconde sous-figure~\ref{fig:ConvNat2D_VertiDeltaT}, ce sont cette fois 
 
 
 
-Les écoulements de convection naturelle sont décrits par les équations de conservation de la masse, de la quantité de mouvement et de l'énergie, écrites suivant l'approximation de Boussinesq. À ces équations sont ajoutées les conditions initiales et aux limites. Le fluide considéré est newtonien, visqueux et ses propriétés sont indépendantes de la température, à l'exception de la masse volumique. 
-Ces équations s'écrivent
+Les écoulements de convection naturelle sont décrits par les équations de conservation de la masse, de la quantité de mouvement et de l'énergie, écrites suivant l'approximation de Boussinesq qui précise que la masse volumique est considérée constante sauf dans le terme de pesanteur, et sa variation, faible, est linéaire avec la température selon l'équation obtenue par développement limité à l'ordre 1, c'est-à-dire
+
+\begin{equation}
+	\rho_0'(T) = \rho_0[1-\beta(T_0-T_\infty)],
+	\label{eq:MasseVolumiqueBoussinesq}
+\end{equation}
+où $\beta$ est le coefficient d'expansion thermique du fluide. Le fluide considéré est newtonien, visqueux et ses propriétés sont indépendantes de la température, à l'exception de la masse volumique. Ces équations s'écrivent
 
 \begin{subequations} % page wikipédia RayleighBénard
 	\begin{align}
 		\nabla \cdot \mathbf v &= 0, \label{eq:NavierStokes_Boussinesq_Conti}\\
 		\intertext{pour la conservation de la masse,}
-		\rho_0' [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \rho_0\beta \mathbf g (T_c-T_f), \label{eq:NavierStokes_Boussinesq_QtMvt}\\
+		\rho_0 [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \rho_0\beta \mathbf g (T_0-T_\infty), \label{eq:NavierStokes_Boussinesq_QtMvt}\\
 		\intertext{pour la conservation de la quantité de mouvement, et}
 		\partial_t T + (\mathbf v \cdot \nabla) T - k \nabla^2T &= 0. \label{eq:NavierStokes_Boussinesq_NRJinterne}
 	\end{align}
 	\label{eq:NavierStokes_Boussinesq}%
 \end{subequations}
 pour la conservation de l'énergie interne, avec comme conditions aux frontières le non-glissement aux parois.
-
-Dans le cadre de l'approximation de Boussinesq, la masse volumique est considérée constante sauf dans le terme de pesanteur, et sa variation, faible, est linéaire avec la température selon l'équation
-
-\begin{equation}
-	\rho_0(T) = \rho_0'[1-\beta(T_0-T_\infty)],
-	\label{eq:MasseVolumiqueBoussinesq}
-\end{equation}
-où $\beta$ est le coefficient d'expansion thermique du fluide.
 
 L'adimensionnement de l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
 

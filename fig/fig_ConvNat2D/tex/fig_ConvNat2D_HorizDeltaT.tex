@@ -15,12 +15,12 @@
 %	\fill[dotted] (O.center) to[out=0,in=-90] ++(\e)
 	
 	% ----------- Cavity
-	\fill[pattern=north east lines,pattern color=MatlabOrange] (-\L/2,\l) node[below right, color=MatlabOrange]{$T_{c}$} rectangle ++(-\e,-\l);
-	\fill[pattern=north east lines,pattern color=MatlabBlue] (\L/2,\l) node[below left, color=MatlabBlue]{$T_{f}$} rectangle ++(\e,-\l);
+	\fill[pattern=north east lines,pattern color=MatlabOrange] (-\L/2,\l) node[below right, color=MatlabOrange]{$T_{0}$} rectangle ++(-\e,-\l);
+	\fill[pattern=north east lines,pattern color=MatlabBlue] (\L/2,\l) node[below left, color=MatlabBlue]{$T_{\infty}$} rectangle ++(\e,-\l);
 	\draw[ultra thick] (-\L/2,0) rectangle ++(\L,\l);
 	\draw (-\L/4,0) node(O)[above, 
 %	fill=white, fill opacity=.7, text opacity=1, rounded corners
-	]{$T_{\infty}$};
+	]{Adiab.};
 	
 	% ----------- Gravity direction	
 	\draw[->,green!50!black] (0,2*\l/3) -- ++(0,-\l/3) node[midway,fill=white]{$\mathbf g$};

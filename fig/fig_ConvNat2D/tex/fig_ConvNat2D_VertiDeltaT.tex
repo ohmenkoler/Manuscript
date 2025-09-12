@@ -49,12 +49,12 @@
 %		\draw[->,dashed,gray,very thick] (B.north east) -- ++(0,\l/3) arc (180:0:\l/4) -- ++(0,-\l/3) arc (0:-90:\l/4);
 		
 		% ----------- Cavity
-		\fill[pattern=north east lines,pattern color=MatlabOrange] (-\L/2,-\e) rectangle ++(\L,\e) node[above left, color=MatlabOrange]{$T_{c}$};
-		\fill[pattern=north east lines,pattern color=MatlabBlue] (-\L/2,\l+\e) rectangle ++(\L,-\e) node[below left, color=MatlabBlue]{$T_{f}$};
+		\fill[pattern=north east lines,pattern color=MatlabOrange] (-\L/2,-\e) rectangle ++(\L,\e) node[above left, color=MatlabOrange]{$T_{0}$};
+		\fill[pattern=north east lines,pattern color=MatlabBlue] (-\L/2,\l+\e) rectangle ++(\L,-\e) node[below left, color=MatlabBlue]{$T_{\infty}$};
 		\draw[ultra thick] (-\L/2,0) rectangle ++(\L,\l);% node(O2)[below left]{$T_{\infty}$};
-		\draw (-\L/2,5*\l/6) node[right, 
+		\draw (-\L/2,5*\l/6) node[below left, rotate=90, 
 %		fill=white, fill opacity=.7, text opacity=1, rounded corners
-		]{$T_{\infty}$};
+		]{Adiab.}; 
 		
 		
 %		\draw[<->] (-\L/2-.2,0) -- ++(0,\l) node[midway,left]{$L_c^{(2)}$};	

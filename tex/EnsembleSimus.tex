@@ -82,20 +82,20 @@ où $\beta$ est le coefficient d'expansion thermique du fluide. Le fluide consid
 	\begin{align}
 		\nabla \cdot \mathbf v &= 0, \label{eq:NavierStokes_Boussinesq_Conti}\\
 		\intertext{pour la conservation de la masse,}
-		\rho_0 [\partial_t \mathbf v + (\mathbf v \cdot \nabla)\mathbf v] &= -\nabla p + \mu \nabla^2 \mathbf v + \rho_0\beta \mathbf g (T_0-T_\infty), \label{eq:NavierStokes_Boussinesq_QtMvt}\\
+		\rho_0 [\partial_t \mathbf v + (\mathbf v \cdot \bm\nabla)\mathbf v] &= -\bm\nabla p_{0,m} + \mu \bm\nabla^2 \mathbf v + \rho_0\beta \mathbf g (T_0-T_\infty), \label{eq:NavierStokes_Boussinesq_QtMvt}\\
 		\intertext{pour la conservation de la quantité de mouvement, et}
-		\partial_t T + (\mathbf v \cdot \nabla) T - k \nabla^2T &= 0. \label{eq:NavierStokes_Boussinesq_NRJinterne}
+		\partial_t T + (\mathbf v \cdot \bm\nabla) T - k \bm\nabla^2T &= 0. \label{eq:NavierStokes_Boussinesq_NRJinterne}
 	\end{align}
 	\label{eq:NavierStokes_Boussinesq}%
 \end{subequations}
-pour la conservation de l'énergie interne, avec comme conditions aux frontières le non-glissement aux parois.
+pour la conservation de l'énergie interne, avec comme conditions aux frontières le non-glissement aux parois en plus des conditions thermiques données par la figure~\ref{fig:ConvNat2D}. Dans l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt}, le terme de pression est remplacé par $p_{0,m}=p_{0}+\rho_{0}\mathbf{g}$.
 
 L'adimensionnement de l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
 
 \begin{subequations}
 	\begin{align}
 %		\nabla \cdot \mathbf v &=0, \label{eq:NonDim_NavierStokes_Boussinesq_Conti}\\
-		\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \nabla)\,\mathbf{v}\big) &= -\nabla \varpi + \mathrm{Ra} \theta \mathbf e_{z,0} + \nabla^2 \mathbf{v}. \label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}
+		\frac{1}{\mathrm{Pr}}\big(\partial_t \mathbf{v} + (\mathbf{v} \cdot \bm\nabla)\,\mathbf{v}\big) &= -\bm\nabla p_{m,0} + \mathrm{Ra} \theta \mathbf e_{z,0} + \bm\nabla^2 \mathbf{v}. \label{eq:NonDim_NavierStokes_Boussinesq_QtMvt}
 %		\partial_t T + (\mathbf v \cdot \nabla) T - k \nabla^2 T &= 0. \label{eq:NonDim_NavierStokes_Boussinesq_NRJinterne}
 	\end{align}
 \end{subequations}
@@ -103,7 +103,7 @@ L'adimensionnement de l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
 Cet adimensionnement laisse apparaître des nombres sans dimension dont l'étude permet de comparer par similitude des configurations différentes, comme le nombre de Prandtl noté $\mathrm{Pr}$ déjà présenté dans l'équation \eqref{eq:Prandtl} et le nombre de Rayleigh noté $\mathrm{Ra}$. Il est défini par 
 
 \begin{equation}
-	\mathrm{Ra} = \frac{g \beta L_c^3}{\nu \kappa} (T_c-T_f),
+	\mathrm{Ra} = \frac{g \beta L_c^3}{\nu \kappa} (T_{0}-T_{\infty}),
 	\label{eq:NbrRayleigh}
 \end{equation}
 où $T_c$ et $T_f$ sont les températures chaude et froide de part et d'autre de la zone considérée, et $L_c$ est la dimension caractéristique de la cavité suivant la direction verticale. Cette grandeur est primordiale car elle correspond au rapport des effets qui mettent le fluide en mouvement, c'est-à-dire l'expansion volumique suite à l'échauffement du fluide qui abaisse localement sa densité, aux effets qui le limitent, soit la diffusion thermique qui limite la différence de température et la viscosité qui ralentit l'écoulement du fluide. 
@@ -1229,7 +1229,7 @@ Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenir les 
 \end{figure}
 
 
-Ce modèle doit prédire un refroidissement à la paroi du côté de l'échangeur froid. La figure montre le contraire, malgré l'implémentation des données de la machine réelle dans le modèle. Ces paramètres, en plus des coefficients d'échanges aux extrémités du régénérateur $\left.h_x\right|_{x=0,L_{\sf reg}}$ et aux parois latérales $\left.h_r\right|_{r=0,D_{\sf reg}}$, sont les pression et vitesse acoustiques (amplitude et phase), et les flux de chaleur apportés ou extrait par les échangeurs de chaleur.\medskip
+Ce modèle doit prédire un refroidissement à la paroi du côté de l'échangeur froid. La figure montre le contraire, malgré l'implémentation des données de la machine réelle dans le modèle. Ces paramètres, en plus des coefficients d'échanges aux extrémités du régénérateur $\left.h_x\right|_{x=0,L_{\sf reg}}$ et aux parois latérales $\left.h_r\right|_{r=0,D_{\sf reg}}$, sont les pression et vitesse acoustiques (amplitude et phase), et les flux de chaleur apportés ou extraits par les échangeurs de chaleur.\medskip
 
 Quelque chose ne fonctionne pas au moment de la rédaction de ce manuscrit de thèse, et toutes les températures du régénérateur s'abaissent trop, d'une manière que ne laisse pas de doute sur la présence d'une erreur dans le modèle.
 

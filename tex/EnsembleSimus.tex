@@ -76,7 +76,7 @@ Les écoulements de convection naturelle sont décrits par les équations de con
 	\rho_0'(T) = \rho_0[1-\beta(T_0-T_\infty)],
 	\label{eq:MasseVolumiqueBoussinesq}
 \end{equation}
-où $\beta$ est le coefficient d'expansion thermique du fluide. Le fluide considéré est newtonien, visqueux et ses propriétés sont indépendantes de la température, à l'exception de la masse volumique. Ces équations s'écrivent
+où $\beta$ est le coefficient d'expansion thermique du fluide, $\rho_{0}'$, la masse volumique dépendante de la température, $T_{0}$, la température de la paroi chaude de la cavité et $T_{\infty}$, celle de sa paroi froide. Le fluide considéré est newtonien, visqueux et ses propriétés sont indépendantes de la température, à l'exception de la masse volumique. Ces équations s'écrivent
 
 \begin{subequations} % page wikipédia RayleighBénard
 	\begin{align}
@@ -88,7 +88,7 @@ où $\beta$ est le coefficient d'expansion thermique du fluide. Le fluide consid
 	\end{align}
 	\label{eq:NavierStokes_Boussinesq}%
 \end{subequations}
-pour la conservation de l'énergie interne, avec comme conditions aux frontières le non-glissement aux parois en plus des conditions thermiques données par la figure~\ref{fig:ConvNat2D}. Dans l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt}, le terme de pression est remplacé par $p_{0,m}=p_{0}+\rho_{0}\mathbf{g}$.
+pour la conservation de l'énergie interne, avec comme conditions aux frontières le non-glissement aux parois en plus des conditions thermiques données par la figure~\ref{fig:ConvNat2D}. Dans l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt}, le terme de pression comprend désormais la pression hydrostatique en plus de la pression thermodynamique, et est remplacé par $p_{0,m}=p_{0}+\rho_{0}\mathbf{g}$.
 
 L'adimensionnement de l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
 
@@ -334,7 +334,7 @@ La figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_SmallBase} représente une vue 
 
 Le champ de vitesse sur le plan de coupe de la cavité cylindrique est représenté sur la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_Cylinder} et sa valeur est nulle en tout point de la géométrie.\smallskip
 
-Le troisième cas concerne la cavité avec la paroi inférieure plus grande que la paroi supérieure sur la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_LargeBase}. Dans cette configuration, le calcule de la vitesse indique la circulation d'un flux massique montant par la périphérie de la cavité et descendant à une vitesse plus faible en son centre.\medskip
+Le troisième cas concerne la cavité avec la paroi inférieure plus grande que la paroi supérieure sur la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_LargeBase}. Dans cette configuration, le calcul de la vitesse indique la circulation d'un flux massique montant par la périphérie de la cavité et descendant à une vitesse plus faible en son centre.\medskip
 
 Pour ce jeu de simulations, il est attendu qu'une cellule de convection naturelle se mette en place suite au déclenchement d'une instabilité de Rayleigh-Bénard, en faisant circuler un fluide du bas vers le haut lorsque le nombre de Rayleigh est supérieur à sa valeur critique, ici \num{1708} (les parois horizontales sont rigides). C'est ce qu'il se passe lorsque la cavité est conique, et l'angle du cône influe sur la direction de rotation. Dans le cas de la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_SmallBase}, la paroi inférieure plus petite peut être vue comme une source favorisant l'échauffement au centre et donc l'élévation du fluide, et l'allure de la cellule de convection naturelle ressemble à celle obtenue dans~\cite{basak_heat_2009}. À l'inverse, la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix_LargeBase} présente la situation opposée, où la surface froide favorise le refroidissement du fluide au centre de la cavité.\smallskip
 
@@ -403,7 +403,7 @@ La première figure~\ref{fig:ConvNatComsol_V2_ConeParamRix_SmallBase} représent
 
 Pour la cavité cylindrique, la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix_Cylinder} montre une vitesse nulle sur tout la coupe verticale de la cavité.\smallskip
 
-Les résultats obtenus dans la configuration où la paroi inférieure est la plus grande est affichée sur la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix_LargeBase}. La composante verticale de la vitesse montre que dans ce cas, un flux massique monte de la base vers le haut, et redescend par la périphérie à une vitesse plus grande. Cependant, les vitesses montante et descendantes sont plus faibles que celles indiquées sur la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix_SmallBase}.\medskip
+Les résultats obtenus dans la configuration où la paroi inférieure est la plus grande est affichée sur la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix_LargeBase}. La composante verticale de la vitesse montre que dans ce cas, un flux massique monte de la base vers le haut, et redescend par la périphérie à une vitesse plus grande. Cependant, les vitesses montantes et descendantes sont plus faibles que celles indiquées sur la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix_SmallBase}.\medskip
 
 Dans la configuration de la figure~\ref{fig:ConvNatComsol_V2_ConeParamRix} comme dans la configuration de la figure~\ref{fig:ConvNatComsol_V1_ConeParamRix}, il est possible de remarquer que la vitesse n'est pas nulle quand la cavité est conique, et que les courbes isothermes. Toutefois, le sens de circulation des cellules de convection naturelle s'inverse quand le gradient de température change de signe.  La vitesse maximum atteinte par l'écoulement lorsque la température chaude est sur la paroi en haut de la géométrie qui vaut~\qty{9.7e-4}{\meter\per\second} est plus faible que celle où cette température est en bas qui est de \qty{1.1e-3}{\meter\per\second}, ce qui semble aller dans le sens où il n'est pas attendu qu'une instabilité de convection naturelle soit déclenchée dans ce cas.\medskip
 

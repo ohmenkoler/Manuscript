@@ -871,16 +871,16 @@ La figure~\ref{fig:Acou_AHXin_V1V2_High} montre les données de températures ob
 Comme pour les expériences à haute amplitude à l'horizontale, les températures du milieu et du côté ambiant rendent l'analyse des figures~\ref{fig:Acou_Regmid_V1V2_High} et \subref{fig:Acou_AHXin_V1V2_High} difficile, car les symptômes de convection naturelle deviennent invisibles par rapport aux résultats du côté froid du noyau, à l'exception du fait que les températures mesurées en `\texttt{V1}' ont tendance à être plus élevées que celles obtenues en `\texttt{V2}'.\medskip
 
 \section[Orientation du \textsc{Tacot} et impact sur les performances]{Impact de l'orientation du \textsc{Tacot} sur les performances du réfrigérateur}\label{chap:PerfConvNat}
-Finalement, une vue d'ensemble est adoptée pour étudier le réfrigérateur. Sont considérées ici la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, le coefficient de performance $\COP=\nicefrac{Q_f}{W_e}$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = \nicefrac{T_f}{(T_a-T_f)}$ (les température froide $T_f$ et ambiante $T_a$ sont obtenues en calculant respectivement les moyennes des signaux de température des thermocouples \numlist{4;5;6}, et \numlist{10;11;12}).\medskip
+Finalement, une vue d'ensemble est adoptée pour étudier le réfrigérateur. Sont considérées ici les températures froide $\theta_{f}$ et ambiante $\theta_{a}$ du régénérateur obtenues après soustraction de la valeur initiale et moyennage sur la section correspondante (\numlist{4;5;6} pour $\theta_{f}$, \numlist{10;11;12} pour $\theta_{a}$), la capacité de refroidissement de l'échangeur froid $Q_f$ et la chaleur extraite par l'échangeur ambiant $Q_a$, et le coefficient de performance $\COP=\nicefrac{Q_f}{W_e}$ rapporté au coefficient de performance de Carnot $\COP_{\sf carnot} = \nicefrac{\theta_f}{(\theta_a-\theta_f)}$.\medskip
+% (les température $T_f$ et $T_a$ sont obtenues en calculant respectivement les moyennes des signaux de température des thermocouples \numlist{4;5;6}, et \numlist{10;11;12}).\medskip
 
 Le \textsc{Tacot} est successivement positionné dans les quatre orientations définies sur les schémas de la figure~\ref{fig:OrientationCore}, et les expériences sont réalisées en suivant le protocole défini dans la partie~\ref{chap:MesureAvecAcou}. Les charges thermiques $\dot Q_f$ de \qtylist{0;50;100}{\watt} sont tour à tour appliquées au niveau de l'échangeur de chaleur froid et trois niveaux acoustiques sont considérés. Les résultats des expériences sont notées dans le tableau~\ref{tab:RecapResultExpe}.\medskip
 
 Un inconvénient de cette vision globale en termes de performances de la machine est qu'elle passe sous silence la complexité des phénomènes qui dirigent le comportement du réfrigérateur. En conséquence, nous devrons souvent nous contenter dans cette partie d'observer les phénomènes sans les interpréter de manière satisfaisante.
 
 
-
 \subsection{Températures atteintes par les côtés froid et ambiant du régénérateur}
-La figure~\ref{fig:PerfConvNat_TaTf_DR} présente les écarts de températures froide $\theta_f$ et ambiante $\theta_a$ après soustraction à la valeur de température initiale. Les écarts par rapport à la température initiale sont respectivement donnés par la moyennes des thermocouples~\numlist{4;5;6}, et \numlist{10;11;12}, pour les deux \textit{drive ratio} $DR=\qty{2}{\percent}$ sur la sous-figure~\subref{fig:PerfConvNat_TaTf_DR2}, et $DR=\qty{3.5}{\percent}$ sur la sous-figure~\subref{fig:PerfConvNat_TaTf_DR35}.
+La figure~\ref{fig:PerfConvNat_TaTf_DR} présente les écarts de températures froide $\theta_f$ et ambiante $\theta_a$ pour les deux \textit{drive ratio} $DR=\qty{2}{\percent}$ sur la sous-figure~\subref{fig:PerfConvNat_TaTf_DR2}, et $DR=\qty{3.5}{\percent}$ sur la sous-figure~\subref{fig:PerfConvNat_TaTf_DR35}.\medskip
 
 \begin{figure}[!ht]
 	\centering
@@ -955,7 +955,8 @@ La figure~\ref{fig:PerfConvNat_TaTf_DR} présente les écarts de températures f
 
 Ces figures montrent que pour chaque orientation et dans les deux amplitudes acoustiques choisies, la température froide $\theta_f$ croît linéairement avec la charge thermique $\dot Q_f$, alors que la température ambiante $\theta_a$ varie peu avec elle, et l'écart de température $\theta_a-\theta_f$ diminue lorsque la charge thermique du côté froid augmente. Ces écarts sont constants d'une orientation à l'autre, avec les expériences réalisées dans l'orientation `\texttt{V1}' qui donnent des températures \qty{10}{\kelvin} au dessus des autres résultats.
 
-L'augmentation de la température froide $\theta_f$ dans l'orientation `\texttt{V1}' uniquement laisse à penser qu'une cellule de convection naturelle met en contact thermique la paroi de la source acoustique principale, plus chaude que la paroi de l'échangeur de chaleur froid qui lui fait face. Ce flux convectif charge thermiquement en partie l'échangeur voisin. En revanche, cette charge thermique ne se remarque pas dans la figure~\ref{fig:PerfConvNat_Qa_DR}.
+L'augmentation de la température froide $\theta_f$ dans l'orientation `\texttt{V1}' uniquement laisse à penser qu'une cellule de convection naturelle met en contact thermique la paroi de la source acoustique principale, plus chaude que la paroi de l'échangeur de chaleur froid qui lui fait face. Ce flux convectif charge thermiquement en partie l'échangeur voisin.\medskip
+%  En revanche, cette charge thermique ne se remarque pas dans la figure~\ref{fig:PerfConvNat_Qa_DR}.
 
 %La réduction de l'écart de température $\theta_a-\theta_f$ et l'augmentation de la température froid $\theta_f$ implique l'augmentation du $\COP$, ce qui explique pourquoi la figure~\ref{fig:PerfConvNat_COP_DR} laisse penser à l'utilisation de l'orientation `\texttt{V1}' pour optimiser les performances.\bigskip
 

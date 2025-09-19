@@ -1190,14 +1190,26 @@ puis selon $r$ avec l'équation~\eqref{eq:TransfoInteg_Inversion_R}, ce qui donn
 %Une fois les coefficients d'échanges $h$ estimés grâce aux mesures sans acoustiques, ils sont considérés constant et dépendant uniquement des matériaux de construction, et conservés pour le reste des simulations. Selon le même principe, le flux de chaleur ajouté par vorticité est estimé grâce à la minimisation d'une fonction de coût.\echaf{à faire}
 
 \subsection{Résultats}
-Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenir les résultats pour différents \textit{drive ratios} sur la figure~\ref{fig:ExempleTransitoireH2}.\medskip
+Ce modèle est implémenté en langage \textsc{Matlab}\textsuperscript{\textregistered}, et permet d'obtenir les résultats pour différents \textit{drive ratios} sur la figure~\ref{fig:ExempleTransitoireH2}, en l'absence de charge thermique $\dot Q_{f}$ du côté froid. Les paramètres empiriques ($\left.h\right|_{x=0,L_{\sf reg}}$, $\left.h\right|_{r=0,D_{\sf reg}}$, $\dot Q_{\sf vort}$) sont estimés de sorte à représenter la configuration `\texttt{H2}' des expériences, dont les résultats sont notés dans le tableau~\ref{tab:RecapResultExpe}, afin de valider le modèle dans une situation proche de la configuration de référence (`\texttt{H1}'), sans que l'influence de la convection naturelle ne soit visible. Ces paramètres sont reportés dans le tableau \ref{tab:CoeffH_H2_Simus}.\medskip
 
+\begin{table}[!ht]
+	\centering
+	\caption{Paramètres empiriques retenus pour le modèle correspondant à la configuration `\texttt{H2}'.}
+	\label{tab:CoeffH_H2_Simus}
+	\begin{tblr}{columns=l, hline{1,Z}={1.5pt}, hline{2}={0.5pt}, cell{1-Z}{1-Z}={mode=math}}
+		DR\;  (\unit{\percent}) & \left.h\right|_{x=0}\;  (\unit{\watt\per\kelvin\per\meter\squared}) & \left.h\right|_{x=L_{\sf reg}}\;  (\unit{\watt\per\kelvin\per\meter\squared}) & \left.h\right|_{r=0,D_{\sf reg}} \; (\unit{\watt\per\kelvin\per\meter\squared}) & \dot{Q}_{\sf vort}\;  (\unit{\watt\per\meter\squared}) \\
+		\num{.4} & \num{1.2} & \num{141} & \num{60} & \num{0} \\
+		\num{2} & \num{218} & \num{800} & \num{80} & \num{0} \\
+		\num{3.5} & \num{500} & \num{2000} & \num{250} & \num{1.2e4}
+	\end{tblr}
+\end{table}
+	
 \begin{figure}[!htp]
 \centering
 \begin{subfigure}{.9\textwidth}
 	\centering
 	\external{fig_ExempleTransitoireH2_Low}
-%	\externalremake
+	% \externalremake
 	\input{../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_Low}
 	\caption{}
 	\label{fig:ExempleTransitoireH2_Low}
@@ -1208,7 +1220,7 @@ Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenir les 
 \begin{subfigure}{.9\textwidth}
 	\centering
 	\external{fig_ExempleTransitoireH2_Mid}
-%	\externalremake
+	% \externalremake
 	\input{../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_Mid}
 	\caption{}
 	\label{fig:ExempleTransitoireH2_Mid}
@@ -1219,7 +1231,7 @@ Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenir les 
 \begin{subfigure}{.9\textwidth}
 	\centering
 	\external{fig_ExempleTransitoireH2_High}
-%	\externalremake
+	% \externalremake
 	\input{../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_High}
 	\caption{}
 	\label{fig:ExempleTransitoireH2_High}
@@ -1229,9 +1241,9 @@ Ce modèle est implémenté en langage \textsc{Matlab}, et permet d'obtenir les 
 \end{figure}
 
 
-Ce modèle doit prédire un refroidissement à la paroi du côté de l'échangeur froid. La figure montre le contraire, malgré l'implémentation des données de la machine réelle dans le modèle. Ces paramètres, en plus des coefficients d'échanges aux extrémités du régénérateur $\left.h_x\right|_{x=0,L_{\sf reg}}$ et aux parois latérales $\left.h_r\right|_{r=0,D_{\sf reg}}$, sont les pression et vitesse acoustiques (amplitude et phase), et les flux de chaleur apportés ou extraits par les échangeurs de chaleur.\medskip
+% Ce modèle doit prédire un refroidissement à la paroi du côté de l'échangeur froid. La figure montre le contraire, malgré l'implémentation des données de la machine réelle dans le modèle. Ces paramètres, en plus des coefficients d'échanges aux extrémités du régénérateur $\left.h_x\right|_{x=0,L_{\sf reg}}$ et aux parois latérales $\left.h_r\right|_{r=0,D_{\sf reg}}$, sont les pression et vitesse acoustiques (amplitude et phase), et les flux de chaleur apportés ou extraits par les échangeurs de chaleur.\medskip
 
-Quelque chose ne fonctionne pas au moment de la rédaction de ce manuscrit de thèse, et toutes les températures du régénérateur s'abaissent trop, d'une manière que ne laisse pas de doute sur la présence d'une erreur dans le modèle.
+% Quelque chose ne fonctionne pas au moment de la rédaction de ce manuscrit de thèse, et toutes les températures du régénérateur s'abaissent trop, d'une manière que ne laisse pas de doute sur la présence d'une erreur dans le modèle.
 
 \section{Conclusion}
 Dans ce chapitre, plusieurs modèles pour interpréter les résultats des campagnes d'expériences sont développés.\medskip

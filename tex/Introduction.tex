@@ -212,9 +212,9 @@ Un volume de fluide obéit aux lois de conservations de masse, de quantité de m
 
 \begin{subequations}
 	\begin{align}
-		\partial_t \rho + \bnabla \cdot (\rho \mathbf v) &= 0, &\text{\small(conservation de la masse)}\label{eq:ThermoLin_ConservMass}\\
-		\rho\left[\partial_t\mathbf v + (\mathbf v \cdot \bnabla)\mathbf v\right] &= -\bnabla p + \mu \bnabla^2 \mathbf v+ \left(\eta+\dfrac{\mu}{3}\right)\bnabla(\bnabla\cdot\mathbf v), &\text{\small(conservation de la quantité de mouvement)}\label{eq:ThermoLin_QtMvt}\\
-		\rho T \deriv_t s &= \bnabla\cdot (k \nabla T) \quad \echaf{where debit u}, &\text{\small\textcolor{red}{(propagation de chaleur)}}\label{eq:ThermoLin_NRJ}
+		\partial_t \rho + \bnabla \cdot (\rho \mathbf u) &= 0, &\text{\small(conservation de la masse)}\label{eq:ThermoLin_ConservMass}\\
+		\rho\left[\partial_t\mathbf u + (\mathbf u \cdot \bnabla)\mathbf u\right] &= -\bnabla p + \mu \bnabla^2 \mathbf u+ \left(\eta+\dfrac{\mu}{3}\right)\bnabla(\bnabla\cdot\mathbf u), &\text{\small(conservation de la quantité de mouvement)}\label{eq:ThermoLin_QtMvt}\\
+		\rho T \deriv_t s &= \bnabla\cdot (k \nabla T) , &\text{\small(propagation de chaleur)}\label{eq:ThermoLin_NRJ}
 	\end{align}
 \end{subequations}
 en utilisant les variables d'intérêt suivantes : la pression $p$, le débit $u$, la composante selon $x$ de la vitesse $v$, la masse volumique $\rho$, les température $T$ du fluide et $T_s$ du solide, et l'entropie $s$. Elles sont considérées monochromatiques et oscillant à la fréquence $f_1=\nicefrac{\omega_1}{2\pi}$, dont la longueur d'onde $\lambda_1=\nicefrac{c_0}{f_1}$ est considérée grande devant les couches limites visqueuse $\delta_\nu$ et thermique $\delta_\kappa$. Ces variables sont écrites en tenant compte des approximations de Rott en adoptant la convention temporelle $e^{i\omega t}$, pour le cas des gaz parfaits sans vitesse d'entraînement du fluide~\cite{rott_damped_1969, swift_thermoacoustic_1988, swift_thermoacoustics_2017}
@@ -239,7 +239,7 @@ en utilisant les variables d'intérêt suivantes : la pression $p$, le débit $u
 \end{subequations}
 \setlength\columnsep{10pt}
 
-Ici, les indices indiquent l'ordre de grandeur, avec en particulier l'indice \num{0} qui dénote une valeur constante à l'ordre \num{0}, et l'indice \num{1} qui signifie l'oscillation à l'ordre \num{1} de la quantité à la pulsation $\omega_1=2\pi f_1$. Il est supposé que le système opère dans un régime linéaire, ce qui se traduit par
+Ici, les indices indiquent l'ordre de grandeur, avec en particulier l'indice \num{0} qui dénote une valeur indépendante de $t$ à l'ordre \num{0}, et l'indice \num{1} qui signifie l'oscillation à l'ordre \num{1} de la quantité à la pulsation $\omega_1=2\pi f_1$. Il est supposé que le système opère dans un régime linéaire, ce qui se traduit par
 \begin{equation}
 	\left|\bullet_1\right| \ll \bullet_0,
 	\label{eq:ConditionLinearite}
@@ -326,7 +326,7 @@ Le flux de chaleur thermoacoustique est donné par Swift \cite{swift_thermoacous
 	Q_{TA} = \underbrace{\frac{1}{2} \RE\left[pu^* \left( 1 - \frac{f_\kappa - f_\nu^*}{(1 - \Prandtl)(1 - f_\nu^*)} \right) \right]}_{q_{TA}} + \underbrace{\frac{\rho_0 C_p }{\Phi S \omega_1 } \frac{1}{2} \IM \left[ \frac{f_\kappa + \Prandtl f_\nu^*}{(1-\Prandtl)|1-f_\nu|^2} |u|^2\right]}_{k_{TA}} \deriv_x T,
 	\label{eq:FluxTA_swift}
 \end{equation}
-\echaf{où $q_{TA}$ correspond au flux de chaleur provoqué par la présence de l'onde acoustique et indépendant du gradient de température, et $k_{TA}$ à une conductivité thermique induite par l'effet thermoacoustique.}
+où $q_{TA}$ correspond au flux de chaleur provoqué par la présence de l'onde acoustique et indépendant du gradient de température, et $k_{TA}$ à une conductivité thermique induite par l'effet thermoacoustique.
 
 
 

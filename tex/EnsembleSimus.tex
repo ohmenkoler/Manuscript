@@ -76,7 +76,9 @@ Les écoulements de convection naturelle sont décrits par les équations de con
 	\rho_0'(T) = \rho_0[1-\beta(T_0-T_\infty)],
 	\label{eq:MasseVolumiqueBoussinesq}
 \end{equation}
-où $\beta$ est le coefficient d'expansion thermique du fluide, $\rho_{0}'$, la masse volumique dépendante de la température, $T_{0}$, la température de la paroi chaude de la cavité et $T_{\infty}$, celle de sa paroi froide. Le fluide considéré est newtonien, visqueux et ses propriétés sont indépendantes de la température, à l'exception de la masse volumique. Ces équations s'écrivent
+où $\beta$ est le coefficient d'expansion thermique du fluide, $\rho_{0}'$, la masse volumique dépendante de la température, $T_{0}$, la température de la paroi chaude de la cavité et $T_{\infty}$, celle de sa paroi froide. Le fluide considéré est newtonien, visqueux et ses propriétés sont indépendantes de la température, à l'exception de la masse volumique.\smallskip 
+
+Ces équations s'écrivent
 
 \begin{subequations} % page wikipédia RayleighBénard
 	\begin{align}
@@ -88,7 +90,7 @@ où $\beta$ est le coefficient d'expansion thermique du fluide, $\rho_{0}'$, la 
 	\end{align}
 	\label{eq:NavierStokes_Boussinesq}%
 \end{subequations}
-pour la conservation de l'énergie interne, avec comme conditions aux frontières le non-glissement aux parois en plus des conditions thermiques données par la figure~\ref{fig:ConvNat2D}. Dans l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt}, le terme de pression comprend désormais la pression hydrostatique en plus de la pression thermodynamique, et est remplacé par $p_{0,m}=p_{0}+\rho_{0}\mathbf{g}$.
+pour la conservation de l'énergie interne, avec comme conditions aux frontières le non-glissement aux parois en plus des conditions thermiques données par la figure~\ref{fig:ConvNat2D}. Dans l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt}, le terme de pression comprend désormais la pression hydrostatique en plus de la pression thermodynamique, et est donc remplacé par $p_{0,m}=p_{0}+\rho_{0}\mathbf{g}$.
 
 L'adimensionnement de l'équation~\eqref{eq:NavierStokes_Boussinesq_QtMvt} donne
 
@@ -1190,7 +1192,7 @@ puis selon $r$ avec l'équation~\eqref{eq:TransfoInteg_Inversion_R}, ce qui donn
 %Une fois les coefficients d'échanges $h$ estimés grâce aux mesures sans acoustiques, ils sont considérés constant et dépendant uniquement des matériaux de construction, et conservés pour le reste des simulations. Selon le même principe, le flux de chaleur ajouté par vorticité est estimé grâce à la minimisation d'une fonction de coût.\echaf{à faire}
 
 \subsection{Résultats}
-Ce modèle est implémenté en langage \textsc{Matlab}\textsuperscript{\textregistered}, et permet d'obtenir les résultats pour différents \textit{drive ratios} sur la figure~\ref{fig:ExempleTransitoireH2}, en l'absence de charge thermique $\dot Q_{f}$ du côté froid. Les paramètres empiriques ($\left.h\right|_{x=0,L_{\sf reg}}$, $\left.h\right|_{r=0,D_{\sf reg}}$, $\dot Q_{\sf vort}$) sont estimés de sorte à représenter la configuration `\texttt{H2}' des expériences, dont les résultats sont notés dans le tableau~\ref{tab:RecapResultExpe}, afin de valider le modèle dans une situation proche de la configuration de référence (`\texttt{H1}'), sans que l'influence de la convection naturelle ne soit visible. Ces paramètres sont reportés dans le tableau \ref{tab:CoeffH_H2_Simus}.\medskip
+Ce modèle est implémenté en langage \textsc{Matlab}\textsuperscript{\textregistered}, et permet d'obtenir les résultats pour différents \textit{drive ratios} sur la figure~\ref{fig:ExempleTransitoireH2}, en l'absence de charge thermique $\dot Q_{f}$ du côté froid. Les paramètres empiriques ($\left.h\right|_{x=0,L_{\sf reg}}$, $\left.h\right|_{r=0,D_{\sf reg}}$, $\dot Q_{\sf vort}$) sont estimés de sorte à représenter la configuration `\texttt{H2}' des expériences, dont les résultats sont notés dans le tableau~\ref{tab:RecapResultExpe}, afin de valider le modèle dans une situation proche de la configuration de référence (`\texttt{H1}'), mais sans que l'influence de la convection naturelle ne soit visible. Ces paramètres sont reportés dans le tableau \ref{tab:CoeffH_H2_Simus}.\medskip
 
 \begin{table}[!ht]
 	\centering
@@ -1236,7 +1238,7 @@ Ce modèle est implémenté en langage \textsc{Matlab}\textsuperscript{\textregi
 	\caption{}
 	\label{fig:ExempleTransitoireH2_High}
 \end{subfigure}
-\caption{Distributions de températures calculés avec le modèle transitoire pour trois \textit{drive ratios} dont les données expérimentales utilisées pour l'ajustement sont issus d'une expérience sans acoustique dans l'orientation `\texttt{H2}'. \subref{fig:ExempleTransitoireH2_Low} $DR=\qty{.4}{\percent}$, \subref{fig:ExempleTransitoireH2_Mid} $DR=\qty{2}{\percent}$, et \subref{fig:ExempleTransitoireH2_High} $DR=\qty{3.5}{\percent}$.}
+\caption{Distributions de températures calculés avec le modèle transitoire pour trois \textit{drive ratios} dont les données expérimentales utilisées pour l'ajustement sont issus d'expériences aux amplitudes acoustiques correspondantes, dans l'orientation `\texttt{H2}' (voir le tableau~\ref{tab:RecapResultExpe}). \subref{fig:ExempleTransitoireH2_Low} $DR=\qty{.4}{\percent}$, \subref{fig:ExempleTransitoireH2_Mid} $DR=\qty{2}{\percent}$, et \subref{fig:ExempleTransitoireH2_High} $DR=\qty{3.5}{\percent}$.}
 \label{fig:ExempleTransitoireH2}
 \end{figure}
 
@@ -1244,6 +1246,8 @@ Ce modèle est implémenté en langage \textsc{Matlab}\textsuperscript{\textregi
 % Ce modèle doit prédire un refroidissement à la paroi du côté de l'échangeur froid. La figure montre le contraire, malgré l'implémentation des données de la machine réelle dans le modèle. Ces paramètres, en plus des coefficients d'échanges aux extrémités du régénérateur $\left.h_x\right|_{x=0,L_{\sf reg}}$ et aux parois latérales $\left.h_r\right|_{r=0,D_{\sf reg}}$, sont les pression et vitesse acoustiques (amplitude et phase), et les flux de chaleur apportés ou extraits par les échangeurs de chaleur.\medskip
 
 % Quelque chose ne fonctionne pas au moment de la rédaction de ce manuscrit de thèse, et toutes les températures du régénérateur s'abaissent trop, d'une manière que ne laisse pas de doute sur la présence d'une erreur dans le modèle.
+
+Ce modèle prévoit comme attendu un refroidissement à la paroi de l'échangeur froid, et un échauffement suivi d'un retour à une température proche mais supérieure à la température initiale du côté ambiant. Le temps avant la stabilisation des températures diminue également lorsque l'amplitude acoustique est augmentée. Enfin, un écart entre la température au centre et en périphérie est visible.
 
 \section{Conclusion}
 Dans ce chapitre, plusieurs modèles pour interpréter les résultats des campagnes d'expériences sont développés.\medskip

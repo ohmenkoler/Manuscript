@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  19 SEP 2025 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  22 SEP 2025 16:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1789,7 +1789,16 @@ LaTeX Info: Symbol \textohm not provided by
 
 
 [10 <./external/fig_WavesInDuctPiece1.pdf>] (../fig/fig_CaractMachineATE/tex/fig_CaractMachineATE.tex
-===== Image 'external/fig_CaractMachineATE0' is up-to-date. ======
+\openout5 = `external/fig_CaractMachineATE0.md5'.
+
+\openout5 = `_main_.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname "external/fig_CaractMachineATE0" "\def\tikzexternalrealjob{_main_}\input{_main_}"' ========
+runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname "external/fig_CaractMachineATE0" "\def\tikzexternalrealjob{_main_}\input{_main_}")...executed.
+
+\openout5 = `_main_.auxlock'.
+
 )
 ===== Image 'external/fig_ATE_ProfilsAX_5mm0' is up-to-date. ======
 ===== Image 'external/fig_ATE_ProfilsCHX_5mm0' is up-to-date. ======
@@ -3345,7 +3354,7 @@ pdfTeX warning (dest): name{table.B.1} has been referenced but does not exist, r
 pdfTeX warning (dest): name{table.4.1} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ecss0800.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonam.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonami.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on _main_.pdf (123 pages, 47465037 bytes).
+Output written on _main_.pdf (123 pages, 47465041 bytes).
 PDF statistics:
  5034 PDF objects out of 5155 (max. 8388607)
  521 named destinations out of 1000 (max. 500000)

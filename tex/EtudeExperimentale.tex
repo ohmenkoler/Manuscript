@@ -1330,7 +1330,35 @@ Ce symptôme semble montrer que les effets qui jouent sur les performances et d�
 
 % Au final, l'orientation de la machine a une influence modeste sur ses performances ; le modèle (qui n'inclut pas d'effets liés à la gravité mais dont le calcul des performances diffère par les données d'entrée, tirées de l'expérience) prévoit une différence de performances plus marquée avec l'orientation que celle observée en pratique; ceci laisse supposer que de multiples phénomènes non linéaires régissent le comportement du \textsc{Tacot}, comme le confirme l'écart général entre modèle et expérience. 
 
-Au final, l'orientation de la machine a une influence modeste sur ses performances ; toutefois, les résultats montrent un coefficient de performance plus élevé dans le cas de l'orientation `\texttt{V1}', ce qui s'explique par la réduction de l'écart de température de part et d'autre du régénérateur, ce qui est pris en compte dans le coefficient de performance de Carnot auquel le coefficient de performance est rapporté.
+Au final, l'orientation de la machine a une influence modeste sur ses performances ; toutefois, les résultats montrent un coefficient de performance plus élevé dans le cas de l'orientation `\texttt{V1}', ce qui s'explique par la réduction de l'écart de température de part et d'autre du régénérateur, ce qui est pris en compte dans le coefficient de performance de Carnot auquel le coefficient de performance est rapporté.\bigskip
+
+% Pour résumer cette partie, les résultats expérimentaux sont comparés à un jeu de simulations numériques réalisées avec \textsc{DeltaEC}, et reportés dans le tableau~\echaf{tableau}
+
+% \begin{table}[!ht]
+% 	\centering
+% 	\caption{Comparaison entre les résultats expérimentaux de $\theta_{a}$, $\theta_{f}$, $\dot Q_{a}$, $\dot Q_{f}$, et $\COP$ pour les trois amplitudes acoustiques retenues, dans la configuration sans charge thermique appliquée au côté de l'échangeur de chaleur froid. Les lignes en gris contiennent les valeurs expériementales, et les lignes en blanc, celles issues de \textsc{DeltaEC}.}
+% 	\label{tab:Comp_Expe_DeltaEC}
+
+% 	\begin{tblr}{hline{1,Z}={1.5pt},hline{3}={.5pt},cell{1-Z}{1-Z}={mode=math}, cell{2}{2,4}={c=2}{c}, cell{3,8,13}{1}={r=5}{},cell{3,8,13}{2-Z}={bg=gray!25}, row{3-Z}={cmd=\num}}
+% 		DR & \theta_{a} & \theta_{f} & \dot Q_{a} & \dot Q_{f} & \nicefrac{\COP}{\COP_{\mathsf{carnot}}} \\
+% 		(\unit{\percent}) & (\unit{\kelvin}) && (\unit{\watt}) &&  (\unit{\percent}) \\
+% 		.4 & 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 		2 & 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 		3.5 & 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00 \\
+% 			& 00 & 00 & 00 & 00 & 00
+% 	\end{tblr}
+% \end{table}
 
 \section{Conclusion}
 Pour les quatre orientations présentées sur la figure~\ref{fig:OrientationCore}, des expériences sont menées à différentes amplitudes acoustiques.\medskip

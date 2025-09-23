@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  22 SEP 2025 16:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.12)  23 SEP 2025 10:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1789,16 +1789,7 @@ LaTeX Info: Symbol \textohm not provided by
 
 
 [10 <./external/fig_WavesInDuctPiece1.pdf>] (../fig/fig_CaractMachineATE/tex/fig_CaractMachineATE.tex
-\openout5 = `external/fig_CaractMachineATE0.md5'.
-
-\openout5 = `_main_.auxlock'.
-
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname "external/fig_CaractMachineATE0" "\def\tikzexternalrealjob{_main_}\input{_main_}"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname "external/fig_CaractMachineATE0" "\def\tikzexternalrealjob{_main_}\input{_main_}")...executed.
-
-\openout5 = `_main_.auxlock'.
-
+===== Image 'external/fig_CaractMachineATE0' is up-to-date. ======
 )
 ===== Image 'external/fig_ATE_ProfilsAX_5mm0' is up-to-date. ======
 ===== Image 'external/fig_ATE_ProfilsCHX_5mm0' is up-to-date. ======
@@ -2550,11 +2541,11 @@ Package pdftex.def Info: ../fig/fig_ConvNatComsol_Resultats/Cmap_T_Fleche_vNorme
 ===== Image 'external/fig_ExempleTransitoireH2_Mid0' is up-to-date. ======
 ) (../fig/fig_ExempleTransitoire/tex/fig_ExempleTransitoireH2_High.tex
 ===== Image 'external/fig_ExempleTransitoireH2_High0' is up-to-date. ======
-))
+)
 
 [54]
 
-[55 <./external/fig_ExempleTransitoireH2_Low0.pdf> <./external/fig_ExempleTransitoireH2_Mid0.pdf> <./external/fig_ExempleTransitoireH2_High0.pdf>] (EtudeExperimentale.tex
+[55 <./external/fig_ExempleTransitoireH2_Low0.pdf> <./external/fig_ExempleTransitoireH2_Mid0.pdf> <./external/fig_ExempleTransitoireH2_High0.pdf>]) (EtudeExperimentale.tex
 
 [56]
 Chapitre IV.
@@ -2726,12 +2717,12 @@ Overfull \vbox (13.46484pt too high) has occurred while \output is active []
 [59] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_H1H2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_H1H20' is up-to-date. ======
 )
-<./external/fig_OrientationCore_H10.pdf, id=2915, 123.73225pt x 196.82033pt>
+<./external/fig_OrientationCore_H10.pdf, id=2921, 123.73225pt x 196.82033pt>
 File: ./external/fig_OrientationCore_H10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H10.pdf  used on input line 94.
 (pdftex.def)             Requested size: 61.86597pt x 98.40991pt.
-<./external/fig_OrientationCore_H20.pdf, id=2916, 156.56793pt x 188.30249pt>
+<./external/fig_OrientationCore_H20.pdf, id=2922, 156.56793pt x 188.30249pt>
 File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input line 98.
@@ -2741,12 +2732,12 @@ Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input l
 [60 <./external/fig_HeatOnly_CHXout_H1H20.pdf> <./external/fig_OrientationCore_H10.pdf> <./external/fig_OrientationCore_H20.pdf>] (../fig/fig_ConvNat_HeatOnly/tex/fig_HeatOnly_CHXout_V1V2.tex
 ===== Image 'external/fig_HeatOnly_CHXout_V1V20' is up-to-date. ======
 )
-<./external/fig_OrientationCore_V10.pdf, id=3013, 151.00816pt x 188.30249pt>
+<./external/fig_OrientationCore_V10.pdf, id=3019, 151.00816pt x 188.30249pt>
 File: ./external/fig_OrientationCore_V10.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V10.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V10.pdf  used on input line 126.
 (pdftex.def)             Requested size: 75.50389pt x 94.151pt.
-<./external/fig_OrientationCore_V20.pdf, id=3014, 151.00816pt x 188.30249pt>
+<./external/fig_OrientationCore_V20.pdf, id=3020, 151.00816pt x 188.30249pt>
 File: ./external/fig_OrientationCore_V20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_V20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_V20.pdf  used on input line 130.
@@ -3112,6 +3103,9 @@ File: ./external/fig_OrientationCore_H20.pdf Graphic file (type pdf)
 <use ./external/fig_OrientationCore_H20.pdf>
 Package pdftex.def Info: ./external/fig_OrientationCore_H20.pdf  used on input line 1077.
 (pdftex.def)             Requested size: 101.76793pt x 122.39516pt.
+LaTeX Info: Symbol \textminus not provided by
+            font family iwonal in TS1 encoding.
+            Default family used instead on input line 1083.
 
 
 [85] Excluding 'comment' comment. (../fig/fig_PerfConvNat/tex/fig_PerfConvNat_COP_DR2.tex
@@ -3154,7 +3148,7 @@ Chapitre V.
 [91]
 
 [92]
-<../fig/fig_CanisterPlastique/fig_CanisterPlastique.pdf, id=4491, 2810.21107pt x 1378.27618pt>
+<../fig/fig_CanisterPlastique/fig_CanisterPlastique.pdf, id=4494, 2810.21107pt x 1378.27618pt>
 File: ../fig/fig_CanisterPlastique/fig_CanisterPlastique.pdf Graphic file (type pdf)
 <use ../fig/fig_CanisterPlastique/fig_CanisterPlastique.pdf>
 Package pdftex.def Info: ../fig/fig_CanisterPlastique/fig_CanisterPlastique.pdf  used on input line 69.
@@ -3167,7 +3161,7 @@ Package pdftex.def Info: ../fig/fig_CanisterPlastique/fig_CanisterPlastique.pdf 
 LaTeX Info: Symbol \textmu not provided by
             font family iwonal in TS1 encoding.
             Default family used instead on input line 117.
-<../fig/fig_CiareCSW7012EVO/CSW7012EVO.jpg, id=4522, 501.875pt x 501.875pt>
+<../fig/fig_CiareCSW7012EVO/CSW7012EVO.jpg, id=4525, 501.875pt x 501.875pt>
 File: ../fig/fig_CiareCSW7012EVO/CSW7012EVO.jpg Graphic file (type jpg)
 <use ../fig/fig_CiareCSW7012EVO/CSW7012EVO.jpg>
 Package pdftex.def Info: ../fig/fig_CiareCSW7012EVO/CSW7012EVO.jpg  used on input line 125.
@@ -3333,6 +3327,10 @@ l.411 \end{verbatim}
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `_main_.out' has not changed.
 (rerunfilecheck)             Checksum: 46FA5483C9A5E52506CF0A99119A555C;22484.
 Package logreq Info: Writing requests to '_main_.run.xml'.
@@ -3340,10 +3338,10 @@ Package logreq Info: Writing requests to '_main_.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 79741 strings out of 473523
- 2043234 string characters out of 5707334
- 3277190 words of memory out of 5000000
- 100999 multiletter control sequences out of 15000+600000
+ 79743 strings out of 473523
+ 2043257 string characters out of 5707334
+ 3277267 words of memory out of 5000000
+ 101001 multiletter control sequences out of 15000+600000
  745981 words of font info for 200 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,16n,159p,3063b,2928s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3354,9 +3352,9 @@ pdfTeX warning (dest): name{table.B.1} has been referenced but does not exist, r
 pdfTeX warning (dest): name{table.4.1} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ecss0800.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\juliette utilisateur\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonal.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonali.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonam.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonami.pfb><C:/Users/juliette utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on _main_.pdf (123 pages, 47465041 bytes).
+Output written on _main_.pdf (123 pages, 47466608 bytes).
 PDF statistics:
- 5034 PDF objects out of 5155 (max. 8388607)
+ 5037 PDF objects out of 5155 (max. 8388607)
  521 named destinations out of 1000 (max. 500000)
  1563 words of extra memory for PDF output out of 10000 (max. 10000000)
 

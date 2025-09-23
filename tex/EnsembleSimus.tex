@@ -1238,7 +1238,7 @@ Ce modèle est implémenté en langage \textsc{Matlab}\textsuperscript{\textregi
 	\caption{}
 	\label{fig:ExempleTransitoireH2_High}
 \end{subfigure}
-\caption{Distributions de températures calculés avec le modèle transitoire pour trois \textit{drive ratios} dont les données expérimentales utilisées pour l'ajustement sont issus d'expériences aux amplitudes acoustiques correspondantes, dans l'orientation `\texttt{H2}' (voir le tableau~\ref{tab:RecapResultExpe}). \subref{fig:ExempleTransitoireH2_Low} $DR=\qty{.4}{\percent}$, \subref{fig:ExempleTransitoireH2_Mid} $DR=\qty{2}{\percent}$, et \subref{fig:ExempleTransitoireH2_High} $DR=\qty{3.5}{\percent}$.}
+\caption{Distributions de températures calculés avec le modèle transitoire pour trois \textit{drive ratios} dont les données expérimentales utilisées pour l'ajustement sont issus d'expériences aux amplitudes acoustiques correspondantes, dans l'orientation `\texttt{H2}' (voir le tableau~\ref{tab:RecapResultExpe}). \subref{fig:ExempleTransitoireH2_Low} $DR=\qty{.4}{\percent}$, \subref{fig:ExempleTransitoireH2_Mid} $DR=\qty{2}{\percent}$, et \subref{fig:ExempleTransitoireH2_High} $DR=\qty{3.5}{\percent}$. \echaf{courbes expé ?}}
 \label{fig:ExempleTransitoireH2}
 \end{figure}
 
@@ -1247,7 +1247,10 @@ Ce modèle est implémenté en langage \textsc{Matlab}\textsuperscript{\textregi
 
 % Quelque chose ne fonctionne pas au moment de la rédaction de ce manuscrit de thèse, et toutes les températures du régénérateur s'abaissent trop, d'une manière que ne laisse pas de doute sur la présence d'une erreur dans le modèle.
 
-Ce modèle prévoit comme attendu un refroidissement à la paroi de l'échangeur froid, et un échauffement suivi d'un retour à une température proche mais supérieure à la température initiale du côté ambiant. Le temps avant la stabilisation des températures diminue également lorsque l'amplitude acoustique est augmentée. Enfin, un écart entre la température au centre et en périphérie est visible.
+Ce modèle prévoit comme attendu un refroidissement à la paroi de l'échangeur froid, et un échauffement suivi d'un retour à une température proche mais supérieure à la température initiale du côté ambiant. Le temps avant la stabilisation des températures diminue également lorsque l'amplitude acoustique est augmentée. Enfin, un écart entre la température au centre et en périphérie est visible.\medskip
+
+Les évolutions temporelles prédites par le modèle reproduisent qualitativement les résultat expérimentaux observés sur les figures~\ref{fig:Acou_Regen_H1H2_Low}, \ref{fig:Acou_Regen_H1H2_Mid} et \ref{fig:Acou_Regen_H1H2_High}. Il est observé que les coefficients d'échanges thermiques avec les parois augmentent avec le \textit{drive ratio}, ce qui semble traduire une augmentation du flux de chaleur transféré avec la vitesse particulaire. En outre, les pertes liées à la viscosité semblent négligeable à faible $DR$ et ne deviennent significatives qu'aux \textit{drive ratios} plus élevés.
+
 
 \section{Conclusion}
 Dans ce chapitre, plusieurs modèles pour interpréter les résultats des campagnes d'expériences sont développés.\medskip

@@ -12,16 +12,16 @@ Enfin, pour adopter une vue d'ensemble, les performances du réfrigérateur obte
 Avant toute analyse des résultats obtenus pour les amplitudes acoustiques choisies et les orientations définies, ceux-ci sont résumés dans le tableau~\ref{tab:RecapResultExpe}.
 
 \begin{longtable}{llll llll lll}
-	\caption{Récapitulatif des résultats expérimentaux. Les températures $\theta_a$, $\theta_f$ et $\theta_{SA1}$ indiquées représentent l'écart de la moyenne des températures sur la section par rapport aux températures initiales $T_\infty$, et le $\COP$ est rapporté à la valeur du $\COP_{\mathsf{carnot}}$.}
+	\caption{Récapitulatif des résultats expérimentaux. Les températures $\theta_a$, $\theta_f$ et $\theta_{SA1}$ indiquées représentent l'écart de la moyenne des températures sur la section par rapport aux températures initiales $T_\infty$, et le $\COP$ est rapporté à la valeur du $\COP_{\mathsf{carnot}}$. Les trois dernières lignes sont à comparer aux expériences pour lesquelles $\dot Q_{f}=\qty{0}{\watt}$.}
 	\label{tab:RecapResultExpe}\\%
 	
 	\hline
-	$\xi_1$ & $\xi_2$ & $DR$ & $T_\infty$ & $\theta_a$  & $\theta_f$ & $\theta_{SA1}$ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Orientation} \\%
+	$\xi_1$ & $\xi_2$ & $DR$ & $T_\infty$ & $\theta_a$  & $\theta_f$ & $\theta_{SA1}$ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Configuration} \\%
 	
 	\multicolumn{2}{c}{(\unit{\milli\meter})} & (\unit{\percent})  & \multicolumn{4}{c}{(\unit{\kelvin})} &\multicolumn{2}{c}{(\unit{\watt})} & (\unit{\percent}) & \\\hline\hline \endfirsthead
 	
 	\multicolumn{11}{l}{...suite du tableau \ref{tab:RecapResultExpe}}\\\hline
-	$\xi_1$ & $\xi_2$  & $DR$ & $T_\infty$ & $\theta_a$  & $\theta_f$ & $\theta_{SA1}$ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Orientation} \\%
+	$\xi_1$ & $\xi_2$  & $DR$ & $T_\infty$ & $\theta_a$  & $\theta_f$ & $\theta_{SA1}$ & $\dot Q_a$ & $\dot Q_f$ & $\COP$ & \multirow{2}{*}{Configuration} \\%
 	
 	\multicolumn{2}{c}{(\unit{\milli\meter})} & (\unit{\percent}) &  \multicolumn{4}{c}{(\unit{\kelvin})} &\multicolumn{2}{c}{(\unit{\watt})} & (\unit{\percent}) & \\\hline\hline \endhead
 	
@@ -66,7 +66,13 @@ Avant toute analyse des résultats obtenus pour les amplitudes acoustiques chois
 	\num{5.1} & \num{1.3} & \num{2} & \num{289.7} & \num{6} & \num{-1.9} & \num{2.1} & \num{108} & \num{100} & \num{3.4} & \\*
 	\num{8.6} & \num{2.24} & \num{3.5} & \num{290} & \num{4} & \num{-32.8} & \num{-8.8} & \num{176} & \num{0} & \num{0} & \\*
 	\num{8.4} & \num{2.24} & \num{3.4} & \num{289.5} & \num{5.3} & \num{-28} & \num{-6.9} & \num{189} & \num{50} & \num{3.1} & \\*
-	\num{8.4} & \num{2} & \num{3.4} & \num{289.5} & \num{7.3} & \num{-20.5} & \num{-3.5} & \num{210} & \num{100} & \num{5.2} & \\*
+	\num{8.4} & \num{2} & \num{3.4} & \num{289.5} & \num{7.3} & \num{-20.5} & \num{-3.5} & \num{210} & \num{100} & \num{5.2} & \\
+
+	 \hdashline
+	\num{.75} & \num{.25} & \num{.3} & \num{292.7} & \num{-.1} & \num{-5.7} & \num{0} & \num{5.9} & \num{4.7} & \num{2.5} & \multirow{3}{*}{\textsc{DeltaEC}} \\*
+	\num{5.6} & \num{1.75} & \num{2} & \num{300.6} & \num{-6.5} & \num{-36.8} & \num{0} & \num{176.2} & \num{130.8} & \num{14.8} & \\*
+	\num{9.8} & \num{2.9} & \num{3.6} & \num{307.2} & \num{-12.2} & \num{-51.2} & \num{0} & \num{532} & \num{368.8} & \num{16.5} & \\
+
 \end{longtable}
 \section{Expériences préliminaires sans acoustique}\label{chap:DistribTemperature_HeatOnly}
 Des mesures sans acoustique sont d'abord réalisées pour séparer les effets qui se superposent lors du fonctionnement de la machine, afin d'avoir un système plus simple à analyser, ainsi que pour réaliser des expériences dans une configuration différente, pour vérifier la robustesse des raisonnements proposés ci-après.
@@ -1326,7 +1332,7 @@ Ce symptôme semble montrer que les effets qui jouent sur les performances et d�
 
 %\textit{\textbf{Remarque :} la charge thermique totale au niveau de l'échangeur de chaleur froid n'est pas réellement nulle dans le cas des expériences à l'abscisse $\dot Q_f=0$, et donc le coefficient de performances à ce point non plus. En effet, les coefficients de performances sont calculés par le rapport de $\dot Q_f$ par $\dot W_e$, ce qui sous-entend que la charge thermique du côté froid du régénérateur ne dépend que de l'alimentation électrique des cartouches chauffantes contenues dans l'échangeur de chaleur, en négligeant d'autres composantes de la charge totale, telles que le flux de chaleur convectif apporté par la convection naturelle et l'écoulement de fluide qui l'accompagne, et la conduction de chaleur dans le fluide \echaf{ajouter figure Comsol dans la cavité avec les flèches de flux cond et conv pour montrer que cond est négligeable}. La charge thermique indiquée sur l'axe des abscisses des figures~\ref{fig:PerfConvNat_COP_DR} et \ref{fig:PerfConvNat_Qa_DR} n'inclut que cette composante apportée par les cartouches chauffantes, ce qui est une approximation suffisante lorsque $\dot Q_f\neq0$. Pour $\dot Q_f=0$, ce sont à l'inverse les autres composantes, et notamment celle causée par la convection naturelle, qui sont prédominantes, ce qui implique que la charge totale n'est pas réellement égale à \num{0}.}\bigskip
 
-\textit{\textbf{Remarque :} Le coefficient de performance de la machine n'est pas réellement nul dans le cas où les cartouches chauffantes contenues dans l'échangeur de chaleur froid ne sont pas alimentées, car un flux de chaleur est extrait à cette zone du régénérateur par l'effet thermoacoustique. Cependant, la mesure de ce flux de chaleur ne peut se faire qu'indirectement, par exemple en imposant une température à l'échangeur froid et en mesurant le flux de chaleur fourni par lui pour l'atteindre et rester à l'équilibre thermique.}\medskip
+\textit{\textbf{Remarque :} Le coefficient de performance de la machine n'est pas réellement nul dans le cas où les cartouches chauffantes contenues dans l'échangeur de chaleur froid ne sont pas alimentées, car un flux de chaleur est extrait à cette zone du régénérateur par l'effet thermoacoustique. Cependant, la mesure de ce flux de chaleur ne peut se faire qu'indirectement, par exemple en imposant une température à l'échangeur froid et en mesurant le flux de chaleur fourni par lui pour l'atteindre et rester à l'équilibre thermique. Une estimation des flux de chaleur thermoacoustique peut être faite au moyen du modèle \textsc{DeltaEC} réalisé pour la conception de la machine et adapté aux expériences présentées ici, et dont les résultats sont données dans les trois dernières lignes du tableau~\ref{tab:RecapResultExpe}.}\medskip
 
 % Au final, l'orientation de la machine a une influence modeste sur ses performances ; le modèle (qui n'inclut pas d'effets liés à la gravité mais dont le calcul des performances diffère par les données d'entrée, tirées de l'expérience) prévoit une différence de performances plus marquée avec l'orientation que celle observée en pratique; ceci laisse supposer que de multiples phénomènes non linéaires régissent le comportement du \textsc{Tacot}, comme le confirme l'écart général entre modèle et expérience. 
 
